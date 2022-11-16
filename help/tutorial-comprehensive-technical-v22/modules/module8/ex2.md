@@ -1,0 +1,192 @@
+---
+title: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 定義外部資料來源
+description: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 定義外部資料來源
+kt: 5342
+audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
+doc-type: tutorial
+activity: develop
+exl-id: e3e04415-4258-4ad7-a227-0e68dfcba235
+source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 4%
+
+---
+
+# 8.2定義外部資料來源
+
+在本練習中，您將使用Adobe Journey Optimizer建立自訂外部資料來源。
+
+前往登入Adobe Journey Optimizer [Adobe Experience Cloud](https://experience.adobe.com). 按一下 **Journey Optimizer**.
+
+![ACOP](../module7/images/acophome.png)
+
+系統會將您重新導向至 **首頁**  檢視。 首先，請確定您使用的沙箱正確無誤。 系統會呼叫要使用的沙箱 `--aepSandboxId--`. 若要從一個沙箱變更為另一個沙箱，請按一下 **生產產品(VA7)** 並從清單中選取沙箱。 在此範例中，沙箱的名稱為 **2022財年AEP啟用**. 那你就在 **首頁** 沙箱檢視 `--aepSandboxId--`.
+
+![ACOP](../module7/images/acoptriglp.png)
+
+在左側功能表中，向下捲動並按一下 **配置**. 下一步，按一下 **管理** 按鈕 **資料來源**.
+
+![示範](./images/menudatasources.png)
+
+然後您會看到 **資料來源** 清單。
+按一下 **建立資料來源** 開始新增資料來源。
+
+![示範](./images/dshome.png)
+
+您會看到空白的資料來源快顯視窗。
+
+![示範](./images/emptyds.png)
+
+開始設定前，您需要使用 **開啟天氣圖** 服務。 請依照下列步驟建立帳戶並取得API金鑰。
+
+前往 [https://openweathermap.org/](https://openweathermap.org/). 在首頁上，按一下 **登入**.
+
+![WeatherMap](./images/owm.png)
+
+按一下 **建立帳戶**.
+
+![WeatherMap](./images/owm1.png)
+
+填好細節。
+
+![WeatherMap](./images/owm2.png)
+
+按一下 **建立帳戶**.
+
+![WeatherMap](./images/owm3.png)
+
+然後，系統會將您重新導向至「帳戶」頁面。
+
+![WeatherMap](./images/owm4.png)
+
+在功能表中，按一下 **API金鑰** 若要擷取您的API金鑰，您需要設定自訂外部資料來源。
+
+![WeatherMap](./images/owm5.png)
+
+安 **API金鑰** 看起來像這樣： `b2c4c36b6bb59c3458d6686b05311dc3`.
+
+您可以找到 **API檔案** 針對 **當前天氣** [此處](https://openweathermap.org/current).
+
+在我們的使用案例中，我們將根據客戶所在的城市，實作與開放天氣圖的連線。
+
+![WeatherMap](./images/owm6.png)
+
+返回 **Adobe Journey Optimizer**，將 **外部資料來源** 快顯視窗。
+
+![示範](./images/emptyds.png)
+
+作為資料來源的名稱，請使用 `--demoProfileLdap--WeatherApi`. 在此範例中，資料來源名稱為 `vangeluwWeatherApi `.
+
+將說明設定為： `Access to the Open Weather Map`.
+
+開啟的氣象圖API的URL為： **http://api.openweathermap.org/data/2.5/weather?units=metric**
+
+![示範](./images/dsname.png)
+
+接下來，您需要選取要使用的驗證。
+
+使用下列變數：
+
+| 欄位 | 值 |
+|:-----------------------:| :-----------------------|
+| 類型 | **API金鑰** |
+| 名稱 | **APPID** |
+| 值 | **您的API金鑰** |
+| 位置 | **查詢參數** |
+
+![示範](./images/dsauth.png)
+
+最後，您需要定義 **FieldGroup**，這基本上就是您要傳送至氣象API的要求。 在本例中，我們想使用城市名稱來請求該城市的當前天氣。
+
+![示範](./images/fg.png)
+
+根據氣象API檔案，我們需傳送參數 `q=City`.
+
+![示範](./images/owmapi.png)
+
+為了符合預期的API請求，請依照下列方式設定您的FieldGroup:
+
+>[!IMPORTANT]
+>
+>欄位組名稱必須是唯一的，請使用此命名慣例： `--demoProfileLdap--WeatherByCity` 因此在這種情況下，名稱應該是 `vangeluwWeatherByCity`
+
+![示範](./images/fg1.png)
+
+對於回應裝載，您需要貼上由氣象API傳送之回應的範例。
+
+您可以在API檔案頁面上找到預期的API JSON回應 [此處](https://openweathermap.org/current).
+
+![示範](./images/owmapi1.png)
+
+或者，您也可以從這裡複製JSON回應：
+
+```json
+{"coord": { "lon": 139,"lat": 35},
+  "weather": [
+    {
+      "id": 800,
+      "main": "Clear",
+      "description": "clear sky",
+      "icon": "01n"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 281.52,
+    "feels_like": 278.99,
+    "temp_min": 280.15,
+    "temp_max": 283.71,
+    "pressure": 1016,
+    "humidity": 93
+  },
+  "wind": {
+    "speed": 0.47,
+    "deg": 107.538
+  },
+  "clouds": {
+    "all": 2
+  },
+  "dt": 1560350192,
+  "sys": {
+    "type": 3,
+    "id": 2019346,
+    "message": 0.0065,
+    "country": "JP",
+    "sunrise": 1560281377,
+    "sunset": 1560333478
+  },
+  "timezone": 32400,
+  "id": 1851632,
+  "name": "Shuzenji",
+  "cod": 200
+}
+```
+
+將上述JSON回應複製到剪貼簿，然後前往自訂資料來源設定畫面。
+
+按一下 **編輯裝載** 表徵圖。
+
+![示範](./images/owmapi2.png)
+
+您會看到快顯視窗，其中您必須貼上上述JSON回應。
+
+![示範](./images/owmapi3.png)
+
+貼上您的JSON回應，之後您會看到這個內容。 按一下「**儲存**」。
+
+![示範](./images/owmapi4.png)
+
+您的自訂資料來源設定現在已完成。 向上捲動並按一下 **儲存**.
+
+![示範](./images/dssave.png)
+
+您的資料來源現在已成功建立，且是 **資料來源** 清單。
+
+![示範](./images/dslist.png)
+
+下一步： [8.3定義自訂動作](./ex3.md)
+
+[返回模組8](journey-orchestration-external-weather-api-sms.md)
+
+[返回所有模組](../../overview.md)
