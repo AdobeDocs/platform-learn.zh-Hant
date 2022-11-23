@@ -3,10 +3,10 @@ title: 使用 Web SDK 教學課程實作 Adobe Experience Cloud
 description: 了解如何使用 Adobe Experience Platform Web SDK 實施 Experience Cloud 應用程式。
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 6488faee86a53585bdbf03e069c4d6cf7e81d096
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 28%
+source-wordcount: '417'
+ht-degree: 26%
 
 ---
 
@@ -49,7 +49,9 @@ Experience PlatformWeb SDK是用戶端JavaScript程式庫，可讓Adobe Experien
 
 ## 先決條件
 
-在這些課程中，假設您有Adobe ID和 [必要權限](configure-permissions.md) 來完成課程。 否則，您必須聯絡您的Experience Cloud管理員以要求存取權。
+所有Experience Cloud客戶皆可使用Platform Web SDK。 不需要授權Real-time Customer Data Platform或Journey Optimizer等平台型應用程式才能使用Web SDK。
+
+在這些課程中，假設您有Adobe帳戶，且 [必要權限](configure-permissions.md) 來完成課程。 否則，您必須聯絡您的Experience Cloud管理員以要求存取權。
 
 此外，我們假設您已熟悉 HTML 和 JavaScript 等前端開發語言。您不需要是這些語言的專家，但如果您能閱讀和了解程式碼，可從本教學課程中學到更多。
 
