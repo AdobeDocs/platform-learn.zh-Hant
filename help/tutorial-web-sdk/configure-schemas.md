@@ -3,9 +3,9 @@ title: 為Web資料建立XDM結構
 description: 了解如何在資料收集介面中為Web資料建立XDM結構。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
+source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1125'
 ht-degree: 5%
 
 ---
@@ -47,7 +47,7 @@ XDM結構是描述Experience Platform中資料的標準方式，可讓所有符�
 
    >[!NOTE]
    >
-   >如果您是Platform型應用程式（例如即時CDP）的客戶，建議您在本教學課程中使用開發沙箱。
+   >如果您是Platform型應用程式（例如即時CDP）的客戶，建議您在本教學課程中使用開發沙箱。 若非如此，請使用 **[!UICONTROL 生產]** 沙箱。
 
 1. 前往 **[!UICONTROL 結構]** 在左側導覽列中
 1. 選取 **[!UICONTROL 建立結構]** 按鈕
@@ -63,10 +63,10 @@ XDM結構是描述Experience Platform中資料的標準方式，可讓所有符�
 
 >[!TIP]
 > 
->在本練習中，您為Web資料收集新增了建議的預先定義欄位群組： _**[!UICONTROL AEP Web SDK ExperienceEvent Mixin]**_，和 _**[!UICONTROL 消費者體驗事件]**_.
+>在本練習中，您為Web資料收集新增了建議的預先定義欄位群組： _**[!UICONTROL AEP Web SDK ExperienceEvent]**_，和 _**[!UICONTROL 消費者體驗事件]**_.
 
-1. 保留 **[!UICONTROL 使用現有欄位組]** 已選擇單選按鈕
-1. 搜尋 [!UICONTROL `AEP Web SDK ExperienceEvent Mixin`]
+1. 在 **[!UICONTROL 欄位群組]** 部分，選擇 **[!UICONTROL 新增]**
+1. 搜尋 [!UICONTROL `AEP Web SDK ExperienceEvent`]
 1. 核取方塊
 1. 搜尋 [!UICONTROL `Consumer Experience Event`]
 1. 核取方塊
@@ -83,7 +83,7 @@ XDM結構是描述Experience Platform中資料的標準方式，可讓所有符�
 
 ![Luma網路事件資料](assets/schema-luma-web-event-data.png)
 
-對於這兩個欄位群組，請注意您有權存取網路上資料收集所需最常用的索引鍵值組。 按一下任一欄位群組名稱時，介面會反白標示其所屬的鍵值組群組。 在以下範例中，您會看到屬於哪些群組 **[!UICONTROL 消費者體驗事件]**.
+對於這兩個欄位群組，請注意您有權存取網路上資料收集所需最常用的索引鍵值組。 此 [!UICONTROL 顯示名稱] 在平台型應用程式的區段產生器介面中，行銷人員會看到每個欄位，而您可以變更標準欄位的顯示名稱以符合您的需求。 您也可以移除不想要的欄位。 按一下任一欄位群組名稱時，介面會反白標示其所屬的鍵值組群組。 在以下範例中，您會看到屬於哪些群組 **[!UICONTROL 消費者體驗事件]**.
 
 ![架構欄位組](assets/schema-consumer-experience-event.jpg)
 

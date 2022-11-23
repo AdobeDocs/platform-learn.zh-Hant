@@ -3,9 +3,9 @@ title: 設定教學課程的權限
 description: 了解如何要求存取Experience PlatformWeb SDK，以及設定完成「使用Web SDK實作Adobe Experience Cloud」教學課程所需的權限。
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 6%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 6%
 
 ## 資料彙集
 
-* 擁有 **[!UICONTROL 開發]**, **[!UICONTROL 編輯]**, **[!UICONTROL 核准]**, **[!UICONTROL 發佈]**, **[!UICONTROL 管理擴充功能]**，和 **[!UICONTROL 管理環境]** 標籤屬性。 如需標籤權限的詳細資訊，請參閱 [檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* 擁有 **[!UICONTROL 開發]**, **[!UICONTROL 編輯]**, **[!UICONTROL 核准]**, **[!UICONTROL 發佈]**, **[!UICONTROL 管理擴充功能]**, **[!UICONTROL 管理環境]**，和 **[!UICONTROL 管理屬性]**. 如需標籤權限的詳細資訊，請參閱 [檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * 如果您要完成選用事件轉送課程，請取得產品授權，其中包含邊緣轉送和權限項目 **[!UICONTROL 平台]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
 
 即使您不是Lear-time CDP等基於平台的應用程式的Experience Cloud，這些功能也應可供所有客戶使用。
 
-* 存取 **預設生產** 沙箱。
+* 存取 **預設生產**, **&quot;Prod&quot;** 沙箱(.
 * 存取 **[!UICONTROL 管理結構]** 和 **[!UICONTROL 檢視結構]** 在 **[!UICONTROL 資料模型]**
 * 存取 **[!UICONTROL 管理身分識別命名空間]** 和 **[!UICONTROL 檢視身分識別命名空間]** 在 **[!UICONTROL Identity Management]**
 * 存取 **[!UICONTROL 管理資料流]** 和 **[!UICONTROL 檢視資料流]** 在 **[!UICONTROL 資料收集]**
