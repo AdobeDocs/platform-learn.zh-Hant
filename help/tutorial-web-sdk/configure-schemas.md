@@ -3,9 +3,9 @@ title: 為Web資料建立XDM結構
 description: 了解如何在資料收集介面中為Web資料建立XDM結構。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1080'
 ht-degree: 5%
 
 ---
@@ -78,6 +78,7 @@ XDM結構是描述Experience Platform中資料的標準方式，可讓所有符�
 
 1. 在**[!UICONTROL 合成**] 面板，選擇 `Untitled schema name`
 1. 在 **[!UICONTROL 架構屬性]** ，輸入 **[!UICONTROL 顯示名稱]** `Luma Web Event Data`
+1. 選取外部的任何項目 **[!UICONTROL 顯示名稱]** 欄位以啟用 **[!UICONTROL 儲存]** 選項
 1. 選擇 **[!UICONTROL 儲存]**
 
 ![Luma網路事件資料](assets/schema-luma-web-event-data.png)
