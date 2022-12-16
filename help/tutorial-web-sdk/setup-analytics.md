@@ -3,9 +3,9 @@ title: 使用Experience PlatformWeb SDK設定Adobe Analytics
 description: 了解如何使用Experience PlatformWeb SDK設定Adobe Analytics。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3554'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ Platform Web SDK會從您的網站將資料傳送至Platform Edge Network。 然
 
 ### 建立電子商務資料元素
 
-在建立資料元素課程中，您 [建立JavaScript資料元素](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 擷取內容和身分詳細資訊。 現在，您將建立其他資料元素來擷取電子商務資料。 因為 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;}針對購物車中的產品詳細資料頁面和產品使用不同的資料層結構，您必須為每個案例建立資料元素。 請使用以下提供的程式碼片段：
+在建立資料元素課程中，您 [建立JavaScript資料元素](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 擷取內容和身分詳細資訊。 現在，您將建立其他資料元素來擷取電子商務資料。 因為 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;}針對購物車中的產品詳細資料頁面和產品使用不同的資料層結構，您必須為每個案例建立資料元素。 您必須建立一些自訂程式碼資料元素，才能從Luma資料層抓取所需內容，這在您自己的網站上實作時可能是必要（或不是必要）。 在此情況下，您需要循環瀏覽一系列購物車項目，以取得每項產品的特定詳細資訊。 請使用以下提供的程式碼片段：
 
 1. 開啟您用於教學課程的標籤屬性
 1. 前往 **[!UICONTROL 資料元素]**
