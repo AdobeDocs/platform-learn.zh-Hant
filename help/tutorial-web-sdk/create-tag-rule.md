@@ -3,9 +3,9 @@ title: 建立標籤規則
 description: 了解如何使用標籤規則，將事件與XDM物件傳送至Platform Edge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '849'
 ht-degree: 4%
 
 ---
@@ -53,6 +53,8 @@ ht-degree: 4%
 
 
 ## 建立標籤規則
+
+在標籤中，規則可用來在各種條件下執行動作（引發呼叫）。 您將使用第一個規則，使用Web SDK將XDM物件傳送至邊緣網路 [!UICONTROL 傳送事件] 動作。 在本教學課程的稍後部分，您將根據訪客所在的頁面類型，傳送不同版本的XDM物件。 因此，您將使用規則條件來排除這些其他類型的頁面。
 
 若要建立標籤規則：
 
