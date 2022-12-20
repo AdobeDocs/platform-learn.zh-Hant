@@ -2,7 +2,7 @@
 title: 建立資料流
 description: 建立資料流
 exl-id: 4a33a7f3-8bd8-4d28-9ae4-a0609444485f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 公司通常會有任何網站更新的促銷路徑。 公司中的某個人（行銷人員或工程師，視變更而定）通常會在只有該人使用的開發環境中測試其變更。 一旦他們熟悉變更，變更就會升級至預備環境，接受進一步的測試。 最後，變更會發佈至使用者看到的生產網站。 資料流支援此促銷模式。
 
-如果您支援基於平台的應用程式，例如即時CDP、Journey Optimizer或Customer Journey Analytics，則必須在與這些環境對應的個別Platform沙箱中建立其他資料流。
+如果您支援Real-Time CDP、Journey Optimizer或Customer Journey Analytics等以平台為基礎的應用程式，則必須在與這些環境對應的個別Platform沙箱中建立其他資料流。
 
 如果您不是Platform客戶，可以在單一沙箱中建立多個資料流，並可使用資料流複製功能來複製設定。
 

@@ -1,12 +1,12 @@
 ---
-title: 即時客戶設定檔概觀圖
+title: 即時客戶設定檔概觀圖表
 description: 此影片會帶您逐步了解概述圖表，說明Adobe Experience Platform的「即時客戶設定檔」功能。
 role: Data Architect, Data Engineer
 feature: Profiles
 kt: 4943
 thumbnail: 33600.jpg
 exl-id: 1cff5492-82bb-484c-a96a-3417288d4766
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 11%

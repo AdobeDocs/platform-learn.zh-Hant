@@ -3,7 +3,7 @@ title: 為Web資料建立XDM結構
 description: 了解如何在資料收集介面中為Web資料建立XDM結構。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 5%
@@ -47,7 +47,7 @@ XDM結構是描述Experience Platform中資料的標準方式，可讓所有符�
 
    >[!NOTE]
    >
-   >如果您是Platform型應用程式（例如即時CDP）的客戶，建議您在本教學課程中使用開發沙箱。 若非如此，請使用 **[!UICONTROL 生產]** 沙箱。
+   >如果您是Real-Time CDP等以平台為基礎之應用程式的客戶，建議您針對本教學課程使用開發沙箱。 若非如此，請使用 **[!UICONTROL 生產]** 沙箱。
 
 1. 前往 **[!UICONTROL 結構]** 在左側導覽列中
 1. 選取 **[!UICONTROL 建立結構]** 按鈕

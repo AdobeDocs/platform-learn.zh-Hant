@@ -1,13 +1,13 @@
 ---
 title: 設定以檔案為基礎的雲端儲存空間或電子郵件行銷目的地
-description: 在Adobe即時CDP中以檔案為基礎的目的地設定的逐步說明中取得秘訣。 這適用於雲端儲存目的地（例如S3或SFTP），以及電子郵件行銷目的地。
+description: 在AdobeReal-Time CDP中以檔案為基礎之目的地設定的逐步說明中取得秘訣。 這適用於雲端儲存目的地（例如S3或SFTP），以及電子郵件行銷目的地。
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
 kt: 6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 5%

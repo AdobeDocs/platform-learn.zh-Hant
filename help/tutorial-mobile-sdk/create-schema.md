@@ -2,7 +2,7 @@
 title: 建立 XDM 結構描述
 description: 了解如何為行動應用程式事件建立XDM結構。
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 6%
@@ -53,7 +53,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
    >[!NOTE]
    >
-   > 本教學課程中，以平台為基礎的應用程式（例如Real-time CDP）的客戶應使用開發沙箱。 其他客戶則會使用預設的生產沙箱。
+   > Real-Time CDP等以平台為基礎之應用程式的客戶，應在本教學課程中使用開發沙箱。 其他客戶則會使用預設的生產沙箱。
 
 
 1. 選擇 **[!UICONTROL 結構]** 在 **[!UICONTROL 資料管理]**.
@@ -66,7 +66,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 * **類別** 定義結構所包含資料的行為方面。 例如： `XDM ExperienceEvent` 擷取時間序列、事件資料，並 `XDM Individual Profile` 擷取個人的屬性資料。
 * **資料類型** 在類或欄位組中，以與基本常值欄位相同的方式用作引用欄位類型。
 
-以上說明為高階概述。 如需詳細資訊，請參閱 [架構建置區塊](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=zh-Hant) 視訊或讀取 [結構構成基本概念](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) 在產品檔案中。
+以上說明為高階概述。 如需詳細資訊，請參閱 [架構建置區塊](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=zh-Hant) 視訊或讀取 [結構構成基本概念](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant) 在產品檔案中。
 
 在本教學課程中，您會使用「消費者體驗事件」欄位群組，並建立自訂群組來示範程式。
 

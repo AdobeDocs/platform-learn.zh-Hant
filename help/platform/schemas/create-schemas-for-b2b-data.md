@@ -7,7 +7,7 @@ role: Data Architect
 kt: 9258
 thumbnail: 338241.jpg
 exl-id: bbb47887-f982-4831-8002-6d1fa539a39b
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '109'
 ht-degree: 5%
@@ -22,6 +22,6 @@ ht-degree: 5%
 
 >[!INFO]
 >
-> 這段視頻是課程的一部分， [行銷人員專用Real-time CDP B2B Edition快速入門](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)，免費提供Experience League!
+> 這段視頻是課程的一部分， [行銷人員專用Real-Time CDP B2B版快速入門](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)，免費提供Experience League!
 
 如需詳細資訊，請造訪 [綱要檔案](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hant).

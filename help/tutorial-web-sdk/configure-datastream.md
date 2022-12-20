@@ -3,7 +3,7 @@ title: 設定資料流
 description: 了解如何啟用資料流和設定Experience Cloud解決方案。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 762195148f7594e30b361546941dfcd8076ab7b1
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '450'
 ht-degree: 3%
@@ -43,7 +43,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >如果您是Platform型應用程式（例如即時CDP）的客戶，建議您在本教學課程中使用開發沙箱。 若非如此，請使用 **[!UICONTROL 生產]** 沙箱。
+   >如果您是Real-Time CDP等以平台為基礎之應用程式的客戶，建議您針對本教學課程使用開發沙箱。 若非如此，請使用 **[!UICONTROL 生產]** 沙箱。
 
 1. 前往 **[!UICONTROL 資料流]** 在左側導覽列中
 1. 選擇 **[!UICONTROL 新資料流]** 在螢幕的右側。

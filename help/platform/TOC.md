@@ -4,7 +4,7 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 29%
@@ -56,14 +56,14 @@ ht-degree: 29%
    + [建立和填入資料集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [將CSV檔案對應至XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=zh-Hant){target=&quot;_blank&quot;}
    + [來源概觀](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [從Adobe Analytics內嵌資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
+   + [從Adobe Analytics內嵌資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
    + [從Audience Manager內嵌資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
-   + [從雲端儲存擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html)
-   + [從CRM內嵌資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html)
+   + [從雲端儲存擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=zh-Hant)
+   + [從CRM內嵌資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=zh-Hant)
    + [從資料庫擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [串流獲取概觀](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [使用HTTP API串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
-   + [使用來源連接器串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
+   + [使用HTTP API串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=zh-Hant)
+   + [使用來源連接器串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hant)
    + [Web SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target=&quot;_blank&quot;}
    + [Mobile SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target=&quot;_blank&quot;}
 + Data Science Workspace {#data-science-workspace}
@@ -184,7 +184,7 @@ ht-degree: 29%
    + [Customer Journey Analytics教學課程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Journey Orchestration教學課程](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [offer decisioning教學課程](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=zh-Hant){target=&quot;_blank&quot;}
-   + Real-time CDP教學課程{#rtcdp}
+   + Real-Time CDP教學課程{#rtcdp}
       + [總覽](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [B2B版本概述](/help/platform/rtcdp/b2b-overview.md)
       + [端對端示範](/help/platform/rtcdp/demo.md)

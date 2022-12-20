@@ -6,7 +6,7 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 4%
@@ -176,7 +176,7 @@ Experience Platform業務使用者通常必須執行一系列步驟，包括識�
 如果您想要了解合併原則、資料控管、查詢服務和區段產生器，請跳至 [資料架構師與資料工程師快速入門教學課程中的第11課](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). 本其他教學課程的先前課程可讓您手動建立剛填入這些Postman集合的所有項目，讓您盡享開端！
 
 如果您想要建立範例Web SDK實作以連結至此沙箱，請前往
-[使用Web SDK實作Adobe Experience Cloud教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). 設定Web SDK教學課程的「初始設定」、「標籤設定」和「設定Experience Platform」課程後，請使用 `luma-crm.json` 使用密碼的檔案 `test` 若要查看設定檔片段與本教學課程中上傳的資料合併。
+[使用Web SDK實作Adobe Experience Cloud教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant). 設定Web SDK教學課程的「初始設定」、「標籤設定」和「設定Experience Platform」課程後，請使用 `luma-crm.json` 使用密碼的檔案 `test` 若要查看設定檔片段與本教學課程中上傳的資料合併。
 
 如果您想要建立範例行動SDK實作以連結至此沙箱，請前往
 [在行動應用程式中實作Adobe Experience Cloud教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). 設定Web SDK教學課程的「初始設定」、「應用程式實作」和「Experience Platform」課程後，請使用 `luma-crm.json` 檔案，檢視與本教學課程中上傳之資料的設定檔片段合併。

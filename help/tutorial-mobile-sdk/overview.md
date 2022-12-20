@@ -3,7 +3,7 @@ title: 在行動應用程式中實作Adobe Experience Cloud教學課程概觀
 description: 了解如何實作Adobe Experience Cloud行動應用程式。 本教學課程將引導您在範例Swift應用程式中實施Experience Cloud應用程式。
 recommendation: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 10%
@@ -61,7 +61,7 @@ Experience PlatformMobile SDK是用戶端SDK，可讓Adobe Experience Cloud的�
    * **[!UICONTROL Identity Management]** — 管理和檢視身分識別命名空間的權限項目。
    * **[!UICONTROL 資料收集]** — 管理和檢視資料流的權限項目。
 
-   * 如果您是Platform型應用程式(如Real-time CDP、Journey Optimizer或Customer Journey Analytics)的客戶，您也應該有：
+   * 如果您是Real-Time CDP、Journey Optimizer或Customer Journey Analytics等以平台為基礎之應用程式的客戶，您也應該有：
       * **[!UICONTROL 資料管理]** — 管理和檢視資料集以完成的權限項目 _可選平台練習_ （需要平台型應用程式的授權）。
       * 發展 **沙箱** 這可供本教學課程使用。
 * 對於Adobe Analytics，你必須知道 **報表套裝** 您可以使用來完成本教學課程。

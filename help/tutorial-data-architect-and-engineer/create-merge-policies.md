@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -134,7 +134,7 @@ CRM ID是 `Luma Loyalty Dataset`，但只能使用主要身分來查詢設定檔
 
 ![使用不同的合併策略查看配置檔案](assets/mergepolicies-backToDanny.png)
 
-怎麼回事？ 個人資料合併不是一回事。 即時客戶設定檔會根據各種因素（包括使用哪些合併政策）即時組合。 您可以建立多個合併策略以在不同上下文中使用，具體取決於您想要的客戶視圖。
+怎麼回事？ 個人資料合併不是一回事。 即時客戶設定檔會根據各種因素（包括使用哪些合併政策）而即時組合。 您可以建立多個合併策略以在不同上下文中使用，具體取決於您想要的客戶視圖。
 
 合併原則的一個主要使用案例是資料控管。 例如，假設您將協力廠商資料內嵌至Platform，這無法用於個人化使用案例，但 _can_ 用於廣告使用案例。 您可以建立一個合併策略來排除此第三方資料集，並使用此合併策略來為廣告使用案例建立段。
 

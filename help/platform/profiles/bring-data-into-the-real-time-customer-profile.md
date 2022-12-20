@@ -1,15 +1,15 @@
 ---
 title: 將資料帶入即時客戶個人檔案
-description: 即時客戶個人檔案可在客戶歷程的每個階段大規模提供跨管道個人化。 您可以啟用結構和對應的資料集，為「即時客戶設定檔」啟用批次或串流資料。
+description: 即時客戶個人檔案可在客戶歷程的每個階段大規模實現跨管道個人化。您可以啟用結構和對應的資料集，為「即時客戶設定檔」啟用批次或串流資料。
 role: Data Architect, Data Engineer
 feature: Profiles
 kt: 2702
 thumbnail: 27301.jpg
 exl-id: fc7aad9e-8eaf-4101-b41e-a0d9b127f8be
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '116'
-ht-degree: 18%
+ht-degree: 27%
 
 ---
 

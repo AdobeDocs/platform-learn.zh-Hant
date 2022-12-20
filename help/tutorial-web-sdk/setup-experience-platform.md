@@ -2,7 +2,7 @@
 title: 使用Web SDK將資料串流至Adobe Experience Platform
 description: 了解如何使用Web SDK將網頁資料串流至Adobe Experience Platform。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 5%
@@ -154,9 +154,9 @@ Experience Platform使用您先前建立的相同XDM結構，從Luma網站擷取
 >Adobe Experience Platform的查詢服務是驗證湖中資料的更強大方法，但不在本教學課程的討論範圍內。 如需詳細資訊，請參閱 [探索資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=zh-Hant) （位於「平台教學課程」區段中）。
 
 
-## 啟用「即時客戶個人檔案」的資料集和結構
+## 啟用即時客戶個人檔案的資料集和結構
 
-下一步是啟用「即時客戶個人檔案」的資料集和結構。 從Web SDK串流的資料將是流入Platform的許多資料來源之一，而且您想要將Web資料與其他資料來源連結，以建立360度的客戶設定檔。 若要進一步了解即時客戶個人檔案，請觀看此短片：
+下一步是啟用「即時客戶設定檔」的資料集和結構。 從Web SDK串流的資料將是流入Platform的許多資料來源之一，而且您想要將Web資料與其他資料來源連結，以建立360度的客戶設定檔。 若要進一步了解即時客戶個人檔案，請觀看此短片：
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on&captions=eng)
 
@@ -235,7 +235,7 @@ Experience Platform使用您先前建立的相同XDM結構，從Luma網站擷取
 
    ![客戶設定檔](assets/experience-platform-validate-dataset-custProfile.png)
 
-您現在已啟用Platform Web SDK for Experience Platform(和即時CDP! 還有Customer Journey Analytics! 還有Journey Optimizer!)
+您現在已啟用適用於Experience Platform的Platform Web SDK(以及Real-Time CDP! 還有Customer Journey Analytics! 還有Journey Optimizer!)
 
 
 [下一個： ](setup-analytics.md)

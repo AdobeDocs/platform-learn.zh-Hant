@@ -7,16 +7,16 @@ feature: Destinations
 kt: 3797
 thumbnail: 29707.jpg
 exl-id: d6e78ec2-f9e0-4794-b585-9bebef9b036b
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 55%
+ht-degree: 30%
 
 ---
 
 # 目的地概觀
 
-Destinations 是預先建立的整合，具有之目的地平台受到 Adobe 的 Real-time Customer Data Platform 支援，其可透過順暢的方式為這些合作夥伴啟動資料。此影片定義兩個類型的目的地: 設定檔轉存和區段轉存，並提供每種個目的地類型的範例/使用案例。
+目的地是與AdobeReal-time Customer Data Platform所支援的目的地平台預先建立的整合，可順暢地為這些合作夥伴啟用資料。 此影片定義兩個類型的目的地：設定檔轉存和區段轉存，並提供每種目的地類型的範例/使用案例。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29707?quality=12&learn=on)
 

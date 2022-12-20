@@ -3,7 +3,7 @@ title: 設定教學課程的權限
 description: 了解如何要求存取Experience PlatformWeb SDK，以及設定完成「使用Web SDK實作Adobe Experience Cloud」教學課程所需的權限。
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 6%
@@ -21,7 +21,7 @@ ht-degree: 6%
 
 ## Experience Platform
 
-即使您不是Lear-time CDP等基於平台的應用程式的Experience Cloud，這些功能也應可供所有客戶使用。
+即使您並非Real-Time CDP等以平台為基礎之應用程式的Experience Cloud，這些功能仍應可供所有客戶使用。
 
 * 存取 **預設生產**, **&quot;Prod&quot;** 沙箱(.
 * 存取 **[!UICONTROL 管理結構]** 和 **[!UICONTROL 檢視結構]** 在 **[!UICONTROL 資料模型]**

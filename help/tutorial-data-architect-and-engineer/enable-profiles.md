@@ -1,6 +1,6 @@
 ---
 title: 啟用即時客戶設定檔
-seo-title: Enable Real-time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 啟用即時客戶設定檔
 description: 在本課程中，您將啟用「即時客戶個人檔案」的結構描述和資料集。
 role: Data Architect
@@ -8,10 +8,10 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -187,7 +187,7 @@ ht-degree: 1%
 
 ## 其他資源
 
-* [即時客戶個人檔案文件](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
+* [即時客戶個人檔案檔案檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)
 * [即時客戶設定檔API參考](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 

@@ -1,12 +1,12 @@
 ---
 title: 使用Adobe Audience Manager資料連接器內嵌資料
-description: 當您重新設定從Adobe Audience Manager移至Real-time Customer Data Platform的流程和人員時，可以使用Audience Manager資料連接器將特徵和區段從AAM匯入Platform、將其與其他豐富資料（包括PII）結合，然後傳送給目標合作夥伴。 此影片會逐步帶您了解AAM Data Connector for Real-time CDP的設定。
+description: 當您重新設定從Adobe Audience Manager移至Real-time Customer Data Platform的流程和人員時，可以使用Audience Manager資料連接器將特徵和區段從AAM匯入Platform、將其與其他豐富資料（包括PII）結合，然後傳送給目標合作夥伴。 此影片會逐步帶您了解Real-Time CDP的AAM Data Connector設定。
 role: Data Engineer, Data Architect
 feature: Sources
 thumbnail: 331214.jpg
 kt: 7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '318'
 ht-degree: 4%
@@ -15,7 +15,7 @@ ht-degree: 4%
 
 # 使用Adobe Audience Manager資料連接器內嵌資料
 
-當您重新設定從Adobe Audience Manager移轉至Real-time Customer Data Platform（即時CDP）的流程和人員時，可以使用Audience Manager資料連接器，將特徵和區段從AAM匯入Platform、將其與其他豐富資料（包括PII）結合，然後傳送給目標合作夥伴。 此影片會逐步帶您了解Real-time CDP的AAM Data Connector設定。
+當您重新設定從Adobe Audience Manager移至Real-time Customer Data Platform(Real-Time CDP)的流程和人員時，可以使用Audience Manager資料連接器，將AAM的特徵和區段匯入Platform、將它們與其他豐富資料（包括PII）結合，然後傳送給目標合作夥伴。 此影片會逐步帶您了解Real-Time CDP的AAM Data Connector設定。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?quality=12&learn=on)
 
