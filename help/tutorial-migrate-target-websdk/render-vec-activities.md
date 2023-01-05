@@ -2,10 +2,10 @@
 title: 呈現VEC活動 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何透過Adobe Target的Web SDK實作來擷取和套用可視化體驗撰寫器活動。
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 72eaefe62bc84c81bee4930218854ec1d83e99ab
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 8%
+source-wordcount: '885'
+ht-degree: 5%
 
 ---
 
@@ -183,27 +183,6 @@ Platform Web SDK為開發人員提供要求和轉譯內容的極大彈性。 請
 >[!TIP]
 >
 > 使用標籤功能（舊稱Launch）實作Web SDK時，標籤內嵌程式碼會取代上述的「Platform Web SDK基本程式碼」、「非同步載入的Platform Web SDK」和「設定Platform Web SDK」區段。 在規則中使用 [!UICONTROL 傳送事件] 動作類型與 [!UICONTROL 轉譯視覺個人化決策] 選項。
-
-## 使用Visual Editing Helper瀏覽器擴充功能建立活動
-
-適用於Google Chrome的Adobe Experience Cloud Visual Editing Helper瀏覽器擴充功能可讓您在Adobe Target可視化體驗撰寫器(VEC)中以可靠的方式載入網站，以快速撰寫網頁體驗和保證體驗品質。
-
-Visual Editing Helper瀏覽器擴充功能適用於使用at.js或Platform Web SDK的網站。
-
->[!IMPORTANT]
->
->新的Visual Editing Helper擴充功能取代了先前的 [Target VEC Helper瀏覽器擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 如果已安裝舊版VEC Helper擴充功能，則應先移除或停用該擴充功能，再使用Visual Editing Helper擴充功能。
-
-### 獲取並安裝Visual Editing Helper
-
-1. 導覽至 [Adobe Experience Cloud Chrome線上應用程式商店中的Visual Editing Helper瀏覽器擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
-1. 按一下「新增至」 **鉻黃** > **新增擴充功能**.
-1. 在Target中開啟VEC。
-1. 若要使用此擴充功能，請在 VEC 或 QA 模式中時，按一下 Chrome 瀏覽器工具列上的 Visual Editing Helper 瀏覽器擴充功能圖示 (Visual Editing 擴充功能圖示)。
-
-在Target VEC中開啟網站以支援編寫時，Visual Editing Helper會自動啟用。 此擴充功能沒有任何條件設定。 此擴充功能可自動處理所有設定，包括 SameSite Cookie 設定。
-
-如需 [Visual Editing Helper擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) 和 [疑難排解可視化體驗撰寫器](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
 
 接下來，了解如何要求和 [呈現表單式Target活動](render-form-based-activities.md).
 
