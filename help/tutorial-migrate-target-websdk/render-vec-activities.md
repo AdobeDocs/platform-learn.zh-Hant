@@ -2,9 +2,9 @@
 title: 呈現VEC活動 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何透過Adobe Target的Web SDK實作來擷取和套用可視化體驗撰寫器活動。
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 72eaefe62bc84c81bee4930218854ec1d83e99ab
+source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '883'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Target活動是使用可視化體驗撰寫器(VEC)或表單式撰寫器來設定。 Platform Web SDK可像at.js一樣，擷取VEC型活動並套用至頁面。 在移轉的這部分，您會：
 
-* 如有需要，請安裝Visual Editing Helper瀏覽器擴充功能
+* 安裝Visual Editing Helper瀏覽器擴充功能
 * 執行 `sendEvent` 使用Platform Web SDK呼叫以要求活動。
 * 更新來自您at.js實作的任何參考，這些實作會使用 `getOffers()` 執行目標 `pageLoad` 請求。
 
