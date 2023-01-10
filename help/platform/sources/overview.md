@@ -1,6 +1,6 @@
 ---
 title: 來源概觀
-description: 了解如何輕鬆將資料從Adobe、第一方和協力廠商應用程式內嵌至Platform的即時客戶個人檔案和資料湖。
+description: 了解如何輕鬆地將 Adobe 第一方和第三方應用程式的資料擷取到平台的即時客戶設定檔和資料湖。
 role: Data Engineer, Data Architect
 feature: Sources
 kt: 3800
@@ -9,7 +9,7 @@ exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
 source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 11%
+ht-degree: 31%
 
 ---
 

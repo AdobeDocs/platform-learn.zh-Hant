@@ -20,7 +20,7 @@ ht-degree: 54%
 
 ## 其他資源
 
-* [下載Firefox附加元件](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+* [下載Firefox附加元件](https://addons.mozilla.org/zh-TW/firefox/addon/adobe-experience-platform-dbg/)
 * [下載Chrome擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 * [Experience PlatformDebugger檔案](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html)
 * [對標籤實施除錯](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)

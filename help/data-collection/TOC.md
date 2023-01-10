@@ -30,7 +30,7 @@ ht-degree: 34%
 + Web SDK{#web-sdk}
    + [總覽](web-sdk/overview.md)
    + [示範](web-sdk/demo.md)
-   + [實作教學課程（含標籤）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
+   + [實作教學課程（含標籤）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant){target=&quot;_blank&quot;}
    + 同意{#consent}
       + [總覽](web-sdk/consent/overview.md)
       + [使用Adobe標準設定同意值](web-sdk/consent/set-consent-adobe.md)
