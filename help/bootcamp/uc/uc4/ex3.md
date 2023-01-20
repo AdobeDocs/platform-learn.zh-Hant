@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 402e032fe150745893528ffbd6a01533f30fb5d6
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1615'
 ht-degree: 2%
 
 ---
@@ -175,6 +174,8 @@ ht-degree: 2%
 | 交易 ID | 交易 ID |  |
 | URL(web.webPageDetails.URL) | URL |  |
 | 使用者代理 | 使用者代理 | 最近，工作階段 |
+| 層級 | 忠誠度等級 |  |
+| 點 | 客戶期限值 |  |
 
 ### 量度
 
@@ -278,7 +279,7 @@ ht-degree: 2%
 
 ![示範](./images/8-v2.png)
 
-在此索引標籤中，您可以修改一些重要設定以變更資料的處理方式。 我們先設定 **工作階段逾時** 30分鐘。 由於每個體驗事件的時間戳記，您可以在所有管道中延伸工作階段的概念。 例如，如果客戶造訪網站後呼叫客服中心，會發生什麼事？ 使用自訂工作階段逾時時，您在決定工作階段的內容以及該工作階段如何合併資料時，會缺乏彈性。
+在此索引標籤中，您可以修改一些重要設定以變更資料的處理方式。 我們先設定 **工作階段逾時** 30分鐘。 由於每個體驗事件的時間戳記，您可以在所有管道中延伸工作階段的概念。 例如，如果客戶造訪網站後呼叫客服中心，會發生什麼事？ 使用自訂工作階段逾時時，您在決定工作階段的內容，以及該工作階段如何合併資料方面，有很大的彈性。
 
 ![示範](./images/ext8.png)
 

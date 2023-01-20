@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: bc872b4fe440106475668eeb790242e1862875aa
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '755'
 ht-degree: 2%
 
 ---
@@ -48,9 +48,7 @@ Customer Journey Analytics將此解決方案整合在Platform資料之上。 強
 
 ![示範](./images/premptyprojects.png)
 
-首先，請務必在畫面的右上角選取正確的資料檢視。 在此範例中，要選取的資料檢視是 `vangeluwe - Omnichannel Data View`.
-
-![示範](./images/prdv.png)
+首先，請務必在畫面的右上角選取正確的資料檢視。 在此範例中，要選取的資料檢視是 `CJA Bootcamp - Omnichannel Data View`.
 
 接下來，您會儲存專案並命名。 您可以使用下列命令來儲存：
 
@@ -113,7 +111,7 @@ Customer Journey Analytics將此解決方案整合在Platform資料之上。 強
 
 | 標題 | 說明 |
 | ----------------- |-------------| 
-| 轉換率 | 轉換率 |
+| yourLastName — 轉換率 | yourLastName — 轉換率 |
 
 螢幕上會有類似的內容：
 

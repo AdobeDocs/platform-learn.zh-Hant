@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f63a92b9477b47edbf6a3fee162299491399ea56
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 3%
 
 ---
@@ -60,7 +59,7 @@ ht-degree: 3%
 
 ![示範](./images/cja7.png)
 
-現在，搜索並檢查 `Demo System - Event Dataset for Voice Assistants (Global v1.1)` 和 `Demo System - Event Dataset for Call Center (Global v1.1)`.
+現在，搜索並檢查 `Demo System - Profile Dataset for Loyalty (Global v1.1)` 和 `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
 那你就拿這個。 按&#x200B;**「下一步」**。
 
@@ -84,7 +83,7 @@ ht-degree: 3%
 
 如上所述，您可以為每個資料集設定不同的人員ID。 這可讓您在CJA中將多個原始資料集的不同資料集一起顯示。 想像一下，引入NPS或調查資料，這些資料將非常有趣，有助於理解背景以及為什麼發生了某些事情。
 
-只要人員ID欄位中的值對應，人員ID欄位的名稱就不重要。 假設我們 `email` 在一個資料集和 `emailAddress` 在另一個定義為「人員ID」的資料集中。 若 `delaigle@adobe.com` 是兩個資料集上「人員ID」欄位的相同值，CJA將能拼接資料。
+只要人員ID欄位中的值對應，人員ID欄位的名稱就不重要。 例如，如果人員ID為 `email` 在一個資料集和 `emailAddress` 在另一個中，和 `dnb-bootcamp@adobe.com` 是兩個資料集中「人員ID」欄位的相同值，CJA將能拼接資料。
 
 目前還有其他一些限制，例如，將匿名行為連結至已知。 請在此查看常見問題集： [常見問題集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html).
 
@@ -107,7 +106,7 @@ ht-degree: 3%
 | 資料集 | 人員 ID |
 | ----------------- |-------------| 
 | 示範系統 — 網站事件資料集（全域v1.1） | 電子郵件 |
-| 示範系統 — 語音助理事件資料集（全域v1.1） | 電子郵件 |
+| 示範系統 — 忠誠度設定檔資料集（全域v1.1） | 電子郵件 |
 | 示範系統 — 客服中心（全域v1.1）的事件資料集 | 電子郵件 |
 
 您也必須確定已針對每個資料集啟用下列選項：

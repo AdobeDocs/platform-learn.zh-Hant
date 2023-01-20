@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: b44d2a7ad44dd113889a7f996d7e33da46402b4a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1497'
 ht-degree: 1%
 
 ---
@@ -31,7 +30,7 @@ ht-degree: 1%
 
 開啟專案 `yourLastName - Omnichannel Analysis`.
 
-開啟專案並檢視資料時 `yourLastName - Omnichannel Analysis` 選取「 」，即可開始建立第一個視覺效果。
+開啟專案並檢視資料時 `CJA Bootcamp - Omnichannel Data View` 選取「 」，即可開始建立第一個視覺效果。
 
 ![示範](./images/prodataView1.png)
 
@@ -41,7 +40,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->請選擇日期範圍，如 **本週** 或 **本月**. 2022年9月19日已擷取最新可用資料。
+>19/09/2022上已擷取最新可用資料，請選取包含此日期的日期範圍。
 
 ![示範](./images/pro1.png)
 
@@ -77,9 +76,9 @@ ht-degree: 1%
 
 ![示範](./images/pro7b.png)
 
-## 檢視的5大產品
+## 檢視的4大產品
 
-5大產品檢視次數為何？
+4大產品檢視次數為何？
 
 請記得不時儲存專案。
 
@@ -88,7 +87,7 @@ ht-degree: 1%
 | Windows | Control + S |
 | Mac | Command + S |
 
-讓我們開始找到檢視的前5項產品。 在左側功能表中，尋找 **產品名稱** -Dimension。
+讓我們開始找出檢視的前4項產品。 在左側功能表中，尋找 **產品名稱** -Dimension。
 
 ![示範](./images/pro8.png)
 
@@ -102,7 +101,7 @@ ht-degree: 1%
 
 ![示範](./images/pro13.png)
 
-接下來，使用使用者代理進行劃分。 搜尋 **使用者代理** 並將其拖曳至品牌名稱下。
+接下來，使用忠誠度層級進行劃分。 搜尋 **忠誠度等級** 並將其拖曳至品牌名稱下。
 
 ![示範](./images/pro15.png)
 
@@ -114,7 +113,7 @@ ht-degree: 1%
 
 ![示範](./images/pro18.png)
 
-接下來，在表格中選取前5個 **使用者代理**  的資料列 **Google Pixel XL 32GB黑色智慧手機** > **Citi Signal**. 選取5列時，請保留 **CTRL** 按鈕（在Windows上）或 **命令** 按鈕(在Mac上)。
+接下來，在表格中選取3 **忠誠度等級**  的資料列 **Google Pixel XL 32GB黑色智慧手機** > **Citi Signal**. 選取3列時，請保留 **CTRL** 按鈕（在Windows上）或 **命令** 按鈕(在Mac上)。
 
 ![示範](./images/pro20.png)
 
@@ -154,7 +153,7 @@ ht-degree: 1%
 
 選取與上次練習相同的日期範圍。
 
-![示範](./images/prodatef.png)
+![示範](./images/pro1.png)
 
 你會看到這個。
 
@@ -216,7 +215,7 @@ ht-degree: 1%
 
 選取與上次練習相同的日期範圍。
 
-![示範](./images/pro0b.png)
+![示範](./images/pro1.png)
 
 尋找維度 **頁面名稱** 在左側的元件下：
 
@@ -297,7 +296,7 @@ ht-degree: 1%
 
 選取與上次練習相同的日期範圍。
 
-![示範](./images/pro24d.png)
+![示範](./images/pro1.png)
 
 按一下 **自由表格**.
 
