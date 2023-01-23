@@ -3,9 +3,9 @@ title: 使用Platform Web SDK設定Adobe Target
 description: 了解如何使用Platform Web SDK實作Adobe Target。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3779'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ Adobe建議非同步實作標籤，如Luma網站上所示。 不過，如果同�
 
 若要在資料流中設定Target:
 
-1. 前往 [資料收集](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;}介面
+1. 前往 [資料收集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
 1. 在左側導覽列中，選取 **[!UICONTROL 資料流]**
 1. 選取先前建立的 `Luma Web SDK` 資料流
 
@@ -184,7 +184,7 @@ Adobe建議針對每個開發、測試和生產資料流以不同方式設定Tar
 
 如果資料流中已啟用Target，則Target的視覺個人化決策會由Platform Web SDK傳送。 不過， _不會自動呈現_. 您必須修改全域頁面載入規則，才能啟用自動呈現。
 
-1. 在 [資料收集](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;}介面，開啟您用於本教學課程的標籤屬性
+1. 在 [資料收集](https://experience.adobe.com/#/data-collection){target="blank"} 介面，開啟您用於本教學課程的標籤屬性
 1. 開啟 `all pages - library load - AA & AT` 規則
 1. 選取 `Adobe Experience Platform Web SDK - Send event` 動作
 1. 啟用 **[!UICONTROL 轉譯視覺個人化決策]** 複選框
@@ -334,7 +334,7 @@ Adobe建議針對每個開發、測試和生產資料流以不同方式設定Tar
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [
