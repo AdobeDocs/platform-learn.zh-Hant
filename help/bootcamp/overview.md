@@ -3,7 +3,7 @@ title: Experience Makers Bootcamp
 description: 體驗製作者訓練營參與者的起點
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
+source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 1%
@@ -40,9 +40,9 @@ ht-degree: 1%
 
 14.00 - 15.30:用戶流1:&quot;贏取&quot;實踐
 
-15.00 - 15.15:插播
+15.30 - 15.45:插播
 
-15.15 - 17.00:用戶流2:&quot;註冊和上線&quot;實踐
+15.45 - 17.00:用戶流2:&quot;註冊和上線&quot;實踐
 
 18.00 - 19.00:體驗&quot;雞尾酒製作競賽&quot;
 
