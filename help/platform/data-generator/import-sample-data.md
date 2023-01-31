@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1650'
 ht-degree: 4%
 
 ---
@@ -50,6 +50,7 @@ Experience Platform業務使用者通常必須執行一系列步驟，包括識�
 
 1. 從下載資料夾中，移動 `platform-utils-main.zip` 檔案移至您電腦上的所需位置，然後加以解壓縮。
 1. 在 `luma-data` 資料夾，開啟所有 `json` 檔案，並取代所有例項 `_techmarketingdemos` 使用您自己的租用戶id，前面加底線。
+1. 開啟 `luma-offline-purchases.json` 在文字編輯器中更新所有時間戳記，使事件在上個月發生(例如，搜尋 `"timestamp":"2022-06` 並取代年月)
 1. 記下解壓縮資料夾的位置，如您稍後設定 `FILE_PATH` Postman環境變數：
 
    >[!NOTE]
