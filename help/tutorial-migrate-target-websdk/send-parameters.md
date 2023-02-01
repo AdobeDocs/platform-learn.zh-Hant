@@ -1,9 +1,9 @@
 ---
 title: 傳送參數 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何使用Web SDK將mbox、設定檔和實體參數傳送至Adobe Target。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,10 @@ ht-degree: 0%
 # 使用Platform Web SDK將參數傳送至Target
 
 Target實作因網站架構、業務需求和使用的功能而異。 大部分的Target實作包括傳遞各種參數以取得內容資訊、對象和內容建議。
+
+>[!WARNING]
+>
+> 2022年10月1日之後開始的Platform Web SDK實作可能需要使用 [預先擷取解決方案](prefetch-workaround.md) 以便成功傳遞本頁所述的參數。
 
 讓我們使用簡單的產品詳細資料頁面和訂單確認頁面，來示範將參數傳遞至Target時程式庫之間的差異。
 
@@ -57,17 +61,17 @@ Target實作因網站架構、業務需求和使用的功能而異。 大部分�
 </html>
 ```
 
-<!--
 
-Order Confirmation:
+
+訂購確認：
 
 ```HTML
 <!doctype html>
 <html>
 <head>
   <title>Order Confirmation</title>-->
-<!--Target parameters -->
-<!--  <script>
+  <!--Target parameters -->
+  <script>
     targetPageParams = function() {
       return {
         // Property token
@@ -80,9 +84,9 @@ Order Confirmation:
         "mbox3rdPartyId": "TT8675309",
       };
     };
-  </script>-->
-<!--Target at.js library loaded asynchonously-->
-<!--  <script src="/libraries/at.js" async></script>
+  </script>
+  <!--Target at.js library loaded asynchonously-->
+  <script src="/libraries/at.js" async></script>
 </head>
 <body>
   <h1 id="title">Order Confirmation</h1>
@@ -90,7 +94,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 
 ## 參數映射摘要
@@ -125,15 +128,12 @@ Platform Web SDK可提供單一一致的方式來傳送資料，而無須額外�
 | `cartIds` | `data.__adobe.target.cartIds` | 用於Target的購物車型建議演算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用於防止特定實體ID在建議設計中傳回。 |
 | `mbox3rdPartyId` | 在identityMap中設定。 請參閱 [使用客戶ID同步設定檔](#synching-profiles-with-a-customer-id) | 用於跨裝置和客戶屬性同步Target設定檔。 必須在 [資料流的目標配置](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `orderId` | `xdm.commerce.order.purchaseID` | 用於識別Target轉換追蹤的唯一順序。 |
+| `orderTotal` | `xdm.commerce.order.priceTotal` | 用於追蹤Target轉換和最佳化目標的訂單總計。 |
+| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>或<br> `xdm.productListItems[0-n].SKU` | 用於Target轉換追蹤和建議演算法。 請參閱 [實體參數](#entity-parameters) 以取得詳細資訊。 |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | 用於 [自訂分數](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) 活動目標。 |
 
 {style=&quot;table-layout:auto&quot;}
-
-<!--
-| `orderId` | `xdm.commerce.order.purchaseID` | Used for identifying a unique order for Target conversion tracking. | 
-| `orderTotal` | `xdm.commerce.order.priceTotal` | Used for tracking order totals for Target conversion and optimization goals. | 
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Used for Target conversion tracking and recommendations algorithms. Refer to the [entity parameters](#entity-parameters) section below for details. | 
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Used for the [custom scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activity goal. | -->
-
 
 ## 自訂參數
 
@@ -245,12 +245,12 @@ alloy("sendEvent", {
 >
 >若 `commerce` 欄位群組已使用，且 `productListItems` 陣列會包含在XDM裝載中，然後是第一個 `SKU` 此陣列中的值對應至 `entity.id` 以增加產品檢視。
 
-<!-- 
-## Purchase parameters
 
-Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Web SDK implementation, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
+## 購買參數
 
-at.js example using `targetPageParams()`:
+成功訂單後，購買參數會傳遞至訂單確認頁面，並用於目標轉換和最佳化目標。 透過Platform Web SDK實作，這些參數和會自動從作為 `commerce` 欄位群組。
+
+at.js範例使用 `targetPageParams()`:
 
 ```JavaScript
 targetPageParams = function() {
@@ -262,9 +262,9 @@ targetPageParams = function() {
 };
 ```
 
-Purchase information is passed to Target when the `commerce` field group has `puchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
+購買資訊會傳遞至Target，當 `commerce` 欄位組具有 `puchases.value` 設為 `1`. 訂單ID和訂單總計會自動從 `order` 物件。 若 `productListItems` 陣列存在，則 `SKU` 值用於 `productPurchasedId`.
 
-Platform Web SDK example using `sendEvent` command:
+平台Web SDK範例，使用 `sendEvent` 命令：
 
 ```JavaScript
 alloy("sendEvent", {
@@ -289,9 +289,8 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->The `productPurchasedId` value can also be passed as a comma-separated list of entity IDs under the `data` object.
+>此 `productPurchasedId` 值也可以以逗號分隔的實體ID清單形式，在 `data` 物件。
 
--->
 
 ## 使用客戶ID同步設定檔
 
@@ -413,8 +412,8 @@ alloy("sendEvent", {
 </html>
 ```
 
-<!--
-Order Confirmation:
+
+訂購確認：
 
 ```HTML
 <!doctype html>
@@ -422,9 +421,9 @@ Order Confirmation:
 <head>
   <title>Order Confirmation</title>
 
--->
-<!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
-<!--
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+
   <script>
     !function(e,a,n,t){var i=e.head;if(i){
     if (a) return;
@@ -432,21 +431,20 @@ Order Confirmation:
     o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
--->
-<!--Platform Web SDK base code-->
-<!--
+
+  <!--Platform Web SDK base code-->
+
   <script>
     !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
     []).push(o),n[o]=function(){var u=arguments;return new Promise(
     function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
     (window,["alloy"]);
   </script>
--->
-<!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
-<!--  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
--->
-<!--Configure Platform Web SDK and send event-->
-<!--  <script>
+  <!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
+  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
+
+  <!--Configure Platform Web SDK and send event-->
+  <script>
     alloy("configure", {
       "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
       "orgId":"ADB3LETTERSANDNUMBERS@AdobeOrg"
@@ -483,7 +481,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 接下來，學習如何 [追蹤Target轉換事件](track-events.md) 搭配Platform Web SDK。
 

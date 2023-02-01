@@ -1,9 +1,9 @@
 ---
 title: 更新對象和設定檔指令碼 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何更新Adobe Target對象和設定檔指令碼，以與Experience PlatformWeb SDK相容。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,11 @@ ht-degree: 0%
 * 更新使用mbox參數的對象
 * 更新使用mbox參數的設定檔指令碼
 * 更新任何選件和活動時都會使用mbox參數代號取代(例如 `${mbox.parameter_name}`)
+
+
+>[!WARNING]
+>
+> 2022年10月1日之後開始的Platform Web SDK實作可能需要使用 [預先擷取解決方案](prefetch-workaround.md) 以便成功使用本頁所述的部分功能。
 
 ## 調整對象
 
