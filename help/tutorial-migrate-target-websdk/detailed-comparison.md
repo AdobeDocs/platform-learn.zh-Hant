@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x與Web SDK的比較 |將Target從at.js 2.x移轉至Web SDK
 description: 了解at.js 2.x與Platform Web SDK之間的差異，包括功能、函式、設定和資料流程。
-source-git-commit: f690664b187c5b09f1243ce46877da6fad38efa3
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '2164'
+source-wordcount: '2154'
 ht-degree: 8%
 
 ---
@@ -43,8 +43,8 @@ ht-degree: 8%
 | 遠端選件 | 支援 | 支援 |
 | 重新導向選件 | 支援 | 支援.不過，不支援從具有Platform Web SDK的頁面重新導向至具有at.js的頁面（且方向相反）。 |
 | 裝置上決策 | 支援 | 目前不支援 |
-| 預先擷取mbox | 支援 | 部分支援。 請連絡客戶支援以啟用此功能，因為它會變更活動預先擷取行為。 |
-| 自訂事件 | 支援 | 不支援。請參閱 [公共路線圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) 的URL。 |
+| 預先擷取mbox | 支援 | 2022年10月1日之後開始的所有新移轉均預設啟用 |
+| 自訂事件 | 支援 | 不支援。請參閱 [公共路線圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 的URL。 |
 | 回應 Token | 支援 | 支援.請參閱 [專用回應token檔案](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) at.js和Platform Web SDK之間的程式碼範例和差異 |
 | 資料提供者 | 支援 | 不支援。自訂程式碼可用來觸發Platform Web SDK `sendEvent` 命令。 |
 
@@ -79,7 +79,7 @@ ht-degree: 8%
 | `trackEvent()` 和 `sendNotifications()` | 使用 `sendEvent` 命令 [特定 `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) 設定：<br><br>`decisioning.propositionDisplay` 代表活動轉譯<br><br>`decisioning.propositionInteract` 代表使用者與活動的互動，例如滑鼠點按。 |
 | `targetGlobalSettings()` | 沒有直接等同的。 請參閱 [Target設定比較](detailed-comparison.md) 以取得其他詳細資訊。 |
 | `targetPageParams()` 和 `targetPageParamsAll()` | 傳入 `xdm` 選項 `sendEvent` 命令已對應至Target mbox參數。 由於mbox參數是使用序列化點記號來命名，因此移轉至Platform Web SDK可能需要更新現有對象和活動，才能使用新的mbox參數名稱。 <br><br>作為 `data.__adobe.target` 的 `sendEvent` 命令映射到 [Target設定檔和Recommendations特定參數](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| at.js 自訂事件 | 不支援。請參閱 [公共路線圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) 的URL。 [回應Token](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) 會公開為 `propositions` 回應 `sendEvent` 呼叫。 |
+| at.js 自訂事件 | 不支援。請參閱 [公共路線圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 的URL。 [回應Token](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) 會公開為 `propositions` 回應 `sendEvent` 呼叫。 |
 
 ## at.js設定和Platform Web SDK等效值
 

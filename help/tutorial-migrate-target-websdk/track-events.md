@@ -1,9 +1,9 @@
 ---
 title: 追蹤事件 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何使用Adobe Target Web SDK追蹤Experience Platform轉換事件。
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '654'
 ht-degree: 0%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 0%
 * 不需要任何設定的自動追蹤事件
 * 購買轉換事件，應因應最佳實務Platform Web SDK實作而調整
 * 需要更新程式碼的非購買轉換事件
-
->[!WARNING]
->
-> 2022年10月1日之後開始的Platform Web SDK實作可能需要使用 [預先擷取解決方案](prefetch-workaround.md) 以便成功追蹤本頁所述的部分事件。
 
 ## 目標追蹤比較
 

@@ -11,9 +11,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 hide: true
 kt: 11159
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '87'
 ht-degree: 5%
 
 ---
@@ -48,5 +48,3 @@ ht-degree: 5%
 + [驗證實作](validate.md)
 
 + [除錯目標](debugging.md)
-
-+ [預先擷取因應措施](prefetch-workaround.md)

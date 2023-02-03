@@ -1,9 +1,9 @@
 ---
 title: 傳送參數 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何使用Web SDK將mbox、設定檔和實體參數傳送至Adobe Target。
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -11,10 +11,6 @@ ht-degree: 0%
 # 使用Platform Web SDK將參數傳送至Target
 
 Target實作因網站架構、業務需求和使用的功能而異。 大部分的Target實作包括傳遞各種參數以取得內容資訊、對象和內容建議。
-
->[!WARNING]
->
-> 2022年10月1日之後開始的Platform Web SDK實作可能需要使用 [預先擷取解決方案](prefetch-workaround.md) 以便成功傳遞本頁所述的參數。
 
 讓我們使用簡單的產品詳細資料頁面和訂單確認頁面，來示範將參數傳遞至Target時程式庫之間的差異。
 
