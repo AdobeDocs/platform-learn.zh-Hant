@@ -1,9 +1,9 @@
 ---
 title: 取代程式庫 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何將Adobe Target實作從at.js 2.x移轉至Adobe Experience Platform Web SDK。 主題包括程式庫概觀、實作差異和其他值得注意的圖說文字。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1708'
 ht-degree: 1%
 
 ---
@@ -207,6 +207,12 @@ Adobe建議以非同步方式實作Platform Web SDK，以獲得最佳的整體�
 
 每次載入頁面時都必須設定Platform Web SDK。 此 `configure` 命令必須一律為第一個名為的SDK命令。 下列範例假設在單一部署中將整個網站升級至Platform Web SDK:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+此 `edgeConfigId` 是 [!UICONTROL 資料流ID]
+
 ```JavaScript
 alloy("configure", {
   "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
@@ -214,7 +220,19 @@ alloy("configure", {
 });
 ```
 
+>[!TAB 標籤]
+
+在標籤實作中，許多欄位會自動填入，或可從下拉式功能表中選取。 請注意，不同的平台 [!UICONTROL 沙箱] 和 [!UICONTROL 資料流] 可針對每個環境選取。 資料流會根據發佈程式中標籤程式庫的狀態而變更。
+
+![設定Web SDK標籤擴充功能](assets/tags-config.png)
+>[!ENDTABS]
+
 如果您打算逐頁從at.js移轉至Platform Web SDK，則需要下列設定選項：
+
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("configure", {
@@ -225,9 +243,14 @@ alloy("configure", {
 });
 ```
 
+>[!TAB 標籤]
+
+![設定Web SDK標籤擴充功能移轉選項](assets/tags-config-migration.png)
+>[!ENDTABS]
+
 以下概述與Target相關的值得注意的設定選項：
 
-| 選項 | 說明 | 範例 值 |
+| 選項 | 說明 | 範例值 |
 | --- | --- | --- |
 | `edgeConfigId` | 資料流ID | `ebebf826-a01f-4458-8cec-ef61de241c93` |
 | `orgId` | Adobe Experience Cloud組織ID | `ADB3LETTERSANDNUMBERS@AdobeOrg` |
