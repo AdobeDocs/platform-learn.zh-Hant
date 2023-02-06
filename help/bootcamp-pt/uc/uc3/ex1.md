@@ -5,34 +5,36 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '601'
 ht-degree: 0%
 
 ---
 
-# 3.1使用行動應用程式並觸發信標項目
+# 3.1使用aplicativo móvel e acione um信標
 
-## 安裝行動應用程式
+## 安裝至aplicativo móvel
 
 安裝應用程式之前，您必須啟用 **追蹤** 在iOS裝置上。 若要這麼做，請前往 **設定** > **隱私權與安全性** > **追蹤** 並確保 **允許應用程式要求追蹤**.
 
+安裝程式，必要的 **拉斯特里門托** 不是塞烏·迪斯蒂沃·iOS。 帕拉伊索，阿塞斯 **庫帕松伊斯** > **私人魚** > **拉斯特里門托** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**.
+
 ![DSN](./../uc3/images/app4.png)
 
-前往Apple App Store並搜尋 `aepmobile-bootcamp`. 按一下 **安裝** 或 **下載**.
+Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. 小組 **安裝** 歐 **下載**.
 
 ![DSN](./../uc3/images/app1.png)
 
-安裝應用程式後，按一下 **開啟**.
+安裝程式，小組 **開啟**.
 
 ![DSN](./../uc3/images/app2.png)
 
-按一下&#x200B;**「確定」**。
+小組 **確定**.
 
 ![DSN](./../uc3/images/app9.png)
 
-按一下 **允許**.
+小組 **佩米特爾**.
 
 ![DSN](./../uc3/images/app3.png)
 
@@ -40,92 +42,93 @@ ht-degree: 0%
 
 ![DSN](./../uc3/images/app7.png)
 
-按一下 **使用應用程式時允許**.
+小組 **阿普利卡蒂沃山**.
 
 ![DSN](./../uc3/images/app8.png)
 
-按一下 **允許**.
+小組 **佩米特爾**.
 
 ![DSN](./../uc3/images/app5.png)
 
-您現在已可在應用程式、首頁上完成客戶歷程的準備。
+Agora você está no aplicativo, na página inicial, pronto(a)para verificar to da a jornada do cliente。
 
 ![DSN](./../uc3/images/app12.png)
 
-## 客戶歷程流程
+## 克呂克索 — 達喬納達 — 杜克里恩特
 
-首先，您需要登入。 按一下「**登入**」。
+普里米拉門特，你必須有法澤才能登錄。 小組 **登入**.
 
 ![DSN](./images/app13.png)
 
-在先前的練習中建立帳戶後，您在網站上看到了這個。 您現在需要重複使用在應用程式中建立之帳戶的電子郵件地址才能登入。
+Depois de criar sua與excecios anteriores, issoé exibido no site. Agoraé equisário rutilizar o endereço de e-mail da conta que você crio u no aplicativo para fazer o login.
 
 ![示範](./images/pv1.png)
 
-在此處輸入您在網站上使用的電子郵件地址，然後按一下 **登入**.
+Digite o endereço de e-mail que você usou no site e clique e em **登入**.
 
 ![DSN](./images/app14.png)
 
-然後您會收到登入的確認資訊，並收到推播通知。
+Você receberá uma uma confirmação de que está conectado e receberá uma notifação push.
 
 ![DSN](./images/app15.png)
 
-返回應用程式中的首頁，您會看到其他功能出現。
+Retren para a páginanicial do aplicativo e os recursos adicionais irão aparecer.
 
 ![DSN](./images/app17.png)
 
-首先，請前往 **產品**. 在此範例中，按一下任何產品 **咖啡**.
+普里梅羅，阿塞斯 **產品**. Cliqueem qualquer producto，不是樣本： **咖啡**.
 
 ![DSN](./images/app19.png)
 
-您會看到 **咖啡** 產品頁面。
+我會做的 **咖啡** 沒有阿普利卡蒂沃。
 
 ![DSN](./images/app20.png)
 
-您現在會在離線商店位置模擬信標項目事件。 模擬此動作的目標是在店內畫面上個人化客戶體驗。 為了視覺化店內體驗，已建立一個頁面，以動態顯示與剛進入商店之客戶相關的資訊。
+Agora você irá simular um evento de entrada de sinalização（信標）em um local de armazenamento offline。 O objetivo da simulaçãoé personalizar a experiencia do cliente nas telas da loja. Para visualizar a experiencecia na loja, foi criada uma página que mostrará de forma dinâmica, as informações relates para o cliente a o entrar na loja.
 
-繼續操作之前，請在您的電腦上開啟此網頁： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+繼續，繼續，電腦： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-然後您會看到：
+Em seguida，一個被禁慾的女孩：
 
 ![DSN](./images/screen1.png)
 
-接下來，返回首頁。 按一下 **信標** 表徵圖。
+我要說，我要說。 小集團 **信標**.
 
 ![DSN](./images/app23.png)
 
 你會看到這個。 首先，選取 **Bootcamp螢幕信標** 然後按一下 **登入** 按鈕。 這可讓您模擬信標項目。
+阿波斯·埃塔帕，塞金特·塞拉·埃西比多。 普里米羅，選優 **Bootcamp螢幕信標** e幫 **恩特拉達**. Isso permitirá que você simule uma entrada de sinalização com信標。
 
 ![DSN](./images/app21.png)
 
-現在，查看店內螢幕。 在5秒內，您會看到您最後檢視的產品出現在該處。
+阿戈拉確認了一條線。 Você verá oúltimo productto visualizado aparecer nessa em 5 segundos。
 
 ![DSN](./images/screen2.png)
 
-然後，返回 **產品**. 在此範例中，按一下任何產品 **灘毯灘**.
+Em seguida, Retorne para **產品**. Cliqueem qualquer producto，不是樣本： **灘毯灘**.
 
 ![DSN](./images/app22.png)
 
-接下來，返回首頁。 按一下 **信標** 表徵圖。
+我要說，我要說。 小集團 **信標**.
 
 ![DSN](./images/app23.png)
 
-你會看到這個。 首先，選取 **Bootcamp螢幕信標** 然後按一下 **登入** 按鈕。 這可讓您模擬信標項目。
+Em seguida, selecione **Bootcamp螢幕信標** e幫 **恩特拉達** 諾瓦門特。 Isso permitirá que você simule uma entrada de sinalização（信標）。
 
 ![DSN](./images/app21.png)
 
-現在，再看看店內螢幕。 在5秒內，您會看到您最後檢視的產品出現在該處。
+阿哥拉，確認是新手。 Você verá oúltimo productto visualizado aparecer nessa em 5 segundos。
 
 ![DSN](./images/screen3.png)
 
-現在，我們也可以在網站上查看您的設定檔檢視器。 您會看到許多新增到此處的事件，只是為了顯示已收集並儲存與客戶的任何互動。Adobe Experience Platform
+阿戈拉，在Perfil的Visualizador de Seu站點上。 Você verá muitos eventos que for am adicionados, para mostrar quer interação com um cliente coletada e armazenada na Adobe Experience Platform。
 
 ![DSN](./images/screen4.png)
 
-在下個練習中，您將設定並測試您自己的信標項目歷程。
+Nos próximos mextricios, você irá configurar e testar sua própria jornada de entrada do beacon.
 
-下一步： [3.2建立事件](./ex2.md)
+埃塔帕： [3.2 Crie seu evento](./ex2.md)
 
-[返回用戶流3](./uc3.md)
+[烏薩里奧3](./uc3.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

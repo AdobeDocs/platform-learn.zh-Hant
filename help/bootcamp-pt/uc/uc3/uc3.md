@@ -5,43 +5,43 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 3%
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
-# 3.將物理和數字結合
+# 3. Retornar para Todos os Módulos
 
-## 學習目標
+## 阿普倫迪薩多河
 
-## 先決條件
+## 普雷雷基托斯
 
-- 存取 Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- 存取Adobe Experience Platform資料收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 存取示範網站
+- 如Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acessoà coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- 阿塞索奧地點
 
 >[!IMPORTANT]
 >
->本教學課程旨在促進特定的bootcamp格式。 它使用您可能沒有存取權的特定系統和帳戶。 即使沒有訪問權，我們仍然認為，通過閱讀這些非常詳細的內容，您仍可以學到很多。 如果您是其中一個訓練營的參與者，並且需要您的訪問憑據，請聯繫您的Adobe代表，該代表將向您提供所需資訊。
+>教學課程，從格式上講，特別是從bootcamp。 Sistemas e contas secíficos aos quais você pode não ter acesso são utidas neste教學課程。 Mesmo sem acesso, você ainda pode aprende muito com a leitura deste contesúdo detalhado。 請參加bootcamp e precisa das credencias de acesso，將em contato com seu代表daAdobe收件人作為必要資訊。
 
-## 練習
+## 雷孔西奧斯
 
-[3.1使用行動應用程式並觸發信標項目](./ex1.md)
+[3.1使用aplicativo móvel e acione sinalizador信標](./ex1.md)
 
-在本練習中，您將學習如何設定事件。
+不要練習，不要忘記，我會配置。
 
-[3.2建立事件](./ex2.md)
+[3.2 Crie seu evento](./ex2.md)
 
-在本練習中，您將學習如何設定事件。
+不要練習，不要忘記，我會配置。
 
-[3.3建立您的歷程和推播通知](./ex3.md)
+[3.3 Crie sua jornada e notificação push](./ex3.md)
 
-在本練習中，您將學習如何設定歷程和推播通知，以及如何將事件和訊息連結至該歷程。
+Neste mextricício, você irá aprender como configurar uma jornada e uma notifação pus e como vincul seu evento e mensagem para a jornada。
 
-[3.4測試您的歷程](./ex4.md)
+[3.4聖若那達](./ex4.md)
 
-在本練習中，您將學習如何設定歷程，以及如何將事件和訊息連結至該歷程。
+不要再做練習，不要再做了。
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

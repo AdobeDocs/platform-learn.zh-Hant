@@ -5,82 +5,83 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
 
 # 4.1Customer Journey Analytics101
 
-## 目標
+## 奧比蒂沃斯
 
-- 了解CJA應用程式服務
-- 了解如何定位CJA
-- 了解CJA工作流程：從資料連接到深入分析
+- 對CJA的理解
+- Entenda qualé o papel do CJA
+- CJA的協定或工作流程：dados aos見解
 
-## 4.1.1什麼是Customer Journey Analytics?
+## 4.1.1是Customer Journey Analytics?
 
-Customer Journey Analytics(CJA)為商業情報和資料科學團隊提供工具套件，以匯整和分析跨管道資料（線上和離線）。 CJA中的功能可提供內容，並清晰明瞭複雜的多管道客戶歷程。 提供的內容可提供可操作的深入分析，讓您從客戶轉換程式中去除棘手問題，並針對最重要的時刻設計和提供優越體驗。
+Customer Journey Analytics(CJA)forrence uma介面em que os times de Analytics、 Negócios e Tecnologia conseguem unir todos os dados da companisa analysira a jornada cross-channel(online e offline)do cliente de ponta a ponta。 O CJAé capaz de fornecer contextto e clareza para essa jornada, trazendo uma visão acionável em cima dificuldades no processo de conversão e possibilitando o planejamentto de experincias relatientes e personalizadas nos matos相關。
 
-CJA將Analysis Workspace帶上Adobe Experience Platform。 Adobe Experience Platform是溝通與協調的大腦，有了CJA，品牌現在可以將所有資料進行情境化和視覺化，讓業務和分析團隊能夠透過分析完整的線上至離線客戶歷程從中學習。
+CJA,Analysis Workspace,Adobe Experience Platform。 A s Adobe Experience Platform e o cérebro da comunicação e da orquestração e, com o CJA, as marcas agora podem contextralizar e visualizar todos es dados, paque as e e de negócios e insights possam aprender com eles, analisando toda a jornada on-line para of-off do cliente。
 
-透過Analysis Workspace的拖放、點按和方便使用的UI，業務和Insight團隊可以與CJA對話、提出問題並即時取得解答。
+作為設備，e insights podem converar com o CJA, fazer perguntas e obter respostas em tempo real com a interface do usário de arrastar e soltar, apontar e clicar e fácil de usar do Analysis Workspace。
 
 ![示範](./images/cja-adv-analysis1.png)
 
-## 4.1.2主要優點
+## 4.1.2主要優勢
 
-客戶的三大優點：
+Os três principais受益於para os clients são:
 
-- 讓每個人都能查看深入分析的能力（例如讓資料存取大眾化）
-- 可在內容歷程中查看客戶（亦即資料可依序視覺化，橫跨線上和離線多個管道）
-- 不需要就能駕馭資料的力量（亦即，它可讓一般人使用資料來發掘深入見解及分析，以利行銷活動）
+- 一種能力的解釋 — 見解 — 以及見解（你的，民主化者，或者aos dados）。
+- cliente de ver o cliente em jornada與情境相關(ou seja, os dados podem ser visualizados sequencialmente, abrangend múltiplos canais on-line e)。
+- A capaidade de approveitar o poder dos dados sem que haja a a secsidade(ou seja, permite que indvíduos usem dados para desbloquear insights e análises profundas para ativação de marketing)。
 
-## 4.1.3為什麼選擇Customer Journey Analytics?
+## 4.1.3 ## 4.1.3是否Customer Journey Analytics?
 
-CJA不是要取代目前的BI應用程式，例如Power BI、Microstrategy、Locker或Tableau。 這些BI應用程式的用意是視覺化資料，以建立公司控制面板，讓組織中的每個人都能快速查看重要量度。\
-CJA的目標是為行銷和業務團隊帶來分析功能，使其成為這些角色的「必備」分析工具。
+O CJA não se destina a suctiir um applicativo de BI atual, comoPower BI, Microstrategy, Locker ou Tableau。 O objetivo des aplicativos de BIé visualizar dados para criar painéis corativos para que to dos em uma organizas as métricas importantes rapidamente. O objetivo do CJA e trazer poder de análise para as as essoas de Marketing e Negócios, tornando-o uma ferramenta de análise obrigatória para esssoas
 
-傳統上，BI應用程式無法實現真正的客戶智慧：
 
-- 他們無法進行歸因，也無法進行客戶歷程分析。
-- BI應用程式需要提前了解問題
-- 互動式查詢受資料庫結構的限制
-- 需要SQL技能。
-- BI應用程式無法讓您詢問為何發生某些情況。
-- BI應用程式與客戶接觸點沒有直接連線。
 
-由於上述原因，業務用戶和分析師幾乎立即陷入死衚衕，導致分析成本昂貴、速度慢、不靈活，而且與行動系統脫節。
+Tradicionalmente, os aplicativos de BI têm sido incapazes de permitir a verdadeira inteligência do cliente:
 
-透過CJA，您可以使用離線和線上資料，以360度檢視客戶歷程，並擁有適當的工具來縮短深入分析的時間，讓商務使用者在了解某件事發生的原因及如何回應時不受影響。
+- Eles não podem fazer atribuição e não fazem análises de jornada do cliente.
+- Os aplicativos de BI precisam saber a pergunta com antecedência
+- 作為咨詢機構，聖里瑪塔斯，pela estrutura do banco de dados
+- SQL的必要性。
+- Os aplicativos de BI não permitem que você pergunte o motio de um acontecimento.
+- Os aplicativos de BI não têm conexão direta com os pontos de contato do cliente。
+
+波坦托， usuários de negócios e analistas chegam a becos sem saída quase imediatamente, tornando a análise cara, lenta, inflexível e desconectada dos sistemas de ação.
+
+CJA電話：com voê pode ter uma visão completa da jornada do cliente, usando dados offline e, com as ferramentas certas para reduzir o tempo de insight, tornando os usurios susuários de negócios independentes para enter por que algo aconteceu e como isso。
 
 ![示範](./images/cja-use-case.png)
 
-## 4.1.4了解Customer Journey Analytics工作流程
+## 4.1.4全面Customer Journey Analytics
 
-在開始下一個練習之前，請務必了解將資料從Adobe Experience Platform匯入CJA所需的步驟，以便加以視覺化並獲得深入見解。 這就是我們所謂的CJA Workflow。 讓我們看一下：
+Antes de iniciar os próximos extrecios, essencial comprender quais etapas são equiárias para trazer dados da Adobe Experience Platform para o CJA para visualizá los e obter alguns insights profundos. 不是說CJA有什麼不妥。 Vamos verificar:
 
 ![示範](./images/cja-work-flow.jpg)
 
-開始上述步驟之前，請別忘記步驟0，這是為了了解Adobe Experience Platform中可用的資料。
+Antes de iniciar as etapas acima, não se esqueça da etapa 0, que e creender os dados que estão disponíveis na Adobe Experience Platform。
 
-**垃圾進去，垃圾出去。** 記得嗎？ 您必須清楚了解哪些資料可供使用，以及Adobe Experience Platform中的結構設定方式。 了解Adobe Experience Platform中的資料不僅可讓資料連線部分更輕鬆，在建立視覺效果和進行分析時也能更輕鬆。
+**垃圾進去，垃圾出去。** Você deve ter uma ideia clara de quais dados estão disponíveis e como os esquemas na Adobe Experience Platform são configurados. Comprender os dados que estão na Adobe Experience Platform facilará as coisas, não só na parte de conexão de dados, mas também na hora de construir visualizações e fazer análises。
 
-## 4.1.5步驟0:了解Adobe Experience Platform結構和資料集
+## 4.1.5埃塔帕0:完整的量度資料集da Adobe Experience Platform
 
-前往此URL登入Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+Faça登入Adobe Experience Platform會取得URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
-登入後，您會登陸Adobe Experience Platform首頁。
+登入Depois de fazer，是Página inical da Adobe Experience Platform。
 
 ![資料擷取](../uc1/images/home.png)
 
-繼續之前，您需要選取 **沙箱**. 要選取的沙箱已命名 ``Bootcamp``. 您可以按一下文字 **[!UICONTROL 生產]** 在螢幕的右上角。 選取適當的沙箱後，畫面會變更，現在您就位於專用的沙箱中。
+連續、前輪 **沙箱**. 不要用沙箱做選擇 ``Bootcamp``. Você pode fazer isso clicando noícone **[!UICONTROL 生產]** 沒有上司迪雷托達特拉。 Depois de selecionar o sandbox a propriado, você verá a mudando e agora você está em seu sandbox depidado。
 
 ![資料擷取](../uc1/images/sb1.png)
 
-請參閱Adobe Experience Platform中的這些結構和資料集。
+Verifique會在資料集中處理結構描述(Adobe Experience Platform)。
 
 | 資料集 | 方案 |
 | ----------------- |-------------| 
@@ -88,23 +89,26 @@ CJA的目標是為行銷和業務團隊帶來分析功能，使其成為這些�
 | 示範系統 — 客服中心（全域v1.1）的事件資料集 | 示範系統 — 客服中心（全域v1.1）的事件結構 |
 | 示範系統 — 語音助理事件資料集（全域v1.1） | 示範系統 — 語音助理的事件結構（全域v1.1） |
 
-請務必至少檢查下列項目：
+Certifique-se de ter verificado menos:
 
 - 身分：CRMID, phoneNumber, ECID，電子郵件。 哪些身分是主要識別碼，哪些是次要識別碼？
 您可以開啟結構並查看物件，以尋找識別碼 `_experienceplatform.identification.core`. 查看結構 [示範系統 — 網站事件結構（全域v1.1）](https://experience.adobe.com/platform/schema).
 
+- 身份：CRMID, phoneNumber, ECID，電子郵件。 Quais認同são os identification ados primários, quais são os identification ados secundários?
+Você pode encontrar os identification abrindo um schema e observando o objeto `_experienceplatform.identification.core`. Verifique o schema [示範系統 — 網站事件結構（全域v1.1）](https://experience.adobe.com/platform/schema).
+
 ![示範](./images/identity.png)
 
-- 探索架構內的商務物件 [示範系統 — 網站事件結構（全域v1.1）](https://experience.adobe.com/platform/schema).
+- 探索objeto de comércio dentro do schema [示範系統 — 網站事件結構（全域v1.1）](https://experience.adobe.com/platform/schema).
 
 ![示範](./images/commerce.png)
 
-- 預覽所有 [資料集](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) 並查看資料
+- 視覺化todos os [資料集](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) e verifique os dados
 
-您現在已可以開始使用Customer Journey AnalyticsUI。
+Agora você está ponto para começar a usar a interface do usuário doCustomer Journey Analytics。
 
-下一步： [4.2連線Adobe Experience Platform資料集(Customer Journey Analytics)](./ex2.md)
+埃塔帕： [控制資料集da Adobe Experience Platform無Customer Journey Analytics](./ex2.md)
 
-[返回用戶流4](./uc4.md)
+[烏薩里奧河畔雷托爾](./uc4.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

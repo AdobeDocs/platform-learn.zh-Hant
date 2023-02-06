@@ -5,264 +5,262 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '1502'
+source-wordcount: '1579'
 ht-degree: 1%
 
 ---
 
-# 4.5使用Customer Journey Analytics的視覺效果
+# 4.5 Visualização usando oCustomer Journey Analytics
 
-## 目標
+## 奧比蒂沃斯
 
-- 了解Analysis Workspace UI
-- 了解讓Analysis Workspace如此不同的功能。
-- 了解如何使用Analysis Workspace在CJA中分析
+- 了解UI do Analysis Workspace
+- Conheça alguns會經常發生Analysis Workspace的不同。
+- Aprenda analysiras o CJA usando o Analysis Workspace
 
 ## 內容
 
-在本練習中，您將在CJA中使用Analysis Workspace來分析產品檢視、產品漏斗、流失率等。
+Neste mextricio, você usará o Analysis Workspace no CJA paranalisar visualizações de productos, funis de produtos, rotatividade等。
 
-讓我們使用您在 [4.4Analysis Workspace中的資料準備](./ex4.md)，請前往 [https://analytics.adobe.com](https://analytics.adobe.com).
+我們要說  [4.4準備工作：Analysis Workspace](./ex4.md), então acesse [https://analytics.adobe.com](https://analytics.adobe.com).
 
 ![示範](./images/prohome.png)
 
-開啟專案 `yourLastName - Omnichannel Analysis`.
+阿布拉塞烏普羅耶托 `yourLastName - Omnichannel Analysis`.
 
-開啟專案並檢視資料時 `yourLastName - Omnichannel Analysis` 選取「 」，即可開始建立第一個視覺效果。
+Com seu projeto aberto e Visualização de dados `yourLastName - Omnichannel Analysis` selecionado, você está pronto para começar a construir suas primeiras visualizações.
 
 ![示範](./images/prodataView1.png)
 
-## 我們每天有多少個產品檢視
+## Quantas visualizações de productemos diariamente?
 
-首先，我們需要選取正確的日期來分析資料。 前往畫布右側的日曆下拉式清單。 按一下，然後選取適用的日期範圍。
+Em primeiro lugar, precisamos selecionar作為資料。 Acesse o menu suspenso do calendário no lado direito da tela. Clickue nele e selecione o intervalo de datas aplicável.
 
 >[!IMPORTANT]
 >
->請選擇日期範圍，如 **本週** 或 **本月**. 2022年9月19日已擷取最新可用資料。
+>選擇資料 **本週** 歐 **本月**. 2022年，Os dados disponíveis mais會被吸收。
 
 ![示範](./images/pro1.png)
-
-在左側功能表（元件區域）中，尋找計算量度 **產品檢視**. 選取它，然後將它拖放至自由表格右上方的畫布。
+沒有菜單可以叫做Lado Esquerdo(Área de componentes)，以Métricas計數器 **產品檢視**. Selectione-as e arraste e solte na tela, no canto super direito da tabela de forma livre.
 
 ![示範](./images/pro2.png)
 
-自動維度 **日** 將新增，以建立您的第一個表格。 現在，你可以看到你的問題被即時回答。
+自動修改維度 **日** 塞拉·阿迪西奧納達·帕拉·克里亞·蘇阿·普里米拉·塔貝拉。 Agora você pode ver sua pergunta respondida imediatamente.
 
 ![示範](./images/pro3.png)
 
-接下來，以滑鼠右鍵按一下量度摘要。
+Em seguida, botão direito的pricus com do mouse no resuso da métrica.
 
 ![示範](./images/pro4.png)
 
-按一下 **視覺化** 然後選取 **折線圖** 視覺效果。
+小組 **視覺化** e選擇 **折線圖** como visualização.
 
 ![示範](./images/pro5.png)
 
-您會按日查看您的產品檢視。
+Você verá as suas visualizações de produto por dia.
 
 ![示範](./images/pro6.png)
 
-您可以按一下 **設定** 在視覺效果中。
+Você pode alterar o escopo de tempo para o dia clicando em **設定** 視覺效果。
 
 ![示範](./images/pro7.png)
 
-按一下旁邊的點 **折線圖** to **管理資料來源**.
+無邦托拉多 **折線圖** e **管理資料來源**.
 
 ![示範](./images/pro7a.png)
 
-下一步，按一下 **鎖定選擇** 選取 **所選項目** 來鎖定此視覺效果，以便一律顯示產品檢視時間軸。
+阿姆·西吉達，小團 **鎖定選擇** e選擇 **所選項目** para bloquear esta visualização para que ela sempre exiba uma linha do tempo de Visualizações de produtos。
 
 ![示範](./images/pro7b.png)
 
-## 檢視的5大產品
+## 5件產品
 
-5大產品檢視次數為何？
+Quais são os 5 productos mais vistos?
 
-請記得不時儲存專案。
+Lembre-se de salvar o projeto de tempos em tempos.
 
 | 作業系統 | 短切 |
 | ----------------- |-------------| 
 | Windows | Control + S |
 | Mac | Command + S |
 
-讓我們開始找到檢視的前5項產品。 在左側功能表中，尋找 **產品名稱** -Dimension。
+5件產品是肉製品。 沒有菜單，沒有菜單。
 
 ![示範](./images/pro8.png)
 
-現在拖放 **產品名稱** 替換 **日** 維度：
+阿戈拉阿雷斯特 — 索爾特 **產品名稱** 準替代 **日**:
 
-結果就是
+這是結果。
 
 ![示範](./images/pro10a.png)
 
-接下來，嘗試依品牌名稱劃分其中一個產品。 搜尋 **brandName** 並將其拖曳至第一個產品名稱下。
+Em seguida, tente didir um dos productos por Nome da marca. 佩斯基斯 **brandName** arraste para baixo do primeiro nome do produto.
 
 ![示範](./images/pro13.png)
 
-接下來，使用使用者代理進行劃分。 搜尋 **使用者代理** 並將其拖曳至品牌名稱下。
+阿姆·西吉達，烏薩里奧的法薩。 佩斯基斯 **使用者代理** arraste-o para baixo do nome da marca.
 
 ![示範](./images/pro15.png)
 
-然後您會看到：
+Em seguida, será exibida a tela abaixo:
 
 ![示範](./images/pro15a.png)
 
-最後，您可以新增更多視覺效果。 在左側的視覺效果下方，搜尋 `Donut`. Take `Donut`，將其拖放至畫布下方 **折線圖** 視覺效果。
+Por fim, você pode adicionar mais visualizações. 沒有lado esquerdo, em visualizações, pesquise `Donut`. 佩格 `Donut`, arraste e solte na tela sob visualizção **折線圖** 
 
 ![示範](./images/pro18.png)
 
 接下來，在表格中選取前5個 **使用者代理**  的資料列 **Google Pixel XL 32GB黑色智慧手機** > **Citi Signal**. 選取5列時，請保留 **CTRL** 按鈕（在Windows上）或 **命令** 按鈕(在Mac上)。
 
+Em seguida, na Tabela,selecione as primeiras 5 linhas de **使用者代理** 迪塔勒門托，比塞莫斯 **Google Pixel XL 32GB黑色智慧手機** > **Citi Signal**. Ao Selecionar為5行，segure o botão **CTRL** （無Windows）ou o botão **命令** (不是Mac)。
+
 ![示範](./images/pro20.png)
 
-您會看到環圈圖已變更：
+Você verá o gráfico de donut alterado:
 
 ![示範](./images/pro21.png)
 
-您甚至可以調整設計，使兩者皆為 **折線圖** 圖表和 **環形圖** 圖表小一點，以便彼此相鄰：
+Você pode até adaptar o design para ser mais legível, tornando o gráfico de **折線圖** 歐·德 **環形圖** 歐姆普科門諾，帕拉克塞亞姆塞比多斯，拉多，拉多。
 
 ![示範](./images/pro22.png)
 
-按一下旁邊的點 **環形圖** to **管理資料來源**.
-下一步，按一下 **鎖定選擇** 來鎖定此視覺效果，以便一律顯示產品檢視時間軸。
+無邦托拉多 *環形圖** **管理資料來源**. 阿姆·西吉達，小團 **鎖定選擇** para bloquear essa visualização para que ela sempre exiba uma linha do tempo de Visualizações de produto.
 
 ![示範](./images/pro22b.png)
 
-請前往下列位置，進一步了解使用Analysis Workspace的視覺效果：
+Saiba mais sobre visualizações usando o Analysis Workspace am:
 
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## 產品互動漏斗，從檢視到購買
+## Funil de interação do produto, da visualizaçãoà compra
 
-有很多方法可以解決這個問題。 其中一項是使用「產品互動類型」，並在自由表格中使用它。 另一種方式是使用 **流失視覺效果**. 讓我們將最後一個項目用於同時視覺化和分析。
+現有的muitas formas de resolver esta questão. Uma delas e usar o Tipo de Interação de Producto e usá-lo em uma tabela de formato livre. 烏特拉福馬 **流失視覺效果**. Vamos usar oúltimo, pois queremos visualizar e analisar ao mesmo tempo.
 
-按一下這裡，關閉目前的面板：
+Feche o painel atual clicando aqui:
 
 ![示範](./images/pro23.png)
 
-現在按一下 **+新增空白麵板**.
+從頭到尾的阿戈拉·阿迪西奧內 **+新增空白麵板**.
 
 ![示範](./images/pro24.png)
 
-按一下視覺效果 **流失**.
+視覺化團體 **流失**.
 
 ![示範](./images/pro25.png)
 
-選取與上次練習相同的日期範圍。
+前面有運動的，前面有中間的。
 
 ![示範](./images/prodatef.png)
 
-你會看到這個。
+Em seguida,você verá:
 
 ![示範](./images/prodatefa.png)
 
-尋找維度 **事件類型** 在左側的元件下：
+Encontre a dimensão **事件類型** nos元件無lado esquerdo:
 
 ![示範](./images/pro26.png)
 
-按一下箭頭以開啟維度：
+Clickus na seta para abrir a dimensu:
 
 ![示範](./images/pro27.png)
 
-您會看到所有可用的事件類型。
+Você verá todos os Tipos de eventos disponíveis.
 
 ![示範](./images/pro28.png)
 
-選取項目 **commerce.productViews** 然後拖放到 **新增接觸點** 欄位 **流失視覺效果**.
+選擇一個項目 **commerce.productViews** 阿拉斯特 — 索爾特 — o no campo **新增接觸點** 登特羅達 **流失視覺效果**.
 
 ![示範](./images/pro29.png)
 
-使用 **commerce.productListAdds** 和 **commerce.purchases** 然後把它們放到 **新增接觸點** 欄位 **流失視覺效果**. 您的視覺效果現在看起來會像這樣：
+Faça o mesmo com **commerce.productListAdds** 和 **commerce.purchases** e solte-os no campo **新增接觸點** 登特羅達  **流失視覺效果**. Sua visualização agora deve semelhante ao seguinte:
 
 ![示範](./images/props1.png)
 
-你可以做很多事。 一些範例：逐個裝置比較每個步驟，或依忠誠度比較。 不過，如果我們想分析有趣的項目，例如客戶在新增項目至購物車後為何不購買，可以在CJA中使用最佳工具：按一下右鍵。
+Você pode fazer muitas coisas aqui. 演算法執行者：比較ao longo do tempo，比較cada passo por dispositivo ou comparar por fidelidade。 沒有entanto, se quisermos analisar coisas intersates como porque os clientes não compram depois de adicionar um item a o carrinho, podemos usar a melhor ferramenta do CJA:clicar com o botão direito.
 
-以滑鼠右鍵按一下接觸點 **commerce.productListAdds**. 然後按一下 **在此接觸點劃分流失**.
+Clickue com o botão direito執行滑鼠無接觸點 **commerce.productListAdds**. 阿姆·西吉達，小團 **在此接觸點劃分流失**.
 
 ![示範](./images/pro32.png)
 
-系統會建立新的自由表格，以分析使用者未購買時的行為。
+Uma nova tabela de formato livre será criada paranalisar o que, as pessoas fizeram se não compraram.
 
 ![示範](./images/pro33.png)
 
-變更 **事件類型** by **頁面名稱**，以查看他們正在執行的頁面，而非購買確認頁面。
+Altere o **事件類型** by **頁面名稱**, na nova tabela de formato livre, par a em quais páginas eles estão indo, em vez da Página de confirmmação de compra.
 
 ![示範](./images/pro34.png)
 
-## 在到達「取消服務」頁之前，人們在網站上做什麼？
+## 比如說，不要有網站監督你的事？
 
-同樣地，執行此分析有許多方法。 讓我們使用流分析開始發現部分。
+諾瓦門特，我的愛，我的愛。 我們要去做一個，去做那些不合法的人。
 
-按一下這裡以關閉目前面板：
+Feche o painel atual clicando aqui:
 
 ![示範](./images/pro0.png)
 
-現在按一下 **+新增空白麵板**.
+從頭到尾的阿戈拉·阿迪西奧內 **+新增空白麵板**.
 
 ![示範](./images/pro0a.png)
 
-按一下視覺效果 **流量**.
+視覺化團體 **流量**.
 
 ![示範](./images/pro35.png)
 
-然後您會看到：
+西吉達，塞拉：
 
 ![示範](./images/pro351.png)
 
-選取與上次練習相同的日期範圍。
+前面有運動的，前面有中間的。
 
 ![示範](./images/pro0b.png)
 
-尋找維度 **頁面名稱** 在左側的元件下：
+Encontre a dimensão **頁面名稱** nos元件無lado esquerdo:
 
 ![示範](./images/pro36.png)
 
-按一下箭頭以開啟維度：
+Clickus na seta para abrir a dimensu:
 
 ![示範](./images/pro37.png)
 
-您會找到所有已檢視的頁面。 查找頁面名稱： **取消服務**.
-拖放 **取消服務** 進入中間欄位的「流量視覺效果」：
+Você將Vocará作為Páginas的景象。 我要說： **取消服務**.
+阿拉斯特·索爾特 **取消服務** na Visualização de fluxo n campo do meio:
 
 ![示範](./images/pro38.png)
 
-然後您會看到：
+西吉達，塞拉：
 
 ![示範](./images/pro40.png)
 
-現在來分析造訪 **取消服務** 網站上的頁面也叫呼叫中心，結果是什麼。
+Vamos agora analisar se os clientes que visitaram a página C **取消服務** 沒有站點também ligaram para o call center e qual fo i o resultado。
 
-在維度下，返回並尋找 **呼叫互動類型**.
-拖放 **呼叫互動類型** 取代 **流量視覺效果**.
+Nas dimensões, retore encontre e Tipo de interção de chamada. 阿拉斯特·索爾特 **呼叫互動類型** para suplity interação á dirita em **流量視覺效果**.
 
 ![示範](./images/pro43.png)
 
-您現在會在造訪 **取消服務** 頁面。
+Agora você visualiza o ticket de suporte dos clientes que ligaram para a central de atendimento depois de visitar a página **取消服務**.
 
 ![示範](./images/pro44.png)
 
-接下來，在維度下方搜尋 **呼叫感覺**.  拖放它，以取代 **流量視覺效果**.
+Em seguida, nas dimensões, procure **呼叫感覺**. Arraste e solte para suptiir a primeira interaçãoà direita visualização de fluxo.
 
 ![示範](./images/pro46.png)
 
-然後您會看到：
+西吉達，塞拉：
 
 ![示範](./images/flow.png)
 
-如您所見，我們已使用流量視覺效果執行全通路分析。 多虧了這一點，我們發現，一些考慮取消服務的客戶在呼叫呼叫呼叫中心後，似乎有積極的感覺。 我們有沒有通過升職改變他們的想法？
+Como pode ver, executamos uma análise omnichannel usando a visualização de fluxo. Graças a isso, descobrimos que alguns clientes que estavam pensando em cancerar o serviço tiveram uma avaliação positiva depois de ligar para o call center. Talvez tenhamos mudado de ideia com uma promoção?
 
+## Qualé o desempenho dos clientes com um contato de Call center Positivo em relação aos principais KPIs?
 
-## 具有正式呼叫中心聯繫人的客戶如何根據主要KPI執行？
-
-先將資料分段，只讓使用者使用 **正面** 呼叫。 在CJA中，區段稱為「篩選」。 前往元件區域內的篩選器（位於左側），然後按一下 **+**.
+Primeiramente, vamos segmentar os dados para obter apenas usuários com chamadas **正面**. 沒有CJA,Segmentos são chamados de Filtros。 Acesse para filtros na área de components(no lado esquerdo)e clium **+**.
 
 ![示範](./images/pro58.png)
 
-在篩選器產生器內，為篩選器命名
+Dentro do Construtor de filtro, dê um nome ao filtro
 
 | 名稱 | 說明 |
 | ----------------- |-------------| 
@@ -270,59 +268,58 @@ ht-degree: 1%
 
 ![示範](./images/pro47.png)
 
-在元件下（在篩選器產生器內），尋找 **呼叫感覺** 並將其拖放至「篩選器產生器定義」中。
+Nos元件(Dentro do Construtor de filtro), encontre **呼叫感覺** arraste e solte na Definição do construtor de filtro.
 
 ![示範](./images/pro48.png)
 
-現在請選取 **正面** 作為篩選器的值。
+阿戈拉·塞萊翁 **正面** 科莫·瓦洛·帕羅·菲爾特羅。
 
 ![示範](./images/pro49.png)
 
-將範圍更改為 **人員** 層級。
+Altere o escopo para o nível **人員**.
 
 ![示範](./images/pro50.png)
 
-要完成，只需按一下 **儲存**.
+Para finalizar, basta clicar em **儲存**.
 
 ![示範](./images/pro51.png)
 
-你會回來的。 如果尚未完成，請關閉上一個面板。
+恩唐，我要回去。 Se ainda não retronou, feche o painel areotor areo。
 
 ![示範](./images/pro0c.png)
 
-現在按一下 **+新增空白麵板**.
+從頭到尾的阿戈拉·阿迪西奧內 **+新增空白麵板**.
 
 ![示範](./images/pro24c.png)
 
-選取與上次練習相同的日期範圍。
+前面有運動的，前面有中間的。
 
 ![示範](./images/pro24d.png)
 
-按一下 **自由表格**.
+小組 **自由表格**.
 
 ![示範](./images/pro52.png)
 
-現在，請拖放您剛建立的篩選器。
+阿戈拉·阿拉斯特·索爾特·奧爾特·奧卡布·德·克里亞爾。
 
 ![示範](./images/pro53.png)
 
-新增某些量度的時間。 開始於 **產品檢視**. 拖放至自由表格。 您也可以刪除 **事件** 量度。
+Hora de adicionar algumas métricas. Comece com **產品檢視**. Arraste e solte na tabela de forma livre. 梅特里卡州 **事件**.
 
 ![示範](./images/pro54.png)
 
-使用 **人員**,  **新增至購物車** 和 **購買**. 你最後會得到這樣的桌子。
+Faça o mesmo com **人員**, **新增至購物車** e **購買**. Você via acabar com uma tabela co mo a seguinte.
 
 ![示範](./images/pro55.png)
 
-由於第一次流量分析，我想到了一個新問題。 因此，我們決定建立這個表格，並根據區段檢查一些KPI，以回答這個問題。 如您所見，深入分析的時間比使用SQL或使用其他BI解決方案快得多。
+Graçasà primeira análise de fluxo, uma nova pergunta surgiu. Então decidimos criar esta tabela e verificar alguns KPIs em segmento para responder a essa pergunta。 Como voê pode ver, o tempo de insighté muito rápido do que usar SQL ou usar outras soluções de BI.
 
-## Customer Journey Analytics和Analysis Workspace重述
+## Requestulação do Analysis Workspace e doCustomer Journey Analytics
 
-正如您在本實驗中所了解的，Analysis Workspace會匯整所有管道的資料，以分析整個客戶歷程。 此外，請記住，您可以將資料匯入歷程中未匯整的相同工作區。
-將中斷連線的資料帶入您的分析中，為歷程提供內容，這真的很實用。 有些範例包括NPS資料、調查、Facebook廣告事件或離線互動（未識別）。
+Como você aprendeu neste laboratório, o Analysis Workspace reúne dados de todos as canis paraanisar a jornada completa do cliente。 Além disso, lembre-se de que você pode trazer dados para o mesmo workspace qu enão está vinculadoà jornada。 Pode ser muitoútil trazer dados desconectados para sua análise para contextulizar a jornada. Alguns的僱員包括coisas como dados NPS、pesquisas、eventos de anúncios do Facebook ou interações offline(não identifadas)。
 
-下一步： [4.6從見解到行動](./ex6.md)
+埃塔帕： [4.6 De insights a ação](./ex6.md)
 
-[返回用戶流4](./uc4.md)
+[烏薩里奧河畔雷托爾](./uc4.md)
 
-[返回所有模組](./../../overview.md)
+[托多斯山](./../../overview.md)

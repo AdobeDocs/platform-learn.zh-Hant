@@ -5,137 +5,137 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '842'
 ht-degree: 2%
 
 ---
 
-# 3.3建立您的歷程和推播通知
+# 3.3 Crie sua jornada e notificação push
 
-在本練習中，您將設定當使用者使用行動應用程式進入信標時需要觸發的歷程和訊息。
+Neste merkeício, você irá configar a jornada e a mensagem que presisa ser acionada quando alguém inser ir uma sinalização（信標）usando o aplicativo móvel。
 
-前往登入Adobe Journey Optimizer [Adobe Experience Cloud](https://experience.adobe.com). 按一下 **Journey Optimizer**.
+登錄Adobe Journey Optimizer帳戶a [Adobe Experience Cloud](https://experience.adobe.com). 小組 **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-系統會將您重新導向至 **首頁**  檢視。 首先，請確定您使用的沙箱正確無誤。 系統會呼叫要使用的沙箱 `Bootcamp`. 若要從一個沙箱變更為另一個沙箱，請按一下 **生產** 並從清單中選取沙箱。 在此範例中，沙箱的名稱為 **布坎普**. 那你就在 **首頁** 沙箱檢視 `Bootcamp`.
+Você será redirecionado para a visualização da **首頁** 不，Journey Optimizer。 Primeiro, Verifique se você usando o sandbox correto. 不要沙箱，就要用 `Bootcamp`. Para alternar de um sandbox para outro, plicaem **生產** 選擇沙箱或沙箱。 不要做沙箱 **布坎普**. Você estará na visualização da **首頁**  做seu沙箱 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.3.1建立您的歷程
+## 3.3.1條
 
-在左側功能表中，按一下 **歷程**. 下一步，按一下 **建立歷程** 來建立新歷程。
+沒有菜單，小伙子 **歷程**. 阿姆·西吉達，小團 **建立歷程** 準新約旦河。
 
 ![ACOP](./images/createjourney.png)
 
-然後您會看到空白的歷程畫面。
+Você verá muma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-在上一個練習中，您建立了 **事件**. 你給它起了這個名字 `yourLastNameBeaconEntryEvent` 和 `yourLastName` 姓氏。 這是建立事件的結果：
+前無鍛鍊，從頭開始 **事件**. 沃凱諾梅烏奧埃文托 `yourLastNameBeaconEntryEvent` e替代 `yourLastName` 別洛·蘇·索佈雷諾姆。 Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
-您現在需要將此活動視為此歷程的開始。 您可以前往畫面左側，並在事件清單中搜尋您的事件，以執行此操作。
+阿戈拉認為，這甚至與我的意思有關。 Você pode fazer isso indo para o lado esquerdo da tela procando pelo seu evento n a lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-選取您的事件，將其拖放至歷程畫布上。 你的旅程現在看起來像這樣。 按一下 **確定** 來儲存變更。
+Selecione seu evento, arraste e solte o evento na tela de jornada. 我們的愛情。 小組 **確定** 薩爾瓦·蘇亞斯·阿爾特拉松伊斯。
 
 ![ACOP](./images/journeyevent.png)
 
-作為歷程的第二步，您需要新增 **推播** 動作。 前往畫面左側，前往 **動作**，請選取 **推播** 動作，然後將其拖放至歷程中的第二個節點。
+科莫·塞貢達·埃塔帕·達·約納達 **推播**. Vá para o lado esquerdo da tela para **動作**，請選取ação **推播** arraste e solte a ação no segundo nó da sua jornada.
 
 ![ACOP](./images/journeyactions.png)
 
-現在，您需要在畫面的右側建立推播通知。
+不用拉多·迪雷托·達特拉，阿戈拉·沃克斯·德韋·蘇阿·通達桑推。
 
-設定 **類別** to **行銷** 和選取可讓您傳送推播通知的推播表面。 在這種情況下，要選取的推動曲面為 **mmeewis-app-mobile-bootcamp**.
+定義a **類別** co **行銷** e selecione uma supfície push que permite envion notificações push. Nesse caso，淺層推選 **mmeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
-## 3.3.2建立訊息
+## 3.3.2 Crie a sua mensagem
 
-按一下 **編輯內容**.
+小組 **編輯內容**.
 
 ![ACOP](./images/emptymsg.png)
 
-然後您會看到：
+Em seguida，一個被禁慾的女孩：
 
 ![ACOP](./images/emailmsglist.png)
 
-讓我們定義推播通知的內容。
+快來點通知。
 
-按一下 **標題** 文字欄位。
+Prichum no campo de texto **標題**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-在文本區域開始寫 **你好**. 按一下個人化圖示。
+德克斯托，科米斯 **奧拉**. 個人化團體。
 
 ![Journey Optimizer](./images/msg6.png)
 
-您現在需要為欄位帶入個人化代號 **名字** 儲存於 `profile.person.name.firstName`. 在左側功能表中，選取 **設定檔屬性**，向下捲動/導覽以尋找 **人員** 元素，然後按一下箭頭以往更深的層級，直到您到達欄位為止 `profile.person.name.firstName`. 按一下 **+** 圖示將欄位新增至畫布。 按一下「**儲存**」。
+Agora você precisa trazer o token de personalização para o campo **名字** 她就是個女人 `profile.person.name.firstName`. 無菜單，選擇 **設定檔屬性**，第baixo/navegue para narr o elemento角色 **人員** 納西塔·帕拉·阿瓦努 `profile.person.name.firstName`. 伊科內集團 **+** para adicionar o campoà tela 小組 **儲存**.
 
 ![Journey Optimizer](./images/msg7.png)
 
-你會回來的。 按一下欄位旁的個人化圖示 **主體**.
+恩唐，我要回去。 個人化團體 **主體**.
 
 ![Journey Optimizer](./images/msg11.png)
 
-在文本區域中，寫 `Welcome at the `.
+埃斯克里瓦 `Bem-vindo(a)`.
 
 ![Journey Optimizer](./images/msg12.png)
 
-下一步，按一下 **內容屬性** 然後 **Journey Orchestration**.
+阿姆·西吉達，小團  **內容屬性** 然後 **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
-按一下 **事件**.
+小組 **事件**.
 
 ![ACOP](./images/jomsg4.png)
 
-按一下事件的名稱，其應如下所示： **yourLastNameBeaconEntryEvent**.
+小集團，不是女的，是女的，是女的。 **yourLastNameBeaconEntryEvent**.
 
 ![ACOP](./images/jomsg5.png)
 
-按一下 **放置內容**.
+小組 **放置內容**.
 
 ![ACOP](./images/jomsg6.png)
 
-按一下 **POI互動**.
+小組 **POI互動**.
 
 ![ACOP](./images/jomsg7.png)
 
-按一下 **POI詳細資料**.
+小組 **POI詳細資料**.
 
 ![ACOP](./images/jomsg8.png)
 
-按一下 **+** 圖示 **POI名稱**.
-你會看到這個。 按一下「**儲存**」。
+小集團 **+** 圖示無 **POI名稱**.
+塞吉達，塞金特·塞拉。 小組 **儲存**.
 
 ![ACOP](./images/jomsg9.png)
 
-您的訊息現已準備就緒。 按一下左上角的箭頭，返回您的歷程。
+我的手足足足足夠了。 Cligus na seta no canto super esquerdo para reconnar à sua jornada.
 
 ![ACOP](./images/jomsg11.png)
 
-按一下 **確定**.
+小組 **確定**.
 
 ![ACOP](./images/jomsg14.png)
 
-## 3.3.2傳送訊息至畫面
+## 3.3.2 Envie uma mensagem para mu ma tela
 
-作為歷程的第三步，您需要新增 **sendMessageToScreen** 動作。 前往畫面左側，前往 **動作**，請選取 **sendMessageToScreen** 動作，然後將其拖放至歷程中的第三個節點。 你會看到這個。
+科莫·特塞拉·埃塔帕·達·約納達  **sendMessageToScreen** 動作。 Vá para o lado esquerdo da tela para **動作**，請選取ação **sendMessageToScreen** arraste e solte ação no terceiro nó da sua jornada. Em seguida，這是一個彈奏。
 
 ![ACOP](./images/jomsg15.png)
 
-此 **sendMessageToScreen** 動作是自訂動作，會將訊息發佈至商店內顯示使用的端點。 此 **sendMessageToScreen** action需要定義許多變數。 向下捲動，直到您看到 **動作參數**.
+**sendMessageToScreen** é uma ação personalizada que irá publicar uma mensagem no ponto de extremidade usado pela exibção na loja. 阿桑 **sendMessageToScreen** 埃斯佩拉·克·穆爾蒂普拉斯·瓦里韋斯·塞賈姆·德菲達斯。 Você pode visualizar essas variáveis rolando para baixo até ver **動作參數**.
 
 ![ACOP](./images/jomsg16.png)
 
-您現在需要設定每個動作參數的值。 請依照下表了解需要哪些值。
+Agora você precisa definir os valores para cada parâmetro de ação. Siga esta tabela para entender quais valores são equedários e onde.
 
 | 參數 | 值 |
 |:-------------:| :---------------:|
@@ -151,29 +151,29 @@ ht-degree: 2%
 
 {style=&quot;table-layout:auto&quot;}
 
-若要設定這些值，請按一下 **編輯** 表徵圖。
+準定義是，瓦洛雷斯，小集團 **編輯**.
 
 ![ACOP](./images/jomsg17.png)
 
-下一步，選擇 **進階模式**.
+Em seguida, selecione **進階模式**.
 
 ![ACOP](./images/jomsg18.png)
 
-接著，根據上表貼上值。 按一下 **確定**.
+Em seguida, cole o valor com base na tabela acima. 小組 **確定**.
 
 ![ACOP](./images/jomsg19.png)
 
-重複此程式為每個欄位新增值。
+Repita負責處理para adicionar valores para cada campo。
 
 >[!IMPORTANT]
 >
->若為欄位ECID，則會參考事件 `yourLastNameBeaconEntryEvent`. 請務必更換 `yourLastName` 姓。
+>聖壇`yourLastNameBeaconEntryEvent`. Lembre-se-de suptiir  `yourLastName` 別洛·蘇·索佈雷諾姆。
 
-最終結果應如下所示：
+最後，塞梅爾漢特·奧塞金特：
 
 ![ACOP](./images/jomsg20.png)
 
-向上捲動並按一下 **確定**.
+角色 **確定**.
 
 ![ACOP](./images/jomsg21.png)
 
@@ -181,28 +181,28 @@ ht-degree: 2%
 
 ![ACOP](./images/journeyname.png)
 
-然後，您可以在此處輸入歷程的名稱。 請使用 `yourLastName - Beacon Entry Journey`. 按一下 **確定** 來儲存變更。
+有水就有水。 使用 `yourLastName - Beacon Entry Journey`. 小組 **確定** 薩爾瓦·蘇亞斯·阿爾特拉松伊斯。
 
 ![ACOP](./images/journeyname1.png)
 
-您現在可以按一下 **發佈**.
+Agora você pode publicar sua jornada clicando em **發佈**.
 
 ![ACOP](./images/publishjourney.png)
 
-按一下 **發佈** 。
+小組 **發佈** 諾瓦門特。
 
 ![ACOP](./images/publish1.png)
 
-接著，您會看到綠色的確認列，指出您的歷程現已發佈。
+Você verá uma barra de confirmmação verde informando que sua jornada agora está Publicada.
 
 ![ACOP](./images/published.png)
 
-您的歷程現在已上線且可觸發。
+我的手術很好。
 
-你已經完成了這個練習。
+Você termou est exticio。
 
-下一步： [3.4測試您的歷程](./ex4.md)
+埃塔帕： [3.4聖若那達](./ex4.md)
 
-[返回用戶流3](./uc3.md)
+[烏薩里奧3](./uc3.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

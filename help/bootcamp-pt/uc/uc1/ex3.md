@@ -5,85 +5,85 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 3%
+source-wordcount: '516'
+ht-degree: 2%
 
 ---
 
-# 1.3建立區段 — UI
+# 1.3標準區段 — UI
 
-在本練習中，您會使用Adobe Experience Platform的區段產生器來建立區段。
+不參加訓練，不參加訓練。
 
-## Story
+## 希斯托里亞
 
-前往 [Adobe Experience Platform](https://experience.adobe.com/platform). 登入後，您會登陸Adobe Experience Platform首頁。
+阿塞斯 [Adobe Experience Platform](https://experience.adobe.com/platform). 登入Depois de fazer，是Página inical da Adobe Experience Platform。
 
 ![資料擷取](./images/home.png)
 
-繼續之前，您需要選取 **沙箱**. 要選取的沙箱已命名 ``Bootcamp``. 您可以按一下文字 **[!UICONTROL 生產產品]** 在螢幕上方的藍線。 選取適當的 [!UICONTROL 沙箱]，您會看到畫面變更，現在您已進入專屬 [!UICONTROL 沙箱].
+連續、前輪 **沙箱**. 不要用沙箱做選擇 ``Bootcamp``. É postível fazer isso clicando no texto **[!UICONTROL 生產產品]** 娜琳娜·阿祖爾娜·帕特·蘇佩拉。 在沙箱上自行選擇 [!UICONTROL 沙箱] 愛心。
 
 ![資料擷取](./images/sb1.png)
 
-在左側的功能表中，前往 **區段**. 在此頁面上，您可以檢視所有現有區段的概觀。 按一下 **+建立區段** 按鈕以開始建立新區段。
+沒有菜單，阿塞斯 **區段**. Nesta página, você tem uma visão geral de todos os segmentos existers。 Criar segmento para começar a criar novo segmento.
 
 ![區段](./images/menuseg.png)
 
-進入新的區段產生器後，您會立即注意到 **屬性** 功能表選項和 **XDM個別設定檔** 參考。
+Quando Estiver no novo construtor de segmentos, você irá perceber imediatamente a opção de menu **屬性** 反向連結 **XDM個別設定檔**.
 
 ![區段](./images/segmentationui.png)
 
-由於XDM是支援體驗業務的語言，因此XDM也是區段產生器的基礎。 Platform中擷取的所有資料都應對應至XDM，因此，無論資料來自何處，所有資料都會成為相同資料模型的一部分。 這可讓您在建立區段時獲得重大優勢，因為透過這個區段產生器UI，您可以將來自任何來源的資料合併至相同的工作流程。 在「區段產生器」中建立的區段可傳送至Adobe Target、Adobe Campaign和Adobe Audience Manager等解決方案進行啟用。
+Como o XDMé a ligagem que alimenta o setor de experiencia, o XDM tambémé a base para o constructor de segmentos。 Todos os dados ingeridos na plataforma devemer ser mapeados em relação XDM e, portanto, todos os dados se tornam parte do mesmo modelo de dados, independente da origem dess dados。 Isso提供uma grandvantagem ao criar segmentos, pois a partir dessa interface do usuário do constructor de segmento, e posível combinar dados de qualquer origem n mesmo fluxo de trabalho。 Os segmentos criados no Construtor de segmentos podem ser enviados para soluções como Adobe Target, Adobe Campaign e Adobe Audience Manager para ativação.
 
-您現在需要建立已檢視產品之所有客戶的區段 **Real-Time CDP**.
+Agora você presisa criar um segmento de todos os clientes visualizaram o producto **Real-Time CDP**.
 
-若要建置此區段，您必須新增體驗事件。 您可以按一下 **事件** 圖示 **欄位** 的上界。
+Para construir este segmento, você precisa adicionar um Evento de experincia。 Você pode encontro dos os eventos de experience clicando noícone **事件** a barra de menu **欄位**.
 
 ![區段](./images/findee.png)
 
-接下來，你會看到最高層， **XDM ExperienceEvents** 節點。 按一下 **XDM ExperienceEvent**.
+Em seguida,você verá o nó **XDM ExperienceEvents** 做nível superior。 小組 **XDM ExperienceEvent**.
 
 ![區段](./images/see.png)
 
-前往 **產品清單項目**.
+阿塞斯 **產品清單項目**.
 
 ![區段](./images/plitems.png)
 
-選擇 **名稱** 拖放 **名稱** 物件，從左側功能表移至區段產生器畫布中 **事件** 區段。 然後您會看到：
+選取項 **名稱** 阿雷斯特 — 索爾特 — 奧布耶托 **名稱** segmentos na seção菜單 **事件**. 塞吉達，塞金特·塞拉：
 
 ![區段](./images/eewebpdtlname.png)
 
-比較參數應為 **等於** 在輸入欄位中，輸入 **Real-time CDP**.
+O parâmetro de comparção deve ser **等於** e，沒有坎波，恩特拉達，insira **Real-time CDP**.
 
 ![區段](./images/pv.png)
 
-每次新增元素至區段產生器時，您都可以按一下 **刷新估計值** 按鈕，以取得區段中人口的新估計。
+Sempre que adicionar um elemento ao constructor de segmentos, você pode clicar no botão **刷新估計值** para obter uma nova estimativa da população em seu segmento.
 
 ![區段](./images/refreshest.png)
 
-As **評估方法**，選取 **Edge**.
+段 **評估方法**, selectone **Edge**.
 
 ![區段](./images/evedge.png)
 
-最後，將區段命名並儲存。
+親愛的，你們好，你們好。
 
-作為命名慣例，請使用：
+Como modelo de nomenclatura，使用：
 
 - `yourLastName - Interest in Real-Time CDP`
 
-然後，按一下 **儲存並關閉** 按鈕來儲存區段。
+Em seguida，小團體 **儲存並關閉** 薩爾瓦爾·塞門托。
 
 ![區段](./images/segmentname.png)
 
-您現在會回到區段概觀頁面，這裡會顯示符合區段資格的客戶設定檔範例預覽。
+Agora você irá rennar à página de visão geral do segmento, on de verá uma visualização de amostra dos perfis de clientes que se qualificam para o seu segmento.
 
 ![區段](./images/savedsegment.png)
 
-您現在可以繼續下一個練習，並搭配Adobe Target使用區段。
+Agora você pode continuar no próximo excrecio e usar seu segmento com o Adobe Target。
 
-下一步： [1.4採取行動：將區段傳送至Adobe Target](./ex4.md)
+埃塔帕： [1.4阿桑：Adobe Target](./ex4.md)
 
-[返回用戶流1](./uc1.md)
+[烏薩里奧1號](./uc1.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

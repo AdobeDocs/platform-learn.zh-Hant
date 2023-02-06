@@ -5,57 +5,57 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '283'
-ht-degree: 3%
+source-wordcount: '293'
+ht-degree: 1%
 
 ---
 
-# 1.5採取行動：將區段傳送至Facebook
+# 1.5阿桑：facebook
 
-前往 [Adobe Experience Platform](https://experience.adobe.com/platform). 登入後，您會登陸Adobe Experience Platform首頁。
+阿塞斯 [Adobe Experience Platform](https://experience.adobe.com/platform). 登入Depois de fazer，是Página inical da Adobe Experience Platform。
 
 ![資料擷取](./images/home.png)
 
-繼續之前，您需要選取 **沙箱**. 要選取的沙箱已命名 ``Bootcamp``. 您可以按一下文字 **[!UICONTROL 生產產品]** 在螢幕上方的藍線。 選取適當的 [!UICONTROL 沙箱]，您會看到畫面變更，現在您已進入專屬 [!UICONTROL 沙箱].
+連續、前輪 **沙箱**. 不要在Bootcamp上沙箱。 É postível fazer isso clicando no texto **[!UICONTROL 生產產品]** 娜琳娜·阿祖爾娜·帕特·蘇佩拉。 在沙箱上自行選擇 [!UICONTROL 沙箱] 愛心。
 
 ![資料擷取](./images/sb1.png)
 
-在左側功能表中，前往 **目的地**，然後前往 **目錄**. 然後您會看到 **目的地目錄**. 在 **目的地**，按一下 **啟用區段** 在 **Facebook自訂對象** 卡片。
+沒有菜單，是的 **目的地** e, em seguida, vá para **目錄**. 沃凱韋拉奧 **目的地目錄**. Em **目的地**，團 **啟用區段** 無卡爾唐 **Facebook自訂對象**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-選取目的地 **bootcamp-facebook** 按一下 **下一個**.
+選取 **bootcamp-facebook** e團 **下一個**.
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-在可用區段清單中，選取您在上一個練習中建立的區段。 按&#x200B;**「下一步」**。
+Na lista de segmentos disponíveis, selecione o segmento que você no extrection arero. 小組 **下一個**.
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-在 **對應** 頁面，確定 **套用轉換** 核取方塊已啟用。 按&#x200B;**「下一步」**。
+納帕吉納 **對應**, verifique se caixa de seleção **套用轉換** 是馬卡達。 小組 **下一個**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-在 **區段排程** 頁面，選擇 **對象的來源** 並將其設定為 **直接從客戶**. 按&#x200B;**「下一步」**。
+納帕吉納 **區段排程**，選取a **對象的來源** 他定義科莫 **直接從客戶**. 小組 **下一個**.
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-最後，在 **檢閱** 頁面，按一下 **完成**.
+波菲姆，帕金娜 **檢閱**，團 **完成**.
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-您的區段現在已連結至Facebook自訂對象。 每次客戶符合此區段的資格時，都會傳送訊號至Facebook伺服器端，將該客戶納入Facebook端的自訂對象中。
+Seu segmento agora está vinculado Públicos Personalizados do Facebook。 Sempre que um cliente se qualificar para esse segmento, um sinal será enviado ao lado do servidor（伺服器端）do Facebook para incluive scliente no Público Personalizado no lado do Facebook。
 
-在Facebook中，您會在「自訂對象」下方找到來自Adobe Experience Platform的區段：
+沒有Facebook,você encontrará seu segmento da Adobe Experience Platform em Públicos Personalizados:
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-您現在可以看到自訂對象出現在Facebook中：
+Agora você pode ver seu público personalizado aparecer no Facebook:
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 
-[返回用戶流1](./uc1.md)
+[烏薩里奧1號](./uc1.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

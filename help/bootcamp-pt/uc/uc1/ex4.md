@@ -5,182 +5,184 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '880'
-ht-degree: 1%
+source-wordcount: '933'
+ht-degree: 0%
 
 ---
 
-# 1.4採取行動：將區段傳送至Adobe Target
+# 1.4阿桑：Adobe Target
 
-前往 [Adobe Experience Platform](https://experience.adobe.com/platform). 登入後，您會登陸Adobe Experience Platform首頁。
+阿塞斯 [Adobe Experience Platform](https://experience.adobe.com/platform). 登入Depois de fazer，是Página inical da Adobe Experience Platform。
 
 ![資料擷取](./images/home.png)
 
-繼續之前，您需要選取 **沙箱**. 要選取的沙箱已命名 ``Bootcamp``. 您可以按一下文字 **[!UICONTROL 生產產品]** 在螢幕上方的藍線。 選取適當的 [!UICONTROL 沙箱]，您會看到畫面變更，現在您已進入專屬 [!UICONTROL 沙箱].
+連續、前輪 **沙箱**. 不要在Bootcamp上沙箱。 É postível fazer isso clicando no texto **[!UICONTROL 生產產品]** 娜琳娜·阿祖爾娜·帕特·蘇佩拉。 在沙箱上自行選擇 [!UICONTROL 沙箱] 愛心。
 
 ![資料擷取](./images/sb1.png)
 
-## 1.4.1啟用區段至Adobe Target目的地
+## 1.4.1Adobe Target
 
-Adobe Target是Real-Time CDP的目的地。 若要設定Adobe Target整合，請前往 **目的地**，到 **目錄**.
+O Adobe Target是CDP的真節奏。 Para configurar sua integratção com o Adobe Target, acesse **目的地** e **目錄**.
 
-按一下 **個人化** 在 **類別** 功能表。 然後您會看到 **Adobe Target** 目的地卡。 按一下 **啟用區段**.
+小組 **個人化** 無菜單 **類別**. Você verá o cartão de destino do **Adobe Target**. 小組 **啟用區段**.
 
 ![AT](./images/atdest1.png)
 
-選取目的地 ``Bootcamp Target`` 按一下 **下一個**.
+選擇目標 ``Bootcamp Target`` e集團 **下一個**.
 
 ![AT](./images/atdest3.png)
 
-在可用區段清單中，選取您在中建立的區段 [1.3建立區段](./ex3.md)，此名稱為 `yourLastName - Interest in Real-Time CDP`. 然後，按一下 **下一個**.
+Na lista de segmentos disponíveis, selecione o segmento que você criou em [1.3標準區段](./ex3.md),com o nome `yourLastName - Interest in Real-Time CDP`. 阿姆·西吉達，小團 **下一個**.
 
 ![AT](./images/atdest8.png)
 
-在下一頁，按一下 **下一個**.
+我是小朋友 **下一個**.
 
 ![AT](./images/atdest9.png)
 
-按一下&#x200B;**完成**。
+小組 **完成**.
 
 ![AT](./images/atdest10.png)
 
-您的區段現在已啟動至Adobe Target。
+她是Adobe Target。
 
 ![AT](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->當您剛在Real-Time CDP中建立Adobe Target目的地時，該目的地可能需要一小時的時間才能上線。 由於後端設定的設定，這是一次性的等候時間。 完成初始1小時等候時間和後端設定後，傳送至Adobe Target目的地的新新增邊緣區段便可即時用於鎖定目標。
+>Imediatamente após criar seu destino do Adobe Target no Real-Time CDP, pode levar até uma hora para que o destino seja ativado. Este e um tempo de esperaúnico devidoà definição da configação de back-end. Depois que o tempo de espera inicial de hora e a configuração do back-end forem conclutios, os segmentos de borda recém-adicionados que são enviados do Adobe Target destino do estarão disponíveis para segmentação tem real。
 
-## 1.4.2設定Adobe Target表單式活動
+## 1.4.2設定sua atividade baseada em formulário do Adobe Target
 
-現在您的Real-Time CDP區段已設定為傳送至Adobe Target，您可以在Adobe Target中設定您的體驗鎖定目標活動。 在本練習中，您將設定可視化體驗撰寫器型活動。
+Agora que seu segmento Real-Time CDP está configurado para senviado ao Adobe Target, e posível configurar sua atividade de Segmentação por experincia no Adobe Target. 不參加練習，不參加可視化體驗撰寫器。
 
-前往Adobe Experience Cloud首頁， [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). 按一下 **目標** 來開啟它。
+Adobe Experience Cloud [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). 小組 **目標** 帕拉·阿布里爾。
 
 ![RTCDP](./images/excl.png)
 
 在 **Adobe Target** 首頁，您會看到所有現有活動。
 按一下 **+建立活動** 來建立新活動。
+非官方的 **Adobe Target**,você verá todas atividades existos。
+小組 **+建立活動** para criar uma nova atividade。
 
 ![RTCDP](./images/exclatov.png)
 
-選擇 **體驗鎖定**.
+選取項 **體驗鎖定**.
 
 ![RTCDP](./images/exclatcrxt.png)
 
-選擇 **視覺** 並設定 **活動URL** to `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`，但在執行此操作之前，請以01到30之間的數字取代XX。
+選取項 **視覺** e定義a **活動URL** co `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`,mas,antes，否則，替代XX por um número entre 01 e 30。
 
 >[!IMPORTANT]
 >
->啟用的每位參與者都應使用個別的網頁，以避免各種Adobe Target體驗發生衝突。 您可以前往下列位置，選擇網頁並尋找URL: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>Cada參與者： Capaciação deve usar uma página da Web separada para evitar a colisão de várias experincias do Adobe Target。 É posível escolher uma página da Web將URL訪問： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
->頁面都共用相同的基本URL，結尾為參與者的編號。
+>Todas as páginas compartilham a mesma URL base e terminam com o número do participante.
 >
->例如，參與者1應使用URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`，參與者30應使用URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>Por exmelo, o participant 1用於刪除URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`，或參與30使用URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
-選取工作區 **AT Bootcamp**.
+選擇工作區 **AT Bootcamp**.
 
-按&#x200B;**「下一步」**。
+小組 **下一個**.
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
 
-您現在是可視化體驗撰寫器。 網站完全載入前，可能需要20-30秒。
+Agora você está no Visual Experience Composer。 Pode levar de 20 a 30 segundos até que o site esteja completate carregado.
 
 ![RTCDP](./images/atform1.png)
 
-預設對象目前為 **所有訪客**. 按一下 **3點** 下一頁 **所有訪客** 按一下 **變更對象**.
+阿圖爾門特、奧普布利科帕德朗 **所有訪客**. 小集團 **3點** 奧拉多德 **所有訪客** e團 **變更對象**.
 
 ![RTCDP](./images/atform3.png)
 
-您現在會看到可用對象的清單，而您先前建立並傳送至Adobe Target的Adobe Experience Platform區段現已成為此清單的一部分。 選取您先前在Adobe Experience Platform中建立的區段。 按一下 **指派對象**.
+Agora você está vendo a lista de públicos disponíveis, e o segmento da Adobe Experience Platform que você criou anteriormente e envio au Adobe Target agora faz parte dessa lista. 請選擇「Segmento que você criou anteriormente na Adobe Experience Platform」。 小組 **指派對象**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-您的Adobe Experience Platform區段現在是此體驗鎖定目標活動的一部分。
+Seu segmento da Adobe Experience Platform agora faz parte dessa Atividade de segmentação por experincia.
 
 ![RTCDP](./images/atform4.png)
 
-在可以更改主圖影像之前，您需要按一下 **允許全部** 上。
+影像主管，歌手 **允許全部** 無橫幅de cookie。
 
-若要這麼做，請前往 **瀏覽**
+Para isso, vá para **瀏覽**
 
 ![RTCDP](./images/cook1.png)
 
-下一步，按一下 **允許全部**.
+阿姆·西吉達，小團 **允許全部**.
 
 ![RTCDP](./images/cook2.png)
 
-接下來，返回 **撰寫**.
+Em seguida, Retorne para **撰寫**.
 
 ![RTCDP](./images/cook3.png)
 
-現在來變更網站首頁上的主圖影像。 按一下網站上的預設主圖影像，按一下 **取代內容** 然後選取 **影像**.
+Agora vamos mudar a imagem principal na página inicial do site. Clique na imagem principal padrão no site, clique em **取代內容** e選擇 **影像**.
 
 ![RTCDP](./images/atform5.png)
 
-搜尋影像檔案 **rtcdp.png**. 選取它，然後按一下 **儲存**.
+Pesquise o arquivo de imagem **rtcdp.png**. 選擇e團 **儲存**.
 
 ![RTCDP](./images/atform6.png)
 
-然後，您就會看到您所選對象的新影像體驗。
+Você verá a nova experiencia com a nova imagem para o seu Público selecionado
 
 ![RTCDP](./images/atform7.png)
 
-按一下左上角的活動標題，將其重新命名。
+Cligue no título da sua atividade no canto supererdo para renomeá la.
 
 ![RTCDP](./images/exclatvecname.png)
 
-名稱請使用：
+段或段，使用：
 
 - `yourLastName - RTCDP - XT (VEC)`
 
-按&#x200B;**「下一步」**。
+小組 **下一個**.
 
 ![RTCDP](./images/atform8.png)
 
-按&#x200B;**「下一步」**。
+小組 **下一個**.
 
 ![RTCDP](./images/atform8a.png)
 
-在 **目標與設定**  — 頁，轉到 **目標量度**.
+納帕吉納 **目標與設定**, acesse **目標量度**.
 
 ![RTCDP](./images/atform9.png)
 
-將主要目標設為 **參與** - **網站逗留時間**. 按一下&#x200B;**「儲存並關閉」**。
+定義元首 **參與** - **網站逗留時間**. 小組 **儲存並關閉**.
 
 ![RTCDP](./images/vec3.png)
 
-你現在在 **活動概覽** 頁面。 您仍需要啟用活動。
+阿戈拉·沃克斯塔娜·帕吉娜 **活動概覽**. Você ainda precisa ativar sua Atividade。
 
 ![RTCDP](./images/atform10.png)
 
-按一下欄位 **非作用中** 選取 **啟動**.
+小坎波 **非作用中** e選擇 **啟動**.
 
 ![RTCDP](./images/atform11.png)
 
-之後，您會獲得活動現已上線的視覺確認。
+Você receberá uma confirmação visual de sua atividade agora está ativa.
 
 ![RTCDP](./images/atform12.png)
 
-您的活動現在已上線，可在bootcamp網站上測試。
+Agora sua atividade está ativa e pode ser testada no site do bootcamp.
 
-如果您現在回到示範網站，並造訪的產品頁面 **Real-Time CDP**，您就會立即符合所建立區段的資格，且您會看到Adobe Target活動即時顯示在首頁上。
+Se agora você voltar ao seu site de dedezção e visitar a página do produto para **Real-Time CDP**, você se qualificará instantenamente para o segmento que criou e verá a atividade do Adobe Target exibida na página nicial tempo real。
 
 >[!IMPORTANT]
 >
->啟用的每位參與者都應使用個別的網頁，以避免各種Adobe Target體驗發生衝突。 您可以前往下列位置，選擇網頁並尋找URL: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
+>Cada參與者： Capaciação deve usar uma página da Web separada para evitar a colisão de várias experincias do Adobe Target。 É postível escolher uma página da Web加入URL acessando ao連結： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html).
 >
->頁面都共用相同的基本URL，結尾為參與者的編號。
+>Todas as páginas compartilham a mesma URL base e terminam com o número do participante.
 >
->例如，參與者1應使用URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`，參與者30應使用URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+>Por exmelo, o participante 1 deve usar a `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`，或參與30使用URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
 
 ![RTCDP](./images/atform12a.png)
 
-下一步： [1.5採取行動：將區段傳送至Facebook](./ex5.md)
+埃塔帕： [1.5採取行動：將區段傳送至Facebook](./ex5.md)
 
-[返回用戶流1](./uc1.md)
+[烏薩里奧1號](./uc1.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

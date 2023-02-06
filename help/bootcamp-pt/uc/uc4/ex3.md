@@ -5,55 +5,54 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 072179998d19c32589280defdb257a86d8728fea
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1655'
 ht-degree: 2%
 
 ---
 
-# 4.3建立資料檢視
+# 4.3 Crie uma Visualização de Dados
 
-## 目標
+## 奧比蒂沃斯
 
-- 了解資料檢視UI
-- 了解造訪定義的基本設定
-- 了解資料檢視的歸因和持續性
+- 了解Visualização de Dados的UI
+- Compreenda as configurações básicas de definição de visita
+- Compresenda a atribuição e a Persistência em Visualização de
 
-## 4.3.1資料檢視
+## 4.3.1 Visualização de Dados
 
-完成連線後，您現在可以進步影響視覺效果。 Adobe Analytics和CJA的差異在於CJA需要「資料檢視」，才能在視覺化前清除和準備資料。
+Agora, com sua conexão conculída, e possível progredir para influenciar a visualização. Uma diferença e o Adobe Analytics e o CJA e que o CJA precisa de uma visualização de dados para limpar e prear os dados antes da visualização.
 
-資料檢視與Adobe Analytics中虛擬報表套裝的概念類似，可讓您定義內容感知造訪定義、篩選，以及元件的呼叫方式。
+Uma Visualização de Dadosé semelhante ao conceito de Virtual Report Suites no Adobe Analytics, onde você secelecte as definições de visita com reconhimento de contextto, filtargm e também como os compontes são chamados。
 
-每個連線至少需要一個資料檢視。 不過，對於某些使用案例而言，擁有多個資料檢視來建立相同連線是件好事，其目標是為不同團隊提供不同的深入分析。
-如果您希望公司以資料為導向，您應調整每個團隊中資料的檢視方式。 一些範例：
+Será vesuário, no mínimo, uma Visualização de Dados por conexão. 沒有entanto, para alguns casos de uso, eótimo ter múltiplas Visualizações de Dados para mesma conexão, com o bjetivo de fornecer insights diferentes para equidintas。 請參閱você deseja que sua empresa seja orienta dados, deve adaptar a forma co mo os dados são vistos em cada equipe。 演算法執行者：
 
-- 僅限UX設計團隊的UX量度
-- 對KPI和Google Analytics使用與Customer Journey Analytics相同的名稱，讓數位分析團隊只能說1種語言。
-- 篩選資料檢視，以顯示僅針對一個市場、一個品牌或僅限行動裝置的例項資料。
+- Métricas de UX apenas para a equipe de UX設計
+- 使用mesmos nomes para KPIs e métricas para oGoogle Analyticse para oCustomer Journey Analytics, para que a equipe de análise digital fale apenas 1 idioma。
+- Visualização de Dados filtrada para mostrar, por exemplo, dados para apenas um mercado, ou uma marca, ou apenas para Dispositivos móveis。
 
-在 **連線** 螢幕上，勾選您剛建立之連線前面的核取方塊。 按一下 **建立資料檢視**.
+娜特拉德 **連線** marque a caixa de seleção da conexão que você acabou de criar. 小組  **建立資料檢視**.
 
 ![示範](./images/exta.png)
 
-系統會將您重新導向至 **建立資料檢視** 工作流程。
+Você será redirecionado para o fluxo de trabalho **建立資料檢視** 工作流程。
 
 ![示範](./images/0-v2.png)
 
-## 4.3.2資料視圖定義
+## 4.3.2 Definição de Visualização de Dados
 
-您現在可以為資料檢視設定基本定義。
+Agora você pode configurar as definições básicas para sua Visualização de dados.
 
 ![示範](./images/0-v2.png)
 
-此 **連線** 您在上一練習中建立的內容已被選中。 您的連線已命名 `yourLastName – Omnichannel Data Connection`.
+A **連線** 當然，不能再做運動。 沙馬 `yourLastName – Omnichannel Data Connection`.
 
 ![示範](./images/ext5.png)
 
-接下來，請依照此命名慣例為您的資料檢視命名： `yourLastName – Omnichannel Data View`.
+Em seguida, dê um nome a sua Visualização de Dados seguindo este modelo de nomclatura: `yourLastName – Omnichannel Data View`.
 
-輸入說明的相同值： `yourLastName – Omnichannel Data View`.
+Insira o mesmo valor para a descão: `yourLastName – Omnichannel Data View`.
 
 | 名稱 | 說明 |
 | ----------------- |-------------| 
@@ -61,75 +60,75 @@ ht-degree: 2%
 
 ![示範](./images/1-v2.png)
 
-若 **時區**，請選取時區 **柏林、斯德哥爾摩、羅馬、伯爾尼、布魯塞爾、維也納、阿姆斯特丹GMT+01:00**. 這是一個非常有趣的環境，因為一些公司在不同的國家和地區經營。 為每個國家分配正確的時區將避免典型的資料錯誤，例如，認為在秘魯，大多數人在凌晨4:00購買T恤。
+段 **時區**，選手，時拉里奧 **貝利姆、埃斯托科爾莫、羅馬、貝爾納、布魯塞拉斯、維耶納、阿姆斯特丹GMT+01:00**. Este e um cenário realmente intersente, pois algumas empresas opeam deferentes países e geografias。 Alocar o fuso horário certo para cada país evitará erros típicos de dados, como, por exmelo, acreditar qua maioria das pessoas compra camisetasàs 4h no peru.
 
 ![示範](./images/ext7.png)
 
-您也可以修改主要量度命名（人員、工作階段和事件）。 這並非必要項目，但有些客戶喜歡使用「人員」、「造訪」和「點擊」，而非「人員」、「工作階段」和「事件」(來自Customer Journey Analytics的預設命名慣例)。
+Você também pode modificar a nomeclatura das métricas principais(Pessoa, Sessão e Evento)。 Isso não e obrigatório, mas alguns clientes gostam de usar Pessoas, Visitas e Acessos em vez de Pessoa, Sessão e Eventos(convenção de nomclatura padrão doCustomer Journey Analytics)。
 
-您現在應已設定下列設定：
+Agora você ter as seguintes configurações defidas:
 
 ![示範](./images/1-v2.png)
 
-按一下 **保存並繼續**.
+小組 **保存並繼續**.
 
 ![示範](./images/12-v2.png)
 
-## 4.3.3資料檢視元件
+## 4.3.3 Visualização de Dados元件
 
-在本練習中，您將設定分析資料並使用Analysis Workspace加以視覺化所需的元件。 此UI中有三個主要區域：
+Neste mextricício, você irá configurar os components equestrios paranalisar os dados e visualizá-los usando o Analysis Workspace。 Nesta IU，哈，Há tês áreas principais:
 
-- 左側：所選資料集中的可用元件
-- 中間：新增元件至資料檢視
-- 右側：元件設定
+- 拉多·埃斯凱多：元件Disponíveis dos資料集selectionados
+- Meio:Componentes adicionadosà Visualização de Dados
+- 拉多·迪雷托：科波嫩特河
 
 ![示範](./images/2-v2.png)
 
 >[!IMPORTANT]
 >
->如果您找不到特定的量度或維度，請檢查欄位 `Contains data` 會從資料檢視中移除。 否則，請刪除該欄位。
+>Se você não encontrur uma métrica ou dissão secufica, verifique se o campo `Contains data` foi removido de sua visualização de dados。 卡索·孔特拉里奧，獨家的。
 >
 >![示範](./images/2-v2a.png)
 
-現在，您必須將分析所需的元件拖放至 **新增元件**. 若要這麼做，您需要在左側功能表中選取元件，並將它們拖放至中間的畫布上。
+Agora você preisa arrastar e soltar os components equisé rios para a nalise nos **新增元件**. Paraisso, você deve selecionar os components no menuà esquerda e arrastá-los e soltá-los na tela no meio.
 
-讓我們從第一個元件開始： **名稱(web.webPageDetails.name)**. 搜尋此元件，然後將其拖放至畫布上。
+Vamos começar com o primeiro componente: **名稱(web.webPageDetails.name)**. Pesquise componente e arraste-o e solte-o na tela。
 
 ![示範](./images/3-v2.png)
 
-此元件是頁面名稱，因為您可從讀取架構欄位衍生 `(web.webPageDetails.name)`.
+Esse componenteé o nome da página, como você pode derivar da leitura do campo do schema `(web.webPageDetails.name)`.
 
-不過，使用 **名稱** 因為名稱不是商務使用者快速了解此維度的最佳命名慣例。
+沒有恩坦托，烏薩 **名稱** como o não e a melhor convenção de nomclatura para usário corporativo, apidamente essa dimensão.
 
-我們把名字改成 **頁面名稱**. 按一下元件，然後在 **元件設定** 的上界。
+Vamos mudar o nome para **頁面名稱**. 不是成員的團體 **元件設定**.
 
 ![示範](./images/3-0-v2.png)
 
-真正重要的是 **持久性設定**. CJA中不存在eVar和prop的概念，但「持續性」設定可能會有類似的行為。
+佩西斯特森西亞河 **持久性設定**. Os concetios de eVars e prop não istem no CJA, mas as configurações de Persstência possibilitam um comportamento semelhante.
 
 ![示範](./images/3-0-v21.png)
 
-如果您未變更這些設定，CJA會將維度解讀為 **Prop** （點擊層級）。 此外，我們也可以變更持續性，將維度設為 **eVar** （在歷程中保存值）。
+Se você não alterar essas configurações, o CJA irá interpretar a dimensão como um **Prop** （尼韋爾·德·奧科雷恩西亞）。 Além disso, podemos altera a Persistência para torn a dimensouma **eVar** （波斯斯特爾·瓦洛·奧隆戈·達喬納達）。
 
-如果您不熟悉eVar和Prop，您可以 [在檔案中深入閱讀相關資訊](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+請參閱você não estiver familiarizado com eVars e Props, [莉婭·瑪斯·索佈雷·伊索·娜·多克塔桑](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)...
 
-將「頁面名稱」保留為Prop。 因此，您不需要變更任何 **持久性設定**.
+我們去找Nome da Páginacomo Prop。 Dessa形式，vacê não precisa altera r nenhuma **持久性設定**.
 
 | 要搜索的元件名稱 | 新名稱 | 持久性設定 |
 | ----------------- |-------------| --------------------| 
 | 名稱(web.webPageDetails.name) | 頁面名稱 |  |
 
-接下來，選取維度 **phoneNumber** 然後放在畫布上。 新名稱應為 **電話號碼**.
+Em seguida, escolha a dimensão **phoneNumber** 太陽。 從頭到尾 **電話號碼**.
 
 ![示範](./images/3-1-v2.png)
 
-最後，我們將變更「持續性」設定，因為「行動號碼」應會保留在使用者層級。
+Por fim, alterar as Configurações de persistência, pois o Número do Celular deve persist in nível do usuário.
 
-若要變更永續性，請向下捲動右側功能表，並開啟 **持久性** 標籤：
+Para altera a Persstência, are pa baxo no menu a direita e abra a aba **持久性**:
 
 ![示範](./images/5-v2.png)
 
-勾選核取方塊以修改持續性設定。 選擇 **最近** 和 **人員（報告窗口）** 範圍，因為我們只關心那個人的最後一個手機號碼。 如果客戶未在未來的造訪中填入行動裝置，您仍會看到此值已填入。
+Marque a caixa de seleção para modificar as configurações de persistência. 選取項 **最近** e o escopo **人員（報告窗口）**, pois nos preocupamos apenas com oúltimo número de celular da pessoa. 請參閱cliente não preencher o celular em visitas futuras, você ainda verá esse valor preenchido。
 
 ![示範](./images/6-v2.png)
 
@@ -137,11 +136,11 @@ ht-degree: 2%
 | ----------------- |-------------| --------------------| 
 | phoneNumber | 電話號碼 | 最近，人員（報告窗口） |
 
-下一個元件是 `web.webPageDetails.pageViews.value`.
+O próximo componente `web.webPageDetails.pageViews.value`.
 
-在左側功能表中，搜尋 `web.webPageDetails.pageViews.value`. 將此量度拖放至畫布。
+沒有菜單是esquerda,pesquise `web.webPageDetails.pageViews.value`. Arraste e solte essa métrica na tela。
 
-將名稱變更為 **頁面檢視** 在 **元件設定**.
+變數 **頁面檢視** 在 **元件設定**.
 
 | 要搜索的元件名稱 | 新名稱 | 歸因設定 |
 | ----------------- |-------------| --------------------| 
@@ -149,14 +148,13 @@ ht-degree: 2%
 
 ![示範](./images/7-v2.png)
 
-在歸因設定中，會將此項目保留空白。
+Para as configurações de atribuição, deixaremos em branco.
 
-注意：在Analysis Workspace中，量度上的持續性設定也可以變更。 在某些情況下，您可以選擇在此設定，以避免業務使用者思考哪個是最佳持續性模型。
+Observação:如Analysis Workspace的Possistência nas métricas também podem ser alteradas。 Em alguns casos, você pode optar por configurá-las aqui para evitar que os usuários de negócios tenham que pensar qual e o melhor modelo de persistência。
 
-接下來，您必須設定許多Dimension和量度，如下表所示。
+Em seguida, você terá que configurar várias Dimensões e Métricas, conforme indicado na tabela abaixo.
 
-### Dimension
-
+### 維森斯
 
 | 要搜索的元件名稱 | 新名稱 | 持久性設定 |
 | ----------------- |-------------| --------------------| 
@@ -175,39 +173,38 @@ ht-degree: 2%
 | URL(web.webPageDetails.URL) | URL |  |
 | 使用者代理 | 使用者代理 | 最近，工作階段 |
 
-### 量度
+### 美特里卡
 
 | 要搜索的元件名稱 | 新名稱 | 歸因設定 |
 | ----------------- |-------------| --------------------| 
 | 數量 | 數量 |  |
 | commerce.order.priceTotal | 收入 |  |
 
-您的設定應該如下所示：
+Sua configuração deve semelhante ao seguinte:
 
 ![示範](./images/11-v2.png)
 
-別忘了 **儲存** 您的資料檢視。 所以按一下 **儲存** 現在。
+Não se esqueça de Salvar sua Visualização de Dados。 恩唐小組 **儲存**.
 
 ![示範](./images/12-v2s.png)
 
-## 4.3.4計算量度
+## 4.3.4梅特里卡斯計算器
 
-雖然我們已在資料檢視中組織了所有元件，您仍需調整其中某些元件，讓業務使用者可以開始進行分析。
+Embora tenhamos organizado todos os components na Visualização de dados, você ainda deve adaptar alguns deles para que os usurios de negócios estejam prontos para iniciar suas análises。
 
-若您記得，我們並未明確將「新增至購物車」、「產品檢視」或「購買」等量度加入「資料檢視」。
-不過，我們有一個維度，稱為： **事件類型**. 因此，我們建立3個計算量度，衍生這些互動類型。
+Se você se lembra, não trouxemos secificamente Métricas como Adicionar ao Carrinho, Visualização do produto ou Compras para a Visualização de dados。 沒有恩坦托，泰莫斯·烏馬： **事件類型**. 恩唐，瓦莫斯·德里瓦爾處理tipos de interação criando 3 métricas calculadas。
 
-讓我們從第一個量度開始： **產品檢視**.
+Vamos começar網站： **產品檢視**.
 
-左邊請搜索 **事件類型** 並選取維度。 然後將其拖放至 **包含的元件** 畫布。
+不要拉多·埃斯凱多，佩斯奎斯 **事件類型** 選擇維。 Em seguida, arraste-o e solte-o na tela **包含的元件**.
 
 ![示範](./images/calcmetr1.png)
 
-按一下以選取新量度 **事件類型**.
+新墨西哥族 **事件類型**.
 
 ![示範](./images/calcmetr2.png)
 
-現在，將元件名稱和說明變更為下列值：
+Agora altere o nome e a descrição do componente para os seguintes valores:
 
 | 元件名稱 | 元件說明 |
 | ----------------- |-------------| 
@@ -215,31 +212,31 @@ ht-degree: 2%
 
 ![示範](./images/calcmetr3.png)
 
-現在只讓計算 **產品檢視** 事件。 若要這麼做，請向下捲動 **元件設定** 直到你看到 **包含排除值**. 請務必啟用選項 **設定包含/排除值**.
+瓦莫斯山 **產品檢視**. Para fazer isso, rale par a bixo em **元件設定** 瓦洛雷斯河 **包含排除值**. 奧普桑河畔瑟蒂菲克 **設定包含/排除值**.
 
 ![示範](./images/calcmetr4.png)
 
-因為我們只想數 **產品檢視**，請指定 **commerce.productViews** 在條件下。
+Como queremos contar apenas **產品檢視**，特別是 **commerce.productViews** 克里蒂里奧斯號。
 
 ![示範](./images/calcmetr5.png)
 
-您的計算量度現已準備就緒！
+我是個大腦，還有本能！
 
-接下來，對 **新增至購物車** 和 **購買** 事件。
+Em seguida, repita o mesmo processo para os eventos **新增至購物車** e **購買**.
 
 ### 新增至購物車
 
-首先拖放相同的維度 **事件類型**.
+Primeiro, arraste e solte a mesma dissão **事件類型**.
 
 ![示範](./images/calcmetr1.png)
 
-您會看到重複欄位的快顯警報，因為我們使用相同的變數。 請按一下 **仍新增**:
+Você verá um alerta pop de um Campo Duplicado, pois estamos usando a mesma variável。 小組 **仍新增**:
 
 ![示範](./images/calcmetr6.png)
 
-現在，請依照與「產品檢視」量度相同的程式操作：
-- 請先變更名稱和說明。
-- 最後添加 **commerce.productListAdds** 作為僅計數「新增至購物車」的條件
+Agora, siga o mesmo processso que fizemos para a métrica Visualizações de producto:
+- Primeiro改變了。
+- 波菲姆，阿迪奧內 **commerce.productListAdds** 科莫·克里特里奧·帕拉·阿佩納斯加到購物車
 
 | 名稱 | 描述 | 標準 |
 | ----------------- |-------------| -------------|
@@ -249,17 +246,17 @@ ht-degree: 2%
 
 ### 購買
 
-首先拖放相同的維度 **事件類型** 如同先前的兩個量度。
+Primeiro, arraste e solte a mesma dissão **事件類型** 我們的手藝很好。
 
 ![示範](./images/calcmetr1.png)
 
-您會看到重複欄位的快顯警報，因為我們使用相同的變數。 請按一下 **仍新增**:
+Você verá um alerta pop de um Campo Duplicado, pois estamos usando a mesma variável。 小組 **仍新增**:
 
 ![示範](./images/calcmetr7.png)
 
-現在，請依照與「產品檢視」和「新增至購物車」量度相同的程式操作：
-- 請先變更名稱和說明。
-- 最後添加 **commerce.purchases** 作為僅計算購買的條件
+Agora, siga o mesmo processo que fizemos para as métricas產品視圖e添加到購物車：
+- Primeiro改變了。
+- 波菲姆，阿迪奧內 **commerce.purchases** 科莫·科普拉斯
 
 | 名稱 | 描述 | 標準 |
 | ----------------- |-------------| -------------|
@@ -267,36 +264,36 @@ ht-degree: 2%
 
 ![示範](./images/calcmetr7a.png)
 
-您的最終設定應會如下所示。 按一下 **保存並繼續**.
+Sua configuração final deve ser semelhante ao seguinte. 小組 **保存並繼續**.
 
 ![示範](./images/calcmetr8.png)
 
-## 4.3.5資料檢視設定
+## 4.3.5元件：達配置
 
-系統應將您重新導向至此畫面：
+Você deve ser redirecionado para esta:
 
 ![示範](./images/8-v2.png)
 
-在此索引標籤中，您可以修改一些重要設定以變更資料的處理方式。 我們先設定 **工作階段逾時** 30分鐘。 由於每個體驗事件的時間戳記，您可以在所有管道中延伸工作階段的概念。 例如，如果客戶造訪網站後呼叫客服中心，會發生什麼事？ 使用自訂工作階段逾時時，您在決定工作階段的內容以及該工作階段如何合併資料時，會缺乏彈性。
+Nesta aba, você pode modificar algumas configurações a importantes para alterar a forma como os dados são processados. Vamos começar defindo o **工作階段逾時** 30分鐘 Graças ao registro de data e hora de cada evento de experiencia, você pode estendo o conceito de uma sessão em todos os canais。 Por exmelo, o cue se um cliente ligar para o call center depois de visitar o site? Usando Tempos Limite de Sessão個人化， você tem muita flexibilidade para decidir o que u ma sessão e como essa sessão irá mesclar dos。
 
 ![示範](./images/ext8.png)
 
-在此索引標籤中，您可以使用區段/篩選來修改其他項目，例如篩選資料。 在這個練習中，你不需要這樣做。
+Nesta aba você pode modificar outras coisas como filtrar os dados usando um segmento/filtro. Você não precisará fazer isso nest extriccio.
 
 ![示範](./images/10-v2.png)
 
-完成後，請按一下 **保存並完成**.
+乾多·塔米納，小伙 **保存並完成**.
 
 ![示範](./images/13-v2.png)
 
 >[!NOTE]
 >
->之後，您可以返回此資料檢視，並隨時變更設定和元件。 變更會影響歷史資料的顯示方式。
+>Você pode voltar a esta Visualização de dados posteormente e alterar as configurações e os components a qualquer monto. 如alterações aftarão a forma como os dados históricos são mostrados.
 
-您現在可以繼續使用視覺效果和分析部分！
+Agora você pode continuar com a parte de visualização e análise!
 
-下一步： [4.4資料準備Customer Journey Analytics](./ex4.md)
+埃塔帕： [4.4準備Customer Journey Analytics](./ex4.md)
 
-[返回用戶流4](./uc4.md)
+[烏薩里奧河畔雷托爾](./uc4.md)
 
-[返回所有模組](./../../overview.md)
+[托多斯山](./../../overview.md)

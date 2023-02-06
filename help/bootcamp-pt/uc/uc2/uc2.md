@@ -5,51 +5,51 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 3%
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
-# 2.註冊和上線
+# 2. Objetivos de aprendizado
 
 ## 學習目標
 
-## 先決條件
+## 普雷雷基托斯
 
-- 存取 Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- 存取Adobe Experience Platform資料收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 存取示範網站
+- 如Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acessoà coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- 阿塞索奧地點
 
 >[!IMPORTANT]
 >
->本教學課程旨在促進特定的bootcamp格式。 它使用您可能沒有存取權的特定系統和帳戶。 即使沒有訪問權，我們仍然認為，通過閱讀這些非常詳細的內容，您仍可以學到很多。 如果您是其中一個訓練營的參與者，並且需要您的訪問憑據，請聯繫您的Adobe代表，該代表將向您提供所需資訊。
+>教學課程，從格式上講，特別是從bootcamp。 Sistemas e contas secíficos aos quais você pode não ter acesso são utidas neste教學課程。 Mesmo sem acesso, você ainda pode aprende muito com a leitura deste contesúdo detalhado。 請參加bootcamp e precisa das credencias de acesso，將em contato com seu代表daAdobe收件人作為必要資訊。
 
-## 練習
+## 雷孔西奧斯
 
-[2.1造訪網站並建立帳戶](./ex1.md)
+[2.1網站訪問](./ex1.md)
 
-在本練習中，您將學習如何設定事件。
+不要練習，不要忘記，我會配置。
 
-[2.2建立事件](./ex2.md)
+[2.2 Crie seu evento](./ex2.md)
 
-在本練習中，您將學習如何設定事件。
+不要練習，不要忘記，我會配置。
 
-[2.3建立您的歷程和電子郵件訊息](./ex3.md)
+[2.3電子郵件](./ex3.md)
 
-在本練習中，您將學習如何設定歷程和電子郵件訊息。
+Neste mextricio, você irá aprender como configurar journada e uma mensagem de e-mail。
 
-[2.4測試您的歷程](./ex4.md)
+[2.4聖若那達](./ex4.md)
 
-在本練習中，您將測試您剛建立的歷程。
+不要練習，不要唱。
 
-[2.5安裝和使用行動應用程式](./ex5.md)
+[2.5安裝應用程式](./ex5.md)
 
-在本練習中，您將安裝行動應用程式。
+不要再做練習，不要再安裝了。
 
-[2.6客服中心的個人化](./ex6.md)
+[2.6個人化呼叫中心](./ex6.md)
 
-在本練習中，您將了解如何根據Adobe Experience Platform的智慧最佳化客服中心體驗。
+Neste mextricio, você verá como uma experiencecia de call center pode ser otimizada com base na inteligência da Adobe Experience Platform。
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

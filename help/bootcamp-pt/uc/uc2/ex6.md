@@ -5,87 +5,87 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
 
-# 2.6客服中心的個人化
+# 2.6個人化呼叫中心
 
 正如在Bootcamp期間已多次討論的，個人化客戶體驗應以全通路的方式進行。 客服中心通常與客戶歷程的其餘部分相去甚遠，這通常會導致令人沮喪的客戶體驗，但不需要。 讓我們舉個例子，告訴您客服中心如何即時輕鬆連線至Adobe Experience Platform。
 
-## 客戶歷程流量
+## 克呂克索 — 達喬納達 — 杜克里恩特
 
-在先前的練習中，您使用行動應用程式，按一下 **購買** 按鈕。
+沒有前練習，usando o aplicativo móvel, você comprou m produt clicando no botão **購買**.
 
 ![DSN](./images/app20.png)
 
-假設您對訂單狀態有疑問，您會怎麼做？ 通常您會呼叫呼叫中心。
+那麼，你說的是，我們的身份，或者說，我的身份，或者說，我的身份？ 諾曼特，呼叫中心。
 
-在呼叫客服中心之前，您需要了解 **忠誠度ID**. 您可以在網站的設定檔檢視器中找到您的忠誠度ID。
+佩拉呼叫中心 **忠誠度ID**. Você pode encontrar seu ID de fidelidade no Visualizador de Perfil do站點。
 
 ![DSN](./images/cc1.png)
 
-在此情況下， **忠誠度ID** is **5863105**. 在示範環境中，作為客服中心功能的自訂實作，您需要在 **忠誠度ID**. 前置詞是 **11373**，因此此範例中使用的忠誠度ID為 **11373 5863105**.
+Nesse caso, o **忠誠度ID** é **5863105**. Como parte de nossa implementationção personalizada do recurso de call center no ambiente de de dexedção, você deve adicionar um prefixo seu **忠誠度ID**. O prefixoé **11373**, portanto, o ID de fidelidade a ser usado neste exemploé **11373 5863105**.
 
-現在來。 用你的電話打電話 **+1(323)745-1670**.
+再見。 使用seu telefone e ligue para o número **+1(323)745-1670**.
 
 ![DSN](./images/cc2.png)
 
-系統會要求您輸入忠誠度ID，之後 **#**. 輸入您的忠誠度ID。
+塞拉·索利塔多，塞吉多·德 **#**. Digite seu ID de fidelidade.
 
 ![DSN](./images/cc3.png)
 
-你就會聽到 **你好，名字**. 名字取自Adobe Experience Platform的「即時客戶個人檔案」。 那你有3個選擇。 新聞號碼 **1**, **訂單狀態**.
+沃凱烏維拉 **你好，女人**, nome。 Esse nomeé retirado do Perfil do Cliente em tempo re a Adobe Experience Platform。 Você tem 3 escolhas。 普雷西奧內·努梅羅 **1**, **訂單狀態**.
 
 ![DSN](./images/cc4.png)
 
-聽完訂單狀態後，您將可以選擇按 **1** 要返回主菜單或其他，請按2。 Press **2**.
+Depois de ouvir o status do seu pedido, você terá a opção de pressionar **1** para voltarao菜單首字母o pressionar 2 普雷西奧內 **2**.
 
 ![DSN](./images/cc5.png)
 
-接著，系統會要求您透過選取介於1和5之間、1為低且5為高的數字，對客服中心的使用體驗進行評分。 做出選擇。
+Em seguida, será solicitado que você avalie sua experiencia de call center, selectionando um número entre 1 e 5, sendo 1 baixo e 5 alto。 真是太好了。
 
 ![DSN](./images/cc6.png)
 
-您對客服中心的呼叫現在將結束。
+呼叫中心，塞拉。
 
-前往 [Adobe Experience Platform](https://experience.adobe.com/platform). 登入後，您會登陸Adobe Experience Platform首頁。
+阿塞斯 [Adobe Experience Platform](https://experience.adobe.com/platform). 登入Depois de fazer，是Página inical da Adobe Experience Platform。
 
 ![資料擷取](./images/home.png)
 
-繼續之前，您需要選取 **沙箱**. 要選取的沙箱已命名 ``Bootcamp``. 您可以按一下文字 **[!UICONTROL 生產產品]** 在螢幕上方的藍線。 選取適當的 [!UICONTROL 沙箱]，您會看到畫面變更，現在您已進入專屬 [!UICONTROL 沙箱].
+連續、前輪 **沙箱**. 不要用沙箱做選擇 ``Bootcamp``. É postível fazer isso clicando no texto **[!UICONTROL 生產產品]** 娜琳娜·阿祖爾娜·帕特·蘇佩拉。 Depois de selecionar o [!UICONTROL 沙箱] 波普里亞多，você verá a tela mudando e agora você em seu [!UICONTROL 沙箱] 愛心。
 
 ![資料擷取](./images/sb1.png)
 
-在左側功能表中，前往 **設定檔** 和 **瀏覽**.
+沒有菜單，阿塞斯 **設定檔** e **瀏覽**.
 
 ![客戶設定檔](./images/homemenu.png)
 
-選取 **身分命名空間** **電子郵件** 並輸入客戶設定檔的電子郵件地址。 按一下 **檢視**. 按一下以開啟您的設定檔。
+選取 **身分命名空間** **電子郵件** e insira o endereço de e-mail do seu perfil de cliente. 小組 **檢視**. 派人對付她。
 
 ![DSN](./images/cc7.png)
 
-您會再次看到您的客戶設定檔。 前往 **事件**.
+Você verá seu perfil de cliente novamente. 阿塞斯 **事件**.
 
 ![DSN](./images/cc8.png)
 
-在events底下，您會看到2個事件，其中eventType為 **callCenter**. 第一個事件是您回答問題的結果 **評分您的電話滿意度**.
+Em eventos, você verá 2 eventos com eventType de **callCenter**. O primeiro eventoé yo resultado da sua resposta a pergunta Avalie o seu n **評分您的電話滿意度**.
 
 ![DSN](./images/cc9.png)
 
-向下捲動一點，您就會看到選取要檢查 **訂單狀態**.
+Role um pouco para baixo e você verá o evento que foi registration do quando você selecionou a opção de verificar o **訂單狀態**.
 
 ![DSN](./images/cc10.png)
 
-前往 **區段成員資格**. 您現在會根據您透過客服中心的互動，即時看到2個區段符合您的設定檔資格。 然後，這些區段成員資格可以也應該用於影響任何其他管道間的通訊和個人化情形。
+阿塞斯 **區段成員資格**. Agora você verá que 2 segmentos se qualificam em seu perfil, em tempo real, com base nas interções que você teve por meio do call center. Essas associações de segmento podem e devem ser usadas para impactar qual comunicação e personalização acontece em qualquer outro canal。
 
 ![DSN](./images/cc11.png)
 
-你已經完成了這個練習。
+Você termou est exticio。
 
-[返回用戶流2](./uc2.md)
+[烏薩里奧河畔雷托納爾2](./uc2.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

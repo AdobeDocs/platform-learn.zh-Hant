@@ -5,69 +5,69 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '368'
 ht-degree: 2%
 
 ---
 
-# 2.1造訪網站並建立帳戶
+# 2.1網站訪問
 
-## 內容
+## Contextto
 
-從未知到已知的歷程是現今品牌中最重要的主題之一，客戶從贏取到保留的歷程亦然。
+A jornada do desconhecido ao conhecido e um dos tópicos mais importentes para as marcas atualmente, assim como a jornada do cliente, da aquisãoà retenção。
 
-Adobe Experience Platform在這段歷程中扮演著重要角色。 平台是溝通的大腦， **體驗記錄系統**.
+一個Adobe Experience Platform的紙幣。 A platformaé o cérebro da comunicação, o **體驗記錄系統**.
 
-Platform是一種環境，在這種環境中，客戶一詞比已知客戶更廣。 從Platform的角度來看，網站上的未知訪客也是客戶，因此，作為未知訪客的所有行為也會傳送至Platform。 有了這種方法，當此訪客最終成為已知客戶時，品牌也可以將那一刻之前發生的情形加以視覺化。 這從歸因和體驗最佳化的觀點來說，有所幫助。
+Plataformaé um am biente em que palavra cliente engloba mais do que clientes conhecidos. Um visitante desconhecido no site tambémé um cliente do ponto de vista da Platforma e, todo to do o comportamento de um visitante desconhecido também e enviadoà platforma. Graças a essa a abordagem, quando esse visitante最終會影響到torna um cliente conhecido, uma marca também pode visualizar o que aconteceu antes daquele monto。 Isso ajuda a partir de uma perspectiva de otimização de atribuição e experincia.
 
-## 客戶歷程流程
+## 克呂克索 — 達喬納達 — 杜克里恩特
 
-前往 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 按一下 **允許全部**. 根據您在上一個使用者流程中的瀏覽行為，您會看到網站首頁上發生個人化。
+阿塞斯 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 小組 **允許全部**. Com base no seu comportamento de navegação no fluxo de usuário aneralização acontecer na página inicial do site.
 
 ![DSN](./images/web8.png)
 
-按一下螢幕左上角的Adobe標誌圖示，開啟「設定檔檢視器」。 查看「設定檔檢視器」面板和「即時客戶設定檔」，其中 **Experience CloudID** 作為此目前未知客戶的主要識別碼。
+Plickue noícone do logotipo daAdobeno canto supererquerdo da tela para abrir o Visualizador de perfil. Verifique o painel do Visualizador de perfil e no Perfil do cliente em tempo real com o **Experience CloudID** 我要確認一下primário para es cliente que aindaé desconhecido。
 
 ![示範](./images/pv1.png)
 
-您也可以查看根據客戶行為收集的所有體驗事件。
+Você também pode ver todos os Eventos de experiencia coletados com base no comportamento do cliente。
 
 ![示範](./images/pv3.png)
 
-按一下 **設定檔** 圖示。
+伊科內集團 **設定檔** 沒有上司迪雷托達特拉。
 
 ![示範](./images/pv4.png)
 
-按一下 **建立帳戶**.
+小組 **建立帳戶**.
 
 ![示範](./images/pv5.png)
 
-填寫表單的所有欄位。 對電子郵件地址和電話號碼使用真實值，因為它將用於後續的電子郵件和簡訊傳送練習。
+你要的是公式。 使用e-mail e número de telefone, pois será usado em mextricios phesteriors para envio de e-mail e SMS
 
 ![示範](./images/pv7.png)
 
-向下捲動並按一下 **註冊**.
+Are para baixo e clium **註冊**.
 
 ![示範](./images/pv8.png)
 
-你會看到這個。
+塞吉達，塞金特·塞拉。
 
 ![示範](./images/pv9.png)
 
-您也會收到此電子郵件：
+Você também receberá o seguinte e-mail:
 
 ![示範](./images/pv10.png)
 
-幾分鐘後，您也會收到這封電子郵件：
+E alguns minutos depois, você também receberá o seguinte e-mail:
 
 ![示範](./images/pv11.png)
 
-讓我們來看看接下來如何設定此入門歷程。
+Vamos conferir a seguir como essa jornada de onboid foi configurada.
 
-下一步： [2.2建立事件](./ex2.md)
+埃塔帕山 [2.2 Crie seu evento](./ex2.md)
 
-[返回用戶流2](./uc2.md)
+[烏薩里奧河畔雷托納爾2](./uc2.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

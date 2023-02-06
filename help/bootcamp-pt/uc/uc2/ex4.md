@@ -5,55 +5,56 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '223'
 ht-degree: 2%
 
 ---
 
-# 2.4測試您的歷程
+# 2.4聖若那達
 
-## 客戶歷程流程
+## 克呂克索 — 達喬納達 — 杜克里恩特
 
-開啟全新、乾淨、無痕的瀏覽器窗口，然後轉到 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 按一下 **允許全部**. 根據您在上一個使用者流程中的瀏覽行為，您會看到網站首頁上發生個人化。
+阿布拉烏馬諾瓦亞內拉阿諾尼馬 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 小組 **允許全部**. Com base no seu comportamento de navegação no fluxo de usuário aneralização acontecer na página inicial do site.
 
 ![DSN](./images/web8a.png)
 
-按一下 **設定檔** 圖示。
+伊科內集團 **設定檔** 沒有上司迪雷托達特拉。
 
 ![示範](./images/web8b.png)
 
-按一下 **建立帳戶**.
+小組 **建立帳戶**.
 
 ![示範](./images/pv5.png)
 
-填寫表單的所有欄位。 對電子郵件地址和電話號碼使用真實值，因為它將用於後續的電子郵件和簡訊傳送練習。
+你要的是公式。 使用e-mail e número de telefone, pois será usado em mextricios phesteriors para envio de e-mail e SMS
 
 ![示範](./images/pv7a.png)
 
-向下捲動。 您現在需要輸入在練習2.2中建立的自訂事件的eventID。您可以在此處找到它：
+角色。 Agora você deve inser o eventID do seu evento personalizado que você criou no extrackio 2.2. Você pode encontrá-lo aqui:
 
 ![ACOP](./images/payloadeventID.png)
 
-事件ID是需要傳送至Adobe Experience Platform的項目，才能觸發您建立的歷程。 以下是此範例中的eventID: `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
+O eventIDé o que precisa veniad o que acionar a jornada que você construiu. Esteé o eventID不是樣本：
+`19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-在欄位中填寫eventID **帳戶建立事件ID** 按一下 **註冊**.
+Preencha o eventID no campo **帳戶建立事件ID** e團 **註冊**.
 
 ![示範](./images/pv8a.png)
 
-你會看到這個。
+Em seguida，一個被禁慾的女孩：
 
 ![示範](./images/pv9.png)
 
-您也會收到這封電子郵件，這是您在本練習中自行建立的電子郵件。
+Você também receberá e-mail, que e-mail que vicê mesmo criou co ma part te deste extrecício.
 
 ![示範](./images/pv10a.png)
 
-你已經完成了這個練習。
+Você termou est exticio。
 
-下一步： [2.5安裝和使用行動應用程式](./ex5.md)
+埃塔帕： [2.5安裝應用程式](./ex5.md)
 
-[返回用戶流2](./uc2.md)
+[烏薩里奧河畔雷托納爾2](./uc2.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

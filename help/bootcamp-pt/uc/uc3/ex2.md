@@ -5,83 +5,83 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
-# 3.2建立事件
+# 3.2 Crie seu evento
 
-前往登入Adobe Journey Optimizer [Adobe Experience Cloud](https://experience.adobe.com). 按一下 **Journey Optimizer**.
+登錄Adobe Journey Optimizer帳戶a [Adobe Experience Cloud]. 小組 **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-系統會將您重新導向至 **首頁**  檢視。 首先，請確定您使用的沙箱正確無誤。 系統會呼叫要使用的沙箱 `Bootcamp`. 若要從一個沙箱變更為另一個沙箱，請按一下 **生產** 並從清單中選取沙箱。 在此範例中，沙箱的名稱為 **Bootcamp2**. 那你就在 **首頁** 沙箱檢視 `Bootcamp`.
+Você será redirecionado para a **首頁** 不，Journey Optimizer。 Primeiro, Verifique se você usando o sandbox correto. 不要沙箱，就要用 `Bootcamp`. Para alternar de um sandbox para outro, plicaem **生產** 選擇沙箱或沙箱。 不要做沙箱 **Bootcamp2**. Você estará na visualização da **首頁** 做seu沙箱 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-在左側功能表中，向下捲動並按一下 **配置**. 下一步，按一下 **管理** 按鈕 **事件**.
+沒有菜單，角色是 **配置**. Em seguida，小團體 **管理** 埃文托斯。
 
 ![ACOP](./images/acopmenu.png)
 
-之後，您將會看到所有可用事件的概觀。 按一下 **建立事件** 以開始建立您自己的事件。
+Você verá uma visão geral de todos os eventos disponíveis. 小組 **建立事件** 這是一個罪名。
 
 ![ACOP](./images/emptyevent.png)
 
-接著會出現新的空事件視窗。
+烏馬諾瓦·雅內拉·德·埃文托·瓦齊亞·阿帕雷克。
 
-首先，為您的事件命名如下： `yourLastNameBeaconEntryEvent` 並添加這樣的說明 `Beacon Entry Event`.
+Em primeiro lugar, dê um noma o seu evento como, por exampleo: `yourLastNameBeaconEntryEvent` e adicione uma描述como como, por exemple: `Beacon Entry Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-接下來，請確定 **類型** 設為 **單一**，和 **事件ID類型** 選擇，選擇 **系統生成**.
+Em seguida, certifique-se de que **類型** 我就是，科莫 **單一** e，第seleção de **事件ID類型**, selectone **系統生成**.
 
 ![ACOP](./images/eventidtype.png)
 
-接下來是「結構」選項。 為本練習準備了方案。 請使用架構 `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
+一個塞萊桑的方案。 我的計畫是準備做練習。 使用結構 `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-選取結構後，您會在 **欄位** 區段。 您現在應將滑鼠暫留在 **欄位** 區段中顯示3個圖示快顯視窗。 按一下 **編輯** 表徵圖。
+Depois de selecionar o Schema, você verá vários campos sendo selecionados na seção **欄位**. 阿戈拉·沃克·德韋·帕薩 **欄位** Trêsícones彈出窗口serão exibidos。 伊科內集團 **編輯**.
 
 ![ACOP](./images/eventpayload.png)
 
-你會看到 **欄位** 視窗快顯視窗中，您需要在其中選取我們個人化歷程所需的一些欄位。  我們稍後會使用Adobe Experience Platform中已有的資料，選擇其他設定檔屬性。
+Você verá uma janela pop de **欄位**，通過você deve selectionar alguns dos campos que precisamos para personalizar a jornada。 Escolheremos outs outros atributos de perfil posterofermente, ulidando os dados já existes na Adobe Experience Platform
 
 ![ACOP](./images/eventfields.png)
 
-向下捲動，直到看到該對象 `Place context` 並勾選核取方塊。 借此，客戶位置的所有內容都將可供歷程使用。 按一下 **確定** 來儲存變更。
+Baixo até ver o bjeto `Place context` 是塞萊桑的。 Com isso, todo o contexto da localização do cliente será disponibilizado para a jornada. 小組 **確定** 薩爾瓦·蘇亞斯·阿爾特拉松伊斯。
 
 ![ACOP](./images/eventpayloadbr.png)
 
-你應該看看這個。 按一下 **儲存** 以儲存變更。
+是的，有個彈簧。 小組 **儲存** 馬伊斯·烏馬·韋斯·薩爾瓦·蘇亞斯·阿爾特拉松伊斯。
 
 ![ACOP](./images/eventsave.png)
 
-您的事件現在已設定並儲存。
+我要說，我要說，我要說。
 
 ![ACOP](./images/eventdone.png)
 
-再按一下您的事件以開啟 **編輯事件** 畫面。 暫留在 **欄位** 再看3個圖示。 按一下 **檢視** 表徵圖。
+Plicus no seu evento novamentte para abrir a tela **編輯事件** 馬伊斯·烏馬·韋斯。 滑鼠的呼吸 **欄位** 第3版。 伊科內集團 **檢視**.
 
 ![ACOP](./images/viewevent.png)
 
-您現在會看到預期有效負載的範例。
-您的事件有唯一的協調eventID，您可以在該裝載中向下捲動以找到它，直到您看到 `_experience.campaign.orchestration.eventID`.
+阿戈拉語中的意思是，我的意思是：
+Seu event to tem um eventID de orquestraçãoúnico, que você pode encontror rolando para baixo nessa cargaútil até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-事件ID是需要傳送至Adobe Experience Platform的項目，以觸發您將在下一個練習中建立的歷程。 記住此eventID，因為您稍後可能需要它。
+O eventIDé o que deve ser enviado à Adobe Experience Platform para acionar a jorna dus próximos extreccios. Lembre-se deste eventID, você pode precisar deposerormente。
 `"eventID": "e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5"`
 
-按一下 **確定**，然後按一下 **取消**.
+小組 **確定** e, em seguida，小團em **坎塞爾**.
 
-你已經完成了這個練習。
+Você termou est exticio。
 
-下一步： [3.3建立您的歷程和推播通知](./ex3.md)
+埃塔帕： [3.3 Crie sua jornada e notificação push](./ex3.md)
 
-[返回用戶流3](./uc3.md)
+[烏薩里奧3](./uc3.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

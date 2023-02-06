@@ -5,69 +5,69 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '534'
 ht-degree: 2%
 
 ---
 
-# 1.2將您自己的即時客戶個人檔案視覺化 — UI
+# 1.2將seu próprio perfil de cliente em tempo real視覺化 — UI
 
-在本練習中，您將登入Adobe Experience Platform，並在UI中檢視您自己的即時客戶個人檔案。
+不需要練習，也可以登入Adobe Experience Platform e visualizar seu próprio de cliente de tempo real na UI。
 
-## Story
+## 希斯托里亞
 
-在即時客戶設定檔中，所有設定檔資料會與事件資料以及現有區段成員資格一起顯示。 顯示的資料可以來自任何位置、Adobe應用程式和外部解決方案。 這是Adobe Experience Platform最強大的觀點，也是真正的體驗系統。
+沒有Perfil do cliente em tempo real, todos os dados do perfil são exibidos juntamente com os dados do evento, além das associações de segmentos existes。 Os dados mostrados podem vir de qualquer lugar, de aplicativos daAdobee soluções externas。 Essa exibição mais poderosa da Adobe Experience Platform, o verdadeiro local do sistema de experincia。
 
-## 1.2.1使用Adobe Experience Platform中的「客戶個人檔案檢視」
+## 1.2.1使用visualização do perfil do cliente na Adobe Experience Platform
 
-前往 [Adobe Experience Platform](https://experience.adobe.com/platform). 登入後，您會登陸Adobe Experience Platform首頁。
+阿塞斯 [Adobe Experience Platform](https://experience.adobe.com/platform). 登入Depois de fazer，是Página inical da Adobe Experience Platform。
 
 ![資料擷取](./images/home.png)
 
-繼續之前，您需要選取 **沙箱**. 要選取的沙箱已命名 ``Bootcamp``. 您可以按一下文字 **[!UICONTROL 生產產品]** 在螢幕上方的藍線。 選取適當的 [!UICONTROL 沙箱]，您會看到畫面變更，現在您已進入專屬 [!UICONTROL 沙箱].
+連續、前輪 **沙箱**. 不要在Bootcamp上沙箱。 É postível fazer isso clicando no texto **[!UICONTROL 生產產品]** 娜琳娜·阿祖爾娜·帕特·蘇佩拉。 在沙箱上自行選擇 [!UICONTROL 沙箱] 愛心。
 
 ![資料擷取](./images/sb1.png)
 
-在左側功能表中，前往 **設定檔** 和 **瀏覽**.
+沒有菜單，阿塞斯 **設定檔** e **瀏覽**.
 
 ![客戶設定檔](./images/homemenu.png)
 
-在您網站的「設定檔檢視器」面板上，您可以找到身分概述。 每個身分都會連結至命名空間。
+沒有Visualizador de perfil的站點，você pode encontrar a visão geral da identidade。 Cada確認了Vinculada的命名空間。
 
 ![客戶設定檔](./images/identities.png)
 
-在「設定檔檢視器」面板上，您目前可以看到此身分：
+沒有佩恩爾·迪佩菲爾、agora você pode ver esta標識：
 
 | 命名空間 | 身分 |
 |:-------------:| :---------------:|
 | Experience Cloud ID (ECID) | 19428085896177382402834560825640259081 |
 
-有了Adobe Experience Platform，所有ID都同樣重要。 過去，ECID是Adobe內容中最重要的ID，而所有其他ID則以階層關係連結至ECID。 有了Adobe Experience Platform，情況就不再如此，每個ID都可視為主要識別碼。
+Com a Adobe Experience Platform, todos os IDs são igualmente importantes。 Anteriormente, o ECID era o ID mais it an te context to da todos e todos os outs ID estavam vinculados ao ECID em uma relação hierrárquica。 Com a Adobe Experience Platform, isso mudou e cada ID pode ser identification ador primário.
 
-主要識別碼通常取決於內容。 如果你問問你的呼叫中心， **最重要的ID為何？** 他們很可能會回答， **電話號碼！** 但如果你問你的CRM團隊，他們會回答， **電子郵件地址！**  Adobe Experience Platform了解這種複雜性，並為您管理。 每個應用程式(無論是Adobe應用程式或非Adobe應用程式)都會參照其視為主要的ID，與Adobe Experience Platform通話。 它就是有效的。
+正常人，也就是說，我的身份。 Se você perguntarao seu呼叫中心： **真的很重要嗎？** Eles provavelmente responderão: **阿努梅羅·德·特萊福內** Mas se você perguntarà sua equipe de CRM, eles responderão: **寄電子郵件！** 一個Adobe Experience Platform理解了愛情的複雜性。 Cada applicativo, seja um aplicativo daAdobeou não, se comunicará com a Adobe Experience Platform referindo-se ao ID que coundiam principal。 我簡單點。
 
-針對欄位 **身分命名空間**，選取 **ECID** 和 **身分值** 在bootcamp網站的「配置檔案查看器」面板上輸入可以找到的ECID。 按一下 **檢視**. 然後，您會在清單中看到您的個人資料。 按一下 **設定檔ID** 來開啟您的個人資料。
+帕拉奧坎波 **身分命名空間**, selectone **ECID** e para o campo **身分值** Insira o ECID que você pode encontrar no painel Visualizador de perfil do site do Bootcamp。 小組 **檢視**. 不過我會的。 小集團 **設定檔ID** para abrir seu perfil.
 
 ![客戶設定檔](./images/popupecid.png)
 
-您現在會看到以下幾個重要項目的概述 **設定檔屬性** 客戶個人檔案。
+Agora você tem uma visão geral de alguns **佩爾菲爾阿特里布托斯** 重要人物，請幫忙。
 
 ![客戶設定檔](./images/profile.png)
 
-前往 **事件**，您可以在其中看到連結至您設定檔之每個體驗事件的項目。
+阿塞斯 **事件**，將você pode ver作為entradas de cada evento de experiencia vinculado ao seu Perfil。
 
 ![客戶設定檔](./images/profileee.png)
 
-最後，移至功能表選項 **區段成員資格**. 您現在會看到所有符合此設定檔資格的區段。
+Por fim, Aesse a opção de menu **區段成員資格**. Agora você verá todos os segmentos que se qualificam para este perfil.
 
 ![客戶設定檔](./images/profileseg.png)
 
-現在來建立新區段，讓您為匿名或了解的客戶個人化客戶體驗。
+Agora vamos criar no vo segmento que permitrá que você個性化一個體驗cliencia do cliente para um cliente anônimo ou conhecido。
 
-下一步： [1.3建立區段 — UI](./ex3.md)
+埃塔帕： [1.3標準區段 — UI](./ex3.md)
 
-[返回用戶流1](./uc1.md)
+[烏薩里奧1號](./uc1.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

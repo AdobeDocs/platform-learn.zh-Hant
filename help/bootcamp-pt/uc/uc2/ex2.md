@@ -5,93 +5,93 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
 
-# 2.2建立事件
+# 2.2 Crie seu evento
 
-前往登入Adobe Journey Optimizer [Adobe Experience Cloud](https://experience.adobe.com). 按一下 **Journey Optimizer**.
+登錄Adobe Journey Optimizer帳戶a [Adobe Experience Cloud](https://experience.adobe.com). 小組 **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-系統會將您重新導向至 **首頁**  檢視。 首先，請確定您使用的沙箱正確無誤。 系統會呼叫要使用的沙箱 `Bootcamp`. 若要從一個沙箱變更為另一個沙箱，請按一下 **生產** 並從清單中選取沙箱。 在此範例中，沙箱的名稱為 **布坎普**. 那你就在 **首頁** 沙箱檢視 `Bootcamp`.
+Você será redirecionado para a visualização da **首頁** 不，Journey Optimizer。 Primeiro, Verifique se você usando o sandbox correto. 不要沙箱，就要用 `Bootcamp`. para alternar de um sandbox para outro, plicke em Prod e selecione o sandbox na lista. 不要做沙箱 **布坎普**. Você estará na visualização da **首頁** 做seu沙箱 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-在左側功能表中，向下捲動並按一下 **配置**. 下一步，按一下 **管理** 按鈕 **事件**.
+沒有菜單，角色是 **配置**. Em seguida，小團體 **管理** 阿貝克索德 **事件**.
 
 ![ACOP](./images/acopmenu.png)
 
-之後，您將會看到所有可用事件的概觀。 按一下 **建立事件** 以開始建立您自己的事件。
+Você verá uma visão geral de todos os eventos disponíveis. 小組 **建立事件** 這是一個罪名。
 
 ![ACOP](./images/emptyevent.png)
 
-接著會出現新的空事件視窗。
+烏馬諾瓦·雅內拉·德·埃文托·瓦齊亞·阿帕雷克。
 
 ![ACOP](./images/emptyevent1.png)
 
-首先，為您的事件命名如下： `yourLastNameAccountCreationEvent` 並添加這樣的說明 `Account Creation Event`.
+Em primeiro lugar, dê um noma o seu evento como, por exampleo: `yourLastNameAccountCreationEvent` e adicione uma描述como como, por exemple: `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-接下來，請確定 **類型** 設為 **單一**，和 **事件ID類型** 選擇，選擇 **系統生成**.
+Em seguida, certifique-se de que **類型** 我就是，科莫 **單一** e，第seleção de **事件ID類型**, selectone **系統生成**.
 
 ![ACOP](./images/eventidtype.png)
 
-接下來是「結構」選項。 為本練習準備了方案。 請使用架構 `Demo System - Event Schema for Website (Global v1.1) v.1`.
+一個塞萊桑的方案。 我的計畫是準備做練習。 使用結構 `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-選取結構後，您會在 **欄位** 區段。 您現在應將滑鼠暫留在 **欄位** 區段中顯示3個圖示快顯視窗。 按一下 **編輯** 表徵圖。
+Depois de selecionar o Schema, você verá vários campos sendo selecionados na seção **欄位**. 阿戈拉·沃克·德韋·帕薩 **欄位** Trêsícones彈出窗口serão exibidos。 伊科內集團 **編輯**.
 
 ![ACOP](./images/eventpayload.png)
 
-你會看到 **欄位** 視窗快顯視窗，您需要在其中選取我們個人化電子郵件所需的一些欄位。  我們稍後會使用Adobe Experience Platform中已有的資料，選擇其他設定檔屬性。
+Você verá uma janela pop de **欄位**，通過você deve selectionar alguns dos campos que precisamos para personalizar o e-mail。 Escolheremos outs outros atributos de perfil posteromente, uldando os dados já exises na Adobe Experience Platform。
 
 ![ACOP](./images/eventfields.png)
 
-在物件中 `_experienceplatform.demoEnvironment`，請務必選取欄位 **brandLogo** 和 **brandName**.
+無對象 `_experienceplatform.demoEnvironment`, pcertifique se de selectionar os campos **brandLogo** e **brandName**.
 
 ![ACOP](./images/eventpayloadbr.png)
 
-在物件中 `_experienceplatform.identification.core`，請務必選取欄位 **電子郵件**.
+無對象 `_experienceplatform.identification.core`, certifique se de selecionar o campo **電子郵件**.
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-按一下 **確定** 來儲存變更。
+小組 **確定** 敬薩爾瓦·蘇亞斯·阿爾特拉松斯。
 
 ![ACOP](./images/saveok.png)
 
-你應該看看這個。 按一下 **儲存** 以儲存變更。
+Em seguida，一個絕育女。 小組 **儲存**  馬伊斯·烏馬·韋斯·薩爾瓦·蘇亞斯·阿爾特拉松伊斯……
 
 ![ACOP](./images/eventsave.png)
 
-您的事件現在已設定並儲存。
+我要說，我要說，我要說。
 
 ![ACOP](./images/eventdone.png)
 
-再按一下您的事件以開啟 **編輯事件** 畫面。 暫留在 **欄位** 再看3個圖示。 按一下 **檢視裝載** 表徵圖。
+Miclus no seu evento novamentte para abrir mais uma vez a tela **編輯事件**. 滑鼠的呼吸 **欄位** 第3段，西科內斯·韋斯。 伊科內集團 **檢視裝載**.
 
 ![ACOP](./images/viewevent.png)
 
-您現在會看到預期有效負載的範例。
-您的事件有唯一的協調eventID，您可以在該裝載中向下捲動以找到它，直到您看到 `_experience.campaign.orchestration.eventID`.
+阿戈拉語中的意思是，我的意思是：
+Seu evento tem um eventID de orquestraçãoú nico, que você pode encontror ralando para baixo nessa cargaútil（裝載）até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-事件ID是需要傳送至Adobe Experience Platform的項目，以觸發您將在下一個練習中建立的歷程。 記住此eventID，因為您稍後可能需要它。
+O eventIDé o que deve ser enviado à Adobe Experience Platform para acionar a jorna dus próximos extreccios. Lembre-se deste eventID, você pode precisar deposerormente。
 `"eventID": "19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f"`
 
-按一下 **確定**，然後按一下 **取消**.
+小組 **確定** e, em seguida，小團em **取消**.
 
-你已經完成了這個練習。
+阿戈拉辭職了。
 
-下一步： [2.3建立您的電子郵件訊息](./ex3.md)
+埃塔帕： [ 2.3電子郵件](./ex3.md)
 
-[返回用戶流2](./uc2.md)
+[烏薩里奧河畔雷托納爾2](./uc2.md)
 
-[返回所有模組](../../overview.md)
+[托多斯山](../../overview.md)

@@ -5,106 +5,105 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 2%
+source-wordcount: '793'
+ht-degree: 1%
 
 ---
 
-# 4.4Analysis Workspace的資料準備
+# 4.4準備Customer Journey Analytics
 
-## 目標
+## 奧比蒂沃斯
 
-- 了解CJA中的Analysis Workspace UI
-- 了解Analysis Workspace中的資料準備概念
-- 了解如何計算資料
+- 了解UO do Analysis Workspace no CJA
+- Entenda os conceitos de preparção de dados no Analysis Workspace
+- 阿普倫達，加的卡爾庫洛斯德達多斯
 
-## 4.4.1 CJA中的Analysis Workspace UI
+## 4.4.1 UI do Analysis Workspace no CJA
 
-Analysis Workspace會移除單一Analytics報表的所有一般限制。 它提供強大、有彈性的畫布，供您建立自訂分析專案。 拖放任意數量的資料表格、視覺效果和元件（維度、量度、區段和時間粒度）至專案。 立即建立劃分和區段、建立同類群組以供分析、建立警報、比較區段、執行流量和流失分析，以及組織和排程報表以供與企業中的其他人共用。
+O Analysis Workspace將toda作為limitações típicas de umúnico relatório do Analytics移除。 Ele forence uma tela robusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquer número de tabelas de dados, visualizações e componentes(dimensões, métricas, segmentos e graularidades de tempo)paraum projeto。 Criação instantânea de avarias e segmentos, criação de cortes para análise, criação de alertas, comparção de segmentos, análise de fluxo e falhas e relatórios de curadoria e agendamentto paramportilhar com qualquer pesem seu sengócio.
 
-Customer Journey Analytics將此解決方案整合在Platform資料之上。 強烈建議您觀看這部4分鐘的概述影片：
+OCustomer Journey Analyticstraz essa solução além dos dados da platforma。 É altamente recommendável assistir a est vídeo de visão geral de quatro minutos:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
-如果您之前未使用Analysis Workspace，強烈建議您觀看此影片：
+她說，「Analysis Workspace」的意思是：
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
-### 建立專案
+### 克里·蘇·普羅耶托
 
-現在是時候建立您的第一個CJA專案了。 前往CJA內的專案標籤。
-按一下「**新增**」。
+Agora y hora de criar seu primeiro projeto do CJA. CJA中的人。 小組 **新建**.
 
 ![示範](./images/prmenu.png)
 
-你會看到這個。 選擇 **空白專案** 然後按一下 **建立**.
+Em seguida，這是一個彈奏。 選取項 **空白專案** então plicque am **建立**.
 
 ![示範](./images/prmenu1.png)
 
-然後你會看到一個空的項目。
+那是我的天。
 
 ![示範](./images/premptyprojects.png)
 
-首先，請務必在畫面的右上角選取正確的資料檢視。 在此範例中，要選取的資料檢視是 `vangeluwe - Omnichannel Data View`.
+Primeiro, certifique-se de selecionar a Visualização de dados correta no canto super direito da tela. Neste exmelo, Visualização de dados a ser selecionadaé `vangeluwe - Omnichannel Data View`.
 
 ![示範](./images/prdv.png)
 
-接下來，您會儲存專案並命名。 您可以使用下列命令來儲存：
+Em seguida, você irá salvar seu projeto e dar um nome a ele. Você pode usar o seguinte comando para salvar:
 
 | 作業系統 | 短切 |
 | ----------------- |-------------| 
 | Windows | Control + S |
 | Mac | Command + S |
 
-您會看到此快顯視窗：
+Você verá este poup:
 
 ![示範](./images/prsave.png)
 
-請使用此命名慣例：
+使用este modelo de nomenclatura:
 
 | 名稱 | 說明 |
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-下一步，按一下 **儲存**.
+阿姆·西吉達，小團 **儲存**.
 
 ![示範](./images/prsave2.png)
 
-## 4.4.2計算量度
+## 4.4.2梅特里卡斯計算器
 
-雖然我們已在資料檢視中組織了所有元件，您仍需調整其中某些元件，讓業務使用者可以開始進行分析。 此外，在任何分析期間，您都可以建立計算量度，以深入分析結果。
+Embora tenhamos organizado todos os components na Visualização de dados, você ainda deve adaptar alguns deles para que os usurios de negócios estejam prontos para iniciar suas análises。 Além disso, durante qualquer processo de analytics, você pode criar métricas calculadas paraprofundar a descoberta de insights.
 
-例如，我們將建立計算 **轉換率** 使用 **購買** 我們在資料檢視中定義的量度/事件。
+Como exmo, criaremos uma uma Taxa de conversão calculada usa a métrica/evento Compras que definitos na Visualização de dados。
 
-### 轉換率
+## 托克桑
 
-開始開啟計算量度產生器。 按一下 **+** 以在Analysis Workspace中建立第一個計算量度。
+我們要做計算師。 小組 **+** 正是梅特里卡計算的Analysis Workspace。
 
 ![示範](./images/pradd.png)
 
-此 **計算量度產生器** 會顯示：
+O **計算量度產生器** 伊拉·阿帕雷克：
 
 ![示範](./images/prbuilder.png)
 
-尋找 **購買** 在左側功能表的「量度」清單中。 在 **量度** 按一下 **全部顯示**
+恩孔特 **購買** 不要菜單，就要點菜。 Em **量度** 團 **全部顯示**
 
 ![示範](./images/calcbuildercr1.png)
 
-現在，拖放 **購買** 量度中的。
+阿戈拉阿雷斯特與墨西哥 **購買** 那個定義是否是卡爾卡。
 
 ![示範](./images/calcbuildercr2.png)
 
-轉換率通常表示 **轉換/工作階段**. 因此，讓我們在計算的量度定義畫布中執行相同的計算。 尋找 **工作階段** 量度，並將其拖放至定義產生器下方的 **購買** 事件。
+正規，分類 **轉換/工作階段**. Então,Vamos fazer o mesmo cálculo na tela de definição de métrica calculada. 美國 **工作階段** arraste e solte-a no criador de definição, no evento **購買**.
 
 ![示範](./images/calcbuildercr3.png)
 
-請注意，會自動選取除法運算子。
+觀察自動選擇的操作器。
 
 ![示範](./images/calcbuildercr4.png)
 
-轉換率通常以百分比表示。 因此，我們將格式變更為百分比，並選取2個小數。
+一個代表波森塔格姆的計程車。 Então, vamos mudar o formato para porcentagem e selecionar 2 casas decimais.
 
 ![示範](./images/calcbuildercr5.png)
 
@@ -114,46 +113,46 @@ Customer Journey Analytics將此解決方案整合在Platform資料之上。 強
 | ----------------- |-------------| 
 | 轉換率 | 轉換率 |
 
-螢幕上會有類似的內容：
+波爾菲姆，或者說，這是一種描述：
 
 ![示範](./images/calcbuildercr6.png)
 
-別忘了 **儲存** 計算量度。
+納昂·塞斯克薩 **薩爾瓦爾** 一個墨西哥計算器。
 
 ![示範](./images/pr9.png)
 
-## 4.4.3計算Dimension:篩選（分段）和日期範圍
+## 4.4.3維度計算：Filtros(segmentação)e intervalos de datas
 
-### 篩選器：計算Dimension
+### Filtros:維森斯計算
 
-計算不只適用於量度。 開始進行任何分析之前，建立一些 **計算Dimension**. 這基本上就是說 **區段** 回到Adobe Analytics。 在Customer Journey Analytics中，這些區段稱為 **篩選器**.
+卡爾庫洛斯·諾·德韋納斯·帕梅特里卡斯。 Antes de iniciar quer análise, também e intersante criar algumas **計算Dimension**. 意義重大， **區段** 不，Adobe Analytics。 沒有Customer Journey Analytics，聖沙馬多斯 **篩選器**.
 
 ![示範](./images/prfilters.png)
 
-建立篩選器有助於商務使用者從一些有價值的計算維度開始進行分析。 這會自動執行部分工作，並協助採用。 以下是一些範例：
+A criação de filtros ajudará os usuários de negócios a iniciar o analytics com algumas dimensões calculadas valiosas。 Isso irá automatizar algumas tarefas, além de ajudar na parte de adoção. Abaixo estão alguns exemplos:
 
-1. 自有媒體、付費媒體、
-2. 新造訪與回訪
-3. 具有放棄的購物車的客戶
+1. Mídia Própria, Mídia Paga,
+2. Visitas novas x recorrentes
+3. Clientes com carrinho abandonado
 
-這些篩選器可在分析部分之前或期間建立（您將在下一練習中進行）。
+Esses filtros podem ser criados antes ou durante a parte de análise(você fará no próximo mexcrecio)。
 
-### 日期範圍：計算時間Dimension
+### 資料間：天寶計算
 
-時間Dimension是另一種計算維度類型。 有些已建立，但您也可以在資料準備階段建立自己的自訂時間Dimension。
+如dimensões de tempo são outro tipo de dimensões calculadas。 Alguns já foram criados, mas você também pode criar suas próprias Dimensões de personalizadas na fase de preparção de dados.
 
-這些計算時間Dimension將可協助分析師和業務使用者記住重要日期，並使用它們來篩選和變更報表時間。 當我們進行分析時，會想到一些典型的問題和懷疑：
+Essas Dimensões de tempo calculado ajudarão analistas e uusários de negócios a lembrar data importantes e usá-las para filtrar e alterar e alterar o tempo de relatório. Perguntas e dúvidas típicas quando fazemos análises:
 
-- 去年的黑色星期五是什麼時候？ 21-29街？
-- 12月我們什麼時候開展電視宣傳？
-- 2018年夏季銷售從何時開始？ 我想和2019年做比較。 順便問一句，你知道2019年的確切日子嗎？
+- 庫多有黑色的星期五嗎？ 21 e 29?
+- Quando veiculamos aquela campanha de TV em dezembro?
+- 2018年的旺達斯·德·維朗？ 查詢比較網2019。 2019年，有人說：
 
 ![示範](./images/timedimensions.png)
 
-您現在已使用CJA Analysis Workspace完成資料準備練習。
+Agora você總結為準備工作，使Analysis Workspace的CJA。
 
-下一步： [4.5使用Customer Journey Analytics的視覺效果](./ex5.md)
+埃塔帕： [4.5 Visualização usandoCustomer Journey Analytics](./ex5.md)
 
-[返回用戶流4](./uc4.md)
+[烏薩里奧河畔雷托爾](./uc4.md)
 
-[返回所有模組](./../../overview.md)
+[托多斯山](./../../overview.md)
