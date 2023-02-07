@@ -6,9 +6,9 @@ audience: all/bootcamp-pt/
 index: false
 hide: true
 doc-type: multipage
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '160'
 ht-degree: 3%
 
 ---
@@ -32,8 +32,8 @@ ht-degree: 3%
    + [2.3電子郵件](/help/bootcamp-pt/uc/uc2/ex3.md)
    + [2.4聖若那達](/help/bootcamp-pt/uc/uc2/ex4.md)
    + [2.5安裝應用程式](/help/bootcamp-pt/uc/uc2/ex5.md)
-   + [2.6 Personalização no call center](/help/bootcamp-pt/uc/uc2/ex6.md)
-+ 3 — 整合物理電子數字 {#uc3}
+   + [2.6個人化呼叫中心](/help/bootcamp-pt/uc/uc2/ex6.md)
++ 3 — 將físicoe整合至數位 {#uc3}
    + [總覽](/help/bootcamp-pt/uc/uc3/uc3.md)
    + [3.1使用aplicativo móvel e acione um信標](/help/bootcamp-pt/uc/uc3/ex1.md)
    + [3.2 Crie seu evento](/help/bootcamp-pt/uc/uc3/ex2.md)

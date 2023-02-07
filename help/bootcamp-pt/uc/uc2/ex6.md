@@ -5,16 +5,16 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
 # 2.6個人化呼叫中心
 
-正如在Bootcamp期間已多次討論的，個人化客戶體驗應以全通路的方式進行。 客服中心通常與客戶歷程的其餘部分相去甚遠，這通常會導致令人沮喪的客戶體驗，但不需要。 讓我們舉個例子，告訴您客服中心如何即時輕鬆連線至Adobe Experience Platform。
+Conforme discutido várias vezes durante o bootcamp, personalizar a experiencia do cliente e algo deve acontecer de maneira omnichannel. Um呼叫中心geralmente e bastante desconectado do restante da jornada do cliente e isso pode, com frequencia, levar a experincias frustrantes do cliente, mas não precisa ser assim。 Vamos mostrar um semplo de como o call center pode ser facilmente conectado a Adobe Experience Platform,em tempo real。
 
 ## 克呂克索 — 達喬納達 — 杜克里恩特
 
@@ -38,7 +38,7 @@ Nesse caso, o **忠誠度ID** é **5863105**. Como parte de nossa implemen
 
 ![DSN](./images/cc3.png)
 
-沃凱烏維拉 **你好，女人**, nome。 Esse nomeé retirado do Perfil do Cliente em tempo re a Adobe Experience Platform。 Você tem 3 escolhas。 普雷西奧內·努梅羅 **1**, **訂單狀態**.
+沃凱烏維拉 **你好，女人**. Esse nomeé retirado do Perfil do Cliente em tempo re a Adobe Experience Platform。 Você tem 3 escolhas。 普雷西奧內·努梅羅 **1**, **訂單狀態**.
 
 ![DSN](./images/cc4.png)
 
@@ -72,7 +72,7 @@ Você verá seu perfil de cliente novamente. 阿塞斯 **事件**.
 
 ![DSN](./images/cc8.png)
 
-Em eventos, você verá 2 eventos com eventType de **callCenter**. O primeiro eventoé yo resultado da sua resposta a pergunta Avalie o seu n **評分您的電話滿意度**.
+Em eventos, você verá 2 eventos com eventType de **callCenter**. O primeiro eventoé y o resultado da sua resposta á pergunta **評分您的電話滿意度** （阿瓦利·塞烏·查馬達）。
 
 ![DSN](./images/cc9.png)
 

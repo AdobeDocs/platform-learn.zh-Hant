@@ -5,7 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Você verá uma visão geral de todos os eventos disponíveis. 小組 **建立
 
 ![ACOP](./images/emptyevent1.png)
 
-Em primeiro lugar, dê um noma o seu evento como, por exampleo: `yourLastNameAccountCreationEvent` e adicione uma描述como como, por exemple: `Account Creation Event`.
+Em primeiro lugar, dê um noma o seu evento como, por exampleo: `seuSobrenomeAccountCreationEvent` e adicione uma描述como como, por exemple: `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
@@ -79,7 +79,7 @@ Miclus no seu evento novamentte para abrir mais uma vez a tela **編輯事件*
 ![ACOP](./images/viewevent.png)
 
 阿戈拉語中的意思是，我的意思是：
-Seu evento tem um eventID de orquestraçãoú nico, que você pode encontror ralando para baixo nessa cargaútil（裝載）até visualiza `_experience.campaign.orchestration.eventID`.
+Seu evento tem um eventID de orquestraçãoú nico, que você pode encontror ralando para baixo nessa cargaútil（裝載）até visualizar `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 

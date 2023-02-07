@@ -2,9 +2,9 @@
 title: Experience Makers Bootcamp — 巴西
 description: 體驗製作者訓練營參與者的起點
 doc-type: multipage-overview
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Muitas empresas não estão cientes do atrito que existe na jornada dos seus clientes, consedência de uma abordagem fragmentada e não integra da a a orquestra a comunicação com o cliente。 Dados, perfil e conteúdo precisam estar perfeitamente alinhados para projetar e oferecer experincias excepcionais ao consumidor.
 
-參加者： Bootcamp para aprender como abordagem baseada aem platforma pode ajudar na obtenção dos insights equisários para identific a e reloper ponto para aprimorar a jornada do seu cliente。
+參加者： Bootcamp para aprender como abordagem baseada aemExperience Platformpode ajudar na obtenção dos insights equidários para identify a e remover ponto para primorar a jornada do seu cliente。
 
-A personalização em escala começa com a compensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente essencial。 Insights levamà ação, o que leva a mais insights. 一個abordagem exclusiva daAdobefocada na platforma formatas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua equipe e capacida de oferecer experiencer experincia holística ca cliente a cliente de experincia do cliente por cancica ca ca運河。
+A personalização em escala começa com a compensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente essencial。 Insights levamà ação, o que leva a mais insights. 一個abordagem exclusiva daAdobefocada naExperience Platform論壇，如ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua equipe e capacidade de oferecer experiencer experience holística a clia clienta clience a do cliente do cliente por canca ca ca ca cantevica ca
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 

@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '838'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ Selecione seu evento, arraste e solte o evento na tela de jornada. 我們的愛�
 
 不用拉多·迪雷托·達特拉，阿戈拉·沃克斯·德韋·蘇阿·通達桑推。
 
-定義a **類別** co **行銷** e selecione uma supfície push que permite envion notificações push. Nesse caso，淺層推選 **mmeewis-app-mobile-bootcamp**.
+定義a **類別** co **行銷** e selectione um push surface que permite enviration notifações push. Nesse caso，淺層推選 **mmeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -88,7 +88,7 @@ Agora você precisa trazer o token de personalização para o campo **名字**
 
 ![Journey Optimizer](./images/msg12.png)
 
-阿姆·西吉達，小團  **內容屬性** 然後 **Journey Orchestration**.
+阿姆·西吉達，小團  **內容屬性** e **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
@@ -127,11 +127,11 @@ Agora você precisa trazer o token de personalização para o campo **名字**
 
 ## 3.3.2 Envie uma mensagem para mu ma tela
 
-科莫·特塞拉·埃塔帕·達·約納達  **sendMessageToScreen** 動作。 Vá para o lado esquerdo da tela para **動作**，請選取ação **sendMessageToScreen** arraste e solte ação no terceiro nó da sua jornada. Em seguida，這是一個彈奏。
+科莫·特塞拉·埃塔帕·達·約納達  **sendMessageToScreen**. Vá para o lado esquerdo da tela para **動作**，請選取ação **sendMessageToScreen** arraste e solte ação no terceiro nó da sua jornada. Em seguida，這是一個彈奏。
 
 ![ACOP](./images/jomsg15.png)
 
-**sendMessageToScreen** é uma ação personalizada que irá publicar uma mensagem no ponto de extremidade usado pela exibção na loja. 阿桑 **sendMessageToScreen** 埃斯佩拉·克·穆爾蒂普拉斯·瓦里韋斯·塞賈姆·德菲達斯。 Você pode visualizar essas variáveis rolando para baixo até ver **動作參數**.
+**sendMessageToScreen** é uma ação personalizada que irá publicuma mensagem no **端點** 烏薩多·佩拉·埃西比桑·諾拉賈。 阿桑 **sendMessageToScreen** 埃斯佩拉·克·穆爾蒂普拉斯·瓦里韋斯·塞賈姆·德菲達斯。 Você pode visualizar essas variáveis rolando para baixo até ver **動作參數**.
 
 ![ACOP](./images/jomsg16.png)
 

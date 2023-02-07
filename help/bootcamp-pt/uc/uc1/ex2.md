@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '537'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 ![客戶設定檔](./images/identities.png)
 
-沒有佩恩爾·迪佩菲爾、agora você pode ver esta標識：
+沒有佩恩爾·迪佩菲爾、阿戈拉·波德·弗魯馬身份：
 
 | 命名空間 | 身分 |
 |:-------------:| :---------------:|

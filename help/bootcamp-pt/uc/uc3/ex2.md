@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![ACOP](./images/acophome.png)
 
-Você será redirecionado para a **首頁** 不，Journey Optimizer。 Primeiro, Verifique se você usando o sandbox correto. 不要沙箱，就要用 `Bootcamp`. Para alternar de um sandbox para outro, plicaem **生產** 選擇沙箱或沙箱。 不要做沙箱 **Bootcamp2**. Você estará na visualização da **首頁** 做seu沙箱 `Bootcamp`.
+Você será redirecionado para a **首頁** 不，Journey Optimizer。 Primeiro, Verifique se você usando o sandbox correto. 不要沙箱，就要用 `Bootcamp`. Para alternar de um sandbox para outro, plicaem **生產** 選擇沙箱或沙箱。 不要做沙箱 **布坎普**. Você estará na visualização da **首頁** 做seu沙箱 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -68,7 +68,7 @@ Plicus no seu evento novamentte para abrir a tela **編輯事件** 馬伊斯
 
 ![ACOP](./images/viewevent.png)
 
-阿戈拉語中的意思是，我的意思是：
+Agora você verá um exeplo，需要裝載。
 Seu event to tem um eventID de orquestraçãoúnico, que você pode encontror rolando para baixo nessa cargaútil até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
