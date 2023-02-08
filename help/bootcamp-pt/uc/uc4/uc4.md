@@ -5,16 +5,16 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
 
 # 4.客戶歷程分析
 
-Neste fluxo de usuário, você terá experincia prática com o serviço de aplicativoCustomer Journey Analytics。
+不使用使用者流程、客戶歷程分析的você terá experience pratica com。
 
 OCustomer Journey Analytics論壇uma介面em os times de Analytics、 Negócios e Tecnologia conseguem unir todos os dados da companisa analisar a jornada cross-channel(online e offline)do cliente de ponta a ponta。 OCustomer Journey Analyticscapaz de fornecer contexto e clareza para as jornadas de cliente多肛門絡合體。 O contexto fornecido gera uma visão acionável em cima das dificuldades no processo de conversão e possibilita experincias relegantes e personalizadas nos pontos mais relatedantes.
 
@@ -28,7 +28,7 @@ Mais informações sobre oCustomer Journey Analyticspodem ser encontradas [阿�
 
 - 使用UI進行Customer Journey Analytics
 - Traga os資料集da Adobe Experience Platform para oCustomer Journey Analytics
-- Entenda o ID da pessoa e junção de dados noCustomer Journey Analytics
+- Entenda o Person ID e a junção de dados no CJA
 - Entenda os conceitos de uma conexão de dados e uma visualização de dados
 - 使用Analysis Workspace com資料集da Adobe Experience Platform
 

@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1586'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 - Conheça alguns會經常發生Analysis Workspace的不同。
 - Aprenda analysiras o CJA usando o Analysis Workspace
 
-## 內容
+## Contextto
 
 Neste mextricio, você usará o Analysis Workspace no CJA paranalisar visualizações de productos, funis de produtos, rotatividade等。
 
@@ -316,7 +316,7 @@ Graçasà primeira análise de fluxo, uma nova pergunta surgiu. Então decidimos
 
 ## Requestulação do Analysis Workspace e doCustomer Journey Analytics
 
-Como você aprendeu neste laboratório, o Analysis Workspace reúne dados de todos as canis paraanisar a jornada completa do cliente。 Além disso, lembre-se de que você pode trazer dados para o mesmo workspace qu enão está vinculadoà jornada。 Pode ser muitoútil trazer dados desconectados para sua análise para contextulizar a jornada. Alguns的僱員包括coisas como dados NPS、pesquisas、eventos de anúncios do Facebook ou interações offline(não identifadas)。
+O Analysis Workspace會將todas移除為limitações típicas de um relatório do Analytics。 Ele forence uma tela robusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquer número de tabelas de dados, visualizações e componentes(dimensões, métricas, segmentos e graularidades de tempo)paraum projeto。 Você pode criar de forma instantânea filtros e analises, gráficos de coorte, alertas, segmentos, análises de fluxo e relatórios de curadoria e agendamentto para compartilhar com quer pessoa em seu negócio.
 
 埃塔帕： [4.6 De insights a ação](./ex6.md)
 

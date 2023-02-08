@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -91,10 +91,8 @@ Verifique會在資料集中處理結構描述(Adobe Experience Platform)。
 
 Certifique-se de ter verificado menos:
 
-- 身分：CRMID, phoneNumber, ECID，電子郵件。 哪些身分是主要識別碼，哪些是次要識別碼？
-您可以開啟結構並查看物件，以尋找識別碼 `_experienceplatform.identification.core`. 查看結構 [示範系統 — 網站事件結構（全域v1.1）](https://experience.adobe.com/platform/schema).
-
 - 身份：CRMID, phoneNumber, ECID，電子郵件。 Quais認同são os identification ados primários, quais são os identification ados secundários?
+
 Você pode encontrar os identification abrindo um schema e observando o objeto `_experienceplatform.identification.core`. Verifique o schema [示範系統 — 網站事件結構（全域v1.1）](https://experience.adobe.com/platform/schema).
 
 ![示範](./images/identity.png)
@@ -107,7 +105,7 @@ Você pode encontrar os identification abrindo um schema e observando o objeto�
 
 Agora você está ponto para começar a usar a interface do usuário doCustomer Journey Analytics。
 
-埃塔帕： [控制資料集da Adobe Experience Platform無Customer Journey Analytics](./ex2.md)
+埃塔帕： [4.2收集資料集da Adobe Experience Platform無Customer Journey Analytics](./ex2.md)
 
 [烏薩里奧河畔雷托爾](./uc4.md)
 
