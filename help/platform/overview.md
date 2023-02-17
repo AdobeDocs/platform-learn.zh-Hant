@@ -4,33 +4,16 @@ description: 了解Adobe Experience Platform
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 73313bf0b2f9a0f539c8b52bda2d9bd66bed65d1
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 19%
+source-wordcount: '164'
+ht-degree: 21%
 
 ---
 
 # Adobe Experience Platform教學課程
 
 Adobe Experience Platform是市面上功能最強大、最靈活、最開放的系統，可用來建立和管理可提升客戶體驗的完整解決方案。  Experience Platform 可讓組織集中和標準化來自任何系統的客戶資料與內容，並運用資料科學和機器學習技術大幅改善豐富個人化體驗的設計和傳遞。這些影片和教學課程可協助您了解Experience Platform的許多元件。
-
-
-<div id="whats-new-section">
-
-## 新增功能
-
-* **[配置基於屬性的訪問控制（視頻）](admin/configure-attribute-based-access-control.md)**
-
-   *限制對特定資源的存取*
-* **[資料衛生概述（影片）](/help/platform/data-hygiene/overview.md)**
-
-   *改進資料最小化實務*
-* **[刪除資料集（影片）](/help/platform/data-hygiene/delete-datasets.md)**
-
-   *設定資料集的存留時間*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
