@@ -1,9 +1,9 @@
 ---
 title: 傳送參數 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何使用Web SDK將mbox、設定檔和實體參數傳送至Adobe Target。
-source-git-commit: 10dbc8ecbfee511a97e64cb571c43dbf05e3076c
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ Platform Web SDK提供單一一致的方式，可傳送資料，而不需額外�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自訂實體參數可用來更新Recommendations產品目錄。 這些自訂參數必須在 `data` 物件。 |
 | `cartIds` | `data.__adobe.target.cartIds` | 用於Target的購物車型建議演算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用於防止特定實體ID在建議設計中傳回。 |
-| `mbox3rdPartyId` | 在identityMap中設定。 請參閱 [使用客戶ID同步設定檔](#synching-profiles-with-a-customer-id) | 用於跨裝置和客戶屬性同步Target設定檔。 必須在 [資料流的目標配置](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | 在identityMap中設定。 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在 [資料流的目標配置](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | 用於識別Target轉換追蹤的唯一順序。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | 用於追蹤Target轉換和最佳化目標的訂單總計。 |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>或<br> `xdm.productListItems[0-n].SKU` | 用於Target轉換追蹤和建議演算法。 請參閱 [實體參數](#entity-parameters) 以取得詳細資訊。 |
@@ -134,7 +134,7 @@ Platform Web SDK提供單一一致的方式，可傳送資料，而不需額外�
 
 ## 自訂參數
 
-所有自訂mbox參數都必須以XDM資料的形式傳遞，且 `sendEvent` 命令。 務必確保XDM結構包含Target實作所需的所有資料點。
+必須以XDM資料的形式，以 `sendEvent` 命令。 請務必確保XDM結構包含Target實作所需的所有欄位。
 
 at.js範例使用 `targetPageParams()`:
 
@@ -359,7 +359,7 @@ alloy("sendEvent", {
 >此 `productPurchasedId` 值也可以以逗號分隔的實體ID清單形式，在 `data` 物件。
 
 
-## 使用客戶ID同步設定檔
+## 客戶Id(mbox3rdPartyId)
 
 Target允許使用單一客戶ID跨裝置和系統進行設定檔同步。 透過at.js，此值可設為 `mbox3rdPartyId` ，或做為傳送至Experience CloudIdentity Service的第一個客戶ID。 不同於at.js，平台Web SDK實作可讓您指定要使用哪個客戶ID作為 `mbox3rdPartyId` 如果有多個。 例如，如果您的企業有全域客戶ID，且不同業務的客戶ID不同，您可以設定Target應使用的ID。
 
@@ -411,7 +411,7 @@ alloy("sendEvent", {
 
 ![在「傳送」事件中包含XDM物件資料元素](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
 
-在您資料流的Adobe Target服務中，請務必將 [!UICONTROL Target第三方ID命名空間] 至 [!UICONTROL 身分對應] 資料元素
+在您資料流的Adobe Target服務中，請務必將 [!UICONTROL Target第三方ID命名空間] 至 [!UICONTROL 身分對應] 資料元素：
 ![在資料流中設定Target第三方ID命名空間](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]

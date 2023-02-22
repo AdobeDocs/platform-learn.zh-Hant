@@ -1,9 +1,9 @@
 ---
 title: 除錯 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何使用Adobe Target Web SDK對Adobe Experience Platform實作進行除錯。 主題包括除錯選項、瀏覽器擴充功能，以及at.js和Platform Web SDK之間的差異。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1534'
 ht-degree: 3%
 
 ---
@@ -104,7 +104,7 @@ Target追蹤提供活動資格和訪客的Target設定檔的詳細資訊。 由�
 | 目標追蹤方法 | at.js | 平台Web SDK |
 | --- | --- | --- |
 | `mboxTrace` URL 參數 | 是 | 無 |
-| Adobe Experience Platform Debugger瀏覽器擴充功能 | 是 | 有 |
+| Adobe Experience Platform Debugger瀏覽器擴充功能 | 是 | 是 |
 | Adobe Experience Platform保障 | 無 | 是 |
 
 
@@ -120,7 +120,7 @@ Target追蹤提供活動資格和訪客的Target設定檔的詳細資訊。 由�
 1. 重新載入頁面，記錄檔應填入邊緣網路互動的詳細資訊
 1. 著重於說明中以「目標追蹤」開頭的記錄項目，並選取 **[!UICONTROL 檢視]** 查看Target追蹤詳細資訊
 
-![如何使用Adobe Experience Platform Debugger檢視Target追蹤](assets/target-trace-debugger.png)
+![如何使用Adobe Experience Platform Debugger檢視Target追蹤](assets/target-trace-debugger.png){zoomable=&quot;yes&quot;}
 
 選取後 **[!UICONTROL 檢視]**，則會出現覆蓋圖，讓您查看與請求相關的下列資訊：
 
@@ -142,7 +142,7 @@ Target追蹤提供活動資格和訪客的Target設定檔的詳細資訊。 由�
 1. 選擇類型為的日誌條目 `com.adobe.target.trace`
 1. 展開裝載的詳細資訊，並在下方檢視資訊 `context > targetTrace`
 
-![如何檢視Target追蹤並保證](assets/target-trace-assurance.png)
+![如何檢視Target追蹤並保證](assets/target-trace-assurance.png){zoomable=&quot;yes&quot;}
 
 ## 檢查網路請求和響應
 
@@ -150,7 +150,7 @@ Platform Web SDK的要求裝載和回應 `sendEvent` 呼叫與at.js不同。 以
 
 ### 內容要求裝載
 
-![鎖定平台Web SDK裝載的特定元素](assets/target-payload.png)
+![鎖定平台Web SDK裝載的特定元素](assets/target-payload.png){zoomable=&quot;yes&quot;}
 
 - 設定檔、實體和其他非mbox參數會傳遞至 `data.__adobe.target`
 - 決策範圍位於 `query.personalization.decisionScopes`
@@ -158,7 +158,7 @@ Platform Web SDK的要求裝載和回應 `sendEvent` 呼叫與at.js不同。 以
 
 ### 內容回應內文
 
-![鎖定Platform Web SDK回應內文的特定元素](assets/target-response.png)
+![鎖定Platform Web SDK回應內文的特定元素](assets/target-response.png){zoomable=&quot;yes&quot;}
 
 - Platform Web SDK會傳回下方所有Adobe應用程式的動作 `handle` 物件
 - 此 `personalization:decisions` 動作表示來自Target或offer decisioning的回應
@@ -169,7 +169,7 @@ Platform Web SDK的要求裝載和回應 `sendEvent` 呼叫與at.js不同。 以
 
 ### 主張事件裝載
 
-![Target主張事件範例](assets/target-proposition-event.png)
+![Target主張事件範例](assets/target-proposition-event.png){zoomable=&quot;yes&quot;}
 
 - Target特定SDK事件為 `decisioning.propositionDisplay` 對於曝光或 `decisioning.propositionInteract` ，例如
 - 主張事件的詳細資訊位於 `xdm._experience.decisioning`

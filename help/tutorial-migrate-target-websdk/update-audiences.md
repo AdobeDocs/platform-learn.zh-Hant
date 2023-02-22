@@ -1,9 +1,9 @@
 ---
 title: 更新對象和設定檔指令碼 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何更新Adobe Target對象和設定檔指令碼，以與Experience PlatformWeb SDK相容。
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 若要確保與at.js和Platform Web SDK相容，一種方法是更新任何相關對象，以便 `OR` 條件，如下所示：
 
-![如何檢視更新Target受眾，以提升平台Web SDK相容性](assets/target-audience-update.png)
+![如何檢視更新Target受眾，以提升平台Web SDK相容性](assets/target-audience-update.png){zoomable=&quot;yes&quot;}
 
 ## 編輯設定檔指令碼
 

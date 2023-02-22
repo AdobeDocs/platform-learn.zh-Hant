@@ -1,9 +1,9 @@
 ---
 title: 取代程式庫 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何將Adobe Target實作從at.js 2.x移轉至Adobe Experience Platform Web SDK。 主題包括程式庫概觀、實作差異和其他值得注意的圖說文字。
-source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Target功能由at.js和Platform Web SDK提供。 如果同時使用兩個程式�
 * 預先隱藏程式碼片段以緩解忽隱忽現情形
 * Target at.js資料庫以非同步方式載入，並使用預設設定來自動要求和呈現活動：
 
-+++請參閱at.js的HTML程式碼範例
++++at.jsHTML頁面上實作的範例
 
 ```HTML
 <!doctype html>
@@ -201,21 +201,17 @@ Adobe建議以非同步方式實作Platform Web SDK，以獲得最佳的整體�
 
 同步實作的預先隱藏樣式可使用 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) 選項。 Platform Web SDK設定將於下一節說明。
 
->[!TIP]
->
-> 使用標籤功能（舊稱Launch）實作Web SDK時，可在Adobe Experience Platform Web SDK擴充功能設定中編輯預先隱藏樣式。
-
 若要進一步了解Platform Web SDK如何管理忽隱忽現的情形，請參閱指南區段：  [管理個人化體驗的忽隱忽現情形](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
 
 ## 配置平台Web SDK
 
-每次載入頁面時都必須設定Platform Web SDK。 此 `configure` 命令必須一律為第一個名為的SDK命令。 下列範例假設在單一部署中將整個網站升級至Platform Web SDK:
+每次載入頁面時都必須設定Platform Web SDK。 下列範例假設在單一部署中將整個網站升級至Platform Web SDK:
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript]
 
-此 `edgeConfigId` 是 [!UICONTROL 資料流ID]
+此 `configure` 命令必須一律為第一個名為的SDK命令。 此 `edgeConfigId` 是 [!UICONTROL 資料流ID]
 
 ```JavaScript
 alloy("configure", {
@@ -228,7 +224,7 @@ alloy("configure", {
 
 在標籤實作中，許多欄位會自動填入，或可從下拉式功能表中選取。 請注意，不同的平台 [!UICONTROL 沙箱] 和 [!UICONTROL 資料流] 可針對每個環境選取。 資料流會根據發佈程式中標籤程式庫的狀態而變更。
 
-![設定Web SDK標籤擴充功能](assets/tags-config.png)
+![設定Web SDK標籤擴充功能](assets/tags-config.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 如果您打算逐頁從at.js移轉至Platform Web SDK，則需要下列設定選項：
@@ -247,9 +243,9 @@ alloy("configure", {
 });
 ```
 
->[!TAB 標籤]
+>[!TAB 標記]
 
-![設定Web SDK標籤擴充功能移轉選項](assets/tags-config-migration.png)
+![設定Web SDK標籤擴充功能移轉選項](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 以下概述與Target相關的值得注意的設定選項：
@@ -263,19 +259,15 @@ alloy("configure", {
 | `thirdPartyCookiesEnabled` | 啟用Adobe第三方Cookie的設定。 SDK可在協力廠商內容中保留訪客ID，以便跨網站使用相同的訪客ID。 如果您有多個網站，請使用此選項；不過，有時出於隱私權原因，不需要此選項。 | `true` |
 | `prehidingStyle` | 用於建立CSS樣式定義，在從伺服器載入個人化內容時隱藏網頁的內容區域。 這隻適用於SDK的同步部署。 | `body { opacity: 0 !important }` |
 
->[!NOTE]
->
->`thirdPartyCookiesEnabled` 可設為 `true` 來跨多個網域維持一致的Target訪客設定檔。 此選項應設為 `false` 或省略，除非需要多網域訪客設定檔持續性。
-
->[!TIP]
->
-> 使用標籤功能（舊稱Launch）實作Web SDK時，可在Adobe Experience Platform Web SDK擴充功能設定中管理這些設定。
-
 如需完整的選項清單，請參閱 [配置Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=zh-Hant) 指南。
 
 ## 實作範例
 
 當Platform Web SDK正確設定後，範例頁面會如下所示。
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!doctype html>
@@ -332,9 +324,61 @@ alloy("configure", {
 </html>
 ```
 
->[!TIP]
->
-> 使用標籤功能（舊稱Launch）實作Web SDK時，標籤內嵌程式碼會取代上述的「Platform Web SDK基本程式碼」、「非同步載入的Platform Web SDK」和「設定Platform Web SDK」區段。
+>[!TAB 標記]
+
+頁面代碼：
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+在標籤中新增Adobe Experience Platform Web SDK擴充功能：
+
+![新增Adobe Experience Platform Web SDK擴充功能](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+並新增所需的設定：
+![設定Web SDK標籤擴充功能移轉選項](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
+
 
 請務必注意，僅包含和設定上述的Platform Web SDK程式庫，不會執行對Adobe Edge網路的任何網路呼叫。
 

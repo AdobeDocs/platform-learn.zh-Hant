@@ -2,9 +2,9 @@
 title: 呈現VEC活動 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何透過Adobe Target的Web SDK實作來擷取和套用可視化體驗撰寫器活動。
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '812'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ Visual Editing Helper瀏覽器擴充功能適用於使用at.js或Platform Web SD
 1. 導覽至 [Adobe Experience Cloud Chrome線上應用程式商店中的Visual Editing Helper瀏覽器擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 1. 按一下「新增至」 **鉻黃** > **新增擴充功能**.
 1. 在Target中開啟VEC。
-1. 若要使用擴充功能，請按一下Visual Editing Helper瀏覽器擴充功能圖示 ![可視化編輯擴充功能圖示](assets/VEC-Helper.png) 在VEC或QA模式時，位於Chrome瀏覽器的工具列中。
+1. 若要使用擴充功能，請按一下Visual Editing Helper瀏覽器擴充功能圖示 ![可視化編輯擴充功能圖示](assets/VEC-Helper.png)在VEC或QA模式時，在Chrome瀏覽器的工具列中出現{zoomable=&quot;yes&quot;}。
 
 Visual Editing Helper 會在 Target VEC 中開啟網站時自動啟用，以支援撰寫。 此擴充功能沒有任何條件設定。 此擴充功能可自動處理所有設定，包括 SameSite Cookie 設定。
 
@@ -44,25 +44,35 @@ Visual Editing Helper 會在 Target VEC 中開啟網站時自動啟用，以支�
 
 如果您的at.js實作具有 `pageLoadEnabled` 設定為 `true` 可自動轉譯VEC型活動，則您會執行下列動作 `sendEvent` 命令（與Platform Web SDK搭配使用）:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```Javascript
 alloy("sendEvent", {
   "renderDecisions": true
 });
 ```
 
->[!TIP]
->
-> 使用標籤功能（舊稱Launch）來實作Web SDK時，可以使用的規則中實作VEC活動的「sendEvent」命令 [!UICONTROL 傳送事件] 動作類型與 [!UICONTROL 轉譯視覺個人化決策] 選項。
+>[!TAB 標記]
 
-Platform Web SDK將活動轉譯至具有 `renderDecisions` 設為 `true`，則會自動觸發其他通知呼叫，以增加曝光數，並將訪客歸因於活動。 此呼叫使用事件類型搭配值 `decisioning.propositionDisplay`.
+在標籤中，使用 [!UICONTROL 傳送事件] 動作類型與 [!UICONTROL 轉譯視覺個人化決策] 選項：
 
-![Platform Web SDK呼叫增加Target曝光數](assets/target-impression-call.png)
+![傳送在標籤中將「呈現個人化」設為true的事件](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
+
+<!--
+When the Platform Web SDK renders an activity to the page with `renderDecisions` set to `true`, an additional notification call fires automatically to increment an impression and attribute the visitor to the activity. This call uses an event type with the value `decisioning.propositionDisplay`.
+
+![Platform Web SDK call incrementing a Target impression](assets/target-impression-call.png){zoomable="yes"}
+-->
 
 ## 隨選要求和套用內容
 
-某些Target at.js實作可能具有 `pageLoadEnabled` 設為 `false` 並改用 `getOffers()` 執行函式 `pageLoad` 請求。 如果您的實施需要額外處理 `getOffers()` 回應，再將內容套用至頁面，或在單一呼叫中為多個位置要求內容。
+在將VEC選件套用至頁面之前，部分Target實作需要先對VEC選件進行一些自訂處理。 或者，他們在單一呼叫中要求多個位置。 在at.js實作中，您可以透過設定 `pageLoadEnabled` to `false` 和使用 `getOffers()` 執行函式 `pageLoad` 請求。
 
-下列程式碼使用 `getOffers()` 和 `applyOffers()` 依需求套用VEC型活動，而非在程式庫載入時自動套用。
++++ at.js範例使用 `getOffers()` 和 `applyOffers()` 手動呈現VEC型活動的方式
 
 ```JavaScript
 adobe.target.getOffers({
@@ -75,7 +85,11 @@ adobe.target.getOffers({
 then(response => adobe.target.applyOffers({ response: response }));
 ```
 
-Platform Web SDK沒有特定 `pageLoad` 事件。 所有Target內容的請求都可透過 `decisionScopes` 選項 `sendEvent` 命令。 此 `__view__` 範圍符合 `pageLoad` 請求。 同等的Platform Web SDK `sendEvent` 方法是：
++++
+
+Platform Web SDK沒有特定 `pageLoad` 事件。 所有Target內容的請求都可透過 `decisionScopes` 選項 `sendEvent` 命令。 此 `__view__` 範圍符合 `pageLoad` 請求。
+
++++ 同等的Platform Web SDK `sendEvent` 方法：
 
 1. 執行 `sendEvent` 包含 `__view__` 決策範圍
 1. 將傳回的內容套用至具有 `applyPropositions` 命令
@@ -110,6 +124,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 >[!NOTE]
 >
 >可以 [手動呈現修改](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) 在可視化體驗撰寫器中建立。 手動轉譯VEC型修改不常見。 檢查您的at.js實作是否使用 `getOffers()` 函式來手動執行Target `pageLoad` 請求不使用 `applyOffers()` 來將內容套用至頁面。
@@ -118,7 +134,9 @@ Platform Web SDK為開發人員提供要求和轉譯內容的極大彈性。 請
 
 ## 實作範例
 
-基礎平台網頁SDK實作現已完成。 我們已啟用自動Target內容呈現的基本範例頁面看起來應該像這樣：
+基礎平台網頁SDK實作現已完成。
+
++++自動轉譯Target內容的Web SDK範例頁面：
 
 ```HTML
 <!doctype html>
@@ -179,6 +197,8 @@ Platform Web SDK為開發人員提供要求和轉譯內容的極大彈性。 請
 </body>
 </html>
 ```
+
++++
 
 >[!TIP]
 >

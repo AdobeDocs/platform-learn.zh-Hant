@@ -1,9 +1,9 @@
 ---
 title: 將Target從at.js 2.x移轉至Web SDK
 description: 了解如何將Adobe Target實作從at.js 2.x移轉至Adobe Experience Platform Web SDK。 主題包括程式庫概觀、實作差異和其他值得注意的圖說文字。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '411'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 2%
 
 使用Target的表單式撰寫器建立並傳遞至地區mbox的活動，無法由Platform Web SDK自動轉譯。 與at.js類似，傳遞至特定Target位置的選件需要隨選呈現。
 
-at.js範例使用 `getOffer()` 和 `applyOffer()`:
+
++++at.js範例，使用 `getOffer()` 和 `applyOffer()`:
 
 1. 執行 `getOffer()` 要求位置的優惠方案
 1. 執行 `applyOffer()` 將選件呈現至指定的選取器
@@ -45,7 +46,9 @@ adobe.target.getOffer({
 });
 ```
 
-平台Web SDK的對等方法，使用 `applyPropositions` 命令：
++++
+
++++平台Web SDK的對等方法，使用 `applyPropositions` 命令：
 
 1. 執行 `sendEvent` 命令請求一個或多個位置（作用域）的選件（命令）
 1. 執行 `applyPropositions` 帶有元資料對象的命令，該元資料對象提供如何將內容應用於每個範圍的頁面的說明
@@ -86,6 +89,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 Platform Web SDK可讓您進一步控制要使用，將表單式活動套用至頁面 `applyPropositions` 命令 `actionType` 指定：
 
 | `actionType` | 說明 | at.js `applyOffer()` | 平台Web SDK `applyPropositions` |
@@ -99,6 +104,8 @@ Platform Web SDK可讓您進一步控制要使用，將表單式活動套用至�
 ## 實作範例
 
 以下範例頁面以前一節中概述的實作為基礎，只會新增其他範圍至 `sendEvent` 命令。
+
++++具有多個範圍的Platform Web SDK範例
 
 ```HTML
 <!doctype html>
