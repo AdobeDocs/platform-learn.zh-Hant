@@ -1,9 +1,9 @@
 ---
 title: 取代程式庫 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何將Adobe Target實作從at.js 2.x移轉至Adobe Experience Platform Web SDK。 主題包括程式庫概觀、實作差異和其他值得注意的圖說文字。
-source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
+source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,8 @@ Target功能由at.js和Platform Web SDK提供。 如果同時使用兩個程式�
 * 一或多個可在Target活動（例如jQuery）中使用功能的協力廠商協助程式庫
 * 預先隱藏程式碼片段以緩解忽隱忽現情形
 * Target at.js資料庫以非同步方式載入，並使用預設設定來自動要求和呈現活動：
+
++++請參閱at.js的HTML程式碼範例
 
 ```HTML
 <!doctype html>
@@ -126,6 +128,8 @@ Target功能由at.js和Platform Web SDK提供。 如果同時使用兩個程式�
 </body>
 </html>
 ```
+
++++
 
 若要升級Target以使用Platform Web SDK，請先移除at.js:
 
@@ -220,7 +224,7 @@ alloy("configure", {
 });
 ```
 
->[!TAB 標籤]
+>[!TAB 標記]
 
 在標籤實作中，許多欄位會自動填入，或可從下拉式功能表中選取。 請注意，不同的平台 [!UICONTROL 沙箱] 和 [!UICONTROL 資料流] 可針對每個環境選取。 資料流會根據發佈程式中標籤程式庫的狀態而變更。
 

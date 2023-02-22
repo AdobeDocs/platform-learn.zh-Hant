@@ -1,10 +1,10 @@
 ---
 title: 傳送參數 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何使用Web SDK將mbox、設定檔和實體參數傳送至Adobe Target。
-source-git-commit: cc958fdbf438943ba4fd5ca8974a8408b2bf624f
+source-git-commit: ff43774a0b36c5cd7fcefc7008e9f710abc059f7
 workflow-type: tm+mt
-source-wordcount: '1269'
-ht-degree: 0%
+source-wordcount: '1652'
+ht-degree: 1%
 
 ---
 
@@ -14,11 +14,9 @@ Target實作因網站架構、業務需求和使用的功能而異。 大部分�
 
 讓我們使用簡單的產品詳細資料頁面和訂單確認頁面，來示範將參數傳遞至Target時程式庫之間的差異。
 
-假設使用at.js的下列範例頁面：
+假設使用at.js的下列兩個範例頁面：
 
-<!--Assume the following two example pages using at.js:-->
-
-產品詳細資訊：
++++產品詳細資料頁面上的at.js :
 
 ```HTML
 <!doctype html>
@@ -57,9 +55,10 @@ Target實作因網站架構、業務需求和使用的功能而異。 大部分�
 </html>
 ```
 
++++
 
 
-訂購確認：
++++訂單確認頁面上的at.js:
 
 ```HTML
 <!doctype html>
@@ -90,6 +89,8 @@ Target實作因網站架構、業務需求和使用的功能而異。 大部分�
 </body>
 </html>
 ```
+
++++
 
 
 ## 參數映射摘要
@@ -140,12 +141,16 @@ at.js範例使用 `targetPageParams()`:
 ```JavaScript
 targetPageParams = function() {
   return {
-    "siteSection": "product detail"
+    "pageName": "product detail"
   };
 };
 ```
 
-平台Web SDK範例，使用 `sendEvent` 命令：
+平台網頁SDK JavaScript範例，使用 `sendEvent` 命令：
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -153,12 +158,25 @@ alloy("sendEvent", {
     "web": {
       "webPageDetails": {
         // Other attributes included according to xdm schema
-        "siteSection": "product detail"
+        "name": "product detail"
       }
     }
   }
 });
 ```
+
+>[!TAB 標記]
+
+在標籤中，請先使用 [!UICONTROL XDM物件] 要對應至XDM欄位的資料元素：
+
+![對應至XDM物件資料元素中的XDM欄位](assets/params-tags-pageName.png)
+
+然後加入您的 [!UICONTROL XDM物件] 在 [!UICONTROL 傳送事件] [!UICONTROL 動作] (多個 [!UICONTROL XDM物件] 可以 [合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![在「傳送」事件中包含XDM物件資料元素](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -182,7 +200,11 @@ targetPageParams = function() {
 };
 ```
 
-平台Web SDK範例，使用 `sendEvent` 命令：
+平台網頁SDK範例，使用 `sendEvent` 命令：
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -196,6 +218,18 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB 標記]
+
+在標籤中，先建立資料元素以定義 `data.__adobe.target` 物件：
+
+![在資料元素中定義資料物件](assets/params-tags-dataObject.png)
+
+然後將您的資料物件加入 [!UICONTROL 傳送事件] [!UICONTROL 動作] (多個 [!UICONTROL 物件] 可以 [合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![在傳送事件中包含資料物件](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
 
 ## 實體參數
 
@@ -217,7 +251,11 @@ targetPageParams = function() {
 };
 ```
 
-平台Web SDK範例，使用 `sendEvent` 命令：
+平台網頁SDK範例，使用 `sendEvent` 命令：
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -234,6 +272,22 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB 標記]
+
+在標籤中，先建立資料元素以定義 `data.__adobe.target` 物件：
+
+![在資料元素中定義資料物件](assets/params-tags-dataObject-entities.png)
+
+然後將您的資料物件加入 [!UICONTROL 傳送事件] [!UICONTROL 動作] (多個 [!UICONTROL 物件] 可以 [合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![在傳送事件中包含資料物件](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
+
+
+
+
 
 全部 [實體參數](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) 平台網頁SDK也支援at.js。
 
@@ -258,9 +312,13 @@ targetPageParams = function() {
 };
 ```
 
-購買資訊會傳遞至Target，當 `commerce` 欄位組具有 `puchases.value` 設為 `1`. 訂單ID和訂單總計會自動從 `order` 物件。 若 `productListItems` 陣列存在，則 `SKU` 值用於 `productPurchasedId`.
+購買資訊會傳遞至Target，當 `commerce` 欄位組具有 `purchases.value` 設為 `1`. 訂單ID和訂單總計會自動從 `order` 物件。 若 `productListItems` 陣列存在，則 `SKU` 值用於 `productPurchasedId`.
 
-平台Web SDK範例，使用 `sendEvent` 命令：
+平台網頁SDK範例，使用 `sendEvent` 命令：
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -282,6 +340,19 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB 標記]
+
+在標籤中，請先使用 [!UICONTROL XDM物件] 要對應至XDM欄位的資料元素：
+
+![對應至XDM物件資料元素中的XDM欄位](assets/params-tags-purchase.png)
+
+然後加入您的 [!UICONTROL XDM物件] 在 [!UICONTROL 傳送事件] [!UICONTROL 動作] (多個 [!UICONTROL XDM物件] 可以 [合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![在「傳送」事件中包含XDM物件資料元素](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -309,7 +380,11 @@ targetPageParams = function() {
 };
 ```
 
-平台Web SDK範例，使用 `sendEvent` 命令：
+平台網頁SDK範例，使用 `sendEvent` 命令：
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -324,6 +399,22 @@ alloy("sendEvent", {
 });
 ```
 
+>[!TAB 標記]
+
+此 [!UICONTROL ID] 值， [!UICONTROL 驗證狀態] 和 [!UICONTROL 命名空間] 擷取於 [!UICONTROL 身分對應] 資料元素：
+![擷取客戶ID的「身分對應」資料元素](assets/params-tags-customerIdDataElement.png)
+
+此 [!UICONTROL 身分對應] 之後，會使用資料元素來設定 [!UICONTROL identityMap] 欄位 [!UICONTROL XDM物件] 資料元素：
+![XDM物件資料元素中使用的「身分對應」資料元素](assets/params-tags-customerIdInXDMObject.png)
+
+此 [!UICONTROL XDM物件] 則會納入 [!UICONTROL 傳送事件] 規則的動作：
+
+![在「傳送」事件中包含XDM物件資料元素](assets/params-tags-sendEvent.png)
+
+在您資料流的Adobe Target服務中，請務必將 [!UICONTROL Target第三方ID命名空間] 至 [!UICONTROL 身分對應] 資料元素
+![在資料流中設定Target第三方ID命名空間](assets/params-tags-customerIdNamespaceInDatastream.png)
+
+>[!ENDTABS]
 
 ## 平台Web SDK範例
 
@@ -335,7 +426,7 @@ alloy("sendEvent", {
 - A `configure` 初始化庫的命令
 - A `sendEvent` 命令來傳送資料並請求要呈現的Target內容
 
-產品詳細資訊：
++++產品詳細資訊頁面上的Web SDK:
 
 ```HTML
 <!doctype html>
@@ -408,8 +499,9 @@ alloy("sendEvent", {
 </html>
 ```
 
++++
 
-訂購確認：
++++訂單確認頁面上的Web SDK:
 
 ```HTML
 <!doctype html>
@@ -477,6 +569,8 @@ alloy("sendEvent", {
 </body>
 </html>
 ```
+
++++
 
 接下來，學習如何 [追蹤Target轉換事件](track-events.md) 搭配Platform Web SDK。
 
