@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x與Web SDK的比較 |將Target從at.js 2.x移轉至Web SDK
 description: 了解at.js 2.x與Platform Web SDK之間的差異，包括功能、函式、設定和資料流程。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '2156'
+source-wordcount: '2157'
 ht-degree: 8%
 
 ---
@@ -153,4 +153,4 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

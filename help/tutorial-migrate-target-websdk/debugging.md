@@ -1,9 +1,9 @@
 ---
 title: 除錯 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何使用Adobe Target Web SDK對Adobe Experience Platform實作進行除錯。 主題包括除錯選項、瀏覽器擴充功能，以及at.js和Platform Web SDK之間的差異。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1535'
 ht-degree: 3%
 
 ---
@@ -180,4 +180,4 @@ Platform Web SDK的要求裝載和回應 `sendEvent` 呼叫與at.js不同。 以
 
 >[!NOTE]
 >
->我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

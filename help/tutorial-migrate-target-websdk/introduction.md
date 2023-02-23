@@ -2,10 +2,10 @@
 title: 簡介 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何將Adobe Target實作從at.js 2.x移轉至Adobe Experience Platform Web SDK。 主題包括載入JavaScript程式庫、傳送參數、轉譯活動和其他值得注意的圖說。
 recommendations: catalog,noDisplay
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 5%
+source-wordcount: '617'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +27,7 @@ Platform Web SDK與獨立at.js程式庫相比，有幾項優點：
 * 與Adobe Analytics的更緊密整合，不需仰賴將資訊與個別網路呼叫連結
 * 為開發人員提供額外的實作彈性
 
-可以說，移轉的最大好處是為Real-time Customer Data Platform的客戶。 Real-Time CDP提供巨大的受眾建立功能，其基礎是擷取至Experience Platform的完整資料及其即時客戶個人檔案功能。 內建的資料控管架構，自動負責任地使用該資料。 Customer AI可讓您輕鬆使用機器學習模型來建構傾向和流失率模型，其輸出可共用回Adobe Target。 最後，可選的醫療保健和隱私與安全防護軟體的客戶可以使用許可強制執行功能來輕鬆強制執行個別客戶的許可首選項。 若要在Web通道中使用這些RTCDP功能，則需要使用Platform Web SDK。
+可以說，Target客戶在移轉方面最大的好處是與Real-time Customer Data Platform整合。 Real-Time CDP提供巨大的受眾建立功能，其基礎是擷取至Experience Platform的完整資料及其即時客戶個人檔案功能。 內建的資料控管架構，自動負責任地使用該資料。 Customer AI可讓您輕鬆使用機器學習模型來建構傾向和流失率模型，其輸出可共用回Adobe Target。 最後，可選的醫療保健和隱私與安全防護軟體的客戶可以使用許可強制執行功能來輕鬆強制執行個別客戶的許可首選項。 若要在Web通道中使用這些RTCDP功能，則需要使用Platform Web SDK。
 
 ## 學習目標
 
@@ -51,7 +51,6 @@ Platform Web SDK與獨立at.js程式庫相比，有幾項優點：
 
 * 對您目前的Target at.js實作有技術上的了解
 * 確定您有 [編輯者或發佈者角色](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) 例，讓您可以自行嘗試範例
-* 安裝 [Adobe Experience Cloud Visual Editing Helper瀏覽器擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) 適用於Google Chrome
 * 了解如何在Adobe Target中設定活動。 如果您需要重新整理，下列教學課程和指南將有助於本課程：
    * [使用 Visual Experience Composer](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
    * [使用表單式體驗撰寫器](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
@@ -61,4 +60,4 @@ Platform Web SDK與獨立at.js程式庫相比，有幾項優點：
 
 >[!NOTE]
 >
->我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

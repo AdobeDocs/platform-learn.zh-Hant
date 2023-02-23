@@ -1,9 +1,9 @@
 ---
 title: 傳送參數 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何使用Web SDK將mbox、設定檔和實體參數傳送至Adobe Target。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -97,19 +97,16 @@ Target實作因網站架構、業務需求和使用的功能而異。 大部分�
 
 這些頁面的Target參數使用Platform Web SDK時的傳送方式不同。 使用at.js可透過多種方式將參數傳遞至Target:
 
-- 設定為 `targetPageParams()` 函式
+- 設定為 `targetPageParams()` 函式（用於本頁的範例中）
 - 設定為 `targetPageParamsAll()` 函式。
 - 直接連同 `getOffer()` 函式
 - 直接連同 `getOffers()` 功能
 
-對於這些範例， `targetPageParams()` 方法。
 
-Platform Web SDK提供單一一致的方式，可傳送資料，而不需額外功能。 所有參數都必須在裝載中以 `sendEvent` 命令。
+Platform Web SDK提供單一一致的方式，可傳送資料，而不需額外功能。 所有參數都必須在裝載中以 `sendEvent` 命令和屬於兩個類別：
 
-與Platform Web SDK一併傳遞的參數 `sendEvent` 裝載分為兩類：
-
-1. 自動從 `xdm` 物件
-1. 使用 `data.__adobe.target` 物件
+- 自動從 `xdm` 物件
+- 使用 `data.__adobe.target` 物件
 
 下表概述如何使用Platform Web SDK重新對應範例參數：
 
@@ -124,7 +121,7 @@ Platform Web SDK提供單一一致的方式，可傳送資料，而不需額外�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自訂實體參數可用來更新Recommendations產品目錄。 這些自訂參數必須在 `data` 物件。 |
 | `cartIds` | `data.__adobe.target.cartIds` | 用於Target的購物車型建議演算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用於防止特定實體ID在建議設計中傳回。 |
-| `mbox3rdPartyId` | 在identityMap中設定。 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在 [資料流的目標配置](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | 在 `xdm.identityMap` 物件 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在 [資料流的目標配置](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | 用於識別Target轉換追蹤的唯一順序。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | 用於追蹤Target轉換和最佳化目標的訂單總計。 |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>或<br> `xdm.productListItems[0-n].SKU` | 用於Target轉換追蹤和建議演算法。 請參閱 [實體參數](#entity-parameters) 以取得詳細資訊。 |
@@ -233,7 +230,7 @@ alloy("sendEvent", {
 
 ## 實體參數
 
-實體參數可用來傳遞Target Recommendations的行為資料和補充目錄資訊。 與設定檔參數類似，所有實體參數都必須在 `data.__adobe.target` Platform Web SDK中的物件 `sendEvent` 命令裝載。
+實體參數可用來傳遞Target Recommendations的行為資料和補充目錄資訊。 全部 [實體參數](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) 平台網頁SDK也支援at.js。 與設定檔參數類似，所有實體參數應傳遞至 `data.__adobe.target` Platform Web SDK中的物件 `sendEvent` 命令裝載。
 
 特定項目的實體參數必須加上前置詞 `entity.` 以正確擷取資料。 保留 `cartIds` 和 `excludedIds` recommendations演算法的參數不應加上前置詞，且每個的值必須包含以逗號分隔的實體ID清單。
 
@@ -284,12 +281,6 @@ alloy("sendEvent", {
 ![在傳送事件中包含資料物件](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
-
-
-
-
-
-全部 [實體參數](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) 平台網頁SDK也支援at.js。
 
 >[!NOTE]
 >
@@ -576,4 +567,4 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

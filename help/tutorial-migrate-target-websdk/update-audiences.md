@@ -1,9 +1,9 @@
 ---
 title: 更新對象和設定檔指令碼 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何更新Adobe Target對象和設定檔指令碼，以與Experience PlatformWeb SDK相容。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ if(mbox.param('pageName') == 'Product Details'){
 更新Platform Web SDK相容性的設定檔指令碼：
 
 ```Javascript
-if((mbox.param('pageName') == 'Product Details') || (mbox.param('page.webpagedetails.pageName') =='Product Details')){
+if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDetails.pageName') =='Product Details')){
   return true
 }
 ```
@@ -69,7 +69,7 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('page.webpagedet
 
 ```JSON
 {
-  "pageName" : "${mbox.web.webpagedetails.pageName}",
+  "pageName" : "${mbox.web.webPagedDetails.pageName}",
   "layoutVariation" : "grid"
 }
 ```
@@ -80,4 +80,4 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('page.webpagedet
 
 >[!NOTE]
 >
->我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

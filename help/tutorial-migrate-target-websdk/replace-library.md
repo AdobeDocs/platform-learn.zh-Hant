@@ -1,9 +1,9 @@
 ---
 title: 取代程式庫 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何將Adobe Target實作從at.js 2.x移轉至Adobe Experience Platform Web SDK。 主題包括程式庫概觀、實作差異和其他值得注意的圖說文字。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: ac5cee1888b39e5ba0134c850c378737e142f1d4
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1654'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 * 檢閱Target管理設定，並記下您的IMS組織ID
 * 將at.js程式庫取代為Platform Web SDK
 * 更新同步程式庫實作的預先隱藏程式碼片段
-* 在頁面上配置Platform Web SDK
+* 配置平台Web SDK
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Target功能由at.js和Platform Web SDK提供。 如果同時使用兩個程式�
 * 預先隱藏程式碼片段以緩解忽隱忽現情形
 * Target at.js資料庫以非同步方式載入，並使用預設設定來自動要求和呈現活動：
 
-+++at.jsHTML頁面上實作的範例
++++在HTML頁面上實作at.js範例
 
 ```HTML
 <!doctype html>
@@ -138,7 +138,11 @@ Target功能由at.js和Platform Web SDK提供。 如果同時使用兩個程式�
 <script src="/libraries/at.js" async></script>
 ```
 
-並以目前支援的Platform Web SDK(alloy.js)版本取代：
+並以alloy JavsScript程式庫或您的標籤內嵌程式碼和Adobe Experience Platform Web SDK擴充功能取代：
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!--Platform Web SDK base code-->
@@ -152,12 +156,21 @@ Target功能由at.js和Platform Web SDK提供。 如果同時使用兩個程式�
 <script src="https://cdn1.adoberesources.net/alloy/2.13.1/alloy.min.js" async></script>
 ```
 
+>[!TAB 標記]
+
+```HTML
+<!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+<script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+```
+
+在標籤屬性中，新增Adobe Experience Platform Web SDK擴充功能：
+
+![新增Adobe Experience Platform Web SDK擴充功能](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
 預先建置的獨立版本需要直接新增至頁面的「基礎程式碼」，以建立名為alloy的全域函式。 使用此函式與SDK互動。 如果您想要為全域函式命名其他名稱，請變更 `alloy` 名稱。
-
->[!TIP]
->
-> 使用標籤功能（舊稱Launch）實作Web SDK時，alloy.js程式庫會借由新增Adobe Experience Platform Web SDK擴充功能而新增至標籤程式庫。
-
 
 請參閱 [安裝Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=zh-Hant) 其他詳細資訊和部署選項的檔案。
 
@@ -168,9 +181,9 @@ Target功能由at.js和Platform Web SDK提供。 如果同時使用兩個程式�
 
 ### 非同步實作
 
-就像使用at.js一樣，如果Platform Web SDK程式庫以非同步方式載入，則在Target執行內容交換之前，頁面可能會完成轉譯。 此行為可能會導致所謂的「閃爍」問題，發生此問題時，會先短暫地顯示預設內容，然後再更換為Target指定的個人化內容。 若要避免發生這種閃爍問題，Adobe建議您在非同步Platform Web SDK指令碼參考前，立即新增特殊的預先隱藏程式碼片段。
+就像使用at.js一樣，如果Platform Web SDK程式庫以非同步方式載入，則在Target執行內容交換之前，頁面可能會完成轉譯。 此行為可能會導致所謂的「閃爍」問題，發生此問題時，會先短暫地顯示預設內容，然後再更換為Target指定的個人化內容。 若要避免發生這種閃爍問題，Adobe建議您在非同步Platform Web SDK指令碼參考或標籤內嵌程式碼之前，立即新增特殊的預先隱藏程式碼片段。
 
-如果您的實作與上述範例不同步，請使用與Platform Web SDK相容的下列版本取代at.js預先隱藏程式碼片段：
+如果您的實作與上述範例不同步，請以與Platform Web SDK相容的下列版本取代at.js預先隱藏程式碼片段：
 
 ```HTML
 <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
@@ -191,13 +204,13 @@ Target功能由at.js和Platform Web SDK提供。 如果同時使用兩個程式�
 
 * `3000` 指定預隱藏的逾時（毫秒）。 如果在逾時前未收到來自Target的回應，則會移除預先隱藏的樣式標籤。 達到此逾時的情況應少之又少。
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >請務必為Platform Web SDK使用正確的程式碼片段，因為它使用的樣式ID不同 `alloy-prehiding`. 如果使用at.js的預先隱藏程式碼片段，該程式碼片段可能無法正常運作。
 
 ### 同步實作
 
-Adobe建議以非同步方式實作Platform Web SDK，以獲得最佳的整體頁面效能。 不過，如果程式庫是同步載入，則不需要預先隱藏程式碼片段。 而是在Platform Web SDK設定中指定預先隱藏樣式。
+Adobe建議以非同步方式實作Platform Web SDK，以獲得最佳的整體頁面效能。 不過，如果alloy.js程式庫或標籤內嵌程式碼同步載入，則不需要預先隱藏程式碼片段。 而是在Platform Web SDK設定中指定預先隱藏樣式。
 
 同步實作的預先隱藏樣式可使用 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) 選項。 Platform Web SDK設定將於下一節說明。
 
@@ -246,6 +259,7 @@ alloy("configure", {
 >[!TAB 標記]
 
 ![設定Web SDK標籤擴充功能移轉選項](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
 >[!ENDTABS]
 
 以下概述與Target相關的值得注意的設定選項：
@@ -352,9 +366,8 @@ alloy("configure", {
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
 
-    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
     <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
-    <!--/Tags Header Embed Code-->
 </head>
 <body>
   <h1 id="title">Home Page</h1><br><br>
@@ -386,4 +399,4 @@ alloy("configure", {
 
 >[!NOTE]
 >
->我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

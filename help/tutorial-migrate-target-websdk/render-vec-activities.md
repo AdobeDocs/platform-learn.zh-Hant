@@ -2,9 +2,9 @@
 title: 呈現VEC活動 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何透過Adobe Target的Web SDK實作來擷取和套用可視化體驗撰寫器活動。
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '824'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ alloy("sendEvent", {
 
 在標籤中，使用 [!UICONTROL 傳送事件] 動作類型與 [!UICONTROL 轉譯視覺個人化決策] 選項：
 
-![傳送在標籤中將「呈現個人化」設為true的事件](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+![傳送在標籤中選取「呈現視覺個人化」決策的事件](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -136,7 +136,11 @@ Platform Web SDK為開發人員提供要求和轉譯內容的極大彈性。 請
 
 基礎平台網頁SDK實作現已完成。
 
-+++自動轉譯Target內容的Web SDK範例頁面：
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+自動轉譯Target內容的JavaScript範例：
 
 ```HTML
 <!doctype html>
@@ -198,14 +202,65 @@ Platform Web SDK為開發人員提供要求和轉譯內容的極大彈性。 請
 </html>
 ```
 
-+++
 
->[!TIP]
->
-> 使用標籤功能（舊稱Launch）實作Web SDK時，標籤內嵌程式碼會取代上述的「Platform Web SDK基本程式碼」、「非同步載入的Platform Web SDK」和「設定Platform Web SDK」區段。 在規則中使用 [!UICONTROL 傳送事件] 動作類型與 [!UICONTROL 轉譯視覺個人化決策] 選項。
+>[!TAB 標記]
+
+自動呈現Target內容的標籤範例頁面：
+
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+在標籤中新增Adobe Experience Platform Web SDK擴充功能：
+
+![新增Adobe Experience Platform Web SDK擴充功能](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+新增所需的設定：
+![設定Web SDK標籤擴充功能移轉選項](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+使用 [!UICONTROL 傳送事件] 行動與 [!UICONTROL 轉譯視覺個人化決策] 已選取：
+![傳送在標籤中選取「呈現個人化」的事件](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
 
 接下來，了解如何要求和 [呈現表單式Target活動](render-form-based-activities.md).
 
 >[!NOTE]
 >
->我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
