@@ -1,10 +1,10 @@
 ---
 title: 呈現VEC活動 |將Target從at.js 2.x移轉至Web SDK
 description: 了解如何透過Adobe Target的Web SDK實作來擷取和套用可視化體驗撰寫器活動。
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+source-git-commit: ca2fade972a2f7f84134ee4ef9c0f24c5ab1c5c6
 workflow-type: tm+mt
-source-wordcount: '824'
-ht-degree: 5%
+source-wordcount: '830'
+ht-degree: 6%
 
 ---
 
@@ -22,10 +22,6 @@ Target活動是使用可視化體驗撰寫器(VEC)或表單式撰寫器來設定
 
 Visual Editing Helper瀏覽器擴充功能適用於使用at.js或Platform Web SDK的網站。
 
->[!IMPORTANT]
->
->新的Visual Editing Helper擴充功能取代了先前的 [Target VEC Helper瀏覽器擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 如果已安裝舊版VEC Helper擴充功能，則應先移除或停用該擴充功能，再使用Visual Editing Helper擴充功能。
-
 ### 獲取並安裝Visual Editing Helper
 
 1. 導覽至 [Adobe Experience Cloud Chrome線上應用程式商店中的Visual Editing Helper瀏覽器擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
@@ -36,6 +32,10 @@ Visual Editing Helper瀏覽器擴充功能適用於使用at.js或Platform Web SD
 Visual Editing Helper 會在 Target VEC 中開啟網站時自動啟用，以支援撰寫。 此擴充功能沒有任何條件設定。 此擴充功能可自動處理所有設定，包括 SameSite Cookie 設定。
 
 如需 [Visual Editing Helper擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) 和 [疑難排解可視化體驗撰寫器](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+
+>[!IMPORTANT]
+>
+>新 [Visual Editing Helper擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) 取代上一個 [Target VEC Helper瀏覽器擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 如果已安裝舊版VEC Helper擴充功能，則應先移除或停用該擴充功能，再使用Visual Editing Helper擴充功能。
 
 ## 自動要求和套用內容
 

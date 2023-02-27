@@ -1,13 +1,12 @@
 ---
 title: Attribution AI 的商業價值
 description: 此影片說明行銷人員如何透過了解每個客戶在客戶與Attribution AI歷程各個階段的互動所產生的影響，來衡量及最佳化行銷和廣告支出。
-role: User
-solution: Intelligent Services
 feature: Attribution AI
+role: User
 kt: 6248
 thumbnail: 40375.jpg
 exl-id: 12aa5c9a-ac48-4506-bbe7-14106fc17675
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 8%
