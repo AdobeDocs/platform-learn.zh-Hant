@@ -1,5 +1,5 @@
 ---
-title: 刪除資料集
+title: 排程資料集刪除
 description: 了解如何使用Adobe Experience Platform的資料衛生功能刪除資料集。
 role: Data Engineer, Data Architect
 feature: Data Hygiene
@@ -7,16 +7,16 @@ kt: 10697
 thumbnail: 345065.jpeg
 last-substantial-update: 2022-07-27T00:00:00Z
 exl-id: 7764de70-e0c1-48a8-8d1f-a5426f8d580a
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cd30d8f4bf37e8a3d087adf4092051d704049034
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '83'
 ht-degree: 0%
 
 ---
 
-# 刪除資料集
+# 排程資料集刪除
 
-了解如何使用Adobe Experience Platform的資料衛生功能刪除資料集。
+了解如何使用Adobe Experience Platform的資料衛生功能排程資料集刪除作業。
 
 資料集刪除可讓資料管理員和資料工程師為資料集設定到期日。 如需詳細資訊，請造訪 [資料衛生檔案](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html).
 
