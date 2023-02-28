@@ -8,7 +8,7 @@ exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 36%
 
 ## 其他資源
 
-* [Adobe Experience Platform Web SDK檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
+* [Adobe Experience Platform Web SDK 文件](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)
 * [使用Adobe Experience Platform Web SDK部落格文章簡化客戶工作流程](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
 * [簡化與Adobe Experience Platform Experience Edge部落格文章的用戶端 — 伺服器整合](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
 * [將Adobe Experience Platform服務與Adobe Experience Platform Web SDK部落格文章統一](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
