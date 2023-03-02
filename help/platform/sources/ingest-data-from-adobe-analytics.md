@@ -3,10 +3,11 @@ title: 使用Adobe Analytics來源連接器擷取資料
 description: Adobe Analytics Source Connector可讓您輕鬆將資料從Adobe Analytics串流、對應及篩選，並匯入Adobe Experience Platform的「即時客戶個人檔案」和「體驗」資料湖。
 role: Data Engineer, Data Architect
 feature: Sources
+last-substantial-update: 2023-02-23T00:00:00Z
 kt: 3824
 thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
-source-git-commit: 8c69b521b85df3baa7e1e14b91b30861453c066e
+source-git-commit: 19d4b68a17dd6d9c3a62f15e01293f351ac1da5e
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 9%
