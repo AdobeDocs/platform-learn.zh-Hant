@@ -5,9 +5,9 @@ feature: Web SDK
 kt: 9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 0c3edbeaa5cb46f159a3efe72c108dfd2235f04b
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '687'
 ht-degree: 2%
 
 ---
@@ -32,8 +32,13 @@ Adobe Experience Cloud應用程式傳統上會產生cookie，以使用不同技�
 1. 客戶的Adobe Experience Platform Web SDK實作會向Platform Edge Network提出要求，包括身分對應中的FPID。
 1. Experience Platform邊緣網路接收FPID，並使用它產生Experience CloudID(ECID)。
 1. Platform Web SDK回應會將ECID傳回使用者的瀏覽器。
-1. Platform Web SDK使用JavaScript將ECID儲存為 `AMCV_` cookie。
+1. 若 `idMigrationEnabled=true`,Platform Web SDK會使用JavaScript將ECID儲存為 `AMCV_` cookie。
 1. 若 `AMCV_` cookie過期時，程式會重複。 只要有相同的第一方裝置ID可用，就會有新的 `AMCV_` Cookie的ECID值與之前相同。
+
+>[!NOTE]
+>
+>此 `idMigrationEnabled` 不需要設為 `true` 來使用FPID。 使用 `idMigrationEnabled=false` 您可能看不到 `AMCV_` 不過，和中的cookie必須在網路回應中尋找ECID值。
+
 
 在本教程中，使用PHP指令碼語言的特定示例用於說明如何：
 

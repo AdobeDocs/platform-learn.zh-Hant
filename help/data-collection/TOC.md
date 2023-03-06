@@ -4,7 +4,7 @@ breadcrumb-title: 資料收集教學課程
 user-guide-description: 讓您在 Experience Platform 中成為資料收集進階使用者的作法影片和教學課程。
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
+source-git-commit: 286a5570d33d1d812d1a54c28e1ea4f68f00b988
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 40%
@@ -31,7 +31,7 @@ ht-degree: 40%
    + [總覽](web-sdk/overview.md)
    + [示範](web-sdk/demo.md)
    + [實作教學課程（含標籤）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant){target="_blank"}
-   + [移轉Target教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant){target="_blank"}
+   + [移轉Target教學課程](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
    + 同意{#consent}
       + [總覽](web-sdk/consent/overview.md)
       + [使用Adobe標準設定同意值](web-sdk/consent/set-consent-adobe.md)
