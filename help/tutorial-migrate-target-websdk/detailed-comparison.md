@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x與Web SDK的比較 |將Target從at.js 2.x移轉至Web SDK
 description: 了解at.js 2.x與Platform Web SDK之間的差異，包括功能、函式、設定和資料流程。
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+source-git-commit: 28a88e6865211d7d39c18bd48b95070ae0ba259b
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2159'
 ht-degree: 8%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 8%
 | 遠端選件 | 支援 | 支援 |
 | 重新導向選件 | 支援 | 支援.不過，不支援從具有Platform Web SDK的頁面重新導向至具有at.js的頁面（且方向相反）。 |
 | 裝置上決策 | 支援 | 目前不支援 |
-| 預先擷取mbox | 支援 | 2022年10月1日之後開始的所有新移轉均預設啟用 |
+| 預先擷取mbox | 支援自訂範圍和SPA VEC | 一般VEC目前不支援 |
 | 自訂事件 | 支援 | 不支援。請參閱 [公共路線圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 的URL。 |
 | 回應 Token | 支援 | 支援.請參閱 [專用回應token檔案](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) at.js和Platform Web SDK之間的程式碼範例和差異 |
 | 資料提供者 | 支援 | 不支援。自訂程式碼可用來觸發Platform Web SDK `sendEvent` 命令。 |
