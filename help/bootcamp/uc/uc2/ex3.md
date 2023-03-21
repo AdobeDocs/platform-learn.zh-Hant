@@ -6,9 +6,9 @@ audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f018e3aae714879de0cccb3a47b1f2242b57abc1
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '938'
 ht-degree: 4%
 
 ---
@@ -113,11 +113,11 @@ ht-degree: 4%
 - **自行編碼**:使用HTML對您自己的電子郵件範本進行編碼，以建立您的電子郵件範本
 - **匯入HTML**:匯入您將能編輯的現有HTML範本。
 
-按一下 **匯入HTML**.
+按一下 **匯入HTML**. 或者，您也可以按一下 **已儲存的範本** 並選取範本 **Bootcamp — 電子郵件模板**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-拖放檔案 **mailtemplatebootcamp.html**，您可以下載 [此處](../../assets/html/mailtemplatebootcamp.html.zip). 按一下「匯入」。
+如果您選取 **匯入HTML**，您現在可以拖放檔案 **mailtemplatebootcamp.html**，您可以下載 [此處](../../assets/html/mailtemplatebootcamp.html.zip). 按一下「匯入」。
 
 ![Journey Optimizer](./images/msg13.png)
 
