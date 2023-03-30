@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
+source-git-commit: d5988bd8e6d31b183e2a264bea4fb05cd90ef1a7
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1832'
 ht-degree: 5%
 
 ---
@@ -160,7 +160,6 @@ Experience Platform業務使用者通常必須執行一系列步驟，包括識�
    * `2-Luma-CRM-Data.postman_collection.json` 為客戶的CRM資料建立結構和填入的資料集。 此結構以XDM個別設定檔類別為基礎，該類別包含人口統計詳細資料、個人連絡資料、偏好設定詳細資料和自訂身分欄位群組。
    * `3-Luma-Product-Catalog.postman_collection.json` 為產品目錄資訊建立結構和填入的資料集。 此結構基於自定義產品目錄類，並使用自定義產品目錄欄位組。
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` 為客戶的離線購買事件資料建立結構和填入的資料集。 此結構以XDM ExperienceEvent類別為基礎，並包含自訂身分和商務詳細資料欄位群組。
-
    * `5-Luma-Product-Inventory-Events.postman_collection.json` 為與產品進出庫存相關的事件建立結構和填入的資料集。 結構是以自訂業務事件類別和自訂欄位群組為基礎。
    * `6-Luma-Test-Profiles.postman_collection.json` 建立結構描述，並填入含有測試設定檔的資料集以用於Adobe Journey Optimizer
    * `7-Luma-Web-Events.postman_collection.json` 以簡單的歷史Web資料建立結構和填入的資料集。
@@ -173,7 +172,12 @@ Experience Platform業務使用者通常必須執行一系列步驟，包括識�
 1. 前往 **[!UICONTROL 設定檔]** > **[!UICONTROL 瀏覽]**
 1. 選擇 `Luma Loyalty Id` 作為 **[!UICONTROL 身分命名空間]**
 1. 搜尋 `5625458` 作為 **[!UICONTROL 身分值]**
-1. 開啟 `Danny Wright` 設定檔
+1. 開啟 `Daniel Wright` 設定檔
+
+>[!TIP]
+>
+>如果您沒有看到設定檔，請檢查 [!UICONTROL 資料集] 頁面，確認所有資料集皆已成功建立並擷取資料。 如果看起來不錯，請等待15分鐘，查看檢視器中是否有設定檔可用。  如果資料擷取發生問題，請檢查錯誤訊息以嘗試找出問題。 您也可以嘗試對 [!UICONTROL 資料集] 頁面，並拖放json資料檔案以重新內嵌資料。
+
 
 ![開啟設定檔](../assets/data-generator/images/validation-profile-open.png)
 
