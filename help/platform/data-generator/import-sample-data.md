@@ -6,16 +6,16 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 4%
+source-wordcount: '1752'
+ht-degree: 5%
 
 ---
 
 # 將範例資料匯入 Adobe Experience Platform
 
-瞭解如何設定包含範例資料的 Experience Platform 沙箱環境。您可以使用 Postman 集合來建立欄位群組、結構描述、資料集，然後將範例資料匯入 Experience Platform。
+瞭解如何設定包含範例資料的 Experience Platform 沙箱環境。您可以使用 Postman 集合來建立欄位群組、綱要、資料集，然後將範例資料匯入 Experience Platform。
 
 ## 資料使用案例範例
 
@@ -25,7 +25,7 @@ Experience Platform業務使用者通常必須執行一系列步驟，包括識�
 
 >[!NOTE]
 >
->本教學課程的最終結果是沙箱，內含與 [資料架構師與資料工程師專用Adobe Experience Platform快速入門教學課程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
+>本教學課程的最終結果是提供沙箱，內含與 [資料架構師與資料工程師專用Adobe Experience Platform快速入門教學課程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). 更新於2023年4月，以支援 [Journey Optimizer挑戰](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hant).
 
 
 ## 先決條件
@@ -48,9 +48,9 @@ Experience Platform業務使用者通常必須執行一系列步驟，包括識�
    >
    >包含在 [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) 檔案是虛構的，僅供展示之用。
 
-1. 從下載資料夾中，移動 `platform-utils-main.zip` 檔案移至您電腦上的所需位置，然後加以解壓縮。
-1. 在 `luma-data` 資料夾，開啟所有 `json` 檔案，並取代所有例項 `_techmarketingdemos` 使用您自己的租用戶id，前面加底線。
-1. 開啟 `luma-offline-purchases.json` 在文字編輯器中更新所有時間戳記，使事件在上個月發生(例如，搜尋 `"timestamp":"2022-06` 並取代年月)
+1. 從下載資料夾中，將`platform-utils-main.zip`檔案移至您電腦的所需位置，然後加以解壓縮。
+1. 在 `luma-data` 資料夾，開啟所有 `json` 檔案，並取代所有例項 `_yourOrganizationID` 使用您自己的租用戶id，前面加底線。
+1. 開啟 `luma-offline-purchases.json` 和 `luma-web-events.json` 在文字編輯器中更新所有時間戳記，使事件在上個月發生(例如，搜尋 `"timestamp":"2022-11` 並取代年月)
 1. 記下解壓縮資料夾的位置，如您稍後設定 `FILE_PATH` Postman環境變數：
 
    >[!NOTE]
@@ -113,6 +113,9 @@ Experience Platform業務使用者通常必須執行一系列步驟，包括識�
    * `2-Luma-CRM-Data.postman_collection.json`
    * `3-Luma-Product-Catalog.postman_collection.json`
    * `4-Luma-Offline-Purchase-Events.postman_collection.json`
+   * `5-Luma-Product-Inventory-Events.postman_collection.json`
+   * `6-Luma-Test-Profiles.postman_collection.json`
+   * `7-Luma-Web-Events.postman_collection.json`
 
    ![集合匯入](../assets/data-generator/images/collection-files.png)
 
@@ -158,6 +161,11 @@ Experience Platform業務使用者通常必須執行一系列步驟，包括識�
    * `3-Luma-Product-Catalog.postman_collection.json` 為產品目錄資訊建立結構和填入的資料集。 此結構基於自定義產品目錄類，並使用自定義產品目錄欄位組。
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` 為客戶的離線購買事件資料建立結構和填入的資料集。 此結構以XDM ExperienceEvent類別為基礎，並包含自訂身分和商務詳細資料欄位群組。
 
+   * `5-Luma-Product-Inventory-Events.postman_collection.json` 為與產品進出庫存相關的事件建立結構和填入的資料集。 結構是以自訂業務事件類別和自訂欄位群組為基礎。
+   * `6-Luma-Test-Profiles.postman_collection.json` 建立結構描述，並填入含有測試設定檔的資料集以用於Adobe Journey Optimizer
+   * `7-Luma-Web-Events.postman_collection.json` 以簡單的歷史Web資料建立結構和填入的資料集。
+
+
 ## 驗證
 
 範例資料經過設計，以便在集合執行後，建立結合多個系統資料的即時客戶設定檔。 忠誠度、CRM和離線購買資料集的第一筆記錄就是一例。 查詢該設定檔以確認已擷取資料。 在 [Adobe Experience Platform介面](https://platform.adobe.com/):
@@ -173,6 +181,8 @@ Experience Platform業務使用者通常必須執行一系列步驟，包括識�
 ![離線購買事件檔案中的事件資料](../assets/data-generator/images/validation-profile-events.png)
 
 ## 後續步驟
+
+若您想了解Adobe Journey Optimizer，此沙箱會包含您需要取用的所有項目 [Journey Optimizer挑戰](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hant)
 
 如果您想要了解合併原則、資料控管、查詢服務和區段產生器，請跳至 [資料架構師與資料工程師快速入門教學課程中的第11課](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). 本其他教學課程的先前課程可讓您手動建立剛填入這些Postman集合的所有項目，讓您盡享開端！
 
