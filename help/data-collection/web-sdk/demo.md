@@ -2,7 +2,7 @@
 title: Adobe Experience Platform Web SDK 與 Edge Network 示範
 description: 觀看 Adobe Experience Platform Web SDK 和 Edge Network 實際運作影片，了解其如何透過單一呼叫 Adobe，將資料傳送至 Experience Platform、Analytics、Audience Manager 和 Target。
 landing-page-description: 觀看 Web SDK 和 Edge Network 實際運作示範，了解其如何透過單一呼叫 Adobe，將資料傳送至 Experience Platform、Analytics、Audience Manager 和 Target。
-short-description: See a demo of Web SDK and Edge Network in action, with a single call to Adobe sending data to Experience Platform, Analytics, Audience Manager, and Target.
+short-description: 觀看 Web SDK 和 Edge Network 實際運作示範，了解其如何透過單一呼叫 Adobe，將資料傳送至 Experience Platform、Analytics、Audience Manager 和 Target。
 kt: 5206
 thumbnail: 34148.jpg
 exl-id: 3b8984d2-cc05-4c46-9c4f-027616fb9810
