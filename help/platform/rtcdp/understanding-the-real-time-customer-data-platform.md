@@ -20,4 +20,4 @@ ht-degree: 68%
 
 >[!VIDEO](https://video.tv.adobe.com/v/29705?quality=12&learn=on)
 
-如需詳細資訊，請造訪 [Real-time Customer Data Platform檔案](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=zh-Hant).
+如需詳細資訊，請造訪 [Real-time Customer Data Platform檔案](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html).
