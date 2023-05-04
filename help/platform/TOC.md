@@ -4,10 +4,10 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: ef085f3bdfe385d072551bbafa1ae39e847b147d
+source-git-commit: 6a41de42497c142913ec80b978db27d8a6e638c0
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 31%
+source-wordcount: '925'
+ht-degree: 32%
 
 ---
 
@@ -26,6 +26,12 @@ ht-degree: 31%
    + [基本架構](/help/platform/intro-to-platform/basic-architecture.md)
    + [使用Platform使用者介面](/help/platform/intro-to-platform/interface-tour.md)
    + [角色和專案階段](/help/platform/intro-to-platform/roles-and-project-phases.md)
++ Real-Time CDP簡介 {#rtcdp}
+   + [總覽](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+   + [端對端示範](/help/platform/rtcdp/demo.md)
+   + [工作流程](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+   + [B2B版本概述](/help/platform/rtcdp/b2b-overview.md)
+   + [使用Marketo Engage協調行銷活動](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [快速入門：資料架構師與資料工程師](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [驗證Experience PlatformAPI](/help/platform/authentication/platform-api-authentication.md)
 + [將範例資料匯入 Experience Platform](/help/platform/data-generator/import-sample-data.md)
@@ -46,21 +52,22 @@ ht-degree: 31%
    + [建立資料使用原則](/help/platform/governance/create-data-usage-policies.md)
    + [強制資料使用原則](/help/platform/governance/enforce-data-usage-policies.md)
    + [強制同意](/help/platform/governance/enforce-consent.md)
+   + [與IAB透明與同意架構2.0整合](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 資料衛生 {#data-hygiene}
    + [刪除資料集](/help/platform/data-hygiene/delete-datasets.md)
 + 資料擷取 {#data-ingestion}
    + [總覽](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批次內嵌概觀](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [建立和填入資料集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [將CSV檔案對應至XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=zh-Hant){target="_blank"}
+   + [將CSV檔案對應至XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [來源概觀](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [從Adobe Analytics內嵌資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
    + [從Audience Manager內嵌資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [從雲端儲存擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=zh-Hant)
    + [從CRM內嵌資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=zh-Hant)
    + [從資料庫擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
-   + [串流獲取概觀](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [使用HTTP API串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=zh-Hant)
+   + [串流擷取概觀](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
+   + [使用 HTTP API 串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=zh-Hant)
    + [使用來源連接器串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hant)
    + [Web SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Mobile SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
@@ -90,12 +97,25 @@ ht-degree: 31%
    + [設定Marketo目的地](/help/platform/destinations/configure-the-marketo-destination.md)
    + [設定檔案式雲端儲存空間或電子郵件行銷目的地](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [設定社交目的地](/help/platform/destinations/configure-a-social-destination.md)
-   + [使用Adobe Target進行下次點擊個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hant)
+   + Adobe Target和自訂個人化{#target}
+      + [使用Adobe Target進行下次點擊個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hant)
+      + [設定Adobe Target目的地](/help/platform/destinations/target/configure-the-target-destination.md)
+      + [啟用區段和設定檔屬性](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
    + [將資料啟用至非Adobe應用程式網路研討會](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + 身分 {#identities}
    + [身分和身分圖表概觀](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [標示、擷取及驗證身分資料](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [檢視身分圖](/help/platform/identities/view-identity-graphs.md)
++ Intelligent Services {#intelligent-services}
+   + [總覽](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
+   + [Attribution AI 概述](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
+   + [Attribution AI值](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
+   + [設定 Attribution AI](/help/platform/intelligent-services/configure-attribution-ai.md)
+   + [使用 Attribution AI 評分和深入分析](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
+   + [Customer AI 概述](/help/platform/intelligent-services/introduction-to-customer-ai.md)
+   + [Customer AI值](/help/platform/intelligent-services/business-value-of-customer-ai.md)
+   + [設定 Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
+   + [使用 Customer AI 評分和深入分析](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + 監視 {#monitoring}
    + [監視資料內嵌](/help/platform/monitoring/monitoring-dashboard.md)
    + [監視區段啟動](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
@@ -176,30 +196,9 @@ ht-degree: 31%
    + [從雲端儲存擷取資料](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [從CRM內嵌資料](/help/platform/sources/ingest-data-from-crm.md)
    + [從資料庫擷取資料](/help/platform/sources/ingest-data-from-databases.md)
-   + [使用HTTP API串流資料](/help/platform/sources/streaming-ingestion-http-api.md)
+   + [使用 HTTP API 串流資料](/help/platform/sources/streaming-ingestion-http-api.md)
    + [使用來源連接器串流資料](/help/platform/sources/streaming-ingestion-source-connector.md)
-+ 應用程式服務 {#application-services}
-   + [Customer Journey Analytics 教學課程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
-   + [Journey Orchestration教學課程](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
-   + [offer decisioning教學課程](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=zh-Hant){target="_blank"}
-   + Real-Time CDP教學課程{#rtcdp}
-      + [總覽](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-      + [B2B版本概述](/help/platform/rtcdp/b2b-overview.md)
-      + [端對端示範](/help/platform/rtcdp/demo.md)
-      + [工作流程](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-      + [使用Marketo Engage協調行銷活動](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-      + [與IAB透明與同意架構2.0整合](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-      + [強制資料使用原則](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies.html)
-+ Intelligent Services {#intelligent-services}
-   + [總覽](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
-   + [Attribution AI 概述](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
-   + [Attribution AI值](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
-   + [設定 Attribution AI](/help/platform/intelligent-services/configure-attribution-ai.md)
-   + [使用 Attribution AI 評分和深入分析](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
-   + [Customer AI 概述](/help/platform/intelligent-services/introduction-to-customer-ai.md)
-   + [Customer AI值](/help/platform/intelligent-services/business-value-of-customer-ai.md)
-   + [設定 Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
-   + [使用 Customer AI 評分和深入分析](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
+
 + Experience Cloud 整合 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [使用Marketo Engage協調行銷活動](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
