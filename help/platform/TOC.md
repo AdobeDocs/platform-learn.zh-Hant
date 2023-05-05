@@ -4,10 +4,10 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: 6a41de42497c142913ec80b978db27d8a6e638c0
+source-git-commit: aa6ffcb3ecdb1e8a3c1450d62d0c090a0a49d720
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 32%
+source-wordcount: '931'
+ht-degree: 31%
 
 ---
 
@@ -101,6 +101,7 @@ ht-degree: 32%
       + [使用Adobe Target進行下次點擊個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hant)
       + [設定Adobe Target目的地](/help/platform/destinations/target/configure-the-target-destination.md)
       + [啟用區段和設定檔屬性](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
+      + [在Target中使用Real-Time CDP區段](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
    + [將資料啟用至非Adobe應用程式網路研討會](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + 身分 {#identities}
    + [身分和身分圖表概觀](/help/platform/identities/understanding-identity-and-identity-graphs.md)
