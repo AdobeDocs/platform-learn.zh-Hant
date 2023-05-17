@@ -5,9 +5,9 @@ feature: Web SDK, Tags
 role: Developer, Data Engineer
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 951987c5c360aca005c78a976a6090d088f36455
 workflow-type: tm+mt
-source-wordcount: '3347'
+source-wordcount: '3323'
 ht-degree: 1%
 
 ---
@@ -31,19 +31,19 @@ ht-degree: 1%
 
 ## 先決條件
 
-列出使用Web SDK的必要條件 [此處](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html?lang=en#fundamentals).
+列出使用Web SDK的必要條件 [此處](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html#fundamentals).
 
-該頁面上需要「事件資料集」，而且這個資料集可保留您的體驗事件資料，就像聽起來一樣。 若要使用事件傳送同意資訊，請 [隱私權詳細資料欄位群組](https://github.com/adobe/xdm/blob/master/docs/reference/field groups/experience-event/experienceevent-privacy.schema.md)需要新增至您的體驗事件結構：
+該頁面上需要「事件資料集」，而且這個資料集可保留您的體驗事件資料，就像聽起來一樣。 若要使用事件傳送同意資訊，請 [IAB TCF 2.0同意詳細資訊](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html) 欄位群組需要新增至您的體驗事件結構：
 
 ![](./images/event-schema.png)
 
-若為Platform同意標準v2.0，我們還需要存取Adobe Experience Profile，才能建立XDM個別設定檔結構和資料集。 如需建立結構的教學課程，請參閱 [使用結構編輯器建立結構](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#tutorials) 和「所需首選項詳細資訊」配置檔案欄位組請參閱 [XDM檔案](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en).
+若為Platform同意標準v2.0，我們還需要存取Adobe Experience Platform，才能建立XDM個別設定檔結構和資料集。 如需建立結構的教學課程，請參閱 [使用結構編輯器建立結構](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#tutorials) 和「所需的同意和首選項詳細資訊」欄位組請參閱 [設定資料集以擷取同意和偏好設定資料](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html).
 
 本教學課程假設您擁有資料收集的存取權，且已建立用戶端標籤屬性並安裝Web SDK擴充功能，以及建立並建置供開發使用的工作程式庫。 這些主題在以下檔案中有詳細說明和展示：
 
 * [建立或設定屬性](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
 * [程式庫概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html)
-* [發佈概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)
+* [發佈概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hant)
 
 我們也會使用 [Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome擴充功能，檢查及驗證我們的實作。
 
@@ -53,13 +53,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->1.0標準正在淘汰，以支援v2.0。2.0標準可讓您新增其他同意資料，這些資料可用來手動強制執行同意偏好設定。 Platform Web SDK擴充功能下方的螢幕擷取畫面來自版本 [2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html?lang=en#version-2.4.0) 的擴充功能，此擴充功能與Adobe同意標準的v1.0或v2.0相容。
+>1.0標準正在淘汰，以支援v2.0。2.0標準可讓您新增其他同意資料，這些資料可用來手動強制執行同意偏好設定。 Platform Web SDK擴充功能下方的螢幕擷取畫面來自版本 [2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html#version-2.4.0) 的擴充功能，此擴充功能與Adobe同意標準的v1.0或v2.0相容。
 
 有關這些標準的詳細資訊，請參閱 [支援客戶同意偏好設定](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html).
 
 ### 步驟1:在Web SDK擴充功能中設定同意
 
-在標籤屬性中安裝Platform Web SDK擴充功能後，我們可以在擴充功能設定畫面上設定用於處理同意資料的選項：
+在「標籤」屬性中安裝Platform Web SDK擴充功能後，我們可以在擴充功能設定畫面上設定用於處理同意資料的選項：
 
 ![](./images/pending.png)
 
@@ -90,7 +90,7 @@ CMP收集使用者的偏好設定後，我們就能將這些偏好設定傳達�
 
 ### 步驟2:傳達同意偏好設定
 
-我們已設定SDK的預設行為，現在可以使用標籤將訪客的明確同意偏好設定傳送至Platform。 使用Adobe1.0或2.0標準傳送同意資料，可透過標籤規則中Web SDK的setConsent動作輕鬆實作。
+我們已設定SDK的預設行為，現在可以使用標籤將訪客的明確同意偏好設定傳送至Platform。 使用Adobe1.0或2.0標準傳送同意資料，可輕鬆使用 `setConsent` Web SDK在標籤規則中的動作。
 
 #### 使用平台同意標準1.0設定同意
 
@@ -106,17 +106,17 @@ CMP收集使用者的偏好設定後，我們就能將這些偏好設定傳達�
 
 注意：網站訪客選擇退出後，SDK將不允許您將使用者同意設定於。
 
-您的標籤規則可由多種內建或自訂項目觸發 [事件](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html?lang=en) 這可用來在訪客工作階段期間的適當時間傳遞此同意資料。 在上述範例中，我們使用視窗載入事件來觸發規則。 在稍後的章節中，我們將使用CMP的同意偏好設定事件來觸發「設定同意」動作。 您可以在您偏好用來指出選擇加入偏好設定之事件所觸發的規則中使用「設定同意」動作。
+您的標籤規則可由多種內建或自訂項目觸發 [事件](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html) 這可用來在訪客工作階段期間的適當時間傳遞此同意資料。 在上述範例中，我們使用視窗載入事件來觸發規則。 在稍後的章節中，我們將使用CMP的同意偏好設定事件來觸發「設定同意」動作。 您可以在您偏好用來指出選擇加入偏好設定之事件所觸發的規則中使用「設定同意」動作。
 
 #### 使用平台同意標準2.0設定同意
 
-平台同意標準2.0版適用於 [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=zh-Hant) 資料。 此外，還需要將「隱私權詳細資料」欄位群組新增至Platform中的設定檔結構。 請參閱 [Platform中的同意處理](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html) 有關Adobe標準2.0版和此欄位組的詳細資訊。
+平台同意標準2.0版適用於 [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=zh-Hant) 資料。 此外，還需要將「同意」和「偏好設定詳細資料」欄位群組新增至Platform中的設定檔結構。 請參閱 [Platform中的同意處理](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html) 有關Adobe標準2.0版和此欄位組的詳細資訊。
 
 我們將建立自訂程式碼資料元素，將資料傳遞至以下結構中所示同意物件的收集和中繼資料屬性：
 
 ![](./images/collect-metadata.png)
 
-此首選項詳細資訊欄位組包含 [同意與偏好設定XDM資料類型](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=en#prerequisites) 其中包含我們在規則動作中使用Platform Web SDK擴充功能傳送至Platform的同意偏好設定資料。 目前，實作Platform Consent Standard 2.0唯一需要的屬性是收集值(val)和中繼資料時間值，以紅色強調顯示。
+此「同意」和「首選項詳細資訊」欄位組包含 [同意與偏好設定XDM資料類型](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#prerequisites) 其中包含我們在規則動作中使用Platform Web SDK擴充功能傳送至Platform的同意偏好設定資料。 目前，實作Platform Consent Standard 2.0唯一需要的屬性是收集值(val)和中繼資料時間值，以紅色強調顯示。
 
 讓我們為此資料建立資料元素。 選取資料元素和藍色的新增資料元素按鈕。 我們將此稱為「xdm-consent 2.0」，並使用核心擴充功能，我們將選取自訂程式碼類型。 您可以輸入或複製下列資料，並貼到自訂程式碼編輯器視窗中：
 
@@ -149,7 +149,7 @@ return {
 
 您可以前往 [IAB歐洲網站](https://iabeurope.eu/transparency-consent-framework/).
 
-若要使用此標準設定同意偏好設定資料，我們需要將「隱私權詳細資料」欄位群組新增至平台中的「體驗事件」結構：
+若要使用此標準設定同意偏好設定資料，我們需要將IAB TCF 2.0同意詳細資料結構欄位群組新增至Platform中的體驗事件結構：
 
 ![](./images/consentStrings.png)
 
@@ -173,9 +173,9 @@ return {
 * **`containsPersonalData`**:  `False` （從「選擇值」按鈕中選擇）
 * **`gdprApplies`**:  `%IAB TCF Consent GDPR%`
 
-consentStandard和consentStandardVersion只是我們所使用標準（即IAB TCF 2.0版）的文字字串。consentStringValue會參考名為「IAB TCF同意字串」的資料元素。 文字周圍的百分比符號代表資料元素的名稱，我們稍後會看看。 containsPersonalData屬性會指出IAB TCF 2.0同意字串是否包含任何包含「True」或「False」的個人資料。 gdprAppl欄位指出GDPR適用的「true」、GDPR不適用的「false」，或GDPR適用的未知的「未定義」。 目前，Web SDK會將「未定義」視為「true」，因此會將隨「gdprApplift」傳送的同意資料：「未定義」的處理方式，將視為訪客位於適用GDPR的區域。
+此 `consentStandard` 和 `consentStandardVersion` 欄位只是我們所使用標準的文字字串，即IAB TCF 2.0版。 `consentStringValue` 會參考名為「IAB TCF同意字串」的資料元素。 文字周圍的百分比符號代表資料元素的名稱，我們稍後會看看。 此 `containsPersonalData` 欄位會指出IAB TCF 2.0同意字串是否包含任何包含「True」或「False」的個人資料。 此 `gdprApplies` 欄位會指出GDPR適用的為「true」、GDPR不適用為「false」，或GDPR適用與否則為「未定義」。 目前，Web SDK會將「未定義」視為「true」，因此會將隨「gdprApplift」傳送的同意資料：「未定義」的處理方式，將視為訪客位於適用GDPR的區域。
 
-請參閱 [同意檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html?lang=en#getting-started) 以取得這些屬性和標籤中IAB TCF 2.0的詳細資訊。
+請參閱 [同意檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html#getting-started) 以取得這些屬性和標籤中IAB TCF 2.0的詳細資訊。
 
 ### 步驟2:建立規則以使用IAB TCF 2.0標準設定同意
 
@@ -207,9 +207,9 @@ function addEventListener() {
 addEventListener();
 ```
 
-此程式碼只會建立並執行名為addEventListener的函式。 函式會檢查視窗是否存在。__tcfapi物件存在，若存在，則會根據API的規格新增事件接聽程式。 您可以在 [IAB repo](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) 在GitHub上。 如果成功新增此事件接聽程式，且網站訪客已完成其同意和偏好設定選擇，程式碼會為tcData tcString設定標籤自訂變數，並為GDPR地區設定指標。 若要進一步了解IAB TCF，請參閱IAB [網站](https://iabeurope.eu/transparency-consent-framework/) 和 [GitHub存放庫](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) 以取得技術詳細資訊。 設定這些值後，程式碼會執行觸發此規則的觸發函式來執行。
+此程式碼只會建立並執行 `addEventListener`. 函式會檢查 `window.__tcfapi` 物件存在，若存在，則會根據API規範新增事件接聽程式。 您可以在 [IAB repo](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) 在GitHub上。 如果成功新增此事件接聽程式，且網站訪客已完成其同意和偏好設定選擇，程式碼會為 `tcData.tcString`，以及GDPR地區的指標。 若要進一步了解IAB TCF，請參閱IAB [網站](https://iabeurope.eu/transparency-consent-framework/) 和 [GitHub存放庫](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) 以取得技術詳細資訊。 設定這些值後，程式碼會執行觸發此規則的觸發函式來執行。
 
-如果窗口。__tcfapi物件在首次執行此函式時不存在，函式將每100毫秒再次檢查一次，以便新增事件接聽程式。 最後一行程式碼只會執行上方程式碼行中定義的addEventListener函式。
+若 `window.__tcfapi` 物件在首次執行此函式時不存在，函式將每100毫秒再次檢查一次，以便可以新增事件接聽程式。 最後一行程式碼只會執行 `addEventListener` 函式。
 
 總之，我們建立了一個函式來檢查網站訪客使用CMP（或自訂）同意橫幅設定的同意狀態。 設定同意偏好設定後，此程式碼會建立兩個自訂變數（自訂程式碼資料元素），供我們在規則動作中使用。 將上述程式碼貼入事件的自訂程式碼編輯器視窗後，請選取藍色的「儲存」按鈕以儲存規則事件。
 
@@ -219,9 +219,9 @@ addEventListener();
 
 在「動作」區段中選取「新增」 。 在「擴充功能」下方，從下拉式清單中選擇「平台Web SDK」。 在「操作類型」下，選擇「設定同意」。 將此動作命名為setConsent。
 
-在「同意資訊」下的動作設定中，選擇「填寫表單」。 對於「標準」，請選擇「IAB TCF」，對於「版本」，請輸入2.0。對於「值」，我們將使用事件中的自訂變數，然後輸入來自 [tcData](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) 我們已在上述規則事件自訂函式中擷取。
+在「同意資訊」下的動作設定中，選擇「填寫表單」。 對於「標準」，請選擇「IAB TCF」，對於「版本」，請輸入2.0。對於「值」，我們將使用事件中的自訂變數，然後輸入 `%IAB TCF Consent String%` 來自 [tcData](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) 我們已在上述規則事件自訂函式中擷取。
 
-在「GDPR套用」底下，我們將使用事件中的其他自訂變數，並輸入%IAB TCF同意GDPR%，這也來自我們在上述規則事件自訂函式中擷取的tcData。 若您知道GDPR肯定會或不會套用至此網站的訪客，您可以選取「是」或「否」（若適用），而不需使用自訂變數（資料元素）選項。 您也可以在資料元素中使用條件式邏輯，以檢查GDPR是否適用並傳回適當的值。
+在GDPR套用下方，我們將使用事件中的其他自訂變數，並輸入 `%IAB TCF Consent GDPR%` 也來自 `tcData` 我們已在上述規則事件自訂函式中擷取。 若您知道GDPR肯定會或不會套用至此網站的訪客，您可以選取「是」或「否」（若適用），而不需使用自訂變數（資料元素）選項。 您也可以在資料元素中使用條件式邏輯，以檢查GDPR是否適用並傳回適當的值。
 
 在「GDPR包含個人資料」下方，選取選項以指出此使用者的資料是否包含個人資料。 此處的資料元素應會解析為true或false。
 
@@ -231,7 +231,7 @@ addEventListener();
 
 ### 步驟3:儲存至程式庫並建置
 
-如果您使用 [工作庫](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html?lang=en#use-the-working-library-feature) 先決條件，您已儲存這些變更並建立開發程式庫：
+如果您使用 [工作庫](https://experienceleague.adobe.com/docs/launch-learn/implement-in-websites-with-launch/configure-tags/launch-data-elements-rules.html?lang=en#use-the-working-library-feature) 先決條件，您已儲存這些變更並建立開發程式庫：
 
 ![](./images/save-library.png)
 
