@@ -6,21 +6,17 @@ role: User
 kt: 4173
 thumbnail: 32669.jpg
 exl-id: 3e3ede4b-baf4-4118-921a-6661d37f1a33
-source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 33%
+source-wordcount: '64'
+ht-degree: 46%
 
 ---
 
 # 使用 Attribution AI 評分和深入分析
 
-了解如何使用Attribution AI前瞻分析頁面來了解行銷管道和行銷活動的ROI。
+瞭解如何使用Attribution AI深入分析頁面來瞭解行銷管道和行銷活動的ROI。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?quality=12&learn=on)
-
->[!INFO]
->
-> 這段視頻是課程的一部分， [行銷人員智慧型服務快速入門](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices)，免費提供Experience League!
 
 如需詳細資訊，請造訪 [Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)

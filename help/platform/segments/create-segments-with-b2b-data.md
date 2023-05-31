@@ -1,27 +1,23 @@
 ---
 title: 使用B2B資料建立區段
-description: 了解如何使用B2B資料建立區段。
+description: 瞭解如何使用B2B資料建立區段。
 solution: Real-time Customer Data Platform
 feature: Segments
 role: User
 kt: 9261
 thumbnail: 338252.jpg
 exl-id: 8432f6d5-bc96-404b-ae5f-7cbef7e16abb
-source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '95'
+source-wordcount: '66'
 ht-degree: 0%
 
 ---
 
 # 使用B2B資料建立區段
 
-了解如何在Real-time Customer Data Platform、B2B版本和Adobe Experience Platform中，使用您的B2B資料建立區段。 在區段定義中使用帳戶設定檔和機會。
+瞭解如何在Real-time Customer Data Platform、B2B版本和Adobe Experience Platform中使用B2B資料建立區段。 在區段定義中使用帳戶設定檔和商機。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?quality=12&learn=on)
-
->[!INFO]
->
-> 這段視頻是課程的一部分， [行銷人員專用Real-Time CDP B2B版快速入門](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)，免費提供Experience League!
 
 如需詳細資訊，請參閱 [區段檔案](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).

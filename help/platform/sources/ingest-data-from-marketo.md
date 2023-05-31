@@ -8,9 +8,9 @@ kt: 9259, 13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: ddacac4554be54f16b533b95baba652bacc5eb1e
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '162'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ ht-degree: 0%
 瞭解如何使用標準工作流程為Marketo設定來源聯結器。 標準工作流程需要預先建立方案和身分名稱空間。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338250?quality=12&learn=on)
-
->[!INFO]
->
-> 本影片是課程的一部分， [行銷人員適用的Real-Time CDP B2B版本快速入門](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)，免費Experience League！
 
 如需詳細資訊，請參閱下列檔案：
 * [Marketo Engage來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).

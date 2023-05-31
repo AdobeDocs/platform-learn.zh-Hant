@@ -6,10 +6,10 @@ feature: Sources
 kt: 7100
 thumbnail: 331943.jpg
 exl-id: bd788a1e-123f-488f-8df7-23336aae88fd
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 47%
+source-wordcount: '117'
+ht-degree: 52%
 
 ---
 
@@ -20,13 +20,9 @@ ht-degree: 47%
 
 >[!VIDEO](https://video.tv.adobe.com/v/331943?quality=12&learn=on)
 
->[!INFO]
->
-> 本影片是課程的一部分 [資料工程師的資料擷取](https://experienceleague.adobe.com/?lang=zh-Hant?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)，免費提供Experience League!
-
 ## 其他資源
 
-* [在UI中建立Amazon Kinesis來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)
-* [在UI中建立Azure事件中心源連接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html)
-* [Azure事件中心文檔](https://docs.microsoft.com/en-us/azure/event-hubs/)
-* [Amazon Kinesis資料流檔案](https://docs.aws.amazon.com/kinesis/index.html)
+* [在使用者介面中建立Amazon Kinesis來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)
+* [在UI中建立Azure事件中樞來源連線](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html)
+* [Azure事件中樞檔案](https://docs.microsoft.com/en-us/azure/event-hubs/)
+* [Amazon Kinesis Data Streams檔案](https://docs.aws.amazon.com/kinesis/index.html)

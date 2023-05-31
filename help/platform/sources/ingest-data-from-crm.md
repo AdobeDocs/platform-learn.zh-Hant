@@ -7,10 +7,10 @@ kt: 3826, 13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: ddacac4554be54f16b533b95baba652bacc5eb1e
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 2%
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
@@ -29,10 +29,6 @@ ht-degree: 2%
 瞭解如何使用範本工作流程為Salesforce CRM設定來源聯結器。 此工作流程會根據範本自動產生擷取Salesforce資料所需的資產。 這樣可節省前期時間，而且資產可以根據您的需求進行自訂。 並非所有CRM來源聯結器都支援此工作流程。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?quality=12&learn=on)
-
->[!INFO]
->
-> 本影片是課程的一部分 [資料工程師適用的資料擷取](https://experienceleague.adobe.com/?lang=zh-Hant?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)，免費Experience League！
 
 如需詳細資訊，請參閱下列檔案：
 * [Salesforce建立連線檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
