@@ -1,46 +1,46 @@
 ---
-title: 內嵌串流資料
+title: 擷取串流資料
 seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-breadcrumb-title: 內嵌串流資料
+breadcrumb-title: 擷取串流資料
 description: 在本課程中，您將使用Web SDK將資料串流至Experience Platform。
 role: Data Engineer
 feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '3344'
+source-wordcount: '3346'
 ht-degree: 1%
 
 ---
 
-# 內嵌串流資料
+# 擷取串流資料
 
 <!--1hr-->
 
-在本課程中，您將使用Adobe Experience Platform Web SDK來串流資料。
+在本課程中，您將使用Adobe Experience Platform Web SDK串流資料。
 
-在資料收集介面中，我們必須完成兩項主要工作：
+在資料收集介面中，我們必須完成兩個主要工作：
 
-* 我們必須在Luma網站上實作Web SDK，將訪客活動相關資料從網站傳送至Adobe Edge網路。 我們將使用標籤（先前稱為Launch）進行簡單實作
+* 我們必須在Luma網站上實作Web SDK，以將有關網站訪客活動的資料傳送至Adobe Edge網路。 我們將使用標籤（前身為Launch）進行簡單的實作
 
-* 我們必須設定資料流，該資料流會告訴Edge網路要將資料轉送到何處。 我們會設定它，將資料傳送至 `Luma Web Events` 資料集。
+* 我們必須設定資料串流，告訴Edge網路要將資料轉送至何處。 我們會將其設定為將資料傳送至 `Luma Web Events` 資料集。
 
-**資料工程師** 需要在本教學課程之外內嵌串流資料。 實作Adobe Experience Platform的Web或行動SDK時，一般會有Web或行動開發人員參與資料層建立和標籤屬性設定。
+**資料工程師** 需要在本教學課程以外擷取串流資料。 實作Adobe Experience Platform的Web或Mobile SDK時，通常會有Web或行動開發人員參與資料層建立和標籤屬性設定。
 
-開始練習之前，請觀看以下兩個短片，以進一步了解串流資料擷取和Web SDK:
+在開始練習之前，請觀看這兩部短片，以進一步瞭解串流資料擷取和Web SDK：
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
 
 >[!NOTE]
 >
->雖然本教學課程著重於使用Web SDK從網站串流內嵌，但您也可以使用 [Adobe行動SDK](https://aep-sdks.gitbook.io/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)和其他機制。
+>雖然本教學課程著重於使用Web SDK從網站串流擷取，但您也可以使用 [Adobe行動SDK](https://developer.adobe.com/client-sdks/documentation/)， [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)和其他機制。
 
-## 需要權限
+## 需要的許可權
 
-在 [設定權限](configure-permissions.md) 課程中，您設定了完成本課程所需的所有訪問控制。
+在 [設定許可權](configure-permissions.md) 課程，您可以設定完成本課程所需的所有存取控制項。
 
 <!--
 * Permission items **[!UICONTROL Launch]** > **[!UICONTROL Property Rights]** > **[!UICONTROL Approve]**, **[!UICONTROL Develop]**, **[!UICONTROL Manage Environments]**, **[!UICONTROL Manage Extensions]**, and **[!UICONTROL Publish]**
@@ -75,57 +75,57 @@ ht-degree: 1%
     ![Select Finish](assets/websdk-source-review.png)
 -->
 
-## 設定資料流
+## 設定資料串流
 
-首先，我們將配置資料流。 資料流會告訴Adobe Edge網路，從Web SDK呼叫收到資料後，要將資料傳送至何處。 例如，您要將資料傳送至Experience Platform、Adobe Analytics或Adobe Target? 資料流在資料收集使用者介面（先前稱為Launch）中進行管理，且對於使用Web SDK進行資料收集至關重要。
+首先，我們將設定資料串流。 資料串流會告訴Adobe Edge網路，在從Web SDK呼叫收到資料後，應將資料傳送至何處。 例如，您要將資料傳送至Experience Platform、Adobe Analytics或Adobe Target嗎？ 資料串流在資料收集使用者介面（前身為Launch）中進行管理，對於透過Web SDK收集資料至關重要。
 
-若要建立 [!UICONTROL 資料流]:
+若要建立 [!UICONTROL 資料串流]：
 
 1. 登入 [Experience Platform資料收集使用者介面](https://experience.adobe.com/launch/)
 
    <!--when will the edge config go live?-->
 
-1. 選擇 **[!UICONTROL 資料流]** 在左側導覽列中
-1. 選取 **[!UICONTROL 新資料流]** 按鈕
+1. 選取 **[!UICONTROL 資料串流]** 在左側導覽列中
+1. 選取 **[!UICONTROL 新增資料串流]** 右上角的按鈕
 
-   ![在左側導覽中選取資料流](assets/websdk-edgeConfig-clickNav.png)
+   ![在左側導覽中選取資料串流](assets/websdk-edgeConfig-clickNav.png)
 
 
-1. 若 **[!UICONTROL 易記名稱]**，輸入 `Luma Platform Tutorial` （如果貴公司有多人參加本教學課程，請將您的名稱新增至結尾）
+1. 對於 **[!UICONTROL 易記名稱]**，輸入 `Luma Platform Tutorial` （如果貴公司有多位人員參加本教學課程，請在結尾加上您的姓名）
 1. 選取 **[!UICONTROL 儲存]** 按鈕
 
-   ![為資料命名並儲存](assets/websdk-edgeConfig-name.png)
+   ![為資料串命名並儲存](assets/websdk-edgeConfig-name.png)
 
-在下一個畫面中，您可以指定要將資料傳送至何處。 若要將資料傳送至Experience Platform:
+在下一個畫面中，您需指定要傳送資料的位置。 若要傳送資料給Experience Platform：
 
-1. 開啟 **[!UICONTROL Adobe Experience Platform]** 公開其他欄位
-1. 針對 **[!UICONTROL 沙箱]**，選取 `Luma Tutorial`
-1. 針對 **[!UICONTROL 事件資料集]**，選取 `Luma Web Events Dataset`
-1. 如果您使用其他Adobe應用程式，歡迎探索其他章節，了解其他解決方案的「邊緣設定」中需要哪些資訊。 請記住，Web SDK的開發目的不僅是將資料串流至Experience Platform，也是取代其他Adobe應用程式使用的所有舊版JavaScript程式庫。 「邊緣設定」可用來指定您要傳送資料之每個應用程式的帳戶詳細資訊。
-1. 選擇 **[!UICONTROL 儲存]**
+1. 開啟 **[!UICONTROL Adobe Experience Platform]** 以公開其他欄位
+1. 對象 **[!UICONTROL Sandbox]**，選取 `Luma Tutorial`
+1. 對象 **[!UICONTROL 事件資料集]**，選取 `Luma Web Events Dataset`
+1. 如果您使用其他Adobe應用程式，請隨意瀏覽其他區段，以瞭解在這些其他解決方案的「邊緣組態」中需要哪些資訊。 請記住，開發Web SDK不僅是為了將資料串流到Experience Platform中，也是為了取代其他Adobe應用程式使用的所有先前JavaScript程式庫。 Edge設定用於指定您要傳送資料之每個應用程式的帳戶詳細資訊。
+1. 選取 **[!UICONTROL 儲存]**
 
    ![設定資料流並儲存](assets/websdk-edgeConfig-addEnvironment.png)
 
-儲存邊緣設定後，產生的畫面會顯示已為開發、測試和生產建立三個環境。 可新增其他開發環境：
-![每個邊緣配置都可以有多個環境](assets/websdk-edgeConfig-environments.png)
-這三個環境都包含您剛才輸入的平台詳細資訊。 不過，這些詳細資訊的設定方式可因環境而異。 例如，您可以讓每個環境將資料傳送至不同的Platform沙箱。 在本教學課程中，我們不會對資料流進行任何額外的自訂。
+儲存Edge設定後，產生的畫面會顯示已針對開發、測試和生產建立三個環境。 可以新增其他開發環境：
+![每個Edge設定可以有多個環境](assets/websdk-edgeConfig-environments.png)
+所有三個環境都包含您剛才輸入的平台詳細資料。 不過，這些詳細資料可依環境以不同方式設定。 例如，您可以讓每個環境傳送資料至不同的Platform沙箱。 在本教學課程中，我們不會對資料流進行任何額外的自訂。
 
 ## 安裝Web SDK擴充功能
 
 ### 新增屬性
 
-首先，我們必須建立標籤屬性（先前稱為標籤屬性）。 屬性是容器，可容納從網頁收集詳細資訊並將其傳送至不同位置所需的所有JavaScript、規則及其他功能。
+首先，我們必須建立標籤屬性（先前稱為標籤屬性）。 屬性是所有JavaScript、規則和其他必要功能的容器，用於從網頁收集詳細資訊並將其傳送至各種位置。
 
 若要建立屬性：
 
 1. 前往 **[!UICONTROL 屬性]** 在左側導覽列中
-1. 選取 **[!UICONTROL 新屬性]** 按鈕
+1. 選取 **[!UICONTROL 新增屬性]** 按鈕
    ![新增屬性](assets/websdk-property-addNewProperty.png)
-1. 作為 **[!UICONTROL 名稱]**，輸入 `Luma Platform Tutorial` （如果貴公司有多人參加本教學課程，請將您的名稱新增至結尾）
+1. 作為 **[!UICONTROL 名稱]**，輸入 `Luma Platform Tutorial` （如果貴公司有多位人員參加本教學課程，請在結尾加上您的姓名）
 1. 作為 **[!UICONTROL 網域]**，輸入 `enablementadobe.com` （稍後說明）
-1. 選擇 **[!UICONTROL 儲存]**
+1. 選取 **[!UICONTROL 儲存]**
 
-   ![屬性詳細資訊](assets/websdk-property-propertyDetails.png)
+   ![屬性詳細資料](assets/websdk-property-propertyDetails.png)
 
 <!--
 After saving the property, you might see an error message like the one below. If so, this is because you don't actually have access to the property you just created. To fix this, we need to go to the Admin Console to give yourself access:
@@ -151,48 +151,48 @@ Now switch back to your browser tab with the Data Collection interface still ope
 
 ## 新增Web SDK擴充功能
 
-現在您有屬性，可以使用擴充功能來新增Web SDK。 擴充功能是擴充資料收集介面和功能的程式碼套件。 新增擴充功能的方式:
+現在您有了屬性，可以使用擴充功能新增Web SDK。 擴充功能是擴充資料收集介面和功能的程式碼套件。 新增擴充功能的方式:
 
 1. 開啟您的標籤屬性
 1. 前往 **[!UICONTROL 擴充功能]** 在左側導覽列中
 1. 前往 **[!UICONTROL 目錄]** 標籤
-1. 有許多擴充功能可供標籤使用。 使用詞語篩選目錄 `Web SDK`
-1. 在 **[!UICONTROL Adobe Experience Platform Web SDK]** 擴充功能，請選取 **[!UICONTROL 安裝]** 按鈕
+1. 有許多擴充功能可供標籤使用。 使用辭彙篩選目錄 `Web SDK`
+1. 在 **[!UICONTROL Adobe Experience Platform Web SDK]** 擴充功能中，選取 **[!UICONTROL 安裝]** 按鈕
    ![安裝Adobe Experience Platform Web SDK擴充功能](assets/websdk-property-addExtension.png)
-1. Web SDK擴充功能有數種可用的設定，但我們只打算為本教學課程進行兩項設定。 更新 **[!UICONTROL 邊緣網域]** to `data.enablementadobe.com`. 此設定可讓您透過Web SDK實作設定第一方Cookie，我們鼓勵您這麼做。 在本課程的稍後部分，您將對應 `enablementadobe.com` 網域至您的標籤屬性。 的CNAME `enablementadobe.com` 已配置域，因此 `data.enablementadobe.com` 會轉送至Adobe伺服器。 當您在自己的網站上實作Web SDK時，將需要建立CNAME以供您自己收集資料之用，例如 `data.YOUR_DOMAIN.com`
-1. 從 **[!UICONTROL 資料流]** 下拉式清單，選取 `Luma Platform Tutorial` 資料流。
-1. 查看其他設定選項（但請勿變更！） 然後選取 **[!UICONTROL 儲存]**
+1. Web SDK擴充功能有數種設定可供使用，但在本教學課程中，我們只會設定兩種。 更新 **[!UICONTROL 邊緣網域]** 至 `data.enablementadobe.com`. 此設定可讓您在Web SDK實作中設定第一方Cookie （建議使用）。 在本課程的後面部分，您將會在 `enablementadobe.com` 網域至您的標籤屬性。 的CNAME `enablementadobe.com` 網域已設定為 `data.enablementadobe.com` 將轉送至Adobe伺服器。 在您自己的網站上實作Web SDK時，例如，您需要為自己的資料收集目的建立CNAME。 `data.YOUR_DOMAIN.com`
+1. 從 **[!UICONTROL 資料流]** 下拉式清單，選取您的 `Luma Platform Tutorial` 資料串流。
+1. 歡迎檢視其他設定選項（但請勿變更！） 然後選取 **[!UICONTROL 儲存]**
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
    ![](assets/websdk-property-configureExtension.png)
 
 
 
-## 建立要傳送資料的規則
+## 建立規則以傳送資料
 
-現在將建立規則以將資料傳送至Platform。 規則是事件、條件和動作的組合，可指示標籤執行某項操作。 建立規則的方式:
+現在我們將建立規則以將資料傳送至Platform。 規則是事件、條件和動作的組合，可指示標籤執行某項動作。 建立規則的方式:
 
 1. 前往 **[!UICONTROL 規則]** 在左側導覽列中
 1. 選取 **[!UICONTROL 建立新規則]** 按鈕
    ![建立規則](assets/websdk-property-createRule.png)
 1. 將規則命名為 `All Pages - Library Loaded`
-1. 在 **[!UICONTROL 事件]**，請選取 **[!UICONTROL 新增]** 按鈕
+1. 下 **[!UICONTROL 事件]**，選取 **[!UICONTROL 新增]** 按鈕
    ![為規則命名並新增事件](assets/websdk-property-nameRule.png)
-1. 使用 **[!UICONTROL 核心]** **[!UICONTROL 擴充功能]** 選取 **[!UICONTROL 程式庫已載入（頁面頂端）]** 作為 **[!UICONTROL 事件類型]**. 此設定表示當Launch程式庫載入頁面時，就會觸發規則。
-1. 選擇 **[!UICONTROL 保留變更]** 返回主規則畫面
-   ![新增程式庫已載入事件](assets/websdk-property-addEvent.png)
-1. 離開 **[!UICONTROL 條件]** 空白，因為我們希望此規則在所有頁面上觸發，如我們所提供的名稱所示
-1. 在 **[!UICONTROL 動作]**，請選取 **[!UICONTROL 新增]** 按鈕
-1. 使用 **[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL 擴充功能]** 選取 **[!UICONTROL 傳送事件]** 作為 **[!UICONTROL 動作類型]**
-1. 在右側，選取 **[!UICONTROL web.webpagedetails.pageViews]** 從 **[!UICONTROL 類型]** 下拉式清單。 這是我們 `Luma Web Events Schema`
-1. 選擇 **[!UICONTROL 保留變更]** 返回主規則畫面
+1. 使用 **[!UICONTROL 核心]** **[!UICONTROL 副檔名]** 並選取 **[!UICONTROL 程式庫已載入（頁面頂端）]** 作為 **[!UICONTROL 事件型別]**. 此設定表示每當頁面上載入Launch程式庫時，就會觸發規則。
+1. 選取 **[!UICONTROL 保留變更]** 以返回主規則畫面
+   ![新增Library Loaded事件](assets/websdk-property-addEvent.png)
+1. 離開 **[!UICONTROL 條件]** 空白，因為我們希望此規則在所有頁面上引發（根據我們提供的名稱）
+1. 下 **[!UICONTROL 動作]**，選取 **[!UICONTROL 新增]** 按鈕
+1. 使用 **[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL 副檔名]** 並選取 **[!UICONTROL 傳送事件]** 作為 **[!UICONTROL 動作型別]**
+1. 在右側，選取 **[!UICONTROL web.webpagedetails.pageViews]** 從 **[!UICONTROL 型別]** 下拉式清單。 這是我們的其中一個XDM欄位 `Luma Web Events Schema`
+1. 選取 **[!UICONTROL 保留變更]** 以返回主規則畫面
    ![新增「傳送事件」動作](assets/websdk-property-addAction.png)
-1. 選擇 **[!UICONTROL 儲存]** 儲存規則\
+1. 選取 **[!UICONTROL 儲存]** 儲存規則的方式\
    ![儲存規則](assets/websdk-property-saveRule.png)
 
 ## 在程式庫中發佈規則
 
-接下來，我們會將規則發佈至開發環境，以便驗證其是否有效。
+接下來，我們將規則發佈至開發環境，以便驗證它是否有效。
 
 <!--
 There are a few quick steps we must take in the **[!UICONTROL Publishing]** section of Launch.
@@ -233,241 +233,241 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
 若要建立程式庫：
 
 1. 前往 **[!UICONTROL 發佈流程]** 在左側導覽列中
-1. 選擇 **[!UICONTROL 新增程式庫]**
-   ![選擇添加庫](assets/websdk-property-pubAddNewLib.png)
-1. 若 **[!UICONTROL 名稱]**，輸入 `Luma Platform Tutorial`
-1. 若 **[!UICONTROL 環境]**，選取 `Development`
-1. 選取 **[!UICONTROL 新增所有已變更的資源]** 按鈕。 (除 [!UICONTROL Adobe Experience Platform Web SDK] 擴充功能和 `All Pages - Library Loaded` 規則中，您也會看到 [!UICONTROL 核心] 新增擴充功能，其中包含所有Launch Web屬性所需的基本JavaScript。)
-1. 選取 **[!UICONTROL 儲存並建置以供開發]** 按鈕
-   ![建立並建置程式庫](assets/websdk-property-buildLibrary.png)
+1. 選取 **[!UICONTROL 新增程式庫]**
+   ![選取新增程式庫](assets/websdk-property-pubAddNewLib.png)
+1. 對於 **[!UICONTROL 名稱]**，輸入 `Luma Platform Tutorial`
+1. 對於 **[!UICONTROL 環境]**，選取 `Development`
+1. 選取 **[!UICONTROL 新增所有變更的資源]** 按鈕。 (除了 [!UICONTROL Adobe Experience Platform Web SDK] 擴充功能與 `All Pages - Library Loaded` 規則，您也會看到 [!UICONTROL 核心] 新增的擴充功能包含所有Launch Web屬性所需的基本JavaScript。)
+1. 選取 **[!UICONTROL 儲存並為開發環境建置]** 按鈕
+   ![建立及建置程式庫](assets/websdk-property-buildLibrary.png)
 
-程式庫可能需要幾分鐘的時間才能建置，當它完成時，程式庫名稱左側會顯示一個綠色圓點：
+程式庫可能需要幾分鐘才能建置，而建置完成後，程式庫名稱左側會顯示一個綠色圓點：
 ![建置完成](assets/websdk-property-buildComplete.png)
 
-如您在 [!UICONTROL 發佈流程] 螢幕上，發佈程式的功能會比較多，這不在本教學課程的討論範圍內。 我們將在開發環境中使用單一程式庫。
+如您所見 [!UICONTROL 發佈流程] 畫面中，發佈程式還有更多內容不在本教學課程的討論範圍內。 我們即將在開發環境中使用單一程式庫。
 
 ## 驗證請求中的資料
 
 ### 新增Adobe Experience Platform Debugger
 
-Experience Platform偵錯工具是適用於Chrome和Firefox瀏覽器的擴充功能，可協助您查看網頁中實作的Adobe技術。 下載您偏好瀏覽器的版本：
+Experience Platform偵錯工具是適用於Chrome和Firefox瀏覽器的擴充功能，可協助您檢視在網頁中實作的Adobe技術。 下載您偏好瀏覽器的版本：
 
 * [Firefox擴充功能](https://addons.mozilla.org/zh-TW/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-如果您以前從未使用過Debugger(而且此版本與舊版Adobe Experience Cloud Debugger不同)，您可能會想要觀看此5分鐘的概述影片：
+如果您以前從未使用過Debugger，而且此版本與舊版Adobe Experience Cloud Debugger不同，建議您觀看這段時長五分鐘的概述影片：
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
 
 ### 開啟Luma網站
 
-在本教學課程中，我們會使用公開托管的Luma示範網站版本。 將其開啟並加上書籤：
+在本教學課程中，我們使用公開託管版本的Luma示範網站。 請開啟檔案並將其加入書籤：
 
 1. 在新的瀏覽器標籤中，開啟 [Luma網站](https://luma.enablementadobe.com/content/luma/us/en.html).
-1. 將頁面加入書籤，以便在教學課程的其餘部分中使用
+1. 將頁面加入書籤，以便在教學課程的其餘部分使用
 
-我們之所以使用此托管網站 `enablementadobe.com` 在 [!UICONTROL 網域] 欄位中填入初始標籤屬性設定，以及我們使用的原因 `data.enablementadobe.com` 作為 [!UICONTROL Adobe Experience Platform Web SDK] 擴充功能。 看，我有計畫了！
+我們之所以使用這個託管網站 `enablementadobe.com` 在 [!UICONTROL 網域] 初始標籤屬性設定及我們使用原因的欄位 `data.enablementadobe.com` 作為我們的第一方網域 [!UICONTROL Adobe Experience Platform Web SDK] 副檔名。 我有一個計畫！
 
 ![Luma首頁](assets/websdk-luma-homepage.png)
 
-### 使用Experience Platform偵錯工具來對應至您的標籤屬性
+### 使用Experience PlatformDebugger來對應至您的標籤屬性
 
-Experience Platform偵錯工具有一項酷炫功能，可讓您將現有的標籤屬性取代為其他屬性。 這對驗證很實用，可讓我們略過本教學課程中的許多實作步驟。
+Experience PlatformDebugger有一種酷炫功能，可讓您使用其他標籤屬性來取代現有的標籤屬性。 這對驗證很有用，可讓我們略過本教學課程中的許多實作步驟。
 
-1. 請確定您已開啟Luma網站，並選取Experience Platform偵錯工具擴充功能圖示
-1. Debugger將會開啟並顯示硬式編碼實作的部分詳細資料，這與本教學課程無關（開啟Debugger後，您可能需要重新載入Luma網站）
-1. 確認Debugger為「**[!UICONTROL 已連線至Luma]**&quot; ，然後選取「**[!UICONTROL 鎖]**」圖示，將Debugger鎖定至Luma網站。
-1. 選取 **[!UICONTROL 登入]** 按鈕進行驗證。
-1. 現在，請前往 **[!UICONTROL Launch]** 在左側導覽列中
-1. 選擇「配置」頁簽
-1. 右邊顯示 **[!UICONTROL 頁面內嵌程式碼]**，開啟 **[!UICONTROL 動作]** 下拉式清單，然後選取 **[!UICONTROL 取代]**
+1. 請確定您已開啟Luma網站，並選取Experience PlatformDebugger擴充功能圖示
+1. Debugger將會開啟並顯示硬式編碼實作的一些詳細資訊，這些詳細資訊與本教學課程無關（在開啟Debugger後，您可能需要重新載入Luma網站）
+1. 確認Debugger為「**[!UICONTROL 已連線至Luma]**&quot;，如下圖所示，然後選取&quot;**[!UICONTROL 鎖定]**」圖示可將Debugger鎖定至Luma網站。
+1. 選取 **[!UICONTROL 登入]** 按鈕以進行驗證。
+1. 現在移至 **[!UICONTROL Launch]** 在左側導覽列中
+1. 選取組態標籤
+1. 右邊顯示 **[!UICONTROL 頁面內嵌程式碼]**，開啟 **[!UICONTROL 動作]** 下拉式清單，然後選取 **[!UICONTROL Replace]**
 
-   ![選擇操作>替換](assets/websdk-debugger-replaceLibrary.png)
-1. 由於您已通過驗證，因此Debugger將提取您可用的Launch屬性和環境。 選取 `Luma Platform Tutorial` 屬性
-1. 選取 `Development` 環境
+   ![選取動作>取代](assets/websdk-debugger-replaceLibrary.png)
+1. 由於您已通過驗證，Debugger將會提取您可用的Launch屬性和環境。 選取您的 `Luma Platform Tutorial` 屬性
+1. 選取您的 `Development` 環境
 1. 選取 **[!UICONTROL 套用]** 按鈕
-   ![選擇替代標籤屬性](assets/websdk-debugger-selectProperty.png)
-1. Luma網站現在會重新載入 _搭配您的標籤屬性_. 救命，我被黑了！ 開玩笑吧。
-   ![已取代標籤屬性](assets/websdk-debugger-propertyReplaced.png)
-1. 前往 **[!UICONTROL 摘要]** 在左側導覽中，查看 [!UICONTROL Launch] 屬性
-   ![摘要索引標籤](assets/websdk-debugger-summary.png)
-1. 現在，請前往 **[!UICONTROL AEP Web SDK]** 在左側導覽中，查看 **[!UICONTROL 網路請求]**
-1. 開啟 **[!UICONTROL 事件]** row
+   ![選取替代標籤屬性](assets/websdk-debugger-selectProperty.png)
+1. Luma網站現在將重新載入 _包含您的標籤屬性_. 救命啊，我已經被黑了！ 開玩笑的。
+   ![標籤屬性已取代](assets/websdk-debugger-propertyReplaced.png)
+1. 前往 **[!UICONTROL 摘要]** 在左側導覽中，檢視 [!UICONTROL Launch] 屬性
+   ![摘要標籤](assets/websdk-debugger-summary.png)
+1. 現在移至 **[!UICONTROL AEP Web SDK]** 左側導覽以檢視 **[!UICONTROL 網路要求]**
+1. 開啟 **[!UICONTROL 事件]** 列
 
-   ![Adobe Experience Platform Web SDK要求](assets/websdk-debugger-platformNetwork.png)
-1. 請注意，我們如何看到 `web.webpagedetails.pageView` 我們在 [!UICONTROL 傳送事件] 動作，以及其他現成可用的變數。 `AEP Web SDK ExperienceEvent Mixin` 格式
+   ![Adobe Experience Platform Web SDK請求](assets/websdk-debugger-platformNetwork.png)
+1. 請注意我們能看到的 `web.webpagedetails.pageView` 我們指定的事件型別 [!UICONTROL 傳送事件] 動作，以及其他遵循下列條件的現成可用變數 `AEP Web SDK ExperienceEvent Mixin` 格式
    ![事件詳細資料](assets/websdk-debugger-eventDetails.png)
-1. 瀏覽器的網頁開發人員工具中也會顯示這些類型的請求詳細資料 **網路** 標籤。 開啟它並重新載入頁面。 篩選呼叫，並搭配 `interact` 若要找出呼叫，請選取該呼叫，然後查看 **標題** 標籤 **要求裝載** 的上界。
-   ![網路標籤](assets/websdk-debugger-networkTab.png)
-1. 前往 **回應** 標籤，並注意回應中ECID值的包含方式。 複製此值，如同您將在下一個練習中使用它來驗證設定檔資訊一樣。
-   ![網路標籤](assets/websdk-debugger-networkTab-response.png)
+1. 這些型別的請求詳細資訊也會顯示在瀏覽器的網頁開發人員工具中 **網路** 標籤。 開啟它並重新載入頁面。 篩選呼叫，使用 `interact` 若要尋找呼叫，請選取該呼叫，然後檢視 **標頭** 標籤， **請求裝載** 區域。
+   ![網路索引標籤](assets/websdk-debugger-networkTab.png)
+1. 前往 **回應** 標籤並記下ECID值如何包含在回應中。 複製此值，因為您將在下一個練習中使用它來驗證設定檔資訊。
+   ![網路索引標籤](assets/websdk-debugger-networkTab-response.png)
 
 
 
-## 驗證資料的Experience Platform
+## 驗證Experience Platform中的資料
 
-您可以查看到 `Luma Web Events Dataset`. (我知道，這叫「串流資料擷取」，但現在我說它分批送達！ 它會即時串流至設定檔，以便用於即時分段和啟動，但會每15分鐘批次傳送至資料湖。)
+您可以檢視到達Platform的資料批次，以驗證資料是否著陸到 `Luma Web Events Dataset`. (我知道，這稱為串流資料擷取，但現在我說的是批次傳送！ 它會即時串流至設定檔，因此可用於即時細分和啟動，但每15分鐘會批次傳送至資料湖。)
 
-驗證資料的方式：
+若要驗證資料：
 
-1. 在Platform使用者介面中，前往 **[!UICONTROL 資料集]** 在左側導覽列中
+1. 在Platform使用者介面，前往 **[!UICONTROL 資料集]** 在左側導覽列中
 1. 開啟 `Luma Web Events Dataset` 並確認批次已到。 請記住，每15分鐘傳送一次，因此您可能需要等待批次顯示。
 1. 選取 **[!UICONTROL 預覽資料集]** 按鈕
    ![開啟資料集](assets/websdk-platform-dataset.png)
-1. 在預覽模式中，請注意如何選取左側結構的不同欄位，以預覽這些特定資料點：
+1. 在預覽強制回應視窗中，請注意如何選取左側結構描述的不同欄位，以預覽這些特定資料點：
    ![預覽欄位](assets/websdk-platform-datasetPreview.png)
 
-您也可以確認新設定檔正在顯示：
+您也可以確認新設定檔是否顯示：
 
-1. 在Platform使用者介面中，前往 **[!UICONTROL 設定檔]** 在左側導覽列中
-1. 選取 **[!UICONTROL ECID]** 命名空間並搜尋您的ECID值（從回應複製）。 設定檔會有其專屬的id，與ECID不同。
-1. 選取 **[!UICONTROL 設定檔ID]** 開啟配置檔案
+1. 在Platform使用者介面，前往 **[!UICONTROL 設定檔]** 在左側導覽列中
+1. 選取 **[!UICONTROL ECID]** 名稱空間並搜尋您的ECID值（從回應中複製）。 設定檔會有自己的ID，與ECID分開。
+1. 選取 **[!UICONTROL 設定檔ID]** 以開啟設定檔
    ![尋找並開啟設定檔](assets/websdk-platform-openProfile.png)
-1. 選取 **[!UICONTROL 事件]** 標籤，查看您檢視的頁面
-   ![設定檔事件](assets/websdk-platform-profileEvents.png)
+1. 選取 **[!UICONTROL 事件]** 索引標籤以檢視您檢視的頁面
+   ![設定檔事件](assets/websdk-platform-profileEvents.png)\
    <!--![](assets/websdk-platform-confirmProfile.png)-->
 
-## 新增自訂資料至事件
+## 將自訂資料新增至事件
 
-### 為頁面名稱建立資料元素
+### 建立頁面名稱的資料元素
 
-1. 在資料收集標籤介面中，位於 `Luma Platform Tutorial` 屬性，開啟 **[!UICONTROL 選取工作程式庫]** 下拉式清單，選取 `Luma Platform Tutorial` 程式庫。 此設定可讓您更輕鬆地將其他更新發佈至程式庫。
-1. 現在，請前往 **[!UICONTROL 資料元素]** 在左側導覽列中
+1. 在資料收集標籤介面中，於 `Luma Platform Tutorial` 屬性，開啟 **[!UICONTROL 選取工作程式庫]** 下拉式清單，選取 `Luma Platform Tutorial` 資料庫。 此設定可讓您更輕鬆地向資料庫發佈其他更新。
+1. 現在移至 **[!UICONTROL 資料元素]** 在左側導覽列中
 1. 選取 **[!UICONTROL 建立新資料元素]** 按鈕
 
-   ![建立新資料元素](assets/websdk-property-createNewDataElement.png)
+   ![建立新的資料元素](assets/websdk-property-createNewDataElement.png)
 1. 作為 **[!UICONTROL 名稱]**，輸入 `Page Name`
-1. 作為 **[!UICONTROL 資料元素類型]**，選取 `JavaScript Variable`
-1. 作為 **[!UICONTROL JavaScript變數名稱]**，輸入 `digitalData.page.pageInfo.pageName`
-1. 若要協助標準化值的格式，請核取 **[!UICONTROL 強制小寫值]** 和 **[!UICONTROL 清除文字]**
-1. 確保 `Luma Platform Tutorial` 已選取為工作程式庫
-1. 選擇 **[!UICONTROL 儲存至程式庫]**
-   ![為頁面名稱建立資料元素](assets/websdk-property-dataElement-pageName.png)
+1. 作為 **[!UICONTROL 資料元素型別]**，選取 `JavaScript Variable`
+1. 作為 **[!UICONTROL javascript變數名稱]**，輸入 `digitalData.page.pageInfo.pageName`
+1. 若要協助標準化值的格式，請勾選 **[!UICONTROL 強制小寫值]** 和 **[!UICONTROL 清除文字]**
+1. 請確定 `Luma Platform Tutorial` 已選取作為工作程式庫
+1. 選取 **[!UICONTROL 儲存至程式庫]**
+   ![建立頁面名稱的資料元素](assets/websdk-property-dataElement-pageName.png)
 
 ### 將頁面名稱對應至XDM物件資料元素
 
-現在，我們會將我們的頁面名稱對應至Web SDK。
+現在，我們將頁面名稱對應至Web SDK。
 
 >[!IMPORTANT]
 >
->為了完成此工作，我們需要確保您的使用者先擁有生產沙箱的存取權。 如果您尚無權從不同的產品設定檔存取Prod沙箱，請快速開啟 `Luma Tutorial Platform` 設定檔和新增權限項目 **[!UICONTROL 沙箱]** > **[!UICONTROL 生產]**. 執行此操作後，在「資料元素」頁面上執行SHIFT-Reload以清除快取
->![新增生產沙箱](assets/websdk-property-permissionToLoadSchema.png)
+>為了完成此任務，我們需要確保您的使用者首先有權存取Prod沙箱。 如果您還無法從其他產品設定檔存取Prod沙箱，請快速開啟 `Luma Tutorial Platform` 設定檔並新增許可權專案 **[!UICONTROL 沙箱]** > **[!UICONTROL Prod]**. 之後，請在「資料元素」頁面上執行SHIFT — 重新載入以清除您的快取
+>![新增Prod沙箱](assets/websdk-property-permissionToLoadSchema.png)
 
-在 **[!UICONTROL 資料元素]** 頁面：
+於 **[!UICONTROL 資料元素]** 頁面：
 
-1. 建立新資料元素
+1. 建立新的資料元素
 1. 作為 **[!UICONTROL 名稱]**，輸入 `XDM Object`
-1. 作為 **[!UICONTROL 擴充功能]**，選取 `Adobe Experience Platform Web SDK`
-1. 作為 **[!UICONTROL 資料元素類型]**，選取 `XDM object`
-1. 作為 **[!UICONTROL 沙箱]**，選取 `Luma Tutorial` 沙箱
-1. 作為 **[!UICONTROL 結構]**，選取 `Luma Web Events Schema`
+1. 作為 **[!UICONTROL 副檔名]**，選取 `Adobe Experience Platform Web SDK`
+1. 作為 **[!UICONTROL 資料元素型別]**，選取 `XDM object`
+1. 作為 **[!UICONTROL Sandbox]**，選取您的 `Luma Tutorial` 沙箱
+1. 作為 **[!UICONTROL 結構描述]**，選取您的 `Luma Web Events Schema`
 1. 選取 `web.webPageDetails.name` 欄位
-1. 作為 **[!UICONTROL 值]**，請選取圖示以開啟資料元素選取強制回應視窗，然後選擇您的 `Page Name` 資料元素
-1. 選擇 **[!UICONTROL 儲存至程式庫]**
+1. 作為 **[!UICONTROL 值]**，選取圖示以開啟資料元素選取強制回應視窗，然後選擇 `Page Name` 資料元素
+1. 選取 **[!UICONTROL 儲存至程式庫]**
 
    ![將頁面名稱對應至XDM物件資料元素](assets/websdk-property-dataElement-createXDMObject.png)
 
-這個相同程式可用來將網站上的其他自訂資料對應至XDM欄位。
+使用相同的程式將網站上的其他自訂資料對應至XDM欄位。
 
-### 新增XDM資料至您的「傳送事件」動作
+### 將XDM資料新增至您的「傳送事件」動作
 
-現在已將資料對應至XDM欄位，您可以將其納入「傳送事件」動作中：
+現在您已將資料對應至XDM欄位，可以將它包含在「傳送事件」動作中：
 
-1. 前往 **[!UICONTROL 規則]** 螢幕
-1. 開啟 `All Pages - Library Loaded` 規則
+1. 前往 **[!UICONTROL 規則]** 畫面
+1. 開啟您的 `All Pages - Library Loaded` 規則
 1. 開啟 `Adobe Experience Platform Web SDK - Send Event` 動作
-1. 作為 **[!UICONTROL XDM資料]**，請選取圖示以開啟資料元素選取強制回應視窗，然後選擇您的 `XDM Object` 資料元素
+1. 作為 **[!UICONTROL XDM資料]**，選取圖示以開啟資料元素選取強制回應視窗，然後選擇 `XDM Object` 資料元素
 1. 選取 **[!UICONTROL 保留變更]** 按鈕
-   ![新增XDM資料至您的「傳送事件」動作](assets/websdk-property-addXDMtoSendEvent.png)
-1. 既然你 `Luma Platform Tutorial` 在前幾個練習中，您最近的變更已直接儲存至程式庫。 您不必透過「發佈流程」畫面發佈變更，只需開啟藍色按鈕的下拉式清單並選取 **[!UICONTROL 儲存至程式庫並建置]**
+   ![將XDM資料新增至您的「傳送事件」動作](assets/websdk-property-addXDMtoSendEvent.png)
+1. 現在，由於您已 `Luma Platform Tutorial` 您選取作為最近幾項練習的工作程式庫，而您最近的變更已直接儲存至程式庫。 您不必透過發佈流程畫面發佈變更，只需開啟藍色按鈕上的下拉式清單，然後選取 **[!UICONTROL 儲存至程式庫並建置]**
    ![儲存至程式庫並建置](assets/websdk-property-saveAndBuildUpdatedSendEvent.png)
 
-這會開始使用您剛才進行的三項變更來建立新的標籤程式庫。
+這會開始建立新的標籤程式庫，其中包含您剛才進行的三項變更。
 
 ### 驗證XDM資料
 
-您現在應該可以重新載入Luma首頁，同時使用Debugger對應至您的標籤屬性（如您先前所學），並查看頁面名稱欄位填入請求中！
+如先前所知，在使用Debugger對應至您的標籤屬性時，您現在應該能夠重新載入Luma首頁，並看到頁面名稱欄位會填入請求中！
 ![驗證XDM資料](assets/websdk-debugger-pageName.png)
 
-您也可以預覽資料集和設定檔，以驗證Platform中收到的頁面名稱資料。
+您也可以預覽資料集和設定檔，驗證在Platform中收到的頁面名稱資料。
 
 ## 傳送其他身分
 
-您的Web SDK實作現在會傳送以Experience CloudID(ECID)為主要識別碼的事件。 ECID會由Web SDK自動產生，且每個裝置和瀏覽器都不重複。 根據客戶使用的裝置和瀏覽器，單一客戶可擁有多個ECID。 那麼，我們如何取得此客戶的統一檢視，並將其線上活動連結至我們的CRM、忠誠度和離線購買資料？ 我們會在工作階段期間收集其他身分資料，並透過身分匯整，決定性地連結其設定檔，借此達成此目標。
+您的Web SDK實作現在會傳送以Experience CloudID (ECID)作為主要識別碼的事件。 ECID會由Web SDK自動產生，且每個裝置和瀏覽器皆不重複。 根據他們使用的裝置和瀏覽器，單一客戶可以有多個ECID。 那麼，我們如何取得此客戶的統一檢視，並將其線上活動連結至CRM、忠誠度和離線購買資料？ 我們的做法是在其工作階段期間收集其他身分，並透過身分拼接決定性地連結其設定檔。
 
-若您記得，我曾提到我們會使用ECID和CRM ID做為網站資料的身分識別，位於 [對應身分](map-identities.md) 教訓。 那麼，我們就使用Web SDK來收集CRM ID吧！
+如果您還記得，我曾提到我們會使用ECID和CRM ID作為在中取得網頁資料的身分。 [對應身分](map-identities.md) 課程。 讓我們使用Web SDK收集CRM ID！
 
-### 為CRM ID新增資料元素
+### 新增CRM ID的資料元素
 
-首先，我們會將CRM ID儲存在資料元素中：
+首先，我們將CRM ID儲存在資料元素中：
 
-1. 在標籤介面中，新增資料元素，名為 `CRM Id`
-1. 作為 **[!UICONTROL 資料元素類型]**，選取 **[!UICONTROL JavaScript變數]**
-1. 作為 **[!UICONTROL JavaScript變數名稱]**，輸入 `digitalData.user.0.profile.0.attributes.username`
-1. 選取 **[!UICONTROL 儲存至程式庫]** 按鈕(`Luma Platform Tutorial` 仍是您的工作程式庫)
-   ![為CRM ID新增資料元素](assets/websdk-property-dataElement-crmId.png)
+1. 在標籤介面中，新增資料元素 `CRM Id`
+1. 作為 **[!UICONTROL 資料元素型別]**，選取 **[!UICONTROL JavaScript變數]**
+1. 作為 **[!UICONTROL javascript變數名稱]**，輸入 `digitalData.user.0.profile.0.attributes.username`
+1. 選取 **[!UICONTROL 儲存至程式庫]** 按鈕(`Luma Platform Tutorial` 仍應為您的工作程式庫)
+   ![新增CRM ID的資料元素](assets/websdk-property-dataElement-crmId.png)
 
 ### 將CRM ID新增至Identity Map資料元素
 
-既然我們已擷取CRM ID值，就必須將其與稱為的特殊資料元素類型建立關聯 [!UICONTROL 身分對應] 資料元素：
+現在我們已擷取CRM ID值，我們必須將其與名為的特殊資料元素型別建立關聯。 [!UICONTROL 身分對應] 資料元素：
 
-1. 新增資料元素，命名為 `Identities`
-1. 作為 **[!UICONTROL 擴充功能]**，選取 **[!UICONTROL Adobe Experience Platform Web SDK]**
-1. 作為 **[!UICONTROL 資料元素類型]**，選取 **[!UICONTROL 身分對應]**
-1. 作為 **[!UICONTROL 命名空間]**，輸入 `Luma CRM Id`，即 [!UICONTROL 命名空間] 我們先前的課
+1. 新增名為的資料元素 `Identities`
+1. 作為 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. 作為 **[!UICONTROL 資料元素型別]**，選取 **[!UICONTROL 身分對應]**
+1. 作為 **[!UICONTROL 名稱空間]**，輸入 `Luma CRM Id`，也就是 [!UICONTROL 名稱空間] 我們在先前的課程中建立
 
    >[!WARNING]
    >
-   >Adobe Experience Platform Web SDK擴充功能2.2版可讓您使用Platform帳戶中的實際值，從預先填入的下拉式清單中選取「命名空間」。 很可惜，此功能尚未「了解沙箱」，因此 `Luma CRM Id` 值可能不會出現在下拉式清單中。 這可能會使您無法完成本練習。 確認後，我們會發佈因應措施。
+   >Adobe Experience Platform Web SDK擴充功能2.2版可讓您使用Platform帳戶中的實際值，從預先填入的下拉式清單中選取名稱空間。 很遺憾，此功能尚未「沙箱感知」，因此 `Luma CRM Id` 值可能不會顯示在下拉式清單中。 這可能會妨礙您完成本練習。 確認後，我們會張貼因應措施。
 
-1. 作為 **[!UICONTROL ID]**，請選取圖示以開啟資料元素選取強制回應視窗，然後選擇您的 `CRM Id` 資料元素
-1. 作為 **[!UICONTROL 驗證狀態]**，選取 **[!UICONTROL 已驗證]**
-1. 離開 **[!UICONTROL 主要]** _未勾選_. 由於CRM ID不存在於Luma網站的大部分訪客，因此您絕對 _不想將ECID覆寫為主要識別碼_. 以ECID以外的任何項目作為主要識別碼，這是很少見的使用案例。 我通常不會在這些指示中提及預設設定，但我會呼叫這個設定，以協助您日後在自己的實施中避免頭痛。
-1. 選取 **[!UICONTROL 儲存至程式庫]** 按鈕(`Luma Platform Tutorial` 仍是您的工作程式庫)
+1. 作為 **[!UICONTROL ID]**，選取圖示以開啟資料元素選取強制回應視窗，然後選擇 `CRM Id` 資料元素
+1. 作為 **[!UICONTROL 已驗證狀態]**，選取 **[!UICONTROL 已驗證]**
+1. 離開 **[!UICONTROL 主要]** _未勾選_. 由於Luma網站的大多數訪客都沒有CRM ID，因此您絕對 _不想將ECID覆寫為主要識別碼_. 使用ECID以外的任何專案作為主要識別碼的情況很少見。 我通常不會在這些指示中提及預設設定，但我會呼叫此設定，以協助您日後在自己的實施中避免感到頭痛。
+1. 選取 **[!UICONTROL 儲存至程式庫]** 按鈕(`Luma Platform Tutorial` 仍應為您的工作程式庫)
    ![將CRM ID新增至Identity Map資料元素](assets/websdk-property-dataElement-identityMap.png)
 
 >[!NOTE]
 >
->您可以使用 [!UICONTROL 身分對應] 資料類型。
+>您可以使用 [!UICONTROL 身分對應] 資料型別。
 
-### 將Identity Map資料元素新增至XDM物件
+### 將身分對應資料元素新增至XDM物件
 
-我們還必須更新一個資料元素： XDM物件資料元素。 必須更新三個不同的資料元素才能傳遞此單一身分，這似乎有些奇怪，但此程式的設計目的是為了擴充多個身分。 別擔心，我們快學完了！
+還有一個資料元素必須更新：XDM物件資料元素。 必須更新三個個別的資料元素才能傳遞此一個身分似乎很奇怪，但此程式旨在針對多個身分進行縮放。 別擔心，本課程即將完成！
 
-1. 開啟XDM物件資料元素
+1. 開啟您的XDM物件資料元素
 1. 開啟IdentityMap XDM欄位
-1. 作為 **[!UICONTROL 資料元素]**，請選取圖示以開啟資料元素選取強制回應視窗，然後選擇您的 `Identities` 資料元素
-1. 既然你 `Luma Platform Tutorial` 在前幾個練習中，您最近的變更已直接儲存至程式庫。 您可以開啟藍色按鈕上的下拉式清單，然後選取「 」，而不必透過「發佈流程」畫面發佈變更 **[!UICONTROL 儲存至程式庫並建置]**
+1. 作為 **[!UICONTROL 資料元素]**，選取圖示以開啟資料元素選取強制回應視窗，然後選擇 `Identities` 資料元素
+1. 現在，由於您已 `Luma Platform Tutorial` 您選取作為最近幾項練習的工作程式庫，而您最近的變更已直接儲存至程式庫。 您可以開啟藍色按鈕上的下拉式清單，然後選取 **[!UICONTROL 儲存至程式庫並建置]**
    ![將IdentityMap資料元素新增至XDM物件](assets/websdk-property-dataElement-addIdentitiesToXDMObject.png)
 
 
 ### 驗證身分
 
-若要驗證Web SDK是否正在傳送CRM ID:
+若要驗證Web SDK現在是否正在傳送CRM ID：
 
 1. 開啟 [Luma網站](https://luma.enablementadobe.com/content/luma/us/en.html)
-1. 依照先前的指示，使用Debugger將其對應至您的標籤屬性
+1. 根據先前的指示，使用Debugger將其對應至您的標籤屬性
 1. 選取 **登入** Luma網站右上角的連結
-1. 使用憑證登入 `test@adobe.com`/`test`
-1. 驗證後，在Debugger中檢查Experience PlatformWeb SDK呼叫(**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL 網路請求]** > **[!UICONTROL 事件]** )，而您應該會看到 `lumaCrmId`:
+1. 使用認證登入 `test@adobe.com`/`test`
+1. 驗證後，請在Debugger中檢查Experience PlatformWeb SDK呼叫(**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL 網路要求]** > **[!UICONTROL 事件]** )，而且您應該會看到 `lumaCrmId`：
    ![在Debugger中驗證身分](assets/websdk-debugger-confirmIdentity.png)
-1. 使用ECID命名空間並再次查詢值，查詢使用者設定檔。 在設定檔中，您會看到CRM ID、忠誠度ID和設定檔詳細資訊，例如名稱和電話號碼。 所有身分和資料已匯整為單一即時客戶設定檔！
-   ![驗證Platform中的身分](assets/websdk-platform-lumaCrmIdProfile.png)
+1. 使用ECID名稱空間和值再次查詢使用者設定檔。 在設定檔中，您會看到CRM ID，還有忠誠度ID和設定檔詳細資料，例如姓名和電話號碼。 所有身分和資料都已結合到單一即時客戶個人檔案中！
+   ![在Platform中驗證身分](assets/websdk-platform-lumaCrmIdProfile.png)
 
 
 ## 其他資源
 
 * [使用 Web SDK 實作 Adobe Experience Cloud](/help/tutorial-web-sdk/overview.md)
 * [串流擷取檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=zh-Hant)
-* [串流獲取API參考](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [串流擷取API參考](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
 
-幹得好！ 這是許多有關Web SDK和Launch的資訊。 完整實作的參與度要高很多，但這些是可協助您開始使用及查看Platform結果的基本概念。
+做得好！這提供了許多關於Web SDK和Launch的資訊。 完整式實作涉及的範圍更廣，但基礎知識能協助您開始使用，並在Platform中檢視結果。
 
 >[!NOTE]
 >
->現在您已完成串流擷取課程，可以移除 [!UICONTROL 生產] 從您的 `Luma Tutorial Platform` 產品設定檔
+>現在您已完成串流擷取課程，您可以移除 [!UICONTROL Prod] 來自您的的沙箱 `Luma Tutorial Platform` 產品設定檔
 
 
-資料工程師，如果您喜歡，請跳到 [運行查詢課程](run-queries.md).
+資料工程師，如果您願意的話，可以跳至 [執行查詢課程](run-queries.md).
 
-資料架構師，您可以 [合併策略](create-merge-policies.md)!
+資料架構師，您可以 [合併原則](create-merge-policies.md)！
