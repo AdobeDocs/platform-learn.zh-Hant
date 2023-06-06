@@ -1,29 +1,25 @@
 ---
-title: 配置基於屬性的訪問控制
-description: 了解如何配置基於屬性的訪問控制以控制對特定Experience Platform資源的訪問。
+title: 設定以屬性為基礎的存取控制
+description: 瞭解如何設定屬性式存取控制，以控制對特定Experience Platform資源的存取。
 role: Admin, User
 feature: Access Control
 kt: 10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: f19d3851c5d8e8c54823aa115cc7068f91776da6
+source-git-commit: 3df5214a445cbf4c9862bb82cd32a9f243228539
 workflow-type: tm+mt
-source-wordcount: '127'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
 
-# 配置基於屬性的訪問控制
+# 設定以屬性為基礎的存取控制
 
-了解如何配置基於屬性的訪問控制以限制對特定Experience Platform資源的訪問。 如需詳細資訊，請造訪 [存取控制檔案](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
+瞭解如何設定屬性型存取控制以限制對特定Experience Platform資源的存取。 如需詳細資訊，請造訪 [存取控制檔案](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345641?quality=12&learn=on)
 
 >[!NOTE]
 >
-> 此視頻中顯示的策略構建功能未完全可用，但客戶帳戶中的預設策略的配置與顯示的策略類似。
-
->[!IMPORTANT]
->
-> 基於屬性的訪問控制目前在有限版本中為美國醫療保健客戶提供。 完整發行後，所有Real-time Customer Data Platform客戶都能使用此功能。 此外，此視頻中使用的「受管理運行狀況資料」標籤僅允許Healthcare Shield客戶使用。
+> 本影片中顯示的原則建置功能並非完全可用，但客戶帳戶中的預設原則設定與所示原則類似。
