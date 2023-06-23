@@ -1,24 +1,24 @@
 ---
 title: 設定以檔案為基礎的雲端儲存空間或電子郵件行銷目的地
-description: 在AdobeReal-Time CDP中以檔案為基礎之目的地設定的逐步說明中取得秘訣。 這適用於雲端儲存目的地（例如S3或SFTP），以及電子郵件行銷目的地。
+description: 在逐步解說如何在Adobe的Real-Time CDP中設定以檔案為基礎的目的地時，取得秘訣。 這適用於雲端儲存目標（例如S3或SFTP）以及電子郵件行銷目標。
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
-kt: 6624
+jira: KT-6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 5%
+ht-degree: 10%
 
 ---
 
-# 設定檔案型 [!UICONTROL 雲端儲存] 或 [!UICONTROL 電子郵件行銷] 目的地
+# 設定檔案式 [!UICONTROL 雲端儲存空間] 或 [!UICONTROL 電子郵件行銷] 目的地
 
-在Adobe Real-time Customer Data Platform(CDP)中以檔案為基礎之目的地設定的逐步說明中取得秘訣。 這適用於 [!UICONTROL 雲端儲存] 目的地（例如S3或SFTP）以及 [!UICONTROL 電子郵件行銷] 目的地。 如需更詳細的產品檔案，請參閱：
+在逐步解說如何在Adobe的Real-time Customer Data Platform (CDP)中設定檔案型目的地時，取得秘訣。 這適用於 [!UICONTROL 雲端儲存空間] 目的地（例如S3或SFTP）以及 [!UICONTROL 電子郵件行銷] 目的地。 如需更詳細的產品檔案，請參閱：
 
-* [啟用受眾資料以批次設定檔匯出目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html) 如何使用Experience PlatformUI，將資料啟用至批次或透過電子郵件傳送行銷目的地
-* [使用流量服務API連線至批次目的地並啟動資料](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) 如何使用流量服務API，將資料啟用至批次或透過電子郵件傳送至行銷目的地
+* [啟用對象資料以批次設定檔匯出目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html) 有關如何使用Experience PlatformUI將資料啟用至批次或電子郵件行銷目的地的指示
+* [使用流程服務API連線到批次目的地並啟用資料](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) 有關如何使用流量服務API將資料啟用至批次或電子郵件行銷目的地的指示
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?quality=12&learn=on)

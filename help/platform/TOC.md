@@ -4,10 +4,10 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: 13a1983f0706686d53c9d218cde0b583bd44578d
+source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 30%
+source-wordcount: '937'
+ht-degree: 31%
 
 ---
 
@@ -48,7 +48,7 @@ ht-degree: 30%
 + 資料治理 {#data-governance}
    + [總覽](/help/platform/governance/understanding-data-governance.md)
    + [端對端示範](/help/platform/governance/introduction-to-data-governance.md)
-   + [使用標籤分類資料](/help/platform/governance/classify-data-using-labels.md)
+   + [使用標籤進行資料分類](/help/platform/governance/classify-data-using-labels.md)
    + [建立資料使用原則](/help/platform/governance/create-data-usage-policies.md)
    + [強制執行資料使用原則](/help/platform/governance/enforce-data-usage-policies.md)
    + [強制執行同意](/help/platform/governance/enforce-consent.md)
@@ -100,7 +100,7 @@ ht-degree: 30%
    + Adobe Target和自訂個人化{#target}
       + [使用Adobe Target進行下一次點選個人化](/help/platform/destinations/target/next-hit-personalization.md)
       + [設定Adobe Target目的地](/help/platform/destinations/target/configure-the-target-destination.md)
-      + [啟用區段和設定檔屬性](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
+      + [啟動區段和設定檔屬性](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [在Target中使用Real-Time CDP區段](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [在Target中使用Real-Time CDP設定檔屬性](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [啟用非Adobe應用程式資料網路研討會](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
@@ -203,7 +203,7 @@ ht-degree: 30%
    + [使用Adobe Target進行下一次點選個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud 整合 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [使用Marketo Engage協調行銷活動](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [使用Marketo Engage協調行銷活動](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
 + 產業趨勢 {#industry}
    + [資料管理的未來和不斷變化的環境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [兩種見解的故事 - 品牌與消費者](/help/platform/industry/brands-vs-consumers.md)

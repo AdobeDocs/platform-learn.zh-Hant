@@ -1,7 +1,7 @@
 ---
 user-guide-title: 將Target從at.js 2.x移轉至Web SDK
 breadcrumb-title: 將Target從at.js 2.x移轉至Web SDK
-user-guide-description: Target客戶的實作教學課程，說明如何成功從at.js移轉至Web SDK實作。
+user-guide-description: 適用於Target客戶的實作教學課程，說明如何成功從at.js移轉至Web SDK實作。
 feature-set: Target,Experience Platform
 solution: Target,Data Collection,Experience Platform
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
@@ -9,8 +9,8 @@ role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
-kt: 11159
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+jira: KT-11159
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 5%
@@ -32,11 +32,11 @@ ht-degree: 5%
 
 + [取代程式庫和預先隱藏方法](replace-library.md)
 
-+ [呈現VEC型活動](render-vec-activities.md)
++ [轉譯VEC型活動](render-vec-activities.md)
 
-+ [轉譯表單式活動](render-form-based-activities.md)
++ [演算表單式活動](render-form-based-activities.md)
 
-+ [傳送參數](send-parameters.md)
++ [傳送引數](send-parameters.md)
 
 + [追蹤轉換事件](track-events.md)
 
@@ -46,4 +46,4 @@ ht-degree: 5%
 
 + [驗證實作](validate.md)
 
-+ [除錯目標](debugging.md)
++ [偵錯目標](debugging.md)

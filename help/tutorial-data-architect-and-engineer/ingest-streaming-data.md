@@ -5,10 +5,10 @@ breadcrumb-title: 擷取串流資料
 description: 在本課程中，您將使用Web SDK將資料串流至Experience Platform。
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '3346'
 ht-degree: 1%
@@ -82,7 +82,6 @@ ht-degree: 1%
 若要建立 [!UICONTROL 資料串流]：
 
 1. 登入 [Experience Platform資料收集使用者介面](https://experience.adobe.com/launch/)
-
    <!--when will the edge config go live?-->
 
 1. 選取 **[!UICONTROL 資料串流]** 在左側導覽列中
@@ -103,7 +102,6 @@ ht-degree: 1%
 1. 對象 **[!UICONTROL 事件資料集]**，選取 `Luma Web Events Dataset`
 1. 如果您使用其他Adobe應用程式，請隨意瀏覽其他區段，以瞭解在這些其他解決方案的「邊緣組態」中需要哪些資訊。 請記住，開發Web SDK不僅是為了將資料串流到Experience Platform中，也是為了取代其他Adobe應用程式使用的所有先前JavaScript程式庫。 Edge設定用於指定您要傳送資料之每個應用程式的帳戶詳細資訊。
 1. 選取 **[!UICONTROL 儲存]**
-
    ![設定資料流並儲存](assets/websdk-edgeConfig-addEnvironment.png)
 
 儲存Edge設定後，產生的畫面會顯示已針對開發、測試和生產建立三個環境。 可以新增其他開發環境：
@@ -124,7 +122,6 @@ ht-degree: 1%
 1. 作為 **[!UICONTROL 名稱]**，輸入 `Luma Platform Tutorial` （如果貴公司有多位人員參加本教學課程，請在結尾加上您的姓名）
 1. 作為 **[!UICONTROL 網域]**，輸入 `enablementadobe.com` （稍後說明）
 1. 選取 **[!UICONTROL 儲存]**
-
    ![屬性詳細資料](assets/websdk-property-propertyDetails.png)
 
 <!--
@@ -281,7 +278,6 @@ Experience PlatformDebugger有一種酷炫功能，可讓您使用其他標籤�
 1. 現在移至 **[!UICONTROL Launch]** 在左側導覽列中
 1. 選取組態標籤
 1. 右邊顯示 **[!UICONTROL 頁面內嵌程式碼]**，開啟 **[!UICONTROL 動作]** 下拉式清單，然後選取 **[!UICONTROL Replace]**
-
    ![選取動作>取代](assets/websdk-debugger-replaceLibrary.png)
 1. 由於您已通過驗證，Debugger將會提取您可用的Launch屬性和環境。 選取您的 `Luma Platform Tutorial` 屬性
 1. 選取您的 `Development` 環境
@@ -364,7 +360,6 @@ Experience PlatformDebugger有一種酷炫功能，可讓您使用其他標籤�
 1. 選取 `web.webPageDetails.name` 欄位
 1. 作為 **[!UICONTROL 值]**，選取圖示以開啟資料元素選取強制回應視窗，然後選擇 `Page Name` 資料元素
 1. 選取 **[!UICONTROL 儲存至程式庫]**
-
    ![將頁面名稱對應至XDM物件資料元素](assets/websdk-property-dataElement-createXDMObject.png)
 
 使用相同的程式將網站上的其他自訂資料對應至XDM欄位。

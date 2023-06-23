@@ -1,84 +1,85 @@
 ---
 title: Bootcamp -Customer Journey Analytics — 從見解到行動 — 巴西
 description: Bootcamp -Customer Journey Analytics — 從見解到行動 — 巴西
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: febeba3596d3f98b2352c5ef8688ee011d25c9fe
+exl-id: 28b87e21-3168-447e-9a93-a6ae7e969657
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
 
 ---
 
-# 4.6阿桑
+# 4.6 Dos insights à acao
 
-## 奧比蒂沃斯
+## 物件
 
-- Entenda como criar um público com base em uma visão coletada noCustomer Journey Analytics
-- 使用público n CDP em tempo re a e no Adobe Journey Optimizer
+- Entenda como criar um público com base em uma visao coletada無Customer Journey Analytics
+- 使用esse público no CDP em tempo real e no Adobe Journey Optimizer
 
-## 4.6.1 Crie uma audincia e publique-a
+## 4.6.1 Crie uma audiencia e publicque-a
 
-Em seu projeto, você criou um filtro chamado **調情** e conseguiu visualizar a quantidade de usuários que tiveram suas ligeçes ao call center classiadas como **positivas**. Agora, você poderá criar um segmento com os usários e ativação-los em jornadas ou em canis de comunicação.
+Em seu projeto， voce criou um filtro chamado **通話感覺** e conseguiu visualizar a quantidade de usuários que tiveram suas ligacoes ao call center classificadas como **正面效果**. Agora， voce poderá criar um segmento com essuários e ativacao-los em jornadas ou em canais de comunicacao.
 
-O primeiro passoé:沒有痛苦，選一個林哈 **1. 呼叫感覺 — 積極**, clique com botão direito de seu mouse e selecone a opção **從選取項目建立受眾**:
+O primeiro passo é： No painel criado no último exercício， selecio one a linha **1. 通話感覺 — 正面**，點選連結com o botao direito de seu mouse e selecione a opcao **從選取專案建立對象**：
 
 ![示範](./images/aud1.png)
 
-Em seguida, dê um nome para a audience seguindo o modelo **yourLastName - cia對象呼叫感覺正面**:
+Em seguida， de um nome para a sua audiencia seguindo o modelo **yourLastName - cia對象通話感覺良好**：
 
 ![示範](./images/aud2.png)
 
-請注意：
+注意：要預覽受眾，請點選：
 
 ![示範](./images/aud3.png)
 
-準最後化，小組 **陽獅**:
+完成部分，小團體 **公關**：
 
 ![示範](./images/aud4.png)
 
-## 4.6.2使用sua audincia como part de um segmento
+## 4.6.2使用sua audiencia como parte de um segmento
 
-Voltando para a Adobe Experience Platform **區段>瀏覽** e você conseguirá visualizar o seu segmento criado no CJA pronto e disponível par as usado nas suas ativações e jornadas!
+Voltando para a Adobe Experience Platform， vá em **區段>瀏覽** 我們把視覺化的conseguirá o seu segmento criado no CJA pronto e disponível para ser usado nas as ativacoes e jornadas！
 
 ![示範](./images/aud5.png)
 
-我們要為我們做點事，就是為了我們的Facebook，我們要為我們做點事！
+Vamos agora usar esse segmento em uma ativacao no Facebook e em uma jornada do cliente！
 
-## 4.6.3使用秒段Real-Time CDP em tempo real
+## 4.6.3使用seu segmento na Real-Time CDP em tempo real
 
-Adobe Experience Platform，親愛的 **區段>瀏覽** 允許CJA中的某個對象：
+那個Adobe Experience Platform **區段>瀏覽** 請聽眾que voce criou no CJA：
 
 ![示範](./images/aud6.png)
 
-小團，小團，小團 **啟動至目的地**:
+小團體無順序區段e、em seguida、clique em **啟用至目的地**：
 
 ![示範](./images/aud7.png)
 
-選擇目的地chamada bootcamp-facebook e、em seguida、clique em Next:
+選取目的地小冊子facebook e、em seguida、clique em下一步：
 
 ![示範](./images/aud8.png)
 
-Em seguida, clique em Next novamente:
+Em seguida，小團體em Next novamente：
 
 ![示範](./images/aud9.png)
 
-Selectione a opção **對象的來源** 他定義科莫 **直接從客戶** e小組：
+選擇選擇一個opcao **您的對象來源** e defina como **直接來自客戶** 小團體下一步：
 
 ![示範](./images/aud10.png)
 
-波菲姆，帕金娜 **檢閱** 小組完成！
+潘金娜，潘金娜 **檢閱** 小團體完成！
 
 ![示範](./images/aud11.png)
 
-普隆托！ 阿戈拉·奧蘇·塞格門托·埃斯塔·溫庫拉多·普布利克斯個人化沙托斯·多Facebook。
-阿哥拉，我們用AJO
+Pronto！ 請再來一次Facebook個人化。
+Agora，vamos utilizar沒有區段！
 
-## 4.6.4使用seu segmento no Adobe Journey Optimizer
+## 4.6.4不使用Adobe Journey Optimizer使用seu區段
 
-Na interface da Adobe Experience Platform clique em Journey Optimizer e, em seguida, no menu lateral esquerdo, clique em **歷程** 我們是來的 **建立歷程**:
+Na interface da Adobe Experience Platform clique em Journey Optimizer e， em seguida，無選單橫向esquerdo， clique em **歷程** 我們來做個聖誕老人uma jornada clicando em **建立歷程**：
 
 ![示範](./images/aud20.png)
 
@@ -86,20 +87,20 @@ Na interface da Adobe Experience Platform clique em Journey Optimizer e, em segu
 
 ![示範](./images/aud22.png)
 
-Em seguida，無菜單橫向esquerdo, em Eventos, selecione **區段資格** 阿拉斯特 — 奧阿泰 — 約納達：
+Em seguida，無選單側面問答集， em事件，選擇 **區段資格** 若納達島上發生這樣的事情：
 
 ![示範](./images/aud23.png)
 
-Em seguida, em **區段** 團 **編輯** 第10段：
+Em seguida， em **區段** 小團體 **編輯** para seleciconar um區段：
 
 ![示範](./images/aud24.png)
 
-選擇一個CJA小組 **儲存**:
+選擇受眾票證，選擇無CJA票證 **儲存**：
 
 ![示範](./images/aud25.png)
 
-普隆托！ 我們要來一個人！
+Pronto！ 已加入協力廠商的daí voce pode criar uma jornada para clientes que se qualificam para esse segmento！
 
-[返回用戶流4](./uc4.md)
+[返回使用者流程4](./uc4.md)
 
-[馬杜洛斯山](./../../overview.md)
+[Voltar para todos os módulos](./../../overview.md)

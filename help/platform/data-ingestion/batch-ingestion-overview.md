@@ -3,10 +3,10 @@ title: 批次資料擷取概觀
 description: 這部影片會概略介紹Adobe Experience Platform中的批次擷取，並說明如何使用API擷取批次資料。
 role: Data Engineer, Data Architect
 feature: Data Ingestion
-kt: 7022
+jira: KT-7022
 thumbnail: 330995.jpg
 exl-id: 300acb73-2099-438d-97b3-48d2af5afdb0
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 14%

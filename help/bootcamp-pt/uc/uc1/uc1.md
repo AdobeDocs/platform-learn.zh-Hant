@@ -1,51 +1,52 @@
 ---
-title: Bootcamp — 收購 — 巴西
-description: Bootcamp — 收購 — 巴西
-kt: 5342
+title: Bootcamp — 贏取 — 巴西
+description: Bootcamp — 贏取 — 巴西
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+exl-id: 4392bdc2-ec43-4f2d-99af-719e9979f0c5
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 0%
 
 ---
 
-# 1.阿基西桑
+# 1.阿奎西可
 
-## 阿普倫迪薩多河
+## Objedivos de aprendizado
 
-## 普雷雷基托斯
+## 必備
 
-- 如Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acessoà coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 阿塞索奧地點
+- Acesso à Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de demonstração
 
 >[!IMPORTANT]
 >
->Este教程，以格式說明Bootcamp的特點。 Sistemas e contas secíficos aos quais você pode não ter acesso são utidas neste教學課程。 Mesmo sem acesso, você ainda pode aprende muito com a leitura deste contesúdo detalhado。 請參加bootcamp e precisa das credencias de acesso，將em contato com seu代表daAdobe段，作為必要資訊。
+>Este教學課程適用於criado para facilitar um formato específico de Bootcamp。 Sistemas e contas específicos aos quais voce pode nao ter acesso sao utilizados neste教學課程。 Mesmo sem acesso， voce ainda pode aprender muito com a leitura deste conteúdo detalhado. Se voce é um participante de um Bootcamp e precisa das credenciais de acesso， entre em contato com representant da Adobe para receeber as information essentials necessárias.
 
-## 雷孔西奧斯
+## 練習
 
-[1.1網站造訪](./ex1.md)
+[1.1 Visite o網站](./ex1.md)
 
-不要練習，不要站點。
+Neste exercício， voce irá seguir um roteiro e percorer o site.
 
-[1.2將seu próprio perfil de cliente em tempo real視覺化 — UI](./ex2.md)
+[1.2以視覺效果呈現使用者端端速度的seu próprio perfil de cliente em tempo real - UI](./ex2.md)
 
-不需要練習，也可以登入Adobe Experience Platform e visualizar seu próprio de cliente de tempo real na UI。
+Neste exercício， voce irá fazer login na Adobe Experience Platform e visualizar seu próprio Perfil de cliente em tempo real na UI.
 
-[1.3標準區段 — UI](./ex3.md)
+[1.3 Crie um區段 — UI](./ex3.md)
 
-不參加訓練，不參加訓練。
+Neste exercício， voce irá criar um segmento usando o o Constructor de Segmentos da Adobe Experience Platform.
 
-[1.4阿桑：Adobe Target](./ex4.md)
+[1.4 Acao：envie seu segmento para o Adobe Target](./ex4.md)
 
-使用segmento construído no extrucio 1.1 para configurar uma Atividade de segmentação por experincia no Adobe Target。
+使用o segmento construído no exercício 1.1 para configurar uma Atividade de segmentacao por experiencia no Adobe Target。
 
-[1.5阿桑：facebook](./ex5.md)
+[1.5 Acao：envie seu segmento para o Facebook](./ex5.md)
 
-1.1改為Facebook。
+Conecte o segmento que voce criou no excício 1.1 ao destino Facebook.
 
-[托多斯馬杜洛斯山](../../overview.md)
+[Retornar para Todos os módulos](../../overview.md)

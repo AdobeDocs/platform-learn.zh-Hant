@@ -3,10 +3,10 @@ title: 結構描述和Experience Data Model (XDM)概觀
 description: 了解體驗資料模型 (XDM) 這種描述客戶體驗的標準資料模型。
 role: Data Architect, Data Engineer
 feature: Schemas
-kt: 2696
+jira: KT-2696
 thumbnail: 27105.jpg
 exl-id: f517ada0-c106-45f0-96ea-3b3cc8bd03ba
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 20%

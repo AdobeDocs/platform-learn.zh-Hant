@@ -2,10 +2,10 @@
 title: 產生第一方裝置識別碼
 description: 學習如何產生第一方裝置識別碼
 feature: Web SDK
-kt: 9728
+jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: 0c3edbeaa5cb46f159a3efe72c108dfd2235f04b
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 2%
@@ -14,47 +14,47 @@ ht-degree: 2%
 
 # 產生第一方裝置識別碼
 
-Adobe Experience Cloud應用程式傳統上會產生cookie，以使用不同技術儲存裝置id，包括：
+Adobe Experience Cloud應用程式傳統上會使用不同技術產生Cookie以儲存裝置id，包括：
 
 1. 第三方 Cookie
 1. Adobe伺服器使用網域名稱的CNAME設定所設定的第一方Cookie
-1. 由JavaScript設定的第一方Cookie
+1. JavaScript設定的第一方Cookie
 
-最近的瀏覽器變更會限制這些類型Cookie的持續時間。 使用客戶擁有的伺服器設定第一方Cookie時，第一方Cookie最有效，此伺服器使用DNS A/AAAA記錄，而非DNS CNAME。 第一方裝置ID(FPID)功能可讓實作Adobe Experience Platform Web SDK的客戶使用DNS A/AAAA記錄之伺服器之Cookie中的裝置ID。 接著，這些ID可傳送至Adobe，並作為種子來產生Experience CloudID(ECID)，而ECID仍是Adobe Experience Cloud應用程式中的主要識別碼。
+最近的瀏覽器變更會限制這些型別Cookie的持續時間。 使用客戶擁有的伺服器（與DNS CNAME不同）使用DNS A/AAAA記錄來設定第一方Cookie時，其成效最佳。 第一方裝置ID (FPID)功能可讓實作Adobe Experience Platform Web SDK的客戶從使用DNS A/AAAA-records的伺服器使用Cookie中的裝置ID。 然後可以將這些ID傳送至Adobe，並作為種子來產生Experience CloudID (ECID)，這仍然是Adobe Experience Cloud應用程式中的主要識別碼。
 
 以下是功能運作方式的快速範例：
 
-![第一方裝置ID(FPID)和Experience CloudID(ECID)](../assets/kt-9728.png)
+![第一方裝置ID (FPID)和Experience CloudID (ECID)](../assets/kt-9728.png)
 
-1. 一般使用者的瀏覽器會向客戶的網頁伺服器或CDN要求網頁。
-1. 客戶在其Web伺服器或CDN上產生裝置ID(FPID)（Web伺服器應系結至網域名稱的DNS A/AAAA記錄）。
-1. 客戶設定第一方Cookie，將FPID儲存在使用者的瀏覽器中。
+1. 一般使用者的瀏覽器會從客戶的網頁伺服器或CDN要求網頁。
+1. 客戶在其網頁伺服器或CDN上產生裝置ID (FPID) （網頁伺服器應繫結至網域名稱的DNS A/AAAA-record）。
+1. 客戶設定第一方Cookie，以將FPID儲存在使用者的瀏覽器中。
 1. 客戶的Adobe Experience Platform Web SDK實作會向Platform Edge Network提出要求，包括身分對應中的FPID。
-1. Experience Platform邊緣網路接收FPID，並使用它產生Experience CloudID(ECID)。
-1. Platform Web SDK回應會將ECID傳回使用者的瀏覽器。
-1. 若 `idMigrationEnabled=true`,Platform Web SDK會使用JavaScript將ECID儲存為 `AMCV_` cookie。
-1. 若 `AMCV_` cookie過期時，程式會重複。 只要有相同的第一方裝置ID可用，就會有新的 `AMCV_` Cookie的ECID值與之前相同。
+1. Experience Platform Edge Network會接收FPID，並使用它來產生Experience CloudID (ECID)。
+1. Platform Web SDK回應會將ECID傳送回使用者的瀏覽器。
+1. 如果 `idMigrationEnabled=true`，Platform Web SDK會使用JavaScript將ECID儲存為 `AMCV_` 一般使用者瀏覽器中的Cookie。
+1. 在事件中 `AMCV_` Cookie過期，程式會自我重複。 只要有相同的第一方裝置ID可用，就會新增一個 `AMCV_` Cookie會以與之前相同的ECID值建立。
 
 >[!NOTE]
 >
->此 `idMigrationEnabled` 不需要設為 `true` 來使用FPID。 使用 `idMigrationEnabled=false` 您可能看不到 `AMCV_` 不過，和中的cookie必須在網路回應中尋找ECID值。
+>此 `idMigrationEnabled` 不需要設定為 `true` 以使用FPID。 替換為 `idMigrationEnabled=false` 您可能看不到 `AMCV_` 然而，和Cookie必須在網路回應中尋找ECID值。
 
 
-在本教程中，使用PHP指令碼語言的特定示例用於說明如何：
+在本教學課程中，會使用使用PHP指令碼語言的特定範例來說明如何：
 
 * 產生UUIDv4
 * 將UUIDv4值寫入Cookie
 * 在身分對應中加入Cookie值
 * 驗證ECID產生
 
-如需與第一方裝置ID相關的進一步檔案，請參閱產品檔案。
+有關第一方裝置ID的其他檔案可在產品檔案中找到。
 
 ## 產生UUIDv4
 
-PHP沒有用於產生UUID的原生程式庫，因此這些程式碼範例比使用其他程式設計語言時可能需要的更廣泛。 此示例選擇了PHP，因為它是受廣泛支援的伺服器端語言。
+PHP沒有用於產生UUID的原生程式庫，因此這些程式碼範例比使用其他程式設計語言時可能需要的範例更廣泛。 這個範例之所以選擇PHP，是因為它是廣泛支援的伺服器端語言。
 
 
-呼叫下列函式時，會產生隨機的UUID第4版：
+呼叫下列函式時，會產生隨機UUID版本4：
 
 ```
 <?php
@@ -74,7 +74,7 @@ PHP沒有用於產生UUID的原生程式庫，因此這些程式碼範例比使�
 
 ## 將UUIDv4值寫入Cookie
 
-下列程式碼會向上述函式提出要求，以產生UUID。 接著會設定貴組織決定的Cookie旗標。 如果已產生Cookie，則有效期會延長。
+下列程式碼會向上述函式提出要求，以產生UUID。 然後它會設定您的組織所決定的Cookie標幟。 如果已產生Cookie，則有效期會延長。
 
 ```
 <?php
@@ -112,9 +112,9 @@ PHP沒有用於產生UUID的原生程式庫，因此這些程式碼範例比使�
 >
 >包含第一方裝置ID的Cookie可以有任何名稱。
 
-## 在身分對應中加入Cookie值
+## 在身分對應中包含Cookie值
 
-最後一步是使用PHP將Cookie值回顯至「身分對應」。
+最後一步是使用PHP將Cookie值回應至Identity Map。
 
 
 ```
@@ -133,20 +133,20 @@ PHP沒有用於產生UUID的原生程式庫，因此這些程式碼範例比使�
 
 >[!IMPORTANT]
 >
->必須呼叫身分對應中使用的身分命名空間符號 `FPID`.
+>必須呼叫身分對應中使用的身分名稱空間符號 `FPID`.
 >
-> `FPID` 是保留的身分識別命名空間，不會顯示在身分識別命名空間的介面清單中。
+> `FPID` 是保留的身分名稱空間，不會顯示在身分名稱空間的介面清單中。
 
 
 ## 驗證ECID產生
 
-確認從第一方裝置ID產生的ECID相同，以驗證實作：
+確認從您的第一方裝置ID產生相同的ECID，以驗證實施：
 
 1. 產生FPID Cookie。
-1. 使用Platform Web SDK傳送要求至Platform Edge Network。
-1. 格式的Cookie `AMCV_<IMSORGID@AdobeOrg>` 的URL。 此Cookie包含ECID。
-1. 記下產生的Cookie值，然後刪除您網站的所有Cookie, `FPID` cookie。
-1. 傳送另一個要求至Platform Edge Network。
-1. 確認 `AMCV_<IMSORGID@AdobeOrg>` cookie相同 `ECID` 值，如 `AMCV_` 已刪除的cookie。 如果指定FPID的Cookie值相同，ECID的種子設定程式會成功。
+1. 使用Platform Web SDK傳送要求給Platform Edge Network。
+1. 格式為的Cookie `AMCV_<IMSORGID@AdobeOrg>` 「 」產生。 此Cookie包含ECID。
+1. 記下產生的Cookie值，然後刪除網站的所有Cookie，但 `FPID` Cookie。
+1. 傳送另一個要求給Platform Edge Network。
+1. 確認中的值 `AMCV_<IMSORGID@AdobeOrg>` Cookie相同 `ECID` 值，如同在 `AMCV_` 已刪除的Cookie。 如果指定FPID的Cookie值相同，表示ECID的植入程式已成功。
 
-如需此功能的詳細資訊，請參閱 [檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).
+如需有關此功能的詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).

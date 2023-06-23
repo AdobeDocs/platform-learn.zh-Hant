@@ -1,38 +1,39 @@
 ---
-title: Bootcamp — 混合物理和數位 — 使用行動應用程式並觸發信標項目 — 巴西
-description: Bootcamp — 混合物理和數位 — 使用行動應用程式並觸發信標項目 — 巴西
-kt: 5342
+title: Bootcamp — 混合實體和數位 — 使用行動應用程式並觸發信標登入 — 巴西
+description: Bootcamp — 混合實體和數位 — 使用行動應用程式並觸發信標登入 — 巴西
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 14bfbebe-6df3-4a0e-875c-b4c0d016f8da
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
 
 ---
 
-# 3.1使用aplicativo móvel e acione um信標
+# 3.1使用applicativo móvel e acione um beacon
 
-## 安裝至aplicativo móvel
+## 安裝應用程式Mov
 
-安裝程式，必要的 **拉斯特里門托** 不是塞烏·迪斯蒂沃·iOS。 帕拉伊索，阿塞斯 **庫帕松伊斯** > **私人魚** > **拉斯特里門托** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**.
+應用程式安裝安裝，必需 **Rastreamento** 沒有seu dispositivo iOS。 段落，存取 **設定** > **Privacidade e securanca** > **Rastreamento** 驗證opcao **允許應用程式需求或需求**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. 小組 **安裝** 歐 **下載**.
+存取App Store da Apple e pesquise `aepmobile-bootcamp`. 小團體 **安裝** ou **下載**.
 
 ![DSN](./../uc3/images/app1.png)
 
-安裝程式，小組 **阿布里爾**.
+應用程式追蹤系統安裝，小團體 **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-小組 **確定**.
+小團體 **確定**.
 
 ![DSN](./../uc3/images/app9.png)
 
-小組 **佩米特爾**.
+小團體 **許可權**.
 
 ![DSN](./../uc3/images/app3.png)
 
@@ -40,92 +41,92 @@ Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. 小組 **安裝
 
 ![DSN](./../uc3/images/app7.png)
 
-小組 **阿普利卡蒂沃山**.
+小團體 **美國應用程式許可權**.
 
 ![DSN](./../uc3/images/app8.png)
 
-小組 **佩米特爾**.
+小團體 **許可權**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Agora você está no aplicativo, na página inicial, pronto(a)para verificar to da a jornada do cliente。
+Agora voce está no applicativo， na página inicial， pronto(a) para verificar toda a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## 克呂克索 — 達喬納達 — 杜克里恩特
+## Fluxo da jornada do cliente
 
-普里米拉門特，你必須有法澤才能登錄。 小組 **登入**.
+需要登入的首要條件。 小團體 **登入**.
 
 ![DSN](./images/app13.png)
 
-Depois de criar sua與excecios anteriores, issoé exibido no site. Agoraé equisário rutilizar o endereço de e-mail da conta que você crio u no aplicativo para fazer o login.
+位於前方的越野小越野小越野中，因此不存在任何網站。 Agora é necessário reutilizar o endereco de email da contact quue voce crious no applicativo para fazer or login.
 
 ![示範](./images/pv1.png)
 
-Digite o endereço de e-mail que você usou no site e clique e em **登入**.
+Digite o endereco de email que voce沒有網站que em **登入**.
 
 ![DSN](./images/app14.png)
 
-Você receberá uma uma confirmação de que está conectado e receberá uma notifação push.
+Voce receberá uma confirmacao de que está conectado e receberá uma notificação push.
 
 ![DSN](./images/app15.png)
 
-Retren para a páginanicial do aplicativo e os recursos adicionais irão aparecer.
+Retorne para a página inicial do applicativo e os recursos adicionais irao aparecer.
 
 ![DSN](./images/app17.png)
 
-普里梅羅，阿塞斯 **產品**. Cliqueem qualquer producto，不是樣本： **咖啡**.
+Primeiro， accesse **產品**. 小團體em qualquer產品，巢狀範例： **咖啡待用**.
 
 ![DSN](./images/app19.png)
 
-我會做的 **咖啡** 沒有阿普利卡蒂沃。
+Voce verá a página do produto **咖啡待用** 無應用程式。
 
 ![DSN](./images/app20.png)
 
-Agora você irá simur um evento de entrada de sinalização（信標）em uma loja offline. O objetivo da simulaçãoé personalizar a experiencia do cliente nas telas da loja. Para visualizar a experiencecia na loja, foi criada uma página que mostrará de forma dinâmica, as informações relates para o cliente a o entrar na loja.
+Agora voce irá simular um evento de entrada de sinalização (beacon) em uma loja offline. O objetivo da simulacao é personalizar a experiencia do cliente nas telas da loja. Para visualizar a experiencia na loja， foi criada uma página que mostrará de forma dinamica as information relevantes para o cliente ao entrar na loja.
 
-繼續，繼續，電腦： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar， abra esta página da Web em seu computador： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Em seguida，一個被禁慾的女孩：
+Em seguida，一種長吻蝮：
 
 ![DSN](./images/screen1.png)
 
-我要說，我要說。 小集團 **信標**.
+Em seguida， retorne para a página inicial. 小集團無任何內涵 **beacon**.
 
 ![DSN](./images/app23.png)
 
-阿波斯·埃塔帕，塞金特·塞拉·埃西比多。 普里米羅，選優 **Bootcamp螢幕信標** e幫 **恩特拉達**. Isso permitirá que você simule uma entrada de sinalização com信標。
+Após essa etapa， o seguinte será exibido. Primeiro，選取 **Bootcamp畫面信標** e clique no botao de **entrada**. Isso permitirá que voce simule uma entrada de sinalização com beacon.
 
 ![DSN](./images/app21.png)
 
-阿戈拉確認了一條線。 Você verá oúltimo productto visualizado aparecer nessa em 5 segundos。
+Agora confira a tela da loja. Voce verá o último produto visualizado aparecer nesa tela em 5 segundos.
 
 ![DSN](./images/screen2.png)
 
-Em seguida, Retorne para **產品**. Cliqueem qualquer producto，不是樣本： **灘毯灘**.
+Em seguida， retorne para **產品**. 小團體em qualquer產品，巢狀範例： **沙灘毯棕褐色**.
 
 ![DSN](./images/app22.png)
 
-我要說，我要說。 小集團 **信標**.
+Em seguida， retorne para a página inicial. 小集團無任何內涵 **beacon**.
 
 ![DSN](./images/app23.png)
 
-Em seguida, selecione **Bootcamp螢幕信標** e幫 **恩特拉達** 諾瓦門特。 Isso permitirá que você simule uma entrada de sinalização（信標）。
+Em seguida，選擇 **Bootcamp畫面信標** e clique no botao de **Entrada** novamente。 Isso permitirá que voce simule uma entrada de sinalização （信標）。
 
 ![DSN](./images/app21.png)
 
-阿哥拉，確認是新手。 Você verá oúltimo productto visualizado aparecer nessa em 5 segundos。
+Agora，確認a tela da loja novamente。 Voce verá o último produto visualizado aparecer nesa tela em 5 segundos.
 
 ![DSN](./images/screen3.png)
 
-阿戈拉，在Perfil的Visualizador de Seu站點上。 Você verá muitos eventos que for am adicionados, para mostrar quer interação com um cliente coletada e armazenada na Adobe Experience Platform。
+Agora、vamos verificar também或seu Visualizador de Perfil無網站。 Voce verá muitos eventos que foram adicionados， para mostrar que alquer interacao com um cliente é coletada e armazenada na Adobe Experience Platform.
 
 ![DSN](./images/screen4.png)
 
-Nos próximos mextricios, você irá configurar e testar sua própria jornada de entrada do beacon.
+Nos próximos exercícios， voce irá configurar e testar sua própria jornada de entrada do beacon.
 
-埃塔帕： [3.2 Crie seu evento](./ex2.md)
+冰淇淋甜菜： [3.2 Crie seu evento](./ex2.md)
 
-[烏薩里奧3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[托多斯山](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

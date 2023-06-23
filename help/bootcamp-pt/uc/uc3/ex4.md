@@ -1,58 +1,59 @@
 ---
-title: Bootcamp — 混合物理和數字 — 測試您的旅程 — 巴西
-description: Bootcamp — 混合物理和數字 — 測試您的旅程 — 巴西
-kt: 5342
+title: Bootcamp — 混合實體和數位 — 測試您的歷程 — 巴西
+description: Bootcamp — 混合實體和數位 — 測試您的歷程 — 巴西
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: 04e2877f-8672-4584-8204-4489a7025c63
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
 
 ---
 
-# 3.4聖若那達
+# 3.4測驗sua jornada
 
-Para testar sua jornada, você deve usar o eventID criado no extrecio 3.2, que deve semelhante ao seguinte。
+Para testar sua jornada， voce deve usar o eventID criado no exercício 3.2， que deve ser semelhante ao seguinte.
 
 ![ACOP](./images/payloadeventID.png)
 
-O eventID e o que precisa viado á para acionar a jornada. Neste exmelo, o eventIDé:
+o eventID é o que precisa ser enviado à Adobe Experience Platform para acionar a jornada. 巢狀範例，o eventID é：
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-我們是義工。 伊科內集團 **Configuração**.
+對初學者而言，這絕對是好事。 小團體no ícone de **Configuracao**.
 
 ![DSN](./images/appsett.png)
 
-Cole seu eventID no campo **信標EventID** e團 **儲存**.
+Cole seu eventID無campo **信標事件ID** 小團體 **儲存**.
 
 ![DSN](./images/beacon1.png)
 
-繼續，繼續，電腦： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar， abra esta página da Web em seu computador： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Em seguida, será exibida a tela:
+Em seguida， será exibida a tela：
 
 ![DSN](./images/screen1.png)
 
-我是個正式人。 小集團 **信標**.
+從頭開始。 小集團無任何內涵 **beacon**.
 
 ![DSN](./images/app23.png)
 
-普里米羅，選優 **Bootcamp螢幕信標** e幫 **恩特拉達** 按鈕。 Isso permitirá que você simula entrada do beacon.
+Primeiro，選取 **Bootcamp畫面信標** e clique no botao de **entrada** 按鈕。 我允許你做音訊模擬音訊信標。
 
 ![DSN](./images/app21.png)
 
-阿戈拉確認了一條線。 Você verá oúltimo productto visualizado aparecer nessa em 5 segundos。
+Agora confira a tela da loja. Voce verá o último produto visualizado aparecer nesa tela em 5 segundos.
 
 ![DSN](./images/beacon3.png)
 
-Você também terá recibido sua notifação push.
+Voce também terá recebido sua notificação push.
 
 ![DSN](./images/beacon2.png)
 
-Você termou est exticio。
+Voce terminou este expercisio。
 
-[烏薩里奧3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[托多斯山](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

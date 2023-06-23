@@ -1,22 +1,22 @@
 ---
-title: 將Google客戶比對與Adobe的Real-time Customer Data Platform整合
-description: 此影片說明Adobe的Real-time Customer Data Platform和Google的Customer Match功能如何協助品牌與Google擁有及運作的屬性上的客戶互動，以擴大其外展行銷活動。
+title: 將Google Customer Match與Adobe的Real-time Customer Data Platform整合
+description: 此影片說明Adobe的Real-time Customer Data Platform和Google的Customer Match功能如何協助品牌就Google擁有和運營的屬性與客戶互動，以擴大其外聯活動。
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
-kt: 5948
+jira: KT-5948
 thumbnail: 38180.jpg
 exl-id: 6888eeed-e091-4dd4-a34f-f00be887ab21
-source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 7%
 
 ---
 
-# 整合Google客戶比對
+# 整合Google Customer Match
 
-此影片說明Adobe的Real-time Customer Data Platform和Google的Customer Match功能如何協助品牌與Google擁有及運作的屬性上的客戶互動，以擴大其外展行銷活動。
+此影片說明Adobe的Real-time Customer Data Platform和Google的Customer Match功能如何協助品牌就Google擁有和運營的屬性與客戶互動，以擴大其外聯活動。
 
 >[!VIDEO](https://video.tv.adobe.com/v/38180?quality=12&learn=on)
 

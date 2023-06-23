@@ -1,11 +1,12 @@
 ---
-title: Bootcamp — 混合物理和數字 — Journey Optimizer建立您的活動 — 巴西
-description: Bootcamp — 混合物理和數字 — Journey Optimizer建立您的活動 — 巴西
-kt: 5342
+title: Bootcamp — 混合實體和數位 — Journey Optimizer建立您的活動 — 巴西
+description: Bootcamp — 混合實體和數位 — Journey Optimizer建立您的活動 — 巴西
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 2133b560-09d8-419d-bb99-05d0f3df52cc
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -14,74 +15,74 @@ ht-degree: 0%
 
 # 3.2 Crie seu evento
 
-登錄Adobe Journey Optimizer帳戶a [Adobe Experience Cloud]. 小組 **Journey Optimizer**.
+Faca登入無Adobe Journey Optimizer存取權a [Adobe Experience Cloud]. 小團體 **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Você será redirecionado para a **首頁** 不，Journey Optimizer。 Primeiro, Verifique se você usando o sandbox correto. 不要沙箱，就要用 `Bootcamp`. Para alternar de um sandbox para outro, plicaem **生產** 選擇沙箱或沙箱。 不要做沙箱 **布坎普**. Você estará na visualização da **首頁** 做seu沙箱 `Bootcamp`.
+Voce será redirecionado para a **首頁** 無Journey Optimizer。 Primeiro，驗證是否成功了。 不要做沙箱que deve susado é `Bootcamp`. Para alternar de um sandbox para outtro， clique em **Prod** 選擇沙箱沙箱。 Neste範例， o nome do sandbox é **Bootcamp**. 視覺化雅緻 **首頁** 執行seu sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-沒有菜單，角色是 **配置**. Em seguida，小團體 **管理** 埃文托斯。
+沒有選單à esquerda，role para baixo e clique em **設定**. Em seguida， clique no botao **管理** em事件。
 
 ![ACOP](./images/acopmenu.png)
 
-Você verá uma visão geral de todos os eventos disponíveis. 小組 **建立事件** 這是一個罪名。
+Voce verá uma visão geral de todos os eventos disponíveis. 小團體 **建立事件** para comecar a criar seu próprio evento.
 
 ![ACOP](./images/emptyevent.png)
 
-烏馬諾瓦·雅內拉·德·埃文托·瓦齊亞·阿帕雷克。
+Uma nova janela de evento vazia irá aparecer.
 
-Em primeiro lugar, dê um noma o seu evento como, por exampleo: `yourLastNameBeaconEntryEvent` e adicione uma描述como como, por exemple: `Beacon Entry Event`.
+Em primeiro lugar， de um nome ao seu evento como， por範例： `yourLastNameBeaconEntryEvent` e adicione uma descriçao como， por範例： `Beacon Entry Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-Em seguida, certifique-se de que **類型** 我就是，科莫 **單一** e，第seleção de **事件ID類型**, selectone **系統生成**.
+Em seguida，認證中心 **型別** 定義共鳴 **單一** e， para a selecao de **事件ID型別**，選取 **系統已產生**.
 
 ![ACOP](./images/eventidtype.png)
 
-一個塞萊桑的方案。 我的計畫是準備做練習。 使用結構 `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
+選擇執行結構描述的etapa seguinte。 Um schema foi preparado para esticio練習。 使用結構描述 `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-Depois de selecionar o Schema, você verá vários campos sendo selecionados na seção **欄位**. 阿戈拉·沃克·德韋·帕薩 **欄位** Trêsícones彈出窗口serão exibidos。 伊科內集團 **編輯**.
+Depois de selecionar o Schema， voce verá vários campos sendo selecionados na secao **欄位**. Agora voce deve passar o mouse sobre a secao **欄位** e tres ícones快顯視窗exibidos。 小團體no ícone de **編輯**.
 
 ![ACOP](./images/eventpayload.png)
 
-Você verá uma janela pop de **欄位**，通過você deve selectionar alguns dos campos que precisamos para personalizar a jornada。 Escolheremos outs outros atributos de perfil posterofermente, ulidando os dados já existes na Adobe Experience Platform
+Voce verá uma janela快顯視窗 **欄位**，onde voce deve selecionar alguns dos campos que precisamos para personalizar a jornada。 Escoleremos outros attributos de perfil posteriormente， utilizando os dados já existents na Adobe Experience Platform
 
 ![ACOP](./images/eventfields.png)
 
-Baixo até ver o bjeto `Place context` 是塞萊桑的。 Com isso, todo o contexto da localização do cliente será disponibilizado para a jornada. 小組 **確定** 薩爾瓦·蘇亞斯·阿爾特拉松伊斯。
+物件的角色para baixo até `Place context` 我為caixa de seleção品牌代言。 com isso， todo o contexto da localização do cliente será disponibilizado para a jornada. 小團體 **確定** para salvar suas alteracoes.
 
 ![ACOP](./images/eventpayloadbr.png)
 
-是的，有個彈簧。 小組 **儲存** 馬伊斯·烏馬·韋斯·薩爾瓦·蘇亞斯·阿爾特拉松伊斯。
+我們很清楚，我們很清楚。 小團體 **儲存** mais uma vez para salvar suas alteracoes.
 
 ![ACOP](./images/eventsave.png)
 
-我要說，我要說，我要說。
+諸位若想吃點東西，請盡情享受。
 
 ![ACOP](./images/eventdone.png)
 
-Plicus no seu evento novamentte para abrir a tela **編輯事件** 馬伊斯·烏馬·韋斯。 滑鼠的呼吸 **欄位** 第3版。 伊科內集團 **檢視**.
+Clique no seu evento novamente para abrir a tela **編輯事件** mais uma vez. 滑鼠游標逾時 **欄位** para ver os 3 ícones. 小團體no ícone **檢視**.
 
 ![ACOP](./images/viewevent.png)
 
-Agora você verá um exeplo，需要裝載。
-Seu event to tem um eventID de orquestraçãoúnico, que você pode encontror rolando para baixo nessa cargaútil até visualiza `_experience.campaign.orchestration.eventID`.
+Agora voce verá um expero do payload esperado.
+Seu evento tem um eventID de orquestracao único， que voce pode encontracr rolando para baixo nesa carga útil até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-O eventIDé o que deve ser enviado à Adobe Experience Platform para acionar a jorna dus próximos extreccios. Lembre-se deste eventID, você pode precisar deposerormente。
+O eventID é o que deve ser enviado à Adobe Experience Platform para acionar a jornada que voce construirá em dos próximos exercíos. Lembre-se destine eventID， voce pode precisar dele posteriormente.
 `"eventID": "e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5"`
 
-小組 **確定** e, em seguida，小團em **坎塞爾**.
+小團體 **確定** e， em seguida， clicque em **取消**.
 
-Você termou est exticio。
+Voce terminou este expercisio。
 
-埃塔帕： [3.3 Crie sua jornada e notificação push](./ex3.md)
+冰淇淋甜菜： [3.3 Crie sua jornada e notificação push](./ex3.md)
 
-[烏薩里奧3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[托多斯山](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

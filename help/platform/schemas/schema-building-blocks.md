@@ -3,10 +3,10 @@ title: 方案建置區塊
 description: 此影片會檢閱Experience Data Model (XDM)結構描述的主要建置區塊元素，包括欄位、資料型別、結構描述欄位群組、類別和行為。
 role: Data Architect
 feature: Schemas
-kt: 7937
+jira: KT-7937
 thumbnail: 333469.jpg
 exl-id: 8b74c923-e629-42dc-8e4a-9289a61fe4cf
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 18%

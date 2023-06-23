@@ -3,10 +3,10 @@ title: 使用查詢服務執行查詢
 description: 此影片說明如何在Adobe Experience Platform介面和PSQL使用者端中執行查詢。 此外，示範如何在XDM物件中使用個別屬性、使用Adobe定義的函式，以及使用CREATE TABLE AS SELECT (CTAS)。
 role: Data Engineer,User
 feature: Queries
-kt: 3140
+jira: KT-3140
 thumbnail: 29796.jpg
 exl-id: 7b264733-a0e0-44cd-a2c0-680a473f8cf6
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 11%

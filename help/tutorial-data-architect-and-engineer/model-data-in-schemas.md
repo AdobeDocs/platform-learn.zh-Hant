@@ -5,10 +5,10 @@ breadcrumb-title: 在結構描述中模型資料
 description: 在本課程中，您會將Luma的資料模型化為結構描述。 這是教學課程中最長的課程之一，所以請喝一杯水然後繫好安全帶！
 role: Data Architect
 feature: Schemas
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 0b13a4fa625cd29cc98c319b81fcb2a278b7b19a
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '2485'
 ht-degree: 3%

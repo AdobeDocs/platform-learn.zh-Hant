@@ -3,10 +3,10 @@ title: 資料控管概觀
 description: 瞭解如何完全掌控您的資料，從在資料來源處收集資料，到將資料整合到Adobe Experience Platform以外的目的地。
 role: Data Architect
 feature: Data Governance
-kt: 3991
+jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 5%

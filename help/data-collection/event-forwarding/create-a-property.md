@@ -1,11 +1,11 @@
 ---
 title: 建立事件轉送屬性
-description: 了解如何在資料收集中建立事件轉送屬性。
+description: 瞭解如何在資料收集中建立事件轉送屬性。
 feature: Event Forwarding
-kt: 6420
+jira: KT-6420
 thumbnail: 331938.jpeg
 exl-id: 63a578d3-1220-4588-b289-7310f4905d52
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
@@ -14,16 +14,15 @@ ht-degree: 0%
 
 # 建立事件轉送屬性
 
-了解如何在資料收集中建立事件轉送屬性。
+瞭解如何在資料收集中建立事件轉送屬性。
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch已整合至Adobe Experience Platform，為資料收集技術的套件。 介面中已推出數個術語變更，在使用此內容時應注意：
+>Adobe Experience Platform Launch正在以資料收集技術套件的形式整合至Adobe Experience Platform。 此介面已推出幾項術語變更，使用此內容時請務必注意：
 >
-> * platform launch（用戶端）現在為 **[!DNL tags]**
-> * platform launch伺服器端現在是 **[!DNL event forwarding]**
-> * 現在提供邊緣設定 **[!DNL datastreams]**
-
+> * platform launch（使用者端）現在為 **[!DNL tags]**
+> * platform launch Server Side現在是 **[!DNL event forwarding]**
+> * Edge設定現在為 **[!DNL datastreams]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/331938?quality=12&learn=on)
 

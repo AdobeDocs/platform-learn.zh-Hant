@@ -4,11 +4,11 @@ description: 在產品頁面上實作資料層
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: true
 hidefromtoc: true
 exl-id: a72011a5-ea9c-45df-a0f3-5eb40bc99d3f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # 在產品頁面上實作資料層
 
-在本教學課程中，您將針對一般電子商務網站實作Adobe用戶端資料層。 如果您尚未這麼做，請閱讀 [如何使用Adobe用戶端資料層](how-to-use-the-adobe-client-data-layer.md) 首先，了解Adobe用戶端資料層的運作方式。
+在本教學課程中，您將針對典型的電子商務網站實作Adobe Client Data Layer 。 如果您尚未這樣做，請閱讀 [如何使用Adobe使用者端資料層](how-to-use-the-adobe-client-data-layer.md) 首先瞭解Adobe使用者端資料層的運作方式。
 
-假設使用者瀏覽了您的產品，並點按了泡沫滾筒，以了解更多資訊。 用戶登陸泡沫輥產品詳細資訊頁面。
+假設使用者瀏覽您的產品，然後按一下泡沫膠捲以瞭解更多資訊。 使用者登陸泡沫壓路機產品詳細資訊頁面。
 
-以下是您簡單產品詳細資料頁面的HTML:
+以下是您簡單產品詳細資料頁面的HTML：
 
 ```html
 <!DOCTYPE html>
@@ -41,9 +41,9 @@ ht-degree: 0%
 </html>
 ```
 
-正如你所注意到的， `<head>` 標籤有 `<script>` 標籤。 這是您放置JavaScript程式碼的位置。 不需要將 `<script>` 標籤內 `<head>`，但請盡快將資料推送至資料層，可協助行銷人員在使用者離開頁面前快速將資料傳送至Adobe Experience Platform。
+如您所見，在 `<head>` 標籤中有一個 `<script>` 標籤之間。 您可以在此處放置JavaScript程式碼。 不需要放置 `<script>` 標籤範圍 `<head>`，但儘快將資料推播至資料層有助於確保行銷人員在使用者離開頁面之前可以快速將資料傳送至Adobe Experience Platform。
 
-內 `<script>` 標籤，您會先建立 `adobeDataLayer` 陣列，然後將適當的事件和資料資訊推送至陣列。 資料符合XDM架構 [您先前建立](../configure-the-server/create-a-schema.md).
+內部 `<script>` 標籤之前，請先建立 `adobeDataLayer` 陣列，然後將適當的事件和資料資訊推送至陣列。 資料符合XDM結構描述 [您先前已建立](../configure-the-server/create-a-schema.md).
 
 ```js
 window.adobeDataLayer = window.adobeDataLayer || [];
@@ -69,17 +69,17 @@ window.adobeDataLayer.push({
 });
 ```
 
-在此範例中，您已進行兩次推送至資料層，每個都包含 `event` 鍵。 包括 `event` 索引鍵不僅可傳達頁面上發生的事件，而且讓行銷人員在Adobe Experience Platform標籤中建立適當規則更簡單。
+在此範例中，您已對資料層進行兩次推送，每次都包含 `event` 金鑰。 包含 `event` key不僅可傳達頁面上已發生的事件，而且可讓行銷人員更輕鬆地在Adobe Experience Platform標籤內建立適當規則。
 
-第一次推送至資料層時，會通知監聽器（標籤規則）使用者已檢視頁面。 也會將頁面名稱和網站區段新增至資料層。
+第一次推送至資料層時，會通知接聽程式（標籤規則）使用者已檢視頁面。 它也會將頁面名稱和網站區段新增至資料層。
 
-第二個推送至資料層會通知監聽器（標籤規則）使用者已檢視產品。 它也會將產品資訊新增至資料層。
+第二次推送至資料層時，會通知接聽程式（標籤規則）使用者已檢視產品。 它也會將產品資訊新增至資料層。
 
-## 新增至購物車
+## 加入購物車
 
-您也可能想要追蹤使用者點按 [!UICONTROL 新增至購物車] 按鈕。
+您可能也想要追蹤使用者何時點選 [!UICONTROL 加入購物車] 按鈕。
 
-若要這麼做，請建立當使用者按一下 [!UICONTROL 新增至購物車] 按鈕。
+若要這麼做，請建立一個函式，當使用者按一下 [!UICONTROL 加入購物車] 按鈕。
 
 ```js
 window.onAddToCartClick = function() {
@@ -97,9 +97,9 @@ window.onAddToCartClick = function() {
 };
 ```
 
-呼叫此函式時，會先檢查使用者是否已有購物車。 這通常會透過檢查特定Cookie或變數是否存在來完成。 如果購物車不存在，您會推送 `cartOpened` 事件移入資料層。 接著，你會推 `productAddedToCart` 事件移入資料層。 資料層中已有產品資訊，因此您不需要再次新增。
+呼叫此函式時，會先檢查購物車是否已供使用者使用。 通常可透過檢查特定Cookie或變數是否存在來完成。 如果購物車不存在，您將推送 `cartOpened` 事件放入資料層。 之後，您將推送 `productAddedToCart` 事件放入資料層。 產品資訊已存在於資料層中，因此您不需要再次新增。
 
-新增 `onclick` 屬性 [!UICONTROL 新增至購物車] 按鈕調用新 `onAddToCartClick` 函式。
+新增 `onclick` 屬性至 [!UICONTROL 加入購物車] 呼叫您新專案的按鈕 `onAddToCartClick` 函式。
 
 HTML頁面的結果應如下所示：
 
@@ -156,9 +156,9 @@ HTML頁面的結果應如下所示：
 
 ## 下載應用程式
 
-最後要執行的一項動作，是追蹤使用者點按 _[!UICONTROL 下載應用程式]_ 連結。
+最後要做的就是追蹤使用者何時點選 _[!UICONTROL 下載應用程式]_ 連結。
 
-若要這麼做，請建立當使用者按一下 _[!UICONTROL 下載應用程式]_ 連結。
+若要這麼做，請建立一個函式，當使用者按一下 _[!UICONTROL 下載應用程式]_ 連結。
 
 ```js
 window.onDownloadAppClick = function(event) {
@@ -177,9 +177,9 @@ window.onDownloadAppClick = function(event) {
 };
 ```
 
-在此情況下，連結的相關資訊會包裝在 `eventInfo` 鍵。 如 [如何使用Adobe用戶端資料層](how-to-use-the-adobe-client-data-layer.md)，這會告訴資料層與事件一併傳送此資料，但傳送至 _not_ 將資料保留在資料層內。 對於連結點按，將點按連結的相關資訊新增至資料層沒有用處，因為它整體上不屬於頁面，且不適用於可能發生的其他事件。
+在此情況下，連結的相關資訊會包裝在 `eventInfo` 金鑰。 如中所述 [如何使用Adobe使用者端資料層](how-to-use-the-adobe-client-data-layer.md)，這會告知資料層將此資料與事件通訊，但會 _not_ 將資料保留在資料層內。 若為連結點按，將點按連結的資訊新增至資料層並無用處，因為此資訊與頁面整體無關，也不適用於可能發生的其他事件。
 
-新增 `onclick` 屬性 [!UICONTROL 下載應用程式] 呼叫新 `onDownloadAppClick` 函式。
+新增 `onclick` 屬性至 [!UICONTROL 下載應用程式] 呼叫您新連結的連結 `onDownloadAppClick` 函式。
 
 HTML頁面的結果應如下所示：
 

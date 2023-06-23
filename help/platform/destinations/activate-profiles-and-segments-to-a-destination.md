@@ -1,14 +1,14 @@
 ---
 title: 對目的地啟用設定檔和區段
-description: 了解如何在Real-Time CDP中為目的地啟用受眾區段。  在目的地或區段介面中啟動此工作流。
+description: 瞭解如何在Real-Time CDP中啟用目的地的受眾區段。  在目的地或區段介面中啟動此工作流程。
 feature: Destinations
 role: User
 level: Beginner
 doc-type: video
 thumbnail: 336046.jpg
-kt: 8483
+jira: KT-8483
 exl-id: 659e7739-8d24-4b75-a0d2-56d087d5eea9
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '71'
 ht-degree: 29%
@@ -17,7 +17,7 @@ ht-degree: 29%
 
 # 對目的地啟用設定檔和區段
 
-了解如何在Real-Time CDP中為目的地啟用受眾區段。  在目的地或區段介面中啟動此工作流。
+瞭解如何在Real-Time CDP中啟用目的地的受眾區段。  在目的地或區段介面中啟動此工作流程。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336046/?quality=12&learn=on)
 

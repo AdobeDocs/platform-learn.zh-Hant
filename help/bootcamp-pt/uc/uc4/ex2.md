@@ -1,132 +1,133 @@
 ---
-title: Bootcamp -Customer Journey Analytics — 連接Customer Journey Analytics中的Adobe Experience Platform資料集 — 巴西
-description: Bootcamp -Customer Journey Analytics — 連接Customer Journey Analytics中的Adobe Experience Platform資料集 — 巴西
-kt: 5342
+title: Bootcamp -Customer Journey Analytics — 連線Customer Journey Analytics的Adobe Experience Platform資料集 — 巴西
+description: Bootcamp -Customer Journey Analytics — 連線Customer Journey Analytics的Adobe Experience Platform資料集 — 巴西
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
+exl-id: 51078fca-f234-4e50-96ba-ee7f5e286869
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 2%
 
 ---
 
-# 4.2收集資料集da Adobe Experience Platform無Customer Journey Analytics
+# 4.2連線資料集至Adobe Experience Platform無Customer Journey Analytics
 
-## 奧比蒂沃斯
+## 物件
 
-- Compresenda a UI da conexão de dados
+- 比較UI da conexao de dados
 - Traga os dados da Adobe Experience Platform para o CJA
-- 了解ID da pessoa e compilação de dados
-- Aprenda o conceito de streaming de dados no Customer Journey
+- Entenda a ID da pessoa e a compilacao de dados
+- Aprenda o構想了Streaming de dados no Customer Journey
 
-## 4.2.1科內桑
+## 4.2.1康菲可
 
-阿塞斯 [analytics.adobe.com](https://analytics.adobe.com) 準Customer Journey Analytics。
+Acesse [analytics.adobe.com](https://analytics.adobe.com) 段落存取或Customer Journey Analytics。
 
-我是Customer Journey Analytics，老師 **連線**.
+Customer Journey Analytics的日常生活，訪問 **連線**.
 
 ![示範](./images/cja2.png)
 
-Aqui você ver todas a diferentes conexsues entre o CJA e a Platforma. Essas conexões têm o mesmo objetivo dos conjuntos de relatórios no Adobe Analytics。 沒有恩坦托，一個coleta dos dados，完全不同。 Todos os dados vêm da da Adobe Experience Platform。
+Aqui voce pode ver todas as diferences conexoes feitas enter o CJA e a Plataforma. Essas conexoes tem o mesmo objetvo dos conjuntos de relatórios no Adobe Analytics. 無內涵，是互補差異的絕佳選擇。 Todos os dados vem de datasets da Adobe Experience Platform。
 
-來點來點來。 小組 **建立新連線**.
+Vamos criar sua primeira conexao。 小團體 **建立新連線**.
 
 ![示範](./images/cja4.png)
 
-Você verá a UI **建立連線** UI。
+驗證UI **建立連線** UI。
 
 ![示範](./images/cja5.png)
 
-Agora você pode dar um nomeà conexão.
+Agora voce pode dar um nome à sua conexao.
 
-使用este modelo de nomenclatura: `yourLastName – Omnichannel Data Connection`.
+使用este modelo de nomenclatura： `yourLastName – Omnichannel Data Connection`.
 
-樣本： `vangeluw - Omnichannel Data Connection`
+範例： `vangeluw - Omnichannel Data Connection`
 
-Você também拒絕選擇沙箱或沙箱。 無菜單沙箱，選擇一個沙箱，按順序 `Bootcamp`. 不用做樣本，要沙箱 **布坎普**. E você também deve definir o **每日事件平均數** to **不到100萬**.
+沙箱與沙箱之間的虛擬選擇器。 無功能表沙箱，選取一個搜尋沙箱，搜尋搜尋沙箱 `Bootcamp`. 巢狀範例， o沙箱使用者檔案o **Bootcamp**. E voce também deve definir o **平均每日事件數** 至 **少於100萬**.
 
 ![示範](./images/cjasb.png)
 
-Após selectionar seu sandbox, você pode começar a adicionar資料集a esta conexão. 小組 **新增資料集**.
+Após seliconar seu sandbox， voce pode comecar a adicionar datasets a esta conexao. 小團體 **新增資料集**.
 
 ![示範](./images/cjasb1.png)
 
-## 4.2.2選取資料集 — da Adobe Experience Platform
+## 4.2.2 Adobe Experience Platform中的選取資料集
 
-Pesquise o dataset `Demo System - Event Dataset for Website (Global v1.1)`. 小組 **+** para adicionar或資料集a esta conexão。
+在資料集上預設 `Demo System - Event Dataset for Website (Global v1.1)`. 小團體 **+** para adicionar o dataset a esta conexao.
 
 ![示範](./images/cja7.png)
 
-Agora pesquise e marque as caixas de seleção `Demo System - Event Dataset for Voice Assistants (Global v1.1)` 和 `Demo System - Event Dataset for Call Center (Global v1.1)`.
+Agora pesquise e marque as caixas de selecao `Demo System - Event Dataset for Voice Assistants (Global v1.1)` 和 `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
-Em seguida，這是一個彈奏。 小組 **下一個**.
+真好，敬請期待。 小團體 **下一個**.
 
 ![示範](./images/cja9.png)
 
-## 4.2.3 ID da pessoa e compilação de dados
+## 4.2.3 ID da pessoa e compilacao de dados
 
 ### ID da pessoa
 
-奧比蒂沃·阿戈拉·榮塔爾處理資料集。 Para cada資料集選擇，você verá um campo chamado **人員ID**. Cada資料集項目seu próprio campo de ID de pessoa。
+O objetvo agora é juntar搜尋資料集。 Para cada資料集selecionado， voce verá um campo chamado **個人ID**. Cada資料集tem seu próprio campo de ID de pessoa.
 
 ![示範](./images/cja11.png)
 
-Como voê pode ver, a maioria detem o ID da pessoa selecionado automaticamente. Isso ocorre porque um identification principal em selecionado em cada esquema na Adobe Experience Platform。 像我一樣，我是你的 `Demo System - Event Schema for Call Center (Global v1.1)`，從Primário está definido como身份 `phoneNumber`.
+Comoo voce pode ver，自動建立ID為pessoa seleconado的區段。 身分識別主講人selecionado em cada esquema na Adobe Experience Platform。 Como範例、aqui está o esquema para `Demo System - Event Schema for Call Center (Global v1.1)`，確認身分的榮耀 `phoneNumber`.
 
 ![示範](./images/cja13.png)
 
-沒有entanto,você ainda pode influciar qual identification ador será usado para compilar data par a sua conexão。 Você pode usar qualquer identification ador configurado no esquema vinculado seu dataset. 團體無功能表暫停suspenso para explorar os ID disponíveis em cada資料集。
+無entando，voce ainda pode influenciar qual identificator será usado para compilar datasets para sua conexao。 Voce pode usar qualquer identificator configurado no esquema vinculado ao seu dataset. 無功能表擱置部分探索作業系統IDdisponíveis em指令資料集。
 
 ![示範](./images/cja14.png)
 
-Conforme mencionado, você可定義ID de pessoa para cada資料集。 Isso permite會參照CJA上的múltiplas origens資料集。 想像一下NPS是否有意義？
+符合mencionado， voce pode definir會區分ID de pessoa para cada資料集。 Isso permite reunir diferentes datasets de múltiplas origins no CJA. 想像一下trader NPS ou dados de pesquisa que seriam muito interessantes e úteis para compreender o contexto o motivo de um acontecimento。
 
-O nome do campo ID da pessoa não e importante, desque o valor nos campos ID da pessoa對應。 迪加摩斯 `email` em um資料集e `emailAddress` em outro資料集定義como ID da pessoa。 Se `delaigle@adobe.com` tiver o mesmo valor para o campo ID da pessoa ambos資料集， o CJA poderá compilar os dados。
+不要campo ID da pessoa nao é important， desde que o valor nos campos ID da pessoa responderda。 Digamos que temos `email` em um資料集e `emailAddress` 超出資料集定義共用ID比索阿。 Se `delaigle@adobe.com` Tiver o mesmo valor para o campo ID da pessoa em ambos os datasets， o CJA poderá compilar os dados.
 
-Atualmente, existem algumas outras limitações, comportamento anônimo para conhecido. 請參考perguntas頻率aqui: [常見問題集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hant).
+專案、現有的演演算法超越限制、共通性、匿名性、關聯性。 諮詢為perguntas frequentes aqui： [常見問題集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hant).
 
 
-### Compilando os dados usando o ID da pessoa
+### Compilando os dados usando o o ID da pessoa
 
-Agora que você能夠構思出合併資料集usando或ID da pessoa, vamos escolher `email` COMO ID da pessoa para cada資料集。
+Agora que voce compreende o conceito de compilar datasets usando o o ID da pessoa， vamos escolher `email` como ID da pessoa para cada資料集。
 
 ![示範](./images/cja15.png)
 
-Acesse cada資料集para autalizar o ID da pessoa。
+存取Cada資料集paraAutoalizar或ID da個人檔案。
 
 ![示範](./images/cja12a.png)
 
-阿戈拉·普雷恩查·坎波ID達佩索阿·埃斯科倫多 `email` 暫停。
+Agora preencha o campo ID da pessoa escolhendo o `email` 清淡的懸念。
 
 ![示範](./images/cja17.png)
 
-Depois de compilar os três資料集， estamos prontos para continuar。
+Depois de compilar os tres datasets， estamos prontos para continuar.
 
 | 資料集 | 人員 ID |
 | ----------------- |-------------| 
-| 示範系統 — 網站事件資料集（全域v1.1） | 電子郵件 |
-| 示範系統 — 語音助理事件資料集（全域v1.1） | 電子郵件 |
-| 示範系統 — 客服中心（全域v1.1）的事件資料集 | 電子郵件 |
+| 示範系統 — 網站的事件資料集（全域v1.1） | 電子郵件 |
+| 示範系統 — 語音助理的事件資料集（全域v1.1） | 電子郵件 |
+| 示範系統 — 客服中心的事件資料集（全域v1.1） | 電子郵件 |
 
-Você também precisa garantir que, para cada資料集， essa opções estejam habilitadas:
+Voce também precisa garantir que， para cada dataset， essas opcoes estejam habilitadas：
 
-- 重要的todos os novos dados
-- Preencher todos os dados存在論
-- Preencher tipo de fonte de dados com &quot;其他&quot;
-- 預先編寫描述資料集
+- Importar todos os novos dados
+- Preencher可執行OS Dados存在作業
+- Preencher tipo de fonte de dados com 「其他」
+- 預覽資料集mesmo nome do資料集的descrição com
 
-小組 **新增資料集**.
+小團體 **新增資料集**.
 
 ![示範](./images/cja16.png)
 
-小組 **儲存** 我要去練習。 Depois de criar sua **連線**, pode levar algumas horas até que seus dados estejam disponíveis no CJA.
+小團體 **儲存** 要練習的動作。 Depois de criar sua **連線**，pode levar algumas horas até que seus dados estejam disponíveis no CJA.
 
 ![示範](./images/cja20.png)
 
-埃塔帕： [4.3 Crie uma Visualização de Dados](./ex3.md)
+冰淇淋甜菜： [4.3 Crie uma Visualização de Dados](./ex3.md)
 
-[烏薩里奧河畔雷托爾](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[托多斯山](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

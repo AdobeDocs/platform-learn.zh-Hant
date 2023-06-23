@@ -1,11 +1,12 @@
 ---
-title: Bootcamp — 混合物理和數字 — 巴西
-description: Bootcamp — 混合物理和數字 — 巴西
-kt: 5342
+title: Bootcamp — 混合實體和數位 — 巴西
+description: Bootcamp — 混合實體和數位 — 巴西
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+exl-id: 145ffaea-c630-4ec3-a12d-69661ce26f49
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 0%
@@ -14,34 +15,34 @@ ht-degree: 0%
 
 # 3. Retornar para Todos os Módulos
 
-## 阿普倫迪薩多河
+## Objedivos de aprendizado
 
-## 普雷雷基托斯
+## 必備
 
-- 如Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Acessoà coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 阿塞索奧地點
+- Acesso à Adobe Experience Platform：  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de demonstração
 
 >[!IMPORTANT]
 >
->教學課程，從格式上講，特別是從bootcamp。 Sistemas e contas secíficos aos quais você pode não ter acesso são utidas neste教學課程。 Mesmo sem acesso, você ainda pode aprende muito com a leitura deste contesúdo detalhado。 請參加bootcamp e precisa das credencias de acesso，將em contato com seu代表daAdobe收件人作為必要資訊。
+>Este教學課程可供criado para facilitar um formato específico de bootcamp使用。 Sistemas e contas específicos aos quais voce pode nao ter acesso sao utilizados neste教學課程。 Mesmo sem acesso， voce ainda pode aprender muito com a leitura deste conteúdo detalhado. Se voce é um participante de um bootcamp e precisa das credenciais de acesso， entre em contato com representant da Adobe para receeber as information escessárias.
 
-## 雷孔西奧斯
+## 練習
 
-[3.1使用aplicativo móvel e acione sinalizador信標](./ex1.md)
+[3.1使用applicativo móvel e acione sinalizador信標](./ex1.md)
 
-不要練習，不要忘記，我會配置。
+Neste exercício， voce irá aprender como configurar um evento.
 
 [3.2 Crie seu evento](./ex2.md)
 
-不要練習，不要忘記，我會配置。
+Neste exercício， voce irá aprender como configurar um evento.
 
 [3.3 Crie sua jornada e notificação push](./ex3.md)
 
-Neste mextricício, você irá aprender como configurar uma jornada e uma notifação pus e como vincul seu evento e mensagem para a jornada。
+Neste exercício， voce irá aprender como configurar uma jornada e uma notificacao push e como vincular seu evento e mensagem para jornada.
 
-[3.4聖若那達](./ex4.md)
+[3.4測驗sua jornada](./ex4.md)
 
-不要再做練習，不要再做了。
+Neste exercício， voce irá aprender como configurar uma jornada e como vincular seu evento e mensagem para jornada.
 
-[托多斯山](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)
