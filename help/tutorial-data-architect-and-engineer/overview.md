@@ -8,9 +8,9 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 1%
 
 ---
@@ -73,5 +73,10 @@ Adobe Experience Platform是技術平台，旨在協助您達成行銷目標。 
 ### 協力廠商技術
 
 雖然在本教學課程中您將使用多項技術，但您幾乎仍會完全留在Adobe生態系統中。 在您自己的Platform實作中，您可能會將Platform與特定的協力廠商技術整合。 為了讓本教學課程適用於所有客戶，我們將使用較通用的實施。
+
+## 教學課程更新
+
+* 2023年6月：更新以包含新的許可權工作流程，以及使用OAuth伺服器對伺服器API認證
+
 
 現在，讓我們繼續第一個課程 — [設定許可權](configure-permissions.md).
