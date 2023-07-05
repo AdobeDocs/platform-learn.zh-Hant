@@ -4,10 +4,10 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
+source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 31%
+source-wordcount: '943'
+ht-degree: 32%
 
 ---
 
@@ -130,6 +130,7 @@ ht-degree: 31%
    + [檢視帳戶設定檔](/help/platform/profiles/view-account-profiles.md)
    + [建立合併原則](/help/platform/profiles/create-merge-policies.md)
    + [聯集結構概觀](/help/platform/profiles/union-schemas-overview.md)
+   + [使用upsert更新特定屬性](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 隱私權與安全性 {#privacy}
    + [Privacy Service簡介](/help/platform/privacy/introduction-to-privacy-services.md)
    + [隱私權請求中的身分資料](/help/platform/privacy/identity-data-in-privacy-requests.md)
@@ -162,7 +163,7 @@ ht-degree: 31%
    + [建置區塊](/help/platform/schemas/schema-building-blocks.md)
    + [規劃您的資料模型](/help/platform/schemas/plan-your-data-model.md)
    + [將您的資料模型轉換為XDM](/help/platform/schemas/convert-your-data-model-to-xdm.md)
-   + [建立綱要](/help/platform/schemas/create-schemas.md)
+   + [建立結構](/help/platform/schemas/create-schemas.md)
    + [建立B2B資料的結構描述](/help/platform/schemas/create-schemas-for-b2b-data.md)
    + [建立類別](/help/platform/schemas/create-classes.md)
    + [建立欄位群組](/help/platform/schemas/create-schema-field-groups.md)
