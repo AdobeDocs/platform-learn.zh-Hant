@@ -2,10 +2,12 @@
 title: 事件轉送概觀
 description: 了解事件轉送如何集中處理資料收集、減少網頁和行動應用程式中所需的程式碼數量，以及透過 Adobe Experience Platform Edge Network 將資料串流至非 Adobe 解決方案。
 feature: Event Forwarding
+role: Data Engineer
+level: Beginner
 jira: KT-6419
 thumbnail: 331937.jpeg
 exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 45%

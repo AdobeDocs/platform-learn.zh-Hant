@@ -1,12 +1,12 @@
 ---
 title: 為您的客戶資料重新充電，以提供令人振奮的體驗
 description: 瞭解如何透過在許多使用案例中使用相同資料來減輕低品質資料的影響、縮短實現價值的時間並倍增ROI。
-role: Data Engineer, Data Architect, Developer
 feature: Queries
+role: Data Engineer, Data Architect, Developer
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%

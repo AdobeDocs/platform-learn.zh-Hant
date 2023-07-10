@@ -1,9 +1,9 @@
 ---
 title: 設定事件轉送屬性
 description: 瞭解如何使用Experience PlatformWeb SDK資料來使用事件轉送屬性。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
-feature: Event Forwarding
+feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1887'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
-   <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
 
 
 >[!NOTE]
@@ -45,7 +45,7 @@ ht-degree: 3%
 * 包含事件轉送的軟體授權。 事件轉寄是資料收集的付費功能。 如需詳細資訊，請聯絡您的Adobe客戶團隊。
 * 在您的Experience Cloud組織中啟用事件轉送。
 * 事件轉送的使用者許可權。 (In [Admin Console](https://adminconsole.adobe.com/)，在Adobe Experience Platform Launch產品底下，許可權專案[!UICONTROL 平台] > [!UICONTROL Edge] 和所有 [!UICONTROL 屬性權利])。 授予後，您應該會看到 [!UICONTROL 事件轉送] 在資料收集介面的左側導覽中：
-   ![事件轉送屬性](assets/event-forwarding-menu.png)
+  ![事件轉送屬性](assets/event-forwarding-menu.png)
 
 * Adobe Experience Platform Web或Mobile SDK已設定為傳送資料至Edge Network。 您必須完成本教學課程的下列課程：
 
@@ -55,13 +55,13 @@ ht-degree: 3%
       * [設定XDM結構描述](configure-schemas.md)
       * [設定身分名稱空間](configure-identities.md)
       * [設定資料流](configure-datastream.md)
+
    * 標籤設定
 
       * [安裝Web SDK擴充功能](install-web-sdk.md)
       * [建立資料元素](create-data-elements.md)
       * [建立標籤規則](create-tag-rule.md)
       * [使用Adobe Experience Platform Debugger進行驗證](validate-with-debugger.md)
-
 
 
 ## 建立事件轉送屬性
@@ -91,7 +91,6 @@ ht-degree: 3%
    ![選取Luma Web SDK資料流](assets/datastream-luma-web-sdk.png)
 
 1. 選取 **[!UICONTROL 新增服務]**
-
    ![將服務新增至資料串流](assets/event-forwarding-datastream-addService.png)
 1. 選取 **[!UICONTROL 事件轉送]** 作為 **[!UICONTROL 服務]**
 
@@ -183,6 +182,7 @@ ht-degree: 3%
 
 
    >[!TIP]
+   >
    使用您自己的網站時，您可以使用網頁瀏覽器網路工具找到XDM物件路徑，並篩選 `/ee` 請求，開啟信標 [!UICONTROL **裝載**] 和向下鑽研至您要尋找的變數。 然後以滑鼠右鍵按一下，並選取「複製屬性路徑」。 以下是瀏覽器檢視區高度的範例：
    ![事件轉送XDM路徑](assets/event-forwarding-xdm-path.png)
 
@@ -277,6 +277,7 @@ ht-degree: 3%
 建立程式庫，並建置事件轉送開發環境的所有變更，如同您在標籤屬性中一般的作法。
 
 >[!NOTE]
+>
 如果您尚未將測試和生產事件轉送屬性連結至資料串流，您會將開發環境視為建立程式庫的唯一選項。
 
 ![儲存事件轉送規則](assets/event-forwarding-initial-build.png)
@@ -319,4 +320,5 @@ ht-degree: 3%
 [下一步： ](conclusion.md)
 
 >[!NOTE]
+>
 感謝您投入時間學習Adobe Experience Platform Web SDK。 若您有任何疑問、想分享一般意見或對未來內容有任何建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

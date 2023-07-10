@@ -2,10 +2,11 @@
 title: 主要使用案例
 description: 取得Experience Platform&mdash；即時客戶資料平台、客戶歷程情報、傳遞和跨頻道體驗，以及客戶體驗應用程式開發的四個主要使用案例的概觀。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
+level: Beginner
 jira: KT-4337
 thumbnail: 32806.jpg
 exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%

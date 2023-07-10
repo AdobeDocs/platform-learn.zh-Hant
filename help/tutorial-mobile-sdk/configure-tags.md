@@ -1,8 +1,9 @@
 ---
 title: 設定標籤屬性
 description: 瞭解如何在中設定標籤屬性 [!UICONTROL 資料彙集] 介面。
+feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 10%
@@ -35,7 +36,6 @@ Adobe Experience Platform 標記是新一代 Adobe 標記管理功能。標記�
 1. 建立新的行動標籤屬性：
    1. 在 [資料收集介面](https://experience.adobe.com/data-collection/){target="_blank"}，選取 **[!UICONTROL 標籤]** 在左側導覽列中
    1. 選取 **[!UICONTROL 新增屬性]**
-
       ![建立標籤屬性](assets/mobile-tags-new-property.png).
    1. 對於 **[!UICONTROL 名稱]**，輸入 `Mobile SDK Course`.
    1. 對於 **[!UICONTROL Platform]**，選取 **[!UICONTROL 行動]**.

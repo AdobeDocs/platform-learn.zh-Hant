@@ -3,10 +3,13 @@ title: Adobe Experience Platform Debugger概觀
 description: 了解 Adobe Experience Platform Debugger (Chrome 擴充功能和 Firefox 附加元件) 如何協助您針對 Adobe Experience Platform Web SDK、Adobe Analytics、Adobe Target、Adobe Audience Manager 標記等等的網頁實施進行偵錯。
 landing-page-description: 偵錯 Adobe Experience Platform Web SDK 和 Experience Cloud 應用程式的 Web 實作。
 short-description: 偵錯 Adobe Experience Platform Web SDK 和 Experience Cloud 應用程式的 Web 實作。
+feature: Debugger
+role: Data Engineer
+level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 63%

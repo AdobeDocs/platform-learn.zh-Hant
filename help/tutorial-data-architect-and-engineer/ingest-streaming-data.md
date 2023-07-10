@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3344'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 1%
 **資料工程師** 需要在本教學課程以外擷取串流資料。 實作Adobe Experience Platform的Web或Mobile SDK時，通常會有Web或行動開發人員參與資料層建立和標籤屬性設定。
 
 在開始練習之前，請觀看這兩部短片，以進一步瞭解串流資料擷取和Web SDK：
+
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
@@ -454,7 +455,7 @@ Experience PlatformDebugger有一種酷炫功能，可讓您使用其他標籤�
 
 * [使用 Web SDK 實作 Adobe Experience Cloud](/help/tutorial-web-sdk/overview.md)
 * [串流擷取檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=zh-Hant)
-* [串流擷取API參考](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [串流擷取API參考](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
 做得好！這提供了許多關於Web SDK和Launch的資訊。 完整式實作涉及的範圍更廣，但基礎知識能協助您開始使用，並在Platform中檢視結果。
 

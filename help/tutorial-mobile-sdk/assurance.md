@@ -1,8 +1,9 @@
 ---
 title: 設定保證
 description: 瞭解如何在行動應用程式中實作Assurance擴充功能。
+feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '585'
 ht-degree: 2%
@@ -90,9 +91,9 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL，該URL會以開啟
    ![保證輸入圖釘](assets/mobile-assurance-enter-pin.png)
 1. 如果連線成功，您將會在Assurance Web UI中看到事件，並在應用程式中看到浮動的Assurance圖示。
    * 保證圖示浮動。
-      ![保證強制回應視窗](assets/mobile-assurance-modal.png)
+     ![保證強制回應視窗](assets/mobile-assurance-modal.png)
    * Experience Cloud在Web UI中傳入的事件。
-      ![保證事件](assets/mobile-assurance-events.png)
+     ![保證事件](assets/mobile-assurance-events.png)
 
 如果您遇到任何挑戰，請檢閱 [技術](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 

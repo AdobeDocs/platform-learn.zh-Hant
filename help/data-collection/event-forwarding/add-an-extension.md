@@ -2,10 +2,12 @@
 title: 新增事件轉送擴充功能
 description: 瞭解如何在資料收集中新增事件轉送擴充功能。
 feature: Event Forwarding
+role: Data Engineer
+level: Intermediate
 jira: KT-6422
 thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
