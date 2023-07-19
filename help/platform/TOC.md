@@ -4,10 +4,10 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
+source-git-commit: 88a876834089348a2eb0be92ca2bd03e91d49caf
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 32%
+source-wordcount: '955'
+ht-degree: 33%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 32%
    + [使用Platform使用者介面](/help/platform/intro-to-platform/interface-tour.md)
    + [角色和專案階段](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Real-Time CDP簡介 {#rtcdp}
-   + [總覽](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+   + [概觀](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [端對端示範](/help/platform/rtcdp/demo.md)
    + [工作流程](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [B2B版本概觀](/help/platform/rtcdp/b2b-overview.md)
@@ -41,12 +41,32 @@ ht-degree: 32%
    + [設定以屬性為基礎的存取控制](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [管理產品設定檔](/help/platform/admin/managing-product-profiles.md)
++ 對象與細分 {#audiences}
+   + [Audience Portal和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
+   + [上傳對象](audiences/upload-audiences.md)
+   + [對象規則產生器概觀](audiences/audience-rule-builder-overview.md)
+   + [建立對象](audiences/create-audiences.md)
+   + [建立內容型對象](audiences/create-content-based-audiences.md)
+   + [建立轉換對象](audiences/create-conversion-audiences.md)
+   + [從現有對象建立對象](audiences/create-audiences-from-existing-audiences.md)
+   + [建立循序受眾](audiences/create-sequential-audiences.md)
+   + [建立動態對象](audiences/create-dynamic-audiences.md)
+   + [建立多實體對象](audiences/create-multi-entity-audiences.md)
+   + [使用B2B資料建立對象](audiences/create-audiences-with-b2b-data.md)
+   + [串流細分示範](/help/platform/audiences/streaming-segmentation-demo.md)
+   + [評估對象規則](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [建立資料集以匯出資料](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [區段比對連接設定](/help/platform/segments/segment-match-connection-setup.md)
+   + [區段比對資料治理](/help/platform/segments/segment-match-data-governance.md)
+   + [區段比對設定流程](/help/platform/segments/segment-match-configuration-flow.md)
+   + [區段比對預先分享見解](/help/platform/segments/segment-match-pre-share-insights.md)
+   + [區段比對接收資料](/help/platform/segments/segment-match-receiving-data.md)
 + [稽核記錄](/help/platform/governance/audit-logs.md)
-+ [資料彙集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ [資料集合](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + 儀表板 {#dashboards}
    + [建立儀表板](/help/platform/dashboards/create-a-dashboard.md)
 + 資料治理 {#data-governance}
-   + [總覽](/help/platform/governance/understanding-data-governance.md)
+   + [概觀](/help/platform/governance/understanding-data-governance.md)
    + [端對端示範](/help/platform/governance/introduction-to-data-governance.md)
    + [使用標籤進行資料分類](/help/platform/governance/classify-data-using-labels.md)
    + [建立資料使用原則](/help/platform/governance/create-data-usage-policies.md)
@@ -56,7 +76,7 @@ ht-degree: 32%
 + 資料衛生 {#data-hygiene}
    + [刪除資料集](/help/platform/data-hygiene/delete-datasets.md)
 + 資料擷取 {#data-ingestion}
-   + [總覽](/help/platform/data-ingestion/understanding-data-ingestion.md)
+   + [概觀](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批次擷取概觀](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [建立並填入資料集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [將CSV檔案對應至XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
@@ -72,7 +92,7 @@ ht-degree: 32%
    + [Web SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Mobile SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + Data Science Workspace {#data-science-workspace}
-   + [總覽](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
+   + [概觀](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [架構](data-science-workspace/architecture-overview.md)
    + [建立課程方案和資料集](data-science-workspace/create-the-course-schema-and-dataset.md)
    + [將資料載入 JupyterLab Notebook](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
@@ -109,7 +129,7 @@ ht-degree: 32%
    + [標示、擷取及驗證身分資料](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [檢視身分圖](/help/platform/identities/view-identity-graphs.md)
 + Intelligent Services {#intelligent-services}
-   + [總覽](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
+   + [概觀](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [Attribution AI 概述](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
    + [Attribution AI值](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
    + [設定 Attribution AI](/help/platform/intelligent-services/configure-attribution-ai.md)
@@ -137,14 +157,14 @@ ht-degree: 32%
    + [隱私權JavaScript程式庫](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analytics中的隱私權標籤](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Privacy Service API快速入門](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [PRIVACY SERVICEUI](/help/platform/privacy/using-privacy-services-ui.md)
-   + [PRIVACY SERVICEAPI](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
    + [訂閱隱私權事件](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [設定客戶管理的金鑰](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [負責任的客戶資料管理的十大考量因素](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [提升行銷人員作為資料管理員的角色](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
 + 查詢 {#queries}
-   + [總覽](/help/platform/queries/understanding-query-service.md)
+   + [概觀](/help/platform/queries/understanding-query-service.md)
    + [查詢服務UI](/help/platform/queries/query-service-ui.md)
    + [查詢服務API](/help/platform/queries/query-service-api.md)
    + [探索資料](/help/platform/queries/explore-data.md)
@@ -159,7 +179,7 @@ ht-degree: 32%
    + [為您的客戶資料重新充電](/help/platform/queries/recharge-your-customer-data.md)
    + [將使用者端連線至查詢服務](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + 綱要 {#schemas}
-   + [總覽](/help/platform/schemas/schemas-and-experience-data-model.md)
+   + [概觀](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [建置區塊](/help/platform/schemas/schema-building-blocks.md)
    + [規劃您的資料模型](/help/platform/schemas/plan-your-data-model.md)
    + [將您的資料模型轉換為XDM](/help/platform/schemas/convert-your-data-model-to-xdm.md)
@@ -173,24 +193,6 @@ ht-degree: 32%
    + [在沙箱之間複製方案](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [更新方案](/help/platform/schemas/update-schemas.md)
    + [建立臨時結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
-+ 區段 {#segments}
-   + [區段產生器概觀](/help/platform/segments/segment-builder-overview.md)
-   + [建立區段](/help/platform/segments/create-segments.md)
-   + [建立內容型區段](/help/platform/segments/create-content-based-segments.md)
-   + [建立轉換區段](/help/platform/segments/create-conversion-segments.md)
-   + [從現有區段建立區段](/help/platform/segments/create-segments-from-existing-segments.md)
-   + [建立循序區段](/help/platform/segments/create-sequential-segments.md)
-   + [建立動態區段](/help/platform/segments/create-dynamic-segments.md)
-   + [建立多實體區段](/help/platform/segments/create-multi-entity-segments.md)
-   + [使用B2B資料建立區段](/help/platform/segments/create-segments-with-b2b-data.md)
-   + [串流細分示範](/help/platform/segments/streaming-segmentation-demo.md)
-   + [評估區段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-   + [建立資料集以匯出資料](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
-   + [區段比對連接設定](/help/platform/segments/segment-match-connection-setup.md)
-   + [區段比對資料治理](/help/platform/segments/segment-match-data-governance.md)
-   + [區段比對設定流程](/help/platform/segments/segment-match-configuration-flow.md)
-   + [區段比對預先分享見解](/help/platform/segments/segment-match-pre-share-insights.md)
-   + [區段比對接收資料](/help/platform/segments/segment-match-receiving-data.md)
 + 來源 {#sources}
    + [來源概觀](/help/platform/sources/overview.md)
    + [從Adobe Analytics擷取資料](/help/platform/sources/ingest-data-from-adobe-analytics.md)
