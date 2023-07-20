@@ -6,14 +6,14 @@ feature: Segments
 jira: KT-2705
 thumbnail: 27428.jpg
 exl-id: 5e3b7d65-10e6-418f-98ab-99a3ac47e839
-source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
+source-git-commit: f1930db43c5e6fbfd4fe3daf116049fa09fcfb8b
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 7%
 
 ---
 
-# 建立動態區段
+# 建立動態對象
 
 動態受眾是Adobe Experience Platform中的進階細分功能，可解決行銷人員在建立行銷活動受眾時傳統上面臨的可擴充性問題。
 
