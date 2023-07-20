@@ -4,9 +4,9 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: 88a876834089348a2eb0be92ca2bd03e91d49caf
+source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '978'
 ht-degree: 33%
 
 ---
@@ -205,8 +205,11 @@ ht-degree: 33%
    + [使用來源連接器串流資料](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [使用Adobe Target進行下一次點選個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud 整合 {#experience-cloud}
-   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [使用Marketo Engage協調行銷活動](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
+   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
+   + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + 產業趨勢 {#industry}
    + [資料管理的未來和不斷變化的環境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [兩種見解的故事 - 品牌與消費者](/help/platform/industry/brands-vs-consumers.md)

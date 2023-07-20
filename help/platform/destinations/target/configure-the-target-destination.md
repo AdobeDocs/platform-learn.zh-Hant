@@ -1,25 +1,22 @@
 ---
-title: 如何配置Adobe TargetAdobe Real-Time CDP目的地？
-description: 瞭解如何配置Real-time Customer Data Platform的Adobe Target目標，以開始將段和配置檔案屬性從Real-Time CDP發送到目標。
+title: 如何在Adobe Real-Time CDP中設定Adobe Target目的地？
+description: 瞭解如何在Real-time Customer Data Platform中設定Adobe Target目的地，以開始從Real-Time CDP傳送區段和設定檔屬性至Target。
 feature: Destinations
 role: Admin, Architect, User
 level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13122
-source-git-commit: 758ccd3aef6789c727bbe19e30947bb7ee5f2615
+exl-id: 7283134f-049e-4671-8c47-1d58629817cd
+source-git-commit: c25b0b613618401d51463a108dde8e4a6d3393b1
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 6%
+source-wordcount: '89'
+ht-degree: 8%
 
 ---
 
-# 配置Adobe TargetReal-time Customer Data Platform目標
+# 在Real-time Customer Data Platform中設定Adobe Target目的地
 
-瞭解如何配置Real-time Customer Data Platform的Adobe Target目標，以開始將段和配置檔案屬性從Real-Time CDP發送到目標。 有關詳細資訊，請參見 [Adobe Target連接文檔](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html)。
-
->[!IMPORTANT]
->
->使用增強的Adobe TargetV2目標連接器的Beta版本，您可能會在目標目錄中看到兩張Adobe Target卡。 Adobe TargetV2目標連接器為Beta版，僅適用於特定數量的客戶。
+瞭解如何在Real-time Customer Data Platform中設定Adobe Target目的地，以開始從Real-Time CDP傳送區段和設定檔屬性至Target。 如需詳細資訊，請參閱 [Adobe Target連線檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418799/?learn=on)

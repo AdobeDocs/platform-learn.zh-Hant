@@ -1,6 +1,6 @@
 ---
-title: 如何在Adobe Target使用Real-Time CDP配置檔案屬性？
-description: 瞭解如何在Adobe Target使用Real-time Customer Data Platform個人資料屬性在您的網站和移動應用上提供個性化體驗。
+title: 如何在Adobe Target中使用Real-Time CDP設定檔屬性？
+description: 瞭解如何在Adobe Target中使用Real-time Customer Data Platform設定檔屬性，在您的網站和行動應用程式上提供個人化體驗。
 feature-set: Experience Platform, Target
 feature: Destinations, Profiles, Integrations
 solution: Experience Platform, Target
@@ -9,20 +9,17 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-19T00:00:00Z
 jira: KT-13142
-source-git-commit: 7195ef3b361424079069202f4835728c265b12f1
+exl-id: 33ecac25-ada3-427c-b197-adcb661139fa
+source-git-commit: c25b0b613618401d51463a108dde8e4a6d3393b1
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '79'
 ht-degree: 0%
 
 ---
 
+# 在Adobe Target中使用Real-Time CDP設定檔屬性
 
-# 在Adobe Target使用Real-Time CDP配置檔案屬性
-
-瞭解如何在Adobe Target使用Adobe Real-time Customer Data Platform個人資料屬性在您的網站和移動應用上提供個性化體驗。 有關詳細資訊，請參見 [文檔](https://experienceleague.adobe.com/docs/target/using/integrate/integrating-with-rtcdp.html)。
+瞭解如何在Adobe Target中使用Adobe Real-time Customer Data Platform設定檔屬性，在您的網站和行動應用程式上提供個人化體驗。 如需詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/target/using/integrate/integrating-with-rtcdp.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419318/?learn=on)
 
->[!IMPORTANT]
->
->Real-Time CDP配置檔案屬性功能是beta版，只適用於選定數量的客戶。

@@ -8,16 +8,21 @@ doc-type: feature video
 thumbnail: 333301.jpg
 jira: KT-7887
 exl-id: ed66a76e-909b-4b60-887f-58e3d6ab349f
-source-git-commit: 4767adf8daee2ba9f432ffbb3a30468504c12694
+source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 8%
+source-wordcount: '107'
+ht-degree: 6%
 
 ---
 
 # 對象規則產生器概觀
 
 取得Experience Platform中的對象規則產生器的簡介，包括對象的建置區塊、使用者介面，以及開始建立對象規則的一些秘訣。
+
+>[!NOTE]
+>
+> &quot;[!UICONTROL 區段]已重新命名「 」[!UICONTROL 受眾]&quot;（在平台介面中）。 選取 **[!UICONTROL 建立對象]** > **[!UICONTROL 建置規則]** 以輸入此影片中精選的規則產生器。
+
 
 >[!VIDEO](https://video.tv.adobe.com/v/333301/?quality=12&learn=on)
 
