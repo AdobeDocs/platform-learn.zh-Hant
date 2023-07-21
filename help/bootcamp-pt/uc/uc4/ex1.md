@@ -5,8 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
 exl-id: 63933d9e-b774-483f-b547-188c77440595
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 0%
@@ -84,7 +85,7 @@ Antes de continuar， voce precisa seclecionar um **沙箱**. 不要做沙箱�
 
 在Adobe Experience Platform中驗證結構描述和資料集。
 
-| 資料集 | 方案 |
+| 資料集 | 綱要 |
 | ----------------- |-------------| 
 | 示範系統 — 網站的事件資料集（全域v1.1） | 示範系統 — 網站的事件結構（全域v1.1） |
 | 示範系統 — 客服中心的事件資料集（全域v1.1） | 示範系統 — 客服中心的事件結構（全域v1.1） |
