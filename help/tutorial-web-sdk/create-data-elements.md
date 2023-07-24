@@ -3,10 +3,10 @@ title: 建立資料元素
 description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至該物件。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 28333d3079f586996cd6b6933831ffd9f3caacd1
+source-git-commit: 0c9c8c679c2c0b3446e802bf52028194b08e6644
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 5%
+source-wordcount: '1206'
+ht-degree: 4%
 
 ---
 
@@ -140,6 +140,9 @@ ht-degree: 5%
 >[!TIP]
 >
 > Adobe建議傳送代表個人的身分，例如 `Luma CRM Id`，作為 [!UICONTROL 主要] 身分。
+>
+> 如果身分對應包含兩者 `Luma CRM Id` 和ECID，然後 `Luma CRM Id` 成為 [!UICONTROL 主要] 身分。 如果身分對應只包含ECID，則ECID會變成 [!UICONTROL 主要] 身分。
+
 
 
 
