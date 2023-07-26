@@ -1,12 +1,13 @@
 ---
 title: 將 Tableau 連接至查詢服務
-description: 瞭解如何從各種支援PostgreSQL通訊協定的案頭使用者端應用程式連線到查詢服務，以及如何使用PostgreSQL工具和驅動程式來連線並寫入查詢。
+description: 瞭解如何從各種支援PostgreSQL通訊協定的案頭使用者端應用程式連線到查詢服務，以及如何使用PostgreSQL工具和驅動程式來連線及寫入查詢。
 feature: Queries
-role: Data Engineer
+role: Data Engineer, Developer
+level: Intermediate
 jira: KT-7688
 thumbnail: 333702.jpg
 exl-id: c81e669e-af61-4b6b-8eb6-a516731b6529
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 18%
@@ -15,7 +16,7 @@ ht-degree: 18%
 
 # 將 Tableau 連接至查詢服務
 
-瞭解如何從各種支援PostgreSQL通訊協定的案頭使用者端應用程式連線到查詢服務，以及如何使用PostgreSQL工具和驅動程式來連線並寫入查詢。
+瞭解如何從各種支援PostgreSQL通訊協定的案頭使用者端應用程式連線到查詢服務，以及如何使用PostgreSQL工具和驅動程式來連線及寫入查詢。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333702?quality=12&learn=on)
 

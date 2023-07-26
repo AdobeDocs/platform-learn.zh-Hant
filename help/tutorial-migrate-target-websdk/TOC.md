@@ -2,15 +2,15 @@
 user-guide-title: 將Target從at.js 2.x移轉至Web SDK
 breadcrumb-title: 將Target從at.js 2.x移轉至Web SDK
 user-guide-description: 適用於Target客戶的實作教學課程，說明如何成功從at.js移轉至Web SDK實作。
-feature-set: Target,Experience Platform
 solution: Target,Data Collection,Experience Platform
+feature-set: Target,Experience Platform
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-role: Developer
+role: Data Engineer, Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-11159
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 5%
@@ -34,7 +34,7 @@ ht-degree: 5%
 
 + [轉譯VEC型活動](render-vec-activities.md)
 
-+ [演算表單式活動](render-form-based-activities.md)
++ [呈現表單式活動](render-form-based-activities.md)
 
 + [傳送引數](send-parameters.md)
 
@@ -42,7 +42,7 @@ ht-degree: 5%
 
 + [啟用跨網域支援](cross-domain.md)
 
-+ [更新對象和設定檔指令碼](update-audiences.md)
++ [更新對象和個人資料指令碼](update-audiences.md)
 
 + [驗證實作](validate.md)
 

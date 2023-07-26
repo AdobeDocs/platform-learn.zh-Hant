@@ -1,12 +1,11 @@
 ---
 title: 建立行動標籤屬性
-description: 瞭解如何在資料收集中建立行動標籤屬性。 新增行動核心和其他擴充功能，將設定發佈到環境中，並在您的行動應用程式中參考屬性。
-feature: Mobile SDK,Tags
-role: Developer
+description: 瞭解如何在資料收集中建立行動標籤屬性。 新增行動核心和其他擴充功能，將設定發佈至環境，並在您的行動應用程式中參照屬性。
+feature: Mobile SDK, Tags
 level: Beginner
 jira: KT-2636
 exl-id: c0bfdd5a-03f7-49db-9124-7d420a884048
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 4%
@@ -15,7 +14,7 @@ ht-degree: 4%
 
 # 建立行動標籤屬性
 
-瞭解如何在資料收集中建立行動標籤屬性。 新增行動核心和其他擴充功能，將設定發佈到環境中，並在您的行動應用程式中參考屬性。
+瞭解如何在資料收集中建立行動標籤屬性。 新增行動核心和其他擴充功能，將設定發佈至環境，並在您的行動應用程式中參照屬性。
 
 >[!NOTE]
 >

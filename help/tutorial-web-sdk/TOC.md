@@ -3,11 +3,11 @@ user-guide-title: 使用 Web SDK 教學課程實作 Adobe Experience Cloud
 breadcrumb-title: Web SDK 教學課程
 solution: Data Collection
 feature: Web SDK,Tags
-role: Data Engineer
+role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 35%
@@ -34,7 +34,7 @@ ht-degree: 35%
    + [設定Experience Platform](setup-experience-platform.md)
    + [設定Adobe Analytics](setup-analytics.md)
    + [設定Audience Manager](setup-audience-manager.md)
-   + [設定目標](setup-target.md)
+   + [設定Target](setup-target.md)
 
 + 同意管理 {#consent-management}
    + [設定同意](setup-consent.md)

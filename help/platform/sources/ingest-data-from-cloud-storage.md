@@ -1,19 +1,20 @@
 ---
 title: 使用雲端儲存空間來源聯結器內嵌資料
 description: 此影片說明如何以順暢且可擴充的方式輕鬆地將雲端儲存空間服務中的資料批次擷取到Adobe Experience Platform的Real-Time Customer Profile和Data Lake。
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 jira: KT-3827
 thumbnail: 29695.jpg
 exl-id: 406b4545-8977-43fa-85b2-2069bba9f15a
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
 
 ---
 
-# 使用雲端儲存空間來源聯結器內嵌資料
+# 使用雲端儲存空間來源聯結器擷取資料
 
 此影片說明如何以順暢且可擴充的方式輕鬆地將雲端儲存空間服務中的資料批次擷取到Adobe Experience Platform的Real-Time Customer Profile和Data Lake。 如需更詳細的產品檔案，請參閱 [雲端儲存空間](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#cloud-storage) 在來源聯結器總覽頁面上。
 

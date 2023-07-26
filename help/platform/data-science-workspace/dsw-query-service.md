@@ -1,12 +1,13 @@
 ---
 title: 在資料科學工作區中查詢和探索資料
-description: Adobe Experience Platform可讓您透過將查詢服務整合到JupyterLab中作為標準功能，來在Data Science Workspace中使用結構化查詢語言(SQL)。
-role: User
+description: Adobe Experience Platform可讓您將查詢服務整合至JupyterLab作為標準功能，以使用資料科學工作區中的結構化查詢語言(SQL)。
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-7286
 thumbnail: 333311.jpg
 exl-id: c946d462-42bc-4adf-a4db-47a61fa6bbff
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # 在資料科學工作區中查詢和探索資料
 
-Adobe Experience Platform可讓您透過將查詢服務整合到JupyterLab中作為標準功能，來在Data Science Workspace中使用結構化查詢語言(SQL)。 本教學課程示範探索、轉換和分析資料的一些常見使用案例。
+Adobe Experience Platform可讓您將查詢服務整合至JupyterLab作為標準功能，以使用資料科學工作區中的結構化查詢語言(SQL)。 本教學課程示範探索、轉換及分析資料的一些常見使用案例。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333311)
 

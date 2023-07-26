@@ -1,10 +1,11 @@
 ---
 title: 建置標籤規則（前身為Launch規則）
-description: 瞭解如何建立規則，以便執行標籤中的命令。 事件和條件決定*何時*要做事，動作決定*什麼*要做。
+description: 瞭解如何建立規則，讓您可以在標籤中執行命令。 事件和條件會決定*何時*要做事，而動作會決定*要做什麼。
 feature: Tags
+level: Beginner
 jira: KT-3530
 exl-id: 789ce4d8-4c20-4690-9907-57e924a0c586
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # 建置標籤規則
 
-瞭解如何建立規則，以便執行標籤中的命令。 事件和條件決定 *時間* 在動作決定時執行動作 *什麼* 待辦事項。
+瞭解如何建立規則，讓您可以在標籤中執行命令。 事件和條件決定 *當* 在動作決定時執行動作 *什麼* 待辦。
 
 >[!NOTE]
 >

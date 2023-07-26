@@ -1,19 +1,20 @@
 ---
-title: 強制執行同意
-description: 瞭解如何強制執行同意
-role: Data Architect, User
+title: 強制同意
+description: 瞭解如何強制同意
 feature: Consent
+role: User, Developer, Data Architect, Admin
+level: Beginner
 jira: KT-10362
 thumbnail: 345677.jpeg
 exl-id: 08213d4a-195b-4f5f-b8f6-a516e6b52df4
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 0%
 
 ---
 
-# 強制執行同意
+# 強制同意
 
 瞭解如何建立原則以強制執行客戶的同意偏好設定。 如需詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html).
 

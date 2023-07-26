@@ -2,10 +2,10 @@
 title: 使用Adobe標準設定同意
 description: 瞭解如何使用Adobe Experience Platform Web SDK根據Adobe標準1.0和2.0設定同意值。
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Intermediate
 jira: KT-7570
 exl-id: aa042e2f-5b22-429f-9028-19eadc288fdc
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 0%
@@ -22,4 +22,4 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/332694/?quality=12&learn=on)
 
-請參閱以下說明檔案： [Platform中的同意處理](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) 有關使用Adobe標準的詳細資訊。
+請參閱以下檔案： [Platform中的同意處理](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html) 以取得有關使用Adobe標準的詳細資訊。

@@ -1,12 +1,13 @@
 ---
 title: 建立結構描述欄位群組
 description: 本影片說明如何在Adobe Experience Platform中建立結構描述欄位群組。 結構描述欄位群組是可重複使用的元件，可定義Experience Data Model (XDM)結構描述中的大部分欄位。
-role: Data Architect
 feature: Schemas
+role: Data Architect, Developer
+level: Beginner
 jira: KT-2698
 thumbnail: 27013.jpg
 exl-id: 411a96d5-4b03-4775-8eca-9c9d444c255b
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 7%

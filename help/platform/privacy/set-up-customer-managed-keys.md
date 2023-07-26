@@ -2,13 +2,13 @@
 title: 設定客戶自控金鑰(CMK)
 description: 使用您自己的加密金鑰管理靜態資料加密。
 feature: Privacy
-role: Admin, Data Architect
+role: Admin, Data Architect, Data Engineer, Developer
 level: Experienced
-last-substantial-update: 2022-11-01T00:00:00Z
 jira: KT-11382
 thumbnail: 3410673.jpeg
+last-substantial-update: 2022-11-01T00:00:00Z
 exl-id: 04cb1aeb-3260-4259-bb02-8392d9d787a2
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 7%
@@ -27,4 +27,4 @@ ht-degree: 7%
 
 >[!WARNING]
 >
->設定CMK後，您無法還原為系統管理的金鑰。 您有責任安全地管理您的金鑰，並提供對Azure中金鑰儲存庫、金鑰和CMK應用程式的存取權，以防止失去對您資料的存取權。
+>設定CMK後，您無法還原為系統管理的金鑰。 您有責任安全地管理您的金鑰，並提供對Azure中金鑰儲存庫、金鑰和CMK應用程式的存取權，以防止無法存取您的資料。

@@ -1,12 +1,13 @@
 ---
 title: 使用隱私權JavaScript資料庫
-description: 瞭解如何使用隱私權JavaScript資料庫，在您的應用程式中收集客戶身分識別，然後再傳送給Privacy Service。 例如，瞭解如何在Data Collection （前身為Launch）中設定標籤擴充功能。
-role: Data Engineer, Data Architect
+description: 瞭解如何使用隱私權JavaScript資料庫，在您的應用程式中收集客戶身分識別，然後再傳送給Privacy Service。 例如，瞭解如何在Data Collection （先前稱為Launch）中設定標籤擴充功能。
 feature: Privacy
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-7716
 thumbnail: 336078.png
 exl-id: ed7f1e0d-eaf9-4912-9536-b16b6672b4ef
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 6%
@@ -16,7 +17,7 @@ ht-degree: 6%
 
 # 使用隱私權JavaScript資料庫
 
-瞭解如何使用隱私權JavaScript資料庫，在您的應用程式中收集客戶身分識別，然後再傳送給Privacy Service。 例如，瞭解如何在Data Collection （前身為Launch）中設定標籤擴充功能。
+瞭解如何使用隱私權JavaScript資料庫，在您的應用程式中收集客戶身分識別，然後再傳送給Privacy Service。 例如，瞭解如何在Data Collection （先前稱為Launch）中設定標籤擴充功能。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336078?quality=12&learn=on)
 

@@ -1,12 +1,14 @@
 ---
-title: Platform和商務的商業價值
+title: Platform和Commerce的商業價值
 description: 此影片顯示Adobe Experience Platform可與Magento Commerce搭配使用，以建立客戶的單一檢視，並在數位店面和各管道間聰明地打造個人化體驗。
-role: User
+solution: Experience Platform, Commerce
 feature: Integrations
+role: User, Leader, Architect
+level: Beginner
 jira: KT-6242
 thumbnail: 40376.jpg
 exl-id: fab8d1ab-87b4-4ec3-ac9e-4c8b3e3b8c75
-source-git-commit: d7e14929a0c10d4401faf6c27338047730d62be5
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '79'
 ht-degree: 0%

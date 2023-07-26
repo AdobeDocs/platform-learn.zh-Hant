@@ -1,12 +1,13 @@
 ---
 title: Privacy Service API快速入門
-description: 瞭解如何設定及驗證Privacy ServiceAPI。
-role: Data Engineer, Data Architect
+description: 瞭解如何設定及驗證Privacy Service API。
 feature: Privacy
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-7720
 thumbnail: 336075.png
 exl-id: fdf80326-0406-4bb5-b863-deed9029144a
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 11%
@@ -15,7 +16,7 @@ ht-degree: 11%
 
 # Privacy Service API快速入門
 
-瞭解如何設定及驗證Privacy ServiceAPI。
+瞭解如何設定及驗證Privacy Service API。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336075?quality=12&learn=on)
 

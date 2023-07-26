@@ -2,11 +2,12 @@
 title: 查詢服務UI
 description: 了解如何在 Adobe Experience Platform 查詢服務中撰寫和執行查詢、檢視先前執行的查詢，以及存取由您 IMS 組織內其他使用者儲存的查詢。
 feature: Queries
-role: Data Engineer
+role: Data Engineer, Developer
+level: Beginner
 jira: KT-7680
 thumbnail: 333403.jpg
 exl-id: 63de8b83-5da2-4f24-a47d-70c14bdfe437
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 80%

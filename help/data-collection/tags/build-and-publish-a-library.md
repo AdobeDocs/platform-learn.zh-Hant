@@ -1,17 +1,18 @@
 ---
-title: 建置並發佈標籤庫（先前稱為Launch庫）
+title: 建立及發佈標籤庫（原稱Launch庫）
 description: 瞭解如何在標籤屬性中建立程式庫，並透過開發、測試和生產環境推送變更。
 feature: Tags
+level: Beginner
 jira: KT-3531
 exl-id: 877b92e1-9b93-4abe-99e4-f80a3e353681
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 0%
 
 ---
 
-# 建置和發佈標籤庫
+# 建置並發佈標籤庫
 
 瞭解如何在標籤屬性中建立程式庫，並透過開發、測試和生產環境推送變更。 瞭解如何使用多個開發環境來協助多個團隊在平行工作流程中更新屬性。
 

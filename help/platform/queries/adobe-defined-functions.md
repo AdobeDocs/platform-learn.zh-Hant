@@ -2,11 +2,12 @@
 title: Adobe定義的函式
 description: 了解如何使用 Adobe Experience Platform 查詢服務中的 Adobe 定義函式，對體驗事件資料執行常見的業務相關工作。
 feature: Queries
-role: Data Engineer
+role: Data Engineer, Developer
+level: Beginner
 jira: KT-7685
 thumbnail: 333701.jpg
 exl-id: 81976285-5cb2-4e0f-94f7-1b408408bf2b
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 76%

@@ -1,12 +1,13 @@
 ---
-title: 瞭解使用查詢服務建立之儀表板的價值
-description: 透過Adobe Experience Platform，品牌可以擷取、儲存、建構和提取所有儲存的資料集&mdash；包括行為、CRM、銷售點資料等。 使用Experience Platform的查詢服務，品牌可以查詢這些資料集並回答有關業務的特定問題，然後開始產生有影響力的見解。 此影片示範使用查詢服務在商業智慧(BI)工具中建立儀表板的價值。
+title: 瞭解使用查詢服務建置之儀表板的價值
+description: 透過Adobe Experience Platform，品牌可以擷取、儲存、建構及提取所有儲存的資料集&mdash；包括行為、CRM、銷售點資料等。 使用Experience Platform的查詢服務，品牌可以查詢這些資料集並回答有關業務的特定問題，然後開始產生具影響力的見解。 此影片示範使用查詢服務在商業智慧(BI)工具中建立儀表板的價值。
 feature: Queries
-role: Data Engineer
+role: Data Engineer, Developer
+level: Beginner
 jira: KT-3714
 thumbnail: 28981.jpg
 exl-id: bf78cbeb-151a-43ef-a90b-6438af7ffbeb
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 
 # 瞭解使用查詢服務建置之儀表板的價值
 
-透過Adobe Experience Platform，品牌可以擷取、儲存、建構和提取所有儲存的資料集，包括行為、CRM、銷售點資料等。 使用Experience Platform的查詢服務，品牌可以查詢這些資料集並回答有關業務的特定問題，然後開始產生有影響力的見解。 此影片示範使用查詢服務在商業智慧(BI)工具中建立儀表板的價值。
+透過Adobe Experience Platform，品牌可以擷取、儲存、建構及提取所有儲存的資料集，包括行為、CRM、銷售點資料等。 使用Experience Platform的查詢服務，品牌可以查詢這些資料集並回答有關業務的特定問題，然後開始產生具影響力的見解。 此影片示範使用查詢服務在商業智慧(BI)工具中建立儀表板的價值。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28981?quality=12&learn=on)
 

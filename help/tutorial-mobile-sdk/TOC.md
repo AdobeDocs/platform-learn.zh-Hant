@@ -4,11 +4,11 @@ breadcrumb-title: 行動應用程式教學課程
 user-guide-description: 了解如何透過 Experience Platform Mobile SDK 在行動應用程式中實作 Adobe Experience Cloud 應用程式。
 solution: Data Collection
 feature: Mobile SDK
-role: Developer
+role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '69'
 ht-degree: 66%
@@ -25,7 +25,7 @@ ht-degree: 66%
    + [設定標籤](configure-tags.md)
 + 應用程式實施{#app-implementation}
    + [安裝SDK](install-sdks.md)
-   + [保證](assurance.md)
+   + [Assurance](assurance.md)
    + [同意](consent.md)
    + [生命週期資料](lifecycle-data.md)
    + [事件資料](events.md)

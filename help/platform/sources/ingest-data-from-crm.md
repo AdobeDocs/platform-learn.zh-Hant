@@ -1,22 +1,23 @@
 ---
-title: 使用CRM來源聯結器內嵌資料
-description: 瞭解如何輕鬆地將CRM來源中的資料批次擷取到Adobe Experience Platform的即時客戶個人資料和資料湖。
-role: Data Engineer, Data Architect
+title: 使用CRM來源聯結器擷取資料
+description: 瞭解如何輕鬆地將CRM來源中的資料批次擷取到Adobe Experience Platform的即時客戶設定檔和資料湖。
 feature: Sources
-jira: KT-3826, 13272
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
+jira: KT-3826, KT-13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 0%
 
 ---
 
-# 使用CRM來源聯結器內嵌資料
+# 使用CRM來源聯結器擷取資料
 
-瞭解如何輕鬆地將CRM來源中的資料批次擷取到Adobe Experience Platform的即時客戶個人資料和資料湖。 如需更詳細的產品檔案，請參閱 [客戶關係管理(CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) 在來源聯結器總覽頁面上。
+瞭解如何輕鬆地將CRM來源中的資料批次擷取到Adobe Experience Platform的即時客戶設定檔和資料湖。 如需更詳細的產品檔案，請參閱 [客戶關係管理(CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) 在來源聯結器總覽頁面上。
 
 ## 標準工作流程
 

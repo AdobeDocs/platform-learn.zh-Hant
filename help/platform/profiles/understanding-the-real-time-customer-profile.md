@@ -1,12 +1,13 @@
 ---
 title: 瞭解即時客戶個人檔案
 description: 這部影片說明 Adobe Experience Platform 如何收集和更新即時客戶設定檔，並解說您能如何存取及使用這些個人檔案。
-role: Data Architect, Data Engineer
 feature: Profiles
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 73%

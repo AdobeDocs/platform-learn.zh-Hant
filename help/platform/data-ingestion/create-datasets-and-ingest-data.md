@@ -1,12 +1,13 @@
 ---
 title: 在Adobe Experience Platform中建立資料集和內嵌資料
 description: 本影片說明如何在Adobe Experience Platform介面中建立資料集和內嵌資料。
-role: Data Engineer, Data Architect
 feature: Data Ingestion
+role: Data Architect, Data Engineer, Developer
+level: Beginner
 jira: KT-2700
 thumbnail: 27269.jpg
 exl-id: f01c7d88-a77e-4fb2-aa5a-d647abc41790
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 19%

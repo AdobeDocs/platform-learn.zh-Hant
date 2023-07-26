@@ -1,12 +1,13 @@
 ---
 title: 將您的資料模型轉換為XDM
 description: 此影片說明資料架構師如何運用現有的交易式資料模型，並將其轉換為體驗資料模型。 它顯示了使用實體關係圖的建模方法之間的差異。
-role: Data Architect
 feature: Schemas
+role: Data Architect, Developer
+level: Beginner
 jira: KT-7933
 thumbnail: 333483.jpg
 exl-id: 20cff411-99e1-42d5-852d-9fd66cf0e6f9
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '93'
 ht-degree: 7%
