@@ -4,9 +4,9 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
+source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '975'
 ht-degree: 33%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 33%
 + [Platform 教學課程](/help/platform/overview.md)
 + Platform簡介 {#intro-to-platform}
    + [由Experience Platform提供支援的客戶體驗](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
-   + [幕後：由Experience Platform支援的客戶體驗](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+   + [幕後：Experience Platform支援的客戶體驗](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience 平台概觀](/help/platform/intro-to-platform/overview.md)
    + [主要功能](/help/platform/intro-to-platform/key-capabilities.md)
    + [應用程式與智慧型服務](/help/platform/intro-to-platform/application-and-intelligent-services.md)
    + [與Experience Cloud應用程式整合](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [主要使用案例](/help/platform/intro-to-platform/key-use-cases.md)
    + [基本架構](/help/platform/intro-to-platform/basic-architecture.md)
-   + [使用Platform使用者介面](/help/platform/intro-to-platform/interface-tour.md)
+   + [使用者介面](/help/platform/intro-to-platform/interface-tour.md)
    + [角色和專案階段](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Real-Time CDP簡介 {#rtcdp}
    + [概觀](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
@@ -42,7 +42,7 @@ ht-degree: 33%
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [管理產品設定檔](/help/platform/admin/managing-product-profiles.md)
 + 對象與細分 {#audiences}
-   + [Audience Portal和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
+   + [對象入口網站和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上傳對象](audiences/upload-audiences.md)
    + [對象規則產生器概觀](audiences/audience-rule-builder-overview.md)
    + [建立對象](audiences/create-audiences.md)
@@ -71,14 +71,14 @@ ht-degree: 33%
    + [使用標籤進行資料分類](/help/platform/governance/classify-data-using-labels.md)
    + [建立資料使用原則](/help/platform/governance/create-data-usage-policies.md)
    + [強制執行資料使用原則](/help/platform/governance/enforce-data-usage-policies.md)
-   + [強制執行同意](/help/platform/governance/enforce-consent.md)
+   + [強制同意](/help/platform/governance/enforce-consent.md)
    + [整合IAB透明與同意架構2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 資料衛生 {#data-hygiene}
    + [刪除資料集](/help/platform/data-hygiene/delete-datasets.md)
 + 資料擷取 {#data-ingestion}
    + [概觀](/help/platform/data-ingestion/understanding-data-ingestion.md)
-   + [批次擷取概觀](/help/platform/data-ingestion/batch-ingestion-overview.md)
-   + [建立並填入資料集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
+   + [批次擷取總覽](/help/platform/data-ingestion/batch-ingestion-overview.md)
+   + [建立和填入資料集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [將CSV檔案對應至XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [來源概觀](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [從Adobe Analytics擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
@@ -94,16 +94,16 @@ ht-degree: 33%
 + Data Science Workspace {#data-science-workspace}
    + [概觀](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [架構](data-science-workspace/architecture-overview.md)
-   + [建立課程方案和資料集](data-science-workspace/create-the-course-schema-and-dataset.md)
+   + [建立課程結構和資料集](data-science-workspace/create-the-course-schema-and-dataset.md)
    + [將資料載入 JupyterLab Notebook](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
    + [在JupyterLab Notebook中查詢和探索資料](data-science-workspace/dsw-query-service.md)
-   + [探索性資料分析](data-science-workspace/eda.md)
+   + [探索資料分析](data-science-workspace/eda.md)
    + [配方、模型和服務概觀](data-science-workspace/recipes-models-services-overview.md)
    + [使用配方產生器範本建立模型](data-science-workspace/recipe-builder-template.md)
    + [分析模型效能](data-science-workspace/analyze-model-performance.md)
    + [建立並發佈經過訓練的模型(UI)](data-science-workspace/create-model-ui.md)
    + [排程服務的自動化訓練和評分](data-science-workspace/schedule-training-scoring.md)
-   + [透過機器學習深入分析豐富即時客戶設定檔](data-science-workspace/dsw-profile-segmentation.md)
+   + [透過機器學習見解豐富即時客戶設定檔](data-science-workspace/dsw-profile-segmentation.md)
    + [將來源檔案封裝到配方中](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
    + [匯入封裝的配方(UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
    + [匯入封裝的配方(API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
@@ -123,9 +123,9 @@ ht-degree: 33%
       + [啟動區段和設定檔屬性](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [在Target中使用Real-Time CDP區段](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [在Target中使用Real-Time CDP設定檔屬性](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
-   + [啟用非Adobe應用程式資料網路研討會](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
+   + [啟用非Adobe應用程式網路研討會資料](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + 身分 {#identities}
-   + [身分和身分圖表概觀](/help/platform/identities/understanding-identity-and-identity-graphs.md)
+   + [身分和身分圖表總覽](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [標示、擷取及驗證身分資料](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [檢視身分圖](/help/platform/identities/view-identity-graphs.md)
 + Intelligent Services {#intelligent-services}
@@ -145,7 +145,7 @@ ht-degree: 33%
 + 設定檔 {#profiles}
    + [瞭解即時客戶個人檔案](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [設定檔總覽圖表](/help/platform/profiles/overview-diagram.md)
-   + [將資料帶入設定檔](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
+   + [將資料引進設定檔中](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
    + [自訂設定檔檢視詳細資料](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [檢視帳戶設定檔](/help/platform/profiles/view-account-profiles.md)
    + [建立合併原則](/help/platform/profiles/create-merge-policies.md)
@@ -154,13 +154,13 @@ ht-degree: 33%
 + 隱私權與安全性 {#privacy}
    + [Privacy Service簡介](/help/platform/privacy/introduction-to-privacy-services.md)
    + [隱私權請求中的身分資料](/help/platform/privacy/identity-data-in-privacy-requests.md)
-   + [隱私權JavaScript程式庫](/help/platform/privacy/using-privacy-javascript-library.md)
+   + [隱私權JavaScript資料庫](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analytics中的隱私權標籤](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Privacy Service API快速入門](/help/platform/privacy/getting-started-with-privacy-services-api.md)
    + [Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
    + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
    + [訂閱隱私權事件](/help/platform/privacy/subscribe-to-privacy-events.md)
-   + [設定客戶管理的金鑰](/help/platform/privacy/set-up-customer-managed-keys.md)
+   + [設定客戶自控金鑰](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [負責任的客戶資料管理的十大考量因素](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [提升行銷人員作為資料管理員的角色](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
 + 查詢 {#queries}
@@ -213,7 +213,7 @@ ht-degree: 33%
 + 產業趨勢 {#industry}
    + [資料管理的未來和不斷變化的環境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [兩種見解的故事 - 品牌與消費者](/help/platform/industry/brands-vs-consumers.md)
-   + [打造卓越受眾中心](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
+   + [發展您的卓越受眾中心](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [使用客戶設定檔建立更好的體驗](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
    + [在第一方資料內容中的資料共同作業](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
-   + [轉換](translate.md)
+   + [Translate](translate.md)
