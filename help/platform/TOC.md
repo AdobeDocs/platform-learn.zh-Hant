@@ -4,10 +4,10 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
+source-git-commit: 839fc42ebad3b9091e8f9bdebd66f7d7afdebaa8
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 33%
+source-wordcount: '965'
+ht-degree: 34%
 
 ---
 
@@ -203,7 +203,7 @@ ht-degree: 33%
    + [從資料庫擷取資料](/help/platform/sources/ingest-data-from-databases.md)
    + [使用 HTTP API 串流資料](/help/platform/sources/streaming-ingestion-http-api.md)
    + [使用來源連接器串流資料](/help/platform/sources/streaming-ingestion-source-connector.md)
-   + [使用Adobe Target進行下一次點選個人化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+   + [疑難排解：SFTP聯結器](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Experience Cloud 整合 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
