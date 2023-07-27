@@ -3,15 +3,17 @@ title: 從Marketo Engage擷取資料
 description: 瞭解如何使用來源聯結器，使用標準和範本工作流程，從Marketo Engage擷取資料。
 solution: Real-Time Customer Data Platform
 feature: Sources
+topic: Integrations
+badgeIntegration: label="整合" type="positive"
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 jira: KT-9259, KT-13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
 workflow-type: tm+mt
-source-wordcount: '162'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---

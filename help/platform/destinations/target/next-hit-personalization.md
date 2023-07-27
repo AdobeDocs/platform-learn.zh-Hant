@@ -1,17 +1,20 @@
 ---
 title: 使用Real-Time CDP和Adobe Target進行下一次點選個人化是什麼？
 description: 瞭解如何使用Real-time Customer Data Platform (CDP)和Adobe Target進行下一次點選個人化。
-role: User
 solution: Real-Time Customer Data Platform,Target
 feature-set: Experience Platform,Target
 feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experience Targeting
+topic: Integrations
+badgeIntegration: label="整合" type="positive"
+role: User
+level: Beginner
 jira: KT-9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 7%
+source-wordcount: '102'
+ht-degree: 8%
 
 ---
 

@@ -4,9 +4,9 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: eb2940e28607313b385e721a6f7185baa644b9c1
+source-git-commit: 6969ffb934783dc5e9b448ad28738b56084114cf
 workflow-type: tm+mt
-source-wordcount: '970'
+source-wordcount: '969'
 ht-degree: 34%
 
 ---
@@ -217,4 +217,3 @@ ht-degree: 34%
    + [發展您的卓越受眾中心](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [使用客戶設定檔建立更好的體驗](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
    + [在第一方資料內容中的資料共同作業](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
-   + [Translate](translate.md)
