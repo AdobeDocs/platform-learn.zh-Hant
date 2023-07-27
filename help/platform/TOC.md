@@ -4,9 +4,9 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: 839fc42ebad3b9091e8f9bdebd66f7d7afdebaa8
+source-git-commit: eb2940e28607313b385e721a6f7185baa644b9c1
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '970'
 ht-degree: 34%
 
 ---
@@ -178,6 +178,7 @@ ht-degree: 34%
    + [使用BI工具建置儀表板](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [為您的客戶資料重新充電](/help/platform/queries/recharge-your-customer-data.md)
    + [將使用者端連線至查詢服務](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [驗證Datalake中的資料](/help/platform/queries/validate-data-in-the-datalake.md)
 + 綱要 {#schemas}
    + [概觀](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [建置區塊](/help/platform/schemas/schema-building-blocks.md)
