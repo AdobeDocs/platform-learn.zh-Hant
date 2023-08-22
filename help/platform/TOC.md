@@ -4,10 +4,10 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: 6969ffb934783dc5e9b448ad28738b56084114cf
+source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 34%
+source-wordcount: '989'
+ht-degree: 33%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 34%
    + [區段比對預先分享見解](/help/platform/segments/segment-match-pre-share-insights.md)
    + [區段比對接收資料](/help/platform/segments/segment-match-receiving-data.md)
 + [稽核記錄](/help/platform/governance/audit-logs.md)
-+ [資料集合](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ [資料收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + 儀表板 {#dashboards}
    + [建立儀表板](/help/platform/dashboards/create-a-dashboard.md)
 + 資料治理 {#data-governance}
@@ -142,6 +142,11 @@ ht-degree: 34%
    + [監視資料內嵌](/help/platform/monitoring/monitoring-dashboard.md)
    + [監視區段啟用](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [監視資料流](/help/platform/monitoring/data-monitoring.md)
++ 合作夥伴資料支援 {#partner-data-support}
+   + [合作夥伴資料支援概述](/platform/partner-data-support/partner-data-support-overview.md)
+   + [支援異地勘探](/platform/partner-data-support/offsite-prospecting-partner-data.md)
+   + [將合作夥伴屬性新增至設定檔](/platform/partner-data-support/partner-enrichment-partner-data.md)
+   + [為未知訪客個人化網站](/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + 設定檔 {#profiles}
    + [瞭解即時客戶個人檔案](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [設定檔總覽圖表](/help/platform/profiles/overview-diagram.md)
