@@ -3,9 +3,9 @@ title: 安裝Adobe Experience Platform Mobile SDK
 description: 瞭解如何在行動應用程式中實施Adobe Experience Platform Mobile SDK。
 hide: true
 hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '913'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 ## 匯入擴充功能
 
-在Xcode中 **[!UICONTROL AppDelegate]** 和 **[!UICONTROL MobileSDK]**，新增下列匯入。
+在Xcode中，在來源中 **[!UICONTROL AppDelegate]** 和 **[!UICONTROL MobileSDK]**，新增下列匯入。
 
 ```swift
 import AEPCore
@@ -86,61 +86,43 @@ import AEPAssurance
    @AppStorage("environmentFileId") private var environmentFileId = "b5cbd1a1220e/1857ef6cacb5/launch-2594f26b23cd-development"
    ```
 
-1. 將下列醒目提示的程式碼新增至 `application(_, didFinishLaunchingWithOptions)` 函式。
+1. 將下列程式碼新增至 `application(_, didFinishLaunchingWithOptions)` 函式。
 
-   ```swift {highlight="10-39"}
-   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+   ```swift
+   let extensions = [
+       AEPIdentity.Identity.self,
+       Lifecycle.self,
+       Signal.self,
+       Edge.self,
+       AEPEdgeIdentity.Identity.self,
+       Consent.self,
+       UserProfile.self,
+       Places.self,
+       Messaging.self,
+       Optimize.self,
+       Assurance.self
+   ]
    
-       UNUserNotificationCenter.current().delegate = self
+   MobileCore.registerExtensions(extensions, {
+       // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
+       Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
+       MobileCore.configureWith(appId: self.environmentFileId)
    
-       // step-init-start
-       MobileCore.setLogLevel(.trace)
-       let appState = application.applicationState;
+       // set this to false or comment it when deploying to TestFlight (default is false),
+       // set this to true when testing on your device.
+       MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])
+       if appState != .background {
+           // only start lifecycle if the application is not in the background
+           MobileCore.lifecycleStart(additionalContextData: nil)
+       }
    
-       let extensions = [
-           AEPIdentity.Identity.self,
-           Lifecycle.self,
-           Signal.self,
-           Edge.self,
-           AEPEdgeIdentity.Identity.self,
-           Consent.self,
-           UserProfile.self,
-           Places.self,
-           Messaging.self,
-           Optimize.self,
-           Assurance.self
-       ]
+       // assume unknown, adapt to your needs.
+       MobileCore.setPrivacyStatus(.unknown)
    
-       MobileCore.registerExtensions(extensions, {
-           // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
-           Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
-           MobileCore.configureWith(appId: self.environmentFileId)
-   
-           // set this to false or comment it when deploying to TestFlight (default is false),
-           // set this to true when testing on your device.
-           MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])
-           if appState != .background {
-               // only start lifecycle if the application is not in the background
-               MobileCore.lifecycleStart(additionalContextData: nil)
-           }
-   
-           // assume unknown, adapt to your needs.
-           MobileCore.setPrivacyStatus(.unknown)
-   
-           // update version and build
-           Logger.configuration.info("Luma - Updating version and build number...")
-           SettingsBundleHelper.setVersionAndBuildNumber()
-       })
-   
-       // register push notification
-       registerForPushNotifications(application: application)
-   
-       // set up core location
-       let locationManager = LocationManager()
-       locationManager.requestAuthorisation()
-   
-       return true
-   }
+       // update version and build
+       Logger.configuration.info("Luma - Updating version and build number...")
+       SettingsBundleHelper.setVersionAndBuildNumber()
+   })
    ```
 
 上述程式碼會執行下列動作：

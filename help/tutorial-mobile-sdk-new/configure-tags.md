@@ -4,9 +4,9 @@ description: 瞭解如何在中設定標籤屬性 [!UICONTROL 資料彙集] 介�
 feature: Mobile SDK,Tags
 hide: true
 hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1015'
 ht-degree: 8%
 
 ---
@@ -136,7 +136,12 @@ Adobe Experience Platform 標記是新一代 Adobe 標記管理功能。標籤�
 
    安裝指示提供您實作的良好起點。 您可以找到其他資訊 [此處](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-1. 選取 **[!UICONTROL Swift]** 標籤在下 **[!UICONTROL 新增初始化程式碼]**. 此程式碼區塊說明如何匯入必要的SDK並在啟動時註冊擴充功能。
+   >[!INFO]
+   >
+   >在本教學課程的其餘部分中，您將 **非** 使用CocoaPods指示，但改用原生Swift Package Manager (SPM)型設定。
+   >
+
+1. 選取 **[!UICONTROL Swift]** 標籤在下 **[!UICONTROL 新增初始化程式碼]**. 此程式碼區塊說明如何匯入必要的SDK並在啟動時註冊擴充功能。 有關詳情，請參閱 [安裝SDK](install-sdks.md).
 
 1. 複製 ![複製](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 此 **[!UICONTROL 環境檔案ID]** 並儲存在您稍後需要的位置。 此唯一ID會指向您的開發環境。 每個環境（生產、測試、開發）都有各自的唯一ID值。
 
@@ -146,14 +151,9 @@ Adobe Experience Platform 標記是新一代 Adobe 標記管理功能。標籤�
 >
 >應將安裝指示視為起點，而非最終檔案。 您可以在官方網站找到最新的SDK版本和程式碼範例 [檔案](https://developer.adobe.com/client-sdks/documentation/).
 
->[!INFO]
->
->在本教學課程的其餘部分中，您將 **非** 使用CocoaPods指示，但檢視原生Swift套件式設定。
-
-
 ## 行動標籤架構
 
-如果您熟悉標籤（前身為Launch）的網頁版本，瞭解行動裝置上的差異很重要。
+如果您熟悉Tags的網頁版本（前身為Launch），瞭解行動裝置上的差異很重要。
 
 * 在Web上，標籤屬性會轉譯為JavaScript，然後（通常）在雲端中託管。 該JavaScript檔案會在網站中直接參照。
 
