@@ -4,7 +4,7 @@ breadcrumb-title: 教學課程
 user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
-source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
+source-git-commit: 78b5ee6e1bcda449d8adf453088ddba6f0e42f36
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 33%
@@ -143,10 +143,10 @@ ht-degree: 33%
    + [監視區段啟用](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [監視資料流](/help/platform/monitoring/data-monitoring.md)
 + 合作夥伴資料支援 {#partner-data-support}
-   + [合作夥伴資料支援概述](/platform/partner-data-support/partner-data-support-overview.md)
-   + [支援異地勘探](/platform/partner-data-support/offsite-prospecting-partner-data.md)
-   + [將合作夥伴屬性新增至設定檔](/platform/partner-data-support/partner-enrichment-partner-data.md)
-   + [為未知訪客個人化網站](/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
+   + [合作夥伴資料支援概述](/help/platform/partner-data-support/partner-data-support-overview.md)
+   + [支援異地勘探](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
+   + [將合作夥伴屬性新增至設定檔](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
+   + [為未知訪客個人化網站](/help/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + 設定檔 {#profiles}
    + [瞭解即時客戶個人檔案](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [設定檔總覽圖表](/help/platform/profiles/overview-diagram.md)
