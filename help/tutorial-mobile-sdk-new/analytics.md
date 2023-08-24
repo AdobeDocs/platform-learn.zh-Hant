@@ -3,10 +3,9 @@ title: Analytics對映
 description: 瞭解如何在行動應用程式中收集Adobe Analytics的資料。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '653'
 ht-degree: 3%
 
 ---
@@ -174,9 +173,9 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 以下是使用此資料的處理規則的外觀：
 
-* 您正在覆寫的值 `App Screen Name (eVar2)` (1)的值是 `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` (2)如果 `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` 已設定。
+* 您 **[!UICONTROL 覆寫值]** (1) **[!UICONTROL 應用程式畫面名稱(eVar2)]** (2)的值是 **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3)如果 **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL 已設定]** (5)。
 
-* 您設定 `Add to Wishlist (Event 3)` 至 `a.x.commerce.saveForLaters.value(Context)` 如果 `a.x.commerce.saveForLaters.value(Context)` 已設定。
+* 您 **[!UICONTROL 設定事件]** (6) **[!UICONTROL 新增至願望清單（事件3）]** (7)至 **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8)如果 **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL 已設定]** (10)。
 
 ![analytics處理規則](assets/analytics-processing-rules.png)
 

@@ -3,10 +3,9 @@ title: 身分
 description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '626'
+source-wordcount: '653'
 ht-degree: 6%
 
 ---
@@ -52,35 +51,20 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 您想要在使用者登入應用程式時更新標準身分（電子郵件）和自訂身分(Luma CRM ID)。
 
-1. 瀏覽至 **[!UICONTROL 登入工作表]** (在 **[!UICONTROL 檢視]** > **[!UICONTROL 一般]**)，並尋找呼叫 `updateIdentities`：
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中找到 `func updateIdentities(emailAddress: String, crmId: String)` 函式實作。 將下列程式碼新增至函式。
 
-   ```swift {highlight="3,4"}
-   Button("Login") {
-       // call updaeIdentities
-       MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
+   ```swift
+   // Set up identity map
+   let identityMap: IdentityMap = IdentityMap()
    
-       // Send app interaction event
-       MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-       dismiss()
-   }
-   .disabled(currentEmailId.isValidEmail == false)
-   .buttonStyle(.bordered)
-   ```
-
-1. 導覽至 `updateIdentities` 中的函式實作 **[!UICONTROL MobileSDK]** (在 **[!UICONTROL Utils]**)。 將下列醒目提示的程式碼新增至函式。
-
-   ```swift {highlight="2-12"}
-   func updateIdentities(emailAddress: String, crmId: String) {
-       let identityMap: IdentityMap = IdentityMap()
-       // Add identity items
-       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-       let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
-       identityMap.add(item:emailIdentity, withNamespace: "Email")
-       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
+   // Add identity items to identity map
+   let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   identityMap.add(item:emailIdentity, withNamespace: "Email")
+   identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
-       // Update identities
-       Identity.updateIdentities(with: identityMap)
-   }
+   // Update identities
+   Identity.updateIdentities(with: identityMap)
    ```
 
    此程式碼：
@@ -111,6 +95,13 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
       Identity.updateIdentities(with: identityMap) 
       ```
 
+1. 瀏覽至 **[!UICONTROL Luma]** **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 登入工作表]** 在Xcode專案導覽器中，尋找在選取 **[!UICONTROL 登入]** 按鈕。 新增下列程式碼：
+
+   ```swift
+   // call updaeIdentities
+   MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
+   ```
+
 
 >[!NOTE]
 >
@@ -121,27 +112,22 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 您可以使用 `removeIdentity` 從儲存的使用者端IdentityMap移除身分識別。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端使用者設定檔圖形或身分圖形中移除識別碼。
 
-1. 瀏覽至 **[!UICONTROL 登入工作表]** (在 **[!UICONTROL 檢視]** > **[!UICONTROL 一般]**)，並尋找呼叫 `removeIdentities`：
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 一般]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，新增下列程式碼至 `func removeIdentities(emailAddress: String, crmId: String)` 函式：
 
-   ```swift {highlight="3"}
-   Button("Logout", role: .destructive) {
-       // call removeIdentities
-       MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
-       dismiss()                   
-   }
-   .buttonStyle(.bordered)
+   ```swift
+   Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
+   Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
+   // reset email and CRM Id to their defaults
+   currentEmailId = "testUser@gmail.com"
+   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. 將下列程式碼新增至 `removeIdentities` 中的函式 `MobileSDK`：
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 登入工作表]** 在Xcode專案導覽器中，尋找在選取 **[!UICONTROL 登出]** 按鈕。 新增下列程式碼：
 
-   ```swift {highlight="2-8"}
-   func removeIdentities(emailAddress: String, crmId: String) {
-       Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
-       Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
-       // reset email and CRM Id to their defaults
-       currentEmailId = "testUser@gmail.com"
-       currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
-   }
+   ```swift
+   // call removeIdentities
+   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
+   dismiss()                   
    ```
 
 
@@ -150,9 +136,9 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 1. 檢閱 [設定指示](assurance.md) 區段並將模擬器或裝置連線至Assurance。
 1. 在Luma應用程式中
    1. 選取 **[!UICONTROL 首頁]** 標籤。
-   1. 選取 **[!UICONTROL 登入]** 圖示加以選取。
+   1. 選取 <img src="assets/login.png" width="15" /> 圖示加以選取。
    1. 提供電子郵件地址和CRM ID，或
-   1. 選取|以隨機產生 **[!UICONTROL 電子郵件]** 和 **[!UICONTROL CRM ID]**.
+   1. 選擇 <img src="assets/insert.png" width="15" /> 隨機產生 **[!UICONTROL 電子郵件]** 和 **[!UICONTROL CRM ID]**.
    1. 選取 **[!UICONTROL 登入]**.
 
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">

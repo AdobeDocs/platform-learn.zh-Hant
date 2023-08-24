@@ -2,10 +2,9 @@
 title: 生命週期資料
 description: 瞭解如何在行動應用程式中收集生命週期資料。
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '612'
 ht-degree: 3%
 
 ---
@@ -51,23 +50,22 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 ## 實作變更
 
-現在您可以更新 `SceneDelegate` 註冊生命週期事件：
+現在您可以更新專案以註冊生命週期事件。
 
-1. 啟動時，如果您的應用程式正從背景狀態恢復，iOS可能會呼叫您的 `sceneWillEnterForeground:` 委派方法，而且您想要在此觸發生命週期開始事件。 新增醒目提示的程式碼：
+1. 導覽至Xcode專案導覽器中的「Luma > Luma > SceneDelegate」 。
 
-   ```swift {highlight="3"}
-   func sceneWillEnterForeground(_ scene: UIScene) {
-      // When in foreground start lifecycle data collection
-      MobileCore.lifecycleStart(additionalContextData: nil)
-   }
+1. 啟動時，如果您的應用程式正從背景狀態恢復，iOS可能會呼叫您的 `sceneWillEnterForeground:` 委派方法，而且您想要在此觸發生命週期開始事件。 將此程式碼新增至 `func sceneWillEnterForeground(_ scene: UIScene)`：
+
+   ```swift
+   // When in foreground start lifecycle data collection
+   MobileCore.lifecycleStart(additionalContextData: nil)
    ```
 
-1. 當應用程式進入背景時，您想要暫停來自應用程式的生命週期資料收集 `sceneDidEnterBackground:` 委派方法。 新增醒目提示的程式碼：
+1. 當應用程式進入背景時，您想要暫停來自應用程式的生命週期資料收集 `sceneDidEnterBackground:` 委派方法。 將此程式碼新增至  `func sceneDidEnterBackground(_ scene: UIScene)`：
 
-   ```swift {highlight="3"}
-   func sceneDidEnterBackground(_ scene: UIScene) {
-      // When in background pause lifecycle data collection
-      MobileCore.lifecyclePause()
+   ```swift
+   // When in background pause lifecycle data collection
+   MobileCore.lifecyclePause()
    }
    ```
 

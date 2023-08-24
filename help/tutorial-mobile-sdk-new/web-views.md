@@ -3,13 +3,13 @@ title: 處理網頁檢視
 description: 瞭解如何在行動應用程式中使用WebViews處理資料收集。
 jira: KT-6987
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '453'
+source-wordcount: '445'
 ht-degree: 1%
 
 ---
+
 
 # 處理網頁檢視
 
@@ -36,35 +36,30 @@ WebView中的Experience CloudID服務JavaScript擴充功能會從URL提取ECID�
 
 ## 實作
 
-在Luma範例應用程式中，找到 **[!UICONTROL 服務條款工作表]** 檔案(在 **[!UICONTROL 資訊]** 資料夾)，並在 `SwiftUIWebViewModel` 類別：
+瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 資訊]** > **[!UICONTROL 服務條款工作表]**，然後找到 `func loadUrl()` 中的函式 `final class SwiftUIWebViewModel: ObservableObject` 類別。 新增下列呼叫以處理Web檢視：
 
-```swift {highlight="6-22"}
-    func loadUrl() {
-        let url = Bundle.main.url(forResource: "tou", withExtension: "html")
-        if var urlString = url?.absoluteString {
-            // Adobe Experience Platform - Handle Web View
-            AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
-                if let error = error {
-                    print("Error with Webview", error)
-                    return;
-                }
-                
-                if let urlVariables: String = urlVariables {
-                    urlString.append("?" + urlVariables)
-                    guard let url = URL(string: urlString) else {
-                        return
-                    }
-                    DispatchQueue.main.async {
-                        self.webView.load(URLRequest(url: url))
-                    }
-                }
-                Logger.aepMobileSDK.info("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
-            }
+```swift
+// Adobe Experience Platform - Handle Web View
+AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
+    if let error = error {
+        print("Error with Webview", error)
+        return;
+    }
+    
+    if let urlVariables: String = urlVariables {
+        urlString.append("?" + urlVariables)
+        guard let url = URL(string: urlString) else {
+            return
+        }
+        DispatchQueue.main.async {
+            self.webView.load(URLRequest(url: url))
         }
     }
+    Logger.aepMobileSDK.info("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
+}
 ```
 
-此程式碼最重要的部分為 `AEPEdgeIdentity.Identity.getUrlVariables` 關閉（反白顯示）。 結尾會設定URL的變數，以包含所有相關資訊，例如ECID等。 在此範例中，您使用的是本機檔案，但相同的概念適用於遠端頁面。
+此 `AEPEdgeIdentity.Identity.getUrlVariables` API會設定URL的變數，以包含所有相關資訊，例如ECID等。 在此範例中，您使用的是本機檔案，但相同的概念適用於遠端頁面。
 
 您可以進一步瞭解 `Identity.getUrlVariables` 中的API [Edge Network身分擴充功能API參考指南](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 

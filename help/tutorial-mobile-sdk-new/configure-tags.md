@@ -3,8 +3,7 @@ title: 設定標籤屬性
 description: 瞭解如何在中設定標籤屬性 [!UICONTROL 資料彙集] 介面。
 feature: Mobile SDK,Tags
 hide: true
-hidefromtoc: true
-source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 8%
