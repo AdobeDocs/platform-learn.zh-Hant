@@ -4,7 +4,7 @@ description: 瞭解如何使用Platform Mobile SDK和Adobe Journey Optimizer建�
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 4fa65f2e39d3fa7b8b77f5d06d51f10235474b36
+source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 2%
@@ -73,11 +73,11 @@ Journey Optimizer可讓您建立歷程，並將應用程式內訊息傳送給目
 1. 向下捲動至 **[!UICONTROL 動作]**，並選取 **[!UICONTROL 編輯內容]**.
 1. 在 **[!UICONTROL 應用程式內訊息]** 畫面：
    1. 選取 **[!UICONTROL 強制回應]** 作為 **[!UICONTROL 訊息配置]**.
-   1. 輸入 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 的 **[!UICONTROL 媒體URL]**.
-   1. 輸入 **[!UICONTROL 頁首]**，例如 `Welcome to this Luma In-App Message` 並輸入 **[!UICONTROL 內文]**，例如 `Triggered by pushing that button in the app...`.
-   1. 輸入 **[!UICONTROL 關閉]** 作為 **[!UICONTROL 按鈕#1文字（主要）]**.
-   1. 請注意預覽的更新方式。
-   1. 選取 **[!UICONTROL 檢閱以啟動]**.
+   2. 輸入 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 的 **[!UICONTROL 媒體URL]**.
+   3. 輸入 **[!UICONTROL 頁首]**，例如 `Welcome to this Luma In-App Message` 並輸入 **[!UICONTROL 內文]**，例如 `Triggered by pushing that button in the app...`.
+   4. 輸入 **[!UICONTROL 關閉]** 作為 **[!UICONTROL 按鈕#1文字（主要）]**.
+   5. 請注意預覽的更新方式。
+   6. 選取 **[!UICONTROL 檢閱以啟動]**.
       ![應用程式內編輯器](assets/ajo-in-app-editor.png)
 1. 在 **[!UICONTROL 檢閱以啟動（Luma — 應用程式內傳訊行銷活動）]** 熒幕，選取 ![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 在 **[!UICONTROL 排程]** 圖磚。
    ![檢閱排程選取排程](assets/ajo-review-select-schedule.png)
@@ -88,7 +88,7 @@ Journey Optimizer可讓您建立歷程，並將應用程式內訊息傳送給目
    1. 按一下&#x200B;**[!UICONTROL 「完成」]**。
       ![觸發邏輯](assets/ajo-trigger-logic.png)
 
-   您已定義追蹤動作，其中 **[!UICONTROL 動作]** 等於 `in-app` 和 **[!UICONTROL 內容資料]** ，動作為的索引鍵值組 `showMessage = true`.
+   您已定義追蹤動作，其中 **[!UICONTROL 動作]** 等於 `in-app` 和 **[!UICONTROL 內容資料]** ，動作為的索引鍵值組 `"showMessage" : "true"`.
 
 1. 返回 **[!UICONTROL Luma — 應用程式內傳訊行銷活動]** 熒幕，選取 **[!UICONTROL 檢閱以啟動]**.
 1. 在 **[!UICONTROL 檢閱以啟動（Luma — 應用程式內傳訊行銷活動）]** 熒幕，選取 **[!UICONTROL 啟動]**.
@@ -103,14 +103,14 @@ Journey Optimizer可讓您建立歷程，並將應用程式內訊息傳送給目
 1. 前往Xcode專案導覽器中的Luma > Luma > Utils > MobileSDK，尋找 `func sendTrackAction(action: String, data: [String: Any]?)` 函式，並新增下列程式碼，其會呼叫 `MobileCore.track` 函式，根據引數 `action` 和 `data`.
 
 
-   ```
+   ```swift
    // send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
-1. 前往Xcode專案導覽器中的Luma > Luma >檢視>一般> ConfigView 。 尋找應用程式內訊息按鈕的程式碼，並新增下列程式碼：
+1. 前往 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 組態檢視]** 在「Xcode專案導覽器」中。 尋找應用程式內訊息按鈕的程式碼，並新增下列程式碼：
 
-   ```
+   ```swift
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
