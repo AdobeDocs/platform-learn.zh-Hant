@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 2%
@@ -97,8 +97,8 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 1. 在 **[!UICONTROL 安裝擴充功能]** 對話方塊
    1. 選取環境，例如 **[!UICONTROL 開發]**.
    1. 選取 **[!UICONTROL AJO推播追蹤體驗事件資料集]** 資料集 **[!UICONTROL 事件資料集]** 下拉式清單。
-      ![AJO擴充功能設定](assets/push-tags-ajo.png)
    1. 選取 **[!UICONTROL 儲存至程式庫並建置]**.
+      ![AJO擴充功能設定](assets/push-tags-ajo.png)
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
    1. 提供 **[!UICONTROL 說明]**，例如 `Test event to trigger push notifications in Luma app`.
 
    1. 選取您先前在中建立的行動應用程式體驗事件結構描述 [建立XDM結構描述](create-schema.md) 從 **[!UICONTROL 結構描述]** 清單，例如 **[!UICONTROL Luma行動應用程式事件結構描述v.1]**.
-   1. 選取 ![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) ，位於欄位清單旁。
+   1. 選取 ![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 在 **[!UICONTROL 欄位]** 清單。
 
       ![編輯事件步驟1](assets/ajo-edit-event1.png)
 
