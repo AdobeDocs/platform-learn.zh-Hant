@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
+source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2005'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 ## 先決條件
 
 * 成功建立並執行應用程式，且已安裝並設定SDK。
-* 如所述存取Adobe Journey Optimizer和足夠的許可權 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 此外，您需要具備下列Adobe Journey Optimizer功能的足夠許可權。
+* 如所述存取Adobe Journey Optimizer和足夠的許可權 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 此外，您需要足夠的許可權才能使用下列Adobe Journey Optimizer功能。
    * 建立應用程式表面。
    * 建立歷程
    * 建立訊息.
@@ -36,7 +36,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
 ## 學習目標
 
-在本課程中，您將會：
+在本課程中，您將學習
 
 * 向Apple推播通知服務(APN)註冊應用程式ID。
 * 建立 **[!UICONTROL 應用程式表面]** 在AJO中。
@@ -81,8 +81,8 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 1. 在「應用程式ID (iOS套件組合ID)」欄位中輸入行動應用程式套件組合ID。 如果您使用Luma應用程式進行追蹤，則該值為 `com.adobe.luma.tutorial.swiftui`.
 1. 切換至 **[!UICONTROL 推送認證]** 按鈕以新增您的認證。
 1. 拖放您的 `.p8` **Apple推播通知驗證金鑰** 檔案。
-1. 提供 **[!UICONTROL 金鑰ID]**，在建立期間指派的10個字元字串 `p8` 驗證金鑰。 此區域位於 **[!UICONTROL 金鑰]** 定位於 **憑證、識別碼和設定檔** Apple開發人員入口網站頁面的頁面。
-1. 提供 **[!UICONTROL 團隊ID]**. 團隊ID是一個值，可在下找到 **會籍** 標籤或Apple開發人員入口網站頁面頂端。
+1. 提供 **[!UICONTROL 金鑰ID]**，在建立期間指派的10個字元字串 `p8` 驗證金鑰。 此路徑位於 **[!UICONTROL 金鑰]** 索引標籤中的 **憑證、識別碼和設定檔** Apple開發人員入口網站頁面的頁面。
+1. 提供 **[!UICONTROL 團隊ID]**. 團隊ID是一個值，可在下找到 **會籍** 標籤或Apple開發人員入口網站頁面頂端的標籤。
 1. 選取「**[!UICONTROL 儲存]**」。
 
    ![應用程式表面設定](assets/push-app-surface-config.png)
@@ -105,7 +105,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 >如果您沒有看到 `AJO Push Tracking Experience Event Dataset` 如需使用，請聯絡客戶服務。
 >
 
-## 在應用程式中實作Adobe Journey Optimizer
+## 在應用程式中實作Journey Optimizer
 
 如先前課程所述，安裝行動標籤擴充功能僅會提供設定。 接下來，您必須安裝並註冊傳訊SDK。 如果這些步驟不清楚，請查閱 [安裝SDK](install-sdks.md) 區段。
 
@@ -175,6 +175,20 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
 若要建立自己的推播通知，您必須在Journey Optimizer中定義觸發歷程的事件，負責傳送推播通知。
 
+### 更新結構
+
+您即將定義新的事件型別，目前無法如結構描述中所定義，成為事件清單的一部分。
+
+1. 在Journey Optimizer UI中，選取 **[!UICONTROL 方案]** 從左側邊欄。
+1. 選取 **[!UICONTROL 瀏覽]** 標籤列中的。
+1. 選取您的結構描述，例如 **[!UICONTROL Luma行動應用程式事件結構描述]** 以開啟它。
+1. 在架構編輯器中：
+   1. 選取 **[!UICONTROL eventtype]** 欄位。
+   1. 在 **[!UICONTROL 欄位屬性]** 窗格，向下捲動以檢視事件型別的可能值清單。 選取 **[!UICONTROL 新增列]**，並新增 `application.test` 作為 **[!UICONTROL 值]** 和 **[!UICONTROL 推播通知的測試事件]** 作為 `DISPLAY NAME`.
+   1. 選取&#x200B;**[!UICONTROL 「套用」]**。
+   1. 選取「**[!UICONTROL 儲存]**」。
+      ![為事件型別新增值](assets/ajo-update-schema-eventtype-enum.png)
+
 ### 定義事件
 
 1. 在Journey Optimizer UI中，選取 **[!UICONTROL 設定]** 從左側邊欄。
@@ -193,7 +207,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
       ![編輯事件步驟1](assets/ajo-edit-event1.png)
 
-      在 **[!UICONTROL 欄位]** 對話方塊，確定已選取下列欄位(在永遠選取的預設欄位之上（_id、id和時間戳記）)。 您可以使用下拉式清單在 **[!UICONTROL 已選取]**， **[!UICONTROL 全部]** 和 **[!UICONTROL 主要]** 或使用 ![搜尋](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 欄位。
+      在 **[!UICONTROL 欄位]** 對話方塊中，確定已選取下列欄位(在永遠選取的預設欄位之上(**[!UICONTROL _id]**， **[!UICONTROL id]**、和 **[!UICONTROL timestamp]**)。 您可以使用下拉式清單在 **[!UICONTROL 已選取]**， **[!UICONTROL 全部]** 和 **[!UICONTROL 主要]** 或使用 ![搜尋](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 欄位。
 
       * **[!UICONTROL 已識別的應用程式(ID)]**，
       * **[!UICONTROL 事件型別(eventType)]**，
@@ -205,9 +219,8 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
    1. 選取 ![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 在 **[!UICONTROL 事件ID條件]** 欄位。
 
-      1. 在 **[!UICONTROL 新增事件ID條件]** 對話方塊，拖放 **[!UICONTROL 應用程式識別碼(ID)]** 底下 **[!UICONTROL 應用程式（應用程式）]** 開啟到 **[!UICONTROL 將元素拖放到這裡]**.
-      1. 在彈出視窗中，輸入來自Xcode的套件組合識別碼，例如 `com.adobe.luma.tutorial.swiftui` 在旁邊的欄位中 **[!UICONTROL 等於]**.
-      1. 按一下 **[!UICONTROL 確定]**.
+      1. 在 **[!UICONTROL 新增事件ID條件]** 對話方塊，拖放 **[!UICONTROL 事件型別(eventType)]** 開啟到 **[!UICONTROL 將元素拖放到這裡]**.
+      1. 在彈出視窗中，捲動到底部並選取 **[!UICONTROL application.test]**. 然後向上捲動到頂端並選取 **[!UICONTROL 確定]**.
       1. 按一下 **[!UICONTROL 確定]**.
          ![編輯事件條件](assets/ajo-edit-condition.png)
 
@@ -306,7 +319,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
    此程式碼會建立 `testPushPayload` 使用提供給函式的引數建立例項(`applicationId` 和 `eventType`)然後呼叫 `sendExperienceEvent` 將裝載轉換為字典時。 這次的程式碼也考慮到了呼叫Adobe Experience Platform SDK的非同步層面，該環節使用Swift的並行模式，並基於 `await` 和 `async`.
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 組態檢視]** 在Xcode專案導覽器中。 在推播通知按鈕定義中，新增下列程式碼，以傳送測試推播通知體驗事件裝載，以便在點選按鈕時觸發您的歷程。
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 組態檢視]** 在「Xcode專案」導覽器中。 在推播通知按鈕定義中，新增下列程式碼，以傳送測試推播通知體驗事件裝載，以便在點選按鈕時觸發您的歷程。
 
    ```swift
    // Setting parameters and calling function to send push notification
