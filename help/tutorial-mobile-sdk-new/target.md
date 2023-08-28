@@ -5,7 +5,7 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 2%
@@ -42,7 +42,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 * 更新您的結構描述以擷取主張事件。
 * 驗證Assurance中的設定。
 * 在Target中建立簡單的A/B測試。
-* 更新您的應用程式以包含「最佳化」擴充功能。
+* 更新您的應用程式以包含Optimizer擴充功能。
 * 在您的應用程式中實作A/B測試。
 * 驗證Assurance中的實作。
 
@@ -192,9 +192,9 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
    * XDM字典 `xdmData`，包含ECID以識別您必須呈現A/B測試的設定檔，以及
    * 此 `decisionScope`，表示A/B測試的一組位置。
 
-   接著，函式會呼叫兩個API： [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 這些函式會清除任何快取的主張，並更新此設定檔的主張。
+   接著，函式會呼叫兩個API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 這些函式會清除任何快取的主張，並更新此設定檔的主張。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 個人化]** > **[!UICONTROL TargetOffersView]** 在「Xcode專案」導覽器中。 尋找 `func getPropositionAT(location: String) async` 函式並檢查此函式的程式碼。 此函式最重要的部分為  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API呼叫，此
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 個人化]** > **[!UICONTROL TargetOffersView]** 在「Xcode專案」導覽器中。 尋找 `func getPropositionAT(location: String) async` 函式並檢查此函式的程式碼。 此函式最重要的部分為  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API呼叫，此
    * 根據決定範圍（即您在A/B測試中定義的位置）擷取目前設定檔的主張，並
    * 會取消包裝應用程式中可正確顯示的結果，即內容。
 

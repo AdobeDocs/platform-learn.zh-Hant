@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
 workflow-type: tm+mt
-source-wordcount: '2305'
+source-wordcount: '2309'
 ht-degree: 2%
 
 ---
@@ -40,8 +40,8 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 * 使用Journey Optimizer - Decisioning擴充功能更新標籤屬性。
 * 更新您的結構描述以擷取主張事件。
 * 驗證Assurance中的設定。
-* 在Target中建立簡單的A/B測試。
-* 更新您的應用程式以包含「最佳化」擴充功能。
+* 根據Journey Optimizer中的優惠建立優惠決定 — 決定管理。
+* 更新您的應用程式以包含Optimizer擴充功能。
 * 在您的應用程式中實施來自Decision Management的優惠。
 
 
@@ -283,7 +283,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
    * 設定XDM字典 `xdmData`，包含ECID以識別您必須提供選件的設定檔。
    * 定義 `decisionScope`，此物件會決定位置、要使用的集合、排名公式和適用性規則，如您在Journey Optimizer — 決定管理UI中定義。
-   * 會呼叫兩個API： [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   這些函式會清除任何快取的主張，並更新此設定檔的主張。 Luma應用程式使用設定檔案(`decisions.json`)預設集，會根據下列JSON格式擷取範圍引數：
+   * 會呼叫兩個API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   這些函式會清除任何快取的主張，並更新此設定檔的主張。 Luma應用程式使用設定檔案(`decisions.json`)預設集，會根據下列JSON格式擷取範圍引數：
 
      ```swift
      "scopes": [
@@ -298,7 +298,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
      不過，您可以使用任何型別的實作，以確保Optimizer API取得正確的引數(`activityId`， `placementId` 和 `itemCount`)，以建構有效的 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 物件。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 個人化]** > **[!UICONTROL EdgeOffersView]** 在「Xcode專案」導覽器中。 尋找 `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` 函式並檢查此函式的程式碼。 此函式最重要的部分為  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API呼叫，此
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 個人化]** > **[!UICONTROL EdgeOffersView]** 在「Xcode專案」導覽器中。 尋找 `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` 函式並檢查此函式的程式碼。 此函式最重要的部分為  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API呼叫，此
 
    * 根據決定範圍(您已在Journey Optimizer — 決定管理中定義)擷取目前設定檔的建議，並
    * 會取消包裝應用程式中可正確顯示的結果，即內容。
