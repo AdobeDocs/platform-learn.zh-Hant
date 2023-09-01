@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
+source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1418'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 2%
 
 Target提供一切所需工具，讓您量身打造及個人化您的客戶體驗。 Target可協助您在網站和行動網站、應用程式、社群媒體和其他數位頻道上獲得最大收入。 本教學課程的重點是Target的A/B測試功能。 請參閱 [A/B測試概覽](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) 以取得詳細資訊。
 
-使用Target Premium執行A/B測試之前，您必須確保有適當的設定和整合。
+使用Target執行A/B測試之前，您必須確保有適當的設定和整合。
 
 >[!NOTE]
 >
->本課程為選修課程，僅適用於希望執行A/B測試的Adobe Target Premium使用者。
+>本課程為選修課程，僅適用於希望執行A/B測試的Adobe Target使用者。
 
 
 ## 先決條件
@@ -47,7 +47,13 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 * 驗證Assurance中的實作。
 
 
-## 更新邊緣組態
+## 設定您的應用程式
+
+>[!TIP]
+>
+>如果您已將應用程式設定為 [Journey Optimizer優惠方案](journey-optimizer-offers.md) 教學課程，
+
+### 更新邊緣組態
 
 為確保將從您的行動應用程式傳送到Edge Network的資料轉送到Adobe Target，您必須更新Experience Edge設定。
 
@@ -62,7 +68,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
    ![將Target新增至資料串流](assets/edge-datastream-target.png)
 
 
-## 安裝Adobe Journey Optimizer - Decisioning標籤擴充功能
+### 安裝Adobe Journey Optimizer - Decisioning標籤擴充功能
 
 1. 瀏覽至 **[!UICONTROL 標籤]** 並尋找您的行動標籤屬性並開啟屬性。
 1. 選取 **[!UICONTROL 擴充功能]**.
@@ -73,7 +79,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
    ![新增決策擴充功能](assets/tag-add-decisioning-extension.png)
 
 
-## 更新您的結構描述
+### 更新您的結構描述
 
 1. 導覽至資料收集UI，然後從左側邊欄選取結構描述。
 1. 選取 **[!UICONTROL 瀏覽]** 從頂端列。
@@ -84,7 +90,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 1. 若要儲存對結構描述的變更，請選取 **[!UICONTROL 儲存]** .
 
 
-## 驗證Assurance中的設定
+### 驗證Assurance中的設定
 
 若要驗證Assurance中的設定：
 
@@ -161,12 +167,12 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
 >[!NOTE]
 >
->如果您已完成 [安裝SDK](install-sdks.md) 區段，則已安裝SDK且您可以跳至步驟#7。
+>如果您已完成 [安裝SDK](install-sdks.md) 區段，則該SDK已安裝，且您可以略過此步驟。
 >
 
 1. 在Xcode中，確認 [AEP最佳化](https://github.com/adobe/aepsdk-messaging-ios.git) 會新增至套件相依性中的套件清單中。 另請參閱 [Swift封裝管理程式](install-sdks.md#swift-package-manager).
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]**.
-1. 確定 `AEPMessaging` 是匯入清單的一部分。
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 在「Xcode專案」導覽器中。
+1. 確定 `AEPOptimize` 是匯入清單的一部分。
 
    `import AEPOptimize`
 
@@ -239,17 +245,17 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 1. 選取 **[!UICONTROL 設定]** 在左側邊欄中並選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁邊 **[!UICONTROL 檢閱和模擬]** 底下 **[!UICONTROL Adobe Journey Optimizer決策]**.
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選取 **[!UICONTROL 檢閱和模擬]** 在左側邊欄中。 資料串流設定都會經過驗證，並且會在您的應用程式中設定SDK。
-1. 選取 **[!UICONTROL 請求]** 在頂端列中。 您會看到Target請求。
+1. 選取 **[!UICONTROL 請求]** 在頂端列中。 您會看到 **[!UICONTROL Target]** 要求。
    ![AJO決策驗證](assets/assurance-decisioning-requests.png)
 
 1. 您可以探索「模擬」和「事件清單」標籤，以進一步瞭解功能檢查您的Target選件設定。
 
-## 在您的應用程式中實作
+## 後續步驟
 
-您現在應該擁有所有工具，可以開始將更多A/B測試或其他Target活動（如果相關且適用）新增至Luma應用程式。
+您現在應該有所有的工具，可以開始將更多A/B測試或其他Target活動（例如體驗鎖定目標、多變數測試） （如有必要）新增至Luma應用程式。
 
 >[!SUCCESS]
 >
->您現在已啟用應用程式進行A/B測試，並已使用Adobe Target和Adobe Experience Platform Mobile SDK的Adobe Journey Optimizer - Decisioning擴充功能顯示A/B測試的結果。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>您已啟用應用程式進行A/B測試，並已使用Adobe Target和適用於Adobe Experience Platform Mobile SDK的Adobe Journey Optimizer - Decisioning擴充功能顯示A/B測試的結果。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[結論和後續步驟](conclusion.md)**
