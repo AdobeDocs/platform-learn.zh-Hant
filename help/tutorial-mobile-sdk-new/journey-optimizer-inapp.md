@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '1607'
+source-wordcount: '1605'
 ht-degree: 2%
 
 ---
@@ -48,11 +48,11 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 * 在Journey Optimizer中定義您自己的促銷活動和應用程式內訊息體驗。
 * 從應用程式內傳送您自己的應用程式內訊息。
 
-## 設定您的應用程式
+## 設定
 
 >[!TIP]
 >
->如果您已將應用程式設定為 [Journey Optimizer推送訊息](journey-optimizer-push.md) 在教學課程中，您可以略過本節。
+>如果您已將環境設定為 [Journey Optimizer推送訊息](journey-optimizer-push.md) 在教學課程中，您可以略過本節。
 
 ### 向APNS註冊應用程式ID
 

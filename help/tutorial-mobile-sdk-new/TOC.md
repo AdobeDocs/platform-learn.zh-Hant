@@ -8,9 +8,9 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: a48c1eedbb3e75d9ebdcf1262cab493e4a097d72
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '73'
+source-wordcount: '74'
 ht-degree: 68%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 68%
 
 + [教學課程概觀](overview.md)
 + 初始設定 {#initial-configuration}
-   + [建立架構](create-schema.md)
+   + [建立結構描述](create-schema.md)
    + [建立資料串流](create-datastream.md)
    + [設定標籤](configure-tags.md)
 + 應用程式實施{#app-implementation}
@@ -32,6 +32,7 @@ ht-degree: 68%
    + [網頁檢視](web-views.md)
    + [身分](identity.md)
    + [設定檔](profile.md)
+   + [地點](places.md)
 + Experience Cloud{#experience-cloud}
    + [Analytics](analytics.md)
    + [Experience Platform](platform.md)

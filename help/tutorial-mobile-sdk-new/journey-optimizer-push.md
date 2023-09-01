@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2173'
 ht-degree: 2%
 
 ---
@@ -49,11 +49,11 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 * 從應用程式內傳送您自己的推播通知。
 
 
-## 設定您的應用程式
+## 設定
 
 >[!TIP]
 >
->如果您已將應用程式設定為 [Journey Optimizer應用程式內傳訊](journey-optimizer-inapp.md) 在教學課程中，您可以略過本節。
+>如果您已將環境設定為 [Journey Optimizer應用程式內傳訊](journey-optimizer-inapp.md) 在教學課程中，您可以略過本節。
 
 ### 向APNS註冊應用程式ID
 

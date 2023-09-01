@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2342'
 ht-degree: 2%
 
 ---
@@ -45,11 +45,11 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 * 在您的應用程式中實施來自Decision Management的優惠。
 
 
-## 設定您的應用程式
+## 設定
 
 >[!TIP]
 >
->如果您已將應用程式設定為 [使用Target設定A/B測試](target.md) 教學課程，您可以略過 [安裝Adobe Journey Optimizer - Decisioning標籤擴充功能](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的結構描述](#update-your-schema).
+>如果您已將環境設定為 [使用Target設定A/B測試](target.md) 教學課程，您可以略過 [安裝Adobe Journey Optimizer - Decisioning標籤擴充功能](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的結構描述](#update-your-schema).
 
 ### 更新邊緣組態
 
@@ -368,7 +368,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 * 套用不同引數至您的選件（例如，優先順序、上限）
 * 在應用程式中收集設定檔屬性(請參閱 [個人資料](profile.md))並使用這些設定檔屬性來建立對象。 然後使用這些對象作為您決定中適用性規則的一部分。
-* 合併多個決定範圍
+* 合併多個決定範圍。
 
 >[!SUCCESS]
 >

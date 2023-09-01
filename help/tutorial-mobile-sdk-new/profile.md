@@ -2,9 +2,9 @@
 title: 設定檔
 description: 瞭解如何在行動應用程式中收集設定檔資料。
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '592'
 ht-degree: 1%
 
 ---
@@ -128,4 +128,4 @@ ht-degree: 1%
 >
 >您現在已設定應用程式，以更新Edge Network和（設定時） Adobe Experience Platform中設定檔的屬性。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[將資料對應至Adobe Analytics](analytics.md)**
+下一步： **[使用地理定位服務](places.md)**
