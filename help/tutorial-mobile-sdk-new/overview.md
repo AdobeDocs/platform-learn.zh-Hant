@@ -3,9 +3,9 @@ title: 在行動應用程式教學課程中實作Adobe Experience Cloud概述
 description: 瞭解如何實作Adobe Experience Cloud行動應用程式。 本教學課程將指導您在一個範例Swift應用程式中實施Experience Cloud應用程式。
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '659'
 ht-degree: 11%
 
 ---
@@ -39,6 +39,10 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
    * [設定檔](profile.md)
    * [Adobe Experience Platform](platform.md)
    * [使用Journey Optimizer推送訊息](journey-optimizer-push.md)
+   * [使用Journey Optimizer的Im-app傳訊](journey-optimizer-inapp.md)
+   * [Journey Optimizer的優惠方案](journey-optimizer-offers.md)
+   * [使用Target的A/B測試](target.md)
+
 * 正確傳遞Experience Cloud引數至 [webview](web-views.md).
 * 使用驗證實施 [Adobe Experience Platform保證](assurance.md).
 
@@ -74,12 +78,12 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 
 範例應用程式有兩個版本可供下載。
 
-1. [空白](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"})：沒有任何Experience Cloud程式碼的版本，無法完成本教學課程中的實作練習
-1. [完整實作](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"})：具有完整Experience Cloud實作的版本以供參考。
+1. [空白](https://git.corp.adobe.com/rmaur/Luma{target="_blank"})：沒有任何Experience Cloud程式碼的版本，無法完成本教學課程中的實作練習
+1. [完整實作](https://git.corp.adobe.com/Luma{target="_blank"})：具有完整Experience Cloud實作的版本以供參考。
 
 我們開始吧！
 
->[!NOTE]
+>[!SUCCESS]
 >
 >感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 

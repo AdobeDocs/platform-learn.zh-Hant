@@ -2,9 +2,9 @@
 title: 設定檔
 description: 瞭解如何在行動應用程式中收集設定檔資料。
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '594'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 快速瞭解使用者之前是否已在應用程式中購買產品，有助於目標定位和/或個人化。 讓我們在Luma應用程式中設定它。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** 並找到 `func updateUserAttribute(attributeName: String, attributeValue: String)` 函式。 新增下列程式碼：
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，並找到 `func updateUserAttribute(attributeName: String, attributeValue: String)` 函式。 新增下列程式碼：
 
    ```swift
    // Create a profile map
@@ -62,7 +62,7 @@ ht-degree: 1%
 
    1. 使用 `profileMap` 字典作為值 `attributeDict` 的引數 `UserProfile.updateUserAttributes` API呼叫。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 產品]** > **[!UICONTROL 產品檢視]** 在Xcode專案導覽器中尋找呼叫 `updateUserAttributes` （在購買程式碼內） <img src="assets/purchase.png" width="15" /> 按鈕)：
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 產品]** > **[!UICONTROL 產品檢視]** 在Xcode專案導覽器中，尋找呼叫 `updateUserAttributes` （在購買程式碼內） <img src="assets/purchase.png" width="15" /> 按鈕)：
 
    ```swift
    // Update attributes
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 更新使用者的屬性後，其他AdobeSDK即可使用該屬性，但您也可以明確擷取屬性。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** >一般> **[!UICONTROL HomeView]** 在Xcode專案導覽器中尋找 `.onAppear` 修飾元。 新增下列程式碼：
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** >一般> **[!UICONTROL HomeView]** 在Xcode專案導覽器中，並找到 `.onAppear` 修飾元。 新增下列程式碼：
 
    ```swift
    // Get attributes
@@ -113,9 +113,13 @@ ht-degree: 1%
    1. 選擇 <img src="assets/saveforlater.png" width="15" />。
    1. 選擇 <img src="assets/addtocart.png" width="20" />。
    1. 選擇 <img src="assets/purchase.png" width="15" />。
-   1. 返回至 **[!UICONTROL 首頁]** 畫面。 您應該會看到下列專案的更新值 **[!UICONTROL 電子郵件]** 和 **[!UICONTROL CRM ID]**.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200"> <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+   1. 返回至 **[!UICONTROL 首頁]** 畫面。 您應該會看到已新增的徽章 <img src="assets/person-badge-icon.png" width="15" />。
+
+      <img src="./assets/personbadges.png" width="200">
+
+
 
 1. 在Assurance UI中，您應該會看到 **[!UICONTROL UserProfileUpdate]** 和 **[!UICONTROL getuserattributes]** 具有已更新內容的事件 `profileMap` 值。
    ![驗證設定檔](assets/profile-validate.png)

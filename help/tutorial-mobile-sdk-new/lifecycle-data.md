@@ -2,9 +2,9 @@
 title: 生命週期資料
 description: 瞭解如何在行動應用程式中收集生命週期資料。
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '594'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 現在您可以更新專案以註冊生命週期事件。
 
-1. 導覽至Xcode專案導覽器中的「Luma > Luma > SceneDelegate」 。
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** 在「Xcode專案」導覽器中。
 
 1. 啟動時，如果您的應用程式正從背景狀態恢復，iOS可能會呼叫您的 `sceneWillEnterForeground:` 委派方法，而且您想要在此觸發生命週期開始事件。 將此程式碼新增至 `func sceneWillEnterForeground(_ scene: UIScene)`：
 
@@ -87,24 +87,23 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 1. 選取 **[!UICONTROL 初始建置]** 作為要使用的程式庫。
 1. 選取&#x200B;**[!UICONTROL 「建立新規則」]**。
    ![建立新規則](assets/rules-create-new.png)
-1. 在 [!UICONTROL 建立規則] 熒幕，輸入 `Application Status` 的 **[!UICONTROL 名稱]**.
+1. 在 **[!UICONTROL 建立規則]** 熒幕，輸入 `Application Status` 的 **[!UICONTROL 名稱]**.
 1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]** 以下 **[!UICONTROL 活動]**.
    ![建立規則對話方塊](assets/rule-create-name.png)
-1. 在 [!UICONTROL 事件設定] 步驟：
+1. 在 **[!UICONTROL 事件設定]** 步驟：
    1. 選取 **[!UICONTROL 行動核心]** 作為 **[!UICONTROL 副檔名]**.
    1. 選取 **[!UICONTROL 前景]** 作為 **[!UICONTROL 事件型別]**.
    1. 選取&#x200B;**[!UICONTROL 「保留變更」]**。
       ![規則事件設定](assets/rule-event-configuration.png)
-1. 返回「建立規則」畫面，選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]** 旁邊 **[!UICONTROL 行動核心 — 前景]**.
+1. 返回 **[!UICONTROL 建立規則]** 熒幕，選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]** 旁邊 **[!UICONTROL 行動核心 — 前景]**.
    ![下一個事件設定](assets/rule-event-configuration-next.png)
-1. 在 [!UICONTROL 事件設定] 步驟：
+1. 在 **[!UICONTROL 事件設定]** 步驟：
    1. 選取 **[!UICONTROL 行動核心]** 作為 **[!UICONTROL 副檔名]**.
    1. 選取 **[!UICONTROL 背景]** 作為 **[!UICONTROL 事件型別]**.
    1. 選取&#x200B;**[!UICONTROL 「保留變更」]**。
       ![規則事件設定](assets/rule-event-configuration-background.png)
-1. 返回「建立規則」畫面，選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]** 以下 **[!UICONTROL 動作]**.
-   ![規則新增動作](assets/rule-action-button.png)
-1. 在 [!UICONTROL 動作設定] 步驟：
+      ![規則新增動作](assets/rule-action-button.png)
+1. 在 **[!UICONTROL 動作設定]** 步驟：
    1. 選取 **[!UICONTROL AdobeExperience Edge Network]** 作為 **[!UICONTROL 副檔名]**.
    1. 選取 **[!UICONTROL 將事件轉送至Edge Network]** 作為 **[!UICONTROL 動作型別]**.
    1. 選取&#x200B;**[!UICONTROL 「保留變更」]**。

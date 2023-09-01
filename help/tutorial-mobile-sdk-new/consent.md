@@ -3,9 +3,9 @@ title: 同意
 description: 瞭解如何在行動應用程式中實施同意。
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '535'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 
 1. 您只想詢問使用者一次。 因此，您希望結合行動SDK同意與使用Apple進行追蹤所需的授權 [應用程式追蹤透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 在此應用程式中，您假設當使用者授權追蹤時，使用者也同意收集事件。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案導覽器」中。
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。
 
    將此程式碼新增至 `updateConsent` 函式。
 

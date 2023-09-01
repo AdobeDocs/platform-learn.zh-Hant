@@ -3,9 +3,9 @@ title: 身分
 description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '656'
 ht-degree: 6%
 
 ---
@@ -51,7 +51,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 您想要在使用者登入應用程式時更新標準身分（電子郵件）和自訂身分(Luma CRM ID)。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中找到 `func updateIdentities(emailAddress: String, crmId: String)` 函式實作。 將下列程式碼新增至函式。
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中，找到 `func updateIdentities(emailAddress: String, crmId: String)` 函式實作。 將下列程式碼新增至函式。
 
    ```swift
    // Set up identity map
@@ -144,7 +144,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
 
 
-1. 檢視Assurance Web UI以取得**[!UICONTROL 邊緣身分更新身分]**事件來自 **[!UICONTROL com.adobe.griffon.mobile]** 廠商。
+1. 檢視Assurance Web UI，以瞭解 **[!UICONTROL 邊緣身分更新身分]** 來自的事件 **[!UICONTROL com.adobe.griffon.mobile]** 廠商。
 1. 選取事件並檢閱中的資料 **[!UICONTROL ACPExtensionEventData]** 物件。 您應該會看到已更新的身分識別。
    ![驗證身分更新](assets/identity-validate-assurance.png)
 

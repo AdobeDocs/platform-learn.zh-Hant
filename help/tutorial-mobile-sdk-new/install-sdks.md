@@ -2,9 +2,9 @@
 title: 安裝Adobe Experience Platform Mobile SDK
 description: 瞭解如何在行動應用程式中實施Adobe Experience Platform Mobile SDK。
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 6cc58d3d40112b14b1c1b8664c5e7aeb0880b59c
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 1%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 1%
 
 * 使用中所述的擴充功能成功建置標籤程式庫 [上一課程](configure-tags.md).
 * 來自的開發環境檔案ID [行動安裝指示](configure-tags.md#generate-sdk-install-instructions).
-* 已下載，空白 [範例應用程式](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}).
-* 使用體驗 [XCode](https://developer.apple.com/xcode/{target="_blank"}).
+* 已下載，空白 [範例應用程式](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* 使用體驗 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## 學習目標
 
@@ -80,7 +80,7 @@ import AEPAssurance
 
 ## 更新AppDelegate
 
-瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** 在Xcode專案導覽器中。
+瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** 在「Xcode專案」導覽器中。
 
 1. 設定 `@AppStorage` 值 `environmentFileId` 至開發環境檔案ID值，而該ID值是您從步驟6中的標籤擷取的 [產生SDK安裝指示](configure-tags.md#generate-sdk-install-instructions).
 
