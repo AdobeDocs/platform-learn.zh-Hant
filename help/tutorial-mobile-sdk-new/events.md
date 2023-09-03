@@ -2,9 +2,9 @@
 title: 活動
 description: 瞭解如何收集行動應用程式中的事件資料。
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ Edge Network擴充功能提供API，可將Experience事件傳送至Platform Edge
 
 ## 先決條件
 
-* Xcode專案中所有的套件相依性。
-* AppDelegate中註冊的擴充功能。
-* 已將MobileCore設定為使用您的開發appId。
+* 所有套件相依性都會在您的Xcode專案中就位。
+* 中的已註冊擴充功能 **[!UICONTROL AppDelegate]**.
+* 已設定MobileCore擴充功能以使用您的開發 `appId`.
 * 匯入的SDK。
-* 使用上述變更成功建置並執行應用程式。
+* 已順利建置並執行應用程式，包含上述變更。
 
 ## 學習目標
 
-在本課程中，您將會：
+在本課程中，您將學習
 
 * 瞭解如何根據結構描述來建構XDM資料。
 * 根據標準欄位群組傳送XDM事件。
@@ -76,7 +76,7 @@ Adobe Experience Platform Edge擴充功能可傳送遵循先前定義XDM結構�
 
    * `eventType`：說明已發生的事件，使用 [已知值](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) 可能的話。
    * `commerce.productViews.id`：代表產品SKU的字串值
-   * `commerce.productViews.value`：提供事件的數值。 如果是布林值(或Adobe Analytics中的「計數器」)，此值一律設為1。 如果是數值或貨幣事件，值可以是> 1。
+   * `commerce.productViews.value`：事件的數值或布林值。 如果是布林值(或Adobe Analytics中的「計數器」)，此值一律設為1。 如果是數值或貨幣事件，值可以是> 1。
 
 * 在您的結構描述中，識別與商務產品檢視事件相關聯的任何其他資料。 在此範例中，包括 **[!UICONTROL productListItem]** 這是用於任何商務相關事件的標準欄位集：
 
@@ -118,18 +118,19 @@ var xdmData: [String: Any] = [
   ```
 
 您現在即將在您的Xcode專案中實作此程式碼。
-您的應用程式中有不同的commerce產品相關動作，而您想要根據使用者執行的這些動作來傳送事件：
+您的應用程式中有不同的商務產品相關動作，而您想要根據使用者執行的這些動作，傳送事件：
 
 * 檢視：當使用者檢視特定產品時發生，
 * 加入購物車：使用者點選時 <img src="assets/addtocart.png" width="20" /> 在產品詳細資料畫面中，
 * 儲存以供稍後使用：使用者點選時 <img src="assets/saveforlater.png" width="15" /> 在產品詳細資料畫面中，
-* 購買：使用者點選 <img src="assets/purchase.png" width="20" /> 在產品詳細資料畫面中。
+* 購買：使用者點選時 <img src="assets/purchase.png" width="20" /> 在產品詳細資料畫面中。
 
-若要建構傳送體驗事件：
+若要以可重複使用的方式實作與商業相關的體驗事件的傳送，請使用專用函式：
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，將下列專案新增至 `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 函式。 此函式將商務體驗事件和產品視為引數：
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，將下列專案新增至 `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 函式。
 
    ```swift
+   // Set up a data dictionary, create an experience event and send the event.
    let xdmData: [String: Any] = [
        "eventType": "commerce." + commerceEventType,
        "commerce": [
@@ -147,18 +148,23 @@ var xdmData: [String: Any] = [
        ]
    ]
    
-   Logger.viewCycle.info("About to send commerce experience event of type  \(commerceEventType)..."
    let commerceExperienceEvent = ExperienceEvent(xdm: xdmData)
    Edge.sendEvent(experienceEvent: commerceExperienceEvent)
    ```
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 產品]** > **[!UICONTROL 產品檢視]** 並將各種呼叫新增至 `sendCommerceExperienceEvent` 函式：
+   此函式將商務體驗事件型別和產品視為引數和
+
+   * 使用函式的引數，將XDM裝載設定為字典。
+   * 使用字典設定體驗事件，
+   * 使用傳送體驗事件 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API。
+
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 產品]** > **[!UICONTROL 產品檢視]** 並新增各種呼叫至 `sendCommerceExperienceEvent` 函式：
 
    1. 在 `.task` 修飾元，在 `ATTrackingManager.trackingAuthorizationStatus` 關閉。 這個 `.task` 當產品檢視初始化並顯示時，會呼叫修飾元，因此您想在該特定時間傳送產品檢視事件。
 
       ```swift
-      // Send commerce experience event
-      MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productView", product: product)
+      // Send productViews commerce experience event
+      MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
    1. 針對每個按鈕(<img src="assets/saveforlater.png" width="15" />， <img src="assets/addtocart.png" width="20" /> 和 <img src="assets/purchase.png" width="20" />)中，新增內的相關呼叫 `ATTrackingManager.trackingAuthorizationStatus == .authorized` 關閉：
@@ -166,7 +172,7 @@ var xdmData: [String: Any] = [
       1. 的 <img src="assets/saveforlater.png" width="15" />：
 
          ```swift
-         // Send saveForLater commerce experience event
+         // Send saveForLaters commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
@@ -180,7 +186,7 @@ var xdmData: [String: Any] = [
       1. 的 <img src="assets/purchase.png" width="20" />：
 
          ```swift
-         // Send purchase commerce experience event
+         // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
 
@@ -257,6 +263,7 @@ var xdmData: [String: Any] = [
    1. 一個用於應用程式互動。 將此程式碼新增至 `func sendAppInteractionEvent(actionName: String)` 函式：
 
       ```swift
+      // Set up a data dictionary, create an experience event and send the event.
       let xdmData: [String: Any] = [
           "eventType": "application.interaction",
           tenant : [
@@ -274,9 +281,17 @@ var xdmData: [String: Any] = [
       Edge.sendEvent(experienceEvent: appInteractionEvent)
       ```
 
+      此函式使用動作名稱作為引數，且
+
+      * 使用函式的引數，將XDM裝載設定為字典。
+      * 使用字典設定體驗事件，
+      * 使用傳送體驗事件 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API。
+
+
    1. 另一個用於熒幕追蹤。 將此程式碼新增至 `func sendTrackScreenEvent(stateName: String) ` 函式：
 
       ```swift
+      // Set up a data dictionary, create an experience event and send the event.
       let xdmData: [String: Any] = [
           "eventType": "application.scene",
           tenant : [
@@ -295,6 +310,12 @@ var xdmData: [String: Any] = [
       Edge.sendEvent(experienceEvent: trackScreenEvent)
       ```
 
+      此函式使用狀態名稱作為引數，而
+
+      * 使用函式的引數，將XDM裝載設定為字典。
+      * 使用字典設定體驗事件，
+      * 使用傳送體驗事件 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API。
+
 1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 登入工作表]**.
 
    1. 將下列醒目提示的程式碼新增至「登入」按鈕的關閉處：
@@ -312,23 +333,28 @@ var xdmData: [String: Any] = [
       MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: login")
       ```
 
-### 驗證
+## 驗證
 
 1. 檢閱 [設定指示](assurance.md) 區段並將模擬器或裝置連線至Assurance。
-1. 執行應用程式以登入並與產品互動。
+1. 執行應用程式、登入並與產品互動。
 
    1. 將「保證」圖示移至左側。
    1. 選取 **[!UICONTROL 首頁]** 標籤列中的。
    1. 選取 <img src="assets/login.png" width="15" /> 按鈕以開啟「登入」工作表。
+
+      <img src="./assets/mobile-app-events-1.png" width="300">
+
    1. 選取 <img src="assets/insert.png" width="15" /> 按鈕以插入隨機電子郵件和客戶id。
    1. 選取 **[!UICONTROL 登入]**.
+
+      <img src="./assets/mobile-app-events-2.png" width="300">
    1. 選取 **[!UICONTROL 產品]** 標籤列中的。
    1. 選取產品。
    1. 選擇 <img src="assets/saveforlater.png" width="15" />。
    1. 選擇 <img src="assets/addtocart.png" width="20" />。
    1. 選擇 <img src="assets/purchase.png" width="15" />。
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+      <img src="./assets/mobile-app-events-3.png" width="300">
 
 
 1. 在Assurance UI中，尋找 **[!UICONTROL hitReceived]** 來自的事件 **[!UICONTROL com.adobe.edge.konductor]** 廠商。
@@ -336,9 +362,9 @@ var xdmData: [String: Any] = [
    ![資料彙集驗證](assets/datacollection-validation.png)
 
 
-### Luma應用程式中的實作
+## 後續步驟
 
-您現在應該擁有所有工具，可以開始將資料收集新增至Luma應用程式。 您可以新增更多智慧來瞭解使用者如何與您的產品互動，也可以新增更多應用程式互動和熒幕追蹤呼叫至您的應用程式：
+您現在應該擁有所有工具，可以開始將資料收集新增至Luma應用程式。 您可以新增更多智慧來瞭解使用者如何與應用程式中的產品互動，也可以新增更多應用程式互動和熒幕追蹤呼叫至應用程式：
 
 * 實施訂單、結帳、清空購物籃和其他功能至應用程式，並新增相關商務體驗事件至此功能。
 * 重複呼叫 `sendAppInteractionEvent` 搭配適當的引數，以追蹤使用者的其他應用程式互動。
@@ -346,7 +372,7 @@ var xdmData: [String: Any] = [
 
 >[!TIP]
 >
->檢閱 [完整實施的應用程式](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 以取得更多範例。
+>檢閱 [完成的應用程式](https://git.corp.adobe.com/rmaur/Luma) 以取得更多範例。
 
 
 ## 將事件傳送至Analytics和Platform

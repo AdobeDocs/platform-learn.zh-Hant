@@ -3,9 +3,9 @@ title: 設定資料流
 description: 瞭解如何在Experience Platform中建立資料串流。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '546'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## 先決條件
 
-若要建立資料串流，您的組織必須在資料收集介面(先前稱為 [!UICONTROL Launch])的使用者許可權，並且您必須擁有 [!UICONTROL Experience Platform] > [!UICONTROL 資料彙集] > **[!UICONTROL 管理資料串流]** 和 **[!UICONTROL 檢視資料串流]**.
+若要建立資料串流，您的組織必須在資料收集介面(先前稱為 [!UICONTROL Launch])，而且您必須擁有管理使用者許可權和檢視資料串流。
 
 ## 學習目標
 
@@ -74,7 +74,7 @@ ht-degree: 6%
 
 1. 透過切換來啟用服務 **[!UICONTROL 已啟用]** 開啟。
 
-1. 選取 **[!UICONTROL 事件資料集]** 您所建立的 [建立資料集](platform.md#create-a-dataset) 指令，例如 **Luma行動應用程式事件資料集**
+1. 選取 **[!UICONTROL 事件資料集]** 您所建立的 [建立資料集](platform.md#create-a-dataset) 指示，例如 **Luma行動應用程式事件資料集**
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
@@ -88,7 +88,7 @@ ht-degree: 6%
 >
 >啟用貴組織使用的每項服務，可確保行動應用程式中收集的資料能夠用於任何地方。 如需資料流設定的詳細資訊，請檢閱此檔案 [此處](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-在您自己的應用程式中實作Platform Mobile SDK時，應建立三個資料串流以對應至您的三個標籤環境（開發、預備和生產）。 如果您使用Platform Mobile SDK搭配Adobe Real-time Customer Data Platform或Adobe Journey Optimizer等平台式應用程式，請務必在適當的Platform沙箱中建立這些資料串流。
+在您自己的應用程式中實作Platform Mobile SDK時，您最終應建立三個資料串流以對應至您的三個標籤環境（開發、預備和生產）。 如果您使用Platform Mobile SDK搭配Adobe Real-time Customer Data Platform或Adobe Journey Optimizer等平台式應用程式，請務必在適當的沙箱中建立這些資料串流。
 
 >[!SUCCESS]
 >

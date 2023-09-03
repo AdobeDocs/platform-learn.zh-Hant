@@ -2,9 +2,9 @@
 title: 生命週期資料
 description: 瞭解如何在行動應用程式中收集生命週期資料。
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '613'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,8 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. 選取 **[!UICONTROL 背景]** 作為 **[!UICONTROL 事件型別]**.
    1. 選取&#x200B;**[!UICONTROL 「保留變更」]**。
       ![規則事件設定](assets/rule-event-configuration-background.png)
-      ![規則新增動作](assets/rule-action-button.png)
+1. 返回 **[!UICONTROL 建立規則]** 熒幕，選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]** 底下 **[!UICONTROL 動作]**.
+   ![規則新增動作](assets/rule-action-button.png)
 1. 在 **[!UICONTROL 動作設定]** 步驟：
    1. 選取 **[!UICONTROL AdobeExperience Edge Network]** 作為 **[!UICONTROL 副檔名]**.
    1. 選取 **[!UICONTROL 將事件轉送至Edge Network]** 作為 **[!UICONTROL 動作型別]**.

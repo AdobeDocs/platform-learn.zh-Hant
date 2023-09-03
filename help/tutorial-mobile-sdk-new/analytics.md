@@ -3,9 +3,9 @@ title: Analytics對映
 description: 瞭解如何在行動應用程式中收集Adobe Analytics的資料。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '641'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 ### 範例#1 - s.products
 
-一個很好的範例是 [products變數](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=zh-Hant) 無法使用處理規則填入的專案。 透過XDM實施，您會傳遞productListItems中的所有必要資料，而s.products會透過Analytics對應自動填入。
+一個很好的範例是 [products變數](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=zh-Hant) 無法使用處理規則填入的專案。 透過XDM實施，您可將所有必要資料傳入 `productListItems` 和 `s.products` 透過Analytics對應自動填入。
 
 此物件：
 
@@ -56,7 +56,7 @@ ht-degree: 3%
 ]
 ```
 
-會產生下列結果：
+結果為：
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -65,6 +65,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >[!NOTE]
 >
 >目前 `productListItems[N].SKU` 被自動對應忽略。
+
 
 ### 範例#2 - scAdd
 
@@ -80,7 +81,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 }
 ```
 
-會產生下列結果：
+結果為：
 
 ```
 s.events = "scAdd"
@@ -97,7 +98,7 @@ s.events = "scAdd"
 }
 ```
 
-會產生下列結果：
+結果為：
 
 ```
 s.events = "scAdd:321435"
@@ -105,7 +106,7 @@ s.events = "scAdd:321435"
 
 ## 使用保證進行驗證
 
-使用 [保證QA工具](assurance.md) 您可以確認正在傳送ExperienceEvent、XDM資料正確且Analytics對應如預期般發生。 例如：
+使用 [保證](assurance.md) 您可以確認自己正在傳送體驗事件、XDM資料正確且Analytics對應如預期般發生。 例如：
 
 1. 傳送productListAdds事件
 
@@ -157,10 +158,10 @@ a.x.[xdm path]
 例如：
 
 ```
-//Standard Field
+// Standard Field
 a.x.commerce.saveforlaters.value
 
-//Custom Field
+// Custom Field
 a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 ```
 

@@ -3,9 +3,9 @@ title: 建立 XDM 結構描述
 description: 瞭解如何為行動應用程式事件建立XDM結構描述。
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1416'
 ht-degree: 7%
 
 ---
@@ -92,7 +92,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 <!--Later in the tutorial, you can [update the schema](lifecycle-data.md) to include the **[!UICONTROL AEP Mobile Lifecycle Details]** field group.-->
 
-## 建立架構
+## 建立結構描述
 
 1. 選取 **[!UICONTROL 建立結構描述]**.
 
@@ -100,7 +100,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
    ![從下拉式清單中選取ExperienceEvent](assets/schema-create.png)
 
-1. 選取 ![加號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **新增** 旁邊 [!UICONTROL 欄位群組].
+1. 選取 ![加號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **新增** 旁邊 **[!UICONTROL 欄位群組]**.
 
    ![新增欄位群組](assets/add-field-group.png)
 
@@ -116,7 +116,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
    系統會將您帶回主要結構描述構成畫面，讓您在其中檢視所有可用欄位。
 
-1. 透過選取以下專案為您的結構描述命名： **[!UICONTROL 未命名的結構描述]** 左上方，然後提供 **[!UICONTROL 顯示名稱]** &amp; **[!UICONTROL 說明]**，例如 `Luma Mobile App Event Schema` 和 `Schema for Luma mobile app experience events.`
+1. 透過選取以下專案為您的結構描述命名： **[!UICONTROL 未命名的結構描述]** 從 **[!UICONTROL 組合]** 窗格（下方） **[!UICONTROL 結構描述]**)並提供 **[!UICONTROL 顯示名稱]** &amp; **[!UICONTROL 說明]**，例如 `Luma Mobile App Event Schema` 和 `Schema for Luma mobile app experience events.`
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
@@ -125,8 +125,8 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 >[!NOTE]
 >
 >請記住，您不需要使用群組中的所有欄位。 如果這很實用，您可以將結構描述想成是空的資料層。 您可在應用程式中的適當時間填入相關值。
->
->此 `Consumer Experience Event` 有一個資料型別，稱為 `Web information`，會說明頁面檢視和連結點按次數等事件。 在撰寫本文時，行動應用程式尚未與這項功能對等，因此您將建立您自己的應用程式。
+
+此 [!UICONTROL 消費者體驗事件] 欄位群組有一個資料型別，稱為 [!UICONTROL 網頁資訊]，會說明頁面檢視和連結點按次數等事件。 在撰寫本文時，行動應用程式尚未與這項功能對等，因此您將建立您自己的應用程式。
 
 ## 建立自訂資料型別
 
@@ -152,9 +152,8 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 1. 若要新增欄位，請選取 ![加號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 按鈕。
 
-   此欄位是應用程式互動的容器物件。
 
-1. 提供駝峰式大小寫 **[!UICONTROL 欄位名稱]** `appInteraction`， **[!UICONTROL 顯示名稱]** `App Interaction`，並選取 `Object` 從 **[!UICONTROL 型別]** 清單。
+1. 此欄位是用於應用程式互動的容器物件，因此請提供駝峰式大小寫 **[!UICONTROL 欄位名稱]** `appInteraction`， **[!UICONTROL 顯示名稱]** `App Interaction`，並選取 `Object` 從 **[!UICONTROL 型別]** 清單。
 
 1. 選取&#x200B;**[!UICONTROL 「套用」]**。
 
@@ -180,7 +179,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 1. 捲動至右側邊欄底部，然後選取「 」 **[!UICONTROL 套用]**.
 
-1. 若要建立 `appStateDetails` 包含 **[!UICONTROL 測量]** 已呼叫的欄位 `screenView` 和兩個 **[!UICONTROL 字串]** 已呼叫的欄位 `screenName` 和 `screenType` 遵循建立 **[!UICONTROL appInteraction]** 物件。
+1. 若要建立 `appStateDetails` 包含 **[!UICONTROL 測量]** 已呼叫的欄位 `screenView` 和兩個 **[!UICONTROL 字串]** 已呼叫的欄位 `screenName` 和 `screenType`，請依照建立 **[!UICONTROL appInteraction]** 物件。
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
@@ -196,7 +195,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
    ![新增欄位群組](assets/schema-fieldgroup-add.png)
 
-1. 透過選擇 **[!UICONTROL 建立新欄位群組]** 頂端附近的選項按鈕。
+1. 選取&#x200B;**[!UICONTROL 建立新欄位群組]**。
 
 1. 提供 **[!UICONTROL 顯示名稱]** 和 **[!UICONTROL 說明]**&#x200B;例如， `App Interactions` 和 `Fields for app interactions`.
 
@@ -210,7 +209,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 1. 在右邊欄中，提供 **[!UICONTROL 欄位名稱]** 之 `appInformation`， a **[!UICONTROL 顯示名稱]** 之 `App Information`，和 **[!UICONTROL 型別]** 之 `App Information`.
 
-1. 選取 **[!UICONTROL 應用程式互動]** 從 **[!UICONTROL 型別]** 下拉式清單，也就是您在上一個練習中建立的資料型別。
+1. 選取 **[!UICONTROL 應用程式互動]** 從 **[!UICONTROL 型別]** 下拉式清單，也就是您在上一個練習中建立的自訂資料型別。
 
 1. 選取&#x200B;**[!UICONTROL 「套用」]**。
 
@@ -220,7 +219,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 >[!NOTE]
 >
->自訂欄位群組一律放置在您的Experience Cloud組織識別碼下。 所以 `_techmarketingdemos` 將以您組織的唯一值取代。
+>自訂欄位群組一律放置在您的Experience Cloud組織識別碼下。 所以 `_techmarketingdemos`用於熒幕擷取畫面的，會取代為您組織的唯一值。
 
 
 >[!SUCCESS]

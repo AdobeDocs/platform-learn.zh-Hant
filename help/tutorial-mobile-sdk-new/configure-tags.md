@@ -3,7 +3,7 @@ title: 設定標籤屬性
 description: 瞭解如何在中設定標籤屬性 [!UICONTROL 資料彙集] 介面。
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 8%
@@ -129,7 +129,7 @@ Adobe Experience Platform 標記是新一代 Adobe 標記管理功能。標籤�
 
    ![環境首頁](assets/tags-environments.png)
 
-1. 在 [!UICONTROL 行動安裝指示] 對話方塊中，選取 **[!UICONTROL iOS]** 標籤。
+1. 在 **[!UICONTROL 行動安裝指示]** 對話方塊中，選取 **[!UICONTROL iOS]** 標籤。
 
 1. 您可以複製 ![複製](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 使用CocoaPods設定專案的指示。 CocoaPods可用來管理SDK版本和下載。 若要進一步瞭解，請檢閱 [檔案](https://cocoapods.org/).
 

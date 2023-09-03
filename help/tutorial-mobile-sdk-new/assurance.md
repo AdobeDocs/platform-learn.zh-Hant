@@ -3,9 +3,9 @@ title: 設定保證
 description: 瞭解如何在行動應用程式中實作Assurance擴充功能。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '765'
 ht-degree: 9%
 
 ---
@@ -37,7 +37,7 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 完成下列步驟，確認貴組織可以存取「保證」：
 
 1. 造訪 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. 使用您用於Experience Cloud的Adobe ID憑證登入。
+1. 使用您的Adobe ID憑證登入以進行Experience Cloud。
 1. 如果您看到 **[!UICONTROL 工作階段]** 熒幕，則表示您擁有存取權。 如果您看見（測試版）存取頁面，請選取 **[!UICONTROL 註冊]** 以註冊。
 
 ## 實作
@@ -56,6 +56,8 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
    }
    ```
 
+   此程式碼會在應用程式於背景時啟動保證工作階段，並使用深層連結開啟。
+
 可以找到更多資訊 [此處](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## 簽署
@@ -63,21 +65,21 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 在Xcode中首次執行應用程式之前，請務必更新簽署。
 
 1. 在Xcode中開啟專案。
-1. 選取 **[!UICONTROL Luma]** 在「導覽器」中。
+1. 選取 **[!UICONTROL Luma]** 在「專案」導覽器中。
 1. 選取 **[!UICONTROL Luma]** 目標。
 1. 選取 **簽署與功能** 標籤。
-1. 設定 **[!UICONTROL 自動管理簽署]**， **[!UICONTROL 團隊]**、和 **[!UICONTROL 組合識別碼]**.
+1. 設定 **[!UICONTROL 自動管理簽署]**， **[!UICONTROL 團隊]**、和 **[!UICONTROL 組合識別碼]**，或使用您特定的Apple開發佈建詳細資訊。
 
    ![Xcode簽署功能](assets/xcode-signing-capabilities.png)
 
 ## 設定基礎URL
 
 1. 前往Xcode中的專案。
-1. 選取 **[!UICONTROL Luma]** 在「導覽器」中。
+1. 選取 **[!UICONTROL Luma]** 在「專案」導覽器中。
 1. 選取 **[!UICONTROL Luma]** 目標。
 1. 選取 **資訊** 標籤。
 1. 若要新增基本URL，請向下捲動至 **URL型別** 並選取 **+** 按鈕。
-1. 設定 **識別碼** 至您在中設定的組合識別碼 [簽署](#signing) (例如 `com.adobe.luma.tutorial.swiftui`)和 **URL配置** 至 `lumatutorialswiftui`.
+1. 設定 **識別碼** 至您在中設定的組合識別碼 [簽署](#signing) (例如 `com.adobe.luma.tutorial.swiftui`)並設定 **URL配置**，例如 `lumatutorialswiftui`.
 
    ![保證url](assets/assurance-url-type.png)
 
@@ -106,7 +108,7 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
    如果您使用模擬器：
 
    1. 選取 **[!UICONTROL 複製連結]**.
-   1. 使用複製功能複製深層連結 ![複製](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 按鈕並使用深層連結，在模擬器中以Safari開啟應用程式。
+   1. 複製深層連結，使用 ![複製](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)  並使用深層連結，在模擬器中以Safari開啟應用程式。
       ![保證副本連結](assets/assurance-copy-link.png)
 
 1. 應用程式載入時，畫面會顯示強制回應對話方塊，要求您輸入步驟7顯示的PIN。
@@ -119,15 +121,15 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
 1. 如果連線成功，您會看到：
    * 「保證」圖示會浮動在應用程式上方。
 
-   <img src="assets/assurance-modal.png" width="300">
+     <img src="assets/assurance-modal.png" width="300">
 
-   * Experience Cloud更新會在保證網頁式UI中傳入，顯示：
+   * Experience Cloud更新從Assurance UI傳入，顯示：
 
       1. 來自應用程式的體驗事件。
       1. 所選事件的詳細資料。
       1. 裝置和時間表。
 
-     ![保證事件](assets/assurance-events.png)
+         ![保證事件](assets/assurance-events.png)
 
 如果您遇到任何挑戰，請檢閱 [技術](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 

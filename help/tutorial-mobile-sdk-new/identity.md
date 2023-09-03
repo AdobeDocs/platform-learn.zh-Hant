@@ -3,9 +3,9 @@ title: 身分
 description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '666'
 ht-degree: 6%
 
 ---
@@ -54,16 +54,14 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中，找到 `func updateIdentities(emailAddress: String, crmId: String)` 函式實作。 將下列程式碼新增至函式。
 
    ```swift
-   // Set up identity map
+   // Set up identity map, add identities to map and update identities
    let identityMap: IdentityMap = IdentityMap()
    
-   // Add identity items to identity map
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
    let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
-   // Update identities
    Identity.updateIdentities(with: identityMap)
    ```
 
@@ -98,7 +96,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 1. 瀏覽至 **[!UICONTROL Luma]** **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 登入工作表]** 在Xcode專案導覽器中，尋找在選取 **[!UICONTROL 登入]** 按鈕。 新增下列程式碼：
 
    ```swift
-   // call updaeIdentities
+   // Update identities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -110,14 +108,14 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 ## 移除身分
 
-您可以使用 `removeIdentity` 從儲存的使用者端IdentityMap移除身分識別。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端使用者設定檔圖形或身分圖形中移除識別碼。
+您可以使用 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 用於從儲存的使用者端身分對應中移除身分的API。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端使用者設定檔圖形或身分圖形中移除識別碼。
 
 1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 一般]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，新增下列程式碼至 `func removeIdentities(emailAddress: String, crmId: String)` 函式：
 
    ```swift
+   // Remove identities and reset email and CRM Id to their defaults
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
-   // reset email and CRM Id to their defaults
    currentEmailId = "testUser@gmail.com"
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
@@ -125,9 +123,8 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 登入工作表]** 在Xcode專案導覽器中，尋找在選取 **[!UICONTROL 登出]** 按鈕。 新增下列程式碼：
 
    ```swift
-   // call removeIdentities
-   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
-   dismiss()                   
+   // Remove identities
+   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                  
    ```
 
 
@@ -137,11 +134,14 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 1. 在Luma應用程式中
    1. 選取 **[!UICONTROL 首頁]** 標籤。
    1. 選取 <img src="assets/login.png" width="15" /> 圖示加以選取。
+
+      <img src="./assets/identity1.png" width="300">
+
    1. 提供電子郵件地址和CRM ID，或
    1. 選擇 <img src="assets/insert.png" width="15" /> 隨機產生 **[!UICONTROL 電子郵件]** 和 **[!UICONTROL CRM ID]**.
    1. 選取 **[!UICONTROL 登入]**.
 
-      <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
+      <img src="./assets/identity2.png" width="300">
 
 
 1. 檢視Assurance Web UI，以瞭解 **[!UICONTROL 邊緣身分更新身分]** 來自的事件 **[!UICONTROL com.adobe.griffon.mobile]** 廠商。

@@ -2,9 +2,9 @@
 title: 安裝Adobe Experience Platform Mobile SDK
 description: 瞭解如何在行動應用程式中實施Adobe Experience Platform Mobile SDK。
 hide: true
-source-git-commit: 6cc58d3d40112b14b1c1b8664c5e7aeb0880b59c
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '943'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 ## 先決條件
 
-* 使用中所述的擴充功能成功建置標籤程式庫 [上一課程](configure-tags.md).
+* 已成功使用「 」中所述的擴充功能建置標籤程式庫。 [上一課程](configure-tags.md).
 * 來自的開發環境檔案ID [行動安裝指示](configure-tags.md#generate-sdk-install-instructions).
-* 已下載，空白 [範例應用程式](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* 下載空白 [範例應用程式](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}.
 * 使用體驗 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## 學習目標
@@ -44,10 +44,10 @@ ht-degree: 1%
 | [AEP Edge Identity](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | AEP Edge Identity行動擴充功能可讓您在使用Adobe Experience Platform SDK和Edge Network擴充功能時，處理來自行動應用程式的使用者身分資料。 |
 | [AEP Edge同意](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | AEP同意收集行動擴充功能可在使用Adobe Experience Platform SDK和Edge Network擴充功能時，從行動應用程式收集同意偏好設定。 |
 | [AEP使用者設定檔](https://github.com/adobe/aepsdk-userprofile-ios.git) | Adobe Experience Platform使用者設定檔行動擴充功能是管理Adobe Experience Platform SDK之使用者設定檔的擴充功能。 |
-| [AEP地點](https://github.com/adobe/aepsdk-places-ios) | Adobe Experience Platform Places擴充功能是Adobe Experience Platform Swift SDK的擴充功能。 AEPPlaces擴充功能可讓您追蹤Adobe Places使用者介面和Adobe Launch規則中定義的地理位置事件。 |
-| [AEP傳訊](https://github.com/adobe/aepsdk-messaging-ios.git) | AEP Messaging擴充功能是Adobe Experience Platform Swift SDK的擴充功能。 AEP傳訊擴充功能可讓您將推播通知權杖和推播通知點進意見傳送至Adobe Experience Platform。 |
+| [AEP地點](https://github.com/adobe/aepsdk-places-ios) | AEPPlaces擴充功能可讓您追蹤「Adobe地點」使用者介面和「Adobe資料收集標籤」規則中定義的地理位置事件。 |
+| [AEP傳訊](https://github.com/adobe/aepsdk-messaging-ios.git) | AEP傳訊擴充功能可讓您將推播通知權杖和推播通知點進意見傳送至Adobe Experience Platform。 |
 | [AEP最佳化](https://github.com/adobe/aepsdk-optimize-ios) | AEP Optimize擴充功能提供API，使用Adobe Target或Adobe Journey OptimizerOffer decisioning在Adobe Experience Platform Mobile SDK中啟用即時個人化工作流程。 它需要 `AEPCore` 和 `AEPEdge` 將個人化查詢事件傳送至Experience Edge網路的擴充功能。 |
-| [AEP保證](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance （又稱為project Griffon）是全新創新產品，可協助您檢查、證明、模擬及驗證如何在行動應用程式中收集資料或提供體驗。 |
+| [AEP保證](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance （又稱為project Griffon）是全新創新產品，可協助您檢查、證明、模擬及驗證如何在行動應用程式中收集資料或提供體驗。 此擴充功能可讓您的應用程式提供保證。 |
 
 
 安裝所有套件後，您的Xcode **[!UICONTROL 套件相依性]** 畫面應如下所示：
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ## 匯入擴充功能
 
-在Xcode中，瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 並新增下列匯入。
+在Xcode中，瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 並確保下列匯入專案為此來源檔案的一部分。
 
 ```swift
 // import AEP MobileSDK libraries
@@ -91,6 +91,7 @@ import AEPAssurance
 1. 將下列程式碼新增至 `application(_, didFinishLaunchingWithOptions)` 函式。
 
    ```swift
+   // Define extensions
    let extensions = [
        AEPIdentity.Identity.self,
        Lifecycle.self,
@@ -105,6 +106,7 @@ import AEPAssurance
        Assurance.self
    ]
    
+   // Register extensions
    MobileCore.registerExtensions(extensions, {
        // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
        Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
@@ -120,10 +122,6 @@ import AEPAssurance
    
        // assume unknown, adapt to your needs.
        MobileCore.setPrivacyStatus(.unknown)
-   
-       // update version and build
-       Logger.configuration.info("Luma - Updating version and build number...")
-       SettingsBundleHelper.setVersionAndBuildNumber()
    })
    ```
 
@@ -132,6 +130,8 @@ import AEPAssurance
 1. 註冊必要的副檔名。
 1. 設定MobileCore和其他擴充功能以使用標籤屬性設定。
 1. 啟用偵錯記錄。 如需詳細資訊和選項，請參閱 [Adobe Experience Platform Mobile SDK檔案](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. 開始生命週期監視。 另請參閱 [生命週期](lifecycle-data.md) 如需詳細資訊，請參閱教學課程中的步驟。
+1. 將預設同意設定為未知。 另請參閱 [同意](consent.md) 如需詳細資訊，請參閱教學課程中的步驟。
 
 >[!IMPORTANT]
 >

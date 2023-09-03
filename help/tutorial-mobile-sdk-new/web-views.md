@@ -3,9 +3,9 @@ title: 處理網頁檢視
 description: 瞭解如何在行動應用程式中使用WebViews處理資料收集。
 jira: KT-6987
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '456'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ## 可能的追蹤問題
 
-如果您從應用程式的原生部分和WebView傳送資料，每個部分都會產生自己的Experience CloudID (ECID)，導致中斷連線的點選和膨脹的造訪/訪客資料。 有關ECID的更多資訊可在以下連結中找到： [ECID概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+如果您從應用程式的原生部分和應用程式內的WebView傳送資料，每個部分都會產生自己的Experience CloudID (ECID)，導致中斷連線的點選和膨脹的造訪/訪客資料。 有關ECID的更多資訊可在以下連結中找到： [ECID概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
 
 若要解決該不良情況，您必須將使用者的ECID從應用程式的原生部分傳遞至您可能會想要在應用程式中使用的WebView。
 
@@ -39,7 +39,7 @@ WebView中的Experience CloudID服務JavaScript擴充功能會從URL提取ECID�
 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 資訊]** > **[!UICONTROL 服務條款工作表]**，然後找到 `func loadUrl()` 中的函式 `final class SwiftUIWebViewModel: ObservableObject` 類別。 新增下列呼叫以處理Web檢視：
 
 ```swift
-// Adobe Experience Platform - Handle Web View
+// Handle web view
 AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
     if let error = error {
         print("Error with Webview", error)
@@ -59,7 +59,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 }
 ```
 
-此 `AEPEdgeIdentity.Identity.getUrlVariables` API會設定URL的變數，以包含所有相關資訊，例如ECID等。 在此範例中，您使用的是本機檔案，但相同的概念適用於遠端頁面。
+此 [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API會設定URL的變數，以包含所有相關資訊，例如ECID等。 在此範例中，您使用的是本機檔案，但相同的概念適用於遠端頁面。
 
 您可以進一步瞭解 `Identity.getUrlVariables` 中的API [Edge Network身分擴充功能API參考指南](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 

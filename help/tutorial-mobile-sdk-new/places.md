@@ -2,9 +2,9 @@
 title: 地點
 description: 瞭解如何在行動應用程式中使用Places地理位置服務。
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1754'
 ht-degree: 3%
 
 ---
@@ -88,8 +88,8 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 1. 瀏覽至 **[!UICONTROL 標籤]** 並尋找您的行動標籤屬性並開啟屬性。
 1. 選取 **[!UICONTROL 擴充功能]**.
 1. 選取 **[!UICONTROL 目錄]**.
-1. 搜尋 **[!UICONTROL Adobe Journey Optimizer - Decisioning]** 副檔名。
-1. 安裝擴充功能。 此擴充功能不需要額外設定。
+1. 搜尋 **[!UICONTROL 地點]** 副檔名。
+1. 安裝擴充功能。
 
    ![新增決策擴充功能](assets/tag-places-extension.png)
 
@@ -116,7 +116,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 
 ### 更新您的標籤
 
-Places擴充功能提供監視地理位置事件的功能，可讓您根據這些事件觸發動作。 您可以使用此功能，將您必須在應用程式中實施的API編碼減至最少。
+Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根據這些事件觸發動作。 您可以使用此功能，將您必須在應用程式中實施的API編碼減至最少。
 
 **資料元素**
 
@@ -128,7 +128,7 @@ Places擴充功能提供監視地理位置事件的功能，可讓您根據這�
 1. 在 **[!UICONTROL 建立資料元素]** 畫面，輸入名稱，例如 `Name - Entered`.
 1. 選取 **[!UICONTROL 地點]** 從 **[!UICONTROL 副檔名]** 清單。
 1. 選取 **[!UICONTROL 名稱]** 從 **[!UICONTROL 資料元素型別]** 清單。
-1. 選取**[!UICONTROL 目前POI]**underath **[!UICONTROL TARGET]**.
+1. 選取 **[!UICONTROL 目前POI]** 底下 **[!UICONTROL TARGET]**.
 1. 選取 **[!UICONTROL 儲存至程式庫]**.
    ![資料元素](assets/tags-create-data-element.png)
 
@@ -148,9 +148,9 @@ Places擴充功能提供監視地理位置事件的功能，可讓您根據這�
 
 **規則**
 
-您即將定義規則以搭配這些資料元素使用。
+接下來，您將定義處理這些資料元素的規則。
 
-1. 選取 **[!UICONTROL 規則]** 從左側邊欄。
+1. 在您的標籤屬性中。 選取 **[!UICONTROL 規則]** 從左側邊欄。
 1. 選取 **[!UICONTROL 新增規則]**.
 1. 在 **[!UICONTROL 建立規則]** 畫面，輸入規則的名稱，例如 `POI - Entry`.
 1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 底下 **[!UICONTROL 活動]**.
@@ -183,7 +183,7 @@ Places擴充功能提供監視地理位置事件的功能，可讓您根據這�
       }
       ```
 
-      此 `{%% ... %%}` 也可以透過選取 ![資料](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) ，並從對話方塊中選取資料元素。
+      您也可以插入 `{%% ... %%}` JSON中的資料元素預留位置值，方法是選取 ![資料](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). 快顯對話方塊可讓您挑選您建立的任何資料元素。
 
    1. 選取&#x200B;**[!UICONTROL 「保留變更」]**。
       ![標籤動作](assets/tags-action-mobile-core.png)
@@ -249,7 +249,7 @@ Places擴充功能提供監視地理位置事件的功能，可讓您根據這�
 若要驗證Assurance中的設定：
 
 1. 前往Assurance UI。
-1. 如果左側邊欄中尚未提供，則為。 選取 **[!UICONTROL 設定]** 在左側邊欄中並選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁邊 **[!UICONTROL 活動]** 和 **[!UICONTROL 地圖和模擬]** 底下 **[!UICONTROL PLACES SERVICE]**.
+1. 如果左側邊欄中尚未提供，請選取 **[!UICONTROL 設定]** 在左側邊欄中並選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁邊 **[!UICONTROL 活動]** 和 **[!UICONTROL 地圖和模擬]** 底下 **[!UICONTROL PLACES SERVICE]**.
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選取 **[!UICONTROL 地圖和模擬]** 在左側邊欄中。
 1. 選取Places服務中定義的其中一個POI，並從快顯視窗中選取 ![齒輪](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 模擬進入事件]**.
@@ -291,12 +291,21 @@ Places擴充功能提供監視地理位置事件的功能，可讓您根據這�
    ]
    ```
 
-1. 導覽至Xcode專案導覽器中的Luma > Luma > Utils > MobileSDK，並尋找函式processRegionEvent(regionEvent： PlacesRegionEvent， forRegion： CLRegion)非同步函式。 此函式是 [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API。
-1. 導覽至Xcode專案導覽器中的Luma > Luma >檢視>位置>地理圍欄工作表。
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，並找到 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.新增下列程式碼：
+
+   ```swift
+   // Process geolocation event
+   Places.processRegionEvent(regionEvent, forRegion: region)
+   ```
+
+   這個 [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API會將地理位置資訊通訊至Places服務。
+
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 位置]** > **[!UICONTROL 地理柵欄工作表]** 在Xcode的專案導覽器中。
 
    1. 針對「輸入」按鈕，輸入下列代碼
 
    ```swift
+   // Simulate geofence entry event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
    }
@@ -305,12 +314,13 @@ Places擴充功能提供監視地理位置事件的功能，可讓您根據這�
    1. 針對「結束」按鈕，輸入下列程式碼
 
    ```swift
+   // Simulate geofence exit event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
    }
    ```
 
-說明有關iOS中位置管理員實作的詳細資訊，已超出本教學課程的主題。
+說明有關iOS中位置管理員實作的詳細資訊，不在本教學課程的主題。
 
 
 ## 使用您的應用程式進行驗證
@@ -321,13 +331,13 @@ Places擴充功能提供監視地理位置事件的功能，可讓您根據這�
 
 1. 四處移動地圖，確保中間的藍色圓圈位於您的某個POI上方，例如倫敦。
 
-1. 點選藍色 <img src="assets/geobutton.png" width="20" /> 重複執行，直到在右下角看到類別和名稱為止。
+1. 點選 <img src="assets/geobutton.png" width="20" /> 重複執行，直到在右下角看到類別和名稱為止。
 
-1. 點選POI的標籤，這會開啟「附近POI」工作表。
+1. 點選POI的標籤，這會開啟 **[!UICONTROL 附近的POI]** 工作表。
 
    <img src="assets/appgeolocation.png" width="300" />
 
-1. 按下「登入」或「退出」按鈕，以模擬應用程式中的地理位置事件。
+1. 按下 **[!UICONTROL 登入點]** 或 **[!UICONTROL 退出]** 按鈕來模擬應用程式中的地理柵欄登入和地理柵欄退出事件。
 
    <img src="assets/appentryexit.png" width="300" />
 
@@ -337,9 +347,11 @@ Places擴充功能提供監視地理位置事件的功能，可讓您根據這�
 
 ## 後續步驟
 
-您現在應該有所有的工具，以便開始將更多功能新增至應用程式中的地理位置功能。 當您已將事件轉送至Edge Network，並透過資料流轉送至Experience Platform時，您應該會看到應用程式中使用的設定檔中出現的體驗事件。 這些體驗事件可用來在Journey Optimizer中觸發歷程(請參閱 [推播通知](journey-optimizer-inapp.md) 和 [應用程式內傳訊](journey-optimizer-push.md) 使用Journey Optimizer)。 例如，當某人進入實體商店的地理圍欄時，通常向您的應用程式使用者傳送推播通知的範例。
+您現在應該有所有的工具，以便開始將更多功能新增至應用程式中的地理位置功能。 當您為設定應用程式後，將事件轉送至「邊緣網路」 [Experience Platform](platform.md)，您應該會看到針對應用程式中所用設定檔顯示的體驗事件。
 
-您見過應用程式的功能實作，大多是由Places服務以及您在Tag屬性中定義的資料元素和規則所驅動。 或者，您可以使用直接在應用程式中實作相同的功能 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (請參閱 [活動](events.md) 詳細資訊)，其XDM裝載包含填入的placeContext物件。
+在本教學課程的Journey Optimizer一節中，您會看到體驗事件可用來觸發歷程(請參閱 [推播通知](journey-optimizer-inapp.md) 和 [應用程式內傳訊](journey-optimizer-push.md) 使用Journey Optimizer)。 例如，當應用程式使用者進入實體商店的地理柵欄時，傳送推播通知給該使用者並進行某些產品促銷的常見範例。
+
+您見過應用程式的功能實作，大多是由Places服務以及您在標籤屬性中定義的資料元素和規則所驅動。 因此，請儘可能減少應用程式中的程式碼。 或者，您可以使用直接在應用程式中實作相同的功能 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (請參閱 [活動](events.md) 瞭解更多資訊)，其XDM裝載包含已填入的 `placeContext` 物件。
 
 >[!SUCCESS]
 >
