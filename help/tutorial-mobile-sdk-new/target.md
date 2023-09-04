@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1433'
 ht-degree: 2%
 
 ---
@@ -218,7 +218,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
    * 根據決定範圍（即您在A/B測試中定義的位置）擷取目前設定檔的主張，並
    * 會取消包裝應用程式中可正確顯示的結果，即內容。
 
-1. 仍在中 **[!UICONTROL TargetOffersView]**，找到`unc updatePropositions(location: String) async` 函式並新增下列程式碼：
+1. 仍在中 **[!UICONTROL TargetOffersView]**，找到 `func updatePropositions(location: String) async` 函式並新增下列程式碼：
 
    ```swift
        Task {

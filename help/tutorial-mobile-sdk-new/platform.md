@@ -4,10 +4,10 @@ description: 瞭解如何將資料傳送至Adobe Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '963'
-ht-degree: 4%
+source-wordcount: '965'
+ht-degree: 5%
 
 ---
 
@@ -133,6 +133,9 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
    此視覺效果會顯示設定檔中連結在一起的所有身分及其來源。 以下是身分圖表範例，由完成此Mobile SDK教學課程（資料來源2）和 [Web SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant) （資料來源1）：
 
    ![抓取身分值](assets/platform-profile-identitygraph.png)
+
+
+## 後續步驟
 
 行銷人員和Analytics處理在Experience Platform中擷取的資料的能力更強，包括在Customer Journey Analytics中分析資料以及在Real-time Customer Data Platform中建立區段。 您有一個良好的開端！
 
