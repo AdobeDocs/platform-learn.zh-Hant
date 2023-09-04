@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '2342'
+source-wordcount: '2368'
 ht-degree: 2%
 
 ---
 
 # Journey Optimizer優惠方案
 
-瞭解如何透過Platform Mobile SDK在行動應用程式中顯示Journey Optimizer決定管理所提供的優惠方案。
+瞭解如何透過Experience Platform Mobile SDK在行動應用程式中顯示Journey Optimizer決定管理提供的優惠方案。
 
 Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的客戶提供最佳優惠和體驗。 設計完成後，透過個人化優惠目標定位對象。
 
@@ -23,7 +23,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 >[!NOTE]
 >
->本課程為選修課程，僅適用於希望使用決定管理功能在行動應用程式中顯示優惠的Journey Optimizer使用者。
+>本課程為選修課程，僅適用於希望使用決策管理功能在行動應用程式中顯示優惠方案的Journey Optimizer使用者。
 
 
 ## 先決條件
@@ -92,7 +92,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 1. 前往Assurance UI。
 1. 選取 **[!UICONTROL 設定]** 在左側邊欄中並選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁邊 **[!UICONTROL 驗證設定]** 底下 **[!UICONTROL Adobe Journey Optimizer決策]**.
 1. 選取「**[!UICONTROL 儲存]**」。
-1. 選取 **[!UICONTROL 驗證設定]** 在左側邊欄中。 資料串流設定都會經過驗證，並且會在您的應用程式中設定SDK。
+1. 選取 **[!UICONTROL 驗證設定]** 在左側邊欄中。 應用程式中的資料流設定和SDK設定均已驗證。
    ![AJO決策驗證](assets/ajo-decisioning-validation.png)
 
 
@@ -144,7 +144,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
       使用下表來定義其他四個選件。
 
-      | 優惠方案名稱 | 選件內容 |
+      | 優惠方案名稱 | JSON中的選件內容 |
       |---|---|
       | Luma - Affirm Water Bottle | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
       | Luma - Desiree健身T恤 | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
@@ -192,10 +192,11 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 1. 在Journey Optimizer UI中，選取 **[!UICONTROL 選件]** 從左側邊欄。
 1. 選取 **[!UICONTROL 集合]** 從頂端列。
 1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 建立集合]**.
-1. 在 **[!UICONTROL 新集合]** 強制回應視窗，輸入 **[!UICONTROL 名稱]** 例如，您的集合 `Luma - Mobile App Collection`，選取 **[!UICONTROL 建立靜態集合]**，然後按一下 **[!UICONTROL 下一個]**.
-1. 在 **[!UICONTROL Luma — 行動應用程式集合]**，選取您要納入集合中的優惠方案。 在本教學課程中，請挑選您建立的五個選件。
-   ![優惠 — 集合](assets/ajo-collection-offersselected.png)
+1. 在 **[!UICONTROL 新集合]** 對話方塊，輸入 **[!UICONTROL 名稱]** 例如，您的集合 `Luma - Mobile App Collection`，選取 **[!UICONTROL 建立靜態集合]**，然後按一下 **[!UICONTROL 下一個]**.
+1. 在 **[!UICONTROL Luma — 行動應用程式集合]**，選取您要納入集合中的優惠方案。 在本教學課程中，請挑選您建立的五個選件。 您可以使用搜尋欄位輕鬆篩選清單，例如透過輸入 **[!UICONTROL Luma]**.
 1. 選取「**[!UICONTROL 儲存]**」。
+
+   ![優惠 — 集合](assets/ajo-collection-offersselected.png)
 
 
 ## 建立決定
@@ -207,10 +208,10 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 評估准則為
 
 * 優惠收藏，
-* 適用性規則：例如優惠方案僅適用於特定對象，
+* 適用性規則：例如，優惠方案僅適用於特定對象，
 * 排名方法：如果有多個優惠方案可供挑選，您要使用哪個方法來為其排名（例如依優惠方案優先順序、使用公式或AI模型）。
 
-另請參閱 [建立和管理優惠的重要步驟](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 如果您想更深入瞭解位置、規則、排名、優惠、代表、集合、決定等如何相互互動及建立關聯。 本教學課程僅著重於使用決定的輸出，而非定義決定的彈性。
+另請參閱 [建立和管理優惠的重要步驟](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 如果您想更深入瞭解位置、規則、排名、優惠、代表、集合、決定等如何相互互動及建立關聯。 本教學課程僅著重於使用決定的輸出，而非在Journey Optimizer中定義決定的彈性 — 決定管理。
 
 1. 在Journey Optimizer UI中，選取 **[!UICONTROL 選件]** 從左側邊欄。
 1. 選取 **[!UICONTROL 決定]** 從頂端列。
@@ -286,24 +287,38 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
    ]
    ```
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。 尋找 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 函式。 Inspect程式碼
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。 尋找 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 函式。 新增下列程式碼：
+
+   ```swift
+   // set up the XDM dictionary, define decision scope and call update proposition API
+   Task {  
+      let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+      let identityMap = ["identityMap" : ecid]
+      let xdmData = ["xdm" : identityMap]
+      let decisionScope = DecisionScope(activityId: activityId, placementId: placementId, itemCount: UInt(itemCount))
+      Optimize.clearCachedPropositions()
+      Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   此函式：
 
    * 設定XDM字典 `xdmData`，包含ECID以識別您必須提供選件的設定檔。
-   * 定義 `decisionScope`，此物件是根據您在Journey Optimizer — 決定管理UI中定義的決定而定義，並使用以下複製的決定範圍來定義： [建立決定](#create-a-decision).
-   * 會呼叫兩個API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   這些函式會清除任何快取的主張，並更新此設定檔的主張。 Luma應用程式使用設定檔案(`decisions.json`)預設集，會根據下列JSON格式擷取範圍引數：
+   * 定義 `decisionScope`，此物件是根據您在Journey Optimizer — 決定管理UI中定義的決定而定義，並使用以下複製的決定範圍來定義： [建立決定](#create-a-decision).  Luma應用程式使用設定檔案(`decisions.json`)預設集，會根據下列JSON格式擷取範圍引數：
 
      ```swift
      "scopes": [
          {
-             "name": "luma - Mobile App Decision",
-             "activityId": "xcore:offer-activity:177cdaa5e1fd589d",
-             "placementId": "xcore:offer-placement:13a3b264ce69bb14",
+             "name": "name of the scope",
+             "activityId": "xcore:offer-activity:xxxxxxxxxxxxxxx",
+             "placementId": "xcore:offer-placement:xxxxxxxxxxxxxxx",
              "itemCount": 2
          }
      ]
      ```
 
      不過，您可以使用任何型別的實作，以確保「最佳化API」確實取得正確的引數(`activityId`， `placementId` 和 `itemCount`)，以建構有效的 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 物件。
+   * 會呼叫兩個API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  這些函式會清除任何快取的主張，並更新此設定檔的主張。
 
 1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 個人化]** > **[!UICONTROL EdgeOffersView]** 在「Xcode專案」導覽器中。 尋找 `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` 函式並檢查此函式的程式碼。 此函式最重要的部分為  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API呼叫，此
 
@@ -313,22 +328,24 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 1. 仍在中 **[!UICONTROL EdgeOffersView]**，找到 `func updatePropositions(activityId: String, placementId: String, itemCount: Int) async` 函式並新增下列程式碼：
 
    ```swift
-       Task {
-           await self.updatePropositionOD(
-               ecid: currentEcid,
-               activityId: activityId,
-               placementId: placementId,
-               itemCount: itemCount
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionOD(
-               activityId: activityId,
-               placementId: placementId,
-               itemCount: itemCount
-           )
-       }
+   // Update and then get propositions
+   Logger.viewCycle.info("EdgeOffersView - updatePropopsitions - Activity Id: \(activityId)")
+   Task {
+      await self.updatePropositionOD(
+          ecid: currentEcid,
+          activityId: activityId,
+          placementId: placementId,
+          itemCount: itemCount
+     )
+   }
+   try? await Task.sleep(seconds: 2.0)
+   Task {
+      await self.getPropositionOD(
+          activityId: activityId,
+          placementId: placementId,
+          itemCount: itemCount
+      )
+   }
    ```
 
    此程式碼會確保您更新主張，然後使用步驟5和步驟6中所述的函式擷取結果。

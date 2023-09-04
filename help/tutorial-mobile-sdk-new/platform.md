@@ -4,10 +4,10 @@ description: 瞭解如何將資料傳送至Adobe Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 5%
+source-wordcount: '963'
+ht-degree: 4%
 
 ---
 
@@ -51,21 +51,20 @@ ht-degree: 5%
 1. 選取&#x200B;**[!UICONTROL 「從結構建立資料集」]**。
    ![資料集首頁](assets/dataset-create.png)
 
-1. 搜尋您的結構描述
-
-1. 選取您的結構描述。
+1. 搜尋您的結構描述。 例如使用 `Luma Mobile` 在搜尋欄位中。
+1. 選取您的結構描述，例如 **[!UICONTROL Luma行動應用程式事件結構描述]**.
 
 1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
    ![資料集設定](assets/dataset-configure.png)
 
-1. 提供 **[!UICONTROL 名稱]** 和 **[!UICONTROL 說明]**.
+1. 提供 **[!UICONTROL 名稱]**，例如 `Luma Mobile App Events Dataset` 和 **[!UICONTROL 說明]**.
 
 1. 選取「**[!UICONTROL 完成]**」。
    ![資料集完成時間](assets/dataset-finish.png)
 
 ## 更新資料流
 
-建立資料集後，請務必 [更新您的資料流](create-datastream.md) 以新增Adobe Experience Platform。 此更新可確保資料流入Platform。
+建立資料集後，請務必 [更新您的資料流](create-datastream.md#adobe-experience-platform) 以新增Adobe Experience Platform。 此更新可確保資料流入Platform。
 
 ## 驗證資料集中的資料
 
@@ -88,23 +87,23 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 
 ### 啟用結構
 
-1. 開啟您的結構描述
-1. 啟用 **[!UICONTROL 個人資料]**
-1. 選取 **[!UICONTROL 此結構描述的資料將在identityMap欄位中包含主要身分。]** 在強制回應對話方塊中
-1. **[!UICONTROL 儲存]** 結構描述
+1. 例如，開啟您的結構描述 **[!UICONTROL Luma行動應用程式事件結構描述]**.
+1. 啟用 **[!UICONTROL 個人資料]**.
+1. 選取 **[!UICONTROL 此結構描述的資料將在identityMap欄位中包含主要身分。]** 在對話方塊中。
+1. **[!UICONTROL 儲存]** 結構描述。
 
    ![為設定檔啟用結構描述](assets/platform-profile-schema.png)
 
 ### 啟用資料集
 
-1. 開啟您的資料集
-1. 啟用 **[!UICONTROL 個人資料]**
+1. 例如，開啟您的資料集 **[!UICONTROL Luma行動應用程式事件資料集]**.
+1. 啟用 **[!UICONTROL 個人資料]**.
 
    ![為設定檔啟用資料集](assets/platform-profile-dataset.png)
 
 ### 驗證設定檔中的資料
 
-開啟應用程式，並導覽至您正在追蹤事件的畫面。 登入Luma應用程式並進行購買。
+開啟應用程式，並導覽至您正在追蹤事件的畫面，例如：登入Luma應用程式並進行購買。
 
 使用保證來尋找在identityMap中傳遞的其中一個身分（電子郵件、lumaCrmId或ECID），例如CRM ID。
 
@@ -112,9 +111,9 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 
 在平台介面中，
 
-1. 瀏覽至 **[!UICONTROL 設定檔]** > **[!UICONTROL 瀏覽]**，
+1. 瀏覽至 **[!UICONTROL 設定檔]**，並選取 **[!UICONTROL 瀏覽]** 從頂端列。
 1. 指定您剛剛擷取的身分詳細資訊，例如 `Luma CRM ID` 的 **[!UICONTROL 身分名稱空間]** 以及您複製的值 **[!UICONTROL 身分值]**. 然後選取 **[!UICONTROL 檢視]**.
-1. 若要檢視詳細資料，請選取設定檔。
+1. 若要檢視詳細資訊，請選取設定檔。
 
 ![查詢身分值](assets/platform-profile-lookup.png)
 
@@ -128,7 +127,7 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 
 從設定檔詳細資訊畫面：
 
-1. 若要檢視身分圖表，請按一下連結或導覽至 **[!UICONTROL 身分]** > **[!UICONTROL 身分圖表]**
+1. 若要檢視身分圖表，請按一下連結或導覽至 **[!UICONTROL 身分]**，然後選取 **[!UICONTROL 身分圖表]** 從頂端列。
 1. 若要查詢身分值，請指定 `Luma CRM ID` 作為 **[!UICONTROL 身分名稱空間]** 並將複製的值設為 **[!UICONTROL 身分值]**. 然後選取 **[!UICONTROL 檢視]**.
 
    此視覺效果會顯示設定檔中連結在一起的所有身分及其來源。 以下是身分圖表範例，由完成此Mobile SDK教學課程（資料來源2）和 [Web SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant) （資料來源1）：

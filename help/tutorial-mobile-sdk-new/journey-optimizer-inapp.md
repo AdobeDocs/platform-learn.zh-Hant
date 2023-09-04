@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1605'
+source-wordcount: '1569'
 ht-degree: 2%
 
 ---
 
 # Journey Optimizer應用程式內傳訊
 
-瞭解如何使用Platform Mobile SDK和Journey Optimizer為行動應用程式建立應用程式內訊息。
+瞭解如何使用Experience Platform Mobile SDK和Journey Optimizer為行動應用程式建立應用程式內訊息。
 
 Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給目標對象。 在使用Journey Optimizer傳送應用程式內訊息之前，您必須確保有適當的設定和整合。 若要瞭解Journey Optimizer中的應用程式內傳訊資料流程，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
@@ -145,17 +145,8 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
    ]
    ```
 
-1. 新增 `MobileCore.setPushIdentifier` 至 `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 函式。
 
-   ```swift
-   // Send push token to Experience Platform
-   MobileCore.setPushIdentifier(deviceToken)
-   ```
-
-   此函式擷取安裝應用程式的裝置所獨有的裝置代號。 然後使用您已設定的設定來設定推播通知傳送的代號，該設定依賴Apple的推播通知服務(APN)。
-
-
-## 驗證設定保證
+## 使用保證驗證設定
 
 1. 檢閱 [設定指示](assurance.md) 區段。
 1. 在您的實體裝置或模擬器上安裝應用程式。
@@ -166,8 +157,8 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 1. 選取「**[!UICONTROL 儲存]**」。
    ![儲存](assets/assurance-in-app-config.png)
 1. 選取 **[!UICONTROL 應用程式內傳訊]** 從左側導覽。
-1. 選取 **[!UICONTROL 驗證]** 標籤。
-1. 確認您沒有收到任何錯誤。
+1. 選取 **[!UICONTROL 驗證]** 標籤。 確認您沒有收到任何錯誤。
+
    ![應用程式內驗證](assets/assurance-in-app-validate.png)
 
 
@@ -193,7 +184,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 1. 向下捲動至 **[!UICONTROL 動作]**，並選取 **[!UICONTROL 編輯內容]**.
 1. 在 **[!UICONTROL 應用程式內訊息]** 畫面：
    1. 選取 **[!UICONTROL 強制回應]** 作為 **[!UICONTROL 訊息配置]**.
-   2. 輸入 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 的 **[!UICONTROL 媒體URL]**.
+   2. 輸入 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 針對 **[!UICONTROL 媒體URL]**.
    3. 輸入 **[!UICONTROL 頁首]**，例如 `Welcome to this Luma In-App Message` 並輸入 **[!UICONTROL 內文]**，例如 `Triggered by pushing that button in the app...`.
    4. 輸入 **[!UICONTROL 關閉]** 作為 **[!UICONTROL 按鈕#1文字（主要）]**.
    5. 請注意預覽的更新方式。
@@ -220,17 +211,18 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 
 您已具備傳送應用程式內訊息的所有要素。 剩下的是如何在應用程式中觸發此應用程式內訊息。
 
-1. 前往 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。 尋找 `func sendTrackAction(action: String, data: [String: Any]?)` 函式，並新增下列程式碼，其會呼叫 `MobileCore.track` 函式，根據引數 `action` 和 `data`.
+1. 前往 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。 尋找 `func sendTrackAction(action: String, data: [String: Any]?)` 函式，並新增下列程式碼，其會呼叫 [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 函式，根據引數 `action` 和 `data`.
 
 
    ```swift
-   // send trackAction event
+   // Send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
 1. 前往 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 組態檢視]** 在「Xcode專案導覽器」中。 尋找應用程式內訊息按鈕的程式碼，並新增下列程式碼：
 
    ```swift
+   // Setting parameters and calling function to send in-app message
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }

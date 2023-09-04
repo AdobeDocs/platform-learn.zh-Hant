@@ -5,16 +5,16 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '2173'
+source-wordcount: '2199'
 ht-degree: 2%
 
 ---
 
 # Journey Optimizer推送訊息
 
-瞭解如何使用Platform Mobile SDK和Journey Optimizer為行動應用程式建立推送訊息。
+瞭解如何使用Experience Platform Mobile SDK和Journey Optimizer為行動應用程式建立推送訊息。
 
 Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在使用Journey Optimizer傳送推播通知之前，您必須確保有適當的設定和整合。 若要瞭解Journey Optimizer中的推播通知資料流程，請參閱 [檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -28,7 +28,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 * 成功建立並執行應用程式，且已安裝並設定SDK。
 * 如所述存取Journey Optimizer和足夠的許可權 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 此外，您需要足夠的許可權才能使用下列Journey Optimizer功能。
    * 建立應用程式表面。
-   * 建立歷程
+   * 建立歷程.
    * 建立訊息.
    * 建立訊息預設集.
 * 付費的Apple開發人員帳戶，具有建立憑證、識別碼和金鑰的足夠存取權。
@@ -38,10 +38,10 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
 在本課程中，您將學習
 
-* 向Apple推播通知服務(APNS)註冊應用程式ID。
-* 在AJO中建立應用程式表面。
+* 向Apple推播通知服務(APN)註冊應用程式ID。
+* 在Journey Optimizer中建立應用程式表面。
 * 更新您的結構描述以包含推送訊息欄位。
-* 安裝並設定Journey Optimizer標籤擴充功能。
+* 安裝及設定Journey Optimizer標籤擴充功能。
 * 更新您的應用程式以包含Journey Optimizer標籤擴充功能。
 * 驗證Assurance中的設定。
 * 從保證傳送測試訊息
@@ -110,7 +110,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
 >[!NOTE]
 >
->如果您沒有看到 `AJO Push Tracking Experience Event Dataset` 如需使用，請聯絡客戶服務。
+>如果您沒有看到 **[!UICONTROL AJO推播追蹤體驗事件資料集]** 如需使用，請聯絡客戶服務。
 >
 
 ### 在應用程式中實作Journey Optimizer
@@ -146,16 +146,18 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
    ]
    ```
 
-1. 新增 `MobileCore.setPushIdentifier` 至 `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 函式。
+### 註冊推播通知的裝置代號
+
+1. 新增 [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API至 `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 函式。
 
    ```swift
-   // Send push token to Experience Platform
+   // Send push token to Mobile SDK
    MobileCore.setPushIdentifier(deviceToken)
    ```
 
    此函式擷取安裝應用程式的裝置所獨有的裝置代號。 然後使用您已設定的設定來設定推播通知傳送的代號，該設定依賴Apple的推播通知服務(APN)。
 
-## 驗證設定保證
+## 使用保證驗證設定
 
 1. 檢閱 [設定指示](assurance.md) 區段。
 1. 在您的實體裝置或模擬器上安裝應用程式。
@@ -238,7 +240,7 @@ Journey Optimizer中的事件可讓您一直觸發歷程以傳送訊息，例如
    1. 選取「**[!UICONTROL 儲存]**」。
       ![編輯事件步驟2](assets/ajo-edit-event2.png)
 
-您剛才已根據您先前在本教學課程中建立的行動應用程式體驗事件結構描述建立事件設定。 此事件設定將會使用您的行動應用程式識別碼篩選傳入的體驗事件，因此您確定只有從行動應用程式起始的事件才會觸發您將在下一個步驟中建立的歷程。 在真實情境中，您可能會想要從外部服務傳送推播通知，但相同的概念適用：從外部應用程式傳送體驗事件至Experience Platform，該事件具有您可在這些事件觸發歷程之前用來套用條件的特定欄位。
+您剛才已根據您先前在本教學課程中建立的行動應用程式體驗事件結構描述建立事件設定。 此事件設定將使用您的特定事件型別(`application.test`)，因此您確定只有從該行動應用程式起始的特定型別事件，才會觸發您在下一個步驟中建立的歷程。 在真實情境中，您可能會想要從外部服務傳送推播通知，但相同的概念適用：從外部應用程式傳送體驗事件至Experience Platform，該事件具有您可在這些事件觸發歷程之前用來套用條件的特定欄位。
 
 ### 建立歷程
 
@@ -278,9 +280,9 @@ Journey Optimizer中的事件可讓您一直觸發歷程以傳送訊息，例如
 
 ## 觸發推播通知
 
-您已具備傳送推播通知的所有要素。 剩下的問題是如何觸發此推播通知。 本質上，與您之前看到的一樣：只要傳送具有適當有效負載的體驗事件（如所示）即可 ![活動](events.md))。
+您已具備傳送推播通知的所有要素。 剩下的問題是如何觸發此推播通知。 本質上，與您之前看到的一樣：只要傳送具有適當有效負載的體驗事件（如所示）即可 [活動](events.md))。
 
-此時，您即將傳送的體驗事件未建構為建構簡單的XDM字典。 您即將使用代表推播通知裝載的結構。 定義專用資料型別是在應用程式中實作建構體驗事件裝載的替代方式。
+此時，您即將傳送的體驗事件未建構為建構簡單的XDM字典。 您即將使用 `struct` 代表推播通知裝載。 定義專用資料型別是在應用程式中實作建構體驗事件裝載的替代方式。
 
 1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 模型]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** 在Xcode專案導覽器中檢查程式碼。
 
@@ -313,6 +315,7 @@ Journey Optimizer中的事件可讓您一直觸發歷程以傳送訊息，例如
 1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，新增下列程式碼至 `func sendTestPushEvent(applicationId: String, eventType: String)`：
 
    ```swift
+   // Create payload and send experience event
    Task {
        let testPushPayload = TestPushPayload(
            application: Application(
@@ -333,9 +336,11 @@ Journey Optimizer中的事件可讓您一直觸發歷程以傳送訊息，例如
 
    ```swift
    // Setting parameters and calling function to send push notification
-   let eventType = "mobileapp.testpush"
-   let applicationId = Bundle.main.bundleIdentifier ?? "No bundle id found"
-   await MobileSDK.shared.sendTestPushEvent(applicationId: applicationId, eventType: eventType)   
+   Task {
+       let eventType = testPushEventType
+       let applicationId = Bundle.main.bundleIdentifier ?? "No bundle id found"
+       await MobileSDK.shared.sendTestPushEvent(applicationId: applicationId, eventType: eventType)
+   }
    ```
 
 
@@ -346,6 +351,7 @@ Journey Optimizer中的事件可讓您一直觸發歷程以傳送訊息，例如
 1. 前往 **[!UICONTROL 設定]** 標籤。
 
 1. 點選 **[!UICONTROL 推播通知]**. 您會看到推播通知出現在應用程式中。
+
    <img src="assets/ajo-test-push.png" width="300" />
 
 
