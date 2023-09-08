@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
+source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2412'
 ht-degree: 2%
 
 ---
@@ -326,6 +326,23 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
    * 從主張中擷取優惠方案，
    * 會取消包裝選件的內容，以便其在應用程式中正確顯示，並且
    * 觸發 `displayed()` 選件的動作會顯示出來，此動作會將事件傳回Edge Network，通知選件。
+
+1. 仍在中 **[!UICONTROL EdgeOffersView]**，將下列程式碼新增至 `.onFirstAppear` 修飾元。 此程式碼將確保用於更新優惠方案的回撥僅註冊一次。
+
+   ```swift
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateOD(activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+   }
+   ```
+
+1. 仍在中 **[!UICONTROL EdgeOffersView]**，將下列程式碼新增至 `.task` 修飾元。 重新整理檢視時，此程式碼會更新選件。
+
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsOD(ecid: currentEcid, activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+   ```
+
 
 
 ## 使用應用程式進行驗證
