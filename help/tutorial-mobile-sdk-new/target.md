@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
+source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1519'
 ht-degree: 2%
 
 ---
@@ -214,29 +214,27 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
    接著，函式會呼叫兩個API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 這些函式會清除任何快取的主張，並更新此設定檔的主張。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 個人化]** > **[!UICONTROL TargetOffersView]** 在「Xcode專案」導覽器中。 尋找 `func getPropositionAT(location: String) async` 函式並檢查此函式的程式碼。 此函式最重要的部分為  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API呼叫，此
-   * 根據決定範圍（即您在A/B測試中定義的位置）擷取目前設定檔的主張，並
-   * 會取消包裝應用程式中可正確顯示的結果，即內容。
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 個人化]** > **[!UICONTROL TargetOffersView]** 在「Xcode專案」導覽器中。 尋找 `func onPropositionsUpdateAT(location: String) async {` 函式並檢查此函式的程式碼。 此函式最重要的部分為  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API呼叫，此
+   * 根據決定範圍（即您在A/B測試中定義的位置）擷取目前設定檔的主張，
+   * 從主張中擷取優惠方案，
+   * 會取消包裝選件的內容，以便其在應用程式中正確顯示，並且
+   * 觸發 `displayed()` 選件的動作會顯示出來，此動作會將事件傳回Edge Network，通知選件。
 
-1. 仍在中 **[!UICONTROL TargetOffersView]**，找到 `func updatePropositions(location: String) async` 函式並新增下列程式碼：
+1. 仍在中 **[!UICONTROL TargetOffersView]**，將下列程式碼新增至 `.onFirstAppear` 修飾元。 此程式碼將確保用於更新優惠方案的回撥僅註冊一次。
 
    ```swift
-       Task {
-           await self.updatePropositionAT(
-               ecid: currentEcid,
-               location: location
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionAT(
-               location: location
-           )
-       }
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateAT(location: location)
+   }
    ```
 
-   此程式碼會確保您更新主張，然後使用步驟5和步驟6中所述的函式擷取結果。
+1. 仍在中 **[!UICONTROL TargetOffersView]**，將下列程式碼新增至 `.task` 修飾元。 重新整理檢視時，此程式碼會更新選件。
 
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsAT(ecid: currentEcid, location: location)
+   ```
 
 ## 使用應用程式進行驗證
 
@@ -262,11 +260,11 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 1. 選取 **[!UICONTROL 請求]** 在頂端列中。 您會看到 **[!UICONTROL Target]** 要求。
    ![AJO決策驗證](assets/assurance-decisioning-requests.png)
 
-1. 您可以探索「模擬」和「事件清單」標籤，以進一步瞭解功能檢查您的Target選件設定。
+1. 您可以探索 **[!UICONTROL 模擬]** 和 **[!UICONTROL 事件清單]** 索引標籤，以進一步瞭解功能如何檢查您的Target選件設定。
 
 ## 後續步驟
 
-您現在應該有所有的工具，可以開始將更多A/B測試或其他Target活動（例如體驗鎖定目標、多變數測試） （如有必要）新增至Luma應用程式。
+您現在應該有所有的工具，可以開始將更多A/B測試或其他Target活動（例如體驗鎖定目標、多變數測試） （如有必要）新增至Luma應用程式。 如需深入資訊，請參閱 [最佳化擴充功能的Github存放庫](https://github.com/adobe/aepsdk-optimize-ios) 您也可以在這裡找到專用的連結 [教學課程](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) ，瞭解如何追蹤Adobe Target選件。
 
 >[!SUCCESS]
 >

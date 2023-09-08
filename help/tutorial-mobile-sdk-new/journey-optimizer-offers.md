@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2367'
 ht-degree: 2%
 
 ---
@@ -320,35 +320,12 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
      不過，您可以使用任何型別的實作，以確保「最佳化API」確實取得正確的引數(`activityId`， `placementId` 和 `itemCount`)，以建構有效的 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 物件。
    * 會呼叫兩個API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  這些函式會清除任何快取的主張，並更新此設定檔的主張。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 個人化]** > **[!UICONTROL EdgeOffersView]** 在「Xcode專案」導覽器中。 尋找 `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` 函式並檢查此函式的程式碼。 此函式最重要的部分為  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API呼叫，此
+1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 個人化]** > **[!UICONTROL EdgeOffersView]** 在「Xcode專案」導覽器中。 尋找 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 函式並檢查此函式的程式碼。 此函式最重要的部分為 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API呼叫，此
 
-   * 根據決定範圍(您已在Journey Optimizer — 決定管理中定義)擷取目前設定檔的建議，並
-   * 會取消包裝應用程式中可正確顯示的結果，即內容。
-
-1. 仍在中 **[!UICONTROL EdgeOffersView]**，找到 `func updatePropositions(activityId: String, placementId: String, itemCount: Int) async` 函式並新增下列程式碼：
-
-   ```swift
-   // Update and then get propositions
-   Logger.viewCycle.info("EdgeOffersView - updatePropopsitions - Activity Id: \(activityId)")
-   Task {
-      await self.updatePropositionOD(
-          ecid: currentEcid,
-          activityId: activityId,
-          placementId: placementId,
-          itemCount: itemCount
-     )
-   }
-   try? await Task.sleep(seconds: 2.0)
-   Task {
-      await self.getPropositionOD(
-          activityId: activityId,
-          placementId: placementId,
-          itemCount: itemCount
-      )
-   }
-   ```
-
-   此程式碼會確保您更新主張，然後使用步驟5和步驟6中所述的函式擷取結果。
+   * 根據決定範圍(您已在Journey Optimizer — 決定管理中定義)擷取目前設定檔的主張，
+   * 從主張中擷取優惠方案，
+   * 會取消包裝選件的內容，以便其在應用程式中正確顯示，並且
+   * 觸發 `displayed()` 選件的動作會顯示出來，此動作會將事件傳回Edge Network，通知選件。
 
 
 ## 使用應用程式進行驗證
