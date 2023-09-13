@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
+source-git-commit: fdb6a49caa29d98d73524fd0887d25641ef67780
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 1%
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 等到您的沙箱是&quot;[!UICONTROL 作用中]」，然後再繼續進行下一個練習。
 
-## 將新沙箱新增至您的角色
+## 將新沙箱新增到角色
 
 沙箱一旦作用中，您就必須將其納入您的角色中才能使用。 若要將其新增至您的角色（需要系統管理員或產品管理員許可權）：
 
