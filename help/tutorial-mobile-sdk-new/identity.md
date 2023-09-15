@@ -3,9 +3,9 @@ title: 身分
 description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '681'
 ht-degree: 6%
 
 ---
@@ -108,7 +108,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 ## 移除身分
 
-您可以使用 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 用於從儲存的使用者端身分對應中移除身分的API。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端使用者設定檔圖形或身分圖形中移除識別碼。
+您可以使用 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 用於從儲存的使用者端身分對應中移除身分的API。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端身分識別圖形中移除識別碼。 另請參閱 [檢視身分圖](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) 以取得身分圖表的詳細資訊。
 
 1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 一般]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，新增下列程式碼至 `func removeIdentities(emailAddress: String, crmId: String)` 函式：
 
@@ -144,7 +144,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
       <img src="./assets/identity2.png" width="300">
 
 
-1. 檢視Assurance Web UI，以瞭解 **[!UICONTROL 邊緣身分更新身分]** 來自的事件 **[!UICONTROL com.adobe.griffon.mobile]** 廠商。
+1. 檢視Assurance Web介面中的 **[!UICONTROL 邊緣身分更新身分]** 來自的事件 **[!UICONTROL com.adobe.griffon.mobile]** 廠商。
 1. 選取事件並檢閱中的資料 **[!UICONTROL ACPExtensionEventData]** 物件。 您應該會看到已更新的身分識別。
    ![驗證身分更新](assets/identity-validate-assurance.png)
 

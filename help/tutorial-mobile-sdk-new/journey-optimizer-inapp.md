@@ -5,10 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 2%
+source-wordcount: '1689'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,11 @@ ht-degree: 2%
 
 瞭解如何使用Experience Platform Mobile SDK和Journey Optimizer為行動應用程式建立應用程式內訊息。
 
-Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給目標對象。 在使用Journey Optimizer傳送應用程式內訊息之前，您必須確保有適當的設定和整合。 若要瞭解Journey Optimizer中的應用程式內傳訊資料流程，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給目標對象。 Journey Optimizer中的行銷活動是用來透過各種管道，將一次性內容傳送給特定對象。 透過行銷活動，可同時執行動作 (立即執行或根據指定的排程執行)。使用歷程時(請參閱 [Journey Optimizer推播通知](journey-optimizer-push.md) 課程)，動作會依序執行。
+
+![架構](assets/architecture-ajo.png)
+
+在使用Journey Optimizer傳送應用程式內訊息之前，您必須確保有適當的設定和整合。 若要瞭解Journey Optimizer中的應用程式內傳訊資料流程，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]
 >
@@ -26,6 +30,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 ## 先決條件
 
 * 成功建立並執行應用程式，且已安裝並設定SDK。
+* 為Adobe Experience Platform設定應用程式。
 * 如所述存取Journey Optimizer和足夠的許可權 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 此外，您需要足夠的許可權才能使用下列Journey Optimizer功能。
    * 管理行銷活動。
 * 付費的Apple開發人員帳戶，具有建立憑證、識別碼和金鑰的足夠存取權。
@@ -43,7 +48,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 * 向Apple推播通知服務(APN)註冊應用程式ID。
 * 在AJO中建立應用程式表面。
 * 安裝並設定Journey Optimizer標籤擴充功能。
-* 更新您的應用程式以包含Journey Optimizer標籤擴充功能。
+* 更新您的應用程式以註冊Journey Optimizer標籤擴充功能。
 * 驗證Assurance中的設定。
 * 在Journey Optimizer中定義您自己的促銷活動和應用程式內訊息體驗。
 * 從應用程式內傳送您自己的應用程式內訊息。
@@ -96,7 +101,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 
 若要讓應用程式與Journey Optimizer搭配使用，您必須更新標籤屬性。
 
-1. 瀏覽至 **[!UICONTROL 標籤]** > **[!UICONTROL 擴充功能]** > **[!UICONTROL 目錄]**，
+1. 瀏覽至 **[!UICONTROL 標籤]** > **[!UICONTROL 擴充功能]** > **[!UICONTROL 目錄]**.
 1. 開啟您的屬性，例如 **[!UICONTROL Luma行動應用程式教學課程]**.
 1. 選取 **[!UICONTROL 目錄]**.
 1. 搜尋 **[!UICONTROL Adobe Journey Optimizer]** 副檔名。
@@ -171,7 +176,8 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 * 應用程式生命週期事件，例如，啟動、安裝、升級、關閉或當機。
 * 地理位置事件，例如進入或退出地標。
 
-在本教學課程中，您將使用行動核心通用和獨立於擴充功能的API，以便利使用者畫面、動作和PII資料的事件追蹤。 這些API產生的事件會發佈至SDK事件中樞，並可由擴充功能使用。 例如，安裝Analytics擴充功能時，所有使用者動作和應用程式畫面事件資料都會傳送至適當的Analytics報表端點。
+在本教學課程中，您將會使用行動核心通用和獨立於擴充功能的API (請參閱 [行動核心通用API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis))以方便使用者畫面、動作和PII資料的事件追蹤。 這些API產生的事件會發佈至SDK事件中樞，並可由擴充功能使用。 SDK事件中樞提供與所有AEP Mobile SDK擴充功能相連結的核心資料結構，並維護註冊的擴充功能和內部模組清單、註冊的事件接聽程式清單以及共用狀態資料庫。
+SDK事件中心會發佈並接收來自已註冊擴充功能的事件資料，以簡化與Adobe和協力廠商解決方案的整合。 例如，安裝「最佳化」擴充功能時，事件中樞會處理所有請求以及與Journey Optimizer — 決定管理優惠引擎的互動。
 
 1. 在Journey Optimizer UI中，選取 **[!UICONTROL 行銷活動]** 從左側邊欄。
 1. 選取 **[!UICONTROL 建立行銷活動]**.
@@ -252,7 +258,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 
 ## 後續步驟
 
-您現在應該擁有所有工具，可以開始將應用程式內訊息（如有必要）新增至Luma應用程式。 例如，根據您已在應用程式中追蹤的特定互動來促銷產品。
+您現在應該擁有所有相關和適用的所有工具，以便開始新增應用程式內訊息。  例如，根據您在應用程式中追蹤的特定互動來促銷產品。
 
 >[!SUCCESS]
 >

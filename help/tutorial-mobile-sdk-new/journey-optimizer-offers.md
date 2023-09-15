@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2467'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,11 @@ ht-degree: 2%
 
 Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的客戶提供最佳優惠和體驗。 設計完成後，透過個人化優惠目標定位對象。
 
+![架構](assets/architecture-od.png)
+
 決策管理透過集中行銷優惠資料庫和決定引擎輕鬆實現個人化，該決策引擎將規則和限制套用於Adobe Experience Platform建立的豐富即時設定檔。 因此，它可讓您在適當的時間傳送適當的優惠方案給客戶。 另請參閱 [關於決定管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) 以取得詳細資訊。
+
+
 
 
 >[!NOTE]
@@ -29,6 +33,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 ## 先決條件
 
 * 成功建立並執行應用程式，且已安裝並設定SDK。
+* 為Adobe Experience Platform設定應用程式。
 * 存取Journey Optimizer — 決定管理，並依照所述以適當許可權管理優惠和決定 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 
@@ -41,7 +46,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 * 更新您的結構描述以擷取主張事件。
 * 驗證Assurance中的設定。
 * 根據Journey Optimizer中的優惠建立優惠決定 — 決定管理。
-* 更新您的應用程式以包含Optimizer擴充功能。
+* 更新您的應用程式以註冊Optimizer擴充功能。
 * 在您的應用程式中實施來自Decision Management的優惠。
 
 
@@ -51,7 +56,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 >
 >如果您已將環境設定為 [使用Target設定A/B測試](target.md) 教學課程，您可以略過 [安裝Adobe Journey Optimizer - Decisioning標籤擴充功能](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的結構描述](#update-your-schema).
 
-### 更新邊緣組態
+### 更新資料流設定
 
 為確保將從您的行動應用程式傳送到Edge Network的資料轉送到Journey Optimizer — 決策管理，請更新您的Experience Edge設定。
 
@@ -76,11 +81,11 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 ### 更新您的結構描述
 
-1. 導覽至資料收集UI並選取 **[!UICONTROL 方案]** 從左側邊欄。
+1. 導覽至資料收集介面並選取「 」 **[!UICONTROL 方案]** 從左側邊欄。
 1. 選取 **[!UICONTROL 瀏覽]** 從頂端列。
 1. 選取要開啟的結構描述。
 1. 在架構編輯器中，選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]** 欄位群組旁。
-1. 在 **[!UICONTROL 新增欄位群組]** 對話方塊， ![搜尋](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 搜尋 `proposition`，選取 **[!UICONTROL 體驗事件 — 主張互動]** 並選取 **[!UICONTROL 新增欄位群組]**.
+1. 在 **[!UICONTROL 新增欄位群組]** 對話方塊， ![搜尋](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 搜尋 `proposition`，選取 **[!UICONTROL 體驗事件 — 主張互動]** 並選取 **[!UICONTROL 新增欄位群組]**. 此欄位群組會收集與優惠相關的體驗事件資料：會呈現哪些優惠，作為哪些收集、決定和其他引數的一部分（請參閱本課程後面章節中的）。 但選件也發生了什麼事：是否已顯示、互動、解除等。
    ![主張](assets/schema-fieldgroup-proposition.png)
 1. 選取 **[!UICONTROL 儲存]** 以儲存對結構描述的變更。
 
@@ -211,7 +216,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 * 適用性規則：例如，優惠方案僅適用於特定對象，
 * 排名方法：如果有多個優惠方案可供挑選，您要使用哪個方法來為其排名（例如依優惠方案優先順序、使用公式或AI模型）。
 
-另請參閱 [建立和管理優惠的重要步驟](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 如果您想更深入瞭解位置、規則、排名、優惠、代表、集合、決定等如何相互互動及建立關聯。 本教學課程僅著重於使用決定的輸出，而非在Journey Optimizer中定義決定的彈性 — 決定管理。
+另請參閱 [建立和管理優惠的重要步驟](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 如果您想更深入瞭解位置、規則、排名、優惠、代表、集合、決定等如何相互互動及建立關聯。 本課程僅著重於使用決定的輸出，而非在Journey Optimizer中定義決定的彈性 — 決定管理。
 
 1. 在Journey Optimizer UI中，選取 **[!UICONTROL 選件]** 從左側邊欄。
 1. 選取 **[!UICONTROL 決定]** 從頂端列。
@@ -304,7 +309,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
    此函式：
 
    * 設定XDM字典 `xdmData`，包含ECID以識別您必須提供選件的設定檔。
-   * 定義 `decisionScope`，此物件是根據您在Journey Optimizer — 決定管理UI中定義的決定而定義，並使用以下複製的決定範圍來定義： [建立決定](#create-a-decision).  Luma應用程式使用設定檔案(`decisions.json`)預設集，會根據下列JSON格式擷取範圍引數：
+   * 定義 `decisionScope`，此物件是根據您在Journey Optimizer — 決定管理介面中定義的決定，並使用從以下系統複製的決定範圍來定義 [建立決定](#create-a-decision).  Luma應用程式使用設定檔案(`decisions.json`)預設集，會根據下列JSON格式擷取範圍引數：
 
      ```swift
      "scopes": [

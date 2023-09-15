@@ -3,10 +3,10 @@ title: 建立 XDM 結構描述
 description: 瞭解如何為行動應用程式事件建立XDM結構描述。
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 7%
+source-wordcount: '1473'
+ht-degree: 8%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 7%
 
 ## 什麼是XDM結構描述？
 
-XDM是公開記錄的規格，旨在改善數位體驗的效能。 它提供通用結構和定義，可讓任何應用程式與Platform服務通訊。 只要遵循XDM標準，所有客戶體驗資料都可整合到共同表現中，以更快、更整合的方式提供深入分析。 您可以從客戶動作中獲得有價值的深入分析、透過區段定義客戶對象，以及表達客戶屬性以進行個人化。
+XDM是公開記錄的規格，旨在改善數位體驗的效能。 它提供通用結構和定義，可讓任何應用程式與Platform服務通訊。 只要遵循XDM標準，所有客戶體驗資料都可整合到共同表現中，以更快、更整合的方式提供深入分析。 您可以從客戶動作中獲得寶貴的見解、透過區段定義客戶對象，以及使用客戶屬性進行個人化。
 
 Experience Platform 會使用結構，以一致且可重複使用的方式說明資料結構。藉由定義跨系統的一致資料，將可輕易保留意義，而發揮資料應有的價值。
 
@@ -118,13 +118,18 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 1. 透過選取以下專案為您的結構描述命名： **[!UICONTROL 未命名的結構描述]** 從 **[!UICONTROL 組合]** 窗格（下方） **[!UICONTROL 結構描述]**)並提供 **[!UICONTROL 顯示名稱]** &amp; **[!UICONTROL 說明]**，例如 `Luma Mobile App Event Schema` 和 `Schema for Luma mobile app experience events.`
 
+   >[!NOTE]
+   >
+   >如果您正在閱讀此教學課程，且已將多位人員放在單一沙箱中，或您使用共用帳戶，請考慮在命名慣例中附加或附加身分識別。 舉例來說，請避免使用 `Luma Mobile App Event Schema`，改用 `Luma Mobile App Event Schema - Joe Smith`。另請參閱以下說明： [概觀](overview.md).
+
+
 1. 選取「**[!UICONTROL 儲存]**」。
 
    ![選取套用](assets/schema-name-save.png)
 
 >[!NOTE]
 >
->請記住，您不需要使用群組中的所有欄位。 如果這很實用，您可以將結構描述想成是空的資料層。 您可在應用程式中的適當時間填入相關值。
+>請記住，您不需要使用群組中的所有欄位。 如果有助於保持結構描述簡潔且容易理解，您也可以移除欄位。 如果這很實用，您可以將結構描述想成是空的資料層。 您可在應用程式中的適當時間填入相關值。
 
 此 [!UICONTROL 消費者體驗事件] 欄位群組有一個資料型別，稱為 [!UICONTROL 網頁資訊]，會說明頁面檢視和連結點按次數等事件。 在撰寫本文時，行動應用程式尚未與這項功能對等，因此您將建立您自己的應用程式。
 

@@ -3,7 +3,7 @@ title: Analytics對映
 description: 瞭解如何在行動應用程式中收集Adobe Analytics的資料。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 3%
@@ -15,6 +15,8 @@ ht-degree: 3%
 瞭解如何將行動資料對應至Adobe Analytics。
 
 此 [事件](events.md) 您在先前的課程中收集並傳送至Platform Edge Network的資料，會轉送至您在資料流中設定的服務，包括Adobe Analytics。 將資料對應至報表套裝中的正確變數。
+
+![架構](assets/architecture-aa.png)
 
 ## 先決條件
 
@@ -186,10 +188,10 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 >有些自動對應的變數可能無法用於處理規則。
 >
 >
->第一次對應到處理規則時，UI不會顯示XDM物件的內容資料變數。 若要修正選取的任何值，請儲存並返回編輯。 所有XDM變數現在都會顯示。
+>第一次對應到處理規則時，介面不會顯示XDM物件的內容資料變數。 若要修正選取的任何值，請儲存並返回編輯。 所有XDM變數現在都會顯示。
 
 
-您可以找到有關處理規則和內容資料的額外資訊 [此處](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+如需處理規則和內容資料的其他資訊，請參閱 [此處](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >

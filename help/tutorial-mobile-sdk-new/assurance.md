@@ -3,9 +3,9 @@ title: 設定保證
 description: 瞭解如何在行動應用程式中實作Assurance擴充功能。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 9%
 
 ---
@@ -34,11 +34,7 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 
 ## 確認存取
 
-完成下列步驟，確認貴組織可以存取「保證」：
-
-1. 造訪 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. 使用您的Adobe ID憑證登入以進行Experience Cloud。
-1. 如果您看到 **[!UICONTROL 工作階段]** 熒幕，則表示您擁有存取權。 如果您看見（測試版）存取頁面，請選取 **[!UICONTROL 註冊]** 以註冊。
+確認您的組織有權存取Assurance。 您身為使用者，應已新增至Adobe Experience Platform的設定檔。 另請參閱 [使用者存取權](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) 在保證指南中取得詳細資訊。
 
 ## 實作
 
@@ -70,7 +66,7 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 1. 選取 **簽署與功能** 標籤。
 1. 設定 **[!UICONTROL 自動管理簽署]**， **[!UICONTROL 團隊]**、和 **[!UICONTROL 組合識別碼]**，或使用您特定的Apple開發佈建詳細資訊。
 
-   ![Xcode簽署功能](assets/xcode-signing-capabilities.png)
+   ![Xcode簽署功能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 ## 設定基礎URL
 

@@ -3,10 +3,10 @@ title: 在行動應用程式教學課程中實作Adobe Experience Cloud概述
 description: 瞭解如何實作Adobe Experience Cloud行動應用程式。 本教學課程將指導您在一個範例Swift應用程式中實施Experience Cloud應用程式。
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 4f4bb2fdb1db4d9af8466c4e6d8c61e094bf6a1c
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 10%
+source-wordcount: '873'
+ht-degree: 9%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 10%
 
 Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud客戶透過Adobe Experience Platform Edge Network與Adobe應用程式和協力廠商服務互動。 請參閱 [Adobe Experience Platform Mobile SDK檔案](https://developer.adobe.com/client-sdks/documentation/) 以取得更多詳細資訊。
 
-![建置設定](assets/data-collection-mobile-sdk.png)
+![架構](assets/architecture.png)
 
 
 本教學課程會引導您在名為Luma的範例零售應用程式中實施Platform Mobile SDK。 此 [Luma應用程式](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 具備可讓您建置逼真實作的功能。 完成本教學課程後，您應已準備好開始透過Experience Platform Mobile SDK在您自己的行動應用程式中實施所有行銷解決方案。
@@ -35,7 +35,6 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 * 新增下列Adobe Experience Cloud應用程式/擴充功能：
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [生命週期資料集合](lifecycle-data.md)
-   * [透過XDM的Adobe Analytics](analytics.md)
    * [同意](consent.md)
    * [身分](identity.md)
    * [設定檔](profile.md)
@@ -43,7 +42,7 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
    * [Analytics](analytics.md)
    * [Adobe Experience Platform](platform.md)
    * [使用Journey Optimizer推送訊息](journey-optimizer-push.md)
-   * [使用Journey Optimizer的Im-app傳訊](journey-optimizer-inapp.md)
+   * [使用Journey Optimizer的應用程式內傳訊](journey-optimizer-inapp.md)
    * [Journey Optimizer的優惠方案](journey-optimizer-offers.md)
    * [使用Target的A/B測試](target.md)
 
@@ -70,13 +69,19 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
    * 如果您是平台式應用程式(例如Real-Time CDP、Journey Optimizer或Customer Journey Analytics)的客戶，您也應該擁有：
       * **[!UICONTROL 資料管理]** — 管理和檢視資料集的許可權專案，以完成 _選用的平台練習_ （需要平台式應用程式的授權）。
       * 開發 **沙箱** 供本教學課程使用。
+
 * 針對Adobe Analytics，您必須知道哪個 **報告套裝** 您可以使用完成本教學課程。
+
+* 針對Adobe Target，您必須擁有已正確設定的許可權 **角色**， **工作區**、和 **屬性** 如說明 [此處](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=zh-Hant).
+
+* 針對Adobe Journey Optimizer，您必須有足夠的許可權才能設定 **推播通知服務** 並建立 **應用程式表面**， a **歷程**， a **message** 和 **訊息預設集**. 針對決策管理，您需要適當的許可權來 **管理優惠方案** 和 **決定** 如說明 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 所有Experience Cloud客戶都應該有權存取部署Mobile SDK所需的功能。
 
+
 >[!NOTE]
 >
->您將使用iOS作為平台， [!DNL Swift] 作為程式設計語言， [!DNL SwiftUI] 作為UI框架和 [!DNL Xcode] 作為整合式開發環境(IDE)。 不過，許多所說明的實作概念與其他開發平台類似。 我們假設您有點熟悉 [!DNL Swift] 和 [!DNL SwiftUI]. 您不需要成為專家就能完成課程，但如果您熟悉且瞭解程式碼，將能從中學到更多。
+>在本教學課程中，您將建立結構描述、資料集、身分等。 如果您正在閱讀此教學課程，且已將多個人員放在單一沙箱中，或您使用共用帳戶，則在建立這些物件時，請考慮附加或附加身分識別作為命名慣例的一部分。 例如，新增 ` - <your name or initials>` 至指示您建立的物件名稱。
 
 
 ## 下載Luma應用程式
@@ -86,6 +91,11 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 
 1. [開始](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}：專案，此專案不含程式碼，或針對您完成本教學課程中的實作練習所需使用的大部分Experience PlatformMobile SDK程式碼，包含預留位置程式碼。
 1. [完成](https://git.corp.adobe.com/Luma){target="_blank"}：完整實作以供參考的版本。
+
+>[!NOTE]
+>
+>您將使用iOS作為平台， [!DNL Swift] 作為程式設計語言， [!DNL SwiftUI] 作為UI框架和 [!DNL Xcode] 作為整合式開發環境(IDE)。 不過，許多所說明的實作概念與其他開發平台類似。 而且許多人已經成功完成本教學課程，僅有少量先前的iOS/Swift(UI)體驗。 您不需要成為專家就能完成課程，但如果您熟悉且瞭解程式碼，將能從中學到更多。
+
 
 我們開始吧！
 

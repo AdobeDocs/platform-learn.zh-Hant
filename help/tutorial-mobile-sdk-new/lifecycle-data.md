@@ -2,9 +2,9 @@
 title: 生命週期資料
 description: 瞭解如何在行動應用程式中收集生命週期資料。
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '630'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Platform Mobile SDK生命週期擴充功能可啟用來自行�
 
 ## 先決條件
 
-* 成功建立並執行應用程式，且已安裝並設定SDK。
+* 成功建立並執行應用程式，且已安裝並設定SDK。 在本課程中，您已啟動生命週期監視。 另請參閱 [安裝SDK — 更新AppDelegate](install-sdks.md#update-appdelegate) 以檢閱。
 * 已註冊保證擴充功能，如中所述 [上一課程](install-sdks.md).
 
 ## 學習目標

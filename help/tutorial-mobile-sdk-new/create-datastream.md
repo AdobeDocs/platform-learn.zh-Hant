@@ -3,9 +3,9 @@ title: 設定資料流
 description: 瞭解如何在Experience Platform中建立資料串流。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '598'
 ht-degree: 7%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 7%
 瞭解如何在Experience Platform中建立資料串流。
 
 資料流是Platform Edge Network上的伺服器端設定。 資料流可確保將傳入Platform Edge Network的資料正確路由至Adobe Experience Cloud應用程式和服務。 如需詳細資訊，請參閱 [檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) 或這個 [視訊](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
+
+![架構](assets/architecture.png)
 
 ## 先決條件
 
@@ -33,13 +35,18 @@ ht-degree: 7%
 
 資料串流可建立於 [!UICONTROL 資料彙集] 介面使用 [!UICONTROL 資料流] 設定工具。 若要建立資料串流：
 
-1. 當資料串流定義於沙箱層級時，請確保您處於正確的Experience Platform沙箱中。
+1. 當資料串流定義在沙箱層級時，請確保您處於正確的Experience Platform沙箱中。
 1. 選取 **[!UICONTROL 資料串流]** 在左側邊欄中。
 1. 選取「**[!UICONTROL 新資料流]**」。
 
    ![資料串流首頁](assets/datastream-new.png)
 
 1. 提供 **[!UICONTROL 名稱]**，例如 `Luma Mobile App` 和 **[!UICONTROL 說明]**，例如 `Datastream for Luma Mobile App`.
+
+   >[!NOTE]
+   >
+   >最終提醒：如果您正在閱讀本教學課程，但有一個沙箱容納多個人員，或者您使用共用帳戶，請考慮在命名慣例中附加或附加身分識別。 舉例來說，請避免使用 `Luma Mobile App Event Dataset`，改用 `Luma Mobile App Event Dataset - Joe Smith`。另請參閱以下說明： [概觀](overview.md).
+
 1. 選取您在上一堂課中建立的結構描述，從 **事件結構**&#x200B;清單。
 1. 選取「**[!UICONTROL 儲存]**」。
 

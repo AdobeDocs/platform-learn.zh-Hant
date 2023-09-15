@@ -2,7 +2,7 @@
 title: 地點
 description: 瞭解如何在行動應用程式中使用Places地理位置服務。
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
 source-wordcount: '1754'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 * 使用Places擴充功能更新您的標籤屬性。
 * 更新您的結構描述以擷取地理位置事件。
 * 驗證Assurance中的設定。
-* 更新您的應用程式以包含Places擴充功能。
+* 更新您的應用程式以註冊Places擴充功能。
 * 從應用程式中的Places服務實作地理位置追蹤。
 
 
@@ -49,7 +49,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 * 更新您的結構描述以擷取主張事件。
 * 驗證Assurance中的設定。
 * 根據Journey Optimizer中的優惠建立優惠決定 — 決定管理。
-* 更新您的應用程式以包含Optimizer擴充功能。
+* 更新您的應用程式以註冊Optimizer擴充功能。
 * 在您的應用程式中實施來自Decision Management的優惠。
 
 
@@ -106,7 +106,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 
 驗證您的結構描述是否如中定義 [建立結構描述](create-schema.md)，整合了必要的欄位群組和類別，以便收集POI和地理位置資料。
 
-1. 導覽至資料收集UI並選取 **[!UICONTROL 方案]** 從左側邊欄。
+1. 導覽至資料收集介面並選取「 」 **[!UICONTROL 方案]** 從左側邊欄。
 1. 選取 **[!UICONTROL 瀏覽]** 從頂端列。
 1. 選取要開啟的結構描述。
 1. 在架構編輯器中，選取 **[!UICONTROL 消費者體驗事件]**.
@@ -320,7 +320,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
    }
    ```
 
-說明有關iOS中位置管理員實作的詳細資訊，不在本教學課程的主題。
+說明有關iOS中位置管理員實作的詳細資訊，不在本課程的主題。
 
 
 ## 使用您的應用程式進行驗證

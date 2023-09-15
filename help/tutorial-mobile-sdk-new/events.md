@@ -2,9 +2,9 @@
 title: 活動
 description: 瞭解如何收集行動應用程式中的事件資料。
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Adobe Experience Platform Edge擴充功能可傳送遵循先前定義XDM結構�
    * `commerce.productViews.id`：代表產品SKU的字串值
    * `commerce.productViews.value`：事件的數值或布林值。 如果是布林值(或Adobe Analytics中的「計數器」)，此值一律設為1。 如果是數值或貨幣事件，值可以是> 1。
 
-* 在您的結構描述中，識別與商務產品檢視事件相關聯的任何其他資料。 在此範例中，包括 **[!UICONTROL productListItem]** 這是用於任何商務相關事件的標準欄位集：
+* 在您的結構描述中，識別與商務產品檢視事件相關聯的任何其他資料。 在此範例中，包括 **[!UICONTROL productListItems]** 這是用於任何商務相關事件的標準欄位集：
 
   ![產品清單專案結構描述](assets/datacollection-prodListItems-schema.png)
    * 請注意 **[!UICONTROL productListItems]** 是一個陣列，因此可提供多個產品。
@@ -189,6 +189,11 @@ var xdmData: [String: Any] = [
          // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
+
+>[!TIP]
+>
+>如果您是針對Android開發，請使用Map (`java.util.Map`)作為建構您的XDM裝載的基本介面。
+
 
 ### 自訂欄位分組
 
@@ -339,15 +344,7 @@ var xdmData: [String: Any] = [
 1. 執行應用程式、登入並與產品互動。
 
    1. 將「保證」圖示移至左側。
-   1. 選取 **[!UICONTROL 首頁]** 標籤列中的。
-   1. 選取 <img src="assets/login.png" width="15" /> 按鈕以開啟「登入」工作表。
-
-      <img src="./assets/mobile-app-events-1.png" width="300">
-
-   1. 選取 <img src="assets/insert.png" width="15" /> 按鈕以插入隨機電子郵件和客戶id。
-   1. 選取 **[!UICONTROL 登入]**.
-
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   1. 選取 **[!UICONTROL 首頁]** ，並確認您看到了 **[!UICONTROL ECID]**， **[!UICONTROL 電子郵件]** 和 **[!UICONTROL CRM ID]** 在「首頁」畫面中。
    1. 選取 **[!UICONTROL 產品]** 標籤列中的。
    1. 選取產品。
    1. 選擇 <img src="assets/saveforlater.png" width="15" />。
