@@ -1,11 +1,11 @@
 ---
-title: 收集與對應Analytics資料
+title: 將資料對應至Analytics資料
 description: 瞭解如何在行動應用程式中收集並對映Adobe Analytics的資料。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '632'
 ht-degree: 4%
 
 ---
@@ -230,4 +230,4 @@ Additional information about processing rules and context data can be found [her
 >
 >您已設定應用程式，將您的Experience Edge XDM物件對應至Adobe Analytics變數，以在您的資料流中啟用Adobe Analytics服務，並在適用的情況下使用處理規則。<br/> 感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[Experience Platform](platform.md)**
+下一步： **[傳送資料給Experience Platform](platform.md)**

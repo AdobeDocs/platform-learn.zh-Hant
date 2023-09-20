@@ -3,9 +3,9 @@ title: 收集身分資料
 description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '762'
 ht-degree: 5%
 
 ---
@@ -171,4 +171,4 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 >
 >您現在已設定應用程式，以在Edge Network和（設定後）Adobe Experience Platform中更新身分識別。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-下一步： **[個人資料](profile.md)**
+下一步： **[收集設定檔資料](profile.md)**

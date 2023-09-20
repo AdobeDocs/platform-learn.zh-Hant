@@ -1,17 +1,17 @@
 ---
-title: 傳送資料至Adobe Experience Platform
-description: 瞭解如何將資料傳送至Adobe Experience Platform。
+title: 傳送資料給Experience Platform
+description: 瞭解如何將資料傳送至Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1052'
 ht-degree: 5%
 
 ---
 
-# 傳送資料至Adobe Experience Platform
+# 傳送資料給Experience Platform
 
 瞭解如何將行動應用程式資料傳送至Adobe Experience Platform。
 
@@ -170,4 +170,4 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 >
 >您現在已設定應用程式，不僅將資料傳送至Edge Network，也傳送至Adobe Experience Platform。<br>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[使用Journey Optimizer推送訊息](journey-optimizer-push.md)**
+下一步： **[建立和推播通知](journey-optimizer-push.md)**

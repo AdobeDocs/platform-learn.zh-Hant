@@ -3,9 +3,9 @@ title: 設定保證
 description: 瞭解如何在行動應用程式中實作Assurance擴充功能。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '776'
+source-wordcount: '775'
 ht-degree: 8%
 
 ---
@@ -68,7 +68,7 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 
    >[!IMPORTANT]
    >
-   >請確定您選擇的唯一套件識別碼與已在啟動專案中輸入的預設套件識別碼不同，因為每個套件識別碼必須是唯一的。
+   >請確保您使用唯一的套件組合識別碼，與預設值不同 `com.adobe.luma.tutorial.swiftui`  在開始專案中輸入，因為每個套件組合識別碼必須是唯一的。
 
 
    ![Xcode簽署功能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -139,4 +139,4 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
 >您現在已設定應用程式，以便在教學課程的其餘部分使用Assurance 。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
-下一步： **[同意](consent.md)**
+下一步： **[實作同意](consent.md)**

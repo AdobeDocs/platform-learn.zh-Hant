@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '2443'
+source-wordcount: '2441'
 ht-degree: 3%
 
 ---
@@ -392,4 +392,4 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 >
 >您已啟用應用程式，以便使用Experience Platform Mobile SDK的Journey Optimizer - Decisioning擴充功能來顯示優惠方案。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[使用Target執行A/B測試](target.md)**
+下一步： **[執行A/B測試](target.md)**

@@ -1,15 +1,15 @@
 ---
-title: 收集事件資料
-description: 瞭解如何收集行動應用程式中的事件資料。
+title: 追蹤事件資料
+description: 瞭解如何追蹤行動應用程式中的事件資料。
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 1%
+source-wordcount: '1310'
+ht-degree: 0%
 
 ---
 
-# 收集事件資料
+# 追蹤事件資料
 
 瞭解如何追蹤行動應用程式中的事件。
 
@@ -380,4 +380,4 @@ var xdmData: [String: Any] = [
 >
 >您現在已設定應用程式，追蹤商務、應用程式互動和畫面追蹤事件，以連線至Adobe Experience Platform Edge Network以及您在資料流中定義的所有服務。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[網頁檢視](web-views.md)**
+下一步： **[處理網頁檢視](web-views.md)**
