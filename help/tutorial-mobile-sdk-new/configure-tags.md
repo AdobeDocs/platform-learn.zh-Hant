@@ -3,9 +3,9 @@ title: 設定標籤屬性
 description: 瞭解如何在中設定標籤屬性 [!UICONTROL 資料彙集] 介面。
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1096'
 ht-degree: 8%
 
 ---
@@ -110,9 +110,9 @@ Adobe Experience Platform 標記是新一代 Adobe 標記管理功能。標籤�
 
 1. 使用 ![搜尋](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL 搜尋]** 欄位以尋找並安裝 **Adobe Experience Platform Edge Network** 副檔名。
 
-   1. 在 **[!UICONTROL 資料串流]** 選取 **[!UICONTROL 資料流]** 您建立於 [上一步](create-datastream.md) 例如，針對每個環境 **[!UICONTROL Luma行動應用程式]**.
+   1. 在 **[!UICONTROL 資料串流]** 選取 **[!UICONTROL 資料流]** 您建立於 [上一步](create-datastream.md) 例如，針對每個環境 **[!DNL Luma Mobile App]**.
 
-   1. 指定 **[!UICONTROL 邊緣網路網域]** 範圍 **[!UICONTROL 網域設定]**. Edge Network網域是您組織的名稱，後面接著 `data.adobedc.net`，例如 `techmarketingdemos.data.adobedc.net`.
+   1. 如果尚未填入，請指定 **[!UICONTROL 邊緣網路網域]** 範圍 **[!UICONTROL 網域設定]**. Edge Network網域是您組織的名稱，後面接著 `data.adobedc.net`，例如 `techmarketingdemos.data.adobedc.net`.
 
    1. 從 **[!UICONTROL 儲存至程式庫]** 功能表，選取 **[!UICONTROL 儲存至程式庫並建置]**.
 

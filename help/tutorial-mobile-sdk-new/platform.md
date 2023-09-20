@@ -4,9 +4,9 @@ description: 瞭解如何將資料傳送至Adobe Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '1056'
 ht-degree: 5%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 5%
 在本課程中，您將會：
 
 * 建立Experience Platform資料集。
+* 設定您的資料串流以將資料轉送至Experience Platform。
 * 驗證資料集中的資料。
 * 為Real-time Customer Profile啟用您的結構描述和資料集。
 * 驗證即時客戶個人檔案中的資料。
@@ -54,7 +55,7 @@ ht-degree: 5%
    ![資料集首頁](assets/dataset-create.png)
 
 1. 搜尋您的結構描述。 例如使用 `Luma Mobile` 在搜尋欄位中。
-1. 選取您的結構描述，例如 **[!UICONTROL Luma行動應用程式事件結構描述]**.
+1. 選取您的結構描述，例如 **[!DNL Luma Mobile App Event Schema]**.
 
 1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
    ![資料集設定](assets/dataset-configure.png)
@@ -64,9 +65,32 @@ ht-degree: 5%
 1. 選取「**[!UICONTROL 完成]**」。
    ![資料集完成時間](assets/dataset-finish.png)
 
-## 更新資料流
 
-建立資料集後，請務必 [更新您的資料流](create-datastream.md#adobe-experience-platform) 以新增Adobe Experience Platform。 此更新可確保資料流入Platform。
+## 新增Adobe Experience Platform資料流服務
+
+若要將您的XDM資料從Edge Network傳送到Adobe Experience Platform，請將Adobe Experience Platform服務設定為您設定的資料串流，做為的一部分 [建立資料串流](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>您只能在建立事件資料集後啟用Adobe Experience Platform服務。
+
+1. 在資料收集UI中，選取 **[!UICONTROL 資料串流]** 和您的資料流。
+
+1. 然後選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增服務]**.
+
+1. 從[!UICONTROL 「服務」]清單中選取&#x200B;**[!UICONTROL 「Adobe Experience Platform」]**。
+
+1. 透過切換來啟用服務 **[!UICONTROL 已啟用]** 開啟。
+
+1. 選取 **[!UICONTROL 事件資料集]** 例如您先前建立的 **[!DNL Luma Mobile App Event Dataset]**.
+
+1. 選取「**[!UICONTROL 儲存]**」。
+
+   ![將Adobe Experience Platform新增為資料流服務](assets/datastream-service-aep.png)
+1. 最終設定看起來應該像這樣。
+
+   ![資料流設定](assets/datastream-settings.png)
+
 
 ## 驗證資料集中的資料
 
@@ -89,7 +113,7 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 
 ### 啟用結構
 
-1. 例如，開啟您的結構描述 **[!UICONTROL Luma行動應用程式事件結構描述]**.
+1. 例如，開啟您的結構描述 **[!DNL Luma Mobile App Event Schema]**.
 1. 啟用 **[!UICONTROL 個人資料]**.
 1. 選取 **[!UICONTROL 此結構描述的資料將在identityMap欄位中包含主要身分。]** 在對話方塊中。
 1. **[!UICONTROL 儲存]** 結構描述。
@@ -98,7 +122,7 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 
 ### 啟用資料集
 
-1. 例如，開啟您的資料集 **[!UICONTROL Luma行動應用程式事件資料集]**.
+1. 例如，開啟您的資料集 **[!DNL Luma Mobile App Event Dataset]**.
 1. 啟用 **[!UICONTROL 個人資料]**.
 
    ![為設定檔啟用資料集](assets/platform-profile-dataset.png)

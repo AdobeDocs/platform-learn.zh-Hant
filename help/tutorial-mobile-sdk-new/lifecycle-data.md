@@ -1,15 +1,15 @@
 ---
-title: 生命週期資料
+title: 收集生命週期資料
 description: 瞭解如何在行動應用程式中收集生命週期資料。
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
 
 ---
 
-# 生命週期資料
+# 收集生命週期資料
 
 瞭解如何在行動應用程式中收集生命週期資料。
 
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 現在您可以更新專案以註冊生命週期事件。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** 在「Xcode專案」導覽器中。
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** 在「Xcode專案」導覽器中。
 
 1. 啟動時，如果您的應用程式正從背景狀態恢復，iOS可能會呼叫您的 `sceneWillEnterForeground:` 委派方法，而且您想要在此觸發生命週期開始事件。 將此程式碼新增至 `func sceneWillEnterForeground(_ scene: UIScene)`：
 

@@ -3,9 +3,9 @@ title: 處理網頁檢視
 description: 瞭解如何在行動應用程式中使用WebViews處理資料收集。
 jira: KT-6987
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '477'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ WebView中使用的AEP Edge Identity擴充功能會收集目前的ECID並將其�
 
 ## 實作
 
-瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 資訊]** > **[!UICONTROL 服務條款工作表]**，然後找到 `func loadUrl()` 中的函式 `final class SwiftUIWebViewModel: ObservableObject` 類別。 新增下列呼叫以處理Web檢視：
+瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**，然後找到 `func loadUrl()` 中的函式 `final class SwiftUIWebViewModel: ObservableObject` 類別。 新增下列呼叫以處理Web檢視：
 
 ```swift
 // Handle web view
@@ -68,7 +68,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 若要執行程式碼：
 
 1. 前往 **[!UICONTROL 設定]** 在應用程式中
-1. 點選 **[!UICONTROL 檢視……]** 按鈕以顯示 **[!UICONTROL 使用條款]**.
+1. 點選 **[!DNL View...]** 按鈕以顯示 **[!DNL Terms of Use]**.
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
@@ -90,6 +90,8 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
      ```html
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
+
+很遺憾，除錯Web工作階段受到限制；舉例來說，您不能在瀏覽器中使用Adobe Experience Platform Debugger繼續除錯Web檢視工作階段。
 
 >[!NOTE]
 >

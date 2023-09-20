@@ -3,9 +3,9 @@ title: 設定資料流
 description: 瞭解如何在Experience Platform中建立資料串流。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '615'
 ht-degree: 7%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 7%
    >
    >最終提醒：如果您正在閱讀本教學課程，但有一個沙箱容納多個人員，或者您使用共用帳戶，請考慮在命名慣例中附加或附加身分識別。 舉例來說，請避免使用 `Luma Mobile App Event Dataset`，改用 `Luma Mobile App Event Dataset - Joe Smith`。另請參閱以下說明： [概觀](overview.md).
 
-1. 選取您在上一堂課中建立的結構描述，從 **事件結構**&#x200B;清單。
+1. 選取您在上一堂課中建立的結構描述，從 **事件結構描述** 清單。
 1. 選取「**[!UICONTROL 儲存]**」。
 
    ![新資料串流](assets/datastream-name.png)
@@ -55,7 +55,7 @@ ht-degree: 7%
 
 ## 新增服務
 
-接下來，將Experience Cloud服務連線到資料流。 當Platform Mobile SDK傳送資料給Edge Network時，資料流會將資料傳送至以下服務：
+當您瀏覽時（可選） [Analytics](analytics.md) 和 [Experience Platform](platform.md) 在本教學課程中，您是將服務新增至資料流，以確保當Platform Mobile SDK傳送資料至Edge Network時，資料流會將該資料轉送至已設定的服務。
 
 ### Adobe Analytics
 

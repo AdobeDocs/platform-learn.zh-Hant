@@ -1,15 +1,15 @@
 ---
-title: 設定檔
+title: 收集設定檔資料
 description: 瞭解如何在行動應用程式中收集設定檔資料。
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '601'
 ht-degree: 1%
 
 ---
 
-# 設定檔
+# 收集設定檔資料
 
 瞭解如何在行動應用程式中收集設定檔資料。
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 快速知道使用者過去或最近是否曾經購買過產品，將有助於應用程式中的目標定位和/或個人化。 讓我們在Luma應用程式中設定它。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，並找到 `func updateUserAttribute(attributeName: String, attributeValue: String)` 函式。 新增下列程式碼：
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** 在Xcode專案導覽器中，並找到 `func updateUserAttribute(attributeName: String, attributeValue: String)` 函式。 新增下列程式碼：
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ ht-degree: 1%
 
    1. 使用 `profileMap` 字典作為值 `attributeDict` 的引數 [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API呼叫。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 產品]** > **[!UICONTROL 產品檢視]** 在Xcode專案導覽器中，尋找呼叫 `updateUserAttributes` （在購買程式碼內） <img src="assets/purchase.png" width="15" /> 按鈕)。 新增下列程式碼：
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** 在Xcode專案導覽器中，尋找呼叫 `updateUserAttributes` （在購買程式碼內） <img src="assets/purchase.png" width="15" /> 按鈕)。 新增下列程式碼：
 
    ```swift
    // Update attributes
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 更新使用者的屬性後，其他AdobeSDK即可使用該屬性，但您也可以明確擷取屬性，讓應用程式依您想要的方式運作。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL HomeView]** 在Xcode專案導覽器中，並找到 `.onAppear` 修飾元。 新增下列程式碼：
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** 在Xcode專案導覽器中，並找到 `.onAppear` 修飾元。 新增下列程式碼：
 
    ```swift
    // Get attributes
@@ -111,7 +111,7 @@ ht-degree: 1%
 
       <img src="./assets/mobile-app-events-2.png" width="300">
 
-   1. 選取 **[!UICONTROL 產品]** 標籤列中的。
+   1. 選取 **[!DNL Products]** 標籤列中的。
    1. 選取一個產品。
    1. 選擇 <img src="assets/saveforlater.png" width="15" />。
    1. 選擇 <img src="assets/addtocart.png" width="20" />。

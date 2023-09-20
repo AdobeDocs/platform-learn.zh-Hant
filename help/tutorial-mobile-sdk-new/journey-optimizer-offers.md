@@ -1,18 +1,18 @@
 ---
-title: Adobe Journey Optimizer優惠方案
+title: 建立和顯示優惠方案
 description: 瞭解如何使用Platform Mobile SDK和Adobe Journey Optimizer Decision Management來建立和顯示優惠方案。
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 2%
+source-wordcount: '2443'
+ht-degree: 3%
 
 ---
 
-# Journey Optimizer優惠方案
+# 建立和顯示優惠方案
 
 瞭解如何透過Experience Platform Mobile SDK在行動應用程式中顯示Journey Optimizer決定管理提供的優惠方案。
 
@@ -54,18 +54,20 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 >[!TIP]
 >
->如果您已將環境設定為 [使用Target設定A/B測試](target.md) 教學課程，您可以略過 [安裝Adobe Journey Optimizer - Decisioning標籤擴充功能](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的結構描述](#update-your-schema).
+>如果您已將環境設定為 [使用Target設定A/B測試](target.md) 課程，您可能已執行過此設定章節中的某些步驟。
 
 ### 更新資料流設定
 
 為確保將從您的行動應用程式傳送到Edge Network的資料轉送到Journey Optimizer — 決策管理，請更新您的Experience Edge設定。
 
-1. 在資料收集UI中，選取 **[!UICONTROL 資料串流]**，並選取您的資料串流，例如 **[!UICONTROL Luma行動應用程式]**.
+1. 在資料收集UI中，選取 **[!UICONTROL 資料串流]**，並選取您的資料串流，例如 **[!DNL Luma Mobile App]**.
 1. 選取 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 的 **[!UICONTROL Experience Platform]** 並選取 ![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯]** 從內容功能表。
-1. 在 **[!UICONTROL 資料串流]** > ![資料夾](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 畫面，確認 **[!UICONTROL offer decisioning]**， **[!UICONTROL 邊緣細分]**， **[!UICONTROL 個人化目的地]**、和 **[!UICONTROL Adobe Journey Optimizer]** 已選取。 另請參閱 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以取得詳細資訊。
+1. 在 **[!UICONTROL 資料串流]** > ![資料夾](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 畫面，確認 **[!UICONTROL offer decisioning]**， **[!UICONTROL 邊緣細分]**、和 **[!UICONTROL Adobe Journey Optimizer]** 已選取。 如果您也遵循Target課程，您應選取 **[!UICONTROL 個人化目的地]** 以及。 另請參閱 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以取得詳細資訊。
 1. 若要儲存資料流設定，請選取 **[!UICONTROL 儲存]** .
 
-   ![AEP資料流設定](assets/datastream-aep-configuration.png)
+   ![AEP資料流設定](assets/datastream-aep-configuration-offers.png)
+
+
 
 
 ### 安裝Journey Optimizer - Decisioning標籤擴充功能
@@ -198,7 +200,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 1. 選取 **[!UICONTROL 集合]** 從頂端列。
 1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 建立集合]**.
 1. 在 **[!UICONTROL 新集合]** 對話方塊，輸入 **[!UICONTROL 名稱]** 例如，您的集合 `Luma - Mobile App Collection`，選取 **[!UICONTROL 建立靜態集合]**，然後按一下 **[!UICONTROL 下一個]**.
-1. 在 **[!UICONTROL Luma — 行動應用程式集合]**，選取您要納入集合中的優惠方案。 在本教學課程中，請挑選您建立的五個選件。 您可以使用搜尋欄位輕鬆篩選清單，例如透過輸入 **[!UICONTROL Luma]**.
+1. 在 **[!DNL Luma - Mobile App Collection]**，選取您要納入集合中的優惠方案。 在本教學課程中，請挑選您建立的五個選件。 您可以使用搜尋欄位輕鬆篩選清單，例如透過輸入 **[!DNL Luma]**.
 1. 選取「**[!UICONTROL 儲存]**」。
 
    ![優惠 — 集合](assets/ajo-collection-offersselected.png)
@@ -228,14 +230,14 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 1. 在 **[!UICONTROL 新增決定範圍]** 第步/共步 **[!UICONTROL 建立新的優惠決定]**：
    1. 選取 **[!UICONTROL 行動JSON]** 從 **[!UICONTROL 刊登]** 清單。
    1. 在 **[!UICONTROL 評估准則]** 圖磚，選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]**.
-      1. 在 **[!UICONTROL 新增優惠收藏]** 對話方塊中，選取您的優惠收藏。 例如， **[!UICONTROL Luma — 行動應用程式集合]**.
+      1. 在 **[!UICONTROL 新增優惠收藏]** 對話方塊中，選取您的優惠收藏。 例如 **[!DNL Luma - Mobile App Collection]**。
       1. 選取 **[!UICONTROL 新增]**.
          ![決定 — 選取集合](assets/ajo-decision-selectcollection.png)
    1. 確定 **[!UICONTROL 無]** 已選取用於 **[!UICONTROL 資格]**、和 **[!UICONTROL 優惠優先順序]** 已選取作為 **[!UICONTROL 排名方法]**.
    1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
       ![決定範圍](assets/ajo-decision-scopes.png).
 1. 在 **[!UICONTROL 新增遞補優惠]** 第步/共步 **[!UICONTROL 建立新的優惠決定]**：
-   1. 選取您的遞補優惠，例如 **[!UICONTROL Luma — 遞補優惠]**.
+   1. 選取您的遞補優惠，例如 **[!DNL Luma - Fallback offer]**.
    1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
 1. 在 **[!UICONTROL 摘要]** 第步/共步 **[!UICONTROL 建立新的優惠決定]**：
    1. 選取「**[!UICONTROL 完成]**」。
@@ -246,7 +248,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 1. 在Journey Optimizer UI中，選取 **[!UICONTROL 選件]**.
 1. 選取 **[!UICONTROL 決定]** 從頂端列。
-1. 選取您的決定，例如 **[!UICONTROL Luma — 行動應用程式決策]**.
+1. 選取您的決定，例如 **[!DNL Luma - Mobile App Decision]**.
 1. 在 **[!UICONTROL 決定範圍]** 圖磚，選取 ![複製](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 複製]**.
 1. 從內容功能表中，選取 **[!UICONTROL 決定範圍]**.
    ![複製決定範圍](assets/ajo-copy-decisionscope.png)
@@ -269,7 +271,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 >
 
 1. 在Xcode中，確認 [AEP最佳化](https://github.com/adobe/aepsdk-messaging-ios.git) 會新增至套件相依性中的套件清單中。 另請參閱 [Swift封裝管理程式](install-sdks.md#swift-package-manager).
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 在「Xcode專案」導覽器中。
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 在「Xcode專案」導覽器中。
 1. 確定 `AEPOptimize` 是匯入清單的一部分。
 
    `import AEPOptimize`
@@ -292,7 +294,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
    ]
    ```
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。 尋找 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 函式。 新增下列程式碼：
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。 尋找 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 函式。 新增下列程式碼：
 
    ```swift
    // set up the XDM dictionary, define decision scope and call update proposition API
@@ -325,14 +327,14 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
      不過，您可以使用任何型別的實作，以確保「最佳化API」確實取得正確的引數(`activityId`， `placementId` 和 `itemCount`)，以建構有效的 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 物件。
    * 會呼叫兩個API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  這些函式會清除任何快取的主張，並更新此設定檔的主張。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 個人化]** > **[!UICONTROL EdgeOffersView]** 在「Xcode專案」導覽器中。 尋找 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 函式並檢查此函式的程式碼。 此函式最重要的部分為 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API呼叫，此
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL 個人化]** > **[!UICONTROL EdgeOffersView]** 在「Xcode專案」導覽器中。 尋找 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 函式並檢查此函式的程式碼。 此函式最重要的部分為 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API呼叫，此
 
    * 根據決定範圍(您已在Journey Optimizer — 決定管理中定義)擷取目前設定檔的主張，
    * 從主張中擷取優惠方案，
    * 會取消包裝選件的內容，以便其在應用程式中正確顯示，並且
    * 觸發 `displayed()` 選件的動作會顯示出來，此動作會將事件傳回Edge Network，通知選件。
 
-1. 仍在中 **[!UICONTROL EdgeOffersView]**，將下列程式碼新增至 `.onFirstAppear` 修飾元。 此程式碼將確保用於更新優惠方案的回撥僅註冊一次。
+1. 仍在中 **[!DNL EdgeOffersView]**，將下列程式碼新增至 `.onFirstAppear` 修飾元。 此程式碼將確保用於更新優惠方案的回撥僅註冊一次。
 
    ```swift
    // Invoke callback for offer updates
@@ -354,11 +356,11 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 1. 在裝置上或在模擬器中開啟您的應用程式。
 
-1. 前往 **[!UICONTROL 個人化]** 標籤。
+1. 前往 **[!DNL Personalisation]** 標籤。
 
-1. 選取 **[!UICONTROL 邊緣個人化]**.
+1. 選擇「**[!DNL Edge Personalisation]**」。
 
-1. 捲動至頂端，您會看到已在中定義的集合中，顯示兩個隨機選件 **[!UICONTROL 決定LUMA — 行動應用程式決定]** 圖磚。
+1. 捲動至頂端，您會看到已在中定義的集合中，顯示兩個隨機選件 **[!DNL DECISION LUMA - MOBILE APP DECISION]** 圖磚。
 
    <img src="assets/ajo-app-offers.png" width="300">
 

@@ -1,16 +1,16 @@
 ---
-title: Analytics對映
-description: 瞭解如何在行動應用程式中收集Adobe Analytics的資料。
+title: 收集與對應Analytics資料
+description: 瞭解如何在行動應用程式中收集並對映Adobe Analytics的資料。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 3%
+source-wordcount: '629'
+ht-degree: 4%
 
 ---
 
-# Analytics對映
+# 收集與對應Analytics資料
 
 瞭解如何將行動資料對應至Adobe Analytics。
 
@@ -28,8 +28,28 @@ ht-degree: 3%
 
 在本課程中，您將會：
 
+* 使用Adobe Analytics服務設定您的資料串流。
 * 瞭解Analytics變數的自動對應。
 * 設定處理規則，將XDM資料對應至Analytics變數。
+
+## 新增Adobe Analytics資料流服務
+
+若要將您的XDM資料從Edge Network傳送到Adobe Analytics，請將Adobe Analytics服務設定為您設定的資料串流，做為的一部分 [建立資料串流](create-datastream.md).
+
+1. 在資料收集UI中，選取 **[!UICONTROL 資料串流]** 和您的資料流。
+
+1. 然後選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增服務]**.
+
+1. 新增 **[!UICONTROL Adobe Analytics]** 從 [!UICONTROL 服務] 清單，
+
+1. 輸入您要在Adobe Analytics中使用的報表套裝名稱 **[!UICONTROL 報告套裝ID]**.
+
+1. 透過切換來啟用服務 **[!UICONTROL 已啟用]** 開啟。
+
+1. 選取「**[!UICONTROL 儲存]**」。
+
+   ![將Adobe Analytics新增為資料流服務](assets/datastream-service-aa.png)
+
 
 ## 自動對應
 
@@ -164,7 +184,7 @@ a.x.[xdm path]
 a.x.commerce.saveforlaters.value
 
 // Custom Field
-a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
+a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 ```
 
 >[!NOTE]
@@ -173,29 +193,38 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 >
 >`_techmarketingdemos` 會取代為您組織的唯一值。
 
+若要將此XDM內容資料對應至報表套裝中的Analytics資料，您可以：
 
-以下是使用此資料的處理規則的外觀：
+* 新增 **[!UICONTROL Adobe Analytics ExperienceEvent完整擴充功能]** 欄位群組至您的結構描述。
 
-* 您 **[!UICONTROL 覆寫值]** (1) **[!UICONTROL 應用程式畫面名稱(eVar2)]** (2)的值是 **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3)如果 **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL 已設定]** (5)。
+  ![Analytics ExperienceEvent FullExtension欄位群組](assets/schema-analytics-extension.png)
+* 在「標籤」屬性中建立規則，將內容資料對應至「Adobe Analytics ExperienceEvent完整擴充功能」欄位群組中的欄位。 例如，地圖 `_techmarketingdemo.appinformation.appstatedetails.screenname` 至 `_experience.analytics.customDimensions.eVars.eVar2`.
 
-* 您 **[!UICONTROL 設定事件]** (6) **[!UICONTROL 新增至願望清單（事件3）]** (7)至 **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8)如果 **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL 已設定]** (10)。
+<!-- Old processing rules section
+Here is what a processing rule using this data might look like:
 
-![analytics處理規則](assets/analytics-processing-rules.png)
+* You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
+
+* You **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) to **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) if **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
+
+![analytics processing rules](assets/analytics-processing-rules.png)
 
 >[!IMPORTANT]
 >
 >
->有些自動對應的變數可能無法用於處理規則。
+>Some of the automatically mapped variables may not be available for use in processing rules.
 >
 >
->第一次對應到處理規則時，介面不會顯示XDM物件的內容資料變數。 若要修正選取的任何值，請儲存並返回編輯。 所有XDM變數現在都會顯示。
+>The first time you map to a processing rule, the interface does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
 
 
-如需處理規則和內容資料的其他資訊，請參閱 [此處](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+Additional information about processing rules and context data can be found [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
->和先前的行動應用程式實作不同，頁面/畫面檢視和其他事件沒有區別。 反之，您可以增加 **[!UICONTROL 頁面檢視]** 量度，設定 **[!UICONTROL 頁面名稱]** 處理規則中的維度。 由於您正在收集自訂 `screenName` 欄位，強烈建議將熒幕名稱對應至 **[!UICONTROL 頁面名稱]** 在處理規則中。
+>Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+
+-->
 
 >[!SUCCESS]
 >

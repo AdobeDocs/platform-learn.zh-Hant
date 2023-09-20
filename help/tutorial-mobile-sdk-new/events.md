@@ -1,15 +1,15 @@
 ---
-title: 活動
+title: 收集事件資料
 description: 瞭解如何收集行動應用程式中的事件資料。
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 0%
+source-wordcount: '1309'
+ht-degree: 1%
 
 ---
 
-# 活動
+# 收集事件資料
 
 瞭解如何追蹤行動應用程式中的事件。
 
@@ -127,7 +127,7 @@ var xdmData: [String: Any] = [
 
 若要以可重複使用的方式實作與商業相關的體驗事件的傳送，請使用專用函式：
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，將下列專案新增至 `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 函式。
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，將下列專案新增至 `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 函式。
 
    ```swift
    // Set up a data dictionary, create an experience event and send the event.
@@ -158,7 +158,7 @@ var xdmData: [String: Any] = [
    * 使用字典設定體驗事件，
    * 使用傳送體驗事件 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 產品]** > **[!UICONTROL 產品檢視]** 並新增各種呼叫至 `sendCommerceExperienceEvent` 函式：
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL 產品檢視]** 並新增各種呼叫至 `sendCommerceExperienceEvent` 函式：
 
    1. 在 `.task` 修飾元，在 `ATTrackingManager.trackingAuthorizationStatus` 關閉。 這個 `.task` 當產品檢視初始化並顯示時，會呼叫修飾元，因此您想在該特定時間傳送產品檢視事件。
 
@@ -263,7 +263,7 @@ var xdmData: [String: Any] = [
 
 同樣地，讓我們在您的Xcode專案中實際實作此程式碼。
 
-1. 為方便起見，您在中定義了兩個函式 **[!UICONTROL MobileSDK]**. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在您的Xcode專案導覽器中。
+1. 為方便起見，您在中定義了兩個函式 **[!UICONTROL MobileSDK]**. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在您的Xcode專案導覽器中。
 
    1. 一個用於應用程式互動。 將此程式碼新增至 `func sendAppInteractionEvent(actionName: String)` 函式：
 
@@ -321,7 +321,7 @@ var xdmData: [String: Any] = [
       * 使用字典設定體驗事件，
       * 使用傳送體驗事件 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 登入工作表]**.
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登入工作表]**.
 
    1. 將下列醒目提示的程式碼新增至「登入」按鈕的關閉處：
 
@@ -345,7 +345,7 @@ var xdmData: [String: Any] = [
 
    1. 將「保證」圖示移至左側。
    1. 選取 **[!UICONTROL 首頁]** ，並確認您看到了 **[!UICONTROL ECID]**， **[!UICONTROL 電子郵件]** 和 **[!UICONTROL CRM ID]** 在「首頁」畫面中。
-   1. 選取 **[!UICONTROL 產品]** 標籤列中的。
+   1. 選取 **[!DNL Products]** 標籤列中的。
    1. 選取產品。
    1. 選擇 <img src="assets/saveforlater.png" width="15" />。
    1. 選擇 <img src="assets/addtocart.png" width="20" />。
@@ -361,7 +361,7 @@ var xdmData: [String: Any] = [
 
 ## 後續步驟
 
-您現在應該擁有所有工具，可以開始將資料收集新增至Luma應用程式。 您可以新增更多智慧來瞭解使用者如何與應用程式中的產品互動，也可以新增更多應用程式互動和熒幕追蹤呼叫至應用程式：
+您現在應該擁有所有工具，可開始將資料收集新增至應用程式。 您可以新增更多智慧來瞭解使用者如何與應用程式中的產品互動，也可以新增更多應用程式互動和熒幕追蹤呼叫至應用程式：
 
 * 實施訂單、結帳、清空購物籃和其他功能至應用程式，並新增相關商務體驗事件至此功能。
 * 重複呼叫 `sendAppInteractionEvent` 搭配適當的引數，以追蹤使用者的其他應用程式互動。

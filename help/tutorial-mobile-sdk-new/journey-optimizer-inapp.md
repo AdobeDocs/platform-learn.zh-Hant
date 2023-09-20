@@ -1,18 +1,18 @@
 ---
-title: Adobe Journey Optimizer應用程式內傳訊
-description: 瞭解如何使用Platform Mobile SDK和Adobe Journey Optimizer建立應用程式內訊息至行動應用程式。
+title: 建立和傳送應用程式內訊息
+description: 瞭解如何使用Platform Mobile SDK和Adobe Journey Optimizer建立應用程式內訊息，並將其傳送至行動應用程式。
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 3%
+source-wordcount: '1547'
+ht-degree: 4%
 
 ---
 
-# Journey Optimizer應用程式內傳訊
+# 建立和傳送應用程式內訊息
 
 瞭解如何使用Experience Platform Mobile SDK和Journey Optimizer為行動應用程式建立應用程式內訊息。
 
@@ -35,10 +35,6 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
    * 管理行銷活動。
 * 付費的Apple開發人員帳戶，具有建立憑證、識別碼和金鑰的足夠存取權。
 * 實體iOS裝置或模擬器以進行測試。
-* 向Apple推送通知服務註冊的應用程式ID
-* 已在資料收集中新增您的應用程式推送認證
-* 已安裝的Journey Optimizer標籤擴充功能
-* 在應用程式中實作Journey Optimizer
 
 
 ## 學習目標
@@ -57,31 +53,10 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 
 >[!TIP]
 >
->如果您已將環境設定為 [Journey Optimizer推送訊息](journey-optimizer-push.md) 在教學課程中，您可以略過本節。
+>如果您已將環境設定為 [Journey Optimizer推送訊息](journey-optimizer-push.md) 課程，您可能已執行過此設定章節中的某些步驟。
 
-### 向APNS註冊應用程式ID
 
-下列步驟並非特定於Adobe Experience Cloud，而是設計用於引導您完成APNS設定。
-
-### 建立私密金鑰
-
-1. 在Apple開發人員入口網站中，導覽至 **[!UICONTROL 金鑰]**.
-1. 若要建立金鑰，請選取 **[!UICONTROL +]**.
-   ![建立新金鑰](assets/mobile-push-apple-dev-new-key.png)
-
-1. 提供 **[!UICONTROL 金鑰名稱]**.
-1. 選取 **[!UICONTROL Apple推播通知服務] (APNs)** 核取方塊。
-1. 選取 **[!UICONTROL 繼續]**.
-   ![設定新金鑰](assets/mobile-push-apple-dev-config-key.png)
-1. 檢閱設定並選取 **[!UICONTROL 註冊]**.
-1. 下載 `.p8` 私密金鑰。 它用於App Surface設定。
-1. 記下 **[!UICONTROL 金鑰ID]**. 它用於App Surface設定。
-1. 記下 **[!UICONTROL 團隊ID]**. 它用於App Surface設定。
-   ![金鑰詳細資訊](assets/push-apple-dev-key-details.png)
-
-其他檔案包括 [可在此處找到](https://help.apple.com/developer-account/#/devcdfbb56a3).
-
-### 在資料收集中新增應用程式推送認證
+### 在資料收集中新增應用程式表面
 
 1. 從 [資料收集介面](https://experience.adobe.com/data-collection/)，選取 **[!UICONTROL 應用程式表面]** 在左側面板中。
 1. 若要建立組態，請選取 **[!UICONTROL 建立應用程式表面]**.
@@ -89,20 +64,28 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 1. 輸入 **[!UICONTROL 名稱]** 例如，針對設定 `Luma App Tutorial`  .
 1. 從 **[!UICONTROL 行動應用程式設定]**，選取 **[!UICONTROL Apple iOS]**.
 1. 在中輸入行動應用程式套件組合ID **[!UICONTROL 應用程式ID (iOS套件組合ID)]** 欄位。 例如,  `com.adobe.luma.tutorial.swiftui`.
-1. 切換至 **[!UICONTROL 推送認證]** 切換即可新增您的認證。
-1. 拖放您的 `.p8` **Apple推播通知驗證金鑰** 檔案。
-1. 提供 **[!UICONTROL 金鑰ID]**，在建立期間指派的10個字元字串 `p8` 驗證金鑰。 此路徑位於 **[!UICONTROL 金鑰]** 索引標籤中的 **憑證、識別碼和設定檔** Apple開發人員入口網站頁面的頁面。 另請參閱 [建立私密金鑰](#create-a-private-key).
-1. 提供 **[!UICONTROL 團隊ID]**. 團隊ID是一個值，可在下找到 **會籍** 標籤或Apple開發人員入口網站頁面頂端的標籤。 另請參閱 [建立私密金鑰](#create-a-private-key).
 1. 選取「**[!UICONTROL 儲存]**」。
 
    ![應用程式表面設定](assets/push-app-surface-config.png)
+
+### 更新資料流設定
+
+為確保將從您的行動應用程式傳送到Edge Network的資料轉送到Journey Optimizer，請更新您的Experience Edge設定。
+
+1. 在資料收集UI中，選取 **[!UICONTROL 資料串流]**，並選取您的資料串流，例如 **[!DNL Luma Mobile App]**.
+1. 選取 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 的 **[!UICONTROL Experience Platform]** 並選取 ![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯]** 從內容功能表。
+1. 在 **[!UICONTROL 資料串流]** > ![資料夾](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 畫面，確認 **[!UICONTROL Adobe Journey Optimizer]** 已選取。 另請參閱 [Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以取得詳細資訊。
+1. 若要儲存資料流設定，請選取 **[!UICONTROL 儲存]**.
+
+   ![AEP資料流設定](assets/datastream-aep-configuration.png)
+
 
 ### 安裝Journey Optimizer標籤擴充功能
 
 若要讓應用程式與Journey Optimizer搭配使用，您必須更新標籤屬性。
 
 1. 瀏覽至 **[!UICONTROL 標籤]** > **[!UICONTROL 擴充功能]** > **[!UICONTROL 目錄]**.
-1. 開啟您的屬性，例如 **[!UICONTROL Luma行動應用程式教學課程]**.
+1. 開啟您的屬性，例如 **[!DNL Luma Mobile App Tutorial]**.
 1. 選取 **[!UICONTROL 目錄]**.
 1. 搜尋 **[!UICONTROL Adobe Journey Optimizer]** 副檔名。
 1. 安裝擴充功能。
@@ -127,7 +110,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 >
 
 1. 在Xcode中，確認 [AEP傳訊](https://github.com/adobe/aepsdk-messaging-ios.git) 會新增至套件相依性中的套件清單中。 另請參閱 [Swift封裝管理程式](install-sdks.md#swift-package-manager).
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 在「Xcode專案」導覽器中。
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 在「Xcode專案」導覽器中。
 1. 確定 `AEPMessaging` 是匯入清單的一部分。
 
    `import AEPMessaging`
@@ -182,7 +165,7 @@ SDK事件中心會發佈並接收來自已註冊擴充功能的事件資料，�
 1. 在Journey Optimizer UI中，選取 **[!UICONTROL 行銷活動]** 從左側邊欄。
 1. 選取 **[!UICONTROL 建立行銷活動]**.
 1. 在 **[!UICONTROL 建立行銷活動]** 畫面：
-   1. 選取 **[!UICONTROL 應用程式內訊息]** 並從中選擇應用程式表面 **[!UICONTROL 應用程式表面]** 清單，例如 **[!UICONTROL Luma行動應用程式]**.
+   1. 選取 **[!UICONTROL 應用程式內訊息]** 並從中選擇應用程式表面 **[!UICONTROL 應用程式表面]** 清單，例如 **[!DNL Luma Mobile App]**.
    1. 選取 **[!UICONTROL 建立]**
       ![行銷活動屬性](assets/ajo-campaign-properties.png)
 1. 在Campaign定義畫面中， **[!UICONTROL 屬性]**，輸入 **[!UICONTROL 名稱]** 例如，促銷活動 `Luma - In-App Messaging Campaign`，和 **[!UICONTROL 說明]**，例如 `In-app messaging campaign for Luma app`.
@@ -198,7 +181,7 @@ SDK事件中心會發佈並接收來自已註冊擴充功能的事件資料，�
       ![應用程式內編輯器](assets/ajo-in-app-editor.png)
 1. 在 **[!UICONTROL 檢閱以啟動（Luma — 應用程式內傳訊行銷活動）]** 熒幕，選取 ![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 在 **[!UICONTROL 排程]** 圖磚。
    ![檢閱排程選取排程](assets/ajo-review-select-schedule.png)
-1. 返回 **[!UICONTROL Luma — 應用程式內傳訊行銷活動]** 熒幕，選取 ![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯觸發程式]**.
+1. 返回 **[!DNL Luma - In-App Messaging Campaign]** 熒幕，選取 ![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯觸發程式]**.
 1. 在 **[!UICONTROL 應用程式內訊息觸發器]** 對話方塊中，您可以設定觸發應用程式內訊息之追蹤動作的詳細資訊：
    1. 移除 **[!UICONTROL 應用程式啟動事件]**，選取 ![關閉](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) .
    1. 使用 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增條件]** 重複建置以下邏輯 **[!UICONTROL 顯示訊息條件]**.
@@ -207,9 +190,9 @@ SDK事件中心會發佈並接收來自已註冊擴充功能的事件資料，�
 
    您已定義追蹤動作，其中 **[!UICONTROL 動作]** 等於 `in-app` 和 **[!UICONTROL 內容資料]** ，動作為的索引鍵值組 `"showMessage" : "true"`.
 
-1. 返回 **[!UICONTROL Luma — 應用程式內傳訊行銷活動]** 熒幕，選取 **[!UICONTROL 檢閱以啟動]**.
+1. 返回 **[!DNL Luma - In-App Messaging Campaign]** 熒幕，選取 **[!UICONTROL 檢閱以啟動]**.
 1. 在 **[!UICONTROL 檢閱以啟動（Luma — 應用程式內傳訊行銷活動）]** 熒幕，選取 **[!UICONTROL 啟動]**.
-1. 您會看到 **[!UICONTROL Luma — 應用程式內傳訊行銷活動]** 具有狀態 **[!UICONTROL 即時]** 在 **[!UICONTROL 行銷活動]** 清單。
+1. 您會看到 **[!DNL Luma - In-App Messaging Campaign]** 具有狀態 **[!UICONTROL 即時]** 在 **[!UICONTROL 行銷活動]** 清單。
    ![行銷活動清單](assets/ajo-campaign-list.png)
 
 
@@ -217,7 +200,7 @@ SDK事件中心會發佈並接收來自已註冊擴充功能的事件資料，�
 
 您已具備傳送應用程式內訊息的所有要素。 剩下的是如何在應用程式中觸發此應用程式內訊息。
 
-1. 前往 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。 尋找 `func sendTrackAction(action: String, data: [String: Any]?)` 函式，並新增下列程式碼，其會呼叫 [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 函式，根據引數 `action` 和 `data`.
+1. 前往 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。 尋找 `func sendTrackAction(action: String, data: [String: Any]?)` 函式，並新增下列程式碼，其會呼叫 [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 函式，根據引數 `action` 和 `data`.
 
 
    ```swift
@@ -225,7 +208,7 @@ SDK事件中心會發佈並接收來自已註冊擴充功能的事件資料，�
    MobileCore.track(action: action, data: data)
    ```
 
-1. 前往 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 組態檢視]** 在「Xcode專案導覽器」中。 尋找應用程式內訊息按鈕的程式碼，並新增下列程式碼：
+1. 前往 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 組態檢視]** 在「Xcode專案導覽器」中。 尋找應用程式內訊息按鈕的程式碼，並新增下列程式碼：
 
    ```swift
    // Setting parameters and calling function to send in-app message

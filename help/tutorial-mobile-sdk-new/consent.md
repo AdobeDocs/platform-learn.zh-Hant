@@ -1,16 +1,16 @@
 ---
-title: 同意
+title: 實作同意
 description: 瞭解如何在行動應用程式中實施同意。
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
 
-# 同意
+# 實作同意
 
 瞭解如何在行動應用程式中實施同意。
 
@@ -36,7 +36,7 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 
 1. 您只想詢問使用者一次。 因此，您希望結合行動SDK同意與使用Apple進行追蹤所需的授權 [應用程式追蹤透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 在此應用程式中，您假設當使用者授權追蹤時，使用者也同意收集事件。
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。
 
    將此程式碼新增至 `updateConsent` 函式。
 
@@ -48,7 +48,7 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL 免責宣告檢視]** 在Xcode的專案導覽器中，這是安裝或重新安裝應用程式並首次啟動應用程式後顯示的檢視。 系統會根據Apple提示使用者授權追蹤 [應用程式追蹤透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 如果使用者授權，您也會更新同意。
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 免責宣告檢視]** 在Xcode的專案導覽器中，這是安裝或重新安裝應用程式並首次啟動應用程式後顯示的檢視。 系統會根據Apple提示使用者授權追蹤 [應用程式追蹤透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 如果使用者授權，您也會更新同意。
 
    將下列程式碼新增至 `ATTrackingManager.requestTrackingAuthorization { status in` 關閉。
 
@@ -68,7 +68,7 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 
 同意行動擴充功能會根據目前的同意值自動隱藏/擱置/允許追蹤。 您也可以自行存取目前的同意狀態：
 
-1. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode的專案導覽器中。
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode的專案導覽器中。
 
    將下列程式碼新增至 `getConsents` 函式：
 
@@ -82,7 +82,7 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
    }
    ```
 
-2. 瀏覽至 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 檢視]** > **[!UICONTROL 一般]** > **[!UICONTROL HomeView]** 在Xcode的專案導覽器中。
+2. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** 在Xcode的專案導覽器中。
 
    將下列程式碼新增至 `.task` 修飾元：
 

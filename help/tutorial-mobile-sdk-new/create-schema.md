@@ -3,9 +3,9 @@ title: 建立 XDM 結構描述
 description: 瞭解如何為行動應用程式事件建立XDM結構描述。
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1482'
 ht-degree: 8%
 
 ---
@@ -28,7 +28,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 >[!TIP]
 >
->如果您熟悉Analytics解決方案設計參考(SDR)，您可以將結構描述視為更強大的SDR。
+>如果您熟悉Analytics解決方案設計參考(SDR)，您可以將結構描述視為更強大的SDR。 另請參閱 [建立和維護解決方案設計參考(SDR)檔案](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=zh-Hant) 以取得詳細資訊。
 
 ## 先決條件
 
@@ -214,7 +214,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 1. 在右邊欄中，提供 **[!UICONTROL 欄位名稱]** 之 `appInformation`， a **[!UICONTROL 顯示名稱]** 之 `App Information`，和 **[!UICONTROL 型別]** 之 `App Information`.
 
-1. 選取 **[!UICONTROL 應用程式互動]** 從 **[!UICONTROL 型別]** 下拉式清單，也就是您在上一個練習中建立的自訂資料型別。
+1. 選取 **[!UICONTROL 應用程式互動]** 從 **[!UICONTROL 欄位群組]** 下拉式清單，將欄位指派給新欄位群組。
 
 1. 選取&#x200B;**[!UICONTROL 「套用」]**。
 
@@ -224,7 +224,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 >[!NOTE]
 >
->自訂欄位群組一律放置在您的Experience Cloud組織識別碼下。 所以 `_techmarketingdemos`用於熒幕擷取畫面的，會取代為您組織的唯一值。
+>自訂欄位群組一律放置在您的Experience Cloud組織識別碼下。
 
 
 >[!SUCCESS]
