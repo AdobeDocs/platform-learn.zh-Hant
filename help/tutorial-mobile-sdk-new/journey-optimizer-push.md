@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 3%
@@ -153,7 +153,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
    <img src="assets/luma-app-push.png" width="300" />
 
 
-### 將推播通知功能新增至您的應用程式
+## 將推播通知功能新增至您的應用程式
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 ![Pusn通知擴充功能](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
-### 在應用程式中實作Journey Optimizer
+## 在應用程式中實作Journey Optimizer
 
 如先前課程所述，安裝行動標籤擴充功能僅會提供設定。 接下來，您必須安裝並註冊傳訊SDK。 如果這些步驟不清楚，請查閱 [安裝SDK](install-sdks.md) 區段。
 
@@ -205,7 +205,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
    ]
    ```
 
-### 註冊推播通知的裝置代號
+## 註冊推播通知的裝置代號
 
 1. 新增 [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API至 `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 函式。
 
