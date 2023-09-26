@@ -8,7 +8,7 @@ jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 18%
@@ -31,23 +31,20 @@ ht-degree: 18%
 >
 > 建立API認證後，系統管理員必須將認證與Experience Platform中的角色建立關聯。
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
-
-
-
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on)
 
 ## 使用Postman產生存取Token{#generate-an-access-token-with-postman}
 
 使用 [AdobeIdentity Management服務API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) 以取得存取Token以存取Adobe Experience Platform API。
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on)
 
 
 ## 使用Postman與Experience Platform API互動
 
 探索使用與Adobe Experience Platform API互動 [Adobe提供的Experience PlatformAPI Postman集合](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)，建立在 [Adobe Developer主控台環境變數](#export-integration-details-to-postman) 和 [產生的存取權杖](#generate-an-access-token-with-postman).
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on)
 
 
 ## 這些影片中參考的資源

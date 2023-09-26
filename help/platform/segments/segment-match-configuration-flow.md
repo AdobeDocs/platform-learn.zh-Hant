@@ -1,13 +1,13 @@
 ---
 title: 區段比對設定流程
-description: 連線至資料合作夥伴的區段共用後，您就可以探索並開始與合作夥伴共用資料。 此影片將逐步帶您瞭解……的程式（說明應該介於60到160個字元之間）
+description: 在連線至資料合作夥伴的區段共用後，您就可以探索並開始與合作夥伴共用資料。 此影片將逐步帶您瞭解……的程式（說明應該介於60到160個字元之間）
 feature: Segments
 role: User
 level: Intermediate
 jira: KT-10248
 thumbnail: 342336.jpeg
 exl-id: 0f73c316-ed55-4a33-9603-a58e90dd205a
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 26%
@@ -16,8 +16,6 @@ ht-degree: 26%
 
 # 區段比對設定流程
 
-連線至資料合作夥伴的區段共用後，您就可以探索並開始與合作夥伴共用資料。 本影片將逐步說明設定區段比對例項以進行資料共用的程式。
+在連線至資料合作夥伴的區段共用後，您就可以探索並開始與合作夥伴共用資料。 此影片將逐步說明設定區段比對例項以進行資料共用的程式。 如需詳細資訊，請參閱[文件](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/342336/?quality=12&learn=on)
-
-如需詳細資訊，請參閱[文件](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=zh-Hant)。
+>[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on)

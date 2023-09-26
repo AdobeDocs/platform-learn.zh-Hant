@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10362
 thumbnail: 345677.jpeg
 exl-id: 08213d4a-195b-4f5f-b8f6-a516e6b52df4
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '53'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 瞭解如何建立原則以強制執行客戶的同意偏好設定。 如需詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/345677?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on)
 
 >[!IMPORTANT]
 >

@@ -7,10 +7,10 @@ level: Beginner
 jira: KT-2704
 thumbnail: 27254.jpg
 exl-id: 5d2a8b17-baf9-4c52-9ebc-7f058ab0e64d
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 16%
+source-wordcount: '96'
+ht-degree: 11%
 
 ---
 
@@ -22,6 +22,5 @@ ht-degree: 16%
 >
 > &quot;[!UICONTROL 區段]「 」已重新命名「[!UICONTROL 受眾]&quot;（在平台介面中）。 選取 **[!UICONTROL 建立對象]** > **[!UICONTROL 建置規則]** 以輸入此影片中精選的規則產生器。
 
->[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on)
 
-如需詳細資訊，請參閱 [區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).

@@ -8,7 +8,7 @@ level: Intermediate
 jira: KT-6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 10%
@@ -19,7 +19,7 @@ ht-degree: 10%
 
 在逐步解說如何設定Adobe Real-time Customer Data Platform (CDP)中以檔案為基礎的目的地時，取得秘訣。 這適用於 [!UICONTROL 雲端儲存空間] 目的地（例如S3或SFTP）以及 [!UICONTROL 電子郵件行銷] 目的地。 如需更詳細的產品檔案，請參閱：
 
-* [啟用對象資料至批次設定檔匯出目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html) 有關如何使用Experience PlatformUI將資料啟用至批次或電子郵件行銷目的地的指示
+* [啟用對象資料至批次設定檔匯出目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=zh-Hant) 有關如何使用Experience PlatformUI將資料啟用至批次或電子郵件行銷目的地的指示
 * [使用流程服務API連線到批次目的地並啟用資料](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html) 有關如何使用流程服務API啟用資料至批次或電子郵件行銷目的地的指示
 
->[!VIDEO](https://video.tv.adobe.com/v/328175/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on)

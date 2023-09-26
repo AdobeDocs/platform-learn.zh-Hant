@@ -6,24 +6,19 @@ feature: Debugger
 level: Beginner
 thumbnail: 23114.jpeg
 exl-id: ba94065e-ef18-4b8c-8f83-c772287bbfe4
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 8cddffe88b2d15970d4d742a839577333a29d966
 workflow-type: tm+mt
-source-wordcount: '125'
-ht-degree: 16%
+source-wordcount: '111'
+ht-degree: 10%
 
 ---
 
 # 新增Experience Cloud Debugger
 
-瞭解如何 [將Adobe Experience Cloud Debugger擴充功能新增到Chrome網頁瀏覽器](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 以便您瞭解並疑難排解Experience Cloud實作。
+瞭解如何 [將Adobe Experience Cloud Debugger擴充功能新增到Chrome網頁瀏覽器](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 以便您瞭解並疑難排解Experience Cloud實作。 如需詳細資訊，請參閱 [Experience Cloud Debugger檔案](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
 >[!NOTE]
 >
 >考慮升級至 [Adobe Experience Platform Debugger](../overview.md)，此為本影片中精選之擴充功能的更新版本，並包含對Platform Web SDK等較新功能的支援。
 
 >[!VIDEO](https://video.tv.adobe.com/v/23114/?quality=12)
-
-## 其他資源
-
-* [從Chrome商店下載Adobe Experience Cloud Debugger擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-* [Experience Cloud Debugger檔案](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html)

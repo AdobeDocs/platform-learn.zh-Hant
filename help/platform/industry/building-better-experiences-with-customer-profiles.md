@@ -1,13 +1,13 @@
 ---
 title: 使用客戶設定檔建立更好的體驗
-description: 提供絕佳的客戶體驗，需要我們瞭解客戶。 將我們對客戶的一切瞭解合併成即時客戶個人檔案，我們就能提供客戶體驗，讓他們能夠繼續工作，獲得更多資訊。
+description: 提供絕佳的客戶體驗，需要我們瞭解客戶。 將我們瞭解的所有客戶資料合併到即時客戶個人檔案中，我們就能提供客戶體驗，讓他們繼續工作。
 feature: Profiles
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 thumbnail: 336939.jpg
 jira: KT-8866
 exl-id: df81b1f4-4d60-4b07-aa4f-4ddc38ed4b6b
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 0%
@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 使用客戶設定檔建立更好的體驗
 
-提供絕佳的客戶體驗，需要我們瞭解客戶。 將我們對客戶的一切瞭解合併成即時客戶個人檔案，我們就能提供客戶體驗，讓他們能夠繼續工作，獲得更多資訊。
+提供絕佳的客戶體驗，需要我們瞭解客戶。 將我們瞭解的所有客戶資料合併到即時客戶個人檔案中，我們就能提供客戶體驗，讓他們繼續工作。
 
->[!VIDEO](https://video.tv.adobe.com/v/336939/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336939/?learn=on)

@@ -8,25 +8,19 @@ feature: Debugger
 level: Beginner
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: 8cddffe88b2d15970d4d742a839577333a29d966
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 50%
+source-wordcount: '182'
+ht-degree: 41%
 
 ---
 
 # 如何使用Adobe Experience Cloud Debugger
 
-了解如何使用 Adobe Experience Cloud Debugger 來協助了解 Experience Cloud 實施並進行疑難排解。Debugger已完成最佳化，能為您示範Adobe解決方案的確切實作方式及其呼叫程式，尤其是對Analytics、Target、Audience Manager、Ad Cloud、標籤、Dynamic Tag Management和Identity Service的呼叫作業。
+瞭解如何使用 [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 協助您瞭解並疑難排解Experience Cloud實作。 Debugger已完成最佳化，能為您示範Adobe解決方案的確切實作方式及其呼叫程式，尤其是對Analytics、Target、Audience Manager、Ad Cloud、標籤、Dynamic Tag Management和Identity Service的呼叫作業。 如需詳細資訊，請參閱 [Experience Cloud Debugger檔案](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
 
 >[!NOTE]
 >
 >考慮升級至 [Adobe Experience Platform Debugger](../overview.md)，此為本影片中精選之擴充功能的更新版本，並包含對Platform Web SDK等較新功能的支援。
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/23064/?quality=12)
-
-## 其他資源
-
-* [從Chrome商店下載Adobe Experience Cloud Debugger擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
-* [Experience Cloud Debugger檔案](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html)

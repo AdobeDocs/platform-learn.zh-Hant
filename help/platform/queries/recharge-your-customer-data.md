@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
@@ -17,13 +17,14 @@ ht-degree: 3%
 # 為您的客戶資料重新充電，提供絕佳的體驗
 
 全通路資料是關鍵要素，可支援行銷人員使用的可操作客戶設定檔，以協調啟動並測量產生的客戶歷程。 但是，組織面臨管理這些資料的品質、規模和多樣性的挑戰。 這些需求需要簡化的解決方案，以減輕低品質資料的影響、縮短實現價值的時間，並透過對大量使用案例使用相同的資料來倍增ROI。
+如需詳細資訊，請造訪 [查詢服務檔案](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant).
 
 本影片會探索：
 
 * 您可以善用的Adobe Experience Platform資料準備功能
 * 提高Adobe Real-Time CDP、Adobe Journey Optimizer和Customer Journey Analytics的投資報酬率
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
 
 ## SQL範例
 
@@ -45,8 +46,6 @@ AND timestamp > current_date - interval '4 day'
 GROUP BY customerId,sku
 order by price desc)D;
 ```
-
-如需詳細資訊，請造訪 [查詢服務檔案](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant).
 
 >[!NOTE]
 >

@@ -2,13 +2,13 @@
 title: 執行查詢
 seo-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 執行查詢
-description: 在本課程中，您將學習如何設定、編寫和執行查詢以驗證您擷取的資料。
+description: 在本課程中，您將瞭解如何設定、編寫和執行查詢以驗證您擷取的資料。
 role: Data Architect, Data Engineer
 feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 3%
@@ -20,16 +20,16 @@ ht-degree: 3%
 <!-- 15 min-->
 在本課程中，您將學習如何設定、編寫和執行查詢以驗證您擷取的資料。
 
-Adobe Experience Platform查詢服務可讓您使用標準SQL在Platform中查詢資料，協助您瞭解資料。 使用查詢服務，您可以聯結Data Lake中的任何資料集，並將查詢結果擷取為新資料集，以用於報表、機器學習或內嵌到即時客戶設定檔中。
+Adobe Experience Platform查詢服務可讓您使用標準SQL在Platform中查詢資料，協助您瞭解資料。 使用查詢服務，您可以聯結Data Lake中的任何資料集，並將查詢結果擷取為新資料集，以用於報表、機器學習或擷取到即時客戶個人檔案中。
 
-**資料架構師** 和 **資料工程師** 將需要在本教學課程以外的地方使用查詢服務。
+**資料架構師** 和 **資料工程師** 在本教學課程之外，將需要使用查詢服務。
 
-在開始練習之前，請觀看這段短片，以進一步瞭解查詢服務：
->[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
+在開始練習之前，請觀看此短片，以進一步瞭解查詢服務：
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
 
 ## 需要的許可權
 
-在 [設定許可權](configure-permissions.md) 課程，您可以設定完成本課程所需的所有存取控制項。
+在 [設定許可權](configure-permissions.md) 課程，您已設定完成本課程所需的所有存取控制項。
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -54,7 +54,7 @@ Adobe Experience Platform查詢服務可讓您使用標準SQL在Platform中查�
    ![顯示表格查詢](assets/queries-showTables.png)
 
 
-1. 現在嘗試此查詢，取代 `_techmarketingdemos` 使用您自己的租使用者名稱空間，如果您還記得的話，這些名稱空間會顯示在您的結構描述中。
+1. 現在嘗試此查詢，取代 `_techmarketingdemos` 使用您自己的租使用者名稱空間，如果您記得，這些名稱空間會顯示在您的結構描述中。
 
    ```
    SELECT person.name.lastName,loyalty.tier
@@ -62,12 +62,12 @@ Adobe Experience Platform查詢服務可讓您使用標準SQL在Platform中查�
    WHERE loyalty.tier ='gold'
    ```
 
-   ![從忠誠度資料集中選取資料](assets/queries-loyaltySelect.png)
+   ![從熟客資料集中選取資料](assets/queries-loyaltySelect.png)
 
 1. 如果有任何錯誤，詳細訊息將會顯示在 **[!UICONTROL 主控台]** 標籤，如下圖所示
-   ![查詢中發生錯誤](assets/queries-error.png)
+   ![查詢中的錯誤](assets/queries-error.png)
 
-1. 透過成功的查詢， **[!UICONTROL 名稱]** it `Luma Gold Level Customers`
+1. 有了成功的查詢， **[!UICONTROL 名稱]** it `Luma Gold Level Customers`
 1. 選取 **[!UICONTROL 儲存]** 按鈕
    ![儲存查詢](assets/queries-loyaltySelect-save.png)
 
@@ -82,7 +82,7 @@ HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;-->
 
 ## 其他練習
 
-稍後，教學課程會新增其他查詢服務練習。
+其他查詢服務練習將於稍後新增至教學課程。
 <!--
 ## Join Datasets
 

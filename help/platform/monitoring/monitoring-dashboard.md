@@ -7,17 +7,15 @@ level: Beginner
 jira: KT-7104
 thumbnail: 330549.jpg
 exl-id: f02477d3-8e7c-4f53-a547-b37d0c63c79a
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 73%
+ht-degree: 80%
 
 ---
 
 # 監視資料內嵌
 
-瞭解如何使用監視儀表板來監視和追蹤內嵌到 Adobe Experience Platform 中的資料。此監控儀表板可讓您由上而下檢視經由Data Lake到Profile和Identity服務的來源資料處理，並具備可操作的深入分析。
+瞭解如何使用監視儀表板來監視和追蹤內嵌到 Adobe Experience Platform 中的資料。此監控儀表板可讓您由上而下檢視經由Data Lake到Profile和Identity服務的來源資料處理，並具備可操作的深入分析。 如需詳細資訊，請參閱 [ 說明文件](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/331776?quality=12&learn=on)
-
-如需詳細資訊，請參閱[文件](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html)
+>[!VIDEO](https://video.tv.adobe.com/v/331776?learn=on)
