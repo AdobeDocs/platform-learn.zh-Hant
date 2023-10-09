@@ -1,17 +1,18 @@
 ---
-title: 使用地理定位服務
+title: 使用地標
 description: 瞭解如何在行動應用程式中使用Places地理位置服務。
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 3%
 
 ---
 
-# 使用地理定位服務
+# 使用地標
 
-瞭解如何在應用程式中使用地理位置服務。
+瞭解如何在應用程式中使用Places地理位置服務。
 
 Adobe Experience Platform Data Collection Places Service是一項地理位置服務，可讓具備位置感知功能的行動應用程式瞭解位置內容。 此服務使用豐富且簡單易用的SDK介面，並隨附彈性的興趣點資料庫(POI)。
 
@@ -81,7 +82,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
    1. 選取 **[!UICONTROL 儲存至程式庫並建置]** 從 **[!UICONTROL 儲存至程式庫]**.
       ![安裝Places擴充功能](assets/places-install-extension.png).
 
-1. 正在重建您的程式庫。
+1. 已重建您的程式庫。
 
 
 ### 驗證您的結構描述
@@ -96,7 +97,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
    ![結構描述地標](assets/schema-places-context.png).
 
 
-### 更新您的標籤
+### 更新您的標籤屬性
 
 Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根據這些事件觸發動作。 您可以使用此功能，將您必須在應用程式中實施的API編碼減至最少。
 
@@ -132,7 +133,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 接下來，您將定義處理這些資料元素的規則。
 
-1. 在您的標籤屬性中。 選取 **[!UICONTROL 規則]** 從左側邊欄。
+1. 在您的標籤屬性中，選取 **[!UICONTROL 規則]** 從左側邊欄。
 1. 選取 **[!UICONTROL 新增規則]**.
 1. 在 **[!UICONTROL 建立規則]** 畫面，輸入規則的名稱，例如 `POI - Entry`.
 1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 底下 **[!UICONTROL 活動]**.
@@ -215,6 +216,10 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在 **[!UICONTROL 行動核心 — 附加資料]** 動作。
    1. 選取 **[!UICONTROL Adobe Experience Platform Edge Network]** 從 **[!UICONTROL 副檔名]** 清單並選取 **[!UICONTROL 將事件轉送至Edge Network]**.
    1. 選取&#x200B;**[!UICONTROL 「保留變更」]**。
+
+1. 若要儲存規則，請選取「 」 **[!UICONTROL 儲存至程式庫]**.
+
+   ![規則](assets/tags-rule-poi-exit.png)
 
 
 若要確保標籤中的所有變更皆已發佈
@@ -302,18 +307,15 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
    }
    ```
 
-說明有關iOS中位置管理員實作的詳細資訊，不在本課程的主題。
-
-
 ## 使用您的應用程式進行驗證
 
 1. 在裝置上或在模擬器中開啟您的應用程式。
 
 1. 前往 **[!UICONTROL 位置]** 標籤。
 
-1. 四處移動地圖，確保中間的藍色圓圈位於您的某個POI上方，例如倫敦。
+1. 四處移動（拖曳）地圖，確保藍色中間圓圈位於其中一個POI的上方，例如倫敦。
 
-1. 點選 <img src="assets/geobutton.png" width="20" /> 重複執行，直到在右下角看到類別和名稱為止。
+1. 點選 <img src="assets/geobutton.png" width="20" /> 直到您看到類別和名稱出現在標有圖釘的紅色位置的標籤中。
 
 1. 點選POI的標籤，這會開啟 **[!UICONTROL 附近的POI]** 工作表。
 

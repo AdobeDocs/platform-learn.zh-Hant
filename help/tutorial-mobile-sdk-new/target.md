@@ -5,17 +5,17 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1921'
 ht-degree: 3%
 
 ---
 
+# 使用Adobe Target最佳化及個人化
 
-# 執行A/B測試
-
-瞭解如何使用Platform Mobile SDK和Adobe Target在行動應用程式中執行A/B測試。
+瞭解如何使用Platform Mobile SDK和Adobe Target最佳化及個人化行動應用程式中的體驗。
 
 Target提供一切所需工具，讓您量身打造及個人化您的客戶體驗。 Target可協助您在網站和行動網站、應用程式、社群媒體和其他數位頻道上獲得最大收入。 Target可以執行A/B測試、多變數測試、建議產品和內容、鎖定內容、使用AI自動個人化內容等等。 本課程著重於Target的A/B測試功能。  請參閱 [A/B測試概覽](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) 以取得詳細資訊。
 
@@ -36,7 +36,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
 ## 學習目標
 
-在本課程中，您將學習
+在本課程中，您將會：
 
 * 更新您的Target整合資料流。
 * 使用Journey Optimizer - Decisioning擴充功能更新標籤屬性。
@@ -56,7 +56,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
 ### 更新資料流設定
 
-### Adobe Target
+#### Adobe Target
 
 為確保從您的行動應用程式傳送到Experience Platform Edge Network的資料能轉送到Adobe Target，您必須更新資料流設定。
 
@@ -66,6 +66,10 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
    您可以在Target UI的下列位置找到您的屬性： **[!UICONTROL 管理]** > **[!UICONTROL 屬性]**. 選取 ![程式碼](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) 以顯示您要使用之屬性的屬性代號。 屬性代號的格式如下 `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`；您只能輸入值 `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
+   您可以選擇指定Target環境ID。 Target會使用環境來組織您的網站和生產前環境，以便輕鬆管理和分隔報表。 預設環境包括生產、測試和開發。 另請參閱 [環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) 和 [目標環境ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) 以取得詳細資訊。
+
+   您可以選擇指定Target第三方ID名稱空間，以支援在身分名稱空間上同步設定檔（例如CRM ID）。 另請參閱 [Target第三方ID名稱空間](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace) 以取得詳細資訊。
+
 1. 選取「**[!UICONTROL 儲存]**」。
 
    ![將Target新增至資料串流](assets/edge-datastream-target.png)
@@ -73,7 +77,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
 #### Adobe Journey Optimizer
 
-為確保將從您的行動應用程式傳送到Edge Network的資料轉送到Journey Optimizer — 決策管理，請更新您的Experience Edge設定。
+為確保將從您的行動應用程式傳送到Edge Network的資料轉送到Journey Optimizer — 決策管理，請更新您的資料流設定。
 
 1. 在資料收集UI中，選取 **[!UICONTROL 資料串流]**，並選取您的資料串流，例如 **[!DNL Luma Mobile App]**.
 1. 選取 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 的 **[!UICONTROL Experience Platform]** 並選取 ![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯]** 從內容功能表。
@@ -214,6 +218,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** 在「Xcode專案」導覽器中。 尋找 ` func updatePropositionAT(ecid: String, location: String) async` 函式。 新增下列程式碼：
 
    ```swift
+   // set up the XDM dictionary, define decision scope and call update proposition API
    Task {
        let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
        let identityMap = ["identityMap" : ecid]
@@ -229,7 +234,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
    * 設定XDM字典 `xdmData`，包含ECID以識別您必須呈現A/B測試的設定檔，以及
    * 定義 `decisionScope`，表示A/B測試的一組位置。
 
-   接著，函式會呼叫兩個API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 這些函式會清除任何快取的主張，並更新此設定檔的主張。
+   接著，函式會呼叫兩個API： [`Optimize.clearCachedPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) 和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 這些函式會清除任何快取的主張，並更新此設定檔的主張。 此情境中的主張是從Target活動（您的A/B測試）中選取且您在中定義的體驗（選件） [建立A/B測試](#create-an-ab-test).
 
 1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** 在「Xcode專案」導覽器中。 尋找 `func onPropositionsUpdateAT(location: String) async {` 函式並檢查此函式的程式碼。 此函式最重要的部分為  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API呼叫，因此：
    * 根據決定範圍（即您在A/B測試中定義的位置）擷取目前設定檔的主張，
@@ -258,11 +263,9 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
 ## 使用應用程式進行驗證
 
-1. 在裝置上或在模擬器中開啟您的應用程式。
+1. 在模擬器中或從Xcode在實體裝置上重建並執行應用程式，使用 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 前往 **[!UICONTROL 個人化]** 標籤。
-
-1. 選取 **[!UICONTROL 邊緣個人化]**.
 
 1. 向下捲動到底部，您會看到在A/B測試中定義的兩個選件之一，顯示在 **[!UICONTROL TARGET]** 圖磚。
 
@@ -273,7 +276,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
 驗證Assurance中的A/B測試：
 
-1. 前往Assurance UI。
+1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
 1. 選取 **[!UICONTROL 設定]** 在左側邊欄中並選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁邊 **[!UICONTROL 檢閱和模擬]** 底下 **[!UICONTROL Adobe Journey Optimizer決策]**.
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選取 **[!UICONTROL 檢閱和模擬]** 在左側邊欄中。 資料串流設定都會經過驗證，並且會在您的應用程式中設定SDK。

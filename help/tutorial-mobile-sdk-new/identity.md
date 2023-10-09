@@ -3,10 +3,11 @@ title: 收集身分資料
 description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 5%
+source-wordcount: '860'
+ht-degree: 4%
 
 ---
 
@@ -103,7 +104,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 1. 瀏覽至 **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登入工作表]** 在Xcode專案導覽器中，尋找在選取 **[!UICONTROL 登入]** 按鈕。 新增下列程式碼：
 
    ```swift
-   // Update identities
+   // Call updateIdentities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -117,7 +118,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 您可以使用 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 用於從儲存的使用者端身分對應中移除身分的API。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端身分識別圖形中移除識別碼。 另請參閱 [檢視身分圖](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) 以取得身分圖表的詳細資訊。
 
-1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，新增下列程式碼至 `func removeIdentities(emailAddress: String, crmId: String)` 函式：
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，新增下列程式碼至 `func removeIdentities(emailAddress: String, crmId: String)` 函式：
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -137,9 +138,9 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 ## 使用保證進行驗證
 
-1. 檢閱 [設定指示](assurance.md) 區段並將模擬器或裝置連線至Assurance。
+1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
 1. 在Luma應用程式中
-   1. 選取 **[!UICONTROL 首頁]** 標籤。
+   1. 選取 **[!UICONTROL 首頁]** 標籤並將「保證」圖示移至左側。
    1. 選取 <img src="assets/login.png" width="15" /> 圖示加以選取。
 
       <img src="./assets/identity1.png" width="300">
@@ -165,6 +166,10 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 1. 您會看到 **[!UICONTROL 身分]** 已列出。
 
    ![驗證身分圖表](assets/identity-validate-graph.png)
+
+>[!INFO]
+>
+>應用程式中沒有可重設ECID的程式碼，這表示您只能透過解除安裝應用程式並重新安裝，來重設ECID （並在裝置上使用新的ECID有效建立新設定檔）。 若要實作識別碼的重設，請參閱 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) 和 [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API呼叫。 不過，使用推播通知識別碼時，請務必注意(請參閱 [傳送推播通知](journey-optimizer-push.md))，該識別碼會成為裝置上的另一個「粘性」設定檔識別碼。
 
 
 >[!SUCCESS]

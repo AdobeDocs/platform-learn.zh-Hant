@@ -3,10 +3,11 @@ title: 設定保證
 description: 瞭解如何在行動應用程式中實作Assurance擴充功能。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 8%
+source-wordcount: '962'
+ht-degree: 7%
 
 ---
 
@@ -68,7 +69,7 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 
    >[!IMPORTANT]
    >
-   >請確保您使用唯一的套件組合識別碼，與預設值不同 `com.adobe.luma.tutorial.swiftui`  在開始專案中輸入，因為每個套件組合識別碼必須是唯一的。
+   >確定您使用 _獨特_ 組合識別碼並取代 `Luma` 組合識別碼，因為每個組合識別碼必須是唯一的。 通常，套件組合ID字串會使用反向DNS格式，例如 `com.organization.brand.uniqueidentifier`. 例如，本教學課程的完成版本使用 `com.adobe.luma.tutorial.swiftui`.
 
 
    ![Xcode簽署功能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -91,7 +92,7 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
 
 ## 連線到工作階段
 
-1. 在模擬器或連線的實體裝置上執行應用程式。
+1. 在模擬器中或從Xcode在實體裝置上重建並執行應用程式，使用 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 1. 選取 **[!UICONTROL 保證]** 從資料收集UI的左側邊欄。
 1. 選取 **[!UICONTROL 建立工作階段]**.
 1. 選取 **[!UICONTROL 開始]**.
@@ -133,6 +134,34 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
          ![保證事件](assets/assurance-events.png)
 
 如果您遇到任何挑戰，請檢閱 [技術](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+
+
+## 驗證擴充功能
+
+若要確認您的應用程式是否使用最新的擴充功能：
+
+1. 選取 **[!UICONTROL 設定]**.
+
+1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 的 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 擴充功能版本]**.
+
+1. 選取「**[!UICONTROL 儲存]**」。
+
+   ![設定擴充功能版本](assets/assurance-configure-extension-versions.png)
+
+1. 選取 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 擴充功能版本]**. 您將會看到最新可用擴充功能的概述，以及您應用程式版本中使用的擴充功能。
+
+   ![擴充功能版本](assets/assurance-extension-versions.png)
+
+1. 若要更新擴充功能版本(例如 **[!UICONTROL 傳訊]** 和 **[!UICONTROL 最佳化]**)，在Xcode中，為需要升級的特定擴充功能選取套件（擴充功能），從 **[!UICONTROL 套件相依性]** (例如： **[!UICONTROL AEPMessaging]**)並從快顯選單中選取 **[!UICONTROL 更新封裝]**. Xcode將更新套件相依性。
+
+
+>[!NOTE]
+>
+>當您在Xcode中更新擴充功能（套件）時，您需要關閉並刪除目前的工作階段，並重複的所有步驟，從 [連線到工作階段](#connecting-to-a-session) 和 [驗證擴充功能](#verify-extensions) 確保Assurance在新的Assurance工作階段中正確報告正確的延伸模組。
+
+
+
+
 
 >[!SUCCESS]
 >

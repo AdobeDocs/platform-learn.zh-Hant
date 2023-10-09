@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1563'
 ht-degree: 4%
 
 ---
@@ -32,7 +33,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 * 成功建立並執行應用程式，且已安裝並設定SDK。
 * 為Adobe Experience Platform設定應用程式。
 * 如所述存取Journey Optimizer和足夠的許可權 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 此外，您需要足夠的許可權才能使用下列Journey Optimizer功能。
-   * 管理行銷活動。
+   * 管理行銷活動.
 * 付費的Apple開發人員帳戶，具有建立憑證、識別碼和金鑰的足夠存取權。
 * 實體iOS裝置或模擬器以進行測試。
 
@@ -136,9 +137,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 
 ## 使用保證驗證設定
 
-1. 檢閱 [設定指示](assurance.md) 區段。
-1. 在您的實體裝置或模擬器上安裝應用程式。
-1. 使用保證產生的URL啟動應用程式。
+1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
 1. 在Assurance UI中，選取 **[!UICONTROL 設定]**.
    ![設定點按](assets/push-validate-config.png)
 1. 選取 ![加號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 按鈕旁邊 **[!UICONTROL 應用程式內傳訊]**.
@@ -159,7 +158,8 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 * 應用程式生命週期事件，例如，啟動、安裝、升級、關閉或當機。
 * 地理位置事件，例如進入或退出地標。
 
-在本教學課程中，您將會使用行動核心通用和獨立於擴充功能的API (請參閱 [行動核心通用API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis))以方便使用者畫面、動作和PII資料的事件追蹤。 這些API產生的事件會發佈至SDK事件中樞，並可由擴充功能使用。 SDK事件中樞提供與所有AEP Mobile SDK擴充功能相連結的核心資料結構，並維護註冊的擴充功能和內部模組清單、註冊的事件接聽程式清單以及共用狀態資料庫。
+在本教學課程中，您將會使用行動核心通用和獨立於擴充功能的API (請參閱 [行動核心通用API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis))以方便使用者畫面、動作和PII資料的事件追蹤。 這些API產生的事件會發佈至SDK事件中樞，並可由擴充功能使用。 SDK事件中樞提供與所有Mobile Platform SDK擴充功能繫結的核心資料結構，並維護註冊的擴充功能和內部模組清單、註冊的事件接聽程式清單以及共用狀態資料庫。
+
 SDK事件中心會發佈並接收來自已註冊擴充功能的事件資料，以簡化與Adobe和協力廠商解決方案的整合。 例如，安裝「最佳化」擴充功能時，事件中樞會處理所有請求以及與Journey Optimizer — 決定管理優惠引擎的互動。
 
 1. 在Journey Optimizer UI中，選取 **[!UICONTROL 行銷活動]** 從左側邊欄。
@@ -219,7 +219,7 @@ SDK事件中心會發佈並接收來自已註冊擴充功能的事件資料，�
 
 ## 使用您的應用程式進行驗證
 
-1. 在裝置上或在模擬器中開啟您的應用程式。
+1. 在模擬器中或從Xcode在實體裝置上重建並執行應用程式，使用 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 前往 **[!UICONTROL 設定]** 標籤。
 
@@ -232,6 +232,7 @@ SDK事件中心會發佈並接收來自已註冊擴充功能的事件資料，�
 
 您可以在Assurance UI中驗證應用程式內訊息。
 
+1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
 1. 選取 **[!UICONTROL 應用程式內傳訊]**.
 1. 選取 **[!UICONTROL 事件清單]**.
 1. 選取 **[!UICONTROL 顯示訊息]** 登入點。

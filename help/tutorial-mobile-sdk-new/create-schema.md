@@ -3,9 +3,10 @@ title: 建立 XDM 結構描述
 description: 瞭解如何為行動應用程式事件建立XDM結構描述。
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1506'
 ht-degree: 8%
 
 ---
@@ -96,9 +97,22 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 1. 選取 **[!UICONTROL 建立結構描述]**.
 
-1. 選取 **[!UICONTROL XDM ExperienceEvent]** 功能表中。
+1. 在 **[!UICONTROL 選取類別]** 的步驟 **[!UICONTROL 建立結構描述]** 精靈，選取 **[!UICONTROL 體驗事件]** 底下 **[!UICONTROL 選取此結構描述的基底類別]**.
 
-   ![從下拉式清單中選取ExperienceEvent](assets/schema-create.png)
+1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
+
+   ![結構描述精靈基底類別](assets/schema-wizard-base-class.png)
+
+1. 在 **[!UICONTROL 名稱和評論]** 的步驟 **[!UICONTROL 建立結構描述]** 精靈，輸入 **[!UICONTROL 結構描述顯示名稱]**，例如 `Luma Mobile Event Schema` 和 [!UICONTROL 說明]，例如 `Schema for Luma mobile app experience events`.
+
+   >[!NOTE]
+   >
+   >如果您正在閱讀此教學課程，且已將多位人員放在單一沙箱中，或您使用共用帳戶，請考慮在命名慣例中附加或附加身分識別。 舉例來說，請避免使用 `Luma Mobile App Event Schema`，改用 `Luma Mobile App Event Schema - Joe Smith`。另請參閱以下說明： [概觀](overview.md).
+
+1. 選取 **[!UICONTROL 完成]** 完成精靈。
+
+   ![結構描述名稱和審查](assets/schema-wizard-name-and-review.png)
+
 
 1. 選取 ![加號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **新增** 旁邊 **[!UICONTROL 欄位群組]**.
 
@@ -116,16 +130,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
    系統會將您帶回主要結構描述構成畫面，讓您在其中檢視所有可用欄位。
 
-1. 透過選取以下專案為您的結構描述命名： **[!UICONTROL 未命名的結構描述]** 從 **[!UICONTROL 組合]** 窗格（下方） **[!UICONTROL 結構描述]**)並提供 **[!UICONTROL 顯示名稱]** &amp; **[!UICONTROL 說明]**，例如 `Luma Mobile App Event Schema` 和 `Schema for Luma mobile app experience events.`
-
-   >[!NOTE]
-   >
-   >如果您正在閱讀此教學課程，且已將多位人員放在單一沙箱中，或您使用共用帳戶，請考慮在命名慣例中附加或附加身分識別。 舉例來說，請避免使用 `Luma Mobile App Event Schema`，改用 `Luma Mobile App Event Schema - Joe Smith`。另請參閱以下說明： [概觀](overview.md).
-
-
 1. 選取「**[!UICONTROL 儲存]**」。
-
-   ![選取套用](assets/schema-name-save.png)
 
 >[!NOTE]
 >

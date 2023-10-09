@@ -2,9 +2,10 @@
 title: 收集設定檔資料
 description: 瞭解如何在行動應用程式中收集設定檔資料。
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -64,7 +65,7 @@ ht-degree: 1%
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -95,9 +96,7 @@ ht-degree: 1%
 
 ## 使用保證進行驗證
 
-1. 檢閱 [設定指示](assurance.md) 區段。
-1. 安裝應用程式。
-1. 使用保證產生的URL啟動應用程式。
+1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
 1. 執行應用程式以登入並與產品互動。
 
    1. 將「保證」圖示移至左側。
@@ -132,4 +131,4 @@ ht-degree: 1%
 >
 >您現在已設定應用程式，以更新Edge Network和（設定時） Adobe Experience Platform中設定檔的屬性。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[使用地理定位服務](places.md)**
+下一步： **[使用地標](places.md)**

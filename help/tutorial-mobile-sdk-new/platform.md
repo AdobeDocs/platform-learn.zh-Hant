@@ -4,9 +4,10 @@ description: 瞭解如何將資料傳送至Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1069'
 ht-degree: 5%
 
 ---
@@ -98,7 +99,7 @@ ht-degree: 5%
 
 開啟應用程式，並導覽至您正在追蹤事件的畫面。 您也可以觸發生命週期量度。
 
-在Platform介面中開啟資料集。 您應該會看到資料批次到達資料集
+在Platform介面中開啟資料集。 您應該會看到資料批次到達資料集。 資料通常每15分鐘會以微批次的形式送達，因此您可能無法立即看到資料。
 
 ![驗證資料登陸Platform資料集批次](assets/platform-dataset-batches.png)
 
@@ -170,4 +171,4 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 >
 >您現在已設定應用程式，不僅將資料傳送至Edge Network，也傳送至Adobe Experience Platform。<br>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[建立和推播通知](journey-optimizer-push.md)**
+下一步： **[建立和傳送推播通知](journey-optimizer-push.md)**

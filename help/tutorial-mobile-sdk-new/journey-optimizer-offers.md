@@ -5,14 +5,15 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2441'
-ht-degree: 3%
+source-wordcount: '2618'
+ht-degree: 2%
 
 ---
 
-# 建立和顯示優惠方案
+# 使用決定管理建立及顯示優惠方案
 
 瞭解如何透過Experience Platform Mobile SDK在行動應用程式中顯示Journey Optimizer決定管理提供的優惠方案。
 
@@ -101,6 +102,27 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選取 **[!UICONTROL 驗證設定]** 在左側邊欄中。 應用程式中的資料流設定和SDK設定均已驗證。
    ![AJO決策驗證](assets/ajo-decisioning-validation.png)
+
+
+## 建立位置
+
+在實際建立優惠方案之前，您必須先定義這些優惠方案在行動應用程式中的放置方式與位置。 在決定管理中，您會為此定義版位，並會為支援JSON裝載的行動裝置頻道定義版位：
+
+1. 在Journey Optimizer UI中，選取 ![元件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL 元件]** 從 **[!UICONTROL 決定管理]** 在左側邊欄中。
+
+1. 選取 **[!UICONTROL 版位]** 從頂端列。
+
+1. 如果沒有名稱相同的位置 **[!UICONTROL 行動JSON]**，  **[!UICONTROL 行動]** 作為 **[!UICONTROL 頻道型別]** 和 **[!UICONTROL JSON]** 作為 **[!UICONTROL 內容型別]** 「 」已列出，您必須建立位置。 否則，請繼續 [建立優惠方案](#create-offers).
+
+若要建立行動JSON位置：
+
+1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 建立位置。
+
+   1. 在 **[!UICONTROL 詳細資料]** 區段，輸入 `Mobile JSON` 作為 **[!UICONTROL 名稱]**，選取 **[!UICONTROL 行動]** 從 **[!UICONTROL 頻道型別]** 和 **[!UICONTROL JSON]** 從 **[!UICONTROL 內容型別]**.
+   1. 選取 **[!UICONTROL 儲存]** 以儲存位置。
+
+   ![建立位置](assets/ajo-create-placement.png)
+
 
 
 ## 建立優惠方案
@@ -354,7 +376,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 ## 使用應用程式進行驗證
 
-1. 在裝置上或在模擬器中開啟您的應用程式。
+1. 在模擬器中或從Xcode在實體裝置上重建並執行應用程式，使用 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 前往 **[!DNL Personalisation]** 標籤。
 
@@ -371,7 +393,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 若要驗證Assurance中的優惠方案實作：
 
-1. 前往Assurance UI。
+1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
 1. 選取 **[!UICONTROL 設定]** 在左側邊欄中並選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁邊 **[!UICONTROL 檢閱和模擬]** 底下 **[!UICONTROL Adobe Journey Optimizer決策]**.
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選取 **[!UICONTROL 檢閱和模擬]** 在左側邊欄中。 資料串流設定都會經過驗證，並且會在您的應用程式中設定SDK。

@@ -3,10 +3,11 @@ title: 實作同意
 description: 瞭解如何在行動應用程式中實施同意。
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 2%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -32,9 +33,9 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 
 如果您從頭開始按照教學課程進行，您可能會記得您已將「同意」擴充功能中的預設同意設為 **[!UICONTROL 擱置中 — 在使用者提供同意偏好設定之前發生的佇列事件。]**
 
-若要開始收集資料，您必須取得使用者的同意。 在本教學課程中，您只要在警報中詢問使用者，即可獲得使用者同意。 在真實世界應用程式中，您會想要諮詢您所在地區的同意最佳實務。
+若要開始收集資料，您必須取得使用者的同意。 在真實世界應用程式中，您會想要諮詢您所在地區的同意最佳實務。 在本教學課程中，您只需透過警報要求使用者同意：
 
-1. 您只想詢問使用者一次。 因此，您希望結合行動SDK同意與使用Apple進行追蹤所需的授權 [應用程式追蹤透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 在此應用程式中，您假設當使用者授權追蹤時，使用者也同意收集事件。
+1. 您只想要求使用者同意一次。 因此，您希望結合行動SDK同意與使用Apple進行追蹤所需的授權 [應用程式追蹤透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 在此應用程式中，您假設當使用者授權追蹤時，使用者也同意收集事件。
 
 1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。
 
@@ -95,9 +96,7 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 
 ## 使用保證進行驗證
 
-1. 檢閱 [保證](assurance.md) 課程。
-1. 安裝應用程式。
-1. 使用保證產生的URL啟動應用程式。
+1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
 1. 如果您正確新增上述程式碼，系統會提示您提供同意。
 
    選取 **[!UICONTROL 繼續……]** 然後選取 **[!UICONTROL 允許]**.
@@ -107,6 +106,17 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 
 1. 您應該會看到 **[!UICONTROL 取得同意回應]** 保證UI中的事件。
    ![驗證同意](assets/consent-update.png)
+
+
+## 重設同意
+
+如果您要重設同意：
+
+1. 前往 **[!UICONTROL 設定]** 在應用程式中。
+
+1. 選取 **[!UICONTROL 應用程式設定……]** 這會在iOS設定應用程式中開啟Luma應用程式設定。
+
+1. 切換 **[!UICONTROL 允許追蹤]** 關閉。
 
 
 
