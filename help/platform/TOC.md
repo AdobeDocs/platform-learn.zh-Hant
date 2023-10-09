@@ -5,7 +5,7 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
+source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 35%
@@ -38,8 +38,8 @@ ht-degree: 35%
 + [將範例資料匯入 Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [使用警示](/help/platform/admin/use-alerts.md)
-   + [使用沙箱](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [在沙箱之間複製物件](/help/platform/admin/use-sandboxes.md)
+   + [使用沙箱](/help/platform/admin/use-sandboxes.md)
+   + [在沙箱之間複製物件](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [設定以屬性為基礎的存取控制](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [管理產品設定檔](/help/platform/admin/managing-product-profiles.md)
