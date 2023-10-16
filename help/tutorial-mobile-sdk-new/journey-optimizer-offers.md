@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
 source-wordcount: '2618'
 ht-degree: 2%
@@ -296,7 +296,9 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 在「Xcode專案」導覽器中。
 1. 確定 `AEPOptimize` 是匯入清單的一部分。
 
-   `import AEPOptimize`
+   ```swift
+   import AEPOptimize
+   ```
 
 1. 確定 `Optimize.self` 是您註冊的擴充功能陣列的一部分。
 

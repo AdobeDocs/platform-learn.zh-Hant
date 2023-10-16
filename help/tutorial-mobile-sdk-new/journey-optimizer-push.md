@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '2607'
-ht-degree: 3%
+source-wordcount: '2734'
+ht-degree: 2%
 
 ---
 
@@ -155,6 +155,26 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 1. 您應該會看到測試推播通知出現在應用程式中。
 
    <img src="assets/luma-app-push.png" width="300" />
+
+
+## 簽署
+
+只有以下專案才需要簽署Luma應用程式： [建立和傳送推播通知](journey-optimizer-push.md) 和 [建立和傳送應用程式內訊息](journey-optimizer-inapp.md) 本教學課程中的課程。 這些課程需要Apple布建設定檔， **需要付費的Apple開發人員帳戶**.
+
+若要更新應用程式的簽署：
+
+1. 前往Xcode中的應用程式。
+1. 選取 **[!DNL Luma]** 在「專案」導覽器中。
+1. 選取 **[!DNL Luma]** 目標。
+1. 選取 **簽署與功能** 標籤。
+1. 設定 **[!UICONTROL 自動管理簽署]**， **[!UICONTROL 團隊]**、和 **[!UICONTROL 組合識別碼]**，或使用您特定的Apple開發佈建詳細資訊。
+
+   >[!IMPORTANT]
+   >
+   >確定您使用 _獨特_ 組合識別碼並取代 `com.adobe.luma.tutorial.swiftui` 組合識別碼，因為每個組合識別碼必須是唯一的。 通常，套件組合ID字串會使用反向DNS格式，例如 `com.organization.brand.uniqueidentifier`. 例如，本教學課程的完成版本使用 `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Xcode簽署功能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 
 ## 將推播通知功能新增至您的應用程式

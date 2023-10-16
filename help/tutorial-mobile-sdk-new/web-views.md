@@ -3,13 +3,13 @@ title: 處理網頁檢視
 description: 瞭解如何在行動應用程式中使用WebViews處理資料收集。
 jira: KT-6987
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '490'
 ht-degree: 1%
 
 ---
-
 
 # 處理網頁檢視
 
@@ -67,6 +67,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 
 若要執行程式碼：
 
+1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
 1. 前往 **[!UICONTROL 設定]** 在應用程式中
 1. 點選 **[!DNL View...]** 按鈕以顯示 **[!DNL Terms of Use]**.
 

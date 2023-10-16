@@ -3,9 +3,9 @@ title: 使用地標
 description: 瞭解如何在行動應用程式中使用Places地理位置服務。
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1691'
 ht-degree: 3%
 
 ---
@@ -239,7 +239,10 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 1. 如果左側邊欄中尚未提供，請選取 **[!UICONTROL 設定]** 在左側邊欄中並選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁邊 **[!UICONTROL 活動]** 和 **[!UICONTROL 地圖和模擬]** 底下 **[!UICONTROL PLACES SERVICE]**.
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選取 **[!UICONTROL 地圖和模擬]** 在左側邊欄中。
-1. 選取Places服務中定義的其中一個POI，並從快顯視窗中選取 ![齒輪](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 模擬進入事件]**.
+1. 將地圖移至其中一個POI的位置。
+1. 選取 ![齒輪](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 模擬載入POI。  您的POI會使用圓圈和圖釘來識別。
+1. 選取您的POI。
+1. 從快顯視窗中選取 ![齒輪](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 模擬進入事件]**.
    ![模擬進入事件](assets/places-simulate.png)
 1. 選取 **[!UICONTROL 活動]** 從左側邊欄中，應該會看到您模擬的事件。
    ![AJO決策驗證](assets/places-events.png)
@@ -258,7 +261,9 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 在「Xcode專案」導覽器中。
 1. 確定 `AEPPlaces` 是匯入清單的一部分。
 
-   `import AEPPlaces`
+   ```swift
+   import AEPPlaces
+   ```
 
 1. 確定 `Places.self` 是您註冊的擴充功能陣列的一部分。
 

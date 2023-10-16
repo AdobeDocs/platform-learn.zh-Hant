@@ -4,10 +4,10 @@ description: 瞭解如何在行動應用程式中實施同意。
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 1%
+source-wordcount: '542'
+ht-degree: 2%
 
 ---
 
@@ -96,28 +96,10 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 
 ## 使用保證進行驗證
 
+1. 從您的裝置或模擬器刪除應用程式，因為我們要正確重設和初始化追蹤和同意。
 1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
-1. 如果您正確新增上述程式碼，系統會提示您提供同意。
-
-   選取 **[!UICONTROL 繼續……]** 然後選取 **[!UICONTROL 允許]**.
-
-   <img src="./assets/consent-update-1.png" width="300" /> 
-   <img src="./assets/consent-update-2.png" width="300" />
-
-1. 您應該會看到 **[!UICONTROL 取得同意回應]** 保證UI中的事件。
+1. 從移動應用程式時 **[!UICONTROL 首頁]** 熒幕至 **[!UICONTROL 產品]** 畫面並返回 **[!UICONTROL 首頁]** 畫面，您應該會看到 **[!UICONTROL 取得同意回應]** 保證UI中的事件。
    ![驗證同意](assets/consent-update.png)
-
-
-## 重設同意
-
-如果您要重設同意：
-
-1. 前往 **[!UICONTROL 設定]** 在應用程式中。
-
-1. 選取 **[!UICONTROL 應用程式設定……]** 這會在iOS設定應用程式中開啟Luma應用程式設定。
-
-1. 切換 **[!UICONTROL 允許追蹤]** 關閉。
-
 
 
 >[!SUCCESS]
