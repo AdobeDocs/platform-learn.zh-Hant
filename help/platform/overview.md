@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Platform教學課程
-description: 了解Adobe Experience Platform
+title: Adobe Experience Platform 教學課程
+description: 瞭解Adobe Experience Platform
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: dcd7219ad6073727f66a8d1f30e67ce98f1b8a73
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
 source-wordcount: '164'
-ht-degree: 21%
+ht-degree: 33%
 
 ---
 
-# Adobe Experience Platform教學課程
+# Adobe Experience Platform 教學課程
 
-Adobe Experience Platform是市面上功能最強大、最靈活、最開放的系統，可用來建立和管理可提升客戶體驗的完整解決方案。  Experience Platform 可讓組織集中和標準化來自任何系統的客戶資料與內容，並運用資料科學和機器學習技術大幅改善豐富個人化體驗的設計和傳遞。這些影片和教學課程可協助您了解Experience Platform的許多元件。
+Adobe Experience Platform是市面上功能最強大、最靈活、最開放的系統，可建置和管理可提升客戶體驗的完整解決方案。  Experience Platform 可讓組織集中和標準化來自任何系統的客戶資料與內容，並運用資料科學和機器學習技術大幅改善豐富個人化體驗的設計和傳遞。使用這些影片和教學課程來瞭解Experience Platform的許多元件。
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -30,7 +30,7 @@ Adobe Experience Platform是市面上功能最強大、最靈活、最開放的�
 <tr>
   <td>
     <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-      <img alt="由Experience Platform影片提供技術支援的客戶體驗" src="assets/thumb_A-Customer-Experience.jpg" />
+      <img alt="由Experience Platform影片提供支援的客戶體驗" src="assets/thumb_A-Customer-Experience.jpg" />
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
@@ -38,7 +38,7 @@ Adobe Experience Platform是市面上功能最強大、最靈活、最開放的�
     </a>
     </div>
     <p>
-    <em>了解如何使用Platform來提供客戶體驗</em>
+    <em>瞭解如何使用Platform改善客戶體驗</em>
     <p>
   </td>
   <td>
@@ -51,16 +51,16 @@ Adobe Experience Platform是市面上功能最強大、最靈活、最開放的�
     </a>
     </div>
     <p>
-    <em>開始使用的實作練習</em>
+    <em>開始實作練習</em>
     <p>
   </td>
   <td>
     <a href="sources/overview.md">
-      <img alt="「了解來源連接器」影片的縮圖影像" src="assets/thumb_Sources.png" />
+      <img alt="「瞭解來源聯結器」影片的影像縮圖" src="assets/thumb_Sources.png" />
     </a>
     <div>
       <a href="sources/overview.md">
-    <strong>了解來源連接器</strong>
+    <strong>瞭解來源聯結器</strong>
     </a>
     </div>
     <p>

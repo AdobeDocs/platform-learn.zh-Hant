@@ -1,18 +1,18 @@
 ---
-title: 資料彙集教學課程
+title: 資料收集教學課程
 description: 讓您成為資料收集進階使用者的作法影片和教學課程
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '241'
 ht-degree: 37%
 
 ---
 
-# 資料彙集教學課程
+# 資料收集教學課程
 
-Data Collection是Adobe推出的新一代網站標籤與行動SDK管理功能。 資料收集可讓客戶透過簡單的方式部署及管理必要的分析、行銷及廣告解決方案，以便支援相關客戶體驗。 使用這些影片和教學課程來協助學習此關鍵技術。
+Data Collection是新一代Adobe的網站標籤與行動SDK管理功能。 資料收集可讓客戶透過簡單的方式部署及管理必要的分析、行銷及廣告解決方案，以便支援相關客戶體驗。 使用這些影片和教學課程來協助學習此關鍵技術。
 
 <div id="whats-new-section">
 
@@ -23,7 +23,7 @@ Data Collection是Adobe推出的新一代網站標籤與行動SDK管理功能。
 * **[在行動應用程式中實作Adobe Experience Cloud （教學課程）](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)**
   *使用Mobile SDK實作Experience Cloud應用程式。*
 * **[移動使用者端標籤（教學課程）](event-forwarding/consider-moving-tags.md)**
-  *請考慮將使用者端標籤移動到事件轉送。*
+  *考慮將使用者端標籤移動到事件轉送。*
 
 </div>
 
@@ -55,7 +55,7 @@ Data Collection是Adobe推出的新一代網站標籤與行動SDK管理功能。
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
-      <img alt="在行動應用程式中實作" src="assets/thumb_swift.png" />
+      <img alt="行動應用程式中的實作" src="assets/thumb_swift.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
@@ -64,6 +64,19 @@ Data Collection是Adobe推出的新一代網站標籤與行動SDK管理功能。
     </div>
     <p>
     <em>使用標籤來實作Platform Mobile SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <img alt="將Target移轉至Web SDK" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>將Adobe Target移轉至Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>從at.js移轉至Web SDK</em>
     <p>
   </td>
 </tr>
