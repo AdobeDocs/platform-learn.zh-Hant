@@ -4,9 +4,9 @@ description: 瞭解如何在行動應用程式中實作Assurance擴充功能。
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1002'
 ht-degree: 6%
 
 ---
@@ -105,6 +105,11 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
 在Xcode中：
 
 1. 在模擬器中或從Xcode在實體裝置上建置或重建及執行應用程式，使用 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+   >[!TIP]
+   >
+   >您可選擇是否要「清除」組建，尤其是在看到非預期結果時。 要執行此操作，請選取 **[!UICONTROL 清除建置資料夾……]** 從Xcode **[!UICONTROL 產品]** 功能表。
+
 
 1. 在 **[!UICONTROL 允許「Luma應用程式」使用您的位置]** 對話方塊，選取 **[!UICONTROL 使用應用程式時允許]**.
 
