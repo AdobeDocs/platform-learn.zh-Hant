@@ -10,14 +10,14 @@ level: Beginner
 jira: KT-6242
 thumbnail: 40376.jpg
 exl-id: fab8d1ab-87b4-4ec3-ac9e-4c8b3e3b8c75
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 4243da0b3e74d0d07e0a6c624e8173808831adfd
 workflow-type: tm+mt
 source-wordcount: '80'
 ht-degree: 1%
 
 ---
 
-# 平台與商業的商業價值
+# Platform和Commerce的商業價值
 
 此影片顯示Adobe Experience Platform可與Adobe Commerce搭配使用，以建立客戶的單一檢視，並在數位店面和各管道間聰明地打造個人化體驗。
 
