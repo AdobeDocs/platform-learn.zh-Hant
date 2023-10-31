@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
+source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1002'
 ht-degree: 35%
 
 ---
@@ -120,6 +120,7 @@ ht-degree: 35%
    + [設定Marketo目的地](/help/platform/destinations/configure-the-marketo-destination.md)
    + [設定檔案式雲端儲存空間或電子郵件行銷目的地](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [設定社交目的地](/help/platform/destinations/configure-a-social-destination.md)
+   + [透過LiveRamp目的地啟用](/help/platform/destinations/liveramp-destinations.md)
    + Adobe Target和自訂個人化{#target}
       + [使用Adobe Target進行下一次點選個人化](/help/platform/destinations/target/next-hit-personalization.md)
       + [設定Adobe Target目的地](/help/platform/destinations/target/configure-the-target-destination.md)
