@@ -1,12 +1,13 @@
 ---
 title: 主要使用案例
-description: 概述Experience Platform&mdash；即時客戶資料平台、客戶歷程情報、傳遞和跨管道體驗，以及客戶體驗應用程式開發的四個主要使用案例。
+description: 取得Experience Platform&mdash；智慧型重新參與、「不會遺失」行銷活動、客戶轉換最佳化、情境式識別和一次性存留期值等五個主要使用案例的概觀。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
+last-substantial-update: 2023-11-01T00:00:00Z
 jira: KT-4337
 thumbnail: 32806.jpg
 exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: cc38679e0e7f27a10fe2513b4b4986347e501010
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Adobe Experience Platform的主要使用案例
 
-取得Experience Platform四個主要使用案例的概觀：即時客戶資料平台、客戶歷程情報、傳遞和跨管道體驗，以及客戶體驗應用程式開發。
+取得Experience Platform的五個主要使用案例的概觀：智慧重新參與、「不會遺失」行銷活動、客戶轉換最佳化、情境式辨識，以及一次性終身價值值。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on)
 
