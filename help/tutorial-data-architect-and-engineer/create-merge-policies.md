@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Adobe Experience Platform可讓您將來自多個來源的資料彙集在一起�
 
 請注意，ExperienceEvent類別沒有聯合結構描述。 雖然ExperienceEvent資料仍會出現在設定檔中，因為它是以時間序列為基礎，每個事件都包含時間戳記和ID，所以衝突並不是問題。
 
-現在，如果您不喜歡該預設合併原則，該怎麼辦？ 如果Luma決定在發生衝突時，他們的CRM系統應該為真相來源，該怎麼辦？ 為此，我們將建立合併原則。
+現在，如果您不喜歡該預設合併原則，該怎麼辦？ 如果Luma決定他們的忠誠度系統在衝突時應該是真相的來源呢？ 為此，我們將建立合併原則。
 
 ## 在UI中建立合併原則
 
