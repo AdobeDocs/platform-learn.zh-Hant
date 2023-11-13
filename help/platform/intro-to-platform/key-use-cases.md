@@ -1,13 +1,13 @@
 ---
 title: 主要使用案例
-description: 取得Experience Platform&mdash；智慧型重新參與、「不會遺失」行銷活動、客戶轉換最佳化、情境式識別和一次性存留期值等五個主要使用案例的概觀。
+description: 取得Experience Platform&mdash五個主要使用案例的概觀；智慧型重新參與、不遺失行銷活動、客戶轉換最佳化、情境式識別和期限值的一次性值。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-01T00:00:00Z
 jira: KT-4337
 thumbnail: 32806.jpg
 exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
-source-git-commit: cc38679e0e7f27a10fe2513b4b4986347e501010
+source-git-commit: 4809c5e9b7ef031dd57f710b5e1fe39a55edf134
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
