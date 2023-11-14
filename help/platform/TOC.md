@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
+source-git-commit: 650ae527c640ec62b21e4e0e9b66a6efc1c580a1
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 35%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 35%
    + [幕後：Experience Platform支援的客戶體驗](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience 平台概觀](/help/platform/intro-to-platform/overview.md)
    + [主要功能](/help/platform/intro-to-platform/key-capabilities.md)
-   + [應用程式與智慧型服務](/help/platform/intro-to-platform/application-and-intelligent-services.md)
+   + [平台式應用程式](/help/platform/intro-to-platform/native-applications.md)
    + [與Experience Cloud應用程式整合](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [主要使用案例](/help/platform/intro-to-platform/key-use-cases.md)
    + [基本架構](/help/platform/intro-to-platform/basic-architecture.md)
