@@ -2,7 +2,8 @@
 title: 安裝Adobe Experience Platform Mobile SDK
 description: 瞭解如何在行動應用程式中實施Adobe Experience Platform Mobile SDK。
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 86348d8b-f428-465d-a79e-ce73d140da79
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 * 已成功使用「 」中所述的擴充功能建置標籤程式庫。 [上一課程](configure-tags.md).
 * 來自的開發環境檔案ID [行動安裝指示](configure-tags.md#generate-sdk-install-instructions).
-* 下載空白 [範例應用程式](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}.
+* 下載空白 [範例應用程式](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
 * 使用體驗 [Xcode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## 學習目標

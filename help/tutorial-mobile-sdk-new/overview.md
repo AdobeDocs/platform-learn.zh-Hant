@@ -3,9 +3,10 @@ title: 在行動應用程式教學課程中實作Adobe Experience Cloud概述
 description: 瞭解如何實作Adobe Experience Cloud行動應用程式。 本教學課程將指導您在一個範例Swift應用程式中實施Experience Cloud應用程式。
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '874'
 ht-degree: 9%
 
 ---
@@ -86,11 +87,11 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 
 ## 下載Luma應用程式
 
-範例應用程式有兩個版本可供下載。 這兩個版本都可以下載/複製自 [Github](https://git.corp.adobe.com/rmaur/Luma). 您會找到兩個資料夾：
+範例應用程式有兩個版本可供下載。 這兩個版本都可以下載/複製自 [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). 您會找到兩個資料夾：
 
 
-1. [開始](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}：專案，此專案不含程式碼，或針對您完成本教學課程中的實作練習所需使用的大部分Experience PlatformMobile SDK程式碼，包含預留位置程式碼。
-1. [完成](https://git.corp.adobe.com/Luma){target="_blank"}：完整實作以供參考的版本。
+1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：專案，此專案不含程式碼，或針對您完成本教學課程中的實作練習所需使用的大部分Experience PlatformMobile SDK程式碼，包含預留位置程式碼。
+1. [完成](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：完整實作以供參考的版本。
 
 >[!NOTE]
 >

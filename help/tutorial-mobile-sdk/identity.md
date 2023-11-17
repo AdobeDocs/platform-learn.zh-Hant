@@ -3,9 +3,9 @@ title: 身分
 description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,11 @@ ht-degree: 4%
 
 瞭解如何在行動應用程式中收集身分資料。
 
-Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，讓您即時提供具影響力的個人數位體驗，協助您更清楚瞭解客戶及其行為。 身分欄位和名稱空間是將不同資料來源連線在一起，以建立360度即時客戶設定檔的粘合劑。
+>[!INFO]
+>
+> 在2023年11月下旬，此教學課程將由使用新範例行動應用程式的新教學課程取代
+
+Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，讓您即時提供具影響力的個人數位體驗，協助您更清楚瞭解客戶及其行為。 身分欄位和名稱空間是將不同資料來源連線在一起，以建立360度即時客戶個人檔案的膠水。
 
 進一步瞭解 [身分擴充功能](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) 和 [identity service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant) 在檔案中。
 
@@ -34,9 +38,9 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 ## 更新標準身分
 
-從使用者登入時更新其身分對應開始。
+從使用者登入時更新使用者的身分對應開始。
 
-1. 導覽至 `Login.swift` 如果Luma應用程式找到名為的函式 `loginButt`.
+1. 瀏覽至 `Login.swift` 如果Luma應用程式找到呼叫的函式 `loginButt`.
 
    在Luma範例應用程式中，沒有使用者名稱或密碼驗證。 只要點選按鈕即可「登入」。
 
@@ -66,9 +70,9 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 ## 設定自訂身分名稱空間
 
-身分名稱空間是的元件 [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant) 做為身分識別相關內容的指示器。 例如，他們會將「name@email.com」的值視為電子郵件地址，或將「443522」的值視為數值CRM ID。
+身分名稱空間是元件 [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant) 作為身分相關內容的指示器。 例如，他們會將「name@email.com」的值做為電子郵件地址，或將「443522」的值做為數值CRM ID。
 
-1. 在資料收集介面中，選取 **[!UICONTROL 身分]** 左側導覽列中的。
+1. 在資料收集介面中，選取 **[!UICONTROL 身分]** 左側導覽列中。
 1. 選取&#x200B;**[!UICONTROL 建立身分識別命名空間]**。
 1. 提供 **[!UICONTROL 顯示名稱]** 之 `Luma CRM ID` 和 **[!UICONTROL 身分符號]** 值 `lumaCrmId`.
 1. 選取 **[!UICONTROL 跨裝置ID]**.
@@ -78,7 +82,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 ## 更新自訂身分
 
-現在您已建立自訂身分識別，請透過修改 `updateIdentities` 您在上一步中新增的程式碼。 只需建立IdentityItem並將其新增至IdentityMap即可。 以下為完整程式碼區塊的樣子：
+現在您已建立自訂身分識別，請透過修改 `updateIdentities` 您在上一步中新增的程式碼。 只要建立IdentityItem並將其新增到IdentityMap即可。 以下為完整程式碼區塊的樣子：
 
 ```swift
 //Hardcoded identity values
@@ -117,31 +121,31 @@ let logout = UIAlertAction(title: "Logout", style: .destructive, handler: { (act
 ```
 
 >[!NOTE]
->在上述範例中， `crmId` 和 `emailAddress` 硬式編碼，但在實際的應用程式中，值會是動態的。
+>在上述範例中， `crmId` 和 `emailAddress` 以硬式編碼顯示，但在實際應用程式中，該值會是動態的。
 
 ## 使用保證進行驗證
 
-1. 檢閱 [設定指示](assurance.md) 區段，並將您的模擬器或裝置連線到Assurance。
-1. 在應用程式中，從右下角選取「帳戶」圖示。
+1. 檢閱 [設定指示](assurance.md) 區段並將模擬器或裝置連線至Assurance。
+1. 在應用程式中，從右下方選取「帳戶」圖示。
 
    ![luma應用程式帳戶](assets/mobile-identity-login.png)
 1. 選取 **登入** 按鈕。
-1. 系統會顯示輸入使用者名稱和密碼的選項，兩者皆為選用，您只需選取 **登入**.
+1. 畫面會顯示您輸入使用者名稱和密碼的選項，兩者皆為選用專案，您只需選取 **登入**.
 
    ![luma應用程式登入](assets/mobile-identity-login-final.png)
-1. 在Assurance Web UI中檢視 `Edge Identity Update Identities` 事件來自 `com.adobe.griffon.mobile` 廠商。
+1. 檢視Assurance Web UI，以瞭解 `Edge Identity Update Identities` 來自的事件 `com.adobe.griffon.mobile` 廠商。
 1. 選取事件並檢閱中的資料 `ACPExtensionEventData` 物件。 您應該會看到已更新的身分識別。
    ![驗證身分更新](assets/mobile-identity-validate-assurance.png)
 
-## 使用身分圖表驗證
+## 使用身分圖表進行驗證
 
 一旦您完成 [Experience Platform課程](platform.md)，您也可以在Platforms身分圖表檢視器中確認身分擷取：
 
 ![驗證身分圖表](assets/mobile-identity-validate.png)
 
 
-下一步： **[設定檔](profile.md)**
+下一步： **[個人資料](profile.md)**
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Mobile SDK。 若您有任何疑問、想分享一般意見或對未來內容有任何建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

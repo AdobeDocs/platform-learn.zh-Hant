@@ -3,7 +3,7 @@ title: 追蹤事件資料
 description: 瞭解如何追蹤行動應用程式中的事件資料。
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -367,7 +367,7 @@ Adobe Experience Platform Edge擴充功能可傳送遵循先前定義XDM結構�
 
 >[!TIP]
 >
->檢閱 [完成的應用程式](https://git.corp.adobe.com/rmaur/Luma) 以取得更多範例。
+>檢閱 [完成的應用程式](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 以取得更多範例。
 
 
 ## 將事件傳送至Analytics和Platform
