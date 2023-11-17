@@ -4,9 +4,9 @@ description: 瞭解如何在行動應用程式中實作Assurance擴充功能。
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '985'
 ht-degree: 6%
 
 ---
@@ -53,7 +53,7 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
    }
    ```
 
-   此程式碼會在應用程式於背景時啟動保證工作階段，並使用深層連結開啟。
+   當應用程式於背景並使用深層連結開啟時，此程式碼就會啟動保證工作階段。
 
 可以找到更多資訊 [此處](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
@@ -141,7 +141,7 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
 
    如果您使用實體裝置：
 
-   * 選取 **[!UICONTROL 掃描QR碼]**. 使用實體裝置上的相機掃描二維碼，然後點選連結以開啟應用程式。
+   * 選取 **[!UICONTROL 掃描QR碼]**. 若要開啟應用程式，請使用實體裝置上的相機掃描二維碼並點選連結。
 
      ![保證qa程式碼](assets/assurance-qr-code.png)
 
@@ -186,16 +186,16 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
 
    ![設定擴充功能版本](assets/assurance-configure-extension-versions.png)
 
-1. 選取 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 擴充功能版本]**. 您將會看到最新可用擴充功能的概述，以及您應用程式版本中使用的擴充功能。
+1. 選取 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 擴充功能版本]** 以檢視最新可用擴充功能的概觀，以及應用程式版本中使用的擴充功能。
 
    ![擴充功能版本](assets/assurance-extension-versions.png)
 
-1. 若要更新擴充功能版本(例如 **[!UICONTROL 傳訊]** 和 **[!UICONTROL 最佳化]**)，在Xcode中，為需要升級的特定擴充功能選取套件（擴充功能），從 **[!UICONTROL 套件相依性]** (例如： **[!UICONTROL AEPMessaging]**)並從快顯選單中選取 **[!UICONTROL 更新封裝]**. Xcode將更新套件相依性。
+1. 若要更新擴充功能版本(例如 **[!UICONTROL 傳訊]** 和 **[!UICONTROL 最佳化]**)從中選擇套件（擴充功能） **[!UICONTROL 套件相依性]** (例如， **[!UICONTROL AEPMessaging]**)並從快顯選單中選取 **[!UICONTROL 更新封裝]**. Xcode將更新套件相依性。
 
 
 >[!NOTE]
 >
->當您在Xcode中更新擴充功能（套件）時，您需要關閉並刪除目前的工作階段，並重複的所有步驟，從 [連線到工作階段](#connecting-to-a-session) 和 [驗證擴充功能](#verify-extensions) 確保Assurance在新的Assurance工作階段中正確報告正確的延伸模組。
+>在Xcode中更新擴充功能（套件）後，請關閉並刪除目前的工作階段，並重複的所有步驟，從 [連線到工作階段](#connecting-to-a-session) 和 [驗證擴充功能](#verify-extensions) 確保Assurance在新的Assurance工作階段中正確報告正確的延伸模組。
 
 
 
@@ -203,7 +203,9 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
 
 >[!SUCCESS]
 >
->您現在已設定應用程式，以便在教學課程的其餘部分使用Assurance 。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>您現在已設定應用程式，以便在教學課程的其餘部分使用Assurance 。
+>
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 下一步： **[實作同意](consent.md)**

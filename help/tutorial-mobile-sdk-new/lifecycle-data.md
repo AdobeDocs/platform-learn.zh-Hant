@@ -3,7 +3,7 @@ title: 收集生命週期資料
 description: 瞭解如何在行動應用程式中收集生命週期資料。
 hide: true
 exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 3%
@@ -121,6 +121,8 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 >[!SUCCESS]
 >
->您現在已設定應用程式，將應用程式狀態（前景、背景）事件傳送至Adobe Experience Platform Edge Network，以及您在資料流中定義的所有服務。<br>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>您現在已設定應用程式，將應用程式狀態（前景、背景）事件傳送至Adobe Experience Platform Edge Network，以及您在資料流中定義的所有服務。
+>
+> 感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 下一步： **[追蹤事件資料](events.md)**

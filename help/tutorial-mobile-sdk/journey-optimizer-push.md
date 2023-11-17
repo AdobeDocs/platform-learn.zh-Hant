@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '898'
 ht-degree: 2%
 
 ---
@@ -156,4 +156,4 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

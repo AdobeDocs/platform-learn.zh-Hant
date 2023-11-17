@@ -4,9 +4,9 @@ description: 瞭解如何在行動應用程式中實施同意。
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '542'
+source-wordcount: '539'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 瞭解如何在行動應用程式中實施同意。
 
-Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experience Platform Mobile SDK和Edge Network擴充功能時，從行動應用程式收集同意偏好設定。 進一步瞭解 [同意擴充功能](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/)，在檔案中。
+Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experience Platform Mobile SDK和Edge Network擴充功能時，從行動應用程式收集同意偏好設定。 進一步瞭解 [同意擴充功能](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) 在檔案中。
 
 ## 先決條件
 
@@ -35,7 +35,7 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 
 若要開始收集資料，您必須取得使用者的同意。 在真實世界應用程式中，您會想要諮詢您所在地區的同意最佳實務。 在本教學課程中，您只需透過警報要求使用者同意：
 
-1. 您只想要求使用者同意一次。 因此，您希望結合行動SDK同意與使用Apple進行追蹤所需的授權 [應用程式追蹤透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 在此應用程式中，您假設當使用者授權追蹤時，使用者也同意收集事件。
+1. 您只想要求使用者同意一次。 您可以將Mobile SDK同意與使用Apple的追蹤所需授權結合以達成此目的 [應用程式追蹤透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 在此應用程式中，您假設當使用者授權追蹤時，他們同意收集事件。
 
 1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。
 
@@ -96,14 +96,16 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 
 ## 使用保證進行驗證
 
-1. 從您的裝置或模擬器刪除應用程式，因為我們要正確重設和初始化追蹤和同意。
-1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
+1. 從您的裝置或模擬器刪除應用程式，以正確重設和初始化追蹤和同意。
+1. 若要將模擬器或裝置連線至Assurance，請檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段。
 1. 從移動應用程式時 **[!UICONTROL 首頁]** 熒幕至 **[!UICONTROL 產品]** 畫面並返回 **[!UICONTROL 首頁]** 畫面，您應該會看到 **[!UICONTROL 取得同意回應]** 保證UI中的事件。
    ![驗證同意](assets/consent-update.png)
 
 
 >[!SUCCESS]
 >
->您現在已啟用應用程式，在安裝（或重新安裝）後最初啟動時提示使用者，以使用Adobe Experience Platform Mobile SDK表示同意。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>您現在已啟用應用程式，在安裝（或重新安裝）後最初啟動時提示使用者，以使用Adobe Experience Platform Mobile SDK表示同意。
+>
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 下一步： **[收集生命週期資料](lifecycle-data.md)**

@@ -3,9 +3,9 @@ title: 使用地標
 description: 瞭解如何在行動應用程式中使用Places地理位置服務。
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1692'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
    ![建立資料庫](assets/places-create-library.png)
 1. 若要關閉 **[!UICONTROL 管理程式庫]** 對話方塊，選取 **[!UICONTROL 關閉]**.
 1. 返回 **[!UICONTROL POI管理]**，選取 **[!UICONTROL 匯入POI]**.
-1. 選取 **[!UICONTROL 開始]** 在t**中[!UICONTROL 匯入地標]**立對話方塊。
+1. 選取 **[!UICONTROL 開始]** 在 **[!UICONTROL 匯入地標]** 對話方塊。
 1. 選取 **[!DNL Luma]** 從程式庫清單中，
 1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
    ![選取資料庫](assets/places-import-select-library.png)
@@ -172,7 +172,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
       ![標籤動作](assets/tags-action-mobile-core.png)
 
 1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在 **[!UICONTROL 行動核心 — 附加資料]** 動作。
-   1. 選取 **[!UICONTROL Adobe Experience Platform Edge Network]** 從 **[!UICONTROL 副檔名]** 清單並選取 **[!UICONTROL 將事件轉送至Edge Network]**. 此動作可確保將事件和其他裝載資料轉送到Edge Network。
+   1. 選取 **[!UICONTROL Adobe Experience Platform Edge Network]** 從 **[!UICONTROL 副檔名]** 清單並選取 **[!UICONTROL 將事件轉送至Edge Network]**. 此動作可確保將事件和其他裝載資料轉送到Platform Edge Network。
    1. 選取&#x200B;**[!UICONTROL 「保留變更」]**。
 
 1. 若要儲存規則，請選取「 」 **[!UICONTROL 儲存至程式庫]**.
@@ -240,7 +240,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 選取 **[!UICONTROL 地圖和模擬]** 在左側邊欄中。
 1. 將地圖移至其中一個POI的位置。
-1. 選取 ![齒輪](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 模擬載入POI。  您的POI會使用圓圈和圖釘來識別。
+1. 選取 ![齒輪](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 模擬載入POI。 您的POI會使用圓圈和圖釘來識別。
 1. 選取您的POI。
 1. 從快顯視窗中選取 ![齒輪](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 模擬進入事件]**.
    ![模擬進入事件](assets/places-simulate.png)
@@ -283,7 +283,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
    ]
    ```
 
-1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，並找到 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.新增下列程式碼：
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，並找到 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` 函式。 新增下列程式碼：
 
    ```swift
    // Process geolocation event
@@ -320,7 +320,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 1. 四處移動（拖曳）地圖，確保藍色中間圓圈位於其中一個POI的上方，例如倫敦。
 
-1. 點選 <img src="assets/geobutton.png" width="20" /> 直到您看到類別和名稱出現在標有圖釘的紅色位置的標籤中。
+1. 點選 <img src="assets/geobutton.png" width="20" /> 直到您看到類別和名稱出現在帶有圖釘的紅色位置的標籤中。
 
 1. 點選POI的標籤，這會開啟 **[!UICONTROL 附近的POI]** 工作表。
 
@@ -344,6 +344,8 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 >[!SUCCESS]
 >
->您現在已使用Experience Platform Mobile SDK中的Places擴充功能，為地理定位服務啟用應用程式。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>您現在已使用Experience Platform Mobile SDK中的Places擴充功能，為地理定位服務啟用應用程式。
+>
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[將資料對應至Adobe Analytics](analytics.md)**

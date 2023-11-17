@@ -3,9 +3,9 @@ title: 建立 XDM 結構描述
 description: 瞭解如何為行動應用程式事件建立XDM結構描述。
 feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1314'
 ht-degree: 7%
 
 ---
@@ -214,4 +214,4 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

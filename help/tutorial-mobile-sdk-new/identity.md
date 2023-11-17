@@ -4,9 +4,9 @@ description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 >[!NOTE]
 >
->行動SDK會在安裝應用程式時，在其專屬的名稱空間中產生唯一身分識別，命名為Experience CloudID (ECID)。 此ECID會儲存在行動裝置的永久性記憶體中，並隨著每次點選而傳送。 ECID會在使用者解除安裝應用程式，或使用者將Mobile SDK全域隱私權狀態設定為optedout時移除。 在範例Luma應用程式中，您應該移除並重新安裝應用程式，以建立具有自己唯一ECID的新設定檔。
+>行動SDK會在安裝應用程式時，在其專屬的名稱空間中產生唯一身分識別，命名為Experience CloudID (ECID)。 此ECID會儲存在行動裝置的永久性記憶體中，並隨著每次點選而傳送。 ECID會在使用者解除安裝應用程式，或將Mobile SDK全域隱私權狀態設為選擇退出時移除。 在範例Luma應用程式中，您應該移除並重新安裝應用程式，以建立具有自己唯一ECID的新設定檔。
 
 
 若要建立新的身分名稱空間：
@@ -59,7 +59,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 您想要在使用者登入應用程式時更新標準身分（電子郵件）和自訂身分(Luma CRM ID)。
 
-1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中，找到 `func updateIdentities(emailAddress: String, crmId: String)` 函式實作。 將下列程式碼新增至函式。
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode專案導覽器中，並找到 `func updateIdentities(emailAddress: String, crmId: String)` 函式實作。 將下列程式碼新增至函式。
 
    ```swift
    // Set up identity map, add identities to map and update identities
@@ -101,10 +101,10 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
       Identity.updateIdentities(with: identityMap) 
       ```
 
-1. 瀏覽至 **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登入工作表]** 在Xcode專案導覽器中，尋找在選取 **[!UICONTROL 登入]** 按鈕。 新增下列程式碼：
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登入工作表]** 在Xcode專案導覽器中，尋找在選取 **[!UICONTROL 登入]** 按鈕。 新增下列程式碼：
 
    ```swift
-   // Call updateIdentities
+   // Update identities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -169,11 +169,13 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 >[!INFO]
 >
->應用程式中沒有可重設ECID的程式碼，這表示您只能透過解除安裝應用程式並重新安裝，來重設ECID （並在裝置上使用新的ECID有效建立新設定檔）。 若要實作識別碼的重設，請參閱 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) 和 [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API呼叫。 不過，使用推播通知識別碼時，請務必注意(請參閱 [傳送推播通知](journey-optimizer-push.md))，該識別碼會成為裝置上的另一個「粘性」設定檔識別碼。
+>應用程式中沒有可重設ECID的程式碼，這表示您只能透過解除安裝應用程式並重新安裝，來重設ECID （並有效建立具有新ECID的新設定檔）。 若要實作識別碼的重設，請參閱 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) 和 [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API呼叫。 不過，使用推播通知識別碼時，請務必注意(請參閱 [傳送推播通知](journey-optimizer-push.md))，該識別碼會成為裝置上的另一個「粘性」設定檔識別碼。
 
 
 >[!SUCCESS]
 >
->您現在已設定應用程式，以在Edge Network和（設定後）Adobe Experience Platform中更新身分識別。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>您現在已設定應用程式，以在Edge Network和（設定後）Adobe Experience Platform中更新身分識別。
+>
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 下一步： **[收集設定檔資料](profile.md)**

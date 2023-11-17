@@ -4,10 +4,10 @@ description: 瞭解如何實作Adobe Experience Cloud行動應用程式。 本�
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 9%
+source-wordcount: '821'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 了解如何透過 Adobe Experience Platform Mobile SDK 在行動應用程式中實作 Adobe Experience Cloud 應用程式。
 
-Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud客戶透過Adobe Experience Platform Edge Network與Adobe應用程式和協力廠商服務互動。 請參閱 [Adobe Experience Platform Mobile SDK檔案](https://developer.adobe.com/client-sdks/documentation/) 以取得更多詳細資訊。
+Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud客戶透過Adobe Experience Platform Edge Network與Adobe應用程式和協力廠商服務互動。 請參閱 [Adobe Experience Platform Mobile SDK檔案](https://developer.adobe.com/client-sdks/home/) 以取得更多詳細資訊。
 
 ![架構](assets/architecture.png)
 
@@ -41,20 +41,20 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
    * [設定檔](profile.md)
    * [地點](places.md)
    * [Analytics](analytics.md)
-   * [Adobe Experience Platform](platform.md)
+   * [Experience Platform](platform.md)
    * [使用Journey Optimizer推送訊息](journey-optimizer-push.md)
    * [使用Journey Optimizer的應用程式內傳訊](journey-optimizer-inapp.md)
-   * [Journey Optimizer的優惠方案](journey-optimizer-offers.md)
-   * [使用Target的A/B測試](target.md)
+   * [使用Journey Optimizer進行決策管理](journey-optimizer-offers.md)
+   * [Target](target.md)
 
 
 >[!NOTE]
 >
 >類似的多重解決方案教學課程適用於 [Web SDK](../tutorial-web-sdk/overview.md).
 
-## 必要條件
+## 先決條件
 
-這些課程假設您擁有 Adobe ID 和完成練習所需的權限。如果沒有，您應該聯絡您的Adobe管理員以請求存取權。
+這些課程假設您擁有AdobeID和完成練習所需的使用者層級許可權。 如果沒有，您應該聯絡您的Adobe管理員以請求存取權。
 
 * 在資料收集中，您必須擁有：
    * **[!UICONTROL 平台]** — 許可權專案 **[!UICONTROL 行動]**
@@ -67,22 +67,20 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
    * **[!UICONTROL Identity Management]** — 管理及檢視身分識別名稱空間的許可權專案。
    * **[!UICONTROL 資料彙集]** — 管理和檢視資料串流的許可權專案。
 
-   * 如果您是平台式應用程式(例如Real-Time CDP、Journey Optimizer或Customer Journey Analytics)的客戶，您也應該擁有：
-      * **[!UICONTROL 資料管理]** — 管理和檢視資料集的許可權專案，以完成 _選用的平台練習_ （需要平台式應用程式的授權）。
+   * 如果您是Real-Time CDP、Journey Optimizer或Customer Journey Analytics等平台型應用程式的客戶，並將進行相關課程，您也應該有：
+      * **[!UICONTROL 資料管理]** — 管理和檢視資料集的許可權專案。
       * 開發 **沙箱** 供本教學課程使用。
+
+   * 若要參加Journey Optimizer課程，您需要許可權來設定 **推播通知服務** 並建立 **應用程式表面**， a **歷程**， a **message**、和 **訊息預設集**. 針對決策管理，您需要適當的許可權來 **管理優惠方案** 和 **決定** 如說明 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 * 針對Adobe Analytics，您必須知道哪個 **報告套裝** 您可以使用完成本教學課程。
 
-* 針對Adobe Target，您必須擁有已正確設定的許可權 **角色**， **工作區**、和 **屬性** 如說明 [此處](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=zh-Hant).
-
-* 針對Adobe Journey Optimizer，您必須有足夠的許可權才能設定 **推播通知服務** 並建立 **應用程式表面**， a **歷程**， a **message** 和 **訊息預設集**. 針對決策管理，您需要適當的許可權來 **管理優惠方案** 和 **決定** 如說明 [此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
-
-所有Experience Cloud客戶都應該有權存取部署Mobile SDK所需的功能。
+* 針對Adobe Target，您必須擁有建立和啟用活動的許可權。
 
 
 >[!NOTE]
 >
->在本教學課程中，您將建立結構描述、資料集、身分等。 如果您正在閱讀此教學課程，且已將多個人員放在單一沙箱中，或您使用共用帳戶，則在建立這些物件時，請考慮附加或附加身分識別作為命名慣例的一部分。 例如，新增 ` - <your name or initials>` 至指示您建立的物件名稱。
+>在本教學課程中，您會建立結構描述、資料集、身分等等。 如果有多人在一個沙箱中完成本教學課程，在建立這些物件時，請考慮在命名慣例中附加或附加身分識別。 例如，新增 ` - <your name or initials>` 至指示您建立的物件名稱。
 
 
 ## 下載Luma應用程式
@@ -93,15 +91,16 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：專案，此專案不含程式碼，或針對您完成本教學課程中的實作練習所需使用的大部分Experience PlatformMobile SDK程式碼，包含預留位置程式碼。
 1. [完成](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：完整實作以供參考的版本。
 
+
 >[!NOTE]
 >
->您將使用iOS作為平台， [!DNL Swift] 作為程式設計語言， [!DNL SwiftUI] 作為UI框架和 [!DNL Xcode] 作為整合式開發環境(IDE)。 不過，許多所說明的實作概念與其他開發平台類似。 而且許多人已經成功完成本教學課程，僅有少量先前的iOS/Swift(UI)體驗。 您不需要成為專家就能完成課程，但如果您熟悉且瞭解程式碼，將能從中學到更多。
+>您使用iOS作為平台， [!DNL Swift] 作為程式設計語言， [!DNL SwiftUI] 作為UI框架和 [!DNL Xcode] 作為整合式開發環境(IDE)。 不過，許多所說明的實作概念與其他開發平台類似。 許多人已經成功完成本教學課程，很少或沒有先前的iOS/Swift(UI)體驗。 您不需要成為專家就能完成課程，但如果您熟悉且瞭解程式碼，將能從中學到更多。
 
 
 我們開始吧！
 
 >[!SUCCESS]
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[建立XDM結構描述](create-schema.md)**

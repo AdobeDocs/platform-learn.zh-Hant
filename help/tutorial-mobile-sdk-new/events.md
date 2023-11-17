@@ -3,7 +3,7 @@ title: 追蹤事件資料
 description: 瞭解如何追蹤行動應用程式中的事件資料。
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
+source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -171,7 +171,7 @@ Adobe Experience Platform Edge擴充功能可傳送遵循先前定義XDM結構�
       1. 的 <img src="assets/saveforlater.png" width="15" />：
 
          ```swift
-         // Send saveForLaters commerce experience event
+         // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
@@ -185,13 +185,13 @@ Adobe Experience Platform Edge擴充功能可傳送遵循先前定義XDM結構�
       1. 的 <img src="assets/purchase.png" width="20" />：
 
          ```swift
-         // Send purchases commerce experience event
+         // Send purchase commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
 
 >[!TIP]
 >
->如果您是針對Android開發，請使用Map (`java.util.Map`)作為建構您的XDM裝載的基本介面。
+>如果您正在針對Android™開發，請使用Map (`java.util.Map`)作為建構您的XDM裝載的基本介面。
 
 
 ### 自訂欄位分組
@@ -205,9 +205,9 @@ Adobe Experience Platform Edge擴充功能可傳送遵循先前定義XDM結構�
 
   >[!NOTE]
   >
-  >* 標準欄位群組一律以物件根目錄開始。
+  * 標準欄位群組一律以物件根目錄開始。
   >
-  >* 自訂欄位群組一律以Experience Cloud組織獨有的物件開頭， `_techmarketingdemos` 在此範例中。
+  * 自訂欄位群組一律以Experience Cloud組織獨有的物件開頭， `_techmarketingdemos` 在此範例中。
 
   針對應用程式互動事件，您可以建構如下的物件：
 
@@ -338,10 +338,10 @@ Adobe Experience Platform Edge擴充功能可傳送遵循先前定義XDM結構�
 
 ## 驗證
 
-1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
+1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來使用Assurance連線您的模擬器或裝置。
 
    1. 將「保證」圖示移至左側。
-   1. 選取 **[!UICONTROL 首頁]** ，並確認您看到了 **[!UICONTROL ECID]**， **[!UICONTROL 電子郵件]** 和 **[!UICONTROL CRM ID]** 在「首頁」畫面中。
+   1. 選取 **[!UICONTROL 首頁]** ，並確認您看到了 **[!UICONTROL ECID]**， **[!UICONTROL 電子郵件]**、和 **[!UICONTROL CRM ID]** 在「首頁」畫面中。
    1. 選取 **[!DNL Products]** 標籤列中的。
    1. 選取產品。
    1. 選擇 <img src="assets/saveforlater.png" width="15" />。
@@ -367,15 +367,17 @@ Adobe Experience Platform Edge擴充功能可傳送遵循先前定義XDM結構�
 
 >[!TIP]
 >
->檢閱 [完成的應用程式](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 以取得更多範例。
+檢閱 [完成的應用程式](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 以取得更多範例。
 
 
 ## 將事件傳送至Analytics和Platform
 
-現在您已收集事件並傳送至Platform Edge Network，接著會傳送至中設定的應用程式和服務 [資料流](create-datastream.md). 在稍後的課程中，您會將此資料對應至 [Adobe Analytics](analytics.md)， [Adobe Experience Platform](platform.md) 和其他Adobe Experience Cloud解決方案，例如 [Adobe Target](target.md) 和Adobe Journey Optimizer。
+現在您已收集事件並傳送至Platform Edge Network，接著會傳送至中設定的應用程式和服務 [資料流](create-datastream.md). 在稍後的課程中，您會將此資料對應至 [Adobe Analytics](analytics.md)， [Adobe Experience Platform](platform.md)和其他Adobe Experience Cloud解決方案，例如 [Adobe Target](target.md) 和Adobe Journey Optimizer。
 
 >[!SUCCESS]
 >
->您現在已設定應用程式，追蹤商務、應用程式互動和畫面追蹤事件，以連線至Adobe Experience Platform Edge Network以及您在資料流中定義的所有服務。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+您現在已設定應用程式，追蹤商務、應用程式互動和畫面追蹤事件，以連線至Adobe Experience Platform Edge Network以及您在資料流中定義的所有服務。
+>
+感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[處理網頁檢視](web-views.md)**

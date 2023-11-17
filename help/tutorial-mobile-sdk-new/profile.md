@@ -3,9 +3,9 @@ title: 收集設定檔資料
 description: 瞭解如何在行動應用程式中收集設定檔資料。
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 快速知道使用者過去或最近是否曾經購買過產品，將有助於應用程式中的目標定位和/或個人化。 讓我們在Luma應用程式中設定它。
 
-1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** 在Xcode專案導覽器中，並找到 `func updateUserAttribute(attributeName: String, attributeValue: String)` 函式。 新增下列程式碼：
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** 在Xcode專案導覽器中，並找到 `func updateUserAttributes(attributeName: String, attributeValue: String)` 函式。 新增下列程式碼：
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ ht-degree: 1%
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -115,7 +115,7 @@ ht-degree: 1%
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
-   1. 返回至 **[!UICONTROL 首頁]** 畫面。 您應該會看到已新增的徽章 <img src="assets/person-badge-icon.png" width="15" />。
+   1. 返回至 **[!UICONTROL 首頁]** 畫面。 您應該會看到徽章已新增 <img src="assets/person-badge-icon.png" width="15" />。
 
       <img src="./assets/personbadges.png" width="300">
 
@@ -126,6 +126,8 @@ ht-degree: 1%
 
 >[!SUCCESS]
 >
->您現在已設定應用程式，以更新Edge Network和（設定時） Adobe Experience Platform中設定檔的屬性。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>您現在已設定應用程式，以更新Edge Network和（設定時） Adobe Experience Platform中設定檔的屬性。
+>
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[使用地標](places.md)**

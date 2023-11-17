@@ -3,9 +3,9 @@ title: 處理網頁檢視
 description: 瞭解如何在行動應用程式中使用WebViews處理資料收集。
 jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 1%
 
 ---
@@ -107,4 +107,4 @@ adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

@@ -3,9 +3,9 @@ title: 為網頁資料建立XDM結構描述
 description: 瞭解如何在資料收集介面中為網頁資料建立XDM結構描述。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1121'
 ht-degree: 5%
 
 ---
@@ -113,4 +113,4 @@ XDM結構描述是以Experience Platform描述資料的標準方式，可讓所�
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

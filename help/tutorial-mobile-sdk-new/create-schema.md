@@ -4,9 +4,9 @@ description: 瞭解如何為行動應用程式事件建立XDM結構描述。
 feature: Mobile SDK,Schemas
 hide: true
 exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1505'
 ht-degree: 8%
 
 ---
@@ -134,7 +134,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 >[!NOTE]
 >
->請記住，您不需要使用群組中的所有欄位。 如果有助於保持結構描述簡潔且容易理解，您也可以移除欄位。 如果這很實用，您可以將結構描述想成是空的資料層。 您可在應用程式中的適當時間填入相關值。
+>請記住，您不需要使用群組中的所有欄位。 您也可以移除欄位，讓綱要保持簡潔明瞭，容易理解。 如果這很實用，您可以將結構描述想成是空的資料層。 您可在應用程式中的適當時間填入相關值。
 
 此 [!UICONTROL 消費者體驗事件] 欄位群組有一個資料型別，稱為 [!UICONTROL 網頁資訊]，會說明頁面檢視和連結點按次數等事件。 在撰寫本文時，行動應用程式尚未與這項功能對等，因此您將建立您自己的應用程式。
 
@@ -234,6 +234,8 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
 >[!SUCCESS]
 >
->您現在已具備要用於本教學課程其餘部分的結構。<br/>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>您現在已具備要用於本教學課程其餘部分的結構。
+>
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[建立 [!UICONTROL 資料流]](create-datastream.md)**

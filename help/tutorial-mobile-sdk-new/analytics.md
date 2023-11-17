@@ -4,9 +4,9 @@ description: 瞭解如何在行動應用程式中收集並對映Adobe Analytics�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '902'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 * 瞭解ExperienceEvent追蹤。
 * 已成功在您的範例應用程式中傳送XDM資料。
-* 您可用於本課程的Adobe Analytics報表套裝。
+* 可用於本課程的Adobe Analytics報表套裝。
 
 ## 學習目標
 

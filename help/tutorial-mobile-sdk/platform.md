@@ -4,9 +4,9 @@ description: 瞭解如何將資料傳送至Adobe Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '861'
 ht-degree: 8%
 
 ---
@@ -138,4 +138,4 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
