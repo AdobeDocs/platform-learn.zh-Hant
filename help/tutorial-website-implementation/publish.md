@@ -1,11 +1,11 @@
 ---
 title: 發佈您的標籤屬性
-description: 了解如何將您的標籤屬性從開發環境發佈至測試和生產環境。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
+description: 瞭解如何將您的標籤屬性從開發環境發佈到測試和生產環境。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 67%
+source-wordcount: '597'
+ht-degree: 64%
 
 ---
 
@@ -15,12 +15,11 @@ ht-degree: 67%
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch已整合至Adobe Experience Platform，為資料收集技術的套件。 介面中已推出數個術語變更，在使用此內容時應注意：
+>Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
 >
-> * platform launch（用戶端）現在為 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * platform launch （使用者端）現在為 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
 > * platform launch伺服器端現在是 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * 現在提供邊緣設定 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
+> * Edge設定現在為 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 學習目標
 
@@ -70,20 +69,20 @@ ht-degree: 67%
 
 1. 在 Chrome 瀏覽器中開啟 [Luma 示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 按一下 [Debugger 圖示](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 圖示，開啟 ![Experience Cloud Debugger 擴充功能](images/icon-debugger.png)
+1. 開啟 [Experience Platform Debugger擴充功能](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 按一下 ![Debugger圖示](images/icon-debugger.png) 圖示
 
    ![按一下 Experience Cloud Debugger 圖示](images/switchEnvironments-openDebugger.png)
 
 1. 前往「工具」標籤
 
-1. 在 **[!UICONTROL Adobe啟動>取代Launch內嵌程式碼]** 區段會貼上剪貼簿中的測試內嵌程式碼
-1. 開啟 **[!UICONTROL 在luma.enablementadobe.com之間套用]** 開關
+1. 在 **[!UICONTROL AdobeLaunch >取代Launch內嵌程式碼]** 區段貼上剪貼簿中的測試內嵌程式碼
+1. 開啟 **[!UICONTROL 套用至luma.enablementadobe.com]** 切換
 
 1. 按一下磁碟圖示以儲存
 
    ![Debugger中顯示的標籤環境](images/switchEnvironments-debugger-save.png)
 
-1. 重新載入並查看 Debugger 的「摘要」標籤。在「Launch」區段下，您現在應該會看到已實作測試屬性，並顯示您的屬性名稱(例如「標籤教學課程」或您為屬性命名的任何內容)!
+1. 重新載入並查看 Debugger 的「摘要」標籤。在Launch區段底下，現在應該會看到測試屬性已實施，並顯示您的屬性名稱（例如「tags Tutorial」或您為屬性命名的任何名稱）！
 
    ![Debugger中顯示的標籤環境](images/publishing-debugger-staging.png)
 

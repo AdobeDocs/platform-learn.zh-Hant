@@ -3,9 +3,9 @@ title: 使用Experience Platform Debugger驗證Web SDK實作
 description: 瞭解如何使用Adobe Experience Platform Debugger驗證您的Platform Web SDK實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1071'
 ht-degree: 5%
 
 ---
@@ -23,7 +23,7 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-在本課程中，您將使用 [Adobe Experience Cloud Debugger擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 取代 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 擁有您自己的屬性。
+在本課程中，您將使用 [Adobe Experience Platform Debugger延伸模組](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 取代 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 擁有您自己的屬性。
 
 此技巧稱為環境切換，您日後在自己的網站上使用標籤時，此技巧將有所幫助。 您可以在瀏覽器中載入您的生產網站，但使用 *開發* 標籤環境。 此功能可讓您安心地變更及驗證標籤，而不受定期程式碼發行的影響。 畢竟，將行銷標籤發行與定期程式碼發行分開，是客戶使用標籤的主要原因之一！
 

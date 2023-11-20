@@ -3,10 +3,10 @@ title: 透過標記在網站中實施 Experience Cloud
 description: 前端程式開發人員或技術行銷人員若想瞭解如何在其網站上實施Adobe Experience Cloud解決方案，透過標籤在網站中實施Experience Cloud是最佳起點。
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 8c3b487691c95b16da2a270b7d71cfd3bab1f0eb
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 39%
+source-wordcount: '896'
+ht-degree: 37%
 
 ---
 
@@ -80,7 +80,7 @@ Adobe Experience Platform的標籤功能是新一代Adobe的網站標籤與行�
 ## 取得工具
 
 1. 由於您將會用到一些瀏覽器專用擴充功能，建議您使用 [Chrome 網頁瀏覽器](https://www.google.com/chrome/)完成本教學課程
-1. 將 [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 擴充功能新增到 Chrome 瀏覽器
+1. 新增 [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome瀏覽器的擴充功能
 1. 複製範例html頁面程式碼
 
    +++範例html頁面程式碼

@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 906993f14376f7a1a6344436c7068c747d275fb4
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 39%
+source-wordcount: '214'
+ht-degree: 42%
 
 ---
 
@@ -66,8 +66,3 @@ ht-degree: 39%
    + [第一方裝置ID](edge/generate-first-party-device-ids.md)
 + Debugger{#debugger}
    + [概觀](debugger/overview.md)
-   + Experience Cloud Debugger{#experience-cloud}
-      + [安裝除錯程式](debugger/experience-cloud/add-the-extension.md)
-      + [使用除錯程式](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
-      + [疑難排解 Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target="_blank"}
-      + [切換標籤環境](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target="_blank"}

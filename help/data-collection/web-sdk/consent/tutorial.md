@@ -5,9 +5,9 @@ feature: Web SDK, Tags
 level: Intermediate
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '3321'
+source-wordcount: '3320'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ return {
 
 ![](./images/data-element.png)
 
-在您的標籤使用者端屬性中，選取「資料元素」和藍色的「新增資料元素」按鈕。 在此範例中，我們將此資料元素命名為「xdm-consentStrings」。 這些xdm欄位將包含IAB TCF 2.0標準所需的使用者同意資料。
+在您的標籤使用者端屬性中，選取「資料元素」，接著按一下藍色的「新增資料元素」按鈕。 在此範例中，我們將此資料元素命名為「xdm-consentStrings」。 這些xdm欄位將包含IAB TCF 2.0標準所需的使用者同意資料。
 
 在「擴充功能」下拉式選單中，選擇「Platform Web SDK」，然後針對「資料元素型別」，選擇「XDM物件」。 xdm對應程式應該會出現，可讓您選取並展開「consentStrings」專案，如上方熒幕擷圖所示。
 
@@ -236,7 +236,7 @@ addEventListener();
 
 ### 步驟4：Inspect並驗證資料收集
 
-在我們的網站上，重新整理頁面並確認中的程式庫組建 [Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Chrome擴充功能，在標籤功能表區段中：
+在我們的網站上，重新整理頁面並確認中的程式庫組建 [Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome擴充功能，在標籤功能表區段中：
 
 ![](./images/build-date.png)
 

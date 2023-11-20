@@ -1,9 +1,9 @@
 ---
 title: 使用標籤新增Adobe Target
-description: 瞭解如何使用at.js中的標籤、頁面載入請求、引數、訂單請求和自訂頁首/頁尾程式碼來實作Adobe Target。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
+description: 瞭解如何使用標籤搭配at.js、頁面載入請求、引數、訂單請求和自訂頁首/頁尾程式碼來實施Adobe Target。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 74%
@@ -18,17 +18,17 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch正在以資料收集技術套件的形式整合至Adobe Experience Platform。 此介面已推出幾項術語變更，使用此內容時請務必注意：
+>Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
 >
-> * platform launch（使用者端）現在為 **[!DNL tags]**
-> * platform launch Server Side現在是 **[!DNL event forwarding]**
+> * platform launch （使用者端）現在為 **[!DNL tags]**
+> * platform launch伺服器端現在是 **[!DNL event forwarding]**
 > * Edge設定現在為 **[!DNL datastreams]**
 
 ## 學習目標
 
 在本課程結束時，您將能夠：
 
-* 新增在將Target與非同步標籤內嵌程式碼搭配使用時，可用來管理閃爍的預先隱藏程式碼片段
+* 新增在將Target與非同步標籤內嵌程式碼搭配使用的情況下，可用來管理閃爍的預先隱藏程式碼片段
 * 新增 Target v2 擴充功能
 * 引發頁面載入請求 (先前稱為「全域 mbox」)
 * 將參數新增至頁面載入請求
@@ -43,7 +43,7 @@ ht-degree: 74%
 
 ## 新增 Target 預先隱藏程式碼片段
 
-開始之前，我們需要稍微更新標籤內嵌程式碼。 非同步載入標籤內嵌程式碼時，頁面可能會在Target程式庫完全載入並執行其內容交換之前完成轉譯。 這可能會導致所謂的閃爍問題，發生此問題時，會先短暫地顯示預設內容，然後再更換為 Target 指定的個人化內容。若要避免這種閃爍問題，強烈建議您在標籤的非同步內嵌程式碼之前，以硬式編碼撰寫特殊的預先隱藏程式碼片段。
+開始之前，我們需要稍微更新標籤內嵌程式碼。 非同步載入標籤內嵌程式碼時，必須等到Target程式庫完全載入並執行其內容交換後，頁面才能完成轉譯。 這可能會導致所謂的閃爍問題，發生此問題時，會先短暫地顯示預設內容，然後再更換為 Target 指定的個人化內容。若要避免發生這種閃爍問題，強烈建議在緊接標籤的非同步內嵌程式碼之前，以硬式編碼撰寫特殊的預先隱藏程式碼片段。
 
 此作業已在 Luma 網站上完成，不過讓我們在範例頁面上執行，讓您瞭解實施情況。複製下列數行程式碼：
 
@@ -82,9 +82,9 @@ ht-degree: 74%
 </script>
 ```
 
-開啟範例頁面，並如下圖所示，將其貼到標籤內嵌程式碼的前面（無需擔心行號不同）。 在此熒幕擷圖中，預先隱藏的程式碼片段已縮制：
+開啟範例頁面，如下圖所示，將其貼到標籤內嵌程式碼的前面（如果行數不同，不必擔心）。 在此熒幕擷圖中，預先隱藏的程式碼片段已縮制：
 
-![暫留在擴充功能上](images/target-prehidingSnippet.png)
+![將游標暫留在擴充功能上](images/target-prehidingSnippet.png)
 
 重新載入範例頁面。您會發現頁面會先隱藏三秒再顯示。這是暫時性的行為，Target 部署後便會消失。此預先隱藏行為是由程式碼片段尾端的兩項設定所控制，雖然您可以自訂這些設定，但通常建議保留預設設定：
 
@@ -206,7 +206,7 @@ Target v2 擴充功能包含兩個主要部分：
 
 ## 新增參數
 
-在 Target 請求中傳遞參數可將強大的功能新增到目標鎖定、測試及個人化活動。標籤擴充功能提供可傳遞引數的兩個動作：
+在 Target 請求中傳遞參數可將強大的功能新增到目標鎖定、測試及個人化活動。標籤擴充功能提供可傳遞引數的兩項動作：
 
 1. `Add Params to Page Load Request`，會將參數新增至頁面載入請求 (相當於 [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) 方法)
 
@@ -291,7 +291,7 @@ Target v2 擴充功能包含兩個主要部分：
 1. 收集訪客行為以支援建議演算法，例如「Recently Viewed Products」或「Most Viewed Products」。
 1. 填入 Recommendations 目錄。Recommendations 中包含您網站上所有產品或文章的資料庫，以便在建議活動內容中提供這些項目。例如，建議產品時，您通常會想要顯示產品名稱 (`entity.name`) 和影像 (`entity.thumbnailUrl`) 等屬性。某些客戶使用後端摘要填入其目錄，但也可以使用 Target 請求中的實體參數填入。
 
-在本教學課程中，您不需要傳遞任何實體引數，但工作流程與您先前傳遞 `pageName` request parameter — 只須為引數指定首碼為「entity」的名稱。 並將參數對應至相關的資料元素即可。請注意，某些通用實體已保留必須使用的名稱 (例如用於產品 SKU 的 entity.id)。以下是在 `Add Params to Page Load Request` 動作中設定實體參數看起來的樣子：
+在本教學課程中，您不需要傳遞任何實體引數，但工作流程與先前傳遞 `pageName` request parameter — 只要給引數一個以「entity」為前置詞的名稱。 並將參數對應至相關的資料元素即可。請注意，某些通用實體已保留必須使用的名稱 (例如用於產品 SKU 的 entity.id)。以下是在 `Add Params to Page Load Request` 動作中設定實體參數看起來的樣子：
 
 ![新增實體參數](images/target-entityParameters.png)
 
@@ -301,7 +301,7 @@ Target v2 擴充功能包含兩個主要部分：
 
 在引發頁面載入請求之前，必須先在 Identity Service 的 `Set Customer IDs` 動作中設定客戶 ID。為此，請確認您的網站上具備下列功能：
 
-* 客戶ID必須可在頁面上使用，且位於標籤Embed Code之前
+* 客戶ID必須可在標籤內嵌程式碼之前的頁面上使用
 * 必須安裝 Adobe Experience Platform Identity Service 擴充功能
 * 您必須在「載入的程式庫」(頁面頂端)」事件引發的規則中使用 `Set Customer IDs` 動作
 * 在「設定客戶 ID」動作&#x200B;*之後*&#x200B;引發的規則中使用 `Fire Page Load Request` 動作
@@ -351,10 +351,10 @@ Target v2 擴充功能包含兩個主要部分：
 
 屬性代號是搭配 Target Premium [Enterprise User Permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) 功能使用的保留參數。它可用來定義不同的數位屬性，這樣 Experience Cloud 組織的不同成員就能獲派各個屬性的不同權限。例如，您可能希望一組使用者能在您的網站上設定 Target 活動，但不能在行動應用程式中設定。
 
-Target屬性類似於標籤屬性和Analytics報表套裝。 如果企業擁有多個品牌、網站和行銷團隊，可能會針對每個網站或行動應用程式使用不同的Target屬性、標籤屬性和Analytics報表套裝。 標籤屬性是以其內嵌程式碼區別、Analytics報表套裝是以其報表套裝ID區別，而Target屬性是以其屬性代號引數區別。
+Target屬性類似於標籤屬性和Analytics報表套裝。 如果企業擁有多個品牌、網站和行銷團隊，可能會使用不同的Target屬性、標籤屬性，以及適用於各個網站或行動應用程式的Analytics報表套裝。 標籤屬性是以其內嵌程式碼區別、Analytics報表套裝是以其報表套裝ID區別，而Target屬性是以其屬性代號引數區別。
 
 
-屬性代號必須使用標籤中的自訂程式碼動作實作，且該標籤具有 `targetPageParams()` 函式。 如果您要實作多個網站，分別使用具有單一標籤屬性的不同at_property值，您可以透過資料元素管理at_property值。
+屬性代號必須使用標籤中的自訂程式碼動作實作，且該標籤具有 `targetPageParams()` 函式。 如果您透過單一標籤屬性使用不同的at_property值來實作多個網站，您可以透過資料元素管理at_property值。
 
 若您是 Target Premium 客戶，且想在教學課程屬性中實施屬性代號，以下是可供使用的選用練習：
 
@@ -368,7 +368,7 @@ Target屬性類似於標籤屬性和Analytics報表套裝。 如果企業擁有�
 
    ![從 Adobe Target 介面取得屬性代號](images/target-addATProperty-targetProperties.png)
 
-1. 在您的標籤標籤中，前往 **[!UICONTROL 規則]** ，然後按一下 `All Pages - Library Loaded` 以開啟規則編輯器。
+1. 在標籤標籤中，前往 **[!UICONTROL 規則]** ，然後按一下 `All Pages - Library Loaded` 以開啟規則編輯器。
 
    ![開啟「所有頁面 - 程式庫已載入」規則](images/target-editRule.png)
 
@@ -391,7 +391,7 @@ Target屬性類似於標籤屬性和Analytics報表套裝。 如果企業擁有�
 
 >[!WARNING]
 >
->如果您嘗試新增 `at_property` 引數透過 **[!UICONTROL 新增引數至頁面載入請求]** 動作，引數會填入網路要求中，但Target的視覺化體驗撰寫器(VEC)在載入頁面時無法自動偵測到它。 永遠填入 `at_property` 使用 `targetPageParams()` 函式中的函式。
+>如果您嘗試新增 `at_property` 引數透過 **[!UICONTROL 新增引數至頁面載入請求]** 動作，引數會填入網路要求中，但Target的視覺化體驗撰寫器(VEC)在載入頁面時無法自動偵測到。 永遠填入 `at_property` 使用 `targetPageParams()` 函式中。
 
 #### 驗證屬性代號
 
@@ -428,9 +428,9 @@ Target屬性類似於標籤屬性和Analytics報表套裝。 如果企業擁有�
 1. 在背景使用不同的演算法來計算統計可信度
 1. 建立特殊、可下載之個別訂單詳細資料的稽核報表
 
-最佳做法是在所有訂單漏斗中使用訂單確認請求，即使在非零售網站上亦然。 例如，潛在客戶產生網站通常會有潛在客戶漏斗，其尾端會產生不重複的「lead id」。這些網站應將靜態值 (例如「1」) 用於 orderTotal 以實施訂單請求。
+最佳做法是在所有訂單漏斗（甚至非零售網站）中使用訂單確認請求。 例如，潛在客戶產生網站通常會有潛在客戶漏斗，其尾端會產生不重複的「lead id」。這些網站應將靜態值 (例如「1」) 用於 orderTotal 以實施訂單請求。
 
-如果客戶將Analytics for Target (A4T)整合用於其大多數報表，則在使用Automated Personalization活動（不支援A4T）時，可能也想要實作訂單請求。 此外，訂單請求是 Recommendations 實施中的關鍵元素，可根據購買行為支援演算法。如需A4T支援的最新資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
+如果客戶將Analytics for Target (A4T)整合用於其大多數報表，則在使用Automated Personalization活動（不支援A4T）時，可能也想要實施訂單請求。 此外，訂單請求是 Recommendations 實施中的關鍵元素，可根據購買行為支援演算法。如需A4T支援的最新資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
 
 訂單確認請求應從只在訂單確認頁面或事件上觸發的規則引發，通常可與設定 Adobe Analytics 購買事件的規則組合。您必須使用核心擴充功能的「自訂程式碼」動作進行設定，使用相關資料元素來設定 orderId、orderTotal 和 productPurchasedId 參數。
 
@@ -487,7 +487,7 @@ Target屬性類似於標籤屬性和Analytics報表套裝。 如果企業擁有�
 1. 將規則命名為 `Order Confirmation Page - Library Loaded - 60`
 1. 按一下&#x200B;**[!UICONTROL 事件 > 新增]**
    1. 選取&#x200B;**[!UICONTROL 事件類型 > 載入的程式庫 (頁面頂端)]**
-   1. 下 **[!UICONTROL 進階選項]**，變更 `Order` 至 `60` 以便它在 `Load Target` 動作(位於我們的 `All Pages - Library Loaded` 規則，其中 `Order` 設為 `50`)
+   1. 在 **[!UICONTROL 進階選項]**，變更 `Order` 至 `60` 以便它在 `Load Target` 動作(位於我們的 `All Pages - Library Loaded` 規則，其中 `Order` 設為 `50`)
    1. 按一下&#x200B;**[!UICONTROL 保留變更]**
 1. 按一下&#x200B;**[!UICONTROL 條件 > 新增]**
    1. 選取&#x200B;**[!UICONTROL 條件類型 > 路徑不含查詢字串]**
@@ -562,15 +562,15 @@ Target屬性類似於標籤屬性和Analytics報表套裝。 如果企業擁有�
 
 ### 自訂請求
 
-在某些罕見情況下，您可能需要提出頁面載入和訂單確認請求以外的Target請求。 例如，有時在標籤內嵌程式碼之前，您要用於個人化的重要資料並未在頁面上定義，而是可能會在頁面底部以硬式編碼撰寫，或從非同步API請求傳回。 雖然將此請求用於內容傳送並非最佳方法（因為頁面已顯示），此資料可使用其他請求傳送至Target。 此資料可用來讓訪客設定檔變得更加豐富以供後續使用（使用設定檔引數），或用來填入Recommendations目錄。
+在某些罕見情況下，您可能需要提出頁面載入和訂單確認請求以外的Target請求。 例如，有時候您要用於個人化的重要資料，未在標籤內嵌程式碼之前的頁面上定義，而是可能會在頁面底部以硬式編碼撰寫，或從非同步API請求傳回。 雖然將此請求用於內容傳送並非最佳方法（因為頁面已顯示），此資料可使用其他請求傳送至Target。 此資料可用來讓訪客設定檔變得更加豐富以供後續使用（使用設定檔引數），或用來填入Recommendations目錄。
 
 在這些情況下，請使用核心擴充功能中的自訂程式碼動作，利用 [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) 和 [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) 方法引發 Launch 請求。這非常類似於您在[訂單確認請求](#order-confirmation-request)練習中所執行的操作，但您會使用不同的請求名稱，且不會使用特殊訂單參數。從自訂程式碼發出 Target 請求之前，請務必使用&#x200B;**[!UICONTROL 載入 Target]** 動作。
 
 ## 程式庫標題和程式庫頁尾
 
-Target 使用者介面中的「編輯 at.js」畫面有可以貼上自訂 JavaScript 的位置，可使其在 at.js 檔案之前或之後立即執行。Library Header 有時可透過 [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) 函數用來覆寫 at.js 設定，或透過[資料提供者](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)功能傳遞來自協力廠商的資料。Library Footer 有時用於新增 [at.js 自訂事件](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html)接聽程式。
+Target 使用者介面中的「編輯 at.js」畫面有可以貼上自訂 JavaScript 的位置，可使其在 at.js 檔案之前或之後立即執行。Library Header 有時可透過 [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) 函數用來覆寫 at.js 設定，或透過[資料提供者](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)功能傳遞來自協力廠商的資料。Library Footer 有時用於新增 [at.js 自訂事件](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html)接聽程式。
 
-若要在標籤中複製此功能，只需使用核心擴充功能中的「自訂程式碼」動作，並將該動作排序在「載入Target」之前(Library Header)或之後(Library Footer)即可。 您可以使用與 `Load Target` 動作相同的規則執行此操作 (如下圖所示)，或使用具有事件或順序設定的個別規則，穩定地在包含 `Load Target` 的規則之前或之後引發：
+若要在標籤中複製此功能，只需使用核心擴充功能中的「自訂程式碼」動作，並將此動作排序在「載入Target」之前(Library Header)或之後(Library Footer)即可。 您可以使用與 `Load Target` 動作相同的規則執行此操作 (如下圖所示)，或使用具有事件或順序設定的個別規則，穩定地在包含 `Load Target` 的規則之前或之後引發：
 
 ![動作序列中的 Library Header 和 Footer](images/target-libraryHeaderFooter.png)
 

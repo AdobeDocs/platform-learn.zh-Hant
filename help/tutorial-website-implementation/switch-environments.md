@@ -1,28 +1,27 @@
 ---
 title: 使用Adobe Experience Cloud Debugger切換標籤環境
-description: 了解如何使用Experience Cloud Debugger載入不同的標籤內嵌程式碼。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
+description: 瞭解如何使用Experience Cloud Debugger載入不同的標籤內嵌程式碼。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '625'
-ht-degree: 36%
+source-wordcount: '623'
+ht-degree: 32%
 
 ---
 
 # 使用Experience Cloud Debugger切換標籤環境
 
-在本課程中，您將使用 [Adobe Experience Cloud Debugger擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 取代 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 擁有您自己的屬性。
+在本課程中，您將使用 [Adobe Experience Platform Debugger延伸模組](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 取代 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 擁有您自己的屬性。
 
-此技術稱為環境切換，日後當您在自己的網站上使用標籤時，此技巧將有所幫助。 您可以在瀏覽器中載入生產網站，但透過 *開發* 標籤環境。 這可讓您安心地變更及驗證標籤，而不受一般程式碼發行的影響。  畢竟，將行銷標籤發行與一般程式碼發行分開，是客戶最初使用標籤的主要原因之一！
+此技巧稱為環境切換，您日後在自己的網站上使用標籤時，此技巧將有所幫助。 您可以在瀏覽器中載入您的生產網站，但使用 *開發* 標籤環境。 這可讓您安心地變更及驗證標籤，而不受定期程式碼發行的影響。  畢竟，將行銷標籤發行與定期程式碼發行分開，是客戶使用標籤的主要原因之一！
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch已整合至Adobe Experience Platform，為資料收集技術的套件。 介面中已推出數個術語變更，在使用此內容時應注意：
+>Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
 >
-> * platform launch（用戶端）現在為 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * platform launch （使用者端）現在為 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
 > * platform launch伺服器端現在是 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * 現在提供邊緣設定 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
+> * Edge設定現在為 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 學習目標
 
@@ -47,7 +46,7 @@ ht-degree: 36%
 
 1. 在 Chrome 瀏覽器中開啟 [Luma 示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 按一下 [Debugger 圖示](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 圖示，開啟 ![Experience Cloud Debugger 擴充功能](images/icon-debugger.png)
+1. 開啟 [Experience Platform Debugger擴充功能](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 按一下 ![Debugger圖示](images/icon-debugger.png) 圖示
 
    ![按一下 Experience Cloud Debugger 圖示](images/switchEnvironments-openDebugger.png)
 
@@ -57,8 +56,8 @@ ht-degree: 36%
 
 1. 前往「工具」標籤
 1. 捲動至&#x200B;**[!UICONTROL 取代 Launch 內嵌程式碼]**&#x200B;區段
-1. 確認顯示Luma網站的Chrome分頁在Debugger後面顯示（而非顯示本教學課程的分頁或顯示資料收集介面的分頁）。  將剪貼簿中的內嵌程式碼貼入輸入欄位中
-1. 開啟「在luma.enablementadobe.com之間套用」功能，讓Luma網站上的所有頁面都對應至您的標籤屬性
+1. 確認顯示Luma網站的Chrome分頁在Debugger （而非顯示本教學課程的分頁或顯示資料收集介面的分頁）後面成為焦點。  將剪貼簿中的內嵌程式碼貼入輸入欄位中
+1. 開啟「透過luma.enablementadobe.com套用」功能，使Luma網站上的所有頁面都將對應至您的標籤屬性
 1. 按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;按鈕
 
    ![Debugger中顯示的標籤環境](images/switchEnvironments-debugger-save.png)
@@ -71,6 +70,6 @@ ht-degree: 36%
 >
 >每當您回到Luma網站，Debugger都會儲存此設定並取代標籤內嵌程式碼。 它不會影響您在其他已開啟的分頁中所造訪的其他網站。若要禁止 Debugger 取代內嵌程式碼，請在 Debugger 的「工具」標籤中按一下內嵌程式碼旁的&#x200B;**[!UICONTROL 移除]**&#x200B;按鈕。
 
-繼續本教學課程時，您將會使用此技巧，將Luma網站對應至您自己的標籤屬性，以驗證您的標籤實作。 當您開始在生產網站上使用標籤時，可以使用相同的技巧來驗證變更。
+繼續進行教學課程的過程中，您將使用此技巧將Luma網站對應至您自己的標籤屬性，以驗證標籤實施。 當您開始在生產環境網站上使用標籤時，可以使用相同的技巧來驗證變更。
 
 [下堂課「新增 Adobe Experience Platform Identity Service」>](id-service.md)
