@@ -4,9 +4,9 @@ description: 瞭解如何在行動應用程式中實作Assurance擴充功能。
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 6%
 
 ---
@@ -86,14 +86,14 @@ To update the signing for the lessons that require that you sign the application
 1. 選取 **[!DNL Luma]** 在「專案」導覽器中。
 1. 選取 **[!DNL Luma]** 目標。
 1. 選取 **資訊** 標籤。
-1. 若要新增基本URL，請向下捲動至 **URL型別** 並選取 **+** 按鈕。
+1. 向下捲動至 **URL型別(1)** 若尚未開啟，則使用>形箭號開啟區段。
 1. 設定 **識別碼** 至您選擇的組合識別碼，並設定 **URL配置** ，依您的選擇而定。
 
    ![保證url](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >確定您使用 _獨特_ 組合識別碼並取代 `com.adobe.luma.tutorial.swiftui` 組合識別碼，因為每個組合識別碼必須是唯一的。 通常，套件組合ID字串會使用反向DNS格式，例如 `com.organization.brand.uniqueidentifier`.<br/>同樣地，使用唯一的URL配置，並取代已經提供的 `lumatutorialswiftui` 使用您唯一的URL配置。
+   >確定您使用 _獨特_ 組合識別碼，因此請將 `com.adobe.luma.tutorial.swiftui` 組合識別碼，因為每個組合識別碼必須是唯一的。 通常，套件組合ID字串會使用反向DNS格式，例如 `com.organization.brand.uniqueidentifier`.<br/>同樣地，使用唯一的URL配置，因此請取代已經提供的 `lumatutorialswiftui` 使用您唯一的URL配置。
 
 若要進一步瞭解iOS中的URL配置，請檢閱 [Apple的檔案](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 

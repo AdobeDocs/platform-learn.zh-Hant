@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Offers
 hide: true
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '2630'
+source-wordcount: '2672'
 ht-degree: 2%
 
 ---
@@ -140,6 +140,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
    1. 選取 ![行動](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL 行動]** 從 **[!UICONTROL 頻道]** 清單，然後選取 **[!UICONTROL 行動JSON]** 從 **[!UICONTROL 刊登]** 清單。
    1. 選取 **[!UICONTROL 自訂]** 的 **[!UICONTROL 內容]**.
    1. 選取 **[!UICONTROL 新增內容]**. 在 **[!UICONTROL 新增個人化]** 對話方塊：
+      1. 如果是 [!UICONTROL 模式] 選擇器可用，請確保其設定為 **[!UICONTROL JSON]**.
       1. 輸入下列JSON：
 
          ```json
@@ -348,7 +349,8 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
      ]
      ```
 
-     不過，您可以使用任何型別的實作，以確保「最佳化API」取得正確的引數(`activityId`， `placementId` 和 `itemCount`)，以建構有效的 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 物件。
+     不過，您可以使用任何型別的實作，以確保「最佳化API」取得正確的引數(`activityId`， `placementId` 和 `itemCount`)，以建構有效的 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 物件。 <br/>如需詳細資訊，請參閱 `decisions.json` 檔案僅供日後使用，與本課程和教學課程目前部分內容無關。
+
    * 會呼叫兩個API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  這些函式會清除任何快取的主張，並更新此設定檔的主張。
 
 1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL 個人化]** > **[!UICONTROL EdgeOffersView]** 在「Xcode專案」導覽器中。 尋找 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 函式並檢查此函式的程式碼。 此函式最重要的部分為 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API呼叫，此

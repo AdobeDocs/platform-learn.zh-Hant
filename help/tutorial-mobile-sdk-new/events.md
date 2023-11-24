@@ -3,9 +3,9 @@ title: 追蹤事件資料
 description: 瞭解如何追蹤行動應用程式中的事件資料。
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: 4434bee35591d7cf79b7dddc03faba83d00b31f5
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -322,7 +322,7 @@ Adobe Experience Platform Edge擴充功能可傳送遵循先前定義XDM結構�
 
 1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登入工作表]**.
 
-   1. 將下列醒目提示的程式碼新增至「登入」按鈕的關閉處：
+   1. 將下列醒目提示的程式碼新增至 `Button("Login") {` 關閉：
 
       ```swift
       // Send app interaction event

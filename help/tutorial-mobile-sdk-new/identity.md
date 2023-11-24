@@ -4,9 +4,9 @@ description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '919'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
    let identityMap: IdentityMap = IdentityMap()
    
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
@@ -81,12 +81,14 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
       let identityMap: IdentityMap = IdentityMap()
       ```
 
-   1. 設定 `IdentityItem` 電子郵件和CRM ID的物件。
+   1. 設定 `IdentityItem` 電子郵件和CRM ID的物件。 Adobe建議將代表個人的身分（例如Luma CRM ID）傳送為主要身分。 如果身分對應包含人員識別碼（例如Luma CRM Id），則人員識別碼將成為主要身分。 否則，ECID會成為主要身分。 將人員ID設為主要ID有助於在後續API呼叫中更有效率地查詢設定檔。
 
       ```swift
       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
       ```
+
+
 
    1. 新增這些 `IdentityItem` 物件至 `IdentityMap` 物件。
 

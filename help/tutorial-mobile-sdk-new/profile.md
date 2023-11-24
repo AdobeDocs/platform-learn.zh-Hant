@@ -3,7 +3,7 @@ title: 收集設定檔資料
 description: 瞭解如何在行動應用程式中收集設定檔資料。
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 1%
@@ -96,8 +96,8 @@ ht-degree: 1%
 1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
 1. 執行應用程式以登入並與產品互動。
 
-   1. 將「保證」圖示移至左側。
    1. 選取 **[!UICONTROL 首頁]** 標籤列中的。
+   1. 將「保證」圖示移至左側。
    1. 若要開啟「登入」工作表，請選取 <img src="assets/login.png" width="15" />。
 
       <img src="./assets/mobile-app-events-1.png" width="300">

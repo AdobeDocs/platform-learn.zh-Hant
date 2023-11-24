@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1536'
 ht-degree: 5%
 
 ---
@@ -41,7 +41,6 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 
 在本課程中，您將學習
 
-* 向Apple推播通知服務(APN)註冊應用程式ID。
 * 在AJO中建立應用程式表面。
 * 安裝並設定Journey Optimizer標籤擴充功能。
 * 更新您的應用程式以註冊Journey Optimizer標籤擴充功能。
