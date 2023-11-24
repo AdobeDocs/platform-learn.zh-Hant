@@ -4,9 +4,9 @@ description: 瞭解如何實作Adobe Experience Cloud行動應用程式。 本�
 recommendations: noDisplay,catalog
 hide: true
 exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
-source-git-commit: 6726b0d0570311987b7edac4bf0cd2da35e72f30
+source-git-commit: 8810829ec80b38afafbd4384005f5e145c5b5999
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '849'
 ht-degree: 6%
 
 ---
@@ -82,6 +82,10 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 >
 >在本教學課程中，您會建立結構描述、資料集、身分等等。 如果有多人在一個沙箱中完成本教學課程，在建立這些物件時，請考慮在命名慣例中附加或附加身分識別。 例如，新增 ` - <your name or initials>` 至指示您建立的物件名稱。
 
+>[!NOTE]
+>
+>您使用iOS作為平台， [!DNL Swift] 作為程式設計語言， [!DNL SwiftUI] 作為UI框架和 [!DNL Xcode] 作為整合式開發環境(IDE)。 不過，許多所說明的實作概念與其他開發平台類似。 許多人已經成功完成本教學課程，很少或沒有先前的iOS/Swift(UI)體驗。 您不需要成為專家就能完成課程，但如果您熟悉且瞭解程式碼，將能從中學到更多。
+
 
 ## 下載Luma應用程式
 
@@ -91,15 +95,9 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：專案，此專案不含程式碼，或針對您完成本教學課程中的實作練習所需使用的大部分Experience PlatformMobile SDK程式碼，包含預留位置程式碼。
 1. [完成](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：完整實作以供參考的版本。
 
->[!NOTE]
->
->您使用iOS作為平台， [!DNL Swift] 作為程式設計語言， [!DNL SwiftUI] 作為UI框架和 [!DNL Xcode] 作為整合式開發環境(IDE)。 不過，許多所說明的實作概念與其他開發平台類似。 許多人已經成功完成本教學課程，很少或沒有先前的iOS/Swift(UI)體驗。 您不需要成為專家就能完成課程，但如果您熟悉且瞭解程式碼，將能從中學到更多。
+如果您只想試用最終的應用程式，也可以直接從Apple App Store下載應用程式。
 
->[!INFO]
->
->如果您只想試用最終的應用程式，也可以直接從Apple App Store下載應用程式。
->[![下載](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
-
+[<img src="assets/download-app.svg">](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 我們開始吧！
 
