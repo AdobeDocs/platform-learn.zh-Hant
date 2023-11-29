@@ -1,24 +1,20 @@
 ---
-title: 同意
+title: 實作同意Platform Mobile SDK實作
 description: 瞭解如何在行動應用程式中實施同意。
 feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 6%
+source-wordcount: '544'
+ht-degree: 2%
 
 ---
 
-# 同意
+# 實作同意
 
 瞭解如何在行動應用程式中實施同意。
 
->[!INFO]
->
-> 在2023年11月下旬，此教學課程將由使用新範例行動應用程式的新教學課程取代
-
-Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experience Platform Mobile SDK和Edge Network擴充功能時，從行動應用程式收集同意偏好設定。 進一步瞭解 [同意擴充功能](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/)，在檔案中。
+Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experience Platform Mobile SDK和Edge Network擴充功能時，從行動應用程式收集同意偏好設定。 進一步瞭解 [同意擴充功能](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) 在檔案中。
 
 ## 先決條件
 
@@ -34,73 +30,81 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 
 ## 要求同意
 
-如果您從頭開始按照教學課程進行，您會記得設定 **[!UICONTROL 預設同意層級]** 變更為「擱置中」。 為了開始收集資料，您必須獲得使用者的同意。 在本教學課程中，只要在真實世界應用程式中詢問您想要諮詢所在地區的同意最佳實務，即可取得同意。
+如果您從頭開始按照教學課程進行，您可能會記得您已將「同意」擴充功能中的預設同意設為 **[!UICONTROL 擱置中 — 在使用者提供同意偏好設定之前發生的佇列事件。]**
 
-1. 您只想詢問使用者一次。 管理此資訊的簡單方法就是使用 `UserDefaults`.
-1. 導覽至 `Home.swift`。
-1. 將下列程式碼新增至 `viewDidLoad()`.
+若要開始收集資料，您必須取得使用者的同意。 在真實世界應用程式中，您會想要諮詢您所在地區的同意最佳實務。 在本教學課程中，您只需透過警報要求使用者同意：
+
+1. 您只想要求使用者同意一次。 您可以將Mobile SDK同意與使用Apple的追蹤所需授權結合以達成此目的 [應用程式追蹤透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 在此應用程式中，您假設當使用者授權追蹤時，他們同意收集事件。
+
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在「Xcode專案」導覽器中。
+
+   將此程式碼新增至 `updateConsent` 函式。
 
    ```swift
-   let defaults = UserDefaults.standard
-   let consentKey = "askForConsentYet"
-   let hidePopUp = defaults.bool(forKey: consentKey)
+   // Update consent
+   let collectConsent = ["collect": ["val": value]]
+   let currentConsents = ["consents": collectConsent]
+   Consent.update(with: currentConsents)
+   MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. 如果使用者之前未看到警報，則顯示警報並根據其回應更新同意。 將下列程式碼新增至 `viewDidLoad()`.
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 免責宣告檢視]** 在Xcode的專案導覽器中，這是安裝或重新安裝應用程式並首次啟動應用程式後顯示的檢視。 系統會根據Apple提示使用者授權追蹤 [應用程式追蹤透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 如果使用者授權，您也會更新同意。
+
+   將下列程式碼新增至 `ATTrackingManager.requestTrackingAuthorization { status in` 關閉。
 
    ```swift
-   if(hidePopUp == false){
-       //Consent Alert
-       let alert = UIAlertController(title: "Allow Data Collection?", message: "Selecting Yes will begin data collection", preferredStyle: .alert)
-       alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
-           //Update Consent -> "yes"
-           let collectConsent = ["collect": ["val": "y"]]
-           let currentConsents = ["consents": collectConsent]
-           Consent.update(with: currentConsents)
-           defaults.set(true, forKey: consentKey)
-       }))
-       alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { action in
-           //Update Consent -> "no"
-           let collectConsent = ["collect": ["val": "n"]]
-           let currentConsents = ["consents": collectConsent]
-           Consent.update(with: currentConsents)
-           defaults.set(true, forKey: consentKey)
-       }))
-       self.present(alert, animated: true)
+   // Add consent based on authorization
+   if status == .authorized {
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "y")
+   }
+   else {
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "n")
    }
    ```
 
-
 ## 取得目前的同意狀態
 
-同意行動擴充功能將會根據目前的同意值自動隱藏/擱置/允許追蹤。 您也可以自行存取目前的同意狀態：
+同意行動擴充功能會根據目前的同意值自動隱藏/擱置/允許追蹤。 您也可以自行存取目前的同意狀態：
 
-1. 導覽至 `Home.swift`。
-1. 將下列程式碼新增至 `viewDidLoad()`.
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode的專案導覽器中。
 
-```swift
-Consent.getConsents{ consents, error in
-    guard error == nil, let consents = consents else { return }
-    guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
-    guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
-    print("Consent getConsents: ",jsonStr)
-}
-```
+   將下列程式碼新增至 `getConsents` 函式：
 
-在上述範例中，您只是將同意狀態列印到主控台。 在真實情境中，您可以使用它來修改要向使用者顯示哪些功能表或選項。
+   ```swift
+   // Get consents
+   Consent.getConsents { consents, error in
+      guard error == nil, let consents = consents else { return }
+      guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
+      guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
+      Logger.aepMobileSDK.info("Consent getConsents: \(jsonStr)")
+   }
+   ```
+
+2. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** 在Xcode的專案導覽器中。
+
+   將下列程式碼新增至 `.task` 修飾元：
+
+   ```swift
+   // Ask status of consents
+   MobileSDK.shared.getConsents()   
+   ```
+
+在上述範例中，您只是將同意狀態記錄到Xcode中的主控台。 在真實情境中，您可以使用它來修改要向使用者顯示哪些功能表或選項。
 
 ## 使用保證進行驗證
 
-1. 檢閱 [保證](assurance.md) 課程。
-1. 安裝應用程式。
-1. 使用保證產生的URL啟動應用程式。
-1. 如果您正確新增上述程式碼，系統會提示您提供同意。 選取 **是**.
-   ![同意快顯視窗](assets/mobile-consent-validate.png)
-1. 您應該會看到 **[!UICONTROL 同意偏好設定已更新]** 保證UI中的事件。
-   ![驗證同意](assets/mobile-consent-update.png)
+1. 從您的裝置或模擬器刪除應用程式，以正確重設和初始化追蹤和同意。
+1. 若要將模擬器或裝置連線至Assurance，請檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段。
+1. 從移動應用程式時 **[!UICONTROL 首頁]** 熒幕至 **[!UICONTROL 產品]** 畫面並返回 **[!UICONTROL 首頁]** 畫面，您應該會看到 **[!UICONTROL 取得同意回應]** 保證UI中的事件。
+   ![驗證同意](assets/consent-update.png)
 
-下一步： **[收集生命週期資料](lifecycle-data.md)**
 
->[!NOTE]
+>[!SUCCESS]
+>
+>您現在已啟用應用程式，在安裝（或重新安裝）後最初啟動時提示使用者，以使用Adobe Experience Platform Mobile SDK表示同意。
 >
 >感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+下一步： **[收集生命週期資料](lifecycle-data.md)**

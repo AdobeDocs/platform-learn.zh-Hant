@@ -1,101 +1,127 @@
 ---
-title: 生命週期資料
+title: 使用Platform Mobile SDK收集生命週期資料
 description: 瞭解如何在行動應用程式中收集生命週期資料。
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 2%
+source-wordcount: '631'
+ht-degree: 3%
 
 ---
 
-# 生命週期資料
+# 收集生命週期資料
 
 瞭解如何在行動應用程式中收集生命週期資料。
-
->[!INFO]
->
-> 在2023年11月下旬，此教學課程將由使用新範例行動應用程式的新教學課程取代
 
 Adobe Experience Platform Mobile SDK生命週期擴充功能可啟用來自行動應用程式的收集生命週期資料。 Adobe Experience Platform Edge Network擴充功能會將此生命週期資料傳送至Platform Edge Network，再根據您的資料流設定轉送至其他應用程式和服務。 進一步瞭解 [生命週期延伸](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) 產品檔案內。
 
 
 ## 先決條件
 
-* 成功建立並執行應用程式，且已安裝並設定SDK。
-* 已匯入保證SDK。
-
-  ```swift
-  import AEPAssurance
-  ```
-
+* 成功建立並執行應用程式，且已安裝並設定SDK。 在本課程中，您已啟動生命週期監視。 另請參閱 [安裝SDK — 更新AppDelegate](install-sdks.md#update-appdelegate) 以檢閱。
 * 已註冊保證擴充功能，如中所述 [上一課程](install-sdks.md).
 
 ## 學習目標
 
 在本課程中，您將會：
 
-* 將生命週期欄位群組新增至結構描述。
+<!--
+* Add lifecycle field group to the schema.
+* -->
 * 當應用程式在前景和背景之間移動時，透過正確啟動/暫停來啟用精確的生命週期量度。
 * 從應用程式傳送資料至Platform Edge Network。
 * 在Assurance中進行驗證。
 
-## 將生命週期欄位群組新增至結構描述
+<!--
+## Add lifecycle field group to schema
 
-您在中新增的消費者體驗事件欄位群組 [上一課程](create-schema.md) 已經包含生命週期欄位，因此您可以略過此步驟。 如果您沒有在自己的應用程式中使用取用者體驗事件欄位群組，您可以執行下列動作來新增生命週期欄位：
+The Consumer Experience Event field group you added in the [previous lesson](create-schema.md) already contains the lifecycle fields, so you can skip this step. If you don't use Consumer Experience Event field group in your own app, you can add the lifecycle fields by doing the following:
 
-1. 導覽至結構介面，如 [上一課程](create-schema.md).
-1. 開啟「Luma應用程式」結構描述，然後選取 **[!UICONTROL 新增]**.
-   ![選取新增](assets/mobile-lifecycle-add.png)
-1. 在搜尋列中，輸入「lifecycle」。
-1. 選取旁邊的核取方塊 **[!UICONTROL AEP行動生命週期詳細資料]**.
-1. 選取&#x200B;**[!UICONTROL 「新增欄位群組」]**。
-   ![新增欄位群組](assets/mobile-lifecycle-lifecycle-field-group.png)
-1. 選取「**[!UICONTROL 儲存]**」。
-   ![儲存](assets/mobile-lifecycle-lifecycle-save.png)
-
+1. Navigate to the schema interface as described in the [previous lesson](create-schema.md).
+1. Open the **Luma Mobile App Event Schema** schema and select **[!UICONTROL Add]** next to Field groups.
+    ![select add](assets/lifecycle-add.png)
+1. In the search bar, enter "lifecycle".
+1. Select the checkbox next to **[!UICONTROL AEP Mobile Lifecycle Details]**.
+1. Select **[!UICONTROL Add field groups]**.
+    ![add field group](assets/lifecycle-lifecycle-field-group.png)
+1. Select **[!UICONTROL Save]**.
+    ![save](assets/lifecycle-lifecycle-save.png)
+-->
 
 ## 實作變更
 
-現在您可以更新 `AppDelegate.swift` 註冊生命週期事件：
+現在您可以更新專案以註冊生命週期事件。
 
-1. 啟動時，如果您的應用程式正從背景狀態恢復，iOS可能會呼叫您的 `applicationWillEnterForeground:` 委派方法。 新增 `lifecycleStart:`
+1. 瀏覽至 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** 在「Xcode專案」導覽器中。
+
+1. 啟動時，如果您的應用程式正從背景狀態恢復，iOS可能會呼叫您的 `sceneWillEnterForeground:` 委派方法，而且您想要在此觸發生命週期開始事件。 將此程式碼新增至 `func sceneWillEnterForeground(_ scene: UIScene)`：
 
    ```swift
+   // When in foreground start lifecycle data collection
    MobileCore.lifecycleStart(additionalContextData: nil)
    ```
 
-1. 當應用程式進入背景時，暫停來自您應用程式的 `applicationDidEnterBackground:` 委派方法。
+1. 當應用程式進入背景時，您想要暫停來自應用程式的生命週期資料收集 `sceneDidEnterBackground:` 委派方法。 將此程式碼新增至  `func sceneDidEnterBackground(_ scene: UIScene)`：
 
    ```swift
+   // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
 
->[!NOTE]
->
->若為iOS 13和更新版本，請檢閱 [檔案](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/#register-lifecycle-with-mobile-core-and-add-appropriate-startpause-calls) 稍有不同的程式碼。
-
 ## 使用保證進行驗證
 
-1. 檢閱 [設定指示](assurance.md) 區段並將模擬器或裝置連線至Assurance。
-1. 啟動應用程式。
-1. 將應用程式傳送至背景。 檢查 `LifecyclePause`.
-1. 將應用程式移至前景。 檢查 `LifecycleResume`.
-   ![驗證生命週期](assets/mobile-lifecycle-lifecycle-assurance.png)
+1. 檢閱 [設定指示](assurance.md#connecting-to-a-session) 區段來將您的模擬器或裝置連線到Assurance。
+1. 將應用程式傳送至背景。 檢查 **[!UICONTROL LifecyclePause]** Assurance UI中的事件。
+1. 將應用程式移至前景。 檢查 **[!UICONTROL LifecycleResume]** Assurance UI中的事件。
+   ![驗證生命週期](assets/lifecycle-lifecycle-assurance.png)
 
 
 ## 將資料轉送至Platform Edge Network
 
-上一個練習是將前景和背景事件排程到Mobile SDK。 若要將這些事件傳送至Platform Edge Network，請遵循列出的步驟 [此處](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/#configure-a-rule-to-forward-lifecycle-metrics-to-platform). 將事件傳送到Platform Edge Network後，系統會根據您的資料流設定，將事件轉送到其他應用程式和服務。
+上個練習會將前景和背景事件傳送至Adobe Experience Platform Mobile SDK。 若要將這些事件轉送至Platform Edge Network：
 
-新增將生命週期事件傳送至Platform Edge Network的規則後，您應會看到 `Application Close (Background)` 和 `Application Launch (Foreground)` 包含Assurance中XDM資料的事件。
+1. 選取 **[!UICONTROL 規則]** （在Tags屬性中）。
+   ![建立規則](assets/rule-create.png)
+1. 選取 **[!UICONTROL 初始建置]** 作為要使用的程式庫。
+1. 選取&#x200B;**[!UICONTROL 「建立新規則」]**。
+   ![建立新規則](assets/rules-create-new.png)
+1. 在 **[!UICONTROL 建立規則]** 熒幕，輸入 `Application Status` 的 **[!UICONTROL 名稱]**.
+1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]** 以下 **[!UICONTROL 活動]**.
+   ![建立規則對話方塊](assets/rule-create-name.png)
+1. 在 **[!UICONTROL 事件設定]** 步驟：
+   1. 選取 **[!UICONTROL 行動核心]** 作為 **[!UICONTROL 副檔名]**.
+   1. 選取 **[!UICONTROL 前景]** 作為 **[!UICONTROL 事件型別]**.
+   1. 選取&#x200B;**[!UICONTROL 「保留變更」]**。
+      ![規則事件設定](assets/rule-event-configuration.png)
+1. 返回 **[!UICONTROL 建立規則]** 熒幕，選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]** 旁邊 **[!UICONTROL 行動核心 — 前景]**.
+   ![下一個事件設定](assets/rule-event-configuration-next.png)
+1. 在 **[!UICONTROL 事件設定]** 步驟：
+   1. 選取 **[!UICONTROL 行動核心]** 作為 **[!UICONTROL 副檔名]**.
+   1. 選取 **[!UICONTROL 背景]** 作為 **[!UICONTROL 事件型別]**.
+   1. 選取&#x200B;**[!UICONTROL 「保留變更」]**。
+      ![規則事件設定](assets/rule-event-configuration-background.png)
+1. 返回 **[!UICONTROL 建立規則]** 熒幕，選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]** 底下 **[!UICONTROL 動作]**.
+   ![規則新增動作](assets/rule-action-button.png)
+1. 在 **[!UICONTROL 動作設定]** 步驟：
+   1. 選取 **[!UICONTROL AdobeExperience Edge Network]** 作為 **[!UICONTROL 副檔名]**.
+   1. 選取 **[!UICONTROL 將事件轉送至Edge Network]** 作為 **[!UICONTROL 動作型別]**.
+   1. 選取&#x200B;**[!UICONTROL 「保留變更」]**。
+      ![規則動作設定](assets/rule-action-configuration.png)
+1. 選取 **[!UICONTROL 儲存至程式庫]**.
+   ![規則 — 儲存至程式庫](assets/rule-save-to-library.png)
+1. 選取 **[!UICONTROL 建置]** 以重建程式庫。
+   ![規則 — 建置](assets/rule-build.png)
 
-![驗證傳送至Platform Edge的生命週期](assets/mobile-lifecycle-edge-assurance.png)
+當您成功建立屬性後，事件會傳送至Platform Edge Network，而事件會根據您的資料流設定轉送至其他應用程式和服務。
 
+您應該會看到 **[!UICONTROL 應用程式關閉（背景）]** 和 **[!UICONTROL 應用程式啟動（前景）]** 包含Assurance中XDM資料的事件。
 
+![驗證傳送至Platform Edge的生命週期](assets/lifecycle-edge-assurance.png)
 
-下一步： **[追蹤事件](events.md)**
-
->[!NOTE]
+>[!SUCCESS]
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>您現在已設定應用程式，將應用程式狀態（前景、背景）事件傳送至Adobe Experience Platform Edge Network，以及您在資料流中定義的所有服務。
+>
+> 感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+下一步： **[追蹤事件資料](events.md)**
