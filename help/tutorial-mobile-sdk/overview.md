@@ -3,9 +3,9 @@ title: 在行動應用程式教學課程中實作Adobe Experience Cloud概述
 description: 瞭解如何實作Adobe Experience Cloud行動應用程式。 本教學課程將指導您在一個範例Swift應用程式中實施Experience Cloud應用程式。
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
+source-git-commit: ebc283c041dcacd262dfa6cdb3b8a05a288e6664
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '844'
 ht-degree: 6%
 
 ---
@@ -81,6 +81,10 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 >
 >在本教學課程中，您會建立結構描述、資料集、身分等等。 如果有多人在一個沙箱中完成本教學課程，在建立這些物件時，請考慮在命名慣例中附加或附加身分識別。 例如，新增 ` - <your name or initials>` 至指示您建立的物件名稱。
 
+## 版本記錄
+
+* 2023年11月29日：透過新的範例應用程式和適用於應用程式內訊息、決策管理和Adobe Target的新課程進行重大檢修。
+* 2022年3月9日：首次發佈
 
 ## 下載Luma應用程式
 
