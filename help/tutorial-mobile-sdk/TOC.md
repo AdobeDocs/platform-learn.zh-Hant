@@ -8,10 +8,10 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 779ce60b8e89520231d4d9cbaecfe09a8cabc38f
+source-git-commit: 8c588f7aeefe0d4e4b17cf5f34268dcca943e2a0
 workflow-type: tm+mt
 source-wordcount: '75'
-ht-degree: 69%
+ht-degree: 72%
 
 ---
 
