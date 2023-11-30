@@ -3,7 +3,7 @@ title: 將使用Platform Mobile SDK收集的資料對應至Adobe Analytics
 description: 瞭解如何在行動應用程式中收集並對映Adobe Analytics的資料。
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 29b9771d81395676547b93ab3a1475a6a69c763f
+source-git-commit: 1025e7a7f0e8f994ecc05ddb5362a66c8d89a978
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 3%
@@ -81,7 +81,7 @@ ht-degree: 3%
 結果為：
 
 ```
-s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
+s.products = ";5829,1,49.99;9841,3,30.00"
 ```
 
 >[!NOTE]
