@@ -3,10 +3,10 @@ title: 將使用Platform Mobile SDK收集的資料對應至Adobe Analytics
 description: 瞭解如何在行動應用程式中收集並對映Adobe Analytics的資料。
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 29b9771d81395676547b93ab3a1475a6a69c763f
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 2%
+source-wordcount: '931'
+ht-degree: 3%
 
 ---
 
@@ -86,7 +86,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 
 >[!NOTE]
 >
->目前 `productListItems[N].SKU` 被自動對應忽略。
+>如果 `productListItems[].SKU` 和 `productListItems[].name` 都包含資料，則使用 `productListItems[].SKU` 中的值。另請參閱 [Adobe Experience Edge中的Analytics變數對應](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) 以取得詳細資訊。
 
 
 ### 範例#2 - scAdd

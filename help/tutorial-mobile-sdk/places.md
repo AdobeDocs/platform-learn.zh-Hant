@@ -2,7 +2,7 @@
 title: 搭配Platform Mobile SDK使用Places
 description: 瞭解如何在行動應用程式中使用Places地理位置服務。
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 3%
@@ -182,7 +182,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 1. 在 **[!UICONTROL 建立規則]** 畫面，輸入規則的名稱，例如 `POI - Exit`.
 1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 底下 **[!UICONTROL 活動]**.
-   1. 選取 **[!UICONTROL 地點]** 從 **[!UICONTROL 副檔名]** 清單並選取 **[!UICONTROL 輸入POI]** 從 **[!UICONTROL 事件型別]** 清單。
+   1. 選取 **[!UICONTROL 地點]** 從 **[!UICONTROL 副檔名]** 清單並選取 **[!UICONTROL 退出POI]** 從 **[!UICONTROL 事件型別]** 清單。
    1. 選取&#x200B;**[!UICONTROL 「保留變更」]**。
 1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 底下 **[!UICONTROL 動作]**.
    1. 選取 **[!UICONTROL 行動核心]** 從 **[!UICONTROL 副檔名]** 清單，選取 **[!UICONTROL 附加資料]** 從 **[!UICONTROL 動作型別]** 清單。
