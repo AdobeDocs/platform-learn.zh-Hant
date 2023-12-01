@@ -2,8 +2,9 @@
 title: 在行動應用程式教學課程中實作Adobe Experience Cloud概述
 description: 瞭解如何實作Adobe Experience Cloud行動應用程式。 本教學課程將指導您在一個範例Swift應用程式中實施Experience Cloud應用程式。
 recommendations: noDisplay,catalog
+last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: ebc283c041dcacd262dfa6cdb3b8a05a288e6664
+source-git-commit: 4bd8d0cdcf9c5d29434de4968a048fd46e163b54
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 6%
