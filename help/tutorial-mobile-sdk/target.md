@@ -4,11 +4,12 @@ description: 瞭解如何在行動應用程式中搭配Platform Mobile SDK和Ado
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
+jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 3%
+source-wordcount: '1745'
+ht-degree: 2%
 
 ---
 
@@ -169,7 +170,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
    1. 重新命名未命名活動，例如 `Luma Mobile SDK Tutorial - A/B Test Example`.
    1. 輸入 **[!UICONTROL 目標]** 例如用於您的A/B測試 `A/B Test for Luma mobile app tutorial`.
    1. 選取 **[!UICONTROL 轉換]**， **[!UICONTROL 已檢視mbox]** 在 **[!UICONTROL 目標量度]** > **[!UICONTROL 我的主要目標]** 並輸入您的位置(mbox)名稱，例如 `luma-mobileapp-abtest`.
-   1. 選取 **[!UICONTROL 儲存並關閉]**.
+   1. 選取「**[!UICONTROL 儲存並關閉]**」。
 
       ![目標設定](assets/target-goals.png)
 

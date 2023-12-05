@@ -1,10 +1,11 @@
 ---
 title: 透過Platform Mobile SDK追蹤行動應用程式中的事件資料
 description: 瞭解如何追蹤行動應用程式中的事件資料。
+jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -49,7 +50,7 @@ Adobe Experience Platform Edge擴充功能可傳送遵循先前定義XDM結構�
 
 1. 建立並傳送事件。
 
-1. 驗證.
+1. 驗證。
 
 
 ### 標準欄位群組

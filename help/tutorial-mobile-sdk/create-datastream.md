@@ -2,11 +2,12 @@
 title: 設定Platform Mobile SDK實作的資料流
 description: 瞭解如何在Experience Platform中建立資料串流。
 feature: Mobile SDK,Datastreams
+jira: KT-14625
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 8%
+source-wordcount: '428'
+ht-degree: 1%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 8%
 
 瞭解如何在Experience Platform中建立資料串流。
 
-資料流是Platform Edge Network上的伺服器端設定。 資料流可確保將傳入Platform Edge Network的資料正確路由至Adobe Experience Cloud應用程式和服務。 如需詳細資訊，請參閱 [檔案](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hant) 或這個 [視訊](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
+資料流是Platform Edge Network上的伺服器端設定。 資料流可確保將傳入Platform Edge Network的資料正確路由至Adobe Experience Cloud應用程式和服務。 如需詳細資訊，請參閱 [檔案](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) 或這個 [視訊](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
 
 ![架構](assets/architecture.png)
 
@@ -28,7 +29,7 @@ ht-degree: 8%
 
 * 瞭解何時使用資料流。
 * 建立資料串流。
-* 設定資料流.
+* 設定資料串流。
 
 ## 建立資料串流
 
@@ -44,7 +45,7 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >最終提醒：如果您正在閱讀本教學課程，但有一個沙箱容納多個人員，或者您使用共用帳戶，請考慮在命名慣例中附加或附加身分識別。 舉例來說，請避免使用 `Luma Mobile App Event Dataset`，改用 `Luma Mobile App Event Dataset - Joe Smith`。另請參閱以下說明： [概觀](overview.md).
+   >最終提醒：如果您正在閱讀本教學課程，但有一個沙箱容納多個人員，或者您使用共用帳戶，請考慮在命名慣例中附加或附加身分識別。 例如，不使用 `Luma Mobile App Event Dataset`，使用 `Luma Mobile App Event Dataset - Joe Smith`. 另請參閱以下說明： [概觀](overview.md).
 
 1. 選取您在上一堂課中建立的結構描述，從 **事件結構描述** 清單。
 1. 選取「**[!UICONTROL 儲存]**」。
@@ -101,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->啟用貴組織使用的每項服務，可確保行動應用程式中收集的資料能夠用於任何地方。 如需資料流設定的詳細資訊，請檢閱此檔案 [此處](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hant).
+>啟用貴組織使用的每項服務，可確保行動應用程式中收集的資料能夠用於任何地方。 如需資料流設定的詳細資訊，請檢閱此檔案 [此處](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
 在您自己的應用程式中實作Platform Mobile SDK時，您最終應建立三個資料串流以對應至您的三個標籤環境（開發、預備和生產）。 如果您使用Platform Mobile SDK搭配Adobe Real-time Customer Data Platform或Adobe Journey Optimizer等平台式應用程式，請務必在適當的沙箱中建立這些資料串流。
 

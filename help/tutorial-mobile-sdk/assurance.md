@@ -2,10 +2,11 @@
 title: 設定Platform Mobile SDK實施的保證
 description: 瞭解如何在行動應用程式中實作Assurance擴充功能。
 feature: Mobile SDK,Assurance
+jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '925'
 ht-degree: 6%
 
 ---
@@ -30,7 +31,7 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 * 確認您的組織擁有存取權（如果您沒有存取權，請提出要求）。
 * 設定您的基底URL。
 * 新增必要的iOS特定程式碼。
-* 連線到工作階段.
+* 連線到工作階段。
 
 ## 確認存取
 
@@ -132,7 +133,7 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
 1. 前往資料收集UI。
 1. 選取 **[!UICONTROL 保證]** 從左側邊欄。
 1. 選取 **[!UICONTROL 建立工作階段]**.
-1. 選取 **[!UICONTROL 開始]**.
+1. 選取「**[!UICONTROL 開始]**」。
 1. 提供 **[!UICONTROL 工作階段名稱]** 例如 `Luma Mobile App Session` 和 **[!UICONTROL 基礎URL]**，即您在Xcode中輸入的URL配置，後面接著 `://` 例如： `lumatutorialswiftui://`
 1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
    ![保證建立工作階段](assets/assurance-create-session.png)

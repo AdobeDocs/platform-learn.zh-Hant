@@ -1,11 +1,12 @@
 ---
 title: 安裝Adobe Experience Platform Mobile SDK
 description: 瞭解如何在行動應用程式中實施Adobe Experience Platform Mobile SDK。
+jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '940'
-ht-degree: 1%
+source-wordcount: '898'
+ht-degree: 0%
 
 ---
 

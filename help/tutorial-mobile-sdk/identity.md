@@ -2,11 +2,12 @@
 title: 使用行動SDK在行動應用程式中收集身分資料
 description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
+jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 4%
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +35,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 ## 設定自訂身分名稱空間
 
-身分名稱空間是元件 [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant) 作為身分相關內容的指示器。 例如，他們將 `name@email.com` 的值區分為電子郵件地址，或將值區分為 `443522` 作為數值 CRM ID。
+身分名稱空間是元件 [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant) 作為身分相關內容的指示器。 例如，它們區分值 `name@email.com` 作為電子郵件地址或 `443522` 作為數值CRM ID。
 
 >[!NOTE]
 >

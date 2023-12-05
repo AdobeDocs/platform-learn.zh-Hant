@@ -1,11 +1,12 @@
 ---
 title: 使用Platform Mobile SDK收集設定檔資料
 description: 瞭解如何在行動應用程式中收集設定檔資料。
+jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 1%
+source-wordcount: '573'
+ht-degree: 0%
 
 ---
 
@@ -97,11 +98,11 @@ ht-degree: 1%
 
    1. 將「保證」圖示移至左側。
    1. 選取 **[!UICONTROL 首頁]** 標籤列中的。
-   1. 若要開啟「登入」工作表，請選取 <img src="assets/login.png" width="15" />。
+   1. 若要開啟「登入」工作表，請選取 <img src="assets/login.png" width="15" /> 按鈕。
 
       <img src="./assets/mobile-app-events-1.png" width="300">
 
-   1. 若要插入隨機電子郵件和客戶ID，請選取 <img src="assets/insert.png" width="15" />。
+   1. 若要插入隨機電子郵件和客戶ID，請選取 <img src="assets/insert.png" width="15" /> 按鈕。
    1. 選取 **[!UICONTROL 登入]**.
 
       <img src="./assets/mobile-app-events-2.png" width="300">

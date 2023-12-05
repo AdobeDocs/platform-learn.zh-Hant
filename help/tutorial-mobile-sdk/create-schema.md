@@ -2,11 +2,12 @@
 title: 為Platform Mobile SDK實作建立XDM結構描述
 description: 瞭解如何為行動應用程式事件建立XDM結構描述。
 feature: Mobile SDK,Schemas
+jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 8%
+source-wordcount: '1414'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 8%
 
 XDM是公開記錄的規格，旨在改善數位體驗的效能。 它提供通用結構和定義，可讓任何應用程式與Platform服務通訊。 只要遵循XDM標準，所有客戶體驗資料都可整合到共同表現中，以更快、更整合的方式提供深入分析。 您可以從客戶動作中獲得寶貴的見解、透過區段定義客戶對象，以及使用客戶屬性進行個人化。
 
-Experience Platform 會使用結構，以一致且可重複使用的方式說明資料結構。藉由定義跨系統的一致資料，將可輕易保留意義，而發揮資料應有的價值。
+Experience Platform 會使用結構，以一致且可重複使用的方式說明資料結構。藉由定義跨系統的一致資料，將更容易保留意義，進而從資料中獲得價值。
 
 在將資料擷取到Platform之前，必須組成結構描述資料的結構並對可包含在每個欄位中的資料型別提供限制。 結構描述包含一個基底類別和零個或多個結構描述欄位群組。
 
@@ -106,7 +107,7 @@ Experience Platform 會使用結構，以一致且可重複使用的方式說明
 
    >[!NOTE]
    >
-   >如果您正在閱讀此教學課程，且已將多位人員放在單一沙箱中，或您使用共用帳戶，請考慮在命名慣例中附加或附加身分識別。 舉例來說，請避免使用 `Luma Mobile App Event Schema`，改用 `Luma Mobile App Event Schema - Joe Smith`。另請參閱以下說明： [概觀](overview.md).
+   >如果您正在閱讀此教學課程，且已將多位人員放在單一沙箱中，或您使用共用帳戶，請考慮在命名慣例中附加或附加身分識別。 例如，不使用 `Luma Mobile App Event Schema`，使用 `Luma Mobile App Event Schema - Joe Smith`. 另請參閱以下說明： [概觀](overview.md).
 
 1. 選取 **[!UICONTROL 完成]** 完成精靈。
 

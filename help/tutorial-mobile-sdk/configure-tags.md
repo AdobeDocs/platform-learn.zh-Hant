@@ -2,11 +2,12 @@
 title: 為Platform Mobile SDK實作設定標籤屬性
 description: 瞭解如何在中設定標籤屬性 [!UICONTROL 資料彙集] 介面。
 feature: Mobile SDK,Tags
+jira: KT-14626
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 7%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +40,7 @@ Adobe Experience Platform 標記是新一代 Adobe 標記管理功能。標籤�
       ![建立標籤屬性](assets/tags-new-property.png).
    1. 對於 **[!UICONTROL 名稱]**，輸入 `Luma Mobile App Tutorial`.
    1. 對於 **[!UICONTROL Platform]**，選取 **[!UICONTROL 行動]**.
-   1. 選取「**[!UICONTROL 儲存]**」。
+   1. 選取  **[!UICONTROL 儲存]**.
 
       ![設定標籤屬性](assets/tags-property-config.png)
 
@@ -49,7 +50,7 @@ Adobe Experience Platform 標記是新一代 Adobe 標記管理功能。標籤�
 
 
 1. 開啟新屬性。
-1. 建立程式庫:
+1. 建立程式庫：
 
    1. 前往 **[!UICONTROL 發佈流程]** ，位於左側導覽器中。
    1. 選取 **[!UICONTROL 新增程式庫]**.

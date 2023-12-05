@@ -2,11 +2,12 @@
 title: 將使用Platform Mobile SDK收集的資料對應至Adobe Analytics
 description: 瞭解如何在行動應用程式中收集並對映Adobe Analytics的資料。
 solution: Data Collection,Experience Platform,Analytics
+jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 1025e7a7f0e8f994ecc05ddb5362a66c8d89a978
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 3%
+source-wordcount: '878'
+ht-degree: 1%
 
 ---
 
@@ -57,7 +58,7 @@ ht-degree: 3%
 
 ### 範例#1 - s.products
 
-一個很好的範例是 [products變數](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=zh-Hant) 無法使用處理規則填入的專案。 透過XDM實施，您可將所有必要資料傳入 `productListItems` 和 `s.products` 透過Analytics對應自動填入。
+一個很好的範例是 [products變數](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) 無法使用處理規則填入的專案。 透過XDM實施，您可將所有必要資料傳入 `productListItems` 和 `s.products` 透過Analytics對應自動填入。
 
 此物件：
 
@@ -86,7 +87,7 @@ s.products = ";5829,1,49.99;9841,3,30.00"
 
 >[!NOTE]
 >
->如果 `productListItems[].SKU` 和 `productListItems[].name` 都包含資料，則使用 `productListItems[].SKU` 中的值。另請參閱 [Adobe Experience Edge中的Analytics變數對應](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) 以取得詳細資訊。
+>如果 `productListItems[].SKU` 和 `productListItems[].name` 兩者都包含資料，值位於 `productListItems[].SKU` 已使用。 另請參閱 [Adobe Experience Edge中的Analytics變數對應](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) 以取得詳細資訊。
 
 
 ### 範例#2 - scAdd
