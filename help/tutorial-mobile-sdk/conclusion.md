@@ -2,11 +2,12 @@
 title: 完成Platform Mobile SDK教學課程後的結論和後續步驟
 description: 完成教學課程後的後續動作
 recommendations: display,noCatalog
+jira: KT-14642
 exl-id: 69db6cf3-0d5d-4864-aac2-e5e1aea4c02e
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
 workflow-type: tm+mt
-source-wordcount: '471'
-ht-degree: 7%
+source-wordcount: '438'
+ht-degree: 3%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 7%
 讓我們快速檢閱您已完成的所有工作。 您有：
 
 * 使用標準和自訂欄位群組建立結構描述。
-* 設定資料流.
+* 設定資料串流。
 * 已設定行動標籤屬性。
 * 在應用程式中安裝及實作標籤擴充功能。
 * 在應用程式中實作下列功能：
