@@ -4,10 +4,10 @@ description: 瞭解如何在行動應用程式中實作Assurance擴充功能。
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 576f85eda6e5888b9eafa15a705a99c3a70fed07
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 6%
+source-wordcount: '1021'
+ht-degree: 5%
 
 ---
 
@@ -57,28 +57,25 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 
 可以找到更多資訊 [此處](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-<!-- not initially required
 
-## Signing
 
-Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
+## 定義套件組合識別碼
 
-To update the signing for the lessons that require that you sign the application:
+您必須提供應用程式的唯一套件組合識別碼。
 
-1. Open the project in Xcode.
-1. Select **[!DNL Luma]** in the Project navigator.
-1. Select the **[!DNL Luma]** target.
-1. Select the **Signing & Capabilities** tab.
-1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
- 
+1. 在Xcode中開啟專案。
+1. 選取 **[!DNL Luma]** 在「專案」導覽器中。
+1. 選取 **[!DNL Luma]** 目標。
+1. 選取 **簽署與功能** 標籤。
+1. 定義 **[!UICONTROL 組合識別碼]**.
+
    >[!IMPORTANT]
    >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
+   >確定您使用 _獨特_ 組合識別碼並取代 `com.adobe.luma.tutorial.swiftui` 組合識別碼，因為每個組合識別碼必須是唯一的。 通常，套件組合ID字串會使用反向DNS格式，例如 `com.organization.brand.uniqueidentifier`. 例如，本教學課程的完成版本使用 `com.adobe.luma.tutorial.swiftui`.
 
 
-    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+   ![Xcode簽署功能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
--->
 
 ## 設定基礎URL
 
@@ -93,7 +90,7 @@ To update the signing for the lessons that require that you sign the application
 
    >[!IMPORTANT]
    >
-   >確定您使用 _獨特_ 組合識別碼並取代 `com.adobe.luma.tutorial.swiftui` 組合識別碼，因為每個組合識別碼必須是唯一的。 通常，套件組合ID字串會使用反向DNS格式，例如 `com.organization.brand.uniqueidentifier`.<br/>同樣地，使用唯一的URL配置，並取代已經提供的 `lumatutorialswiftui` 使用您唯一的URL配置。
+   >確定您使用 _獨特_ 組合識別碼並取代 `com.adobe.luma.tutorial.swiftui` 組合識別碼，因為每個組合識別碼必須是唯一的。 通常，套件組合ID字串會使用反向DNS格式，例如 `com.organization.brand.uniqueidentifier`. 您可以使用先前使用的相同套件組合識別碼 [定義套件組合識別碼](#define-bundle-identifier).<br/>同樣地，使用唯一的URL配置，並取代已經提供的 `lumatutorialswiftui` 使用您唯一的URL配置。
 
 若要進一步瞭解iOS中的URL配置，請檢閱 [Apple的檔案](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
