@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '1434'
+source-wordcount: '1447'
 ht-degree: 1%
 
 ---
@@ -79,7 +79,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 1. 若要儲存資料流設定，請選取 **[!UICONTROL 儲存]**.
 
 
-   ![AEP資料流設定](assets/datastream-aep-configuration.png)
+   ![AEP資料流設定](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### 安裝Journey Optimizer標籤擴充功能
@@ -91,16 +91,9 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 1. 選取 **[!UICONTROL 目錄]**.
 1. 搜尋 **[!UICONTROL Adobe Journey Optimizer]** 副檔名。
 1. 安裝擴充功能。
-1. 在 **[!UICONTROL 安裝擴充功能]** 對話方塊
-   1. 選取環境，例如 **[!UICONTROL 開發]**.
-   1. 選取 **[!UICONTROL AJO推播追蹤體驗事件資料集]** 資料集 **[!UICONTROL 事件資料集]** 清單。
-   1. 選取 **[!UICONTROL 儲存至程式庫並建置]**.
-      ![AJO擴充功能設定](assets/push-tags-ajo.png)
 
->[!NOTE]
->
->如果您沒有看到 `AJO Push Tracking Experience Event Dataset` 如需使用，請聯絡客戶服務。
->
+時間 *僅限* 在您的應用程式中使用應用程式內訊息，在 **[!UICONTROL 安裝擴充功能]** 或 **[!UICONTROL 設定擴充功能]**，您不需要設定任何專案。 不過，如果您已遵循 [推播通知](journey-optimizer-push.md) 在本教學課程中，您將會在 **[!UICONTROL 開發]** 環境， **[!UICONTROL AJO推播追蹤體驗事件資料集]** 資料集是從 **[!UICONTROL 事件資料集]** 清單。
+
 
 ### 在應用程式中實作Journey Optimizer
 

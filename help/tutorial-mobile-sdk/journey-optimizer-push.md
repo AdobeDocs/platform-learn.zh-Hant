@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2584'
 ht-degree: 0%
 
 ---
@@ -333,6 +333,7 @@ Journey Optimizer中的事件可讓您統一觸發歷程以傳送訊息，例如
       在 **[!UICONTROL 推播通知]** 編輯者：
 
       1. 輸入 **[!UICONTROL 標題]**，例如 `Luma Test Push Notification` 並輸入 **[!UICONTROL 內文]**，例如 `Test push notification for Luma mobile app`.
+      1. 或者，您可以輸入影像(.png或.jpg)的連結，位置在： **[!UICONTROL 新增媒體]**. 如果這樣做，影像將成為推播通知的一部分。
       1. 若要儲存並離開編輯器，請選取 ![左側V形](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
          ![推播編輯器](assets/ajo-push-editor.png)
 
