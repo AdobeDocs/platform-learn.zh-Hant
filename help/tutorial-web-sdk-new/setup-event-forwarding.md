@@ -2,9 +2,9 @@
 title: 設定事件轉送屬性
 description: 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1858'
 ht-degree: 2%
 
 ---
@@ -59,6 +59,7 @@ ht-degree: 2%
 
       * [安裝 Web SDK 擴充功能](install-web-sdk.md)
       * [建立資料元素](create-data-elements.md)
+      * [建立身分](create-identities.md)
       * [建立標籤規則](create-tag-rule.md)
       * [使用Adobe Experience Platform Debugger進行驗證](validate-with-debugger.md)
 
@@ -320,4 +321,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

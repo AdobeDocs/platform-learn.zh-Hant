@@ -2,7 +2,7 @@
 title: 使用Platform Web SDK設定Audience Manager
 description: 瞭解如何使用Platform Web SDK設定Adobe Audience Manager，並使用Cookie目的地驗證實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Audience Manager
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 1%
@@ -85,7 +85,7 @@ ht-degree: 1%
 1. 選取 **[!UICONTROL 資料來源]** 您在上一節中建立。
 1. **[!UICONTROL 選取資料夾]** 將您的特徵儲存在右側窗格中的位置。 建立資料夾的方法有： **選取+圖示** 位於現有父資料夾旁。 您可以命名這個新資料夾 `Platform Web SDK tutorial`.
 1. 展開 **[!UICONTROL 特徵運算式]** 插入號並選取 **[!UICONTROL 運算式產生器]** 您必須提供表示首頁造訪的金鑰值組。
-1. 開啟 [Luma首頁](https://luma.enablementadobe.com/content/luma/us/en.html) （對應至您的標籤屬性）和 **Platform Web SDK Debugger** 並重新整理頁面。
+1. 開啟 [Luma首頁](https://luma.enablementadobe.com/content/luma/us/en.html) （對應至您的標籤屬性）和 **Adobe Experience Platform Debugger** 並重新整理頁面。
 1. 檢視Platform Web SDK的網路要求和事件詳細資訊，以尋找首頁的索引鍵和名稱值。
    ![Adobe Experience PlatformAudience ManagerXDM資料](assets/xdm-keyvalue.jpg)
 1. 返回Audience ManagerUI中的運算式產生器，並輸入索引鍵為 **`web.webPageDetails.name`** 和的值 **`content:luma:us:en`**. 此步驟可確保您每次載入首頁時都會引發特徵。
@@ -100,7 +100,8 @@ ht-degree: 1%
 1. 選取 **[!UICONTROL 新增]** 以開啟區段產生器
 1. 為您的區段提供好記的名稱和說明，例如 `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL 選取資料夾]** 您的區段將儲存在右側窗格中的位置。 建立資料夾的方法有： **選取+圖示** 位於現有父資料夾旁。 您可以命名這個新資料夾 `Platform Web SDK tutorial`.
-1. 新增整合程式碼，在此例中是隨機數字集。 1.在 **[!UICONTROL 資料來源]** 區段，選取 **[!UICONTROL Audience Manager]** 以及您先前建立的資料來源
+1. 新增整合程式碼，在此例中是隨機數字集。
+1. 在 **[!UICONTROL 資料來源]** 區段，選取 **[!UICONTROL Audience Manager]** 以及您先前建立的資料來源
 1. 展開 **[!UICONTROL 特徵]** 區段並搜尋您建立的特徵
 1. 選取 **[!UICONTROL 新增特徵]**.
 1. 選取 **[!UICONTROL 儲存]** 在頁面底部
@@ -181,4 +182,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

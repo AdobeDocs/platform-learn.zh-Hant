@@ -2,9 +2,9 @@
 title: 設定教學課程的許可權
 description: 瞭解如何請求Experience PlatformWeb SDK的存取權，並設定完成「使用Web SDK實作Adobe Experience Cloud」教學課程所需的許可權。
 feature: Web SDK,Tags,Access Control
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 ## 資料收集
 
-* 具有下列專案的許可權： **[!UICONTROL 開發]**， **[!UICONTROL 編輯]**， **[!UICONTROL 核准]**， **[!UICONTROL 發佈]**， **[!UICONTROL 管理擴充功能]**， **[!UICONTROL 管理環境]**、和 **[!UICONTROL 管理屬性]**. 如需標籤許可權的詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* 具有下列專案的許可權： **[!UICONTROL 開發]**， **[!UICONTROL 編輯]**， **[!UICONTROL 核准]**， **[!UICONTROL 發佈]**， **[!UICONTROL 管理擴充功能]**， **[!UICONTROL 管理環境]**、和 **[!UICONTROL 管理屬性]**. 如需有關標籤許可權的詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * 如果您要完成選用的事件轉送課程，請取得產品授權，包括邊緣轉送和許可權專案 **[!UICONTROL 平台]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
@@ -23,9 +23,9 @@ ht-degree: 3%
 這些功能應該可供所有Experience Cloud客戶使用，即使您並非Real-Time CDP等平台型應用程式的客戶。
 
 * 存取 **預設生產**， **&quot;Prod&quot;** 沙箱。
-* 存取目標 **[!UICONTROL 管理結構描述]** 和 **[!UICONTROL 檢視結構描述]** 在 **[!UICONTROL 資料模式]**
-* 存取目標 **[!UICONTROL 管理身分識別名稱空間]** 和 **[!UICONTROL 檢視身分識別名稱空間]** 在 **[!UICONTROL Identity Management]**
-* 存取目標 **[!UICONTROL 管理資料串流]** 和 **[!UICONTROL 檢視資料串流]** 在 **[!UICONTROL 資料彙集]**
+* 存取目標 **[!UICONTROL 管理結構描述]** 和 **[!UICONTROL 檢視結構描述]** 在 **[!UICONTROL 資料模式]**.
+* 存取目標 **[!UICONTROL 管理身分識別名稱空間]** 和 **[!UICONTROL 檢視身分識別名稱空間]** 在 **[!UICONTROL Identity Management]**.
+* 存取目標 **[!UICONTROL 管理資料串流]** 和 **[!UICONTROL 檢視資料串流]** 在 **[!UICONTROL 資料彙集]**.
 * 如果您是平台式應用程式的客戶，並將完成 [設定Experience Platform](setup-experience-platform.md) 課程，您也應該有：
    * 存取 **開發** 沙箱。
    * 下的所有許可權專案 **[!UICONTROL 資料管理]**、和 **[!UICONTROL 設定檔管理]**：
@@ -51,4 +51,4 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

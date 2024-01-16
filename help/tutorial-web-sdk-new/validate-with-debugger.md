@@ -2,10 +2,10 @@
 title: 使用Experience Platform Debugger驗證Web SDK實作
 description: 瞭解如何使用Adobe Experience Platform Debugger驗證您的Platform Web SDK實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Debugger
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 2%
+source-wordcount: '1465'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-在本課程中，您將使用 [Adobe Experience Platform Debugger延伸模組](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 取代 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 擁有您自己的屬性。
+在本課程中，您將使用 [Adobe Experience Cloud Debugger擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 取代 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 擁有您自己的屬性。
 
 此技巧稱為環境切換，您日後在自己的網站上使用標籤時，此技巧將有所幫助。 您可以在瀏覽器中載入您的生產網站，但使用 *開發* 標籤環境。 此功能可讓您安心地變更及驗證標籤，而不受定期程式碼發行的影響。 畢竟，將行銷標籤發行與定期程式碼發行分開，是客戶使用標籤的主要原因之一！
 
@@ -31,20 +31,21 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 在本課程結束時，您將能夠使用除錯工具：
 
 * 載入替代標籤程式庫
-* 驗證XDM物件是否如預期Edge Network擷取和傳送資料
+* 驗證使用者端XDM事件是否如預期般擷取及傳送資料給Platform Edge Network
+* 啟用Edge Trace以檢視Platform Edge Network傳送的伺服器端要求
+* 啟動Adobe Experience Platform保證工作階段，檢視Platform Edge Network產生的Experience CloudID
 
 ## 先決條件
 
 您熟悉資料收集標籤和 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 並完成本教學課程中下列先前的課程：
 
-* [設定許可權](configure-permissions.md)
 * [設定XDM結構描述](configure-schemas.md)
 * [設定身分名稱空間](configure-identities.md)
 * [設定資料流](configure-datastream.md)
 * [安裝在標籤屬性中的Web SDK擴充功能](install-web-sdk.md)
 * [建立資料元素](create-data-elements.md)
+* [建立身分](create-identities.md)
 * [建立標籤規則](create-tag-rule.md)
-
 
 ## 使用Debugger載入替代標籤程式庫
 
@@ -67,42 +68,50 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
 
    ![選取動作>取代](assets/validate-switch-environment.png)
 
-1. 由於您已通過驗證，Debugger將會提取您可用的標籤屬性和環境。 選取您的 `Web SDK Course` 屬性
+1. 由於您已通過驗證，Debugger將會提取您可用的標籤屬性和環境。 選取您的屬性；在此案例中 `Web SDK Course 3`
 1. 選取您的 `Development` 環境
 1. 選取 **[!UICONTROL 套用]** 按鈕
 
    ![選取替代標籤屬性](assets/validate-switch-selection.png)
 
-1. Luma網站現在將重新載入 _使用您的標籤屬性_.
+1. Luma網站現在將重新載入 _使用您自己的標籤屬性_.
 
    ![已取代標籤屬性](assets/validate-switch-success.png)
 
-繼續進行教學課程的過程中，您將使用此技巧將Luma網站對應至您自己的標籤屬性，以驗證您的Platform Web SDK實作。 當您開始在生產環境網站上使用標籤時，可以使用相同的技巧來驗證變更。
+繼續進行教學課程的過程中，您會使用此技巧將Luma網站對應至您自己的標籤屬性，以驗證您的Platform Web SDK實作。 當您開始在生產環境網站上使用標籤時，可以使用相同的技巧來驗證變更。
 
-## 在Experience Platform Debugger中驗證實作
+## 使用Experience Platform偵錯工具驗證使用者端網路請求
 
-您可以使用Debugger驗證Platform Web SDK實作情形，並檢視傳送至Platform Edge Network的資料：
+您可以使用Debugger驗證從Platform Web SDK實作觸發的使用者端信標，以檢視傳送至Platform Edge Network的資料：
 
 1. 前往 **[!UICONTROL 摘要]** 在左側導覽中，檢視標籤屬性的詳細資訊
 
    ![摘要標籤](assets/validate-summary.png)
 
 1. 現在移至 **[!UICONTROL Experience PlatformWeb SDK]** ，以檢視 **[!UICONTROL 網路要求]**
-1. 開啟 **[!UICONTROL 事件]** 列（如果熒幕擷圖顯示的請求數多於您的請求，請不要擔心，其中包含未來課程的請求，您現在可以忽略）
+1. 開啟 **[!UICONTROL 事件]** 列
 
    ![Adobe Experience Platform Web SDK請求](assets/validate-aep-screen.png)
 
-1. 請注意我們能看到的 `web.webpagedetails.pageView` 我們指定的事件型別 [!UICONTROL 傳送事件] 動作，以及其他附加在上的現成可用變數 `AEP Web SDK ExperienceEvent Mixin` 格式
+1. 請記下您能如何檢視 `web.webpagedetails.pageView` 您在「 」中指定的事件型別 [!UICONTROL 更新變數] 動作，以及其他附加在上的現成可用變數 `AEP Web SDK ExperienceEvent` 欄位群組
 
    ![事件詳細資料](assets/validate-event-pageViews.png)
 
-1. 向下捲動至 `web` 物件，選取以開啟物件並檢查 `webPageDetails.name`， `webPageDetails.server`、和 `webPageDetails.siteSection`. 這些變數應符合首頁上對應的digitalData資料層變數
+1. 向下捲動至 `web` 物件，選取以開啟物件並檢查 `webPageDetails.name`， `webPageDetails.server`、和 `webPageDetails.siteSection`. 它們應該與對應的 `digitalData` 首頁上的資料層變數
 
-   ![網路標籤](assets/validate-xdm-content.png)
+>[!TIP]
+>
+> 若要檢視及比較 `digitalData` 首頁上的資料層：
+>
+> 1. 在Luma首頁上，開啟瀏覽器開發人員工具。 如果是Chrome，請選取「 」按鈕 `F12` 在您的鍵盤上
+> 1. 選取 **[!UICONTROL 主控台]** 標籤
+> 1. 輸入 `digitalData` 並選取 `Enter` 在鍵盤上以顯示資料層值
+
+![網路標籤](assets/validate-xdm-content.png)
 
 您也可以驗證「身分對應」詳細資料：
 
-1. 使用 `test@adobe.com`/`test` 憑證登入 Luma 網站
+1. 使用憑證登入Luma網站 `test@adobe.com`/`test`
 
 1. 返回 [Luma 首頁](https://luma.enablementadobe.com/content/luma/us/en.html)
 
@@ -117,8 +126,7 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
 1. 搜尋 **identityMap** 在快顯視窗中。 您應在此看到 `lumaCrmId` 包含authenticatedState、id和primary的三個金鑰：
    ![Debugger中的Web SDK](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
 
-
-## 使用瀏覽器開發工具進行驗證
+### 使用瀏覽器開發工具驗證使用者端請求
 
 這些型別的請求詳細資訊也會顯示在瀏覽器的網頁開發人員工具中 **網路** 標籤（假設網站正在載入您的標籤庫）。
 
@@ -130,9 +138,59 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
 
    ![網路標籤](assets/validate-dev-console-ecid.png)
 
-   >[!NOTE]
+
+## 使用Experience Platform偵錯工具驗證伺服器端網路要求
+
+如您所知， [設定資料串流](configure-datastream.md) 課程，Platform Web SDK會先將您數位財產中的資料傳送至Platform Edge Network。 接著，Platform Edge Network會對資料流中啟用的對應服務發出其他伺服器端請求。
+
+您可以在Debugger中啟用Edge Trace，以驗證伺服器端請求。 此外，您也可以使用在達到Adobe應用程式後驗證已完全處理的裝載 [Adobe Experience Platform保證](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+
+在接下來的兩個練習中，您會啟用「邊緣追蹤」，並使用「保證」檢視從Platform Edge Network產生的Experience CloudID。
+
+### 啟用邊緣追蹤
+
+啟用邊緣追蹤
+
+1. 在左側導覽列中 **[!UICONTROL Experience Platform偵錯工具]** 選取 **[!UICONTROL 記錄檔]**
+1. 選取 **[!UICONTROL Edge]** 標籤，然後選取 **[!UICONTROL 連線]**
+
+   ![連線邊緣追蹤](assets/analytics-debugger-edgeTrace.png)
+
+1. 目前為空白
+
+   ![連線的邊緣追蹤](assets/analytics-debugger-edge-connected.png)
+
+1. 重新整理 [Luma首頁](https://luma.enablementadobe.com/) 並勾選 **[!UICONTROL Experience Platform偵錯工具]** 再次強調，可檢視資料流入。
+
+   ![Analytics信標邊緣追蹤](assets/validate-edge-trace.png)
+
+此時，您無法檢視任何傳送至Adobe應用程式的Platform Edge Network請求，因為您尚未啟用資料流中的任何請求。 在未來的課程中，您將使用Edge Trace來檢視Adobe應用程式的傳出伺服器端請求。 不過，使用保證時，您仍可檢視Platform Edge Network產生的Experience CloudID。
+
+### 啟動保證工作階段
+
+Adobe Experience Platform保證是Adobe Experience Cloud的產品，可協助您檢查、證明、模擬及驗證您如何收集資料或提供體驗。
+
+深入瞭解 [Adobe保證](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+
+每次啟用Edge Trace時，系統都會在背景啟動保證工作階段。
+
+若要檢視保證工作階段，
+
+1. 啟用Edge Trace後，您會在頂端看到外寄連結圖示。 選取圖示以開啟「保證」。 您的瀏覽器中會開啟新標籤。
+
+   ![啟動保證工作階段](assets/validate-debugger-start-assurnance.png)
+
+1. 選取事件名稱為「Adobe回應控制代碼」的列。
+1. 功能表會顯示在右側。 選取 `+` 在「 」旁邊簽署 `[!UICONTROL ACPExtensionEvent]`
+1. 選取「 」以向下展開 `[!UICONTROL payload > 0 > payload > 0 > namespace]`. 顯示在最後一個 `0` 對應至 `ECID`. 透過下方顯示的值，您知道這一點 `namespace` 比對 `ECID`
+
+   ![保證驗證ECID](assets/validate-assurance-ecid.png)
+
+   >[!CAUTION]
    >
-   >    您可能會看到與上方熒幕擷圖相同的裝載請求量。 這種差異是因為未來的課程 [設定Target](setup-target.md) 在擷取熒幕擷圖時完成。 您現在可以忽略這個差異。
+   >由於視窗的寬度，您可能會看到截斷的ECID值。 只要選取介面中的操作框列，然後向左拖曳即可檢視整個ECID。
+
+在未來的課程中，您會使用「保證」，驗證到達在資料流中啟用的Adobe應用程式的完全處理負載。
 
 現在頁面上會引發XDM物件，且您已瞭解如何驗證您的資料收集，您就可以使用Platform Web SDK設定個別Adobe應用程式了。
 
@@ -140,4 +198,4 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
