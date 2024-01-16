@@ -4,14 +4,14 @@ description: 瞭解如何實作Adobe Experience Cloud行動應用程式。 本�
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 4bd8d0cdcf9c5d29434de4968a048fd46e163b54
+source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 6%
+source-wordcount: '826'
+ht-degree: 3%
 
 ---
 
-# 在行動應用程式教學課程中實作 Adobe Experience Cloud
+# 在行動應用程式教學課程中實作Adobe Experience Cloud
 
 了解如何透過 Adobe Experience Platform Mobile SDK 在行動應用程式中實作 Adobe Experience Cloud 應用程式。
 
@@ -27,7 +27,7 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 完成本教學課程之後，您將能夠：
 
 * 使用標準和自訂欄位群組建立結構描述。
-* 設定資料流.
+* 設定資料串流。
 * 設定行動標籤屬性。
 * 設定Experience Platform資料集（選用）。
 * 在應用程式中安裝及實作標籤擴充功能。
@@ -95,10 +95,14 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：專案，此專案不含程式碼，或針對您完成本教學課程中的實作練習所需使用的大部分Experience PlatformMobile SDK程式碼，包含預留位置程式碼。
 1. [完成](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：完整實作以供參考的版本。
 
-
 >[!NOTE]
 >
 >您使用iOS作為平台， [!DNL Swift] 作為程式設計語言， [!DNL SwiftUI] 作為UI框架和 [!DNL Xcode] 作為整合式開發環境(IDE)。 不過，許多所說明的實作概念與其他開發平台類似。 許多人已經成功完成本教學課程，很少或沒有先前的iOS/Swift(UI)體驗。 您不需要成為專家就能完成課程，但如果您熟悉且瞭解程式碼，將能從中學到更多。
+
+
+您可以從App Store下載應用程式的最終產品化版本。
+
+[![下載](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 我們開始吧！
