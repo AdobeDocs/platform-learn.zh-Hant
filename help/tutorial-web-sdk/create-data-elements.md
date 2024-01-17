@@ -3,10 +3,10 @@ title: 建立資料元素
 description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至該物件。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: aea1b1a88361f2ae0082772b5e7eeb6b25cec4c6
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 4%
+source-wordcount: '1174'
+ht-degree: 1%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 4%
 1. 將資料元素命名為 `page.pageInfo.pageName`
 1. 使用 **[!UICONTROL javascript變數]** **[!UICONTROL 資料元素型別]** 指向Luma資料層中的值： `digitalData.page.pageInfo.pageName`
 
-1. 勾選&#x200B;**[!UICONTROL 值強制小寫]**&#x200B;和&#x200B;**[!UICONTROL 清除文字]**&#x200B;方塊，以標準化大小寫格式並移除多餘空格
+1. 勾選方塊 **[!UICONTROL 強制小寫值]** 和 **[!UICONTROL 清除文字]** 標準化大小寫格式並移除多餘空格
 
 1. 離開 `None` 作為 **[!UICONTROL 儲存期間]** 設定，因為每個頁面上的這個值都不相同
 
@@ -166,13 +166,13 @@ ht-degree: 4%
 
 您建立的所有資料元素都必須對應至XDM物件。 此物件應符合您在「 」期間建立的XDM結構描述 [設定結構描述](configure-schemas.md) 課程。
 
-有不同的方式可將資料元素對應至XDM物件欄位。 只要資料元素符合XDM物件中存在的精確索引鍵/值組結構描述，您就可以將個別資料元素對應至個別XDM欄位，或將資料元素對應至整個XDM物件。 在本課程中，您將透過對應至個別欄位來擷取內容資料。 您將學習如何 [將資料元素對應至整個XDM物件](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) 在 [設定Analytics](setup-analytics.md) 課程。
+有不同的方式可將資料元素對應至XDM物件欄位。 只要資料元素符合XDM物件中存在的精確索引鍵/值組結構描述，您就可以將個別資料元素對應至個別XDM欄位，或將資料元素對應至整個XDM物件。 在本課程中，您將對應至個別欄位以擷取內容資料。 您將學習如何 [將資料元素對應至整個XDM物件](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) 在 [設定Analytics](setup-analytics.md) 課程。
 
 建立XDM物件以擷取內容資料：
 
 1. 在左側導覽中選取 **[!UICONTROL 資料元素]**
 1. 選取 **[!UICONTROL 新增資料元素]**
-1. ****&#x200B;將資料元素命名為 **`xdm.content`**
+1. **[!UICONTROL 名稱]** 資料元素 **`xdm.content`**
 1. 作為 **[!UICONTROL 副檔名]** 選取 `Adobe Experience Platform Web SDK`
 1. 作為 **[!UICONTROL 資料元素型別]** 選取 `XDM object`
 1. 選取平台 **[!UICONTROL Sandbox]** 您於建立期間 [設定XDM結構描述](configure-schemas.md) 課程，在此範例中 `DEVELOPMENT Mobile and Web SDK Courses`
@@ -192,9 +192,9 @@ ht-degree: 4%
 
 1. 將下列Web XDM變數對應至資料元素
 
-   * **`web.webPageDetials.name`** 到 `%page.pageInfo.pageName%`
-   * **`web.webPageDetials.server`** 到 `%page.pageInfo.server%`
-   * **`web.webPageDetials.siteSection`** 到 `%page.pageInfo.hierarchie1%`
+   * **`web.webPageDetials.name`** 至 `%page.pageInfo.pageName%`
+   * **`web.webPageDetials.server`** 至 `%page.pageInfo.server%`
+   * **`web.webPageDetials.siteSection`** 至 `%page.pageInfo.hierarchie1%`
 
    ![xdm物件](assets/data-element-xdm.content.png)
 
