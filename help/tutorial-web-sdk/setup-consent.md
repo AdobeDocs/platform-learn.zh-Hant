@@ -3,9 +3,9 @@ title: 使用Platform Web SDK設定同意
 description: 瞭解如何設定Experience PlatformWeb SDK標籤擴充功能的隱私權設定。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: a8c7b94bafcde421d5f95ea53c7ecebb648319ab
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 > 
->為了示範，本教學課程使用 [克拉羅](https://heyklaro.com/) 作為CMP。 歡迎您使用Klaro或您在網站中使用的CMP，並加以關注。
+>為了示範，本教學課程使用 [克拉羅](https://heyklaro.com/){target="_blank"} 作為CMP。 歡迎您使用Klaro或您在網站中使用的CMP，並加以關注。
 
 
 ## 學習目標
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 現在，使用完Klaro的設定後，請使用以下設定來建立標籤規則：
 
-* [!UICONTROL 名稱]: `all pages - library load - Klaro`
+* [!UICONTROL 名稱]：`all pages - library load - Klaro`
 * [!UICONTROL 事件]： [!UICONTROL 程式庫已載入（頁面頂端）] 替換為 [!UICONTROL 進階選項] > [!UICONTROL 訂購] 設為1
 * [!UICONTROL 動作]： [!UICONTROL 自訂程式碼]， [!UICONTROL 語言]：載入CMP指令碼的HTML。
 
