@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '849'
+source-wordcount: '855'
 ht-degree: 16%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 16%
    + [使用沙箱](/help/platform/admin/use-sandboxes.md)
    + [在沙箱之間複製物件](/help/platform/admin/copy-objects-between-sandboxes.md)
    + [新增使用者](/help/platform/admin/add-users.md)
+   + [將使用者新增至資料收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [新增開發人員](/help/platform/admin/add-developers.md)
    + [新增產品管理員](/help/platform/admin/add-product-administrators.md)
    + [設定以屬性為基礎的存取控制](/help/platform/admin/configure-attribute-based-access-control.md)
