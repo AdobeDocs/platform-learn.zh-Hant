@@ -3,10 +3,10 @@ title: 使用Platform Web SDK設定Adobe Target
 description: 瞭解如何使用Platform Web SDK實作Adobe Target。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 1eb67da6513106aa0339ddd65a6f86fed2a029f1
 workflow-type: tm+mt
-source-wordcount: '3800'
-ht-degree: 2%
+source-wordcount: '3582'
+ht-degree: 0%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 2%
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
 </script>
 ```
 
@@ -151,7 +151,7 @@ Target Premium客戶可選擇使用屬性管理使用者許可權。 Target屬�
 
 ### 目標環境ID
 
-[](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) Target 中的環境可協助您管理全部開發階段的實作。此選擇性設定會指定您要與每個資料流搭配使用的Target環境。
+[環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) 在Target中，可協助您在開發的所有階段管理實作。 此選擇性設定會指定您要與每個資料流搭配使用的Target環境。
 
 Adobe建議針對您的每個開發、測試和生產資料流分別設定不同的目標環境ID，以保持事情簡單。
 
