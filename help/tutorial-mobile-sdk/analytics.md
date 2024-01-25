@@ -4,9 +4,9 @@ description: 瞭解如何在行動應用程式中收集並對映Adobe Analytics�
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
 workflow-type: tm+mt
-source-wordcount: '878'
+source-wordcount: '923'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,7 @@ ht-degree: 1%
 結果為：
 
 ```
-s.products = ";5829,1,49.99;9841,3,30.00"
+s.products = ";5829;1;49.99,9841;3;30.00"
 ```
 
 >[!NOTE]
@@ -207,6 +207,79 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 * 在您的應用程式中建置XDM裝載，遵循Adobe Analytics ExperienceEvent Full Extension欄位群組，類似於您在 [追蹤事件資料](events.md) 課程，或
 * 在Tags屬性中建置規則，這些規則使用規則動作來附加或修改資料至Adobe Analytics ExperienceEvent Full Extension欄位群組。 檢視更多詳細資料 [將資料附加至SDK事件](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) 或 [修改SDK事件中的資料](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
+
+
+### 銷售 eVar
+
+如果您使用 [銷售eVar](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) 例如在您的Analytics設定中擷取產品顏色，例如 `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`，您必須擴充中定義的XDM裝載 [追蹤事件資料](events.md) 以擷取該銷售資訊。
+
+* 在JSON中：
+
+  ```json
+  {
+    "productListItems": [
+        {
+            "SKU": "LLWS05.1-XS",
+            "name": "Desiree Fitness Tee",
+            "priceTotal": 24,
+            "_experience": {
+                "analytics": {
+                    "events1to100": {
+                        "event10": {
+                            "value": 50
+                        }
+                    },
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar1": "red",
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "eventType": "commerce.productListAdds",
+    "commerce": {
+        "productListAdds": {
+            "value": 1
+        }
+    }
+  }
+  ```
+
+* 在程式碼中：
+
+  ```swift
+  var xdmData: [String: Any] = [
+    "productListItems": [
+      [
+        "name":  productName,
+        "SKU": sku,
+        "priceTotal": priceString,
+        "_experience" : [
+          "analytics": [
+            "events1to100": [
+              "event10": [
+                "value:": value
+              ]
+            ],
+            "customDimensions": [
+              "eVars": [
+                "eVar1": color
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "eventType": "commerce.productViews",
+    "commerce": [
+      "productViews": [
+        "value": 1
+      ]
+    ]
+  ]
+  ```
 
 
 ### 使用處理規則
