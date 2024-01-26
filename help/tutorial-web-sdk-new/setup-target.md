@@ -2,9 +2,9 @@
 title: 使用Platform Web SDK設定Adobe Target
 description: 瞭解如何使用Platform Web SDK實作Adobe Target。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Target
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '4183'
+source-wordcount: '4282'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 0%
   if (a) return;
   var o=e.createElement("style");
   o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
-  (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  (document, document.location.href.indexOf("adobe_authoring_enabled") !== -1, ".personalization-container { opacity: 0 !important }", 3000);
 </script>
 ```
 
@@ -144,16 +144,17 @@ Target Premium客戶可選擇使用屬性管理使用者許可權。 Target屬�
 
 ![目標屬性Token](assets/target-admin-properties.png)
 
->[!NOTE]
->
->每個資料流只能指定一個屬性代號。
+<a id="advanced-pto"></a>
 
+每個資料流只能指定一個屬性代號，但屬性代號覆寫可讓您指定替代屬性代號，以取代資料流中定義的主要屬性代號。 的更新 `sendEvent` 覆寫資料流也需要動作。
+
+![身分清單](assets/advanced-property-token.png)
 
 ### 目標環境ID
 
 [環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) 在Target中，可協助您在開發的所有階段管理實作。 此選擇性設定會指定您要與每個資料流搭配使用的Target環境。
 
-Adobe建議針對您的每個開發、測試和生產資料流分別設定不同的目標環境ID，以保持事情簡單。
+Adobe建議針對您的每個開發、測試和生產資料流分別設定不同的目標環境ID，以保持事情簡單。 或者，您也可以在Target介面中使用 [主機](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html) 功能。
 
 若要設定或尋找環境ID，請導覽至 **Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL 環境]**.
 
@@ -165,22 +166,15 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 ### 目標第三方ID名稱空間
 
-此選擇性設定可讓您指定要用於Target第三方ID的身分識別符號。 Target僅支援在單一身分符號或名稱空間上同步設定檔。 如需詳細資訊，請參閱 [mbox3rdPartyId的即時設定檔同步](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) 一節。
-
-身分符號位於下方的身分清單中 **資料彙集** > **[!UICONTROL 客戶]** > **[!UICONTROL 身分]**.
-<a id="advanced-pto"></a>
-
-### 進階屬性代號覆寫
-
-進階區段包含屬性代號覆寫的欄位，可讓您指定哪些屬性代號可以取代您在設定中定義的主要屬性代號。
-
-![身分清單](assets/advanced-property-token.png)
+此選擇性設定可讓您指定用於Target第三方ID的身分符號。 Target僅支援在單一身分符號或名稱空間上同步設定檔。 如需詳細資訊，請參閱 [mbox3rdPartyId的即時設定檔同步](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) 一節。
 
 身分符號位於下方的身分清單中 **資料彙集** > **[!UICONTROL 客戶]** > **[!UICONTROL 身分]**.
 
 ![身分清單](assets/target-identities.png)
 
 出於本教學課程使用Luma網站的目的，請使用身分識別符號 `lumaCrmId` 在課程中設定關於 [身分](configure-identities.md).
+
+
 
 
 ## 呈現視覺個人化決定
@@ -318,11 +312,11 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 1. 輸入 `%event.propositions%` 放入主張欄位，因為我們正在使用「傳送事件完成」事件當作此規則的觸發器。
 1. 在「主張中繼資料」區段中，選取 **[!UICONTROL 使用表單]**
-1. 對於「範圍」欄位輸入 `homepage-hero`
-1. 對於Selector欄位輸入 `div.heroimage`
-1. 動作型別保留為 `Set HTML`
+1. 對於 **[!UICONTROL 範圍]** 欄位輸入 `homepage-hero`
+1. 對於 **[!UICONTROL 選擇器]** 欄位輸入 `div.heroimage`
+1. 的 **[!UICONTROL 動作型別]** 選取 **[!UICONTROL 設定HTML]**
 
-![呈現首頁主圖動作](assets/target-action-render-hero.png)
+   ![呈現首頁主圖動作](assets/target-action-render-hero.png)
 
 1. 儲存您的變更並將組建組建至程式庫
 1. 載入Luma首頁幾次，這應該足以製作新的 `homepage-hero` 決定範圍在Target介面中註冊。
@@ -364,7 +358,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 >[!NOTE]
 >
->「已點按mbox」轉換目標無法自動運作。 由於Platform Web SDK不會自動轉譯自訂範圍，因此不會追蹤對您選擇套用內容之位置的點按。 您可以使用「點選」為每個範圍建立自己的點選追蹤 `eventType` 與適用的 `_experience` 詳細資訊使用 `sendEvent` 動作。
+>「已點按mbox」轉換目標無法自動運作。 由於Platform Web SDK不會自動轉譯自訂範圍，因此不會追蹤您選擇套用內容之位置的點按。 您可以使用「點選」為每個範圍建立自己的點選追蹤 `eventType` 與適用的 `_experience` 詳細資訊使用 `sendEvent` 動作。
 
 ### 使用除錯工具進行驗證
 
@@ -452,15 +446,16 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 ## 分割個人化決定和Analytics集合事件
 
-您可以分別傳送決定主張請求和Analytics資料收集請求。 以此方式分解事件規則，可讓Target決策事件儘早引發。 Analytics事件可以等到資料層物件填入之後。
+Luma網站上的資料層完全定義在標籤內嵌程式碼之前。 這可讓我們使用單一呼叫，來擷取個人化內容(例如從Adobe Target)並傳送分析資料(例如傳送到Adobe Analytics)。 在許多網站上，資料層的載入時間不夠早或速度不夠快，無法搭配個人化應用程式使用。 在這些情況下，您可以製作兩個 `sendEvent` 會在單一頁面載入時呼叫，並使用第一個進行個人化，並使用第二個進行分析。 以此方式分解事件規則，可讓Target決策事件儘早引發。 Analytics事件可以等到資料層物件填入之後。 這類似於Web SDK之前的實作，Adobe Target會在其中 `target-global-mbox` 在頁面頂端，Adobe Analytics會引發 `s.t()` 呼叫頁面底部的
 
-1. 建立名為的規則 `all pages - page top - request decisions`.
-2. 將事件新增至規則。 使用 **核心** 擴充功能與 **[!UICONTROL 程式庫已載入（頁面頂端）]** 事件型別。
-3. 將動作新增至規則。 使用 **Adobe Experience Platform Web SDK** 擴充功能和 **傳送事件** 動作型別。
-4. 在 **引導式事件樣式** 區段，選取 **[!UICONTROL 頁面事件頂端 — 要求個人化決策]** 選項按鈕
-5. 這樣會鎖定 **型別** 作為 **[!UICONTROL 決策主張擷取]**
 
-![send_decision_request_alone](assets/target-decision-request.png)
+1. 建立名為的規則 `all pages - page top - request decisions`
+1. 將事件新增至規則。 使用 **核心** 擴充功能與 **[!UICONTROL 程式庫已載入（頁面頂端）]** 事件型別
+1. 將動作新增至規則。 使用 **Adobe Experience Platform Web SDK** 擴充功能和 **傳送事件** 動作型別
+1. 選取 **[!UICONTROL 使用引導式事件]** 然後選取 **[!UICONTROL 要求個人化]**
+1. 這樣會鎖定 **型別** 作為 **[!UICONTROL 決策主張擷取]**
+
+   ![send_decision_request_alone](assets/target-decision-request.png)
 
 1. 建立您的 `Adobe Analytics Send Event rule` 使用 **引導式事件樣式** 區段選取 **[!UICONTROL 頁面底部事件 — 收集分析]** 選項按鈕
 1. 這樣會鎖定 **[!UICONTROL 包含擱置的顯示通知]** 核取方塊已選取，以便傳送決策請求中的佇列顯示通知。
@@ -514,7 +509,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 ### 使用保證進行驗證
 
-此外，您可以視情況使用「保證」，確認Target Decisioning要求取得正確的資料，且任何伺服器端轉換都正確進行。 您也可以確認Adobe Analytics呼叫中包含促銷活動和體驗資訊，即使Target決策和Adobe Analytics呼叫已分別傳送亦然。
+此外，您可以視情況使用「保證」，確認Target決策請求取得正確的資料，且任何伺服器端轉換皆正確發生。 您也可以確認Adobe Analytics呼叫中包含促銷活動和體驗資訊，即使Target決策和Adobe Analytics呼叫已分別傳送亦然。
 
 1. 開啟 [保證](https://experience.adobe.com/assurance)
 1. 啟動新的保證工作，輸入 **[!UICONTROL 工作階段名稱]** 並輸入 **[!UICONTROL 基礎url]** 針對您的網站或您正在測試的任何其他頁面
@@ -539,7 +534,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
    ![在Assurance Analytics點選中驗證](assets/validate-in-assurance-analyticsevent.png)
 
-這可確認當我們進行目標決策呼叫時，在頁面上稍後觸發分析追蹤呼叫時，已佇列以供稍後傳輸的A4T資訊已正確傳送。
+這可確認，當我們在頁面上稍後觸發分析追蹤呼叫時，已佇列以供稍後傳輸的A4T資訊已正確傳送。
 
 現在您已完成本課程，應該就能使用Platform Web SDK有效實作Adobe Target。
 

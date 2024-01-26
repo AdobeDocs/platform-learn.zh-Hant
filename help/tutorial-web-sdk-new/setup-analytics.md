@@ -2,9 +2,9 @@
 title: 使用Experience Platform Web SDK設定Adobe Analytics
 description: 瞭解如何使用Experience Platform Web SDK設定Adobe Analytics。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Analytics
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '4649'
+source-wordcount: '4675'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
    * [建立標籤規則](create-tag-rule.md)
    * [使用Adobe Experience Platform Debugger進行驗證](validate-with-debugger.md)
 
-您也需要 [啟用使用者存取Adobe Experience Platform保證](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) 以便您可以使用Adobe Experience Platform保證來驗證Adobe Analytics資料。
+您也需要 [啟用使用者存取Adobe Experience Platform保證](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) 以便您可以使用Adobe Experience Platform保證來驗證Adobe Analytics資料。 （如果您有存取結構描述、身分名稱空間和資料串流，即表示您已經可以存取Assurance）
 
 ## XDM結構描述和Analytics變數
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. -->
 
-1. **與產品無關的XDM**：維護語意索引鍵值配對XDM結構描述並使用 [Adobe Analytics處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) 將XDM欄位對應至eVar、prop等。
+1. **與產品無關的XDM**：維護語意索引鍵值配對XDM結構描述並使用 [Adobe Analytics處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) 將XDM欄位對應至eVar、prop等。 語意XDM結構描述是指欄位名稱本身具有意義。 例如，欄位名稱 `web.webPageDetails.pageName` 比說更有意義 `prop1` 或 `evar3`.
 
    >[!IMPORTANT]
    >
@@ -140,7 +140,7 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 訪客位於特定頁面時，您可能會想要變更要傳送至哪個Adobe Analytics報表套裝資料。 若要設定Adobe Analytics的資料流覆寫設定：
 
-1. 編輯 **[!UICONTROL Adobe Analytics]** 開啟shish-kabab功能表，然後選取 **[!UICONTROL 編輯]**
+1. 編輯 **[!UICONTROL Adobe Analytics]** 透過開啟 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 功能表，然後選取 **[!UICONTROL 編輯]**
 
    ![覆寫資料流](assets/datastream-edit-analytics.png)
 
@@ -306,19 +306,16 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 ### 增加頁面檢視
 
-由於您正在將資料傳送至Adobe Analytics，因此也必須對應額外的XDM欄位，以指出信標應處理為Analytics頁面檢視。
+由於您現在正將資料傳送至Adobe Analytics，建議您對應額外的XDM欄位以指出頁面檢視。 雖然從技術上講，Analytics不需要將信標作為頁面檢視來處理，但為其他下游應用程式指出頁面檢視的標準方式會很有用。
 
 1. 開啟 `all pages global content variables - page bottom - AA (order 1)` 規則
+1. 開啟 **[!UICONTROL 更新變數]** 動作
 1. 向下捲動並選取以開啟，直到 `web.webPageDetails`
 1. 選取以開啟 **[!UICONTROL pageViews]** 物件
 1. 設定 **[!UICONTROL 值]** 至 `1`
 1. 選取 **[!UICONTROL 保留變更]**
 
    ![頁面檢視XDM物件](assets/set-up-analytics-pageviews.png)
-
-   >[!TIP]
-   >
-   >此欄位等同於傳送 **`s.t()`** Analytics的頁面檢視信標，使用 `AppMeasurement.js`. 若為連結點選信標，請設定 `webInteraction.linkClicks.value` 至 `1`
 
 
 ### 透過資料流覆寫將頁面檢視傳送至不同的報表套裝
@@ -381,9 +378,9 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 1. 在 **[!UICONTROL 報表套裝]**，選取您要用來覆寫的報告網站。 在這種情況下， `tmd-websdk-course-stg`.
 
 
->[!TIP]
->
->此處顯示的報表套裝清單，是由下列專案決定： [設定資料流報告套裝覆寫](configure-datastream.md###configure-a-datastream-report-suite-override) 步驟。 新增報表套裝就等於使用多套裝標籤。
+   >[!TIP]
+   >
+   >此處顯示的報表套裝清單，是由下列專案決定： [設定資料流報告套裝覆寫](configure-datastream.md###configure-a-datastream-report-suite-override) 步驟。 新增報表套裝就等於使用多套裝標籤。
 
 1. 選取 **[!UICONTROL 保留變更]**
 
@@ -415,6 +412,7 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 1. 從左側導覽中選取 **[!UICONTROL 規則]** 然後選取 **[!UICONTROL 新增規則]**
 1. 將其命名  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
 1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 頁面底部]**
 1. 將其命名 `Core - Page Bottom - order 20`
@@ -520,6 +518,7 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 現在回到將XDM物件對應至整個陣列。 重複建立 `ecommerce - pdp page bottom - AA (order 20)` 規則：
 
 1. 將其命名  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
 1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 頁面底部]**
 1. 將其命名 `Core - Page Bottom - order 20`
@@ -670,16 +669,10 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
 ### Experience CloudID驗證
 
-1. 前往 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 並使用Experience Platform偵錯工具 [將網站上的tag屬性切換為您自己的開發屬性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. 前往 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
+1. 選取右上方的登入按鈕，並使用認證u： test@adobe.com p：測試進行驗證
+1. 開啟Experience Platform Debugger並 [將網站上的tag屬性切換為您自己的開發屬性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
-
-   >[!WARNING]
-   >
-   >在繼續之前，請確定您已登入Luma網站。  如果您未登入，Luma網站不允許您簽出。
-   >
-   > 1. 在Luma上，選取右上角的登入按鈕，並使用憑證 **ù： `test@adobe.com` p：測試** 驗證
-   >
-   > 1. 系統會自動將您重新導向至 [Didi Sport Watch產品頁](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) 在下一頁載入
 
 1. 若要啟用邊緣追蹤，請前往Experience Platform偵錯工具，在左側導覽中選取 **[!UICONTROL 記錄檔]**，然後選取 **[!UICONTROL Edge]** 標籤，然後選取 **[!UICONTROL 連線]**
 
@@ -689,7 +682,7 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
    ![連線的邊緣追蹤](assets/analytics-debugger-edge-connected.png)
 
-1. 重新整理 [Didi Sport Watch產品頁](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) 並再次檢視Experience Platform Debugger，您應該會看到資料已傳入。 開頭為的列 **[!UICONTROL Analytics自動對應]** 是Adobe Analytics信標
+1. 重新整理Luma頁面並再次檢查Experience Platform Debugger，您應該會看到資料傳入。 開頭為的列 **[!UICONTROL Analytics自動對應]** 是Adobe Analytics信標
 1. 選取以同時開啟 `[!UICONTROL mappedQueryParams]` 用於檢視Analytics變數的下拉式清單和第二個下拉式清單
 
    ![Analytics信標邊緣追蹤](assets/analytics-debugger-edge-analytics.png)
@@ -700,6 +693,7 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
 1. 向下捲動以尋找 `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. 這是可擷取ECID的內容資料變數
 1. 持續向下捲動，直到看到Analytics為止 `[!UICONTROL mid]` 變數中。 兩個ID都和裝置的Experience CloudID相符。
+1. 在Luma網站上，
 
    ![Analytics ECID](assets/analytics-debugger-ecid.png)
 
@@ -711,7 +705,7 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
 在您上方設定的「 」資料流覆寫 [Luma首頁](https://luma.enablementadobe.com/content/luma/us/en.html).  驗證此設定的方式
 
-1. 尋找含有以下專案的列： **[!UICONTROL 已套用覆寫後的資料流設定。]**。您可在這裡找到針對報表套裝覆寫設定的主要報表套裝和其他報表套裝。
+1. 尋找含有以下專案的列： **[!UICONTROL 套用覆寫後的資料流設定]**. 您可在這裡找到針對報表套裝覆寫設定的主要報表套裝和其他報表套裝。
 
    ![Analytics報表套裝覆寫清單驗證](assets/aep-debugger-datastream-override.png)
 
@@ -721,9 +715,9 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
 ### 內容頁面檢視
 
-返回 [Didi Sport Watch產品頁](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  這次您需驗證Analytics是否擷取內容頁面檢視。
+前往產品頁面，例如 [Didi Sport Watch產品頁](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  驗證Analytics是否擷取內容頁面檢視。
 
-1. 尋找 `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. 它會告訴您 `s.t()` 頁面檢視信標正在傳送至Analytics
+1. 尋找 `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. 向下捲動以檢視 `[!UICONTROL gn]` 變數中。 這是Analytics的動態語法 `[!UICONTROL s.pageName]` 變數中。 它會從資料層擷取頁面名稱。
 
    ![Analytics產品字串](assets/analytics-debugger-edge-page-view.png)
@@ -737,7 +731,7 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 1. 尋找 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. 變數會擷取您對應至的資料元素值 `productListItems.item1.sku` 本課程稍早
 1. 同時尋找 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL _experience.analytics.customdimensions.evars.evar1]`. 變數會擷取您對應至的資料元素值 `productListItems.item1._experience.analytics.customdimensions.evars.evar1`
 1. 向下捲動以檢視 `[!UICONTROL pl]` 變數中。 這是Analytics產品字串變數的動態語法
-1. 請注意，資料層的產品名稱會同時對應至 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` 和 `[!UICONTROL product]` 生產字串的引數。  此外，資料層的產品標題會對應至生產字串中的銷售evar1。
+1. 請注意，資料層的產品名稱會同時對應至 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` 和 `[!UICONTROL product]` 產品字串的引數。  此外，資料層的產品標題會對應至產品字串中的銷售evar1。
 
    ![Analytics產品字串](assets/analytics-debugger-prodstring.png)
 
@@ -840,9 +834,9 @@ Adobe Experience Platform保證是Adobe Experience Cloud的產品，可協助您
 
 有幾種方式可以存取「保證」：
 
-1. 透過Adobe Experience Platform存取保證
-1. 透過Adobe Experience Platform Data Collection存取保證
-1. 透過Adobe Experience Platform Debugger內的記錄檔存取保證
+1. 透過Adobe Experience Platform介面
+1. 透過Adobe Experience Platform資料收集介面
+1. 透過Adobe Experience Platform Debugger內的記錄（建議）
 
 若要透過Adobe Experience Platform存取保證，請向下捲動並選取 **[!UICONTROL 保證]** 在左側欄導覽中的 **[!UICONTROL 資料彙集]**.  選取 **[!UICONTROL 「Web SDK教學課程3」]** 工作階段來存取上一節中產生的事件。
 ![透過Adobe Experience Platform提供保證](assets/assurance-open-aep.png)
@@ -850,7 +844,7 @@ Adobe Experience Platform保證是Adobe Experience Cloud的產品，可協助您
 若要透過Adobe Experience Platform資料彙集存取保證，請選取 **[!UICONTROL 保證]** 在左側欄導覽中的 **[!UICONTROL 資料彙集]**.  選取 **[!UICONTROL 「Web SDK教學課程3」]** 工作階段來存取上一節中產生的事件。\
 ![透過Adobe Experience Platform Data Collection提供保證](assets/assurance-open-data-collection.png)
 
-若要透過Adobe Experience Platform Debugger存取保證，請前往Experience Platform偵錯工具，在左側導覽中選取 **[!UICONTROL 記錄檔]**，然後選取 **[!UICONTROL Edge]** 標籤，然後選取 **[!UICONTROL 連線]**.  建立與Edge Network的連線後，請選取外部連結圖示\
+若要透過Adobe Experience Platform Debugger存取保證，請前往Experience Platform偵錯工具，在左側導覽中選取 **[!UICONTROL 記錄檔]**，然後選取 **[!UICONTROL Edge]** 標籤，然後選取 **[!UICONTROL 連線]**.  建立與Edge Network的連線後，請選取外部連結圖示。 我們建議透過Debugger存取Assurance，因為目前需要從Debugger啟動網頁工作階段。
 ![透過Adobe Experience Platform Data Collection提供保證](assets/assurance-open-aep-debugger.png)
 
 在 **[!UICONTROL 「Web SDK教學課程3」]** 輸入保證工作階段 **[!UICONTROL &quot;hitdebugger&quot;]** 並放入事件搜尋列，將結果篩選為AdobeAnalytics處理後資料。

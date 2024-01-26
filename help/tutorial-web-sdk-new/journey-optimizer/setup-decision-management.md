@@ -4,9 +4,9 @@ description: 瞭解如何使用Platform Web SDK實作決定管理。 本課程�
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2464'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 瞭解如何使用Platform Web SDK實作決定管理。 本指南說明基本的決策管理先決條件、設定的詳細步驟，並深入探討以忠誠度狀態為中心的使用案例。
 
-依照本說明檔案，Journey Optimizer使用者能夠有效地套用offer decisioning功能，增強其客戶互動的個人化與關聯性。
+依照本教學課程指示，Journey Optimizer使用者能夠有效地套用offer decisioning功能，增強其客戶互動的個人化與關聯性。
 
 ## 學習目標
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 * 掌握Adobe Journey Optimizer中決策管理的核心概念，及其與Adobe Experience Platform Web SDK的整合。
 
-* 瞭解設定Web SDK以進行Offer decisioning的逐步程式，確保與AJO無縫整合。
+* 瞭解設定Web SDK以進行Offer decisioning的逐步程式，確保與Journey Optimizer無縫整合。
 
 * 探索以忠誠度狀態優惠為中心的詳細使用案例，深入瞭解如何有效建立和管理優惠、決定和位置。
 
@@ -38,13 +38,11 @@ ht-degree: 0%
 
 若要完成本節中的課程，您必須先：
 
-* 確保您的組織可以存取Adobe Journey Optimizer Ultimate (AJO和Offer Decisioning)或Adobe Experience Platform，以及Offer decisioning應用程式服務附加元件。
+* 確保您的組織可以存取Adobe Journey Optimizer Ultimate (Journey Optimizer和Offer Decisioning)或Adobe Experience Platform和Offer Decisioning應用程式服務附加元件。
 
 * 完成所有Platform Web SDK初始設定的課程。
 
 * 讓您的組織能夠進行邊緣決策。
-
-* 發佈您的資料串流。
 
 * 瞭解如何設定刊登版位，以及在決策範圍JSON中例項化刊登版位和活動ID。
 
@@ -143,7 +141,7 @@ offer decisioning必須在以下位置啟用： **資料流** Platform Web SDK�
 
 >[!NOTE]
 >
-> 由於本教學課程的目標是實施者，因此請注意，本課程涉及在AJO中進行大量的UI工作。 雖然此類UI任務通常由行銷人員處理，但對於實作者來說，即使他們對於決策管理行銷活動的長期建立不負責任，獲得對流程的深入瞭解也會很有幫助。
+> 由於本教學課程的目標是實施者，因此請注意，本課程涉及Journey Optimizer的大量介面工作。 雖然這類介面任務通常由行銷人員處理，但對於實作者來說，即使他們對於決策管理行銷活動的長期建立並不負責，獲得對流程的深入瞭解也會很有幫助。
 
 ## 元件
 
@@ -173,13 +171,13 @@ offer decisioning必須在以下位置啟用： **資料流** Platform Web SDK�
 
 1. 按一下&#x200B;**儲存**。
 1. 位置建立後，會顯示在「位置」清單中。
-1. 記下位置ID，因為這對於在決定範圍內設定可能是必要的。
+1. 選取包含新版位的列，並記下版位ID，因為這在您的決定範圍內進行設定可能是必要的。
 
    ![請參閱版位ID ](../assets/decisioning-placement-id.png)
 
 ### 熟客狀態的決定規則
 
-**決定規則** 指定提供優惠的條件。 在此範例中，您會建立決定規則，以根據使用者的忠誠度狀態提供不同優惠方案。
+**決定規則** 指定提供優惠的條件。 在此範例中，您會建立決定規則，以根據使用者的忠誠度狀態提供不同的優惠方案。
 
 決定規則清單可在 **元件** 功能表。
 
@@ -189,7 +187,7 @@ offer decisioning必須在以下位置啟用： **資料流** Platform Web SDK�
 
    ![建立規則](../assets/decisioning-create-rule.png)
 
-1. 讓我們命名第一個規則&#39;*金級忠誠度狀態規則*&#39;. 您可以使用XDM欄位來定義規則。 Adobe Experience Platform **區段產生器** 是可用來建立規則條件的直覺式UI。
+1. 讓我們命名第一個規則&#39;*金級忠誠度狀態規則*&#39;. 您可以使用XDM欄位來定義規則。 Adobe Experience Platform **區段產生器** 是可用來建立規則條件的直覺式介面。
 
    ![定義規則](../assets/decisioning-define-rule.png)
 
