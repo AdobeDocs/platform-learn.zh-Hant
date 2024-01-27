@@ -8,10 +8,10 @@ doc-type: Feature Video
 duration: 355
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14074
-source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
+source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 10%
+source-wordcount: '91'
+ht-degree: 9%
 
 ---
 
@@ -23,6 +23,8 @@ ht-degree: 10%
 1. 建立開發沙箱，使用 `-ucp` 作為名稱中的尾碼
 1. 將許可權和使用者新增到沙箱
 1. 設定電子郵件、推播和簡訊的頻道介面
+
+如需詳細資訊，請參閱 [開始使用](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
 

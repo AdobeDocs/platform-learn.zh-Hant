@@ -5,7 +5,7 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
+source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 16%
@@ -219,7 +219,7 @@ ht-degree: 16%
    + [疑難排解：SFTP聯結器](/help/platform/sources/troubleshoot-sftp-connector.md)
 + 使用案例教戰手冊 {#use-case-playbooks}
    + [概觀](/help/platform/use-case-playbooks/overview.md)
-   + [設定教戰手冊沙箱](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [設定Playbook沙箱](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [建立及發佈Playbook例項](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloud整合 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
