@@ -2,9 +2,9 @@
 title: 使用Platform Web SDK設定Audience Manager
 description: 瞭解如何使用Platform Web SDK設定Adobe Audience Manager，並使用Cookie目的地驗證實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Audience Manager
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1330'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 1%
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html) 是Adobe Experience Cloud解決方案，提供收集網站訪客之商業相關資訊、建立可行銷區段，以及將目標定位廣告和內容提供給適當對象所需的一切。
 
+![Web SDK和Adobe Audience Manager圖表](assets/dc-websdk-aam.png)
 
 ## 學習目標
 

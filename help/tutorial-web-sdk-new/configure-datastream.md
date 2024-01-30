@@ -2,9 +2,9 @@
 title: 設定資料流
 description: 瞭解如何啟用資料串流並設定Experience Cloud解決方案。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Datastreams
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '557'
 ht-degree: 3%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 3%
 瞭解如何啟用資料串流及設定Experience Cloud應用程式。
 
 資料串流會告訴Adobe Experience Platform Edge Network要將由Platform Web SDK收集的資料傳送至何處。 在資料串流設定中，您可以啟用Experience Cloud應用程式、Experience Platform帳戶和事件轉送。 請參閱 [設定資料串流的基礎知識](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hant) 以取得更多詳細資訊。
+
+
+![Web SDK、資料串流和Edge網路圖表](assets/dc-websdk-datastreams.png)
 
 ## 學習目標
 

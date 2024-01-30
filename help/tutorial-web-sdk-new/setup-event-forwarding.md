@@ -2,9 +2,9 @@
 title: 設定事件轉送屬性
 description: 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 2%
 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。
 
 事件轉寄是「資料收集」中可用的全新屬性型別。 事件轉送可讓您直接從Adobe Experience Platform Edge Network （而非傳統使用者端瀏覽器）將資料傳送至第三方非Adobe廠商。 在中進一步瞭解事件轉送的優點 [事件轉送概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Web SDK和事件轉送圖](assets/dc-websdk-eventforwarding.png)
 
 若要在Adobe Experience Platform中使用事件轉送，必須先使用下列一個或多個選項，將資料傳送至Adobe Experience Platform Edge Network：
 
@@ -50,7 +53,6 @@ ht-degree: 2%
 
    * 初始設定
 
-      * [設定許可權](configure-permissions.md)
       * [設定XDM結構描述](configure-schemas.md)
       * [設定身分名稱空間](configure-identities.md)
       * [設定資料流](configure-datastream.md)
