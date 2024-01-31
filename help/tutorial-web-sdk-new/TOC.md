@@ -9,9 +9,9 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: 1b6fa039a255de8cdd1889136039e6f23b183578
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '97'
 ht-degree: 23%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 23%
 
 + [教學課程概觀](overview.md)
 + 初始設定 {#initial-configuration}
-   + [設定許可權](configure-permissions.md)
    + [設定XDM結構描述](configure-schemas.md)
    + [設定身分名稱空間](configure-identities.md)
    + [設定資料流](configure-datastream.md)
@@ -32,6 +31,7 @@ ht-degree: 23%
    + [建立身分](create-identities.md)
    + [建立標籤規則](create-tag-rule.md)
    + [使用Debugger進行驗證](validate-with-debugger.md)
+   + [使用保證進行驗證](validate-with-assurance.md)
 
 + 應用程式設定 {#applications-setup}
    + [設定Experience Platform](setup-experience-platform.md)

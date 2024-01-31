@@ -2,43 +2,22 @@
 title: 建立資料元素
 description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至該物件。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '1469'
+source-wordcount: '1212'
 ht-degree: 1%
 
 ---
 
 # 建立資料元素
 
-瞭解如何使用Experience Platform Web SDK建立擷取資料所需的基本資料元素。 擷取上的內容和身分資料 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html). 瞭解如何使用您先前建立的XDM結構描述，以使用名為Variable的Platform Web SDK資料元素型別收集資料。
+瞭解如何在標籤中建立資料元素，以用於上的內容、商業和身分資料 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html). 然後，和使用Variable資料元素型別填入XDM結構描述中的欄位。
 
->[!NOTE]
->
-> 為了示範，本課程中的練習會以期間使用的範例為基礎 [設定結構描述](configure-schemas.md) 步驟；建立範例XDM物件，擷取上已檢視的內容和使用者的身分 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html).
 
 >[!IMPORTANT]
 >
 >本課程的資料來自 `[!UICONTROL digitalData]` Luma網站上的資料層。 若要檢視資料層，請開啟您的開發人員主控台，然後輸入 `[!UICONTROL digitalData]` 以檢視完整的可用資料層。![digitalData資料層](assets/data-element-data-layer.png)
 
-
-無論Platform Web SDK為何，您都必須繼續在tags屬性內建立資料元素，以對應至來自網站的資料收集變數，例如資料層、HTML屬性或其他。 建立這些資料元素後，您必須將它們對應至您在期間建立的XDM結構描述 [設定方案](configure-schemas.md) 課程。 因此，建立資料元素包含兩個動作：
-
-1. 將網站變數對應至資料元素，以及
-1. 將這些資料元素對應至XDM物件
-
-在步驟1，您會使用任何核心標籤擴充功能的資料元素型別，繼續以您目前的方式將資料層對應至資料元素。 對於步驟2，Platform Web SDK擴充功能有下列可用的資料元素型別：
-
-* 事件合併ID
-* 身分對應
-* 變數
-* xdm物件
-
-本課程著重於變數資料元素型別。 您可以根據Luma網站上可用的資料層，建立資料元素來擷取Luma訪客的活動。 在下一個課程中，您將瞭解身分對應。
-
->[!NOTE]
->
-> 事件合併ID和XDM物件資料元素型別很少用於邊緣案例。
 
 ## 學習目標
 
@@ -51,16 +30,12 @@ ht-degree: 1%
 
 ## 先決條件
 
-您已瞭解資料層是什麼，並熟悉 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 資料層，並瞭解如何參照標籤中的資料元素。 您必須完成本教學課程中下列先前的步驟。
+您已瞭解什麼是資料層，並已完成本教學課程中下列先前的課程：
 
 * [設定XDM結構描述](configure-schemas.md)
 * [設定身分名稱空間](configure-identities.md)
 * [設定資料流](configure-datastream.md)
 * [安裝在標籤屬性中的Web SDK擴充功能](install-web-sdk.md)
-
->[!IMPORTANT]
->
->此 [Experience CloudID服務擴充功能](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) 實作Adobe Experience Platform Web SDK時不需要使用，因為ID服務功能內建於Platform Web SDK中。
 
 ## 資料層方法
 
@@ -192,7 +167,7 @@ window.adobeDataLayer.push({
 
    ![Page Name資料元素](assets/data-element-pageName.jpg)
 
-請依照相同的步驟建立這四個額外的資料元素：
+請依照相同的步驟建立這些額外的資料元素：
 
 * **`page.pageInfo.server`**  已對應至
   `digitalData.page.pageInfo.server`
@@ -206,7 +181,70 @@ window.adobeDataLayer.push({
 * **`user.profile.attributes.loggedIn`** 已對應至
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`cart.orderId`** 已對應至 `digitalData.cart.orderId` (您會在以下期間使用此功能： [設定Analytics](setup-analytics.md) 課程)
+* **`product.productInfo.sku`** 已對應至 `digitalData.product.0.productInfo.sku`
+<!--digitalData.product.0.productInfo.sku
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.sku;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.productInfo.title`** 已對應至 `digitalData.product.0.productInfo.title`
+* **`cart.orderId`** 已對應至 `digitalData.cart.orderId`
+<!--
+    ```javascript
+    var cart = digitalData.product;
+    var cartItem;
+    cart.forEach(function(item){
+    cartItem = item.productInfo.title;
+    });
+    return cartItem;
+    ```
+    -->
+* **`product.category`** 使用 **[!UICONTROL 自訂程式碼]** **[!UICONTROL 資料元素型別]** 和下列自訂程式碼來剖析最上層類別的網站URL：
+
+  ```javascript
+  var cat = location.pathname.split(/[/.]+/);
+  if (cat[5] == 'products') {
+     return (cat[6]);
+  } else if (cat[5] != 'html') { 
+     return (cat[5]);
+  }
+  ```
+
+* **`cart.productInfo`** 使用下列自訂程式碼：
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  cartItem.push({
+  "SKU": item.sku
+  });
+  });
+  return cartItem; 
+  ```
+
+* **`cart.productInfo.purchase`** 使用下列自訂程式碼：
+
+  ```javascript
+  var cart = digitalData.cart.cartEntries; 
+  var cartItem = [];
+  cart.forEach(function(item, index, array){
+  var qty = parseInt(item.qty);
+  var price = parseInt(item.price);
+  cartItem.push({
+  "SKU": item.sku,
+  "quantity": qty,
+  "priceTotal": price
+  });
+  });
+  return cartItem; 
+  ```
+
 
 
 >[!CAUTION]
@@ -229,59 +267,21 @@ window.adobeDataLayer.push({
 
    ![變數資料元素](assets/analytics-tags-data-element-xdm-variable.png)
 
-<!-- There are different ways to map data elements to XDM object fields. You can map individual data elements to individual XDM fields or map data elements to entire XDM objects as long as your data element matches the exact key-value pair schema present in the XDM object. In this lesson, you will capture content data by mapping to individual fields. You will learn how to [map a data element to an entire XDM object](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) in the [Setup Analytics](setup-analytics.md) lesson. 
-
-Create an XDM object to capture content data:
-
-1. In the left navigation, select **[!UICONTROL Data Elements]**
-1. Select **[!UICONTROL Add Data Element]**
-1. **[!UICONTROL Name]** the data element **`xdm.content`**
-1. As the **[!UICONTROL Extension]** select `Adobe Experience Platform Web SDK`
-1. As the **[!UICONTROL Data Element Type]** select `XDM object`
-1. Select the Platform **[!UICONTROL Sandbox]** in which you created the XDM schema in during the [Configure an XDM Schema](configure-schemas.md) lesson, in this example `DEVELOPMENT Mobile and Web SDK Courses`
-1. As the **[!UICONTROL Schema]**, select your `Luma Web Event Data` schema:
-
-    ![XDM object](assets/data-element-xdm.content-fields.png)
-
-    >[!NOTE]
-    >
-    >The sandbox corresponds to the Experience Platform sandbox in which you created the schema. There can be multiple sandboxes available in your Experience Platform instance, so make sure to select the right one. Always work in development first, then production.
-
-1. Scroll down until you reach the **`web`** object
-1. Select to open it
-
-    ![Web Object](assets/data-element-pageviews-xdm-object.png)
-
-
-1. Map the following web XDM variables to data elements
-
-    * **`web.webPageDetials.name`** to `%page.pageInfo.pageName%`
-    * **`web.webPageDetials.server`** to `%page.pageInfo.server%`
-    * **`web.webPageDetials.siteSection`** to `%page.pageInfo.hierarchie1%`
-
-    ![XDM object](assets/data-element-xdm.content.png)
-
-1. Next, find the `identityMap` object in the schema and select it
- 
-1. Map to the `identityMap.loginID` data element
-
-1. Select **[!UICONTROL Save]**
-
-   ![Data Collection interface](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
-
--->
 
 在這些步驟結束時，您應該建立下列資料元素：
 
 | 核心擴充功能資料元素 | Platform Web SDK資料元素 |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
+| `cart.productInfo` | |
+| `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
-
 
 >[!TIP]
 >

@@ -4,9 +4,9 @@ description: 瞭解如何使用Platform Web SDK實作決定管理。 本課程�
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2470'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,9 @@ ht-degree: 0%
 瞭解如何使用Platform Web SDK實作決定管理。 本指南說明基本的決策管理先決條件、設定的詳細步驟，並深入探討以忠誠度狀態為中心的使用案例。
 
 依照本教學課程指示，Journey Optimizer使用者能夠有效地套用offer decisioning功能，增強其客戶互動的個人化與關聯性。
+
+
+![Web SDK和Adobe Analytics圖表](../assets/dc-websdk-ajo.png)
 
 ## 學習目標
 

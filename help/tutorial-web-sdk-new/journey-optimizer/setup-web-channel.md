@@ -4,9 +4,9 @@ description: 瞭解如何使用Platform Web SDK實作Web Channel。 本課程屬
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
 workflow-type: tm+mt
-source-wordcount: '2444'
+source-wordcount: '2450'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,8 @@ ht-degree: 0%
 瞭解如何使用Platform Web SDK實作Web Channel。 本指南涵蓋基本Web Channel必要條件、設定的詳細步驟，以及以忠誠度狀態為中心的使用案例深入探討。
 
 依照本指南，Journey Optimizer使用者可以使用Journey Optimizer網頁設計工具，有效套用進階線上個人化的網路管道。
+
+![Web SDK和Adobe Analytics圖表](../assets/dc-websdk-ajo.png)
 
 ## 學習目標
 
