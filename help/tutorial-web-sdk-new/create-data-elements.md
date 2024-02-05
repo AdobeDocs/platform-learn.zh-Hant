@@ -2,7 +2,7 @@
 title: 建立資料元素
 description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至該物件。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 1%
@@ -154,7 +154,7 @@ window.adobeDataLayer.push({
 
 1. 前往 **[!UICONTROL 資料元素]** 並選取 **[!UICONTROL 新增資料元素]** (或 **[!UICONTROL 建立新資料元素]** 如果標籤屬性中沒有現有的資料元素)
 
-   ![建立資料元素](assets/data-element-create.jpg)
+   ![建立資料元素](assets/data-element-create.png)
 
 1. 將資料元素命名為 `page.pageInfo.pageName`
 1. 使用 **[!UICONTROL javascript變數]** **[!UICONTROL 資料元素型別]** 指向Luma資料層中的值： `digitalData.page.pageInfo.pageName`
@@ -165,7 +165,7 @@ window.adobeDataLayer.push({
 
 1. 選取 **[!UICONTROL 儲存]**
 
-   ![Page Name資料元素](assets/data-element-pageName.jpg)
+   ![Page Name資料元素](assets/data-element-pageName.png)
 
 請依照相同的步驟建立這些額外的資料元素：
 

@@ -2,7 +2,7 @@
 title: 使用Experience Platform Web SDK設定Adobe Analytics
 description: 瞭解如何使用Experience Platform Web SDK設定Adobe Analytics。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Analytics
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '4681'
 ht-degree: 0%
@@ -304,13 +304,13 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 ## 建立其他規則
 
-在 [建立標籤規則](create-tag-rule.md) 課程，您已設定 `all pages global content variables - page bottom - AA (order 1)` 規則 [已使用建立基準線XDM物件 **[!UICONTROL 更新變數]** **[!UICONTROL 動作型別]**](create-tag-rule.md#create-tag-rule). 下列練習會擴充該XDM物件，以擷取特定頁面的其他特定資料。
+在 [建立標籤規則](create-tag-rule.md) 課程，您已設定 `all pages global content variables - library loaded - AA (order 1)` 規則 [已使用建立基準線XDM物件 **[!UICONTROL 更新變數]** **[!UICONTROL 動作型別]**](create-tag-rule.md#create-tag-rule). 下列練習會擴充該XDM物件，以擷取特定頁面的其他特定資料。
 
 ### 增加頁面檢視
 
 由於您現在正將資料傳送至Adobe Analytics，建議您對應額外的XDM欄位以指出頁面檢視。 雖然從技術上講，Analytics不需要將信標作為頁面檢視來處理，但為其他下游應用程式指出頁面檢視的標準方式會很有用。
 
-1. 開啟 `all pages global content variables - page bottom - AA (order 1)` 規則
+1. 開啟 `all pages global content variables - library loaded - AA (order 1)` 規則
 1. 開啟 **[!UICONTROL 更新變數]** 動作
 1. 向下捲動並選取以開啟，直到 `web.webPageDetails`
 1. 選取以開啟 **[!UICONTROL pageViews]** 物件
@@ -324,17 +324,17 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 建立規則，將額外的頁面檢視呼叫傳送至不同的報表套裝。 使用資料流覆寫功能來變更頁面的報告套裝，使用 **[!UICONTROL 傳送事件]** 動作。
 
-1. 建立新規則，將其命名 `homepage report suite override - page bottom - AA (order 51)`
+1. 建立新規則，將其命名 `homepage report suite override - library loaded - AA (order 51)`
 
 1. 選取下方的加號 **[!UICONTROL 事件]** 新增觸發器的方式
 
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
 
-1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 頁面底部]**
+1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入]**
 
-1. 將其命名 `Core - Page Bottom - order 51`
+1. 將其命名 `Core - library loaded - order 51`
 
-1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `51`. 這可確保規則在 `all pages global content variables - page bottom - AA (order 50)` 使用設定基線XDM **[!UICONTROL 更新變數]** 動作型別。
+1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `51`. 這可確保規則在 `all pages global content variables - library loaded - AA (order 50)` 使用設定基線XDM **[!UICONTROL 更新變數]** 動作型別。
 
    ![Analytics報表套裝覆寫](assets/set-up-analytics-rs-override.png)
 
@@ -392,7 +392,7 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 ### 使用更新變數擴充XDM物件
 
-使用 **[!UICONTROL 更新變數]** 動作型別您可以建立其他規則，在「全域內容XDM」傳送至 [!UICONTROL Platform Edge Network]. 若要完成此作業，請先排序新規則，然後再排序 `all pages send event - page bottom - AA (order 50)` 會傳送事件 [!UICONTROL Platform Edge Network].
+使用 **[!UICONTROL 更新變數]** 動作型別您可以建立其他規則，在「全域內容XDM」傳送至 [!UICONTROL Platform Edge Network]. 若要完成此作業，請先排序新規則，然後再排序 `all pages send event - library loaded - AA (order 50)` 會傳送事件 [!UICONTROL Platform Edge Network].
 
 >[!TIP]
 >
@@ -413,12 +413,12 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 首先，請追蹤Luma產品詳細資料頁面上的產品檢視。
 
 1. 從左側導覽中選取 **[!UICONTROL 規則]** 然後選取 **[!UICONTROL 新增規則]**
-1. 將其命名  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 將其命名  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
-1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 頁面底部]**
-1. 將其命名 `Core - Page Bottom - order 20`
-1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 這可確保規則在 `all pages global content variables - page bottom - AA (order 1)` 會設定全域內容變數，但在 `all pages send event - page bottom - AA (order 50)` 會傳送XDM事件。
+1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入]**
+1. 將其命名 `Core - library loaded - order 20`
+1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 這可確保規則在 `all pages global content variables - library loaded - AA (order 1)` 會設定全域內容變數，但在 `all pages send event - library loaded - AA (order 50)` 會傳送XDM事件。
 
    ![Analytics XDM規則](assets/set-up-analytics-pdp.png)
 
@@ -517,13 +517,13 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 >請注意數值變數的轉譯方式，以及資料層中的字串值，例如 `price` 和 `qty` 重新格式化為資料元素中的數字。 這些格式需求對於Platform中的資料完整性十分重要，並在以下期間決定： [設定方案](configure-schemas.md) 步驟。 在此範例中， **[!UICONTROL 數量]** 使用 **[!UICONTROL 整數]** 資料型別。
 > ![XDM結構描述資料型別](assets/set-up-analytics-quantity-integer.png)
 
-現在回到將XDM物件對應至整個陣列。 重複建立 `ecommerce - pdp page bottom - AA (order 20)` 規則：
+現在回到將XDM物件對應至整個陣列。 重複建立 `ecommerce - pdp library loaded - AA (order 20)` 規則：
 
-1. 將其命名  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. 將其命名  [!UICONTROL `ecommerce - cart library loaded - AA (order 20)`]
 1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
-1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 頁面底部]**
-1. 將其命名 `Core - Page Bottom - order 20`
+1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入]**
+1. 將其命名 `Core - library loaded - order 20`
 1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`
 1. 選取 **[!UICONTROL 保留變更]**
 
@@ -574,7 +574,7 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 建立兩個其他規則，用於遵循相同模式的結帳和購買，但有下列差異：
 
-**規則名稱**： `ecommerce - checkout page bottom - AA (order 20)`
+**規則名稱**： `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout.html
 * 將 `eventType` 設為 `commerce.checkouts`
@@ -584,7 +584,7 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
   >
   >這等於設定 `scCheckout` Analytics中的事件
 
-**規則名稱**： `ecommerce - purchase page bottom - AA (order 20)`
+**規則名稱**： `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout/order/thank-you.html
 * 將 `eventType` 設為 `commerce.purchases`
@@ -745,7 +745,7 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
    >[!TIP]
    >
-   > 此 `ecommerce - pdp page bottom - AA (order 20)` 規則正在覆寫的值 `eventType` 由 `all pages global content variables - page bottom - AA (order 1)` 規則，因為已設定為稍後在順序中觸發
+   > 此 `ecommerce - pdp library loaded - AA (order 20)` 規則正在覆寫的值 `eventType` 由 `all pages global content variables - library loaded - AA (order 1)` 規則，因為已設定為稍後在順序中觸發
 
 
    ![Analytics產品檢視](assets/analytics-debugger-prodView.png)

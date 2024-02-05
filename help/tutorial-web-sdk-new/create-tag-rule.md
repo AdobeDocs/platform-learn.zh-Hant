@@ -2,7 +2,7 @@
 title: 建立標籤規則
 description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至Platform Edge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 1%
@@ -80,7 +80,7 @@ ht-degree: 1%
 
    ![建立規則](assets/rules-create.png)
 
-1. 將規則命名為 `all pages global content variables - page bottom - AA (order 1)`
+1. 將規則命名為 `all pages global content variables - library loaded - AA (order 1)`
 
 1. 在 **[!UICONTROL 活動]** 區段，選取 **[!UICONTROL 新增]**
 
@@ -173,12 +173,12 @@ ht-degree: 1%
 首先，請追蹤Luma產品詳細資料頁面上的產品檢視：
 
 1. 選取 **[!UICONTROL 新增規則]**
-1. 將其命名  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 將其命名  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
 1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 頁面底部]**
 1. 將其命名 `Core - Page Bottom - order 20`
-1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 這可確保規則在 `all pages global content variables - page bottom - AA (order 1)` 會設定全域內容變數，但在 `all pages send event - page bottom - AA (order 50)` 會傳送XDM事件。
+1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 這可確保規則在 `all pages global content variables - library loaded - AA (order 1)` 會設定全域內容變數，但在 `all pages send event - library loaded - AA (order 50)` 會傳送XDM事件。
 
    ![Analytics XDM規則](assets/set-up-analytics-pdp.png)
 
@@ -247,7 +247,7 @@ ht-degree: 1%
 現在，我們將陣列對應至XDM物件」
 
 
-1. 建立名為的新規則 `ecommerce - cart page bottom - AA (order 20)`
+1. 建立名為的新規則 `ecommerce - cart library loaded - AA (order 20)`
 1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
 1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 頁面底部]**
@@ -295,7 +295,7 @@ ht-degree: 1%
 
 建立兩個其他規則，用於遵循相同模式的結帳和購買，但有下列差異：
 
-**規則名稱**： `ecommerce - checkout page bottom - AA (order 20)`
+**規則名稱**： `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout.html
 * 將 `eventType` 設為 `commerce.checkouts`
@@ -305,7 +305,7 @@ ht-degree: 1%
   >
   >這等於設定 `scCheckout` Analytics中的事件
 
-**規則名稱**： `ecommerce - purchase page bottom - AA (order 20)`
+**規則名稱**： `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout/order/thank-you.html
 * 將 `eventType` 設為 `commerce.purchases`
@@ -345,7 +345,7 @@ ht-degree: 1%
 
 1. 在右側，選取 **[!UICONTROL 新增規則]** 以建立其他規則
 
-1. 將規則命名為 `all pages send event - page bottom - AA (order 50)`
+1. 將規則命名為 `all pages send event - library loaded - AA (order 50)`
 
 1. 在 **[!UICONTROL 活動]** 區段，選取 **[!UICONTROL 新增]**
 
@@ -390,7 +390,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >    除了Adobe Experience Platform Web SDK擴充功能和 `all pages global content variables - page bottom - AA (order 50)` 規則中，您會看見前述課程中建立的標籤元件。 核心擴充功能包含所有Web標籤屬性所需的基本JavaScript。
+   >    除了Adobe Experience Platform Web SDK擴充功能和 `all pages global content variables - library loaded - AA (order 50)` 規則中，您會看見前述課程中建立的標籤元件。 核心擴充功能包含所有Web標籤屬性所需的基本JavaScript。
 
 1. 選取 **[!UICONTROL 儲存並為開發環境建置]**
 

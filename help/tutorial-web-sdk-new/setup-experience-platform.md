@@ -1,7 +1,7 @@
 ---
 title: 使用Web SDK將資料串流至Adobe Experience Platform
 description: 瞭解如何使用Web SDK將網頁資料串流到Adobe Experience Platform。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 5%
@@ -84,7 +84,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 1. 選取 **[!UICONTROL 資料串流]** 從左側導覽
 1. 開啟您在中建立的資料流 [設定資料串流](configure-datastream.md) 課程， `Luma Web SDK`
 
-   ![選取Luma Web SDK資料流](assets/datastream-luma-web-sdk.png)
+   ![選取Luma Web SDK資料流](assets/datastream-luma-web-sdk-development.png)
 
 1. 選取 **[!UICONTROL 新增服務]**
    ![將服務新增至資料流](assets/experience-platform-addService.png)

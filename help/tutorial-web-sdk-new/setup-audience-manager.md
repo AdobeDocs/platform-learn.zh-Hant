@@ -2,7 +2,7 @@
 title: 使用Platform Web SDK設定Audience Manager
 description: 瞭解如何使用Platform Web SDK設定Adobe Audience Manager，並使用Cookie目的地驗證實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Audience Manager
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 1%
@@ -38,9 +38,9 @@ ht-degree: 1%
 
 1. 前往 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
 1. 在左側導覽中選取 **[!UICONTROL 資料串流]**
-1. 選取先前建立的 `Luma Web SDK` 資料流
+1. 選取先前建立的 `Luma Web SDK: Development Environment` 資料流
 
-   ![選取Luma Web SDK資料流](assets/datastream-luma-web-sdk.png)
+   ![選取Luma Web SDK資料流](assets/datastream-luma-web-sdk-development.png)
 
 1. 選取 **[!UICONTROL 新增服務]**
    ![將服務新增至資料流](assets/aam-datastream-addService.png)
