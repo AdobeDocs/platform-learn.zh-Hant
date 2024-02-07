@@ -2,20 +2,20 @@
 title: 建立標籤規則
 description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至Platform Edge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2006'
 ht-degree: 1%
 
 ---
 
 # 建立標籤規則
 
-瞭解如何使用標籤規則，透過XDM物件將事件傳送至Platform Edge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。
+瞭解如何使用標籤規則，透過XDM物件將事件傳送至Platform Edge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。 在Platform Web SDK中，規則是用來傳送事件至Platform Edge Network，並包含正確的XDM欄位。
 
 >[!NOTE]
 >
-> 為了示範，本課程中的練習會以期間使用的範例為基礎進行 [建立身分](create-identities.md) 步驟；傳送XDM事件動作以從上的使用者擷取內容和身分 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html).
+> 為了示範，本課程中的練習會以先前的課程為基礎，從的使用者傳送事件 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
 
 
 ## 學習目標
@@ -29,12 +29,12 @@ ht-degree: 1%
 
 ## 先決條件
 
-您熟悉資料收集標籤和 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)，而且您必須先完成本教學課程中的下列課程：
+您熟悉資料收集標籤和 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 並完成本教學課程中的先前課程：
 
 * [設定XDM結構描述](configure-schemas.md)
 * [設定身分名稱空間](configure-identities.md)
 * [設定資料流](configure-datastream.md)
-* [安裝在標籤屬性中的Web SDK擴充功能](install-web-sdk.md)
+* [安裝 Web SDK 擴充功能](install-web-sdk.md)
 * [建立資料元素](create-data-elements.md)
 * [建立身分](create-identities.md)
 
@@ -59,16 +59,17 @@ ht-degree: 1%
 * **[!UICONTROL 更新變數]** 將資料元素對應至XDM欄位
 * **[!UICONTROL 傳送事件]** 傳送XDM物件至Experience Platform Edge Network
 
-首先，我們使用定義規則 **[!UICONTROL 更新變數]** 動作，定義我們要在網站的每個頁面上傳送之XDM欄位的「全域設定」（例如頁面名稱）。
+首先，我們使用以下專案定義XDM欄位的「全域設定」，我們想要在網站的每個頁面上傳送這些欄位（例如頁面名稱）： **[!UICONTROL 更新變數]** 動作。
 
-然後，我們可以使用定義其他規則 **[!UICONTROL 更新變數]** 此動作會使用只能在特定條件下使用的其他欄位來補充全域XDM欄位（例如，在產品頁面上新增產品詳細資訊）。
+接著，我們定義其他規則，包含 **[!UICONTROL 更新變數]** 以使用只能在特定條件下使用的其他XDM欄位來補充「全域設定」（例如，在產品頁面上新增產品詳細資訊）。
 
 最後，我們將使用另一個規則搭配 **[!UICONTROL 傳送事件]** 此動作會將完整的XDM物件傳送至Adobe Experience Platform Edge Network。
 
+所有這些規則將使用&quot;[!UICONTROL 訂購]」選項。
 
 ### 更新變數規則
 
-#### 全域欄位
+#### 全域設定
 
 若要為全域XDM欄位建立標籤規則：
 
@@ -94,7 +95,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   > 您輸入的數字越高，其觸發的整體作業順序越靠後。
+   > 訂單編號越低，執行的時間就越早。 因此，我們提供「全域組態」低訂購數量。
 
 1. 選取 **[!UICONTROL 保留變更]** 以返回主規則畫面
    ![選取頁面底部觸發器](assets/create-tag-rule-trigger-bottom.png)
@@ -115,6 +116,25 @@ ht-degree: 1%
 > 
 > 您可以對應至個別屬性或整個物件。 在此範例中，您會對應至個別屬性。
 
+1. 找到eventType欄位並加以選取
+
+1. 輸入值 `web.webpagedetails.pageViews`
+
+   >[!TIP]
+   >
+   > 若要瞭解要填入 `eventType` 欄位，您必須移至「綱要」頁面並選取 `eventType` 欄位以檢視右側邊欄上的建議值。
+   > ![「綱要」頁面上的eventType建議值](assets/create-tag-rule-eventType.png)
+
+1. 接下來，尋找 `identityMap` 物件並選取它
+
+1. 將對應至 `identityMap.loginID` 資料元素
+
+   ![更新變數身分對應](assets/create-rule-variable-identityMap.png)
+
+
+   >[!TIP]
+   >
+   > 如果資料元素為Null，XDM欄位將不會納入網路要求中。 因此，當使用者未驗證時，以及 `identityMap.loginID` 資料元素為空， `identityMap` 將不會傳送物件。 這就是我們可在「全域設定」中加以定義的原因。
 
 1. 向下捲動，直到達到 **`web`** 物件
 
@@ -130,45 +150,23 @@ ht-degree: 1%
 
    ![更新變數內容](assets/create-rule-xdm-variable-content.png)
 
-1. 接下來，尋找 `identityMap` 物件並選取它
-
-1. 將對應至 `identityMap.loginID` 資料元素
-
-   ![更新變數身分對應](assets/create-rule-variable-identityMap.png)
-
-1. 接著，尋找eventType欄位並加以選取
-
-1. 輸入值 `web.webpagedetails.pageViews`
-
-   >[!WARNING]
-   >
-   > 此下拉式清單會填入 **`xdm.eventType`** 變數中識別資料中心。 雖然您也可以在此欄位中輸入任意格式的標籤，強烈建議您這麼做 **不要** 因為它對Platform有負面影響。
-
    >[!TIP]
    >
-   > 若要瞭解要填入 `eventType` 欄位，您必須移至「綱要」頁面並選取 `eventType` 欄位以檢視右側邊欄上的建議值。
-
-   >[!TIP]
-   >
-   > 兩者皆非 `web.webPageDetials.pageViews.value` 也不 `eventType` 設為 `web.webpagedetails.pageViews` 是Adobe Analytics將信標設為頁面檢視加以處理的必要專案，如果有標準方式來指定其他下游應用程式的頁面檢視，就十分實用。
-
-   ![更新變數身分對應](assets/create-tag-rule-eventType.png)
+   > 兩者皆非 `eventType` 設為 `web.webpagedetails.pageViews` 也不 `web.webPageDetials.pageViews.value` 是Adobe Analytics將信標設為頁面檢視加以處理的必要專案，如果有標準方式來指定其他下游應用程式的頁面檢視，就十分實用。
 
 
 1. 選取 **[!UICONTROL 保留變更]** 然後 **[!UICONTROL 儲存]** 下一個畫面中要完成規則建立的規則
 
 
-#### 透過更新變數動作使用其他規則擴充XDM物件
+#### 產品頁面欄位
 
-您可以使用 **[!UICONTROL 更新變數]**  以多個循序規則傳送，擴充XDM物件後再傳送至 [!UICONTROL Platform Edge Network].
+現在，開始使用 **[!UICONTROL 更新變數]** 以多個循序規則傳送，擴充XDM物件後再傳送至 [!UICONTROL Platform Edge Network].
 
 >[!TIP]
 >
 >規則順序會決定觸發事件時先執行哪個規則。 如果兩個規則具有相同的事件型別，數字最低的規則會先執行。
 > 
 >![rule-order](assets/set-up-analytics-sequencing.png)
-
-##### 產品頁面欄位
 
 首先，請追蹤Luma產品詳細資料頁面上的產品檢視：
 
@@ -178,13 +176,13 @@ ht-degree: 1%
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
 1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 頁面底部]**
 1. 將其命名 `Core - Page Bottom - order 20`
-1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 這可確保規則在 `all pages global content variables - library loaded - AA (order 1)` 會設定全域內容變數，但在 `all pages send event - library loaded - AA (order 50)` 會傳送XDM事件。
+1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 這可確保規則在 `all pages global content variables - library loaded - AA (order 1)` 以設定全域內容變數。
 
    ![Analytics XDM規則](assets/set-up-analytics-pdp.png)
 
 1. 在 **[!UICONTROL 條件]**，選取 **[!UICONTROL 新增]**
 1. 離開 **[!UICONTROL 邏輯型別]** 作為 **[!UICONTROL 一般]**
-1. 離開 **[!UICONTROL 擴充功能]** 作為 **[!UICONTROL 核心]**
+1. 離開 **[!UICONTROL 副檔名]** 作為 **[!UICONTROL 核心]**
 1. 選取 **[!UICONTROL 條件型別]** 作為 **[!UICONTROL 不含查詢字串的路徑]**
 1. 在右側，啟用 **[!UICONTROL 規則運算式]** 切換
 1. 在 **[!UICONTROL 路徑等於]** 設定 `/products/`. 對於Luma示範網站，這可確保規則僅在產品頁面上觸發
@@ -195,7 +193,7 @@ ht-degree: 1%
 1. 在 **[!UICONTROL 動作]** 選取 **[!UICONTROL 新增]**
 1. 選取 **[!UICONTROL Adobe Experience Platform Web SDK]** 副檔名
 1. 選取 **[!UICONTROL 動作型別]** 作為 **[!UICONTROL 更新變數]**
-1. 向下捲動至 `commerce` 物件並選取「 」以開啟它。
+1. 向下捲動至 `commerce` 物件
 1. 開啟 **[!UICONTROL 產品檢視]** 物件與集合 **[!UICONTROL 值]** 至 `1`
 
    ![設定產品檢視](assets/set-up-analytics-prodView.png)
@@ -204,6 +202,11 @@ ht-degree: 1%
    >
    >在XDM中設定commerce.productViews.value=1會自動對應至 `prodView` Analytics中的事件
 
+1. 向下捲動至 `eventType` 並將其設為 `commerce.productViews`
+
+   >[!NOTE]
+   >
+   >由於此規則的順序較高，因此會覆寫 `eventType` 在「全域設定」規則中設定。 `eventType` 只能包含一個值，建議您使用最大值事件加以設定。
 
 1. 向下捲動至並選取 `productListItems` 陣列
 1. 選取 **[!UICONTROL 提供個別專案]**
@@ -220,16 +223,12 @@ ht-degree: 1%
 
    ![產品SKU XDM物件變數](assets/set-up-analytics-sku.png)
 
-1. 尋找 `eventType` 並將其設為 `commerce.productViews`
-
 1. 選取 **[!UICONTROL 保留變更]**
 
 1. 選取 **[!UICONTROL 儲存]** 儲存規則的方式
 
 
-
-
-### 購物車欄位
+#### 購物車欄位
 
 您可以將整個陣列對應至XDM物件，前提是陣列符合XDM結構描述的格式。 自訂程式碼資料元素 `cart.productInfo` 您透過建立較早的回圈 `digitalData.cart.cartEntries` Luma上的資料層物件，並將其轉譯為 `productListItems` XDM結構描述的物件。
 
@@ -244,7 +243,7 @@ ht-degree: 1%
 >請注意數值變數的轉譯方式，以及資料層中的字串值，例如 `price` 和 `qty` 重新格式化為資料元素中的數字。 這些格式需求對於Platform中的資料完整性十分重要，並在以下期間決定： [設定方案](configure-schemas.md) 步驟。 在此範例中， **[!UICONTROL 數量]** 使用 **[!UICONTROL 整數]** 資料型別。
 > ![XDM結構描述資料型別](assets/set-up-analytics-quantity-integer.png)
 
-現在，我們將陣列對應至XDM物件」
+現在，我們將陣列對應至XDM物件：
 
 
 1. 建立名為的新規則 `ecommerce - cart library loaded - AA (order 20)`
@@ -279,15 +278,13 @@ ht-degree: 1%
    >
    >在XDM中設定commerce.productListViews.value=1會自動對應至 `scView` Analytics中的事件
 
-
+1. 選取 `eventType` 並將設為 `commerce.productListViews`
 
 1. 向下捲動至並選取 **[!UICONTROL productListItems]** 陣列
 
 1. 選取 **[!UICONTROL 提供整個陣列]**
 
 1. 將對應到 **`cart.productInfo`** 資料元素
-
-1. 選取 `eventType` 並將設為 `commerce.productListViews`
 
 1. 選取 **[!UICONTROL 保留變更]**
 
@@ -297,37 +294,33 @@ ht-degree: 1%
 
 **規則名稱**： `ecommerce - checkout library loaded - AA (order 20)`
 
-* **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout.html
-* 將 `eventType` 設為 `commerce.checkouts`
-* 設定 **XDM商務事件**： commerce.checkout.value至 `1`
+1. **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout.html
+1. 將 `eventType` 設為 `commerce.checkouts`
+1. 將 `commerce.checkout.value` 設為 `1`
 
-  >[!TIP]
-  >
-  >這等於設定 `scCheckout` Analytics中的事件
+   >[!TIP]
+   >
+   >這等於設定 `scCheckout` Analytics中的事件
+
 
 **規則名稱**： `ecommerce - purchase library loaded - AA (order 20)`
 
-* **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout/order/thank-you.html
-* 將 `eventType` 設為 `commerce.purchases`
-* 設定 **XDM商務事件**： commerce.purchases.value至 `1`
+1. **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout/order/thank-you.html
+1. 將 `eventType` 設為 `commerce.purchases`
+1. 將 `commerce.purchases.value` 設為 `1`
 
-  >[!TIP]
-  >
-  >這等於設定 `purchase` Analytics中的事件
+   >[!TIP]
+   >
+   >這等於設定 `purchase` Analytics中的事件
 
-擷取所有必要專案時還有其他步驟 `purchase` 事件變數：
-
-1. 開啟 **[!UICONTROL 商務]** 物件
-1. 開啟 **[!UICONTROL 訂購]** 物件
-1. 地圖 **[!UICONTROL purchaseID]** 至 `cart.orderId` 資料元素
-1. 設定 **[!UICONTROL currencyCode]** 至硬式編碼值 `USD`
+1. 設定 `commerce.order.purchaseID` 至 `cart.orderId` 資料元素
+1. 設定 `commerce.order.currencyCode` 至硬式編碼值 `USD`
 
    ![設定Analytics的purchaseID](assets/set-up-analytics-purchase.png)
 
    >[!TIP]
    >
    >這等於設定 `s.purchaseID` 和 `s.currencyCode` Analytics中的變數
-
 
 1. 向下捲動至並選取 **[!UICONTROL productListItems]** 陣列
 1. 選取 **[!UICONTROL 提供整個陣列]**
@@ -339,9 +332,9 @@ ht-degree: 1%
 ![Analytics XDM規則](assets/set-up-analytics-rules.png)
 
 
-### 傳送事件
+### 傳送事件規則
 
-現在您已設定變數，您可以建立第二個規則，使用將XDM物件傳送至Platform Edge Network **[!UICONTROL 傳送事件]** 動作型別。
+現在您已設定變數，您可以建立規則，以使用將完整XDM物件傳送至Platform Edge Network **[!UICONTROL 傳送事件]** 動作。
 
 1. 在右側，選取 **[!UICONTROL 新增規則]** 以建立其他規則
 

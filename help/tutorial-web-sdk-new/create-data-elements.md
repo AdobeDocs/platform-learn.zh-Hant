@@ -2,9 +2,9 @@
 title: 建立資料元素
 description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至該物件。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1189'
 ht-degree: 1%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 1%
 在本課程結束時，您能夠：
 
 * 瞭解將資料層對應至XDM的不同方法
-* 建立資料元素以擷取內容資料
-* 將資料元素對應至XDM物件資料元素
+* 建立資料元素以擷取資料
+* 將資料元素對應至XDM物件
 
 
 ## 先決條件
 
-您已瞭解什麼是資料層，並已完成本教學課程中下列先前的課程：
+您已瞭解什麼是資料層，並已完成本教學課程中的先前課程：
 
 * [設定XDM結構描述](configure-schemas.md)
 * [設定身分名稱空間](configure-identities.md)
@@ -41,9 +41,9 @@ ht-degree: 1%
 
 有多種方式可使用Adobe Experience Platform的標籤功能，將資料從資料層對應至XDM。 以下是三種不同方法的一些優點和缺點：
 
-* [在資料層中實作XDM](create-data-elements.md#implement-xdm-in-the-data-layer)
-* [在資料流中對應到XDM](create-data-elements.md#map-to-xdm-in-the-datastream)
-* [在標籤中對應到XDM](create-data-elements.md#map-data-layer-in-tags)
+1. 在資料層中實作XDM
+1. 在標籤中對應到XDM
+1. 在資料流中對應到XDM
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 ### 在資料層中實作XDM
 
-此方法涉及使用完整定義的XDM物件作為資料層的結構。 然後將整個資料層對應至Adobe標籤中的XDM物件資料元素。 如果您的實作未使用標籤管理程式，此方法可能是最理想的方法，因為您可以使用直接從應用程式傳送資料至XDM。 [XDM sendEvent命令](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). 如果您使用Adobe標籤，可以建立自訂程式碼資料元素，將擷取整個資料層作為傳遞JSON物件至XDM。 然後，您將傳遞JSON對應到「傳送事件動作」中的XDM物件欄位。
+此方法涉及使用完整定義的XDM物件作為資料層的結構。 然後將整個資料層對應到標籤中的XDM物件資料元素。 如果您的實作未使用標籤管理程式，此方法可能是最理想的方法，因為您可以使用直接從應用程式傳送資料至XDM。 [XDM sendEvent命令](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). 如果您使用標籤，可以建立自訂程式碼資料元素，將擷取整個資料層作為傳遞JSON物件至XDM。 然後，您將傳遞JSON對應到「傳送事件動作」中的XDM物件欄位。
 
 以下是資料層使用Adobe使用者端資料層格式的範例：
 
@@ -97,7 +97,7 @@ window.adobeDataLayer.push({
 
 優點
 
-* 略過將個別資料層變數對應至XDM的步驟
+* 消除重新對應至XDM資料層變數的額外步驟
 * 如果您的開發團隊擁有標籤數位行為，可更快速地部署
 
 缺點
@@ -108,41 +108,44 @@ window.adobeDataLayer.push({
 * 無法對第三方畫素使用資料圖層
 * 無法在資料層和XDM之間轉換資料
 
-### 在資料流中對應到XDM
-
-此方法使用資料流設定中內建的功能，稱為 [資料收集的資料準備](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) 和會略過將資料層變數對應至標籤中的XDM。
-
-優點
-
-* 靈活地對應個別變數至XDM
-* 能夠 [計算新值](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) 或 [轉換資料型別](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) 資料層中的資料轉移到XDM之前
-* 善用 [對應UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) 使用指向並按一下UI將來源資料中的欄位對應至XDM
-
-缺點
-
-* 資料層變數無法當作使用者端協力廠商畫素的資料元素使用，但可搭配Adobe標籤事件轉送來使用
-* 無法使用Adobe Experience Platform標籤功能的刮擦功能
-* 如果將資料層對應到標籤和資料流中，維護複雜性就會增加
-
 ### 在標籤中對應資料層
 
 此方法包括將個別資料層變數或資料層物件對應至標籤中的資料元素，並最終對應至XDM。 這是使用標籤管理系統實作的傳統方法。
 
-優點
+#### 優點
 
 * 最靈活的方法，因為您可以在資料進入XDM之前控制個別變數並轉換資料
 * 可使用Adobe標籤觸發器和刮取功能將資料傳遞至XDM
 * 可以將資料元素對應至第三方畫素使用者端
 
-缺點
+#### 缺點
 
-* 實作可能需要更長的時間
+* 將資料層重新建構為資料元素需要時間
+
 
 >[!TIP]
 >
 > Google資料層
 > 
-> 如果您的組織已使用Google Analytics，且您的網站上已有傳統的Google dataLayer物件，您可以使用 [Google資料層擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) 在Adobe標籤中。 這可讓您更快部署Adobe技術，而不需要向IT團隊請求支援。 將Google資料層對應至XDM會遵循上述相同步驟。
+> 如果您的組織已使用Google Analytics，且您的網站上已有傳統的Google dataLayer物件，您可以使用 [Google資料層擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) 在標籤中。 這可讓您更快部署Adobe技術，而不需要向IT團隊請求支援。 將Google資料層對應至XDM會遵循上述相同步驟。
+
+### 在資料流中對應到XDM
+
+此方法使用資料流設定中內建的功能，稱為 [資料收集的資料準備](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) 和會略過將資料層變數對應至標籤中的XDM。
+
+#### 優點
+
+* 靈活地對應個別變數至XDM
+* 能夠 [計算新值](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) 或 [轉換資料型別](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) 資料層中的資料轉移到XDM之前
+* 善用 [對應UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) 使用指向並按一下UI將來源資料中的欄位對應至XDM
+
+#### 缺點
+
+* 資料層變數無法當作使用者端協力廠商畫素的資料元素使用，但可用於事件轉送
+* 無法使用Adobe Experience Platform標籤功能的刮擦功能
+* 如果將資料層對應到標籤和資料流中，維護複雜性就會增加
+
+
 
 >[!IMPORTANT]
 >
@@ -270,7 +273,7 @@ window.adobeDataLayer.push({
 
 在這些步驟結束時，您應該建立下列資料元素：
 
-| 核心擴充功能資料元素 | Platform Web SDK資料元素 |
+| 核心擴充功能資料元素 | Platform Web SDK擴充功能資料元素 |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
 | `cart.productInfo` | |
@@ -278,6 +281,7 @@ window.adobeDataLayer.push({
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
 | `product.productInfo.sku` | |
 | `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
@@ -285,7 +289,7 @@ window.adobeDataLayer.push({
 
 >[!TIP]
 >
->未來 [建立標籤規則](create-tag-rule.md) 課程，您將學習如何 **[!UICONTROL 變數]** 資料元素可讓您使用將多個規則棧疊在標籤中 **[!UICONTROL 更新變數動作型別]**. 接著，您可以使用個別的XDM物件來獨立傳送至Adobe Experience Platform Edge Network **[!UICONTROL 傳送事件動作型別]**.
+>未來 [建立標籤規則](create-tag-rule.md) 課程，您將學習如何 **[!UICONTROL 變數]** 資料元素可讓您使用將多個規則棧疊在標籤中 **[!UICONTROL 更新變數動作型別]**.
 
 設定好這些資料元素後，您就可以開始使用標籤規則將資料傳送至Platform Edge Network了。 但首先，瞭解如何使用Web SDK收集身分資料。
 

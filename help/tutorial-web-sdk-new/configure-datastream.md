@@ -2,9 +2,9 @@
 title: 設定資料流
 description: 瞭解如何啟用資料串流並設定Experience Cloud解決方案。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Datastreams
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '547'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >如果您是Real-Time CDP等平台型應用程式的客戶，我們建議您在本教學課程中使用開發沙箱。 如果沒有，請使用 **[!UICONTROL Prod]** 沙箱。
+   >如果您是Real-Time CDP或Journey Optimizer等平台型應用程式的客戶，我們建議您在本教學課程中使用開發沙箱。 如果沒有，請使用 **[!UICONTROL Prod]** 沙箱。
 
 1. 前往 **[!UICONTROL 資料串流]** 在左側導覽列中
 1. 選取 **[!UICONTROL 新增資料串流]** 在熒幕的右側。
@@ -52,13 +52,6 @@ ht-degree: 3%
 1. 選取 **[!UICONTROL 儲存]**
 
    ![建立資料串流](assets/datastream-create-new-datastream.png)
-
-   >[!AVAILABILITY]
-   >
-   >日後會將對應功能合併至本教學課程中。
-
-
-
 
 在下一個畫面中，您可以將Adobe應用程式等服務新增至資料流，但此時您無法在教學課程中新增任何服務。 您將在稍後的課程中執行此動作 [設定Experience Platform](setup-experience-platform.md)， [設定Analytics](setup-analytics.md)， [設定Audience Manager](setup-audience-manager.md)， [設定目標](setup-target.md)，或 [事件轉送](setup-event-forwarding.md).
 
@@ -76,9 +69,9 @@ ht-degree: 3%
 1. 首先，您需在資料流設定中定義資料流覆寫。 您必須針對要覆寫的Adobe應用程式執行此動作。
 1. 接著，您會透過Web SDK傳送事件動作或Web SDK標籤擴充功能中的設定，將覆寫傳送至Edge Network。
 
-請參閱 [資料流設定會覆寫檔案](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) 以取得有關如何覆寫資料流設定的詳細說明。
+在 [設定Adobe Analytics](setup-analytics.md) 課程會使用Platform Web SDK傳送事件動作覆寫頁面的報表套裝。
 
-在設定Adobe Analytics課程中，您 [使用Platform Web SDK傳送事件動作覆寫頁面的報表套裝](setup-analytics.md).
+請參閱 [資料流設定會覆寫檔案](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) 以取得有關如何覆寫資料流設定的詳細說明。
 
 您現在已準備好在標籤屬性中安裝Platform Web SDK擴充功能！
 

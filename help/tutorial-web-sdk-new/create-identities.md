@@ -2,9 +2,9 @@
 title: 建立身分
 description: 瞭解如何在XDM中建立身分識別，並使用身分對應資料元素來擷取使用者ID。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 在本課程結束時，您能夠：
 
-* 瞭解Experience CloudID (ECID)和第一方裝置ID之間的差異
+* 瞭解Experience CloudID (ECID)和第一方裝置ID (FPID)之間的關係
 * 瞭解未驗證與已驗證ID之間的差異
 * 建立身分對應資料元素
 
 ## 先決條件
 
-您已瞭解資料層是什麼，並熟悉 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 資料層，並瞭解如何參照標籤中的資料元素。 您必須完成本教學課程中下列先前的課程：
+您已瞭解資料層是什麼，並熟悉 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 資料層，並瞭解如何參照標籤中的資料元素。 您必須完成本教學課程中先前的課程：
 
 * [設定XDM結構描述](configure-schemas.md)
 * [設定身分名稱空間](configure-identities.md)
@@ -55,11 +55,11 @@ ECID是使用第一方Cookie和Platform Edge Network的組合來設定。 根據
 
 ## 第一方裝置識別碼(FPID)
 
-FPID是第一方Cookie _您使用自己的網頁伺服器設定_ 然後使用哪個Adobe來設定ECID，而不是使用Web SDK設定的第一方Cookie。 當第一方Cookie是使用運用DNS A記錄（適用於IPv4）或AAAA記錄（適用於IPv6）的伺服器（而非DNS CNAME或JavaScript程式碼）設定時，其最有效。
+FPID是第一方Cookie _您使用自己的網頁伺服器設定_ 然後使用哪個Adobe來建立ECID，而不是使用Web SDK設定的第一方Cookie。 雖然瀏覽器支援可能有所不同，但如果第一方Cookie是由運用DNS A記錄（適用於IPv4）或AAAA記錄（適用於IPv6）的伺服器所設定，而不是由DNS CNAME或JavaScript程式碼設定，則這些支援通常更耐用。
 
 設定FPID Cookie後，就能在收集事件資料時擷取其值並傳送至Adobe。 收集的FPID會作為種子，在Platform Edge Network上產生ECID，這繼續是Adobe Experience Cloud應用程式中的預設識別碼。
 
-深入瞭解 [Platform Web SDK中的第一方裝置ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=zh-Hant)
+雖然本教學課程中不使用FPID，但建議您在自己的網頁SDK實作中使用FPID。 深入瞭解 [Platform Web SDK中的第一方裝置ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=zh-Hant)
 
 >[!CAUTION]
 >
@@ -69,7 +69,7 @@ FPID是第一方Cookie _您使用自己的網頁伺服器設定_ 然後使用哪
 
 如上所述，使用Platform Web SDK時，系統會Adobe為您數位財產的所有訪客指派ECID。 如此，ECID就會成為追蹤未驗證數位行為的預設身分識別。
 
-您也可以傳送已驗證的使用者ID，讓Platform能夠建立 [身分圖](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=zh-Hant)，Target可以設定其協力廠商。 這是透過使用 [!UICONTROL 身分對應] 資料元素型別。
+您也可以傳送已驗證的使用者ID，讓Platform能夠建立 [身分圖](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=zh-Hant) 而Target可以設定 [第三方Id](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html). 這是透過使用 [!UICONTROL 身分對應] 資料元素型別。
 
 若要建立 [!UICONTROL 身分對應] 資料元素：
 
@@ -133,12 +133,17 @@ FPID是第一方Cookie _您使用自己的網頁伺服器設定_ 然後使用哪
 
 在這些步驟結束時，您應該建立下列資料元素：
 
-| 核心擴充功能資料元素 | Platform Web SDK資料元素 |
+| 核心擴充功能資料元素 | Platform Web SDK擴充功能資料元素 |
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` | `xdm.variable.content` |
+| `cart.productInfo` | `xdm.variable.content` |
+| `cart.productInfo.purchase` | |
+| `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 

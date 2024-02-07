@@ -2,7 +2,7 @@
 title: 安裝及設定Adobe Experience Platform Web SDK標籤擴充功能
 description: 瞭解如何在資料收集介面中安裝和設定Platform Web SDK標籤擴充功能。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -11,7 +11,7 @@ ht-degree: 12%
 
 # 安裝Adobe Experience Platform Web SDK標籤擴充功能
 
-瞭解如何安裝和設定Platform Web SDK標籤擴充功能。 實作Web SDK最簡單的方法是使用Adobe的標籤管理員，即tags （先前稱為Launch）。 Platform Web SDK標籤擴充功能為 _僅限標籤副檔名_ 必須將資料傳送至 _所有Adobe Experience Cloud應用程式_，包括 [Analytics](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和Journey Optimizer！
+瞭解如何安裝和設定Platform Web SDK標籤擴充功能。 實作Web SDK最簡單的方法是使用Adobe的標籤管理員，即tags （先前稱為Launch）。 Platform Web SDK標籤擴充功能為 _僅限標籤副檔名_ 必須將資料傳送至 _所有Adobe Experience Cloud應用程式_，包括 [Analytics](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、 Real-time Customer Data Platform和 [Journey Optimizer](journey-optimizer/setup-web-channel.md)！
 
 ## 學習目標
 
