@@ -3,29 +3,16 @@ title: 資料收集教學課程
 description: 讓您成為資料收集進階使用者的作法影片和教學課程
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
+source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 37%
+source-wordcount: '165'
+ht-degree: 32%
 
 ---
 
 # 資料收集教學課程
 
 Data Collection是新一代Adobe的網站標籤與行動SDK管理功能。 資料收集可讓客戶透過簡單的方式部署及管理必要的分析、行銷及廣告解決方案，以便支援相關客戶體驗。 使用這些影片和教學課程來協助學習此關鍵技術。
-
-<div id="whats-new-section">
-
-## 新增功能
-
-* **[伺服器API總覽（影片）](server-api/overview.md)**
-  *使用安全、經過驗證的伺服器API傳送資料。*
-* **[在行動應用程式中實作Adobe Experience Cloud （教學課程）](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)**
-  *使用Mobile SDK實作Experience Cloud應用程式。*
-* **[移動使用者端標籤（教學課程）](event-forwarding/consider-moving-tags.md)**
-  *考慮將使用者端標籤移動到事件轉送。*
-
-</div>
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
