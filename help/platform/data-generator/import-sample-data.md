@@ -1,21 +1,20 @@
 ---
-title: 將範例資料匯入 Adobe Experience Platform
+title: 將範例資料匯入Adobe Experience Platform
 description: 瞭解如何使用一些範例資料設定Experience Platform沙箱環境。
 feature: API
 role: Developer
 level: Experienced
 jira: KT-7349
-thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 6%
+source-wordcount: '1776'
+ht-degree: 3%
 
 ---
 
-# 將範例資料匯入 Adobe Experience Platform
+# 將範例資料匯入Adobe Experience Platform
 
 瞭解如何設定包含範例資料的 Experience Platform 沙箱環境。您可以使用 Postman 集合來建立欄位群組、綱要、資料集，然後將範例資料匯入 Experience Platform。
 
