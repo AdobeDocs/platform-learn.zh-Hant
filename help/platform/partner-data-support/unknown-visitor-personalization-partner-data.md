@@ -3,12 +3,13 @@ title: 使用合作夥伴協助的訪客辨識功能，為未知訪客提供個�
 description: 瞭解如何從收集第三方屬性 [!DNL Adobe Experience Platform Web SDK] 使用合作夥伴協助的訪客辨識功能，為未知的訪客提供個人化的現場體驗。
 feature: Integrations
 topic: Integrations
+solution: Real-Time Customer Data Platform
 role: Architect, Data Architect, User
 level: Intermediate
 jira: KT-13831
 last-substantial-update: 2023-08-23T00:00:00Z
 exl-id: 87600927-d5bd-4edf-9332-f401b01c782f
-source-git-commit: 3e8f68c89b5ab94045ec1120a95b1e2cc1d1c97a
+source-git-commit: c0ad9603e3e954eb8438418062657f41b3d91b67
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 0%
