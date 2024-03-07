@@ -3,10 +3,11 @@ title: 建置並發佈標籤庫
 description: 瞭解如何在標籤屬性中建立程式庫，並透過開發、測試和生產環境推送變更。
 feature: Tags
 level: Beginner
-jira: KT-3531
+duration: 674
 last-substantial-update: 2024-02-23T00:00:00Z
+jira: KT-3531
 exl-id: 877b92e1-9b93-4abe-99e4-f80a3e353681
-source-git-commit: 1c939857f362542cf88dff3d1477cd71fa5c9389
+source-git-commit: 9c655af2026a4d969ebc42ab5ec219547d50c257
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 1%

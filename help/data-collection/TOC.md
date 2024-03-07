@@ -6,9 +6,9 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
+source-git-commit: 0df82796a5885954102f7496fa043c0f3ef4b89e
 workflow-type: tm+mt
-source-wordcount: '188'
+source-wordcount: '190'
 ht-degree: 26%
 
 ---
@@ -25,6 +25,7 @@ ht-degree: 26%
    + [新增和設定擴充功能](tags/add-and-configure-extensions.md)
    + [建立資料元素](tags/create-data-elements.md)
    + [建置規則](tags/build-rules.md)
+   + [棧疊規則](tags/stack-rules.md)
    + [建置及發佈程式庫](tags/build-and-publish-a-library.md)
    + [使用Web SDK在網站中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant){target="_blank"}
    + [使用解決方案SDK在網站中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
