@@ -3,18 +3,23 @@ title: 使用Experience Platform Web SDK設定Adobe Analytics
 description: 瞭解如何使用Experience Platform Web SDK設定Adobe Analytics。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '3545'
-ht-degree: 1%
+source-wordcount: '3473'
+ht-degree: 0%
 
 ---
 
 # 使用Platform Web SDK設定Adobe Analytics
 
+
+>[!CAUTION]
+>
+>我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
+
 瞭解如何使用設定Adobe Analytics [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)，建立標籤規則以將資料傳送至Adobe Analytics，並驗證Analytics是否如預期擷取資料。
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) 是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
+[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hant) 是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
 
 ## 學習目標
 
@@ -263,8 +268,8 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 1. 選取以開啟 **[!UICONTROL 專案1]**
 1. 將下列XDM變數對應至資料元素
 
-   * **`productListItems.item1.SKU`** 到 `%product.productInfo.sku%`
-   * **`productListItems.item1.name`** 到 `%product.productInfo.title%`
+   * **`productListItems.item1.SKU`** 至 `%product.productInfo.sku%`
+   * **`productListItems.item1.name`** 至 `%product.productInfo.title%`
 
    ![產品SKU XDM物件變數](assets/data-element-xdm-productlistitem-sku.png)
 
@@ -554,7 +559,7 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 1. 重複驗證步驟，您應該會看到即時報表據此填入資料。
 
-   **頁面檢視**
+   **頁面瀏覽數**
    ![即時內容](assets/analytics-real-time-content.png)
 
    **產品檢視**

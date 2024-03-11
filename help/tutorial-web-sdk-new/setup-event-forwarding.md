@@ -2,9 +2,9 @@
 title: 設定事件轉送屬性
 description: 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1861'
 ht-degree: 2%
 
 ---
@@ -185,8 +185,8 @@ ht-degree: 2%
 
    >[!TIP]
    >
-   使用您自己的網站時，您可以使用網頁瀏覽器網路工具找到XDM物件路徑，並篩選 `/ee` 要求，開啟信標 [!UICONTROL **裝載**] 並向下鑽研至您要尋找的變數。 然後以滑鼠右鍵按一下，並選取「複製屬性路徑」。 以下是瀏覽器檢視區高度的範例：
-   ![事件轉送XDM路徑](assets/event-forwarding-xdm-path.png)
+   >使用您自己的網站時，您可以使用網頁瀏覽器網路工具找到XDM物件路徑，並篩選 `/ee` 要求，開啟信標 [!UICONTROL **裝載**] 並向下鑽研至您要尋找的變數。 然後以滑鼠右鍵按一下，並選取「複製屬性路徑」。 以下是瀏覽器檢視區高度的範例：
+   > ![事件轉送XDM路徑](assets/event-forwarding-xdm-path.png)
 
 ### 安裝Adobe Cloud Connector擴充功能
 
@@ -280,7 +280,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-如果您尚未將測試和生產事件轉送屬性連結至資料流，您會看到開發環境是建立程式庫的唯一選項。
+>如果您尚未將測試和生產事件轉送屬性連結至資料流，您會看到開發環境是建立程式庫的唯一選項。
 
 ![儲存事件轉送規則](assets/event-forwarding-initial-build.png)
 
@@ -323,4 +323,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,9 +2,9 @@
 title: 建立標籤規則
 description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至Platform Edge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2009'
 ht-degree: 1%
 
 ---
@@ -40,15 +40,16 @@ ht-degree: 1%
 
 ## 命名慣例
 
-若要更妥善地管理標籤中的規則，建議遵循標準命名慣例。 本教學課程使用三部分命名慣例：
+若要更妥善地管理標籤中的規則，建議遵循標準命名慣例。 本教學課程使用五部分命名慣例：
 
-* [**位置**] - [**事件**] - [**工具**] (**序列**)
+* [**位置**] - [**事件**] - [**用途**] - [**工具**] - [**訂購**]
 
 其中；
 
 1. **位置** 是規則觸發所在網站的一或多個頁面
 1. **事件** 是規則的觸發器
-1. **工具** 是該規則之動作步驟中使用的特定應用程式
+1. **用途** 是規則執行的主要動作
+1. **工具** 是用於該規則之動作步驟中的特定應用程式或應用程式，Web SDK很少使用這種方法
 1. **序列** 是規則相對於其他規則所應引發的順序
 <!-- minor update -->
 
@@ -59,13 +60,19 @@ ht-degree: 1%
 * **[!UICONTROL 更新變數]** 將資料元素對應至XDM欄位
 * **[!UICONTROL 傳送事件]** 傳送XDM物件至Experience Platform Edge Network
 
-首先，我們使用以下專案定義XDM欄位的「全域設定」，我們想要在網站的每個頁面上傳送這些欄位（例如頁面名稱）： **[!UICONTROL 更新變數]** 動作。
+在本課程的其餘部分中，我們會：
 
-接著，我們定義其他規則，包含 **[!UICONTROL 更新變數]** 以使用只能在特定條件下使用的其他XDM欄位來補充「全域設定」（例如，在產品頁面上新增產品詳細資訊）。
+1. 建立規則以定義XDM欄位的「全域設定」(使用 [!UICONTROL 更新變數] ，我們想在網站的每個頁面上（例如頁面名稱）使用 **[!UICONTROL 更新變數]** 動作。
 
-最後，我們將使用另一個規則搭配 **[!UICONTROL 傳送事件]** 此動作會將完整的XDM物件傳送至Adobe Experience Platform Edge Network。
+1. 建立覆寫我們「全域設定」或貢獻其他XDM欄位的其他規則(使用 [!UICONTROL 更新變數] 同樣地)，這些只與特定條件相關（例如，在產品頁面上新增產品詳細資訊）。
+
+1. 使用建立另一個規則 **[!UICONTROL 傳送事件]** 此動作會將完整的XDM物件傳送至Adobe Experience Platform Edge Network。
 
 所有這些規則將使用&quot;[!UICONTROL 訂購]」選項。
+
+這部影片會概述此程式：
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
 ### 更新變數規則
 
@@ -81,24 +88,22 @@ ht-degree: 1%
 
    ![建立規則](assets/rules-create.png)
 
-1. 將規則命名為 `all pages global content variables - library loaded - AA (order 1)`
+1. 將規則命名為 `all pages - library loaded - set global variables - 1`
 
 1. 在 **[!UICONTROL 活動]** 區段，選取 **[!UICONTROL 新增]**
 
    ![為規則命名並新增事件](assets/rule-name-new.png)
 
-1. 使用 **[!UICONTROL 核心擴充功能]** 並選取 `Page Bottom` 作為 **[!UICONTROL 事件型別]**
+1. 使用 **[!UICONTROL 核心擴充功能]** 並選取 **[!UICONTROL 程式庫已載入（頁面頂端）]** 作為 **[!UICONTROL 事件型別]**
 
-1. 在 **[!UICONTROL 名稱]** 欄位，將其命名 `Core - Page Bottom - order 1`. 這可協助您以有意義的名稱說明觸發器。
-
-1. 選取 **[!UICONTROL 進階]** 下拉式清單並輸入 `1` 在 **[!UICONTROL 訂購]**
+1. 選取 **[!UICONTROL 進階]** 下拉式清單並輸入 `1` 作為 **[!UICONTROL 訂購]**
 
    >[!NOTE]
    >
    > 訂單編號越低，執行的時間就越早。 因此，我們提供「全域組態」低訂購數量。
 
 1. 選取 **[!UICONTROL 保留變更]** 以返回主規則畫面
-   ![選取頁面底部觸發器](assets/create-tag-rule-trigger-bottom.png)
+   ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-bottom.png)
 
 1. 在 **[!UICONTROL 動作]** 區段，選取 **[!UICONTROL 新增]**
 
@@ -122,7 +127,7 @@ ht-degree: 1%
 
    >[!TIP]
    >
-   > 若要瞭解要填入 `eventType` 欄位，您必須移至「綱要」頁面並選取 `eventType` 欄位以檢視右側邊欄上的建議值。
+   > 若要瞭解要填入 `eventType` 欄位，您必須移至「綱要」頁面並選取 `eventType` 欄位以檢視右側邊欄上的建議值。 如有需要，您也可以輸入新值。
    > ![「綱要」頁面上的eventType建議值](assets/create-tag-rule-eventType.png)
 
 1. 接下來，尋找 `identityMap` 物件並選取它
@@ -160,7 +165,7 @@ ht-degree: 1%
 
 #### 產品頁面欄位
 
-現在，開始使用 **[!UICONTROL 更新變數]** 以多個循序規則傳送，擴充XDM物件後再傳送至 [!UICONTROL Platform Edge Network].
+現在，開始使用 **[!UICONTROL 更新變數]** 此外，排序規則會先擴充XDM物件，再傳送至 [!UICONTROL Platform Edge Network].
 
 >[!TIP]
 >
@@ -171,12 +176,11 @@ ht-degree: 1%
 首先，請追蹤Luma產品詳細資料頁面上的產品檢視：
 
 1. 選取 **[!UICONTROL 新增規則]**
-1. 將其命名  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
+1. 將其命名  [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
 1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
-1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 頁面底部]**
-1. 將其命名 `Core - Page Bottom - order 20`
-1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 這可確保規則在 `all pages global content variables - library loaded - AA (order 1)` 以設定全域內容變數。
+1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入（頁面頂端）]**
+1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 這可確保規則在 `all pages - library loaded - set global variables - 1` 會設定全域組態。
 
    ![Analytics XDM規則](assets/set-up-analytics-pdp.png)
 
@@ -246,11 +250,10 @@ ht-degree: 1%
 現在，我們將陣列對應至XDM物件：
 
 
-1. 建立名為的新規則 `ecommerce - cart library loaded - AA (order 20)`
+1. 建立名為的新規則 `ecommerce - library loaded - set shopping cart variables - 20`
 1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
-1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 頁面底部]**
-1. 將其命名 `Core - Page Bottom - order 20`
+1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入（頁面頂端）]**
 1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`
 1. 選取 **[!UICONTROL 保留變更]**
 
@@ -292,7 +295,7 @@ ht-degree: 1%
 
 建立兩個其他規則，用於遵循相同模式的結帳和購買，但有下列差異：
 
-**規則名稱**： `ecommerce - checkout library loaded - AA (order 20)`
+**規則名稱**： `ecommerce  - library loaded - set checkout variables - 20`
 
 1. **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout.html
 1. 將 `eventType` 設為 `commerce.checkouts`
@@ -303,7 +306,7 @@ ht-degree: 1%
    >這等於設定 `scCheckout` Analytics中的事件
 
 
-**規則名稱**： `ecommerce - purchase library loaded - AA (order 20)`
+**規則名稱**： `ecommerce - library loaded - set purchase variables -  20`
 
 1. **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout/order/thank-you.html
 1. 將 `eventType` 設為 `commerce.purchases`
@@ -338,18 +341,16 @@ ht-degree: 1%
 
 1. 在右側，選取 **[!UICONTROL 新增規則]** 以建立其他規則
 
-1. 將規則命名為 `all pages send event - library loaded - AA (order 50)`
+1. 將規則命名為 `all pages - library loaded - set send event - 50`
 
 1. 在 **[!UICONTROL 活動]** 區段，選取 **[!UICONTROL 新增]**
 
-1. 使用 **[!UICONTROL 核心擴充功能]** 並選取 `Page Bottom` 作為 **[!UICONTROL 事件型別]**
-
-1. 在 **[!UICONTROL 名稱]** 欄位，將其命名 `Core - Page Bottom - order 50`. 這可協助您以有意義的名稱說明觸發器。
+1. 使用 **[!UICONTROL 核心擴充功能]** 並選取 `Library Loaded (Page Top)` 作為 **[!UICONTROL 事件型別]**
 
 1. 選取 **[!UICONTROL 進階]** 下拉式清單並輸入 `50` 在 **[!UICONTROL 訂購]**. 這將確保第二個規則會在您設定為觸發的第一個規則之後觸發 `1`.
 
 1. 選取 **[!UICONTROL 保留變更]** 以返回主規則畫面
-   ![選取頁面底部觸發器](assets/create-tag-rule-trigger-bottom-send.png)
+   ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-bottom-send.png)
 
 1. 在 **[!UICONTROL 動作]** 區段，選取 **[!UICONTROL 新增]**
 
@@ -383,7 +384,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >    除了Adobe Experience Platform Web SDK擴充功能和 `all pages global content variables - library loaded - AA (order 50)` 規則中，您會看見前述課程中建立的標籤元件。 核心擴充功能包含所有Web標籤屬性所需的基本JavaScript。
+   >    您應會看見先前課程中建立的所有標籤元件。 核心擴充功能包含所有Web標籤屬性所需的基本JavaScript。
 
 1. 選取 **[!UICONTROL 儲存並為開發環境建置]**
 

@@ -1,10 +1,10 @@
 ---
 title: 使用Web SDK將資料串流至Adobe Experience Platform
 description: 瞭解如何使用Web SDK將網頁資料串流到Adobe Experience Platform。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 5%
+source-wordcount: '1587'
+ht-degree: 4%
 
 ---
 
@@ -13,7 +13,6 @@ ht-degree: 5%
 瞭解如何使用Platform Web SDK將網頁資料串流至Adobe Experience Platform。
 
 Experience Platform是所有新Experience Cloud應用程式的骨幹，例如Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer。 這些應用程式在設計上使用Platform Web SDK作為收集網頁資料的最佳方法。
-
 
 ![Web SDK和Adobe Experience Platform圖表](assets/dc-websdk-aep.png)
 
@@ -30,29 +29,17 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ## 先決條件
 
-您應已完成下列課程：
+若要完成本課程，您必須先：
 
-* 此 **初始設定** 課程：
-   * [設定XDM結構描述](configure-schemas.md)
-   * [設定資料流](configure-datastream.md)
-   * [設定身分名稱空間](configure-identities.md)
-
-* 此 **標籤設定** 課程：
-   * [安裝 Web SDK 擴充功能](install-web-sdk.md)
-   * [建立資料元素](create-data-elements.md)
-   * [建立身分](create-identities.md)
-   * [建立標籤規則](create-tag-rule.md)
+* 擁有Adobe Experience Platform應用程式的存取權，例如Real-time Customer Data Platform、Journey Optimizer或Customer Journey Analytics
+* 完成本教學課程之初始設定和標籤設定區段中先前的課程。
 
 
 ## 建立資料集
 
 所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 A [資料集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) 是用於資料集合的儲存和管理結構，通常是包含結構（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
 
-在本練習中，您將建立資料集以追蹤的內容和電子商務詳細資訊， [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->您必須已建立 `Luma Web Event Data` 結構描述，如上一課中所述， [設定XDM結構描述](configure-schemas.md).
+讓我們為您的Luma Web事件資料設定資料集：
 
 
 1. 前往 [Experience Platform介面](https://experience.adobe.com/platform/)
@@ -211,7 +198,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 > * 首先，將一些資料內嵌到資料集中。
 > * 解決資料擷取程式期間發生的任何問題（例如資料驗證或對應問題）。
 > * 為設定檔啟用資料集和結構描述
-> * 重新內嵌資料
+> * 視需要重新內嵌資料
 
 
 ### 驗證設定檔

@@ -3,14 +3,19 @@ title: 結論和後續步驟
 description: 完成教學課程後的後續動作
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '421'
-ht-degree: 8%
+source-wordcount: '427'
+ht-degree: 3%
 
 ---
 
 # 結論和後續步驟
+
+
+>[!CAUTION]
+>
+>我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
 恭喜！您已完成「使用Web SDK實作Adobe Experience Cloud」教學課程！
 

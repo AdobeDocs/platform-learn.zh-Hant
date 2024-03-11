@@ -2,22 +2,16 @@
 title: 建立資料元素
 description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至該物件。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---
 
 # 建立資料元素
 
-瞭解如何在標籤中建立資料元素，以用於上的內容、商業和身分資料 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html). 然後，和使用Variable資料元素型別填入XDM結構描述中的欄位。
-
-
->[!IMPORTANT]
->
->本課程的資料來自 `[!UICONTROL digitalData]` Luma網站上的資料層。 若要檢視資料層，請開啟您的開發人員主控台，然後輸入 `[!UICONTROL digitalData]` 以檢視完整的可用資料層。![digitalData資料層](assets/data-element-data-layer.png)
-
+瞭解如何在標籤中建立資料元素，以用於上的內容、商業和身分資料 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html). 然後以Platform Web SDK擴充功能變數資料元素型別填入XDM結構描述中的欄位。
 
 ## 學習目標
 
@@ -37,9 +31,15 @@ ht-degree: 1%
 * [設定資料流](configure-datastream.md)
 * [安裝在標籤屬性中的Web SDK擴充功能](install-web-sdk.md)
 
+
+>[!IMPORTANT]
+>
+>本課程的資料來自 `[!UICONTROL digitalData]` Luma網站上的資料層。 若要檢視資料層，請開啟您的開發人員主控台，然後輸入 `[!UICONTROL digitalData]` 以檢視完整的可用資料層。![digitalData資料層](assets/data-element-data-layer.png)
+
+
 ## 資料層方法
 
-有多種方式可使用Adobe Experience Platform的標籤功能，將資料從資料層對應至XDM。 以下是三種不同方法的一些優點和缺點：
+有多種方式可使用Adobe Experience Platform的標籤功能，將資料從資料層對應至XDM。 以下是三種不同方法的一些優點和缺點。 如有需要，可以合併方法：
 
 1. 在資料層中實作XDM
 1. 在標籤中對應到XDM
@@ -104,7 +104,7 @@ window.adobeDataLayer.push({
 
 * 完全依賴開發團隊和開發週期來更新要傳送到XDM的資料
 * XDM從資料層接收確切的裝載，因此彈性有限
-* 無法使用標籤內建功能，例如刮取、持續性、快速部署功能
+* 無法使用內建標籤功能，例如刮取、持續性、快速部署功能
 * 無法對第三方畫素使用資料圖層
 * 無法在資料層和XDM之間轉換資料
 

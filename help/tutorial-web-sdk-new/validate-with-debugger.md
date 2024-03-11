@@ -2,9 +2,9 @@
 title: 使用Experience Platform Debugger驗證Web SDK實作
 description: 瞭解如何使用Adobe Experience Platform Debugger驗證您的Platform Web SDK實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Debugger
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,6 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 * 載入替代標籤程式庫
 * 驗證使用者端XDM事件是否如預期般擷取及傳送資料給Platform Edge Network
 * 啟用Edge Trace以檢視Platform Edge Network傳送的伺服器端要求
-* 啟動Adobe Experience Platform保證工作階段，檢視Platform Edge Network產生的Experience CloudID
 
 ## 先決條件
 

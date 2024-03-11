@@ -3,14 +3,19 @@ title: 設定身分名稱空間
 description: 瞭解如何設定身分識別名稱空間以搭配Adobe Experience Platform Web SDK使用。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 12%
+source-wordcount: '694'
+ht-degree: 7%
 
 ---
 
 # 設定身分名稱空間
+
+
+>[!CAUTION]
+>
+>我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
 瞭解如何設定身分識別名稱空間以搭配Adobe Experience Platform Web SDK使用。
 
@@ -93,7 +98,7 @@ ht-degree: 12%
 
 ## 其他資源
 
-* [Identity Service 文件](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant)
+* [Identity Service檔案](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant)
 * [身分識別服務API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 現在身分已準備就緒，可以設定資料流。

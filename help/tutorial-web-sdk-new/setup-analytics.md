@@ -2,9 +2,9 @@
 title: 使用Experience Platform Web SDK設定Adobe Analytics
 description: 瞭解如何使用Experience Platform Web SDK設定Adobe Analytics。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Analytics
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '4681'
+source-wordcount: '3078'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 瞭解如何使用設定Adobe Analytics [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)，建立標籤規則以將資料傳送至Adobe Analytics，並驗證Analytics是否如預期擷取資料。
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) 是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
+[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hant) 是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
 
 ![Web SDK至Adobe Analytics圖表](assets/dc-websdk-aa.png)
 
@@ -37,84 +37,17 @@ ht-degree: 0%
 
 ## 先決條件
 
-您熟悉標籤、Adobe Analytics以及 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 登入和購物功能。
+若要完成本課程，您必須先：
 
-您至少需要一個測試/開發報表套裝ID。 如果您沒有任何可用於本教學課程的測試/開發報表套裝， [請建立一個](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+* 熟悉並存取Adobe Analytics。
 
-您必須完成教學課程前幾節的所有步驟：
+* 至少要有一個測試/開發報表套裝ID。 如果您沒有任何可用於本教學課程的測試/開發報表套裝， [請建立一個](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
 
-* 初始設定
-   * [設定XDM結構描述](configure-schemas.md)
-   * [設定身分名稱空間](configure-identities.md)
-   * [設定資料流](configure-datastream.md)
-* 標籤設定
-   * [安裝 Web SDK 擴充功能](install-web-sdk.md)
-   * [建立資料元素](create-data-elements.md)
-   * [建立身分](create-identities.md)
-   * [建立標籤規則](create-tag-rule.md)
-   * [使用Adobe Experience Platform Debugger進行驗證](validate-with-debugger.md)
-
-您也需要 [啟用使用者存取Adobe Experience Platform保證](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) 以便您可以使用Adobe Experience Platform保證來驗證Adobe Analytics資料。 （如果您有存取結構描述、身分名稱空間和資料串流，即表示您已經可以存取Assurance）
-
-## XDM結構描述和Analytics變數
-
-恭喜！您已在「 」中設定與Adobe Analytics相容的結構描述 [設定結構描述](configure-schemas.md) 課程！ 不過，對於Adobe Analytics，有兩個一般方法可為Adobe Analytics定義XDM。
-
-<!-- Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics, mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
-
-1. Automatically mapped variables using reserved XDM fields
-1. Manually mapped variables using Analytics Processing Rules
-
-To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. -->
-
-1. **與產品無關的XDM**：維護語意索引鍵值配對XDM結構描述並使用 [Adobe Analytics處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) 將XDM欄位對應至eVar、prop等。 語意XDM結構描述是指欄位名稱本身具有意義。 例如，欄位名稱 `web.webPageDetails.pageName` 比說更有意義 `prop1` 或 `evar3`.
-
-   >[!IMPORTANT]
-   >
-   > XDM結構描述中的所有欄位，都可供Adobe Analytics做為前置詞為的內容資料變數使用 `a.x.`. 例如, `a.x.web.webinteraction.region`
-
-1. **Analytics專屬的XDM**：在XDM結構描述中使用專門建置的Adobe Analytics欄位群組，稱為 `Adobe Analytics ExperienceEvent Template`
-
-Adobe發現客戶偏好的方法是 **Analytics專屬的XDM**，因為它會略過Adobe Analytics處理規則介面中的對應步驟。 本課程中的步驟使用 **Analytics專屬的XDM** 方法。
-
-## 將XDM對應至Adobe Analytics
-
-許多XDM欄位會自動對應至Analytics變數。
-
-在中建立的綱要 [設定結構描述](configure-schemas.md) 課程包含一些自動對應至Analytics變數的專案，如下表所述：
-
-| XDM至Analytics自動對應的變數 | Adobe Analytics變數 |
-|-------|---------|
-| `identitymap.ecid.[0].id` | mid |
-| `web.webPageDetails.name` | s.pageName |
-| `web.webPageDetails.server` | s.server |
-| `web.webPageDetails.siteSection` | s.channel |
-| `commerce.productViews.value` | prodView |
-| `commerce.productListViews.value` | scView |
-| `commerce.checkouts.value` | scCheckout |
-| `commerce.purchases.value` | 購買 |
-| `commerce.order.currencyCode` | s.currencyCode |
-| `commerce.order.purchaseID` | s.purchaseID |
-| `productListItems[].SKU` | s.products=；product name；；；；； (primary - see note below) |
-| `productListItems[].name` | s.products=；product name；；；；； （備援 — 請參閱下方的注意事項） |
-| `productListItems[].quantity` | s.products=；；product quantity；；； |
-| `productListItems[].priceTotal` | s.product=；；；product price； |
-
->[!NOTE]
->
->Analytics產品字串的個別區段是透過下的不同XDM變數設定的。 `productListItems` 物件。
->自2022年8月18日起， `productListItems[].SKU` 優先將對應至s.products變數中的產品名稱。
->設定為的值 `productListItems[].name` 只有在下列情況下，才會對應至產品名稱 `productListItems[].SKU` 不存在。 否則，它將會取消對應，並可在內容資料中使用。
->請勿將空字串或Null設為  `productListItems[].SKU`. 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
-
-如需最新的對應清單，請參閱 [Adobe Experience Edge中的Analytics變數對應](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=zh-Hant).
-
-對於未自動對應的XDM變數，請使用 `Adobe Analytics ExperienceEvent Template` 欄位群組，詳情請見下方下一節。
-
+* 完成本教學課程之初始設定和標籤設定區段中先前的課程。
 
 ## 設定資料串流
 
-Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您的資料流接著會通知Platform Edge Network要將資料轉送至哪個Adobe Analytics報表套裝。
+Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您的資料流接著會告訴Platform Edge Network您的資料應該轉送至哪個Adobe Analytics報表套裝。
 
 1. 前往 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
 1. 在左側導覽中選取 **[!UICONTROL 資料串流]**
@@ -138,10 +71,132 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 >
 >在本教學課程中，您只會針對開發環境設定Adobe Analytics報表套裝。 當您為自己的網站建立資料串流時，您會為中繼和生產環境建立其他資料串流和報表套裝。
 
-### 設定資料流報表套裝覆寫
+## XDM結構描述和Analytics變數
 
-訪客位於特定頁面時，您可能會想要變更要傳送至哪個Adobe Analytics報表套裝資料。 若要設定Adobe Analytics的資料流覆寫設定：
+恭喜！您已在「 」中設定與Adobe Analytics相容的結構描述 [設定結構描述](configure-schemas.md) 課程！
 
+但您可能會想知道我該如何設定所有的prop、evar和事件？
+
+有幾種方法可同時使用：
+
+1. 設定標準XDM欄位，部分欄位會自動對應至Analytics變數。
+1. 將其他XDM欄位對應至Analytics處理規則中的Analytics變數。
+1. 直接在XDM結構描述中對應至Analytics變數。
+
+<!-- Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics, mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
+
+1. Automatically mapped variables using reserved XDM fields
+1. Manually mapped variables using Analytics Processing Rules
+
+To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. 
+
+ 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
+
+
+ 1. **Analytics-specific XDM**: Use a purpose-built Adobe Analytics field group in the XDM schema called `Adobe Analytics ExperienceEvent Template`
+ 
+The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, because it skips the mapping step in the Adobe Analytics Processing Rules interface. The steps in this lesson use the **Analytics-specific XDM** approach.
+-->
+
+### 自動對應的欄位
+
+許多XDM欄位會自動對應至Analytics變數。
+
+在中建立的綱要 [設定結構描述](configure-schemas.md) 課程包含一些自動對應至Analytics變數的專案，如下表所述：
+
+| XDM至Analytics自動對應的變數 | Adobe Analytics變數 |
+|-------|---------|
+| `identitymap.ecid.[0].id` | mid |
+| `web.webPageDetails.name` | s.pageName |
+| `web.webPageDetails.server` | s.server |
+| `web.webPageDetails.siteSection` | s.channel |
+| `commerce.productViews.value` | prodView |
+| `commerce.productListViews.value` | scView |
+| `commerce.checkouts.value` | scCheckout |
+| `commerce.purchases.value` | 購買 |
+| `commerce.order.currencyCode` | s.currencyCode |
+| `commerce.order.purchaseID` | s.purchaseID |
+| `productListItems[].SKU` | s.products=；product name；；；；； (primary - see note below) |
+| `productListItems[].name` | s.products=；product name；；；；； （備援 — 請參閱下方的注意事項） |
+| `productListItems[].quantity` | s.products=；；product quantity；；； |
+| `productListItems[].priceTotal` | s.product=；；；product price； |
+
+Analytics產品字串的個別區段是透過下的不同XDM變數設定的。 `productListItems` 物件。
+>自2022年8月18日起， `productListItems[].SKU` 優先將對應至s.products變數中的產品名稱。
+>設定為的值 `productListItems[].name` 只有在下列情況下，才會對應至產品名稱 `productListItems[].SKU` 不存在。 否則，它將會取消對應，並可在內容資料中使用。
+>請勿將空字串或Null設為  `productListItems[].SKU`. 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
+
+如需最新的對應清單，請參閱 [Adobe Experience Edge中的Analytics變數對應](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=zh-Hant).
+
+
+### 與Analytics處理規則對應
+
+XDM結構描述中的所有欄位，都可供Adobe Analytics做為前置詞為的內容資料變數使用 `a.x.`. 例如, `a.x.web.webinteraction.region`
+
+在本練習中，您會將一個XDM變數對應至一個prop。 請依照這些相同步驟執行任何自訂對應 `eVar`， `prop`， `event`，或可透過處理規則存取的變數。
+
+1. 前往Analytics介面
+1. 前往 [!UICONTROL 管理員] > [!UICONTROL 管理工具] > [!UICONTROL 報表套裝]
+1. 選取您用於教學課程的開發/測試報表套裝> [!UICONTROL 編輯設定] > [!UICONTROL 一般] > [!UICONTROL 處理規則]
+
+   ![Analytics購買](assets/analytics-process-rules.png)
+
+1. 建立規則至 **[!UICONTROL 覆寫值]** `[!UICONTROL Product SKU (prop1)]` 至 `a.x.productlistitems.0.sku`. 請記得新增附註，說明建立規則的原因並為規則標題命名。 選取 **[!UICONTROL 儲存]**
+
+   ![Analytics購買](assets/analytics-set-processing-rule.png)
+
+   >[!IMPORTANT]
+   >
+   >第一次對應到處理規則時，UI不會顯示XDM物件的內容資料變數。 若要修正選取的任何值，請儲存並返回編輯。 所有XDM變數現在都會顯示。
+
+### 對應至XDM結構描述中的Analytics變數
+
+處理規則的替代方法是使用 `Adobe Analytics ExperienceEvent Template` 欄位群組。 此方法已獲得廣泛使用，因為許多使用者覺得此方法比設定處理規則更簡單，然而，增加XDM裝載的大小，反過來又可增加其他應用程式(例如Real-Time CDP)中的設定檔大小。
+
+若要新增 `Adobe Analytics ExperienceEvent Template` 結構描述的欄位群組：
+
+1. 開啟 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
+1. 選取 **[!UICONTROL 方案]** 從左側導覽
+1. 確認您位於教學課程中正在使用的沙箱中
+1. 開啟您的 `Luma Web Event Data` 綱要
+1. 在 **[!UICONTROL 欄位群組]** 區段，選取 **[!UICONTROL 新增]**
+1. 尋找 `Adobe Analytics ExperienceEvent Template` 欄位群組並將其新增至您的結構描述
+
+
+現在請在產品字串中設定銷售eVar。 使用 `Adobe Analytics ExperienceEvent Template` 欄位群組，您便能夠將變數對應至產品字串內的銷售eVar或事件。 這也稱為設定 **產品語法銷售**.
+
+1. 返回您的標籤屬性
+
+1. 開啟規則 `ecommerce - library loaded - set product details variables - 20`
+
+1. 開啟 **[!UICONTROL 設定變數]** 動作
+
+1. 選取以開啟 `_experience > analytics > customDimensions > eVars > eVar1`
+
+1. 設定 **[!UICONTROL 值]** 至 `%product.productInfo.title%`
+
+1. 選取 **[!UICONTROL 保留變更]**
+
+   ![產品SKU XDM物件變數](assets/set-up-analytics-product-merchandising.png)
+
+1. 選取 **[!UICONTROL 儲存]** 儲存規則的方式
+
+如您所見，基本上所有Analytics變數都可以在以下位置設定： `Adobe Analytics ExperienceEvent Template` 欄位群組。
+
+>[!NOTE]
+>
+> 請注意 `_experience` 下的物件 `productListItems` > `Item 1`. 在此之下設定任何變數 [!UICONTROL 物件] 設定產品語法eVar或事件。
+
+
+### 傳送資料至不同的報表套裝
+
+訪客位於特定頁面時，您可能會想要變更要傳送至哪個Adobe Analytics報表套裝資料。 這需要在資料串流和規則中進行設定。
+
+#### 設定資料流報表套裝覆寫
+
+若要在資料流中設定Adobe Analytics報表套裝覆寫設定：
+
+1. 開啟您的資料串流
 1. 編輯 **[!UICONTROL Adobe Analytics]** 透過開啟 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 功能表，然後選取 **[!UICONTROL 編輯]**
 
    ![覆寫資料流](assets/datastream-edit-analytics.png)
@@ -154,177 +209,12 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
    ![覆寫資料流](assets/analytics-datastreams-edit-adobe-analytics-configurations-report-suites.png)
 
-在本課程的後面部分 [建立規則以使用資料流覆寫將頁面檢視傳送至不同的報表套裝](setup-analytics.md###send-a-page-view-to-a-different-report-suite-with-datastream-override).
 
-## 建立其他電子商務資料元素
+#### 透過資料流覆寫將頁面檢視傳送至不同的報表套裝
 
-接著，從Luma資料層擷取其他資料，並傳送至Platform Edge Network。 雖然本課程著重於常見的Adobe Analytics需求，但根據您的資料流設定，所有擷取的資料都可以輕鬆傳送至其他目的地。 例如，如果您已完成Adobe Experience Platform課程，您在本課程中擷取的其他資料也會傳送至Platform。
+讓我們建立規則，將額外的頁面檢視呼叫傳送至不同的報表套裝。 使用資料流覆寫功能來變更頁面的報告套裝，使用 **[!UICONTROL 傳送事件]** 動作。
 
-在建立資料元素課程中，您 [已建立的JavaScript資料元素](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 擷取的內容和身分詳細資訊。 現在您可以建立其他資料元素來擷取電子商務資料。 因為 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 針對產品詳細資料頁面和購物車中的產品使用不同的資料層結構，您必須為每個案例建立個別的資料元素。 使用自訂程式碼資料元素從Luma資料層取得您需要的內容，在您自己的網站上實作時，這可能不是必要的。 在這種情況下，您必須重複執行一系列購物車專案，以抓取每個產品的特定詳細資料。 使用以下提供的程式碼片段：
-
-1. 開啟您在本教學課程中使用的標籤屬性
-
-1. 前往 **[!UICONTROL 資料元素]**
-
-1. 選取 **[!UICONTROL 新增資料元素]**
-
-1. 將其命名 **`product.productInfo.sku`**
-
-1. 使用 **[!UICONTROL 自訂程式碼]** **[!UICONTROL 資料元素型別]**
-
-1. 保留核取方塊 **[!UICONTROL 強制小寫值]** 和 **[!UICONTROL 清除文字]** 未勾選
-
-1. 離開 `None` 作為 **[!UICONTROL 儲存期間]** 設定，因為每個頁面上的這個值都不相同
-
-1. 選取 **[!UICONTROL 開啟編輯器]**
-
-   ![自訂程式碼資料元素](assets/analytics-create-custom-data-element.png)
-
-1. 複製並貼上下列程式碼
-
-
-   ```javascript
-   var cart = digitalData.product;
-   var cartItem;
-   cart.forEach(function(item){
-   cartItem = item.productInfo.sku;
-   });
-   return cartItem;
-   ```
-
-1. 選取 **[!UICONTROL 儲存]** 儲存自訂程式碼的方式
-
-1. 選取 **[!UICONTROL 儲存]** 儲存資料元素的方式
-
-請依照相同的步驟建立這些其他資料元素：
-
-* **`product.productInfo.title`**
-
-  ```javascript
-  var cart = digitalData.product;
-  var cartItem;
-  cart.forEach(function(item){
-  cartItem = item.productInfo.title;
-  });
-  return cartItem;
-  ```
-
-<!--* **`product.productInfo.name`**
-
-    ```javascript
-    var cart = digitalData.product;
-    var cartItem;
-    cart.forEach(function(item){
-    cartItem = item.productInfo.name;
-    });
-    return cartItem;
-    ```-->
-
-<!--* **`cart.productInfo`**
-
-    ```javascript
-    var cart = digitalData.cart.cartEntries; 
-    var cartItem = [];
-    cart.forEach(function(item, index, array){
-    var qty;
-    if(window.location.pathname.includes("thank-you.html")){
-    qty = parseInt(item.qty);
-    }else{
-    qty = "";
-    }
-    var price = parseInt(item.price);
-    cartItem.push({
-    "SKU": item.sku,
-    "quantity": qty,
-    "priceTotal": price
-    });
-    });
-    return cartItem; 
-    ```-->
-
-* **`cart.productInfo`**
-
-  ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  cartItem.push({
-  "SKU": item.sku
-  });
-  });
-  return cartItem; 
-  ```
-
-* **`cart.productInfo.purchase`**
-
-  ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  var qty = parseInt(item.qty);
-  var price = parseInt(item.price);
-  cartItem.push({
-  "SKU": item.sku,
-  "quantity": qty,
-  "priceTotal": price
-  });
-  });
-  return cartItem; 
-  ```
-
-  >[!TIP]
-  >
-  > 此程式碼片段包含產品銷售eVar課程期間使用的自訂eVar1設定
-
-新增這些資料元素並在中建立先前的資料元素後 [建立資料元素](create-data-elements.md) 課程，您應具備下列資料元素：
-
-| 資料元素 |
------------------------------|
-| `cart.orderId` |
-| `cart.productInfo` |
-| `cart.productInfo.purchase` |
-| `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` |
-| `page.pageInfo.pageName` |
-| `page.pageInfo.server` |
-| `product.productInfo.sku` |
-| `product.productInfo.title` |
-| `user.profile.attributes.loggedIn` |
-| `user.profile.attributes.username` |
-| `xdm.variable.content` |
-
-<!-- 
->[!IMPORTANT]
->
->In this tutorial, you will create a different XDM object for each event. That means you must remap variables that would be considered to be "globally" available on every hit, such as page name and identityMap. However, you may [Merge Objects](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html#merged-objects) or use [Mapping Tables](https://exchange.adobe.com/experiencecloud.details.103136.mapping-table.html) to manage your XDM objects more efficiently in a real-life situation. For this lesson, the global variables are considered as:
->
->* **[!UICONTROL identityMap]** to capture the authenticated ID as per the [Create Identity Map Data Element](create-data-elements.md#create-identity-map-data-element) exercise in the [Create Data Elements](create-data-elements.md) lesson.
->* **[!UICONTROL web]** object to capture content as per the [content XDM object](create-data-elements.md#map-content-data-elements-to-XDM-Schema-individually) exercise in the [Create Data Elements](create-data-elements.md) lesson on every data element above. 
--->
-
-## 建立其他規則
-
-在 [建立標籤規則](create-tag-rule.md) 課程，您已設定 `all pages global content variables - library loaded - AA (order 1)` 規則 [已使用建立基準線XDM物件 **[!UICONTROL 更新變數]** **[!UICONTROL 動作型別]**](create-tag-rule.md#create-tag-rule). 下列練習會擴充該XDM物件，以擷取特定頁面的其他特定資料。
-
-### 增加頁面檢視
-
-由於您現在正將資料傳送至Adobe Analytics，建議您對應額外的XDM欄位以指出頁面檢視。 雖然從技術上講，Analytics不需要將信標作為頁面檢視來處理，但為其他下游應用程式指出頁面檢視的標準方式會很有用。
-
-1. 開啟 `all pages global content variables - library loaded - AA (order 1)` 規則
-1. 開啟 **[!UICONTROL 更新變數]** 動作
-1. 向下捲動並選取以開啟，直到 `web.webPageDetails`
-1. 選取以開啟 **[!UICONTROL pageViews]** 物件
-1. 設定 **[!UICONTROL 值]** 至 `1`
-1. 選取 **[!UICONTROL 保留變更]**
-
-   ![頁面檢視XDM物件](assets/set-up-analytics-pageviews.png)
-
-
-### 透過資料流覆寫將頁面檢視傳送至不同的報表套裝
-
-建立規則，將額外的頁面檢視呼叫傳送至不同的報表套裝。 使用資料流覆寫功能來變更頁面的報告套裝，使用 **[!UICONTROL 傳送事件]** 動作。
-
-1. 建立新規則，將其命名 `homepage report suite override - library loaded - AA (order 51)`
+1. 建立新規則，將其命名 `homepage - library loaded - AA report suite override - 51`
 
 1. 選取下方的加號 **[!UICONTROL 事件]** 新增觸發器的方式
 
@@ -332,9 +222,7 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入]**
 
-1. 將其命名 `Core - library loaded - order 51`
-
-1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `51`. 這可確保規則在 `all pages global content variables - library loaded - AA (order 50)` 使用設定基線XDM **[!UICONTROL 更新變數]** 動作型別。
+1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `51`. 這可確保規則在 `all pages - library loaded - send event - 50` 使用設定基線XDM **[!UICONTROL 更新變數]** 動作型別。
 
    ![Analytics報表套裝覆寫](assets/set-up-analytics-rs-override.png)
 
@@ -379,274 +267,12 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 1. 在 **[!UICONTROL 報表套裝]**，選取您要用來覆寫的報告網站。 在這種情況下， `tmd-websdk-course-stg`.
 
-
-   >[!TIP]
-   >
-   >此處顯示的報表套裝清單，是由下列專案決定： [設定資料流報告套裝覆寫](configure-datastream.md###configure-a-datastream-report-suite-override) 步驟。 新增報表套裝就等於使用多套裝標籤。
-
 1. 選取 **[!UICONTROL 保留變更]**
 
 1. 與 **[!UICONTROL 儲存]** 您的規則
 
    ![Analytics資料流覆寫](assets/analytics-tags-report-suite-override.png)
 
-### 使用更新變數擴充XDM物件
-
-使用 **[!UICONTROL 更新變數]** 動作型別您可以建立其他規則，在「全域內容XDM」傳送至 [!UICONTROL Platform Edge Network]. 若要完成此作業，請先排序新規則，然後再排序 `all pages send event - library loaded - AA (order 50)` 會傳送事件 [!UICONTROL Platform Edge Network].
-
->[!TIP]
->
->規則順序會決定觸發事件時先執行哪個規則。 如果兩個規則具有相同的事件型別，數字最低的規則會先執行。
-> 
->![rule-order](assets/set-up-analytics-sequencing.png)
-
-## 設定產品字串
-
-在對應至產品字串之前，請務必瞭解XDM結構描述中有兩個主要物件，用於擷取與Adobe Analytics有特殊關係的電子商務資料：
-
-1. 此 `commerce` 物件會設定Analytics事件，例如 `prodView`， `scView`、和 `purchase`
-1. 此 `productListItems` 物件會設定Analytics維度，例如 `productID`.
-
-另請參閱 [收集商務和產品資料](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) 以取得更多詳細資料。
-
-
-首先，請追蹤Luma產品詳細資料頁面上的產品檢視。
-
-1. 從左側導覽中選取 **[!UICONTROL 規則]** 然後選取 **[!UICONTROL 新增規則]**
-1. 將其命名  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
-1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
-1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
-1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入]**
-1. 將其命名 `Core - library loaded - order 20`
-1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 這可確保規則在 `all pages global content variables - library loaded - AA (order 1)` 會設定全域內容變數，但在 `all pages send event - library loaded - AA (order 50)` 會傳送XDM事件。
-
-   ![Analytics XDM規則](assets/set-up-analytics-pdp.png)
-
-1. 在 **[!UICONTROL 條件]**，選取 **[!UICONTROL 新增]**
-1. 離開 **[!UICONTROL 邏輯型別]** 作為 **[!UICONTROL 一般]**
-1. 離開 **[!UICONTROL 擴充功能]** 作為 **[!UICONTROL 核心]**
-1. 選取 **[!UICONTROL 條件型別]** 作為 **[!UICONTROL 不含查詢字串的路徑]**
-1. 在右側，啟用 **[!UICONTROL 規則運算式]** 切換
-1. 在 **[!UICONTROL 路徑等於]** 設定 `/products/`. 對於Luma示範網站，這可確保規則僅在產品頁面上觸發
-1. 選取 **[!UICONTROL 保留變更]**
-
-   ![Analytics XDM規則](assets/set-up-analytics-product-condition.png)
-
-1. 在 **[!UICONTROL 動作]** 選取 **[!UICONTROL 新增]**
-1. 選取 **[!UICONTROL Adobe Experience Platform Web SDK]** 副檔名
-1. 選取 **[!UICONTROL 動作型別]** 作為 **[!UICONTROL 更新變數]**
-1. 向下捲動至 `commerce` 物件並選取「 」以開啟它。
-1. 開啟 **[!UICONTROL 產品檢視]** 物件與集合 **[!UICONTROL 值]** 至 `1`
-
-   ![設定產品檢視](assets/set-up-analytics-prodView.png)
-
-   >[!TIP]
-   >
-   >在XDM中設定commerce.productViews.value=1會自動對應至 `prodView` Analytics中的事件
-
-另外，請務必瞭解您可以 **[!UICONTROL 提供個別屬性]** 至個別XDM欄位或 **[!UICONTROL 提供整個陣列]** 到XDM物件。
-
-![頁面檢視XDM物件](assets/set-up-analytics-xdm-population-strategy.png)
-
-### 將個別屬性對應至XDM物件
-
-由於Luma上的資料層結構，您可以對應至個別變數，以擷取Luma示範網站產品詳細資料頁面上的資料。
-
-1. 向下捲動至並選取 `productListItems` 陣列
-1. 選取 **[!UICONTROL 提供個別專案]**
-1. 選取 **[!UICONTROL 新增專案]**
-
-   ![設定產品檢視事件](assets/set-up-analytics-xdm-individual.png)
-
-   >[!CAUTION]
-   >
-   >此 **`productListItems`** 是 `array` 資料型別，因此預期資料會以元素集合的形式輸入。 由於Luma示範網站的資料層結構，以及由於一次只能在Luma網站上檢視一個產品，因此您可個別新增專案。 在您自己的網站上實作時，根據資料層結構，您或許可以提供整個陣列。
-
-1. 選取以開啟 **[!UICONTROL 專案1]**
-1. 將 **`productListItems.item1.SKU`** 對應到 `%product.productInfo.sku%`
-
-   ![產品SKU XDM物件變數](assets/set-up-analytics-sku.png)
-
-1. 尋找 `eventType` 並將其設為 `commerce.productViews`
-
-1. 尚未選取保留變更
-
-### 在產品字串中設定銷售eVar
-
-藉由使用 `Adobe Analytics ExperienceEvent Template` 欄位群組若要定義XDM結構，您可以將變數對應至產品字串內的銷售eVar或事件。 這也稱為設定 **產品語法銷售**. 請注意 `_experience` 下的物件 `productListItems` > `Item 1`. 在此之下設定任何變數 [!UICONTROL 物件] 設定產品語法eVar或事件。
-
-1. 選取以開啟 `_experience > analytics > customDimensions > eVars > eVar1`
-
-1. 設定 **[!UICONTROL 值]** 至 `%product.productInfo.title%`
-
-1. 選取 **[!UICONTROL 保留變更]**
-
-   ![產品SKU XDM物件變數](assets/set-up-analytics-product-merchandising.png)
-
-1. 選取 **[!UICONTROL 儲存]** 儲存規則的方式
-
-<!--
-1. The **[!UICONTROL Type]** field has a drop-down list of values to choose from. Select `[!UICONTROL commerce.productViews]`
-
-    [!TIP]
-    >
-    >The value selected here has no effect on how data is mapped to Analytics, however it is recommended to thoughtfully apply this variable, as it is used in Adobe Experience Platform's segment builder interface. The value selected is available to use in the `[!UICONTROL c.a.x.eventtype]` context data variable downstream.
-
-1. Under **[!UICONTROL XDM Data]**, select the `[!UICONTROL xdm.commerce.prodView]` XDM object data element
-1. Select **[!UICONTROL Keep Changes]**
-
-    ![Analytics XDM rules](assets/analytics-rule-commerce-productViews.png)
-
-1. Your rule should look similar to the below. Select **[!UICONTROL Save]**
-
-    ![Analytics XDM rules](assets/analytics-rule-product-view.png) -->
-
-
-### 將整個陣列對應至XDM物件
-
-如前所述，Luma示範網站對購物車中的產品使用不同的資料層結構。 自訂程式碼資料元素 `cart.productInfo` 您透過建立較早的回圈 `digitalData.cart.cartEntries` 資料層物件並將其轉譯為必要的XDM物件結構描述。 新格式 **必須完全符合** 由定義的綱要 `productListItems` XDM結構描述的物件。
-
-如需說明，請參閱Luma網站資料層（左）與轉譯資料元素（右）下方比較：
-
-![XDM物件陣列格式](assets/data-element-xdm-array.png)
-
-比較資料元素與 `productListItems` 結構（提示，它應該相符）。
-
->[!IMPORTANT]
->
->請注意數值變數的轉譯方式，以及資料層中的字串值，例如 `price` 和 `qty` 重新格式化為資料元素中的數字。 這些格式需求對於Platform中的資料完整性十分重要，並在以下期間決定： [設定方案](configure-schemas.md) 步驟。 在此範例中， **[!UICONTROL 數量]** 使用 **[!UICONTROL 整數]** 資料型別。
-> ![XDM結構描述資料型別](assets/set-up-analytics-quantity-integer.png)
-
-現在回到將XDM物件對應至整個陣列。 重複建立 `ecommerce - pdp library loaded - AA (order 20)` 規則：
-
-1. 將其命名  [!UICONTROL `ecommerce - cart library loaded - AA (order 20)`]
-1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
-1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
-1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入]**
-1. 將其命名 `Core - library loaded - order 20`
-1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`
-1. 選取 **[!UICONTROL 保留變更]**
-
-   ![Analytics XDM規則](assets/set-up-analytics-cart-sequence.png)
-
-1. 在 **[!UICONTROL 條件]**，選取 **[!UICONTROL 新增]**
-1. 離開 **[!UICONTROL 邏輯型別]** 作為 **[!UICONTROL 一般]**
-1. 離開 **[!UICONTROL 擴充功能]** 作為 **[!UICONTROL 核心]**
-1. 選取 **[!UICONTROL 條件型別]** 作為 **[!UICONTROL 不含查詢字串的路徑]**
-1. 在右邊， **不要** 啟用 **[!UICONTROL 規則運算式]** 切換
-1. 在 **[!UICONTROL 路徑等於]** 設定 `/content/luma/us/en/user/cart.html`. 對於Luma示範網站，這可確保規則僅在購物車頁面上觸發
-1. 選取 **[!UICONTROL 保留變更]**
-
-   ![Analytics XDM規則](assets/set-up-analytics-cart-condition.png)
-
-1. 在 **[!UICONTROL 動作]** 選取 **[!UICONTROL 新增]**
-1. 選取 **[!UICONTROL Adobe Experience Platform Web SDK]** 副檔名
-1. 選取 **[!UICONTROL 動作型別]** 作為 **[!UICONTROL 更新變數]**
-1. 向下捲動至 `commerce` 物件並選取「 」以開啟它。
-1. 開啟 **[!UICONTROL productListView]** 物件與集合 **[!UICONTROL 值]** 至 `1`
-
-   ![設定產品檢視](assets/set-up-analytics-cart-view.png)
-
-   >[!TIP]
-   >
-   >在XDM中設定commerce.productListViews.value=1會自動對應至 `scView` Analytics中的事件
-
-<!--1. Create an **[!UICONTROL XDM object]** **[!UICONTROL Data Element Type]** named **`xdm.commerce.cartView`**
-1. Select the same Platform sandbox and XDM schema you are using for this tutorial
-1. Open the **[!UICONTROL commerce]** object
-1. Open the **[!UICONTROL productListViews]** object and set `value` to `1`
-
-    >[!TIP]
-    >
-    >This step is equivalent to setting `scView` event in Analytics -->
-
-1. 向下捲動至並選取 **[!UICONTROL productListItems]** 陣列
-
-1. 選取 **[!UICONTROL 提供整個陣列]**
-
-1. 將對應到 **`cart.productInfo`** 資料元素
-
-1. 選取 `eventType` 並將設為 `commerce.productListViews`
-
-1. 選取 **[!UICONTROL 保留變更]**
-
-1. 選取 **[!UICONTROL 儲存]** 儲存規則的方式
-
-建立兩個其他規則，用於遵循相同模式的結帳和購買，但有下列差異：
-
-**規則名稱**： `ecommerce - checkout library loaded - AA (order 20)`
-
-* **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout.html
-* 將 `eventType` 設為 `commerce.checkouts`
-* 設定 **XDM商務事件**： commerce.checkout.value至 `1`
-
-  >[!TIP]
-  >
-  >這等於設定 `scCheckout` Analytics中的事件
-
-**規則名稱**： `ecommerce - purchase library loaded - AA (order 20)`
-
-* **[!UICONTROL 條件]**： /content/luma/us/en/user/checkout/order/thank-you.html
-* 將 `eventType` 設為 `commerce.purchases`
-* 設定 **XDM商務事件**： commerce.purchases.value至 `1`
-
-  >[!TIP]
-  >
-  >這等於設定 `purchase` Analytics中的事件
-
-擷取所有必要專案時還有其他步驟 `purchase` 事件變數：
-
-1. 開啟 **[!UICONTROL 商務]** 物件
-1. 開啟 **[!UICONTROL 訂購]** 物件
-1. 地圖 **[!UICONTROL purchaseID]** 至 `cart.orderId` 資料元素
-1. 設定 **[!UICONTROL currencyCode]** 至硬式編碼值 `USD`
-
-   ![設定Analytics的purchaseID](assets/set-up-analytics-purchase.png)
-
-   >[!TIP]
-   >
-   >這等於設定 `s.purchaseID` 和 `s.currencyCode` Analytics中的變數
-
-
-1. 向下捲動至並選取 **[!UICONTROL productListItems]** 陣列
-1. 選取 **[!UICONTROL 提供整個陣列]**
-1. 將對應到 **`cart.productInfo.purchase`** 資料元素
-1. 選取 **[!UICONTROL 儲存]**
-
-完成後，您應該會看到下列已建立的規則。
-
-![Analytics XDM規則](assets/set-up-analytics-rules.png)
-
-<!--
-## Create additional rules for Platform Web SDK
-
-With the **[!UICONTROL Update variabl]**e and **[!UICONTROL Send Event]** Action Types of Platform Web SDK, its possible to sequence the **[!UICONTROL Send Event]** action to trigger after all **[!UICONTROL Update variable]** action types run. This is called Rule Stacking, and you use it to customize the baseline XDM created depending on the type of page you are on.  
-
-In this exercise, you create individual rules per e-commerce event and use conditions so the rules fire on the right pages. 
-
-Repeat the same for all other e-commerce events using the following parameters:
-
-**Rule name**: cart view - library load - AA
-
-* **[!UICONTROL Event Type]**: Library Loaded (Page Top)
-* **[!UICONTROL Condition]**: /content/luma/us/en/user/cart.html
-* **Type value under Web SDK - Send Action**: commerce.productListViews
-* **XDM data for Web SDK - Send Action:** `%xdm.commerce.cartView%`
-
-**Rule name**: checkout - library load - AA
-
-* **[!UICONTROL Event Type]**: Library Loaded (Page Top)
-* **[!UICONTROL Condition]** /content/luma/us/en/user/checkout.html
-* **Type for Web SDK - Send Action**: commerce.checkouts
-* **XDM data for Web SDK - Send Action:** `%xdm.commerce.checkout%`
-
-**Rule name**: purchase - library load - AA
-
-* **[!UICONTROL Event Type]**: Library Loaded (Page Top)
-* **[!UICONTROL Condition]** /content/luma/us/en/user/checkout/order/thank-you.html
-* **Type for Web SDK - Send Action**: commerce.purchases
-* **XDM data for Web SDK - Send Action:** `%xdm.commerce.purchase%`
--->
 
 
 ## 建置您的開發環境
@@ -780,47 +406,7 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
    ![Analytics購買](assets/analytics-debugger-purchase.png)
 
-## 處理規則和即時報表
 
-現在您已透過Edge Trace驗證Analytics信標，也可以驗證Analytics已使用即時報表處理資料。 檢查即時報表前，您必須先設定Analytics的處理規則 `props` 視需要。
-
-### 自訂分析對應的處理規則
-
-在本練習中，您會將一個XDM變數對應至一個prop，以便您可以在即時報表中檢視。 請依照這些相同步驟執行任何自訂對應 `eVar`， `prop`， `event`，或可透過處理規則存取的變數。
-
-1. 在Analytics UI中，前往 [!UICONTROL 管理員] > [!UICONTROL 管理工具] > [!UICONTROL 報表套裝]
-1. 選取您用於教學課程的開發/測試報表套裝> [!UICONTROL 編輯設定] > [!UICONTROL 一般] > [!UICONTROL 處理規則]
-
-   ![Analytics購買](assets/analytics-process-rules.png)
-
-1. 建立規則至 **[!UICONTROL 覆寫值]** `[!UICONTROL Product SKU (prop1)]` 至 `a.x.productlistitems.0.sku`. 請記得新增您建立規則的原因附註，並為規則標題命名。 選取 **[!UICONTROL 儲存]**
-
-   ![Analytics購買](assets/analytics-set-processing-rule.png)
-
-   >[!IMPORTANT]
-   >
-   >第一次對應到處理規則時，UI不會顯示XDM物件的內容資料變數。 若要修正選取的任何值，請儲存並返回編輯。 所有XDM變數現在都會顯示。
-
-1. 前往 [!UICONTROL 編輯設定] >  [!UICONTROL 即時]. 使用下列引數設定這三個專案，以便您驗證內容頁面檢視、產品檢視和購買
-
-   ![Analytics購買](assets/analytics-debugger-real-time.png)
-
-1. 重複驗證步驟，您應該會看到即時報表據此填入資料。
-
-   **頁面瀏覽數**
-   ![即時內容](assets/analytics-real-time-content.png)
-
-   **產品檢視**
-   ![即時產品檢視](assets/analytics-real-time-prodView.png)
-
-   **購買**
-   ![即時購買](assets/analytics-real-time-purchase.png)
-
-1. 在工作區UI中，建立表格以檢視您所購買產品的完整電子商務流程
-
-   ![完整的電子商務流程](assets/analytics-workspace-ecommerce.png)
-
-若要進一步瞭解如何將XDM欄位對應至Analytics變數，請參閱影片 [將Web SDK變數對應至Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-use-cases/internal-site-search/map-web-sdk-variables-into-adobe-analytics.html).
 
 ## 使用Adobe Experience Platform保證驗證Adobe Analytics
 

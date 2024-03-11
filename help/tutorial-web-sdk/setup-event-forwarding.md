@@ -3,14 +3,19 @@ title: 設定事件轉送屬性
 description: 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 4%
+source-wordcount: '1893'
+ht-degree: 2%
 
 ---
 
 # 設定事件轉送屬性
+
+
+>[!CAUTION]
+>
+>我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。
 
@@ -73,7 +78,7 @@ ht-degree: 4%
 1. 選取&#x200B;**[!UICONTROL 「新屬性」]**。
    ![事件轉送屬性](assets/event-forwarding-new.png)
 
-1. 為屬性命名。在此案例中 `Server-Side - Web SDK Course`
+1. 為屬性命名。 在此案例中 `Server-Side - Web SDK Course`
 
 1. 選取「**[!UICONTROL 儲存]**」。
    ![事件轉送屬性儲存](assets/event-forwarding-save.png)
@@ -149,7 +154,7 @@ ht-degree: 4%
 
    ![事件轉寄新資料元素](assets/event-forwarding-new-dataelement.png)
 
-1. ****&#x200B;將資料元素命名為 `environment.browserDetails.viewportHeight`
+1. **[!UICONTROL 名稱]** 資料元素 `environment.browserDetails.viewportHeight`
 
 1. 在 **[!UICONTROL 副檔名]**，離開 `CORE`
 
@@ -183,8 +188,8 @@ ht-degree: 4%
 
    >[!TIP]
    >
-   使用您自己的網站時，您可以使用網頁瀏覽器網路工具找到XDM物件路徑，並篩選 `/ee` 要求，開啟信標 [!UICONTROL **裝載**] 並向下鑽研至您要尋找的變數。 然後以滑鼠右鍵按一下，並選取「複製屬性路徑」。 以下是瀏覽器檢視區高度的範例：
-   ![事件轉送XDM路徑](assets/event-forwarding-xdm-path.png)
+   >使用您自己的網站時，您可以使用網頁瀏覽器網路工具找到XDM物件路徑，並篩選 `/ee` 要求，開啟信標 [!UICONTROL **裝載**] 並向下鑽研至您要尋找的變數。 然後以滑鼠右鍵按一下，並選取「複製屬性路徑」。 以下是瀏覽器檢視區高度的範例：
+   > ![事件轉送XDM路徑](assets/event-forwarding-xdm-path.png)
 
 ### 安裝Adobe Cloud Connector擴充功能
 
@@ -209,13 +214,13 @@ ht-degree: 4%
    * **標籤**：所有規則都是由事件觸發，而事件必須在規則中指定，例如 `Library Loaded - Page Top`. 條件為選用。
    * **事件轉送**：我們假設傳送至Platform Edge Network的每個事件都是轉送資料的觸發條件。 因此， [!UICONTROL 活動] 即必須在事件轉送規則中選取的位置。 若要管理哪些事件會觸發事件轉送規則，您必須設定條件。
 
-* **資料元素代碼化**:
+* **資料元素代碼化**：
 
    * **標籤**：資料元素名稱會以 `%` 在規則中使用時，位於資料元素名稱的開頭和結尾。 例如 `%viewportHeight%`。
 
    * **事件轉送**：資料元素名稱會使用進行代碼化： `{{` 在開頭和 `}}` 在規則中使用時，會位於資料元素名稱的結尾。 例如 `{{viewportHeight}}`。
 
-* **規則動作順序**:
+* **規則動作順序**：
 
    * 事件轉送規則的「動作」區段一律依序執行。 儲存規則時，請確認動作順序正確。此執行序列無法像標籤一樣以非同步方式執行。
 
@@ -278,7 +283,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-如果您尚未將測試和生產事件轉送屬性連結至資料流，您會看到開發環境是建立程式庫的唯一選項。
+>如果您尚未將測試和生產事件轉送屬性連結至資料流，您會看到開發環境是建立程式庫的唯一選項。
 
 ![儲存事件轉送規則](assets/event-forwarding-initial-build.png)
 
@@ -321,4 +326,4 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
