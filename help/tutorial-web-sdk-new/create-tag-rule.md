@@ -2,9 +2,9 @@
 title: 建立標籤規則
 description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至Platform Edge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2025'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,9 @@ ht-degree: 1%
 在本課程結束時，您能夠：
 
 * 使用命名慣例來管理標籤內的規則
-* 在標籤規則中使用更新變數和傳送事件動作型別來傳送XDM事件
+* 使用更新變數和傳送事件動作來傳送包含XDM欄位的事件
+* 跨多個規則棧疊多組XDM欄位
+* 將個別或整個陣列資料元素對應至XDM物件
 * 將標籤規則發佈至開發程式庫
 
 
