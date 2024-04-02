@@ -11,16 +11,16 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13122
-exl-id: 7283134f-049e-4671-8c47-1d58629817cd
-source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
+exl-id: afcbdfcc-cd98-42bc-a3a1-2f040e5bdf58
+source-git-commit: 630c96eb70725e8437058e61ba22750ab5702a14
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 10%
+source-wordcount: '81'
+ht-degree: 2%
 
 ---
 
 # 在Real-time Customer Data Platform中設定Adobe Target目的地
 
-瞭解如何在Real-time Customer Data Platform中設定Adobe Target目的地，以開始從Real-Time CDP傳送區段和設定檔屬性至Target。 如需詳細資訊，請參閱 [Adobe Target連線檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant).
+瞭解如何整合Adobe Target和Real-time Customer Data Platform，以開始從Real-Time CDP將區段和設定檔屬性傳送至Target。 如需詳細資訊，請參閱 [Adobe Target連線檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418799/?learn=on)
