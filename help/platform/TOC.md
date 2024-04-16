@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 9c4e85a75f640ec9c2eaae6874e2331bf54c3ca7
+source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '874'
 ht-degree: 16%
 
 ---
@@ -79,6 +79,7 @@ ht-degree: 16%
    + [整合IAB透明與同意架構2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 資料衛生 {#data-hygiene}
    + [刪除資料集](/help/platform/data-hygiene/delete-datasets.md)
+   + [假名設定檔和事件有效期](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + 資料擷取 {#data-ingestion}
    + [概觀](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批次擷取總覽](/help/platform/data-ingestion/batch-ingestion-overview.md)
