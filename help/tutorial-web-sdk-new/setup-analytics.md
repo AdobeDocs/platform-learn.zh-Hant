@@ -2,9 +2,10 @@
 title: 使用Experience Platform Web SDK設定Adobe Analytics
 description: 瞭解如何使用Experience Platform Web SDK設定Adobe Analytics。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Analytics
-source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
+exl-id: e08d222c-a15f-4462-b033-99937d741d5e
+source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
 workflow-type: tm+mt
-source-wordcount: '3024'
+source-wordcount: '2803'
 ht-degree: 0%
 
 ---
@@ -22,14 +23,10 @@ ht-degree: 0%
 在本課程結束時，您將能夠：
 
 * 設定資料流以啟用Adobe Analytics
-* 瞭解Analytics的自動對應和手動對應XDM變數之間的差異
-* 為Adobe Analytics特定變數設定XDM結構
-* 使用XDM設定產品語法銷售eVar
-* 覆寫資料流，將資料傳送至其他Adobe Analytics報表套裝
-* 使用Experience Platform偵錯工具驗證Adobe Analytics變數
-* 使用Adobe Analytics處理規則來設定自訂變數
-* 驗證Adobe Analytics使用Adobe Experience Platform保證擷取的資料
-* 驗證Adobe Analytics是否使用即時報表擷取資料
+* 瞭解哪些標準XDM欄位會自動對應至Analytics變數
+* 使用Adobe Analytics ExperienceEvent範本欄位群組或處理規則設定自訂Analytics變數
+* 覆寫資料流，將資料傳送至其他報表套裝
+* 使用Debugger和保證驗證Adobe Analytics變數
 
 ## 先決條件
 
@@ -43,7 +40,7 @@ ht-degree: 0%
 
 ## 設定資料串流
 
-Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您的資料流接著會告訴Platform Edge Network您的資料應該轉送至哪個Adobe Analytics報表套裝。
+Platform Web SDK會將資料從您的網站傳送至PlatformEdge Network。 您的資料流接著會告訴PlatformEdge Network，您的資料應該轉送至哪個Adobe Analytics報表套裝。
 
 1. 前往 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
 1. 在左側導覽中選取 **[!UICONTROL 資料串流]**
@@ -125,7 +122,7 @@ Analytics產品字串的個別區段是透過下的不同XDM變數設定的。 `
 如需最新的對應清單，請參閱 [Adobe Experience Edge中的Analytics變數對應](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=zh-Hant).
 
 
-### 與Analytics處理規則對應
+### 使用處理規則對應至Analytics變數
 
 XDM結構描述中的所有欄位，都可供Adobe Analytics做為前置詞為的內容資料變數使用 `a.x.`. 例如, `a.x.web.webinteraction.region`
 
@@ -145,7 +142,7 @@ XDM結構描述中的所有欄位，都可供Adobe Analytics做為前置詞為�
    >
    >第一次對應到處理規則時，UI不會顯示XDM物件的內容資料變數。 若要修正選取的任何值，請儲存並返回編輯。 所有XDM變數現在都會顯示。
 
-### 對應至XDM結構描述中的Analytics變數
+### 使用Adobe Analytics欄位群組對應至Analytics變數
 
 處理規則的替代方法是使用 `Adobe Analytics ExperienceEvent Template` 欄位群組。 此方法已獲得廣泛使用，因為許多使用者覺得此方法比設定處理規則更簡單，然而，增加XDM裝載的大小，反過來又可增加其他應用程式(例如Real-Time CDP)中的設定檔大小。
 
@@ -184,11 +181,11 @@ XDM結構描述中的所有欄位，都可供Adobe Analytics做為前置詞為�
 > 請注意 `_experience` 下的物件 `productListItems` > `Item 1`. 在此之下設定任何變數 [!UICONTROL 物件] 設定產品語法eVar或事件。
 
 
-### 傳送資料至不同的報表套裝
+## 傳送資料至不同的報表套裝
 
 訪客位於特定頁面時，您可能會想要變更要傳送至哪個Adobe Analytics報表套裝資料。 這需要在資料串流和規則中進行設定。
 
-#### 設定資料流報表套裝覆寫
+### 設定報表套裝覆寫的資料流
 
 若要在資料流中設定Adobe Analytics報表套裝覆寫設定：
 
@@ -201,12 +198,12 @@ XDM結構描述中的所有欄位，都可供Adobe Analytics做為前置詞為�
 
 1. 選取您要覆寫的報告套裝。 在這種情況下， `Web SDK Course Dev` 和 `Web SDK Course Stg`
 
-1. 選取儲存
+1. 選取 **[!UICONTROL 儲存]**
 
    ![覆寫資料流](assets/analytics-datastreams-edit-adobe-analytics-configurations-report-suites.png)
 
 
-#### 透過資料流覆寫將頁面檢視傳送至不同的報表套裝
+### 設定報表套裝覆寫規則
 
 讓我們建立規則，將額外的頁面檢視呼叫傳送至不同的報表套裝。 使用資料流覆寫功能來變更頁面的報告套裝，使用 **[!UICONTROL 傳送事件]** 動作。
 
@@ -270,26 +267,22 @@ XDM結構描述中的所有欄位，都可供Adobe Analytics做為前置詞為�
    ![Analytics資料流覆寫](assets/analytics-tags-report-suite-override.png)
 
 
-
 ## 建置您的開發環境
 
 將新的資料元素和規則新增至 `Luma Web SDK Tutorial` 標籤程式庫並重新建置開發環境。
 
 恭喜！下一步是透過Experience Platform Web SDK驗證您的Adobe Analytics實作。
 
-## 驗證適用於Platform Web SDK的Adobe Analytics
+## 使用Debugger驗證Adobe Analytics
 
-在 [Debugger](validate-with-debugger.md) 您已經瞭解如何使用Platform Debugger和瀏覽器開發人員控制檯檢查使用者端XDM請求，其方式與偵錯類似。 `AppMeasurement.js` Analytics實施。 您也瞭解如何驗證傳送至Adobe應用程式的Platform Edge Network伺服器端要求，以及如何使用Assurance檢視完全處理的裝載。
+瞭解如何使用Experience Platform Debugger的邊緣追蹤功能驗證Adobe Analytics是否正在擷取ECID、頁面檢視、產品字串以及電子商務事件。
+
+在 [Debugger](validate-with-debugger.md) 您已經瞭解如何使用Platform Debugger和瀏覽器開發人員控制檯檢查使用者端XDM請求，其方式與偵錯類似。 `AppMeasurement.js` Analytics實施。 您也瞭解如何驗證傳送至Adobe應用程式的PlatformEdge Network伺服器端要求，以及如何使用Assurance檢視完全處理的裝載。
 
 Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷取資料，您必須進一步執行下列兩個步驟：
 
-1. 使用Experience Platform Debugger的邊緣追蹤功能，驗證Platform Edge Network上XDM物件處理資料的方式
-1. 驗證Analytics使用處理規則和即時報表處理資料的方式
+1. 使用Experience PlatformDebugger的邊緣追蹤功能，驗證平台Edge Network上XDM物件處理資料的方式
 1. 使用Adobe Experience Platform保證驗證Analytics完全處理資料的方式
-
-### 使用邊緣追蹤
-
-瞭解如何使用Experience Platform Debugger的邊緣追蹤功能驗證Adobe Analytics是否正在擷取ECID、頁面檢視、產品字串以及電子商務事件。
 
 ### Experience CloudID驗證
 
@@ -325,7 +318,7 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
    >
    >由於您已登入，請花點時間驗證驗證的ID `112ca06ed53d3db37e4cea49cc45b71e` 適用於使用者 **`test@adobe.com`** 也會擷取至 `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
 
-### 報表套裝覆寫
+### 報表套裝覆寫驗證
 
 在您上方設定的「 」資料流覆寫 [Luma首頁](https://luma.enablementadobe.com/content/luma/us/en.html).  驗證此設定的方式
 
@@ -337,7 +330,7 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
    ![Analytics報表套裝覆寫呼叫驗證](assets/aep-debugger-analytics-report-suite-override.png)
 
-### 內容頁面檢視
+### 內容頁面檢視驗證
 
 前往產品頁面，例如 [Didi Sport Watch產品頁](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  驗證Analytics是否擷取內容頁面檢視。
 
@@ -346,9 +339,9 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
    ![Analytics產品字串](assets/analytics-debugger-edge-page-view.png)
 
-### 產品字串和電子商務事件
+### 產品字串和電子商務事件驗證
 
-由於您已在產品頁面上，此練習會繼續使用相同的邊緣追蹤來驗證Analytics所擷取的產品資料。 產品字串和電子商務事件都會自動將XDM變數對應至Analytics。 只要您已對應至適當的 `productListItem` XDM變數，而 [為Adobe Analytics設定XDM結構描述](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)，Platform Edge Network會負責將資料對應至適當的分析變數。
+由於您已在產品頁面上，此練習會繼續使用相同的邊緣追蹤來驗證Analytics所擷取的產品資料。 產品字串和電子商務事件都會自動將XDM變數對應至Analytics。 只要您已對應至適當的 `productListItem` XDM變數，而 [為Adobe Analytics設定XDM結構描述](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)，平台Edge Network會負責將資料對應至適當的分析變數。
 
 **首先驗證 `Product String` 已設定**
 
@@ -359,7 +352,7 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
    ![Analytics產品字串](assets/analytics-debugger-prodstring.png)
 
-   邊緣軌跡處理 `commerce` 事件與略有不同 `productList` 維度。 您不會看到內容資料變數的對應方式，與您看到產品名稱對應的方式相同 `[!UICONTROL c.a.x.productlistitem.[0].name]` 以上。 邊緣追蹤反而會在Analytics中顯示最終事件自動對應 `event` 變數中。 只要您將對應到適當的XDM，Platform Edge Network就會據此對應 `commerce` 變數，而 [為Adobe Analytics設定結構](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)；在此案例中 `commerce.productViews.value=1`.
+   邊緣軌跡處理 `commerce` 事件與略有不同 `productList` 維度。 您不會看到內容資料變數的對應方式，與您看到產品名稱對應的方式相同 `[!UICONTROL c.a.x.productlistitem.[0].name]` 以上。 邊緣追蹤反而會在Analytics中顯示最終事件自動對應 `event` 變數中。 只要您將對應到適當的XDM，平台Edge Network就會據此對應 `commerce` 變數，而 [為Adobe Analytics設定結構](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)；在此案例中 `commerce.productViews.value=1`.
 
 1. 返回Experience PlatformDebugger視窗，向下捲動至 `[!UICONTROL events]` 變數，已設為 `[!UICONTROL prodView]`
 
@@ -404,37 +397,19 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
 
 
-## 使用Adobe Experience Platform保證驗證Adobe Analytics
+## 使用Assurance驗證Adobe Analytics
 
-Adobe Experience Platform保證是Adobe Experience Cloud的產品，可協助您檢查、證明、模擬及驗證如何收集資料或透過您的網站和行動應用程式提供體驗。
+Adobe Experience Platform保證可協助您檢查、證明、模擬及驗證您如何收集資料或透過您的網站和行動應用程式提供體驗。
 
-如上所示，您已驗證Adobe Analytics是否使用Experience PlatformDebugger的邊緣追蹤功能來擷取ECID、頁面檢視、產品字串以及電子商務事件。  您也使用處理規則和即時報表來驗證prop1的對應。  接下來，您可以使用Adobe Experience Platform保證來驗證這些相同事件。
+在上一個練習中，您已驗證Adobe Analytics是否使用Experience PlatformDebugger的邊緣追蹤功能來擷取ECID、頁面檢視、產品字串以及電子商務事件。  接下來，您可以使用Adobe Experience Platform保證來驗證這些相同事件，這是在Edge Trace中存取相同資料的替代介面。
 
->[!NOTE]
->
->若要使用Adobe Experience Platform保證驗證Adobe Analytics資料，您必須 [啟用使用者存取Adobe Experience Platform保證](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html)
-
-### 存取Adobe Experience Platform保證
-
-有幾種方式可以存取「保證」：
-
-1. 透過Adobe Experience Platform介面
-1. 透過Adobe Experience Platform資料收集介面
-1. 透過Adobe Experience Platform Debugger內的記錄（建議）
-
-若要透過Adobe Experience Platform存取保證，請向下捲動並選取 **[!UICONTROL 保證]** 在左側欄導覽中的 **[!UICONTROL 資料彙集]**.  選取 **[!UICONTROL 「Web SDK教學課程3」]** 工作階段來存取上一節中產生的事件。
-![透過Adobe Experience Platform提供保證](assets/assurance-open-aep.png)
-
-若要透過Adobe Experience Platform資料彙集存取保證，請選取 **[!UICONTROL 保證]** 在左側欄導覽中的 **[!UICONTROL 資料彙集]**.  選取 **[!UICONTROL 「Web SDK教學課程3」]** 工作階段來存取上一節中產生的事件。\
-![透過Adobe Experience Platform Data Collection提供保證](assets/assurance-open-data-collection.png)
-
-若要透過Adobe Experience Platform Debugger存取保證，請前往Experience Platform偵錯工具，在左側導覽中選取 **[!UICONTROL 記錄檔]**，然後選取 **[!UICONTROL Edge]** 標籤，然後選取 **[!UICONTROL 連線]**.  建立與Edge Network的連線後，請選取外部連結圖示。 我們建議透過Debugger存取Assurance，因為目前需要從Debugger啟動網頁工作階段。
+如您所知， [保證](validate-with-assurance.md) 課程，有數種方式可啟動保證工作階段。 由於您已經透過上次練習起始的邊緣追蹤工作階段開啟Adobe Experience Platform Debugger，因此建議您透過Debugger存取Assurance：
 ![透過Adobe Experience Platform Data Collection提供保證](assets/assurance-open-aep-debugger.png)
 
 在 **[!UICONTROL 「Web SDK教學課程3」]** 輸入保證工作階段 **[!UICONTROL &quot;hitdebugger&quot;]** 並放入事件搜尋列，將結果篩選為AdobeAnalytics處理後資料。
 ![保證Adobe分析後處理資料](assets/assurance-hitdebugger.png)
 
-### 具有保證的Experience CloudID驗證
+### Experience CloudID驗證
 
 若要驗證Adobe Analytics是否正在擷取ECID，請選取信標並開啟裝載。  此信標的廠商應為 **[!UICONTROL com.adobe.analytics.hitdebugger]**
 ![Adobe Analytics驗證（含保證）](assets/assurance-hitdebugger-payload.png)
@@ -442,13 +417,13 @@ Adobe Experience Platform保證是Adobe Experience Cloud的產品，可協助您
 然後向下捲動至 **[!UICONTROL mcvisId]** 驗證ECID是否正確擷取
 ![具有保證的Experience CloudID驗證](assets/assurance-hitdebugger-mcvisId.png)
 
-### 使用保證進行內容頁面檢視驗證
+### 內容頁面檢視驗證
 
 使用相同的信標，驗證內容頁面檢視是否已對應至正確的Adobe Analytics變數。
 向下捲動至 **[!UICONTROL pageName]** 驗證 `Page Name` 已正確擷取
 ![含保證的頁面名稱驗證](assets/assurance-hitdebugger-content-pagename.png)
 
-### 產品字串和電子商務事件驗證，含保證
+### 產品字串和電子商務事件驗證
 
 依照使用上述Experience Platform Debugger進行驗證時所使用的相同驗證使用案例，繼續使用相同的信標來驗證 `Ecommerce Events` 和 `Product String`.
 

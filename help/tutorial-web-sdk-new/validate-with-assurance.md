@@ -2,9 +2,10 @@
 title: 使用Experience Platform保證驗證Web SDK實作
 description: 瞭解如何使用Adobe Experience Platform保證驗證您的Platform Web SDK實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Assurance
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
+source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '595'
 ht-degree: 2%
 
 ---
@@ -19,7 +20,7 @@ Adobe Experience Platform保證是Adobe Experience Cloud的產品，可協助您
 在本課程結束時，您將能夠：
 
 * 啟動保證工作階段
-* 檢視傳送至Platform Edge Network及從中傳送的請求
+* 檢視傳送至平台或從平台Edge Network傳送的請求
 
 ## 先決條件
 
@@ -70,7 +71,7 @@ Adobe Experience Platform保證是Adobe Experience Cloud的產品，可協助您
 
 ## 驗證Web SDK實作的目前狀態
 
-在實施的這個階段，可檢視的資訊有限。 我們可以看到您在Platform Edge Network上產生的Experience CloudID (ECID)值：
+在實施的這個階段，可檢視的資訊有限。 我們可以看到您在PlatformEdge Network上產生的Experience CloudID (ECID)值：
 
 1. 選取事件名稱為「Adobe回應控制代碼」的列。
 1. 功能表會顯示在右側。 選取 `+` 在「 」旁邊簽署 `[!UICONTROL ACPExtensionEvent]`
