@@ -3,7 +3,7 @@ title: 結論和後續步驟
 description: 完成教學課程後的後續動作
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
+>我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
 恭喜！您已完成「使用Web SDK實作Adobe Experience Cloud」教學課程！
 
@@ -24,14 +24,14 @@ ht-degree: 3%
 * 使用標準和自訂欄位群組建立結構描述。
 * 已設定資料流。
 * 建立標籤屬性。
-* 從資料層擷取欄位，將其轉換成XDM，然後傳送至Platform Edge Network。
+* 從資料層擷取欄位，將其轉換為XDM並傳送給平台Edge Network。
 * 擷取的同意和已驗證的身分。
 * 已將Web SDK實作連線至下列Experience Cloud應用程式：
    * Adobe Experience Platform
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* 使用事件轉送將資料從Platform Edge Network傳送至Web勾點。
+* 使用事件轉送將資料從PlatformEdge Network傳送至Web勾點。
 * 已使用Adobe Experience Platform Debugger驗證實作。
 
 您已準備好開始歷程的下一個階段 — 在您自己的網站中實施Adobe Experience Cloud！

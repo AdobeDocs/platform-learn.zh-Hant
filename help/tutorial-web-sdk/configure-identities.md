@@ -3,7 +3,7 @@ title: 設定身分名稱空間
 description: 瞭解如何設定身分識別名稱空間以搭配Adobe Experience Platform Web SDK使用。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 7%
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!CAUTION]
 >
->我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
+>我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
 瞭解如何設定身分識別名稱空間以搭配Adobe Experience Platform Web SDK使用。
 
@@ -90,7 +90,7 @@ ht-degree: 7%
 
 >[!INFO]
 >
-> 在 [建立資料元素](create-data-elements.md) 課程，您將瞭解在傳送身分識別到Platform Edge Network時如何使用此名稱空間。
+> 在 [建立資料元素](create-data-elements.md) 課程，您將學習在傳送身分識別到PlatformEdge Network時如何使用此名稱空間。
 
 ## 在您的生產沙箱中建立身分名稱空間
 

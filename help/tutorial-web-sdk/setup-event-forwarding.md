@@ -3,7 +3,7 @@ title: 設定事件轉送屬性
 description: 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1893'
 ht-degree: 2%
@@ -15,13 +15,13 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
+>我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。
 
-事件轉寄是「資料收集」中可用的全新屬性型別。 事件轉送可讓您直接從Adobe Experience Platform Edge Network （而非傳統使用者端瀏覽器）將資料傳送至第三方非Adobe廠商。 在中進一步瞭解事件轉送的優點 [事件轉送概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+事件轉寄是「資料收集」中可用的全新屬性型別。 事件轉送可讓您直接從Adobe Experience PlatformEdge Network傳送資料給第三方非Adobe廠商，而非傳統的使用者端瀏覽器。 在中進一步瞭解事件轉送的優點 [事件轉送概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
 
-若要在Adobe Experience Platform中使用事件轉送，必須先使用下列一個或多個選項，將資料傳送至Adobe Experience Platform Edge Network：
+若要在Adobe Experience Platform中使用事件轉送，必須先使用下列一個或多個選項，將資料傳送至Adobe Experience PlatformEdge Network：
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
@@ -31,7 +31,7 @@ ht-degree: 2%
 >[!NOTE]
 >Platform Web SDK和Platform Mobile SDK不需要透過標籤進行部署，但建議使用標籤來部署這些SDK。
 
-完成本教學課程中先前的課程後，您應使用Web SDK傳送資料至Platform Edge Network。 資料上傳Platform Edge Network後，您就可以啟用事件轉送，並使用事件轉送屬性將資料傳送至非Adobe解決方案。
+完成本教學課程中先前的課程後，您應使用Web SDK傳送資料至PlatformEdge Network。 資料進入平台Edge Network後，您就可以啟用事件轉送，並使用事件轉送屬性將資料傳送至非Adobe解決方案。
 
 ## 學習目標
 
@@ -113,7 +113,7 @@ ht-degree: 2%
 
 當您準備好透過發佈流程提升您的變更時，請針對中繼和生產資料串流重複這些步驟。
 
-## 將資料從Platform Edge Network轉送至非Adobe解決方案
+## 將資料從平台Edge Network轉送至非Adobe解決方案
 
 在本練習中，您將瞭解如何設定事件轉送資料元素、設定事件轉送規則，以及使用名為的第三方工具進行驗證 [Webhook.site](https://webhook.site/).
 
@@ -123,7 +123,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->您必須已建立資料元素並將元素對應至XDM物件，且已設定標籤規則，並在程式庫中將這些變更建立至標籤環境，才能繼續進行。 若未包含，請參閱 **標籤設定** 中的步驟 [必備條件](setup-event-forwarding.md#prerequisites) 區段。 這些步驟可確保將資料傳送至Platform Edge Network，接著您可以設定事件轉送屬性，將資料轉送至非Adobe解決方案。
+>您必須已建立資料元素並將元素對應至XDM物件，且已設定標籤規則，並在程式庫中將這些變更建立至標籤環境，才能繼續進行。 若未包含，請參閱 **標籤設定** 中的步驟 [必備條件](setup-event-forwarding.md#prerequisites) 區段。 這些步驟可確保將資料傳送至PlatformEdge Network，且您可以從中設定事件轉送屬性，以將資料轉送至非Adobe解決方案。
 
 
 ### 建立事件轉送資料元素
@@ -212,7 +212,7 @@ ht-degree: 2%
 * **[!UICONTROL 活動] &amp; [!UICONTROL 條件]**：
 
    * **標籤**：所有規則都是由事件觸發，而事件必須在規則中指定，例如 `Library Loaded - Page Top`. 條件為選用。
-   * **事件轉送**：我們假設傳送至Platform Edge Network的每個事件都是轉送資料的觸發條件。 因此， [!UICONTROL 活動] 即必須在事件轉送規則中選取的位置。 若要管理哪些事件會觸發事件轉送規則，您必須設定條件。
+   * **事件轉送**：我們假設每個傳送至PlatformEdge Network的事件都是轉送資料的觸發條件。 因此， [!UICONTROL 活動] 即必須在事件轉送規則中選取的位置。 若要管理哪些事件會觸發事件轉送規則，您必須設定條件。
 
 * **資料元素代碼化**：
 
@@ -295,13 +295,13 @@ ht-degree: 2%
 
 1. 重新載入頁面之前，Experience PlatformDebugger會開啟 **[!UICONTROL 記錄檔]** 從左側導覽
 
-1. 選取 **[!UICONTROL Edge]** 索引標籤，然後選取 **[!UICONTROL 連線]** 檢視Platform Edge Network請求的方式
+1. 選取 **[!UICONTROL Edge]** 索引標籤，然後選取 **[!UICONTROL 連線]** 若要檢視平台Edge Network請求
 
    ![事件轉送邊緣網路工作階段](assets/event-forwarding-edge-session.png)
 
 1. 重新載入頁面
 
-1. 您會看到其他要求，讓您瞭解Platform Edge Network傳送給WebHook的伺服器端要求
+1. 您將看到其他請求，這些請求可讓您檢視平台Edge Network傳送給WebHook的伺服器端請求
 
 1. 焦點驗證的要求是顯示Edge網路所傳送之完整建構URL的要求
 

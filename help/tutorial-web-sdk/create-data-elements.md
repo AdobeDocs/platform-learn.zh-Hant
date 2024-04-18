@@ -3,7 +3,7 @@ title: 建立資料元素
 description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至該物件。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
+>我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
 瞭解如何使用Experience Platform Web SDK建立擷取資料所需的基本資料元素。 擷取上的內容和身分資料 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html). 瞭解如何使用您先前建立的XDM結構描述，以透過名為XDM物件的新資料元素型別使用Platform Web SDK收集資料。
 
@@ -225,7 +225,7 @@ ht-degree: 0%
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-備妥這些資料元素後，您就可以開始在標籤中建立規則，透過XDM物件開始將資料傳送至Platform Edge Network。
+備妥這些資料元素後，您就可以開始在標籤中建立規則，透過XDM物件將資料傳送至PlatformEdge Network。
 
 [下一步： ](create-tag-rule.md)
 

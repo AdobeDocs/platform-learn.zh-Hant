@@ -3,7 +3,7 @@ title: 使用Experience Platform Debugger驗證Web SDK實作
 description: 瞭解如何使用Adobe Experience Platform Debugger驗證您的Platform Web SDK實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
+>我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
 瞭解如何使用Adobe Experience Platform Debugger驗證您的Platform Web SDK實作。
 
@@ -37,7 +37,7 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 在本課程結束時，您將能夠使用除錯工具：
 
 * 載入替代標籤程式庫
-* 驗證XDM物件是否如預期Edge Network擷取和傳送資料
+* 驗證XDM物件正在擷取資料，並傳送如預期Edge Network的資料
 
 ## 先決條件
 
@@ -87,7 +87,7 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
 
 ## 在Experience Platform Debugger中驗證實作
 
-您可以使用Debugger驗證Platform Web SDK實作情形，並檢視傳送至Platform Edge Network的資料：
+您可以使用Debugger驗證Platform Web SDK實作情形，並檢視傳送至PlatformEdge Network的資料：
 
 1. 前往 **[!UICONTROL 摘要]** 在左側導覽中，檢視標籤屬性的詳細資訊
 

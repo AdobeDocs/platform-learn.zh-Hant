@@ -1,9 +1,9 @@
 ---
 title: 建立標籤規則
-description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至Platform Edge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 3%
@@ -15,9 +15,9 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
+>我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
-瞭解如何使用標籤規則，透過XDM物件將事件傳送至Platform Edge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。
+瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ ht-degree: 3%
 
 ## 建立標籤規則
 
-在標籤中，規則是用來在不同的條件下執行動作（引發呼叫）。 您將使用此第一項規則，透過Web SDK的 [!UICONTROL 傳送事件] 動作。 在本教學課程的稍後部分，您將根據訪客所在的頁面型別，傳送不同版本的XDM物件。 因此，您將使用規則條件來排除這些其他型別的頁面。
+在標籤中，規則是用來在不同的條件下執行動作（引發呼叫）。 Edge Network您將使用此第一項規則，透過Web SDK的 [!UICONTROL 傳送事件] 動作。 在本教學課程的稍後部分，您將根據訪客所在的頁面型別，傳送不同版本的XDM物件。 因此，您將使用規則條件來排除這些其他型別的頁面。
 
 若要建立標籤規則：
 

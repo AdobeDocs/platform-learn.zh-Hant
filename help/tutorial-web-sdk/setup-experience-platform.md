@@ -2,7 +2,7 @@
 title: 使用Web SDK將資料串流至Adobe Experience Platform
 description: 瞭解如何使用Web SDK將網頁資料串流到Adobe Experience Platform。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1600'
 ht-degree: 5%
@@ -14,13 +14,13 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
+>我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
 瞭解如何使用Platform Web SDK將網頁資料串流至Adobe Experience Platform。
 
 Experience Platform是所有新Experience Cloud應用程式的骨幹，例如Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer。 這些應用程式在設計上使用Platform Web SDK作為收集網頁資料的最佳方法。
 
-Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網站擷取事件資料。 當該資料傳送到Platform Edge Network時，資料流設定可以將其轉送到Experience Platform。
+Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網站擷取事件資料。 當該資料傳送至PlatformEdge Network時，資料流設定可以將其轉送至Experience Platform。
 
 ## 學習目標
 
@@ -81,7 +81,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ## 設定資料串流
 
-現在您可以設定 [!UICONTROL 資料流] 以傳送資料至 [!UICONTROL Adobe Experience Platform]. 資料流是標籤屬性、Platform Edge Network和Experience Platform資料集之間的連結。
+現在您可以設定 [!UICONTROL 資料流] 以傳送資料至 [!UICONTROL Adobe Experience Platform]. 資料流是標籤屬性、平台Edge Network和Experience Platform資料集之間的連結。
 
 1. 開啟 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
 1. 選取 **[!UICONTROL 資料串流]** 從左側導覽

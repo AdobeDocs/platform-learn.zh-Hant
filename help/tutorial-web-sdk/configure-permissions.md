@@ -3,7 +3,7 @@ title: 設定教學課程的許可權
 description: 瞭解如何請求Experience PlatformWeb SDK的存取權，並設定完成「使用Web SDK實作Adobe Experience Cloud」教學課程所需的許可權。
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->我們預計於2024年3月15日星期五發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
+>我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
 瞭解如何要求Experience Platform Web SDK的存取權，以及設定完成本教學課程所需的許可權。 若要使用資料收集介面中的標籤來實作Platform Web SDK，您必須擁有中設定的適當使用者許可權 [Admin Console](https://adminconsole.adobe.com).
 
