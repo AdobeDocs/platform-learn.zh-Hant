@@ -2,7 +2,8 @@
 title: 為網頁資料建立XDM結構描述
 description: 瞭解如何在資料收集介面中為網頁資料建立XDM結構描述。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Schemas
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+exl-id: 159f914a-43d4-4808-b6af-01136386e25c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 Experience Data Model (XDM)結構描述是在Adobe Experience Platform中收集資料的建置組塊、原則和最佳實務。
 
-Platform Web SDK會使用您的結構描述將網頁事件資料標準化、傳送至Platform Edge Network，最終將資料轉送至資料流中設定的任何Experience Cloud應用程式。 此步驟至關重要，因為它會定義將客戶體驗資料擷取到Experience Platform所需的標準資料模型，並啟用建置在這些標準上的下游服務和應用程式。
+Platform Web SDK會使用您的結構描述將網頁事件資料標準化、傳送給PlatformEdge Network，最終將資料轉送給資料流中設定的任何Experience Cloud應用程式。 此步驟至關重要，因為它會定義將客戶體驗資料擷取到Experience Platform所需的標準資料模型，並啟用建置在這些標準上的下游服務和應用程式。
 
 ## 為何要為資料建立模型？
 
@@ -122,7 +123,7 @@ XDM結構描述是以Experience Platform描述資料的標準方式，可讓所�
 1. 核取方塊
 1. 選取 **[!UICONTROL 新增欄位群組]**
 
-   ![新增欄位群組](assets/schema-add-field-group.jpg)
+   ![新增欄位群組](assets/schema-add-field-group.png)
 
 對於這兩個欄位群組，請注意，您有權存取網站上資料收集所需的最常用索引鍵/值組。 此 [!UICONTROL 顯示名稱] 對行銷人員顯示在平台式應用程式的區段產生器介面中的每個欄位，而您可以變更標準欄位的顯示名稱以符合您的需求。 您也可以移除不要的欄位。 當您按一下任一欄位群組名稱時，介面會醒目顯示哪些索引鍵/值組群組屬於該介面。 在下列範例中，您會看到哪些群組屬於 **[!UICONTROL 消費者體驗事件]**.
 

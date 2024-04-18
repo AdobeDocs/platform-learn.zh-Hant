@@ -2,7 +2,8 @@
 title: 建立身分
 description: 瞭解如何在XDM中建立身分識別，並使用身分對應資料元素來擷取使用者ID。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 1%
@@ -47,7 +48,7 @@ ht-degree: 1%
 
 深入瞭解如何 [使用Platform Web SDK追蹤ECID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
-ECID是使用第一方Cookie和Platform Edge Network的組合來設定。 根據預設，第一方Cookie由Web SDK設定。 若要說明瀏覽器對Cookie有效期的限制，您可以選擇改為設定和管理您自己的第一方Cookie。 這些稱為第一方裝置ID (FPID)。
+ECID是使用第一方Cookie和平台Edge Network的組合所設定。 根據預設，第一方Cookie是由Web SDK在使用者端設定。 若要說明瀏覽器對Cookie有效期的限制，您可以選擇改為在伺服器端設定您自己的第一方Cookie。 這些稱為第一方裝置ID (FPID)。
 
 >[!IMPORTANT]
 >
@@ -57,7 +58,7 @@ ECID是使用第一方Cookie和Platform Edge Network的組合來設定。 根據
 
 FPID是第一方Cookie _您使用自己的網頁伺服器設定_ 然後使用哪個Adobe來建立ECID，而不是使用Web SDK設定的第一方Cookie。 雖然瀏覽器支援可能有所不同，但如果第一方Cookie是由運用DNS A記錄（適用於IPv4）或AAAA記錄（適用於IPv6）的伺服器所設定，而不是由DNS CNAME或JavaScript程式碼設定，則這些支援通常更耐用。
 
-設定FPID Cookie後，就能在收集事件資料時擷取其值並傳送至Adobe。 收集的FPID會作為種子，在Platform Edge Network上產生ECID，這繼續是Adobe Experience Cloud應用程式中的預設識別碼。
+設定FPID Cookie後，就能在收集事件資料時擷取其值並傳送至Adobe。 收集的FPID會作為種子，在PlatformEdge Network上產生ECID，這繼續是Adobe Experience Cloud應用程式中的預設識別碼。
 
 雖然本教學課程中不使用FPID，但建議您在自己的網頁SDK實作中使用FPID。 深入瞭解 [Platform Web SDK中的第一方裝置ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=zh-Hant)
 
@@ -147,7 +148,7 @@ FPID是第一方Cookie _您使用自己的網頁伺服器設定_ 然後使用哪
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-備妥這些資料元素後，您就可以開始在標籤中建立規則，透過XDM物件開始將資料傳送至Platform Edge Network。
+備妥這些資料元素後，您就可以開始在標籤中建立規則，透過XDM物件將資料傳送至PlatformEdge Network。
 
 [下一步： ](create-tag-rule.md)
 

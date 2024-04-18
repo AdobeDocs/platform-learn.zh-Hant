@@ -1,8 +1,9 @@
 ---
 title: 建立標籤規則
-description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至Platform Edge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
-source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
+exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 1%
@@ -11,7 +12,7 @@ ht-degree: 1%
 
 # 建立標籤規則
 
-瞭解如何使用標籤規則，透過XDM物件將事件傳送至Platform Edge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。 在Platform Web SDK中，規則是用來傳送事件至Platform Edge Network，並包含正確的XDM欄位。
+瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。 在Platform Web SDK中，規則是用來將事件傳送至具有正確XDM欄位的PlatformEdge Network。
 
 >[!NOTE]
 >
@@ -60,7 +61,7 @@ ht-degree: 1%
 在標籤中，規則是用來在不同的條件下執行動作（引發呼叫）。 Platform Web SDK標籤擴充功能包含本課程將使用的兩個動作：
 
 * **[!UICONTROL 更新變數]** 將資料元素對應至XDM欄位
-* **[!UICONTROL 傳送事件]** 傳送XDM物件至Experience Platform Edge Network
+* **[!UICONTROL 傳送事件]** 傳送XDM物件至Experience PlatformEdge Network
 
 在本課程的其餘部分中，我們會：
 
@@ -105,7 +106,7 @@ ht-degree: 1%
    > 訂單編號越低，執行的時間就越早。 因此，我們提供「全域組態」低訂購數量。
 
 1. 選取 **[!UICONTROL 保留變更]** 以返回主規則畫面
-   ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-bottom.png)
+   ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-loaded.png)
 
 1. 在 **[!UICONTROL 動作]** 區段，選取 **[!UICONTROL 新增]**
 
@@ -167,7 +168,7 @@ ht-degree: 1%
 
 #### 產品頁面欄位
 
-現在，開始使用 **[!UICONTROL 更新變數]** 此外，排序規則會先擴充XDM物件，再傳送至 [!UICONTROL Platform Edge Network].
+現在，開始使用 **[!UICONTROL 更新變數]** 此外，排序規則會先擴充XDM物件，再傳送至 [!UICONTROL 平台Edge Network].
 
 >[!TIP]
 >
@@ -339,7 +340,7 @@ ht-degree: 1%
 
 ### 傳送事件規則
 
-現在您已設定變數，您可以建立規則，以使用將完整XDM物件傳送至Platform Edge Network **[!UICONTROL 傳送事件]** 動作。
+現在您已設定變數，您可以建立規則，以使用將完整XDM物件傳送至PlatformEdge Network **[!UICONTROL 傳送事件]** 動作。
 
 1. 在右側，選取 **[!UICONTROL 新增規則]** 以建立其他規則
 
@@ -352,7 +353,7 @@ ht-degree: 1%
 1. 選取 **[!UICONTROL 進階]** 下拉式清單並輸入 `50` 在 **[!UICONTROL 訂購]**. 這將確保第二個規則會在您設定為觸發的第一個規則之後觸發 `1`.
 
 1. 選取 **[!UICONTROL 保留變更]** 以返回主規則畫面
-   ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-bottom-send.png)
+   ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. 在 **[!UICONTROL 動作]** 區段，選取 **[!UICONTROL 新增]**
 

@@ -2,7 +2,8 @@
 title: 安裝及設定Adobe Experience Platform Web SDK標籤擴充功能
 description: 瞭解如何在資料收集介面中安裝和設定Platform Web SDK標籤擴充功能。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -53,7 +54,7 @@ ht-degree: 12%
 1. 搜尋 `Adobe Experience Platform Web SDK`
 1. 選取 **[!UICONTROL 安裝]**
 
-   ![安裝Web SDK擴充功能](assets/extension-platform-web-sdk.jpg)
+   ![安裝Web SDK擴充功能](assets/extension-platform-web-sdk.png)
 
 
 ## 將Platform Web SDK連結至您的資料流

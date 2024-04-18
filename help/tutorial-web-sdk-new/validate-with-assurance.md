@@ -3,9 +3,9 @@ title: 使用Experience Platform保證驗證Web SDK實作
 description: 瞭解如何使用Adobe Experience Platform保證驗證您的Platform Web SDK實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
@@ -61,13 +61,16 @@ Adobe Experience Platform保證是Adobe Experience Cloud的產品，可協助您
 1. 開啟 [資料收集介面](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. 在左側導覽中選取保證
 1. 選取建立工作階段
+   ![建立保證工作階段](assets/assurance-create-session.png)
 1. 選取開始
 1. 為工作階段命名，例如， `Luma Web SDK validation`
 1. 作為 **[!UICONTROL 基礎URL]** 進入 `https://luma.enablementadobe.com/`
+   ![為保證工作階段命名](assets/assurance-name-session.png)
 1. 在下一個畫面，選取 **[!UICONTROL 複製連結]**
 1. 選取圖示以將連結複製到剪貼簿
 1. 在瀏覽器中貼上URL，這會使用特殊的URL引數開啟Luma網站 `adb_validation_sessionid` 並啟動工作階段
 1. 在Assurance介面中，您應該會看到一則訊息，指出您已成功連線至工作階段，而且您應該會看到在Assurance介面中擷取的事件。
+   ![保證工作階段已連線](assets/assurance-success.png)
 
 ## 驗證Web SDK實作的目前狀態
 
