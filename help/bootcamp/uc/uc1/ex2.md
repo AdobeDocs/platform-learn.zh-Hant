@@ -7,10 +7,10 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 0474808b42925bf95529e10a42a0563f0ecc43b8
+source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '509'
-ht-degree: 0%
+source-wordcount: '511'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Story
 
-在即時客戶個人檔案中，所有個人檔案資料都會與事件資料一起顯示，以及顯示現有的受眾會籍。 顯示的資料可來自任何地方，包括Adobe應用程式和外部解決方案。 這是Adobe Experience Platform中最強大的檢視畫面，真正的體驗記錄系統。
+在即時客戶個人檔案中，所有個人檔案資料都會與事件資料一起顯示，以及顯示現有的區段會籍。 顯示的資料可來自任何地方，包括Adobe應用程式和外部解決方案。 這是Adobe Experience Platform中最強大的檢視畫面，真正的體驗記錄系統。
 
 ## 1.2.1在Adobe Experience Platform中使用客戶設定檔檢視
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 在繼續之前，您需要選取 **沙箱**. 要選取的沙箱已命名 ``Bootcamp``. 您可以按一下文字來執行此操作 **[!UICONTROL 生產環境]** 在熒幕上方的藍線中。 選取適當的 [!UICONTROL 沙箱]，您將會看到畫面變更，現在您已進入專屬狀態 [!UICONTROL 沙箱].
 
-
+![資料擷取](./images/sb1.png)
 
 在左側功能表中，前往 **設定檔** 和 **瀏覽**.
 
@@ -39,7 +39,6 @@ ht-degree: 0%
 您可以在網站上的「設定檔檢視器」面板上找到身分總覽。 每個身分都會連結至名稱空間。
 
 ![客戶設定檔](./images/identities.png)
-
 
 在「設定檔檢視器」面板上，您目前可以看到此身分：
 
@@ -63,13 +62,13 @@ ht-degree: 0%
 
 ![客戶設定檔](./images/profileee.png)
 
-最後，前往功能表選項 **對象會籍**. 您現在會看到符合此設定檔資格的所有對象。
+最後，前往功能表選項 **區塊會籍**. 您現在會看到所有符合此設定檔資格的區段。
 
 ![客戶設定檔](./images/profileseg.png)
 
-現在，讓我們建立新的對象，好讓您為匿名或認識的客戶個人化客戶體驗。
+現在來建立一個新區段，讓您為匿名或認識的客戶個人化客戶體驗。
 
-下一步： [1.3建立對象 — UI](./ex3.md)
+下一步： [1.3建立區段 — UI](./ex3.md)
 
 [返回使用者流程1](./uc1.md)
 

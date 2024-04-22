@@ -3,7 +3,7 @@ title: 建立標籤規則
 description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
 exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
-source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
+source-git-commit: 0220f5dbe8e34e92cf584380629ecc29a549dabd
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 1%
@@ -344,7 +344,7 @@ ht-degree: 1%
 
 1. 在右側，選取 **[!UICONTROL 新增規則]** 以建立其他規則
 
-1. 將規則命名為 `all pages - library loaded - set send event - 50`
+1. 將規則命名為 `all pages - library loaded - send event - 50`
 
 1. 在 **[!UICONTROL 活動]** 區段，選取 **[!UICONTROL 新增]**
 

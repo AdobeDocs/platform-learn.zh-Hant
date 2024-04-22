@@ -2,9 +2,9 @@
 title: 使用Platform Web SDK設定Adobe Target
 description: 瞭解如何使用Platform Web SDK實作Adobe Target。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Target
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
 workflow-type: tm+mt
-source-wordcount: '4264'
+source-wordcount: '4308'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,8 @@ ht-degree: 0%
 
 * 瞭解如何新增Platform Web SDK預先隱藏程式碼片段，以防止搭配非同步標籤內嵌程式碼使用Target時忽隱忽現的情形
 * 設定資料流以啟用Target功能
-* 頁面載入時呈現視覺化個人化決策（先前稱為「全域mbox」）
+* 呈現視覺化體驗撰寫器活動
+* 呈現表單撰寫器活動
 * 傳遞XDM資料至Target並瞭解對應至Target引數
 * 將自訂資料傳遞至Target，例如設定檔和實體引數
 * 使用Platform Web SDK驗證Target實作
@@ -188,20 +189,22 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 * **個人化決策**：伺服器判斷應套用的動作。 這些決定可能會根據對象條件和Target活動優先順序。
 * **主張**：伺服器所做決策的結果，會以Platform Web SDK回應傳送。 例如，交換橫幅影像會是一種主張。
 
-### 更新頁面載入規則
+### 更新 [!UICONTROL 傳送事件] 動作
 
-如果在資料流中啟用了Target，Platform Web SDK則會傳送來自Target的視覺個人化決策。 不過， _它們不會自動呈現_. 您必須修改全域頁面載入規則，才能啟用自動轉譯。
+如果在資料流中啟用了Target，Platform Web SDK則會傳送來自Target的視覺個人化決策。 不過， _它們不會自動呈現_. 您必須更新 [!UICONTROL 傳送事件] 啟用自動轉譯的動作。
 
 1. 在 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面，開啟您用於本教學課程的標籤屬性
-1. 開啟 `all pages - library load - AA & AT` 規則
+1. 開啟 `all pages - library loaded - send event - 50` 規則
 1. 選取 `Adobe Experience Platform Web SDK - Send event` 動作
 1. 啟用 **[!UICONTROL 呈現視覺個人化決定]** 勾選核取方塊
 
    ![啟用呈現視覺個人化決策](assets/target-rule-enable-visual-decisions.png)
 
-1. 在**中[!UICONTROL 資料流設定覆寫**] 此 **[!UICONTROL 目標屬性Token]** 能以靜態值或資料元素覆寫。 僅屬性代號定義於 [**進階屬性代號覆寫**](#advanced-pto) 中的區段 **資料流設定** 將會傳回結果。
-
-   ![覆寫屬性代號](assets/target-property-token-ovrrides.png)
+<!--
+1. In the **[!UICONTROL Datastream configuration overrides**] the **[!UICONTROL Target Property Token]** can be overridden either as a static value or with a data element. Only property tokens defined in the [**Advanced Property Token Overrides**](#advanced-pto) section in **Datastream Configuration** will return results.
+   
+   ![Override the Property Token](assets/target-property-token-ovrrides.png)
+   -->
 
 1. 儲存您的變更，然後建置到您的程式庫
 
@@ -222,7 +225,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 >
 >如果您使用Google Chrome作為瀏覽器， [視覺化體驗撰寫器(VEC) Helper擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=en) 需要正確載入網站，才能在VEC中編輯。
 
-1. 導覽至目標
+1. 導覽至Adobe Target介面
 1. 使用活動URL的Luma首頁建立體驗鎖定目標(XT)活動
 
    ![建立新的XT活動](assets/target-xt-create-activity.png)
@@ -267,7 +270,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
    ![Adobe Experience Platform Debugger中的網路呼叫](assets/target-debugger-network.png)
 
-1. 請注意，底下有索引鍵 `query` > `personalization` 和  `decisionScopes` 具有值 `__view__`. 此範圍等同於Target的「全域mbox」。 此Platform Web SDK呼叫要求Target做出決定。
+1. 請注意，底下有索引鍵 `query` > `personalization` 和  `decisionScopes` 具有值 `__view__`. 此範圍等同於 `target-global-mbox`. 此Platform Web SDK呼叫要求Target做出決定。
 
    ![`__view__` decisionScope要求](assets/target-debugger-view-scope.png)
 
@@ -278,13 +281,13 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 ## 設定和演算自訂決定範圍
 
-自訂決策範圍（先前稱為「mbox」）可用於透過Target表單式體驗撰寫器，以結構化的方式傳遞HTML或JSON內容。 Platform Web SDK不會自動轉譯傳遞到這些自訂範圍之一的內容。
+自訂決策範圍（先前稱為「mbox」）可用於透過Target表單式體驗撰寫器，以結構化的方式傳遞HTML或JSON內容。 Platform Web SDK不會自動轉譯傳遞到這些自訂範圍之一的內容。 您可以使用Tags中的動作來轉譯。
 
-### 新增範圍至頁面載入規則
+### 將範圍新增至 [!UICONTROL 傳送事件動作]
 
 修改您的頁面載入規則以新增自訂決定範圍：
 
-1. 開啟 `all pages - library load - AA & AT` 規則
+1. 開啟 `all pages - library loaded - send event - 50` 規則
 1. 選取 `Adobe Experience Platform Web SDK - Send Event` 動作
 1. 新增一或多個要使用的範圍。 在此範例中，使用 `homepage-hero`.
 
@@ -383,9 +386,17 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
    ![Target活動印象](assets/target-debugger-activity-impression.png)
 
-## 傳遞其他資料至Target
+## 將引數傳送至Target
 
 在本節中，您將傳遞Target特定資料，並深入瞭解XDM資料對應至Target引數的方式。
+
+### 頁面(mbox)引數和XDM
+
+所有XDM欄位都會自動傳遞至Target，如下所示 [頁面引數](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) 或mbox引數。
+
+其中一些XDM欄位會對應至Target後端的特殊物件。 例如， `web.webPageDetails.URL` 將自動可用於建置以URL為基礎的鎖定目標條件，或作為 `page.url` 物件。
+
+### 特殊引數和資料物件
 
 有些資料點未從XDM物件對應，可能對Target有用。 這些特殊的Target引數包括：
 
@@ -394,9 +405,9 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 * [Recommendations保留的引數](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * 的類別值 [類別親和性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### 建立特殊Target引數的資料元素
+這些引數必須傳送於 `data` 物件，而不是在 `xdm` 物件。 此外，頁面（或mbox）引數也可包含在 `data` 物件。
 
-首先，使用在中建立的資料元素 [建立資料元素](create-data-elements.md) 課程以建構 `data` 用來傳遞非XDM資料的物件：
+若要填入資料物件，請建立以下資料元素，重複使用在中建立的資料元素 [建立資料元素](create-data-elements.md) 課程：
 
 * **`data.content`** 使用下列自訂程式碼：
 
@@ -414,38 +425,47 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
   return data;
   ```
 
+
+
 ### 更新頁面載入規則
 
 在XDM物件之外傳遞Target的其他資料需要更新任何適用的規則。 在此範例中，您唯一必須做的修改就是加入新的 **data.content** 資料元素至一般頁面載入規則和產品頁面檢視規則。
 
-1. 開啟 `all pages - library load - AA & AT` 規則
+1. 開啟 `all pages - library loaded - send event - 50` 規則
 1. 選取 `Adobe Experience Platform Web SDK - Send event` 動作
 1. 新增 `data.content` 資料元素至資料欄位
 
    ![新增Target資料至規則](assets/target-rule-data.png)
 
 1. 儲存您的變更並將組建組建至程式庫
-1. 針對「 」重複步驟1到4 **產品檢視 — 程式庫載入 — AA** 規則
+1. 針對「 」重複步驟1到4 **電子商務 — 載入程式庫 — 設定產品詳細資料變數 — 20** 規則
 
 >[!NOTE]
 >
 >上述範例使用 `data` 未在所有頁面型別中完全填入的物件。 標籤會適當地處理這種情況，並省略具有未定義值的索引鍵。 例如， `entity.id` 和 `entity.name` 除了產品詳細資料外，不會在任何頁面上傳遞。
 
 
-## 分割個人化決定和Analytics集合事件
+## 分割個人化與Analytics請求
 
-Luma網站上的資料層完全定義在標籤內嵌程式碼之前。 這可讓我們使用單一呼叫，來擷取個人化內容(例如從Adobe Target)並傳送分析資料(例如傳送到Adobe Analytics)。 在許多網站上，資料層的載入時間不夠早或速度不夠快，無法搭配個人化應用程式使用。 在這些情況下，您可以製作兩個 `sendEvent` 會在單一頁面載入時呼叫，並使用第一個進行個人化，並使用第二個進行分析。 以此方式分解事件規則，可讓Target決策事件儘早引發。 Analytics事件可以等到資料層物件填入之後。 這類似於Web SDK之前的實作，Adobe Target會在其中 `target-global-mbox` 在頁面頂端，Adobe Analytics會引發 `s.t()` 呼叫頁面底部的
+Luma網站上的資料層完全定義在標籤內嵌程式碼之前。 這可讓我們使用單一呼叫，來擷取個人化內容(例如從Adobe Target)並傳送分析資料(例如傳送到Adobe Analytics)。
 
+不過，在許多網站上，資料層的載入時間不夠早，或速度不夠快，無法同時針對兩個應用程式使用單一呼叫。 在這些情況下，您可以使用兩個 [!UICONTROL 傳送事件] 動作會在單一頁面上載入，並使用第一個用於個人化，第二個用於分析。 以這種方式分組事件可讓個人化事件儘早引發，同時等待資料層完全載入後再傳送Analytics事件。 這類似於許多Web SDK前期的實作，Adobe Target會在實作中引發 `target-global-mbox` 在頁面頂端，Adobe Analytics會引發 `s.t()` 呼叫頁面底部的
 
-1. 建立名為的規則 `all pages - page top - request decisions`
-1. 將事件新增至規則。 使用 **核心** 擴充功能與 **[!UICONTROL 程式庫已載入（頁面頂端）]** 事件型別
-1. 將動作新增至規則。 使用 **Adobe Experience Platform Web SDK** 擴充功能和 **傳送事件** 動作型別
+若要建立最上方個人化請求：
+
+1. 開啟 `all pages - library loaded - send event - 50` 規則
+1. 開啟 **傳送事件** 動作
 1. 選取 **[!UICONTROL 使用引導式事件]** 然後選取 **[!UICONTROL 要求個人化]**
 1. 這樣會鎖定 **型別** 作為 **[!UICONTROL 決策主張擷取]**
 
    ![send_decision_request_alone](assets/target-decision-request.png)
 
-1. 建立您的 `Adobe Analytics Send Event rule` 使用 **引導式事件樣式** 區段選取 **[!UICONTROL 頁面底部事件 — 收集分析]** 選項按鈕
+若要建立analytics-on-bottom請求：
+
+1. 建立名為的新規則 `all pages - page bottom - send event - 50`
+1. 將事件新增至規則。 使用 **核心** 擴充功能與 **[!UICONTROL 頁面底部]** 事件型別
+1. 將動作新增至規則。 使用 **Adobe Experience Platform Web SDK** 擴充功能和 **傳送事件** 動作型別
+1. 選取 **[!UICONTROL 使用引導式事件]** 然後選取 **[!UICONTROL 收集分析]**
 1. 這樣會鎖定 **[!UICONTROL 包含擱置的顯示通知]** 核取方塊已選取，以便傳送決策請求中的佇列顯示通知。
 
 ![send_decision_request_alone](assets/target-aa-request-guided.png)

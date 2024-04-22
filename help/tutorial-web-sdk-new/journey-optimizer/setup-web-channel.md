@@ -1,20 +1,21 @@
 ---
-title: 使用Platform Web SDK設定Web Channel
-description: 瞭解如何使用Platform Web SDK實作Web Channel。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+title: 使用Platform Web SDK設定Journey Optimizer Web Channel
+description: 瞭解如何使用Platform Web SDK實作Journey Optimizer Web Channel。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
+exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
+source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2587'
 ht-degree: 0%
 
 ---
 
 
-# 使用Platform Web SDK設定Web Channel
+# 設定Journey Optimizer Web Channel
 
-瞭解如何使用Platform Web SDK實作Web Channel。 本指南涵蓋基本Web Channel必要條件、設定的詳細步驟，以及以忠誠度狀態為中心的使用案例深入探討。
+瞭解如何使用Platform Web SDK實作Journey Optimizer Web Channel。 本指南涵蓋基本Web Channel必要條件、設定的詳細步驟，以及以忠誠度狀態為中心的使用案例深入探討。
 
 依照本指南，Journey Optimizer使用者可以使用Journey Optimizer網頁設計工具，有效套用進階線上個人化的網路管道。
 
@@ -48,7 +49,7 @@ ht-degree: 0%
 * 如果使用內容實驗功能，請確保您的網路資料集也包含在您的報告設定中。
 * 目前，支援兩種型別的實施，以便在Web屬性上製作和傳送Web Channel行銷活動：
    * 僅限使用者端：若要修改您的網站，您必須實作Adobe Experience Platform Web SDK。
-   * 混合模式：您可以利用Platform Edge Network Server API來要求個人化伺服器端。 來自API的回應會提供給Adobe Experience Platform Web SDK，以便在使用者端上轉譯修改。 如需詳細資訊，請參閱Adobe Experience Platform Edge Network Server API檔案。 此部落格中提供混合模式的其他詳細資訊和實作範例。
+   * 混合模式：您可以利用平台Edge Network伺服器API來要求個人化伺服器端。 來自API的回應會提供給Adobe Experience Platform Web SDK，以便在使用者端上轉譯修改。 如需詳細資訊，請參閱Adobe Experience PlatformEdge Network伺服器API檔案。 此部落格中提供混合模式的其他詳細資訊和實作範例。
 
 >[!NOTE]
 >
@@ -124,9 +125,16 @@ ht-degree: 0%
 >
 >由於本教學課程的目標是實施者，因此請注意，本課程涉及Journey Optimizer的大量介面工作。 雖然這類介面任務通常由行銷人員處理，但對於實作者來說，即便他們最終並不負責建立網路通路行銷活動，獲得該流程的洞察也會很有幫助。
 
+### 建立忠誠度方案並擷取範例資料
+
+將Web SDK資料擷取至Adobe Experience Platform時，您所擷取的所有其他資料可豐富該資料。 當使用者在Luma網站進行驗證時，且已驗證的身分會傳送至Platform，代表Luma的CRM系統中的身分。 身分圖表是以Experience Platform建構，而所有其他已啟用設定檔的資料集也包含身分識別，具有 `lumaCrmId` 名稱空間可以連結在一起，以建立即時客戶設定檔。 我們將在Adobe Experience Platform中快速建立另一個資料集，其中包含一些忠誠度資料範例，以便示範如何在Journey Optimizer網路行銷活動中使用即時客戶設定檔。 由於您已完成類似的練習，因此指示將是簡短的。
+
+
+
+
 ### 建立熟客獎勵行銷活動
 
-讓我們從Adobe Journey Optimizer中建立熟客獎勵網路頻道行銷活動開始。
+現在我們已擷取樣本忠誠度資料，可以在Adobe Journey Optimizer中建立忠誠度獎勵網路通路行銷活動。
 
 若要建立範例行銷活動：
 
@@ -297,7 +305,7 @@ ht-degree: 0%
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 接著，您可以使用各種Luma忠誠度帳戶登入網站，並使用Debugger驗證傳送至Adobe Experience Platform Edge Network的請求。
+1. 接著，您可以使用各種Luma忠誠度帳戶登入網站，並使用除錯工具驗證傳送至Adobe Experience PlatformEdge Network的請求。
    <!--
     ![ADD SCREENSHOT](#)
     -->
