@@ -2,9 +2,10 @@
 title: 使用Platform Web SDK設定Adobe Target
 description: 瞭解如何使用Platform Web SDK實作Adobe Target。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Target
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
+source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 0%
 
 ---
@@ -19,16 +20,16 @@ ht-degree: 0%
 
 ## 學習目標
 
-在本課程結束時，您將能夠：
+在本課程結束時，您將能夠對Target的Web SDK實作執行以下操作：
 
-* 瞭解如何新增Platform Web SDK預先隱藏程式碼片段，以防止搭配非同步標籤內嵌程式碼使用Target時忽隱忽現的情形
+* 新增預先隱藏的程式碼片段以防止閃爍
 * 設定資料流以啟用Target功能
 * 呈現視覺化體驗撰寫器活動
 * 呈現表單撰寫器活動
 * 傳遞XDM資料至Target並瞭解對應至Target引數
 * 將自訂資料傳遞至Target，例如設定檔和實體引數
-* 使用Platform Web SDK驗證Target實作
-* 傳送與Adobe Analytics請求分開的Target主張請求，並稍後解決其顯示事件
+* 驗證 Target 實施
+* 將個人化請求與Analytics請求分開
 
 >[!TIP]
 >
@@ -48,7 +49,7 @@ ht-degree: 0%
    * [使用表單式體驗撰寫器](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [建立體驗鎖定目標活動](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-## 新增減少忽隱忽現情形
+## 新增閃爍處理
 
 開始之前，請根據標籤程式庫的載入方式，決定是否需要額外的閃爍處理解決方案。
 
@@ -59,7 +60,7 @@ ht-degree: 0%
 
 ### 非同步實施
 
-以非同步方式載入標籤庫時，頁面可能會在Target執行內容交換之前完成轉譯。 此行為可能會導致所謂的「閃爍」問題，發生此問題時，會先短暫地顯示預設內容，然後再更換為Target指定的個人化內容。 若要避免發生這種閃爍問題，Adobe建議在非同步標籤內嵌程式碼的前面加上特殊的預先隱藏程式碼片段。
+非同步載入標籤庫時，頁面可能會在Target以個人化內容取代預設內容之前完成轉譯。 此行為可能會導致所謂的「閃爍」問題，發生此問題時，會先短暫地顯示預設內容，然後再更換為Target指定的個人化內容。 若要避免發生這種閃爍問題，Adobe建議在非同步標籤內嵌程式碼的前面加上特殊的預先隱藏程式碼片段。
 
 此程式碼片段已存在於Luma網站上，但讓我們進一步瞭解此程式碼的作用：
 
@@ -181,7 +182,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 ## 呈現視覺個人化決定
 
-首先，您應該瞭解Target和標籤介面中使用的術語。
+視覺化個人化決定是指在Adobe Target的視覺化體驗撰寫器中建立的體驗。 首先，您應該瞭解Target和標籤介面中使用的術語：
 
 * **活動**：一組鎖定至一或多個對象的體驗。 例如，簡單的A/B測試可能是具有兩個體驗的活動。
 * **體驗**：一組以一或多個位置或決定範圍為目標的動作。

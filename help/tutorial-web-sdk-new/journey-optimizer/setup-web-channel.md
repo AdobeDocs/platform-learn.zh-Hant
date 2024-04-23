@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+source-git-commit: 43eb66edecb9dce59dbb4995230181c9f2cbce5b
 workflow-type: tm+mt
-source-wordcount: '2587'
+source-wordcount: '2675'
 ht-degree: 0%
 
 ---
@@ -127,10 +127,29 @@ ht-degree: 0%
 
 ### 建立忠誠度方案並擷取範例資料
 
-將Web SDK資料擷取至Adobe Experience Platform時，您所擷取的所有其他資料可豐富該資料。 當使用者在Luma網站進行驗證時，且已驗證的身分會傳送至Platform，代表Luma的CRM系統中的身分。 身分圖表是以Experience Platform建構，而所有其他已啟用設定檔的資料集也包含身分識別，具有 `lumaCrmId` 名稱空間可以連結在一起，以建立即時客戶設定檔。 我們將在Adobe Experience Platform中快速建立另一個資料集，其中包含一些忠誠度資料範例，以便示範如何在Journey Optimizer網路行銷活動中使用即時客戶設定檔。 由於您已完成類似的練習，因此指示將是簡短的。
+將Web SDK資料擷取至Adobe Experience Platform後，您即可將資料擷取至Platform的其他資料來源加以擴充。 例如，當使用者登入Luma網站時， `lumaCrmId` 會傳送至Platform，代表Luma CRM系統中的身分。 身分圖表是以Experience Platform建構，而所有其他已啟用設定檔的資料集可能會連結在一起，以建置即時客戶設定檔。 我們將在Adobe Experience Platform中快速建立另一個資料集，其中包含一些忠誠度資料範例，以便示範如何在Journey Optimizer網路行銷活動中使用即時客戶設定檔。 由於您已完成類似的練習，因此指示將是簡短的。
 
+若要建立綱要：
 
+1. 建立新結構描述
+1. 選擇 **[!UICONTROL 個別設定檔]** 作為 [!UICONTROL 基底類別]
+1. 為結構命名 `Luma Loyalty Schema`
+1. 選取 `personID` 欄位並標示為 [!UICONTROL 身分] 和 [!UICONTROL 主要身分] 使用 `Luma CRM Id` [!UICONTROL 身分名稱空間].
+1. 新增 [!UICONTROL 熟客方案細節] 欄位群組
+1. 為以下專案啟用結構描述： [!UICONTROL 個人資料]
 
+結構描述的熒幕擷圖
+
+若要建立資料集並擷取範例資料：
+
+1. 從建立新資料集 `Luma Loyalty Schema`
+1. 為資料集命名 `Luma Loyalty Dataset`
+1. 為以下專案啟用資料集 [!UICONTROL 個人資料]
+1. 下載範例LoyaltyWebSDK.json檔案
+1. 將檔案拖放至您的資料集中
+1. 確認資料已成功內嵌
+
+資料集和確認的熒幕擷圖
 
 ### 建立熟客獎勵行銷活動
 
