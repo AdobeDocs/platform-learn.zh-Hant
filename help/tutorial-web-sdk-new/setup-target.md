@@ -3,7 +3,7 @@ title: 使用Platform Web SDK設定Adobe Target
 description: 瞭解如何使用Platform Web SDK實作Adobe Target。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Target
 exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
-source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
+source-git-commit: c2bcd13a584fa88e91acd6d000b14595beb7dcdb
 workflow-type: tm+mt
 source-wordcount: '4307'
 ht-degree: 0%
@@ -547,7 +547,7 @@ Luma網站上的資料層完全定義在標籤內嵌程式碼之前。 這可讓
 
 現在您已完成本課程，應該就能使用Platform Web SDK有效實作Adobe Target。
 
-[下一步： ](setup-consent.md)
+[下一步： ](setup-web-channel.md)
 
 >[!NOTE]
 >
