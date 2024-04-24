@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: b3c5144d69f6be03ac05921513fd518fe42ca68c
+source-git-commit: 2dd47879db018710ba2883ea49cc483901359907
 workflow-type: tm+mt
-source-wordcount: '2716'
+source-wordcount: '2885'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 # 設定Journey Optimizer Web Channel
 
-瞭解如何使用Platform Web SDK實作Journey Optimizer Web Channel。 本指南涵蓋基本Web Channel必要條件、設定的詳細步驟，以及以忠誠度狀態為中心的使用案例深入探討。
+瞭解如何實作Journey Optimizer [Web channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) 使用Platform Web SDK。 本課程涵蓋基本Web通路先決條件、設定的詳細步驟，並深入探討以忠誠度狀態為中心的使用案例。
 
-依照本指南，Journey Optimizer使用者可以使用Journey Optimizer網頁設計工具，有效套用進階線上個人化的網路管道。
+依照本課程，Journey Optimizer使用者可以使用Journey Optimizer網頁設計工具，有效套用進階線上個人化的網頁管道。
 
 ![Web SDK和Adobe Analytics圖表](assets/dc-websdk-ajo.png)
 
@@ -37,31 +37,40 @@ ht-degree: 0%
 
 若要完成本節中的課程，您必須先：
 
+* 完成所有Platform Web SDK初始設定的課程，包括設定資料元素和規則。
 * 確認您的Adobe Experience Platform Web SDK標籤擴充功能版本為2.16版或以上。
 * 如果您使用Journey Optimizer網頁設計工具來製作您的網路頻道體驗，請務必使用Google Chrome或Microsoft® Edge瀏覽器。
-* 另請確保您已下載Adobe Experience Cloud Visual Editing Helper瀏覽器擴充功能。 在建立Web Channel體驗之前，請在瀏覽器工具列中啟用Visual Editing Helper瀏覽器擴充功能。
-   * 在Journey Optimizer網頁設計工具中，由於下列其中一個原因，某些網站可能無法可靠地開啟：
-      1. 網站有嚴格的安全政策。
-      1. 網站內嵌於iframe中。
-      1. 無法從外部存取客戶的QA或中繼網站（這是內部網站）。
+* 同時請確定您已下載並啟用 [Adobe Experience Cloud Visual Editing Helper瀏覽器擴充功能](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 * 確認您的瀏覽器允許第三方Cookie。 可能也需要停用瀏覽器中的任何廣告封鎖程式。
-* 建立Web體驗，並從Adobe Experience Manager Assets Essentials資料庫納入內容時，必須設定用於發佈此內容的子網域。 [了解更多](https://experienceleague.adobe.com/docs/journey-optimizer/using/web/web-delegated-subdomains.html?lang=en)。
+
+  >[!CAUTION]
+  >
+  > 在Journey Optimizer網頁設計工具中，由於下列其中一個原因，某些網站可能無法可靠地開啟：
+  > 
+  > 1. 網站有嚴格的安全政策。
+  > 1. 網站內嵌於iframe中。
+  > 1. 無法從外部存取客戶的QA或中繼網站（這是內部網站）。
+
+* 建立Web體驗，並從Adobe Experience Manager Assets Essentials資料庫納入內容時，必須 [設定子網域以發佈此內容](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
 * 如果使用內容實驗功能，請確保您的網路資料集也包含在您的報告設定中。
 * 目前，支援兩種型別的實施，以便在Web屬性上製作和傳送Web Channel行銷活動：
    * 僅限使用者端：若要修改您的網站，您必須實作Adobe Experience Platform Web SDK。
    * 混合模式：您可以利用平台Edge Network伺服器API來要求個人化伺服器端。 來自API的回應會提供給Adobe Experience Platform Web SDK，以便在使用者端上轉譯修改。 如需詳細資訊，請參閱Adobe Experience PlatformEdge Network伺服器API檔案。 此部落格中提供混合模式的其他詳細資訊和實作範例。
 
->[!NOTE]
->
->目前不支援僅伺服器端實作。
+  >[!NOTE]
+  >
+  >目前不支援僅伺服器端實作。
+
+
+
 
 ## 術語
 
 首先，您應該瞭解在網路通路行銷活動中使用的術語。
 
-* **網頁管道**：透過網路進行通訊或內容傳送的媒體。 就本指南而言，其內容是指Adobe Journey Optimizer中，透過Platform Web SDK將個人化內容傳遞至網站訪客的機制。
+* **網路頻道**：透過網路進行通訊或內容傳送的媒體。 就本指南而言，其內容是指Adobe Journey Optimizer中，透過Platform Web SDK將個人化內容傳遞至網站訪客的機制。
 * **網頁表面**：參照由傳送內容的URL所識別的Web屬性。 它可以包含單一或多個網頁。
-* **Journey Optimizer Web Designer**：Journey Optimizer中的特定工具或介面，使用者可在此設計其Web Channel體驗。
+* **Journey Optimizer網頁設計工具**：Journey Optimizer中的特定工具或介面，使用者可在此設計其Web Channel體驗。
 * **Adobe Experience Cloud Visual Editing Helper**：一種瀏覽器擴充功能，可協助您以視覺化方式編輯和設計Web Channel體驗。
 * **資料流**：Adobe Experience Platform服務中的一種設定，可確保傳遞網路頻道體驗。
 * **合併原則**：此設定可確保準確啟用和發佈傳入行銷活動。
@@ -75,7 +84,7 @@ ht-degree: 0%
 
 ## 設定資料串流
 
-確定已在Adobe Experience Platform服務中定義資料流，且已啟用Adobe Journey Optimizer選項。 必須先設定此專案，Platform Web SDK才能提供任何Web Channel體驗。
+您已將Adobe Experience Platform服務新增至資料流。 現在您需要啟用Adobe Journey Optimizer選項，才能傳遞網路頻道體驗。
 
 若要在資料流中設定Adobe Journey Optimizer：
 
@@ -85,7 +94,7 @@ ht-degree: 0%
 
    ![選取資料流](assets/web-channel-select-datastream.png)
 
-1. 選取 **[!UICONTROL 編輯]** Adobe Experience Platform服務內。
+1. 選取 **[!UICONTROL 編輯]** 在Adobe Experience Platform服務中。
 
    ![編輯資料流](assets/web-channel-edit-datastream.png)
 
@@ -95,7 +104,7 @@ ht-degree: 0%
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
-這可確保Adobe Experience Platform Edge可正確處理Journey Optimizer的傳入事件。
+這可確保Adobe Experience PlatformEdge Network正確處理Journey Optimizer的傳入事件。
 
 ## 設定合併原則
 
@@ -105,7 +114,7 @@ ht-degree: 0%
 
 1. 前往 **[!UICONTROL 客戶]** > **[!UICONTROL 設定檔]** 頁面，在Experience Platform或Journey Optimizer介面中。
 1. 選取 **[!UICONTROL 合併原則]** 標籤。
-1. 選取您的原則，並切換 **[!UICONTROL Active-On-Edge合併原則]** 中的選項 **[!UICONTROL 設定]** 步驟。
+1. 選取您的原則(通常最好使用 [!UICONTROL 預設基於時間] 原則)，並切換 **[!UICONTROL Active-On-Edge合併原則]** 中的選項 **[!UICONTROL 設定]** 步驟。
 
    ![切換合併原則](assets/web-channel-active-on-edge-merge-policy.png)
 
@@ -113,7 +122,7 @@ ht-degree: 0%
 
 若要在Web Channel行銷活動中使用內容實驗，您必須確保使用的網路資料集也包含在您的報告設定中。 Journey Optimizer報表系統以唯讀方式使用資料集來填入現成可用的內容實驗報表。
 
-[本節詳細介紹了如何新增內容實驗報告的資料集](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=en#add-datasets).
+[本節詳細介紹了如何新增內容實驗報告的資料集](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration#add-datasets).
 
 ## 使用案例概述 — 忠誠度獎勵
 
@@ -121,24 +130,23 @@ ht-degree: 0%
 
 此使用案例可讓您更瞭解Journey Optimizer如何運用Journey Optimizer行銷活動和Web設計工具，協助為客戶提供最佳傳入體驗。
 
->[!NOTE]
->
->由於本教學課程的目標是實施者，因此請注意，本課程涉及Journey Optimizer的大量介面工作。 雖然這類介面任務通常由行銷人員處理，但對於實作者來說，即便他們最終並不負責建立網路通路行銷活動，獲得該流程的洞察也會很有幫助。
+由於本教學課程的目標是實施者，因此請注意，本課程涉及Journey Optimizer的大量介面工作。 雖然這類介面任務通常由行銷人員處理，但對於實作者來說，即便他們通常不負責建立網路通路行銷活動，獲得該程式的深入分析也會很有幫助。
 
 ### 建立忠誠度方案並擷取範例資料
 
-將Web SDK資料擷取至Adobe Experience Platform後，您即可將資料擷取至Platform的其他資料來源加以擴充。 例如，當使用者登入Luma網站時， `lumaCrmId` 會傳送至Platform，代表Luma CRM系統中的身分。 身分圖表是以Experience Platform建構，而所有其他已啟用設定檔的資料集可能會連結在一起，以建置即時客戶設定檔。 我們將在Adobe Experience Platform中快速建立另一個資料集，其中包含一些忠誠度資料範例，以便示範如何在Journey Optimizer網路行銷活動中使用即時客戶設定檔。 由於您已完成類似的練習，因此指示將是簡短的。
+將Web SDK資料擷取至Adobe Experience Platform後，您即可將資料擷取至Platform的其他資料來源加以擴充。 例如，當使用者登入Luma網站時，身分圖表會在Experience Platform中建構，而所有其他已啟用設定檔的資料集可能會連結在一起，以建置即時客戶設定檔。 若要檢視此運作情況，請在Adobe Experience Platform中快速建立另一個資料集，其中包含一些忠誠度資料範例，好讓您可以在Journey Optimizer網路行銷活動中使用即時客戶設定檔。 由於您已完成類似的練習，因此指示將是簡短的。
 
-若要建立綱要：
+建立熟客方案：
 
 1. 建立新結構描述
 1. 選擇 **[!UICONTROL 個別設定檔]** 作為 [!UICONTROL 基底類別]
 1. 為結構命名 `Luma Loyalty Schema`
-1. 選取 `personID` 欄位並標示為 [!UICONTROL 身分] 和 [!UICONTROL 主要身分] 使用 `Luma CRM Id` [!UICONTROL 身分名稱空間].
 1. 新增 [!UICONTROL 熟客方案細節] 欄位群組
+1. 新增 [!UICONTROL 人口統計細節] 欄位群組
+1. 選取 `Person ID` 欄位並標籤為 [!UICONTROL 身分] 和 [!UICONTROL 主要身分] 使用 `Luma CRM Id` [!UICONTROL 身分名稱空間].
 1. 為以下專案啟用結構描述： [!UICONTROL 個人資料]
 
-結構描述的熒幕擷圖
+   ![熟客方案](assets/web-channel-loyalty-schema.png)
 
 若要建立資料集並擷取範例資料：
 
@@ -149,13 +157,41 @@ ht-degree: 0%
 1. 將檔案拖放至您的資料集中
 1. 確認資料已成功內嵌
 
-資料集和確認的熒幕擷圖
+   ![熟客方案](assets/web-channel-loyalty-dataset.png)
+
+### 建立對象
+
+對象會根據常見特徵將設定檔分組。 建立可在網路行銷活動中使用的快速受眾：
+
+1. 在Experience Platform介面中，前往 **[!UICONTROL 受眾]** 在左側導覽列中
+1. 選取 **[!UICONTROL 建立對象]**
+1. 選取 **[!UICONTROL 建置規則]**
+1. 選取 **[!UICONTROL 建立]**
+
+   ![建立受眾](assets/web-campaign-create-audience.png)
+
+1. 選取 **[!UICONTROL 屬性]**
+1. 尋找 **[!UICONTROL 忠誠度]** > **[!UICONTROL 階層]** 欄位並將其拖曳至 **[!UICONTROL 屬性]** 區段
+1. 將對象定義為使用者，其 `tier` 是 `gold`
+1. 為對象命名 `Luma Loyalty Rewards – Gold Status`
+1. 選取 **[!UICONTROL Edge]** 作為 **[!UICONTROL 評估方法]**
+1. 選取 **[!UICONTROL 儲存]**
+
+   ![定義閱聽眾](assets/web-campaign-define-audience.png)
+
+由於這是非常簡單的對象，因此我們可以使用Edge評估方法。 Edge對象會在Edge進行評估，因此在Web SDK對平台Edge Network發出的相同請求中，我們可以評估對象定義，並立即確認使用者是否符合條件。
 
 ### 建立熟客獎勵行銷活動
 
-現在我們已擷取樣本忠誠度資料，可以在Adobe Journey Optimizer中建立忠誠度獎勵網路通路行銷活動。
+現在您已擷取我們的忠誠度資料範例並建立我們的區段，請在Adobe Journey Optimizer中建立忠誠度獎勵網路管道行銷活動。
 
 若要建立範例行銷活動：
+
+1. 開啟 [Journey Optimizer](https://experience.adobe.com/journey-optimizer/home){target="_blank"} 介面
+
+   >[!NOTE]
+   >
+   > 結構描述、資料集和對象都是常見的Experience Platform建構，因此也可以在Journey Optimizer介面中建置。
 
 1. 瀏覽至 **[!UICONTROL 歷程管理]** > **[!UICONTROL 行銷活動]** 在左側導覽列中
 1. 按一下 **[!UICONTROL 建立行銷活動]** 在右上角。
@@ -165,17 +201,17 @@ ht-degree: 0%
 
 1. 在 **[!UICONTROL 動作]** 區段，選擇 **[!UICONTROL 網路頻道]**. 作為  **[!UICONTROL 網頁表面]**，選取 **[!UICONTROL 頁面URL]**.
 
->[!NOTE]
->
->Web介面是指由傳送內容的URL所識別的Web屬性。 它可以對應至單一頁面URL或包含多個頁面，讓您在一或多個網頁上套用修改。
+   >[!NOTE]
+   >
+   >Web介面是指由傳送內容的URL所識別的Web屬性。 它可以對應至單一頁面URL或包含多個頁面，讓您在一或多個網頁上套用修改。
 
-選擇 **[!UICONTROL 頁面URL]** 網頁表面選項，用於將體驗部署在此行銷活動的單一頁面上。 輸入Luma頁面的URL。
+1. 選擇 **[!UICONTROL 頁面URL]** 網頁表面選項，用於將體驗部署在此行銷活動的單一頁面上。 輸入Luma頁面的URL， `https://luma.enablementadobe.com/content/luma/us/en.html`
 
 1. 定義Web表面後，選取 **[!UICONTROL 建立]**.
 
    ![選取網頁表面](assets/web-channel-web-surface.png)
 
-1. 現在新增一些其他詳細資料至新的網路頻道行銷活動。 首先，為行銷活動命名。 呼叫它 `Luma Loyalty Rewards – Gold Status – October 2023`. 您可以選擇新增說明至行銷活動。 同時新增 **[!UICONTROL 標籤]** 以改進整體行銷活動分類法。
+1. 現在新增一些其他詳細資料至新的網路頻道行銷活動。 首先，為行銷活動命名。 呼叫它 `Luma Loyalty Rewards – Gold Status`. 您可以選擇新增說明至行銷活動。 同時新增 **[!UICONTROL 標籤]** 以改進整體行銷活動分類法。
 
    ![為行銷活動命名](assets/web-channel-campaign-name.png)
 
@@ -185,7 +221,7 @@ ht-degree: 0%
 
    ![選擇身分型別](assets/web-channel-indentity-type.png)
 
-1. 使用排程行銷活動於12月1日開始 **[!UICONTROL 行銷活動開始]** 選項於12月31日結束，使用 **[!UICONTROL 行銷活動結束]** 選項。
+1. 使用，將行銷活動排程為從今天的日期開始 **[!UICONTROL 行銷活動開始]** 選項，並使用在一週內結束 **[!UICONTROL 行銷活動結束]** 選項。
 
    ![行銷活動排程](assets/web-channel-campaign-schedule.png)
 
@@ -195,7 +231,7 @@ ht-degree: 0%
 
 ### 實驗忠誠度獎勵內容
 
-在 **[!UICONTROL 動作]** 區段，您可以選擇建立實驗，以測試哪些內容更適合 `Luma Loyalty Rewards – Gold Status` 對象。 讓我們建立並測試兩個處理作為行銷活動設定的元件。
+如果您向上捲動，請在 **[!UICONTROL 動作]** 區段，您可以選擇建立實驗，以測試哪些內容更適合 `Luma Loyalty Rewards – Gold Status` 對象。 讓我們建立並測試兩個處理作為行銷活動設定的元件。
 
 若要建立內容實驗：
 
@@ -213,7 +249,7 @@ ht-degree: 0%
 
 1. 另外，也可以選擇 **[!UICONTROL 平均分配]**. 核取此選項，以確保處理分割始終平均分割。
 
-[進一步瞭解Adobe Journey Optimizer Web Channel的內容實驗](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
+[進一步瞭解Adobe Journey Optimizer網路頻道中的內容實驗](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
 
 ### 使用視覺化協助程式編輯內容
 
@@ -298,11 +334,17 @@ ht-degree: 0%
 
 ### 熟客方案獎勵QA
 
+您可使用一些登入來模擬「金級狀態」使用者，並符合您的行銷活動資格：
+
+1. `cleavlandeuler@emailsim.io`/`test`
+1. `leftybeagen@emailsim.io`/`test`
+1. `jenimartinho@emailsim.io`/`test`
+
 作為最佳實務，請監控 **[!UICONTROL Web]** 活動特定KPI的行銷活動即時和全域報告的標籤。 針對此行銷活動，監視體驗曝光數，然後按一下比率。
 
 ![檢視網站報告](assets/web-channel-web-report.png)
 
-### 使用Adobe Experience Platform Debugger進行網頁通道驗證
+### 使用Adobe Experience Platform Debugger進行網路通道驗證
 
 適用於Chrome和Firefox的Adobe Experience Platform Debugger擴充功能會分析您的網頁，以識別Adobe Experience Cloud解決方案實作中的問題。
 
