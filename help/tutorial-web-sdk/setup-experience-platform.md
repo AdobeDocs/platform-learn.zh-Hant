@@ -2,7 +2,7 @@
 title: 使用Web SDK將資料串流至Adobe Experience Platform
 description: 瞭解如何使用Web SDK將網頁資料串流到Adobe Experience Platform。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 4%
@@ -38,7 +38,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ## 建立資料集
 
-所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 A [資料集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) 是用於資料集合的儲存和管理結構，通常是包含結構（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
+所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 A [資料集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) 是用於資料集合的儲存和管理結構，通常是包含結構（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
 
 讓我們為您的Luma Web事件資料設定資料集：
 
@@ -140,7 +140,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!INFO]
 >
->Adobe Experience Platform的查詢服務是驗證湖中資料的更強大方法，但不在本教學課程的討論範圍內。 如需詳細資訊，請參閱 [探索資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=zh-Hant) 位於Platform教學課程區段。
+>Adobe Experience Platform的查詢服務是驗證湖中資料的更強大方法，但不在本教學課程的討論範圍內。 如需詳細資訊，請參閱 [探索資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) 位於Platform教學課程區段。
 
 
 ## 為即時客戶個人檔案啟用資料集和結構描述

@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2511'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 授予決策管理的存取權限
 
-若要授與決策管理功能的存取權，您必須建立 **產品設定檔** 並將對應許可權指派給使用者。 [在本節中進一步瞭解管理Journey Optimizer使用者和許可權](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+若要授與決策管理功能的存取權，您必須建立 **產品設定檔** 並將對應許可權指派給使用者。 [在本節中進一步瞭解管理Journey Optimizer使用者和許可權](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## 設定資料串流
 
@@ -340,7 +340,7 @@ offer decisioning必須在以下位置啟用： **資料流** Platform Web SDK�
 
 ### 測試忠誠度優惠
 
-1. 選取要用於模擬的測試設定檔。 按一下 **管理設定檔**. [若要建立或指定新的測試設定檔以進行選件測試，請遵循本指南](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles.html?lang=en#create-test-profiles-csv).
+1. 選取要用於模擬的測試設定檔。 按一下 **管理設定檔**. [若要建立或指定新的測試設定檔以進行選件測試，請遵循本指南](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -372,7 +372,7 @@ offer decisioning必須在以下位置啟用： **資料流** Platform Web SDK�
 
 您可以在Luma網站上使用除錯工具，驗證生產環境中的決策邏輯。 當忠誠獎勵使用案例啟動並執行時，這是不錯的做法，可確保一切都已正確設定。
 
-[瞭解如何使用這裡的指南，在瀏覽器中設定除錯工具](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[瞭解如何使用這裡的指南，在瀏覽器中設定除錯工具](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 若要使用除錯工具開始驗證：
 

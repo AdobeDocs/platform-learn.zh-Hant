@@ -3,7 +3,7 @@ title: 使用Platform Web SDK設定Audience Manager
 description: 瞭解如何使用Platform Web SDK設定Adobe Audience Manager，並使用Cookie目的地驗證實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 瞭解如何使用Platform Web SDK設定Adobe Audience Manager，並使用Cookie目的地驗證實作。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=zh-Hant) 是Adobe Experience Cloud解決方案，提供收集網站訪客之商業相關資訊、建立可行銷區段，以及將目標定位廣告和內容提供給適當對象所需的一切。
+[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) 是Adobe Experience Cloud解決方案，提供收集網站訪客之商業相關資訊、建立可行銷區段，以及將目標定位廣告和內容提供給適當對象所需的一切。
 
 ![Web SDK和Adobe Audience Manager圖表](assets/dc-websdk-aam.png)
 
@@ -31,11 +31,11 @@ ht-degree: 1%
 若要完成本課程，您必須先：
 
 * 完成本教學課程之初始設定和標籤設定區段中先前的課程。
-* 擁有Adobe Audience Manager的存取權，以及建立、讀取和寫入特徵、區段和目的地的適當許可權。 如需詳細資訊，請檢閱 [Audience Manager的角色型存取控制](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* 擁有Adobe Audience Manager的存取權，以及建立、讀取和寫入特徵、區段和目的地的適當許可權。 如需詳細資訊，請檢閱 [Audience Manager的角色型存取控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## 設定資料串流
 
-使用Platform Web SDK的Audience Manager實作與使用 [伺服器端轉送(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hant). 伺服器端轉送會將Adobe Analytics請求資料傳遞給Audience Manager。 Platform Web SDK實作會將傳送至PlatformEdge Network的XDM資料傳遞給Audience Manager。 已在資料流中啟用Audience Manager：
+使用Platform Web SDK的Audience Manager實作與使用 [伺服器端轉送(SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). 伺服器端轉送會將Adobe Analytics請求資料傳遞給Audience Manager。 Platform Web SDK實作會將傳送至PlatformEdge Network的XDM資料傳遞給Audience Manager。 已在資料流中啟用Audience Manager：
 
 1. 前往 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
 1. 在左側導覽中選取 **[!UICONTROL 資料串流]**
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 ## 建立資料來源
 
-接下來，建立 [資料來源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings.html?lang=en)，在Audience Manager中組織資料的基本工具：
+接下來，建立 [資料來源](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings)，在Audience Manager中組織資料的基本工具：
 
 1. 前往 [Audience Manager](https://experience.adobe.com/#/audience-manager/) 介面
 1. 選取 **[!UICONTROL 對象資料]** 從頂端導覽
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 ## 建立特徵
 
-在儲存資料來源後，設定 [特徵](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/traits-overview.html?lang=zh-Hant). 特徵是Audience Manager中一或多個訊號的組合。 為首頁訪客建立特徵。
+在儲存資料來源後，設定 [特徵](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview). 特徵是Audience Manager中一或多個訊號的組合。 為首頁訪客建立特徵。
 
 >[!NOTE]
 >

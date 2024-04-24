@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2885'
 ht-degree: 0%
@@ -249,7 +249,7 @@ ht-degree: 0%
 
 1. 另外，也可以選擇 **[!UICONTROL 平均分配]**. 核取此選項，以確保處理分割始終平均分割。
 
-[進一步瞭解Adobe Journey Optimizer網路頻道中的內容實驗](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
+[進一步瞭解Adobe Journey Optimizer網路頻道中的內容實驗](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment).
 
 ### 使用視覺化協助程式編輯內容
 
@@ -350,7 +350,7 @@ ht-degree: 0%
 
 您可以使用Luma網站上的除錯工具，驗證生產環境中的網路通道體驗。 一旦忠誠獎勵使用案例啟動並執行，這是最佳實務，以確保所有專案皆已正確設定。
 
-[瞭解如何使用這裡的指南，在瀏覽器中設定除錯工具](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[瞭解如何使用這裡的指南，在瀏覽器中設定除錯工具](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 若要使用除錯工具開始驗證：
 

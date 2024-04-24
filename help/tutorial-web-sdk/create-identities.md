@@ -3,7 +3,7 @@ title: 建立身分
 description: 瞭解如何在XDM中建立身分識別，並使用身分對應資料元素來擷取使用者ID。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 1%
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 ## Experience Cloud ID
 
-此 [Experience CloudID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) 是跨Adobe Experience Platform和Adobe Experience Cloud應用程式使用的共用身分名稱空間。 ECID是客戶身分識別的基礎，也是數位財產的預設身分識別。 這可讓ECID成為追蹤未驗證使用者行為的理想識別碼，因為它永遠存在
+此 [Experience CloudID (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/ecid) 是跨Adobe Experience Platform和Adobe Experience Cloud應用程式使用的共用身分名稱空間。 ECID是客戶身分識別的基礎，也是數位財產的預設身分識別。 這可讓ECID成為追蹤未驗證使用者行為的理想識別碼，因為它永遠存在
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -46,7 +46,7 @@ ht-degree: 1%
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-深入瞭解如何 [使用Platform Web SDK追蹤ECID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
+深入瞭解如何 [使用Platform Web SDK追蹤ECID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
 
 ECID是使用第一方Cookie和平台Edge Network的組合所設定。 根據預設，第一方Cookie是由Web SDK在使用者端設定。 若要說明瀏覽器對Cookie有效期的限制，您可以選擇改為在伺服器端設定您自己的第一方Cookie。 這些稱為第一方裝置ID (FPID)。
 
@@ -60,7 +60,7 @@ FPID是第一方Cookie _您使用自己的網頁伺服器設定_ 然後使用哪
 
 設定FPID Cookie後，就能在收集事件資料時擷取其值並傳送至Adobe。 收集的FPID會作為種子，在PlatformEdge Network上產生ECID，這繼續是Adobe Experience Cloud應用程式中的預設識別碼。
 
-雖然本教學課程中不使用FPID，但建議您在自己的網頁SDK實作中使用FPID。 深入瞭解 [Platform Web SDK中的第一方裝置ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=zh-Hant)
+雖然本教學課程中不使用FPID，但建議您在自己的網頁SDK實作中使用FPID。 深入瞭解 [Platform Web SDK中的第一方裝置ID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -70,7 +70,7 @@ FPID是第一方Cookie _您使用自己的網頁伺服器設定_ 然後使用哪
 
 如上所述，使用Platform Web SDK時，系統會Adobe為您數位財產的所有訪客指派ECID。 如此，ECID就會成為追蹤未驗證數位行為的預設身分識別。
 
-您也可以傳送已驗證的使用者ID，讓Platform能夠建立 [身分圖](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=zh-Hant) 而Target可以設定 [第三方Id](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html). 這是透過使用 [!UICONTROL 身分對應] 資料元素型別。
+您也可以傳送已驗證的使用者ID，讓Platform能夠建立 [身分圖](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) 而Target可以設定 [第三方Id](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). 這是透過使用 [!UICONTROL 身分對應] 資料元素型別。
 
 若要建立 [!UICONTROL 身分對應] 資料元素：
 

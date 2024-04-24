@@ -3,7 +3,7 @@ title: 使用Experience Platform Web SDK設定Adobe Analytics
 description: 瞭解如何使用Experience Platform Web SDK設定Adobe Analytics。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2803'
 ht-degree: 0%
@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # 使用Platform Web SDK設定Adobe Analytics
 
-瞭解如何使用設定Adobe Analytics [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)，建立標籤規則以將資料傳送至Adobe Analytics，並驗證Analytics是否如預期擷取資料。
+瞭解如何使用設定Adobe Analytics [Experience PlatformWeb SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)，建立標籤規則以將資料傳送至Adobe Analytics，並驗證Analytics是否如預期擷取資料。
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hant) 是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
+[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) 是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
 
 ![Web SDK至Adobe Analytics圖表](assets/dc-websdk-aa.png)
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 * 熟悉並存取Adobe Analytics。
 
-* 至少要有一個測試/開發報表套裝ID。 如果您沒有任何可用於本教學課程的測試/開發報表套裝， [請建立一個](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+* 至少要有一個測試/開發報表套裝ID。 如果您沒有任何可用於本教學課程的測試/開發報表套裝， [請建立一個](https://experienceleague.adobe.com/en/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite).
 
 * 完成本教學課程之初始設定和標籤設定區段中先前的課程。
 
@@ -81,9 +81,9 @@ Platform Web SDK會將資料從您的網站傳送至PlatformEdge Network。 您�
 1. Automatically mapped variables using reserved XDM fields
 1. Manually mapped variables using Analytics Processing Rules
 
-To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. 
+To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars). Any variable that is not auto-mapped must be manually mapped. 
 
- 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
+ 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
 
 
  1. **Analytics-specific XDM**: Use a purpose-built Adobe Analytics field group in the XDM schema called `Adobe Analytics ExperienceEvent Template`
@@ -119,7 +119,7 @@ Analytics產品字串的個別區段是透過下的不同XDM變數設定的。 `
 >設定為的值 `productListItems[].name` 只有在下列情況下，才會對應至產品名稱 `productListItems[].SKU` 不存在。 否則，它將會取消對應，並可在內容資料中使用。
 >請勿將空字串或Null設為  `productListItems[].SKU`. 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
 
-如需最新的對應清單，請參閱 [Adobe Experience Edge中的Analytics變數對應](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=zh-Hant).
+如需最新的對應清單，請參閱 [Adobe Experience Edge中的Analytics變數對應](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
 
 ### 使用處理規則對應至Analytics變數

@@ -2,7 +2,7 @@
 title: 設定教學課程的許可權
 description: 瞭解如何請求Experience PlatformWeb SDK的存取權，並設定完成「使用Web SDK實作Adobe Experience Cloud」教學課程所需的許可權。
 feature: Web SDK,Tags,Access Control
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 ## 資料收集
 
-* 具有下列專案的許可權： **[!UICONTROL 開發]**， **[!UICONTROL 編輯]**， **[!UICONTROL 核准]**， **[!UICONTROL 發佈]**， **[!UICONTROL 管理擴充功能]**， **[!UICONTROL 管理環境]**、和 **[!UICONTROL 管理屬性]**. 如需有關標籤許可權的詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* 具有下列專案的許可權： **[!UICONTROL 開發]**， **[!UICONTROL 編輯]**， **[!UICONTROL 核准]**， **[!UICONTROL 發佈]**， **[!UICONTROL 管理擴充功能]**， **[!UICONTROL 管理環境]**、和 **[!UICONTROL 管理屬性]**. 如需有關標籤許可權的詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 * 如果您要完成選用的事件轉送課程，請取得產品授權，包括邊緣轉送和許可權專案 **[!UICONTROL 平台]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
@@ -31,11 +31,11 @@ ht-degree: 3%
    * 下的所有許可權專案 **[!UICONTROL 資料管理]**、和 **[!UICONTROL 設定檔管理]**：
 
 
-如需有關Platform存取控制的詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hant).
+如需有關Platform存取控制的詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
 ## Adobe Analytics
 
-若要參加選用的Adobe Analytics課程，您必須擁有 [管理員對報表套裝設定、處理規則和Analysis Workspace的存取權](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=zh-Hant)
+若要參加選用的Adobe Analytics課程，您必須擁有 [管理員對報表套裝設定、處理規則和Analysis Workspace的存取權](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 ## Adobe Target
 
@@ -43,7 +43,7 @@ ht-degree: 3%
 
 ## Adobe Audience Manager
 
-* 針對選用的Audience Manager課程，您必須有權建立、讀取和寫入特徵、區段和目的地。 如需詳細資訊，請參閱以下教學課程： [Audience Manager的角色型存取控制](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* 針對選用的Audience Manager課程，您必須有權建立、讀取和寫入特徵、區段和目的地。 如需詳細資訊，請參閱以下教學課程： [Audience Manager的角色型存取控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 現在您已準備好開始初始設定步驟。
 

@@ -3,7 +3,7 @@ title: 安裝及設定Adobe Experience Platform Web SDK標籤擴充功能
 description: 瞭解如何在資料收集介面中安裝和設定Platform Web SDK標籤擴充功能。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -81,7 +81,7 @@ ht-degree: 12%
 >
 >雖然您並未在中設定CNAME [!UICONTROL 邊緣網域] 在本課程設定中，Adobe建議您在自己的網站上實作Platform Web SDK時使用CNAME。 雖然 CNAME 實施無法在 Cookie 生命週期方面提供任何優勢，但它還是有一些其他的優點。這些優點包括廣告攔截程式和不太常見的瀏覽器，防止將資料傳送到遭其歸類為追蹤程式的網域。在這些情況下，使用 CNAME 可防止這些工具使用者的資料彙集中斷問題。
 
-如需擴充功能各個區段的詳細資訊，請參閱 [設定Adobe Experience Platform Web SDK擴充功能](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=zh-Hant)
+如需擴充功能各個區段的詳細資訊，請參閱 [設定Adobe Experience Platform Web SDK擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
 
 
 

@@ -3,7 +3,7 @@ title: 使用Experience Platform保證驗證Web SDK實作
 description: 瞭解如何使用Adobe Experience Platform保證驗證您的Platform Web SDK實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # 使用Experience Platform保證驗證Web SDK實作
 
-Adobe Experience Platform保證是Adobe Experience Cloud的產品，可協助您檢查、證明、模擬及驗證您如何收集資料或提供體驗。 深入瞭解 [Adobe保證](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+Adobe Experience Platform保證是Adobe Experience Cloud的產品，可協助您檢查、證明、模擬及驗證您如何收集資料或提供體驗。 深入瞭解 [Adobe保證](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## 學習目標

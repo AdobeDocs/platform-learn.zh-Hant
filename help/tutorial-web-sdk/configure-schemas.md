@@ -3,7 +3,7 @@ title: 為網頁資料建立XDM結構描述
 description: 瞭解如何在資料收集介面中為網頁資料建立XDM結構描述。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Platform Web SDK會使用您的結構描述將網頁事件資料標準化、傳�
 >
 > 為了示範，本課程中的練習會建立範例結構描述，以擷取客戶在中檢視的內容和購買的產品。 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html). 雖然您可以使用這些步驟建立不同的結構描述以供您個人使用，但建議您先依照建立範例結構描述一起來瞭解結構描述編輯器的功能。
 
-若要進一步瞭解XDM結構描述，請參加課程 [使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) 或參閱 [XDM系統概覽](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hant).
+若要進一步瞭解XDM結構描述，請參加課程 [使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) 或參閱 [XDM系統概覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
 ## 學習目標
 
@@ -69,7 +69,7 @@ Platform Web SDK會使用您的結構描述將網頁事件資料標準化、傳�
 
 ## 建立 XDM 結構描述
 
-XDM結構描述是以Experience Platform描述資料的標準方式，可讓所有符合結構描述的資料在組織間重複使用，而不會產生衝突，甚至可在多個組織間共用。 若要進一步瞭解，請參閱 [結構描述組合的基本面](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant).
+XDM結構描述是以Experience Platform描述資料的標準方式，可讓所有符合結構描述的資料在組織間重複使用，而不會產生衝突，甚至可在多個組織間共用。 若要進一步瞭解，請參閱 [結構描述組合的基本面](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition).
 
 在本練習中，您將使用建議的基準欄位群組來建立XDM結構描述，以擷取 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}：
 
@@ -102,9 +102,9 @@ XDM結構描述是以Experience Platform描述資料的標準方式，可讓所�
 
 ## 新增欄位群組
 
-如前所述，XDM是標準化客戶體驗資料的核心架構，可提供用於下游Adobe Experience Platform服務的通用結構和定義。 遵循XDM標準， _所有客戶體驗資料_ 可以併入一般表示中。 此方法可讓您從客戶動作中獲得有價值的深入分析、透過區段定義客戶對象，以及使用來自多個來源的資料來針對個人化目的表達客戶屬性。 另請參閱 [資料模型化的最佳實務](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) 以取得詳細資訊。
+如前所述，XDM是標準化客戶體驗資料的核心架構，可提供用於下游Adobe Experience Platform服務的通用結構和定義。 遵循XDM標準， _所有客戶體驗資料_ 可以併入一般表示中。 此方法可讓您從客戶動作中獲得有價值的深入分析、透過區段定義客戶對象，以及使用來自多個來源的資料來針對個人化目的表達客戶屬性。 另請參閱 [資料模型化的最佳實務](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices) 以取得詳細資訊。
 
-可能的話，建議使用現有的欄位群組，並遵守與產品無關的模型和命名慣例。 若貴組織的特定資料不符合上述預先定義的欄位群組，您可以建立自訂欄位群組。 另請參閱 [使用結構編輯器建立結構](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#create) 以取得自訂綱要的詳細步驟。
+可能的話，建議使用現有的欄位群組，並遵守與產品無關的模型和命名慣例。 若貴組織的特定資料不符合上述預先定義的欄位群組，您可以建立自訂欄位群組。 另請參閱 [使用結構編輯器建立結構](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create) 以取得自訂綱要的詳細步驟。
 
 >[!TIP]
 > 
@@ -129,7 +129,7 @@ XDM結構描述是以Experience Platform描述資料的標準方式，可讓所�
 
 ![結構描述欄位群組](assets/schema-consumer-experience-event.png)
 
-本課程只是一個起點。 建立您自己的網頁事件結構描述時，您必須探索並記錄您的業務需求。 此程式類似於建立 [業務需求檔案](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html) 和 [解決方案設計參考資料](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html) 適用於Adobe Analytics實施，但應包含下列要求 _所有下游資料收件者_ 例如Platform、Target和事件轉送目的地。
+本課程只是一個起點。 建立您自己的網頁事件結構描述時，您必須探索並記錄您的業務需求。 此程式類似於建立 [業務需求檔案](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) 和 [解決方案設計參考資料](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) 適用於Adobe Analytics實施，但應包含下列要求 _所有下游資料收件者_ 例如Platform、Target和事件轉送目的地。
 
 
 ### identitymap物件
@@ -143,7 +143,7 @@ XDM結構描述是以Experience Platform描述資料的標準方式，可讓所�
 
 >[!IMPORTANT]
 >
-> 您可以啟用 **[!UICONTROL 個人資料]** 在儲存結構描述之前針對結構描述。 **不要** 此時啟用它。 為設定檔啟用結構描述後，就無法停用或刪除它。 此時也無法從結構描述中移除欄位，儘管可以 [棄用UI中的欄位](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/field-deprecation-ui.html?lang=en#deprecate). 當您在生產環境中使用自己的資料時，請務必牢記這些含意。
+> 您可以啟用 **[!UICONTROL 個人資料]** 在儲存結構描述之前針對結構描述。 **不要** 此時啟用它。 為設定檔啟用結構描述後，就無法停用或刪除它。 此時也無法從結構描述中移除欄位，儘管可以 [棄用UI中的欄位](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). 當您在生產環境中使用自己的資料時，請務必牢記這些含意。
 >
 >
 >此設定的討論內容會在以下章節中詳述： [設定Experience Platform](setup-experience-platform.md) 課程。

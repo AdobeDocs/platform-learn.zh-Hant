@@ -3,7 +3,7 @@ title: 建立資料元素
 description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至該物件。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 1%
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 ### 在資料層中實作XDM
 
-此方法涉及使用完整定義的XDM物件作為資料層的結構。 然後將整個資料層對應到標籤中的XDM物件資料元素。 如果您的實作未使用標籤管理程式，此方法可能是最理想的方法，因為您可以使用直接從應用程式傳送資料至XDM。 [XDM sendEvent命令](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). 如果您使用標籤，可以建立自訂程式碼資料元素，將擷取整個資料層作為傳遞JSON物件至XDM。 然後，您將傳遞JSON對應到「傳送事件動作」中的XDM物件欄位。
+此方法涉及使用完整定義的XDM物件作為資料層的結構。 然後將整個資料層對應到標籤中的XDM物件資料元素。 如果您的實作未使用標籤管理程式，此方法可能是最理想的方法，因為您可以使用直接從應用程式傳送資料至XDM。 [XDM sendEvent命令](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). 如果您使用標籤，可以建立自訂程式碼資料元素，將擷取整個資料層作為傳遞JSON物件至XDM。 然後，您將傳遞JSON對應到「傳送事件動作」中的XDM物件欄位。
 
 以下是資料層使用Adobe使用者端資料層格式的範例：
 
@@ -128,16 +128,16 @@ window.adobeDataLayer.push({
 >
 > Google資料層
 > 
-> 如果您的組織已使用Google Analytics，且您的網站上已有傳統的Google dataLayer物件，您可以使用 [Google資料層擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) 在標籤中。 這可讓您更快部署Adobe技術，而不需要向IT團隊請求支援。 將Google資料層對應至XDM會遵循上述相同步驟。
+> 如果您的組織已使用Google Analytics，且您的網站上已有傳統的Google dataLayer物件，您可以使用 [Google資料層擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) 在標籤中。 這可讓您更快部署Adobe技術，而不需要向IT團隊請求支援。 將Google資料層對應至XDM會遵循上述相同步驟。
 
 ### 在資料流中對應到XDM
 
-此方法使用資料流設定中內建的功能，稱為 [資料收集的資料準備](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) 和會略過將資料層變數對應至標籤中的XDM。
+此方法使用資料流設定中內建的功能，稱為 [資料收集的資料準備](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) 和會略過將資料層變數對應至標籤中的XDM。
 
 #### 優點
 
 * 靈活地對應個別變數至XDM
-* 能夠 [計算新值](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) 或 [轉換資料型別](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) 資料層中的資料轉移到XDM之前
+* 能夠 [計算新值](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) 或 [轉換資料型別](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) 資料層中的資料轉移到XDM之前
 * 善用 [對應UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) 使用指向並按一下UI將來源資料中的欄位對應至XDM
 
 #### 缺點

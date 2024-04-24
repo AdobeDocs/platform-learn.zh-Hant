@@ -3,7 +3,7 @@ title: 設定事件轉送屬性
 description: 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1861'
 ht-degree: 2%
@@ -14,7 +14,7 @@ ht-degree: 2%
 
 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。
 
-事件轉寄是「資料收集」中可用的全新屬性型別。 事件轉送可讓您直接從Adobe Experience PlatformEdge Network傳送資料給第三方非Adobe廠商，而非傳統的使用者端瀏覽器。 在中進一步瞭解事件轉送的優點 [事件轉送概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+事件轉寄是「資料收集」中可用的全新屬性型別。 事件轉送可讓您直接從Adobe Experience PlatformEdge Network傳送資料給第三方非Adobe廠商，而非傳統的使用者端瀏覽器。 在中進一步瞭解事件轉送的優點 [事件轉送概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
 
 ![Web SDK和事件轉送圖](assets/dc-websdk-eventforwarding.png)
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
