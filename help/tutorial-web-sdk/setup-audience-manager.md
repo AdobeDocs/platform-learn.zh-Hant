@@ -3,24 +3,20 @@ title: 使用Platform Web SDK設定Audience Manager
 description: 瞭解如何使用Platform Web SDK設定Adobe Audience Manager，並使用Cookie目的地驗證實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1368'
+source-wordcount: '1337'
 ht-degree: 1%
 
 ---
 
 # 使用Platform Web SDK設定Audience Manager
 
-
->[!CAUTION]
->
->我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
-
 瞭解如何使用Platform Web SDK設定Adobe Audience Manager，並使用Cookie目的地驗證實作。
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=zh-Hant) 是Adobe Experience Cloud解決方案，提供收集網站訪客之商業相關資訊、建立可行銷區段，以及將目標定位廣告和內容提供給適當對象所需的一切。
 
+![Web SDK和Adobe Audience Manager圖表](assets/dc-websdk-aam.png)
 
 ## 學習目標
 
@@ -43,9 +39,9 @@ ht-degree: 1%
 
 1. 前往 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
 1. 在左側導覽中選取 **[!UICONTROL 資料串流]**
-1. 選取先前建立的 `Luma Web SDK` 資料流
+1. 選取先前建立的 `Luma Web SDK: Development Environment` 資料流
 
-   ![選取Luma Web SDK資料流](assets/datastream-luma-web-sdk.png)
+   ![選取Luma Web SDK資料流](assets/datastream-luma-web-sdk-development.png)
 
 1. 選取 **[!UICONTROL 新增服務]**
    ![將服務新增至資料流](assets/aam-datastream-addService.png)
@@ -65,7 +61,7 @@ ht-degree: 1%
 
    ![Adobe Experience PlatformAudience Manager資料來源](assets/data-sources-list.jpg)
 
-1. 為資料來源提供好記的名稱和說明。 對於初始設定，您可以命名此`Platform Web SDK tutorial`.
+1. 為資料來源提供好記的名稱和說明。 對於初始設定，您可以命名此 `Platform Web SDK tutorial`.
 1. 設定 **[!UICONTROL ID型別]** 至 **[!UICONTROL Cookie]**
 1. 在 **[!UICONTROL 資料匯出控制]** 區段，選取 **[!UICONTROL 無限制]**
 
@@ -91,7 +87,7 @@ ht-degree: 1%
 1. 選取 **[!UICONTROL 資料來源]** 您在上一節中建立。
 1. **[!UICONTROL 選取資料夾]** 將您的特徵儲存在右側窗格中的位置。 建立資料夾的方法有： **選取+圖示** 位於現有父資料夾旁。 您可以命名這個新資料夾 `Platform Web SDK tutorial`.
 1. 展開 **[!UICONTROL 特徵運算式]** 插入號並選取 **[!UICONTROL 運算式產生器]** 您必須提供表示首頁造訪的金鑰值組。
-1. 開啟 [Luma首頁](https://luma.enablementadobe.com/content/luma/us/en.html) （對應至您的標籤屬性）和 **Platform Web SDK Debugger** 並重新整理頁面。
+1. 開啟 [Luma首頁](https://luma.enablementadobe.com/content/luma/us/en.html) （對應至您的標籤屬性）和 **Adobe Experience Platform Debugger** 並重新整理頁面。
 1. 檢視Platform Web SDK的網路要求和事件詳細資訊，以尋找首頁的索引鍵和名稱值。
    ![Adobe Experience PlatformAudience ManagerXDM資料](assets/xdm-keyvalue.jpg)
 1. 返回Audience ManagerUI中的運算式產生器，並輸入索引鍵為 **`web.webPageDetails.name`** 和的值 **`content:luma:us:en`**. 此步驟可確保您每次載入首頁時都會引發特徵。
@@ -106,7 +102,8 @@ ht-degree: 1%
 1. 選取 **[!UICONTROL 新增]** 以開啟區段產生器
 1. 為您的區段提供好記的名稱和說明，例如 `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL 選取資料夾]** 您的區段將儲存在右側窗格中的位置。 建立資料夾的方法有： **選取+圖示** 位於現有父資料夾旁。 您可以命名這個新資料夾 `Platform Web SDK tutorial`.
-1. 新增整合程式碼，在此例中是隨機數字集。 1.在 **[!UICONTROL 資料來源]** 區段，選取 **[!UICONTROL Audience Manager]** 以及您先前建立的資料來源
+1. 新增整合程式碼，在此例中是隨機數字集。
+1. 在 **[!UICONTROL 資料來源]** 區段，選取 **[!UICONTROL Audience Manager]** 以及您先前建立的資料來源
 1. 展開 **[!UICONTROL 特徵]** 區段並搜尋您建立的特徵
 1. 選取 **[!UICONTROL 新增特徵]**.
 1. 選取 **[!UICONTROL 儲存]** 在頁面底部
@@ -187,4 +184,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

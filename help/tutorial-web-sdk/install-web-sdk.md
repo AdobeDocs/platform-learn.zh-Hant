@@ -3,21 +3,16 @@ title: 安裝及設定Adobe Experience Platform Web SDK標籤擴充功能
 description: 瞭解如何在資料收集介面中安裝和設定Platform Web SDK標籤擴充功能。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 11%
+source-wordcount: '604'
+ht-degree: 12%
 
 ---
 
 # 安裝Adobe Experience Platform Web SDK標籤擴充功能
 
-
->[!CAUTION]
->
->我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
-
-瞭解如何在資料收集介面中安裝和設定Platform Web SDK標籤擴充功能。 此標籤擴充功能為 _僅限標籤副檔名_ 必須將資料傳送至 _所有Adobe Experience Cloud應用程式_，包括 [Analytics](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和Journey Optimizer！
+瞭解如何安裝和設定Platform Web SDK標籤擴充功能。 實作Web SDK最簡單的方法是使用Adobe的標籤管理員，即tags （先前稱為Launch）。 Platform Web SDK標籤擴充功能為 _僅限標籤副檔名_ 必須將資料傳送至 _所有Adobe Experience Cloud應用程式_，包括 [Analytics](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、 Real-time Customer Data Platform和 [Journey Optimizer](setup-web-channel.md)！
 
 ## 學習目標
 
@@ -31,9 +26,6 @@ ht-degree: 11%
 
 您必須完成本教學課程中先前的課程：
 
-* [設定許可權](configure-permissions.md)
-* [設定XDM結構描述](configure-schemas.md)
-* [設定身分名稱空間](configure-identities.md)
 * [設定資料流](configure-datastream.md)
 
 ## 安裝Experience Platform Web SDK擴充功能
@@ -62,7 +54,7 @@ ht-degree: 11%
 1. 搜尋 `Adobe Experience Platform Web SDK`
 1. 選取 **[!UICONTROL 安裝]**
 
-   ![安裝Web SDK擴充功能](assets/extension-platform-web-sdk.jpg)
+   ![安裝Web SDK擴充功能](assets/extension-platform-web-sdk.png)
 
 
 ## 將Platform Web SDK連結至您的資料流
@@ -72,6 +64,7 @@ ht-degree: 11%
 1. 在 **[!UICONTROL 資料串流]**，選取 **[!UICONTROL 從清單選擇]** 輸入法
 1. 選取您先前建立的資料流， `Luma Web SDK`
 1. 選取 **[!UICONTROL 儲存]**
+
    >[!NOTE]
    >
    > 如果找不到您的資料流，請前往 [設定資料串流](configure-datastream.md) 上課並依照步驟建立一個
@@ -82,9 +75,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->在本教學課程中，您只會設定一個資料流，並將其與所有標籤環境（開發、預備和生產）建立關聯。 在您自己的網站上實作Platform Web SDK時，您應該為每個環境設定個別的資料流，並使用將它們對應至您的標籤環境。 **[!UICONTROL 輸入法]** > **[!UICONTROL 輸入值]**
->
->![資料流選擇](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>在本教學課程中，您只會設定一個資料流，並將其與所有標籤環境（開發、預備和生產）建立關聯。 在您自己的網站上實作Platform Web SDK時，您應該為每個環境設定個別的資料流，並將它們對應至您的標籤環境。
 
 >[!NOTE]
 >
@@ -98,4 +89,4 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

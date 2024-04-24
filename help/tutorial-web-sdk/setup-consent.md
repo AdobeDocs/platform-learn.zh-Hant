@@ -3,25 +3,20 @@ title: 使用Platform Web SDK設定同意
 description: 瞭解如何設定Experience PlatformWeb SDK標籤擴充功能的隱私權設定。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1640'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
 
 # 使用Platform Web SDK設定同意
 
-
->[!CAUTION]
->
->我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
-
 瞭解如何設定Experience PlatformWeb SDK標籤擴充功能的隱私權設定。 根據訪客與同意管理平台(CMP)的橫幅互動來設定同意。
 
 >[!NOTE]
 > 
->為了示範，本教學課程使用 [克拉羅](https://heyklaro.com/){target="_blank"} 作為CMP。 歡迎您使用Klaro或您在網站中使用的CMP，並加以關注。
+>為了示範，本教學課程使用 [克拉羅](https://heyklaro.com/) 作為CMP。 歡迎您使用Klaro或您在網站中使用的CMP，並加以關注。
 
 
 ## 學習目標
@@ -69,7 +64,7 @@ ht-degree: 0%
 >實作同意管理平台的最佳實務通常是載入CMP _早於_ 正在載入您的標籤管理員。 為了協助進行本教學課程，您將載入CMP _替換為_ 標籤管理員。 本課程旨在說明如何在Platform Web SDK中使用同意功能，請勿作為正確設定Klaro或任何其他CMP的指南。
 
 
-現在，使用完Klaro的設定後，請使用以下設定來建立標籤規則：
+現在，使用完Klaro的設定後，請使用以下設定建立標籤規則：
 
 * [!UICONTROL 名稱]：`all pages - library load - Klaro`
 * [!UICONTROL 事件]： [!UICONTROL 程式庫已載入（頁面頂端）] 替換為 [!UICONTROL 進階選項] > [!UICONTROL 訂購] 設為1
@@ -229,4 +224,4 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,20 +2,15 @@
 title: 結論和後續步驟
 description: 完成教學課程後的後續動作
 recommendations: display,noCatalog
-exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '390'
 ht-degree: 3%
 
 ---
 
 # 結論和後續步驟
-
-
->[!CAUTION]
->
->我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
 
 恭喜！您已完成「使用Web SDK實作Adobe Experience Cloud」教學課程！
 
@@ -48,4 +43,4 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

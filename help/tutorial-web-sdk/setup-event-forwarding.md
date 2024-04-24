@@ -3,23 +3,21 @@ title: 設定事件轉送屬性
 description: 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1861'
 ht-degree: 2%
 
 ---
 
 # 設定事件轉送屬性
 
-
->[!CAUTION]
->
->我們預計於2024年4月23日星期二發佈本教學課程的重大變更。 在那之後，許多練習將會變更，您可能需要從頭開始重新啟動教學課程，才能完成所有課程。
-
 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。
 
 事件轉寄是「資料收集」中可用的全新屬性型別。 事件轉送可讓您直接從Adobe Experience PlatformEdge Network傳送資料給第三方非Adobe廠商，而非傳統的使用者端瀏覽器。 在中進一步瞭解事件轉送的優點 [事件轉送概觀](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Web SDK和事件轉送圖](assets/dc-websdk-eventforwarding.png)
 
 若要在Adobe Experience Platform中使用事件轉送，必須先使用下列一個或多個選項，將資料傳送至Adobe Experience PlatformEdge Network：
 
@@ -56,7 +54,6 @@ ht-degree: 2%
 
    * 初始設定
 
-      * [設定許可權](configure-permissions.md)
       * [設定XDM結構描述](configure-schemas.md)
       * [設定身分名稱空間](configure-identities.md)
       * [設定資料流](configure-datastream.md)
@@ -65,6 +62,7 @@ ht-degree: 2%
 
       * [安裝 Web SDK 擴充功能](install-web-sdk.md)
       * [建立資料元素](create-data-elements.md)
+      * [建立身分](create-identities.md)
       * [建立標籤規則](create-tag-rule.md)
       * [使用Adobe Experience Platform Debugger進行驗證](validate-with-debugger.md)
 
@@ -91,9 +89,9 @@ ht-degree: 2%
 
 1. 前往 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
 1. 在左側導覽中選取 **[!UICONTROL 資料串流]**
-1. 選取先前建立的 `Luma Web SDK` 資料流
+1. 選取先前建立的 `Luma Web SDK: Development Environment` 資料流
 
-   ![選取Luma Web SDK資料流](assets/datastream-luma-web-sdk.png)
+   ![選取Luma Web SDK資料流](assets/datastream-luma-web-sdk-development.png)
 
 1. 選取 **[!UICONTROL 新增服務]**
    ![將服務新增至資料流](assets/event-forwarding-datastream-addService.png)
@@ -326,4 +324,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
