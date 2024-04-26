@@ -1,18 +1,19 @@
 ---
-title: 建立資料元素
+title: 建立Platform Web SDK的資料元素
 description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至該物件。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
+jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
 
 # 建立資料元素
 
-瞭解如何在標籤中建立資料元素，以用於上的內容、商業和身分資料 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html). 然後以Platform Web SDK擴充功能變數資料元素型別填入XDM結構描述中的欄位。
+瞭解如何在標籤中建立資料元素，以用於上的內容、商業和身分資料 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html). 然後以Adobe Experience Platform Web SDK擴充功能變數資料元素型別填入XDM結構描述中的欄位。
 
 ## 學習目標
 
@@ -53,7 +54,7 @@ ht-degree: 1%
 
 ### 在資料層中實作XDM
 
-此方法涉及使用完整定義的XDM物件作為資料層的結構。 然後將整個資料層對應到標籤中的XDM物件資料元素。 如果您的實作未使用標籤管理程式，此方法可能是最理想的方法，因為您可以使用直接從應用程式傳送資料至XDM。 [XDM sendEvent命令](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). 如果您使用標籤，可以建立自訂程式碼資料元素，將擷取整個資料層作為傳遞JSON物件至XDM。 然後，您將傳遞JSON對應到「傳送事件動作」中的XDM物件欄位。
+此方法涉及使用完整定義的XDM物件作為資料層的結構。 然後將整個資料層對應到標籤中的XDM物件資料元素。 如果您的實作未使用標籤管理程式，此方法可能是最理想的方法，因為您可以使用直接從應用程式傳送資料至XDM。 [XDM sendEvent命令](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). 如果您確實使用標籤，您可以建立自訂程式碼資料元素，將擷取整個資料層作為傳遞JSON物件至XDM。 然後，您將傳遞JSON對應到「傳送事件動作」中的XDM物件欄位。
 
 以下是資料層使用Adobe使用者端資料層格式的範例：
 
@@ -99,7 +100,7 @@ window.adobeDataLayer.push({
 優點
 
 * 消除重新對應至XDM資料層變數的額外步驟
-* 如果您的開發團隊擁有標籤數位行為，可更快速地部署
+* 如果您的開發團隊擁有標籤數位行為，部署可能會更快一些
 
 缺點
 
@@ -138,7 +139,7 @@ window.adobeDataLayer.push({
 
 * 靈活地對應個別變數至XDM
 * 能夠 [計算新值](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) 或 [轉換資料型別](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) 資料層中的資料轉移到XDM之前
-* 善用 [對應UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) 使用指向並按一下UI將來源資料中的欄位對應至XDM
+* 善用 [對應UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) 使用指向並按一下UI將來源資料中的欄位對應至XDM
 
 #### 缺點
 
@@ -298,4 +299,4 @@ window.adobeDataLayer.push({
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,17 +2,18 @@
 title: 使用Experience Platform Web SDK設定Adobe Analytics
 description: 瞭解如何使用Experience Platform Web SDK設定Adobe Analytics。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Analytics
+jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2810'
 ht-degree: 0%
 
 ---
 
-# 使用Platform Web SDK設定Adobe Analytics
+# 使用Adobe Experience Platform Web SDK設定Adobe Analytics
 
-瞭解如何使用設定Adobe Analytics [Experience PlatformWeb SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)，建立標籤規則以將資料傳送至Adobe Analytics，並驗證Analytics是否如預期擷取資料。
+瞭解如何使用設定Adobe Analytics [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)，建立標籤規則以將資料傳送至Adobe Analytics，並驗證Analytics是否如預期擷取資料。
 
 [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) 是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
 
@@ -34,13 +35,13 @@ ht-degree: 0%
 
 * 熟悉並存取Adobe Analytics。
 
-* 至少要有一個測試/開發報表套裝ID。 如果您沒有任何可用於本教學課程的測試/開發報表套裝， [請建立一個](https://experienceleague.adobe.com/en/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite).
+* 至少要有一個測試/開發報表套裝ID。 如果您沒有任何可用於本教學課程的測試/開發報表套裝， [請建立一個](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * 完成本教學課程之初始設定和標籤設定區段中先前的課程。
 
 ## 設定資料串流
 
-Platform Web SDK會將資料從您的網站傳送至PlatformEdge Network。 您的資料流接著會告訴PlatformEdge Network，您的資料應該轉送至哪個Adobe Analytics報表套裝。
+Platform Web SDK會將資料從您的網站傳送至PlatformEdge Network。 您的資料流接著會告訴PlatformEdge Network，您的資料應該傳送到哪個Adobe Analytics報表套裝。
 
 1. 前往 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
 1. 在左側導覽中選取 **[!UICONTROL 資料串流]**
@@ -51,7 +52,7 @@ Platform Web SDK會將資料從您的網站傳送至PlatformEdge Network。 您�
 1. 選取 **[!UICONTROL 新增服務]**
    ![將服務新增至資料流](assets/datastream-analytics-addService.png)
 1. 選取 **[!UICONTROL Adobe Analytics]** 作為 **[!UICONTROL 服務]**
-1. 輸入  **[!UICONTROL 報告套裝ID]** 開發報表套裝的
+1. 輸入 **[!UICONTROL 報告套裝ID]** 開發報表套裝的
 1. 選取 **[!UICONTROL 儲存]**
 
    ![資料流儲存分析](assets/datastream-add-analytics.png)
@@ -62,7 +63,7 @@ Platform Web SDK會將資料從您的網站傳送至PlatformEdge Network。 您�
 
 >[!WARNING]
 >
->在本教學課程中，您只會針對開發環境設定Adobe Analytics報表套裝。 當您為自己的網站建立資料串流時，您會為中繼和生產環境建立其他資料串流和報表套裝。
+>在本教學課程中，您只會針對開發環境設定Adobe Analytics報表套裝。 當您為自己的網站建立資料串流時，應該為測試和生產環境建立其他資料串流和報表套裝。
 
 ## XDM結構描述和Analytics變數
 
@@ -117,7 +118,7 @@ The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, 
 Analytics產品字串的個別區段是透過下的不同XDM變數設定的。 `productListItems` 物件。
 >自2022年8月18日起， `productListItems[].SKU` 優先將對應至s.products變數中的產品名稱。
 >設定為的值 `productListItems[].name` 只有在下列情況下，才會對應至產品名稱 `productListItems[].SKU` 不存在。 否則，它將會取消對應，並可在內容資料中使用。
->請勿將空字串或Null設為  `productListItems[].SKU`. 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
+>請勿將空字串或Null設為 `productListItems[].SKU`. 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
 
 如需最新的對應清單，請參閱 [Adobe Experience Edge中的Analytics變數對應](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
@@ -126,7 +127,7 @@ Analytics產品字串的個別區段是透過下的不同XDM變數設定的。 `
 
 XDM結構描述中的所有欄位，都可供Adobe Analytics做為前置詞為的內容資料變數使用 `a.x.`. 例如, `a.x.web.webinteraction.region`
 
-在本練習中，您會將一個XDM變數對應至一個prop。 請依照這些相同步驟執行任何自訂對應 `eVar`， `prop`， `event`，或可透過處理規則存取的變數。
+在本練習中，您會將一個XDM變數對應至一個prop。 對於您必須為任何專案執行的任何自訂對應，請遵循這些相同的步驟 `eVar`， `prop`， `event`，或可透過處理規則存取的變數。
 
 1. 前往Analytics介面
 1. 前往 [!UICONTROL 管理員] > [!UICONTROL 管理工具] > [!UICONTROL 報表套裝]
@@ -156,7 +157,7 @@ XDM結構描述中的所有欄位，都可供Adobe Analytics做為前置詞為�
 1. 尋找 `Adobe Analytics ExperienceEvent Template` 欄位群組並將其新增至您的結構描述
 
 
-現在請在產品字串中設定銷售eVar。 使用 `Adobe Analytics ExperienceEvent Template` 欄位群組，您便能夠將變數對應至產品字串內的銷售eVar或事件。 這也稱為設定 **產品語法銷售**.
+現在，在產品字串中設定銷售eVar。 使用 `Adobe Analytics ExperienceEvent Template` 欄位群組，您便能夠將變數對應至產品字串內的銷售eVar或事件。 這也稱為設定 **產品語法銷售**.
 
 1. 返回您的標籤屬性
 
@@ -229,7 +230,7 @@ XDM結構描述中的所有欄位，都可供Adobe Analytics做為前置詞為�
 
 1. 在右側，離開 **[!UICONTROL 規則運算式]** 切換已停用
 
-1. 在 **[!UICONTROL 路徑等於]** 設定 `/content/luma/us/en.html`. 對於Luma示範網站，這可確保規則只會在首頁上觸發
+1. 在 **[!UICONTROL 路徑等於]** 設定 `/content/luma/us/en.html`. 對於Luma示範網站，這可確保規則只在首頁上觸發
 
 1. 選取 **[!UICONTROL 保留變更]**
 
@@ -243,7 +244,7 @@ XDM結構描述中的所有欄位，都可供Adobe Analytics做為前置詞為�
 
 1. 作為 **[!UICONTROL 型別]**，選取 `web.webpagedetails.pageViews`
 
-1. 作為 **[!UICONTROL XDM資料]**，選取 `xdm.variable.content` 您已在以下位置建立： [建立資料元素](create-data-elements.md) 課程
+1. 作為 **[!UICONTROL XDM資料]**，選取 `xdm.variable.content` 您在中建立的資料元素 [建立資料元素](create-data-elements.md) 課程
 
    ![Analytics資料流覆寫](assets/set-up-analytics-datastream-override-1.png)
 
@@ -406,7 +407,7 @@ Adobe Experience Platform保證可協助您檢查、證明、模擬及驗證您�
 如您所知， [保證](validate-with-assurance.md) 課程，有數種方式可啟動保證工作階段。 由於您已經透過上次練習起始的邊緣追蹤工作階段開啟Adobe Experience Platform Debugger，因此建議您透過Debugger存取Assurance：
 ![透過Adobe Experience Platform Data Collection提供保證](assets/assurance-open-aep-debugger.png)
 
-在 **[!UICONTROL 「Web SDK教學課程3」]** 輸入保證工作階段 **[!UICONTROL &quot;hitdebugger&quot;]** 並放入事件搜尋列，將結果篩選為AdobeAnalytics處理後資料。
+在 **[!UICONTROL 「Web SDK教學課程3」]** 輸入保證工作階段 **[!UICONTROL &quot;hitdebugger&quot;]** 並放入事件搜尋列，將結果篩選為Adobe Analytics處理後資料。
 ![保證Adobe分析後處理資料](assets/assurance-hitdebugger.png)
 
 ### Experience CloudID驗證
@@ -452,4 +453,4 @@ Adobe Experience Platform保證可協助您檢查、證明、模擬及驗證您�
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

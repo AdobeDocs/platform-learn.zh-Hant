@@ -1,10 +1,11 @@
 ---
-title: 使用Web SDK將資料串流至Adobe Experience Platform
+title: 透過Platform Web SDK將資料串流至Adobe Experience Platform
 description: 瞭解如何使用Web SDK將網頁資料串流到Adobe Experience Platform。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1592'
 ht-degree: 4%
 
 ---
@@ -83,7 +84,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
    ![資料流設定](assets/experience-platform-datastream-config.png)
 
-當您在 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 對應至您的標籤屬性，資料會以Experience Platform填入資料集！
+當您在 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 對應至您的標籤屬性，資料會在Experience Platform中填入資料集！
 
 ## 驗證資料集
 
@@ -211,7 +212,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 1. 在 [Experience Platform](https://experience.adobe.com/platform/) 介面，選取 **[!UICONTROL 設定檔]** 在左側導覽列中
 
 1. 作為 **[!UICONTROL 身分名稱空間]** 使用 `lumaCRMId`
-1. 複製並貼上 `lumaCRMId` 已傳入您在Experience Platform偵錯工具中檢查的呼叫，在此案例中為 `112ca06ed53d3db37e4cea49cc45b71e`.
+1. 複製並貼上 `lumaCRMId` 已在您在Experience Platform Debugger中檢查的呼叫中傳遞，此案例中為 `112ca06ed53d3db37e4cea49cc45b71e`.
 
    ![設定檔](assets/experience-platform-validate-dataset-profile.png)
 
@@ -237,4 +238,4 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

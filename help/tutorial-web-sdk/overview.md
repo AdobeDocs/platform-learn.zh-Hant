@@ -3,7 +3,7 @@ title: 使用 Web SDK 教學課程實作 Adobe Experience Cloud
 description: 瞭解如何使用Adobe Experience Platform Web SDK實作Experience Cloud應用程式。
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 4%
@@ -20,7 +20,7 @@ Experience Platform Web SDK是使用者端的JavaScript程式庫，可讓Adobe E
 
 本教學課程會引導您在名為Luma的範例零售網站上實作Platform Web SDK。 此 [Luma網站](https://luma.enablementadobe.com/content/luma/us/en.html) 具備豐富的資料層和功能，可讓您建置逼真的實施。 在本教學課程中，您可以：
 
-* 使用Luma網站的Platform Web SDK實作，在您自己的帳戶中建立您自己的標籤屬性。
+* 使用適用於Luma網站的Platform Web SDK實作，在自己帳戶中建立自己的標籤屬性。
 * 設定Web SDK實作的所有資料收集功能，例如資料串流、結構描述和身分識別名稱空間。
 * 新增下列Adobe Experience Cloud應用程式：
    * **[Adobe Experience Platform](setup-experience-platform.md)** (以及以Adobe Real-time Customer Data Platform、Adobe Journey Optimizer和Adobe Customer Journey Analytics等平台建置的應用程式)
@@ -66,7 +66,7 @@ Experience Platform Web SDK是使用者端的JavaScript程式庫，可讓Adobe E
 
 * （選填） **Adobe Analytics** 課程，您必須擁有 [管理員對報表套裝設定、處理規則和Analysis Workspace的存取權](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* （選填） **Adobe Target** 課程，您必須擁有 [編輯者或核准者](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) 存取。
+* （選填） **Adobe Target** 課程，您必須擁有 [編輯者或核准者](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) 存取。
 
 * （選填） **Audience Manager** 課程，您必須有建立、讀取和寫入特徵、區段和目的地的存取權。 如需詳細資訊，請參閱以下教學課程： [Audience Manager的角色型存取控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
@@ -77,7 +77,7 @@ Experience Platform Web SDK是使用者端的JavaScript程式庫，可讓Adobe E
 
 ## 更新
 
-* 2024年4月24日：重大更新，包括新增設定變數/更新變數、分割個人化和分析請求、Journey Optimizer層級
+* 2024年4月24日：重大更新，包括新增設定變數/更新變數、分割個人化和分析請求、Journey Optimizer課程
 
 ## 載入Luma網站
 
@@ -91,4 +91,4 @@ Experience Platform Web SDK是使用者端的JavaScript程式庫，可讓Adobe E
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

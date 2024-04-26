@@ -1,18 +1,19 @@
 ---
-title: 設定事件轉送屬性
+title: 使用Platform Web SDK資料設定事件轉送
 description: 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Event Forwarding
+jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1873'
 ht-degree: 2%
 
 ---
 
-# 設定事件轉送屬性
+# 使用Platform Web SDK資料設定事件轉送
 
-瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。
+瞭解如何將事件轉送與Adobe Experience Platform Web SDK資料搭配使用。
 
 事件轉寄是「資料收集」中可用的全新屬性型別。 事件轉送可讓您直接從Adobe Experience PlatformEdge Network傳送資料給第三方非Adobe廠商，而非傳統的使用者端瀏覽器。 在中進一步瞭解事件轉送的優點 [事件轉送概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
@@ -22,7 +23,7 @@ ht-degree: 2%
 若要在Adobe Experience Platform中使用事件轉送，必須先使用下列一個或多個選項，將資料傳送至Adobe Experience PlatformEdge Network：
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
+* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -46,7 +47,7 @@ ht-degree: 2%
 ## 先決條件
 
 * 包含事件轉送的軟體授權。 事件轉寄是資料收集的付費功能。 如需詳細資訊，請聯絡您的Adobe客戶團隊。
-* 您的Experience Cloud組織中已啟用事件轉送。
+* 已在您的Experience Cloud組織中啟用事件轉送。
 * 事件轉送的使用者許可權。 (在 [Admin Console](https://adminconsole.adobe.com/)，在Adobe Experience Platform Launch產品底下，下列專案的許可權專案[!UICONTROL 平台] > [!UICONTROL Edge] 和所有 [!UICONTROL 屬性權利])。 授予許可權後，您應該看到 [!UICONTROL 事件轉送] 在資料收集介面的左側導覽中：
   ![事件轉送屬性](assets/event-forwarding-menu.png)
 
@@ -76,14 +77,14 @@ ht-degree: 2%
 1. 選取&#x200B;**[!UICONTROL 「新屬性」]**。
    ![事件轉送屬性](assets/event-forwarding-new.png)
 
-1. 為屬性命名。 在此案例中 `Server-Side - Web SDK Course`
+1. 為屬性命名。 在這種情況下， `Server-Side - Web SDK Course`
 
 1. 選取「**[!UICONTROL 儲存]**」。
    ![事件轉送屬性儲存](assets/event-forwarding-save.png)
 
 ## 設定資料串流
 
-若要讓事件轉送使用您傳送至Edge網路的資料，您必須將新建立的事件轉送屬性連結至用來將資料傳送至Adobe解決方案的相同資料流。
+若要讓事件轉送使用您傳送至PlatformEdge Network的資料，您必須將新建立的事件轉送屬性連結至用來將資料傳送至Adobe解決方案的相同資料流。
 
 若要在資料流中設定Target：
 
@@ -209,7 +210,7 @@ ht-degree: 2%
 
 * **[!UICONTROL 活動] &amp; [!UICONTROL 條件]**：
 
-   * **標籤**：所有規則都是由事件觸發，而事件必須在規則中指定，例如 `Library Loaded - Page Top`. 條件為選用。
+   * **標籤**：所有規則都是由必須在規則中指定的事件觸發，例如 `Library Loaded - Page Top`. 條件為選用。
    * **事件轉送**：我們假設每個傳送至PlatformEdge Network的事件都是轉送資料的觸發條件。 因此， [!UICONTROL 活動] 即必須在事件轉送規則中選取的位置。 若要管理哪些事件會觸發事件轉送規則，您必須設定條件。
 
 * **資料元素代碼化**：
@@ -220,7 +221,7 @@ ht-degree: 2%
 
 * **規則動作順序**：
 
-   * 事件轉送規則的「動作」區段一律依序執行。 儲存規則時，請確認動作順序正確。此執行序列無法像標籤一樣以非同步方式執行。
+   * 事件轉送規則的「動作」區段一律依序執行。 儲存規則時，請確認動作順序正確。 此執行序列無法像標籤一樣以非同步方式執行。
 
 <!--
   * **Tags**: Rule actions can easily be reordered using drag-and-drop functionality.
@@ -231,7 +232,7 @@ ht-degree: 2%
 
 1. 前往 [Webhook.site](https://webhook.site)
 
-1. 尋找 **您的唯一URL**，您會將此用作為事件轉送規則中的URL要求
+1. 尋找 **您的唯一URL**，您可將此用作為事件轉送規則中的URL要求
 
 1. 選取 **[!UICONTROL 複製到剪貼簿]**
 
@@ -324,4 +325,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

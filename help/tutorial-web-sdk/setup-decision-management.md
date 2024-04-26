@@ -1,22 +1,23 @@
 ---
-title: 使用Platform Web SDK設定決定管理
+title: 使用Platform Web SDK設定Journey Optimizer決策管理
 description: 瞭解如何使用Platform Web SDK實作決定管理。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2515'
 ht-degree: 0%
 
 ---
 
 # 使用Platform Web SDK設定決定管理
 
-瞭解如何使用Platform Web SDK實作決定管理。 本指南說明基本的決策管理先決條件、設定的詳細步驟，並深入探討以忠誠度狀態為中心的使用案例。
+瞭解如何使用Platform Web SDK實施Adobe Journey Optimizer的決策管理功能。 本指南說明基本的決策管理先決條件、設定的詳細步驟，並深入探討以忠誠度狀態為中心的使用案例。
 
-依照本教學課程指示，Journey Optimizer使用者能夠有效地套用offer decisioning功能，增強其客戶互動的個人化與關聯性。
+依照本教學課程指示，Journey Optimizer使用者已整備使用決策管理功能，加強其客戶互動的個人化與關聯性。
 
 
 ![Web SDK和Adobe Analytics圖表](assets/dc-websdk-ajo.png)
@@ -51,9 +52,7 @@ ht-degree: 0%
 
 ## 限制
 
-請注意下列限制：
-
-* Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件建立決定規則，則無法在優惠中套用它。
+Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件建立決定規則，則無法在優惠中套用它。
 
 ## 授予決策管理的存取權限
 
@@ -140,7 +139,7 @@ offer decisioning必須在以下位置啟用： **資料流** Platform Web SDK�
 
 在本課程中，您會實作一個熟客獎勵範例使用案例，以瞭解使用Web SDK的決策管理。
 
-此使用案例可讓您更瞭解Journey Optimizer如何運用集中式優惠資料庫和優惠決定引擎，為客戶提供最佳優惠。
+此使用案例可讓您更瞭解Journey Optimizer如何運用集中式優惠資料庫和決定管理決策引擎，為客戶提供最佳優惠。
 
 >[!NOTE]
 >
@@ -307,11 +306,11 @@ offer decisioning必須在以下位置啟用： **資料流** Platform Web SDK�
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 現在您必須定義 **決定範圍**. 首先，選取位置。 您可以使用先前建立的&#39;*首頁橫幅*&#39;.
+1. 現在，您必須定義 **決定範圍**. 首先，選取位置。 您可以使用先前建立的&#39;*首頁橫幅*&#39;.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 接下來，您必須新增 **評估准則** 用於決定範圍。 按一下 **新增** 並選擇先前建立的&#39;*熟客方案獎勵*『 **集合** 包含要考慮的所有熟客方案。
+1. 接下來，您必須新增 **評估准則** 用於決定範圍。 按一下 **新增** 並選擇先前建立的&#39;*熟客方案獎勵*&#39; **集合，包含要考慮的所有熟客方案。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -334,7 +333,7 @@ offer decisioning必須在以下位置啟用： **資料流** Platform Web SDK�
 
 ## 模擬
 
-最佳實務是驗證Luma忠誠度決策邏輯，確保將正確的優惠方案傳遞至正確的忠誠度對象。 您可以透過使用完成此操作 **測試設定檔**. 同時，也建議您先透過測試設定檔來測試優惠方案的變更，然後再將新優惠方案版本推送至生產環境。
+最佳實務是驗證Luma忠誠度決策邏輯，確保將正確的優惠方案傳遞至正確的忠誠度對象。 您可以透過使用執行此驗證 **測試設定檔**. 同時，也建議您先透過測試設定檔來測試優惠方案的變更，然後再將新優惠方案版本推送至生產環境。
 
 若要開始測試，請選取 **模擬** 標籤從 **選件** 功能表。
 
@@ -370,7 +369,7 @@ offer decisioning必須在以下位置啟用： **資料流** Platform Web SDK�
 
 此 **Adobe Experience Platform Debugger** 擴充功能適用於Chrome和Firefox，可分析您的網頁，以識別Adobe Experience Cloud解決方案實作中的問題。
 
-您可以在Luma網站上使用除錯工具，驗證生產環境中的決策邏輯。 當忠誠獎勵使用案例啟動並執行時，這是不錯的做法，可確保一切都已正確設定。
+您可以在Luma網站上使用除錯工具，驗證生產環境中的決策邏輯。 忠誠獎勵使用案例啟動並執行後，此驗證是很好的做法，可確保所有專案皆已正確設定。
 
 [瞭解如何使用這裡的指南，在瀏覽器中設定除錯工具](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -405,4 +404,4 @@ offer decisioning必須在以下位置啟用： **資料流** Platform Web SDK�
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

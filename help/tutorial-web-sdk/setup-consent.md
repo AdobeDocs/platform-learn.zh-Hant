@@ -2,21 +2,22 @@
 title: 使用Platform Web SDK設定同意
 description: 瞭解如何設定Experience PlatformWeb SDK標籤擴充功能的隱私權設定。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Consent
+jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
 
 # 使用Platform Web SDK設定同意
 
-瞭解如何設定Experience PlatformWeb SDK標籤擴充功能的隱私權設定。 根據訪客與同意管理平台(CMP)的橫幅互動來設定同意。
+瞭解如何設定Adobe Experience Platform Web SDK標籤擴充功能的隱私權設定。 根據訪客與同意管理平台(CMP)的橫幅互動來設定同意。
 
 >[!NOTE]
 > 
->為了示範，本教學課程使用 [克拉羅](https://heyklaro.com/) 作為CMP。 歡迎您使用Klaro或您在網站中使用的CMP，並加以關注。
+>為了示範，本教學課程使用 [克拉羅](https://klaro.org/) 作為CMP。 歡迎您使用Klaro或您在網站中使用的CMP，並加以關注。
 
 
 ## 學習目標
@@ -32,20 +33,21 @@ ht-degree: 0%
 您應熟悉標籤以及使用Experience PlatformDebugger建立規則、資料元素、建置程式庫至環境和切換標籤程式庫的步驟。
 
 在您開始設定隱私權設定及建立設定同意的規則之前，請確定您已將同意管理平台指令碼插入網站，且運作正常。 CMP可以在網站開發人員的協助下直接載入原始程式碼中，或是透過標籤本身載入。 本課程將展示後一種方法。
+
 >[!NOTE]
 > 
 >1. 同意管理平台（或CMP）是組織用來在收集、共用或銷售來自線上來源（例如網站和應用程式）的訪客資料之前，合法記錄和管理訪客的同意選擇。
 >
->2. 插入CMP的建議方法是直接透過原始程式碼在標籤管理員指令碼之前進行。
+>2. 插入CMP的建議方法是在標籤管理員指令碼之前直接透過原始程式碼。
 
 ### 設定Klaro
 
 在跳至標籤設定之前，請先進一步瞭解本教學課程Klaro中使用的同意管理平台。
 
-1. 造訪 [克拉羅](https://heyklaro.com/) 並設定帳戶。
+1. 造訪 [克拉羅](https://klaro.org/) 並設定帳戶。
 1. 前往 **隱私權管理員** 並根據指示建立例項。
 1. 使用 **整合代碼** 將Klaro插入標籤屬性中（下一個練習將說明此內容）。
-1. 略過 **掃描** 區段，因為它會偵測在Luma示範網站上以硬式編碼撰寫的標籤屬性，而非您為本教學課程建立的標籤屬性。
+1. 略過 **掃描** 部分，因為它會偵測在Luma示範網站上以硬式編碼撰寫的標籤屬性，而非您為本教學課程建立的標籤屬性。
 1. 新增名為的服務 `aep web sdk` 並開啟 **服務預設狀態**. 開啟時，預設同意值為 `true`，否則為 `false`. 如果您想要決定Web應用程式的預設同意狀態（在訪客同意前），此設定相當實用。 例如：
    * 對於CCPA，預設同意通常設定為 `true`. 您即將參考此情境為 **隱含的選擇加入** 貫穿本教學課程
    * GDPR的預設同意通常是設為 `false`. 您即將參考此情境為 **隱含的選擇退出** 貫穿本教學課程。
@@ -218,10 +220,10 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 如需有關Web SDK中同意的詳細資訊，請參閱 [支援客戶同意偏好設定](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-如需詳細資訊，請參閱 [!UICONTROL 設定同意] 動作，請參閱 [設定同意](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
+如需詳細資訊，請參閱 [!UICONTROL 設定同意] 動作，請參閱 [設定同意](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [下一步： ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

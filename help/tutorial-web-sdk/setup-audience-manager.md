@@ -2,17 +2,18 @@
 title: 使用Platform Web SDK設定Audience Manager
 description: 瞭解如何使用Platform Web SDK設定Adobe Audience Manager，並使用Cookie目的地驗證實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Audience Manager
+jira: KT-15409
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1340'
 ht-degree: 1%
 
 ---
 
 # 使用Platform Web SDK設定Audience Manager
 
-瞭解如何使用Platform Web SDK設定Adobe Audience Manager，並使用Cookie目的地驗證實作。
+瞭解如何使用Adobe Experience Platform Web SDK設定Adobe Audience Manager，並使用Cookie目的地驗證實作。
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) 是Adobe Experience Cloud解決方案，提供收集網站訪客之商業相關資訊、建立可行銷區段，以及將目標定位廣告和內容提供給適當對象所需的一切。
 
@@ -35,7 +36,7 @@ ht-degree: 1%
 
 ## 設定資料串流
 
-使用Platform Web SDK的Audience Manager實作與使用 [伺服器端轉送(SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). 伺服器端轉送會將Adobe Analytics請求資料傳遞給Audience Manager。 Platform Web SDK實作會將傳送至PlatformEdge Network的XDM資料傳遞給Audience Manager。 已在資料流中啟用Audience Manager：
+使用Platform Web SDK的Audience Manager實作與使用 [伺服器端轉送(SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). 伺服器端轉送會將Adobe Analytics請求資料傳遞給Audience Manager。 Platform Web SDK實作會將傳送至PlatformEdge Network的XDM資料傳遞給Audience Manager。 已在資料流中啟用Audience Manager：
 
 1. 前往 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
 1. 在左側導覽中選取 **[!UICONTROL 資料串流]**
@@ -76,7 +77,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->所有XDM資料都會傳送至Audience Manager （如果在資料流中啟用），不過資料可能需要24小時才能在「未使用的訊號」報表中使用。 為您要立即在Audience Manager中使用的XDM資料建立明確特徵，如本練習所述。
+>所有XDM資料都會傳送至Audience Manager （如果在資料流中啟用），不過資料可能需要24小時才能在「未使用的訊號」報表中使用。 為您要立即在Audience Manager中使用的XDM資料建立明確的特徵，如本練習所述。
 
 1. 選取 **[!UICONTROL 對象資料]** >  **[!UICONTROL 特徵]**
 1. 選取 **[!UICONTROL 新增]** >  **[!UICONTROL Rule-Based]** 特徵
@@ -96,12 +97,12 @@ ht-degree: 1%
 
 ## 建立區段
 
-下一步是建立 **區段**，並將您新定義的特性指派給此區段。
+接下來的步驟是建立 **區段** 並將您新定義的特性指派給此區段。
 
 1. 選取 **[!UICONTROL 對象資料]** 在頂端導覽列中，並選取 **[!UICONTROL 區段]**
 1. 選取 **[!UICONTROL 新增]** 以開啟區段產生器
 1. 為您的區段提供好記的名稱和說明，例如 `Platform Web SDK - Homepage visitors`
-1. **[!UICONTROL 選取資料夾]** 您的區段將儲存在右側窗格中的位置。 建立資料夾的方法有： **選取+圖示** 位於現有父資料夾旁。 您可以命名這個新資料夾 `Platform Web SDK tutorial`.
+1. **[!UICONTROL 選取資料夾]** 區段儲存在右側窗格中的位置。 建立資料夾的方法有： **選取+圖示** 位於現有父資料夾旁。 您可以命名這個新資料夾 `Platform Web SDK tutorial`.
 1. 新增整合程式碼，在此例中是隨機數字集。
 1. 在 **[!UICONTROL 資料來源]** 區段，選取 **[!UICONTROL Audience Manager]** 以及您先前建立的資料來源
 1. 展開 **[!UICONTROL 特徵]** 區段並搜尋您建立的特徵
@@ -184,4 +185,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

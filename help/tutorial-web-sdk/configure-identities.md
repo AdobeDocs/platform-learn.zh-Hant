@@ -2,11 +2,12 @@
 title: 設定身分名稱空間
 description: 瞭解如何設定身分識別名稱空間以搭配Adobe Experience Platform Web SDK使用。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Web SDK,Identities
+jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 7%
+source-wordcount: '576'
+ht-degree: 8%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 7%
 
 瞭解如何設定身分識別名稱空間以搭配Adobe Experience Platform Web SDK使用。
 
-此 [Adobe Experience Cloud Identity服務](https://experienceleague.adobe.com/en/docs/id-service/using/home) 跨以SDK為基礎的Adobe應用程式設定通用訪客ID (ECID)，以便支援Experience Cloud功能，例如應用程式之間的受眾共用。 您也可以將自己的客戶ID傳送至此服務，以啟用跨裝置目標鎖定及與其他系統(例如客戶關係管理(CRM)系統)的整合。
+此 [Adobe Experience Cloud Identity服務](https://experienceleague.adobe.com/en/docs/id-service/using/home) 設定跨SDKAdobe應用程式的通用訪客ID (ECID)，以強化Experience Cloud功能，例如應用程式之間的受眾共用。 您也可以將自己的客戶ID傳送至此服務，以啟用跨裝置目標鎖定及與其他系統(例如客戶關係管理(CRM)系統)的整合。
 
 此 [Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) （是的，有兩個專案！） 使用ECID和客戶ID來產生身分圖表，好讓您將屬性和行為合併到即時客戶個人檔案中。
 
@@ -38,9 +39,9 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
->此 [Experience CloudID擴充功能](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) 實作Adobe Experience Platform Web SDK時不需要使用，因為Web SDK JavaScript程式庫包含訪客ID服務功能。
+>此 [Experience CloudID擴充功能](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) 實作Adobe Experience Platform Web SDK時不需要使用，因為Web SDK JavaScript程式庫包含訪客ID服務功能。
 >
-> 如果您的網站已透過訪客API或Experience CloudID服務標籤擴充功能在網站上使用Experience CloudID服務，而您想要在移轉至Adobe Experience Platform Web SDK時繼續使用該服務，則您必須使用最新版本的訪客API或Experience CloudID服務標籤擴充功能。 另請參閱 [ID移轉](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) 以取得詳細資訊。
+> 如果您的網站已透過訪客API或Experience CloudID服務標籤擴充功能在網站上使用Experience CloudID服務，而且您要在移轉至Adobe Experience Platform Web SDK時繼續使用該服務，您必須使用最新版本的訪客API或Experience CloudID服務標籤擴充功能。 另請參閱 [ID移轉](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) 以取得詳細資訊。
 
 ## 建立身分名稱空間
 
@@ -53,7 +54,7 @@ ht-degree: 7%
 現在，為Luma CRM ID建立名稱空間：
 
 1. 開啟 [資料收集介面](https://launch.adobe.com/tw/){target="_blank"}
-1. 選取您在本教學課程中使用的沙箱
+1. 選取您用於教學課程的沙箱
 
    >[!NOTE]
    >
@@ -68,7 +69,7 @@ ht-degree: 7%
 
    ![檢視身分](assets/configure-identities-screen.png)
 
-1. 提供詳細資訊，如下所示，並選取 **[!UICONTROL 建立]**.
+1. 提供下列詳細資料，然後選取 **[!UICONTROL 建立]**.
 
    | 欄位 | 值 |
    |---------------|-----------|
@@ -89,14 +90,10 @@ ht-degree: 7%
 >
 > 在 [建立身分](create-identities.md) 課程，您將學習在傳送身分識別到PlatformEdge Network時如何使用此名稱空間。
 
-## 在您的生產沙箱中建立身分名稱空間
-
-由於Web SDK擴充功能目前的限制，身分名稱空間也必須在生產沙箱中建立，才能使用名稱空間將資料傳送至開發沙箱。 因此，如果您在本教學課程中使用了開發沙箱，請同時建立 `Luma CRM ID` 生產沙箱中的名稱空間。
-
 現在身分已準備就緒，可以設定資料流。
 
 [下一步： ](configure-datastream.md)
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

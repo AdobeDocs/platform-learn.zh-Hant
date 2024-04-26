@@ -2,17 +2,18 @@
 title: 使用Platform Web SDK設定Adobe Target
 description: 瞭解如何使用Platform Web SDK實作Adobe Target。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 solution: Data Collection, Target
+jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4305'
 ht-degree: 0%
 
 ---
 
 # 使用Platform Web SDK設定Adobe Target
 
-瞭解如何使用Platform Web SDK實作Adobe Target。 瞭解如何傳遞體驗以及如何將其他引數傳遞至Target。
+瞭解如何使用Adobe Experience Platform Web SDK實作Adobe Target。 瞭解如何傳遞體驗以及如何將其他引數傳遞至Target。
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) 是Adobe Experience Cloud應用程式，提供一切所需工具，讓您量身訂造及個人化您的客戶體驗，藉此為您的網頁以及行動網站、應用程式和其他數位頻道創造最高的收入。
 
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 ## 學習目標
 
-在本課程結束時，您將能夠對Target的Web SDK實作執行以下操作：
+在本課程結束時，您可以透過Target的Web SDK實作執行下列操作：
 
 * 新增預先隱藏的程式碼片段以防止閃爍
 * 設定資料流以啟用Target功能
@@ -41,7 +42,7 @@ ht-degree: 0%
 若要完成本節中的課程，您必須先：
 
 * 完成所有Platform Web SDK初始設定的課程，包括設定資料元素和規則。
-* 確定您有 [編輯者或核准者角色](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) 在Adobe Target中。
+* 確定您有 [編輯者或核准者角色](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) 在Adobe Target中。
 * 安裝 [視覺化體驗撰寫器Helper擴充功能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) 如果您使用Google Chrome瀏覽器。
 * 瞭解如何在Target中設定活動。 如果您需要複習程式，下列教學課程和指南對本課程很有幫助：
    * [使用視覺化體驗撰寫器(VEC) Helper擴充功能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
@@ -55,12 +56,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本教學課程使用 [Luma網站](https://luma.enablementadobe.com/content/luma/us/en.html) 非同步實作標籤，並有防止忽隱忽現的機制。 本節內容僅供瞭解閃爍緩解如何與Platform Web SDK搭配運作之用。
+>本教學課程使用 [Luma網站](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}，非同步實作標籤並推行忽隱忽現緩解措施。 本節內容僅供瞭解閃爍緩解如何與Platform Web SDK搭配運作之用。
 
 
 ### 非同步實施
 
-非同步載入標籤庫時，頁面可能會在Target以個人化內容取代預設內容之前完成轉譯。 此行為可能會導致所謂的「閃爍」問題，發生此問題時，會先短暫地顯示預設內容，然後再更換為Target指定的個人化內容。 若要避免發生這種閃爍問題，Adobe建議在非同步標籤內嵌程式碼的前面加上特殊的預先隱藏程式碼片段。
+非同步載入標籤庫時，頁面可能會在Target以個人化內容取代預設內容之前完成轉譯。 此行為可能會導致所謂的「閃爍」問題，發生此問題時，會先短暫地顯示預設內容，然後再更換為個人化內容。 若要避免發生這種閃爍問題，Adobe建議在非同步標籤內嵌程式碼的前面加上特殊的預先隱藏程式碼片段。
 
 此程式碼片段已存在於Luma網站上，但讓我們進一步瞭解此程式碼的作用：
 
@@ -182,7 +183,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 ## 呈現視覺個人化決定
 
-視覺化個人化決定是指在Adobe Target的視覺化體驗撰寫器中建立的體驗。 首先，您應該瞭解Target和標籤介面中使用的術語：
+視覺化個人化決定參考在Adobe Target視覺化體驗撰寫器中建立的體驗。 首先，您應該瞭解Target和標籤介面中使用的術語：
 
 * **活動**：一組鎖定至一或多個對象的體驗。 例如，簡單的A/B測試可能是具有兩個體驗的活動。
 * **體驗**：一組以一或多個位置或決定範圍為目標的動作。
@@ -231,7 +232,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
    ![建立新的XT活動](assets/target-xt-create-activity.png)
 
-1. 修改頁面，例如變更首頁主圖橫幅上的文字。  完成後，選取 **[!UICONTROL 儲存]** 則 **[!UICONTROL 下一個]**.
+1. 修改頁面，例如，變更首頁主圖橫幅上的文字。  完成後，選取 **[!UICONTROL 儲存]** 則 **[!UICONTROL 下一個]**.
 
    ![Target VEC修改](assets/target-xt-vec-modification.png)
 
@@ -256,7 +257,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 ### 使用除錯工具進行驗證
 
-如果您設定活動，應該會在頁面上看到您的內容已呈現。 不過，即使沒有活動上線，您也可以檢視「傳送事件」網路呼叫，以確認Target已正確設定。
+如果您設定活動，應該會在頁面上看到您的內容已呈現。 但是，即使沒有活動上線，您也可以檢視「傳送事件」網路呼叫，以確認Target已正確設定。
 
 >[!CAUTION]
 >
@@ -302,7 +303,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 ### 處理來自Target的回應
 
-現在您已設定Platform Web SDK來請求 `homepage-hero` 範圍，您必須對回應執行動作。 Platform Web SDK標籤擴充功能提供 [!UICONTROL 傳送事件完成] 事件，當回應來自時，立即觸發新規則 [!UICONTROL 傳送事件] 已收到動作。
+現在您已設定Platform Web SDK來請求 `homepage-hero` 範圍，您必須對回應執行動作。 Platform Web SDK標籤擴充功能提供 [!UICONTROL 傳送事件完成] 事件，當回應時，立即觸發新規則 [!UICONTROL 傳送事件] 已收到動作。
 
 1. 建立名為的規則 `homepage - send event complete - render homepage-hero`.
 1. 將事件新增至規則。 使用 **Adobe Experience Platform Web SDK** 擴充功能與 **[!UICONTROL 傳送事件完成]** 事件型別。
@@ -393,7 +394,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 ### 頁面(mbox)引數和XDM
 
-所有XDM欄位都會自動傳遞至Target，如下所示 [頁面引數](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) 或mbox引數。
+所有XDM欄位都會自動傳遞至Target，如下所示 [頁面引數](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) 或mbox引數。
 
 其中一些XDM欄位會對應至Target後端的特殊物件。 例如， `web.webPageDetails.URL` 將自動可用於建置以URL為基礎的鎖定目標條件，或作為 `page.url` 物件。
 
@@ -401,7 +402,7 @@ Adobe建議針對您的每個開發、測試和生產資料流分別設定不同
 
 有些資料點未從XDM物件對應，可能對Target有用。 這些特殊的Target引數包括：
 
-* [設定檔屬性](https://experienceleague.adobe.com/en/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes)
+* [設定檔屬性](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
 * [Recommendations實體屬性](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
 * [Recommendations保留的引數](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
 * 的類別值 [類別親和性](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
@@ -543,7 +544,7 @@ Luma網站上的資料層完全定義在標籤內嵌程式碼之前。 這可讓
 
    ![在Assurance Analytics點選中驗證](assets/validate-in-assurance-analyticsevent.png)
 
-這可確認，當我們在頁面上稍後觸發分析追蹤呼叫時，已佇列以供稍後傳輸的A4T資訊已正確傳送。
+這可確認當我們進行目標決策呼叫時，在頁面上稍後觸發分析追蹤呼叫時，已佇列以供稍後傳輸的A4T資訊已正確傳送。
 
 現在您已完成本課程，應該就能使用Platform Web SDK有效實作Adobe Target。
 
@@ -551,4 +552,4 @@ Luma網站上的資料層完全定義在標籤內嵌程式碼之前。 這可讓
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

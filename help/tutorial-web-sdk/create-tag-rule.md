@@ -1,18 +1,19 @@
 ---
-title: 建立標籤規則
+title: 建立Platform Web SDK的標籤規則
 description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
+jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1963'
 ht-degree: 1%
 
 ---
 
 # 建立標籤規則
 
-瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。 在Platform Web SDK中，規則是用來將事件與正確的資料傳送至PlatformEdge Network。
+瞭解如何使用標籤規則，將事件與XDM物件一起傳送至Adobe Experience PlatformEdge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。 在Platform Web SDK中，規則是用來將事件與正確的資料傳送至PlatformEdge Network。
 
 ## 學習目標
 
@@ -38,7 +39,7 @@ ht-degree: 1%
 
 ## 命名慣例
 
-若要更妥善地管理標籤中的規則，建議遵循標準命名慣例。 本教學課程使用五部分命名慣例：
+若要管理標籤中的規則，建議遵循標準命名慣例。 本教學課程使用五部分命名慣例：
 
 * [**位置**] - [**事件**] - [**用途**] - [**訂購**]
 
@@ -52,7 +53,7 @@ ht-degree: 1%
 
 ## 建立標籤規則
 
-在標籤中，規則是用來在不同的條件下執行動作（引發呼叫）。 Platform Web SDK標籤擴充功能包含本課程將使用的兩個動作：
+在標籤中，規則是用來在不同的條件下執行動作（引發呼叫）。 Platform Web SDK標籤擴充功能包含本課程使用的兩個動作：
 
 * **[!UICONTROL 更新變數]** 將資料元素對應至XDM物件中的屬性
 * **[!UICONTROL 傳送事件]** 傳送XDM物件至Experience PlatformEdge Network
@@ -63,7 +64,7 @@ ht-degree: 1%
 
 1. 使用建立其他規則 **[!UICONTROL 更新變數]** 覆寫我們的「全域設定」，並在特定條件下（例如在產品頁面上新增產品詳細資訊）貢獻其他XDM欄位的動作。
 
-1. 使用建立另一個規則 **[!UICONTROL 傳送事件]** 此動作會將完整的XDM物件傳送至Adobe Experience Platform Edge Network。
+1. 使用建立另一個規則 **[!UICONTROL 傳送事件]** 動作，此動作會將完整的XDM物件傳送至Adobe Experience PlatformEdge Network。
 
 所有這些規則將使用&quot;[!UICONTROL 訂購]」選項。
 
@@ -110,7 +111,7 @@ ht-degree: 1%
 
    ![更新變數結構](assets/create-rule-update-variable.png)
 
-現在對應您的 [!UICONTROL 資料元素] 至 [!UICONTROL 綱要] 由您的XDM物件使用。 您可以對應至個別屬性或整個物件。 在此範例中，您會對應至個別屬性：
+現在，對應您的 [!UICONTROL 資料元素] 至 [!UICONTROL 綱要] 由您的XDM物件使用。 您可以對應至個別屬性或整個物件。 在此範例中，您會對應至個別屬性：
 
 1. 找到eventType欄位並加以選取
 
@@ -171,7 +172,7 @@ ht-degree: 1%
 1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
 1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入（頁面頂端）]**
-1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 這可確保規則在 `all pages - library loaded - set global variables - 1` 會設定全域組態。
+1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 此順序值可確保規則在 `all pages - library loaded - set global variables - 1` 會設定全域組態。
 
    ![Analytics XDM規則](assets/set-up-analytics-pdp.png)
 
@@ -345,9 +346,9 @@ ht-degree: 1%
 
 1. 在 **[!UICONTROL 動作]** 區段，選取 **[!UICONTROL 新增]**
 
-1. 作為 **[!UICONTROL 副檔名]**，選取  **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. 作為 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL Adobe Experience Platform Web SDK]**
 
-1. 作為  **[!UICONTROL 動作型別]**，選取  **[!UICONTROL 傳送事件]**
+1. 作為  **[!UICONTROL 動作型別]**，選取 **[!UICONTROL 傳送事件]**
 
 1. 作為 **[!UICONTROL XDM]**，選取 `xdm.variable.content` 在上一課程中建立的資料元素
 
@@ -385,12 +386,12 @@ ht-degree: 1%
 
 ![建置完成](assets/create-rule-development-success.png)
 
-如您所見 [!UICONTROL 發佈流程] 畫面中，發佈程式還有許多不在本教學課程的討論範圍內。 本教學課程僅在您的開發環境中使用單一程式庫。
+如您所見 [!UICONTROL 發佈流程] 畫面中，發佈程式還有更多內容，這不在本教學課程的討論範圍內。 本教學課程僅在您的開發環境中使用單一程式庫。
 
-現在您已準備好使用Adobe Experience Platform Debugger驗證請求中的資料。
+現在，您已準備好使用Adobe Experience Platform Debugger來驗證請求中的資料。
 
 [下一個 ](validate-with-debugger.md)
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
