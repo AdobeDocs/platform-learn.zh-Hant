@@ -3,21 +3,16 @@ title: 建立標籤規則
 description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '1957'
 ht-degree: 1%
 
 ---
 
 # 建立標籤規則
 
-瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。 在Platform Web SDK中，規則是用來將事件傳送至具有正確XDM欄位的PlatformEdge Network。
-
->[!NOTE]
->
-> 為了示範，本課程中的練習會以先前的課程為基礎，從的使用者傳送事件 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
-
+瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。 在Platform Web SDK中，規則是用來將事件與正確的資料傳送至PlatformEdge Network。
 
 ## 學習目標
 
@@ -45,29 +40,28 @@ ht-degree: 1%
 
 若要更妥善地管理標籤中的規則，建議遵循標準命名慣例。 本教學課程使用五部分命名慣例：
 
-* [**位置**] - [**事件**] - [**用途**] - [**工具**] - [**訂購**]
+* [**位置**] - [**事件**] - [**用途**] - [**訂購**]
 
 其中；
 
 1. **位置** 是規則觸發所在網站的一或多個頁面
 1. **事件** 是規則的觸發器
 1. **用途** 是規則執行的主要動作
-1. **工具** 是用於該規則之動作步驟中的特定應用程式或應用程式，Web SDK很少使用這種方法
-1. **序列** 是規則相對於其他規則所應引發的順序
+1. **訂購** 是規則相對於其他規則所應引發的順序
 <!-- minor update -->
 
 ## 建立標籤規則
 
 在標籤中，規則是用來在不同的條件下執行動作（引發呼叫）。 Platform Web SDK標籤擴充功能包含本課程將使用的兩個動作：
 
-* **[!UICONTROL 更新變數]** 將資料元素對應至XDM欄位
+* **[!UICONTROL 更新變數]** 將資料元素對應至XDM物件中的屬性
 * **[!UICONTROL 傳送事件]** 傳送XDM物件至Experience PlatformEdge Network
 
 在本課程的其餘部分中，我們會：
 
-1. 建立規則以定義XDM欄位的「全域設定」(使用 [!UICONTROL 更新變數] ，我們想在網站的每個頁面上（例如頁面名稱）使用 **[!UICONTROL 更新變數]** 動作。
+1. 使用建立規則 **[!UICONTROL 更新變數]** 定義XDM欄位「全域設定」的動作。
 
-1. 建立覆寫我們「全域設定」或貢獻其他XDM欄位的其他規則(使用 [!UICONTROL 更新變數] 同樣地)，這些只與特定條件相關（例如，在產品頁面上新增產品詳細資訊）。
+1. 使用建立其他規則 **[!UICONTROL 更新變數]** 覆寫我們的「全域設定」，並在特定條件下（例如在產品頁面上新增產品詳細資訊）貢獻其他XDM欄位的動作。
 
 1. 使用建立另一個規則 **[!UICONTROL 傳送事件]** 此動作會將完整的XDM物件傳送至Adobe Experience Platform Edge Network。
 
@@ -77,9 +71,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
-### 更新變數規則
-
-#### 全域設定
+### 全域設定欄位
 
 若要為全域XDM欄位建立標籤規則：
 
@@ -118,11 +110,7 @@ ht-degree: 1%
 
    ![更新變數結構](assets/create-rule-update-variable.png)
 
-現在對應您的 [!UICONTROL 資料元素] 至 [!UICONTROL 綱要] 由您的XDM物件使用。
-
->[!NOTE]
-> 
-> 您可以對應至個別屬性或整個物件。 在此範例中，您會對應至個別屬性。
+現在對應您的 [!UICONTROL 資料元素] 至 [!UICONTROL 綱要] 由您的XDM物件使用。 您可以對應至個別屬性或整個物件。 在此範例中，您會對應至個別屬性：
 
 1. 找到eventType欄位並加以選取
 
@@ -160,13 +148,13 @@ ht-degree: 1%
 
    >[!TIP]
    >
-   > 兩者皆非 `eventType` 設為 `web.webpagedetails.pageViews` 也不 `web.webPageDetials.pageViews.value` 是Adobe Analytics將信標設為頁面檢視加以處理的必要專案，如果有標準方式來指定其他下游應用程式的頁面檢視，就十分實用。
+   > 兩者皆非 `eventType` 設為 `web.webpagedetails.pageViews` 也不 `web.webPageDetails.pageViews.value` 是Adobe Analytics將信標設為頁面檢視加以處理的必要專案，如果有標準方式來指定其他下游應用程式的頁面檢視，就十分實用。
 
 
 1. 選取 **[!UICONTROL 保留變更]** 然後 **[!UICONTROL 儲存]** 下一個畫面中要完成規則建立的規則
 
 
-#### 產品頁面欄位
+### 產品頁面欄位
 
 現在，開始使用 **[!UICONTROL 更新變數]** 此外，排序規則會先擴充XDM物件，再傳送至 [!UICONTROL 平台Edge Network].
 
@@ -235,7 +223,7 @@ ht-degree: 1%
 1. 選取 **[!UICONTROL 儲存]** 儲存規則的方式
 
 
-#### 購物車欄位
+### 購物車欄位
 
 您可以將整個陣列對應至XDM物件，前提是陣列符合XDM結構描述的格式。 自訂程式碼資料元素 `cart.productInfo` 您透過建立較早的回圈 `digitalData.cart.cartEntries` Luma上的資料層物件，並將其轉譯為 `productListItems` XDM結構描述的物件。
 

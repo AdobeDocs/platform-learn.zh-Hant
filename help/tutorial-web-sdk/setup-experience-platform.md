@@ -2,9 +2,9 @@
 title: 使用Web SDK將資料串流至Adobe Experience Platform
 description: 瞭解如何使用Web SDK將網頁資料串流到Adobe Experience Platform。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1591'
 ht-degree: 4%
 
 ---
@@ -230,7 +230,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
    ![客戶設定檔](assets/experience-platform-validate-dataset-custProfile.png)
 
-您現已啟用適用於Experience Platform的Platform Web SDK (以及Real-Time CDP！ 和Journey Optimizer！)！
+您現已啟用適用於Experience Platform的Platform Web SDK (以及Real-Time CDP！ 以及Journey Optimizer！ 和Customer Journey Analytics！)。
 
 
 [下一步： ](setup-analytics.md)

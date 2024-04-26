@@ -3,9 +3,9 @@ title: 建立身分
 description: 瞭解如何在XDM中建立身分識別，並使用身分對應資料元素來擷取使用者ID。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
 feature: Tags
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '890'
 ht-degree: 1%
 
 ---
@@ -148,7 +148,7 @@ FPID是第一方Cookie _您使用自己的網頁伺服器設定_ 然後使用哪
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-備妥這些資料元素後，您就可以開始在標籤中建立規則，透過XDM物件將資料傳送至PlatformEdge Network。
+備妥這些資料元素後，您就可以開始在標籤中建立規則，將資料傳送至PlatformEdge Network。
 
 [下一步： ](create-tag-rule.md)
 
