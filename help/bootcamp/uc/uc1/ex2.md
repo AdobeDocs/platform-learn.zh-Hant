@@ -7,10 +7,10 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 47b9c3553bd0dae39f8271446dd15ee2f6df4d41
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 1%
+source-wordcount: '493'
+ht-degree: 0%
 
 ---
 
@@ -39,12 +39,6 @@ ht-degree: 1%
 您可以在網站上的「設定檔檢視器」面板上找到身分總覽。 每個身分都會連結至名稱空間。
 
 ![客戶設定檔](./images/identities.png)
-
-在「設定檔檢視器」面板上，您目前可以看到此身分：
-
-| 命名空間 | 身分 |
-|:-------------:| :---------------:|
-| Experience CloudID (ECID) | 19428085896177382402834560825640259081 |
 
 有了Adobe Experience Platform，所有ID都同等重要。 之前，ECID是Adobe內容中最重要的訪客ID，其他所有ID都是以階層式關係連結至ECID。 使用Adobe Experience Platform後，情況已完全不同，每個ID都可視為主要識別碼。
 

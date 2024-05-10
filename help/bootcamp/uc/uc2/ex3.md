@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Journey Optimizer建立您的歷程和電子郵件訊息
-description: Bootcamp - Journey Optimizer建立您的歷程和電子郵件訊息
+title: Bootcamp - Journey Optimizer建立您的歷程與電子郵件訊息
+description: Bootcamp - Journey Optimizer建立您的歷程與電子郵件訊息
 jira: KT-5342
 audience: developer
 doc-type: tutorial
@@ -9,40 +9,40 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Journeys
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 4%
+source-wordcount: '948'
+ht-degree: 0%
 
 ---
 
-# 2.3建立您的歷程和電子郵件訊息
+# 2.3建立您的歷程與電子郵件訊息
 
 在本練習中，您將設定當有人在示範網站上建立帳戶時，需要觸發的歷程。
 
-登入Adobe Journey Optimizer的方法為前往 [Adobe Experience Cloud](https://experience.adobe.com). 按一下 **Journey Optimizer**.
+登入Adobe Journey Optimizer，方法是前往 [Adobe Experience Cloud](https://experience.adobe.com). 按一下 **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-系統會將您重新導向至 **首頁**  在Journey Optimizer中檢視。 首先，請確定您使用正確的沙箱。 要使用的沙箱稱為 `Bootcamp`. 若要從一個沙箱變更為另一個沙箱，請按一下 **Prod** 並從清單中選取沙箱。 在此範例中，沙箱命名為 **Bootcamp**. 然後，您將會在 **首頁** 您的沙箱檢視 `Bootcamp`.
+系統會將您重新導向至 **首頁**  在Journey Optimizer中檢視。 首先，確定您使用正確的沙箱。 呼叫要使用的沙箱 `Bootcamp`. 若要從一個沙箱變更為另一個，請按一下 **Prod** 並從清單中選取沙箱。 在此範例中，沙箱命名為 **Bootcamp**. 然後您將會在 **首頁** 您的沙箱檢視 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
 ## 2.3.1建立您的歷程
 
-在左側功能表中，按一下 **歷程**. 接下來，按一下 **建立歷程** 以建立新歷程。
+在左側功能表中，按一下 **歷程**. 接下來，按一下 **建立歷程** 以建立新的歷程。
 
 ![ACOP](./images/createjourney.png)
 
-然後您會看到空白的歷程畫面。
+接著，您會看到空白的歷程畫面。
 
 ![ACOP](./images/journeyempty.png)
 
-在上一個練習中，您建立了一個 **事件**. 您將其命名如下 `yourLastNameAccountCreationEvent` 和已取代 `yourLastName` 加上您的姓氏。 這是建立事件的結果：
+在上一個練習中，您建立了一個 **事件**. 您將其命名如下 `yourLastNameAccountCreationEvent` 和已取代 `yourLastName` 您的姓氏。 這是建立事件的結果：
 
 ![ACOP](./images/eventdone.png)
 
-您現在需要將此事件當作此歷程的開端。 您可以移至畫面左側，在事件清單中搜尋您的事件，藉此執行此操作。
+您現在需要將此事件當作此歷程的開端。 您可以移至畫面左側，在事件清單中搜尋您的事件，以執行此操作。
 
 ![ACOP](./images/eventlist.png)
 
@@ -50,35 +50,35 @@ ht-degree: 4%
 
 ![ACOP](./images/journeyevent.png)
 
-作為歷程的第二步，您需要新增一個簡短的 **等待** 步驟。 前往熒幕左側，前往 **協調流程** 區段以找到此專案。 您將使用設定檔屬性，而且需要確定這些屬性已填入即時客戶設定檔中。
+作為歷程的第二步，您需要新增簡短 **等待** 步驟。 前往畫面左側，前往 **協調流程** 區段以尋找此專案。 您將使用設定檔屬性，而且需要確定這些屬性已填入即時客戶設定檔中。
 
 ![ACOP](./images/journeywait.png)
 
-您的歷程現在看起來像這樣。 在熒幕右側，您需要設定等待時間。 設定為1分鐘。 這會在事件觸發後，提供充足的時間讓設定檔屬性可用。
+您的歷程現在看起來像這樣。 在畫面右側，您需要設定等待時間。 設定為1分鐘。 這會在事件觸發後，提供充足的時間讓設定檔屬性可用。
 
 ![ACOP](./images/journeywait1.png)
 
 按一下 **確定** 以儲存變更。
 
-作為歷程的第三個步驟，您需要新增 **電子郵件** 動作。 前往熒幕左側，前往 **動作**，選取 **電子郵件** 動作，然後將其拖放至歷程的第二個節點上。 您現在可以看到這個。
+作為歷程的第三個步驟，您需要新增 **電子郵件** 動作。 移至熒幕左側： **動作**，選取 **電子郵件** 動作，然後將其拖放至歷程的第二個節點。 您現在看到這個了。
 
 ![ACOP](./images/journeyactions.png)
 
-設定 **類別** 至 **行銷** 並選取可讓您傳送電子郵件的電子郵件介面。 在此情況下，要選取的電子郵件表面為 **電子郵件**. 確認核取方塊 **電子郵件的點按次數** 和 **電子郵件開啟次數** 兩者皆已啟用。
+設定 **類別** 至 **行銷** 並選取可讓您傳送電子郵件的電子郵件介面。 在此案例中，要選取的電子郵件表面為 **電子郵件**. 確認核取方塊 **電子郵件的點按次數** 和 **電子郵件開啟次數** 兩者皆已啟用。
 
 ![ACOP](./images/journeyactions1.png)
 
-下一步是建立您的訊息。 若要這麼做，請按一下 **編輯內容**.
+下一步是建立訊息。 若要這麼做，請按一下 **編輯內容**.
 
 ![ACOP](./images/journeyactions2.png)
 
 ## 2.3.2建立您的訊息
 
-若要建立您的訊息，請按一下 **編輯內容**.
+若要建立訊息，請按一下 **編輯內容**.
 
 ![ACOP](./images/journeyactions2.png)
 
-您現在可以看到這個。
+您現在看到這個了。
 
 ![ACOP](./images/journeyactions3.png)
 
@@ -86,15 +86,15 @@ ht-degree: 4%
 
 ![Journey Optimizer](./images/msg5.png)
 
-在文字區域中開始寫入 **嗨**
+在文字區域中開始寫入 **您好**
 
 ![Journey Optimizer](./images/msg6.png)
 
-主旨列尚未完成。 接下來，您需要為欄位引進個人化權杖 **名字** ，儲存在 `profile.person.name.firstName`. 在左側功能表中，向下捲動以尋找 **個人** 元素，並按一下箭頭可深入瞭解。
+主旨列尚未完成。 接下來，您需要為欄位匯入個人化權杖 **名字** ，儲存在 `profile.person.name.firstName`. 在左側功能表中，向下捲動以尋找 **個人** 元素，並按一下箭頭以深入瞭解。
 
 ![Journey Optimizer](./images/msg7.png)
 
-現在尋找 **全名** 元素，並按一下箭頭可深入瞭解。
+現在尋找 **完整名稱** 元素，並按一下箭頭以深入瞭解。
 
 ![Journey Optimizer](./images/msg8.png)
 
@@ -116,7 +116,7 @@ ht-degree: 4%
 - **自行撰寫程式碼**：使用HTML編碼來建立您自己的電子郵件範本
 - **匯入HTML**：匯入現有的HTML範本，以便您進行編輯。
 
-按一下 **匯入HTML**. 或者，您也可以按一下 **已儲存的範本** 並選取範本 **Bootcamp — 電子郵件範本**.
+按一下 **匯入HTML**. 或者，您可以按一下 **已儲存的範本** 並選取範本 **Bootcamp — 電子郵件範本**.
 
 ![Journey Optimizer](./images/msg12.png)
 
@@ -124,15 +124,15 @@ ht-degree: 4%
 
 ![Journey Optimizer](./images/msg13.png)
 
-然後您會看到此預設電子郵件範本：
+之後，您會看到此預設電子郵件範本：
 
 ![Journey Optimizer](./images/msg14.png)
 
-讓我們個人化電子郵件。 按一下文字旁的 **嗨** 然後按一下 **新增個人化** 圖示。
+讓我們個人化電子郵件。 按一下文字旁的 **您好** 然後按一下 **新增個人化** 圖示。
 
 ![Journey Optimizer](./images/msg35.png)
 
-接下來，您需要將 **名字** 個人化代號(儲存在 `profile.person.name.firstName`. 在功能表中，尋找 **個人** 元素，向下展開至 **全名** 元素，然後按一下 **+** 圖示以將「名字」欄位新增至運算式編輯器。
+接下來，您需要將 **名字** 個人化權杖，儲存在 `profile.person.name.firstName`. 在功能表中，尋找 **個人** 元素，向下展開至 **全名** 元素，然後按一下 **+** 圖示以將名字欄位新增至運算式編輯器。
 
 按一下&#x200B;**儲存**。
 
@@ -146,7 +146,7 @@ ht-degree: 4%
 
 ![Journey Optimizer](./images/msg55.png)
 
-按一下「 」，返回訊息控制面板 **箭頭** 左上角主旨行文字旁邊。
+按一下「 」，返回訊息控制面板 **箭頭** 位於主旨列文字的左上角。
 
 ![Journey Optimizer](./images/msg56.png)
 
@@ -160,7 +160,7 @@ ht-degree: 4%
 
 ## 2.3.3發佈您的歷程
 
-您仍需要為歷程提供名稱。 若要這麼做，請按一下 **屬性** 圖示加以檢視。
+您仍需要提供歷程名稱。 若要這麼做，請按一下 **鉛筆** 圖示加以調整。
 
 ![ACOP](./images/journeyname.png)
 
@@ -168,7 +168,7 @@ ht-degree: 4%
 
 ![ACOP](./images/journeyname1.png)
 
-您現在可以按一下「 」，發佈您的歷程 **發佈**.
+您現在可以按一下 **發佈**.
 
 ![ACOP](./images/publishjourney.png)
 
