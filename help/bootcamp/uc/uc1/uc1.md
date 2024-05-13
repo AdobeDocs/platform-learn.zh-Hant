@@ -5,9 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-feature: Profiles, Segments, Integrations, Destinations
+feature: Profiles, Audiences, Integrations, Destinations
 exl-id: 4500dc9b-cc1a-4de8-aa39-7d4e849d65c4
-source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 2%
@@ -38,16 +38,16 @@ ht-degree: 2%
 
 在本練習中，您將登入Adobe Experience Platform，並在UI中檢視您自己的即時客戶個人檔案。
 
-[1.3建立區段 — UI](./ex3.md)
+[1.3建立對象 — UI](./ex3.md)
 
-在本練習中，您將使用Adobe Experience Platform的區段產生器來建立區段。
+在本練習中，您將使用Adobe Experience Platform的Audience Builder來建立對象。
 
-[1.4採取行動：將您的區段傳送至Adobe Target](./ex4.md)
+[1.4採取動作：將對象傳送至Adobe Target](./ex4.md)
 
-使用您於練習1.1中建立的區段，在Adobe Target中設定體驗鎖定目標活動。
+使用您於練習1.1中建立的對象，在Adobe Target中設定體驗鎖定目標活動。
 
-[1.5採取行動：將您的區段傳送至Facebook](./ex5.md)
+[1.5採取動作：將對象傳送至Facebook](./ex5.md)
 
-將您於練習1.1中建立的區段連結至目的地Facebook。
+將您於練習1.1中建立的受眾連結至目的地Facebook。
 
 [返回所有模組](../../overview.md)
