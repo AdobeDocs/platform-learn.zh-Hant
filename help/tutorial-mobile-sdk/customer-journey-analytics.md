@@ -4,9 +4,9 @@ description: 瞭解如何使用Customer Journey Analytics來報告及分析您�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 9607ec77a891a85a8bae2a2622e74d59588e1dbf
+source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3410'
 ht-degree: 1%
 
 ---
@@ -85,9 +85,9 @@ Customer Journey Analytics中的連線會定義您要用於報表和分析的Exp
          | ODE DecisionEvents - *沙箱名稱* 決策 | identityMap | 時間戳記 | 行動應用程式資料 | 啟用 | 啟用 |
          | AJO推播追蹤體驗事件資料集 | identityMap | 時間戳記 | 行動應用程式資料 | 啟用 | 啟用 |
 
-         ![CJA連線3](assets/cja-connections-3.png)
-
       1. 選取 **[!UICONTROL 新增資料集]**.
+
+         ![CJA連線3](assets/cja-connections-3.png)
 
 1. 返回 **[!UICONTROL 連線]** > **[!UICONTROL Luma應用程式 — AEP Mobile SDK教學課程連線]**，選取 **[!UICONTROL 儲存]** 以儲存您的連線。
 
@@ -156,8 +156,6 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
       ![CJA資料檢視元件設定](assets/cja-dataview-component-settings.png)
 
    1. 現在您已瞭解如何將欄位新增至資料檢視並設定結果元件，請使用下表列出要新增為量度或維度的結構描述欄位。 使用 **結構描述路徑** 欄值，用來搜尋或周遊至特定結構描述欄位。 拖放後，檢查 **元件設定** 表格中的欄值元件是否需要特定設定，例如修改元件的 **[!UICONTROL 元件名稱]** 或定義 **[!UICONTROL 包含排除值]**.
-
-      ![CJA資料檢視元件設定](assets/cja-dataview-component-settings.png)
 
       **量度**
 
@@ -232,9 +230,9 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
    1. 選取 **[!UICONTROL 空白工作區專案]** 從快顯對話方塊開啟。
 
-      ![CJA專案 — 1](assets/cja-projects-1.png)
-
    1. 選取「**[!UICONTROL 建立]**」。
+
+      ![CJA專案 — 1](assets/cja-projects-1.png)
 
 1. 您將會看到 **[!UICONTROL 新專案]** 介面。 您可以在此介面建立報表和視覺效果。
 
@@ -357,8 +355,10 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
    ![CJA專案18](assets/cja-projects-18.png)
 或者，您可以拖放 **[!UICONTROL 產品檢視]** 以下的維度 **[!UICONTROL 所有人員]** 中的維度 **[!UICONTROL 流失]** 視覺效果。
 
-1. 對重複上述步驟 **[!UICONTROL 產品新增至清單]** 和 **[!UICONTROL 購買]** 維度。 您的 **[!UICONTROL 流失]** 視覺效果現在會顯示產品的轉換漏斗的視覺化表示法。
-   ![CJA專案19](assets/cja-projects-19.png)
+1. 對重複上述步驟 **[!UICONTROL 產品新增至清單]** 和 **[!UICONTROL 購買]** 維度。
+
+您的 **[!UICONTROL 流失]** 視覺效果現在會顯示產品的轉換漏斗的視覺化表示法。
+![CJA專案19](assets/cja-projects-19.png)
 
 別忘了儲存專案！
 
