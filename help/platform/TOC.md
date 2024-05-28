@@ -1,14 +1,14 @@
 ---
 user-guide-title: Adobe Experience Platform 教學課程
 breadcrumb-title: 教學課程
-user-guide-description: 了解 Experience Platform 的許多元件。
+user-guide-description: 瞭解Experience Platform的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
+source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 16%
+source-wordcount: '876'
+ht-degree: 15%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 16%
 
 + [平台Tutorials](/help/platform/overview.md)
 + Platform簡介 {#intro-to-platform}
-   + [由Experience Platform提供支援的客戶體驗](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+   + [Experience Platform 所支援的客戶體驗](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [幕後：Experience Platform支援的客戶體驗](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
-   + [Experience 平台概觀](/help/platform/intro-to-platform/overview.md)
+   + [Experience Platform 概觀](/help/platform/intro-to-platform/overview.md)
    + [主要功能](/help/platform/intro-to-platform/key-capabilities.md)
    + [平台式應用程式](/help/platform/intro-to-platform/native-applications.md)
    + [與Experience Cloud應用程式整合](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
@@ -67,7 +67,7 @@ ht-degree: 16%
    + [區段比對接收資料](/help/platform/segments/segment-match-receiving-data.md)
 + [稽核記錄](/help/platform/governance/audit-logs.md)
 + [資料彙集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ 控制面板 {#dashboards}
++ 儀表板 {#dashboards}
    + [建立儀表板](/help/platform/dashboards/create-a-dashboard.md)
 + 資料控管 {#data-governance}
    + [概觀](/help/platform/governance/understanding-data-governance.md)
@@ -78,7 +78,6 @@ ht-degree: 16%
    + [強制同意](/help/platform/governance/enforce-consent.md)
    + [整合IAB透明與同意架構2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 資料衛生 {#data-hygiene}
-   + [刪除資料集](/help/platform/data-hygiene/delete-datasets.md)
    + [假名設定檔和事件有效期](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + 資料擷取 {#data-ingestion}
    + [概觀](/help/platform/data-ingestion/understanding-data-ingestion.md)
@@ -91,11 +90,13 @@ ht-degree: 16%
    + [從雲端儲存空間擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=zh-Hant)
    + [從CRM擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=zh-Hant)
    + [從資料庫擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
-   + [串流擷取概觀](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
+   + [串流擷取總覽](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [使用 HTTP API 串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=zh-Hant)
    + [使用來源連接器串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hant)
    + [Web SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Mobile SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
++ 資料生命週期 {#data-lifecycle}
+   + [讓資料集過期](/help/platform/data-lifecycle/expire-datasets.md)
 + 資料科學工作區 {#data-science-workspace}
    + [概觀](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [架構](data-science-workspace/architecture-overview.md)
@@ -127,7 +128,7 @@ ht-degree: 16%
    + Adobe Target和自訂個人化{#target}
       + [使用Adobe Target進行下一次點選個人化](/help/platform/destinations/target/next-hit-personalization.md)
       + [設定Adobe Target目的地](/help/platform/destinations/target/configure-the-target-destination.md)
-      + [啟動區段和設定檔屬性](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
+      + [啟用區段和設定檔屬性](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [在Target中使用Real-Time CDP區段](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [在Target中使用Real-Time CDP設定檔屬性](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [啟用非Adobe應用程式網路研討會資料](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
