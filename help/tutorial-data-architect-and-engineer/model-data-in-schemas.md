@@ -8,10 +8,10 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: e0289aeaf2d987e4690c08b1695a3356442b15f6
 workflow-type: tm+mt
-source-wordcount: '2485'
-ht-degree: 3%
+source-wordcount: '2611'
+ht-degree: 2%
 
 ---
 
@@ -70,19 +70,28 @@ Key terms:
 在本練習中，我們將建立Luma忠誠度資料的結構描述。
 
 1. 前往Platform使用者介面，並確保已選取您的沙箱。
-1. 前往 **[!UICONTROL 方案]** 在左側導覽列中
-1. 選取 **[!UICONTROL 建立結構描述]** 右上角的按鈕
-1. 從下拉式功能表中選取 **[!UICONTROL XDM個別設定檔]**，因為我們將為個別客戶的屬性（點、狀態等）建立模型。
+1. 前往 **[!UICONTROL 方案]** ，位於左側導覽器中。
+1. 選取 **[!UICONTROL 建立結構描述]** 按鈕。
    ![具有OOTB欄位群組的結構描述](assets/schemas-loyaltyCreateSchema.png)
+
+1. 在「建立方案」工作流程中，選取 **[!UICONTROL 個別設定檔]** 作為您結構描述的基底類別，因為我們將為個別客戶的屬性（點、狀態等）建立模型。
+1. 選取 **[!UICONTROL 下一個]**.
+   ![選取基底類別](assets/schemas-loyaltySelectBaseClass.png)
+
+1. 輸入 `Luma Loyalty Schema` 在 **[!UICONTROL 結構描述顯示名稱]** 文字欄位。 在以下畫布中，您也可以檢閱及驗證您所選擇類別所提供的基本結構描述結構。
+1. 選取 **[!UICONTROL 完成]** 以建立架構。
+   ![完成建立熟客方案](assets/schemas-loyaltyFinishSchemaCreation.png)
 
 ### 新增標準欄位群組
 
-接下來，系統會提示您新增欄位群組至結構描述。 所有欄位都必須使用群組新增到結構描述。 您可以從Adobe提供的大量產業標準欄位群組中選取，或是建立您自己的欄位群組。 當您開始在Experience Platform中建立自己的資料模型時，最好熟悉Adobe提供的業界標準欄位群組。 最佳實務是儘可能使用這些功能，因為它們有時會支援下游服務，例如Customer AI、Attribution AI和Adobe Analytics。
+建立結構描述後，您將會被重新導向到結構描述編輯器，您可以在其中新增欄位到結構描述。 您可以直接將個別欄位新增到結構描述或使用欄位群組。 請務必注意，所有個別欄位仍與類別或欄位群組相關聯。 您可以從Adobe提供的大量產業標準欄位群組中選取，或是建立您自己的欄位群組。 當您開始在Experience Platform中建立自己的資料模型時，最好熟悉Adobe提供的業界標準欄位群組。 最佳實務是儘可能使用這些功能，因為它們有時會支援下游服務，例如Customer AI、Attribution AI和Adobe Analytics。
 
 使用您自己的資料時，決定應在Platform中擷取哪些您自己的資料，以及應如何模型化這些資料將是重要的一步。 本課程會更深入地討論這個大型主題 [使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). 在本教學課程中，我將引導您實作一些預先決定的結構描述。
 
 若要新增欄位群組：
 
+1. 選取 **[!UICONTROL 新增]** 在 **[!UICONTROL 欄位群組]** 標題。
+   ![新增欄位群組](assets/schemas-loyalty-addFieldGroup.png)
 1. 在 **[!UICONTROL 新增欄位群組]** 強制回應視窗，選取下列欄位群組：
    1. **[!UICONTROL 人口統計細節]** 基礎客戶資料，例如名稱和出生日期
    1. **[!UICONTROL 個人聯絡詳細資訊]** 取得基本連絡人詳細資料，例如電子郵件地址和電話號碼
@@ -97,12 +106,8 @@ Key terms:
 
 現在請花點時間探索結構的目前狀態。 欄位群組已新增與人員、其聯絡詳細資料和忠誠計畫狀態相關的標準欄位。 在為自己公司的資料建立結構描述時，您可能會發現這兩個欄位群組很有用。 選取特定欄位群組列，或勾選欄位群組名稱旁的方塊，以檢視視覺效果如何變更。
 
-若要儲存結構：
-
-1. 選取架構的頂端節點。
-1. 輸入 `Luma Loyalty Schema` 作為 **[!UICONTROL 顯示名稱]**.
-1. 選取「**[!UICONTROL 儲存]**」。
-   ![命名並儲存結構](assets/schemas-loyalty-nameAndSave.png)
+若要儲存結構，請選取 **[!UICONTROL 儲存]**.
+![儲存結構描述](assets/schemas-loyalty-saveSchema.png)
 
 >[!NOTE]
 >
@@ -114,7 +119,9 @@ Key terms:
 
 而熟客欄位群組包含 `loyaltyID` 欄位， Luma想要在單一群組中管理其所有系統識別碼，以協助確保其結構描述的一致性。
 
-欄位群組必須在結構描述工作流程中建立。 若要建立欄位群組：
+欄位群組必須在結構描述工作流程中建立。 您可以將新的自訂欄位新增到結構描述中，並以該方式建立自訂欄位群組，或者您可以先建立自訂欄位群組，然後再新增欄位到其中。 在本教學課程中，我們會從建立自訂欄位群組開始。
+
+若要建立欄位群組：
 
 1. 選取 **[!UICONTROL 新增]** 在 **[!UICONTROL 結構描述欄位群組]** 標題
    ![新增欄位群組](assets/schemas-loyalty-addFieldGroup.png)
@@ -126,24 +133,25 @@ Key terms:
 
 新的空白欄位群組會新增至您的架構。 此 **[!UICONTROL +]** 按鈕可用來將新欄位新增至階層中的任何位置。 在我們的案例中，我們想要在根層級新增欄位：
 
-1. 選取架構名稱旁邊的 **[!UICONTROL +]**。這會在您的租使用者ID名稱空間下新增欄位，以管理您的自訂欄位和任何標準欄位之間的衝突。
+1. 選取 **[!UICONTROL +]** 在結構描述名稱旁。 這會在您的租使用者ID名稱空間下新增欄位，以管理您的自訂欄位和任何標準欄位之間的衝突。
 1. 在 **[!UICONTROL 欄位屬性]** 側欄新增新欄位的詳細資訊：
-   1. **[!UICONTROL 欄位名稱]**: `systemIdentifier`
-   1. **[!UICONTROL 顯示名稱]**: `System Identifier`
+   1. **[!UICONTROL 欄位名稱]**： `systemIdentifier`
+   1. **[!UICONTROL 顯示名稱]**： `System Identifier`
    1. **[!UICONTROL 型別]**： **[!UICONTROL 物件]**
+   1. 在 **[!UICONTROL 欄位群組]** 下拉式清單中選取 **Luma身分設定檔欄位群組** 已建立的。
+      ![新增欄位群組](assets/schemas-loyalty-addSystemIdentifier.png)
    1. 選取 **[!UICONTROL 套用]**
-
-   ![新增欄位群組](assets/schemas-loyalty-addSystemIdentifier.png)
+      ![套用新欄位屬性](assets/schemas-loyalty-applySystemIdentifier.png)
 
 現在，在「 」下方新增兩個欄位 `systemIdentifier` 物件：
 
 1. 第一個欄位
-   1. **[!UICONTROL 欄位名稱]**: `loyaltyId`
-   1. **[!UICONTROL 顯示名稱:]** `Loyalty Id`
+   1. **[!UICONTROL 欄位名稱]**： `loyaltyId`
+   1. **[!UICONTROL 顯示名稱：]** `Loyalty Id`
    1. **[!UICONTROL 型別]**： **[!UICONTROL 字串]**
 1. 第二個欄位
-   1. **[!UICONTROL 欄位名稱]**: `crmId`
-   1. **[!UICONTROL 顯示名稱]**: `CRM Id`
+   1. **[!UICONTROL 欄位名稱]**： `crmId`
+   1. **[!UICONTROL 顯示名稱]**： `CRM Id`
    1. **[!UICONTROL 型別]**： **[!UICONTROL 字串]**
 
 您的新欄位群組應如下所示。 選取 **[!UICONTROL 儲存]** 按鈕以儲存您的結構描述，但讓結構描述保持開啟以供下一個練習。
@@ -172,7 +180,7 @@ Key terms:
 >
 > 如果您偏好略過API練習，則可以使用使用者介面方法建立以下結構描述：
 >
-> 1. 使用 [!UICONTROL XDM個別設定檔] 類別
+> 1. 使用 [!UICONTROL 個別設定檔] 類別
 > 1. 將其命名 `Luma CRM Schema`
 > 1. 使用下列欄位群組：「人口統計細節」、「個人聯絡人細節」和「Luma身分設定檔」欄位群組
 
@@ -280,21 +288,21 @@ Key terms:
 
 ## 建立離線購買事件結構描述
 
-現在，讓我們根據以下內容建立結構描述： **[!UICONTROL XDM ExperienceEvent]** Luma離線購買資料的類別。 由於您現在已熟悉結構編輯器使用者介面，我將減少指示中的熒幕擷取畫面數量：
+現在，讓我們根據以下內容建立結構描述： **[!UICONTROL 體驗事件]** Luma離線購買資料的類別。 由於您現在已熟悉結構編輯器使用者介面，我將減少指示中的熒幕擷取畫面數量：
 
-1. 使用建立結構描述 **[!UICONTROL XDM ExperienceEvent]** 類別
-1. 新增標準欄位群組 **[!UICONTROL 商業細節]** 以擷取一般訂單詳細資訊。 請花幾分鐘時間探索內部的物件。
+1. 使用建立結構描述 **[!UICONTROL 體驗事件]** 類別。
+1. 為您的結構描述命名 `Luma Offline Purchase Events Schema`.
+1. 新增標準欄位群組 **[!UICONTROL Commerce詳細資料]** 以擷取一般訂單詳細資訊。 請花幾分鐘時間探索內部的物件。
 1. 搜尋 `Luma Identity profile field group`. 無法使用！ 請記住，欄位群組繫結至類別，由於我們對此結構描述使用不同的類別，因此我們無法使用它。 我們需要為包含身分欄位的XDM ExperienceEvent類別新增欄位群組。 我們的資料型別能讓您輕鬆辦到！
 1. 選取 **[!UICONTROL 建立新欄位群組]** 選項按鈕
 1. 輸入 **[!UICONTROL 顯示名稱]** 作為 `Luma Identity ExperienceEvent field group` 並選取 **[!UICONTROL 新增欄位群組]** 按鈕
-1. 確定 **[!UICONTROL +]** 按鈕會出現在 **[!UICONTROL 結構]** 區段，讓您可以新增欄位
-1. 在 **[!UICONTROL 結構]** 區段，選取 **[!UICONTROL +]** 在架構的最上層
-1. 作為 **[!UICONTROL 欄位名稱]**，輸入 `systemIdentifier`
-1. 作為 **[!UICONTROL 顯示名稱]**，輸入 `System Identifier`
-1. 作為 **[!UICONTROL 型別]**，選取 **系統識別碼** 這是您先前建立的自訂資料型別
-1. 選取 **[!UICONTROL 套用]** 按鈕
-1. 命名結構 `Luma Offline Purchase Events Schema`
-1. 選取 **[!UICONTROL 儲存]** 按鈕
+1. 選取架構名稱旁邊的 **[!UICONTROL +]**。
+1. 作為 **[!UICONTROL 欄位名稱]**，輸入 `systemIdentifier`.
+1. 作為 **[!UICONTROL 顯示名稱]**，輸入 `System Identifier`.
+1. 作為 **[!UICONTROL 型別]**，選取 **系統識別碼** 這是您先前建立的自訂資料型別。
+1. 作為 **[!UICONTROL 欄位群組]** 選取 **Luma Identity ExperienceEvent欄位群組**.
+1. 選取 **[!UICONTROL 套用]** 按鈕。
+1. 選取 **[!UICONTROL 儲存]** 按鈕。
 
 請注意資料型別新增所有欄位的方式！
 
@@ -310,19 +318,19 @@ Key terms:
 
 | 屬性 | 值 |
 |---------------|-----------------|
-| 類別 | XDM ExperienceEvent |
-| 欄位群組 | AEP Web SDK ExperienceEvent Mixin |
-| 欄位群組 | 消費者體驗事件 |
+| 類別 | 體驗事件 |
 | 結構描述名稱 | Luma Web事件結構描述 |
+| 欄位群組 | AEP Web SDK ExperienceEvent |
+| 欄位群組 | 消費者體驗事件 |
 
-選取 **[!UICONTROL 消費者體驗事件]** 欄位群組。 此欄位群組包含商務和productListItems物件，這些物件也位於 [!UICONTROL 商業細節]. 的確 [!UICONTROL 消費者體驗事件] 是另外幾個標準欄位群組的組合，這些群組也可單獨使用。 [!UICONTROL AEP Web SDK ExperienceEvent Mixin] 欄位群組也包含其他欄位群組，包括中的部分相同欄位群組 [!UICONTROL 消費者體驗事件]. 幸運的是，兩者完美結合。
+選取 **[!UICONTROL 消費者體驗事件]** 欄位群組。 此欄位群組包含商務和productListItems物件，這些物件也位於 [!UICONTROL Commerce詳細資料]. 的確 [!UICONTROL 消費者體驗事件] 是另外幾個標準欄位群組的組合，這些群組也可單獨使用。 [!UICONTROL AEP Web SDK ExperienceEvent] 欄位群組也包含其他欄位群組，包括中的部分相同欄位群組 [!UICONTROL 消費者體驗事件]. 幸運的是，兩者完美結合。
 
 請注意，我們並未新增 `Luma Identity ExperienceEvent field group` 至此結構描述。 這是因為Web SDK收集身分的方式不同。 如果您選取 **[!UICONTROL XDM ExperienceEvent]** 中的類別 **[!UICONTROL 組合]** 結構編輯器區段，您會注意到它預設新增的其中一個欄位稱為 **[!UICONTROL 身分對應]**. [!DNL IdentityMap] 供各種Adobe應用程式用來連結至平台。 您將在串流擷取課程中看到如何透過identityMap將身分傳送至Platform。
 
 
 ## 建立產品目錄結構描述
 
-藉由使用  [!UICONTROL 商業細節] 和 [!UICONTROL 消費者體驗事件] 欄位群組，Luma會透過標準productListItems資料型別來報告產品相關事件的部分詳細資料。 但他們也有其他產品詳細資料欄位，要傳送至Platform。 與其在銷售點和電子商務系統中擷取這些欄位，Luma寧願直接從產品目錄系統中擷取這些欄位。 「結構描述關係」可讓您為分類或查詢目的定義兩個結構描述之間的關係。 Luma會使用關係將產品詳細資料分類。 我們現在會開始此程式，並在下一個課程結束時完成。
+藉由使用  [!UICONTROL Commerce詳細資料] 和 [!UICONTROL 消費者體驗事件] 欄位群組，Luma會透過標準productListItems資料型別來報告產品相關事件的部分詳細資料。 但他們也有其他產品詳細資料欄位，要傳送至Platform。 與其在銷售點和電子商務系統中擷取這些欄位，Luma寧願直接從產品目錄系統中擷取這些欄位。 「結構描述關係」可讓您為分類或查詢目的定義兩個結構描述之間的關係。 Luma會使用關係將產品詳細資料分類。 我們現在會開始此程式，並在下一個課程結束時完成。
 
 >[!NOTE]
 >
@@ -330,21 +338,24 @@ Key terms:
 
 首先，我們必須使用自訂類別為Luma的產品目錄建立結構描述：
 
-1. 選取 **[!UICONTROL 建立結構描述]** 按鈕並選取 **[!UICONTROL 瀏覽]** 下拉式清單中的選項
+1. 選取 **[!UICONTROL 建立結構描述]** 按鈕。
+1. 在「建立方案」工作流程中，選取 **[!UICONTROL 其他]** 選項。
    ![建立新結構描述](assets/schemas-newSchema-browseClasses.png)
-1. 選取 **[!UICONTROL 建立新類別]** 選項按鈕
+1. 選取 **[!UICONTROL 建立類別]** 按鈕
 1. 將其命名 `Luma Product Catalog Class`
 1. 離開 **[!UICONTROL 行為]** 作為 **[!UICONTROL 記錄]**
-1. 選取 **[!UICONTROL 指派類別]** 按鈕
+1. 選取 **[!UICONTROL 建立]** 按鈕。
    ![建立新類別](assets/schemas-productClass.png)
+1. 此 **Luma產品目錄類別** 您建立的類別會顯示在下面的「類別」表格中。 確定已選取類別，然後選取 **[!UICONTROL 下一個]**.
+   ![新增的類別](assets/schemas-productClassSelected.png)
+1. 為結構命名 `Luma Product Catalog Schema`.
 1. 建立新的 [!UICONTROL 欄位群組] 已呼叫 `Luma Product Catalog field group` 欄位：
    1. productName：產品名稱：字串
    1. productCategory：產品類別：字串
    1. productColor：產品色彩：字串
-   1. productSku： Product SKU： String |必要
+   1. productSku： Product SKU： String | 必填
    1. productSize：產品大小：字串
    1. productPrice：產品價格：雙倍
-1. 為結構命名 `Luma Product Catalog Schema` （請確定更新正確的欄位，而不是更新類別名稱）
 1. **[!UICONTROL 儲存]** 結構描述
 
 您的新結構描述應如下所示。 請注意 `productSku` 欄位會列在 [!UICONTROL 必填欄位] 區段：
