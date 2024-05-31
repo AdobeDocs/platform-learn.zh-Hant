@@ -1,23 +1,27 @@
 ---
 title: 設定身分名稱空間
-description: 瞭解如何設定身分識別名稱空間以搭配Adobe Experience Platform Web SDK使用。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何設定身分識別名稱空間以搭配Adobe Experience Platform Web SDK使用。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '576'
-ht-degree: 8%
+source-wordcount: '655'
+ht-degree: 12%
 
 ---
 
 # 設定身分名稱空間
 
-瞭解如何設定身分識別名稱空間以搭配Adobe Experience Platform Web SDK使用。
+了解如何設定身分命名空間，以配合 Adob&#x200B;&#x200B;e Experience Platform Web SDK 使用。
 
 此 [Adobe Experience Cloud Identity服務](https://experienceleague.adobe.com/en/docs/id-service/using/home) 設定跨SDKAdobe應用程式的通用訪客ID (ECID)，以強化Experience Cloud功能，例如應用程式之間的受眾共用。 您也可以將自己的客戶ID傳送至此服務，以啟用跨裝置目標鎖定及與其他系統(例如客戶關係管理(CRM)系統)的整合。
 
 此 [Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) （是的，有兩個專案！） 使用ECID和客戶ID來產生身分圖表，好讓您將屬性和行為合併到即時客戶個人檔案中。
+
+>[!NOTE]
+>
+>自訂身分名稱空間為 _非必要_ 若要使用Web SDK實作Adobe Analytics、Adobe Target或Adobe Audience Manager (可在以下位置傳遞已驗證的身分： `data` 物件而非 `xdm` 物件)。 Journey Optimizer、Real-time Customer Data Platform、Customer Journey Analytics等平台原生應用程式需要身分識別名稱空間。 雖然您可以決定在自己的實作中不使用身分名稱空間，但您應在本教學課程中這樣做。
 
 >[!NOTE]
 >
@@ -75,7 +79,7 @@ ht-degree: 8%
    |---------------|-----------|
    | 顯示名稱 | Luma CRM ID |
    | 身分符號 | lumaCrmId |
-   | 類型 | 個別跨裝置ID |
+   | 類型 | 個人跨裝置 ID |
 
 
    ![建立命名空間](assets/identities-create-namespace.png)

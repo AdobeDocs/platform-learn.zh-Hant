@@ -1,13 +1,13 @@
 ---
 title: 建立Platform Web SDK的資料元素
-description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至該物件。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至該物件。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 1%
+source-wordcount: '1306'
+ht-degree: 2%
 
 ---
 
@@ -256,29 +256,41 @@ window.adobeDataLayer.push({
 >
 >此 [!UICONTROL JavaScript變數] 資料元素型別會將陣列參照視為點而非括弧，因此參照使用者名稱資料元素的方式為 `digitalData.user[0].profile[0].attributes.username` **將無法運作**.
 
-## 建立變數資料元素
+## 為XDM和資料物件建立變數資料元素
 
-建立資料元素後，請使用 **[!UICONTROL 變數]** 定義用於XDM物件的結構描述的資料元素。 此物件應符合您在「 」期間建立的XDM結構描述 [設定結構描述](configure-schemas.md) 課程。
+您剛建立的資料元素將用於建立XDM物件（適用於Platform應用程式）和資料物件(適用於Analytics、Target和Audience Manager)。 這些物件有其特殊資料元素，稱為 **[!UICONTROL 變數]** 很容易建立的資料元素。
 
-若要建立「變數」資料元素：
+若要為XDM建立「變數」資料元素，請將其連結至您在 [設定結構描述](configure-schemas.md) 課程：
 
 1. 選取 **[!UICONTROL 新增資料元素]**
 1. 為資料元素命名 `xdm.variable.content`. 建議您為XDM專屬的資料元素加上前置詞「xdm」，以便更妥善地組織標籤屬性
 1. 選取 **[!UICONTROL Adobe Experience Platform Web SDK]** 作為 **[!UICONTROL 副檔名]**
 1. 選取 **[!UICONTROL 變數]** 作為 **[!UICONTROL 資料元素型別]**
+1. 選取 **[!UICONTROL XDM]** 作為 **[!UICONTROL 屬性]**
 1. 選取適當的Experience Platform **[!UICONTROL Sandbox]**
 1. 選取適當的 **[!UICONTROL 結構描述]**，在本例中 `Luma Web Event Data`
 1. 選取 **[!UICONTROL 儲存]**
 
-   ![變數資料元素](assets/analytics-tags-data-element-xdm-variable.png)
+   ![XDM的變數資料元素](assets/analytics-tags-data-element-xdm-variable.png)
+
+接下來，為資料物件建立變數資料元素：
+
+1. 選取 **[!UICONTROL 新增資料元素]**
+1. 為資料元素命名 `data.variable`. 建議您為資料物件特定的資料元素加上前置詞「data」，以便更妥善地組織標籤屬性
+1. 選取 **[!UICONTROL Adobe Experience Platform Web SDK]** 作為 **[!UICONTROL 副檔名]**
+1. 選取 **[!UICONTROL 變數]** 作為 **[!UICONTROL 資料元素型別]**
+1. 選取 **[!UICONTROL 資料]** 作為 **[!UICONTROL 屬性]**
+1. 選取 **[!UICONTROL 儲存]**
+
+   ![資料物件的變數資料元素](assets/data-element-data-variable.png.png)
 
 
 在這些步驟結束時，您應該建立下列資料元素：
 
 | 核心擴充功能資料元素 | Platform Web SDK擴充功能資料元素 |
 -----------------------------|-------------------------------
-| `cart.orderId` | `xdm.variable.content` |
-| `cart.productInfo` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `xdm.variable.content` |
 | `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
@@ -291,9 +303,9 @@ window.adobeDataLayer.push({
 
 >[!TIP]
 >
->未來 [建立標籤規則](create-tag-rule.md) 課程，您將學習如何 **[!UICONTROL 變數]** 資料元素可讓您使用將多個規則棧疊在標籤中 **[!UICONTROL 更新變數動作型別]**.
+>未來 [建立標籤規則](create-tag-rule.md) 課程，您將學習如何 **[!UICONTROL 變數]** 資料元素可讓您使用 **[!UICONTROL 更新變數動作型別]**.
 
-設定好這些資料元素後，您就可以開始使用標籤規則將資料傳送至Platform Edge Network了。 但首先，瞭解如何使用Web SDK收集身分資料。
+設定好這些資料元素後，您就可以開始使用標籤規則將資料傳送至PlatformEdge Network了。 但首先，瞭解如何使用Web SDK收集身分資料。
 
 [下一步： ](create-identities.md)
 

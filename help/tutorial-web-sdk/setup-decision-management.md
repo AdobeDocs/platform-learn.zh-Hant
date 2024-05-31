@@ -1,15 +1,15 @@
 ---
 title: 使用Platform Web SDK設定Journey Optimizer決策管理
-description: 瞭解如何使用Platform Web SDK實作決定管理。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何使用Platform Web SDK實作決定管理。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
 workflow-type: tm+mt
-source-wordcount: '2515'
-ht-degree: 0%
+source-wordcount: '2513'
+ht-degree: 1%
 
 ---
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 若要完成本節中的課程，您必須先：
 
-* 確保您的組織可以存取Adobe Journey Optimizer Ultimate (Journey Optimizer和Offer Decisioning)或Adobe Experience Platform和Offer Decisioning應用程式服務附加元件。
+* 確保您的組織可以存取Adobe Journey Optimizer Ultimate (Journey Optimizer和Offer Decisioning)或Adobe Experience Platform和Offer Decisioning附加元件。
 
 * 完成所有Platform Web SDK初始設定的課程。
 

@@ -1,23 +1,27 @@
 ---
 title: 為網頁資料建立XDM結構描述
-description: 瞭解如何在資料收集介面中為網頁資料建立XDM結構描述。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何在資料收集介面中為網頁資料建立XDM結構描述。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 1%
+source-wordcount: '1542'
+ht-degree: 3%
 
 ---
 
 # 為網頁資料建立XDM結構描述
 
-瞭解如何在Adobe Experience Platform資料收集介面中為網頁資料建立XDM結構描述。
+了解如何在 Adob&#x200B;&#x200B;e Experience Platform Data Collection 介面中為 Web 資料建立 XDM 架構。
 
 Experience Data Model (XDM)結構描述是在Adobe Experience Platform中收集資料的建置組塊、原則和最佳實務。
 
 Platform Web SDK會使用您的結構描述將網頁事件資料標準化、傳送給PlatformEdge Network，最終將資料轉送給資料流中設定的任何Experience Cloud應用程式。 此步驟至關重要，因為它會定義將客戶體驗資料擷取到Experience Platform所需的標準資料模型，並啟用建置在這些標準上的下游服務和應用程式。
+
+>[!NOTE]
+>
+>XDM結構描述是 _非必要_ 透過Web SDK實作Adobe Analytics、Adobe Target或Adobe Audience Manager (資料可在以下位置傳遞： `data` 物件而非 `xdm` 物件)。 XDM結構描述是平台原生應用程式(如Journey Optimizer、Real-time Customer Data Platform、Customer Journey Analytics)進行最高效能實作所必需的。 雖然您可以決定在自己的實作中不要使用XDM結構描述，但您應在本教學課程中這樣做。
 
 ## 為何要為資料建立模型？
 
@@ -111,8 +115,7 @@ XDM結構描述是以Experience Platform描述資料的標準方式，可讓所�
 > 
 >在本練習中，您將新增建議的預先定義欄位群組以用於網路資料收集： _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ 和 _**[!UICONTROL 消費者體驗事件]**_.
 >
->
-> 如果您僅實施 **Adobe Analytics** 使用Web SDK，且不傳送任何資料至 **Experience Platform**，使用 [!UICONTROL Adobe Analytics ExperienceEvent范] 欄位群組以定義XDM結構描述。 此函式用於 [設定Analytics](setup-analytics.md) 課程。
+
 
 1. 在 **[!UICONTROL 欄位群組]** 區段，選取 **[!UICONTROL 新增]**
 

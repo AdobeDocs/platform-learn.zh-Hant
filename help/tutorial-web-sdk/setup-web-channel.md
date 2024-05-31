@@ -1,14 +1,14 @@
 ---
 title: 使用Platform Web SDK設定Journey Optimizer Web Channel
-description: 瞭解如何使用Platform Web SDK實作Journey Optimizer Web Channel。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何使用Platform Web SDK實作Journey Optimizer Web Channel。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2563'
 ht-degree: 0%
 
 ---
@@ -132,55 +132,6 @@ ht-degree: 0%
 此使用案例可讓您更瞭解Journey Optimizer如何運用Journey Optimizer行銷活動和Web設計工具，協助為客戶提供最佳傳入體驗。
 
 由於本教學課程的目標是實施者，因此請注意，本課程涉及Journey Optimizer的大量介面工作。 雖然這類介面任務通常由行銷人員處理，但對於實作者來說，即便他們通常不負責建立網路通路行銷活動，獲得該程式的深入分析也會很有幫助。
-
-### 建立忠誠度方案並擷取範例資料
-
-將Web SDK資料擷取至Adobe Experience Platform後，您即可將資料擷取至Platform的其他資料來源加以擴充。 例如，當使用者登入Luma網站時，身分圖表會在Experience Platform中建構，而所有其他已啟用設定檔的資料集可能會連結在一起，以建置即時客戶設定檔。 若要檢視此運作情況，請在Adobe Experience Platform中快速建立另一個資料集，其中包含一些忠誠度資料範例，好讓您可以在Journey Optimizer網路行銷活動中使用即時客戶設定檔。 由於您已完成類似的練習，因此指示將是簡短的。
-
-建立熟客方案：
-
-1. 建立新結構描述
-1. 選擇 **[!UICONTROL 個別設定檔]** 作為 [!UICONTROL 基底類別]
-1. 為結構命名 `Luma Loyalty Schema`
-1. 新增 [!UICONTROL 熟客方案細節] 欄位群組
-1. 新增 [!UICONTROL 人口統計細節] 欄位群組
-1. 選取 `Person ID` 欄位並標籤為 [!UICONTROL 身分] 和 [!UICONTROL 主要身分] 使用 `Luma CRM Id` [!UICONTROL 身分名稱空間].
-1. 為以下專案啟用結構描述： [!UICONTROL 個人資料]
-
-   ![熟客方案](assets/web-channel-loyalty-schema.png)
-
-若要建立資料集並擷取範例資料：
-
-1. 從建立新資料集 `Luma Loyalty Schema`
-1. 為資料集命名 `Luma Loyalty Dataset`
-1. 為以下專案啟用資料集 [!UICONTROL 個人資料]
-1. 下載範例檔案 [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
-1. 將檔案拖放至您的資料集中
-1. 確認資料已成功內嵌
-
-   ![熟客方案](assets/web-channel-loyalty-dataset.png)
-
-### 建立對象
-
-對象會根據常見特徵將設定檔分組。 建立可在網路行銷活動中使用的快速受眾：
-
-1. 在Experience Platform介面中，前往 **[!UICONTROL 受眾]** 在左側導覽列中
-1. 選取 **[!UICONTROL 建立對象]**
-1. 選取 **[!UICONTROL 建置規則]**
-1. 選取 **[!UICONTROL 建立]**
-
-   ![建立受眾](assets/web-campaign-create-audience.png)
-
-1. 選取 **[!UICONTROL 屬性]**
-1. 尋找 **[!UICONTROL 忠誠度]** > **[!UICONTROL 階層]** 欄位並將其拖曳至 **[!UICONTROL 屬性]** 區段
-1. 將對象定義為使用者，其 `tier` 是 `gold`
-1. 為對象命名 `Luma Loyalty Rewards – Gold Status`
-1. 選取 **[!UICONTROL Edge]** 作為 **[!UICONTROL 評估方法]**
-1. 選取 **[!UICONTROL 儲存]**
-
-   ![定義閱聽眾](assets/web-campaign-define-audience.png)
-
-由於這是非常簡單的對象，因此我們可以使用Edge評估方法。 Edge對象會在Edge進行評估，因此在Web SDK對平台Edge Network發出的相同請求中，我們可以評估對象定義，並立即確認使用者是否符合條件。
 
 ### 建立熟客獎勵行銷活動
 

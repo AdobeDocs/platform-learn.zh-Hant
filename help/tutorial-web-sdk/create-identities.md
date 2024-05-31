@@ -1,19 +1,19 @@
 ---
 title: 為Platform Web SDK建立身分識別
-description: 瞭解如何在XDM中建立身分識別，並使用身分對應資料元素來擷取使用者ID。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何在XDM中建立身分識別，並使用身分對應資料元素來擷取使用者ID。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
 source-wordcount: '875'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
 # 建立身分
 
-瞭解如何使用Adobe Experience Platform Web SDK擷取身分。 擷取上未驗證和已驗證的身分資料 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html). 瞭解如何使用您先前建立的資料元素，以透過稱為「身分對應」的Platform Web SDK資料元素型別來收集已驗證的資料。
+了解如何使用 Adob&#x200B;&#x200B;e Experience Platform Web SDK 擷取身分。擷取上未驗證和已驗證的身分資料 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html). 瞭解如何使用您先前建立的資料元素，以透過稱為「身分對應」的Platform Web SDK資料元素型別來收集已驗證的資料。
 
 本課程著重於Adobe Experience Platform Web SDK標籤擴充功能所提供的身分對應資料元素。 您可以將包含已驗證使用者ID和驗證狀態的資料元素對應至XDM。
 
@@ -133,9 +133,9 @@ FPID是第一方Cookie _您使用自己的網頁伺服器設定_ 然後使用哪
 
 | 核心擴充功能資料元素 | Platform Web SDK擴充功能資料元素 |
 -----------------------------|-------------------------------
-| `cart.orderId` | `identityMap.loginID` |
-| `cart.productInfo` | `xdm.variable.content` |
-| `cart.productInfo.purchase` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `identityMap.loginID` |
+| `cart.productInfo.purchase` | `xdm.variable.content` |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
