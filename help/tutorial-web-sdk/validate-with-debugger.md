@@ -1,19 +1,19 @@
 ---
 title: 使用Experience Platform Debugger驗證Web SDK實作
-description: 瞭解如何使用Adobe Experience Platform Debugger驗證您的Platform Web SDK實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何使用Adobe Experience Platform Debugger驗證您的Platform Web SDK實作。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 1%
+source-wordcount: '1172'
+ht-degree: 3%
 
 ---
 
 # 使用Experience Platform Debugger驗證Web SDK實作
 
-瞭解如何使用Adobe Experience Platform Debugger驗證您的Adobe Experience Platform Web SDK實作。
+了解如何使用 Adob&#x200B;&#x200B;e Experience Platform Debugger 驗證您的 Adob&#x200B;&#x200B;e Experience Platform Web SDK 實施。
 
 Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能，可協助您檢視在網頁中實作的Adobe技術。 下載您偏好瀏覽器的版本：
 
@@ -75,7 +75,7 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
 
    ![已取代標籤屬性](assets/validate-switch-success.png)
 
-繼續進行教學課程的過程中，您會使用此技巧將Luma網站對應至您自己的標籤屬性，以驗證您的Platform Web SDK實作。 當您開始在生產網站上使用標籤時，您可以在標籤的開發環境中使用相同的技巧來驗證變更。
+繼續進行教學課程的過程中，您會使用此技巧將Luma網站對應至您自己的標籤屬性，以驗證您的Platform Web SDK實作。 在您自己的網站上使用標籤時，您可以使用這種相同的技巧，來驗證生產環境網站上的開發標籤程式庫。
 
 ## 使用Experience Platform偵錯工具驗證使用者端網路請求
 
@@ -131,7 +131,7 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
 
    ![網路標籤](assets/validate-dev-console.png)
 
-1. 前往 **回應** 標籤，並記下ECID值如何包含在回應中。 複製此值，因為您將在下一個練習中使用它來驗證設定檔資訊
+1. 前往 **回應** 標籤，並記下ECID值如何包含在回應中。
 
    ![網路標籤](assets/validate-dev-console-ecid.png)
 

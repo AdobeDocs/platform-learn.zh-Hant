@@ -4,9 +4,9 @@ description: 瞭解如何使用Experience Platform Web SDK設定Adobe Analytics�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '2735'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -74,15 +74,15 @@ Platform Web SDK會將資料從您的網站傳送至PlatformEdge Network。 您�
 1. 將XDM欄位對應至Analytics處理規則中的Analytics變數（不再建議使用）。
 1. 直接在XDM結構描述中對應至Analytics變數（不再建議使用）。
 
-自2024年5月起，您不再需要建立XDM結構描述來使用Platform Web SDK實作Adobe Analytics。 此 `data` 物件(以及 `data.variable` 您在本教學課程中建立的資料元素)可用來設定所有自訂Analytics變數。 在資料物件中設定這些變數，會讓現有的Analytics客戶熟悉，比使用處理規則介面更有效率，並防止不必要的資料佔用即時客戶設定檔中的空間(如果您有Real-time Customer Data Platform或Journey Optimizer，這很重要)。
+自2024年5月起，您不再需要建立XDM結構描述來使用Platform Web SDK實作Adobe Analytics。 此 `data` 物件(以及 `data.variable` 您在中建立的資料元素 [建立資料元素](create-data-elements.md) 課程)來設定所有自訂Analytics變數。 在資料物件中設定這些變數，會讓現有的Analytics客戶熟悉，比使用處理規則介面更有效率，並防止不必要的資料佔用即時客戶設定檔中的空間(如果您有Real-time Customer Data Platform或Journey Optimizer，這很重要)。
 
 ### 自動對應的欄位
 
 許多XDM欄位會自動對應至Analytics變數。 如需最新的對應清單，請參閱 [Adobe Experience Edge中的Analytics變數對應](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-這種情況發生於 _即使您尚未定義自訂結構描述_. Experience Platform Web SDK會自動收集一些資料，並將它們以XDM欄位的形式傳送至PlatformEdge Network。 例如，Web SDK會讀取目前頁面URL並將其傳送為 `web.webPageDetails.URL`. 此欄位會轉送至Adobe Analytics，並自動填入Adobe Analytics中的頁面URL報表。
+這種情況發生於 _即使您尚未定義自訂結構描述_. Experience PlatformWeb SDK會自動收集一些資料，並以XDM欄位形式將其傳送至PlatformEdge Network。 例如，Web SDK會讀取目前頁面URL並將其傳送為XDM欄位 `web.webPageDetails.URL`. 此欄位會轉送至Adobe Analytics，並自動填入Adobe Analytics中的頁面URL報表。
 
-當您實作適用於Analytics和平台型應用程式的Web SDK時，將會建立自訂XDM結構描述，如同您在本教學課程中的 [設定結構描述](configure-schemas.md) 課程。 您已經實作自動對應至Analytics變數的部分XDM欄位，如下表所述：
+如果您使用XDM結構描述實作適用於Adobe Analytics的Web SDK （如同本教學課程中所述），您有自訂實作自動對應至Analytics變數的部分XDM欄位，如下表所述：
 
 | XDM至Analytics自動對應的變數 | Adobe Analytics變數 |
 |-------|---------|
@@ -103,15 +103,18 @@ Platform Web SDK會將資料從您的網站傳送至PlatformEdge Network。 您�
 
 Analytics產品字串的個別區段是透過下的不同XDM變數設定的。 `productListItems` 物件。
 
+>[!NOTE]
+>
 >自2022年8月18日起， `productListItems[].SKU` 優先將對應至s.products變數中的產品名稱。
 >設定為的值 `productListItems[].name` 只有在下列情況下，才會對應至產品名稱 `productListItems[].SKU` 不存在。 否則，它將會取消對應，並可在內容資料中使用。
 >請勿將空字串或Null設為 `productListItems[].SKU`. 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
 
+
 ### 在資料物件中設定變數
 
-在中設定變數 `data` 物件是使用Web SDK設定Analytics變數的建議方式。 在資料物件中設定變數也可覆寫任何自動對應的變數。
+但evar、prop和事件呢？ 在中設定變數 `data` 若要使用Web SDK設定這些Analytics變數，建議使用物件。 在資料物件中設定變數也可覆寫任何自動對應的變數。
 
-首先，什麼是 `data` 物件？ 在任何Web SDK事件中，您都可以傳送包含自訂資料的兩個物件， `data` 物件與 `xdm` 物件。 兩者都會傳送至PlatformEdge Network，但僅限 `xdm` 物件會傳送至Experience Platform資料集。 中的屬性 `data` 物件可在Edge上對應至 `xdm` 使用「資料收集的資料準備」功能的欄位，否則不會傳送給Experience Platform。 這使其成為將資料傳送至Analytics等應用程式(非原生建立在Experience Platform上)的理想方式。
+首先，什麼是 `data` 物件？ 在任何Web SDK事件中，您都可以傳送包含自訂資料的兩個物件， `xdm` 物件與 `data` 物件。 兩者都會傳送至PlatformEdge Network，但僅限 `xdm` 物件會傳送至Experience Platform資料集。 中的屬性 `data` 物件可在Edge上對應至 `xdm` 使用「資料收集的資料準備」功能的欄位，否則不會傳送給Experience Platform。 這使其成為將資料傳送至Analytics等應用程式(非原生建立在Experience Platform上)的理想方式。
 
 以下是一般Web SDK呼叫中的兩個物件：
 
@@ -119,9 +122,28 @@ Analytics產品字串的個別區段是透過下的不同XDM變數設定的。 `
 
 Adobe Analytics已設定為尋找 `data.__adobe.analytics` 物件，並用於Analytics變數。
 
-現在開始吧。
+現在來看看這是如何運作的。 讓我們設定 `eVar1` 和 `prop1` 並提供頁面名稱，瞭解如何覆寫XDM對應的值
 
-我們使用 `data.variable` 資料元素t
+1. 開啟標籤規則 `all pages - library loaded - set global variables - 1`
+1. 新增 **[!UICONTROL 動作]**
+1. 選取 **[!UICONTROL Adobe Experience Platform Web SDK]** 副檔名
+1. 選取 **[!UICONTROL 動作型別]** 作為 **[!UICONTROL 更新變數]**
+1. 選取 `data.variable` 作為 **[!UICONTROL 資料元素]**
+1. 選取 **[!UICONTROL 分析]** 物件
+1. 設定 `eVar1` 作為 `page.pageInfo.pageName` 資料元素
+1. 設定 `prop1` 若要複製的值 `eVar1`
+1. 若要測試XDM對應值的覆寫，請在 **[!UICONTROL 其他屬性]** 段落將頁面名稱設定為靜態值 `test`
+1. 儲存規則
+
+
+現在，我們需要在傳送事件規則中包含資料物件。
+
+1. 開啟標籤規則 `all pages - library loaded - send event - 50`
+1. 開啟 **[!UICONTROL 傳送事件]** 動作
+1. 選取 `data.variable` 作為 **[!UICONTROL 資料]**
+1. 選取 **[!UICONTROL 保留變更]**
+1. 選取 **[!UICONTROL 儲存]**
+
 
 
 <!--
@@ -219,9 +241,10 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
 
-1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入]**
+1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入（頁面頂端）]**
 
 1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `51`. 這可確保規則在 `all pages - library loaded - send event - 50` 使用設定基線XDM **[!UICONTROL 更新變數]** 動作型別。
+1. 選取 **[!UICONTROL 保留變更]**
 
    ![Analytics報表套裝覆寫](assets/set-up-analytics-rs-override.png)
 
@@ -247,9 +270,9 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 作為 **[!UICONTROL 動作型別]**，選取 **[!UICONTROL 傳送事件]**
 
-1. 作為 **[!UICONTROL 型別]**，選取 `web.webpagedetails.pageViews`
-
 1. 作為 **[!UICONTROL XDM資料]**，選取 `xdm.variable.content` 您在中建立的資料元素 [建立資料元素](create-data-elements.md) 課程
+
+1. 作為 **[!UICONTROL 資料]**，選取 `data.variable` 您在中建立的資料元素 [建立資料元素](create-data-elements.md) 課程
 
    ![Analytics資料流覆寫](assets/set-up-analytics-datastream-override-1.png)
 
@@ -261,7 +284,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
    >
    >    此索引標籤會決定要在哪個標籤環境中發生覆寫。 對於此體驗，您只需指定開發環境，但當您將此部署至生產環境時，請記得也在 **[!UICONTROL 生產]** 環境。
 
-
+1. 選取 **[!UICONTROL Sandbox]** 在本教學課程中，您會使用
 1. 選取 **[!UICONTROL 資料流]**，在本例中 `Luma Web SDK: Development Environment`
 
 1. 在 **[!UICONTROL 報表套裝]**，選取您要用來覆寫的報告網站。 在這種情況下， `tmd-websdk-course-stg`.
@@ -275,7 +298,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 ## 建置您的開發環境
 
-將新的資料元素和規則新增至 `Luma Web SDK Tutorial` 標籤程式庫並重新建置開發環境。
+將更新的規則新增至 `Luma Web SDK Tutorial` 標籤程式庫並重新建置開發環境。
 
 恭喜！下一步是透過Experience Platform Web SDK驗證您的Adobe Analytics實作。
 

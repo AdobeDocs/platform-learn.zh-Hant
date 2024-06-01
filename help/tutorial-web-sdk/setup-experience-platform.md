@@ -3,10 +3,10 @@ title: 透過Platform Web SDK將資料串流至Adobe Experience Platform
 description: 瞭解如何使用Web SDK將網頁資料串流到Adobe Experience Platform。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 5%
+source-wordcount: '2107'
+ht-degree: 4%
 
 ---
 
@@ -28,6 +28,8 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 * 設定資料流以傳送Web SDK資料至Adobe Experience Platform
 * 為即時客戶個人檔案啟用串流網頁資料
 * 驗證資料已著陸Platform資料集和即時客戶設定檔中
+* 將忠誠度計畫資料範例擷取至Platform
+* 建立簡單的平台對象
 
 ## 先決條件
 
@@ -36,6 +38,9 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 * 擁有Adobe Experience Platform應用程式的存取權，例如Real-time Customer Data Platform、Journey Optimizer或Customer Journey Analytics
 * 完成本教學課程之初始設定和標籤設定區段中先前的課程。
 
+>[!NOTE]
+>
+>如果您沒有任何Platform應用程式，您可以略過本課程或一起閱讀。
 
 ## 建立資料集
 
@@ -44,7 +49,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 讓我們為您的Luma Web事件資料設定資料集：
 
 
-1. 前往 [Experience Platform介面](https://experience.adobe.com/platform/)
+1. 前往 [Experience Platform](https://experience.adobe.com/platform/) 或 [Journey Optimizer](https://experience.adobe.com/journey-optimizer/) 介面
 1. 確認您是在本教學課程使用的開發沙箱中
 1. 開啟 **[!UICONTROL 資料管理>資料集]** 從左側導覽
 1. 選取 **[!UICONTROL 建立資料集]**
@@ -139,14 +144,28 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
    ![資料集預覽1](assets/experience-platform-dataset-preview-1.png)
 
+
+### 查詢資料
+
+1. 在 [Experience Platform](https://experience.adobe.com/platform/) 介面，選取 **[!UICONTROL 資料管理>查詢]** 在左側導覽以開啟 **[!UICONTROL 查詢]** 畫面。
+1. 選取 **[!UICONTROL 建立查詢]**
+1. 首先，執行查詢以檢視資料湖中表格的所有名稱。 輸入 `SHOW TABLES` 在查詢編輯器中，按一下播放圖示以執行查詢。
+1. 在結果中，請注意表格的名稱類似於 `luma_web_event_data`
+1. 現在，使用引用表格的簡單查詢來查詢表格（請注意，查詢預設將限製為100個結果）： `SELECT * FROM "luma_web_event_data"`
+1. 過了一會兒，您應該會看到網頁資料的範例記錄。
+
+>[!ERROR]
+>
+>如果您收到「未布建表格」錯誤，請仔細檢查表格的名稱。 也可能是微批次資料尚未抵達資料湖。 10-15分鐘後再試一次。
+
 >[!INFO]
 >
->Adobe Experience Platform的查詢服務是驗證湖中資料的更強大方法，但不在本教學課程的討論範圍內。 如需詳細資訊，請參閱 [探索資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) 位於Platform教學課程區段。
+>  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱 [探索資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) 位於Platform教學課程區段。
 
 
 ## 為即時客戶個人檔案啟用資料集和結構描述
 
-下一步是為即時客戶個人檔案啟用資料集和結構。 從Web SDK串流的資料會是流入Platform的眾多資料來源之一，而您想要將網頁資料與其他資料來源結合，以建置360度客戶設定檔。 若要深入瞭解即時客戶個人檔案，請觀看此短片：
+對於Real-time Customer Data Platform和Journey Optimizer的客戶，下一步是啟用即時客戶個人檔案的資料集和結構描述。 從Web SDK串流的資料會是流入Platform的眾多資料來源之一，而您想要將網頁資料與其他資料來源結合，以建置360度客戶設定檔。 若要深入瞭解即時客戶個人檔案，請觀看此短片：
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
@@ -179,7 +198,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
    >[!IMPORTANT]
    >
-   >    傳送到Real-Time Customer Profile的每個記錄都需要主要身分。 一般而言，身分欄位會在結構描述中加上標籤。 但是，使用身分對應時，結構描述中不會顯示身分欄位。 此對話方塊是確認您心中有一個主要身分，且您會在傳送資料時，在身分對應中指定該身分。 如您所知，Web SDK使用身分對應，而Experience CloudID (ECID)是預設的主要身分。
+   >    傳送到Real-Time Customer Profile的每個記錄都需要主要身分。 一般而言，身分欄位會在結構描述中加上標籤。 但是，使用身分對應時，結構描述中不會顯示身分欄位。 此對話方塊是確認您心中有一個主要身分，且您會在傳送資料時，在身分對應中指定該身分。 如您所知，Web SDK會使用身分對應，以Experience CloudID (ECID)作為預設主要身分，並以已驗證的ID作為主要身分（若可用）。
 
 
 1. 選取 **[!UICONTROL 啟用]**
@@ -192,7 +211,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!IMPORTANT]
 >
->    為設定檔啟用結構描述後，就無法停用或刪除它。 此外，此時之後無法從結構描述中移除欄位。 當您在生產環境中使用自己的資料時，請務必牢記這些含意。 在本教學課程中，您應該使用開發沙箱，您可以隨時將其刪除。
+>    為設定檔啟用結構描述後，如果不重設或刪除整個沙箱，就無法停用或刪除它。 此外，此時之後無法從結構描述中移除欄位。
 >
 >   
 > 使用您自己的資料時，我們建議您依照下列順序操作：
@@ -209,7 +228,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 首先，您必須產生更多範例資料。 重複本課程中先前步驟以在Luma網站對應至您的標籤屬性時登入。 Inspect Platform Web SDK請求以確定其傳送資料時包含 `lumaCRMId`.
 
-1. 在 [Experience Platform](https://experience.adobe.com/platform/) 介面，選取 **[!UICONTROL 設定檔]** 在左側導覽列中
+1. 在 [Experience Platform](https://experience.adobe.com/platform/) 介面，選取 **[!UICONTROL 客戶]** > **[!UICONTROL 設定檔]** 在左側導覽列中
 
 1. 作為 **[!UICONTROL 身分名稱空間]** 使用 `lumaCRMId`
 1. 複製並貼上 `lumaCRMId` 已在您在Experience Platform Debugger中檢查的呼叫中傳遞，此案例中為 `112ca06ed53d3db37e4cea49cc45b71e`.
@@ -247,7 +266,8 @@ Real-time Customer Data Platform和Journey Optimizer的客戶可望完成此練�
 1. 新增 [!UICONTROL 熟客方案細節] 欄位群組
 1. 新增 [!UICONTROL 人口統計細節] 欄位群組
 1. 選取 `Person ID` 欄位並標籤為 [!UICONTROL 身分] 和 [!UICONTROL 主要身分] 使用 `Luma CRM Id` [!UICONTROL 身分名稱空間].
-1. 為以下專案啟用結構描述： [!UICONTROL 個人資料]
+1. 為以下專案啟用結構描述： [!UICONTROL 個人資料]. 如果您找不到設定檔切換，請嘗試按一下左上方的結構描述名稱。
+1. 儲存結構描述
 
    ![熟客方案](assets/web-channel-loyalty-schema.png)
 
@@ -266,7 +286,7 @@ Real-time Customer Data Platform和Journey Optimizer的客戶可望完成此練�
 
 對象會根據常見特徵將設定檔分組。 建立可在網路行銷活動中使用的快速受眾：
 
-1. 在Experience Platform介面中，前往 **[!UICONTROL 受眾]** 在左側導覽列中
+1. 在Experience Platform或Journey Optimizer介面中，前往 **[!UICONTROL 客戶]** > **[!UICONTROL 受眾]** 在左側導覽列中
 1. 選取 **[!UICONTROL 建立對象]**
 1. 選取 **[!UICONTROL 建置規則]**
 1. 選取 **[!UICONTROL 建立]**

@@ -1,13 +1,13 @@
 ---
 title: 使用Experience Platform保證驗證Web SDK實作
-description: 瞭解如何使用Adobe Experience Platform保證驗證您的Platform Web SDK實作。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 了解如何使用 Adob​​e Experience Platform Assurance 驗證您的 Platform Web SDK 實施。本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '609'
-ht-degree: 2%
+source-wordcount: '606'
+ht-degree: 7%
 
 ---
 
@@ -78,8 +78,8 @@ Adobe Experience Platform保證功能可協助您檢查、證明、模擬及驗�
 
 在實施的這個階段，可檢視的資訊有限。 我們可以看到您在PlatformEdge Network上產生的Experience CloudID (ECID)值：
 
-1. 選取事件名稱為「Adobe回應控制代碼」的列。
-1. 功能表會顯示在右側。 選取 `+` 在「 」旁邊簽署 `[!UICONTROL ACPExtensionEvent]`
+1. 選取包含已呼叫之事件的列 `Alloy Response Handle`.
+1. 功能表會顯示在右側。 選取 `+` 在「 」旁邊簽署 `[!UICONTROL ACPExtensionEventData]`
 1. 選取「 」以向下展開 `[!UICONTROL payload > 0 > payload > 0 > namespace]`. 顯示在最後一個 `0` 對應至 `ECID`. 透過下方顯示的值，您知道這一點 `namespace` 比對 `ECID`
 
    ![保證驗證ECID](assets/validate-assurance-ecid.png)

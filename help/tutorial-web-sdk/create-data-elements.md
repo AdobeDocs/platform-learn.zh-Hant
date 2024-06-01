@@ -4,9 +4,9 @@ description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至�
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1337'
 ht-degree: 2%
 
 ---
@@ -100,14 +100,14 @@ window.adobeDataLayer.push({
 優點
 
 * 消除重新對應至XDM資料層變數的額外步驟
-* 如果您的開發團隊擁有標籤數位行為，部署可能會更快一些
+* 如果您的Web開發團隊也擁有標籤數位行為，部署可能會更快一些
 
 缺點
 
 * 完全依賴開發團隊和開發週期來更新要傳送到XDM的資料
 * XDM從資料層接收確切的裝載，因此彈性有限
 * 無法使用內建標籤功能，例如刮取、持續性、快速部署功能
-* 無法對第三方畫素使用資料圖層
+* 更難針對第三方畫素使用資料圖層(但您可能想要將這些畫素移至 [事件轉送](setup-event-forwarding.md)！
 * 無法在資料層和XDM之間轉換資料
 
 ### 在標籤中對應資料層
@@ -267,7 +267,7 @@ window.adobeDataLayer.push({
 1. 選取 **[!UICONTROL Adobe Experience Platform Web SDK]** 作為 **[!UICONTROL 副檔名]**
 1. 選取 **[!UICONTROL 變數]** 作為 **[!UICONTROL 資料元素型別]**
 1. 選取 **[!UICONTROL XDM]** 作為 **[!UICONTROL 屬性]**
-1. 選取適當的Experience Platform **[!UICONTROL Sandbox]**
+1. 選取 **[!UICONTROL Sandbox]** 您建立架構的位置
 1. 選取適當的 **[!UICONTROL 結構描述]**，在本例中 `Luma Web Event Data`
 1. 選取 **[!UICONTROL 儲存]**
 
@@ -280,6 +280,7 @@ window.adobeDataLayer.push({
 1. 選取 **[!UICONTROL Adobe Experience Platform Web SDK]** 作為 **[!UICONTROL 副檔名]**
 1. 選取 **[!UICONTROL 變數]** 作為 **[!UICONTROL 資料元素型別]**
 1. 選取 **[!UICONTROL 資料]** 作為 **[!UICONTROL 屬性]**
+1. 選取您要在本教學課程中實施的Experience Cloud解決方案
 1. 選取 **[!UICONTROL 儲存]**
 
    ![資料物件的變數資料元素](assets/data-element-data-variable.png.png)

@@ -1,19 +1,19 @@
 ---
 title: 設定Platform Web SDK的資料流
-description: 瞭解如何啟用資料串流並設定Experience Cloud解決方案。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何啟用資料串流並設定Experience Cloud解決方案。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 3%
+source-wordcount: '536'
+ht-degree: 7%
 
 ---
 
 # 設定資料流
 
-瞭解如何設定Adobe Experience Platform Web SDK的資料串流。
+了解如何在 Adobe Experience Platform Web SDK 中設定資料流。
 
 [資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) 告訴Adobe Experience Platform Edge Network要將由Platform Web SDK收集的資料傳送至何處。 在資料串流設定中，您可以啟用Experience Cloud應用程式、Experience Platform帳戶和事件轉送。
 
@@ -55,9 +55,9 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >只有在使用時，才需要選取結構描述 [資料收集的資料準備](/help/data-collection/edge/data-prep.md) 功能。
+   >您不需要選取結構描述。 只有在您使用 [資料收集的資料準備](/help/data-collection/edge/data-prep.md) 功能。
 
-在下一個畫面中，您可以將Adobe應用程式等服務新增至資料流，但此時您無法在教學課程中新增任何服務。 您將在稍後的課程中執行此動作 [設定Experience Platform](setup-experience-platform.md)， [設定Analytics](setup-analytics.md)， [設定Audience Manager](setup-audience-manager.md)， [設定目標](setup-target.md)，或 [事件轉送](setup-event-forwarding.md).
+在下一個畫面中，您可以將Adobe應用程式等服務新增至資料流，但此時您不會新增任何服務。 您將在稍後的課程中執行此動作 [設定Experience Platform](setup-experience-platform.md)， [設定Analytics](setup-analytics.md)， [設定Audience Manager](setup-audience-manager.md)， [設定目標](setup-target.md)，或 [事件轉送](setup-event-forwarding.md).
 
 >[!NOTE]
 >

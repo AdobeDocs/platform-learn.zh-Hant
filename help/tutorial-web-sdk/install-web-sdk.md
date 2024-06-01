@@ -1,13 +1,13 @@
 ---
 title: 安裝及設定Adobe Experience Platform Web SDK標籤擴充功能
-description: 瞭解如何在資料收集介面中安裝和設定Platform Web SDK標籤擴充功能。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何在資料收集介面中安裝和設定Platform Web SDK標籤擴充功能。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '607'
+ht-degree: 11%
 
 ---
 
@@ -61,6 +61,7 @@ ht-degree: 9%
 保留大部分的預設設定，並稍後視需要更新。 您現在唯一必須做的就是將擴充功能連結至資料流：
 
 1. 在 **[!UICONTROL 資料串流]**，選取 **[!UICONTROL 從清單選擇]** 輸入法
+1. 選取您建立結構、身分名稱空間和資料流的沙箱
 1. 選取您先前建立的資料流， `Luma Web SDK`
 1. 選取 **[!UICONTROL 儲存]**
 

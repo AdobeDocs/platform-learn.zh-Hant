@@ -1,13 +1,13 @@
 ---
 title: 建立Platform Web SDK的標籤規則
-description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 本課程屬於「使用Web SDK實作Adobe Experience Cloud」教學課程的一部分。
+description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1963'
-ht-degree: 1%
+source-wordcount: '1983'
+ht-degree: 2%
 
 ---
 
@@ -163,7 +163,6 @@ ht-degree: 1%
 >
 >規則順序會決定觸發事件時先執行哪個規則。 如果兩個規則具有相同的事件型別，數字最低的規則會先執行。
 > 
->![rule-order](assets/set-up-analytics-sequencing.png)
 
 首先，請追蹤Luma產品詳細資料頁面上的產品檢視：
 
@@ -172,7 +171,8 @@ ht-degree: 1%
 1. 選取 ![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在「事件」底下以新增觸發器
 1. 在 **[!UICONTROL 副檔名]**，選取 **[!UICONTROL 核心]**
 1. 在 **[!UICONTROL 事件型別]**，選取 **[!UICONTROL 程式庫已載入（頁面頂端）]**
-1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 此順序值可確保規則在 `all pages - library loaded - set global variables - 1` 會設定全域組態。
+1. 選取以開啟 **[!UICONTROL 進階選項]**，輸入 `20`. 此順序值可確保規則執行 _晚於_ 此 `all pages - library loaded - set global variables - 1` 會設定全域組態。
+1. 選取 **[!UICONTROL 保留變更]**
 
    ![Analytics XDM規則](assets/set-up-analytics-pdp.png)
 
@@ -189,6 +189,7 @@ ht-degree: 1%
 1. 在 **[!UICONTROL 動作]** 選取 **[!UICONTROL 新增]**
 1. 選取 **[!UICONTROL Adobe Experience Platform Web SDK]** 副檔名
 1. 選取 **[!UICONTROL 動作型別]** 作為 **[!UICONTROL 更新變數]**
+1. 選取 `xdm.variable.content` 作為 **[!UICONTROL 資料元素]**
 1. 向下捲動至 `commerce` 物件
 1. 開啟 **[!UICONTROL 產品檢視]** 物件與集合 **[!UICONTROL 值]** 至 `1`
 
@@ -202,7 +203,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >由於此規則的順序較高，因此會覆寫 `eventType` 在「全域設定」規則中設定。 `eventType` 只能包含一個值，建議您使用最大值事件加以設定。
+   >由於此規則的順序較高，因此會覆寫 `eventType` 在「全域設定」規則中設定。 `eventType` 只能包含一個值，建議您以最有價值的事件進行設定。
 
 1. 向下捲動至並選取 `productListItems` 陣列
 1. 選取 **[!UICONTROL 提供個別專案]**
@@ -215,7 +216,7 @@ ht-degree: 1%
    >此 **`productListItems`** 是 `array` 資料型別，因此預期資料會以元素集合的形式輸入。 由於Luma示範網站的資料層結構，以及由於一次只能在Luma網站上檢視一個產品，因此您可個別新增專案。 在您自己的網站上實作時，根據資料層結構，您或許可以提供整個陣列。
 
 1. 選取以開啟 **[!UICONTROL 專案1]**
-1. 將 **`productListItems.item1.SKU`** 對應到 `%product.productInfo.sku%`
+1. 地圖 **`productListItems.item1.SKU`** 至 `%product.productInfo.sku%`
 
    ![產品SKU XDM物件變數](assets/set-up-analytics-sku.png)
 
@@ -264,6 +265,7 @@ ht-degree: 1%
 1. 在 **[!UICONTROL 動作]** 選取 **[!UICONTROL 新增]**
 1. 選取 **[!UICONTROL Adobe Experience Platform Web SDK]** 副檔名
 1. 選取 **[!UICONTROL 動作型別]** 作為 **[!UICONTROL 更新變數]**
+1. 選取 `xdm.variable.content` 作為 **[!UICONTROL 資料元素]**
 1. 向下捲動至 `commerce` 物件並選取「 」以開啟它。
 1. 開啟 **[!UICONTROL productListView]** 物件與集合 **[!UICONTROL 值]** 至 `1`
 
@@ -320,6 +322,7 @@ ht-degree: 1%
 1. 向下捲動至並選取 **[!UICONTROL productListItems]** 陣列
 1. 選取 **[!UICONTROL 提供整個陣列]**
 1. 將對應到 **`cart.productInfo.purchase`** 資料元素
+1. 選取 **[!UICONTROL 保留變更]**
 1. 選取 **[!UICONTROL 儲存]**
 
 完成後，您應該會看到下列已建立的規則。
@@ -339,7 +342,7 @@ ht-degree: 1%
 
 1. 使用 **[!UICONTROL 核心擴充功能]** 並選取 `Library Loaded (Page Top)` 作為 **[!UICONTROL 事件型別]**
 
-1. 選取 **[!UICONTROL 進階]** 下拉式清單並輸入 `50` 在 **[!UICONTROL 訂購]**. 這將確保第二個規則會在您設定為觸發的第一個規則之後觸發 `1`.
+1. 選取 **[!UICONTROL 進階]** 下拉式清單並輸入 `50` 在 **[!UICONTROL 訂購]**. 這將確保此規則會在您設定的所有其他規則(這些規則已 `1` 或 `20` 作為其 [!UICONTROL 訂購])。
 
 1. 選取 **[!UICONTROL 保留變更]** 以返回主規則畫面
    ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-loaded-send.png)
@@ -390,7 +393,7 @@ ht-degree: 1%
 
 現在，您已準備好使用Adobe Experience Platform Debugger來驗證請求中的資料。
 
-[下一個 ](validate-with-debugger.md)
+[下一步 ](validate-with-debugger.md)
 
 >[!NOTE]
 >
