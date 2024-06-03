@@ -1,6 +1,6 @@
 ---
 title: 使用沙箱
-description: 瞭解Experience Platform沙箱如何提供隔離的環境來試用新功能或現有功能，並使用「快速失敗」方法。 瞭解如何重設和重新啟動開發環境，以及透過API呼叫使用沙箱。
+description: 瞭解Experience Platform沙箱如何提供隔離的環境，以試用新功能或現有功能，並使用快速失敗方法。 瞭解如何重設和重新啟動開發環境，以及透過API呼叫使用沙箱。
 feature: Sandboxes
 role: Data Architect, Data Engineer, Admin
 level: Beginner
@@ -8,7 +8,7 @@ last-substantial-update: 2024-05-28T00:00:00Z
 jira: KT-4018
 thumbnail: 29838.jpg
 exl-id: 65e50b0e-0999-4992-86e9-037065ed0d01
-source-git-commit: 6561a774fc35b4749d8c358c15b570d8a4b32bbb
+source-git-commit: ceae5ea181b649671eadf78ee9d3690845f96551
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 1%
