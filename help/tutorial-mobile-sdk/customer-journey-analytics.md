@@ -4,9 +4,9 @@ description: 瞭解如何使用Customer Journey Analytics來報告及分析您�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
+source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
 workflow-type: tm+mt
-source-wordcount: '3410'
+source-wordcount: '3291'
 ht-degree: 1%
 
 ---
@@ -15,16 +15,16 @@ ht-degree: 1%
 
 瞭解如何透過Customer Journey Analytics報告及分析您的行動應用程式互動。
 
-您在前面的課程中收集並傳送至PlatformEdge Network的行動應用程式事件資料，會轉送至您資料流中設定的服務。 如果您已遵循 [傳送資料給Experience Platform](platform.md) 課程，該資料現在會以資料集的形式儲存在Experience Platform的資料湖中。 這些資料可供Customer Journey Analytics用於報表和分析。
+您在前面的課程中收集並傳送至PlatformEdge Network的行動應用程式事件資料，會轉送至您資料流中設定的服務。 如果您已遵循 [傳送資料給Experience Platform](platform.md) 課程，該資料現在會以資料集的形式儲存在Experience Platform的資料湖中。 此時，資料即可供Customer Journey Analytics用於報表和分析。
 
-與Adobe Analytics相反，Customer Journey Analytics是具有以下功能的應用程式： *使用* 來自您在Experience Platform中建立的資料集的資料，以及您的應用程式正在將資料傳送到哪些資料集。 使用Adobe Experience Platform Mobile SDK時，資料不會直接傳送至Customer Journey Analytics。 Customer Journey Analytics會改用Experience Platform資料集中的資料。
+與Adobe Analytics相反，Customer Journey Analytics *使用* 資料來自在Experience Platform中建立的資料集。 資料不會使用Adobe Experience Platform Mobile SDK直接傳送至Customer Journey Analytics，而是會傳送至資料集。 接著會在Customer Journey Analytics中設定連線，以選取您將在報表和分析專案中使用的資料集。
 
-本教學課程中的課程著重於報告和分析從Luma教學課程應用程式擷取的資料。 Customer Journey Analytics的獨特功能之一，是結合來自多個來源（CRM、銷售點、忠誠度應用程式、客服中心）和管道（網路、行動裝置、離線）的資料，以提供客戶歷程的深入分析。 該功能不在本課程的討論範圍內。 另請參閱 [Customer Journey Analytics概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) 以取得詳細資訊。
+本教學課程中的課程著重於報告和分析從Luma教學課程應用程式擷取的資料。 Customer Journey Analytics的其中一項獨特功能，是將來自多個來源（CRM、銷售點、忠誠度應用程式、客服中心）和管道（網路、行動裝置、離線）的資料合併，以蒐集客戶歷程的深入見解。 該功能不在本課程的討論範圍內。 另請參閱 [Customer Journey Analytics概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) 以取得詳細資訊。
 
 
 ## 先決條件
 
-必須布建您的組織並授與Customer Journey Analytics的許可權。 您必須擁有Customer Journey Analytics的管理存取權。
+必須布建您的組織並授與Customer Journey Analytics的許可權。 您必須擁有管理員存取權才能進行Customer Journey Analytics。
 
 
 ## 學習目標
@@ -35,7 +35,7 @@ ht-degree: 1%
 - 建立資料檢視，從資料集中準備資料以用於報告和分析
 - 建立專案以建立報表和視覺效果，以便分析行動應用程式中的資料。
 
-此訂單是特意的。 在Customer Journey Analytics中，Analysis Workspace中的報表取決於資料檢視。 而且資料檢視取決於連線。
+該順序是有意為之。 連線使用資料集，資料檢視使用連線。
 
 
 ## 建立連線
@@ -112,7 +112,7 @@ Customer Journey Analytics中的連線會定義您要用於報表和分析的Exp
 
 將記錄從資料集新增到Customer Journey Analytics後，您可以建立資料檢視，以定義您要報告的資料元件。
 
-資料檢視是Customer Journey Analytics專屬的容器，可讓您決定如何詮釋來自連線的資料。 您可以從您在連線中定義的任何資料集，將標準和結構欄位設定為Analysis Workspace中的元件（維度、量度）。
+資料檢視是Customer Journey Analytics專屬的容器，可讓您決定如何詮釋來自連線的資料。 您可以從您在「連線」中定義為Analysis Workspace中元件（維度、量度）的任何資料集，設定標準和結構欄位。
 
 Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設定和定義來自您連線的資料。 在本教學課程中，您僅能使用報告和分析所需的功能。 另請參閱 [資料檢視](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) 以取得詳細資訊。
 
@@ -131,7 +131,7 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
       ![CJA資料檢視1](assets/cja-dataview-1.png)
 
-1. 在 **[!UICONTROL 元件]** 的標籤 **[!UICONTROL Luma應用程式 — AEP Mobile SDK教學課程資料檢視]**，您可定義在行動應用程式上製作報表時所使用的量度和維度。 根據預設，已為您的資料檢視設定許多標準量度和維度（共同稱為元件）。 但您的資料檢視需要更多元件。 <br/>若要新增結構欄位，請從您先前定義的結構描述或現成可用的結構描述(請參閱 [建立結構描述](create-schema.md) 課程)，作為元件（維度或量度）：
+1. 在 **[!UICONTROL 元件]** 的標籤 **[!UICONTROL Luma應用程式 — AEP Mobile SDK教學課程資料檢視]**，您可定義在行動應用程式上製作報表時所使用的量度和維度。 根據預設，已為您的資料檢視設定許多標準量度和維度（共同稱為元件）。 但您的資料檢視需要更多元件。 <br/>若要從您先前定義的結構描述或現成可用的結構描述新增結構描述欄位(請參閱 [建立結構描述](create-schema.md) 課程)，作為元件（維度或量度）：
 
    1. 尋找結構欄位：
 
@@ -155,7 +155,7 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
       ![CJA資料檢視元件設定](assets/cja-dataview-component-settings.png)
 
-   1. 現在您已瞭解如何將欄位新增至資料檢視並設定結果元件，請使用下表列出要新增為量度或維度的結構描述欄位。 使用 **結構描述路徑** 欄值，用來搜尋或周遊至特定結構描述欄位。 拖放後，檢查 **元件設定** 表格中的欄值元件是否需要特定設定，例如修改元件的 **[!UICONTROL 元件名稱]** 或定義 **[!UICONTROL 包含排除值]**.
+   1. 現在您已瞭解如何將欄位新增至資料檢視並設定結果元件，請使用下表列出要新增為量度或維度的結構描述欄位。 使用 **結構描述路徑** 欄值，用來搜尋或周遊至特定結構描述欄位。 新增量度和維度後，請檢查 **元件設定** 表格中的欄值元件是否需要特定設定，例如元件的 **[!UICONTROL 元件名稱]** 或定義 **[!UICONTROL 包含排除值]**.
 
       **量度**
 
@@ -177,9 +177,12 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
       {style="table-layout:auto"}
 
-      請注意「位置事件」量度的結構欄位如何使用 **[!UICONTROL 包含排除值]** 以計算包含下列專案的事件型別： `location`.
+      >[!NOTE]
+      >
+      >請注意「位置事件」量度的結構欄位如何使用 **[!UICONTROL 包含排除值]** 以計算包含下列專案的事件型別： `location`.
 
-      從上表新增所有結構欄位作為量度元件後，您的資料檢視設定為 **[!UICONTROL 量度]** 應如下所示：
+
+      您的資料檢視設定 **[!UICONTROL 量度]** 應該會在您從上表新增所有結構欄位做為量度元件後，比對到下表：
 
       ![CJA資料檢視4](assets/cja-dataview-4.png)
 
@@ -197,7 +200,7 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
       {style="table-layout:auto"}
 
-      從上表新增所有結構欄位作為維度元件後，您的資料檢視設定為 **[!UICONTROL Dimension]** 應如下所示：
+      您的資料檢視設定 **[!UICONTROL Dimension]** 應該會在您從上表新增所有結構欄位做為維度元件後，比對到下表：
 
       ![CJA資料檢視4](assets/cja-dataview-5.png)
 
@@ -211,7 +214,7 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
 ## 建立專案
 
-您可以使用Customer Journey Analytics中的工作區專案來建置您的報告和視覺效果。 建立完整報表和吸引人的視覺效果有許多可能性，但所有這些可能性不在本教學課程的討論範圍內。 另請參閱 [Workspace概述](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) 和 [建立新專案](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) 以取得詳細資訊。
+Customer Journey Analytics使用工作區專案來建立報表和視覺效果。 建立完整報表和吸引人的視覺效果有許多可能性，但這不在本教學課程的討論範圍內。 另請參閱 [Workspace概述](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) 和 [建立新專案](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) 以取得詳細資訊。
 
 在本課程的這個區段中，您會建立一個專案，在其中顯示報表和視覺效果：
 
@@ -250,23 +253,22 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 >
 >   請記得定期儲存專案，否則您的變更會遺失。 您可使用以下快速儲存專案 **[!UICONTROL ctrl + s]** (Windows)或 **[!UICONTROL ⌘ (cmd) + s]** (macOS)。
 
-您現在已經設定好專案。 您在主畫布上已經有包含自由表格的自由面板。 您很快就會新增元件至此表格，但您必須先確保您的自由面板使用正確的資料檢視和正確的時間段。
-
+您現在已經設定好專案。 預設會提供自由表格。 在新增元件之前，請確定您的自由面板使用正確的資料檢視和時段。
 
 1. 從下拉式清單中選取您的資料檢視。 例如， **[!UICONTROL Luma應用程式 — AEP Mobile SDK教學課程資料檢視]**. 如果在清單中看不到您的資料檢視，請選取 **[!UICONTROL 顯示全部]** 位於下拉式清單底部。
    ![CJA專案5](assets/cja-projects-5.png)
 
-1. 若要定義面板的適當時段，請選取預設值 **[!UICONTROL 本月]** 和在快顯面板中定義開始和結束日期。 或使用 **[!UICONTROL 預設集]**，按一下 **[!UICONTROL 過去6個月]** 並選取 **[!UICONTROL 套用]**.
+1. 若要定義面板的適當時段，請選取預設的預設集 **[!UICONTROL 本月]** 輸入自訂開始和結束日期，或使用 **[!UICONTROL 預設集]** (按讚 **[!UICONTROL 過去6個月]**)並選取 **[!UICONTROL 套用]**.
    ![CJA專案6](assets/cja-projects-6.png)
 
 
 ### 應用程式使用情形
 
-您想要回報應用程式的使用方式。 您已在應用程式中新增必要的程式碼，以註冊應用程式互動以及在應用程式中使用的畫面(請參閱 [追蹤事件](events.md) 課程)，您現在想要針對此資料製作報表。
+現在，您已準備好報告應用程式的使用方式。 您已在應用程式中新增必要的程式碼，以註冊應用程式互動以及在應用程式中使用的畫面(請參閱 [追蹤事件](events.md) 課程)，您現在想要針對此資料製作報表。
 
 #### 熒幕名稱
 
-您首先想報告在應用程式中檢視了哪些畫面。
+若要針對應用程式中檢視的畫面製作報表：
 
 1. 重新命名您的 **[!UICONTROL 自由格式]** 面板至 `App Usage`.
 
@@ -276,7 +278,7 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
 1. 拖放 **[!UICONTROL 熒幕檢視]** 元件於 [!UICONTROL _放置&#x200B;**量度**此處（或任何其他元件）_)].
    ![CJA專案7](assets/cja-projects-7.png)
-您的自由表格現在會顯示所選時段內幾天的畫面檢視。 不過，您想要針對應用程式中使用的不同畫面顯示畫面檢視。
+您的自由表格現在會顯示所選時段的每日畫面檢視。 不過，您想要針對應用程式中使用的每個不同熒幕，顯示其熒幕檢視次數。
 
 1. 若要顯示 **[!UICONTROL Dimension]** 元件清單，選取 ![交叉](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) 以移除 ![事件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL 量度]** 從「元件」邊欄中篩選。
    ![CJA專案8](assets/cja-projects-8.png)
@@ -286,15 +288,18 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 1. 拖放 **[!UICONTROL 畫面名稱]** 上的元件 **[!UICONTROL 日]** 標頭。 作業顯示 ![切換](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL 取代]** 指示尺寸的取代。
    ![CJA專案9](assets/cja-projects-9.png)
 
-您的第一個報表已準備就緒；會在應用程式中顯示您在應用程式中定義的各種熒幕名稱的熒幕檢視。
+報表中的第一個自由表格已完成。
 
 ![CJA專案10](assets/cja-projects-10.png)
 
-別忘了儲存專案！
+>[!NOTE]
+>
+>請先儲存您的專案，然後再繼續。
+
 
 #### 應用程式互動
 
-您也要報告使用者與應用程式的互動情形。
+接下來，您將建立自由表格，以報告使用者與應用程式的互動方式。
 
 1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 並從快顯視窗中 ![自由表格](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) 以新增自由表格。
    ![CJA專案11](assets/cja-projects-11.png)
@@ -310,7 +315,9 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
 資訊受限，主要因為您已實施 `MobileSDK.shared.sendAppInteractionEvent(actionName: "<actionName>")` API呼叫只會顯示在登入畫面上。 如果您將此API呼叫新增至應用程式的更多畫面，此報表將提供更多資訊。
 
-別忘了儲存專案！
+>[!NOTE]
+>
+>請先儲存您的專案，然後再繼續。
 
 
 ### Commerce
@@ -340,14 +347,17 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
 1. 拖放 **[!UICONTROL 月]** 維度在 **[!UICONTROL 日]** 維度將報表從每日變更為每月。
 
-您的 **[!UICONTROL Commerce事件]** 報告現已準備就緒，顯示使用者如何檢視產品、將產品新增至其願望清單、儲存產品以供稍後使用，甚至購買您的產品。
+您的Commerce事件報表已完成。
+
 ![CJA專案16](assets/cja-projects-16.png)
 
-別忘了儲存專案！
+>[!NOTE]
+>
+>請先儲存您的專案，然後再繼續。
 
 #### 流失
 
-根據上一個報告，您想要將商業漏斗中的流失視覺化：有多少檢視過產品的使用者也確實將產品新增至購物車。 還有有多少使用者在購物車中新增產品，也儲存了這些產品以供日後使用。 等等。
+接下來，您將為商業漏斗建立流失視覺效果，顯示有多少檢視過這些產品的使用者會將這些產品新增至購物車，以及從購物車顯示有多少使用者儲存這些產品以供日後使用。
 
 1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在 **[!UICONTROL 商務]** 面板，並從快顯視窗中選取 ![流失](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) （代表「流失」視覺效果）。
 
@@ -357,10 +367,12 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
 1. 對重複上述步驟 **[!UICONTROL 產品新增至清單]** 和 **[!UICONTROL 購買]** 維度。
 
-您的 **[!UICONTROL 流失]** 視覺效果現在會顯示產品的轉換漏斗的視覺化表示法。
+您的流失視覺效果報告已完成。
 ![CJA專案19](assets/cja-projects-19.png)
 
-別忘了儲存專案！
+>[!NOTE]
+>
+>請先儲存您的專案，然後再繼續。
 
 
 ### 優惠
@@ -383,10 +395,13 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
 1. 拖放 **[!UICONTROL 月]** 上的維度 **[!UICONTROL 日]** 欄以取代維度。
 
-您現在有一個報表，顯示應用程式中向使用者顯示的每月優惠方案。
+您優惠方案的每月概觀已完成。
+
 ![CJA專案20](assets/cja-projects-20.png)
 
-別忘了儲存專案！
+>[!NOTE]
+>
+>請先儲存您的專案，然後再繼續。
 
 
 #### 優惠方案給人員
@@ -406,10 +421,13 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 1. 從內容功能表中，選取 **[!UICONTROL 劃分]** > **[!UICONTROL Dimension]** > **[!UICONTROL 選件名稱]**. 此選取範圍會將「活動名稱」維度劃分為「選件名稱」。
    ![CJA專案20b](assets/cja-projects-20b.png)
 
-您現在有一個報表，向您應用程式的使用者顯示所選期間內針對此優惠決定顯示的個別優惠。
+您的優惠方案至人員報表已完成。
+
 ![CJA專案21](assets/cja-projects-21.png)
 
-別忘了儲存專案！
+>[!NOTE]
+>
+>請先儲存您的專案，然後再繼續。
 
 
 ### 商店造訪
@@ -438,7 +456,7 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
 1. 選取表格中的所有列，按一下滑鼠右鍵，然後從內容功能表選取劃分>Dimension>事件型別。
 
-您現在有一個報告，顯示使用者進入和離開商店位置附近(如同您在 [地點](places.md) 課程)。
+您的商店瀏覽報告已完成。 您現在有一個報告，顯示使用者進入和離開商店位置附近(如同您在 [地點](places.md) 課程)。
 
 ![CJA專案23](assets/cja-projects-23.png)
 
