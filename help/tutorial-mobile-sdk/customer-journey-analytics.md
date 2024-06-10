@@ -4,9 +4,10 @@ description: 瞭解如何使用Customer Journey Analytics來報告及分析您�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
+exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
+source-git-commit: 0af0ca0fe85fd1ba53861a1635bc0b54d0939141
 workflow-type: tm+mt
-source-wordcount: '3291'
+source-wordcount: '3282'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 瞭解如何透過Customer Journey Analytics報告及分析您的行動應用程式互動。
 
-您在前面的課程中收集並傳送至PlatformEdge Network的行動應用程式事件資料，會轉送至您資料流中設定的服務。 如果您已遵循 [傳送資料給Experience Platform](platform.md) 課程，該資料現在會以資料集的形式儲存在Experience Platform的資料湖中。 此時，資料即可供Customer Journey Analytics用於報表和分析。
+您在前面的課程中收集並傳送至PlatformEdge Network的行動應用程式事件資料，會轉送至您資料流中設定的服務。 如果您已遵循 [傳送資料給Experience Platform](platform.md) 課程：此資料現在儲存在Experience Platform資料集中，可供Customer Journey Analytics用於報表和分析。
 
 與Adobe Analytics相反，Customer Journey Analytics *使用* 資料來自在Experience Platform中建立的資料集。 資料不會使用Adobe Experience Platform Mobile SDK直接傳送至Customer Journey Analytics，而是會傳送至資料集。 接著會在Customer Journey Analytics中設定連線，以選取您將在報表和分析專案中使用的資料集。
 
