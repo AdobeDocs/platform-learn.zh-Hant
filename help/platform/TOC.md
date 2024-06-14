@@ -5,9 +5,9 @@ user-guide-description: 瞭解Experience Platform的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
+source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '896'
 ht-degree: 14%
 
 ---
@@ -49,12 +49,12 @@ ht-degree: 14%
    + [對象入口網站和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上傳對象](audiences/upload-audiences.md)
    + [對象規則產生器概觀](audiences/audience-rule-builder-overview.md)
-   + [建立對象](audiences/create-audiences.md)
+   + [建立客群](audiences/create-audiences.md)
    + [建立內容型對象](audiences/create-content-based-audiences.md)
    + [建立轉換對象](audiences/create-conversion-audiences.md)
    + [從現有對象建立對象](audiences/create-audiences-from-existing-audiences.md)
    + [建立循序受眾](audiences/create-sequential-audiences.md)
-   + [建立動態對象](audiences/create-dynamic-audiences.md)
+   + [建立動態客群](audiences/create-dynamic-audiences.md)
    + [建立多實體對象](audiences/create-multi-entity-audiences.md)
    + [建立及啟用帳戶對象(B2B)](audiences/create-audiences-with-b2b-data.md)
    + [串流細分示範](/help/platform/audiences/streaming-segmentation-demo.md)
@@ -80,6 +80,7 @@ ht-degree: 14%
 + 資料衛生 {#data-hygiene}
    + [假名設定檔和事件有效期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [資料衛生的資料準備](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [刪除資料集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [讓資料集過期](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [更新設定檔屬性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 資料擷取 {#data-ingestion}
@@ -161,12 +162,13 @@ ht-degree: 14%
 + 設定檔 {#profiles}
    + [瞭解即時客戶個人檔案](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [設定檔總覽圖表](/help/platform/profiles/overview-diagram.md)
-   + [將資料引進設定檔中](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
+   + [將資料引進輪廓中](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
    + [自訂設定檔檢視詳細資料](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [檢視帳戶設定檔](/help/platform/profiles/view-account-profiles.md)
    + [建立合併原則](/help/platform/profiles/create-merge-policies.md)
    + [聯合結構概觀](/help/platform/profiles/union-schemas-overview.md)
    + [建立計算屬性](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [刪除設定檔](/help/platform/profiles/delete-profiles.md)
    + [使用upsert更新特定屬性](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 隱私權與安全性 {#privacy}
    + [Privacy Service簡介](/help/platform/privacy/introduction-to-privacy-services.md)
