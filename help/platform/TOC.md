@@ -5,9 +5,9 @@ user-guide-description: 瞭解Experience Platform的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e3aeab8a3627b9fd962f4169957a7af2f856259e
+source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '912'
 ht-degree: 14%
 
 ---
@@ -79,15 +79,17 @@ ht-degree: 14%
    + [強制同意](/help/platform/governance/enforce-consent.md)
    + [整合IAB透明與同意架構2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 資料衛生 {#data-hygiene}
-   + [假名設定檔和事件有效期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [資料衛生的資料準備](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [刪除資料集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [讓資料集過期](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [假名設定檔和事件有效期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [刪除設定檔](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [更新設定檔屬性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 資料擷取 {#data-ingestion}
    + [概觀](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批次擷取總覽](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [建立和填入資料集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
+   + [刪除資料集和批次](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
    + [將CSV檔案對應至XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [來源概觀](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [從Adobe Analytics擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
@@ -169,6 +171,7 @@ ht-degree: 14%
    + [建立合併原則](/help/platform/profiles/create-merge-policies.md)
    + [聯合結構概觀](/help/platform/profiles/union-schemas-overview.md)
    + [建立計算屬性](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [假名設定檔有效期(TTL)](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [刪除設定檔](/help/platform/profiles/delete-profiles.md)
    + [使用upsert更新特定屬性](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 隱私權與安全性 {#privacy}
