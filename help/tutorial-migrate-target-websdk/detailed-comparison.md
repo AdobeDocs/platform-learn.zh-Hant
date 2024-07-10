@@ -1,11 +1,11 @@
 ---
-title: at.js 2.x與Web SDK的比較 |將Target從at.js 2.x移轉至Web SDK
+title: at.js 2.x與Web SDK的比較 | 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解at.js 2.x與Platform Web SDK之間的差異，包括功能、功能、設定和資料流程。
 exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
-source-git-commit: 78f0dcc0aa4674eb071c5fd091b5df04eb971326
+source-git-commit: 299b9586fb5c8e9c9ef3427e08035806af1d9a6b
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 8%
+source-wordcount: '2007'
+ht-degree: 1%
 
 ---
 
@@ -42,12 +42,12 @@ ht-degree: 8%
 | Mbox第三方ID | 支援 | 支援 |
 | 客戶屬性 | 支援 | 支援 |
 | 遠端選件 | 支援 | 支援 |
-| 重新導向選件 | 支援 | 支援.不過，不支援從具有Platform Web SDK的頁面重新導向至具有at.js的頁面（且方向相反）。 |
+| 重新導向選件 | 支援 | 支援。 不過，不支援從具有Platform Web SDK的頁面重新導向至具有at.js的頁面（且方向相反）。 |
 | 裝置上決策 | 支援 | 目前不支援 |
-| 預先擷取Mbox | 支援自訂範圍和SPA VEC | 目前不支援一般VEC |
-| 自訂事件 | 支援 | 不支援。請參閱 [公開藍圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 以取得目前狀態。 |
-| 回應 Token | 支援 | 支援.請參閱 [專屬回應Token檔案](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) 如需程式碼範例和at.js與Platform Web SDK之間的差異 |
-| 資料提供者 | 支援 | 不支援。自訂程式碼可用來觸發Platform Web SDK `sendEvent` 從其他提供者擷取資料後的命令。 |
+| 預先擷取Mbox | 支援自訂範圍和SPA VEC | 預先擷取是Web SDK的預設模式 |
+| 自訂事件 | 支援 | 不支援。 請參閱 [公開藍圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 以取得目前狀態。 |
+| 回應Token | 支援 | 支援。 請參閱 [專屬回應Token檔案](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) 如需程式碼範例和at.js與Platform Web SDK之間的差異 |
+| 資料提供者 | 支援 | 不支援。 自訂程式碼可用來觸發Platform Web SDK `sendEvent` 從其他提供者擷取資料後的命令。 |
 
 
 ## 值得注意的圖說文字
@@ -58,8 +58,8 @@ ht-degree: 8%
 | 頁面載入時自動轉譯內容 | 使用Target全域設定控制。 啟用時間 `pageLoadEnabled` 設為 `true`. | 在Platform Web SDK中指定 `sendEvent` 命令。 透過設定 `renderDecisions` 選項至 `true`. |
 | 手動呈現內容 | 此 `applyOffer()` 和 `applyOffers()` 函式僅支援設定HTML | 此 `applyPropositions` 指令支援設定、取代或附加HTML以增加彈性 |
 | 追蹤自訂事件 | 支援 `trackEvent()` 和 `sendNotifications()` 函式。 這些函式專用於Target，不會影響Adobe Analytics量度。 | 來自Platform Web SDK的所有資料 `sendEvent` 來電會轉接至Target。 Target特別需要的補充資料應包含在 `sendEvent` 具有eventType的命令 `decisioning.propositionDisplay` 或 `decisioning.propositionInteract` 以確保Adobe Analytics量度不受影響。 |
-| 目標CNAME | 支援.這與用於Analytics和Experience CloudID服務的CNAME不同。 | 不再相關。 單一CNAME可用於所有Platform Web SDK呼叫。 |
-| 為  除錯 | 此 `mboxDisable`， `mboxDebug`、和 `mboxTrace` URL引數可用來使用瀏覽器的開發人員工具進行偵錯。<br><br>此Adobe Experience Platform Debugger也是支援的偵錯工具。 | 此 `mboxDisable`， `mboxDebug`、和 `mboxTrace` 不支援URL引數。<br><br>您可以透過新增以下專案來開啟Web SDK偵錯： `alloy_debug=true` 至您的查詢字串或正在執行 `alloy("setDebug", { "enabled": true });` 在您的開發人員主控台中。<br><br>Adobe Experience Platform Debugger瀏覽器擴充功能可用來起始除錯的邊緣追蹤。<br><br>請參閱 [偵錯Platform Web SDK](debugging.md) 檔案以取得詳細資訊。 |
+| 目標CNAME | 支援。 這與用於Analytics和Experience CloudID服務的CNAME不同。 | 不再相關。 單一CNAME可用於所有Platform Web SDK呼叫。 |
+| 偵錯 | 此 `mboxDisable`， `mboxDebug`、和 `mboxTrace` URL引數可用來使用瀏覽器的開發人員工具進行偵錯。<br><br>此Adobe Experience Platform Debugger也是支援的偵錯工具。 | 此 `mboxDisable`， `mboxDebug`、和 `mboxTrace` 不支援URL引數。<br><br>您可以透過新增以下專案來開啟Web SDK偵錯： `alloy_debug=true` 至您的查詢字串或正在執行 `alloy("setDebug", { "enabled": true });` 在您的開發人員主控台中。<br><br>Adobe Experience Platform Debugger瀏覽器擴充功能可用來起始除錯的邊緣追蹤。<br><br>請參閱 [偵錯Platform Web SDK](debugging.md) 檔案以取得詳細資訊。 |
 | Analytics for Target (A4T) | 使用SDID值來拼接Target和Analytics呼叫 | 原生支援，無需拼接 |
 
 >[!NOTE]
@@ -80,7 +80,7 @@ ht-degree: 8%
 | `trackEvent()` 和 `sendNotifications()` | 使用 `sendEvent` 命令與 [特定 `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) 設定：<br><br>`decisioning.propositionDisplay` 代表活動的轉譯<br><br>`decisioning.propositionInteract` 代表使用者與活動的互動，例如滑鼠點按。 |
 | `targetGlobalSettings()` | 沒有直接的對等方法。 請參閱 [Target設定比較](detailed-comparison.md) 以取得其他詳細資訊。 |
 | `targetPageParams()` 和 `targetPageParamsAll()` | 所有傳入的資料 `xdm` 的選項 `sendEvent` 命令對應至Target mbox引數。 由於mbox引數是以序列化的點標籤法來命名，若移轉至Platform Web SDK，您可能需要更新現有的對象和活動，才能使用新的mbox引數名稱。 <br><br>作為一部分傳遞的資料 `data.__adobe.target` 的 `sendEvent` 命令對應至 [Target設定檔和Recommendations特定引數](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| at.js 自訂事件 | 不支援。請參閱 [公開藍圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 以取得目前狀態。 [回應Token](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) 顯示為 `propositions` 在回應中 `sendEvent` 呼叫。 |
+| at.js自訂事件 | 不支援。 請參閱 [公開藍圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 以取得目前狀態。 [回應Token](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) 顯示為 `propositions` 在回應中 `sendEvent` 呼叫。 |
 
 ## at.js設定和平台Web SDK的對等專案
 
@@ -97,19 +97,19 @@ at.js程式庫可使用Target UI中的各種設定進行設定和下載。 這�
 | `dataProviders` | 不支援 |
 | `decisioningMethod` | 所有Platform Web SDK `sendEvent` 命令使用伺服器端決策。 不支援混合式決策和裝置上決策。 |
 | `defaultContentHiddenStyle` 和 `defaultContentVisibleStyle` | 僅適用於at.js 1.x。與at.js 2.x類似，使用自訂程式碼即可緩解表單式體驗的忽隱忽現問題。 |
-| `deviceIdLifetime` | 不支援。如果 `targetMigrationEnabled` 設為 `true` 使用 `configure` 指令， `mbox` Cookie設定為裝置存留期設定為2年。 此值無法設定。 |
+| `deviceIdLifetime` | 不支援。 如果 `targetMigrationEnabled` 設為 `true` 使用 `configure` 指令， `mbox` Cookie設定為裝置存留期設定為2年。 此值無法設定。 |
 | `enabled` | 資料流設定可啟用或停用Target功能 |
 | `globalMboxAutoCreate` | 設定 `renderDecisions` 選項至 `true` 使用 `sendEvent` 用於自動擷取及轉譯VEC型體驗的命令。<br><br>請求 `decisionScope` 的 `__view__` 如果您偏好手動轉譯VEC型體驗。 |
 | `imsOrgId` | 設定 `orgId` 使用 `configure` 命令 |
 | `optinEnabled` 和 `optoutEnabled` | 請參閱平台Web SDK [隱私權選項](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html). 此 `defaultConsent` 選項適用於Platform Web SDK支援的所有Adobe解決方案。 |
-| `overrideMboxEdgeServer` 和 `overrideMboxEdgeServerTimeout` | 不適用. 所有Platform Web SDK請求都使用Adobe Experience Platform Edge網路。 |
+| `overrideMboxEdgeServer` 和 `overrideMboxEdgeServerTimeout` | 不適用。 所有Platform Web SDK請求都使用Adobe Experience Platform Edge網路。 |
 | `pageLoadEnabled` | 設定 `renderDecisions` 選項至 `true` 使用 `sendEvent` 命令 |
-| `secureOnly` | 不支援。Platform Web SDK會使用設定所有Cookie `secure` 和 `sameSite="none"` 屬性。 |
-| `selectorsPollingTimeout` | 不支援。Platform Web SDK使用5秒的值。 如有必要，可以使用自訂程式碼來手動轉譯內容。 |
+| `secureOnly` | 不支援。 Platform Web SDK會使用設定所有Cookie `secure` 和 `sameSite="none"` 屬性。 |
+| `selectorsPollingTimeout` | 不支援。 Platform Web SDK使用5秒的值。 如有必要，可以使用自訂程式碼來手動轉譯內容。 |
 | `serverDomain` | 使用 `edgeDomain` 使用設定 `configure` 命令 |
 | `telemetryEnabled` | 不適用 |
-| `timeout` | 不支援。建議您將任何忽隱忽現的緩解程式碼都納入適當的逾時。 |
-| `viewsEnabled` | 不支援。Target檢視的內容一律會在第一次擷取時擷取 `sendEvent()` 呼叫，如果 `renderDecisions` 設為 `true` 或 `__view__` 請求中包含decisionScope 。 |
+| `timeout` | 不支援。 建議您將任何忽隱忽現的緩解程式碼都納入適當的逾時。 |
+| `viewsEnabled` | 不支援。 Target檢視的內容一律會在第一次擷取時擷取 `sendEvent()` 呼叫，如果 `renderDecisions` 設為 `true` 或 `__view__` 請求中包含decisionScope 。 |
 | `visitorApiTimeout` | 不適用 |
 
 
@@ -119,9 +119,9 @@ at.js程式庫可使用Target UI中的各種設定進行設定和下載。 這�
 
 ### at.js 2.x系統圖表
 
-![at.js 2.0頁面載入時的行為](assets/target-at-js-2x-diagram.png){zoomable=&quot;yes&quot;}
+![at.js 2.0頁面載入時的行為](assets/target-at-js-2x-diagram.png){zoomable="yes"}
 
-| 呼叫 | 詳細資訊 |
+| 呼叫 | 詳細資料 |
 | --- | --- |
 | 1 | 呼叫會傳回Experience CloudID (ECID)。 如果使用者已通過驗證，則另一個呼叫會同步客戶ID。 |
 | 2 | at.js程式庫會同步載入並隱藏檔案本文（也可使用將頁面上實作的程式碼片段預先隱藏的選項，以非同步方式載入at.js）。 |
@@ -130,15 +130,15 @@ at.js程式庫可使用Target UI中的各種設定進行設定和下載。 這�
 | 5 | Target會根據URL、請求引數和設定檔資料，決定可針對目前頁面和未來檢視傳回哪些活動和體驗給訪客。 |
 | 6 | 目標內容會傳回至頁面，選擇性地包括其他個人化的設定檔值。<br><br>目前頁面上目標內容會儘快出現，不會有忽隱忽現的預設內容。<br><br>單頁應用程式未來檢視的目標內容會快取在瀏覽器中，因此可在觸發檢視時立即套用，不需額外的伺服器呼叫。 |
 | 7 | 從頁面傳送至資料收集伺服器的Analytics資料。 |
-| 8 | Target 資料會透過 SDID 來比對 Analytics 資料，然後經過處理放入 Analytics 報表儲存體中。然後就可以在 Analytics 與 Target 中，透過 A4T 報表來檢視 Analytics 資料。 |
+| 8 | Target資料會透過SDID來比對Analytics資料，然後經過處理放入Analytics報表儲存體中。 然後就可以在Analytics與Target中，透過A4T報表來檢視Analytics資料。 |
 
 請參閱開發人員指南，瞭解如何 [針對單頁應用程式使用at.js實作Target](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application/).
 
-### Platform Web SDK 系統圖
+### Platform Web SDK系統圖表
 
 ![使用Platform Web SDK的Adobe Target邊緣決策圖表](assets/target-platform-web-sdk.png)
 
-| 呼叫 | 詳細資訊 |
+| 呼叫 | 詳細資料 |
 | --- | --- |
 | 1 | 裝置載入Platform Web SDK。 Platform Web SDK會傳送要求至Edge Network，其中包含XDM資料、資料串流環境ID、傳入引數和客戶ID （選用）。 頁面（或容器）會預先隱藏。 |
 | 2 | Edge Network會傳送要求給Edge Services，以使用訪客ID、同意和其他訪客內容資訊（例如地理位置和方便使用的裝置名稱）來擴充要求。 |
