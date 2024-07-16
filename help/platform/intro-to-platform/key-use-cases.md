@@ -1,6 +1,6 @@
 ---
 title: 主要使用案例
-description: 取得Experience Platform&mdash五個主要使用案例的概觀；智慧型重新參與、不遺失行銷活動、客戶轉換最佳化、情境式識別和期限值的一次性值。
+description: 取得Experience Platform&amp； mdash；智慧型重新參與、不損失行銷活動、客戶轉換最佳化、內容辨識和一次性存留期值等五個主要使用案例的概觀。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 last-substantial-update: 2023-11-01T00:00:00Z

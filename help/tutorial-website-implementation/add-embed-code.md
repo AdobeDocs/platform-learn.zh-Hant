@@ -4,8 +4,8 @@ description: 瞭解如何取得標籤屬性的內嵌程式碼並在您的網站�
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 45%
+source-wordcount: '1037'
+ht-degree: 43%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 45%
 >
 >Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
 >
-> * platform launch （使用者端）現在為 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * platform launch伺服器端現在是 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge設定現在為 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * platform launch（使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * platform launch伺服器端現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 學習目標
 
@@ -28,13 +28,13 @@ ht-degree: 45%
 * 取得標籤屬性的內嵌程式碼
 * 瞭解開發、測試和生產環境之間的差異
 * 將標籤內嵌程式碼新增至html檔案
-* 說明標籤內嵌程式碼相對於中其他程式碼的最佳位置 `<head>` html檔案的
+* 說明標籤內嵌程式碼相對於html檔案`<head>`中其他程式碼的最佳位置
 
 ## 複製內嵌程式碼
 
-內嵌程式碼為 `<script>` 標籤來載入並執行您在標籤中建立的邏輯。 如果您非同步載入程式庫，瀏覽器會繼續載入頁面，擷取標籤程式庫，然後同時執行。 在這種情況下，只會有一個內嵌程式碼，您會將其放在 `<head>` 中。(以同步方式部署標籤時，會有兩個內嵌程式碼，您會將其中一個放在 `<head>` 以及您放在 `</body>`)。
+內嵌程式碼是您放在網頁上的`<script>`標籤，可載入並執行您在標籤中建置的邏輯。 如果您非同步載入程式庫，瀏覽器會繼續載入頁面，擷取標籤程式庫，然後同時執行。 在這種情況下，只會有一個內嵌程式碼，您會將其放在 `<head>` 中。（以同步方式部署標籤時，會有兩個內嵌程式碼，一個放在`<head>`中，另一個放在`</body>`之前）。
 
-在屬性「概述」畫面中，按一下 **[!UICONTROL 環境]** 在左側導覽前往環境頁面。 請注意，系統已為您預先建立開發、測試和生產環境。
+在屬性Overview畫面中，按一下左側導覽中的&#x200B;**[!UICONTROL 環境]**&#x200B;以移至環境頁面。 請注意，系統已為您預先建立開發、測試和生產環境。
 
 ![按一下頂端導覽列中的「環境」](images/launch-environments.png)
 
@@ -46,19 +46,19 @@ ht-degree: 45%
 
 現在來複製內嵌程式碼：
 
-1. 在&#x200B;**[!UICONTROL 開發]**&#x200B;列中，按一下「安裝」圖示 ![「安裝」圖示](images/launch-installIcon.png)，開啟強制回應視窗.
+1. 在&#x200B;**[!UICONTROL 開發]**&#x200B;列中，按一下「安裝」圖示![安裝圖示](images/launch-installIcon.png)以開啟強制回應視窗。
 
 1. 請注意，標籤會預設為非同步內嵌程式碼
 
 1. 按一下「複製」圖示 ![「複製」圖示](images/launch-copyIcon.png)，將內嵌程式碼複製到剪貼簿。
 
-1. 按一下&#x200B;**[!UICONTROL 關閉]**&#x200B;以關閉強制回應視窗.
+1. 按一下&#x200B;**[!UICONTROL 關閉]**&#x200B;以關閉強制回應視窗。
 
    ![「安裝」圖示](images/launch-copyInstallCode.png)
 
 ## 在範例 HTML 頁面的 `<head>` 中實施內嵌程式碼
 
-內嵌程式碼應在將共用屬性之所有 HTML 頁面的 `<head>` 元素中實施。您可能有一或數個範本檔案可控制 `<head>` 橫跨網站全域使用，能讓您直接新增標籤。
+內嵌程式碼應在將共用屬性之所有 HTML 頁面的 `<head>` 元素中實施。您可能有一或數個可跨網站全域控制`<head>`的範本檔案，能讓新增標籤的程式相當簡單明瞭。
 
 如果沒有，請複製範例html頁面程式碼並將其貼到程式碼編輯器中。 如果您需要編輯器，可使用免費的開放原始碼編輯器 [Brackets](https://brackets.io/)。
 
@@ -130,17 +130,17 @@ ht-degree: 45%
 
 * **資料層**：
 
-   * 三 *強烈* 建議您在網站上建立資料層，包含在Analytics、Target和其他行銷解決方案中填入變數所需的所有屬性。 此範例頁面只包含非常簡單的資料層，但實際資料層可能包含有關頁面的更多詳細資料、訪客、其購物車詳細資料等內容。如需資料層的詳細資訊，請參閱[客戶體驗數位資料層 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
+   * 我們&#x200B;*強烈*&#x200B;建議您在網站上建立資料層，包含在Analytics、Target和其他行銷解決方案中填入變數所需的所有屬性。 此範例頁面只包含非常簡單的資料層，但實際資料層可能包含有關頁面的更多詳細資料、訪客、其購物車詳細資料等內容。如需資料層的詳細資訊，請參閱[客戶體驗數位資料層 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
 
    * 在標籤內嵌程式碼之前定義資料層，以發揮Experience Cloud解決方案的最大效用。
 
-* **JavaScript輔助程式庫**：如果您已在中實施JQuery等程式庫 `<head>` ，請在標籤之前載入它，以便在標籤和Target中運用其語法
+* **JavaScript協助程式庫**：如果您已在頁面的`<head>`中實作JQuery等程式庫，請在標籤之前將其載入，以便在標籤和Target中運用其語法
 
 * **HTML5 doctype**：HTML5 doctype 在 Target 實施中是必要的
 
 * **preconnect 和 dns-prefetch**: 使用 preconnect 和 dns-prefetch 來改善頁面載入時間。另請參閱：[https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **非同步Target實施的預先隱藏程式碼片段**：您將在Target課程中深入瞭解，但是若Target是透過非同步標籤內嵌程式碼部署，您應在標籤內嵌程式碼之前在頁面上以硬式編碼撰寫預先隱藏程式碼片段，以便管理內容閃爍問題
+* **非同步Target實施的預先隱藏程式碼片段**：您將在Target課程中深入瞭解，但是若Target是透過非同步標籤內嵌程式碼部署，您應在頁面上於標籤內嵌程式碼之前新增預先隱藏的程式碼片段，以便管理內容閃爍問題
 
 以下依建議順序呈現這些最佳做法的摘要。請注意，帳戶專屬詳細資訊有一些預留位置：
 

@@ -1,6 +1,6 @@
 ---
 title: Real-Time CDP中的合作夥伴資料支援概觀
-description: 瞭解如何 [!DNL Real-Time Customer Data Platform] 由於第三方Cookie繼續遭到取代，支援使用合作夥伴資料進行完整漏斗行銷，以進行第一方資料擴充和潛在客戶使用案例。 
+description: 瞭解 [!DNL Real-Time Customer Data Platform] 如何支援使用合作夥伴資料進行完整漏斗行銷，以擴充第一方資料及潛在客戶使用案例，因為第三方Cookie繼續遭到淘汰。 
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# 中的合作夥伴資料支援概觀 [!DNL Real-Time CDP]
+# [!DNL Real-Time CDP]中的合作夥伴資料支援總覽
 
-瞭解如何 [!DNL Real-Time Customer Data Platform] 由於第三方Cookie繼續遭到取代，支援使用合作夥伴資料進行完整漏斗行銷，以進行第一方資料擴充和潛在客戶使用案例。 
+瞭解[!DNL Real-Time Customer Data Platform]如何使用合作夥伴資料支援完整漏斗行銷，以進行第一方資料擴充和潛在客戶使用案例，因為第三方Cookie繼續遭到取代。 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on)

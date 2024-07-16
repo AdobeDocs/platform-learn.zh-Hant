@@ -16,41 +16,41 @@ ht-degree: 1%
 
 # 1.5 Acao：envie seu segmento para o Facebook
 
-Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer登入，voce irá存取página incial da Adobe Experience Platform。
+存取[Adobe Experience Platform](https://experience.adobe.com/platform)。 Depois de fazer登入，voce irá acsesar a página inicial da Adobe Experience Platform。
 
 ![資料擷取](./images/home.png)
 
-Antes de continuar， voce precisa seclecionar um **沙箱**. Bootcamp不做沙箱。 É possível fazer isso clicando no texto **[!UICONTROL 生產產品]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apriado， voce verá a tela mudando e agora voce está em seu [!UICONTROL 沙箱] dedicado。
+Antes de continuar， voce precisa selectionar um **沙箱**。 不要做沙箱，你可以選擇一個é Bootcamp。 É posssível fazer isso clicando no texto **[!UICONTROL Production Prod]** na linha azul na parte superior da tela。 Depois de selecionar o sandbox apropriado， voce verá a tela mudando e agora voce está em seu [!UICONTROL 沙箱]專用沙箱。
 
 ![資料擷取](./images/sb1.png)
 
-沒有功能表à esquerda， vá para **目的地** e， em seguida， vá para **目錄**. Voce verá o **目的地目錄**. Em **目的地**，小團體 **啟用區段** 無卡套 **facebook自訂對象**.
+沒有功能表à esquerda， vá para **目的地** e， em seguida， vá para **目錄**。 **目的地目錄**&#x200B;的音量。 Em **目的地**，click em **啟用區段** no cartao **Facebook自訂對象**。
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-選擇一或 **bootcamp-facebook** 小團體 **下一個**.
+選取&#x200B;**bootcamp-facebook** e群組&#x200B;**下一步**。
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-Na lista de segmentos disponíveis， selectiono o segmento que voce criou no expercício anterior. 小團體 **下一個**.
+選擇區段可避免前方活動。 點按&#x200B;**下一個**。
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-那帕吉納 **對應**，驗證選擇caixa de seleçao **套用轉換** 馬卡達。 小團體 **下一個**.
+Na página **Mapping**，驗證se a caixa de selecao **套用轉換** está marcada。 點按&#x200B;**下一個**。
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-那帕吉納 **區段排程**，選取a **您的對象來源** e defina como **直接來自客戶**. 小團體 **下一個**.
+Na página **區段排程**，請直接從客戶選取&#x200B;**您的對象來源** e defina como **。** 點按&#x200B;**下一個**。
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-潘金娜，潘金娜 **檢閱**，小團體 **完成**.
+Por fim， na página **Review**，click em **完成**。
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-Seu segmento agora está vinculado aos Públicos Personalizados do Facebook. Sempre que um cliente se qualificar para esse segmento， um sinal será enviado ao lado do servidor （伺服器端） do Facebook para incluir esse cliente no Público Personalizado no lado do Facebook。
+Seu segmento agora está vinculado aos Públicos Personalizados do Facebook. Sempre que um cliente se qualificar para esse segmento， um senal será enviado ao lado do servicor （伺服器端） do Facebook para incluir esse cliente no Público Personalizado no lado do Facebook。
 
-無Facebook，voce encontrará seu segmento da Adobe Experience Platform em Públicos Personalizados：
+無Facebook，請向Adobe Experience Platform區段查詢públicos Personalizados：
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 

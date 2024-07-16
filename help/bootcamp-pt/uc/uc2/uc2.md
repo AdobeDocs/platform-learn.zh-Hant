@@ -11,16 +11,16 @@ feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 21ca2a7a-fdf2-4cdf-97df-13c4e208d2ea
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 2%
+source-wordcount: '218'
+ht-degree: 1%
 
 ---
 
-# 2. Objetivos de aprendizado
+# 2.阿普雷迪薩多物件
 
 ## 學習目標
 
-## 必備
+## 先決條件
 
 - Acesso à Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Acesso à coleta de dados da Adobe Experience Platform： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
@@ -28,32 +28,32 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->Este教學課程可供criado para facilitar um formato específico de bootcamp使用。 Sistemas e contas específicos aos quais voce pode nao ter acesso sao utilizados neste教學課程。 Mesmo sem acesso， voce ainda pode aprender muito com a leitura deste conteúdo detalhado. Se voce é um participante de um bootcamp e precisa das credenciais de acesso， entre em contato com representant da Adobe para receeber as information escessárias.
+>Este教學課程會提供criado para facilitar um formato específico de bootcamp。 Sistemas e contas específicos aos quais voce pode não ter acesso sao utilizados neste教學課程。 Mesmo sem acesso， voce ainda pode aprender muito com a leitura deste conteúdo detalhado. 若有任何人參與了bootcamp e precisa das credenciais de acesso，請輸入em contato以取得必要資訊來代表Adobepara receeber。
 
 ## 練習
 
 [2.1 Visite o site e crie sua conta](./ex1.md)
 
-Neste exercício， voce irá aprender como configurar um evento.
+Neste excício， voce irá aprender comgo configurar um evento.
 
 [2.2 Crie seu evento](./ex2.md)
 
-Neste exercício， voce irá aprender como configurar um evento.
+Neste excício， voce irá aprender comgo configurar um evento.
 
-[2.3 Crie sua jornada e mensagem de電子郵件](./ex3.md)
+[2.3 Crie sua jornada e mensagem de email](./ex3.md)
 
-Neste exercício， voce irá aprender como設定uma jornada e uma mensagem de email。
+Neste excício， voce irá aprender como configurar uma jornada e uma mensagem de email.
 
-[2.4測驗sua jornada](./ex4.md)
+[2.4測驗](./ex4.md)
 
-Neste exercício， voce irá testar a jornada que voce criou.
+內斯特·施泰西奧，我們來看看你的心情。
 
 [2.5安裝applicativo móvel使用](./ex5.md)
 
-Neste exercício， voce irá instalar o applicativo móvel.
+內斯特·施泰西奧，請向您介紹applicativo móvel。
 
 [2.6 Personalizaçao無客服中心](./ex6.md)
 
-Neste exercício， voce verá como uma experiencia de call center pode ser otimizada com base na inteligencia da Adobe Experience Platform。
+Neste excício， voce verá como uma experiencia de call center pode ser otimizada com base na inteligencia da Adobe Experience Platform。
 
 [Retornar para Todos os Módulos](../../overview.md)

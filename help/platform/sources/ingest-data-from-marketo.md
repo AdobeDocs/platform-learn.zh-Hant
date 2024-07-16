@@ -13,14 +13,14 @@ thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 0%
+source-wordcount: '148'
+ht-degree: 18%
 
 ---
 
 # 從Marketo Engage擷取資料
 
-瞭解如何使用兩個工作流程，使用來源聯結器輕鬆將資料從Marketo Engage擷取到Real-time Customer Data Platform、B2B Edition和Adobe Experience Platform。
+了解如何使用來源連接器和兩個工作流程，輕鬆地從 Marketo Engage 將資料擷取到 Real-Time Customer Data Platform B2B 版本和 Adobe Experience Platform。
 
 ## 範本工作流程
 
@@ -35,5 +35,5 @@ ht-degree: 0%
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 如需詳細資訊，請參閱下列檔案：
-* [Marketo Engage來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
+* [Marketo Engage來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html)。
 * [在UI中使用範本建立來源資料流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

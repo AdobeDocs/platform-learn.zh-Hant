@@ -11,38 +11,38 @@ feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 1%
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
-# 4.4 Preparacao de dados emCustomer Journey Analytics
+# 4.4 Preparação de dados emCustomer Journey Analytics
 
 ## 物件
 
 - Entenda a UO do Analysis Workspace no CJA
 - Entenda os conceitos de preparação de dados no Analysis Workspace
-- Aprenda a fazer cálculos de dados
+- 卡魯庫洛斯·德·達多斯魔法師的阿普倫達
 
-## 4.4.1 UI do Analysis Workspace無CJA
+## 4.4.1 UI do Analysis Workspace no CJA
 
-O Analysis Workspace移除todas as limitacoes típicas de um único relatório do Analytics。 Ele fornece uma tela robusta e flexível para criar project de analytics personalizados. Arraste e solte qualquer número de tabelas de dados， visualizacoes e componentes (dimensoes， métricas， segmentos e granularidades de tempo) para um projeto. Criação instantanea de avarias e segmentos， criação de cortes para análise， criação de alertas， comparação de segmentos， análise de fluxo e de falhas e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
+O Analysis Workspace移除了todas as limitacoes típicas de um único relatório do Analytics。 Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquer número de tabelas de dados， visualizacoes e components (dimensoes， métricas， segmentos e granularidades de tempo) para um projeto. Criação instantanea de avarias e segmentos， criação de cortes para análise， criação de alertas， comparação de segmentos， análise de fluxo e de falhas e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
 
-OCustomer Journey Analyticstraz essa solução além dos dados da plataforma。 在此，我們建議您assistir a este vídeo de visao geral de quatro minutos：
+OCustomer Journey Analyticstraz essa solução além dos dados da plataforma。 您還可在此點選幾分鐘：
 
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
-在Analysis Workspace的祖先上，建議祖先：
+在Analysis Workspace的祖先上課，建議你：
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
 ### Crie Seu專案
 
-Agora é hora de criar seu primeiro projeto do CJA. Vá para a aba de projetos dentro do CJA. 小團體 **新建**.
+Agora é hora de criar seu primeiro projeto do CJA。 Vá para aba de projetos dentro do CJA. 點按&#x200B;**新建**。
 
 ![示範](./images/prmenu.png)
 
-真好，敬請期待。 選擇器 **空白專案** entao clique em **建立**.
+我願意，願意。 選取&#x200B;**空白專案** entao clique em **建立**。
 
 ![示範](./images/prmenu1.png)
 
@@ -50,7 +50,7 @@ Voce verá um projeto vazio.
 
 ![示範](./images/premptyprojects.png)
 
-Primeiro， certifique-se de selececonar a Visualização de dados correta no canto superior direito da tela. Neste範例，一個Visualização de dados a ser selectionada é `vangeluwe - Omnichannel Data View`.
+Primeiro， certifique-se de selecionar a Visualização de dados correta no canto superior direito da tela. Neste範例， a Visualização de dados a ser selecitoonada é `vangeluwe - Omnichannel Data View`。
 
 ![示範](./images/prdv.png)
 
@@ -61,7 +61,7 @@ Em seguida， voce irá salvar seu projeto e dar um nome a ele. Voce pode usar o
 | Windows | Control + S |
 | Mac | Command + S |
 
-Voce verá este快顯：
+語音快顯：
 
 ![示範](./images/prsave.png)
 
@@ -71,43 +71,43 @@ Voce verá este快顯：
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-Em seguida，小團體 **儲存**.
+Em seguida，點按&#x200B;**儲存**。
 
 ![示範](./images/prsave2.png)
 
 ## 4.4.2梅特里卡斯電腦
 
-Embora tenhamos organizado todos os componentes na Visualização de dados， voce ainda deve adaptar alguns dels para que os usuários de negócios estejam prontos para iniciar suas análises. Além disso， durante qualquer processo de analytics， voce pode criar métricas calculadas para proprofundar a descoberta de insights.
+Embora tenhamos organizado todo os components na Visualização de dados， voce ainda deve adaptar alguns dels para que os usuários de negócios estejam prontos para iniciar suas análises. Além disso， durante qualquer processo de analytics， voce pode criar métricas calculadas para profundar a descoberta de insights.
 
-Como範例，criaremos uma Taxa de converso calculada usando a metric/evento Compras que definimos na Visualização de dados。
+Como範例， criaremos uma Taxa de converso calculado usando a metric/evento Compras que definimos na Visualização de dados。
 
-## 轉換分類法
+## 轉換的分類法
 
-Vamos comecar a abrir o constructor de métricas calculadas. 小團體 **+** 在Analysis Workspace上計算過的初級美術。
+Vamos comecar a abrir o constructor de métricas calculadas. 在Analysis Workspace上建立群組&#x200B;**+** para criar sua primeira Media calculada。
 
 ![示範](./images/pradd.png)
 
-O **計算量度產生器** 伊拉·阿帕雷克：
+O **計算量度產生器** irá aparecer：
 
 ![示範](./images/prbuilder.png)
 
-參與 **購買** métricas na lista de métricas no menu do lado esquerdo. Em **量度** 小團體 **全部顯示**
+進入&#x200B;**購買** na lista de métricas no menu do lado esquerdo。 Em **量度** clique em **全部顯示**
 
 ![示範](./images/calcbuildercr1.png)
 
-Agora arraste e solte a metric **購買** 一個美體計算器。
+Agora arraste e solte a métrica **購買** na definicao da métrica calculada。
 
 ![示範](./images/calcbuildercr2.png)
 
-Normalmente， taxa de conversão significa **轉換/工作階段**. Entao， vamos fazer o mesmo cálculo na tela de definicao de métrica calculada. 進入媒體 **工作階段** e arraste e solte-a no criador de definicao，no evento **購買**.
+Normalmente， taxa de conversão signifa **轉換/工作階段**。 Entao， vamos fazer o mesmo cálculo na tela de definicao de metric calculada. 進入媒體&#x200B;**工作階段**&#x200B;排程e solte-a no criador de definicao，無事件&#x200B;**購買**。
 
 ![示範](./images/calcbuildercr3.png)
 
-觀察運算元自動選取。
+觀察運算元自動選取的差異。
 
 ![示範](./images/calcbuildercr4.png)
 
-Taxa de conversão é commente representada em porcentagem. Entao， vamos mudar o formato para porcentagem e selecesionar 2 casas decismais.
+A taxa de conversão é commente representada em porcentagem. Entao， vamos mudar o formato para porcentagem e seleciconar 2 casas decismais.
 
 ![示範](./images/calcbuildercr5.png)
 
@@ -117,11 +117,11 @@ Taxa de conversão é commente representada em porcentagem. Entao， vamos mudar
 | ----------------- |-------------| 
 | 轉換率 | 轉換率 |
 
-朋友們，請改名，以美食為主題：
+冰淇淋、冰淇淋、冰淇淋：
 
 ![示範](./images/calcbuildercr6.png)
 
-Nao se esqueca de **Salvar** 一個美體電腦。
+Nao se esqueca de **Salvar** a Métrica電腦。
 
 ![示範](./images/pr9.png)
 
@@ -129,33 +129,33 @@ Nao se esqueca de **Salvar** 一個美體電腦。
 
 ### 篩選：維度計算
 
-Os cálculos nao devem ser apenas para métricas. Antes de iniciar qualquer análise， também é interessante criar algumas **計算Dimension**. 這是重要的，重要的， **區段** 無Adobe Analytics。 無Customer Journey Analytics，esses segmentos sao chamados de **篩選器**.
+Os cálculos nao devem ser apenas para métricas. Antes de iniciar qualquer análise， também é interessante criar algumas **計算Dimension**。 Adobe Analytics上的Isso重要性， essencialmente， **區段**。 無Customer Journey Analytics，esses segmentos sao chamados de **篩選器**。
 
 ![示範](./images/prfilters.png)
 
-A criação de filtros ajudará os usuários de negócios a iniciar o analytics com algumas dimensoes calculadas valiosas. Isso irá automatizar algumas tarefas， além de ajudar na parte de adocao. Abaixo演演算法範例：
+A criação de filtros ajudará os usuários de negócios a iniciar o analytics com algumas dimensoes calculadas valiosas。 Isso irá automatizar algumas tarefas， além de ajudar na parte de adocao. Abaixo演演算法範例：
 
-1. 米迪亞普洛普利亞，帕加，
+1. 米迪亞普洛普利亞，米迪亞帕加，
 2. Visitas novas x recorrentes
-3. 使用者端com carrinho abandonado
+3. 客戶公司放棄購買
 
 Esses filtros podem ser criados antes ou durante a parte de análise (o que voce fará no próximo exercício)。
 
 ### 資料間隔：時間計算的維度
 
-如同維度de tempo sao outro tipo de dimensoes calculadas。 Alguns já foram criados， mas voce também pode criar suas próprias Dimensoes de tempo personalizadas na fase de preparação de dados.
+如維度所示。 Alguns já foram criados， mas voce também pode criar suas próprias Dimensoes de tempo personalizadas na fase de preparação de dados.
 
-Essas Dimensoes de tempo calculado ajudarao analistas e usuários de negócios a lembrar datas important e usá-las para filtrar e alterar o tempo de relatório. 佩爾貢塔斯·烏維達斯·蒂皮卡斯·坎多·法澤莫斯·阿納利塞斯：
+Essas Dimensoes de tempo calculado ajudarao analistas e usuários de negócios a lembrar datas important e usá-las para filtrar e alterar o tempo de relatório. 佩爾貢塔斯·烏維達斯·提皮卡斯·全都·法澤莫斯·阿納利塞斯：
 
-- 全島在黑色星期五可以吃到嗎？ Entre os dias 21 e 29？
-- Quando veiculamos aquela campanha de TV em dezembro？
-- De quando a quando fizemos as vendas de verao de 2018？ Quero comparar com 2019. 2019年Voce sabe os dias exatos em？
+- 全島黑色星期五不吃香腸？ Entre os dias 21 e 29？
+- 全都veiculamos aquela campanha de TV em dezembro？
+- De quando a quando fizemos as vendas de verao de 2018？ Quero comparar com 2019。 2019年sabe os dias exatos em的提案？
 
 ![示範](./images/timedimensions.png)
 
-Agora voce concluiu o excício de preparação de dados usando o o Analysis Workspace do CJA.
+Agora voce conclouiu o excício de preparação de dados usando o o Analysis Workspace do CJA.
 
-冰淇淋甜菜： [4.5 Visualização usandoCustomer Journey Analytics](./ex5.md)
+Próxima etapa： [4.5 Visualização usandoCustomer Journey Analytics](./ex5.md)
 
 [Retornar para Fluxo de Usuário 4](./uc4.md)
 

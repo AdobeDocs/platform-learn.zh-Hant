@@ -2,9 +2,10 @@
 title: CSC Bootcamp — 規劃
 description: CSC Bootcamp — 規劃
 doc-type: multipage-overview
-source-git-commit: 989e4e2add1d45571462eccaeebcbe66a77291db
+exl-id: 7ea5c01a-67b7-42e7-bb30-0f65f9a8210f
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1384'
 ht-degree: 0%
 
 ---
@@ -13,216 +14,216 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 在布特坎普期間，你會戴幾頂帽子：申請人、項目經理、設計師和高級管理人員。 這可讓您一目瞭然地了解每個設定檔的使用者體驗。
+> 在Bootcamp期間，您會戴上好幾個帽子：請求者、專案經理、Designer和上層管理。 這會讓您略過每個設定檔的使用者體驗。
 
-現在來看看工作管理平台，Adobe Workfront。 Workfront可讓您的目標在整個組織中可見，讓每個人都能策略性地排定工作優先順序、追蹤進度並衡量結果。 隨著你的目標的發展，Workfront將資訊傳遞給執行實地工作的團隊。 結果呢？ 更協調一致、更專注、更快取得成功。
+現在來看看工作管理平台Adobe Workfront。 Workfront可讓整個組織看見您的目標，讓每個人都能策略性地排定工作的優先順序、追蹤進度並評估結果。 隨著您的目標不斷發展，Workfront會將資訊級聯到在實地執行工作的團隊。 結果如何？ 更佳的協調性、焦點與速度，讓您以更快的速度取得成功。
 
-瀏覽至，登入您的Workfront設定檔 [adobebootcampemea-02032301.testdrive.workfront.com](https://adobebootcampemea-02032301.testdrive.workfront.com) 並使用Adobe團隊提供給您的憑證登入。
+瀏覽至[adobebootcampemea-02032301.testdrive.workfront.com](https://adobebootcampemea-02032301.testdrive.workfront.com)，並使用Adobe團隊提供給您的認證登入Workfront設定檔。
 
-此登入頁面將會對您造成影響。  以用戶名的形式以您訂購到bootcamp的專業電子郵件地址登錄：
+您將面臨此登入頁面。  以您訂閱啟動訓練營的專業電子郵件地址登入，使用者名稱為：
 
 ![Adobe登入頁面](./images/adobe-login.png)
 
-成功登入後，您會面臨此首頁：
+成功登入後，您將面臨此首頁：
 
 ![Workfront首頁](./images/wf-homepage.png)
 
 ## 準備Workfront以供使用
 
-我們現在會準備首頁，就像定期使用Workfront一樣。  這表示我們將前往，取得稍後工作流程的相關頁面，並在首頁頂端「PIN」這些頁面。
+我們現在會定期使用Workfront，準備首頁。  這表示我們將前往取得工作流程的相關頁面，並在首頁上「釘選」這些頁面。
 
-首先，讓我們去獲取我們的TEAM的工作負載頁。  按一下右上方的華夫餅，然後選取「團隊」
+首先，讓我們前往取得團隊的工作負載頁面。  按一下右上方的華夫餅並選取「團隊」
 
-![「團隊」功能表](./images/wf-teams.png)
+![團隊功能表](./images/wf-teams.png)
 
-一旦我們的團隊（行銷 — 數位）上螢幕，只需將其「PIN」到您的頂端功能區：
+一旦我們的TEAM (Marketing - Digital)出現在熒幕上，只要將其「釘選」到您的最上方色帶即可：
 
-![固定頁面](./images/wf-pin.png)
+![釘選頁面](./images/wf-pin.png)
 
-您的頂端功能區現在應該如下所示：
+您最上層的功能區現在看起來應該像這樣：
 
-![頂色帶](./images/wf-top-ribbon.png)
+![最上層功能區](./images/wf-top-ribbon.png)
 
-現在，請確定一個項目，我們稍後將更詳細地分析該項目。  按一下「項目已固定」頁，然後按一下搜索按鈕。  輸入「行動應用程式感知行銷活動」，然後按一下專案名稱：
+現在來釘選一個專案，我們稍後將更密切地分析該專案。  按一下「已釘選專案」頁面，然後按一下搜尋按鈕。  輸入「行動應用程式感知促銷活動」，然後按一下專案名稱：
 
-![行動應用程式感知](./images/wf-app-awareness.png)
+![行動應用程式感知度](./images/wf-app-awareness.png)
 
-在您的螢幕上顯示項目後，像以前一樣將其固定到您的頂部功能區：
+一旦專案出現在您的熒幕上，請像之前一樣將它釘選到您的頂端功能區：
 
-![再次釘選頁面](./images/wf-pin-2.png)
+再次釘選![頁面](./images/wf-pin-2.png)
 
-您的頂端功能區現在應該如下所示：
+您最上層的功能區現在看起來應該像這樣：
 
-![更新頂端功能區](./images/wf-ribbon-2.png)
+![已更新最上層功能區](./images/wf-ribbon-2.png)
 
-最後，再按一下右上角的華夫餅，然後選取PORTFOLIO。
+最後，再按一下右上方的華夫餅並選取PORTFOLIO。
 
-![產品組合](./images/wf-portfolios.png)
+![投資組合](./images/wf-portfolios.png)
 
-按一下搜尋按鈕，然後輸入&#39;TRANSFORM&#39;。  按一下「轉換客戶體驗」Portfolio以開啟：
+按一下搜尋按鈕並輸入&#39;TRANSFORM&#39;。  按一下「轉換客戶體驗」Portfolio以開啟：
 
-![轉換客戶體驗](./images/wf-transform-cx.png)
+![轉變客戶體驗](./images/wf-transform-cx.png)
 
-Portfolio開啟後，將其釘選到頂部功能區：
+開啟Portfolio後，將它釘選到您的頂端功能區：
 
-![pin組合](./images/wf-portfolio-pin.png)
+![釘選投資組合](./images/wf-portfolio-pin.png)
 
-您的頂端功能區現在應該如下所示：
+您最上層的功能區現在看起來應該像這樣：
 
-![最上方的絲帶](./images/wf-final-top-ribbon.png)
+![最後一個最上層功能區](./images/wf-final-top-ribbon.png)
 
-現在，我們已準備好透過介面開始工作流程，該介面會定期向我們顯示我們需要的內容。
+我們現在已準備好使用介面來開始工作流程，該介面會定期向我們顯示確切的需求。
 
 ## 請求者
 
-現在，我們將從申請人的帽子開始實際工作。 如果申請人（例如產品經理）想要正式化新Adobe促銷活動的請求，並提供行銷簡報的資訊。
+我們現在將以請求者的帽子開始實際的工作錄入。 例如產品經理等請求者，我們想將新Adobike行銷活動的請求正規化，並提供行銷簡報的資訊。
 
-- 按一下左上角的「請求」 :
+- 在左上方，按一下要求：
 
-![Workfront請求](./images/wf-homepage-requests.png)
+![Workfront要求](./images/wf-homepage-requests.png)
 
-- 然後，按一下「新請求」：
+- 接著，按一下「新要求」：
 
-![新請求](./images/wf-new-request.png)
+![新要求](./images/wf-new-request.png)
 
-- 由於是請求類型，請依序選取「行銷請求」、「CSB — 行銷活動請求」：
+- 要求型別請選取「行銷要求」，然後選取「CSB — 行銷活動要求」：
 
 ![CSB要求](./images/wf-csb-request.png)
 
-- 輸入主題：「Adobike促銷活動 — \*team\*」（填入您的團隊編號）。 您可以自由新增說明和優先順序。
+- 輸入主旨： &quot;Adobike Campaign - \*team\*&quot; （填寫您的團隊編號）。 您可以隨意新增說明和優先順序。
 
-![請求詳細資訊](./images//wf-request-details.png)
+![要求詳細資料](./images//wf-request-details.png)
 
-- 「CSB — 行銷活動簡報」標題下的所有項目皆可完全自訂。 在此案例中，這些都是您可以根據自己行銷簡報需求調整的自訂欄位。 以下是我們為此Bootcamp建立的Brief欄位：
+- 「CSB — 行銷活動簡報」標頭下方的所有內容皆可完全自訂。 在此情況下，這些都是自訂欄位，您可以根據自己的行銷簡要需求進行調整。 以下是我們已為此Bootcamp建立的簡短欄位：
 
-![Workfront中的自訂欄位](./images//wf-custom-fields.png)
+Workfront中的![自訂欄位](./images//wf-custom-fields.png)
 
-- 讓我們開始填寫簡報：
+- 讓我們開始填寫以下簡報：
 
-   - 將開始日期設為01/06/2023 — 將結束日期設為30/06/2023:
+   - 將開始日期設為01/06/2023 — 將結束日期設為30/06/2023：
 
-   ![設定開始和結束日期](./images/wf-start-end-date.png)
+  ![設定開始和結束日期](./images/wf-start-end-date.png)
 
-   - 選取AEM Assets，因為我們將在此促銷活動中使用一些資產：
+   - 選取AEM Assets，因為我們將有一些資產可用於那裡的這個行銷活動：
 
-   ![AEM Assets中的現有內容](./images/wf-aem-assets.png)
+  ![AEM Assets中的現有內容](./images/wf-aem-assets.png)
 
-   - 請注意，在「新內容」上，如果按一下「是」，會出現額外（條件性）欄位，並出現時間列警告：
+   - 在「新增內容」上，請注意，如果您按一下「是」，會出現一個附有時間線警告的額外（條件）欄位：
 
-   ![新內容顯示警告](./images/wf-new-content.png)
+  ![新內容顯示警告](./images/wf-new-content.png)
 
-   - 由於我們的最後期限很緊，因此我們將選擇改為「否」：
+   - 由於期限很緊，我們將選擇變更為「否」：
 
-   ![無新內容](./images/wf-no-new-content.png)
+  ![沒有新內容](./images/wf-no-new-content.png)
 
-   - 在管道上，我們已選取預設預先選取部分。 我們下一步需要的就是這些，因此這裡不需要任何改變：
+   - 在管道中，我們依預設選擇預先選取一些管道。 這些就是我們下一步所需的專案，因此這裡不需要變更：
 
-   ![頻道](./images/wf-channels.png)
+  ![頻道](./images/wf-channels.png)
 
-   - Adobe Commerce，選擇是：
+   - Adobe Commerce，選取「是」：
 
-   ![選擇商務](./images/wf-commerce.png)
+  ![選取Commerce](./images/wf-commerce.png)
 
-- 最後，在檔案區段中，您可以為請求新增任何相關檔案。  在此，我們將利用AEM連接器，說明如何從我們的AEM Assets例項取得現有內容。
+- 最後，在檔案區段中，您可以新增請求的任何相關檔案。  在此，我們將使用AEM聯結器來顯示如何從我們的AEM Assets例項取得現有內容。
 
-   - 按一下「新增或連結檔案」，然後選取「experience-manager」中的「連結」。
+   - 按一下「新增或連結檔案」並從「experience-manager」選取「連結」。
 
-   ![新增連結](./images/wf-add-links.png)
+  ![新增連結](./images/wf-add-links.png)
 
-   - 您現在會面臨AEM Assets資料夾，可以瀏覽這些資料夾（和/或使用搜尋引擎），以取得您要求所需的檔案/資產：
+   - 您現在必須使用AEM Assets資料夾，並透過這些資料夾瀏覽（和/或使用搜尋引擎）以取得請求所需的檔案/資產：
 
-   ![選擇資料夾](./images/wf-linked-folders.png)
+  ![選取資料夾](./images/wf-linked-folders.png)
 
-   - 您可以隨時附加AEM Assets中您認為可能與此專案相關的任何項目（如果有的話）。 完成後，按一下「連結」以連結至資產，或按一下「關閉」以連結任何資料夾。
+   - 您可以隨時從AEM Assets附加任何您認為與此專案相關的專案（如果有的話）。 完成後，請按一下「連結」以連結至資產，如果未連結任何資料夾，請按一下「關閉」。
 
-   ![close](./images/wf-close.png)
+  ![close](./images/wf-close.png)
 
-- 我們現在已完成請求並準備提交：
+- 我們已完成請求，並準備提交請求：
 
-![提交請求](./images/wf-submit-request.png)
+![提交要求](./images/wf-submit-request.png)
 
 
-## Project Manager
+## 專案經理
 
-現在，我們已以「請求者」（例如產品經理）的身份提交請求，我們將更換帽子，並戴上其中一個項目經理。
+現在我們已以「請求者」（例如產品經理）身分提交請求，我們將更換帽子，並戴上「專案經理」的頭銜。
 
-- 按一下「Adobe」標誌，然後您就會進入「新行銷請求」頁面（這是典型的「專案經理」首頁）:
+- 按一下「Adobe」標誌，您就會進入「新行銷請求」頁面（這是典型的「專案經理」首頁）：
 
 ![按一下Adobe標誌](./images/wf-click-adobe-logo.png)
 
-- 在「行銷 — 新促銷活動請求」區段下，您可以找到新建立的請求：
+- 在「行銷 — 新行銷活動請求」區段下，您可以找到新建立的請求：
 
 ![新建立的請求](./images/wf-newly-created-request.png)
 
 - 按一下請求名稱：
 
-![請求名稱](./images/wf-request-name.png)
+![要求名稱](./images/wf-request-name.png)
 
 - 按一下「請求詳細資料」：
 
-![請求詳細資訊](./images/wf-request-details2.png)
+![要求詳細資料](./images/wf-request-details2.png)
 
-- 向下捲動至「CSB — 行銷活動簡報」區段並展開：
+- 向下捲動至「CSB — 行銷活動簡報」區段，並將其展開：
 
-![擴展CSB部分](./images/wf-csb-expand.png)
+![展開CSB區段](./images/wf-csb-expand.png)
 
-- 您可以查看申請人的簡介的所有詳細資訊，並透過此資訊，您可以根據範本啟動專案計畫。
-   - 在頂端的「請求」名稱旁，按一下三個點：
+- 您可以檢視請求者簡介的所有詳細資訊，有了這些資訊，您就可以根據範本來開始專案計畫。
+   - 在上方、請求名稱旁，按一下三個點：
 
-   ![按一下三個點](./images/wf-request-threedots.png)
+  ![按一下三個點](./images/wf-request-threedots.png)
 
    - 按一下「從範本轉換為專案」：
 
-   ![轉換為專案](./images/wf-convert-to-project.png)
+  ![轉換至專案](./images/wf-convert-to-project.png)
 
    - 選取「CSB — 行銷活動」，然後按一下「使用範本」：
 
-   ![使用範本](./images/wf-use-template.png)
+  ![使用範本](./images/wf-use-template.png)
 
    - 按一下頁面底部的「轉換為專案」：
 
-   ![轉換為專案](./images/wf-convert-to-project.png)
+  ![轉換至專案](./images/wf-convert-to-project.png)
 
-- 我們現在有以範本為基礎的Campaign專案工作流程。 我們稍後再確定項目。 按一下「釘上目前的頁面」：
+- 我們現在擁有以範本為基礎的Campaign專案工作流程。 讓我們稍後釘選專案。 按一下「釘選目前頁面」：
 
-![固定頁面](./images/wf-pin-page.png)
+![釘選頁面](./images/wf-pin-page.png)
 
-- 一些值得注意的領域：
+- 需要注意的方面：
 
-![注意領域](./images/wf-areas-of-attention.png)
+![關注領域](./images/wf-areas-of-attention.png)
 
-1. 持續時間的概念 — 完成任務的機會窗口。\
-   計畫小時數的概念 — 完成任務所需的實際時間。
+1. 期間概念 — 它是完成任務的機會視窗。\
+   計畫時數的概念 — 完成任務所需的實際時間。
 
-1. 前置任務的概念（也稱為相依性） — 這些是任務之間可以有的約束（通常，在完成另一個任務之前無法啟動此任務）。 這樣，我們就可以擁有清晰的Gant圖，其中包含每個項目的關鍵路徑。 按一下以下表徵圖可查看全局圖：
+1. 前置任務概念（亦稱為相依性） — 這些是任務之間可以具有的限制條件（通常，此任務不能在此另一個任務完成之前開始）。 這可讓我們擁有清楚的甘特圖，其中包含每個專案的關鍵路徑。 按一下下方圖示以檢視甘特圖：
    ![甘特圖](./images/wf-gant-chart.png)
 
-1. 分配的概念 — 在建立項目時，分配仍然是泛型的，因為它們來自模板。 它們由「工作角色」（由「錘子」表徵圖表示）或「團隊」（由「人員」表徵圖表示）（由「公司人員」組定義）組成。 現在是把這些任務分配給個人的時候了。
+1. 指派的概念 — 在建立專案時，指派仍是一般性的，因為它們來自範本。 它們會提供給職務角色（以槌子圖示表示，亦即具有完成此特定任務之技能的人員群組）或團隊（以人員圖示表示，亦即由您的公司人員群組所定義）。 現在到了將這些工作指派給個人的時候。
 
-- 今天，我們將專注於團隊預分配以及如何將這些分配給個人。
+- 今天，我們將專注於團隊預先指派，以及如何將這些指派給個人。
 
-- 如您所見，工作11「製作社交媒體廣告」已指派給「行銷 — 數位」團隊：
-   ![任務分配](./images/wf-social-media.png)
+- 如您所見，工作11「製作社群媒體廣告」已指派給「行銷 — 數位」團隊：
+  ![工作分派](./images/wf-social-media.png)
 
-- 在「資源管理」(Resource Management)頁開啟，讓我們查看這如何反映此團隊的計畫。 按一下頁面頂端的「行銷 — 數位」PIN碼：
-   ![行銷數位釘](./images/wf-marketing-digital.png)
+- 讓我們透過開啟該團隊的資源管理頁面，來瞭解這如何反映該團隊的計畫。 按一下頁面上方的「行銷 — 數位」PIN碼：
+  ![行銷數點陣圖釘](./images/wf-marketing-digital.png)
 
-- 您現在擁有此「團隊」計畫檢視：
+- 您現在有此「團隊規劃」檢視：
 
-![團隊計畫視圖](./images/wf-teams-planning-view.png)
+![個計畫檢視的團隊](./images/wf-teams-planning-view.png)
 
-1. 頂部覆蓋了該特定團隊的「未分配」工作。 它列出了團隊在中分配的項目，按一下此處的箭頭，您可以看到需要由項目覆蓋的確切任務：
-   ![未分配的工作](./images/wf-unassigned.png)
+1. 頂端部分涵蓋該特定團隊的「未指派」工作。 它列出專案團隊指派的專案，按一下這裡的箭頭，您就可以看到專案需要涵蓋的確切任務：
+   ![未指派的工作](./images/wf-unassigned.png)
 
-1. 底部部分涵蓋團隊中個人的「已分配」工作，但不僅限於：它確實顯示了小組每個成員的實際工作量，也顯示了他們的日程安排（例如週一至週五或週一至週六）、節假日等。
-   ![指派的工作](./images/wf-assigned.png)
+1. 底部涵蓋團隊中個人的指派工作，但不僅顯示：它確實顯示團隊每個成員的實際工作量，也顯示其排程（例如週一至週五或週一至週六）、其假日等。
+   ![已指派的工作](./images/wf-assigned.png)
 
-- 要將任務分配給個人，只需將任務從頂部拖到底部某個人的行即可 — 查看Bea的工作量如何調整以及其任務分配的詳細資訊已添加：
-   ![分配的工作](./images/wf-individually-assigned.png)
+- 若要將任務指派給個人，只要將任務從頂端拖曳至底部單一個人行即可 — 請參閱Bea的工作負載已如何調整，以及其任務指派的詳細資訊已新增：
+  ![個別指派的工作](./images/wf-individually-assigned.png)
 
 
-下一步： [第1階段 — 規劃：其他前期工作](./prework.md)
+下一步： [階段1 — 計畫：其他前置工作](./prework.md)
 
-[返回Creative Brief](../../creative-brief.md)
+[返回創意簡介](../../creative-brief.md)
 
 [返回所有模組](../../overview.md)

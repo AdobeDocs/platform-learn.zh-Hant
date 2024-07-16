@@ -8,8 +8,8 @@ doc-type: multipage
 recommendations: noDisplay,noCatalog
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 46%
+source-wordcount: '104'
+ht-degree: 40%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 46%
 + [資料架構師與工程師教學課程](overview.md)
 + [1.設定許可權](configure-permissions.md)
 + [2.建立沙箱](create-a-sandbox.md)
-+ [3.設定開發人員控制檯和Postman](set-up-developer-console-and-postman.md)
++ [3.設定Developer Console和Postman](set-up-developer-console-and-postman.md)
 + [4.結構描述中的模型資料](model-data-in-schemas.md)
 + [5.對應身分](map-identities.md)
 + [6.建立資料集](create-datasets.md)

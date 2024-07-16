@@ -8,16 +8,16 @@ doc-type: Feature Video
 duration: 389
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14075
-source-git-commit: c0466656d0133055d809a9304aec5cd65c67c49c
+exl-id: 31a25812-53d6-47c3-9453-35262066648e
+source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%
 
 ---
 
-
 # 建立和發佈Playbook例項
 
-透過此端對端示範影片，瞭解如何探索、建立、發佈使用案例劇本的例項，並進行疑難排解。 如需詳細資訊，請參閱 [建立、共用及重複使用教戰手冊例項](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
+透過此端對端示範影片，瞭解如何探索、建立、發佈使用案例劇本的例項，並進行疑難排解。 如需詳細資訊，請參閱[建立、共用和重複使用行動手冊執行個體](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on)

@@ -17,10 +17,10 @@ ht-degree: 4%
 
 # AI 助理
 
-瞭解您可以在Real-time Customer Data Platform、Journey Optimizer和Customer Journey Analytics等Adobe Experience Platform應用程式中使用AI助理做什麼。 如需詳細資訊，請造訪 [AI助理檔案](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home).
+瞭解您可以在Real-time Customer Data Platform、Journey Optimizer和Customer Journey Analytics等Adobe Experience Platform應用程式中使用AI助理做什麼。 如需詳細資訊，請瀏覽[AI助理檔案](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on)
 
 >[!IMPORTANT]
 >
-> 必須為您的使用者啟用AI Asstant許可權專案，才能使用此功能。 請參閱 [AI助理存取檔案](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access) 以取得詳細資訊。
+> 必須為您的使用者啟用AI Asstant許可權專案，才能使用此功能。 如需詳細資訊，請參閱[AI助理存取檔案](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access)。

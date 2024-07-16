@@ -1,47 +1,48 @@
 ---
-title: 呈現VEC活動 |將Target從at.js 2.x移轉至Web SDK
-description: 了解如何透過Adobe Target的Web SDK實作來擷取和套用可視化體驗撰寫器活動。
-source-git-commit: ca2fade972a2f7f84134ee4ef9c0f24c5ab1c5c6
+title: 轉譯VEC活動 | 將Target從at.js 2.x移轉至Web SDK
+description: 瞭解如何透過Adobe Target的Web SDK實作擷取及套用視覺化體驗撰寫器活動。
+exl-id: bbbbfada-e236-44de-a7bf-5c63ff840db4
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '830'
-ht-degree: 6%
+source-wordcount: '767'
+ht-degree: 0%
 
 ---
 
-# 呈現Adobe Target可視化體驗撰寫器(VEC)活動
+# 呈現Adobe Target視覺化體驗撰寫器(VEC)活動
 
-Target活動是使用可視化體驗撰寫器(VEC)或表單式撰寫器來設定。 Platform Web SDK可像at.js一樣，擷取VEC型活動並套用至頁面。 在移轉的這部分，您會：
+使用視覺化體驗撰寫器(VEC)或表單式撰寫器來設定Target活動。 Platform Web SDK可以擷取以VEC為基礎的活動，並套用至頁面，就像at.js一樣。 對於移轉的這個部分，您將會：
 
 * 安裝Visual Editing Helper瀏覽器擴充功能
-* 執行 `sendEvent` 使用Platform Web SDK呼叫以要求活動。
-* 更新來自您at.js實作的任何參考，這些實作會使用 `getOffers()` 執行目標 `pageLoad` 請求。
+* 使用Platform Web SDK執行`sendEvent`呼叫以要求活動。
+* 更新您的at.js實作中任何使用`getOffers()`執行Target `pageLoad`要求的參考。
 
 ## Visual Editing Helper瀏覽器擴充功能
 
-適用於Google Chrome的Adobe Experience Cloud Visual Editing Helper瀏覽器擴充功能可讓您在Adobe Target可視化體驗撰寫器(VEC)中以可靠的方式載入網站，以快速撰寫網頁體驗和保證體驗品質。
+適用於Google Chrome的Adobe Experience Cloud Visual Editing Helper瀏覽器擴充功能可讓您可靠地在Adobe Target視覺化體驗撰寫器(VEC)內載入網站，以快速撰寫網站體驗及評估品質。
 
 Visual Editing Helper瀏覽器擴充功能適用於使用at.js或Platform Web SDK的網站。
 
-### 獲取並安裝Visual Editing Helper
+### 取得並安裝Visual Editing Helper
 
-1. 導覽至 [Adobe Experience Cloud Chrome線上應用程式商店中的Visual Editing Helper瀏覽器擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
-1. 按一下「新增至」 **鉻黃** > **新增擴充功能**.
+1. 瀏覽至Chrome網站商店中的[Adobe Experience Cloud Visual Editing Helper瀏覽器擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)。
+1. 按一下[新增至&#x200B;**Chrome** > **新增擴充功能**。
 1. 在Target中開啟VEC。
-1. 若要使用擴充功能，請按一下Visual Editing Helper瀏覽器擴充功能圖示 ![可視化編輯擴充功能圖示](assets/VEC-Helper.png)在VEC或QA模式時，在Chrome瀏覽器的工具列中出現{zoomable=&quot;yes&quot;}。
+1. 若要使用擴充功能，請在VEC或QA模式中時，按一下Chrome瀏覽器工具列上的Visual Editing Helper瀏覽器擴充功能圖示![Visual Editing擴充功能圖示](assets/VEC-Helper.png){zoomable="yes"}。
 
-Visual Editing Helper 會在 Target VEC 中開啟網站時自動啟用，以支援撰寫。 此擴充功能沒有任何條件設定。 此擴充功能可自動處理所有設定，包括 SameSite Cookie 設定。
+Visual Editing Helper會在Target VEC中開啟網站時自動啟用，以支援撰寫。 擴充功能沒有任何條件設定。 此擴充功能會自動處理所有設定，包括SameSite Cookie設定。
 
-如需 [Visual Editing Helper擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) 和 [疑難排解可視化體驗撰寫器](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+請參閱專屬檔案，以取得有關[Visual Editing Helper擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html)和[疑難排解Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html)的詳細資訊。
 
 >[!IMPORTANT]
 >
->新 [Visual Editing Helper擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) 取代上一個 [Target VEC Helper瀏覽器擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 如果已安裝舊版VEC Helper擴充功能，則應先移除或停用該擴充功能，再使用Visual Editing Helper擴充功能。
+>新的[Visual Editing Helper擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)會取代先前的[Target VEC Helper瀏覽器擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html)。 如果已安裝舊版VEC Helper擴充功能，應先移除或停用該擴充功能，再使用Visual Editing Helper擴充功能。
 
-## 自動要求和套用內容
+## 自動要求與套用內容
 
-在頁面上設定Platform Web SDK後，您就可以向Target要求內容。 與at.js不同，at.js可在程式庫載入時設定為自動要求內容，Platform Web SDK會要求您明確執行命令。
+在頁面上設定Platform Web SDK後，您就可以從Target要求內容。 不同於at.js可設定為在程式庫載入時自動要求內容，Platform Web SDK需要您明確執行命令。
 
-如果您的at.js實作具有 `pageLoadEnabled` 設定為 `true` 可自動轉譯VEC型活動，則您會執行下列動作 `sendEvent` 命令（與Platform Web SDK搭配使用）:
+如果您的at.js實作將`pageLoadEnabled`設定設為`true`，這會啟用自動轉譯VEC型活動，則您將會使用Platform Web SDK執行下列`sendEvent`命令：
 
 >[!BEGINTABS]
 
@@ -55,9 +56,9 @@ alloy("sendEvent", {
 
 >[!TAB 標記]
 
-在標籤中，使用 [!UICONTROL 傳送事件] 動作類型與 [!UICONTROL 轉譯視覺個人化決策] 選項：
+在標籤中，使用[!UICONTROL 傳送事件]動作型別並選取[!UICONTROL 呈現視覺個人化決定]選項：
 
-![傳送在標籤中選取「呈現視覺個人化」決策的事件](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+![傳送事件，其中包含標籤中選取的轉譯器視覺個人化決定](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -67,11 +68,11 @@ When the Platform Web SDK renders an activity to the page with `renderDecisions`
 ![Platform Web SDK call incrementing a Target impression](assets/target-impression-call.png){zoomable="yes"}
 -->
 
-## 隨選要求和套用內容
+## 隨選要求並套用內容
 
-在將VEC選件套用至頁面之前，部分Target實作需要先對VEC選件進行一些自訂處理。 或者，他們在單一呼叫中要求多個位置。 在at.js實作中，您可以透過設定 `pageLoadEnabled` to `false` 和使用 `getOffers()` 執行函式 `pageLoad` 請求。
+有些Target實作需要先對VEC選件進行一些自訂處理，才能將其套用至頁面。 或者，他們會在單一呼叫中要求多個位置。 在at.js實作中，您可以將`pageLoadEnabled`設定為`false`並使用`getOffers()`函式來執行`pageLoad`要求來完成此操作。
 
-+++ at.js範例使用 `getOffers()` 和 `applyOffers()` 手動呈現VEC型活動的方式
++++ at.js範例使用`getOffers()`和`applyOffers()`手動轉譯VEC型活動
 
 ```JavaScript
 adobe.target.getOffers({
@@ -86,13 +87,13 @@ then(response => adobe.target.applyOffers({ response: response }));
 
 +++
 
-Platform Web SDK沒有特定 `pageLoad` 事件。 所有Target內容的請求都可透過 `decisionScopes` 選項 `sendEvent` 命令。 此 `__view__` 範圍符合 `pageLoad` 請求。
+Platform Web SDK沒有特定的`pageLoad`事件。 目標內容的所有要求都是使用`decisionScopes`選項和`sendEvent`命令所控制。 `__view__`範圍符合`pageLoad`要求的用途。
 
-+++ 同等的Platform Web SDK `sendEvent` 方法：
++++ 同等的Platform Web SDK `sendEvent`方法：
 
-1. 執行 `sendEvent` 包含 `__view__` 決策範圍
-1. 將傳回的內容套用至具有 `applyPropositions` 命令
-1. 執行 `sendEvent` 命令 `decisioning.propositionDisplay` 事件類型和主張詳細資料以增加曝光
+1. 執行包含`__view__`決定範圍的`sendEvent`命令
+1. 使用`applyPropositions`命令將傳回的內容套用至頁面
+1. 執行具有`decisioning.propositionDisplay`事件型別和主張詳細資料的`sendEvent`命令，以增加曝光數
 
 ```Javascript
 alloy("sendEvent", {
@@ -127,19 +128,19 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->可以 [手動呈現修改](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) 在可視化體驗撰寫器中建立。 手動轉譯VEC型修改不常見。 檢查您的at.js實作是否使用 `getOffers()` 函式來手動執行Target `pageLoad` 請求不使用 `applyOffers()` 來將內容套用至頁面。
+>可以[手動轉譯在視覺化體驗撰寫器中進行的修改](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content)。 手動呈現VEC型修改並不常見。 檢查您的at.js實作是否使用`getOffers()`函式手動執行Target `pageLoad`要求，而不使用`applyOffers()`將內容套用至頁面。
 
-Platform Web SDK為開發人員提供要求和轉譯內容的極大彈性。 請參閱 [轉譯個人化內容的專屬檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) 以取得其他選項和詳細資訊。
+Platform Web SDK為開發人員在請求和轉譯內容時提供極大的彈性。 如需其他選項和詳細資訊，請參閱[有關演算個人化內容](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)的專屬檔案。
 
 ## 實作範例
 
-基礎平台網頁SDK實作現已完成。
+基本的Platform Web SDK實作現已完成。
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript]
 
-自動轉譯Target內容的JavaScript範例：
+具有自動Target內容轉譯的JavaScript範例：
 
 ```HTML
 <!doctype html>
@@ -204,7 +205,7 @@ Platform Web SDK為開發人員提供要求和轉譯內容的極大彈性。 請
 
 >[!TAB 標記]
 
-自動呈現Target內容的標籤範例頁面：
+具有自動Target內容呈現功能的標籤範例頁面：
 
 
 ```HTML
@@ -246,20 +247,20 @@ Platform Web SDK為開發人員提供要求和轉譯內容的極大彈性。 請
 </html>
 ```
 
-在標籤中新增Adobe Experience Platform Web SDK擴充功能：
+在標籤中，新增Adobe Experience Platform Web SDK擴充功能：
 
-![新增Adobe Experience Platform Web SDK擴充功能](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+![新增Adobe Experience Platform Web SDK擴充功能](assets/library-tags-addExtension.png){zoomable="yes"}
 
 新增所需的設定：
-![設定Web SDK標籤擴充功能移轉選項](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+![設定Web SDK標籤延伸移轉選項](assets/tags-config-migration.png){zoomable="yes"}
 
-使用 [!UICONTROL 傳送事件] 行動與 [!UICONTROL 轉譯視覺個人化決策] 已選取：
-![傳送在標籤中選取「呈現個人化」的事件](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+建立具有[!UICONTROL 傳送事件]動作和已選取[!UICONTROL 呈現視覺個人化決定]的規則：
+![傳送包含標籤中選取之轉譯器個人化的事件](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
 
 >[!ENDTABS]
 
-接下來，了解如何要求和 [呈現表單式Target活動](render-form-based-activities.md).
+接下來，瞭解如何請求和[轉譯表單式Target活動](render-form-based-activities.md)。
 
 >[!NOTE]
 >
->我們致力協助您成功從at.js移轉至Web SDK。 如果您在移轉過程中遇到障礙，或覺得本指南中遺漏了重要資訊，請在 [此社區討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>我們致力協助您成功將Target從at.js移轉至Web SDK。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。

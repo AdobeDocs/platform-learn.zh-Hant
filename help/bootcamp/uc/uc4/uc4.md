@@ -26,7 +26,7 @@ Customer Journey Analytics為商業智慧和資料科學團隊提供工具，用
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-可以找到有關Customer Journey Analytics的更多資訊 [此處](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+在[這裡](https://spark.adobe.com/page/t62eiRu9l6iWJ/)可找到Customer Journey Analytics的更多資訊。
 
 ## 學習目標
 

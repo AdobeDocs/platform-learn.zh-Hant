@@ -5,20 +5,20 @@ recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
 source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 37%
+source-wordcount: '851'
+ht-degree: 36%
 
 ---
 
 # 概觀
 
-_透過標籤在網站中實作Experience Cloud_ 對於想要瞭解如何在其網站上實作Adobe Experience Cloud解決方案的前端開發人員或技術行銷人員來說，這是一個完美的起點。
+_使用標籤在網站中實作Experience Cloud_&#x200B;是想要瞭解如何在其網站上實作Adobe Experience Cloud解決方案的前端開發人員或技術行銷人員的最佳起點。
 
 每個課程都包含操作練習和基礎資訊，協助您實施 Experience Cloud 並瞭解其價值。示範網站是供您完成本教學課程使用，讓您可以在安全的環境中瞭解基礎技術。完成本教學課程後，您應已準備好開始透過您自己的網站上的標籤實作所有行銷解決方案。
 
 >[!INFO]
 >
->本教學課程使用應用程式專用的擴充功能和程式庫(Adobe Analytics的AppMeasurement.js，Adobe Target的at.js)。 如果您打算實施Adobe Experience Platform Web SDK，請參閱 [使用Web SDK實作Adobe Experience Cloud](/help/tutorial-web-sdk/overview.md) 教學課程。
+>本教學課程使用應用程式專用的擴充功能和程式庫(Adobe Analytics的AppMeasurement.js，Adobe Target的at.js)。 如果您想要實作Adobe Experience Platform Web SDK，請參閱[使用Web SDK實作Adobe Experience Cloud](/help/tutorial-web-sdk/overview.md)教學課程。
 
 
 完成此教學課程之後，您應該能夠：
@@ -28,7 +28,7 @@ _透過標籤在網站中實作Experience Cloud_ 對於想要瞭解如何在其�
 * 在網站上安裝標籤屬性
 
 * 新增下列 Adobe Experience Cloud 解決方案：
-   * **[Adobe Experience Platform Identity Service](id-service.md)**
+   * **[Adobe Experience Platform Identity服務](id-service.md)**
    * **[Adobe Target](target.md)**
    * **[Adobe Analytics](analytics.md)**
    * **[Adobe Audience Manager](audience-manager.md)**
@@ -37,25 +37,25 @@ _透過標籤在網站中實作Experience Cloud_ 對於想要瞭解如何在其�
 
 * 使用 Adobe Experience Cloud Debugger 驗證實施
 
-* 透過開發、測試和生產環境發佈變更
+* Publish會透過開發、測試和生產環境進行變更
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
 >
-> * platform launch （使用者端）現在為 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * platform launch伺服器端現在是 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge設定現在為 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * platform launch（使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * platform launch伺服器端現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 >[!NOTE]
 >
->類似的多重解決方案教學課程也適用於 [Web SDK](../tutorial-web-sdk/overview.md) 和 [行動SDK](../tutorial-mobile-sdk/overview.md).
+>[Web SDK](../tutorial-web-sdk/overview.md)和[Mobile SDK](../tutorial-mobile-sdk/overview.md)也提供類似的多重解決方案教學課程。
 
 ## 必要條件
 
 這些課程假設您擁有 Adobe ID 和完成練習所需的權限。如果不具備上述條件，您可能需要聯絡您的 Experience Cloud 管理員以請求存取權限。
 
-* 針對標籤，您必須擁有開發、核准、發佈、管理擴充功能及管理環境的許可權。 如需有關標籤使用者許可權的詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* 針對標籤，您必須擁有開發、核准、Publish、管理擴充功能及管理環境的許可權。 如需有關標籤使用者許可權的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)。
 * 針對 Adobe Analytics，您必須知道您的追蹤伺服器，以及您將使用哪些報表套裝來完成本教學課程
 * 若要Audience Manager，您必須知道您的Audience Manager子網域（也稱為「合作夥伴名稱」、「合作夥伴ID」或「合作夥伴子網域」）
 
@@ -75,12 +75,12 @@ Adobe Experience Platform的標籤功能是新一代Adobe的網站標籤與行�
 
 在這些課程中，您會將 Adobe Experience Cloud 實施至名為 Luma 的虛擬零售網站中。[Luma 網站](https://luma.enablementadobe.com/content/luma/us/en.html)具有豐富的資料層和功能，可讓您建置逼真的實施。您將在自己的Experience Cloud組織中建置自己的標籤屬性，並使用Experience Cloud Debugger將其對應至我們託管的Luma網站。
 
-[![Luma 網站](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
+[![Luma網站](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 ## 取得工具
 
 1. 由於您將會用到一些瀏覽器專用擴充功能，建議您使用 [Chrome 網頁瀏覽器](https://www.google.com/chrome/)完成本教學課程
-1. 新增 [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome瀏覽器的擴充功能
+1. 將[Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)擴充功能新增至Chrome瀏覽器
 1. 複製範例html頁面程式碼
 
    +++範例html頁面程式碼

@@ -6,7 +6,7 @@ exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
 source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
 source-wordcount: '2107'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 4%
 
 Experience Platform是所有新Experience Cloud應用程式的骨幹，例如Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer。 這些應用程式在設計上使用Platform Web SDK作為收集網頁資料的最佳方法。
 
-![Web SDK和Adobe Experience Platform圖表](assets/dc-websdk-aep.png)
+![Web SDK與Adobe Experience Platform圖表](assets/dc-websdk-aep.png)
 
 Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網站擷取事件資料。 當該資料傳送至PlatformEdge Network時，資料流設定可以將其轉送至Experience Platform。
 
@@ -44,68 +44,68 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ## 建立資料集
 
-所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 A [資料集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) 是用於資料集合的儲存和管理結構，通常是包含結構（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
+所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
 
 讓我們為您的Luma Web事件資料設定資料集：
 
 
-1. 前往 [Experience Platform](https://experience.adobe.com/platform/) 或 [Journey Optimizer](https://experience.adobe.com/journey-optimizer/) 介面
+1. 移至[Experience Platform](https://experience.adobe.com/platform/)或[Journey Optimizer](https://experience.adobe.com/journey-optimizer/)介面
 1. 確認您是在本教學課程使用的開發沙箱中
-1. 開啟 **[!UICONTROL 資料管理>資料集]** 從左側導覽
-1. 選取 **[!UICONTROL 建立資料集]**
+1. 從左側導覽開啟&#x200B;**[!UICONTROL 資料管理>資料集]**
+1. 選取&#x200B;**[!UICONTROL 建立資料集]**
 
    ![建立結構描述](assets/experience-platform-create-dataset.png)
 
-1. 選取 **[!UICONTROL 從結構描述建立資料集]** 選項
+1. 選取&#x200B;**[!UICONTROL 從結構描述建立資料集]**&#x200B;選項
 
    ![從結構描述建立資料集](assets/experience-platform-create-dataset-schema.png)
 
-1. 選取 `Luma Web Event Data` 在中建立的綱要 [先前的課程](configure-schemas.md) 然後選取 **[!UICONTROL 下一個]**
+1. 選取在[先前的課程](configure-schemas.md)中建立的`Luma Web Event Data`結構描述，然後選取&#x200B;**[!UICONTROL 下一步]**
 
    ![資料集，選取結構描述](assets/experience-platform-create-dataset-schema-selection.png)
 
-1. 提供 **[!UICONTROL 名稱]** 和選填 **[!UICONTROL 說明]** 用於資料集。 在本練習中，請使用 `Luma Web Event Data`，然後選取 **[!UICONTROL 完成]**
+1. 為資料集提供&#x200B;**[!UICONTROL 名稱]**&#x200B;和選用的&#x200B;**[!UICONTROL 描述]**。 此練習請使用`Luma Web Event Data`，然後選取&#x200B;**[!UICONTROL 完成]**
 
-   ![資料集名稱 ](assets/experience-platform-create-dataset-schema-name.png)
+   ![資料集名稱](assets/experience-platform-create-dataset-schema-name.png)
 
 資料集現在已設定為開始從Platform Web SDK實作收集資料。
 
 ## 設定資料串流
 
-現在您可以設定 [!UICONTROL 資料流] 以傳送資料至 [!UICONTROL Adobe Experience Platform]. 資料流是標籤屬性、平台Edge Network和Experience Platform資料集之間的連結。
+現在您可以設定您的[!UICONTROL 資料串流]，將資料傳送至[!UICONTROL Adobe Experience Platform]。 資料流是標籤屬性、平台Edge Network和Experience Platform資料集之間的連結。
 
-1. 開啟 [資料彙集](https://experience.adobe.com/#/data-collection){target="blank"} 介面
-1. 選取 **[!UICONTROL 資料串流]** 從左側導覽
-1. 開啟您在中建立的資料流 [設定資料串流](configure-datastream.md) 課程， `Luma Web SDK`
+1. 開啟[資料彙集](https://experience.adobe.com/#/data-collection){target="blank"}介面
+1. 從左側導覽中選取&#x200B;**[!UICONTROL 資料串流]**
+1. 開啟您在[設定資料流](configure-datastream.md)課程`Luma Web SDK`中建立的資料流
 
    ![選取Luma Web SDK資料流](assets/datastream-luma-web-sdk-development.png)
 
-1. 選取 **[!UICONTROL 新增服務]**
-   ![將服務新增至資料流](assets/experience-platform-addService.png)
-1. 選取 **[!UICONTROL Adobe Experience Platform]** 作為 **[!UICONTROL 服務]**
-1. 選取 `Luma Web Event Data` 作為 **[!UICONTROL 事件資料集]**
+1. 選取&#x200B;**[!UICONTROL 新增服務]**
+   ![新增服務至資料流](assets/experience-platform-addService.png)
+1. 選取&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;做為&#x200B;**[!UICONTROL 服務]**
+1. 選取`Luma Web Event Data`做為&#x200B;**[!UICONTROL 事件資料集]**
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
    ![資料流設定](assets/experience-platform-datastream-config.png)
 
-當您在 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 對應至您的標籤屬性，資料會在Experience Platform中填入資料集！
+當您在[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)上產生對應至標籤屬性的流量時，資料會以Experience Platform填入資料集！
 
 ## 驗證資料集
 
 此步驟對於確保資料已抵達資料集至關重要。 驗證傳送至資料集的資料有兩個方面。
 
-* 使用進行驗證 [!UICONTROL Experience Platform偵錯工具]
-* 使用進行驗證 [!UICONTROL 預覽資料集]
-* 使用進行驗證 [!UICONTROL 查詢服務]
+* 使用[!UICONTROL Experience Platform偵錯工具]進行驗證
+* 使用[!UICONTROL 預覽資料集]進行驗證
+* 使用[!UICONTROL 查詢服務]進行驗證
 
 ### Experience Platform Debugger
 
-這些步驟與您在中的操作大致相同 [偵錯工具課程](validate-with-debugger.md). 不過，由於資料只有在資料流中啟用後才會傳送至Platform，因此您必須產生更多範例資料：
+這些步驟與您在[偵錯工具課程](validate-with-debugger.md)中所執行的步驟大致相同。 不過，由於資料只有在資料流中啟用後才會傳送至Platform，因此您必須產生更多範例資料：
 
-1. 開啟 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 並選取 [!UICONTROL Experience Platform偵錯工具] 擴充功能圖示
+1. 開啟[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)並選取[!UICONTROL Experience Platform偵錯工具]擴充功能圖示
 
-1. 設定Debugger將標籤屬性對應至 *您的* 開發環境，如 [使用Debugger進行驗證](validate-with-debugger.md) 課程
+1. 設定偵錯工具將標籤屬性對應至&#x200B;*您的*&#x200B;開發環境，如[使用偵錯工具驗證](validate-with-debugger.md)課程中所述
 
    ![Debugger 中顯示的 Launch 開發環境](assets/experience-platform-debugger-dev.png)
 
@@ -115,28 +115,28 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 1. 在Debugger顯示的Platform Web SDK網路信標中，選取「事件」列以在快顯視窗中展開詳細資料
 
-   ![Debugger中的Web SDK](assets/experience-platform-debugger-dev-eventType.png)
+   Debugger中的![Web SDK](assets/experience-platform-debugger-dev-eventType.png)
 
 1. 在快顯視窗中搜尋「identityMap」。 您應該會在這裡看到lumaCrmId包含authenticatedState、id和primary的三個索引鍵
-   ![Debugger中的Web SDK](assets/experience-platform-debugger-dev-idMap.png)
+   Debugger中的![Web SDK](assets/experience-platform-debugger-dev-idMap.png)
 
-現在，資料應填入 `Luma Web Event Data` 資料集並準備好進行「預覽資料集」驗證。
+現在，資料應填入`Luma Web Event Data`資料集，並準備好「預覽資料集」驗證。
 
 ### 預覽資料集
 
-若要確認資料已著陸Platform的資料湖，快速選項是使用 **[!UICONTROL 預覽資料集]** 功能。 Web SDK資料會以微批次處理至資料湖，並定期在平台介面中重新整理。 您可能需要10到15分鐘的時間才能看到您產生的資料。
+若要確認資料已著陸Platform的資料湖，快速選項是使用&#x200B;**[!UICONTROL 預覽資料集]**&#x200B;功能。 Web SDK資料會以微批次處理至資料湖，並定期在平台介面中重新整理。 您可能需要10到15分鐘的時間才能看到您產生的資料。
 
-1. 在 [Experience Platform](https://experience.adobe.com/platform/) 介面，選取 **[!UICONTROL 資料管理>資料集]** 在左側導覽以開啟 **[!UICONTROL 資料集]** 儀表板。
+1. 在[Experience Platform](https://experience.adobe.com/platform/)介面中，選取左側導覽中的&#x200B;**[!UICONTROL 資料管理>資料集]**&#x200B;以開啟&#x200B;**[!UICONTROL 資料集]**&#x200B;儀表板。
 
    控制面板會列出貴組織的所有可用資料集。 系統會顯示每個列出資料集的詳細資訊，包括其名稱、資料集所遵守的結構描述，以及最新擷取執行的狀態。
 
-1. 選取您的 `Luma Web Event Data` 資料集，以開啟其 **[!UICONTROL 資料集活動]** 畫面。
+1. 選取您的`Luma Web Event Data`資料集以開啟其&#x200B;**[!UICONTROL 資料集活動]**&#x200B;畫面。
 
    ![資料集Luma Web事件](assets/experience-platform-dataset-validation-lumaSDK.png)
 
    活動畫麵包含以視覺效果呈現訊息使用率的圖表，以及成功和失敗批次的清單。
 
-1. 從 **[!UICONTROL 資料集活動]** 熒幕，選取 **[!UICONTROL 預覽資料集]** 靠近熒幕右上角，可預覽最多100列資料。 如果資料集空白，則會停用預覽連結。
+1. 從&#x200B;**[!UICONTROL 資料集活動]**&#x200B;畫面中，選取靠近熒幕右上角的&#x200B;**[!UICONTROL 預覽資料集]**，以預覽最多100列的資料。 如果資料集空白，則會停用預覽連結。
 
    ![資料集預覽](assets/experience-platform-dataset-preview.png)
 
@@ -147,11 +147,11 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ### 查詢資料
 
-1. 在 [Experience Platform](https://experience.adobe.com/platform/) 介面，選取 **[!UICONTROL 資料管理>查詢]** 在左側導覽以開啟 **[!UICONTROL 查詢]** 畫面。
-1. 選取 **[!UICONTROL 建立查詢]**
-1. 首先，執行查詢以檢視資料湖中表格的所有名稱。 輸入 `SHOW TABLES` 在查詢編輯器中，按一下播放圖示以執行查詢。
-1. 在結果中，請注意表格的名稱類似於 `luma_web_event_data`
-1. 現在，使用引用表格的簡單查詢來查詢表格（請注意，查詢預設將限製為100個結果）： `SELECT * FROM "luma_web_event_data"`
+1. 在[Experience Platform](https://experience.adobe.com/platform/)介面中，選取左側導覽中的&#x200B;**[!UICONTROL 資料管理>查詢]**&#x200B;以開啟&#x200B;**[!UICONTROL 查詢]**&#x200B;畫面。
+1. 選取&#x200B;**[!UICONTROL 建立查詢]**
+1. 首先，執行查詢以檢視資料湖中表格的所有名稱。 在查詢編輯器中輸入`SHOW TABLES`，然後按一下播放圖示以執行查詢。
+1. 在結果中，請注意資料表的名稱類似於`luma_web_event_data`的情況
+1. 現在，使用參考您表格的簡單查詢來查詢表格（請注意，查詢預設將限製為100個結果）： `SELECT * FROM "luma_web_event_data"`
 1. 過了一會兒，您應該會看到網頁資料的範例記錄。
 
 >[!ERROR]
@@ -160,7 +160,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!INFO]
 >
->  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱 [探索資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) 位於Platform教學課程區段。
+>  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
 
 
 ## 為即時客戶個人檔案啟用資料集和結構描述
@@ -176,36 +176,36 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 **若要啟用資料集：**
 
-1. 開啟您建立的資料集， `Luma Web Event Data`
+1. 開啟您建立的資料集，`Luma Web Event Data`
 
-1. 選取 **[!UICONTROL 設定檔切換]** 以開啟
+1. 選取&#x200B;**[!UICONTROL 設定檔切換]**&#x200B;以開啟
 
    ![設定檔切換](assets/setup-experience-platform-profile.png)
 
-1. 確認您要 **[!UICONTROL 啟用]** 資料集
+1. 確認您要&#x200B;**[!UICONTROL 啟用]**&#x200B;資料集
 
    ![設定檔啟用切換](assets/setup-experience-platform-profile-enable.png)
 
-**啟用綱要：**
+**若要啟用結構描述：**
 
-1. 開啟您建立的結構描述， `Luma Web Event Data`
+1. 開啟您建立的結構描述，`Luma Web Event Data`
 
-1. 選取 **[!UICONTROL 設定檔切換]** 以開啟
+1. 選取&#x200B;**[!UICONTROL 設定檔切換]**&#x200B;以開啟
 
    ![設定檔切換](assets/setup-experience-platform-profile-schema.png)
 
-1. 選取 **[!UICONTROL 此結構描述的資料將在identityMap欄位中包含主要身分。]**
+1. 選取&#x200B;**[!UICONTROL 此結構描述的資料將在identityMap欄位中包含主要身分。]**
 
    >[!IMPORTANT]
    >
    >    傳送到Real-Time Customer Profile的每個記錄都需要主要身分。 一般而言，身分欄位會在結構描述中加上標籤。 但是，使用身分對應時，結構描述中不會顯示身分欄位。 此對話方塊是確認您心中有一個主要身分，且您會在傳送資料時，在身分對應中指定該身分。 如您所知，Web SDK會使用身分對應，以Experience CloudID (ECID)作為預設主要身分，並以已驗證的ID作為主要身分（若可用）。
 
 
-1. 選取 **[!UICONTROL 啟用]**
+1. 選取&#x200B;**[!UICONTROL 啟用]**
 
    ![設定檔啟用切換](assets/setup-experience-platform-profile-schema-enable.png)
 
-1. 選取 **[!UICONTROL 儲存]** 儲存更新的結構描述
+1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存更新的結構描述
 
 現在結構描述也針對設定檔啟用。
 
@@ -226,27 +226,27 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 您可以在Platform介面(或Journey Optimizer介面)中查詢客戶設定檔，確認資料已著陸Real-Time Customer Profile。 顧名思義，設定檔會即時填入，因此不會像資料集中的驗證資料一樣延遲。
 
-首先，您必須產生更多範例資料。 重複本課程中先前步驟以在Luma網站對應至您的標籤屬性時登入。 Inspect Platform Web SDK請求以確定其傳送資料時包含 `lumaCRMId`.
+首先，您必須產生更多範例資料。 重複本課程中先前步驟以在Luma網站對應至您的標籤屬性時登入。 Inspect Platform Web SDK要求，以確定其會傳送包含`lumaCRMId`的資料。
 
-1. 在 [Experience Platform](https://experience.adobe.com/platform/) 介面，選取 **[!UICONTROL 客戶]** > **[!UICONTROL 設定檔]** 在左側導覽列中
+1. 在[Experience Platform](https://experience.adobe.com/platform/)介面中，選取左側導覽中的&#x200B;**[!UICONTROL 客戶]** > **[!UICONTROL 設定檔]**
 
-1. 作為 **[!UICONTROL 身分名稱空間]** 使用 `lumaCRMId`
-1. 複製並貼上 `lumaCRMId` 已在您在Experience Platform Debugger中檢查的呼叫中傳遞，此案例中為 `112ca06ed53d3db37e4cea49cc45b71e`.
+1. 作為&#x200B;**[!UICONTROL 身分識別名稱空間]**&#x200B;使用`lumaCRMId`
+1. 複製並貼上您在Experience Platform偵錯工具中檢查之呼叫中傳遞的`lumaCRMId`的值，此案例中為`112ca06ed53d3db37e4cea49cc45b71e`。
 
    ![個人資料](assets/experience-platform-validate-dataset-profile.png)
 
-1. 如果設定檔中有有效的值， `lumaCRMId`，設定檔ID會填入主控台中：
+1. 如果`lumaCRMId`的設定檔中有有效值，則主控台中會填入設定檔ID：
 
    ![個人資料](assets/experience-platform-validate-dataset-profile-set.png)
 
-1. 若要檢視完整的 **[!UICONTROL 客戶設定檔]** 針對每個ID，選取 **[!UICONTROL 設定檔ID]** 在主視窗中。
+1. 若要檢視每個ID的完整&#x200B;**[!UICONTROL 客戶設定檔]**，請在主視窗中選取&#x200B;**[!UICONTROL 設定檔識別碼]**。
 
    >[!NOTE]
    >
    >請注意，您可以選取「設定檔ID」的超連結，或者如果您選取該列，則會開啟右邊的功能表，您可以在其中選取「設定檔ID」超連結
    > ![客戶設定檔](assets/experience-platform-select-profileId.png)
 
-   在這裡，您可以看到連結至的所有身分識別 `lumaCRMId`，例如 `ECID`.
+   在這裡，您可以看到連結至`lumaCRMId`的所有身分識別，例如`ECID`。
 
    ![客戶設定檔](assets/experience-platform-validate-dataset-custProfile.png)
 
@@ -261,22 +261,22 @@ Real-time Customer Data Platform和Journey Optimizer的客戶可望完成此練�
 建立熟客方案：
 
 1. 建立新結構描述
-1. 選擇 **[!UICONTROL 個別設定檔]** 作為 [!UICONTROL 基底類別]
-1. 為結構命名 `Luma Loyalty Schema`
-1. 新增 [!UICONTROL 熟客方案細節] 欄位群組
-1. 新增 [!UICONTROL 人口統計細節] 欄位群組
-1. 選取 `Person ID` 欄位並標籤為 [!UICONTROL 身分] 和 [!UICONTROL 主要身分] 使用 `Luma CRM Id` [!UICONTROL 身分名稱空間].
-1. 為以下專案啟用結構描述： [!UICONTROL 個人資料]. 如果您找不到設定檔切換，請嘗試按一下左上方的結構描述名稱。
+1. 選擇&#x200B;**[!UICONTROL 個別設定檔]**&#x200B;做為[!UICONTROL 基底類別]
+1. 命名結構描述`Luma Loyalty Schema`
+1. 新增[!UICONTROL 熟客方案詳細資料]欄位群組
+1. 新增[!UICONTROL 人口統計詳細資料]欄位群組
+1. 選取`Person ID`欄位，並使用`Luma CRM Id` [!UICONTROL 身分名稱空間]將其標示為[!UICONTROL 身分]和[!UICONTROL 主要身分]。
+1. 為[!UICONTROL 設定檔]啟用結構描述。 如果您找不到設定檔切換，請嘗試按一下左上方的結構描述名稱。
 1. 儲存結構描述
 
    ![熟客方案](assets/web-channel-loyalty-schema.png)
 
 若要建立資料集並擷取範例資料：
 
-1. 從建立新資料集 `Luma Loyalty Schema`
-1. 為資料集命名 `Luma Loyalty Dataset`
-1. 為以下專案啟用資料集 [!UICONTROL 個人資料]
-1. 下載範例檔案 [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
+1. 從`Luma Loyalty Schema`建立新的資料集
+1. 為資料集命名`Luma Loyalty Dataset`
+1. 為[!UICONTROL 設定檔]啟用資料集
+1. 下載範例檔案[luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
 1. 將檔案拖放至您的資料集中
 1. 確認資料已成功內嵌
 
@@ -286,27 +286,27 @@ Real-time Customer Data Platform和Journey Optimizer的客戶可望完成此練�
 
 對象會根據常見特徵將設定檔分組。 建立可在網路行銷活動中使用的快速受眾：
 
-1. 在Experience Platform或Journey Optimizer介面中，前往 **[!UICONTROL 客戶]** > **[!UICONTROL 受眾]** 在左側導覽列中
-1. 選取 **[!UICONTROL 建立對象]**
-1. 選取 **[!UICONTROL 建置規則]**
-1. 選取 **[!UICONTROL 建立]**
+1. 在Experience Platform或Journey Optimizer介面中，前往左側導覽中的&#x200B;**[!UICONTROL 客戶]** > **[!UICONTROL 對象]**
+1. 選取&#x200B;**[!UICONTROL 建立對象]**
+1. 選取&#x200B;**[!UICONTROL 建置規則]**
+1. 選取&#x200B;**[!UICONTROL 建立]**
 
    ![建立受眾](assets/web-campaign-create-audience.png)
 
-1. 選取 **[!UICONTROL 屬性]**
-1. 尋找 **[!UICONTROL 忠誠度]** > **[!UICONTROL 階層]** 欄位並將其拖曳至 **[!UICONTROL 屬性]** 區段
-1. 將對象定義為使用者，其 `tier` 是 `gold`
-1. 為對象命名 `Luma Loyalty Rewards – Gold Status`
-1. 選取 **[!UICONTROL Edge]** 作為 **[!UICONTROL 評估方法]**
-1. 選取 **[!UICONTROL 儲存]**
+1. 選取&#x200B;**[!UICONTROL 屬性]**
+1. 尋找&#x200B;**[!UICONTROL 忠誠度]** > **[!UICONTROL 階層]**&#x200B;欄位，並將其拖曳至&#x200B;**[!UICONTROL 屬性]**&#x200B;區段
+1. 將對象定義為`tier`為`gold`的使用者
+1. 為對象命名`Luma Loyalty Rewards – Gold Status`
+1. 選取&#x200B;**[!UICONTROL Edge]**&#x200B;做為&#x200B;**[!UICONTROL 評估方法]**
+1. 選取&#x200B;**[!UICONTROL 儲存]**
 
-   ![定義對象](assets/web-campaign-define-audience.png)
+   ![定義閱聽眾](assets/web-campaign-define-audience.png)
 
-由於這是非常簡單的對象，因此我們可以使用Edge評估方法。 Edge對象會在Edge進行評估，因此在Web SDK對平台Edge Network發出的相同請求中，我們可以評估對象定義，並立即確認使用者是否符合條件。
+由於這是非常簡單的對象，因此我們可以使用Edge評估方法。 Edge對象會在邊緣進行評估，因此在Web SDK對平台Edge Network發出的相同請求中，我們可以評估對象定義，並立即確認使用者是否符合條件。
 
 
 [下一步： ](setup-analytics.md)
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

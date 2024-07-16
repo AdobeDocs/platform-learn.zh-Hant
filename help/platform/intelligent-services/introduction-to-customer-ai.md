@@ -10,13 +10,13 @@ thumbnail: 32664.jpg
 exl-id: a6a9302f-b9dd-4201-a81e-5c8a2f58b82d
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '46'
 ht-degree: 0%
 
 ---
 
 # Customer AI簡介
 
-行銷人員如何使用Customer AI產生客戶預測的高層級概觀。 如需詳細資訊，請造訪 [Customer AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
+行銷人員如何使用Customer AI產生客戶預測的高層級概觀。 如需詳細資訊，請瀏覽[Customer AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on)

@@ -5,24 +5,24 @@ doc-type: multipage-overview
 exl-id: 7745e3ae-6e13-4cc2-9017-8bfb9d4ae1b4
 source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1588'
 ht-degree: 0%
 
 ---
 
 # 內容供應鏈4個階段
 
-世界現在以數位化為第一。 企業不得不接受現實，而且這種狀況不會很快消失。 在這個數位世界中，我們面臨著 [內容激增](https://www.prnewswire.com/news-releases/content-marketing-market-size-to-grow-by-usd-487-24-billion--by-objective-platform-end-user-and-geography---forecast-and-analysis-2022-2026--301562808.html) 讓更多使用者瀏覽社群媒體、在數位空間逗留時間以及遠端工作。
+世界現在以數位化為第一。 企業不得不接受現實，而且這種狀況不會很快消失。 在這個數位世界中，我們面臨著[內容激增](https://www.prnewswire.com/news-releases/content-marketing-market-size-to-grow-by-usd-487-24-billion--by-objective-platform-end-user-and-geography---forecast-and-analysis-2022-2026--301562808.html)，因為有更多人瀏覽社群媒體、在數位空間花費時間以及進行遠端工作。
 
 這對您來說意味著有更多的管道、市場和格式來交付內容，並且更需要讓內容變得動態和最佳化。
 
-![85%的行銷人員表示他們面臨更快建立及提供內容的壓力。](./images/pressure-to-create-content.png)
+![85%的行銷人員說他們面臨更快建立及傳遞內容的壓力。](./images/pressure-to-create-content.png)
 
-_來源：_ [_Deloitte數位_](https://www2.deloitte.com/content/dam/Deloitte/uk/Documents/consultancy/deloitte-uk-future-of-experience-time-to-market.pdf)
+_Source：_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/uk/Documents/consultancy/deloitte-uk-future-of-experience-time-to-market.pdf)
 
-好消息是，雖然要跟上內容需求是一項艱鉅的任務，但有一個方法可以更快速輕鬆地規劃、製作和提供內容。 這稱為  **內容供應鏈**. 此外，如果您能啟動並順利執行程式、強大的策略以及紮實的實務，您就可以簡化整個內容生命週期。
+好消息是，雖然要跟上內容需求是一項艱鉅的任務，但有一個方法可以更快速輕鬆地規劃、製作和提供內容。 這稱為&#x200B;**內容供應鏈**。 此外，如果您能啟動並順利執行程式、強大的策略以及紮實的實務，您就可以簡化整個內容生命週期。
 
-## 協同合作是順暢的內容供應鏈的關鍵
+## Collaboration是順暢的內容供應鏈的關鍵
 
 內容供應鏈是彙集人員、工具和工作流程的流程，以有效規劃、建立、管理和提供內容。 隨著客戶以越來越快的速度要求更多、更好的體驗，您必須在此刻立即取得您的內容，而非稍後取得。 這麼做可打破獨立單位並統一工作流程，避免所有團隊的壓力。 此外，您還將從技術投資中獲得更多價值，協助您提升效率和價值。
 
@@ -32,15 +32,15 @@ _來源：_ [_Deloitte數位_](https://www2.deloitte.com/content/dam/Deloitte/uk
 
 ### 什麼是破壞您的內容供應鏈？
 
-- [**70%**](https://business.adobe.com/resources/reports/future-creative-experiences.html) 花在非核心工作上，在不同角色中管理不同系統中的手動工作。
-- [**21%**](https://business.adobe.com/resources/reports/future-creative-experiences.html) 將整個內容流程的瓶頸視為建立有效體驗的挑戰。
-- [**31%**](https://www.fotoware.com/blog/dam-industry-trends-by-fotoware) 創意人員與行銷人員表示，他們面臨的最大挑戰是無法與多個利害關係人共用資產。
+- [**70%**](https://business.adobe.com/resources/reports/future-creative-experiences.html)的時間花在非核心工作上，在不同角色的不同系統中管理手動工作。
+- [**21%**](https://business.adobe.com/resources/reports/future-creative-experiences.html)的創意人員將整個內容程式的瓶頸視為建立有效體驗的挑戰。
+- [**31%**](https://www.fotoware.com/blog/dam-industry-trends-by-fotoware)的創意人員與行銷人員表示，他們面臨的最大挑戰是無法與多個利害關係人共用資產。
 
 為了更深入瞭解破裂內容供應鏈背後的共同罪魁禍首，不妨分別從三個高階階段中考察：
 
-1. 在  **計畫**  階段，缺乏統一的專案流程或追蹤資源的中央方式會導致多次修訂、過度成本、昂貴延遲，以及無法平衡工作。 此外，團隊成員之間的中斷連線會導致浪費的週期和緩慢的優先順序變更。
-2. 期間  **生產** 、孤立的系統及中斷連線的工作流程會限制即時共同作業、資產尋找能力、延遲及待執行工作。 而且，由於創意人員必須手動追蹤工作與資產，以及手動執行重複式工作，最終會產生更高的成本與更多錯誤。
-3. 何時該使用  **傳遞** 此外，沒有集中資產管理系統，以及擴充內容的自動化程度有限，導致團隊無法跨管道推出有凝聚力的個人化體驗。 此外，零碎的傳送工具和資料也限制了資產效能的精確測量。
+1. 在&#x200B;**規劃**&#x200B;階段中，缺少統一的專案程式或追蹤資源的中央方式會導致多次修訂、成本過高、昂貴延遲，以及無法平衡工作。 此外，團隊成員之間的中斷連線會導致浪費的週期和緩慢的優先順序變更。
+2. 在&#x200B;**生產**&#x200B;期間，孤立的系統與中斷連線的工作流程會限制即時共同作業、資產尋找能力、延遲及待執行。 而且，由於創意人員必須手動追蹤工作與資產，以及手動執行重複式工作，最終會產生更高的成本與更多錯誤。
+3. 輪到&#x200B;**傳遞**&#x200B;時，若沒有中央資產管理系統 — 以及擴充內容的自動化程度有限 — 將會降低團隊跨管道啟動有凝聚力的個人化體驗的能力。 此外，零碎的傳送工具和資料也限制了資產效能的精確測量。
 
 ![在中斷的供應鏈中，分散的系統會產生混亂。](./images/fragmented-supply-chain.png)
 
@@ -52,7 +52,7 @@ _來源：_ [_Deloitte數位_](https://www2.deloitte.com/content/dam/Deloitte/uk
 
 理想情況下，您的行銷團隊應該使用工作管理解決方案，該解決方案應允許跨職能共同作業，並將專案連線到規劃的、資料導向的結果。 它也應該授權行銷團隊策略性地安排工作的優先順序，並向您的創意團隊宣佈這些優先順序。 從那裡，創意簡報、內容版本和意見反應應在每個專案中捆綁在一起，因此您的團隊不必搜尋舊電子郵件來尋找他們想要的內容。
 
-您的創意團隊應設定為 [絕佳的數位資產管理](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[系統](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) 可與您的創意與工作管理工具整合。 如此一來，他們就能輕鬆尋找、使用、更新或重新利用相關資產。 藉由採取這些措施，您可以提高上市速度，並簡化內部作業與程式。
+您的創意團隊應該使用[絕佳的數位資產管理](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[系統](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)，此系統與您的創意和工作管理工具整合。 如此一來，他們就能輕鬆尋找、使用、更新或重新利用相關資產。 藉由採取這些措施，您可以提高上市速度，並簡化內部作業與程式。
 
 ### 透過順暢的工作流程提高生產效率
 
@@ -70,21 +70,21 @@ _來源：_ [_Deloitte數位_](https://www2.deloitte.com/content/dam/Deloitte/uk
 
 ## 在Adobe，我們正在建立同級最佳的內容供應鏈
 
-我們自己的 [Adobe Experience Cloud業務](https://business.adobe.com/) 著重於遵循先前概述的步驟，讓我們的行銷活動重現生動並支援多個區段。 我們的願景一直是向全球提供引人注目的內容，並符合我們的行銷活動框架和訊息。
+我們自己的[Adobe Experience Cloud業務](https://business.adobe.com/)著重於遵循先前概述的步驟，讓我們的行銷活動重現生動並支援多個區段。 我們的願景一直是向全球提供引人注目的內容，並符合我們的行銷活動框架和訊息。
 
-我們端對端內容建立流程的關鍵是搭配使用 [Adobe Workfront](https://business.adobe.com/products/workfront/main.html) 和 [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). 讓我們來看看我們如何處理這三種高階階段的程式。
+我們端對端內容建立程式的關鍵是[Adobe Workfront](https://business.adobe.com/products/workfront/main.html)與[Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html)的配對。 讓我們來看看我們如何處理這三種高階階段的程式。
 
-我們先從  **計畫** ，我們會從整個業務中接收數百個內容請求，然後根據每季的優先順序排列優先順序。 接著，我們會使用Workfront中的內容提案儀表板來提供透明度，以便與利害關係人取得一致意見，並快速獲得行銷、創意、網頁和銷售團隊的認可。 如此一來，我們會建立該季度承諾的記錄，也會讓創意和網路團隊看到總請求量，以便他們規劃資源分配。 此外，管理員可輕鬆監控團隊的工作負載。
+我們從&#x200B;**規劃**&#x200B;開始，從整個企業接收數百個內容請求，然後根據每季的優先順序排定其優先順序。 接著，我們會使用Workfront中的內容提案儀表板來提供透明度，以便與利害關係人取得一致意見，並快速獲得行銷、創意、網頁和銷售團隊的認可。 如此一來，我們會建立該季度承諾的記錄，也會讓創意和網路團隊看到總請求量，以便他們規劃資源分配。 此外，管理員可輕鬆監控團隊的工作負載。
 
-隨著我們的腳步  **生產** ，經過核准的請求會轉化為專案，為我們的創意團隊提供更多詳細資訊 — 例如創意簡介、網頁登陸位置、促銷要求等。 接著，我們的內容策略師與Workfront中的利害關係人和創意人員合作，檢閱內容並遵守期限。 由於我們在Workfront中完成了所有這些工作，因此消除了重複步驟、不必要的電子郵件和多重表單填寫，我們甚至開始依資產型別追蹤生產週期。 這可讓我們平衡員工資源，並視需要重新安排優先順序，所有方法都是透過深入瞭解專案資料。
+當我們邁進&#x200B;**生產**，核准的請求會轉化為專案，為我們的創意團隊提供更詳細的資訊 — 像是創意簡介、網頁登陸位置、促銷要求等。 接著，我們的內容策略師與Workfront中的利害關係人和創意人員合作，檢閱內容並遵守期限。 由於我們在Workfront中完成了所有這些工作，因此消除了重複步驟、不必要的電子郵件和多重表單填寫，我們甚至開始依資產型別追蹤生產週期。 這可讓我們平衡員工資源，並視需要重新安排優先順序，所有方法都是透過深入瞭解專案資料。
 
-當我們的內容準備就緒時  **傳遞** ，我們 [發佈我們的優惠方案、資產和促銷內容](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html) 前往Experience Manager Assets。 具體來說，這些內容都會進入我們的內部行銷中心，公司的任何人只要有需要，都能立即在這裡快速找到所需的確切內容。
+當我們的內容準備好&#x200B;**傳送**&#x200B;時，我們[將優惠、資產和促銷內容](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html)發佈到Experience Manager Assets。 具體來說，這些內容都會進入我們的內部行銷中心，公司的任何人只要有需要，都能立即在這裡快速找到所需的確切內容。
 
 我們發現建立有效的內容供應鏈有一些重大的成果。 具體來說，我們移轉至單一工作管理系統，將重複資料輸入減半。 即使永遠都有改進的空間，我們知道我們正在邁向一個能協助我們領先客戶期望一步的流程。
 
 >[!NOTE]
 >
-> 本文最初發表於 [_Adobe Experience Cloud部落格_](https://business.adobe.com/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time).
+> 本文最初發表於&#x200B;[_Adobe Experience Cloud部落格_](https://business.adobe.com/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time)。
 
 ## 第四階段：深入分析
 

@@ -1,6 +1,6 @@
 ---
-title: 使用中的合作夥伴資料支援異地潛在客戶使用案例 [!DNL Real-Time CDP]
-description: 瞭解用於從中的合作夥伴擷取新潛在客戶的工作流程 [!DNL Real-Time CDP] 進行造訪前目標定位。 
+title: 支援使用 [!DNL Real-Time CDP]中的合作夥伴資料進行異地潛在客戶使用案例
+description: 瞭解用於從 [!DNL Real-Time CDP] 中合作夥伴擷取新潛在客戶以進行造訪前目標定位的工作流程。 
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# 使用中的合作夥伴資料支援異地潛在客戶使用案例 [!DNL Real-Time CDP]
+# 使用[!DNL Real-Time CDP]中的合作夥伴資料支援異地潛在客戶使用案例
 
-瞭解用於從中的合作夥伴擷取新潛在客戶的工作流程 [!DNL Real-Time CDP] 進行造訪前目標定位。 如需詳細資訊，請造訪 [透過潛在客戶使用案例吸引和贏取新客戶](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html) 檔案。
+瞭解在[!DNL Real-Time CDP]中從合作夥伴擷取新潛在客戶以用於造訪前目標定位的工作流程。 如需詳細資訊，請造訪[透過潛在客戶使用案例](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html)檔案來吸引新客戶。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on)

@@ -6,14 +6,14 @@ mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
 source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 33%
+source-wordcount: '154'
+ht-degree: 7%
 
 ---
 
 # Adobe Experience Platform 教學課程
 
-Adobe Experience Platform是市面上功能最強大、最靈活、最開放的系統，可建置和管理可提升客戶體驗的完整解決方案。  Experience Platform 可讓組織集中和標準化來自任何系統的客戶資料與內容，並運用資料科學和機器學習技術大幅改善豐富個人化體驗的設計和傳遞。使用這些影片和教學課程來瞭解Experience Platform的許多元件。
+Adobe Experience Platform是市面上功能最強大、最靈活、最開放的系統，可建置和管理可提升客戶體驗的完整解決方案。 Experience Platform可讓組織集中和標準化來自任何系統的客戶資料與內容，並運用資料科學和機器學習技術大幅改善豐富個人化體驗的設計和傳遞。 使用這些影片和教學課程來瞭解Experience Platform的許多元件。
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -38,7 +38,7 @@ Adobe Experience Platform是市面上功能最強大、最靈活、最開放的�
     </a>
     </div>
     <p>
-    <em>瞭解如何使用Platform改善客戶體驗</em>
+    <em>瞭解Platform如何提供客戶體驗</em>
     <p>
   </td>
   <td>
@@ -47,11 +47,11 @@ Adobe Experience Platform是市面上功能最強大、最靈活、最開放的�
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
-    <strong>資料架構師和資料工程師快速入門</strong>
+    <strong>資料架構師與資料工程師快速入門</strong>
     </a>
     </div>
     <p>
-    <em>開始實作練習</em>
+    <em>開始動手練習</em>
     <p>
   </td>
   <td>
@@ -64,7 +64,7 @@ Adobe Experience Platform是市面上功能最強大、最靈活、最開放的�
     </a>
     </div>
     <p>
-    <em>輕鬆內嵌資料</em>
+    <em>輕鬆擷取您的資料</em>
     <p>
   </td>
    <!--

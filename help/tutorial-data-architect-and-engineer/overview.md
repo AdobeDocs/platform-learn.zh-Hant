@@ -19,22 +19,22 @@ ht-degree: 0%
 
 <!--5min-->
 
-_資料架構師和資料工程師專用Adobe Experience Platform快速入門_ 是動手進行Experience Platform的最佳起點。
+_資料架構師和資料工程師的Adobe Experience Platform快速入門_&#x200B;是動手進行Experience Platform的最佳起點。
 
 
 <!--How do we address ETL-->
 
 ## 學習目標
 
-資料架構師和資料工程師必須緊密合作，才能成功Experience Platform部署。 此實作教學課程會教導您由執行的主要工作 _兩個角色_ 以便您知道如何開始為自己的企業實作Platform。 您將透過練習逐步瞭解Experience Platform的重要術語、功能、介面和API。 Adobe Experience Cloud應用程式(例如Real-time Customer Data Platform、Customer Journey Analytics和Journey Optimizer)的客戶也會發現此內容很有用，因為Platform服務是這些應用程式的重要基礎。
+資料架構師和資料工程師必須緊密合作，才能成功Experience Platform部署。 此實作教學課程會教導您&#x200B;_兩個角色_&#x200B;執行的主要工作，讓您瞭解如何開始為自己的企業實作Platform。 您將透過練習逐步瞭解Experience Platform的重要術語、功能、介面和API。 Adobe Experience Cloud應用程式(例如Real-time Customer Data Platform、Customer Journey Analytics和Journey Optimizer)的客戶也會發現此內容很有用，因為Platform服務是這些應用程式的重要基礎。
 
-![Adobe Experience Cloud行銷結構重點說明本教學課程涵蓋的Platform服務 — 身分、設定檔、細分、擷取、查詢和控管](assets/marketecture.png)
+![Adobe Experience Cloud行銷結構重點說明本教學課程中涵蓋的Platform服務 — 身分、設定檔、分段、擷取、查詢和治理](assets/marketecture.png)
 
 主題包括：
 
 * 設定使用者許可權
 * 建立沙箱
-* 設定開發人員控制檯專案並使用平台API
+* 設定Developer Console專案並使用Platform API
 * 資料管理 — 包括建立結構描述、資料集、身分、合併原則和資料控管
 * 使用批次和串流模式的資料擷取
 * 使用Adobe Experience Platform Web SDK擷取網頁資料
@@ -48,9 +48,9 @@ Adobe Experience Platform是技術平台，旨在協助您達成行銷目標。 
 
 ## 先決條件
 
-* 您已完成 [Adobe Experience Platform課程簡介](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) Experience League使用並熟悉平台功能
+* 您已完成Experience League上的[Adobe Experience Platform簡介課程](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1)，而且熟悉Platform功能
 * 您可以存取透過Adobe Experience Platform (或Real-Time CDP或Journey Optimizer等平台型應用程式)和Data Collection （前身為Launch）布建的帳戶。
-* 您是該帳戶的系統管理員，或者可以擁有一個 [設定使用者許可權](configure-permissions.md) 敬請參考使用：
+* 您是該帳戶的系統管理員，或者可以為您設定一個[使用者許可權](configure-permissions.md)。
 
 ## 使用本教學課程
 
@@ -58,7 +58,7 @@ Adobe Experience Platform是技術平台，旨在協助您達成行銷目標。 
 
 在本教學課程中建立各種Platform元素時，請儘量使用我建議的名稱。 不過，如果您的組織有多人同時參加此教學課程，建議您自訂一些高階元素名稱。 例如，您可能會想要將Platform沙箱命名為「Luma Tutorial Platform - Ignatius J Reilly」，而不僅僅是「Luma Tutorial Platform」。
 
-如果您卡住了，請先嘗試重新閱讀指示，然後使用 ![登入問題](https://experienceleague.adobe.com/assets/img/feedback.svg) 每個頁面側邊欄上的連結以聯絡我。
+如果您卡住了，請先嘗試重新閱讀指示，然後使用每個頁面側邊欄上的![記錄問題](https://experienceleague.adobe.com/assets/img/feedback.svg)連結來聯絡我。
 
 ## 技術說明
 
@@ -68,7 +68,7 @@ Adobe Experience Platform是技術平台，旨在協助您達成行銷目標。 
 
 ### API
 
-平台是API優先建置。 雖然所有主要平台工作流程都有介面工作流程存在，並將主要使用，但本教學課程包含一些以API為導向的練習。 我會引導您完成Adobe Developer Console中的基本專案設定，並為您提供 [!DNL Postman] 環境和集合，以開始使用Platform API。 完成本教學課程之後，您可能會發現熟悉平台API並將其用於您自己的部署很有價值。
+平台是API優先建置。 雖然所有主要平台工作流程都有介面工作流程存在，並將主要使用，但本教學課程包含一些以API為導向的練習。 我將引導您完成Adobe Developer Console中的基本專案設定，並為您提供[!DNL Postman]環境和集合，以便您開始使用Platform API。 完成本教學課程之後，您可能會發現熟悉平台API並將其用於您自己的部署很有價值。
 
 ### 協力廠商技術
 
@@ -79,4 +79,4 @@ Adobe Experience Platform是技術平台，旨在協助您達成行銷目標。 
 * 2023年6月：更新以包含新的許可權工作流程，並使用OAuth伺服器對伺服器API認證
 
 
-現在，讓我們繼續第一個課程 — [設定許可權](configure-permissions.md).
+現在讓我們繼續第一個課程 — [設定許可權](configure-permissions.md)。

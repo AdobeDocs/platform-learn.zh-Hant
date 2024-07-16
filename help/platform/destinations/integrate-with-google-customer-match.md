@@ -10,13 +10,13 @@ thumbnail: 38180.jpg
 exl-id: 6888eeed-e091-4dd4-a34f-f00be887ab21
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 8%
+source-wordcount: '80'
+ht-degree: 0%
 
 ---
 
 # 整合Google Customer Match
 
-瞭解Adobe的Real-time Customer Data Platform和Google的Customer Match功能如何協助品牌在Google擁有和運營的屬性上與客戶互動，以擴展其外聯活動。 如需詳細資訊，請瀏覽本[文件](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html)。
+瞭解Adobe的Real-time Customer Data Platform和Google的Customer Match功能如何協助品牌在Google擁有和運營的屬性上與客戶互動，以擴展其外聯活動。 如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/38180?learn=on)

@@ -10,14 +10,14 @@ last-substantial-update: 2022-09-27T00:00:00Z
 exl-id: 17358939-c976-40aa-b11b-708edf8ebce6
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '53'
-ht-degree: 49%
+source-wordcount: '48'
+ht-degree: 20%
 
 ---
 
 # 建立儀表板
 
-了解如何在 Adobe Experience Platform 中建立儀表板。如需詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html).
+瞭解如何在Adobe Experience Platform中建立儀表板。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html)。
 
 >[!IMPORTANT]
 >

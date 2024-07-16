@@ -11,7 +11,7 @@ feature: Journeys
 exl-id: e4464502-60c8-4fba-a429-169b7a4516c8
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '222'
 ht-degree: 2%
 
 ---
@@ -20,15 +20,15 @@ ht-degree: 2%
 
 ## 客戶歷程流程
 
-開啟全新且無痕的瀏覽器視窗，然後前往 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 按一下 **全部允許**. 根據您在上一個使用者流程中的瀏覽行為，您會在網站的首頁上看到個人化作業。
+開啟新的、乾淨且無痕的瀏覽器視窗，並移至[https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)。 按一下&#x200B;**全部允許**。 根據您在上一個使用者流程中的瀏覽行為，您將在網站的首頁上看到個人化發生。
 
 ![DSN](./images/web8a.png)
 
-按一下 **設定檔** 圖示填入您的熒幕右上角。
+按一下熒幕右上角的&#x200B;**設定檔**&#x200B;圖示。
 
 ![示範](./images/web8b.png)
 
-按一下 **建立帳戶**.
+按一下&#x200B;**建立帳戶**。
 
 ![示範](./images/pv5.png)
 
@@ -42,11 +42,11 @@ ht-degree: 2%
 
 事件ID需要傳送至Adobe Experience Platform，才能觸發您建立的歷程。 這是此範例中的eventID： `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
 
-在欄位中填寫eventID **您的帳戶建立事件ID** 並按一下 **註冊**.
+在&#x200B;**您的帳戶建立事件識別碼**&#x200B;欄位中填寫eventID，然後按一下&#x200B;**註冊**。
 
 ![示範](./images/pv8a.png)
 
-然後您會看到此內容。
+您將會看到此訊息。
 
 ![示範](./images/pv9.png)
 

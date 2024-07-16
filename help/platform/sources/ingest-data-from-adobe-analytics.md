@@ -1,6 +1,6 @@
 ---
-title: 使用 Adobe Analytics 來源連接器擷取資料
-description: Adobe Analytics來源聯結器可讓您從Adobe Analytics輕鬆將資料串流、對應及篩選至Adobe Experience Platform的即時客戶個人檔案和體驗資料湖。
+title: 使用Adobe Analytics來源聯結器擷取資料
+description: Adobe Analytics Source聯結器可讓您從Adobe Analytics輕鬆將資料串流、對應及篩選至Adobe Experience Platform的即時客戶個人檔案和體驗資料湖。
 feature: Sources
 topic: Integrations
 badgeIntegration: label="整合" type="positive"
@@ -12,13 +12,13 @@ thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 20%
+source-wordcount: '120'
+ht-degree: 0%
 
 ---
 
-# 使用 Adobe Analytics 來源連接器擷取資料
+# 使用Adobe Analytics來源聯結器擷取資料
 
-Adobe Analytics來源聯結器可讓您從Adobe Analytics輕鬆將資料串流、對應及篩選至Adobe Experience Platform的即時客戶個人檔案和體驗資料湖。 瞭解如何使用資料準備功能來建立語意和計算欄位，以改進區段產生器和平台應用程式中的使用者體驗。 此聯結器支援跨區域報表套裝。 如需更詳細的產品檔案，請參閱 [在UI中建立Adobe Analytics來源聯結器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
+Adobe Analytics Source聯結器可讓您從Adobe Analytics輕鬆將資料串流、對應及篩選至Adobe Experience Platform的即時客戶個人檔案和體驗資料湖。 瞭解如何使用資料準備功能來建立語意和計算欄位，以改進區段產生器和平台應用程式中的使用者體驗。 此聯結器支援跨區域報表套裝。 如需更詳細的產品檔案，請參閱[在UI中建立Adobe Analytics來源聯結器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29687?learn=on)

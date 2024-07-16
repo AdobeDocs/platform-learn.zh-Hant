@@ -68,17 +68,17 @@ CJA的目標是讓行銷和業務團隊擁有分析能力，使其成為這些�
 
 在開始上述步驟之前，別忘了步驟0，也就是瞭解Adobe Experience Platform中可用的資料。
 
-**垃圾進，垃圾出。** 還記得嗎？ 您必須清楚知道哪些資料可供使用，以及Adobe Experience Platform中的結構描述的設定方式。 瞭解Adobe Experience Platform中的資料可讓事情變得更輕鬆，不僅在資料連線部分，而且在建立視覺效果和進行分析時也是如此。
+**記憶體輸入，記憶體輸出。**&#x200B;還記得嗎？ 您必須清楚知道哪些資料可供使用，以及Adobe Experience Platform中的結構描述的設定方式。 瞭解Adobe Experience Platform中的資料可讓事情變得更輕鬆，不僅在資料連線部分，而且在建立視覺效果和進行分析時也是如此。
 
 ## 4.1.5步驟0：瞭解Adobe Experience Platform結構描述和資料集
 
-請前往此URL登入Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+前往此URL登入Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 
 登入後，您會登入Adobe Experience Platform的首頁。
 
 ![資料擷取](../uc1/images/home.png)
 
-在繼續之前，您需要選取 **沙箱**. 要選取的沙箱已命名 ``Bootcamp``. 您可以按一下文字來執行此操作 **[!UICONTROL Prod]** 在熒幕的右上角。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``Bootcamp``。 您可以按一下熒幕右上角的文字&#x200B;**[!UICONTROL Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
 
 ![資料擷取](../uc1/images/sb1.png)
 
@@ -93,19 +93,19 @@ CJA的目標是讓行銷和業務團隊擁有分析能力，使其成為這些�
 請務必至少檢查以下專案：
 
 - 身分：CRMID、phoneNumber、ECID、電子郵件。 哪些是主要識別碼，哪些是次要識別碼？
-您可以開啟結構描述並檢視物件來尋找識別碼 `_experienceplatform.identification.core`. 檢視結構描述 [示範系統 — 網站的事件結構（全域v1.1）](https://experience.adobe.com/platform/schema).
+您可以開啟結構描述並檢視物件`_experienceplatform.identification.core`來尋找識別碼。 請檢視結構描述[Demo System — 網站的事件結構描述（全域v1.1）](https://experience.adobe.com/platform/schema)。
 
 ![示範](./images/identity.png)
 
-- 探索結構描述內的商務物件 [示範系統 — 網站的事件結構（全域v1.1）](https://experience.adobe.com/platform/schema).
+- 探索結構描述[示範系統 — 網站（全域v1.1）](https://experience.adobe.com/platform/schema)的事件結構描述內的商務物件。
 
 ![示範](./images/commerce.png)
 
-- 預覽所有 [資料集](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) 並檢視資料
+- 預覽所有[資料集](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created)並檢視資料
 
 您現在已準備好開始使用Customer Journey Analytics UI。
 
-下一步： [4.2連線Customer Journey Analytics中的Adobe Experience Platform資料集](./ex2.md)
+下一步： [4.2連線Customer Journey Analytics](./ex2.md)中的Adobe Experience Platform資料集
 
 [返回使用者流程4](./uc4.md)
 

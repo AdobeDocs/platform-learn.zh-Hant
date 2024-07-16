@@ -1,11 +1,11 @@
 ---
-title: 透過標籤實作Experience Cloud整合
+title: 實作Experience Cloud與標籤的整合
 description: 瞭解如何驗證 Adobe Experience Cloud 實施中的受眾、A4T 和客戶屬性整合。本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 91%
+source-wordcount: '1213'
+ht-degree: 86%
 
 ---
 
@@ -26,12 +26,11 @@ ht-degree: 91%
 
 >[!NOTE]
 >
-> 若要完整使用這些整合，有許多必要的使用者權限需求、帳戶設定，以及佈建步驟，這些不在本教學課程的討論範圍內。如果您已在目前的 Experience Cloud 實施中使用這些整合，您應考量下列事項：
+>若要完整使用這些整合，有許多必要的使用者許可權需求、帳戶設定和布建步驟，這些不在本教學課程的討論範圍內。 如果您已在目前的 Experience Cloud 實施中使用這些整合，您應考量下列事項：
 >
 >* 檢視[核心服務整合](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hant)的完整需求
 >* 檢視 [Analytics for Target 整合](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)的完整需求
 >* 請您的 Experience Cloud 組織管理員[請求佈建這些整合](https://www.adobe.com/go/audiences_tw)
-
 
 ## 受眾
 
@@ -51,13 +50,13 @@ ht-degree: 91%
 
 1. 開啟 [Luma 網站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 確認Debugger將標籤屬性對應至 *您的* 開發環境，如 [先前的教訓](switch-environments.md)
+1. 如[先前的課程](switch-environments.md)所述，確認Debugger將標籤屬性對應至&#x200B;*您的*&#x200B;開發環境
 
    ![Debugger中顯示的標籤開發環境](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. 前往 Debugger 的「網路」標籤
 
-1. 按一下&#x200B;**[!UICONTROL 清除所有請求]**&#x200B;進行清除
+1. 按一下「**[!UICONTROL 清除所有要求]**」進行清除
 
 1. 重新載入 Luma 頁面，確認 Debugger 中有顯示 Target 和 Analytics 請求
 
@@ -90,13 +89,13 @@ A4T 的運作方式是將從 Target 傳至 Analytics 的伺服器端請求與 An
 
 1. 開啟 [Luma 網站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 確認Debugger將標籤屬性對應至 *您的* 開發環境，如 [先前的教訓](switch-environments.md)
+1. 如[先前的課程](switch-environments.md)所述，確認Debugger將標籤屬性對應至&#x200B;*您的*&#x200B;開發環境
 
    ![Debugger中顯示的標籤開發環境](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. 前往 Debugger 的「網路」標籤
 
-1. 按一下&#x200B;**[!UICONTROL 清除所有請求]**&#x200B;進行清除
+1. 按一下「**[!UICONTROL 清除所有要求]**」進行清除
 
 1. 重新載入 Luma 頁面，確認 Debugger 中有顯示 Target 和 Analytics 請求
 
@@ -117,7 +116,7 @@ A4T 的運作方式是將從 Target 傳至 Analytics 的伺服器端請求與 An
 實施客戶屬性 (您已完成) 的主要需求如下：
 
 1. 實施 Adobe Experience Platform Identity Service
-1. 透過Id服務設定客戶Id *befor* Target和Analytics會引發其請求（您已使用標籤中的規則排序功能完成）
+1. 在&#x200B;*之前，透過ID服務設定客戶ID* Target和Analytics引發其要求（您已使用標籤中的規則排序功能完成）
 
 ### 驗證客戶屬性實施
 
@@ -132,7 +131,7 @@ A4T 的運作方式是將從 Target 傳至 Analytics 的伺服器端請求與 An
 
 1. 按一下網站右上角的&#x200B;**[!UICONTROL 登入]**&#x200B;連結
 
-   ![按一下右上方的登入](images/idservice-loginNav.png)
+   ![按一下右上角的[登入]](images/idservice-loginNav.png)
 
 1. 使用者名稱請輸入 `test@adobe.com`
 1. 密碼請輸入 `test`
@@ -150,4 +149,4 @@ A4T 的運作方式是將從 Target 傳至 Analytics 的伺服器端請求與 An
 
    ![Analytics 客戶 ID 驗證](images/integrations-analyticsCustomerIDValidation.png)
 
-[下堂課「發佈您的屬性」>](publish.md)
+[下堂課「Publish您的屬性」>](publish.md)

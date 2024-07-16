@@ -1,5 +1,5 @@
 ---
-title: 設定 Azure Blob 目的地
+title: 設定Azure Blob目的地
 description: 瞭解如何在Real-time Customer Data Platform (Real-Time CDP)中設定Azure Blob儲存體目的地。
 solution: Real-Time Customer Data Platform
 feature: Destinations
@@ -10,14 +10,14 @@ thumbnail: 331082.jpg
 exl-id: 17340357-2e3a-4c94-b010-442fba70b216
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 26%
+source-wordcount: '56'
+ht-degree: 0%
 
 ---
 
-# 設定 Azure Blob 目的地
+# 設定Azure Blob目的地
 
-瞭解如何在Real-time Customer Data Platform (Real-Time CDP)中設定Azure Blob儲存體目的地。 如需詳細資訊，請瀏覽本[文件](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html)。
+瞭解如何在Real-time Customer Data Platform (Real-Time CDP)中設定Azure Blob儲存體目的地。 如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on)
 

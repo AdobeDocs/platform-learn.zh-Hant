@@ -19,11 +19,11 @@ ht-degree: 1%
 
 瞭解如何使用Adobe Experience Platform的資料檢疫功能排程資料集刪除。
 
-資料集刪除可讓資料管理員和資料工程師設定資料集的到期日。 如需詳細資訊，請造訪 [資料檢疫檔案](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=zh-Hant).
+資料集刪除可讓資料管理員和資料工程師設定資料集的到期日。 如需詳細資訊，請瀏覽[資料衛生檔案](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=zh-Hant)。
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on)
 
 >[!NOTE]
 >
-> 所有平台客戶都可以 [隨選刪除資料集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). 排程資料集刪除目前僅適用於Healthcare Shield或Privacy and Security Shield的客戶。
+> 所有Platform客戶都可以[依需求](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete)刪除資料集。 排程資料集刪除目前僅適用於Healthcare Shield或Privacy and Security Shield的客戶。

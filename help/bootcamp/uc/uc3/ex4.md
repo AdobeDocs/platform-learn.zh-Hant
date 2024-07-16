@@ -11,25 +11,25 @@ feature: Events
 exl-id: 45c77177-9ea9-4c3d-a40e-c04a747938eb
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '193'
+ht-degree: 0%
 
 ---
 
 # 3.4測試您的歷程
 
-若要測試您的歷程，您必須使用在練習3.2中建立的事件事件ID，如下所示。
+若要測試您的歷程，必須使用練習3.2中建立之事件的事件ID，如下所示。
 
 ![ACOP](./images/payloadeventID.png)
 
-事件ID需要傳送至Adobe Experience Platform才能觸發歷程。 在此範例中，eventID為：
-`e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
+事件ID是必須傳送至Adobe Experience Platform才能觸發歷程的專案。 在此範例中，eventID為：
+`e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`。
 
-開啟行動應用程式並前往首頁。 按一下&#x200B;**設定**&#x200B;圖示。
+開啟行動應用程式，然後前往首頁。 按一下&#x200B;**設定**&#x200B;圖示。
 
 ![DSN](./images/appsett.png)
 
-在欄位中貼上您的eventID **信標事件ID** 並按一下 **儲存**.
+將您的eventID貼到欄位&#x200B;**Beacon EventID**，然後按一下&#x200B;**儲存**。
 
 ![DSN](./images/beacon1.png)
 
@@ -39,11 +39,11 @@ ht-degree: 1%
 
 ![DSN](./images/screen1.png)
 
-接著，返回首頁。 按一下 **beacon** 圖示。
+接著，返回首頁。 按一下&#x200B;**信標**&#x200B;圖示。
 
 ![DSN](./images/app23.png)
 
-然後您會看到此內容。 首先，選取 **Bootcamp畫面信標** 然後按一下 **登入** 按鈕。 這可讓您模擬信標專案。
+您將會看到此訊息。 首先，選取&#x200B;**Bootcamp熒幕信標**，然後按一下&#x200B;**專案**&#x200B;按鈕。 這可讓您模擬信標專案。
 
 ![DSN](./images/app21.png)
 

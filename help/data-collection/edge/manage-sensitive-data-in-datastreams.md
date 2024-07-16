@@ -10,13 +10,13 @@ last-substantial-update: 2022-09-28T00:00:00Z
 exl-id: a10c72a2-8ed3-40da-bfdc-b1dc4492f8c4
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '40'
-ht-degree: 82%
+source-wordcount: '34'
+ht-degree: 26%
 
 ---
 
 # 管理資料串流中的敏感資料
 
-了解如何管理資料串流中的敏感資料。如需詳細資訊，請參閱 [資料串流檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hant).
+瞭解如何管理資料串流中的敏感資料。  如需詳細資訊，請參閱[資料串流檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on)

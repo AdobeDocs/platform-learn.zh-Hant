@@ -11,135 +11,135 @@ feature: Events
 exl-id: a4ef6eaf-6b39-4450-82bf-7db99595a323
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 1%
+source-wordcount: '843'
+ht-degree: 0%
 
 ---
 
-# 3.3 Crie sua jornada e notificação push
+# 3.3 Crie sua jornada e notificacao push
 
-Neste exercício， voce irá configurar a jornada e a mensagem que ses acionada quando alguém inserir uma sinalização （信標） usando o o aplicativo móvel.
+Neste exercício， voce irá configurar a jornada e a mensagem que precisa ser acionada quando alguém inserir uma sinalização （信標） usando o o aplicativo móvel.
 
-Faca登入無Adobe Journey Optimizer存取權a [Adobe Experience Cloud](https://experience.adobe.com). 小團體 **Journey Optimizer**.
+Faca登入無Adobe Journey Optimizer存取[Adobe Experience Cloud](https://experience.adobe.com)。 叢集&#x200B;**Journey Optimizer**。
 
 ![ACOP](./images/acophome.png)
 
-Voce será redirecionado para a visualização da **首頁** 無Journey Optimizer。 Primeiro，驗證是否成功了。 不要做沙箱que deve susado é `Bootcamp`. Para alternar de um sandbox para outtro， clique em **Prod** 選擇沙箱沙箱。 Neste範例， o nome do sandbox é **Bootcamp**. 視覺化雅緻 **首頁**  執行seu sandbox `Bootcamp`.
+Voce será redirecionado para a visualização da **Home** no Journey Optimizer。 Primeiro，驗證是否使用沙箱驗證。 不要執行開發使用者`Bootcamp`的沙箱。 Para alternar de um sandbox para outtro， clicque em **Prod**&#x200B;選擇一個o sandbox na lista。 巢狀範例，**Bootcamp**&#x200B;中沒有sandbox。 Voce estará na visualização da **Home**&#x200B;執行seu沙箱`Bootcamp`。
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.3.1珍珠母
+## 3.3.1玉米捲紙
 
-沒有選單，小團 **歷程**. Em seguida，小團體 **建立歷程** para criar uma nova jornada.
+沒有功能表à esquerda，請點選&#x200B;**歷程**。 Em seguida， cluque em **建立歷程** para criar uma nova jornada。
 
 ![ACOP](./images/createjourney.png)
 
-敬請期待，敬請期待。
+敬請期待。
 
 ![ACOP](./images/journeyempty.png)
 
-前方沒有練習，重新開始 **事件**. 事件旁白 `yourLastNameBeaconEntryEvent` e替代 `yourLastName` 佩洛·塞烏·索布雷諾姆。 Este foi o resultado da criação do Evento：
+前方沒有練習，新錄製了&#x200B;**活動**。 Voce nomeou o evento `yourLastNameBeaconEntryEvent` e替代`yourLastName` pelo seu sobrenome。 Este foi o resultado da criação do Evento：
 
 ![ACOP](./images/eventdone.png)
 
-Agora voce deve considerate este evento como o o início desta Jornada. Voce pode fazer isso indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos.
+Agora voce deve consider este evento como o início desta Jornada. Voce pode fazer isso indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-選擇事件，排定所有事件。 海島若爾納達島上塞梅蘭特島上的塞梅蘭特。 小團體 **確定** para salvar suas alteracoes.
+選取seu evento， arraste e solte o evento na tela de jornada。 海島若爾納達·阿古拉島上塞梅蘭特·奧·塞甘特。 Clique em **Ok** para salvar suas alteracoes。
 
 ![ACOP](./images/journeyevent.png)
 
-Como segunda etapa da jornada， voce deve adicionar uma acao **推播**. Vá para o lado esquerdo da tela para **動作**，選取a acao **推播** e arraste solte a acao no segundo nó da sua jornada.
+Como segunda etapa da jornada， voce deve adicionar uma acao **推播**。 Vá para o lado esquerdo da tela para **動作**，選取acao **推播** e arraste solte a acao no segundo nó da sua jornada。
 
 ![ACOP](./images/journeyactions.png)
 
-沒有拉多的direito da tela、agora voce deve criar sua notificação push。
+沒有拉多的direito da tela， agora voce deve criar sua notificação push.
 
-定義 **類別** como **行銷** 選擇推送表面que permite environmie notifications push。 Nesse caso，超級推送 **mmeeewis-app-mobile-bootcamp**.
+定義&#x200B;**類別**&#x200B;組合&#x200B;**行銷**&#x200B;選取一個推送表面que永久環境通知推送。 Nesse caso，超級推播使用者selecionada é **mmeewis-app-mobile-bootcamp**。
 
 ![ACOP](./images/journeyactions1.png)
 
-## 3.3.2基本概念
+## 3.3.2編寫手冊
 
-小團體 **編輯內容**.
+點按&#x200B;**編輯內容**。
 
 ![ACOP](./images/emptymsg.png)
 
-Em seguida，一種長吻蝮：
+塞吉達，一株長吻鯛：
 
 ![ACOP](./images/emailmsglist.png)
 
 Vamos definir o conteúdo da notificação推送。
 
-無無營帳的小型企業 **標題**.
+叢集無campo de texto **標題**。
 
 ![Journey Optimizer](./images/msg5.png)
 
-科梅斯，艾瑞亞 **奧拉**. 沒有個人化的小團體。
+Na área de texto， comece **Olá**。 無個人主義的小團體。
 
 ![Journey Optimizer](./images/msg6.png)
 
-Agora voce precisa trader o token de personalização para o campo **名字** 我這才叫阿瑪澤納多 `profile.person.name.firstName`. 無功能表à esquerda，選擇 **設定檔屬性**，角色para baixo/navegue para encontract o elemento **個人** 小團體na seta para avancar um nível até chegar ao campo `profile.person.name.firstName`. 小團體no ícone **+** 歡迎您來到campo à tela。 小團體 **儲存**.
+Agora voce precisa trazer o token de personalização para o campo **名字** qestá armazenado em `profile.person.name.firstName`。 沒有功能表à esquerda，選取一個&#x200B;**設定檔屬性**，role para baixo/navegue para encontrar o elemento **人員** e clique na seta para avancar um nível até chegar ao campo `profile.person.name.firstName`。 Clique no ícone **+** para adicionar o campo à tela。 點按&#x200B;**儲存**。
 
 ![Journey Optimizer](./images/msg7.png)
 
-恩濤，請迴音。 小集團無個人化組織 **內文**.
+恩陶，請迴音。 Clique no ícone de personalizaao lado do campo **主體**。
 
 ![Journey Optimizer](./images/msg11.png)
 
-艾斯克雷瓦，艾瑞亞 `Bem-vindo(a)`.
+Na area de texto， escreva `Bem-vindo(a)`。
 
 ![Journey Optimizer](./images/msg12.png)
 
-Em seguida，小團體  **內容屬性** e **Journey Orchestration**.
+Em seguida，點選em **內容屬性** e **Journey Orchestration**。
 
 ![ACOP](./images/jomsg3.png)
 
-小團體 **事件**.
+點按&#x200B;**事件**。
 
 ![ACOP](./images/jomsg4.png)
 
-小團體不做任何事，做任何事： **yourLastNameBeaconEntryEvent**.
+群組no nome do sevento，que deve semelhante ao seguinte： **yourLastNameBeaconEntryEvent**。
 
 ![ACOP](./images/jomsg5.png)
 
-小團體 **地標內容**.
+點按&#x200B;**放置內容**。
 
 ![ACOP](./images/jomsg6.png)
 
-小團體 **POI互動**.
+點按&#x200B;**POI互動**。
 
 ![ACOP](./images/jomsg7.png)
 
-小團體 **POI詳細資料**.
+點按&#x200B;**POI詳細資料**。
 
 ![ACOP](./images/jomsg8.png)
 
-小團體否 **+** 圖示否 **POI名稱**.
-Em seguida， o seguinte será exibido. 小團體 **儲存**.
+叢集編號&#x200B;**+**&#x200B;圖示編號&#x200B;**POI名稱**。
+再來，再來。 點按**儲存**。
 
 ![ACOP](./images/jomsg9.png)
 
-小香腸。 Clique na seta no canto superior esquerdo para retornar à sua jornada.
+我們一起吃吧。 Clique na seta no canto superior esquerdo para retornar à sua jornada.
 
 ![ACOP](./images/jomsg11.png)
 
-小團體 **確定**.
+點按&#x200B;**確定**。
 
 ![ACOP](./images/jomsg14.png)
 
-## 3.3.2 Envire uma mensagem para uma tela
+## 3.3.2環境uma mensagem para uma tela
 
-Como terceira etapa da jornada， voce deve adicionar uma acao  **sendMessageToScreen**. Vá para o lado esquerdo da tela para **動作**，選取a acao **sendMessageToScreen** 我們很榮幸地來到這裡。 真好，敬請期待。
+Como terceira etapa da jornada， voce deve adicionar uma acao **sendMessageToScreen**。 Vá para o lado esquerdo da tela para **動作**，選取acao **sendMessageToScreen** e arraste e solte a acao no terceiro nó da sua jornada。 我願意，願意。
 
 ![ACOP](./images/jomsg15.png)
 
-**sendMessageToScreen** uma acao personalizada que irá publicar uma mensagem否 **端點** 烏薩多pela exibicao na loja。 A acao **sendMessageToScreen** 西班牙語。 Voce pode visualizar essas variáveis rolando para baixo até ver **動作引數**.
+**sendMessageToScreen** é uma acao personalizada que irá publicar uma mensagem no **端點** usado pela exibicao na loja。 Acao **sendMessageToScreen** espera que múltiplas variáveis sejam definidas。 Voce pode visualizar essas variáveis rolando para baixo até ver **動作引數**。
 
 ![ACOP](./images/jomsg16.png)
 
-Agora voce預先定義os valores para cada parametero de acao。 Siga esta tabela para entender quais valores sao necessários e onde.
+Agora voce precisa definir os valores para cada parametero de acao. Siga esta tabela para entender quais valores sao necessários e onde.
 
 | 參數 | 值 |
 |:-------------:| :---------------:|
@@ -155,15 +155,15 @@ Agora voce預先定義os valores para cada parametero de acao。 Siga esta tabel
 
 {style="table-layout:auto"}
 
-Para definir esses valores， clique no ícone **編輯**.
+Para definir esses valores， clique no ícone **編輯**。
 
 ![ACOP](./images/jomsg17.png)
 
-Em seguida，選擇 **進階模式**.
+Em seguida，選取&#x200B;**進階模式**。
 
 ![ACOP](./images/jomsg18.png)
 
-Em seguida， cole o valor com base na tabela acima. 小團體 **確定**.
+Em seguida， cole o valor com base na tabela acima. 點按&#x200B;**確定**。
 
 ![ACOP](./images/jomsg19.png)
 
@@ -171,41 +171,41 @@ Repita esse processo para adicionar valores para cada campo.
 
 >[!IMPORTANT]
 >
->Para o campo ECID， há uma referencia ao evento`yourLastNameBeaconEntryEvent`. Lembre-se de substituir  `yourLastName` 佩洛·塞烏·索布雷諾姆。
+>Para o campo ECID， há uma referencia ao evento`yourLastNameBeaconEntryEvent`。 Lembre-se de substituir `yourLastName` pelo seu sobrenome。
 
-最後的結果是semelhante ao seguinte：
+最後的結果是精靈手錶：
 
 ![ACOP](./images/jomsg20.png)
 
-角色para cima e clique em **確定**.
+角色para cima e clique em **確定**。
 
 ![ACOP](./images/jomsg21.png)
 
-您仍需要為歷程提供名稱。 若要這麼做，請按一下 **屬性** 圖示加以檢視。
+您仍需要提供歷程名稱。 若要這麼做，請按一下熒幕右上方的&#x200B;**屬性**&#x200B;圖示。
 
 ![ACOP](./images/journeyname.png)
 
-Voce pode inserir o nome da jornada aqui. 使用 `yourLastName - Beacon Entry Journey`. 小團體 **確定** para salvar suas alteracoes.
+插入至聖名雅姬。 使用`yourLastName - Beacon Entry Journey`。 Clique em **OK** para salvar suas alteracoes。
 
 ![ACOP](./images/journeyname1.png)
 
-Agora voce pode publicar sua jornada clicando em **發佈**.
+Agora voce pode publicar sua jornada clicando em **Publish**。
 
 ![ACOP](./images/publishjourney.png)
 
-小團體 **發佈** novamente。
+Clique em **Publish** novamente。
 
 ![ACOP](./images/publish1.png)
 
-西班牙公共事業部關於澳門的資訊。
+我們非常重視您的需求，我們非常重視您的需求。
 
 ![ACOP](./images/published.png)
 
-Sua jornada agora está ativa e pode ser acionada。
+長尾相依的相依之人。
 
-Voce terminou este expercisio。
+請回答問題。
 
-冰淇淋甜菜： [3.4測驗sua jornada](./ex4.md)
+Próxima etapa： [3.4 Teste sua jornada](./ex4.md)
 
 [Retornar para Fluxo de Usuário 3](./uc3.md)
 

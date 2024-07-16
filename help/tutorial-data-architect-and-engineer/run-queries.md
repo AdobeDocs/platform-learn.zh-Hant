@@ -10,8 +10,8 @@ thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 3%
+source-wordcount: '314'
+ht-degree: 0%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 3%
 
 Adobe Experience Platform查詢服務可讓您使用標準SQL在Platform中查詢資料，協助您瞭解資料。 使用查詢服務，您可以聯結Data Lake中的任何資料集，並將查詢結果擷取為新資料集，以用於報表、機器學習或擷取到即時客戶個人檔案中。
 
-**資料架構師** 和 **資料工程師** 在本教學課程之外，將需要使用查詢服務。
+**資料架構師**&#x200B;和&#x200B;**資料工程師**&#x200B;需要在本教學課程之外使用查詢服務。
 
 在開始練習之前，請觀看此短片，以進一步瞭解查詢服務：
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
 
 ## 需要的許可權
 
-在 [設定許可權](configure-permissions.md) 課程，您已設定完成本課程所需的所有存取控制項。
+在[設定許可權](configure-permissions.md)課程中，您已設定完成本課程所需的所有存取控制。
 
 <!-- Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -41,8 +41,8 @@ Adobe Experience Platform查詢服務可讓您使用標準SQL在Platform中查�
 
 讓我們從一些簡單的查詢開始：
 
-1. 在Platform使用者介面，前往 **查詢** 在左側導覽列中
-1. 選取 **建立查詢** 按鈕，開啟文字方塊以執行查詢
+1. 在Platform使用者介面中，前往左側導覽中的&#x200B;**查詢**
+1. 選取右上角的&#x200B;**建立查詢**&#x200B;按鈕，開啟文字方塊以執行查詢
 1. 在編輯器中輸入下列查詢，然後按Shift+Enter或Shift+Return以執行查詢。
 
    ```
@@ -51,10 +51,10 @@ Adobe Experience Platform查詢服務可讓您使用標準SQL在Platform中查�
 
 1. 這會顯示可用表格的清單
 
-   ![顯示表格查詢](assets/queries-showTables.png)
+   ![顯示資料表查詢](assets/queries-showTables.png)
 
 
-1. 現在嘗試此查詢，取代 `_techmarketingdemos` 使用您自己的租使用者名稱空間，如果您記得，這些名稱空間會顯示在您的結構描述中。
+1. 現在嘗試此查詢，將`_techmarketingdemos`取代為您自己的租使用者名稱空間，如果您記得的話，這些名稱空間會顯示在您的結構描述中。
 
    ```
    SELECT person.name.lastName,loyalty.tier
@@ -64,12 +64,12 @@ Adobe Experience Platform查詢服務可讓您使用標準SQL在Platform中查�
 
    ![從熟客資料集中選取資料](assets/queries-loyaltySelect.png)
 
-1. 如果有任何錯誤，詳細訊息將會顯示在 **[!UICONTROL 主控台]** 標籤，如下圖所示
-   ![查詢中的錯誤](assets/queries-error.png)
+1. 如果發生任何錯誤，**[!UICONTROL 主控台]**索引標籤中將會顯示詳細訊息，如下圖所示
+   ![查詢發生錯誤](assets/queries-error.png)
 
-1. 有了成功的查詢， **[!UICONTROL 名稱]** it `Luma Gold Level Customers`
-1. 選取 **[!UICONTROL 儲存]** 按鈕
-   ![儲存查詢](assets/queries-loyaltySelect-save.png)
+1. 使用成功的查詢，**[!UICONTROL 命名]** `Luma Gold Level Customers`
+1. 選取&#x200B;**[!UICONTROL 儲存]**按鈕
+   ![正在儲存查詢](assets/queries-loyaltySelect-save.png)
 
 
 <!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
@@ -119,7 +119,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## 其他資源
 
-* [查詢服務文件](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant)
+* [查詢服務檔案](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant)
 * [查詢服務API參考](https://www.adobe.io/experience-platform-apis/references/query-service/)
 
-接下來是最後的實作課程， [建立區段](build-segments.md)！
+現在開始最後一個實作課程，[建立區段](build-segments.md)！

@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # 使用Experience Platform保證驗證Web SDK實作
 
-Adobe Experience Platform保證功能可協助您檢查、證明、模擬及驗證您如何收集資料或提供體驗。 深入瞭解 [Adobe保證](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Adobe Experience Platform保證功能可協助您檢查、證明、模擬及驗證您如何收集資料或提供體驗。 深入瞭解[Adobe保證](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home)。
 
 
 ## 學習目標
@@ -25,7 +25,7 @@ Adobe Experience Platform保證功能可協助您檢查、證明、模擬及驗�
 
 ## 先決條件
 
-您熟悉資料收集標籤和 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 並完成本教學課程中的先前課程：
+您熟悉資料收集標籤和[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}，並已完成教學課程中先前的課程：
 
 * [設定XDM結構描述](configure-schemas.md)
 * [設定身分名稱空間](configure-identities.md)
@@ -43,16 +43,16 @@ Adobe Experience Platform保證功能可協助您檢查、證明、模擬及驗�
 
 ### 在Debugger中啟動保證工作階段
 
-每次在Adobe Experience Platform Debugger中啟用邊緣追蹤時，保證工作階段都會在背景啟動。
+每次在Adobe Experience Platform Debugger中啟用Edge追蹤時，保證工作階段都會在背景啟動。
 
 在Debugger課程中檢閱我們的做法：
 
-1. 前往 [Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html) 並使用除錯工具 [將網站上的tag屬性切換為您自己的開發屬性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
-1. 在左側導覽列中 **[!UICONTROL Experience Platform偵錯工具]** 選取 **[!UICONTROL 記錄檔]**
-1. 選取 **[!UICONTROL Edge]** 標籤，然後選取 **[!UICONTROL 連線]**
+1. 移至[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)，然後使用偵錯工具來[將網站上的標籤屬性切換為您自己的開發屬性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. 在&#x200B;**[!UICONTROL Experience Platform偵錯工具]**&#x200B;的左側導覽中，選取&#x200B;**[!UICONTROL 記錄檔]**
+1. 選取&#x200B;**[!UICONTROL Edge]**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 連線]**
 
-   ![連線邊緣追蹤](assets/analytics-debugger-edgeTrace.png)
-1. 啟用Edge Trace後，您會在頂端看到外寄連結圖示。 選取圖示以開啟「保證」。
+   ![連線Edge追蹤](assets/analytics-debugger-edgeTrace.png)
+1. 啟用Edge追蹤後，您會在頂端看到外寄連結圖示。 選取圖示以開啟「保證」。
 
    ![啟動保證工作階段](assets/validate-debugger-start-assurnance.png)
 
@@ -60,17 +60,17 @@ Adobe Experience Platform保證功能可協助您檢查、證明、模擬及驗�
 
 ### 從保證介面啟動保證工作階段
 
-1. 開啟 [資料收集介面](https://experience.adobe.com/#/data-collection/home){target="_blank"}
+1. 開啟[資料收集介面](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. 在左側導覽中選取保證
 1. 選取建立工作階段
    ![建立保證工作階段](assets/assurance-create-session.png)
 1. 選取開始
-1. 為工作階段命名，例如， `Luma Web SDK validation`
-1. 作為 **[!UICONTROL 基礎URL]** 進入 `https://luma.enablementadobe.com/`
-   ![為保證工作階段命名](assets/assurance-name-session.png)
-1. 在下一個畫面，選取 **[!UICONTROL 複製連結]**
+1. 為工作階段命名，例如`Luma Web SDK validation`
+1. 作為&#x200B;**[!UICONTROL 基底URL]**，請輸入`https://luma.enablementadobe.com/`
+   ![命名保證工作階段](assets/assurance-name-session.png)
+1. 在下一個畫面中，選取&#x200B;**[!UICONTROL 複製連結]**
 1. 選取圖示以將連結複製到剪貼簿
-1. 在瀏覽器中貼上URL，這會使用特殊的URL引數開啟Luma網站 `adb_validation_sessionid` 並啟動工作階段
+1. 在瀏覽器中貼上URL，這會使用特殊的URL引數`adb_validation_sessionid`開啟Luma網站並啟動工作階段
 1. 在Assurance介面中，您應該會看到一則訊息，指出您已成功連線至工作階段，而且您應該會看到在Assurance介面中擷取的事件。
    ![保證工作階段已連線](assets/assurance-success.png)
 
@@ -78,9 +78,9 @@ Adobe Experience Platform保證功能可協助您檢查、證明、模擬及驗�
 
 在實施的這個階段，可檢視的資訊有限。 我們可以看到您在PlatformEdge Network上產生的Experience CloudID (ECID)值：
 
-1. 選取包含已呼叫之事件的列 `Alloy Response Handle`.
-1. 功能表會顯示在右側。 選取 `+` 在「 」旁邊簽署 `[!UICONTROL ACPExtensionEventData]`
-1. 選取「 」以向下展開 `[!UICONTROL payload > 0 > payload > 0 > namespace]`. 顯示在最後一個 `0` 對應至 `ECID`. 透過下方顯示的值，您知道這一點 `namespace` 比對 `ECID`
+1. 選取事件名稱為`Alloy Response Handle`的列。
+1. 功能表會顯示在右側。 選取`[!UICONTROL ACPExtensionEventData]`旁邊的`+`符號
+1. 選取`[!UICONTROL payload > 0 > payload > 0 > namespace]`以深入研究。 最後`0`下方顯示的ID對應至`ECID`。 您知道值顯示在`namespace`下符合`ECID`
 
    ![保證驗證ECID](assets/validate-assurance-ecid.png)
 
@@ -96,4 +96,4 @@ Adobe Experience Platform保證功能可協助您檢查、證明、模擬及驗�
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

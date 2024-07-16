@@ -12,7 +12,7 @@ topic: Integrations
 exl-id: 9607e641-b0d5-49c1-b319-32ed0720e715
 source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
-source-wordcount: '2087'
+source-wordcount: '2086'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ API是解決軟體業務挑戰的方法。 在大多數企業中，這是一項�
 
 ## API術語和概念
 
-單字或片語是什麼意思，我如何簡單輕鬆地思考？ 在API中，「應用程式」部分是指軟體應用程式或程式。 「程式設計介面」部分是指應用程式為特定目的與其他應用程式互動的方式和位置。 在我們的網頁範例中，當您按一下連結時，瀏覽器會傳送請求給網頁的伺服器。
+單字或片語是什麼意思，我如何簡單輕鬆地思考？ 在API中，「應用程式」部分是指軟體應用程式或程式。 「程式設計介面」部分是指應用程式為特定目的與另一個應用程式互動的方式和位置。 在我們的網頁範例中，當您按一下連結時，瀏覽器會傳送請求給網頁的伺服器。
 
 ![具有目的地URL的超連結影像](../assets/api101-link-destination.png)
 
 在此熒幕擷圖中，滑鼠游標暫留在Adobe Experience Platform連結上。 底部是網頁瀏覽器狀態列，其中顯示瀏覽器將取得的頁面「位址」。 換言之，按一下Adobe Experience Platform連結會告訴瀏覽器「為我取得該頁面，以便我能夠在畫面上看見」。
 
-點按連結時，瀏覽器會向伺服器要求取得頁面。 這是 `GET` request，常搭配Web API使用的其中一種請求方法。 瀏覽器需要滿足請求的一件事是頁面「地址」 — 它在網頁上的什麼位置？
+點按連結時，瀏覽器會向伺服器要求取得頁面。 這是`GET`要求，是常搭配Web API使用的要求方法之一。 瀏覽器需要滿足請求的一件事是頁面「地址」 — 它在網頁上的什麼位置？
 
 ### URL部分
 
@@ -47,33 +47,33 @@ API是解決軟體業務挑戰的方法。 在大多數企業中，這是一項�
 
 大部分的瀏覽器都有「位址列」，會顯示網頁的部分或全部「位址」。 當瀏覽器「取得」我們點按之連結的頁面時，它會顯示此位址列中的頁面「位址」。 那麼網頁的「位址」為何？
 
-該 `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` 上面是網頁的位址，稱為URL或統一資源定位器。 URL可以指代像這樣的頁面、影像檔案、視訊或其他檔案型別。
+上面的`https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`是網頁的位址，稱為URL或統一資源定位器。 URL可以指代像這樣的頁面、影像檔案、視訊或其他檔案型別。
 
-![URL部分](../assets/api101-url-parts.jpg)
+![部分URL](../assets/api101-url-parts.jpg)
 
 這個位址(URL)包含與網頁和瀏覽器API非常相關的特定部分。
 
 **配置**
 
-此 `scheme` 以上也稱為 `protocol` 和Web API，通常會 `http` 或 `https`. HTTP或HyperText傳輸通訊協定是網頁等資源如何從網頁伺服器傳輸到網頁瀏覽器。 HTTPS是安全的版本，透過網際網路進行傳輸，其安全性旨在防止干擾正在傳輸的資源。 透過HTTPS檢視頁面時，經常會在瀏覽器位址列中看到小鎖定圖示。
+上述`scheme`也稱為具有網頁API的`protocol`，通常為`http`或`https`。 HTTP或HyperText傳輸通訊協定是網頁等資源如何從網頁伺服器傳輸到網頁瀏覽器。 HTTPS是安全的版本，透過網際網路進行傳輸，其安全性旨在防止干擾正在傳輸的資源。 透過HTTPS檢視頁面時，經常會在瀏覽器位址列中看到小鎖定圖示。
 
 對於網頁API，這些資源的傳輸會透過HTTP請求進行，換句話說，就是透過HTTP請求。
 
 **主機和網域**
 
-此 `business.adobe.com` 是所要求資源的主機。 當我們的範例連結被點按時，瀏覽器會使用URL的這個部分來尋找託管頁面的伺服器。 它並不總是與網頁伺服器完全相同，但從基本層級來看，我們可以將其視為瀏覽器將取得我們請求之頁面的伺服器。
+`business.adobe.com`是所要求資源的主機。 當我們的範例連結被點按時，瀏覽器會使用URL的這個部分來尋找託管頁面的伺服器。 它並不總是與網頁伺服器完全相同，但從基本層級來看，我們可以將其視為瀏覽器將取得我們所要求頁面的伺服器。
 
-網域名稱是網域名稱系統（又稱為DNS）的一部分。 大部分人都認為 `adobe.com` 或 `example.com` 作為「網域名稱」，但會有與API相關的部分。 `www.adobe.com` 和 `business.adobe.com` 可以稱為網域名稱，但 `www.` 和 `business.` 零件稱為子網域。 API通常會與包含子網域的URL互動，例如 `api.example.com` 或 `sub.www.example.com`.
+網域名稱是網域名稱系統（又稱為DNS）的一部分。 大部分人都將`adobe.com`或`example.com`視為「網域名稱」，但有些部分與API相關。 `www.adobe.com`和`business.adobe.com`可以稱為網域名稱，但`www.`和`business.`部分稱為子網域。 API通常會與包含子網域（如`api.example.com`或`sub.www.example.com`）的URL互動。
 
-經常會看到這個詞 _主機_ 指完整的網域名稱，包括任何子網域，例如 `business.adobe.com`. 經常可以看到術語 _網域_ 或 _網域名稱_ 當參照沒有子網域的主機，例如 `adobe.com`. 記住主機的每個部分和變數的特定字詞在這裡並不重要。 但請務必瞭解這些詞語是常用的，以便於您釐清業務和討論的任何相關細節。
+經常會看到術語&#x200B;_主機_&#x200B;是指包含任何子網域（如`business.adobe.com`）的完整網域名稱。 在參照沒有子網域的主機（例如`adobe.com`）時，通常也會看到字詞&#x200B;_網域_&#x200B;或&#x200B;_網域名稱_。 記住主機的每個部分和變數的特定字詞在這裡並不重要。 但請務必瞭解這些詞語是常用的，以便於您釐清業務和討論的任何相關細節。
 
 **Origin**
 
-Origin是另一個要注意的術語，與URL的部分密切相關。 在基本層級上，來源大致為 `scheme` 加上 `host` 加上 `domain` 按讚 `https://business.adobe.com`. 不同的值通常代表不同的來源，例如 `https://business.adobe.com` 和 `http://business.adobe.com` 不是相同來源，因為它們有不同的配置。 `https://www.adobe.com` 和 `https://business.adobe.com` 由於子網域不同，因此在許多使用中並非相同來源。
+Origin是另一個要注意的術語，與URL的部分密切相關。 在基本層級，來源大致為`scheme`加上`host`加上`domain`，如`https://business.adobe.com`。 不同的值通常代表不同的來源，例如`https://business.adobe.com`和`http://business.adobe.com`不是相同來源，因為它們有不同的配置。 由於子網域不同，`https://www.adobe.com`和`https://business.adobe.com`在許多使用中也不是相同來源。
 
 **路徑**
 
-上述URL範例中的最後一個位元為 `path` 至資源 — 範例中的頁面。 此 `/products/experience-platform/` 部分通常代表網頁伺服器上的資料夾或目錄。 就像我們在電腦上擁有檔案和像片的資料夾或目錄一樣，我們也在Web伺服器上擁有資料夾來整理內容。 最後， `/adobe-experience-platform.html` 零件是檔案的名稱 — 網頁。
+上述URL範例中的最後一個位元是資源的`path`，也就是我們範例中的頁面。 `/products/experience-platform/`部分通常代表網頁伺服器上的資料夾或目錄。 就像我們在電腦上擁有檔案和像片的資料夾或目錄一樣，我們也在Web伺服器上擁有資料夾來整理內容。 最後，`/adobe-experience-platform.html`部分是檔案的名稱 — 網頁。
 
 URL還有其他更詳細的部分，將在本系列的下一部分重點說明。
 
@@ -85,7 +85,7 @@ Web API有時稱為第三方API。 這就像交易中的當事方一樣。 在�
 
 ## Web API的常見用法
 
-除了白天時間、天氣或個人化內容之外，Web API還有許多用途。 twitter、TikTok、Facebook、LinkedIn、Snapchat、Pinterest等社群媒體平台有多種程式設計師可搭配其應用程式使用的API。 當然，Adobe也有 [各種API](https://developer.adobe.com/apis) 程式設計師使用，讓他們的軟體可以與Adobe產品和服務互動。 軟體產品和服務透過這些API存取其他軟體產品和服務。
+除了白天時間、天氣或個人化內容之外，Web API還有許多用途。 twitter、TikTok、Facebook、LinkedIn、Snapchat、Pinterest等社群媒體平台有多種程式設計師可搭配其應用程式使用的API。 當然，Adobe也有[多種程式設計師使用的API](https://developer.adobe.com/apis)，讓他們的軟體可以與Adobe產品和服務互動。 軟體產品和服務透過這些API存取其他軟體產品和服務。
 
 ## 範例API
 
@@ -95,9 +95,9 @@ Adobe Experience Platform資料存取API是網頁API，可讓程式設計師從A
 
 ## api端點
 
-當程式設計師在他們的程式中「使用」瀏覽器或網頁API時，他們通常會請求傳送或接收資源，例如我們的請求網頁的範例瀏覽器。 API檔案通常會列出這些請求的「端點」，例如： `https://platform.adobe.io/data/foundation/export/files/{dataSetFileId}`. 這是程式設計師用來取得資料集檔案的平台資料存取API的特定模式或「端點」。
+當程式設計師在他們的程式中「使用」瀏覽器或網頁API時，他們通常會請求傳送或接收資源，例如我們的請求網頁的範例瀏覽器。 API檔案通常會列出這些請求的「端點」，例如： `https://platform.adobe.io/data/foundation/export/files/{dataSetFileId}`。 這是程式設計師用來取得資料集檔案的平台資料存取API的特定模式或「端點」。
 
-此 `{dataSetFileId}` 由這些大括弧括住，代表程式設計師在要求中需要傳送的值。 所以實際API請求中的URL看起來會像這樣 `https://platform.adobe.io/data/foundation/export/files/xyz123brb` 其中 `xyz123brb` 必須為程式設計師想要接收之資料集檔案的有效ID。
+由這些大括弧括住的`{dataSetFileId}`代表程式設計師在要求中需要傳送的值。 因此，實際API要求中的URL類似於`https://platform.adobe.io/data/foundation/export/files/xyz123brb`，其中`xyz123brb`必須是程式設計師想要接收的資料集檔案的有效ID。
 
 換句話說，就像瀏覽器在特定URL取得頁面、API請求從特定端點取得資源，或傳送資源給特定端點（例如此資料集範例）。
 
@@ -109,23 +109,23 @@ Adobe Experience Platform資料存取API是網頁API，可讓程式設計師從A
 
 **`GET`**
 
-此 `GET` 請求方法可用於請求提供資源的回應，例如我們的網頁和資料集範例。 當我們按一下瀏覽器中的連結，或點選行動裝置上的連結時，我們製作 `GET` 幕後要求。
+在要求提供可提供資源的回應（例如我們的網頁和資料集範例）時，會使用`GET`要求方法。 當我們在瀏覽器中按一下連結，或在行動裝置上點選連結，我們即會在幕後提出`GET`請求。
 
 **`POST`**
 
-此 `POST` 方法會隨要求傳送資料。 「請求」傳送資料聽起來可能有點奇怪，但想法是提出API請求就是要求端點（接收軟體）接受請求，而且若是 `POST`，也接受傳送的資料。 傳送的資料通常會像資料庫或檔案一樣寫入資料存放區，以便儲存。
+`POST`方法隨要求傳送資料。 「要求」傳送資料聽起來可能有些奇怪，但提出API要求就是要求端點（接收軟體）接受要求，而且在`POST`的情況下，也接受傳送的資料。 傳送的資料通常會像資料庫或檔案一樣寫入資料存放區，以便儲存。
 
 **`PUT`**
 
-此 `PUT` 要求方法類似於 `POST` 由於它會傳送資料，但如果要傳送的資料已存在於端點， `PUT` 會取代以更新現有資料。 A `POST` 不更新，只是傳送，所以多次 `POST` 請求可建立已傳送資料的多筆記錄，而非更新任何現有記錄。
+`PUT`要求方法類似於`POST`，因為它會傳送資料，但如果要傳送的資料已經存在於端點，`PUT`會取代現有資料以更新現有資料。 `POST`不會更新，而只是傳送，因此多個`POST`請求可以建立已傳送資料的多筆記錄，而非更新任何現有記錄。
 
 **`PATCH`**
 
-此 `PATCH` request方法可用來傳送會更新部分現有記錄的資料，例如當我們更新帳戶設定檔來變更地址時。 使用 `POST` 請求可建立額外的設定檔，並使用 `PUT`，現有設定檔可取代，但需使用 `PATCH` 方法我們只要更新現有記錄的相關部分，例如地址。
+`PATCH`要求方法用於傳送可更新部分現有記錄的資料，例如當我們透過更新帳戶設定檔來變更地址時。 透過`POST`要求，可以建立額外的設定檔，透過`PUT`，可以取代現有的設定檔，但透過`PATCH`方法，我們只會更新現有記錄的相關部分，例如地址。
 
 **`DELETE`**
 
-此 `DELETE` request方法會移除要求中指定的資源，就像我們按一下連結以完全刪除帳戶設定檔一樣。
+`DELETE`要求方法會移除要求中指定的資源，就像我們按一下連結以完全刪除帳戶設定檔一樣。
 
 還有其他幾個方法，但以下是使用API時最常見的方法清單。
 
@@ -133,7 +133,7 @@ Adobe Experience Platform資料存取API是網頁API，可讓程式設計師從A
 
 現在您已瞭解API的基本術語、概念和步驟，接下來可檢視實際的API要求範例。
 
-瀏覽器範例中的頁面URL為 `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. 按一下Adobe Experience Platform連結時，瀏覽器會發出 `GET` 此頁面的要求。 由於我們有瀏覽器來為我們工作，因此我們只需按一下，但如果程式設計師希望該請求在軟體應用程式中發生，他們必須提供API請求的所有必要詳細資訊，才能成功履行。
+瀏覽器範例中的頁面具有URL `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`。 按一下Adobe Experience Platform連結時，瀏覽器會針對此頁面發出`GET`要求。 由於我們有瀏覽器來為我們工作，因此我們只需按一下，但如果程式設計師希望該請求在軟體應用程式中發生，他們必須提供API請求的所有必要詳細資訊，才能成功履行。
 
 以下為程式碼中的可能外觀：
 
@@ -162,7 +162,10 @@ fetch(
 );
 ```
 
-在上面的程式碼中，您可以看到 `URL` 瀏覽器正在要求，而底部附近是 `method: "GET"` 要求方法。 其他幾行程式碼也是請求的一部分，但超出了本文章的範圍。
+在上面的程式碼中，您可以看到瀏覽器正在要求的`URL`，而在底部附近是`method: "GET"`要求方法。 其他幾行程式碼也是請求的一部分，但超出了本文章的範圍。
 
 
-*[API]：應用程式設計介面*[URL]：統一資源定位器*[HTTP]：超文字傳輸通訊協定*[DNS]：網域名稱系統
+*[API]：應用程式設計介面
+*[URL]：統一資源定位器
+*[HTTP]： HyperText傳輸通訊協定
+*[DNS]：網域名稱系統

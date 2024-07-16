@@ -1,6 +1,6 @@
 ---
 title: 使用合作夥伴協助的訪客辨識功能，為未知訪客提供個人化的現場體驗
-description: 瞭解如何從收集第三方屬性 [!DNL Adobe Experience Platform Web SDK] 使用合作夥伴協助的訪客辨識功能，為未知的訪客提供個人化的現場體驗。
+description: 瞭解如何從 [!DNL Adobe Experience Platform Web SDK] 收集協力廠商屬性，並使用合作夥伴協助的訪客辨識功能，為未知的訪客提供個人化現場體驗。
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 使用合作夥伴協助的訪客辨識功能，為未知訪客提供個人化的現場體驗
 
-瞭解如何從收集第三方屬性 [!DNL Adobe Experience Platform Web SDK] 使用合作夥伴協助的訪客辨識功能，為未知的訪客提供個人化的現場體驗。 如需詳細資訊，請造訪 [使用合作夥伴協助的訪客辨識，提供個人化的站上體驗](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html) 檔案。
+瞭解如何從[!DNL Adobe Experience Platform Web SDK]收集協力廠商屬性，並使用合作夥伴協助的訪客辨識功能，為未知的訪客提供個人化現場體驗。 如需詳細資訊，請造訪[使用合作夥伴協助的訪客辨識，以個人化站上體驗](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html)檔案。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on)

@@ -24,31 +24,31 @@ ht-degree: 1%
 
 ### 第1天
 
-9:30: 步入式
+9:30:步進
 
-10:00: 啟動/簡介和啟動營挑戰
+10:00:啟動/介紹與訓練營挑戰
 
 11:00: 1-1個人化、摩擦捕捉、獨立單位、AdobePOV （白板）
 
-12:00: 中斷
+12:00:中斷
 
-12:15: 解決方案架構劃分（白板）
+12:15:解決方案架構劃分（白板）
 
-13:00: 午餐
+13:00:午餐
 
-14:00: 使用者流程1 — 「贏取」逐步解說與動手深入探討
+14:00:使用者流程1 — 「贏取」逐步解說與動手深入探討
 
-15:30: 中斷
+15:30:中斷
 
 16:00: Userflow 2註冊與上線
 
 17:30: Golfclinic &amp; Borrel
 
-19:30: 晚餐
+19:30:晚餐
 
 ### 第2天
 
-08:30: 早餐會議：介紹以使用者歷程為基礎的傳送、團隊結構、傳送待處理專案
+08:30:早餐工作階段：介紹以使用者歷程為基礎的傳遞、團隊結構、傳遞待處理專案
 
 09.45：透過實務案例瞭解AEP資料流程
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 10.45：中斷
 
-12:00: 使用者流程3「混合實體與數位」
+12:00:使用者流程3「混合實體與數位」
 
 12.30：午餐
 
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 - 存取Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - 存取Adobe Experience Platform資料彙集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 存取上的啟動營網站 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- 存取[https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)上的啟動營網站
 
 >[!IMPORTANT]
 >
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 在開始實作練習之前，請先瞭解本教學課程背後的架構。 此訓練營將深入探討Adobe Experience Platform的許多功能，並將討論跨各種來源和目標的多種整合。 為了讓您正確瞭解本教學課程背後的架構，以及Adobe Experience Platform在您的企業生態系統中的整體定位，請先檢閱架構影片和圖表。
 
-前往 [架構](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+移至[架構](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en)。
 
 ## 影片
 
@@ -93,15 +93,15 @@ ht-degree: 1%
 
 已建立的其他數個影片會展示bootcamp的元素，以及Adobe Experience Platform和非Adobe應用程式之間的強大整合。 按一下以下連結以尋找這些影片的概觀。
 
-前往 [影片](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+移至[影片](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en)。
 
 ## YouTube
 
-您可以找到其他有趣的影片 [在我們的YouTube頻道上](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+您可在我們的YouTube頻道](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw)上找到其他有趣的影片[。
 
 ## 使用者流程
 
-[1. 贏取](./uc/uc1/uc1.md)
+[1。 贏取](./uc/uc1/uc1.md)
 
 在此使用者流程中，您將瞭解為未知、未驗證的使用者，以及使用Real-Time CDP的已知已驗證使用者，實作贏取重點使用案例所需的所有元素。
 
@@ -113,7 +113,7 @@ ht-degree: 1%
 
 在此使用者流程中，您將使用Real-Time CDP和Adobe Journey Optimizer，以一致的方式跨線上和離線管道個人化客戶體驗。
 
-[4.客戶歷程分析](./uc/uc4/uc4.md)
+[4。 Customer Journey Analysis](./uc/uc4/uc4.md)
 
 在此使用者流程中，您將熟悉Customer Journey Analytics，並深入瞭解客戶如何從一個管道發展到另一個管道，從線上發展到離線，再發展到呼叫中心等等。
 

@@ -8,7 +8,7 @@ exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
 source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
 source-wordcount: '1032'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 此選擇性課程與Real-time Customer Data Platform (Real-Time CDP)、Journey Optimizer和Customer Journey Analytics的所有客戶有關。 Experience Platform是Experience Cloud產品的基礎，是開放系統，可將您的所有資料(Adobe和非Adobe)轉換為強大的客戶設定檔。 這些客戶設定檔會即時更新，並使用AI導向的深入分析來協助您跨每個管道提供適當的體驗。
 
-此 [事件](events.md)， [生命週期](lifecycle-data.md)、和 [身分](identity.md) 您在先前的課程中收集並傳送至Platform Edge Network的資料，會轉送至您在資料流中設定的服務，包括Adobe Experience Platform。
+您在前幾節課程中收集並傳送至PlatformEdge Network的[事件](events.md)、[生命週期](lifecycle-data.md)和[身分](identity.md)資料會轉送至您在資料流中設定的服務，包括Adobe Experience Platform。
 
 ![架構](assets/architecture-aep.png)
 
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 您的組織必須布建並授與Adobe Experience Platform的許可權。
 
-如果您沒有存取權，可以 [略過本課程](install-sdks.md).
+如果您沒有存取權，可以[略過本課程](install-sdks.md)。
 
 ## 學習目標
 
@@ -43,25 +43,25 @@ ht-degree: 4%
 
 ## 建立資料集
 
-所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 資料集是資料集合（通常是表格）的儲存和管理結構，其中包含結構（欄）和欄位（列）。 資料集也包含中繼資料，可說明其儲存資料的各個層面。 請參閱 [檔案](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh-Hant) 以取得相關資訊。
+所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 資料集是資料集合（通常是表格）的儲存和管理結構，其中包含結構（欄）和欄位（列）。 資料集也包含中繼資料，可說明其儲存資料的各個層面。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh-Hant)。
 
-1. 從應用程式中選取Experience Platform介面，即可導覽至該介面 ![應用程式](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) 功能表右上方。
+1. 從右上角的「應用程式![應用程式](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)」選單中選取Experience Platform介面，即可瀏覽至該介面。
 
 
-1. 選取 **[!UICONTROL 資料集]** 從左側導覽功能表。
+1. 從左側導覽功能表中選取&#x200B;**[!UICONTROL 資料集]**。
 
-1. 選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 建立資料集]**.
+1. 選取![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 建立資料集]**。
 
-1. 選取&#x200B;**[!UICONTROL 「從結構建立資料集」]**。
+1. 選取&#x200B;**[!UICONTROL 從結構描述]**建立資料集。
    ![資料集首頁](assets/dataset-create.png)
 
-1. 搜尋您的結構描述。 例如使用 `Luma Mobile` 在搜尋欄位中。
-1. 選取您的結構描述，例如 **[!DNL Luma Mobile App Event Schema]**.
+1. 搜尋您的結構描述。 例如在搜尋欄位中使用`Luma Mobile`。
+1. 選取您的結構描述，例如&#x200B;**[!DNL Luma Mobile App Event Schema]**。
 
-1. 選取&#x200B;**[!UICONTROL 「下一步」]**。
+1. 選取&#x200B;**[!UICONTROL 下一步]**。
    ![資料集設定](assets/dataset-configure.png)
 
-1. 提供 **[!UICONTROL 名稱]**，例如 `Luma Mobile App Events Dataset` 和 **[!UICONTROL 說明]**.
+1. 提供&#x200B;**[!UICONTROL 名稱]**，例如`Luma Mobile App Events Dataset`和&#x200B;**[!UICONTROL 描述]**。
 
 1. 選取「**[!UICONTROL 完成]**」。
    ![資料集完成時間](assets/dataset-finish.png)
@@ -69,21 +69,21 @@ ht-degree: 4%
 
 ## 新增Adobe Experience Platform資料流服務
 
-若要將您的XDM資料從Edge Network傳送至Adobe Experience Platform，請將Adobe Experience Platform服務新增至您設定的資料流（屬於的一部分） [建立資料串流](create-datastream.md).
+若要將您的XDM資料從Edge Network傳送到Adobe Experience Platform，請將Adobe Experience Platform服務新增到您設定的資料流，作為[建立資料流](create-datastream.md)的一部分。
 
 >[!IMPORTANT]
 >
 >您只能在建立事件資料集後啟用Adobe Experience Platform服務。
 
-1. 在資料收集UI中，選取 **[!UICONTROL 資料串流]** 和您的資料流。
+1. 在資料收集UI中，選取&#x200B;**[!UICONTROL 資料串流]**&#x200B;和您的資料串流。
 
-1. 然後選取 ![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增服務]**.
+1. 然後選取![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增服務]**。
 
-1. 從[!UICONTROL 「服務」]清單中選取&#x200B;**[!UICONTROL 「Adobe Experience Platform」]**。
+1. 從[!UICONTROL 服務]清單中選取&#x200B;**[!UICONTROL Adobe Experience Platform]**。
 
-1. 透過切換來啟用服務 **[!UICONTROL 已啟用]** 開啟。
+1. 透過將&#x200B;**[!UICONTROL 已啟用]**&#x200B;切換為開啟來啟用服務。
 
-1. 選取 **[!UICONTROL 事件資料集]** 例如您先前建立的 **[!DNL Luma Mobile App Event Dataset]**.
+1. 選取您先前建立的&#x200B;**[!UICONTROL 事件資料集]**，例如&#x200B;**[!DNL Luma Mobile App Event Dataset]**。
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
@@ -95,7 +95,7 @@ ht-degree: 4%
 
 ## 驗證資料集中的資料
 
-現在您已建立資料集並更新資料流以將資料傳送至Experience Platform，所有傳送至Platform Edge Network的XDM資料都會轉送至Platform並進入資料集。
+現在您已建立資料集並更新資料流以將資料傳送至Experience Platform，所有傳送至PlatformEdge Network的XDM資料都會轉送至Platform並進入資料集。
 
 開啟應用程式，並導覽至您正在追蹤事件的畫面。 您也可以觸發生命週期量度。
 
@@ -103,10 +103,10 @@ ht-degree: 4%
 
 ![驗證資料登陸Platform資料集批次](assets/platform-dataset-batches.png)
 
-您也應該能夠檢視範例記錄和使用 **[!UICONTROL 預覽資料集]** 功能：
+您也應該能夠使用&#x200B;**[!UICONTROL 預覽資料集]**功能檢視範例記錄和欄位：
 ![驗證傳送至Platform資料集的生命週期](assets/lifecycle-platform-dataset.png)
 
-驗證資料更強大的工具是Platform [查詢服務](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=zh-Hant).
+驗證資料的更強大工具是Platform的[查詢服務](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=zh-Hant)。
 
 ## 啟用即時客戶個人檔案
 
@@ -114,19 +114,19 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 
 ### 啟用結構
 
-1. 例如，開啟您的結構描述 **[!DNL Luma Mobile App Event Schema]**.
-1. 啟用 **[!UICONTROL 個人資料]**.
-1. 選取 **[!UICONTROL 此結構描述的資料將在identityMap欄位中包含主要身分。]** 在對話方塊中。
-1. **[!UICONTROL 儲存]** 結構描述。
+1. 開啟您的結構描述，例如&#x200B;**[!DNL Luma Mobile App Event Schema]**。
+1. 啟用&#x200B;**[!UICONTROL 設定檔]**。
+1. 選取&#x200B;**[!UICONTROL 此結構描述的資料將在identityMap欄位中包含主要身分。對話方塊中的]**。
+1. **[!UICONTROL 儲存]**&#x200B;結構描述。
 
-   ![為設定檔啟用結構描述](assets/platform-profile-schema.png)
+   ![啟用設定檔](assets/platform-profile-schema.png)的結構描述
 
 ### 啟用資料集
 
-1. 例如，開啟您的資料集 **[!DNL Luma Mobile App Event Dataset]**.
-1. 啟用 **[!UICONTROL 個人資料]**.
+1. 開啟您的資料集，例如&#x200B;**[!DNL Luma Mobile App Event Dataset]**。
+1. 啟用&#x200B;**[!UICONTROL 設定檔]**。
 
-   ![為設定檔啟用資料集](assets/platform-profile-dataset.png)
+   ![啟用設定檔](assets/platform-profile-dataset.png)的資料集
 
 ### 驗證設定檔中的資料
 
@@ -134,32 +134,32 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 
 使用保證來尋找在identityMap中傳遞的其中一個身分（電子郵件、lumaCrmId或ECID），例如CRM ID。
 
-![抓取身分值](assets/platform-identity.png)
+![抓取識別值](assets/platform-identity.png)
 
 在平台介面中，
 
-1. 瀏覽至 **[!UICONTROL 設定檔]**，並選取 **[!UICONTROL 瀏覽]** 從頂端列。
-1. 指定您剛剛擷取的身分詳細資訊，例如 `Luma CRM ID` 的 **[!UICONTROL 身分名稱空間]** 以及您複製的值 **[!UICONTROL 身分值]**. 然後選取 **[!UICONTROL 檢視]**.
+1. 導覽至&#x200B;**[!UICONTROL 設定檔]**，然後從頂端列選取&#x200B;**[!UICONTROL 瀏覽]**。
+1. 指定您剛才擷取的身分詳細資料，例如&#x200B;**[!UICONTROL 身分名稱空間]**&#x200B;的`Luma CRM ID`以及您為&#x200B;**[!UICONTROL 身分值]**&#x200B;複製的值。 然後選取&#x200B;**[!UICONTROL 檢視]**。
 1. 若要檢視詳細資訊，請選取設定檔。
 
 ![查詢身分值](assets/platform-profile-lookup.png)
 
-在 **[!UICONTROL 詳細資料]** 熒幕上，您可以看到使用者的基本資訊，包括 **[!UICONTROL **&#x200B;連結的身分&#x200B;**]**：
+在&#x200B;**[!UICONTROL 詳細資料]**&#x200B;畫面上，您可以看到使用者的基本資訊，包括&#x200B;**[!UICONTROL **&#x200B;連結的身分&#x200B;**]**：
 ![設定檔詳細資料](assets/platform-profile-details.png)
 
-在 **[!UICONTROL 活動]**，您可以檢視針對此使用者從行動應用程式實施收集的事件：
+在&#x200B;**[!UICONTROL 事件]**&#x200B;上，您可以看到從您的行動應用程式實作為此使用者收集的事件：
 
 ![設定檔事件](assets/platform-profile-events.png)
 
 
 從設定檔詳細資訊畫面：
 
-1. 若要檢視身分圖表，請按一下連結或導覽至 **[!UICONTROL 身分]**，然後選取 **[!UICONTROL 身分圖表]** 從頂端列。
-1. 若要查詢身分值，請指定 `Luma CRM ID` 作為 **[!UICONTROL 身分名稱空間]** 並將複製的值設為 **[!UICONTROL 身分值]**. 然後選取 **[!UICONTROL 檢視]**.
+1. 若要檢視身分圖表，請按一下連結或導覽至&#x200B;**[!UICONTROL 身分圖表]**，然後從上方列選取&#x200B;**[!UICONTROL 身分圖表]**。
+1. 若要查詢識別值，請指定`Luma CRM ID`做為&#x200B;**[!UICONTROL 識別名稱空間]**，並將複製的值做為&#x200B;**[!UICONTROL 識別值]**。 然後選取&#x200B;**[!UICONTROL 檢視]**。
 
-   此視覺效果會顯示設定檔中連結在一起的所有身分及其來源。 以下是身分圖表範例，由完成此Mobile SDK教學課程（資料來源2）和 [Web SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant) （資料來源1）：
+   此視覺效果會顯示設定檔中連結在一起的所有身分及其來源。 以下是身分圖表範例，它是由完成此Mobile SDK教學課程(Data Source 2)和[Web SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant) (Data Source 1)所收集的資料所建構：
 
-   ![抓取身分值](assets/platform-profile-identitygraph.png)
+   ![抓取識別值](assets/platform-profile-identitygraph.png)
 
 
 ## 後續步驟
@@ -169,6 +169,6 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 
 >[!SUCCESS]
 >
->您現在已設定應用程式，不僅將資料傳送至Edge Network，也傳送至Adobe Experience Platform。<br>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想要分享一般意見或有關於未來內容的建議，請在此分享這些內容 [Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>您現在已將應用程式設定為不僅將資料傳送至Edge Network，也傳送至Adobe Experience Platform。<br>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
 
-下一步： **[建立和傳送推播通知](journey-optimizer-push.md)**
+下一步： **[建立並傳送推播通知](journey-optimizer-push.md)**

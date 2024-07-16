@@ -9,7 +9,7 @@ role: Developer, Data Engineer
 source-git-commit: 0df82796a5885954102f7496fa043c0f3ef4b89e
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 26%
+ht-degree: 23%
 
 ---
 
@@ -29,11 +29,11 @@ ht-degree: 26%
    + [建置及發佈程式庫](tags/build-and-publish-a-library.md)
    + [使用Web SDK在網站中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant){target="_blank"}
    + [使用解決方案SDK在網站中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
-   + [行動應用程式中的實作](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
+   + [在行動應用程式中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
 + Web SDK{#web-sdk}
    + [概觀](web-sdk/overview.md)
    + [示範](web-sdk/demo.md)
-   + [實施教學課程（含標籤）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant){target="_blank"}
+   + [實作教學課程（含標籤）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant){target="_blank"}
    + [移轉Target教學課程](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
    + 同意{#consent}
       + [概觀](web-sdk/consent/overview.md)
@@ -45,14 +45,14 @@ ht-degree: 26%
    + [概觀](mobile-sdk/overview.md)
    + [建立行動屬性](mobile-sdk/create-mobile-properties.md)
    + [使用相依性管理員](mobile-sdk/use-dependency-managers.md)
-   + [行動應用程式中的實作](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
+   + [在行動應用程式中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
 + 伺服器API{#server-api}
    + [概觀](server-api/overview.md)
    + [API基本概念](server-api/introduction.md)
 + 事件轉送{#event-forwarding}
    + [概觀](event-forwarding/overview.md)
    + [建立屬性](event-forwarding/create-a-property.md)
-   + [設定資料流](event-forwarding/set-up-a-datastream.md)
+   + [設定資料串流](event-forwarding/set-up-a-datastream.md)
    + [新增擴充功能](event-forwarding/add-an-extension.md)
    + [建立規則](event-forwarding/create-a-rule.md)
    + [快速入門工作流程](event-forwarding/quick-start-workflows.md)
@@ -60,10 +60,10 @@ ht-degree: 26%
    + [移動使用者端標籤](event-forwarding/consider-moving-tags.md)
    + [設定Google Ads增強型轉換](event-forwarding/set-up-google-ads-enhanced-conversions.md)
    + [Mailchimp的Adobe擴充功能](event-forwarding/adobe-extension-for-mailchimp.md)
-+ Datastreams &amp; Edge Network{#edge-network}
++ 資料串流和Edge Network{#edge-network}
    + [設定資料串流](edge/configure-datastreams.md)
    + [資料準備](edge/data-prep.md)
    + [管理敏感資料](edge/manage-sensitive-data-in-datastreams.md)
    + [第一方裝置ID](edge/generate-first-party-device-ids.md)
-+ Debugger{#debugger}
++ 偵錯工具{#debugger}
    + [概觀](debugger/overview.md)

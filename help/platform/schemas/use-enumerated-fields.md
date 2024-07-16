@@ -10,13 +10,13 @@ last-substantial-update: 2022-09-27T00:00:00Z
 exl-id: 3bc9ee9a-fcaf-42d3-9acb-c76632491825
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 78%
+source-wordcount: '57'
+ht-degree: 33%
 
 ---
 
 # 使用列舉的欄位和建議值
 
-了解如何使用列舉的欄位和建議值在區段產生器介面中建立易用的下拉式選單。如需詳細資訊，請參閱 [說明檔案](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html).
+瞭解如何使用列舉的欄位和建議值在區段產生器介面中建立易用的下拉式選單。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on)
