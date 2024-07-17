@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: 9cb56b739efde38d8e85358f45ee6a35a0394e27
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 0%
@@ -123,7 +123,7 @@ ht-degree: 0%
 
 若要在Web Channel行銷活動中使用內容實驗，您必須確保使用的網路資料集也包含在您的報告設定中。 Journey Optimizer報表系統以唯讀方式使用資料集來填入現成可用的內容實驗報表。
 
-[新增內容實驗報告的資料集在本節](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration#add-datasets)中有詳細說明。
+[新增內容實驗報告的資料集在本節](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration#add-datasets)中有詳細說明。
 
 ## 使用案例概述 — 忠誠度獎勵
 
