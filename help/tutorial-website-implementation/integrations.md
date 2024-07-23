@@ -2,10 +2,10 @@
 title: 實作Experience Cloud與標籤的整合
 description: 瞭解如何驗證 Adobe Experience Cloud 實施中的受眾、A4T 和客戶屬性整合。本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 86%
+source-wordcount: '1199'
+ht-degree: 85%
 
 ---
 
@@ -28,13 +28,12 @@ ht-degree: 86%
 >
 >若要完整使用這些整合，有許多必要的使用者許可權需求、帳戶設定和布建步驟，這些不在本教學課程的討論範圍內。 如果您已在目前的 Experience Cloud 實施中使用這些整合，您應考量下列事項：
 >
->* 檢視[核心服務整合](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hant)的完整需求
->* 檢視 [Analytics for Target 整合](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)的完整需求
->* 請您的 Experience Cloud 組織管理員[請求佈建這些整合](https://www.adobe.com/go/audiences_tw)
+>* 檢視[核心服務整合](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)的完整需求
+>* 檢視 [Analytics for Target 整合](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)的完整需求
 
 ## 受眾
 
-[受眾](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)是 People 核心服務的一部分，可讓您在不同解決方案之間共用受眾。例如，您可以在 Audience Manager 中建立受眾，並透過 Target 使用該受眾來提供個人化內容。
+[受眾](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview)是 People 核心服務的一部分，可讓您在不同解決方案之間共用受眾。例如，您可以在 Audience Manager 中建立受眾，並透過 Target 使用該受眾來提供個人化內容。
 
 實施 A4T (您已完成) 的主要需求如下：
 
@@ -137,7 +136,7 @@ A4T 的運作方式是將從 Target 傳至 Analytics 的伺服器端請求與 An
 1. 密碼請輸入 `test`
 1. 按一下&#x200B;**[!UICONTROL 登入]**&#x200B;按鈕
 
-   ![輸入憑證並按一下登入](images/idservice-login.png)
+   ![輸入認證並按一下登入](images/idservice-login.png)
 
 1. 此時您應會返回首頁，同時也會觸發您可在開發人員工具中看到的信標。如果您進入帳戶資訊頁面，請按一下 WE.RETAIL 標誌以返回首頁。
 1. 按一下請求，然後選取「標頭」標籤
