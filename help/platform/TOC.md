@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
+source-git-commit: cd1f166eac926688313812a67c1b5664608cb9cf
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 15%
+source-wordcount: '917'
+ht-degree: 16%
 
 ---
 
@@ -49,6 +49,7 @@ ht-degree: 15%
 + 對象與細分{#audiences}
    + [對象入口網站和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上傳對象](audiences/upload-audiences.md)
+   + [同盟對象構成概觀](audiences/overview-of-federated-audience-composition.md)
    + [對象規則產生器概觀](audiences/audience-rule-builder-overview.md)
    + [建立對象](audiences/create-audiences.md)
    + [建立內容型對象](audiences/create-content-based-audiences.md)
@@ -83,13 +84,13 @@ ht-degree: 15%
    + [刪除資料集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [讓資料集過期](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [假名設定檔和事件有效期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-   + [刪除設定檔](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
+   + [刪除設定檔](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [更新設定檔屬性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 資料擷取{#data-ingestion}
    + [概觀](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批次擷取總覽](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [建立和填入資料集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [刪除資料集和批次](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
+   + [刪除資料集和批次](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
    + [將CSV檔案對應至XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [來源概觀](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [從Adobe Analytics擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
