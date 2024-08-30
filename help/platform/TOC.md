@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 1a3b89f7be838aeff389e7f404114ed3fef370d7
+source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '931'
 ht-degree: 16%
 
 ---
@@ -50,8 +50,10 @@ ht-degree: 16%
    + [對象入口網站和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上傳對象](audiences/upload-audiences.md)
    + [同盟對象構成概觀](audiences/overview-of-federated-audience-composition.md)
+   + [連線並設定同盟對象構成](audiences/connect-and-configure-federated-audience-composition.md)
+   + [建立同盟受眾構成](audiences/create-a-federated-audience-composition.md)
    + [對象規則產生器概觀](audiences/audience-rule-builder-overview.md)
-   + [建立對象](audiences/create-audiences.md)
+   + [建立客群](audiences/create-audiences.md)
    + [使用時間限制](audiences/time-constraints.md)
    + [建立內容型對象](audiences/create-content-based-audiences.md)
    + [建立轉換對象](audiences/create-conversion-audiences.md)
