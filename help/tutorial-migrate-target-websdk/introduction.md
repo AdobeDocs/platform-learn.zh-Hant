@@ -1,11 +1,11 @@
 ---
-title: 簡介 | 將Target從at.js 2.x移轉至Web SDK
+title: 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何將Adobe Target實作從at.js 2.x移轉至Adobe Experience Platform Web SDK。 主題包括載入JavaScript程式庫、傳送引數、轉譯活動以及其他值得注意的圖說文字。
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: eebe598e55228d038dfc2adb97df0f8ff03748ac
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '556'
 ht-degree: 4%
 
 ---
