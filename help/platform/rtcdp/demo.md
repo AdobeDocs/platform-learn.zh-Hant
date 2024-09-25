@@ -1,6 +1,6 @@
 ---
 title: Adobe Real-time Customer Data Platform (RTCDP)示範
-description: 請參閱示範，了解如何使用 Real-Time CDP 收集來自多個來源的資料、將資料合併成單一即時客戶設定檔，以及啟動該資料來建立個人化的客戶體驗。
+description: 請參閱示範，了解如何使用 Real-Time CDP 收集來自多個來源的資料、將資料合併成單一即時客戶輪廓，以及啟動該資料來建立個人化的客戶體驗。
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User

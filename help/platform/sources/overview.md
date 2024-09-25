@@ -1,6 +1,6 @@
 ---
 title: 來源概觀
-description: 了解如何輕鬆地將 Adobe 第一方和第三方應用程式的資料擷取到平台的即時客戶設定檔和資料湖。
+description: 了解如何輕鬆地將 Adobe 第一方和第三方應用程式的資料擷取到平台的即時客戶輪廓和資料湖。
 feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Beginner
