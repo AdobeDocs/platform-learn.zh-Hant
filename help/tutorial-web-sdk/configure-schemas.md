@@ -4,7 +4,7 @@ description: 瞭解如何在資料收集介面中為網頁資料建立XDM結構�
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 3%
@@ -58,7 +58,7 @@ Platform Web SDK會使用您的結構描述將網頁事件資料標準化、傳�
 >
 > 為了示範，本課程中的練習會建立範例結構描述，以擷取客戶在[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)中檢視的內容和購買的產品。 雖然您可以使用這些步驟建立不同的結構描述以供您個人使用，但建議您先依照建立範例結構描述一起來瞭解結構描述編輯器的功能。
 
-若要深入瞭解XDM結構描述，請參加課程[使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)，或檢視[XDM系統概覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)。
+若要深入瞭解XDM結構描述，請觀看播放清單[使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，或檢視[XDM系統概覽](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)。
 
 ## 學習目標
 
