@@ -1,8 +1,8 @@
 ---
-title: 追蹤事件 | 將Target從at.js 2.x移轉至Web SDK
+title: 追蹤事件 — 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何使用Experience Platform Web SDK追蹤Adobe Target轉換事件。
 exl-id: 5da772bc-de05-4ea9-afbd-3ef58bc7f025
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 0%

@@ -1,8 +1,8 @@
 ---
-title: 初始設定 | 將Target從at.js 2.x移轉至Web SDK
+title: 初始設定 — 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解並設定Platform Web SDK實作所需的重要基礎元素
 exl-id: dbf9683b-1cfc-474a-9c38-432cad4d1533
-source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%

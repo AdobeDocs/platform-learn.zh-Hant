@@ -1,8 +1,8 @@
 ---
-title: 啟用跨網域支援 | 將Target從at.js 2.x移轉至Web SDK
+title: 啟用跨網域支援 — 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何使用Experience PlatformWeb SDK為跨網域和行動應用程式設定Adobe Target以供網頁瀏覽器案例使用。
 exl-id: 6ec24ddc-8f6d-4331-a3ae-bd0f3a7d6e78
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 0%

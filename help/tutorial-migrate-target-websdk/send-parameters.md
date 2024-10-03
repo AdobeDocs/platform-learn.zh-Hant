@@ -1,8 +1,8 @@
 ---
-title: 傳送引數 | 將Target從at.js 2.x移轉至Web SDK
+title: 傳送引數 — 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何使用Experience PlatformWeb SDK將mbox、設定檔和實體引數傳送至Adobe Target。
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1539'
 ht-degree: 0%
@@ -181,7 +181,7 @@ alloy("sendEvent", {
 >由於自訂mbox引數是`xdm`物件的一部分，因此您需要使用新的名稱更新任何參照這些mbox引數的對象、活動或設定檔指令碼。 如需詳細資訊，請參閱本教學課程的[更新Target對象和設定檔指令碼以瞭解Platform Web SDK相容性](update-audiences.md)頁面。
 
 
-## 設定檔參數
+## 輪廓參數
 
 目標設定檔引數必須傳遞到Platform Web SDK `sendEvent`命令承載中的`data.__adobe.target`物件下。
 

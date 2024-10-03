@@ -1,8 +1,8 @@
 ---
-title: 更新對象和個人資料指令碼 | 將Target從at.js 2.x移轉至Web SDK
+title: 更新對象和設定檔指令碼 — 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何更新Adobe Target對象和設定檔指令碼，以與Experience Platform Web SDK相容。
 exl-id: 2c0f85f7-6e8c-4d0b-8ed5-53897d06e563
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

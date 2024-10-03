@@ -1,8 +1,8 @@
 ---
-title: 取代資料庫 | 將Target從at.js 2.x移轉至Web SDK
+title: 取代資料庫 — 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何將Adobe Target實作從at.js 2.x移轉至Adobe Experience Platform Web SDK。 主題包括程式庫概述、實作差異和其他值得注意的圖說文字。
 exl-id: dfafa132-376a-475d-a467-9bc2f0a414cf
-source-git-commit: 07c3c5b3f45eeb02e94a25dbd164b7397cb7869d
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1594'
 ht-degree: 1%

@@ -1,8 +1,8 @@
 ---
-title: 偵錯 | 將Target從at.js 2.x移轉至Web SDK
+title: 除錯 — 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何使用Adobe Experience Platform Web SDK為Adobe Target實作除錯。 主題包括除錯選項、瀏覽器擴充功能，以及at.js與Platform Web SDK之間的差異。
 exl-id: 20699551-a708-469a-8980-67586db82787
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1492'
 ht-degree: 2%

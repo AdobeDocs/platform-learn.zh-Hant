@@ -1,8 +1,8 @@
 ---
-title: 轉譯VEC活動 | 將Target從at.js 2.x移轉至Web SDK
+title: 轉譯VEC活動 — 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何透過Adobe Target的Web SDK實作擷取及套用視覺化體驗撰寫器活動。
 exl-id: bbbbfada-e236-44de-a7bf-5c63ff840db4
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%
