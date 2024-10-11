@@ -6,10 +6,10 @@ level: Experienced
 jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: fd60f7ad338c81f5b32e7951d5a00b49c5aa1756
 workflow-type: tm+mt
-source-wordcount: '682'
-ht-degree: 1%
+source-wordcount: '704'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Experience Cloud應用程式傳統上會使用不同技術產生Cookie以�
 1. Adobe伺服器使用網域名稱的CNAME設定所設定的第一方Cookie
 1. JavaScript設定的第一方Cookie
 
-近期的瀏覽器變更會限制這些型別Cookie的持續時間。 第一方Cookie在使用客戶擁有的伺服器（使用DNS A/AAAA記錄，而不是DNS CNAME）設定時最有效。 第一方裝置ID (FPID)功能允許實作Adobe Experience Platform Web SDK的客戶從使用DNS A/AAAA記錄的伺服器使用Cookie中的裝置ID。 接著，這些ID可以傳送至Adobe，並當作種子來產生Experience CloudID (ECID)，這仍是Adobe Experience Cloud應用程式中的主要識別碼。
+近期的瀏覽器變更會限制這些型別Cookie的持續時間。 第一方Cookie在使用客戶擁有的伺服器（使用DNS A/AAAA記錄，而不是DNS CNAME）設定時最有效。 [第一方裝置識別碼(FPID)功能](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids)可讓實作Adobe Experience Platform Web SDK的客戶使用DNS A/AAAA記錄的伺服器，在Cookie中使用裝置ID。 接著，這些ID可以傳送至Adobe，並當作種子來產生Experience CloudID (ECID)，這仍是Adobe Experience Cloud應用程式中的主要識別碼。
 
 以下是功能運作方式的快速範例：
 
@@ -30,7 +30,9 @@ Adobe Experience Cloud應用程式傳統上會使用不同技術產生Cookie以�
 1. 一般使用者的瀏覽器會從客戶的網頁伺服器或CDN要求網頁。
 1. 客戶在其網頁伺服器或CDN上產生裝置ID (FPID) （網頁伺服器應繫結至網域名稱的DNS A/AAAA-record）。
 1. 客戶設定第一方Cookie，以將FPID儲存在使用者的瀏覽器中。
-1. 客戶的Adobe Experience Platform Web SDK實作會向PlatformEdge Network提出要求，包括身分對應中的FPID。
+1. 客戶的Adobe Experience Platform Web SDK實作會向PlatformEdge Network提出要求，且：
+   1. 包含身分對應中的FPID。
+   1. 為其Web SDK請求設定CNAME，並使用其FPID Cookie名稱設定其資料流。
 1. Experience PlatformEdge Network會接收FPID，並使用它來產生Experience CloudID (ECID)。
 1. Platform Web SDK回應會將ECID傳送回使用者的瀏覽器。
 1. 如果`idMigrationEnabled=true`，Platform Web SDK會使用JavaScript將ECID儲存為一般使用者瀏覽器中的`AMCV_` Cookie。
