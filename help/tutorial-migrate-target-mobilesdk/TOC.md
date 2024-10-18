@@ -1,5 +1,5 @@
 ---
-user-guide-title: 將行動SDK中的Target實作從Target擴充功能移轉至Optimize擴充功能
+user-guide-title: 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充功能
 user-guide-description: 為Target客戶提供的實作教學課程，說明如何成功將Mobile SDK實作從Target擴充功能移轉至Optimize擴充功能
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
@@ -10,15 +10,15 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: 4488bcc52d7c9a88d106777af968c131cdb4dac1
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '92'
+source-wordcount: '90'
 ht-degree: 5%
 
 ---
 
 
-# 將行動SDK中的Target實作從Target擴充功能移轉至Optimize擴充功能 {#migrate-target-to-mobile-sdk-optimize}
+# 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充功能{#migrate-target-to-mobile-sdk-decisioning}
 
 + [教學課程簡介](overview.md)
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 + [規劃移轉](plan-migration.md)
 
-+ [比較Target擴充功能與最佳化擴充功能](detailed-comparison.md)
++ [比較Target擴充功能與Decisioning擴充功能](detailed-comparison.md)
 
 + [執行初始設定](initial-setup.md)
 

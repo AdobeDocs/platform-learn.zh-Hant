@@ -1,14 +1,14 @@
 ---
-title: 取代資料庫 — 將Target從at.js 2.x移轉至Web SDK
-description: 瞭解如何將Adobe Target實作從at.js 2.x移轉至Adobe Experience Platform Web SDK。 主題包括程式庫概述、實作差異和其他值得注意的圖說文字。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: 取代SDK — 從Adobe Target移轉至Adobe Journey Optimizer — 決策行動擴充功能
+description: 瞭解從Adobe Target移轉至Adobe Journey Optimizer - Decisioning Mobile擴充功能時，如何取代SDK。
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1558'
 ht-degree: 1%
 
 ---
 
-# 以Platform Web SDK取代at.js資料庫
+# 以最佳化SDK取代Target SDK
 
 瞭解如何取代頁面上的Adobe Target實作，以從at.js移轉至Platform Web SDK。 基本取代包含下列步驟：
 
@@ -399,4 +399,4 @@ alloy("configure", {
 
 >[!NOTE]
 >
->我們致力協助您成功將行動Target從Target擴充功能移轉至Optimize擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
+>我們致力協助您成功將行動Target從Target擴充功能移轉至Decisioning擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。

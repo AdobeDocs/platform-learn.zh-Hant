@@ -1,9 +1,9 @@
 ---
-title: 除錯 — 移轉目標來源
+title: 除錯 — 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充功能
 description: 瞭解如何使用Adobe Experience Platform Mobile SDK為Adobe Target實作除錯。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1237'
 ht-degree: 3%
 
 ---
@@ -159,4 +159,4 @@ Platform Web SDK `sendEvent`呼叫的要求裝載和回應與at.js不同。 使�
 
 >[!NOTE]
 >
->我們致力協助您成功將行動Target從Target擴充功能移轉至Optimize擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
+>我們致力協助您成功將行動Target從Target擴充功能移轉至Decisioning擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。

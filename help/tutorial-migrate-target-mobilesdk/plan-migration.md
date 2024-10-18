@@ -1,16 +1,16 @@
 ---
-title: 規劃 — 將行動應用程式中的Target從Target擴充功能移轉至「最佳化」擴充功能
+title: 規劃 — 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充功能
 description: 瞭解如何針對從at.js 2.x到Adobe Experience Platform Web SDK的Adobe Target實作進行規劃。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
-# 規劃Target移轉至「最佳化」擴充功能
+# 規劃Target移轉至Decisioning擴充功能
 
-在將Target從Target擴充功能升級至行動應用程式中的「最佳化」擴充功能之前，您應該先評估目前的實施情形。
+在行動應用程式中將Target從Target擴充功能升級為Decisioning擴充功能之前，您應該先評估目前的實施情形。
 
 ## 評估目前的Target擴充功能實作
 
@@ -50,8 +50,8 @@ As you migrate, you should plan on following your company's process for testing 
 -->
 
 
-接著，檢閱Target擴充功能與Optimize擴充功能](detailed-comparison.md)的詳細[比較，以更清楚瞭解技術差異，並找出需要額外關注的領域。
+接下來，檢閱Target擴充功能與Decisioning擴充功能](detailed-comparison.md)的詳細[比較，以更清楚瞭解技術差異，並找出需要額外關注的領域。
 
 >[!NOTE]
 >
->我們致力協助您成功將行動Target從Target擴充功能移轉至Optimize擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
+>我們致力協助您成功將行動Target從Target擴充功能移轉至Decisioning擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。

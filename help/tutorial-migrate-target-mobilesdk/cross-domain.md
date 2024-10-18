@@ -1,9 +1,9 @@
 ---
-title: 啟用跨網域支援 — 將Target從at.js 2.x移轉至Web SDK
+title: 啟用跨網域支援 — 從Adobe Target移轉至Adobe Journey Optimizer — 決策行動擴充功能
 description: 瞭解如何使用Experience PlatformWeb SDK為跨網域和行動應用程式設定Adobe Target以供網頁瀏覽器案例使用。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '464'
 ht-degree: 0%
 
 ---
@@ -71,4 +71,4 @@ document.addEventListener("click", event => {
 
 >[!NOTE]
 >
->我們致力協助您成功將行動Target從Target擴充功能移轉至Optimize擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
+>我們致力協助您成功將行動Target從Target擴充功能移轉至Decisioning擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。

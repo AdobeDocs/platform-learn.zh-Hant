@@ -1,9 +1,9 @@
 ---
-title: 移轉概述 — 將Target從at.js 2.x移轉至Web SDK
+title: 移轉概述 — 從Adobe Target移轉到Adobe Journey Optimizer - Decisioning Mobile擴充功能
 description: 瞭解at.js和Platform Web SDK之間的主要差異，以及如何規劃您的移轉作業。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -60,4 +60,4 @@ Platform Web SDK並非Target at.js程式庫的演化。 這是新的統一方法
 
 >[!NOTE]
 >
->我們致力協助您成功將行動Target從Target擴充功能移轉至Optimize擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
+>我們致力協助您成功將行動Target從Target擴充功能移轉至Decisioning擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。

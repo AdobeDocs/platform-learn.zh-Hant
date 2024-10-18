@@ -1,14 +1,14 @@
 ---
-title: Target擴充功能與最佳化擴充功能的比較
+title: Target擴充功能與決策擴充功能的比較
 description: 瞭解at.js 2.x與Platform Web SDK之間的差異，包括功能、功能、設定和資料流程。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 1%
 
 ---
 
-# Target擴充功能與最佳化擴充功能的比較
+# Target擴充功能與決策擴充功能的比較
 
 獨立Adobe Target at.js程式庫與Platform Web SDK有顯著不同。 下表為參考資料，可協助您評估在移轉程式期間可能需要著重的實作領域。
 
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## 功能比較
 
-| | 目標延伸功能 | 最佳化擴充功能(透過Edge鎖定目標) | AJO程式碼型體驗（傳訊SDK） |
+| | 目標延伸功能 | 決策擴充功能(透過Edge的Target) | AJO程式碼型體驗（傳訊SDK） |
 |---|---|---|---|
 | 預先擷取模式 | 支援 | 支援 | 支援 |
 | 執行模式 | 支援 | 不支援 | 不支援 |
@@ -47,19 +47,19 @@ ht-degree: 1%
 >
 > 您可將您的at.js (和AppMeasurement.js)實作一次移轉一頁至Platform Web SDK。 如果您採取這個方法，最好使用`configure`命令將[`idMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled)和[`targetMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled)選項設定為`true`。
 
-## Target擴充功能和「最佳化擴充功能對等專案」
+## Target擴充功能與決策擴充功能的同等專案
 
-許多Target擴充功能都有等同的方法，使用下表所述的「最佳化擴充功能」。 如需[函式](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/)的詳細資訊，請參閱Adobe Target開發人員指南。
+許多Target擴充功能都有等同於下表所列之「決策」擴充功能的方法。 如需[函式](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/)的詳細資訊，請參閱Adobe Target開發人員指南。
 
-| 目標延伸功能 | 最佳化擴充功能 |
+| 目標延伸功能 | Decisioning擴充功能 |
 | --- | --- | 
 | |  |
 
-## Target擴充功能設定和最佳化擴充功能對等專案
+## Target擴充功能設定與決策擴充功能等同專案
 
 Target擴充功能可以透過中的各種設定進行設定和下載……
 
-| 目標延伸功能 | 最佳化擴充功能 |
+| 目標延伸功能 | Decisioning擴充功能 |
 | --- | --- | 
 | |  |
 
@@ -72,11 +72,11 @@ Target擴充功能可以透過中的各種設定進行設定和下載……
 
 
 
-### 最佳化擴充功能系統圖表
+### 決策擴充功能系統圖表
 
 
 
 
 >[!NOTE]
 >
->我們致力協助您成功將行動Target從Target擴充功能移轉至Optimize擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
+>我們致力協助您成功將行動Target從Target擴充功能移轉至Decisioning擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。

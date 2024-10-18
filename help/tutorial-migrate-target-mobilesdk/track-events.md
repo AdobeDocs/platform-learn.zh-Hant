@@ -1,14 +1,14 @@
 ---
-title: 追蹤事件 — 將Target從at.js 2.x移轉至Web SDK
-description: 瞭解如何使用Experience Platform Web SDK追蹤Adobe Target轉換事件。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: 追蹤事件 — 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充功能
+description: 瞭解如何使用Adobe Journey Optimizer - Decisioning Mobile擴充功能追蹤Adobe Target轉換事件
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '193'
 ht-degree: 0%
 
 ---
 
-# 使用Platform Web SDK追蹤目標轉換事件
+# 使用Adobe Journey Optimizer - Decisioning Mobile擴充功能追蹤Target轉換事件
 
 可追蹤Target的轉換事件……轉換事件通常分為下列類別：
 
@@ -35,4 +35,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->我們致力協助您成功將行動Target從Target擴充功能移轉至Optimize擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
+>我們致力協助您成功將行動Target從Target擴充功能移轉至Decisioning擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。

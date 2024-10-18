@@ -1,14 +1,14 @@
 ---
-title: 傳送引數 — 將Target從at.js 2.x移轉至Web SDK
+title: 傳送引數 — 從Adobe Target移轉至Adobe Journey Optimizer — 決策行動擴充功能
 description: 瞭解如何使用Experience PlatformWeb SDK將mbox、設定檔和實體引數傳送至Adobe Target。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
-# 使用Platform Web SDK傳送引數至Target
+# 使用Adobe Journey Optimizer - Decisioning Mobile擴充功能傳送引數至Target
 
 由於網站架構、業務需求及使用的功能，Target實施在各網站間會有所不同。 大部分的Target實作包括傳遞內容資訊、受眾和內容推薦的各種引數。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 購買引數
 
-成功訂單後，購買引數會在訂單確認頁面上傳遞，並用於Target轉換和最佳化目標。 透過使用最佳化擴充功能的Platform Mobile SDK實作，這些引數和會自動從作為`commerce`欄位群組的一部分傳遞的XDM資料進行對應。
+成功訂單後，購買引數會在訂單確認頁面上傳遞，並用於Target轉換和最佳化目標。 透過使用決策擴充功能的Platform Mobile SDK實作，這些引數和會自動從作為`commerce`欄位群組的一部分傳遞的XDM資料進行對應。
 
 
 當`commerce`欄位群組將`purchases.value`設定為`1`時，購買資訊會傳遞至Target。 訂單識別碼與訂單總計會自動從`order`物件對應。 如果`productListItems`陣列存在，則`SKU`值會用於`productPurchasedId`。
@@ -69,4 +69,4 @@ Target允許使用單一客戶ID跨裝置和系統同步設定檔。
 
 >[!NOTE]
 >
->我們致力協助您成功將行動Target從Target擴充功能移轉至Optimize擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
+>我們致力協助您成功將行動Target從Target擴充功能移轉至Decisioning擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
