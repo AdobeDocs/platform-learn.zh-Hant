@@ -1,41 +1,41 @@
 ---
 title: Target擴充功能與決策擴充功能的比較
-description: 瞭解at.js 2.x與Platform Web SDK之間的差異，包括功能、功能、設定和資料流程。
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+description: 瞭解Target擴充功能與Decisioning擴充功能之間的差異，包括功能、功能、設定和資料流程。
+source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
 # Target擴充功能與決策擴充功能的比較
 
-獨立Adobe Target at.js程式庫與Platform Web SDK有顯著不同。 下表為參考資料，可協助您評估在移轉程式期間可能需要著重的實作領域。
+Adobe Journey Optimizer - Decisioning擴充功能與適用於行動應用程式的Adobe Target擴充功能不同。 下表為參考資料，可協助您評估在移轉程式期間可能需要著重的實作領域。
 
-檢閱下列資訊並評估您目前的技術at.js實作後，您應該能夠瞭解下列內容：
+檢閱下列資訊並評估您目前的技術Target擴充功能實作後，您應該就能瞭解下列內容：
 
-- Platform Web SDK支援哪些目標功能
-- 哪些at.js函式有同等的Platform Web SDK
-- 如何套用Target設定與Platform Web SDK
-- at.js和Platform Web SDK的資料流程有何不同
+- Adobe Journey Optimizer支援哪些Target功能 — Decisioning
+- 哪些Adobe Target擴充功能具有Adobe Journey Optimizer — 決策等效功能
+- 如何將Target設定套用至Adobe Journey Optimizer — 決策
+- Adobe Target擴充功能和Adobe Journey Optimizer — 決策擴充功能的資料流程有何不同
 
 如果您是初次使用Platform Web SDK，別擔心，本教學課程將更詳細地介紹以下專案。
 
 ## 功能比較
 
-| | 目標延伸功能 | 決策擴充功能(透過Edge的Target) | AJO程式碼型體驗（傳訊SDK） |
+| | 目標延伸功能 | 決策擴充功能(透過Edge的Target) |
 |---|---|---|---|
-| 預先擷取模式 | 支援 | 支援 | 支援 |
-| 執行模式 | 支援 | 不支援 | 不支援 |
-| 自訂引數 | 支援 | 不支援每個mbox引數 | 不支援 |
-| 登入對象 | 支援 | 支援 | 透過Campaign對象和實驗保留設定提供支援 |
-| 使用行動生命週期量度的對象細分 | 支援 | 透過資料收集規則支援 | 目前不支援體驗鎖定目標 |
-| thirdPartyId (mbox3rdPartyId) | 透過資料流中的身分對應和名稱空間設定提供支援 | 不支援 |
-| 通知（顯示、按一下） | 支援 | 支援 | 支援 |
-| 回應Token | 支援 | 支援 | 沒有等同於在內容以外傳回Campaign特定中繼資料的對應專案 |
-| 動態優惠方案 | 支援 | 支援 | 支援在內容中呈現與設定檔和決定專案相關的權杖 |
-| Analytics for Target (A4T) | 僅限使用者端 | 使用者端和伺服器端 | 不支援 |
-| 行動裝置預覽（QA模式） | 支援 | 有限支援 | 正在進行中 |
+| 預先擷取模式 | 支援 | 支援 |
+| 執行模式 | 支援 | 不支援 |
+| 自訂引數 | 支援 | 不支援每個mbox引數 |
+| 登入對象 | 支援 | 支援 |
+| 使用行動生命週期量度的對象細分 | 支援 | 透過資料收集規則支援 |
+| thirdPartyId (mbox3rdPartyId) | 透過資料流中的身分對應和名稱空間設定提供支援 |
+| 通知（顯示、按一下） | 支援 | 支援 |
+| 回應Token | 支援 | 支援 |
+| 動態優惠方案 | 支援 | 支援 |
+| Analytics for Target (A4T) | 僅限使用者端 | 使用者端和伺服器端 |
+| 行動裝置預覽（QA模式） | 支援 | 有限支援 |
 
 
 
@@ -66,13 +66,13 @@ Target擴充功能可以透過中的各種設定進行設定和下載……
 
 ## 系統圖表比較
 
-下列圖表應可協助您瞭解使用at.js的Target實作與使用Platform Web SDK的實作之間的資料流程差異。
+下列圖表應可協助您瞭解使用Adobe Journey Optimizer - Decisioning擴充功能的Target實作與使用Adobe Target擴充功能的實作之間的資料流程差異。
 
 ### Target擴充功能系統圖
 
 
 
-### 決策擴充功能系統圖表
+### 決策擴充功能系統圖
 
 
 
