@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
+source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 16%
+source-wordcount: '934'
+ht-degree: 17%
 
 ---
 
@@ -37,7 +37,6 @@ ht-degree: 16%
 + [驗證Experience Platform API](/help/platform/authentication/platform-api-authentication.md)
 + [將範例資料匯入至Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
-   + [使用AI助理](/help/platform/admin/ai-assistant.md)
    + [使用警示](/help/platform/admin/use-alerts.md)
    + [使用沙箱](/help/platform/admin/use-sandboxes.md)
    + [在沙箱之間複製物件](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -46,6 +45,9 @@ ht-degree: 16%
    + [新增開發人員](/help/platform/admin/add-developers.md)
    + [新增產品管理員](/help/platform/admin/add-product-administrators.md)
    + [設定以屬性為基礎的存取控制](/help/platform/admin/configure-attribute-based-access-control.md)
++ AI 助理 {#ai-assistant}
+   + [概觀](/help/platform/ai-assistant/overview.md)
+   + [清除對象](/help/platform/ai-assistant/find-unused-audiences.md)
 + 對象與細分{#audiences}
    + [對象入口網站和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上傳對象](audiences/upload-audiences.md)
@@ -72,12 +74,12 @@ ht-degree: 16%
    + [區段比對接收資料](/help/platform/segments/segment-match-receiving-data.md)
 + [稽核記錄](/help/platform/governance/audit-logs.md)
 + [資料彙集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ 儀表板{#dashboards}
++ 儀表板 {#dashboards}
    + [建立儀表板](/help/platform/dashboards/create-a-dashboard.md)
 + 資料控管{#data-governance}
    + [概觀](/help/platform/governance/understanding-data-governance.md)
    + [端對端示範](/help/platform/governance/introduction-to-data-governance.md)
-   + [使用標籤來分類資料](/help/platform/governance/classify-data-using-labels.md)
+   + [使用標籤進行資料分類](/help/platform/governance/classify-data-using-labels.md)
    + [建立資料使用原則](/help/platform/governance/create-data-usage-policies.md)
    + [強制執行資料使用原則](/help/platform/governance/enforce-data-usage-policies.md)
    + [強制同意](/help/platform/governance/enforce-consent.md)
@@ -87,7 +89,7 @@ ht-degree: 16%
    + [刪除資料集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [讓資料集過期](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [假名設定檔和事件有效期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-   + [刪除設定檔](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/profiles/delete-profiles)
+   + [刪除輪廓](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [更新設定檔屬性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 資料擷取{#data-ingestion}
    + [概觀](/help/platform/data-ingestion/understanding-data-ingestion.md)
@@ -166,7 +168,7 @@ ht-degree: 16%
    + [支援異地勘探](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
    + [將合作夥伴屬性新增至設定檔](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
    + [為未知訪客個人化網站](/help/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
-+ 設定檔 {#profiles}
++ 輪廓 {#profiles}
    + [瞭解即時客戶個人檔案](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [設定檔總覽圖表](/help/platform/profiles/overview-diagram.md)
    + [將資料引進輪廓中](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)

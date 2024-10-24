@@ -1,9 +1,9 @@
 ---
 title: Target擴充功能與決策擴充功能的比較
 description: 瞭解Target擴充功能與Decisioning擴充功能之間的差異，包括功能、功能、設定和資料流程。
-source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
+source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Adobe Journey Optimizer - Decisioning擴充功能與適用於行動應用程式�
 | 自訂引數 | 支援 | 不支援每個mbox引數 |
 | 登入對象 | 支援 | 支援 |
 | 使用行動生命週期量度的對象細分 | 支援 | 透過資料收集規則支援 |
-| thirdPartyId (mbox3rdPartyId) | 透過資料流中的身分對應和名稱空間設定提供支援 |
+| thirdPartyId (mbox3rdPartyId) | 支援 | 透過資料流中的身分對應和名稱空間設定提供支援 |
 | 通知（顯示、按一下） | 支援 | 支援 |
 | 回應Token | 支援 | 支援 |
 | 動態優惠方案 | 支援 | 支援 |
