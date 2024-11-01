@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
+source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '939'
 ht-degree: 17%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 17%
    + [概觀](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [端對端示範](/help/platform/rtcdp/demo.md)
    + [工作流程](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-   + [B2B版本概觀](/help/platform/rtcdp/b2b-overview.md)
+   + [B2B edition概觀](/help/platform/rtcdp/b2b-overview.md)
    + [使用Marketo Engage協調行銷活動](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [快速入門：資料架構師和資料工程師](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [驗證Experience Platform API](/help/platform/authentication/platform-api-authentication.md)
@@ -39,7 +39,8 @@ ht-degree: 17%
 + 管理 {#admin}
    + [使用警示](/help/platform/admin/use-alerts.md)
    + [使用沙箱](/help/platform/admin/use-sandboxes.md)
-   + [在沙箱之間複製物件](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [在沙箱之間複製套件](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [跨IMS組織共用套件](/help/platform/admin/share-packages-across-orgs.md)
    + [新增使用者](/help/platform/admin/add-users.md)
    + [新增使用者至資料彙集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [新增開發人員](/help/platform/admin/add-developers.md)
