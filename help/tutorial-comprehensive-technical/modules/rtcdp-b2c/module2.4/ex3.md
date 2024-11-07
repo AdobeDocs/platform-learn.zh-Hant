@@ -3,7 +3,7 @@ title: Microsoft Azure事件中心的區段啟用 — 建立串流區段
 description: Microsoft Azure事件中心的區段啟用 — 建立串流區段
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 1%
@@ -44,7 +44,7 @@ Adobe Experience Platform中的區段資格一律具有&#x200B;**status** — �
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxId--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -52,13 +52,13 @@ Adobe Experience Platform中的區段資格一律具有&#x200B;**status** — �
 
 ![資料擷取](./images/seg.png)
 
-為您的區段命名`--demoProfileLdap-- - Interest in Equipment`並新增頁面名稱體驗事件：
+為您的區段命名`--aepUserLdap-- - Interest in Equipment`並新增頁面名稱體驗事件：
 
 按一下&#x200B;**事件**，然後拖放&#x200B;**XDM ExperienceEvent >網頁>網頁詳細資料>名稱**。 輸入&#x200B;**裝置**&#x200B;作為值：
 
 ![4-05-create-ee-2.png](./images/4-05-create-ee-2.png)
 
-拖放&#x200B;**XDM ExperienceEvent > `--aepTenantIdSchema--` > demoEnvironment > brandName**。 輸入`--demoProfileLdap--`做為值，將比較引數設定為&#x200B;**包含**，然後按一下&#x200B;**儲存**：
+拖放&#x200B;**XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**。 輸入`--aepUserLdap--`做為值，將比較引數設定為&#x200B;**包含**，然後按一下&#x200B;**儲存**：
 
 ![4-05-create-ee-2-brand.png](./images/4-05-create-ee-2-brand.png)
 
@@ -67,7 +67,7 @@ Adobe Experience Platform中的區段資格一律具有&#x200B;**status** — �
 您區段的PQL看起來像這樣：
 
 ```code
-CHAIN(xEvent, timestamp, [C0: WHAT(web.webPageDetails.name.equals("equipment", false) and _experienceplatform.demoEnvironment.brandName.contains("--demoProfileLdap--", false))])
+CHAIN(xEvent, timestamp, [C0: WHAT(web.webPageDetails.name.equals("equipment", false) and _experienceplatform.demoEnvironment.brandName.contains("--aepUserLdap--", false))])
 ```
 
 下一步： [2.4.4啟動區段](./ex4.md)

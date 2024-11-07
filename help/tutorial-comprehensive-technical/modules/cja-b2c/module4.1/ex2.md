@@ -3,7 +3,7 @@ title: Customer Journey Analytics — 連線Customer Journey Analytics中的Adob
 description: Customer Journey Analytics — 連線Customer Journey Analytics中的Adobe Experience Platform資料集
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '671'
 ht-degree: 1%
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 您現在可以為連線命名。
 
-請使用此命名慣例： `--demoProfileLdap-- – Omnichannel Data Connection`。
+請使用此命名慣例： `--aepUserLdap-- – Omnichannel Data Connection`。
 
 範例：`vangeluw - Omnichannel Data Connection`
 

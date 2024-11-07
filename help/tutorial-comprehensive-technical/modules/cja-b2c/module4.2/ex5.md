@@ -3,7 +3,7 @@ title: 使用BigQuery Source Connector在Adobe Experience Platform中擷取和�
 description: 使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料 — 使用Customer Journey Analytics分析Google Analytics資料
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3338'
 ht-degree: 2%
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 ![示範](./images/5.png)
 
-首先，您需要選取要使用的正確沙箱。 在沙箱功能表中，選取您的沙箱，應為`--aepSandboxId--`。 在此範例中，要使用的沙箱是&#x200B;**AEP Enablement FY21**。
+首先，您需要選取要使用的正確沙箱。 在沙箱功能表中，選取您的沙箱，應為`--aepSandboxName--`。 在此範例中，要使用的沙箱是&#x200B;**AEP Enablement FY21**。
 
 ![示範](./images/cjasb.png)
 

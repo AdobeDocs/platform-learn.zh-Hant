@@ -3,7 +3,7 @@ title: Customer Journey Analytics — 使用Customer Journey Analytics的視覺�
 description: Customer Journey Analytics — 使用Customer Journey Analytics的視覺效果
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1497'
 ht-degree: 0%
@@ -28,9 +28,9 @@ ht-degree: 0%
 
 ![示範](./images/prohome.png)
 
-開啟您的專案`--demoProfileLdap-- - Omnichannel Analysis`。
+開啟您的專案`--aepUserLdap-- - Omnichannel Analysis`。
 
-開啟專案並選取資料檢視`--demoProfileLdap-- - Omnichannel Analysis`後，您就可以開始建立第一個視覺效果了。
+開啟專案並選取資料檢視`--aepUserLdap-- - Omnichannel Analysis`後，您就可以開始建立第一個視覺效果了。
 
 ![示範](./images/prodataView1.png)
 

@@ -3,7 +3,7 @@ title: Foundation — 即時客戶個人檔案 — 視覺化您自己的即時�
 description: Foundation — 即時客戶個人檔案 — 視覺化您自己的即時客戶個人檔案 — API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2637'
 ht-degree: 1%
@@ -141,10 +141,10 @@ ht-degree: 1%
 
 ![Adobe I/O新整合](./images/api14.png)
 
-輸入整合的「名稱」和「說明」。 作為命名慣例，我們將使用`AEP API --demoProfileLdap--`。 將ldap取代為您的ldap。
+輸入整合的「名稱」和「說明」。 作為命名慣例，我們將使用`AEP API --aepUserLdap--`。 將ldap取代為您的ldap。
 例如，如果您的ldap是vangeluw，則整合的名稱和說明會變成AEP API vangeluw。
 
-輸入`AEP API --demoProfileLdap--`作為&#x200B;**專案標題**。 按一下&#x200B;**儲存**。
+輸入`AEP API --aepUserLdap--`作為&#x200B;**專案標題**。 按一下&#x200B;**儲存**。
 
 ![Adobe I/O新整合](./images/api15.png)
 
@@ -307,11 +307,11 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（這個很�
 
 | 索引鍵 | 值 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxId--`。
+>您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxName--`。
 
 按一下&#x200B;**傳送**，將您的要求傳送至Platform。
 
@@ -478,11 +478,11 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（這個很�
 
 | 索引鍵 | 值 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxId--`。
+>您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxName--`。
 
 按一下藍色&#x200B;**傳送**&#x200B;按鈕，然後驗證回應。
 
@@ -512,11 +512,11 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（這個很�
 
 | 索引鍵 | 值 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxId--`。
+>您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxName--`。
 
 按一下藍色&#x200B;**傳送**&#x200B;按鈕，然後驗證回應。
 
@@ -570,11 +570,11 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（這個很�
 
 | 索引鍵 | 值 |
 | ----------- | ----------- |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxId--`。
+>您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxName--`。
 
 按一下&#x200B;**傳送**，將您的要求傳送至Platform。
 

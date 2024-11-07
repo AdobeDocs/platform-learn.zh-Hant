@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer — 在電子郵件中套用個人化
 description: 此練習說明如何在電子郵件內容中使用區段個人化
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 在本練習中，您將利用根據區段會籍的個人化文字，改善電子報電子郵件訊息。
 
-移至&#x200B;**歷程**。 尋找您在上一個練習中建立的Newsletter歷程。 搜尋`--demoProfileLdap-- - Newsletter`。 按一下您的歷程以開啟。
+移至&#x200B;**歷程**。 尋找您在上一個練習中建立的Newsletter歷程。 搜尋`--aepUserLdap-- - Newsletter`。 按一下您的歷程以開啟。
 
 ![Journey Optimizer](./images/sbp1.png)
 

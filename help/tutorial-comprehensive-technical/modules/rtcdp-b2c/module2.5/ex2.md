@@ -3,7 +3,7 @@ title: Adobe Experience Platform Data Collection & Real-time Server Side Forward
 description: 更新您的資料串流，讓資料可用於您的Adobe Experience Platform資料收集伺服器屬性
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 1%
@@ -14,17 +14,17 @@ ht-degree: 1%
 
 ## 2.5.2.1更新您的資料流
 
-在[練習0.2](./../../gettingstarted/gettingstarted/ex2.md)中，您已建立自己的&#x200B;**[!UICONTROL 資料流]**。 您接著使用名稱`--demoProfileLdap-- - Demo System Datastream`。
+在[練習0.2](./../../gettingstarted/gettingstarted/ex2.md)中，您已建立自己的&#x200B;**[!UICONTROL 資料流]**。 您接著使用名稱`--aepUserLdap-- - Demo System Datastream`。
 
 在本練習中，您需要設定&#x200B;**[!UICONTROL 資料串流]**&#x200B;以搭配您的&#x200B;**[!DNL Data Collection Server property]**&#x200B;使用。
 
 若要這麼做，請前往[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 您將會看到此訊息。 在左側功能表中，按一下&#x200B;**[!UICONTROL 資料串流]**。
 
-在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxId--`。
+在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxName--`。
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
-搜尋您名為`--demoProfileLdap-- - Demo System Datastream`的&#x200B;**[!UICONTROL 資料流]**。 按一下您的&#x200B;**[!UICONTROL 資料流]**&#x200B;以開啟。
+搜尋您名為`--aepUserLdap-- - Demo System Datastream`的&#x200B;**[!UICONTROL 資料流]**。 按一下您的&#x200B;**[!UICONTROL 資料流]**&#x200B;以開啟。
 
 ![WebSDK](./images/websdk0.png)
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 ![WebSDK](./images/websdk3.png)
 
-選取服務&#x200B;**事件轉送**。 這將會顯示2個額外的設定。 選取您在上一個練習中建立且名為`--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)`的「事件轉送」屬性。 然後選取&#x200B;**環境**&#x200B;下的&#x200B;**開發**。 按一下&#x200B;**儲存**。
+選取服務&#x200B;**事件轉送**。 這將會顯示2個額外的設定。 選取您在上一個練習中建立且名為`--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)`的「事件轉送」屬性。 然後選取&#x200B;**環境**&#x200B;下的&#x200B;**開發**。 按一下&#x200B;**儲存**。
 
 ![WebSDK](./images/websdk4.png)
 

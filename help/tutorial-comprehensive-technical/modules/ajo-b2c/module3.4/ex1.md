@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer — 設定觸發式歷程 — 訂單確認
 description: 在本節中，您將設定觸發式歷程 — 訂購確認
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxId--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxId--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/oc32.png)
 
-首先，請為事件命名如下： `--demoProfileLdap--PurchaseEvent`，然後新增如下描述： `Purchase Event`。
+首先，請為事件命名如下： `--aepUserLdap--PurchaseEvent`，然後新增如下描述： `Purchase Event`。
 
 ![Journey Optimizer](./images/oc34.png)
 
@@ -100,11 +100,11 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/oc43.png)
 
-您將會看到此訊息。 為您的歷程命名。 使用`--demoProfileLdap-- - Order Confirmation journey`。 按一下&#x200B;**「確定」**。
+您將會看到此訊息。 為您的歷程命名。 使用`--aepUserLdap-- - Order Confirmation journey`。 按一下&#x200B;**「確定」**。
 
 ![Journey Optimizer](./images/oc45.png)
 
-首先，您需要新增活動作為歷程的起點。 搜尋您的活動`--demoProfileLdap--PurchaseEvent`，並將其拖放到畫布上。 按一下&#x200B;**「確定」**。
+首先，您需要新增活動作為歷程的起點。 搜尋您的活動`--aepUserLdap--PurchaseEvent`，並將其拖放到畫布上。 按一下&#x200B;**「確定」**。
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -266,7 +266,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc62.png)
 
-按一下`--demoProfileLdap--PurchaseEvent`旁的箭頭以深入鑽研。
+按一下`--aepUserLdap--PurchaseEvent`旁的箭頭以深入鑽研。
 
 ![Journey Optimizer](./images/oc63.png)
 
@@ -314,7 +314,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc722.png)
 
-按一下`--demoProfileLdap--PurchaseEvent`旁的箭頭以深入鑽研。
+按一下`--aepUserLdap--PurchaseEvent`旁的箭頭以深入鑽研。
 
 ![Journey Optimizer](./images/oc73.png)
 
@@ -379,7 +379,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![屬性頁面](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-在模組0中，示範系統為您建立了兩個使用者端屬性：一個用於網站，另一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--demoProfileLdap--`以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
+在模組0中，示範系統為您建立了兩個使用者端屬性：一個用於網站，另一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--aepUserLdap--`以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
 
 ![搜尋方塊](./../../../modules/datacollection/module1.1/images/property6.png)
 

@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer — 商業事件
 description: 本節說明如何使用業務事件功能，以執行「有庫存的專案」使用案例
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1195'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxId--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxId--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 在「事件建立」表單中輸入下列值：
 
-- **名稱**： `--demoProfileLdap--ItemBackInStock`。 例如： **vangeluwItemBackInStock**
+- **名稱**： `--aepUserLdap--ItemBackInStock`。 例如： **vangeluwItemBackInStock**
 - **說明**：當產品重新補充庫存時，就會觸發此事件
 - **型別**：在下拉式清單中選取&#x200B;**企業**
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 ![Journey Optimizer](./images/23.8-7.png)
 
-針對欄位&#x200B;**eventName**，輸入下列值： `--demoProfileLdap--ItemBackInStock`。 例如： vangeluwItemBackInStock。
+針對欄位&#x200B;**eventName**，輸入下列值： `--aepUserLdap--ItemBackInStock`。 例如： vangeluwItemBackInStock。
 按一下**「確定」**。
 
 ![Journey Optimizer](./images/23.8-8.png)
@@ -87,14 +87,14 @@ ht-degree: 1%
 
 在右側，您會看到一個表格，您必須在該表格中指定歷程名稱和說明。 輸入下列值：
 
-- **名稱**： `--demoProfileLdap-- - Item back in stock journey`。 例如： vangeluw — 料號回到庫存歷程
+- **名稱**： `--aepUserLdap-- - Item back in stock journey`。 例如： vangeluw — 料號回到庫存歷程
 - **說明**：當專案有庫存時，此歷程會傳送簡訊給感興趣的訪客。
 
 按一下&#x200B;**「確定」**。
 
 ![Journey Optimizer](./images/bej11.png)
 
-在左側功能表的&#x200B;**事件**&#x200B;下，搜尋您的LDAP。 您將會找到先前建立的商務活動`--demoProfileLdap--ItemBackInStock`。 將此事件拖放至畫布上，因為這將是歷程的起點。
+在左側功能表的&#x200B;**事件**&#x200B;下，搜尋您的LDAP。 您將會找到先前建立的商務活動`--aepUserLdap--ItemBackInStock`。 將此事件拖放至畫布上，因為這將是歷程的起點。
 
 ![Journey Optimizer](./images/bej12.png)
 
@@ -105,7 +105,7 @@ ht-degree: 1%
 
 ![Journey Optimizer](./images/bej13.png)
 
-在「**選擇區段**」快顯視窗中，搜尋您的LDAP並選取您在[模組2.3 - Real-time CDP — 建立區段並執行名為`--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`的動作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)。 例如： vangeluw — 興趣PROTEUS FITNESS JACKSHIRT。 按一下&#x200B;**儲存**。
+在「**選擇區段**」快顯視窗中，搜尋您的LDAP並選取您在[模組2.3 - Real-time CDP — 建立區段並執行名為`--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`的動作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)。 例如： vangeluw — 興趣PROTEUS FITNESS JACKSHIRT。 按一下&#x200B;**儲存**。
 
 ![Journey Optimizer](./images/bej14.png)
 
@@ -200,14 +200,14 @@ ht-degree: 1%
 }
 ```
 
-...透過此行，請務必驗證eventName欄位，如應顯示`--demoProfileLdap--ItemBackInStock`，這代表您已在業務事件中指定以觸發歷程的條件。
+...透過此行，請務必驗證eventName欄位，如應顯示`--aepUserLdap--ItemBackInStock`，這代表您已在業務事件中指定以觸發歷程的條件。
 
 ```json
 "xdmEntity": {
   "_experienceplatform": {
     "joBusinessEvents": {
       "eventDescription": "Product Proteus Fitness Jackshirt is back in stock",
-      "eventName": "--demoProfileLdap--ItemBackInStock",
+      "eventName": "--aepUserLdap--ItemBackInStock",
       "stockEventId": "1"
     }
   },

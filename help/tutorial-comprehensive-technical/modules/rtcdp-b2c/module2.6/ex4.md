@@ -3,7 +3,7 @@ title: 安裝及設定Kafka Connect和Adobe Experience Platform接收器聯結�
 description: 安裝及設定Kafka Connect和Adobe Experience Platform接收器聯結器
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
@@ -231,7 +231,7 @@ GET按一下第一個要求&#x200B;**可用的Kafka Connect聯結器**&#x200B;�
 
 您將會看到此訊息。 您必須手動更新2個欄位：
 
-- **_id**：請將其設為隨機識別碼，例如`--demoProfileLdap--1234`
+- **_id**：請將其設為隨機識別碼，例如`--aepUserLdap--1234`
 - **timestamp**：將時間戳記更新為目前的日期和時間
 - **phoneNumber**：輸入剛才在示範網站上建立的帳戶的phoneNumber。 您可以在「設定檔檢視器」面板的&#x200B;**身分**&#x200B;下找到它。
 

@@ -3,7 +3,7 @@ title: Customer Journey Analytics - Analysis Workspace中的資料準備
 description: Customer Journey Analytics - Analysis Workspace中的資料準備
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '763'
 ht-degree: 1%
@@ -64,7 +64,7 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 
 | 名稱 | 說明 |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- - Omnichannel Analysis` | `--demoProfileLdap-- - Omnichannel Analysis` |
+| `--aepUserLdap-- - Omnichannel Analysis` | `--aepUserLdap-- - Omnichannel Analysis` |
 
 接著，按一下&#x200B;**儲存**。
 

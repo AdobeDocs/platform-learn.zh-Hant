@@ -3,7 +3,7 @@ title: Real-time CDP — 外部受眾
 description: Real-time CDP — 外部受眾
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1978'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Adobe Experience Platform的外部受眾功能可讓您專注於外部受眾的�
 
 ![外部對象中繼資料結構描述4](images/extAudMDXDM4.png)
 
-接著，選取結構描述名稱&#x200B;**未命名結構描述**。 將名稱變更為`--demoProfileLdap-- - External Audiences Metadata`。
+接著，選取結構描述名稱&#x200B;**未命名結構描述**。 將名稱變更為`--aepUserLdap-- - External Audiences Metadata`。
 
 ![外部對象中繼資料結構描述5](images/extAudMDXDM5.png)
 
@@ -81,11 +81,11 @@ Adobe Experience Platform的外部受眾功能可讓您專注於外部受眾的�
 
 ## 2.3.6.1.3建立外部對象中繼資料資料集
 
-在&#x200B;**結構描述**&#x200B;中，移至&#x200B;**瀏覽**。 搜尋並按一下您在上一步建立的`--demoProfileLdap-- - External Audiences Metadata`結構描述。 接著，按一下&#x200B;**從結構描述建立資料集**。
+在&#x200B;**結構描述**&#x200B;中，移至&#x200B;**瀏覽**。 搜尋並按一下您在上一步建立的`--aepUserLdap-- - External Audiences Metadata`結構描述。 接著，按一下&#x200B;**從結構描述建立資料集**。
 
 ![外部對象中繼資料DS 1](images/extAudMDDS1.png)
 
-在&#x200B;**Name**&#x200B;欄位中輸入`--demoProfileLdap-- - External Audience Metadata`。 按一下&#x200B;**建立資料集**。
+在&#x200B;**Name**&#x200B;欄位中輸入`--aepUserLdap-- - External Audience Metadata`。 按一下&#x200B;**建立資料集**。
 
 ![外部對象中繼資料DS 2](images/extAudMDDS2.png)
 
@@ -104,7 +104,7 @@ Adobe Experience Platform的外部受眾功能可讓您專注於外部受眾的�
 輸入下列資訊：
 
 - **帳戶型別**：選取&#x200B;**新帳戶**
-- **帳戶名稱**：輸入`--demoProfileLdap-- - External Audience Metadata`
+- **帳戶名稱**：輸入`--aepUserLdap-- - External Audience Metadata`
 - 核取核取方塊&#x200B;**XDM相容方塊**
 
 接著，按一下&#x200B;**連線到來源**。
@@ -115,7 +115,7 @@ Adobe Experience Platform的外部受眾功能可讓您專注於外部受眾的�
 
 ![外部對象中繼資料http 2](images/extAudMDhttp2a.png)
 
-選取&#x200B;**現有的資料集**，然後在下拉式功能表中搜尋並選取資料集`--demoProfileLdap-- - External Audience Metadata`。
+選取&#x200B;**現有的資料集**，然後在下拉式功能表中搜尋並選取資料集`--aepUserLdap-- - External Audience Metadata`。
 
 驗證&#x200B;**資料流詳細資料**，然後按一下[下一步] **。**
 
@@ -149,15 +149,15 @@ Adobe Experience Platform的外部受眾功能可讓您專注於外部受眾的�
 
 ```
 "xdmEntity": {
-    "_id": "--demoProfileLdap---extaudience-01",
-    "description": "--demoProfileLdap---extaudience-01 description",
+    "_id": "--aepUserLdap---extaudience-01",
+    "description": "--aepUserLdap---extaudience-01 description",
     "segmentIdentity": {
-      "_id": "--demoProfileLdap---extaudience-01",
+      "_id": "--aepUserLdap---extaudience-01",
       "namespace": {
         "code": "externalaudiences"
       }
     },
-    "segmentName": "--demoProfileLdap---extaudience-01 name",
+    "segmentName": "--aepUserLdap---extaudience-01 name",
     "segmentStatus": "ACTIVE",
     "version": "1.0"
   }
@@ -185,7 +185,7 @@ Adobe Experience Platform的外部受眾功能可讓您專注於外部受眾的�
 
 處理完成後，您可以使用查詢服務檢查資料集中的資料可用性。
 
-在右方功能表中，前往&#x200B;**資料集**&#x200B;並選取您先前建立的`--demoProfileLdap-- - External Audience Metadata`資料集。
+在右方功能表中，前往&#x200B;**資料集**&#x200B;並選取您先前建立的`--aepUserLdap-- - External Audience Metadata`資料集。
 
 ![外部對象中繼資料str 3](images/extAudMDstr3.png)
 
@@ -196,7 +196,7 @@ Adobe Experience Platform的外部受眾功能可讓您專注於外部受眾的�
 輸入下列程式碼，然後按下&#x200B;**SHIFT + ENTER**：
 
 ```
-select * from --demoProfileLdap--_external_audience_metadata
+select * from --aepUserLdap--_external_audience_metadata
 ```
 
 在查詢結果中，您會看到您擷取的外部對象中繼資料。
@@ -229,7 +229,7 @@ select * from --demoProfileLdap--_external_audience_metadata
 
 ![外部對象設定檔結構描述4](images/extAudPrXDM4.png)
 
-接著，選取結構描述名稱&#x200B;**未命名結構描述**。 在顯示名稱欄位中，輸入`--demoProfileLdap-- - External Audiences Membership`。
+接著，選取結構描述名稱&#x200B;**未命名結構描述**。 在顯示名稱欄位中，輸入`--aepUserLdap-- - External Audiences Membership`。
 
 ![外部對象設定檔結構描述5](images/extAudPrXDM5a.png)
 
@@ -239,11 +239,11 @@ select * from --demoProfileLdap--_external_audience_metadata
 
 ## 2.3.6.2.2建立外部對象成員資格資料集
 
-在&#x200B;**結構描述**&#x200B;中，移至&#x200B;**瀏覽**。 搜尋並按一下您在上一步建立的`--demoProfileLdap-- - External Audiences Membership`結構描述。 接著，按一下&#x200B;**從結構描述建立資料集**。
+在&#x200B;**結構描述**&#x200B;中，移至&#x200B;**瀏覽**。 搜尋並按一下您在上一步建立的`--aepUserLdap-- - External Audiences Membership`結構描述。 接著，按一下&#x200B;**從結構描述建立資料集**。
 
 ![外部對象中繼資料DS 1](images/extAudPrDS1.png)
 
-在&#x200B;**Name**&#x200B;欄位中輸入`--demoProfileLdap-- - External Audiences Membership`。 按一下&#x200B;**建立資料集**。
+在&#x200B;**Name**&#x200B;欄位中輸入`--aepUserLdap-- - External Audiences Membership`。 按一下&#x200B;**建立資料集**。
 
 ![外部對象中繼資料DS 2](images/extAudPrDS2.png)
 
@@ -263,7 +263,7 @@ select * from --demoProfileLdap--_external_audience_metadata
 輸入下列資訊：
 
 - **帳戶型別**：選取&#x200B;**新帳戶**
-- **帳戶名稱**：輸入`--demoProfileLdap-- - External Audience Membership`
+- **帳戶名稱**：輸入`--aepUserLdap-- - External Audience Membership`
 - 核取核取方塊&#x200B;**XDM相容方塊**
 
 接著，按一下&#x200B;**連線到來源**。
@@ -274,7 +274,7 @@ select * from --demoProfileLdap--_external_audience_metadata
 
 ![外部對象中繼資料http 2](images/extAudPrhttp2a.png)
 
-選取&#x200B;**現有的資料集**，然後在下拉式功能表中搜尋並選取資料集`--demoProfileLdap-- - External Audiences Membership`。
+選取&#x200B;**現有的資料集**，然後在下拉式功能表中搜尋並選取資料集`--aepUserLdap-- - External Audiences Membership`。
 
 驗證&#x200B;**資料流詳細資料**，然後按一下[下一步] **。**
 
@@ -308,18 +308,18 @@ select * from --demoProfileLdap--_external_audience_metadata
 
 ```
   "xdmEntity": {
-    "_id": "--demoProfileLdap---profile-test-01",
+    "_id": "--aepUserLdap---profile-test-01",
     "_experienceplatform": {
       "identification": {
         "core": {
-          "crmId": "--demoProfileLdap---profile-test-01"
+          "crmId": "--aepUserLdap---profile-test-01"
         }
       }
     },
-    "personID": "--demoProfileLdap---profile-test-01",
+    "personID": "--aepUserLdap---profile-test-01",
     "segmentMembership": {
       "externalaudiences": {
-        "--demoProfileLdap---extaudience-01": {
+        "--aepUserLdap---extaudience-01": {
           "status": "realized",
           "lastQualificationTime": "2022-03-05T00:00:00Z"
         }
@@ -350,7 +350,7 @@ select * from --demoProfileLdap--_external_audience_metadata
 
 處理完成後，您可以使用查詢服務檢查資料集中的資料可用性。
 
-在右方功能表中，前往&#x200B;**資料集**&#x200B;並選取您先前建立的`--demoProfileLdap-- - External Audiences Membership `資料集。
+在右方功能表中，前往&#x200B;**資料集**&#x200B;並選取您先前建立的`--aepUserLdap-- - External Audiences Membership `資料集。
 
 ![外部對象中繼資料str 3](images/extAudPrstr3.png)
 
@@ -361,7 +361,7 @@ select * from --demoProfileLdap--_external_audience_metadata
 輸入下列程式碼，然後按下&#x200B;**SHIFT + ENTER**：
 
 ```
-select * from --demoProfileLdap--_external_audiences_membership
+select * from --aepUserLdap--_external_audiences_membership
 ```
 
 在查詢結果中，您會看到您擷取的外部對象中繼資料。
@@ -382,11 +382,11 @@ select * from --demoProfileLdap--_external_audiences_membership
 
 ![外部對象SegBuilder 1](images/extAudSegUI2a.png)
 
-選取您先前建立的外部對象，其名稱為`--demoProfileLdap---extaudience-01`。 將對象拖放到畫布上。
+選取您先前建立的外部對象，其名稱為`--aepUserLdap---extaudience-01`。 將對象拖放到畫布上。
 
 ![外部對象SegBuilder 1](images/extAudSegUI2b.png)
 
-提供區段名稱，使用`--demoProfileLdap-- - extaudience-01`。 按一下&#x200B;**儲存並關閉**。
+提供區段名稱，使用`--aepUserLdap-- - extaudience-01`。 按一下&#x200B;**儲存並關閉**。
 
 ![外部對象SegBuilder 1](images/extAudSegUI1.png)
 
@@ -398,7 +398,7 @@ select * from --demoProfileLdap--_external_audiences_membership
 
 ## 2.3.6.4視覺化您的客戶設定檔
 
-您現在也可以將客戶設定檔中的區段資格視覺化。 移至&#x200B;**設定檔**，使用身分識別名稱空間&#x200B;**Demo System - CRMID**&#x200B;並提供身分識別`--demoProfileLdap---profile-test-01` （您做為練習6.6.2.4的一部分使用），然後按一下&#x200B;**檢視**。 接著，按一下&#x200B;**設定檔識別碼**&#x200B;以開啟設定檔。
+您現在也可以將客戶設定檔中的區段資格視覺化。 移至&#x200B;**設定檔**，使用身分識別名稱空間&#x200B;**Demo System - CRMID**&#x200B;並提供身分識別`--aepUserLdap---profile-test-01` （您做為練習6.6.2.4的一部分使用），然後按一下&#x200B;**檢視**。 接著，按一下&#x200B;**設定檔識別碼**&#x200B;以開啟設定檔。
 
 ![外部對象SegBuilder 1](images/extAudProfileUI1.png)
 

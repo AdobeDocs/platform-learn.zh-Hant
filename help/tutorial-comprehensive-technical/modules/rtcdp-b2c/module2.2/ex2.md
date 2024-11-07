@@ -3,7 +3,7 @@ title: Intelligent Services - Customer AI建立新例項（設定）
 description: Customer AI — 建立新執行個體（設定）
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 1%
@@ -30,7 +30,7 @@ Customer AI的運作方式是藉由分析現有的消費者體驗事件資料來
 
 輸入Customer AI執行處理的必要明細：
 
-- 名稱：使用`--demoProfileLdap-- Product Purchase Propensity`
+- 名稱：使用`--aepUserLdap-- Product Purchase Propensity`
 - 說明：使用： **預測客戶購買產品的可能性**
 - 傾向性型別：選取&#x200B;**轉換**
 

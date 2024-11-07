@@ -3,7 +3,7 @@ title: Intelligent Services - Customer AI資料準備（擷取）
 description: Customer AI — 資料準備（擷取）
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 1%
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 當作結構描述的名稱，您將使用此：
 
-- `--demoProfileLdap-- - Demo System - Customer Experience Event`
+- `--aepUserLdap-- - Demo System - Customer Experience Event`
 
 例如，對於ldap **vangeluw**，這應該是結構描述的名稱：
 
@@ -111,7 +111,7 @@ ht-degree: 1%
 
 ![資料集](./images/createds1.png)
 
-作為資料集的名稱，請使用`--demoProfileLdap-- - Demo System - Customer Experience Event Dataset`。 按一下&#x200B;**完成**。
+作為資料集的名稱，請使用`--aepUserLdap-- - Demo System - Customer Experience Event Dataset`。 按一下&#x200B;**完成**。
 
 ![資料集](./images/createds2.png)
 

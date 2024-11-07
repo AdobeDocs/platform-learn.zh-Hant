@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer — 為iOS設定和使用推播通知
 description: 設定和使用iOS的推播通知
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxId--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxId--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -48,7 +48,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
 
-在左側功能表中，移至&#x200B;**[!UICONTROL 資料流]**&#x200B;並搜尋您在[練習0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)中建立的資料流（名為`--demoProfileLdap-- - Demo System Datastream (Mobile)`）。 按一下以開啟它。
+在左側功能表中，移至&#x200B;**[!UICONTROL 資料流]**&#x200B;並搜尋您在[練習0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)中建立的資料流（名為`--aepUserLdap-- - Demo System Datastream (Mobile)`）。 按一下以開啟它。
 
 ![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1a.png)
 
@@ -169,7 +169,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 填入值：
 
-- 工作階段名稱：使用`--demoProfileLdap-- - push debugging`並以您的ldap取代ldap
+- 工作階段名稱：使用`--aepUserLdap-- - push debugging`並以您的ldap取代ldap
 - 基礎URL：使用&#x200B;**dxdemo://default**
 
 按一下&#x200B;**下一步**。
@@ -232,7 +232,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![ACOP](./images/emptyevent.png)
 
-首先，請為事件命名，如下所示： `--demoProfileLdap--StoreEntryEvent`並將說明設定為`Store Entry Event`。
+首先，請為事件命名，如下所示： `--aepUserLdap--StoreEntryEvent`並將說明設定為`Store Entry Event`。
 
 ![ACOP](./images/eventname.png)
 
@@ -283,11 +283,11 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![DSN](./images/sjourney1.png)
 
-您將會看到此訊息。 為您的歷程命名。 使用`--demoProfileLdap-- - Store Entry journey`。 按一下&#x200B;**「確定」**。
+您將會看到此訊息。 為您的歷程命名。 使用`--aepUserLdap-- - Store Entry journey`。 按一下&#x200B;**「確定」**。
 
 ![DSN](./images/sjourney3.png)
 
-首先，您需要新增活動作為歷程的起點。 搜尋您的活動`--demoProfileLdap--StoreEntryEvent`，並將其拖放到畫布上。 按一下&#x200B;**「確定」**。
+首先，您需要新增活動作為歷程的起點。 搜尋您的活動`--aepUserLdap--StoreEntryEvent`，並將其拖放到畫布上。 按一下&#x200B;**「確定」**。
 
 ![DSN](./images/sjourney4.png)
 

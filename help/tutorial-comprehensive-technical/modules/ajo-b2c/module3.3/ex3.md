@@ -3,7 +3,7 @@ title: offer decisioning — 測試您的決定
 description: offer decisioning — 測試您的決定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1263'
 ht-degree: 0%
@@ -14,17 +14,17 @@ ht-degree: 0%
 
 ## 3.3.3.1更新您的資料流
 
-在[練習0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)中，您已建立自己的&#x200B;**[!UICONTROL 資料流]**。 您接著使用名稱`--demoProfileLdap-- - Demo System Datastream`。
+在[練習0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)中，您已建立自己的&#x200B;**[!UICONTROL 資料流]**。 您接著使用名稱`--aepUserLdap-- - Demo System Datastream`。
 
 在本練習中，您需要設定&#x200B;**[!UICONTROL 資料串流]**&#x200B;以搭配&#x200B;**[!DNL Offer Decisioning]**&#x200B;使用。
 
 若要這麼做，請前往[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 您將會看到此訊息。 按一下&#x200B;**[!UICONTROL 資料串流]**&#x200B;或&#x200B;**[!UICONTROL 資料串流(Beta)]**。
 
-在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxId--`。
+在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxName--`。
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
-搜尋您名為`--demoProfileLdap-- - Demo System Datastream`的&#x200B;**[!UICONTROL 資料流]**。 按一下您的&#x200B;**[!UICONTROL 資料流]**&#x200B;以開啟。
+搜尋您名為`--aepUserLdap-- - Demo System Datastream`的&#x200B;**[!UICONTROL 資料流]**。 按一下您的&#x200B;**[!UICONTROL 資料流]**&#x200B;以開啟。
 
 ![WebSDK](./images/websdk1.png)
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ## 3.3.3.2設定您的Adobe Experience Platform資料收集使用者端屬性，以要求個人化優惠
 
-移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)，**[!UICONTROL 使用者端]**。 搜尋名稱為`--demoProfileLdap-- - Demo System (DD/MM/YYYY)`的資料收集屬性。 開啟Web的資料收集使用者端屬性。
+移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)，**[!UICONTROL 使用者端]**。 搜尋名稱為`--aepUserLdap-- - Demo System (DD/MM/YYYY)`的資料收集屬性。 開啟Web的資料收集使用者端屬性。
 
 ![WebSDK](./images/launch1.png)
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxId--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxId--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -91,15 +91,15 @@ ht-degree: 0%
 
 ### 3.3.3.2.2擷取您的[!UICONTROL 決定ID]
 
-[!UICONTROL 決定ID]會識別您要使用的個人化優惠和遞補優惠組合。 在上一個練習中，您建立了自己的[!UICONTROL 決定]，並將其命名為`--demoProfileLdap-- - Luma Decision`。
+[!UICONTROL 決定ID]會識別您要使用的個人化優惠和遞補優惠組合。 在上一個練習中，您建立了自己的[!UICONTROL 決定]，並將其命名為`--aepUserLdap-- - Luma Decision`。
 
-若要尋找您`--demoProfileLdap-- - Luma Decision`的[!UICONTROL 決定ID]，請移至[https://platform.adobe.com](https://platform.adobe.com)。
+若要尋找您`--aepUserLdap-- - Luma Decision`的[!UICONTROL 決定ID]，請移至[https://platform.adobe.com](https://platform.adobe.com)。
 
-接著，移至[!UICONTROL 優惠]，然後移至[!UICONTROL 決定]。 按一下以選取名為`--demoProfileLdap-- - Luma Decision`的[!UICONTROL 決定]。
+接著，移至[!UICONTROL 優惠]，然後移至[!UICONTROL 決定]。 按一下以選取名為`--aepUserLdap-- - Luma Decision`的[!UICONTROL 決定]。
 
 ![WebSDK](./images/launch7.png)
 
-如上圖所示，在此範例中，[!UICONTROL 決定ID]為`xcore:offer-activity:14c052382e1b6505`。 記下您決定`--demoProfileLdap-- - Luma Decision`的[!UICONTROL 決定ID]，因為您會在下一個練習中需要它。
+如上圖所示，在此範例中，[!UICONTROL 決定ID]為`xcore:offer-activity:14c052382e1b6505`。 記下您決定`--aepUserLdap-- - Luma Decision`的[!UICONTROL 決定ID]，因為您會在下一個練習中需要它。
 
 現在您已擷取建立&#x200B;**[!UICONTROL 決定範圍]**&#x200B;所需的兩個元素，您可以繼續下一個步驟，包括編碼決定範圍。
 
@@ -120,11 +120,11 @@ ht-degree: 0%
 
   ![WebSDK](./images/launch8.png)
 
-- 從Adobe Experience Platform擷取BASE64編碼字串。 移至[!UICONTROL 決定]，然後按一下以開啟名為`--demoProfileLdap-- - Luma Decision`的[!UICONTROL 決定]。
+- 從Adobe Experience Platform擷取BASE64編碼字串。 移至[!UICONTROL 決定]，然後按一下以開啟名為`--aepUserLdap-- - Luma Decision`的[!UICONTROL 決定]。
 
   ![WebSDK](./images/launch9.png)
 
-  開啟`--demoProfileLdap-- - Luma Decision`後，您將會看到此專案。 找到位置[!UICONTROL 網頁 — 影像]，然後按一下&#x200B;**[!UICONTROL 複製]**&#x200B;按鈕。 接著，按一下&#x200B;**[!UICONTROL 編碼決定範圍]**。 **[!UICONTROL 決定範圍]**&#x200B;現在已複製到您的剪貼簿。
+  開啟`--aepUserLdap-- - Luma Decision`後，您將會看到此專案。 找到位置[!UICONTROL 網頁 — 影像]，然後按一下&#x200B;**[!UICONTROL 複製]**&#x200B;按鈕。 接著，按一下&#x200B;**[!UICONTROL 編碼決定範圍]**。 **[!UICONTROL 決定範圍]**&#x200B;現在已複製到您的剪貼簿。
 
   ![WebSDK](./images/launch10.png)
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 ## 3.3.3.3設定您的Adobe Experience Platform資料收集使用者端屬性，以接收並套用個人化優惠
 
-移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)，移至&#x200B;**[!UICONTROL 屬性]**。 搜尋名稱為`--demoProfileLdap-- - Demo System (DD/MM/YYYY)`的資料收集屬性。 開啟Web的資料收集屬性。
+移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)，移至&#x200B;**[!UICONTROL 屬性]**。 搜尋名稱為`--aepUserLdap-- - Demo System (DD/MM/YYYY)`的資料收集屬性。 開啟Web的資料收集屬性。
 
 ![WebSDK](./images/launch1.png)
 

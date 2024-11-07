@@ -3,7 +3,7 @@ title: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的
 description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — Adobe Experience Platform資料收集簡介
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 9%
@@ -26,7 +26,7 @@ ht-degree: 9%
 
 ![屬性頁面](./images/launch1.png)
 
-在模組0中，示範系統為您建立了兩個使用者端屬性：一個用於網站，另一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--demoProfileLdap--`以尋找它們。
+在模組0中，示範系統為您建立了兩個使用者端屬性：一個用於網站，另一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--aepUserLdap--`以尋找它們。
 
 ![搜尋方塊](./images/property6.png)
 
@@ -44,7 +44,7 @@ ht-degree: 9%
 
 ![擴充功能首頁](./images/property9edgedomain.png)
 
-現在，請確定已在&#x200B;**[!UICONTROL 資料串流]**&#x200B;標題下選取&#x200B;**[!UICONTROL 從清單選擇]**&#x200B;選項按鈕，並從&#x200B;**[!UICONTROL 資料串流]**&#x200B;方塊的清單中選取名為`--demoProfileLdap-- - Demo System Datastream`的資料串流。
+現在，請確定已在&#x200B;**[!UICONTROL 資料串流]**&#x200B;標題下選取&#x200B;**[!UICONTROL 從清單選擇]**&#x200B;選項按鈕，並從&#x200B;**[!UICONTROL 資料串流]**&#x200B;方塊的清單中選取名為`--aepUserLdap-- - Demo System Datastream`的資料串流。
 
 ![擴充功能首頁](./images/property9edge.png)
 

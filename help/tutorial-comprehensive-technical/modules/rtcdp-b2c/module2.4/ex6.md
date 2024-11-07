@@ -3,7 +3,7 @@ title: Microsoft Azure事件中樞的區段啟用 — 動作
 description: Microsoft Azure事件中樞的區段啟用 — 動作
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
@@ -71,17 +71,17 @@ ht-degree: 0%
 
 ## 2.4.6.3符合您對裝置區段的興趣
 
-導覽至&#x200B;**裝置**&#x200B;頁面一次，且&#x200B;**不要重新載入或重新整理**。 此動作應可讓您符合`--demoProfileLdap-- - Interest in Equipment`區段的資格。
+導覽至&#x200B;**裝置**&#x200B;頁面一次，且&#x200B;**不要重新載入或重新整理**。 此動作應可讓您符合`--aepUserLdap-- - Interest in Equipment`區段的資格。
 
 ![6-04-luma-telco-nav-sports.png](./images/luma1.png)
 
-若要確認，請開啟「設定檔檢視器」面板。 您現在應該是`--demoProfileLdap-- - Interest in Equipment`的成員。 如果您的區段會籍尚未在設定檔檢視器面板中更新，請按一下重新載入按鈕。
+若要確認，請開啟「設定檔檢視器」面板。 您現在應該是`--aepUserLdap-- - Interest in Equipment`的成員。 如果您的區段會籍尚未在設定檔檢視器面板中更新，請按一下重新載入按鈕。
 
 ![6-05-luma-telco-nav-broadband.png](./images/luma2.png)
 
-切換回Visual Studio Code並檢視您的&#x200B;**TERMINAL**&#x200B;標籤，您應該會看到特定&#x200B;**ECID**&#x200B;的區段清單。 只要您符合`--demoProfileLdap-- - Interest in Equipment`區段的資格，就會將此啟用裝載傳送至您的事件中樞。
+切換回Visual Studio Code並檢視您的&#x200B;**TERMINAL**&#x200B;標籤，您應該會看到特定&#x200B;**ECID**&#x200B;的區段清單。 只要您符合`--aepUserLdap-- - Interest in Equipment`區段的資格，就會將此啟用裝載傳送至您的事件中樞。
 
-當您進一步瞭解區段承載時，可以看到`--demoProfileLdap-- - Interest in Equipment`處於&#x200B;**已實現**&#x200B;狀態。
+當您進一步瞭解區段承載時，可以看到`--aepUserLdap-- - Interest in Equipment`處於&#x200B;**已實現**&#x200B;狀態。
 
 **已實現**&#x200B;的區段狀態表示我們的設定檔剛進入區段。 雖然&#x200B;**existing**&#x200B;狀態表示我們的設定檔會繼續位於區段中。
 

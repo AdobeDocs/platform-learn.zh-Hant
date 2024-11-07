@@ -3,7 +3,7 @@ title: Customer Journey Analytics — 建立資料檢視
 description: Customer Journey Analytics — 建立資料檢視
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 3%
@@ -45,17 +45,17 @@ ht-degree: 3%
 
 ![示範](./images/0-v2.png)
 
-您在上一個練習中建立的&#x200B;**連線**&#x200B;已經選取。 您的連線名為`--demoProfileLdap-- – Omnichannel Data Connection`。
+您在上一個練習中建立的&#x200B;**連線**&#x200B;已經選取。 您的連線名為`--aepUserLdap-- – Omnichannel Data Connection`。
 
 ![示範](./images/ext5.png)
 
-接下來，依照此命名慣例為資料檢視命名： `--demoProfileLdap-- – Omnichannel Data View`。
+接下來，依照此命名慣例為資料檢視命名： `--aepUserLdap-- – Omnichannel Data View`。
 
-為描述輸入相同的值： `--demoProfileLdap-- – Omnichannel Data View`。
+為描述輸入相同的值： `--aepUserLdap-- – Omnichannel Data View`。
 
 | 名稱 | 說明 |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- – Omnichannel Data View` | `--demoProfileLdap-- – Omnichannel Data View` |
+| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View` |
 
 ![示範](./images/1-v2.png)
 

@@ -3,7 +3,7 @@ title: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的
 description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — 實作Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 移至[https://experience.adobe.com/launch/](https://experience.adobe.com/launch/)並移至&#x200B;**資料串流**。
 
-在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxId--`。 開啟名為`--demoProfileLdap-- - Demo System Datastream`的特定資料流。
+在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxName--`。 開啟名為`--aepUserLdap-- - Demo System Datastream`的特定資料流。
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 

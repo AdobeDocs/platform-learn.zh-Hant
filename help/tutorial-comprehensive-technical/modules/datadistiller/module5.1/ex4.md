@@ -3,7 +3,7 @@ title: 查詢服務 — Power BI/Tableau
 description: 查詢服務 — Power BI/Tableau
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '393'
 ht-degree: 0%
@@ -62,7 +62,7 @@ and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identifica
 
 ![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-輸入`--demoProfileLdap-- Callcenter Interaction Analysis`作為資料集的名稱和描述，然後按&#x200B;**執行查詢**&#x200B;按鈕
+輸入`--aepUserLdap-- Callcenter Interaction Analysis`作為資料集的名稱和描述，然後按&#x200B;**執行查詢**&#x200B;按鈕
 
 ![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 

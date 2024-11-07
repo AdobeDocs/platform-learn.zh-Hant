@@ -3,7 +3,7 @@ title: offer decisioning — 使用API測試您的決定
 description: 使用API測試您的決定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '651'
 ht-degree: 0%
@@ -50,7 +50,7 @@ ht-degree: 0%
 
 - 屬性： `_instance.parentName==aepenablementfy22`
 
-在該引數中，**[!UICONTROL aepenablementfy22]**&#x200B;是Adobe Experience Platform中使用的沙箱名稱。 您應該使用的沙箱是`--aepSandboxId--`。 由`--aepSandboxId--`取代文字&#x200B;**[!UICONTROL aepenablementfy22]**。
+在該引數中，**[!UICONTROL aepenablementfy22]**&#x200B;是Adobe Experience Platform中使用的沙箱名稱。 您應該使用的沙箱是`--aepSandboxName--`。 由`--aepSandboxName--`取代文字&#x200B;**[!UICONTROL aepenablementfy22]**。
 
 取代沙箱名稱后，按一下&#x200B;**[!UICONTROL 傳送]**。
 

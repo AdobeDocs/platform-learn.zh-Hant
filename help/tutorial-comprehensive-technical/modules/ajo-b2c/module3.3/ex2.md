@@ -3,7 +3,7 @@ title: offer decisioning — 設定優惠和決定ID
 description: offer decisioning — 設定優惠和決定ID
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 2%
@@ -18,10 +18,10 @@ ht-degree: 2%
 
 | 名稱 | 日期範圍 | 電子郵件的影像連結 | 網頁的影像連結 | 文字 | 優先順序 | 適用性 | 語言 |
 |-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|
-| `--demoProfileLdap-- - Nadia Elements Shell` | 今天 — 1個月後 | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | 全部 — 女性客戶 | 英文 (美國) |
-| `--demoProfileLdap-- - Radiant Tee` | 今天 — 1個月後 | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | 全部 — 女性客戶 | 英文 (美國) |
-| `--demoProfileLdap-- - Zeppelin Yoga Pant` | 今天 — 1個月後 | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | 全部 — 男性客戶 | 英文 (美國) |
-| `--demoProfileLdap-- - Proteus Fitness Jackshirt` | 今天 — 1個月後 | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | 全部 — 男性客戶 | 英文 (美國) |
+| `--aepUserLdap-- - Nadia Elements Shell` | 今天 — 1個月後 | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt | `{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell` | 25 | 全部 — 女性客戶 | 英文 (美國) |
+| `--aepUserLdap-- - Radiant Tee` | 今天 — 1個月後 | https://bit.ly/2HfA17v | https://bit.ly/3pEIdzn | `{{ profile.person.name.firstName }}, 5% discount on Radiant Tee` | 15 | 全部 — 女性客戶 | 英文 (美國) |
+| `--aepUserLdap-- - Zeppelin Yoga Pant` | 今天 — 1個月後 | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd | `{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant` | 25 | 全部 — 男性客戶 | 英文 (美國) |
+| `--aepUserLdap-- - Proteus Fitness Jackshirt` | 今天 — 1個月後 | https://bit.ly/330a43n | https://bit.ly/36USaQW | `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt` | 15 | 全部 — 男性客戶 | 英文 (美國) |
 
 {style="table-layout:auto"}
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxId--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxId--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -45,7 +45,7 @@ ht-degree: 2%
 
 ![決定規則](./images/offers3.png)
 
-在此情況下，您需要設定選件`--demoProfileLdap-- - Nadia Elements Shell`。 使用上表中的資訊填寫欄位。 在此範例中，個人化選件的名稱為&#x200B;**vangeluw - Nadia Elements Shell**。 另外，將&#x200B;**開始日期和時間**&#x200B;設定為昨天，並將&#x200B;**結束日期和時間**&#x200B;設定為從現在起一個月內的日期。
+在此情況下，您需要設定選件`--aepUserLdap-- - Nadia Elements Shell`。 使用上表中的資訊填寫欄位。 在此範例中，個人化選件的名稱為&#x200B;**vangeluw - Nadia Elements Shell**。 另外，將&#x200B;**開始日期和時間**&#x200B;設定為昨天，並將&#x200B;**結束日期和時間**&#x200B;設定為從現在起一個月內的日期。
 
 完成後，您應該擁有此專案。 按一下&#x200B;**下一步**。
 
@@ -182,7 +182,7 @@ ht-degree: 2%
 
 ![決定規則](./images/foffers3.png)
 
-為您的遞補優惠輸入此名稱： `--demoProfileLdap-- - Luma Fallback Offer`。 按一下&#x200B;**下一步**。
+為您的遞補優惠輸入此名稱： `--aepUserLdap-- - Luma Fallback Offer`。 按一下&#x200B;**下一步**。
 
 ![決定規則](./images/foffers4.png)
 
@@ -281,7 +281,7 @@ ht-degree: 2%
 
 然後您會看到這個快顯視窗。 設定您的集合，如下所示。 按一下&#x200B;**下一步**。
 
-- 集合名稱：使用`--demoProfileLdap-- - Luma Collection`
+- 集合名稱：使用`--aepUserLdap-- - Luma Collection`
 - 選取&#x200B;**建立靜態集合**。
 
 ![決定規則](./images/createcollectionpopup1.png)
@@ -308,7 +308,7 @@ ht-degree: 2%
 
 填寫如下的欄位。 按一下&#x200B;**下一步**。
 
-- 名稱： `--demoProfileLdap-- - Luma Decision`
+- 名稱： `--aepUserLdap-- - Luma Decision`
 - 開始日期和時間：昨天
 - 結束日期和時間：今天+ 1個月
 
@@ -322,7 +322,7 @@ ht-degree: 2%
 
 ![決定規則](./images/activity3.png)
 
-選取您的集合`--demoProfileLdap-- - Luma Collection`並按一下&#x200B;**新增**。
+選取您的集合`--aepUserLdap-- - Luma Collection`並按一下&#x200B;**新增**。
 
 ![決定規則](./images/activity4text.png)
 
@@ -330,15 +330,15 @@ ht-degree: 2%
 
 ![決定規則](./images/activity5text.png)
 
-選取位置&#x200B;**網頁 — 影像**，並在評估准則下新增您的集合`--demoProfileLdap-- - Luma Collection`。 然後，再按一下&#x200B;**+**&#x200B;按鈕以新增決定範圍。
+選取位置&#x200B;**網頁 — 影像**，並在評估准則下新增您的集合`--aepUserLdap-- - Luma Collection`。 然後，再按一下&#x200B;**+**&#x200B;按鈕以新增決定範圍。
 
 ![決定規則](./images/activity6text.png)
 
-選取版位&#x200B;**電子郵件 — 影像**，並在評估准則下新增您的集合`--demoProfileLdap-- - Luma Collection`。 然後，按一下&#x200B;**下一步**。
+選取版位&#x200B;**電子郵件 — 影像**，並在評估准則下新增您的集合`--aepUserLdap-- - Luma Collection`。 然後，按一下&#x200B;**下一步**。
 
 ![決定規則](./images/activity4.png)
 
-您現在需要選取名為`--demoProfileLdap-- - Luma Fallback Offer`的&#x200B;**遞補優惠**。 按一下&#x200B;**下一步**。
+您現在需要選取名為`--aepUserLdap-- - Luma Fallback Offer`的&#x200B;**遞補優惠**。 按一下&#x200B;**下一步**。
 
 ![決定規則](./images/activity10.png)
 

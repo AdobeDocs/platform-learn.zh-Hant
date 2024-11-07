@@ -3,7 +3,7 @@ title: 基礎 — 即時客戶設定檔 — 建立區段 — API
 description: 基礎 — 即時客戶設定檔 — 建立區段 — API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 3%
@@ -77,11 +77,11 @@ ht-degree: 3%
 
 | 索引鍵 | 值 |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxId--`。
+>您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxName--`。
 
 現在，按一下藍色的&#x200B;**傳送**&#x200B;按鈕以建立區段並檢視其結果。
 
@@ -111,11 +111,11 @@ ht-degree: 3%
 
 | 索引鍵 | 值 |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxId--`。
+>您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxName--`。
 
 按一下藍色的&#x200B;**傳送**&#x200B;按鈕。
 
@@ -142,11 +142,11 @@ ht-degree: 3%
 
 | 索引鍵 | 值 |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxId--`。
+>您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxName--`。
 
 按一下藍色的&#x200B;**傳送**&#x200B;按鈕。
 

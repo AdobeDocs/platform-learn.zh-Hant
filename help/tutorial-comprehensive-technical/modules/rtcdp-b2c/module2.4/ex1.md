@@ -3,7 +3,7 @@ title: Microsoft Azure事件中樞的區段啟用 — Azure中的設定事件中
 description: Microsoft Azure事件中樞的區段啟用 — Azure中的設定事件中樞
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '589'
 ht-degree: 1%
@@ -36,13 +36,13 @@ Azure事件中樞是巨量資料串流平台和事件擷取服務。 其每秒�
 
 如果這是您第一次在Azure中建立資源，則需要建立新的&#x200B;**資源群組**。 如果您已經有資源群組，您可以選取它（或建立新資源群組）。
 
-選取&#x200B;**建立新的**，將您的群組命名為`--demoProfileLdap---aep-enablement`。
+選取&#x200B;**建立新的**，將您的群組命名為`--aepUserLdap---aep-enablement`。
 
 ![1-04-create-resource-group.png](./images/1-04-create-resource-group.png)
 
 完成欄位測試，如下所示：
 
-- 名稱空間：定義您的名稱空間，必須是唯一的，請使用以下模式`--demoProfileLdap---aep-enablement`
+- 名稱空間：定義您的名稱空間，必須是唯一的，請使用以下模式`--aepUserLdap---aep-enablement`
 - 位置： **西歐**&#x200B;參考阿姆斯特丹的Azure資料中心
 - 訂價層： **基本**
 - 輸送量單位： **1**
@@ -67,11 +67,11 @@ Azure事件中樞是巨量資料串流平台和事件擷取服務。 其每秒�
 
 ![1-09-all-resources.png](./images/1-09-all-resources.png)
 
-從資源清單中，選取您的`--demoProfileLdap---aep-enablement`名稱空間：
+從資源清單中，選取您的`--aepUserLdap---aep-enablement`名稱空間：
 
 ![1-10-list-resources.png](./images/1-10-list-resources.png)
 
-在`--demoProfileLdap---aep-enablement`詳細資訊畫面中，選取&#x200B;**事件中樞**：
+在`--aepUserLdap---aep-enablement`詳細資訊畫面中，選取&#x200B;**事件中樞**：
 
 ![1-11-eventhub-namespace.png](./images/1-11-eventhub-namespace.png)
 
@@ -79,7 +79,7 @@ Azure事件中樞是巨量資料串流平台和事件擷取服務。 其每秒�
 
 ![1-12-add-event-hub.png](./images/1-12-add-event-hub.png)
 
-使用`--demoProfileLdap---aep-enablement-event-hub`作為名稱，然後按一下&#x200B;**建立**。
+使用`--aepUserLdap---aep-enablement-event-hub`作為名稱，然後按一下&#x200B;**建立**。
 
 ![1-13-create-event-hub.png](./images/1-13-create-event-hub.png)
 
@@ -103,7 +103,7 @@ Azure事件中樞是巨量資料串流平台和事件擷取服務。 其每秒�
 
 ![1-17-event-hub-create-storage.png](./images/1-17-event-hub-create-storage.png)
 
-指定您的&#x200B;**資源群組** （在本練習開始時建立），使用`--demoProfileLdap--aepstorage`作為儲存體帳戶名稱，並選取&#x200B;**本機備援儲存體(LRS)**，然後按一下&#x200B;**檢閱+建立**。
+指定您的&#x200B;**資源群組** （在本練習開始時建立），使用`--aepUserLdap--aepstorage`作為儲存體帳戶名稱，並選取&#x200B;**本機備援儲存體(LRS)**，然後按一下&#x200B;**檢閱+建立**。
 
 ![1-18-event-hub-create-review-storage.png](./images/1-18-event-hub-create-review-storage.png)
 

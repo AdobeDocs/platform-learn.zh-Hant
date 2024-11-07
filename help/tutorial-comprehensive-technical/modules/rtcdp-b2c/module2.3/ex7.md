@@ -3,7 +3,7 @@ title: Real-time CDP - Destinations SDK
 description: Real-time CDP - Destinations SDK
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '2386'
 ht-degree: 2%
@@ -122,10 +122,10 @@ ht-degree: 2%
 
 ![Adobe I/O新整合](../module2.1/images/api14.png)
 
-輸入整合的「名稱」和「說明」。 作為命名慣例，我們將使用`AEP API --demoProfileLdap--`。 將ldap取代為您的ldap。
+輸入整合的「名稱」和「說明」。 作為命名慣例，我們將使用`AEP API --aepUserLdap--`。 將ldap取代為您的ldap。
 例如，如果您的ldap是vangeluw，則整合的名稱和說明會變成AEP API vangeluw。
 
-輸入`AEP API --demoProfileLdap--`作為&#x200B;**專案標題**。 按一下&#x200B;**儲存**。
+輸入`AEP API --aepUserLdap--`作為&#x200B;**專案標題**。 按一下&#x200B;**儲存**。
 
 ![Adobe I/O新整合](../module2.1/images/api15.png)
 
@@ -285,11 +285,11 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（這個很�
 
 在Adobe Experience Platform中建立您自己的目的地的第一個步驟是建立伺服器和範本設定。
 
-若要這麼做，請移至&#x200B;**目的地編寫API**、**目的地伺服器和範本**，然後按一下以開啟要求&#x200B;**POST — 建立目的地伺服器組態**。 您將會看到此訊息。 在&#x200B;**Headers**&#x200B;底下，您需要手動更新機碼&#x200B;**x-sandbox-name**&#x200B;的值，並將其設定為`--aepSandboxId--`。 選取值&#x200B;**{{SANDBOX_NAME}}**。
+若要這麼做，請移至&#x200B;**目的地編寫API**、**目的地伺服器和範本**，然後按一下以開啟要求&#x200B;**POST — 建立目的地伺服器組態**。 您將會看到此訊息。 在&#x200B;**Headers**&#x200B;底下，您需要手動更新機碼&#x200B;**x-sandbox-name**&#x200B;的值，並將其設定為`--aepSandboxName--`。 選取值&#x200B;**{{SANDBOX_NAME}}**。
 
 ![資料擷取](./images/sdkpm1.png)
 
-以`--aepSandboxId--`取代。
+以`--aepSandboxName--`取代。
 
 ![資料擷取](./images/sdkpm2.png)
 
@@ -335,11 +335,11 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（這個很�
 
 ## 2.3.7.5建立您的目的地設定
 
-在Postman中的&#x200B;**目的地編寫API**&#x200B;底下，移至&#x200B;**目的地組態**&#x200B;並按一下以開啟要求&#x200B;**POST — 建立目的地組態**。 您將會看到此訊息。 在&#x200B;**Headers**&#x200B;底下，您需要手動更新機碼&#x200B;**x-sandbox-name**&#x200B;的值，並將其設定為`--aepSandboxId--`。 選取值&#x200B;**{{SANDBOX_NAME}}**。
+在Postman中的&#x200B;**目的地編寫API**&#x200B;底下，移至&#x200B;**目的地組態**&#x200B;並按一下以開啟要求&#x200B;**POST — 建立目的地組態**。 您將會看到此訊息。 在&#x200B;**Headers**&#x200B;底下，您需要手動更新機碼&#x200B;**x-sandbox-name**&#x200B;的值，並將其設定為`--aepSandboxName--`。 選取值&#x200B;**{{SANDBOX_NAME}}**。
 
 ![資料擷取](./images/sdkpm7.png)
 
-以`--aepSandboxId--`取代。
+以`--aepSandboxName--`取代。
 
 ![資料擷取](./images/sdkpm8.png)
 
@@ -351,7 +351,7 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（這個很�
 
 ```json
 {
-    "name": "--demoProfileLdap-- - Webhook",
+    "name": "--aepUserLdap-- - Webhook",
     "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
     "status": "TEST",
     "customerAuthenticationConfigurations": [
@@ -428,7 +428,7 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（這個很�
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxId--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -446,7 +446,7 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（這個很�
 
 ![資料擷取](./images/destsdk3.png)
 
-您將會看到此訊息。 作為目的地的名稱，請使用`--demoProfileLdap-- - Webhook`。 選取選取的端點，在此範例中為&#x200B;**EU**。 按一下&#x200B;**下一步**。
+您將會看到此訊息。 作為目的地的名稱，請使用`--aepUserLdap-- - Webhook`。 選取選取的端點，在此範例中為&#x200B;**EU**。 按一下&#x200B;**下一步**。
 
 ![資料擷取](./images/destsdk4.png)
 
@@ -454,7 +454,7 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（這個很�
 
 ![資料擷取](./images/destsdk5.png)
 
-選取您先前建立的區段，名為`--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`。 按一下&#x200B;**下一步**。
+選取您先前建立的區段，名為`--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`。 按一下&#x200B;**下一步**。
 
 ![資料擷取](./images/destsdk6.png)
 

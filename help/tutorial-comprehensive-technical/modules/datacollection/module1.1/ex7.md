@@ -3,7 +3,7 @@ title: 基礎 — Adobe Experience Platform資料彙集的設定和Web SDK擴充
 description: 基礎 — Adobe Experience Platform資料彙集的設定和Web SDK擴充功能 — Adobe Experience Platform中的XDM結構描述需求
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '241'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![AEP偵錯工具](./images/exp1.png)
 
-登入後，按一下熒幕上方藍線中的文字&#x200B;**Production Prod**&#x200B;以選取適當的沙箱。 選取沙箱`--aepSandboxId--`。
+登入後，按一下熒幕上方藍線中的文字&#x200B;**Production Prod**&#x200B;以選取適當的沙箱。 選取沙箱`--aepSandboxName--`。
 
 選取您的沙箱後，您會看到畫面變更，現在您已進入沙箱。
 

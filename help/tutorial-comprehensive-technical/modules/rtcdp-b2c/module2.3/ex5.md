@@ -3,7 +3,7 @@ title: Real-time CDP — 建立區段並採取行動 — 將您的區段傳送�
 description: Real-time CDP — 建立區段並採取行動 — 將您的區段傳送至Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 2%
@@ -16,23 +16,23 @@ ht-degree: 2%
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxId--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
 ## 2.3.5.1驗證您的資料流
 
-Real-Time CDP中的Adobe Target目的地已連線至資料流，該資料流用於將資料擷取至Adobe邊緣網路。 如果您想要設定Adobe Target目的地，必須先確認資料流是否已啟用Adobe Target。 您的資料串流已在[練習0.2建立您的資料串流](./../../../modules/gettingstarted/gettingstarted/ex2.md)中設定，名稱為`--demoProfileLdap-- - Demo System Datastream`。
+Real-Time CDP中的Adobe Target目的地已連線至資料流，該資料流用於將資料擷取至Adobe邊緣網路。 如果您想要設定Adobe Target目的地，必須先確認資料流是否已啟用Adobe Target。 您的資料串流已在[練習0.2建立您的資料串流](./../../../modules/gettingstarted/gettingstarted/ex2.md)中設定，名稱為`--aepUserLdap-- - Demo System Datastream`。
 
 移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)，然後按一下&#x200B;**資料串流**&#x200B;或&#x200B;**資料串流(Beta)**。
 
 ![資料擷取](./images/atdestds1.png)
 
-在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxId--`。
+在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxName--`。
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
-在資料串流中，搜尋名為`--demoProfileLdap-- - Demo System Datastream`的資料串流。 按一下您的資料流以開啟。
+在資料串流中，搜尋名為`--aepUserLdap-- - Demo System Datastream`的資料串流。 按一下您的資料流以開啟。
 
 ![資料擷取](./images/atdestds3.png)
 
@@ -76,8 +76,8 @@ Adobe Target可作為Real-Time CDP的目的地。 若要設定您的Adobe Target
 
 在&#x200B;**設定新目的地**&#x200B;畫面中，您必須設定兩件事：
 
-- 名稱：使用名稱`--demoProfileLdap-- - Adobe Target (Web)`，看起來應該像這樣： **vangeluw - Adobe Target （網頁）**。
-- 資料串流識別碼：您必須選取您在[練習0.2建立資料串流](./../../../modules/gettingstarted/gettingstarted/ex2.md)中設定的資料串流。 您的資料串流的名稱應該是： `--demoProfileLdap-- - Demo System Datastream`。
+- 名稱：使用名稱`--aepUserLdap-- - Adobe Target (Web)`，看起來應該像這樣： **vangeluw - Adobe Target （網頁）**。
+- 資料串流識別碼：您必須選取您在[練習0.2建立資料串流](./../../../modules/gettingstarted/gettingstarted/ex2.md)中設定的資料串流。 您的資料串流的名稱應該是： `--aepUserLdap-- - Demo System Datastream`。
 
 按一下&#x200B;**下一步**。
 
@@ -91,7 +91,7 @@ Adobe Target可作為Real-Time CDP的目的地。 若要設定您的Adobe Target
 
 ![在](./images/atdest7.png)
 
-在可用區段的清單中，選取您在[練習6.1中建立的區段。建立名為`--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`的區段](./ex1.md)。 然後，按一下&#x200B;**下一步**。
+在可用區段的清單中，選取您在[練習6.1中建立的區段。建立名為`--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`的區段](./ex1.md)。 然後，按一下&#x200B;**下一步**。
 
 ![在](./images/atdest8.png)
 
@@ -177,7 +177,7 @@ Adobe Target可作為Real-Time CDP的目的地。 若要設定您的Adobe Target
 
 對於名稱，請使用：
 
-- `--demoProfileLdap-- - RTCDP - XT (Form)`
+- `--aepUserLdap-- - RTCDP - XT (Form)`
 
 ![RTCDP](./images/atform8.png)
 

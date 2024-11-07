@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 定義事�
 description: Adobe Journey Optimizer — 外部氣象API、SMS動作等
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 2%
@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxId--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxId--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 ![ACOP](./images/emptyevent1.png)
 
-作為事件的名稱，請使用`--demoProfileLdap--GeofenceEntry`。 在此範例中，事件名稱為`vangeluwGeofenceEntry`。
+作為事件的名稱，請使用`--aepUserLdap--GeofenceEntry`。 在此範例中，事件名稱為`vangeluwGeofenceEntry`。
 
 設定描述為： `Geofence Entry Event`。
 

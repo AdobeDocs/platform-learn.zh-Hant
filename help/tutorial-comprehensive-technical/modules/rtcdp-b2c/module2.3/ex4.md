@@ -3,7 +3,7 @@ title: Real-time CDP — 建立區段並採取行動 — 將區段傳送至S3-de
 description: Real-time CDP — 建立區段並採取行動 — 將區段傳送至S3-destination
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Adobe Experience Platform也能將受眾分享至電子郵件行銷目的地，�
 
 在&#x200B;**建立Bucket**&#x200B;畫面中，您需要設定兩個專案：
 
-- 名稱：使用名稱`aepmodulertcdp--demoProfileLdap--`。 例如，在本練習中，儲存貯體名稱為&#x200B;**aepmodulertcdpvangeluw**
+- 名稱：使用名稱`aepmodulertcdp--aepUserLdap--`。 例如，在本練習中，儲存貯體名稱為&#x200B;**aepmodulertcdpvangeluw**
 - 地區：使用地區&#x200B;**EU (Frankfurt) eu-central-1**
 
 ![ETL](./images/bucketname.png)
@@ -69,7 +69,7 @@ AWS資源的存取權由Amazon Identity and Access Management (IAM)控制。
 
 接下來，設定您的使用者：
 
-- 使用者名稱：使用`s3_--demoProfileLdap--_rtcdp`作為名稱，因此在此範例中，名稱為`s3_vangeluw_rtcdp`。
+- 使用者名稱：使用`s3_--aepUserLdap--_rtcdp`作為名稱，因此在此範例中，名稱為`s3_vangeluw_rtcdp`。
 - AWS存取型別：選取&#x200B;**存取金鑰 — 程式化存取**。
 
 按一下&#x200B;**下一步：許可權**。
@@ -121,7 +121,7 @@ AWS資源的存取權由Amazon Identity and Access Management (IAM)控制。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxId--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -157,9 +157,9 @@ AWS資源的存取權由Amazon Identity and Access Management (IAM)控制。
 
 | 存取金鑰ID | 秘密存取金鑰 |
 |:-----------------------:| :-----------------------:|
-| 名稱 | `AWS - S3 - --demoProfileLdap--` |
-| 說明 | `AWS - S3 - --demoProfileLdap--` |
-| 貯體名稱 | `aepmodulertcdp--demoProfileLdap--` |
+| 名稱 | `AWS - S3 - --aepUserLdap--` |
+| 說明 | `AWS - S3 - --aepUserLdap--` |
+| 貯體名稱 | `aepmodulertcdp--aepUserLdap--` |
 | 資料夾路徑 | / |
 
 按一下&#x200B;**下一步**。

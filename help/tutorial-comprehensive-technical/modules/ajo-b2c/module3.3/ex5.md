@@ -3,7 +3,7 @@ title: offer decisioning — 在電子郵件中使用您的決定
 description: 在電子郵件中使用您的決定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '381'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 在本練習中，您將使用自己的決定來個人化電子郵件和簡訊的傳送。
 
-移至&#x200B;**歷程**。 尋找您在練習7.2中建立的名為`--demoProfileLdap-- - Account Creation Journey`的歷程。 按一下您的歷程以開啟。
+移至&#x200B;**歷程**。 尋找您在練習7.2中建立的名為`--aepUserLdap-- - Account Creation Journey`的歷程。 按一下您的歷程以開啟。
 
 ![Journey Optimizer](./images/emailoffer1.png)
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/emailoffer7.png)
 
-選取您要納入電子郵件中的版位型別。 在&#x200B;**位置**&#x200B;下拉式功能表中選取&#x200B;**電子郵件 — 影像**，然後選取您的決定`--demoProfileLdap-- - Luma Decision`。 按一下&#x200B;**新增**。
+選取您要納入電子郵件中的版位型別。 在&#x200B;**位置**&#x200B;下拉式功能表中選取&#x200B;**電子郵件 — 影像**，然後選取您的決定`--aepUserLdap-- - Luma Decision`。 按一下&#x200B;**新增**。
 
 ![Journey Optimizer](./images/emailoffer8.png)
 

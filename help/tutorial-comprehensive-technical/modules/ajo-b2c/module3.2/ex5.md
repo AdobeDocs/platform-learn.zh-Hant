@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 觸發您�
 description: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 觸發您的協調客戶歷程
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '635'
 ht-degree: 1%
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ![屬性頁面](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-在模組0中，示範系統為您建立了兩個使用者端屬性：一個用於網站，另一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--demoProfileLdap--`以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
+在模組0中，示範系統為您建立了兩個使用者端屬性：一個用於網站，另一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--aepUserLdap--`以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
 
 ![搜尋方塊](./../../../modules/datacollection/module1.1/images/property6.png)
 

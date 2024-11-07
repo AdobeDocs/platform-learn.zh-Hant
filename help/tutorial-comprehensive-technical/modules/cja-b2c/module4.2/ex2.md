@@ -3,7 +3,7 @@ title: 使用BigQuery Source Connector在Adobe Experience Platform中擷取和�
 description: 使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料 — 在BigQuery中建立您的第一個查詢
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 | 命名 | 範例 |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
+| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |
 
 ![示範](./images/ex3/6.png)
 
@@ -254,19 +254,19 @@ GROUP BY
 
 | 命名 | 範例 |
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
+| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |
 
 您現在需要輸入表格名稱。 請使用此命名慣例：
 
 | 命名 | 範例 |
 | ----------------- |------------- | 
-| `--demoProfileLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
+| `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 ![示範](./images/ex3/16.png)
 
 按一下&#x200B;**儲存**。
 
-在您建立的表格中，資料準備就緒可能需要一些時間。 幾分鐘後，請重新整理瀏覽器。 然後，您應該會在資料集中看到BigQuery專案內&#x200B;**總管**&#x200B;下的`--demoProfileLdap--_GAdataTableBigquery`表格。
+在您建立的表格中，資料準備就緒可能需要一些時間。 幾分鐘後，請重新整理瀏覽器。 然後，您應該會在資料集中看到BigQuery專案內&#x200B;**總管**&#x200B;下的`--aepUserLdap--_GAdataTableBigquery`表格。
 
 ![示範](./images/ex3/19.png)
 

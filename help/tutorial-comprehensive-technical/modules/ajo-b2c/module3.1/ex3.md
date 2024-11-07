@@ -3,7 +3,7 @@ title: 更新設定ID並測試您的歷程
 description: 更新設定ID並測試您的歷程
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ![屬性頁面](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-在模組0中，示範系統為您建立了兩個使用者端屬性：一個用於網站，另一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--demoProfileLdap--`以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
+在模組0中，示範系統為您建立了兩個使用者端屬性：一個用於網站，另一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--aepUserLdap--`以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
 
 ![搜尋方塊](./../../../modules/datacollection/module1.1/images/property6.png)
 

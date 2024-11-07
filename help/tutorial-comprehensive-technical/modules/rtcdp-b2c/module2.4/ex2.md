@@ -3,7 +3,7 @@ title: Microsoft Azure事件中樞的區段啟用 — 在Adobe Experience Platfo
 description: Microsoft Azure事件中樞的區段啟用 — 在Adobe Experience Platform中設定事件中樞RTCDP目的地
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 1%
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ### 事件中樞
 
-尋找資源型別為&#x200B;**事件中樞名稱空間**&#x200B;的資源，如果您遵循上一個練習中所使用的命名慣例，事件中樞名稱空間將為`--demoProfileLdap---aep-enablement`。 記下它，您將在下一個練習中用到它。
+尋找資源型別為&#x200B;**事件中樞名稱空間**&#x200B;的資源，如果您遵循上一個練習中所使用的命名慣例，事件中樞名稱空間將為`--aepUserLdap---aep-enablement`。 記下它，您將在下一個練習中用到它。
 
 ![2-02-select-event-hubs-namespace.png](./images/2-02-select-event-hubs-namespace.png)
 
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 ![2-03-select-event-hub.png](./images/2-03-select-event-hub.png)
 
-選取&#x200B;**事件中樞**&#x200B;以取得事件中樞名稱空間中定義的事件中樞清單，如果您遵循上一個練習中所使用的命名慣例，您將會找到名為`--demoProfileLdap---aep-enablement-event-hub`的事件中樞。 記下它，您將在下一個練習中用到它。
+選取&#x200B;**事件中樞**&#x200B;以取得事件中樞名稱空間中定義的事件中樞清單，如果您遵循上一個練習中所使用的命名慣例，您將會找到名為`--aepUserLdap---aep-enablement-event-hub`的事件中樞。 記下它，您將在下一個練習中用到它。
 
 ![2-04-event-hub-selected.png](./images/2-04-event-hub-selected.png)
 
@@ -69,8 +69,8 @@ ht-degree: 1%
 |---|---|---|
 | sasKeyName | SAS金鑰名稱 | RootManageSharedAccessKey |
 | sasKey | SAS金鑰值 | srREx9ShJG1Rv7f/... |
-| 名稱空間 | 事件中樞名稱空間 | `--demoProfileLdap---aep-enablement` |
-| eventHubName | 事件中樞 | `--demoProfileLdap---aep-enablement-event-hub` |
+| 名稱空間 | 事件中樞名稱空間 | `--aepUserLdap---aep-enablement` |
+| eventHubName | 事件中樞 | `--aepUserLdap---aep-enablement-event-hub` |
 
 ## 2.4.2.2在Adobe Experience Platform中建立Azure事件中心目的地
 
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxId--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 
 ![2-09-destination-values.png](./images/2-09-destination-valuesa.png)
 
-您現在需要以`--demoProfileLdap---aep-enablement`格式輸入名稱和描述。 輸入&#x200B;**eventHubName** （請參閱上一個練習，看起來像這樣： `--demoProfileLdap---aep-enablement-event-hub`），然後按一下&#x200B;**下一步**。
+您現在需要以`--aepUserLdap---aep-enablement`格式輸入名稱和描述。 輸入&#x200B;**eventHubName** （請參閱上一個練習，看起來像這樣： `--aepUserLdap---aep-enablement-event-hub`），然後按一下&#x200B;**下一步**。
 
 ![2-10-create-destination.png](./images/2-10-create-destination.png)
 

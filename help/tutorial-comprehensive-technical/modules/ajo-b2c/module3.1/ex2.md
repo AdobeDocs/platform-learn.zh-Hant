@@ -3,7 +3,7 @@ title: Journey Optimizer建立您的歷程與電子郵件訊息
 description: Journey Optimizer建立您的電子郵件訊息
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ![ACOP](./images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxId--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxId--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -234,7 +234,7 @@ ht-degree: 0%
 
 ![ACOP](./images/journeyname.png)
 
-然後，您可以在此處輸入歷程的名稱。 請使用`--demoProfileLdap-- - Account Creation Journey`。 按一下&#x200B;**確定**&#x200B;以儲存變更。
+然後，您可以在此處輸入歷程的名稱。 請使用`--aepUserLdap-- - Account Creation Journey`。 按一下&#x200B;**確定**&#x200B;以儲存變更。
 
 ![ACOP](./images/journeyname1.png)
 

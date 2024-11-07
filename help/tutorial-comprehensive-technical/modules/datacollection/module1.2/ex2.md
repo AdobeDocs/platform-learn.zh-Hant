@@ -3,7 +3,7 @@ title: Foundation — 資料擷取 — 設定結構描述並設定識別碼
 description: Foundation — 資料擷取 — 設定結構描述並設定識別碼
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '3645'
 ht-degree: 5%
@@ -114,7 +114,7 @@ ht-degree: 5%
 您現在必須為新的[!UICONTROL 欄位群組]提供&#x200B;**[!UICONTROL 顯示名稱]**&#x200B;和&#x200B;**[!UICONTROL 描述]**。
 
 當作結構描述的名稱，我們將使用這個名稱：
-`--demoProfileLdap-- - Profile Identification Field Group`
+`--aepUserLdap-- - Profile Identification Field Group`
 
 例如，對於ldap **[!UICONTROL vangeluw]**，這應該是結構描述的名稱：
 
@@ -287,7 +287,7 @@ ht-degree: 5%
 
 當作結構描述的名稱，您將使用此：
 
-`--demoProfileLdap-- - Demo System - Profile Schema for Website`
+`--aepUserLdap-- - Demo System - Profile Schema for Website`
 
 以您特定的ldap取代&#x200B;**[!UICONTROL ldap]**。 例如，對於ldap **[!UICONTROL vangeluw]**，這應該是結構描述的名稱：
 
@@ -419,7 +419,7 @@ ht-degree: 5%
 
 當您的「欄位群組」名稱時，請使用以下代碼：
 
-`--demoProfileLdap-- - ExperienceEvent Identification Field Group`
+`--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
 例如，對於ldap **[!UICONTROL vangeluw]**，這應該是結構描述的名稱：
 
@@ -528,7 +528,7 @@ ECID — 欄位將定義為型別&#x200B;**[!UICONTROL 字串]**，而您將設�
 ![資料擷取](./images/schemaname1ee.png)
 
 當作結構描述的名稱，我們將使用這個名稱：
-`--demoProfileLdap-- - Demo System - Event Schema for Website`
+`--aepUserLdap-- - Demo System - Event Schema for Website`
 
 例如，對於ldap **[!UICONTROL vangeluw]**，這應該是結構描述的名稱：
 

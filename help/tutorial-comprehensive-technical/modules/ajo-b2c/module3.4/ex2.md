@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer — 設定批次型歷程
 description: 在本節中，您將設定批次電子郵件歷程以傳送電子報
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxId--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxId--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 在右側，您會看到一個表格，您必須在該表格中指定歷程名稱和說明。 輸入下列值：
 
-- **名稱**： `--demoProfileLdap-- - Newsletter Journey`。 例如： **vangeluw - Newsletter歷程**。
+- **名稱**： `--aepUserLdap-- - Newsletter Journey`。 例如： **vangeluw - Newsletter歷程**。
 - **描述**：每月電子報
 
 按一下&#x200B;**確定**。
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/batchj3.png)
 
-在「**選擇區段**」快顯視窗中，搜尋您的LDAP並選取您在[模組2.3 - Real-time CDP — 建立區段並執行名為`--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`的動作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)。 例如： vangeluw — 興趣PROTEUS FITNESS JACKSHIRT。 按一下&#x200B;**儲存**。
+在「**選擇區段**」快顯視窗中，搜尋您的LDAP並選取您在[模組2.3 - Real-time CDP — 建立區段並執行名為`--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`的動作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)。 例如： vangeluw — 興趣PROTEUS FITNESS JACKSHIRT。 按一下&#x200B;**儲存**。
 
 ![Journey Optimizer](./images/batchj5.png)
 

@@ -3,7 +3,7 @@ title: 使用BigQuery Source Connector在Adobe Experience Platform中擷取和�
 description: 使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料 — 建立您的Google Cloud Platform帳戶
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '663'
 ht-degree: 0%
@@ -57,7 +57,7 @@ GCP/BigQuery Source Connector應該用於……
 
 | 慣例 | 範例 |
 | ----------------- |-------------| 
-| `--demoProfileLdap---googlecloud` | delaigle-googlecloud |
+| `--aepUserLdap---googlecloud` | delaigle-googlecloud |
 
 ![示範](./images/ex1/3.png)
 
@@ -113,7 +113,7 @@ GCP/BigQuery Source Connector應該用於……
 
 | 認證 | 命名 | 範例 |
 | ----------------- |-------------| -------------|
-| 專案名稱 | `--demoProfileLdap---googlecloud` | vangeluw-googlecloud |
+| 專案名稱 | `--aepUserLdap---googlecloud` | vangeluw-googlecloud |
 | 專案ID | random | composed-task-306413 |
 
 按一下頂端功能表列中的您的&#x200B;**專案名稱**，即可找到您的專案名稱和專案識別碼：

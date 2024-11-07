@@ -3,7 +3,7 @@ title: Foundation — 資料擷取 — 設定資料集
 description: Foundation — 資料擷取 — 設定資料集
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 7%
@@ -53,7 +53,7 @@ ht-degree: 7%
 
 ![資料擷取](./images/datasetfromschema.png)
 
-在下一個畫面中，您必須選取您在1， `--demoProfileLdap-- - Demo System - Profile Schema for Website`中建立的結構描述。
+在下一個畫面中，您必須選取您在1， `--aepUserLdap-- - Demo System - Profile Schema for Website`中建立的結構描述。
 
 ![資料擷取](./images/schemaselection.png)
 
@@ -65,7 +65,7 @@ ht-degree: 7%
 
 將當作資料集的名稱，請使用以下專案：
 
-`--demoProfileLdap-- - Demo System - Profile Dataset for Website`
+`--aepUserLdap-- - Demo System - Profile Dataset for Website`
 
 例如，對於ldap **[!UICONTROL vangeluw]**，這應該是結構描述的名稱：
 
@@ -101,7 +101,7 @@ ht-degree: 7%
 
 ![資料擷取](./images/datasetfromschema.png)
 
-在下一個畫面中，您必須選取您在2.2 `--demoProfileLdap-- - Demo System - Event Schema for Website`中建立的結構描述。
+在下一個畫面中，您必須選取您在2.2 `--aepUserLdap-- - Demo System - Event Schema for Website`中建立的結構描述。
 
 ![資料擷取](./images/schemaselectionee.png)
 
@@ -113,7 +113,7 @@ ht-degree: 7%
 
 將資料集命名時，我們會使用這個名稱：
 
-`--demoProfileLdap-- - Demo System - Event Dataset for Website`
+`--aepUserLdap-- - Demo System - Event Dataset for Website`
 
 例如，對於ldap **[!UICONTROL vangeluw]**，這應該是結構描述的名稱：
 
@@ -137,7 +137,7 @@ ht-degree: 7%
 
 您現在必須啟用資料集，使其成為Adobe Experience Platform即時客戶個人檔案的一部分。
 
-按一下您的資料集`--demoProfileLdap--` — 示範系統 — 網站的設定檔資料集，以將其開啟。
+按一下您的資料集`--aepUserLdap--` — 示範系統 — 網站的設定檔資料集，以將其開啟。
 
 在畫面右側找到[!UICONTROL 設定檔]切換圖示。
 
@@ -153,7 +153,7 @@ ht-degree: 7%
 
 您的資料集現在已啟用[!UICONTROL 設定檔]。
 
-返回資料集總覽，然後按一下以開啟您網站的資料集`--demoProfileLdap-- - Demo System - Event Dataset`。
+返回資料集總覽，然後按一下以開啟您網站的資料集`--aepUserLdap-- - Demo System - Event Dataset`。
 
 在畫面右側找到[!UICONTROL 設定檔]切換圖示。
 

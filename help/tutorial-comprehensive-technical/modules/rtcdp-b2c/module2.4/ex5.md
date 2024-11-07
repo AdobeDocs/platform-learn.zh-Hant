@@ -3,7 +3,7 @@ title: Microsoft Azure事件中樞的區段啟用 — 定義Azure函式
 description: Microsoft Azure事件中樞的區段啟用 — 定義Azure函式
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '819'
 ht-degree: 0%
@@ -77,7 +77,7 @@ Visual Studio Code可讓您輕鬆……
 
 ![3-08-vsc-function-template.png](./images/vsc5.png)
 
-輸入函式的名稱，使用下列格式`--demoProfileLdap---aep-event-hub-trigger`，然後按Enter鍵：
+輸入函式的名稱，使用下列格式`--aepUserLdap---aep-event-hub-trigger`，然後按Enter鍵：
 
 ![3-09-vsc-function-name.png](./images/vsc6.png)
 
@@ -180,7 +180,7 @@ module.exports = async function (context, eventHubMessages) {
 
 ![3-17-vsc-run-project.png](./images/vsc15.png)
 
-從儲存體帳戶清單中，選取您建立為[13.1.4的一部分，以設定您的Azure儲存體帳戶](./ex1.md)。 您的儲存體帳戶名稱為`--demoProfileLdap--aepstorage`，例如： **mmeewisaepstorage**。
+從儲存體帳戶清單中，選取您建立為[13.1.4的一部分，以設定您的Azure儲存體帳戶](./ex1.md)。 您的儲存體帳戶名稱為`--aepUserLdap--aepstorage`，例如： **mmeewisaepstorage**。
 
 ![3-22-vsc-select-storage-account.png](./images/vsc16.png)
 

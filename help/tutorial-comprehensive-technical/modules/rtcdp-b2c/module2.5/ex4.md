@@ -3,7 +3,7 @@ title: 資料收集和即時伺服器端轉送 — 建立和設定Google雲端�
 description: 建立及設定Google雲端功能
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1593'
 ht-degree: 0%
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 進行下列選擇：
 
-- **函式名稱**： `--demoProfileLdap---event-forwarding`
+- **函式名稱**： `--aepUserLdap---event-forwarding`
 - **地區**：選取任何地區
 - **觸發器型別**：選取&#x200B;**HTTP**
 - **驗證**：選取&#x200B;**允許未驗證的呼叫**

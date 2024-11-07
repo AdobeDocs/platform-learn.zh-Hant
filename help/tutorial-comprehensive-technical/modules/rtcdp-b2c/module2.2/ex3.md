@@ -3,7 +3,7 @@ title: Customer AI — 評分控制面板和細分（預測並採取行動）
 description: Customer AI — 評分控制面板和細分（預測並採取行動）
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Customer AI儀表板允許按一下即可定義區段。 按一下傾向卡上�
 
 ![區段規則](./images/caicreatesegment.png)
 
-依照此命名慣例，為您的區段命名： `--demoProfileLdap-- - Customer AI High Propensity`。 按一下&#x200B;**儲存**。
+依照此命名慣例，為您的區段命名： `--aepUserLdap-- - Customer AI High Propensity`。 按一下&#x200B;**儲存**。
 
 ![區段規則](./images/caicreatesegment1.png)
 

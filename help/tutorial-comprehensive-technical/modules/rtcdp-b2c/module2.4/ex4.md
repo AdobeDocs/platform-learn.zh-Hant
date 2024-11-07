@@ -3,7 +3,7 @@ title: Microsoft Azure事件中心的區段啟用 — 啟用區段
 description: Microsoft Azure事件中心的區段啟用 — 啟用區段
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd603fdcbac6cc77b00d50be888805329f014443
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 ## 2.4.4.1將區段新增至Azure事件中心目的地
 
-在本練習中，您會將區段`--demoProfileLdap-- - Interest in Equipment`新增至`--demoProfileLdap---aep-enablement` Azure事件中心目的地。
+在本練習中，您會將區段`--aepUserLdap-- - Interest in Equipment`新增至`--aepUserLdap---aep-enablement` Azure事件中心目的地。
 
 前往此URL登入Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxId--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -30,7 +30,7 @@ ht-degree: 1%
 
 ![5-01-select-destination.png](./images/5-01-select-destination.png)
 
-您將會看到此訊息。 使用您的ldap搜尋您的區段，並從區段清單中選取`--demoProfileLdap-- - Interest in Equipment`。
+您將會看到此訊息。 使用您的ldap搜尋您的區段，並從區段清單中選取`--aepUserLdap-- - Interest in Equipment`。
 
 按一下&#x200B;**下一步**。
 

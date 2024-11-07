@@ -3,7 +3,7 @@ title: Offer Decisioning — 使用示範網站測試您的決定
 description: 使用示範網站測試您的決定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 1%
@@ -66,11 +66,11 @@ ht-degree: 1%
 
 ![RTCDP](./images/vec3.png)
 
-然後您會看到此快顯視窗。 選取您的沙箱`--aepSandboxId--`，然後選取位置&#x200B;**網頁 — 影像**。
+然後您會看到此快顯視窗。 選取您的沙箱`--aepSandboxName--`，然後選取位置&#x200B;**網頁 — 影像**。
 
 ![RTCDP](./images/vec4.png)
 
-接著，選取您的決定`--demoProfileLdap-- - Luma Decision`。 按一下&#x200B;**儲存**。
+接著，選取您的決定`--aepUserLdap-- - Luma Decision`。 按一下&#x200B;**儲存**。
 
 ![RTCDP](./images/vec5.png)
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 ![RTCDP](./images/vec7.png)
 
-輸入優惠方案名稱，使用此名稱： `--demoProfileLdap-- - XT with Offers (VEC)`。 按一下&#x200B;**下一步**。
+輸入優惠方案名稱，使用此名稱： `--aepUserLdap-- - XT with Offers (VEC)`。 按一下&#x200B;**下一步**。
 
 ![RTCDP](./images/vec8.png)
 

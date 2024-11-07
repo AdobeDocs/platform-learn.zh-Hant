@@ -4,7 +4,7 @@ description: offer decisioning-Offer decisioning101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 2%
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxId--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxId--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -106,7 +106,7 @@ ht-degree: 2%
 
 您現在可以為即時客戶個人檔案存取所有屬於聯合結構描述的欄位，並且可以建置任何規則。
 
-您也可前往「**對象** > ``--aepTenantIdSchema--``」，重複使用已在Adobe Experience Platform中定義的區段，這也是一件有趣的事。
+您也可前往「**對象** > ``--aepTenantId--``」，重複使用已在Adobe Experience Platform中定義的區段，這也是一件有趣的事。
 
 ![決定規則](./images/decisionruleaud.png)
 

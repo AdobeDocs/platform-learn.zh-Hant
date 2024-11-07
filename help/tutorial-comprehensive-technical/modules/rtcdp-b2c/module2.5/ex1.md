@@ -3,7 +3,7 @@ title: Adobe Experience Platform資料收集和即時事件轉送端轉送 — �
 description: 建立Adobe Experience Platform資料收集事件轉送屬性
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '759'
 ht-degree: 1%
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
 
-您現在需要輸入Adobe Experience Platform資料收集事件轉送屬性的名稱。 作為命名慣例，請使用`--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)`。 例如，在此範例中，名稱為&#x200B;**vangeluw - Demo System (22/02/2022) (Edge)**。 按一下&#x200B;**儲存**。
+您現在需要輸入Adobe Experience Platform資料收集事件轉送屬性的名稱。 作為命名慣例，請使用`--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)`。 例如，在此範例中，名稱為&#x200B;**vangeluw - Demo System (22/02/2022) (Edge)**。 按一下&#x200B;**儲存**。
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf1.png)
 

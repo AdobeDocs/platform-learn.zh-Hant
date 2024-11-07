@@ -3,7 +3,7 @@ title: 快速入門 — 安裝Chrome擴充功能以取得Experience League檔案
 description: 快速入門 — 安裝Chrome擴充功能以取得Experience League檔案
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 8d595675c09a4347c04e900414d94b6c674e20f7
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%
@@ -23,8 +23,8 @@ ht-degree: 0%
 |:-------------:| :---------------:|
 | AEP IMS組織ID | `--aepImsOrgId--` |
 | AEP租使用者ID | `--aepTenantId--` |
-| DCS入口ID | `--dcsInletId--` |
-| 示範設定檔LDAP | `--demoProfileLdap--` |
+| AEP沙箱名稱 | `--aepSandboxName--` |
+| 學習者設定檔LDAP | `--aepUserLdap--` |
 
 例如，在下方熒幕擷圖中，您可以看到`--aepTenantId--`的參考。
 

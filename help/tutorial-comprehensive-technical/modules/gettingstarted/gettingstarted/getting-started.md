@@ -3,10 +3,10 @@ title: 快速入門 — 摘要
 description: 快速入門 — 摘要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '318'
-ht-degree: 1%
+source-wordcount: '250'
+ht-degree: 2%
 
 ---
 
@@ -26,11 +26,6 @@ ht-degree: 1%
 - 存取Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - 存取Adobe Experience Platform Launch： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - 存取示範系統下一步： [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
-
->[!IMPORTANT]
->
->本教學課程的建立是為了促進特定研討會格式。 它使用您可能無法存取的特定系統和帳戶。 即使沒有存取權，我們仍認為閱讀這些非常詳細的內容可讓您學到很多。 如果您是其中一個研討會的參與者並需要您的存取認證，請聯絡您的Adobe代表，他們將為您提供必要資訊。
-
 
 ## 練習
 

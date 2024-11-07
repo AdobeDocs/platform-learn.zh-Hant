@@ -3,7 +3,7 @@ title: 使用BigQuery Source Connector在Adobe Experience Platform中擷取和�
 description: 使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料 — 將GCP和BigQuery連線至Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -90,7 +90,7 @@ Adobe Experience Platform在&#x200B;**來源**&#x200B;中提供聯結器，可�
 
 | 命名 | 範例 |
 | ----------------- |-------------| 
-| `--demoProfileLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery聯結器 |
+| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery聯結器 |
 
 ![示範](./images/ex2/6-3.png)
 
@@ -305,7 +305,7 @@ Google現在會顯示八個不同的&#x200B;**許可權**&#x200B;提示。 針�
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxId--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -325,8 +325,8 @@ Google現在會顯示八個不同的&#x200B;**許可權**&#x200B;提示。 針�
 
 | BigQuery聯結器認證 | 值 | 範例 |
 | ----------------- |-------------| -------------| 
-| 帳戶名稱 | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection |
-| 說明 | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection |
+| 帳戶名稱 | `--aepUserLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection |
+| 說明 | `--aepUserLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection |
 
 這應該會提供如下的內容：
 

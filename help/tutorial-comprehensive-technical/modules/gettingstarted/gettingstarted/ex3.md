@@ -3,7 +3,7 @@ title: 快速入門 — 建立您的資料流
 description: 快速入門 — 建立您的資料流
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 1%
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1a.png)
 
-在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxId--`。
+在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxName--`。
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
@@ -34,7 +34,7 @@ ht-degree: 1%
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1.png)
 
-針對&#x200B;**[!UICONTROL 易記名稱]**，以及選用的說明，請輸入`--demoProfileLdap-- - Demo System Datastream`。 若為事件結構描述，請選取&#x200B;**Demo System — 網站的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
+針對&#x200B;**[!UICONTROL 易記名稱]**，以及選用的說明，請輸入`--aepUserLdap-- - Demo System Datastream`。 若為事件結構描述，請選取&#x200B;**Demo System — 網站的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
 
 ![命名Edge設定並儲存](./images/edgeconfig2.png)
 
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig13.png)
 
-確定已選取您的&#x200B;**資料流**。 秘訣：您可以輸入`--demoProfileLdap--`，輕鬆篩選下拉式清單中的結果。
+確定已選取您的&#x200B;**資料流**。 秘訣：您可以輸入`--aepUserLdap--`，輕鬆篩選下拉式清單中的結果。
 
 ![命名Edge設定並儲存](./images/edgeconfig14.png)
 
@@ -102,7 +102,7 @@ ht-degree: 1%
 
 ![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1a.png)
 
-在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxId--`。
+在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxName--`。
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
@@ -110,7 +110,7 @@ ht-degree: 1%
 
 ![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1.png)
 
-針對&#x200B;**[!UICONTROL 易記名稱]**，以及選用的說明，請輸入`--demoProfileLdap-- - Demo System Datastream (Mobile)`。 針對事件結構描述，選取&#x200B;**示範系統 — 行動應用程式的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
+針對&#x200B;**[!UICONTROL 易記名稱]**，以及選用的說明，請輸入`--aepUserLdap-- - Demo System Datastream (Mobile)`。 針對事件結構描述，選取&#x200B;**示範系統 — 行動應用程式的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
 
 按一下&#x200B;**[!UICONTROL 儲存]**。
 
@@ -144,7 +144,7 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig12m.png)
 
-您將會看到此訊息。 您現在需要選取您剛才設定的正確沙箱和資料流。 要使用的沙箱是`--aepSandboxId--`，而資料流稱為`--demoProfileLdap-- - Demo System Datastream (Mobile)`。
+您將會看到此訊息。 您現在需要選取您剛才設定的正確沙箱和資料流。 要使用的沙箱是`--aepSandboxName--`，而資料流稱為`--aepUserLdap-- - Demo System Datastream (Mobile)`。
 
 對於&#x200B;**Edge Network網域**，請使用預設網域&#x200B;**edge.adobedc.net**。
 

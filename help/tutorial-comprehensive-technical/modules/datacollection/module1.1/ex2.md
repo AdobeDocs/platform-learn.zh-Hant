@@ -3,7 +3,7 @@ title: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功能的
 description: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功能的設定 — Edge Network、資料串流和伺服器端資料收集
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
 source-wordcount: '583'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1.png)
 
-搜尋名為`--demoProfileLdap-- - Demo System Datastream`的資料流。
+搜尋名為`--aepUserLdap-- - Demo System Datastream`的資料流。
 
 ![命名資料流並儲存](./images/edgeconfig2.png)
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 針對此資料流……
 
-- 所有收集的資料都會儲存在Adobe Experience Platform的`--aepSandboxId--`沙箱中
+- 所有收集的資料都會儲存在Adobe Experience Platform的`--aepSandboxName--`沙箱中
 - 預設會將所有體驗事件資料收集到資料集&#x200B;**示範系統 — 網站的事件資料集（全域v1.1）**&#x200B;中
 - 依預設，所有設定檔資料都會收集到資料集&#x200B;**示範系統 — 網站的設定檔資料集（全域v1.1）** （Web SDK目前尚不支援以Web SDK原生擷取設定檔資料，並將在稍後階段提供）
 - 如果您要針對此資料流使用&#x200B;**Offer decisioning**&#x200B;應用程式服務，您必須勾選Offer decisioning方塊。 （這將是[模組3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md)的一部分）

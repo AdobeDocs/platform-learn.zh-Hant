@@ -4,9 +4,9 @@ description: Foundation — 即時客戶個人檔案
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ ht-degree: 0%
 - 存取[https://public.aepdemo.net](https://public.aepdemo.net)
 - **下載這些資產**：
    - [Postman集合](./../../../assets/postman/postman_profile.zip)
-
->[!IMPORTANT]
->
->本教學課程的建立是為了促進特定研討會格式。 它使用您可能無法存取的特定系統和帳戶。 即使沒有存取權，我們仍認為閱讀這些非常詳細的內容可讓您學到很多。 如果您是其中一個研討會的參與者並需要您的存取認證，請聯絡您的Adobe代表，他們將為您提供必要資訊。
 
 >[!NOTE]
 >
