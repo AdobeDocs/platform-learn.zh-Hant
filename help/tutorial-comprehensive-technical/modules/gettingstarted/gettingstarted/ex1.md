@@ -3,21 +3,22 @@ title: 快速入門 — 安裝Chrome擴充功能以取得Experience League檔案
 description: 快速入門 — 安裝Chrome擴充功能以取得Experience League檔案
 kt: 5342
 doc-type: tutorial
-source-git-commit: 8d595675c09a4347c04e900414d94b6c674e20f7
+exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
+source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
 
-# 0.1安裝適用於Experience League檔案的Chrome擴充功能
+# 0.1.1安裝適用於Experience League檔案的Chrome擴充功能
 
-## 0.1.1我們為何建立Chrome擴充功能？
+## 關於Chrome擴充功能
 
 此檔案已改成通用檔案，任何人都能使用任何Adobe Experience Platform例項輕鬆重複使用。
-透過讓檔案可重複使用，檔案中引入了**環境變數**，這表示您將在檔案中找到以下&#x200B;**索引鍵**。 每個索引鍵都是特定環境的特定變數，Chrome擴充功能會為您變更該變數，因此讓您能夠從教學課程頁面輕鬆復製程式碼和文字，並將其貼到您將作為教學課程一部分使用的各種使用者介面中。
+為了讓檔案可重複使用，檔案中引入了**環境變數**，這表示您將在檔案中找到以下&#x200B;**預留位置**。 每個預留位置都是特定環境的特定變數，Chrome擴充功能會變更該變數，方便您從教學課程頁面復製程式碼和文字，並將其貼到您將當作教學課程一部分使用的各種使用者介面中。
 
-您可在下方找到這類值的範例。 目前，這些值尚無法使用，但當您安裝並啟動Chrome擴充功能時，就會看到這些變數變更為您可複製並重複使用的「一般」文字。
+您可在下方找到這類值的範例。 目前，這些值尚無法使用，但當您安裝並啟動Chrome擴充功能時，就會看到這些變數變數變更為您可複製並重複使用的正常文字。
 
 | 名稱 | 索引鍵 |
 |:-------------:| :---------------:|
@@ -26,7 +27,7 @@ ht-degree: 0%
 | AEP沙箱名稱 | `--aepSandboxName--` |
 | 學習者設定檔LDAP | `--aepUserLdap--` |
 
-例如，在下方熒幕擷圖中，您可以看到`--aepTenantId--`的參考。
+例如，在下方熒幕擷圖中，您可以看到`aepTenantId`的參考。
 
 ![DSN](./images/mod7before.png)
 
@@ -34,13 +35,9 @@ ht-degree: 0%
 
 ![DSN](./images/mod7.png)
 
-擴充功能也可讓您：
+## 0.1.1.1安裝Chrome擴充功能
 
-- 註冊參加教學課程
-
-## 0.1.2安裝Chrome擴充功能
-
-若要安裝該Chrome擴充功能，請開啟Chrome瀏覽器，並移至： [https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&amp;authuser=0](https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&amp;authuser=0)。 您將會看到此訊息。
+若要安裝該Chrome擴充功能，請開啟Chrome瀏覽器，並移至： [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi)。 您將會看到此訊息。
 
 按一下&#x200B;**新增至Chrome**。
 
@@ -58,9 +55,9 @@ ht-degree: 0%
 
 ![DSN](./images/c6.png)
 
-## 0.1.2設定Chrome擴充功能
+## 0.1.1.2設定Chrome擴充功能
 
-前往[https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/overview.html?lang=en](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/overview.html?lang=en)，然後按一下擴充功能圖示以開啟。
+前往[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview)，然後按一下擴充功能圖示以開啟。
 
 ![DSN](./images/tuthome.png)
 
@@ -68,88 +65,81 @@ ht-degree: 0%
 
 ![DSN](./images/c7.png)
 
-輸入您的名稱和為您的Adobe Experience Platform環境建立的設定ID。 按一下&#x200B;**新建**。
-
->[!IMPORTANT]
->
->如果您是Adobe員工：您可以找到要在內部Github存放庫上使用的設定ID (https://git.corp.adobe.com/vangeluw/platformenablement)。
->
->若您是Adobe解決方案合作夥伴，請連絡您的解決方案合作夥伴連絡人或傳送電子郵件至&#x200B;**spphelp@adobe.com**。
+如以下指示，輸入與您的Adobe Experience Platform執行個體相關的值。
 
 ![DSN](./images/c8.png)
 
-在擴充功能的左側功能表中，您現在會看到含有縮寫的圖示。 按一下它。 然後您會看到&#x200B;**環境變數**&#x200B;和您的特定Adobe Experience Platform執行個體值之間的對應。 按一下&#x200B;**啟動設定**。
+如果您不確定要為這些欄位輸入哪些值，請遵循以下指引。
+
+**AEP IMS組織名稱**
+
+當您在[https://platform.adobe.com/](https://platform.adobe.com/)登入Adobe Experience Platform執行個體時，您會在畫面的右上角找到執行個體的名稱。
+
+![DSN](./images/aepname.png)
+
+**AEP IMS組織ID**
+
+IMS組織ID是您Adobe Experience Cloud執行個體的唯一識別碼，本教學課程中的多個位置會參照此ID。
+
+尋找您的IMS組織ID可以多種方式完成。 如果您不確定，請洽詢執行個體的系統管理員以尋找ID。
+
+您可以前往[Admin Console](https://https://adminconsole.adobe.com/)找到它，您可以在此找到它作為URL的一部分。
+
+![DSN](./images/aepid1.png)
+
+您也可以前往AEP功能表中的&#x200B;**資料管理>查詢**，在&#x200B;**使用者名稱**&#x200B;下找到它。
+
+![DSN](./images/aepid2.png)
+
+請確定複製並貼上&#x200B;**@AdobeOrg**&#x200B;部分及ID。
+
+**AEP租使用者ID**
+
+您的租使用者ID是您組織AEP執行個體的唯一識別碼。 當您在[https://platform.adobe.com/](https://platform.adobe.com/)登入您的Adobe Experience Platform執行個體時，您會在URL中找到租使用者ID。
+
+![DSN](./images/aeptenantid.png)
+
+當您在Chrome擴充功能中輸入時，應確保加上底線作為前置詞，因此在此範例中，**experienceplatform**&#x200B;會變成&#x200B;**_experienceplatform**。
+
+**AEP沙箱名稱**
+
+您的沙箱名稱是您將在AEP執行個體中使用的環境名稱。 當您在[https://platform.adobe.com/](https://platform.adobe.com/)登入您的Adobe Experience Platform執行個體時，您會在URL中找到租使用者ID。
+
+在從URL取得沙箱名稱之前，您應該確保您處於您應用於本教學課程的沙箱中。 您可以按一下熒幕右上角的沙箱切換器選單，切換至右沙箱。
+
+![DSN](./images/aepsandboxsw.png)
+
+在此範例中，AEP沙箱名稱為&#x200B;**技術內部人員**。
+
+![DSN](./images/aepsname.png)
+
+**您的LDAP**
+
+這是將用於教學課程的使用者名稱。 在此範例中，LDAP是以此使用者的電子郵件地址為基礎。 電子郵件地址為&#x200B;**vangeluw@adobe.com**，因此LDAP會變成&#x200B;**vangeluw**。
+
+LDAP可用來確保您即將進行的設定會連結至您，而不會與可能使用您所使用的相同例項和沙箱的其他使用者衝突。
+
+您的值應該看起來類似這些。
+最後，按一下**新建**。
+
+![DSN](./images/c8a.png)
+
+
+在擴充功能的左側功能表中，您現在會看到環境縮寫的新圖示。 按一下它。 然後您會看到&#x200B;**環境變數**&#x200B;和您的特定Adobe Experience Platform執行個體值之間的對應。 按一下&#x200B;**啟動設定**。
 
 ![DSN](./images/c9.png)
 
-啟用您的設定後，您會在首字母縮寫旁邊看到綠色圓點。 這表示您的設定ID現在已啟用。 您也會看到其他選單選項出現。
+啟用設定後，您的環境縮寫旁會出現一個綠色圓點。 這表示您的環境現在處於作用中狀態。
 
 ![DSN](./images/c10.png)
 
-您現在有2個選項：
+## 0.1.1.3確認教學課程內容
 
-- 如果您是使用現有設定啟用的現有使用者，請移至&#x200B;**0.1.3現有使用者 — 登入**
-- 如果您是第一次啟動此教學課程的全新使用者，請移至&#x200B;**0.1.4註冊**&#x200B;並略過&#x200B;**0.1.3現有使用者 — 登入**
+作為測試，請移至[此頁面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3)。
 
-## 0.1.3現有使用者 — 登入
+您現在應該會看到根據Chrome擴充功能中啟用的環境，所有&#x200B;**環境變數**&#x200B;都已取代為其True值。
 
->[!IMPORTANT]
->
->練習&#x200B;**0.1.3現有的使用者 — 登入**&#x200B;只有在您是先前已註冊此教學課程的現有使用者時才有效。
-
-如果您是首次設定此Chrome擴充功能的現有使用者，請按一下左側功能表中的紫色圖示。 您將會看到此訊息。
-
-![DSN](./images/chromeret1.png)
-
-視需要填寫值。
-
->[!IMPORTANT]
->
->**LDAP**&#x200B;是最重要的欄位：您應該使用您第一次註冊教學課程時所使用的LDAP。 這將確保您的進度成功載入。 如果您不確定您的LDAP是什麼，請檢視您的電子郵件地址。 將您電子郵件地址中@-symbol字之前的文字用作LDAP。 如果您的電子郵件地址是&#x200B;**techinsiders@adobe.com**，則您在此輸入的LDAP應該是&#x200B;**vangeluw**)。
-
-![DSN](./images/chromeret2.png)
-
-按一下&#x200B;**「確定」**。
-
-![DSN](./images/chromeret3.png)
-
-30秒至1分鐘後，您的熒幕將會變更，您將返回&#x200B;**首頁**，您將看到以下內容：
-
-![DSN](./images/chromeret4.png)
-
-您的Chrome擴充功能現已設定完畢，您現在可以驗證是否一切正常運作。
-
-## 0.1.4新使用者 — 註冊
-
->[!IMPORTANT]
->
->練習&#x200B;**0.1.4新使用者 — 註冊**&#x200B;適用於首次開始此教學課程的新使用者。
-
-如果您是第一次註冊本教學課程的新使用者，請按一下功能表中的黃色圖示。 您將會看到此訊息。
-
-![DSN](./images/c11.png)
-
-視需要填寫欄位。 按一下&#x200B;**儲存**。
-
->[!IMPORTANT]
->
->**LDAP**&#x200B;是最重要的欄位。 如果您不確定您的LDAP是什麼，請檢視您的電子郵件地址。 將您電子郵件地址中@-symbol字之前的文字用作LDAP。 如果您的電子郵件地址是&#x200B;**techinsiders@adobe.com**，則您在此輸入的LDAP應該是&#x200B;**vangeluw**)。
-
-![DSN](./images/chrome1.png)
-
-30秒至1分鐘後，您的熒幕將會變更，您將返回&#x200B;**首頁**，您將看到以下內容：
-
-![DSN](./images/chrome2.png)
-
-您的Chrome擴充功能現已設定完畢，您現在可以驗證是否一切正常運作。
-
-## 0.1.5驗證教學課程內容
-
-作為測試，請移至[此頁面](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module4/ex3.html?lang=en)。
-
-您現在應該會看到根據Chrome擴充功能中的設定ID，所有&#x200B;**環境變數**&#x200B;都已取代為其true值。
-
-您現在應該有類似下列的檢視，其中環境變數`--aepTenantId--`已由您的實際租使用者ID取代，在此案例中為&#x200B;**_experienceplatform**。
+您現在應該有類似下列的檢視，其中環境變數`aepTenantId`已由您的實際AEP租使用者ID取代，在此案例中為&#x200B;**_experienceplatform**。
 
 ![DSN](./images/c12.png)
 
