@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
+source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 17%
+source-wordcount: '942'
+ht-degree: 16%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 17%
    + [設定以屬性為基礎的存取控制](/help/platform/admin/configure-attribute-based-access-control.md)
 + AI 助理 {#ai-assistant}
    + [概觀](/help/platform/ai-assistant/overview.md)
+   + [設定存取權](/help/platform/ai-assistant/access.md)
    + [清除對象](/help/platform/ai-assistant/find-unused-audiences.md)
 + 對象與細分{#audiences}
    + [對象入口網站和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
