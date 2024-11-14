@@ -4,9 +4,9 @@ description: 瞭解如何在行動應用程式中收集並對映Adobe Analytics�
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
+source-git-commit: 7dfa14081e87489f908084e93722f67643fd5984
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ s.events = "scAdd:321435"
 
 ## 使用保證進行驗證
 
-使用[保證](assurance.md)，您可以確認您傳送的是體驗事件、XDM資料正確，且Analytics對應如預期發生。
+使用[Assurance](assurance.md)，您可以確認您傳送的是體驗事件、XDM資料正確，且Analytics對應如預期發生。
 
 1. 檢閱[設定指示](assurance.md#connecting-to-a-session)區段，將您的模擬器或裝置連線到Assurance。
 
@@ -306,6 +306,17 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >[!TIP]
 >
 >和先前的行動應用程式實作不同，頁面/畫面檢視和其他事件沒有區別。 反之，您可以在處理規則中設定&#x200B;**[!UICONTROL 頁面名稱]**&#x200B;維度，以增加&#x200B;**[!UICONTROL 頁面檢視]**&#x200B;量度。 由於您正在教學課程中收集自訂`screenName`欄位，強烈建議在處理規則中將熒幕名稱對應至&#x200B;**[!UICONTROL 頁面名稱]**。
+
+## 從Analytics行動擴充功能遷移
+
+如果您是使用[Adobe Analytics行動擴充功能](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application)開發行動應用程式，您很可能使用了[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction)和[`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API呼叫。
+
+如果您決定移轉以使用建議的Edge Network，您會有選項：
+
+* 實作[Edge Network擴充功能](configure-tags.md#extension-configuration)並使用[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) API，如如何[追蹤事件資料](events.md)的課程中所述。 本教學課程著重於此實作。
+* 實作[Edge Bridge擴充功能](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)，並繼續使用您的[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction)和[`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API呼叫。 請參閱[實作Edge Bridge擴充功能](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)以取得詳細資訊和個別教學課程。
+
+
 
 
 >[!SUCCESS]
