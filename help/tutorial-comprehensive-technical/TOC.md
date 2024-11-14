@@ -5,10 +5,10 @@ user-guide-description: 此實作教學課程涵蓋Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4df0fdc30d5027c85c9ceebafa9abf771fae1507
+source-git-commit: f79a989f01fa1c005a0c06cea81268118b2467be
 workflow-type: tm+mt
-source-wordcount: '926'
-ht-degree: 3%
+source-wordcount: '914'
+ht-degree: 4%
 
 ---
 
@@ -17,14 +17,14 @@ ht-degree: 3%
 
 + [教學課程概觀](/help/tutorial-comprehensive-technical/overview.md)
 
-+ 0快速入門{#gettingstarted}
-   + 0.1快速入門{#gettingstarted}
++ 快速入門 {#gettingstarted}
+   + 快速入門 {#gettingstarted}
       + [概觀](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-      + [0.1.1安裝適用於Experience League檔案的Chrome擴充功能](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
-      + [0.1.2使用示範系統下一步設定您的Adobe Experience Platform資料收集使用者端屬性](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
-      + [0.1.3建立您的資料串流](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
-      + [0.1.4使用網站](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
-      + [0.1.5使用行動應用程式](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+      + [安裝適用於Experience League檔案的Chrome擴充功能](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+      + [使用下一個示範系統來設定您的Adobe Experience Platform資料收集使用者端屬性](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
+      + [建立您的資料串流](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
+      + [使用網站](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
+      + [使用行動應用程式](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1個資料集合{#datacollection}
    + 1.1 Adobe Experience Platform Data Collection與Web SDK擴充功能{#module11}

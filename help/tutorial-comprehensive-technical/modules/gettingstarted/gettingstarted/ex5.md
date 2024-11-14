@@ -3,16 +3,17 @@ title: 快速入門 — 使用行動應用程式
 description: 快速入門 — 使用行動應用程式
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
 
-# 0.5使用行動應用程式
+# 使用行動應用程式
 
-## 0.5.1下載應用程式
+## 下載應用程式
 
 前往您電腦上的[https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app)。 您將會看到此訊息。
 
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在iOS裝置上首次安裝應用程式後，嘗試開啟應用程式時可能會收到錯誤訊息，顯示： **不受信任的企業開發人員**。 若要修正此問題，您必須前往&#x200B;**設定>一般>裝置管理> Adobe Systems Inc.**，然後按一下&#x200B;**信任Adobe Systems Inc.**。
+>在iOS裝置上首次安裝應用程式後，嘗試開啟應用程式時可能會收到錯誤訊息，顯示： **不受信任的企業開發人員**。 若要修正此問題，您必須前往&#x200B;**設定>一般> VPN與裝置管理> Adobe Systems Inc.**，然後按一下&#x200B;**信任Adobe Systems Inc.**。
 
 應用程式安裝後，您會在裝置的主畫面上找到。 按一下圖示以開啟應用程式。
 
@@ -48,21 +49,25 @@ ht-degree: 0%
 
 ![DSN](./images/mobileappn6.png)
 
-練習0.1之後會有此結果。 按一下以開啟為您建立的&#x200B;**行動零售專案**。
+在上一個練習之後，您得到了此結果。 按一下以開啟為您建立的&#x200B;**行動Edge Telco專案**。
 
 ![DSN](./images/dsn5b.png)
 
-如果您不小心關閉了瀏覽器視窗，或是為了未來的示範或啟用工作階段，您也可以前往[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)存取您的網站專案。 使用Adobe ID登入後，您會看到此訊息。 按一下您的行動應用程式專案以開啟。
+如果您不小心關閉了瀏覽器視窗，或是為了未來的示範或啟用工作階段，您也可以前往[https://dsn.adobe.com](https://dsn.adobe.com)存取您的網站專案。 使用Adobe ID登入後，您會看到此訊息。 按一下行動應用程式專案上的三個點&#x200B;**...**，然後按一下&#x200B;**編輯**。
 
 ![DSN](./images/web8a.png)
 
-您將會看到此訊息。 按一下&#x200B;**整合**。
+在&#x200B;**整合**&#x200B;頁面上，您必須選取在上一個練習中建立的資料收集屬性。 若要這麼做，請按一下&#x200B;**選取環境**。
 
 ![DSN](./images/web8aa.png)
 
-您必須選取在練習0.1中建立的行動裝置資料收集屬性。接著，按一下&#x200B;**執行**。
+在上一步建立的資料收集屬性（名為`--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`）上按一下&#x200B;**選取**。 然後，按一下&#x200B;**儲存**。
 
 ![DSN](./images/web8b.png)
+
+您將會看到此訊息。 接著，按一下&#x200B;**執行**。
+
+![DSN](./images/web8bb.png)
 
 然後您會看到這個快顯視窗，其中包含QR碼。 從行動應用程式內掃描此QR碼。
 
@@ -76,8 +81,8 @@ ht-degree: 0%
 
 ![DSN](./images/mobileappn8.png)
 
-您現在已完成模組0。
+您現在已經完成快速入門模組，您已準備好開始後續的練習。
 
-[返回模組0](./getting-started.md)
+[返回快速入門](./getting-started.md)
 
 [返回所有模組](./../../../overview.md)

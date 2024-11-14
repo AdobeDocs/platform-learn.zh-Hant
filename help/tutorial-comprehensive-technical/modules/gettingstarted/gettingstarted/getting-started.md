@@ -4,14 +4,14 @@ description: 快速入門 — 摘要
 kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 1%
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
-# 0.1快速入門
+# 快速入門
 
 在本單元中，您將設定所有專案，以便收集資料、存取示範環境，以及個人化本教學課程中的動態變數。
 
@@ -28,23 +28,23 @@ ht-degree: 1%
 
 ## 練習
 
-[0.1.1安裝適用於Experience League檔案的Chrome擴充功能](./ex1.md)
+[安裝適用於Experience League檔案的Chrome擴充功能](./ex1.md)
 
 在本練習中，您將安裝並設定Chrome擴充功能，以便使用它來個人化教學課程內容。
 
-[0.1.2使用示範系統下一步設定您的Adobe Experience Platform資料收集使用者端屬性](./ex2.md)
+[使用下一個示範系統來設定您的Adobe Experience Platform資料收集使用者端屬性](./ex2.md)
 
 在本練習中，您將使用下一步示範系統來設定網頁和行動裝置的Launch屬性。
 
-[0.1.3建立您的資料串流](./ex3.md)
+[建立您的資料串流](./ex3.md)
 
 在本練習中，您將使用下一步示範系統來設定網頁和行動裝置的Launch屬性。
 
-[0.1.4使用網站](./ex4.md)
+[使用網站](./ex4.md)
 
 在本練習中，您將設定網站，以便使用它來示範和啟用。
 
-[0.1.5使用行動應用程式](./ex5.md)
+[使用行動應用程式](./ex5.md)
 
 在本練習中，您將設定行動應用程式，以便用於示範和啟用。
 

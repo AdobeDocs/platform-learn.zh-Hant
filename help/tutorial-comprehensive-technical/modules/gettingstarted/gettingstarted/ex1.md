@@ -4,14 +4,14 @@ description: 快速入門 — 安裝Chrome擴充功能以取得Experience League
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
 
-# 0.1.1安裝適用於Experience League檔案的Chrome擴充功能
+# 安裝適用於Experience League檔案的Chrome擴充功能
 
 ## 關於Chrome擴充功能
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![DSN](./images/mod7.png)
 
-## 0.1.1.1安裝Chrome擴充功能
+## 安裝Chrome擴充功能
 
 若要安裝該Chrome擴充功能，請開啟Chrome瀏覽器，並移至： [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi)。 您將會看到此訊息。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ![DSN](./images/c6.png)
 
-## 0.1.1.2設定Chrome擴充功能
+## 設定Chrome擴充功能
 
 前往[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview)，然後按一下擴充功能圖示以開啟。
 
@@ -133,7 +133,7 @@ LDAP可用來確保您即將進行的設定會連結至您，而不會與可能�
 
 ![DSN](./images/c10.png)
 
-## 0.1.1.3確認教學課程內容
+## 驗證教學課程內容
 
 作為測試，請移至[此頁面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3)。
 
@@ -141,10 +141,10 @@ LDAP可用來確保您即將進行的設定會連結至您，而不會與可能�
 
 您現在應該有類似下列的檢視，其中環境變數`aepTenantId`已由您的實際AEP租使用者ID取代，在此案例中為&#x200B;**_experienceplatform**。
 
-![DSN](./images/c12.png)
+![DSN](./images/mod7.png)
 
-下一步： [0.2使用示範系統設定您的Adobe Experience Platform Data Collection使用者端屬性](./ex2.md)
+下一步： [使用下一個示範系統來設定您的Adobe Experience Platform資料收集使用者端屬性](./ex2.md)
 
-[返回模組0](./getting-started.md)
+[返回快速入門](./getting-started.md)
 
 [返回所有模組](./../../../overview.md)

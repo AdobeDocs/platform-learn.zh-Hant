@@ -3,22 +3,23 @@ title: 快速入門 — 使用網站
 description: 快速入門 — 使用網站
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
 
-# 0.4使用網站
+# 使用網站
 
-## 0.4.1選項1：繼續上一個練習
+## 選項1：繼續上一個練習
 
 >[!NOTE]
 >
->如果您不再開啟以下畫面，請改為移至0.4.2練習。
+>如果您不再開啟下列畫面，請改為前往選項2。
 
-練習0.1之後會有此結果。 按一下以開啟為您建立的&#x200B;**網頁零售專案**。
+練習0.1之後會有此結果。 按一下以開啟為您建立的&#x200B;**Web Telco專案**。
 
 ![DSN](./images/dsn5a.png)
 
@@ -26,9 +27,17 @@ ht-degree: 0%
 
 ![DSN](./images/web1.png)
 
-在&#x200B;**整合**&#x200B;頁面上，您必須選取在練習0.1中建立的資料收集屬性。
+在&#x200B;**整合**&#x200B;頁面上，您必須選取在上一個練習中建立的資料收集屬性。 若要這麼做，請按一下&#x200B;**選取環境**。
 
 ![DSN](./images/web2.png)
+
+在上一步建立的資料收集屬性（名為`--aepUserLdap - Demo System (DD/MM/YYYY) (web)`）上按一下&#x200B;**選取**。
+
+![DSN](./images/web2a.png)
+
+您將會看到此訊息。 按一下&#x200B;**執行**&#x200B;以開啟示範網站。
+
+![DSN](./images/web2b.png)
 
 然後您會看到示範網站已開啟。 選取URL並將其複製到剪貼簿。
 
@@ -50,9 +59,9 @@ ht-degree: 0%
 
 ![DSN](./images/web7.png)
 
-## 0.4.2選項2：從新的無痕瀏覽器視窗開始
+## 選項2：從新的無痕瀏覽器視窗開始
 
-如果您不小心關閉了瀏覽器視窗，或是為了未來的示範或啟用工作階段，您也可以前往[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)存取您的網站專案。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案以開啟。
+如果您不小心關閉了瀏覽器視窗，或是在未來的工作階段中，您也可以前往[https://dsn.adobe.com/](https://dsn.adobe.com/)存取您的網站專案。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案上的3個點&#x200B;**...**，然後按一下&#x200B;**編輯**。
 
 ![DSN](./images/web8.png)
 
@@ -60,9 +69,17 @@ ht-degree: 0%
 
 ![DSN](./images/web1.png)
 
-在&#x200B;**整合**&#x200B;頁面上，您必須選取在練習0.1中建立的資料收集屬性。
+在&#x200B;**整合**&#x200B;頁面上，您必須選取在上一個練習中建立的資料收集屬性。 若要這麼做，請按一下&#x200B;**選取環境**。
 
 ![DSN](./images/web2.png)
+
+在上一步建立的資料收集屬性（名為`--aepUserLdap - Demo System (DD/MM/YYYY) (web)`）上按一下&#x200B;**選取**。
+
+![DSN](./images/web2a.png)
+
+您將會看到此訊息。 按一下&#x200B;**執行**&#x200B;以開啟示範網站。
+
+![DSN](./images/web2b.png)
 
 然後您會看到示範網站已開啟。 選取URL並將其複製到剪貼簿。
 
@@ -84,8 +101,8 @@ ht-degree: 0%
 
 ![DSN](./images/web7.png)
 
-下一步： [0.5使用行動應用程式](./ex5.md)
+下一步： [使用行動應用程式](./ex5.md)
 
-[返回模組0](./getting-started.md)
+[返回快速入門](./getting-started.md)
 
 [返回所有模組](./../../../overview.md)

@@ -3,26 +3,31 @@ title: 快速入門 — 建立您的資料流
 description: 快速入門 — 建立您的資料流
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '842'
 ht-degree: 1%
 
 ---
 
-# 0.3建立您的資料串流
+# 建立您的資料串流
 
-移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 在上一個練習後，您現在有兩個資料收集屬性：一個用於網頁，一個用於行動裝置。
+移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
 
 ![DSN](./images/launchprop.png)
 
-這些屬性幾乎已準備好使用，但在您開始使用這些屬性收集資料之前，您需要設定資料流。 您將獲得更多有關什麼是資料流的概念及其在練習1.2中的意義的資訊。
+在左側功能表中，按一下&#x200B;**[!UICONTROL 標籤]**。 在上一個練習後，您現在有兩個資料收集屬性：一個用於網頁，一個用於行動裝置。
+
+![DSN](./images/launchprop1.png)
+
+這些屬性幾乎已準備好使用，但在您開始使用這些屬性收集資料之前，您需要設定資料流。 在稍後的「資料收集」模組中的練習中，您將取得有關資料串流概念及其意義的更多資訊。
 
 目前，請依照下列步驟操作。
 
-## 0.3.1建立網頁的資料流
+## 建立網頁的資料流
 
-按一下&#x200B;**[!UICONTROL 資料串流]**&#x200B;或&#x200B;**[!UICONTROL 資料串流(Beta)]**。
+按一下&#x200B;**[!UICONTROL 資料串流]**。
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1a.png)
 
@@ -34,7 +39,7 @@ ht-degree: 1%
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1.png)
 
-針對&#x200B;**[!UICONTROL 易記名稱]**，以及選用的說明，請輸入`--aepUserLdap-- - Demo System Datastream`。 若為事件結構描述，請選取&#x200B;**Demo System — 網站的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
+對於&#x200B;**[!UICONTROL Name]**，以及選用的說明，請輸入`--aepUserLdap-- - Demo System Datastream`。 針對&#x200B;**對應結構描述**，請選取&#x200B;**示範系統 — 網站的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
 
 ![命名Edge設定並儲存](./images/edgeconfig2.png)
 
@@ -64,21 +69,21 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig11.png)
 
-在Adobe Experience Platform Web SDK擴充功能上，按一下&#x200B;**設定**。
+首先，按一下Adobe Experience Platform Web SDK擴充功能，然後按一下&#x200B;**設定**。
 
 ![命名Edge設定並儲存](./images/edgeconfig12.png)
 
-您將會看到此訊息。 對於&#x200B;**資料串流**，您目前會看到虛擬值設為1。 您現在需要按一下&#x200B;**從清單選擇**&#x200B;選項按鈕。 在下拉式清單中，選取您先前建立的資料流。
+您將會看到此訊息。 在&#x200B;**Datastreams**&#x200B;功能表取得kook，並確定已選取正確的沙箱，此情況下應為`--aepSandboxName--`。
+
+![命名Edge設定並儲存](./images/edgeconfig12a.png)
+
+開啟&#x200B;**資料串流**&#x200B;下拉式清單，然後選取您先前建立的資料串流。
 
 ![命名Edge設定並儲存](./images/edgeconfig13.png)
 
-確定已選取您的&#x200B;**資料流**。 秘訣：您可以輸入`--aepUserLdap--`，輕鬆篩選下拉式清單中的結果。
+確定已在所有三個不同的環境中選取您的&#x200B;**資料串流**。 然後，按一下&#x200B;**儲存**。
 
 ![命名Edge設定並儲存](./images/edgeconfig14.png)
-
-向下捲動，直到您看到&#x200B;**資料集合**&#x200B;為止。 請確定&#x200B;**啟用點選資料彙集**&#x200B;的核取方塊未啟用。 按一下[儲存]儲存變更。****
-
-![命名Edge設定並儲存](./images/edgeconfig14a.png)
 
 移至&#x200B;**發佈流程**。
 
@@ -92,13 +97,15 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig17.png)
 
-您的變更正在發佈中，將於幾分鐘後準備就緒。
+您的變更正在發佈，並將在幾分鐘後準備就緒，之後您將會看到&#x200B;**主要**&#x200B;旁的綠色點。
 
-## 0.3.2為行動裝置建立資料流
+![命名Edge設定並儲存](./images/edgeconfig17a.png)
+
+## 為行動裝置建立資料流
 
 移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
 
-按一下&#x200B;**[!UICONTROL 資料串流]**&#x200B;或&#x200B;**[!UICONTROL 資料串流(Beta)]**。
+按一下&#x200B;**[!UICONTROL 資料串流]**。
 
 ![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1a.png)
 
@@ -110,7 +117,7 @@ ht-degree: 1%
 
 ![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1.png)
 
-針對&#x200B;**[!UICONTROL 易記名稱]**，以及選用的說明，請輸入`--aepUserLdap-- - Demo System Datastream (Mobile)`。 針對事件結構描述，選取&#x200B;**示範系統 — 行動應用程式的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
+針對&#x200B;**[!UICONTROL 易記名稱]**，以及選用的說明，請輸入`--aepUserLdap-- - Demo System Datastream (Mobile)`。 針對&#x200B;**對應結構描述**，請選取&#x200B;**示範系統 — 行動應用程式的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
 
 按一下&#x200B;**[!UICONTROL 儲存]**。
 
@@ -140,13 +147,13 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig11m.png)
 
-在&#x200B;**Adobe Experience PlatformEdge Network**&#x200B;擴充功能上，按一下&#x200B;**設定**。
+按一下&#x200B;**Adobe Experience PlatformEdge Network**&#x200B;擴充功能，然後按一下&#x200B;**設定**。
 
 ![命名Edge設定並儲存](./images/edgeconfig12m.png)
 
 您將會看到此訊息。 您現在需要選取您剛才設定的正確沙箱和資料流。 要使用的沙箱是`--aepSandboxName--`，而資料流稱為`--aepUserLdap-- - Demo System Datastream (Mobile)`。
 
-對於&#x200B;**Edge Network網域**，請使用預設網域&#x200B;**edge.adobedc.net**。
+對於&#x200B;**Edge Network網域**，請使用預設網域。
 
 按一下[儲存]儲存變更。****
 
@@ -164,10 +171,12 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig17m.png)
 
-您的變更正在發佈中，將於幾分鐘後準備就緒。
+您的變更正在發佈，並將在幾分鐘後準備就緒，之後您將會看到&#x200B;**主要**&#x200B;旁的綠色點。
 
-下一步： [0.4使用網站](./ex4.md)
+![命名Edge設定並儲存](./images/edgeconfig17ma.png)
 
-[返回模組0](./getting-started.md)
+下一步： [使用網站](./ex4.md)
+
+[返回快速入門](./getting-started.md)
 
 [返回所有模組](./../../../overview.md)
