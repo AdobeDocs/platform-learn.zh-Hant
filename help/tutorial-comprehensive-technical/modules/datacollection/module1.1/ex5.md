@@ -3,9 +3,10 @@ title: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的
 description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — 實作Adobe Analytics和Adobe Audience Manager
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,19 +15,19 @@ ht-degree: 0%
 
 ## 內容
 
-您現在知道XDM資料正在流入平台。 您將深入瞭解[模組2](./../module1.2/data-ingestion.md)中的XDM內容，以及如何建置您自己的結構描述以追蹤自訂變數。 現在，您將瞭解當您設定資料串流將資料轉送至Analytics和Audience Manager時發生的情況。
+您現在知道XDM資料正在流入平台。 您將深入瞭解[模組1.2](./../module1.2/data-ingestion.md)中的XDM內容，以及如何建置您自己的結構描述以追蹤自訂變數。 現在，您將瞭解當您設定資料串流將資料轉送至Analytics和Audience Manager時發生的情況。
 
 ## 1.1.5.1 Analytics中的對應變數
 
 Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過Web SDK快速完成新的Analytics實作。 [這裡](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)列出自動對應的變數。
 
-對於未自動對應至[!DNL Adobe Analytics]的XDM資料，您可以使用[內容資料](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html)來比對您的[結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant)。 然後可以使用[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)將其對應至[!DNL Analytics]以填入[!DNL Analytics]變數。 內容資料與處理規則將會是過去與Analytics搭配使用時熟悉的概念，但如果是新概念，目前無需擔心詳細資訊。
+對於未自動對應至Adobe Analytics的XDM資料，您可以使用[內容資料](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html)來比對您的[結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant)。 然後可以使用[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)將其對應至Analytics以填入Analytics變數。 內容資料與處理規則將會是過去與Analytics搭配使用時熟悉的概念，但如果是新概念，目前無需擔心詳細資訊。
 
-您也可以使用一組預設的動作和產品清單，以透過AEP [!DNL Web SDK]傳送或擷取資料。 若要這麼做，請參閱[產品](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection)。
+您也可以使用一組預設的動作和產品清單，以透過AEP Web SDK傳送或擷取資料。 若要這麼做，請參閱[產品](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection)。
 
 ### 上下文資料
 
-為了供[!DNL Analytics]使用，XDM資料會使用點標籤法扁平化，並成為可用的`contextData`。 下列值配對清單顯示`context data`的範例：
+為了供Analytics使用，XDM資料會使用點標籤法扁平化，並成為可用的`contextData`。 下列值配對清單顯示`context data`的範例：
 
 ```javascript
 {
@@ -53,7 +54,7 @@ Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過W
 
 ### 處理規則
 
-邊緣網路收集的所有資料都可以透過[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)來存取。 在[!DNL Analytics]中，您可以使用處理規則將內容資料合併到[!DNL Analytics]變數中。
+邊緣網路收集的所有資料都可以透過[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)來存取。 在Analytics中，您可以使用處理規則將內容資料併入Analytics變數中。
 
 ## Experience PlatformEdge Network上的1.1.5.2Audience Manager
 

@@ -3,9 +3,10 @@ title: 基礎 — 資料擷取 — 從未知到網站上已知
 description: 基礎 — 資料擷取 — 從未知到網站上已知
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -29,10 +30,6 @@ Platform是一個環境，其中單字&#x200B;**customer**&#x200B;不只是&#x20
 移至[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案以開啟。
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-在&#x200B;**Screens**&#x200B;頁面上按一下&#x200B;**執行**。
-
-![DSN](../module1.1/images/web2.png)
 
 然後您會看到示範網站已開啟。 選取URL並將其複製到剪貼簿。
 

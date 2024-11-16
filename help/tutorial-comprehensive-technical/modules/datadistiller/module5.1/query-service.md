@@ -3,9 +3,10 @@ title: 查詢服務
 description: 查詢服務
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 6eb65de3-d0e8-49d4-a702-5c9d6a1952b7
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '555'
 ht-degree: 1%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->別忘了安裝、設定和使用[0.1中參考的Chrome擴充功能 — 安裝Experience League檔案的Chrome擴充功能](../../gettingstarted/gettingstarted/ex1.md)
+>別忘了安裝、設定及使用[安裝Chrome擴充功能以取得Experience League檔案](../../gettingstarted/gettingstarted/ex1.md)中參考的Chrome擴充功能
 
 ## 練習
 

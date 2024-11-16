@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 觸發您�
 description: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 觸發您的協調客戶歷程
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 068c8be4-2e9e-4d38-9c0e-f769ac927b57
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '628'
 ht-degree: 1%
 
 ---
@@ -73,10 +74,6 @@ ht-degree: 1%
 移至[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案以開啟。
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-在&#x200B;**Screens**&#x200B;頁面上按一下&#x200B;**執行**。
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 然後您會看到示範網站已開啟。 選取URL並將其複製到剪貼簿。
 

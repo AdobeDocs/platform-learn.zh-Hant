@@ -3,9 +3,10 @@ title: Intelligent Services
 description: Intelligent Services
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 3668f06b-df76-43db-be6a-36c339256a22
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '258'
+source-wordcount: '257'
 ht-degree: 3%
 
 ---
@@ -29,7 +30,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->別忘了安裝、設定和使用[0.1中參考的Chrome擴充功能 — 安裝Experience League檔案的Chrome擴充功能](../../gettingstarted/gettingstarted/ex1.md)
+>別忘了安裝、設定及使用[安裝Chrome擴充功能以取得Experience League檔案](../../gettingstarted/gettingstarted/ex1.md)中參考的Chrome擴充功能
 
 ## 練習
 

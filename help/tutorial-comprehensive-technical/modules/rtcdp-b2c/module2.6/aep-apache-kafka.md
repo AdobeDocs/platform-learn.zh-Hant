@@ -3,9 +3,10 @@ title: 將Apache Kafka的資料串流至Adobe Experience Platform
 description: 在本單元中，您將瞭解如何設定您自己的Apache Kafka叢集、定義主題、製作者和消費者，並使用Kafka Connect的Adobe Experience Platform Sink Connector將資料串流到Adobe Experience Platform。
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 1%
 
 ---
@@ -31,7 +32,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->別忘了安裝、設定和使用[0.1中參考的Chrome擴充功能 — 安裝Experience League檔案的Chrome擴充功能](../../gettingstarted/gettingstarted/ex1.md)
+>別忘了安裝、設定及使用[安裝Chrome擴充功能以取得Experience League檔案](../../gettingstarted/gettingstarted/ex1.md)中參考的Chrome擴充功能
 
 ## 練習
 

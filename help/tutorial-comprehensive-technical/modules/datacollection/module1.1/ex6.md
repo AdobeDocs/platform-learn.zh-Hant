@@ -3,10 +3,11 @@ title: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的
 description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — 實作Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 ![AEP偵錯工具](./images/aa2.png)
 
-您將會看到此訊息。 選取服務&#x200B;**Adobe Target**，之後您可選擇提供其他資訊。 目前不需要儲存此專案，因此請按一下[取消]。****
+您將會看到此訊息。 選取服務&#x200B;**Adobe Target**，之後您可選擇提供其他資訊。 按一下&#x200B;**儲存**。
 
 ![AEP偵錯工具](./images/at1.png)
 

@@ -3,16 +3,15 @@ title: 1.1設定Adobe Experience Platform資料收集和Web SDK擴充功能
 description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b69ebe41-ff28-4dde-b639-198201120742
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # 1.1基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定
-
-**作者：[Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 此基礎模組會向您介紹Adobe的資料收集願景，並說明如何透過Adobe Experience Platform Data Collection、Adobe Experience Platform SDK和Adobe Experience PlatformEdge Network，將網站和行動應用程式的資料匯入Adobe Experience Platform和其他應用程式。 此單元會介紹一些概念和技術，其影響超出Adobe Experience Platform技術教學課程的範圍。 應該清楚這些練習的哪些部分是完整教學課程其他部分的基礎，這些部分會教您更多有關Experience Edge及其功能的知識，以及到哪裡取得進一步資訊和教學課程。
 
@@ -35,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->別忘了安裝、設定和使用[0.1中參考的Chrome擴充功能 — 安裝Experience League檔案的Chrome擴充功能](../../gettingstarted/gettingstarted/ex1.md)
+>別忘了安裝、設定及使用[安裝Chrome擴充功能以取得Experience League檔案](../../gettingstarted/gettingstarted/ex1.md)中參考的Chrome擴充功能
 
 ## 練習
 

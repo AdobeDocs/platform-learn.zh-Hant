@@ -3,9 +3,10 @@ title: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功能的
 description: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功能的設定 — 使用者端Web資料收集
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ### 安裝Adobe Experience Platform Debugger
 
-Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能，可協助您檢視在網頁中實作的Adobe技術。 下載您偏好瀏覽器的版本：
+Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能，可協助您檢視在網頁中實作的Adobe技術。 安裝您偏好瀏覽器的版本：
 
 - [Firefox擴充功能](https://addons.mozilla.org/zh-TW/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -37,13 +38,9 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 
 ### 開啟示範網站
 
-移至[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案以開啟。
+移至[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案上的3個點&#x200B;**...**，然後按一下&#x200B;**執行**&#x200B;以開啟它。
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-在&#x200B;**Screens**&#x200B;頁面上按一下&#x200B;**執行**。
-
-![DSN](./images/web2.png)
+![DSN](.//images/web8.png)
 
 然後您會看到示範網站已開啟。 選取URL並將其複製到剪貼簿。
 
@@ -77,15 +74,19 @@ Debugger將會開啟，顯示在Adobe Experience Platform資料收集屬性中�
 
 ![AEP偵錯工具](./images/validate2.png)
 
+接著，您就會登入Debugger。
+
+![AEP偵錯工具](./images/validate2ab.png)
+
 按一下示範網站上的重新載入按鈕，將偵錯工具連線至該特定標籤。
 
 ![AEP偵錯工具](./images/validate2a.png)
 
-確認Debugger已&#x200B;**[!UICONTROL 連線至首頁]** （如上圖所示），然後按一下&#x200B;**[!UICONTROL 鎖定]**&#x200B;圖示將Debugger鎖定至示範網站。 若您未這麼做，Debugger會持續切換，以公開任何焦點瀏覽器標籤的實作詳細資料，而造成混淆。
+確認Debugger已&#x200B;**[!UICONTROL 連線至首頁]** （如上圖所示），然後按一下&#x200B;**[!UICONTROL 鎖定]**&#x200B;圖示將Debugger鎖定至示範網站。 若您未這麼做，Debugger會持續切換，以公開任何焦點瀏覽器標籤的實作詳細資料，而造成混淆。 鎖定偵錯工具後，圖示將變更為&#x200B;**解除鎖定**。
 
 ![AEP偵錯工具](./images/validate3.png)
 
-接著，移至示範網站上的任何頁面，例如&#x200B;**Men**&#x200B;類別頁面。
+接著，移至示範網站上的任何頁面，例如&#x200B;**計畫**&#x200B;類別頁面。
 
 ![AEP Debugger AEP Web SDK擴充功能](./images/validate4.png)
 
@@ -99,7 +100,7 @@ Debugger將會開啟，顯示在Adobe Experience Platform資料收集屬性中�
 
 ![事件值](./images/validate8.png)
 
-這些型別的請求詳細資訊也會顯示在網路標籤中。 篩選與&#x200B;**互動**&#x200B;的請求，以找出由Web SDK傳送的請求。 您可以在請求裝載標題中找到XDM裝載的所有詳細資訊：
+這些型別的請求詳細資訊也會顯示在網路標籤中。 篩選與&#x200B;**互動**&#x200B;的請求，以找出由Web SDK傳送的請求。 您可以在「裝載」區段中找到XDM裝載的所有詳細資訊：
 
 ![網路標籤](./images/validate9.png)
 

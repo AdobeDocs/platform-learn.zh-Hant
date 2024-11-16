@@ -3,9 +3,10 @@ title: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功能的
 description: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功能的設定 — Edge Network、資料串流和伺服器端資料收集
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 ## 內容
 
-在本練習中，您將建立&#x200B;**資料流**。 **Datastream**&#x200B;會告訴Adobe Edge伺服器，在Web SDK收集資料後，應將資料傳送至何處。 例如，您要將資料傳送至Adobe Experience Platform嗎？ Adobe Analytics？ Adobe Audience Manager？ Adobe Target？
+在本練習中，您將建立&#x200B;**資料流**。 **資料串流**&#x200B;會通知Adobe Edge伺服器，在Web SDK收集資料後，要將資料傳送至何處。 例如，您要將資料傳送至Adobe Experience Platform嗎？ Adobe Analytics？ Adobe Audience Manager？ Adobe Target？
 
 資料串流一律在Adobe Experience Platform資料收集使用者介面中進行管理，對於使用Web SDK進行Adobe Experience Platform資料收集至關重要。 即使您使用非Adobe標籤管理解決方案實作Web SDK，您仍需在Adobe Experience Platform資料收集使用者介面中建立資料流。
 
@@ -22,23 +23,23 @@ ht-degree: 0%
 
 ## 建立資料串流
 
-在[練習0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)中，您已建立資料串流，但我們並未討論資料串流的背景和原因。
+在[快速入門](./../../../modules/gettingstarted/gettingstarted/ex2.md)中，您已建立資料串流，但我們並未討論資料串流的背景和原因。
 
-資料串流會告訴Adobe Edge伺服器，在Web SDK收集資料後，應將資料傳送至何處。 例如，您要將資料傳送至Adobe Experience Platform嗎？ Adobe Analytics？ Adobe Audience Manager？ Adobe Target？ 資料串流在Adobe Experience Platform資料收集使用者介面中進行管理，對於透過Web SDK進行平台資料收集至關重要，無論您是否透過Adobe Experience Platform資料收集實作Web SDK。
+Satastream會告訴Adobe Edge伺服器，在Web SDK收集資料後，應將資料傳送至何處。 例如，您要將資料傳送至Adobe Experience Platform嗎？ Adobe Analytics？ Adobe Audience Manager？ Adobe Target？ 資料串流在Adobe Experience Platform資料收集使用者介面中進行管理，並且對於使用Web SDK進行資料收集至關重要，無論您是否透過Adobe Experience Platform資料收集實施Web SDK。
 
 讓我們檢閱您的&#x200B;**[!UICONTROL 資料流]**：
 
 移至[https://experience.adobe.com/launch/](https://experience.adobe.com/launch/)。
 
-按一下左側功能表中的&#x200B;**[!UICONTROL 資料串流]**&#x200B;或&#x200B;**[!UICONTROL 資料串流(Beta)]**。
+按一下左側功能表中的&#x200B;**[!UICONTROL 資料串流]**。
 
 ![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1.png)
 
-搜尋名為`--aepUserLdap-- - Demo System Datastream`的資料流。
+開啟名為`--aepUserLdap-- - Demo System Datastream`的資料流。
 
 ![命名資料流並儲存](./images/edgeconfig2.png)
 
-您會看到資料流的詳細資料。
+之後，您將會看到資料流的詳細資料。
 
 ![命名資料流並儲存](./images/edgecfg1.png)
 
@@ -56,10 +57,13 @@ ht-degree: 0%
 
 - 所有收集的資料都會儲存在Adobe Experience Platform的`--aepSandboxName--`沙箱中
 - 預設會將所有體驗事件資料收集到資料集&#x200B;**示範系統 — 網站的事件資料集（全域v1.1）**&#x200B;中
-- 依預設，所有設定檔資料都會收集到資料集&#x200B;**示範系統 — 網站的設定檔資料集（全域v1.1）** （Web SDK目前尚不支援以Web SDK原生擷取設定檔資料，並將在稍後階段提供）
+- 依預設，所有設定檔資料都會收集到資料集&#x200B;**示範系統 — 網站的設定檔資料集（全域v1.1）** （Web SDK目前尚不支援以Web SDK原生擷取設定檔資料）
 - 如果您要針對此資料流使用&#x200B;**Offer decisioning**&#x200B;應用程式服務，您必須勾選Offer decisioning方塊。 （這將是[模組3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md)的一部分）
-- 若要使用&#x200B;**Edge分段**，您必須勾選「Edge分段」方塊。
+- **Edge區段**&#x200B;預設為啟用，這表示在擷取傳入流量時，將在邊緣評估合格區段
 - 若要使用&#x200B;**Personalization目的地**，您必須勾選Personalization目的地的方塊。
+- 
+   - 若要在此資料流中使用&#x200B;**Adobe Journey Optimizer**&#x200B;的功能，您必須勾選Adobe Journey Optimizer的方塊。
+
 
 目前，您的資料流不需要其他設定。
 

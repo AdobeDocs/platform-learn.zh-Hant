@@ -3,9 +3,10 @@ title: 基礎 — Adobe Experience Platform資料彙集的設定和Web SDK擴充
 description: 基礎 — Adobe Experience Platform資料彙集的設定和Web SDK擴充功能 — Adobe Experience Platform中的XDM結構描述需求
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ ht-degree: 0%
 
 ![AEP偵錯工具](./images/exp3.png)
 
-在該結構描述上，您會看到欄位群組&#x200B;**AEP Web SDK ExperienceEvent Mixin**&#x200B;已新增。 此欄位群組會將所有最低必要欄位新增至結構描述。 Web SDK在Adobe Experience Platform中使用的每個體驗事件結構描述一律會要求該欄位群組成為結構描述的一部分。
+在該結構描述中，您會看到已新增欄位群組&#x200B;**AEP Web SDK ExperienceEvent**&#x200B;欄位群組。 此欄位群組會將所有最低必要欄位新增至結構描述。 Web SDK在Adobe Experience Platform中使用的每個體驗事件結構描述一律會要求該欄位群組成為結構描述的一部分。
 
 ![AEP偵錯工具](./images/exp4.png)
 

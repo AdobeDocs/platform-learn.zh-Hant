@@ -3,9 +3,10 @@ title: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的
 description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — 說明Adobe Experience Platform資料收集
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '504'
 ht-degree: 2%
 
 ---
@@ -42,7 +43,12 @@ ht-degree: 2%
 - **[!UICONTROL 標籤]**&#x200B;提供所有使用者端屬性的概觀
 - **[!UICONTROL 應用程式介面]**&#x200B;提供啟用推播通知（與Sierra專案搭配使用/啟用）的所有應用程式設定的概觀
 - **[!UICONTROL 資料串流]**&#x200B;已在[下一個練習](./ex2.md)中探索
-- **[!UICONTROL 事件轉送]**&#x200B;提供在[模組14 - Real-Time CDP連線：事件轉送](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)中探索的所有伺服器端屬性概觀
+- **[!UICONTROL 事件轉送]**&#x200B;提供在[模組2.5 - Real-Time CDP連線：事件轉送](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)中探索的所有伺服器端屬性的概觀
+- **[!UICONTROL 監視]**&#x200B;提供透過事件轉送的傳入和傳出事件流量概觀
+- **[!UICONTROL Assurance]**&#x200B;提供使用Adobe Debugger偵錯實作的存取權
+- **[!UICONTROL 地點]**&#x200B;提供管理POI的存取權，在行動應用程式中以地點為基礎的個人化可存取這些地點
+- **[!UICONTROL 結構描述]**&#x200B;提供對Adobe Experience Platform結構描述編輯器的存取權
+- **[!UICONTROL 身分]**&#x200B;提供存取Adobe Experience Platform身分圖表設定的許可權
 
 ## 進一步資訊
 

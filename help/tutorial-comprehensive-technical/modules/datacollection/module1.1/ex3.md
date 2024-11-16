@@ -3,9 +3,10 @@ title: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的
 description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — Adobe Experience Platform資料收集簡介
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1273'
 ht-degree: 9%
 
 ---
@@ -26,31 +27,30 @@ ht-degree: 9%
 
 ![屬性頁面](./images/launch1.png)
 
-在模組0中，示範系統為您建立了兩個使用者端屬性：一個用於網站，另一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--aepUserLdap--`以尋找它們。
+在&#x200B;**快速入門**&#x200B;中，示範系統為您建立了兩個使用者端屬性：一個用於網站，一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--aepUserLdap--`以尋找它們。
+按一下以開啟**Web**&#x200B;屬性。
 
 ![搜尋方塊](./images/property6.png)
 
-開啟&#x200B;**Web**&#x200B;屬性。
 
-然後您會看到「屬性概述」頁面。 按一下左側邊欄中的&#x200B;**[!UICONTROL 擴充功能]**。 按一下Adobe Experience Platform Web SDK擴充功能下方的&#x200B;**[!UICONTROL 設定]**&#x200B;按鈕。
+
+然後您會看到「屬性概述」頁面。 按一下左側邊欄中的&#x200B;**[!UICONTROL 擴充功能]**，然後按一下&#x200B;**Adobe Experience Platform Web SDK**，再按一下&#x200B;**[!UICONTROL 設定]**。
 
 ![屬性概觀頁面](./images/property7.png)
 
-歡迎使用Adobe Experience Platform Web SDK！ 您可以在此處使用您在[練習0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)中建立的資料串流以及某些更進階的設定，來設定擴充功能。 您只會針對此練習設定兩個設定。
+歡迎使用Adobe Experience Platform Web SDK！ 您可以在此處使用您在[快速入門](./../../../modules/gettingstarted/gettingstarted/ex2.md)中建立的資料串流以及某些更進階的設定來設定擴充功能。
 
-預設的Edge網域一律為&#x200B;**edge.adobedc.net**。 如果您已在Adobe Experience Cloud或Adobe Experience Platform環境中實作CNAME設定，則需更新&#x200B;**[!UICONTROL Edge網域]**。 您的Adobe Experience Platform執行個體正在使用此Edge網域： `--webSdkEdgeDomain--`。
+預設的邊緣網域一律為&#x200B;**edge.adobedc.net**。 如果您已在Adobe Experience Cloud或Adobe Experience Platform環境中實作CNAME設定，則需更新&#x200B;**[!UICONTROL Edge網域]**。
 
-如果您執行個體的Edge網域與預設網域不同，請更新Edge網域。 Edge網域可讓您設定第一方追蹤伺服器，然後在後端使用CNAME設定以確保將資料收集到Adobe中。
+如果您的執行個體的邊緣網域與預設網域不同，請在此處更新邊緣網域。 如果您不確定，請使用預設網域。 邊緣網域可讓您設定第一方追蹤伺服器，然後在後端使用CNAME設定以確保將資料收集到Adobe中。
 
 ![擴充功能首頁](./images/property9edgedomain.png)
 
-現在，請確定已在&#x200B;**[!UICONTROL 資料串流]**&#x200B;標題下選取&#x200B;**[!UICONTROL 從清單選擇]**&#x200B;選項按鈕，並從&#x200B;**[!UICONTROL 資料串流]**&#x200B;方塊的清單中選取名為`--aepUserLdap-- - Demo System Datastream`的資料串流。
-
-![擴充功能首頁](./images/property9edge.png)
+在&#x200B;**[!UICONTROL 資料串流]**&#x200B;底下，您已在&#x200B;**快速入門**&#x200B;區段中選取您的資料串流。 您已從每個環境的&#x200B;**[!UICONTROL 資料流]**&#x200B;方塊的清單中選取此資料流： `--aepUserLdap-- - Demo System Datastream`。
 
 按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;以返回「擴充功能」檢視。
 
-![Adobe Experience Platform Web SDK首頁](./images/save.png)
+![擴充功能首頁](./images/property9edge.png)
 
 ## 1.1.3.2資料元素
 
@@ -104,11 +104,13 @@ Adobe Experience Platform Data Collection是以規則為基礎的系統。 它�
 
 ![媒體 — 文章頁面規則搜尋](./images/rule1.png)
 
-讓我們來看看組成此規則的個別元素。 針對所有規則如果發生指定的&#x200B;**[!UICONTROL 事件]**，則會評估&#x200B;**[!UICONTROL 條件]**，然後視需要發生指定的&#x200B;**[!UICONTROL 動作]**。
+讓我們來看看組成此規則的個別元素。
+
+針對所有規則：如果發生指定的&#x200B;**[!UICONTROL 事件]**，則會評估&#x200B;**[!UICONTROL 條件]**，然後視需要發生指定的&#x200B;**[!UICONTROL 動作]**。
 
 ![媒體 — 文章頁面規則](./images/rule2.png)
 
-按一下事件&#x200B;**自訂事件 — 產品檢視**。 這是載入的檢視。
+按一下事件&#x200B;**核心 — 自訂事件**。 這是載入的檢視。
 
 按一下&#x200B;**事件型別**&#x200B;下拉式清單。
 
@@ -118,9 +120,11 @@ Adobe Experience Platform Data Collection是以規則為基礎的系統。 它�
 
 按一下&#x200B;**[!UICONTROL 取消]**&#x200B;以返回規則。
 
-按一下動作&#x200B;**將「產品檢視」事件傳送至AEP**。
+按一下動作&#x200B;**傳送「產品檢視」體驗事件**。
 
-您可以在此處檢視由Adobe Experience Platform Web SDK傳送至Adobe Edge的資料。 更具體來說，這是使用Web SDK的&#x200B;**alloy** **[!UICONTROL Instance]**。 設定其他&#x200B;**[!UICONTROL 執行個體]**&#x200B;可允許使用不同的資料串流等。 您已指定事件&#x200B;**[!UICONTROL Type]**&#x200B;為&#x200B;**commerce.productViews**，而您傳送的XDM資料是您先前變更的&#x200B;**XDM — 產品檢視**&#x200B;資料元素。
+![傳送事件動作](./images/rule5a.png)
+
+您可以在此處檢視Adobe Experience Platform Web SDK傳送至邊緣的資料。 更具體來說，這是使用Web SDK的&#x200B;**alloy** **[!UICONTROL Instance]**。 事件&#x200B;**[!UICONTROL 型別]**&#x200B;已設為&#x200B;**Commerce產品（購物車）檢視**，而您傳送的XDM資料是您先前變更的&#x200B;**XDM — 產品檢視**&#x200B;資料元素。
 
 ![傳送事件動作](./images/rule5.png)
 
@@ -136,17 +140,14 @@ Adobe Experience Platform Data Collection是以規則為基礎的系統。 它�
 
 ![資料庫存取](./images/publish1.png)
 
-按一下&#x200B;**新增所有變更的資源**&#x200B;按鈕。
+按一下&#x200B;**新增所有變更的資源**按鈕。 下一個，
+按一下**儲存並建置以供開發**&#x200B;按鈕。
 
 ![資料庫存取](./images/publish1a.png)
 
-向下捲動以檢視大部分資源將保持為&#x200B;**修訂版本1 （最新）**，但我們已變更的兩個專案 — **資料元素： ruleArticlePages**&#x200B;和&#x200B;**擴充功能： Adobe Experience Platform Web SDK**&#x200B;將僅標示&#x200B;**最新**。
-
-按一下&#x200B;**儲存並建置以供開發**&#x200B;按鈕。
+程式庫可能需要幾分鐘的時間才能建置，建置完成後，程式庫名稱左側會顯示一個綠色點。
 
 ![內容庫](./images/publish2.png)
-
-程式庫可能需要幾分鐘的時間才能建置，建置完成後，程式庫名稱左側會顯示一個綠色點。
 
 如您在發佈流程畫面中所見，Adobe Experience Platform Data Collection中的發佈程式還有許多其他內容不在本教學課程的討論範圍內。 我們即將在開發環境中使用單一程式庫。
 
