@@ -4,14 +4,14 @@ description: 基礎 — 資料擷取 — 從未知到網站上已知
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
 
-# 1.2.1 — 從未知到網站上已知
+# 1.2.1從未知到網站上已知
 
 ## 內容
 
@@ -27,7 +27,7 @@ Platform是一個環境，其中單字&#x200B;**customer**&#x200B;不只是&#x20
 
 ### 客戶歷程流程
 
-移至[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案以開啟。
+移至[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案上的3個點&#x200B;**...**，然後按一下&#x200B;**編輯**。
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
 
@@ -41,12 +41,9 @@ Platform是一個環境，其中單字&#x200B;**customer**&#x200B;不只是&#x20
 
 貼上您在上一步中複製的示範網站URL。 接著，系統會要求您使用Adobe ID登入。
 
-
 選取您的帳戶型別並完成登入程式。
 
-
 接著，您會在無痕瀏覽器視窗中看到您的網站已載入。 對於每個示範，您都需要使用全新的無痕瀏覽器視窗來載入您的示範網站URL。
-
 
 按一下畫面左上角的Adobe標誌圖示，開啟設定檔檢視器。
 
@@ -58,43 +55,45 @@ Platform是一個環境，其中單字&#x200B;**customer**&#x200B;不只是&#x20
 
 您也可以檢視根據客戶行為收集的所有體驗事件。 清單目前是空的，但很快就會變更。
 
-![示範](../module1.2/images/pv3.png)
+![示範](./images/pv3.png)
 
-移至&#x200B;**Men**&#x200B;產品類別。 接著，按一下產品&#x200B;**Montana防風夾克**。
+移至&#x200B;**電話和裝置**&#x200B;產品類別。 接著，按一下產品&#x200B;**iPhone 15 Pro**。
 
-![示範](../module1.2/images/pv4.png)
+![示範](./images/pv4.png)
 
-然後您會看到產品詳細資料頁面。 型別&#x200B;**產品檢視**&#x200B;的體驗事件現在已使用您在模組1中檢閱的Web SDK實作傳送至Adobe Experience Platform。
+然後您會看到產品詳細資料頁面。 型別&#x200B;**產品檢視**&#x200B;的體驗事件現在已使用您在上一個模組中檢閱的Web SDK實作傳送至Adobe Experience Platform。
 
-![示範](../module1.2/images/pv5.png)
+![示範](./images/pv5.png)
 
 開啟「設定檔檢視器」面板，並檢視您的&#x200B;**體驗事件**。
 
-![示範](../module1.2/images/pv6.png)
+![示範](./images/pv6.png)
 
-返回&#x200B;**女性**&#x200B;類別頁面，然後按一下其他產品。 另一個體驗事件已傳送至Adobe Experience Platform。
+返回&#x200B;**電話和裝置**&#x200B;類別頁面，然後按一下其他產品。 另一個體驗事件已傳送至Adobe Experience Platform。
 
-![示範](../module1.2/images/pv7.png)
+開啟設定檔檢視器面板。 您現在會看到2個型別為&#x200B;**產品檢視**&#x200B;的體驗事件。 雖然行為是匿名的，但在獲得適當同意後，我們仍能追蹤每次點按並將其儲存在Adobe Experience Platform中。 一旦知道匿名客戶，我們就可以自動將所有匿名行為合併到知道的設定檔。
 
-開啟設定檔檢視器面板。 您現在會看到2個型別為&#x200B;**產品檢視**&#x200B;的體驗事件。 雖然行為是匿名的，但我們能夠追蹤每次點按，並將其儲存在Adobe Experience Platform中。 一旦知道匿名客戶，我們就可以自動將所有匿名行為合併到知道的設定檔。
+![示範](./images/pv7.png)
 
-![示範](../module1.2/images/pv8.png)
+按一下&#x200B;**登入**，即可移至「註冊/登入」頁面。
 
-前往「註冊/登入」頁面。 按一下&#x200B;**建立帳戶**。
+![示範](./images/pv8.png)
 
-![示範](../module1.2/images/pv9.png)
+按一下&#x200B;**建立帳戶**。
+
+![示範](./images/pv9.png)
 
 填寫您的詳細資料，然後按一下&#x200B;**註冊**，之後您將會被重新導向到上一頁。
 
-![示範](../module1.2/images/pv10.png)
+![示範](./images/pv10.png)
 
 開啟設定檔檢視器面板，然後前往即時客戶設定檔。 在「設定檔檢視器」面板上，您應該會看到所有顯示的個人資料，例如新新增的電子郵件和電話識別碼。
 
-![示範](../module1.2/images/pv11.png)
+![示範](./images/pv11.png)
 
 在「設定檔檢視器」面板上，前往「體驗事件」。 您將會在「設定檔檢視器」面板上看到先前檢視過的2項產品。 這兩個事件現在也都連線到您的「已知」設定檔。
 
-![示範](../module1.2/images/pv12.png)
+![示範](./images/pv12.png)
 
 您現在已將資料內嵌至Adobe Experience Platform，且已將該資料連結至ECID和電子郵件地址等識別碼。 此課程的目標是瞭解您打算進行的業務內容。 在下一個練習中，您將開始設定所需的一切，以讓所有資料擷取成為可能。
 

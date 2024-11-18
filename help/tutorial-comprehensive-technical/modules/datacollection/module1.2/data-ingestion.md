@@ -3,16 +3,15 @@ title: Foundation — 資料擷取
 description: Foundation — 資料擷取
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 976d801a-3dcb-4cd9-8b9f-b1c964fe7c25
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
 
 # 1.2 Foundation — 資料擷取
-
-**作者：[Wouter Van Glouwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 在本單元中，目標是瞭解資料擷取的所有相關資訊。 您將瞭解串流和批次中的資料擷取。 您將使用Launch實作串流資料擷取，好讓實驗動手網站上的客戶行為可即時串流至Adobe Experience Platform。 您將瞭解如何使用Adobe Experience Platform工作流程批次資料擷取，以擷取CSV檔案、將其對應至XDM結構描述，然後擷取至Adobe Experience Platform。
 

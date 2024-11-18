@@ -4,9 +4,9 @@ description: 快速入門 — 使用網站
 kt: 5342
 doc-type: tutorial
 exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '439'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >如果您不再開啟下列畫面，請改為前往選項2。
 
-練習0.1之後會有此結果。 按一下以開啟為您建立的&#x200B;**Web Telco專案**。
+在上一個練習之後，您得到了此結果。 按一下以開啟為您建立的&#x200B;**Web Telco專案**。
 
 ![DSN](./images/dsn5a.png)
 
