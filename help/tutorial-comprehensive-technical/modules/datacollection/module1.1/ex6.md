@@ -4,16 +4,16 @@ description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 1%
 
 ---
 
 # 1.1.6實作Adobe Target
 
-## 1.1.6.1更新您的資料流以使用Adobe Target
+## 更新您的資料流以使用Adobe Target
 
 如果您想要將Web SDK所收集的資料傳送至Adobe Target，並從Adobe Target取得回應，為每位客戶提供個人化體驗，請依照下列步驟進行。
 

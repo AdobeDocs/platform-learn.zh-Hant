@@ -4,20 +4,20 @@ description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
-# 1.1.5 — 實作Adobe Analytics和Adobe Audience Manager
+# 1.1.5實作Adobe Analytics和Adobe Audience Manager
 
 ## 內容
 
 您現在知道XDM資料正在流入平台。 您將深入瞭解[模組1.2](./../module1.2/data-ingestion.md)中的XDM內容，以及如何建置您自己的結構描述以追蹤自訂變數。 現在，您將瞭解當您設定資料串流將資料轉送至Analytics和Audience Manager時發生的情況。
 
-## 1.1.5.1 Analytics中的對應變數
+## 在Analytics中對應變數
 
 Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過Web SDK快速完成新的Analytics實作。 [這裡](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)列出自動對應的變數。
 
@@ -56,11 +56,11 @@ Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過W
 
 邊緣網路收集的所有資料都可以透過[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)來存取。 在Analytics中，您可以使用處理規則將內容資料併入Analytics變數中。
 
-## Experience PlatformEdge Network上的1.1.5.2Audience Manager
+## Experience PlatformEdge Network上的Audience Manager
 
 伺服器端轉送不是Audience Manager的新概念，與之前的程式相同。 您也可以同步身分。
 
-## 1.1.5.3檢閱您的資料流以傳送資料至Adobe Analytics
+## 檢閱您的資料串流以傳送資料至Adobe Analytics
 
 如果您想要將Web SDK收集的資料傳送至Adobe Analytics和Adobe Audience Manager，請依照下列步驟操作。
 
@@ -78,7 +78,7 @@ Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過W
 
 ![AEP偵錯工具](./images/aa3.png)
 
-## 1.1.5.4檢閱您的資料流以傳送資料至Adobe Audience Manager
+## 檢閱您的資料串流以傳送資料至Adobe Audience Manager
 
 您將會看到此訊息。 若要啟用Adobe Audience Manager，請按一下&#x200B;**+新增服務**。
 

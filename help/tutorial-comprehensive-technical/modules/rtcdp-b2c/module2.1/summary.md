@@ -3,9 +3,10 @@ title: Foundation — 即時客戶設定檔 — 摘要
 description: Foundation — 即時客戶設定檔 — 摘要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6d5519b0-494d-4cfd-aebe-078317d753ac
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,6 @@ ht-degree: 0%
 - 即時客戶個人檔案建置在彈性的即時身分圖表上，如此一來，您就可根據識別碼動態合併多個資料集中的個人檔案片段。
 - 一旦透過身分圖表合併設定檔片段，任何可用的識別碼都可用於擷取客戶的設定檔
 - 區段現在以XDM作為區段後的語言，可讓區段輕鬆重複使用及易於理解
-- 現在也可以透過API建立區段，如此便能以程式設計方式在外部定義區段，然後透過API插入區段定義。
 
 ## 看看這個
 

@@ -1,18 +1,19 @@
 ---
-title: 資料彙集 — FAC - FAC簡介
-description: Foundation - FAC - FAC簡介
+title: 資料收集 — FAC — 設定您的Snowflake帳戶
+description: Foundation - FAC — 設定您的Snowflake帳戶
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: fb8a70d9-9789-4fca-90e4-771be2cfc3dc
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '30'
+source-wordcount: '39'
 ht-degree: 0%
 
 ---
 
-# 1.3.1 FAC簡介
+# 1.3.1設定您的Snowflake帳戶
 
-下一步： [摘要與優點](./summary.md)
+下一步： [1.3.2建立結構描述、資料模型和連結](./ex2.md)
 
 [返回模組1.3](./fac.md)
 

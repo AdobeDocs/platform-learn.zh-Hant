@@ -5,24 +5,21 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 # 2.1 Foundation — 即時客戶個人檔案
 
-**作者：[Wouter Van Glouwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-在本單元中，我們將深入探討Adobe Experience Platform的即時客戶設定檔和身分識別功能。 您將瞭解如何定義對象、Identity Service和Experience CloudID的角色，以及如何定義區段產生器查詢來定義您自己的區段。
+在本單元中，您將深入探討Adobe Experience Platform的即時客戶個人檔案和身分識別功能。 您將瞭解如何定義對象、Identity Service和Experience CloudID的角色，以及如何定義區段產生器查詢來定義您自己的區段。
 
 ## 學習目標
 
 - 瞭解如何透過Adobe Experience Platform的UI將客戶的即時客戶個人檔案視覺化
 - 瞭解如何使用Adobe Experience Platform的區段產生器建立區段
-- 瞭解如何使用Adobe Experience Platform API建立區段並將區段結果儲存在資料集中
 - 瞭解存取完整客戶設定檔的影響，包括離線環境中的即時行為
 
 ## 先決條件
@@ -54,11 +51,7 @@ ht-degree: 0%
 
 在本練習中，您將使用Adobe Experience Platform的區段產生器來建立區段。
 
-[2.1.5建立區段 — API](./ex5.md)
-
-在本練習中，您將使用Postman和Adobe I/O，建立區段並運用Adobe Experience Platform的API將該區段的結果儲存為資料集。
-
-[2.1.6在客服中心檢視您正在使用的即時客戶個人檔案](./ex6.md)
+[2.1.5在客服中心檢視您正在使用的即時客戶個人檔案](./ex5.md)
 
 在本練習中，您將模擬接聽客戶來電的客服中心員工。 為了真的對此客戶的體驗產生影響，您需要即時存取所有可用的資訊。
 

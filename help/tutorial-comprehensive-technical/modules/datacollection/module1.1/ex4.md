@@ -4,16 +4,16 @@ description: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # 1.1.4使用者端Web資料收集
 
-## 1.1.4.1驗證請求中的資料
+## 驗證請求中的資料
 
 ### 安裝Adobe Experience Platform Debugger
 
@@ -40,7 +40,7 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 
 移至[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案上的3個點&#x200B;**...**，然後按一下&#x200B;**執行**&#x200B;以開啟它。
 
-![DSN](.//images/web8.png)
+![DSN](./images/web8.png)
 
 然後您會看到示範網站已開啟。 選取URL並將其複製到剪貼簿。
 

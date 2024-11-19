@@ -4,20 +4,20 @@ description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 9%
+source-wordcount: '1269'
+ht-degree: 10%
 
 ---
 
-# 1.1.3 - Adobe Experience Platform資料彙集簡介
+# 1.1.3 Adobe Experience Platform資料彙集簡介
 
 ## 內容
 
 現在，讓我們更深入瞭解Adobe Experience Platform資料收集的建置區塊，以瞭解示範網站上所安裝的專案。 您將深入瞭解Adobe Experience Platform Web SDK擴充功能，設定資料元素和規則，並瞭解如何發佈程式庫。
 
-## 1.1.3.1 - Adobe Experience Platform Web SDK擴充功能
+## Adobe Experience Platform Web SDK 擴充功能
 
 擴充功能是一組封裝程式碼，可擴充Adobe Experience Platform資料收集介面和程式庫功能。 Adobe Experience Platform Data Collection是平台，而擴充功能就像在平台上執行的應用程式。 教學課程中使用的所有擴充功能皆由Adobe建立和管理，但第三方可以建立自己的擴充功能，以限制Adobe Experience Platform資料收集使用者必須管理的自訂程式碼數量。
 
@@ -52,7 +52,7 @@ ht-degree: 9%
 
 ![擴充功能首頁](./images/property9edge.png)
 
-## 1.1.3.2資料元素
+## 資料元素
 
 資料元素是資料字典 (或資料地圖) 的建置組塊。使用資料元素，在行銷和廣告技術之間收集、組織和傳遞資料。
 
@@ -88,7 +88,7 @@ ht-degree: 9%
 
 此時，已安裝Adobe Experience Platform Web SDK擴充功能，且您已更新資料元素，以根據XDM結構收集資料。 接下來，讓我們檢查將在正確時間傳送資料的規則。
 
-## 1.1.3.3規則
+## 規則
 
 Adobe Experience Platform Data Collection是以規則為基礎的系統。 它會尋找使用者互動與相關資料。當符合列於您規則中的準則時，規則會觸發您識別的擴充功能、指令黨指令檔或用戶端代碼。
 
@@ -130,7 +130,7 @@ Adobe Experience Platform Data Collection是以規則為基礎的系統。 它�
 
 現在您已檢視規則，可以在Adobe Experience Platform Data Collection中發佈所有變更。
 
-## 1.1.3.4程式庫中的Publish
+## 程式庫中的Publish
 
 最後，為了驗證您剛才更新的規則和資料元素，您需要發佈包含屬性中已編輯專案的程式庫。 在Adobe Experience Platform資料收集的&#x200B;**[!UICONTROL 發佈]**&#x200B;區段中，您需要執行一些快速步驟。
 

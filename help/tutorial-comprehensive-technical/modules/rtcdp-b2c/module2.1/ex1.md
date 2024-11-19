@@ -3,9 +3,10 @@ title: 基礎 — 即時客戶設定檔 — 從未知到網站上已知
 description: 基礎 — 即時客戶設定檔 — 從未知到網站上已知
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '968'
 ht-degree: 2%
 
 ---
@@ -22,13 +23,9 @@ Platform是一種環境，其中客戶一詞的含義比已知客戶更為廣泛
 
 ## 客戶歷程流程
 
-移至[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案以開啟。
+移至[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案上的3個點&#x200B;**...**，然後按一下&#x200B;**執行**&#x200B;以開啟它。
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-在&#x200B;**Screens**&#x200B;頁面上按一下&#x200B;**執行**。
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 然後您會看到示範網站已開啟。 選取URL並將其複製到剪貼簿。
 
@@ -62,7 +59,7 @@ Platform是一種環境，其中客戶一詞的含義比已知客戶更為廣泛
 
 ![示範](../../datacollection/module1.2/images/pv3.png)
 
-移至&#x200B;**Men**&#x200B;產品類別。 接著，按一下產品&#x200B;**Montana防風夾克**。
+移至&#x200B;**電話和裝置**&#x200B;產品類別。 接著，按一下產品&#x200B;**iPhone 15 Pro**。
 
 ![示範](../../datacollection/module1.2/images/pv4.png)
 
@@ -74,15 +71,15 @@ Platform是一種環境，其中客戶一詞的含義比已知客戶更為廣泛
 
 ![示範](../../datacollection/module1.2/images/pv6.png)
 
-返回&#x200B;**女性**&#x200B;類別頁面，然後按一下其他產品。 另一個體驗事件已傳送至Adobe Experience Platform。
+返回&#x200B;**電話和裝置**&#x200B;類別頁面，然後按一下其他產品。 另一個體驗事件已傳送至Adobe Experience Platform。 開啟設定檔檢視器面板。 您現在會看到2個型別為&#x200B;**產品檢視**&#x200B;的體驗事件。 雖然行為是匿名的，但在獲得適當同意後，您仍可追蹤每次點按，並將其儲存在Adobe Experience Platform中。 一旦知道匿名客戶，我們就可以自動將所有匿名行為合併到知道的設定檔。
 
 ![示範](../../datacollection/module1.2/images/pv7.png)
 
-開啟設定檔檢視器面板。 您現在會看到2個型別為&#x200B;**產品檢視**&#x200B;的體驗事件。 雖然行為是匿名的，但我們能夠追蹤每次點按，並將其儲存在Adobe Experience Platform中。 一旦知道匿名客戶，我們就可以自動將所有匿名行為合併到知道的設定檔。
+前往「註冊/登入」頁面。 按一下&#x200B;**登入**。
 
 ![示範](../../datacollection/module1.2/images/pv8.png)
 
-前往「註冊/登入」頁面。 按一下&#x200B;**建立帳戶**。
+按一下&#x200B;**建立帳戶**。
 
 ![示範](../../datacollection/module1.2/images/pv9.png)
 
@@ -104,11 +101,11 @@ Platform是一種環境，其中客戶一詞的含義比已知客戶更為廣泛
 
 成為已知客戶後，您就可以開始使用行動應用程式。 在iPhone上開啟行動應用程式，然後登入應用程式。
 
-如果您尚未安裝應用程式，或忘記如何安裝，請在這裡檢視： [0.5使用行動應用程式](../../gettingstarted/gettingstarted/ex5.md)
+如果您尚未安裝應用程式，或忘記如何安裝，請在這裡檢視： [使用行動應用程式](../../gettingstarted/gettingstarted/ex5.md)
 
-依照指示安裝應用程式後，您會看到已載入Luma品牌的應用程式登陸頁面。 按一下畫面左上方的帳戶圖示。
+依照指示安裝應用程式後，您會看到已載入Citi Signal品牌的應用程式登陸頁面。 按一下畫面左上方的帳戶圖示。
 
-![示範](./images/app_hp.png)
+![示範](./images/app_hp1.png)
 
 在「登入」畫面上，使用您在案頭網站上使用的電子郵件地址登入。 按一下&#x200B;**登入**。
 
@@ -120,15 +117,23 @@ Platform是一種環境，其中客戶一詞的含義比已知客戶更為廣泛
 
 然後您會看到產品詳細資料頁面。
 
-![示範](./images/app_carst.png)
+![示範](./images/app_galaxy.png)
 
 前往應用程式的主畫面，然後在畫面上的左側撥動，以檢視「設定檔檢視器」面板。 然後您將會在&#x200B;**體驗事件**&#x200B;區段中看到您剛才檢視的產品，以及之前網站工作階段中的所有產品檢視。
 
-![示範](./images/app_after_carst.png)
+>[!NOTE]
+>
+>您可能需要幾分鐘時間，才會在應用程式和網站上看到整合檢視。
+
+![示範](./images/app_after_galaxy.png)
 
 現在返回您的桌上型電腦並重新整理首頁，之後您也會看到產品出現在那裡。
 
-![示範](./images/lb_x_aftermobile.png)
+>[!NOTE]
+>
+>您可能需要幾分鐘時間，才會在應用程式和網站上看到整合檢視。
+
+![示範](./images/web_x_aftermobile.png)
 
 您現在已將資料內嵌至Adobe Experience Platform，且已將該資料連結至ECID和電子郵件地址等識別碼。 此練習的目標是瞭解您打算做什麼的業務環境。 您現在已有效建立即時、跨裝置客戶設定檔。 在下一個練習中，您將會繼續並在Adobe Experience Platform中視覺化您的設定檔。
 

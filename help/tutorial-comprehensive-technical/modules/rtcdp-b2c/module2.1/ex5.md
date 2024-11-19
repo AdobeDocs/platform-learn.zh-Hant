@@ -1,170 +1,64 @@
 ---
-title: 基礎 — 即時客戶設定檔 — 建立區段 — API
-description: 基礎 — 即時客戶設定檔 — 建立區段 — API
+title: 在客服中心檢視您的即時客戶個人檔案的實際運作情況
+description: 在客服中心檢視您的即時客戶個人檔案的實際運作情況
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '706'
-ht-degree: 3%
+source-wordcount: '352'
+ht-degree: 2%
 
 ---
 
-# 2.1.5建立區段 — API
+# 2.1.5在客服中心檢視您正在使用的即時客戶個人檔案
 
-在本練習中，您將使用Postman和Adobe I/O，建立區段並運用Adobe Experience Platform的API將該區段的結果儲存為資料集。
+在本練習中，目標是讓您逐步瞭解客戶歷程，並像真實客戶一樣操作。
 
-## Story
+在此網站上，我們已實作Adobe Experience Platform。 每個動作都會視為體驗事件，並即時傳送至Adobe Experience Platform，以補充即時客戶設定檔。
 
-在即時客戶個人檔案中，所有個人檔案資料都會與事件資料和現有區段會籍一起顯示。 顯示的資料可來自任何地方，包括Adobe應用程式和外部解決方案。 這是Adobe Experience Platform中功能最強大的檢視方式，也是體驗記錄系統。
+在之前的練習中，您一開始是作為匿名客戶瀏覽網站，經過幾個步驟後，您成為了已知客戶。
 
-## 2.1.5.1 — 透過平台API建立區段
+當同一客戶最終接聽電話並致電您的客服中心時，請務必立即取得其他管道的資訊，以便讓客服中心體驗變得相關且個人化。
 
-前往Postman。
+## 使用您的CX應用程式
 
-找到集合： **_Adobe Experience Platform啟用**。 在此集合中，您會看到資料夾&#x200B;**2。 區段**。 在本練習中，我們將使用這些請求。
+移至[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登入後，您會看到此訊息。 按一下您CX App專案上的3個點&#x200B;**...**，然後按一下[編輯]**以開啟它。**
 
-![區段](./images/pmdtl.png)
+![示範](./images/cxapp3.png)
 
-我們接下來要做的就是依照所有必要步驟，透過API建立區段。 我們將建置簡單的區段： &quot;**ldap** — 所有女性客戶&quot;。
+在您的CX App專案中，移至&#x200B;**整合**。 按一下&#x200B;**選取環境**。
 
-### 步驟1 — 建立區段定義
+![示範](./images/cxapp3a.png)
 
-按一下名為&#x200B;**步驟1 — 設定檔：建立區段定義**。
+選取在快速入門中建立的Adobe Experience Platform Data Collection屬性。 您必須選取名稱中有&#x200B;**(cx-app)**&#x200B;的屬性。
 
-![區段](./images/s1_call.png)
+![示範](./images/cxapp4.png)
 
-移至此請求的&#x200B;**內文**&#x200B;區段。
+您將會看到此訊息。 按一下&#x200B;**執行**。
 
-![區段](./images/s1_body.png)
+![示範](./images/cxapp4a.png)
 
-在此請求的&#x200B;**內文**&#x200B;中，您會看到下列內容：
+接下來，您必須選取其中一個身分和相應的名稱空間，然後按一下&#x200B;**搜尋圖示**。
 
-![區段](./images/s1_bodydtl.png)
+![客戶設定檔](./images/identities.png)
 
-用於此要求的語言稱為Profile Query Language或&#x200B;**PQL**。
+| 身分 | 命名空間 |
+|:-------------:| :---------------:|
+| Experience CloudID (ECID) | 79943948563923140522865572770524243489 |
+| Experience CloudID (ECID) | 70559351147248820114888181867542007989 |
+| 電子郵件ID | woutervangeluwe+18112024-01@gmail.com |
+| 行動電話號碼ID | +32473622044+18112024-01 |
 
-您可以在[這裡](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html?lang=en)找到更多有關PQL的資訊和檔案。
+當客戶致電您的客服中心時，可使用電話號碼來識別客戶。 因此，在本練習中，您將使用電話號碼來擷取CX應用程式中的客戶設定檔。
 
+![示範](./images/19.png)
 
-注意：請更新下列要求中的變數&#x200B;**名稱**，將&#x200B;**ldap**&#x200B;取代為您的特定&#x200B;**ldap**。
+您現在會看到客服中心中理想的資訊，讓客服中心員工在與客戶交談時，可以立即取得所有相關資訊。
 
-```json
-{
-    "name" : "ldap - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "ldap",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
+![示範](./images/20.png)
 
-新增您的特定&#x200B;**ldap**&#x200B;之後，Body應該看起來類似這樣：
-
-```json
-{
-    "name" : "vangeluw - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "vangeluw",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
-
-您也應該驗證請求的&#x200B;**標頭** — 欄位。 移至&#x200B;**標頭**。 然後您會看到以下內容：
-
-![Postman](./images/s1_h.png)
-
-| 索引鍵 | 值 |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxName--`。
-
-現在，按一下藍色的&#x200B;**傳送**&#x200B;按鈕以建立區段並檢視其結果。
-
-![區段](./images/s1_bodydtl_results.png)
-
-完成此步驟後，您可以在Platform UI中檢視區段定義。 若要檢查此專案，請登入Adobe Experience Platform並移至&#x200B;**區段**。
-
-![區段](./images/s1_segmentdef.png)
-
-### 步驟2 — 建立區段POST工作
-
-在上一個練習中，您已建立&#x200B;_串流_&#x200B;區段。 串流區段會持續即時評估資格。 您正在這裡建立&#x200B;_批次_&#x200B;區段。 批次區段可讓您預覽該區段在資格方面的外觀，但&#x200B;_並不表示該區段實際已執行_。 目前，_沒有任何人符合此區段_&#x200B;的資格。 為了讓人員符合資格，批次區段必須執行，這正是我們在這裡要做的事。
-
-現在來POST區段工作。
-
-前往Postman。
-
-![區段](./images/pmdtl.png)
-
-在Postman集合中，按一下名為&#x200B;**步驟2 -POST區段工作**&#x200B;的要求以開啟。
-
-![區段](./images/s2_call.png)
-
-您也應該驗證請求的&#x200B;**標頭** — 欄位。 移至&#x200B;**標頭**。 然後您會看到以下內容：
-
-![Postman](./images/s2headers.png)
-
-| 索引鍵 | 值 |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxName--`。
-
-按一下藍色的&#x200B;**傳送**&#x200B;按鈕。
-
-您應該會看到類似的結果：
-
-![區段](./images/s2_call_response.png)
-
-此區段工作目前正在執行中，這可能需要一些時間。 在步驟3中，您可以檢查此工作的狀態。
-
-
-### 步驟3 -GET區段作業狀態
-
-前往Postman。
-
-![區段](./images/pmdtl.png)
-
-在您的Postman集合中，按一下名為&#x200B;**步驟3 -GET區段作業狀態**&#x200B;的請求。
-
-![區段](./images/s3_call.png)
-
-您也應該驗證請求的&#x200B;**標頭** — 欄位。 移至&#x200B;**標頭**。 然後您會看到以下內容：
-
-![Postman](./images/s3headers.png)
-
-| 索引鍵 | 值 |
-| -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxName--` |
-
->[!NOTE]
->
->您必須指定正在使用的Adobe Experience Platform沙箱名稱。 您的x-sandbox-name應為`--aepSandboxName--`。
-
-按一下藍色的&#x200B;**傳送**&#x200B;按鈕。
-
-您應該會看到類似的結果：
-
-![區段](./images/s3_status.png)
-
-在此範例中，工作的&#x200B;**狀態**&#x200B;設定為&#x200B;**已排入佇列**。
-
-每隔幾分鐘按一下藍色的&#x200B;**傳送**&#x200B;按鈕來重複此要求，直到&#x200B;**狀態**&#x200B;設定為&#x200B;**成功**。
-
-![區段](./images/s3_status_succeeded.png)
-
-一旦狀態為&#x200B;**SUCCEEDED**，表示您的區段工作已執行，客戶現在符合該區段的資格。
-
-恭喜，您已成功完成分段作業。 現在來看看在整個企業內如何啟用即時客戶設定檔。
-
-下一步： [2.1.6在客服中心檢視您使用中的即時客戶設定檔](./ex6.md)
+下一步： [摘要與優點](./summary.md)
 
 [返回模組2.1](./real-time-customer-profile.md)
 

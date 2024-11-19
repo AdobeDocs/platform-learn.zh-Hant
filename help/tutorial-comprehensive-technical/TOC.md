@@ -5,9 +5,9 @@ user-guide-description: 此實作教學課程涵蓋Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: f79a989f01fa1c005a0c06cea81268118b2467be
+source-git-commit: 8cfe1dbb528bdf5ecc828cf67ef969c885982435
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '923'
 ht-degree: 4%
 
 ---
@@ -47,7 +47,9 @@ ht-degree: 4%
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
    + 1.3 — 同盟對象組合{#module13}
       + [概觀](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
-      + [1.3.1 FAC簡介](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+      + [1.3.1設定您的Snowflake帳戶](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+      + [1.3.2建立結構描述、資料模型和連結](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
+      + [1.3.3建立同盟組合](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)
 
 + 2 Real-Time CDP B2C {#rtcdpb2c}
@@ -57,8 +59,7 @@ ht-degree: 4%
       + [2.1.2視覺化您自己的即時客戶設定檔 — UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex2.md)
       + [2.1.3將您自己的即時客戶設定檔視覺化 — API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex3.md)
       + [2.1.4建立區段 — UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
-      + [2.1.5建立區段 — API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
-      + [2.1.6在客服中心檢視您正在使用的即時客戶個人檔案](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex6.md)
+      + [2.1.5在客服中心檢視您正在使用的即時客戶個人檔案](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/summary.md)
    + 2.2智慧型服務{#module22}
       + [概觀](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/intelligent-services.md)
