@@ -5,9 +5,9 @@ user-guide-description: 此實作教學課程涵蓋Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8cfe1dbb528bdf5ecc828cf67ef969c885982435
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '919'
 ht-degree: 4%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 4%
       + [2.1.1造訪網站](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex1.md)
       + [2.1.2視覺化您自己的即時客戶設定檔 — UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex2.md)
       + [2.1.3將您自己的即時客戶設定檔視覺化 — API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex3.md)
-      + [2.1.4建立區段 — UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
+      + [2.1.4建立對象 — UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
       + [2.1.5在客服中心檢視您正在使用的即時客戶個人檔案](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/summary.md)
    + 2.2智慧型服務{#module22}
@@ -67,23 +67,23 @@ ht-degree: 4%
       + [2.2.2 Customer AI：建立新執行個體（設定）](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/ex2.md)
       + [2.2.3 Customer AI：評分控制面板和細分（預測和採取行動）](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/ex3.md)
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/summary.md)
-   + 2.3 Real-Time CDP：建立區段並採取行動！{#module23}
+   + 2.3 Real-Time CDP：建立受眾並採取行動！{#module23}
       + [概觀](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
-      + [2.3.1建立區段並啟用串流區段](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex1.md)
+      + [2.3.1建立對象](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex1.md)
       + [2.3.2檢閱如何使用目的地設定DV360目的地](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex2.md)
-      + [2.3.3採取行動：將您的區段傳送至DV360](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex3.md)
-      + [2.3.4採取動作：將區段傳送至S3-destination](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
-      + [2.3.5採取行動：將您的區段傳送至Adobe Target](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
+      + [2.3.3採取動作：將對象傳送至DV360](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex3.md)
+      + [2.3.4採取動作：將對象傳送至S3-destination](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
+      + [2.3.5採取動作：將對象傳送至Adobe Target](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
       + [2.3.6外部對象](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
       + [2.3.7目的地SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
-   + 2.4 Real-Time CDP： Microsoft Azure事件中心{#module24}的區段啟用
+   + 2.4 Real-Time CDP：Audience Activation到Microsoft Azure事件中心{#module24}
       + [概觀](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
       + [2.4.0設定環境](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex0.md)
       + [2.4.1設定您的Microsoft Azure EventHub環境](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex1.md)
       + [2.4.2在Adobe Experience Platform中設定Azure事件中樞目的地](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex2.md)
-      + [2.4.3建立串流區段](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
-      + [2.4.4啟動區段](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
+      + [2.4.3建立對象](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
+      + [2.4.4啟用您的對象](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
       + [2.4.5建立您的Microsoft Azure專案](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex5.md)
       + [2.4.6端對端案例](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex6.md)
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/summary.md)

@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer — 商業事件
 description: 本節說明如何使用業務事件功能，以執行「有庫存的專案」使用案例
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8519e17f-e050-4a06-9651-29bf67f27276
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1187'
 ht-degree: 1%
 
 ---
@@ -98,14 +99,14 @@ ht-degree: 1%
 
 ![Journey Optimizer](./images/bej12.png)
 
-如您所見，**讀取區段**&#x200B;活動已自動新增至畫布。 這是因為業務事件只會傳送歷程的觸發器來讀取特定區段，然後擷取該歷程的設定檔清單。
+如您所見，**讀取對象**&#x200B;活動已自動新增至畫布。 這是因為業務事件只會傳送歷程的觸發程式來讀取特定對象，然後會擷取該歷程的設定檔清單。
 
-按一下&#x200B;**讀取區段**活動。
-**讀取區段**&#x200B;設定希望您選取要通知剛發生的業務事件的區段。 按一下&#x200B;**選取區段**&#x200B;欄位。
+按一下&#x200B;**讀取對象**活動。
+**讀取對象**&#x200B;設定希望您選取要通知剛發生的業務事件的對象。 按一下&#x200B;**選取對象**&#x200B;欄位。
 
 ![Journey Optimizer](./images/bej13.png)
 
-在「**選擇區段**」快顯視窗中，搜尋您的LDAP並選取您在[模組2.3 - Real-time CDP — 建立區段並執行名為`--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`的動作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)。 例如： vangeluw — 興趣PROTEUS FITNESS JACKSHIRT。 按一下&#x200B;**儲存**。
+在&#x200B;**選擇對象**&#x200B;快顯視窗中，搜尋您的LDAP並選取您在[模組2.3 - Real-time CDP — 建立對象並執行名為`--aepUserLdap-- - Interest in Galaxy S24`的動作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)。 按一下&#x200B;**儲存**。
 
 ![Journey Optimizer](./images/bej14.png)
 

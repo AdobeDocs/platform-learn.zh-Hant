@@ -4,7 +4,7 @@ description: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Satastream會告訴Adobe Edge伺服器，在Web SDK收集資料後，應將資�
 - 預設會將所有體驗事件資料收集到資料集&#x200B;**示範系統 — 網站的事件資料集（全域v1.1）**&#x200B;中
 - 依預設，所有設定檔資料都會收集到資料集&#x200B;**示範系統 — 網站的設定檔資料集（全域v1.1）** （Web SDK目前尚不支援以Web SDK原生擷取設定檔資料）
 - 如果您要針對此資料流使用&#x200B;**Offer decisioning**&#x200B;應用程式服務，您必須勾選Offer decisioning方塊。 （這將是[模組3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md)的一部分）
-- **Edge區段**&#x200B;預設為啟用，這表示在擷取傳入流量時，將在邊緣評估合格區段
+- **Edge分段**&#x200B;預設為啟用，這表示在擷取傳入流量時，將會在邊緣評估合格對象
 - 若要使用&#x200B;**Personalization目的地**，您必須勾選Personalization目的地的方塊。
 - 
    - 若要在此資料流中使用&#x200B;**Adobe Journey Optimizer**&#x200B;的功能，您必須勾選Adobe Journey Optimizer的方塊。

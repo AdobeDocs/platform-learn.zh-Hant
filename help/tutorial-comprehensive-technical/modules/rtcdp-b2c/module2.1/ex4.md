@@ -1,19 +1,19 @@
 ---
-title: Foundation — 即時客戶設定檔 — 建立區段 — UI
-description: Foundation — 即時客戶設定檔 — 建立區段 — UI
+title: Foundation — 即時客戶個人檔案 — 建立對象 — UI
+description: Foundation — 即時客戶個人檔案 — 建立對象 — UI
 kt: 5342
 doc-type: tutorial
 exl-id: db1d744d-c4ff-4131-b104-98bb70269140
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 3%
 
 ---
 
-# 2.1.4建立區段 — UI
+# 2.1.4建立對象 — UI
 
-在本練習中，您將使用Adobe Experience Platform的區段產生器來建立區段。
+在本練習中，您將使用Adobe Experience Platform的Audience Builder來建立對象。
 
 移至[Adobe Experience Platform](https://experience.adobe.com/platform)。 登入後，您會登入Adobe Experience Platform的首頁。
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-在左側的功能表中，移至&#x200B;**對象**。 您可以在此頁面上檢視所有現有區段的概觀。 按一下「**+建立對象**」按鈕以開始建立新區段。
+在左側的功能表中，移至&#x200B;**對象**。 您可以在此頁面上檢視所有現有對象的概觀。 按一下&#x200B;**+建立對象**&#x200B;按鈕以開始建立新對象。
 
 ![區段](./images/menuseg.png)
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ![區段](./images/menusegbr.png)
 
-進入新的區段產生器後，您會立即注意到&#x200B;**屬性**&#x200B;功能表選項和&#x200B;**XDM個人設定檔**&#x200B;參考。
+進入新的受眾產生器後，您會立即注意到&#x200B;**屬性**&#x200B;功能表選項和&#x200B;**XDM個人設定檔**&#x200B;參考。
 
 ![區段](./images/segmentationui.png)
 

@@ -3,9 +3,10 @@ title: Microsoft Azure事件中心的區段啟用 — 建立串流區段
 description: Microsoft Azure事件中心的區段啟用 — 建立串流區段
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 86bc3afa-16a9-4834-9119-ce02445cd524
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '344'
 ht-degree: 1%
 
 ---
@@ -44,7 +45,7 @@ Adobe Experience Platform中的區段資格一律具有&#x200B;**status** — �
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 

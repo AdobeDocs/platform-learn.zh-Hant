@@ -6,16 +6,14 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '336'
 ht-degree: 1%
 
 ---
 
 # 2.3 Real-time CDP — 建立區段並採取行動
-
-**作者：[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)，[Alberto De Caro](https://www.linkedin.com/in/albertodecaro/)，[Benedikt Wedenik](https://www.linkedin.com/in/benedikt-wedenik/)**
 
 在此單元中，您將設定串流區段並啟用對多個目的地的區段。
 
@@ -38,25 +36,25 @@ ht-degree: 1%
 
 ## 練習
 
-[2.3.1建立區段](./ex1.md)
+[2.3.1建立對象](./ex1.md)
 
-瞭解如何建立區段。
+瞭解如何建立受眾。
 
 [2.3.2檢閱如何使用目的地設定DV360目的地](./ex2.md)
 
 瞭解如何使用Real-Time CDP UI設定Advertising目的地。
 
-[2.3.3採取行動：將您的區段傳送至DV360](./ex3.md)
+[2.3.3採取動作：將對象傳送至DV360](./ex3.md)
 
-將練習6.1中建立的區段連線至目的地DV360。
+將您建置的對象連結至目的地DV360。
 
-[2.3.4採取動作：將區段傳送至S3-destination](./ex4.md)
+[2.3.4採取動作：將對象傳送至S3-destination](./ex4.md)
 
-使用您於練習6.1中建立的區段，並將其傳送至S3目的地（通常用於電子郵件行銷目的地）。
+使用您建立的對象並將其傳送至S3目的地，通常用於電子郵件行銷目的地。
 
-[2.3.5採取行動：將您的區段傳送至Adobe Target](./ex5.md)
+[2.3.5採取動作：將對象傳送至Adobe Target](./ex5.md)
 
-使用您於練習6.1中建立的區段，在Adobe Target中設定體驗鎖定目標活動。
+使用您建立的對象在Adobe Target中設定體驗鎖定目標活動。
 
 [2.3.6外部對象](./ex6.md)
 

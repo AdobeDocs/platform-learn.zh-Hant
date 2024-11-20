@@ -4,7 +4,7 @@ description: 基礎 — 即時客戶設定檔 — 從未知到網站上已知
 kt: 5342
 doc-type: tutorial
 exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Platform是一種環境，其中客戶一詞的含義比已知客戶更為廣泛
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-接著，您會在無痕瀏覽器視窗中看到您的網站已載入。 對於每個示範，您都需要使用全新的無痕瀏覽器視窗來載入您的示範網站URL。
+接著，您會在無痕瀏覽器視窗中看到您的網站已載入。 每次練習都需要使用全新的無痕瀏覽器視窗，才能載入您的示範網站URL。
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 

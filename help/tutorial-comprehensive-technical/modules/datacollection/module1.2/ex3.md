@@ -4,9 +4,9 @@ description: Foundation — 資料擷取 — 設定資料集
 kt: 5342
 doc-type: tutorial
 exl-id: 94ef3e17-af28-4549-8a08-91b129ff4c93
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '552'
 ht-degree: 7%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 7%
 
 ![資料擷取](./images/home.png)
 
-繼續之前，您必須選取&#x200B;**[!UICONTROL 沙箱]**。 要選取的沙箱名為``--module2sandbox--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
+繼續之前，您必須選取&#x200B;**[!UICONTROL 沙箱]**。 要選取的沙箱名為``--aepSandboxName--``。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
 
 ![資料擷取](./images/sb1.png)
 

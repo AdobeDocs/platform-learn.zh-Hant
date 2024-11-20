@@ -1,11 +1,12 @@
 ---
-title: Real-time CDP — 建立區段並採取行動 — 設定Advertising目的地，如Google DV360
-description: Real-time CDP — 建立區段並採取行動 — 設定Advertising目的地，如Google DV360
+title: Real-time CDP — 建立受眾並採取行動 — 設定Advertising目的地，如Google DV360
+description: Real-time CDP — 建立受眾並採取行動 — 設定Advertising目的地，如Google DV360
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: fdc590d5-b986-422c-97ef-b5a439644439
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '331'
 ht-degree: 1%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->以下內容僅供參考 — 您&#x200B;**不**&#x200B;必須設定DV360的新目的地。 目的地已建立，您可以在下一個練習中使用它。
+>以下內容部分旨在僅供參考 — 如果您的執行個體中已存在這樣的目的地，那麼您&#x200B;**不**&#x200B;必須設定DV360的新目的地。 在此情況下，目的地已經建立，您可以在下一個練習中使用它。
 
 移至[Adobe Experience Platform](https://experience.adobe.com/platform)。 登入後，您會登入Adobe Experience Platform的首頁。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -61,9 +62,9 @@ ht-degree: 1%
 ![RTCDP](./images/rtcdpcreatedest1.png)
 
 之後，您會看到可用目的地的清單。
-在下一個練習中，您會將您在上一個練習中建立的區段連線至Google DV360目的地。
+在下一個練習中，您會將您在上一個練習中建立的對象連線到Google DV360目的地。
 
-下一步： [2.3.3採取動作：將您的區段傳送至DV360](./ex3.md)
+下一步： [2.3.3採取動作：將您的對象傳送至DV360](./ex3.md)
 
 [返回模組2.3](./real-time-cdp-build-a-segment-take-action.md)
 

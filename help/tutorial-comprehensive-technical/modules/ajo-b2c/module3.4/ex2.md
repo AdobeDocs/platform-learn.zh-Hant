@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer — 設定批次型歷程
 description: 在本節中，您將設定批次電子郵件歷程以傳送電子報
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ## 3.4.2.1建立電子報歷程
 
-您現在將建立批次型歷程。 上一個練習的事件型歷程仰賴傳入體驗事件或區段登入或退出，以觸發1個特定客戶的歷程，而批次型歷程則不同，此歷程會以唯一內容（例如電子報、一次性促銷活動或一般資訊）鎖定整個區段，或定期傳送類似內容（例如例項生日行銷活動和提醒）。
+您現在將建立批次型歷程。 上一個練習的事件型歷程仰賴傳入體驗事件或對象進入或退出，以觸發1個特定客戶的歷程，而批次型歷程則不同，此歷程會以唯一內容（例如電子報、一次性促銷活動或一般資訊）一次鎖定整個對象，或定期傳送類似內容（例如例項生日行銷活動和提醒）。
 
 在功能表中，前往&#x200B;**歷程**&#x200B;並按一下&#x200B;**建立歷程**。
 
@@ -37,11 +38,11 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/batchj2.png)
 
-在&#x200B;**協調流程**&#x200B;下，將&#x200B;**讀取區段**&#x200B;拖放到畫布上。 換句話說，發佈歷程後，會從擷取整個區段對象開始，接著成為歷程和訊息的目標對象。 按一下&#x200B;**選取區段**。
+在&#x200B;**協調流程**&#x200B;下，將&#x200B;**讀取對象**&#x200B;拖放到畫布上。 這表示，發佈歷程後，將開始擷取整個對象對象，然後成為歷程和訊息的目標對象。 按一下&#x200B;**選取對象**。
 
 ![Journey Optimizer](./images/batchj3.png)
 
-在「**選擇區段**」快顯視窗中，搜尋您的LDAP並選取您在[模組2.3 - Real-time CDP — 建立區段並執行名為`--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`的動作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)。 例如： vangeluw — 興趣PROTEUS FITNESS JACKSHIRT。 按一下&#x200B;**儲存**。
+在&#x200B;**選擇對象**&#x200B;快顯視窗中，搜尋您的LDAP並選取您在[模組2.3 - Real-time CDP — 建立對象並執行名為`--aepUserLdap-- - Interest in Galaxy S24`的動作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)。 按一下&#x200B;**儲存**。
 
 ![Journey Optimizer](./images/batchj5.png)
 

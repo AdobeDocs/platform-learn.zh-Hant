@@ -4,9 +4,9 @@ description: Foundation — 資料擷取 — 設定結構描述並設定識別�
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '3165'
+source-wordcount: '3127'
 ht-degree: 4%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 4%
 
 ![資料擷取](./images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
 
 ![資料擷取](./images/sb1.png)
 
@@ -301,7 +301,7 @@ ht-degree: 4%
 
 ![資料擷取](./images/home.png)
 
-繼續之前，您必須選取&#x200B;**[!UICONTROL 沙箱]**。 要選取的[!UICONTROL 沙箱]名稱為``--module2sandbox--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
+繼續之前，您必須選取&#x200B;**[!UICONTROL 沙箱]**。 要選取的[!UICONTROL 沙箱]名稱為``--aepSandboxName--``。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
 
 ![資料擷取](./images/sb1.png)
 

@@ -4,7 +4,8 @@ description: offer decisioning-Offer decisioning101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 2%
@@ -92,9 +93,9 @@ ht-degree: 2%
 
 ## 3.3.1.4決定規則
 
-規則（也稱為適用性規則）相當於&#x200B;**區段**。 規則實際上是區段本身，只有區段本身能和優惠方案搭配使用，為Adobe Experience Platform中的設定檔提供最佳優惠方案的唯一差異。
+規則（也稱為適用性規則）等同於&#x200B;**對象**。 規則實際上是對象本身，唯一差異在於規則可以與選件搭配使用，以在Adobe Experience Platform中為設定檔提供最佳選件。
 
-由於您已知道如何根據先前的啟用模組定義區段，讓我們快速重新造訪區段環境：
+由於您已知道如何根據先前的啟用模組定義對象，讓我們快速重新造訪細分環境：
 
 移至&#x200B;**規則**。 按一下&#x200B;**+建立規則**。
 
@@ -106,7 +107,7 @@ ht-degree: 2%
 
 您現在可以為即時客戶個人檔案存取所有屬於聯合結構描述的欄位，並且可以建置任何規則。
 
-您也可前往「**對象** > ``--aepTenantId--``」，重複使用已在Adobe Experience Platform中定義的區段，這也是一件有趣的事。
+您也可前往「**對象** > ``--aepTenantId--``」，重複使用已在Adobe Experience Platform中定義的對象，這也是一件有趣的事。
 
 ![決定規則](./images/decisionruleaud.png)
 

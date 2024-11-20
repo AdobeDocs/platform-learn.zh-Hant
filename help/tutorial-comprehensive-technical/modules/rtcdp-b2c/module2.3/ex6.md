@@ -3,27 +3,28 @@ title: Real-time CDP — 外部受眾
 description: Real-time CDP — 外部受眾
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
 
 # 2.3.6外部對象
 
-在許多情況下，您的公司可能會想要使用其他應用程式的現有區段，以豐富Adobe Experience Platform中的客戶設定檔。
+在許多情況下，您的公司可能會想要使用其他應用程式的現有對象，以擴充Adobe Experience Platform中的客戶設定檔。
 這些外部受眾可能已根據資料科學模型或使用外部資料平台來定義。
 
-Adobe Experience Platform的外部受眾功能可讓您專注於外部受眾的擷取及其啟用，而不需要在Adobe Experience Platform中重新定義對應的詳細區段定義。
+Adobe Experience Platform的外部受眾功能可讓您專注在外部受眾的擷取及其啟用，而不需要在Adobe Experience Platform中重新詳細定義對應的受眾定義。
 
 整個程式分為三個主要步驟：
 
 - 匯入外部對象中繼資料：此步驟旨在將外部對象中繼資料（例如對象名稱）擷取至Adobe Experience Platform。
-- 將外部受眾成員指派給客戶設定檔：此步驟旨在使用外部區段成員資格屬性擴充客戶設定檔。
-- 在Adobe Experience Platform中建立區段：此步驟旨在根據外部對象成員資格建立可操作的區段。
+- 將外部對象成員指派給客戶設定檔：此步驟旨在使用外部對象成員資格屬性擴充客戶設定檔。
+- 在Adobe Experience Platform中建立對象：此步驟旨在根據外部對象成員資格建立可操作的對象。
 
-## 2.3.6.1中繼資料
+## 中繼資料
 
 移至[Adobe Experience Platform](https://experience.adobe.com/platform)。 登入後，您會登入Adobe Experience Platform的首頁。
 
@@ -31,13 +32,13 @@ Adobe Experience Platform的外部受眾功能可讓您專注於外部受眾的�
 
 >[!IMPORTANT]
 >
->用於此練習的沙箱是``--module2sandbox--``！
+>用於此練習的沙箱是``--aepSandboxName--``！
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--module2sandbox--``。 您可以按一下熒幕上方藍線中的文字&#x200B;**[!UICONTROL Production Prod]**&#x200B;來執行此操作。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
 
 ![資料擷取](./images/sb1.png)
 
-雖然區段資料定義了設定檔成為區段一部分的條件，但區段中繼資料是有關區段的資訊，例如區段名稱、說明和狀態。 由於外部受眾中繼資料將會儲存在Adobe Experience Platform中，因此您需要使用身分名稱空間來將中繼資料擷取到Adobe Experience Platform。
+雖然受眾資料會定義個人檔案成為受眾一部分的條件，但受眾中繼資料則是有關受眾的資訊，例如名稱、說明和受眾的狀態。 由於外部受眾中繼資料將會儲存在Adobe Experience Platform中，因此您需要使用身分名稱空間來將中繼資料擷取到Adobe Experience Platform。
 
 ## 2.3.6.1.1外部對象的身分名稱空間
 
@@ -47,19 +48,19 @@ Adobe Experience Platform的外部受眾功能可讓您專注於外部受眾的�
 請注意：
 
 - 身分符號&#x200B;**externalaudiences**&#x200B;將在後續步驟中使用，以參考外部受眾身分。
-- **非人員識別碼**&#x200B;型別用於此身分名稱空間，因為此名稱空間不是用來識別客戶設定檔，而是用來識別區段。
+- **非人員識別碼**&#x200B;型別用於此身分名稱空間，因為此名稱空間並非用來識別客戶設定檔，而是用來識別對象。
 
 ![外部對象識別](images/extAudIdNS.png)
 
 ## 2.3.6.1.2建立外部對象中繼資料結構
 
-外部對象中繼資料是以&#x200B;**區段定義結構描述**&#x200B;為基礎。 您可以在[XDM Github存放庫](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md)中找到更多詳細資料。
+外部對象中繼資料是以&#x200B;**對象定義結構描述**&#x200B;為基礎。 您可以在[XDM Github存放庫](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md)中找到更多詳細資料。
 
 在左側選單中，前往結構描述。 按一下&#x200B;**+建立結構描述**，然後按一下&#x200B;**瀏覽**。
 
 ![外部對象中繼資料結構描述1](images/extAudMDXDM1.png)
 
-若要指派類別，請搜尋&#x200B;**區段定義**。 選取&#x200B;**區段定義**&#x200B;類別並按一下&#x200B;**指派類別**。
+若要指派類別，請搜尋&#x200B;**對象定義**。 選取&#x200B;**對象定義**&#x200B;類別並按一下&#x200B;**指派類別**。
 
 ![外部對象中繼資料結構描述2](images/extAudMDXDM2.png)
 
@@ -203,13 +204,13 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![外部對象中繼資料str 5](images/extAudMDstr5.png)
 
-## 2.3.6.2區段會籍
+## 對象會籍
 
-有了可用的外部受眾中繼資料，您現在可以擷取特定客戶設定檔的區段會籍。
+有了可用的外部對象中繼資料，您現在可以擷取特定客戶設定檔的對象成員資格。
 
-您現在需要準備設定檔資料集，以豐富區段會籍結構。 您可以在[XDM Github存放庫](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md)中找到更多詳細資料。
+您現在需要準備設定檔資料集，以擴充對象成員架構。 您可以在[XDM Github存放庫](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md)中找到更多詳細資料。
 
-## 2.3.6.2.1建立外部對象成員資格結構
+### 建立外部對象成員資格結構
 
 在右方功能表中，移至&#x200B;**結構描述**。 按一下&#x200B;**建立結構描述**，然後按一下&#x200B;**XDM個別設定檔**。
 
@@ -237,7 +238,7 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![外部對象設定檔結構描述5](images/extAudPrXDM5.png)
 
-## 2.3.6.2.2建立外部對象成員資格資料集
+### 建立外部對象成員資格資料集
 
 在&#x200B;**結構描述**&#x200B;中，移至&#x200B;**瀏覽**。 搜尋並按一下您在上一步建立的`--aepUserLdap-- - External Audiences Membership`結構描述。 接著，按一下&#x200B;**從結構描述建立資料集**。
 
@@ -251,7 +252,7 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![外部對象中繼資料DS 3](images/extAudPrDS3.png)
 
-## 2.3.6.2.3建立HTTP API Source連線
+### 建立HTTP API Source連線
 
 
 接下來，您需要設定HTTP API Source Connector ，將中繼資料擷取至資料集。
@@ -294,7 +295,7 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![外部對象中繼資料http 4](images/extAudPrhttp4a.png)
 
-## 2.3.6.2.4擷取外部對象成員資格資料
+### 擷取外部對象成員資格資料
 
 在您的Source Connector概觀標籤上，按一下&#x200B;**...**，然後按一下&#x200B;**複製結構描述承載**。
 
@@ -346,7 +347,7 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![外部對象中繼資料str 2](images/extAudPrstr2.png)
 
-## 2.3.6.2.5驗證外部對象成員資格擷取
+### 驗證外部對象成員資格擷取
 
 處理完成後，您可以使用查詢服務檢查資料集中的資料可用性。
 
@@ -368,7 +369,7 @@ select * from --aepUserLdap--_external_audiences_membership
 
 ![外部對象中繼資料str 5](images/extAudPrstr5.png)
 
-## 2.3.6.3建立區段
+## 建立區段
 
 現在您已準備好對外部對象採取行動。
 在Adobe Experience Platform中，採取動作的途徑包括建立區段、填入個別受眾並將這些受眾分享至目的地。
@@ -396,7 +397,7 @@ select * from --aepUserLdap--_external_audiences_membership
 
 您的區段現已準備就緒，可傳送至目的地進行啟用。
 
-## 2.3.6.4視覺化您的客戶設定檔
+## 視覺化您的客戶設定檔
 
 您現在也可以將客戶設定檔中的區段資格視覺化。 移至&#x200B;**設定檔**，使用身分識別名稱空間&#x200B;**Demo System - CRMID**&#x200B;並提供身分識別`--aepUserLdap---profile-test-01` （您做為練習6.6.2.4的一部分使用），然後按一下&#x200B;**檢視**。 接著，按一下&#x200B;**設定檔識別碼**&#x200B;以開啟設定檔。
 

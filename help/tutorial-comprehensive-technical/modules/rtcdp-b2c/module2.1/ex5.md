@@ -4,10 +4,10 @@ description: 在客服中心檢視您的即時客戶個人檔案的實際運作�
 kt: 5342
 doc-type: tutorial
 exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 2%
+source-wordcount: '317'
+ht-degree: 3%
 
 ---
 
@@ -50,11 +50,9 @@ ht-degree: 2%
 | 電子郵件ID | woutervangeluwe+18112024-01@gmail.com |
 | 行動電話號碼ID | +32473622044+18112024-01 |
 
-當客戶致電您的客服中心時，可使用電話號碼來識別客戶。 因此，在本練習中，您將使用電話號碼來擷取CX應用程式中的客戶設定檔。
-
 ![示範](./images/19.png)
 
-您現在會看到客服中心中理想的資訊，讓客服中心員工在與客戶交談時，可以立即取得所有相關資訊。
+現在，您會看到客服中心最理想的顯示資訊，以便客服中心代理人在與客戶交談時，能夠立即取得所有相關資訊。
 
 ![示範](./images/20.png)
 

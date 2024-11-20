@@ -4,7 +4,7 @@ description: 讓資料工程師、資料分析師、資料架構師、資料科�
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
 source-wordcount: '1524'
 ht-degree: 2%
@@ -84,7 +84,7 @@ ht-degree: 2%
 - **描述：**&#x200B;在這個基礎模組中，您將從網站擷取資料到Platform
 - **時間投資：** 120分鐘
 
-[1.3同盟對象組合](./modules/datacollection/module1.3/fac.md)
+[1.3同盟對象構成](./modules/datacollection/module1.3/fac.md)
 
 - **對象：**&#x200B;資料分析師、資料工程師、資料架構師
 - **必要條件：**&#x200B;存取Adobe Experience Platform

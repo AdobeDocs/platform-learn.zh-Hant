@@ -4,9 +4,9 @@ description: Foundation — 即時客戶個人檔案 — 視覺化您自己的�
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2287'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 內容
 
-在即時客戶個人檔案中，所有個人檔案資料都會與事件資料一起顯示，以及顯示現有的區段會籍。 顯示的資料可來自任何地方，包括Adobe應用程式和外部解決方案。 這是Adobe Experience Platform中功能最強大的檢視方式，也是體驗記錄系統。
+在即時客戶個人檔案中，所有個人檔案資料都會與事件資料一起顯示，以及顯示現有的受眾會籍。 顯示的資料可來自任何地方，包括Adobe應用程式和外部解決方案。 這是Adobe Experience Platform中功能最強大的檢視方式，也是體驗記錄系統。
 
 即時客戶個人檔案可供所有Adobe應用程式使用，也可以供呼叫中心或店內客戶服務應用程式等外部解決方案使用。 方法是將這些外部解決方案連線至Adobe Experience Platform的API。
 
@@ -58,9 +58,6 @@ ht-degree: 1%
 
 ![Adobe I/O新整合](./images/api1.png)
 
-按一下&#x200B;**Adobe Experience Platform**圖示。
-/images/api2.png)
-
 選取&#x200B;**Experience PlatformAPI**&#x200B;並按一下&#x200B;**下一步**。
 
 ![Adobe I/O新整合](./images/api3.png)
@@ -75,7 +72,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 產品設定檔名稱在您的Adobe Experience Platform執行個體中會有所不同，因為這些名稱是執行個體專用名稱。 您需要至少選取一個具有適當存取許可權的產品設定檔，這些設定檔可在Adobe Admin Console和AEP許可權UI中設定。
+> 產品設定檔名稱在Adobe Experience Platform例項中會因例項而異。 您需要至少選取一個具有適當存取許可權的產品設定檔，這些設定檔可在Adobe Admin Console和AEP許可權UI中設定。
 
 按一下&#x200B;**儲存設定的API**。
 
@@ -119,7 +116,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 產品設定檔名稱在您的Adobe Experience Platform執行個體中會有所不同，因為這些名稱是執行個體專用名稱。 您需要至少選取一個具有適當存取許可權的產品設定檔，這些設定檔可在Adobe Admin Console和AEP許可權UI中設定。
+> 產品設定檔名稱在Adobe Experience Platform例項中會因例項而異。 您需要至少選取一個具有適當存取許可權的產品設定檔，這些設定檔可在Adobe Admin Console和AEP許可權UI中設定。
 
 ![權限](./images/perm1.png)
 
@@ -150,7 +147,7 @@ Postman中有2個概念：「環境」和「集合」。
 - 「環境」包含您所有或多或少一致的環境變數。 在環境中，您可以找到類似平台環境的IMSOrg，以及您的私密金鑰等安全性憑證。 環境檔案是您在上一個練習中的Adobe I/O設定期間下載的檔案，其名稱如下： **`oauth_server_to_server.postman_environment.json`**。
 
 - 集合包含您可以使用的許多API請求。 我們將使用2個集合
-   - 1個AdobeI/0驗證的集合
+   - 1個用於Adobe I/O驗證的集合
    - 1此單元練習的集合
    - 1個用於Real-Time CDP模組中練習的集合，用於目的地製作
 
@@ -632,7 +629,7 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（極長的ac
 
 您不需要使用ECID向Adobe Experience Platform的即時設定檔請求ExperienceEvent資料，您可以使用任何名稱空間中的任何ID來請求此資料。
 
-下一步： [2.1.4建立區段 — UI](./ex4.md)
+下一步： [2.1.4建立對象 — UI](./ex4.md)
 
 [返回模組2.1](./real-time-customer-profile.md)
 
