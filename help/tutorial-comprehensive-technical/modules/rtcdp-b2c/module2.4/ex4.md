@@ -1,21 +1,38 @@
 ---
-title: Microsoft Azure事件中心的區段啟用 — 啟用區段
-description: Microsoft Azure事件中心的區段啟用 — 啟用區段
+title: Audience Activation至Microsoft Azure事件中心 — 建立對象
+description: Audience Activation至Microsoft Azure事件中心 — 建立對象
 kt: 5342
 doc-type: tutorial
 exl-id: 56f6a6dc-82aa-4b64-a3f6-b6f59c484ccb
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 1%
+source-wordcount: '338'
+ht-degree: 2%
 
 ---
 
-# 2.4.4啟動區段
+# 2.4.4建立對象
 
-## 2.4.4.1將區段新增至Azure事件中心目的地
+## 簡介
 
-在本練習中，您會將區段`--aepUserLdap-- - Interest in Equipment`新增至`--aepUserLdap---aep-enablement` Azure事件中心目的地。
+您將建立一個簡單的對象：
+
+- 客戶造訪CitiSignal示範網站的&#x200B;**計畫**&#x200B;頁面時，將有資格對計畫&#x200B;**感興趣。**
+
+### 很高興知道
+
+當您符合某個受眾的資格，而該受眾屬於某個目的地的啟用清單時，Real-time CDP就會觸發該目的地的啟用。 若是如此，將傳送至該目的地的對象資格承載將包含&#x200B;**您的客戶設定檔符合資格的所有對象**。
+
+此模組的目標是顯示您客戶設定檔的對象資格近乎即時傳送至事件中心目的地。
+
+### 對象狀態
+
+Adobe Experience Platform中的對象資格一律具有&#x200B;**status** — 屬性，且可為下列其中一項：
+
+- **已實現**：這表示有新的對象資格
+- **已退出**：這表示設定檔不再符合對象的資格
+
+## 建立對象
 
 前往此URL登入Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 
@@ -27,39 +44,29 @@ ht-degree: 1%
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-移至&#x200B;**目的地**，然後按一下&#x200B;**瀏覽**。 然後您會看到所有可用的目的地。 找到您的目的地，然後如下所示按一下&#x200B;**+**&#x200B;圖示。
+移至&#x200B;**對象**。 按一下&#x200B;**+建立對象**&#x200B;按鈕。
 
-![5-01-select-destination.png](./images/5-01-select-destination.png)
+![資料擷取](./images/seg.png)
 
-您將會看到此訊息。 使用您的ldap搜尋您的區段，並從區段清單中選取`--aepUserLdap-- - Interest in Equipment`。
+選取&#x200B;**建置規則**&#x200B;並按一下&#x200B;**建立**。
 
-按一下&#x200B;**下一步**。
+![資料擷取](./images/seg1.png)
 
-![5-04-select-segment.png](./images/5-04-select-segment.png)
+為對象命名`--aepUserLdap-- - Interest in Plans`、將評估方法設為&#x200B;**Edge**，並從體驗事件新增頁面名稱。
 
-Adobe Experience Platform Real-time CDP可將裝載傳送至兩種型別的目的地：區段目的地和設定檔目的地。
+按一下&#x200B;**事件**，然後拖放&#x200B;**XDM ExperienceEvent >網頁>網頁詳細資料>名稱**。 輸入&#x200B;**plans**&#x200B;作為值：
 
-區段目的地會收到預先定義的區段資格裝載，稍後將討論。 這類裝載包含&#x200B;**所有**&#x200B;特定設定檔的區段資格。 即使區段不在目的地的啟用清單中。 **Azure事件中樞**&#x200B;和&#x200B;**AWS Kinesis**&#x200B;就是這類區段目的地的範例。
+![4-05-create-ee-2.png](./images/405createee2.png)
 
-以設定檔為基礎的目的地可讓您從XDM設定檔聯合結構描述中挑選任何屬性(firstName、lastName、...)，並將其包含在啟動裝載中。 **電子郵件行銷**&#x200B;就是這類目的地的範例。
+拖放&#x200B;**XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**。 輸入`--aepUserLdap--`作為值，將比較引數設定為&#x200B;**contains**，然後按一下&#x200B;**Publish**：
 
-由於您的Azure事件中心目的地是&#x200B;**區段**&#x200B;目的地，請選取欄位`--aepTenantId--.identification.core.ecid`作為範例。
+![4-05-create-ee-2-brand.png](./images/405createee2brand.png)
 
-按一下&#x200B;**新增欄位**，按一下瀏覽結構描述並選取欄位`--aepTenantId--identification.core.ecid` （刪除任何其他會自動顯示的欄位）。
+您的對象現已發佈。
 
-按一下&#x200B;**下一步**。
+![4-05-create-ee-2-brand.png](./images/405createee2brand1.png)
 
-![5-05-select-attributes.png](./images/5-05-select-attributes.png)
-
-按一下&#x200B;**完成**。
-
-![5-06-destination-finish.png](./images/5-06-destination-finish.png)
-
-您的區段現在已對Microsoft事件中心目的地啟用。
-
-![5-07-destination-segment-added.png](./images/5-07-destination-segment-added.png)
-
-下一步： [2.4.5建立您的Microsoft Azure專案](./ex5.md)
+下一步： [2.4.5啟用您的對象](./ex5.md)
 
 [返回模組2.4](./segment-activation-microsoft-azure-eventhub.md)
 

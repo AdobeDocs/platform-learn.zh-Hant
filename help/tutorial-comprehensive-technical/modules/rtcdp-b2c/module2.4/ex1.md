@@ -1,131 +1,132 @@
 ---
-title: Microsoft Azure事件中樞的區段啟用 — Azure中的設定事件中樞
-description: Microsoft Azure事件中樞的區段啟用 — Azure中的設定事件中樞
+title: Microsoft Azure事件中樞的區段啟用 — 設定您的Microsoft Azure環境
+description: Microsoft Azure事件中樞的區段啟用 — 設定您的Microsoft Azure環境
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 772b4d2b-144a-4f29-a855-8fd3493a85d2
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 1%
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
-# 2.4.1設定您的Microsoft Azure EventHub環境
+# 2.4.1設定環境
 
-Azure事件中樞是一種高度可擴充的發佈 — 訂閱服務，每秒可以擷取數百萬個事件，並將它們串流到多個應用程式中。 如此一來，您就可以處理和分析連線裝置和應用程式所產生的大量資料。
+## 建立Azure訂閱
 
-## 2.4.1.1什麼是Azure事件中樞？
+>[!NOTE]
+>
+>如果您已有Azure訂閱，可以略過此步驟。 請繼續進行該案例的下一個練習。
 
-Azure事件中樞是巨量資料串流平台和事件擷取服務。 其每秒可接收及處理數百萬個事件。 傳送到事件中樞的資料可以使用任何即時分析提供者或批次/儲存配接卡進行轉換和儲存。
+移至[https://portal.azure.com](https://portal.azure.com)並使用您的Azure帳戶登入。 如果您沒有電子郵件地址，請使用個人電子郵件地址來建立您的Azure帳戶。
 
-事件中樞代表事件管道的&#x200B;**前門**，在解決方案架構中通常稱為事件擷取器。 事件擷取器是位於事件發佈者(例如Adobe Experience Platform RTCDP)和事件消費者之間的元件或服務，以將事件資料流的產生與這些事件的消費分離。 事件中樞提供具有時間保留緩衝的統一串流平台，將事件製作者與事件消費者分離。
+![02-azure-portal-email.png](./images/02azureportalemail.png)
 
-## 2.4.1.2建立事件中樞名稱空間
+成功登入後，您會看到下列畫面：
 
-移至[https://portal.azure.com/#home](https://portal.azure.com/#home)並選取&#x200B;**建立資源**。
+![03-azure-logged-in.png](./images/03azureloggedin.png)
 
-![1-01-open-azure-portal.png](./images/1-01-open-azure-portal.png)
+按一下左側功能表並選取&#x200B;**所有資源**，如果您尚未訂閱，將會顯示Azure訂閱畫面。 在這種情況下，請選取&#x200B;**開始使用Azure免費試用**。
 
-在資源畫面中，在搜尋列中輸入&#x200B;**事件**，並從下拉式清單中選取&#x200B;**事件中樞**：
+![04-azure-start-subscribe.png](./images/04azurestartsubscribe.png)
 
-![1-02-search-event-hubs.png](./images/1-02-search-event-hubs.png)
+填寫Azure訂閱表單，提供您的行動電話和信用卡以進行啟用（您將有30天的免費套餐，除非您升級，否則不會向您收費）。
 
-按一下&#x200B;**建立**：
+訂閱程式完成後，您就可以開始了：
 
-![1-03-event-hub-create.png](./images/1-03-event-hub-create.png)
+![06-azure-subscription-ok.png](./images/06azuresubscriptionok.png)
 
-如果這是您第一次在Azure中建立資源，則需要建立新的&#x200B;**資源群組**。 如果您已經有資源群組，您可以選取它（或建立新資源群組）。
+## 安裝Visual Code Studio
 
-選取&#x200B;**建立新的**，將您的群組命名為`--aepUserLdap---aep-enablement`。
+您將使用Microsoft Visual Code Studio來管理您的Azure專案。 您可以透過[此連結](https://code.visualstudio.com/download)下載。 請遵循同一網站上特定作業系統的安裝指示。
 
-![1-04-create-resource-group.png](./images/1-04-create-resource-group.png)
+## 安裝視覺化程式碼擴充功能
 
-完成欄位測試，如下所示：
+從[https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)安裝適用於Visual Studio Code的Azure函式。 按一下安裝按鈕：
 
-- 名稱空間：定義您的名稱空間，必須是唯一的，請使用以下模式`--aepUserLdap---aep-enablement`
-- 位置： **西歐**&#x200B;參考阿姆斯特丹的Azure資料中心
-- 訂價層： **基本**
-- 輸送量單位： **1**
+![07-azure-code-extension-install.png](./images/07azurecodeextensioninstall.png)
 
-![1-05-create-namespace.png](./images/1-05-create-namespace.png)
+安裝Azure帳戶並從[https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)登入Visual Studio Code。 按一下安裝按鈕：
 
-按一下&#x200B;**檢閱+建立**。
+![08-azure-account-extension-install.png](./images/08azureaccountextensioninstall.png)
 
-![1-06-namespace-review-create.png](./images/1-06-namespace-review-create.png)
+## 安裝節點.js
 
-按一下&#x200B;**建立**。
+>[!NOTE]
+>
+>如果您已安裝node.js，則可以略過此步驟。 請繼續進行該案例的下一個練習。
 
-![1-07-namespace-create.png](./images/1-07-namespace-create.png)
+### macOS
 
-資源群組的部署可能需要1-2分鐘，部署成功後，您將會看到下列畫面：
+確定先安裝[Homebrew](https://brew.sh/)。 請依照指示[這裡](https://brew.sh/)。
 
-![1-08-namespace-deploy.png](./images/1-08-namespace-deploy.png)
+![節點](./images/brew.png)
 
-## 2.4.1.3在Azure中設定您的事件中樞
+安裝Homebrew後，請執行此命令：
 
-移至[https://portal.azure.com/#home](https://portal.azure.com/#home)並選取&#x200B;**所有資源**。
+```javascript
+brew install node
+```
 
-![1-09-all-resources.png](./images/1-09-all-resources.png)
+### Windows
 
-從資源清單中，選取您的`--aepUserLdap---aep-enablement`名稱空間：
+直接從[nodejs.org](https://nodejs.org/en/)網站下載[Windows Installer](https://nodejs.org/en/#home-downloadhead)。
 
-![1-10-list-resources.png](./images/1-10-list-resources.png)
+## 驗證node.js版本
 
-在`--aepUserLdap---aep-enablement`詳細資訊畫面中，選取&#x200B;**事件中樞**：
+此模組需要安裝node.js版本18。 任何其他版本的node.js都可能會導致此練習發生問題。
 
-![1-11-eventhub-namespace.png](./images/1-11-eventhub-namespace.png)
+在繼續之前，請立即驗證您的node.js版本。
 
-按一下&#x200B;**+事件中樞**。
+執行此命令以驗證您的node.js版本：
 
-![1-12-add-event-hub.png](./images/1-12-add-event-hub.png)
+```javascript
+node -v
+```
 
-使用`--aepUserLdap---aep-enablement-event-hub`作為名稱，然後按一下&#x200B;**建立**。
+如果您的版本低於或高於18，則需要升級或降級。
 
-![1-13-create-event-hub.png](./images/1-13-create-event-hub.png)
+### 在macOS上升級/降級node.js版本
 
-按一下事件中樞名稱空間中的&#x200B;**事件中樞**。 您現在應該會看到&#x200B;**事件中心**&#x200B;已列出。 如果是這種情況，您可以繼續進行下一個練習。
+確定您已安裝封裝&#x200B;**n**。
 
-![1-14-event-hub-list.png](./images/1-14-event-hub-list.png)
+若要安裝封裝&#x200B;**n**，請執行此命令：
 
-## 2.4.1.4設定您的Azure儲存體帳戶
+```javascript
+sudo npm install -g n
+```
 
-若要在稍後的練習中偵錯Azure事件中樞功能，您必須提供Azure儲存體帳戶，作為Visual Studio Code專案設定的一部分。 您現在將建立該Azure儲存體帳戶。
+如果您版本低於或高於版本12，請執行此命令以升級或降級：
 
-移至[https://portal.azure.com/#home](https://portal.azure.com/#home)並選取&#x200B;**建立資源**。
+```javascript
+sudo n 18
+```
 
-![1-15-event-hub-storage.png](./images/1-15-event-hub-storage.png)
+### 在Windows上升級/降級node.js版本
 
-在搜尋中輸入&#x200B;**儲存體**，並從清單中選取&#x200B;**儲存體帳戶**。
+從「Windows >控制檯>新增或移除程式」解除安裝node.js。
 
-![1-16-event-hub-search-storage.png](./images/1-16-event-hub-search-storage.png)
+正在從[nodejs.org](https://nodejs.org/en/)網站安裝所需版本。
 
-選取「**建立**」。
+## 安裝NPM套件：要求
 
-![1-17-event-hub-create-storage.png](./images/1-17-event-hub-create-storage.png)
+您必須在node.js安裝程式中安裝封裝&#x200B;**要求**。
 
-指定您的&#x200B;**資源群組** （在本練習開始時建立），使用`--aepUserLdap--aepstorage`作為儲存體帳戶名稱，並選取&#x200B;**本機備援儲存體(LRS)**，然後按一下&#x200B;**檢閱+建立**。
+若要安裝封裝&#x200B;**要求**，請執行此命令：
 
-![1-18-event-hub-create-review-storage.png](./images/1-18-event-hub-create-review-storage.png)
+```javascript
+npm install request
+```
 
-按一下&#x200B;**建立**。
+## 安裝Azure函式核心工具：
 
-![1-19-event-hub-submit-storage.png](./images/1-19-event-hub-submit-storage.png)
+```
+brew tap azure/functions
+brew install azure-functions-core-tools@4
+```
 
-您的儲存帳戶建立將需要幾秒鐘的時間：
-
-![1-20-event-hub-deploy-storage.png](./images/1-20-event-hub-deploy-storage.png)
-
-完成後，您的畫面將會顯示&#x200B;**前往資源**&#x200B;按鈕。
-
-按一下&#x200B;**Microsoft Azure**。
-
-![1-21-event-hub-deploy-ready-storage.png](./images/1-21-event-hub-deploy-ready-storage.png)
-
-您的存放裝置帳戶現在會顯示在&#x200B;**最近使用的資源**&#x200B;下。
-
-![1-22-event-hub-deploy-resources-list.png](./images/1-22-event-hub-deploy-resources-list.png)
-
-下一步： [2.4.2在Adobe Experience Platform中設定Azure事件中心目的地](./ex2.md)
+下一步： [2.4.2設定您的Microsoft Azure EventHub環境](./ex2.md)
 
 [返回模組2.4](./segment-activation-microsoft-azure-eventhub.md)
 

@@ -1,43 +1,75 @@
 ---
-title: Microsoft Azure事件中心的區段啟用 — 建立串流區段
-description: Microsoft Azure事件中心的區段啟用 — 建立串流區段
+title: Audience ActivationMicrosoft Azure事件中心 — 在Adobe Experience Platform中設定事件中心RTCDP目的地
+description: Audience ActivationMicrosoft Azure事件中心 — 在Adobe Experience Platform中設定事件中心RTCDP目的地
 kt: 5342
 doc-type: tutorial
 exl-id: 86bc3afa-16a9-4834-9119-ce02445cd524
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 1%
+source-wordcount: '541'
+ht-degree: 0%
 
 ---
 
-# 2.4.3建立區段
+# 2.4.3在Adobe Experience Platform中設定Azure事件中樞目的地
 
-## 2.4.3.1簡介
+## 識別必要的Azure連線引數
 
-您將建立一個簡單的區段：
+若要在Adobe Experience Platform中設定事件中心目的地，您需要執行下列事項：
 
-- 當客戶設定檔造訪Luma示範網站的&#x200B;**裝置**&#x200B;頁面時，**對裝置的興趣**。
+- 事件中樞名稱空間
+- 事件中樞
+- Azure SAS金鑰名稱
+- Azure SAS金鑰
 
-### 很高興知道
+已在上一個練習中定義事件中心和EventHub名稱空間： [在Azure中設定事件中心](./ex2.md)
 
-當您符合某個區段的資格（該區段屬於某個目的地的啟用清單的一部分）時，Real-time CDP會觸發對該目的地的啟用。 若是如此，將傳送至該目的地的區段資格承載將包含&#x200B;**您的設定檔符合資格的所有區段**。
+### 事件中樞名稱空間
 
-此模組的目標是顯示您的客戶設定檔的區段資格已即時傳送至&#x200B;**您的**&#x200B;事件中樞目的地。
+若要在Azure入口網站中查詢上述資訊，請導覽至[https://portal.azure.com/#home](https://portal.azure.com/#home)。 請確定您使用正確的Azure帳戶。
 
-### 區段狀態
+按一下Azure入口網站中的&#x200B;**所有資源**：
 
-Adobe Experience Platform中的區段資格一律具有&#x200B;**status** — 屬性，且可為下列其中一項：
+![2-01-azure-all-resources.png](./images/201azureallresources.png)
 
-- **已實現**：這表示有新的區段資格
-- **existing**：這表示有現有的區段資格
-- **已退出**：這表示設定檔不再符合區段的資格
+在清單中找到您的&#x200B;**事件中樞名稱空間**，然後按一下它。
 
-## 2.4.3.2建立區段
+![2-01-azure-all-resources.png](./images/201azureallresources1.png)
 
-建立區段在[模組2.3](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)中有詳細說明。
+您的&#x200B;**事件中樞名稱空間**&#x200B;名稱現在清晰可見。 它應該類似於`--aepUserLdap---aep-enablement`。
 
-### 建立區段
+![2-01-azure-all-resources.png](./images/201azureallresources2.png)
+
+### 事件中樞
+
+在您的&#x200B;**事件中樞名稱空間**&#x200B;頁面上，按一下&#x200B;**實體>事件中樞**&#x200B;以取得事件中樞名稱空間中定義的事件中樞清單，如果您遵循上一個練習中所使用的命名慣例，您將會找到名為`--aepUserLdap---aep-enablement-event-hub`的事件中樞。 記下它，您將在下一個練習中用到它。
+
+![2-04-event-hub-selected.png](./images/204eventhubselected.png)
+
+### SAS金鑰名稱
+
+在您的&#x200B;**事件中樞名稱空間**&#x200B;頁面上，按一下&#x200B;**設定>共用存取原則**。 您將會看到共用存取原則清單。 我們正在尋找的SAS金鑰是&#x200B;**RootManageSharedAccessKey**，即**SAS金鑰名稱。 寫下來。
+
+![2-05-select-sas.png](./images/205selectsas.png)
+
+### SAS金鑰值
+
+接著，按一下&#x200B;**RootManageSharedAccessKey**&#x200B;以取得SAS金鑰值。 然後按&#x200B;**複製到剪貼簿**&#x200B;圖示複製&#x200B;**主索引鍵**，在此例中為`pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY=`。
+
+![2-07-sas-key-value.png](./images/207saskeyvalue.png)
+
+### 目的地值摘要
+
+此時，您應該已找出在Adobe Experience Platform Real-time CDP中定義Azure事件中心目的地所需的所有值。
+
+| 目的地屬性名稱 | 目的地屬性值 | 範例值 |
+|---|---|---|
+| sasKeyName | SAS金鑰名稱 | RootManageSharedAccessKey |
+| sasKey | SAS金鑰值 | pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY= |
+| 名稱空間 | 事件中樞名稱空間 | `--aepUserLdap---aep-enablement` |
+| eventHubName | 事件中樞 | `--aepUserLdap---aep-enablement-event-hub` |
+
+## 在Adobe Experience Platform中建立Azure事件中心目的地
 
 前往此URL登入Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 
@@ -49,29 +81,31 @@ Adobe Experience Platform中的區段資格一律具有&#x200B;**status** — �
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-移至&#x200B;**區段**。 按一下&#x200B;**+建立區段**&#x200B;按鈕。
+前往&#x200B;**目的地**，然後前往&#x200B;**目錄**。 選取&#x200B;**雲端儲存空間**，前往&#x200B;**Azure事件中樞**，然後按一下&#x200B;**設定**。
 
-![資料擷取](./images/seg.png)
+![2-08-list-destinations.png](./images/208listdestinations.png)
 
-為您的區段命名`--aepUserLdap-- - Interest in Equipment`並新增頁面名稱體驗事件：
+選取&#x200B;**標準驗證**。 填寫您在上一個練習中所收集的連線詳細資料。 接著，按一下&#x200B;**連線到目的地**。
 
-按一下&#x200B;**事件**，然後拖放&#x200B;**XDM ExperienceEvent >網頁>網頁詳細資料>名稱**。 輸入&#x200B;**裝置**&#x200B;作為值：
+![2-09-destination-values.png](./images/209destinationvalues.png)
 
-![4-05-create-ee-2.png](./images/4-05-create-ee-2.png)
+如果認證正確，您將會看到確認： **已連線**。
 
-拖放&#x200B;**XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**。 輸入`--aepUserLdap--`做為值，將比較引數設定為&#x200B;**包含**，然後按一下&#x200B;**儲存**：
+![2-09-destination-values.png](./images/209destinationvaluesa.png)
 
-![4-05-create-ee-2-brand.png](./images/4-05-create-ee-2-brand.png)
+您現在需要以`--aepUserLdap---aep-enablement`格式輸入名稱和描述。 輸入&#x200B;**eventHubName** （請參閱上一個練習，看起來像這樣： `--aepUserLdap---aep-enablement-event-hub`），然後按一下&#x200B;**下一步**。
 
-### PQL定義
+![2-10-create-destination.png](./images/210createdestination.png)
 
-您區段的PQL看起來像這樣：
+您可以選擇選取資料治理原則。 按一下&#x200B;**儲存並結束**。
 
-```code
-CHAIN(xEvent, timestamp, [C0: WHAT(web.webPageDetails.name.equals("equipment", false) and _experienceplatform.demoEnvironment.brandName.contains("--aepUserLdap--", false))])
-```
+![2-11-save-exit-activation.png](./images/211saveexitactivation.png)
 
-下一步： [2.4.4啟動區段](./ex4.md)
+您的目的地現在已建立，並可在Adobe Experience Platform中使用。
+
+![2-12-destination-created.png](./images/212destinationcreated.png)
+
+下一步： [2.4.4建立對象](./ex4.md)
 
 [返回模組2.4](./segment-activation-microsoft-azure-eventhub.md)
 
