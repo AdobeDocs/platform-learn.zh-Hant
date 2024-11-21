@@ -4,7 +4,7 @@ description: 建立及設定自訂webhook
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -149,7 +149,7 @@ ht-degree: 1%
 
 ![Adobe Experience Platform資料彙集設定](./images/hook2.png)
 
-將檢視切換為您在前面的其中一個步驟中使用的自訂webhook [https://webhook.site/](https://webhook.site/)。 您現在應該有與此類似的檢視，網路要求會顯示在左側功能表中。 您看到的&#x200B;**xdm**&#x200B;裝載已篩選出上方顯示的網路要求。
+將檢視切換為您在前面的其中一個步驟中使用的自訂webhook [https://pipedream.com/requestbin](https://pipedream.com/requestbin)。 您現在應該有與此類似的檢視，網路要求會顯示在左側功能表中。 您看到的&#x200B;**xdm**&#x200B;裝載已篩選出上方顯示的網路要求。
 
 ![Adobe Experience Platform資料彙集設定](./images/hook3.png)
 
@@ -161,9 +161,9 @@ ht-degree: 1%
 
 ![Adobe Experience Platform資料彙集設定](./images/hook5.png)
 
-您現在已將Web SDK/XDM裝載的伺服器端事件轉送設定為外部自訂webhook。 在接下來的練習中，您將設定類似的方法，並將相同資料傳送至Google和AWS環境。
+您現在已將Web SDK/XDM裝載的伺服器端事件轉送設定為外部自訂webhook。 在接下來的練習中，您將設定類似的方法，並將相同的資料傳送至Google Cloud Platform和AWS。
 
-下一步： [2.5.4建立並設定Google雲端功能](./ex4.md)
+下一步： [2.5.4將事件轉送到GCP Pub/Sub](./ex4.md)
 
 [返回模組2.5](./aep-data-collection-ssf.md)
 

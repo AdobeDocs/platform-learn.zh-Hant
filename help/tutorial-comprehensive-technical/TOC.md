@@ -5,7 +5,7 @@ user-guide-description: 此實作教學課程涵蓋Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
+source-git-commit: f40ed48cdf9f6f05d5a5cc28d152a67448ed8a16
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 4%
@@ -92,8 +92,8 @@ ht-degree: 4%
       + [2.5.1建立Adobe Experience Platform資料收集事件轉送屬性](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex1.md)
       + [2.5.2更新您的資料串流，讓資料可用於您的Adobe Experience Platform資料收集伺服器屬性](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex2.md)
       + [2.5.3建立和設定自訂webhook](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex3.md)
-      + [2.5.4建立及設定Google雲端功能](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
-      + [2.5.5前往AWS生態系統推進事件](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
+      + [2.5.4將事件轉送至GCP Pub/Sub](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
+      + [2.5.5將事件轉送至AWS Kinesis和AWS S3](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/summary.md)
    + 2.6將資料從Apache Kafka串流至Real-Time CDP {#module26}
       + [概觀](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.6/aep-apache-kafka.md)

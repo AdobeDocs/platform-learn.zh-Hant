@@ -4,9 +4,9 @@ description: 在此單元中，您會使用先前設定的資料集、結構描�
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 在本練習中，您將建立並設定自訂webhook，並且開始將Web SDK收集的資料轉送至該自訂webhook。
 
-[2.5.4建立及設定Google雲端功能](./ex4.md)
+[2.5.4將事件轉送至GCP Pub/Sub](./ex4.md)
 
 在本練習中，您將建立並設定Google雲端功能，並將開始將Web SDK收集的資料轉送至Google。
 
-[2.5.5前往AWS生態系統推進事件](./ex5.md)
+[2.5.5將事件轉送至AWS Kinesis和AWS S3](./ex5.md)
 
-在本練習中，您將使用AWS API Gateway、AWS Kinesis、AWS Firehose和AWS S3設定您的AWS環境，之後您將開始轉送Web SDK收集的事件資料。
+在本練習中，您將使用AWS IAM、AWS Kinesis、AWS Firehose和AWS S3設定您的AWS環境，之後您將開始轉送Web SDK所收集的事件資料。
 
 [摘要和優點](./summary.md)
 
