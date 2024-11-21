@@ -4,16 +4,14 @@ description: 在此單元中，您會使用先前設定的資料集、結構描�
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # 2.5 Real-Time CDP連線：事件轉送
-
-**作者：[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)，[Clement Delalande](https://www.linkedin.com/in/clement-delalande/)**
 
 在此單元中，您會使用先前設定的資料集、結構描述和Adobe Experience Platform資料收集使用者端屬性來收集資料，然後將該資料伺服器端轉送至所選擇的端點。
 
@@ -23,10 +21,6 @@ ht-degree: 0%
 - 在Adobe Experience Platform資料彙集中安裝並使用Adobe Cloud Connector擴充功能
 - 建立Google函式端點，並將資料串流至該端點
 - 建立AWS端點並為其串流資料
-
-觀看此影片以瞭解價值、客戶歷程和設定程式：
-
->[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
 
 ## 學習目標
 

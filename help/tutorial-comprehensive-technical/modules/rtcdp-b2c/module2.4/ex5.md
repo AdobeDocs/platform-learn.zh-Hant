@@ -4,7 +4,7 @@ description: Microsoft Azure事件中心Audience Activation — 啟用對象
 kt: 5342
 doc-type: tutorial
 exl-id: 89cfda0e-6c5e-45ab-9506-f0f0f6211e7f
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## 將對象新增至Azure事件中心目的地
 
-在本練習中，您會將對象`--aepUserLdap-- - Interest in Equipment`新增至`--aepUserLdap---aep-enablement` Azure事件中心目的地。
+在本練習中，您會將對象`--aepUserLdap-- - Interest in Plans`新增至`--aepUserLdap---aep-enablement` Azure事件中心目的地。
 
 前往此URL登入Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 

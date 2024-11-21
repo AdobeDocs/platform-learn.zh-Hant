@@ -3,9 +3,10 @@ title: Adobe Experience Platform Data Collection & Real-time Server Side Forward
 description: 更新您的資料串流，讓資料可用於您的Adobe Experience Platform資料收集伺服器屬性
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 1%
 
 ## 2.5.2.1更新您的資料流
 
-在[練習0.2](./../../gettingstarted/gettingstarted/ex2.md)中，您已建立自己的&#x200B;**[!UICONTROL 資料流]**。 您接著使用名稱`--aepUserLdap-- - Demo System Datastream`。
+在[快速入門](./../../gettingstarted/gettingstarted/ex2.md)中，您已建立自己的&#x200B;**[!UICONTROL 資料流]**。 您接著使用名稱`--aepUserLdap-- - Demo System Datastream`。
 
-在本練習中，您需要設定&#x200B;**[!UICONTROL 資料串流]**&#x200B;以搭配您的&#x200B;**[!DNL Data Collection Server property]**&#x200B;使用。
+在本練習中，您需要設定&#x200B;**[!UICONTROL 資料串流]**&#x200B;以搭配您的&#x200B;**資料收集伺服器屬性**&#x200B;使用。
 
 若要這麼做，請前往[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 您將會看到此訊息。 在左側功能表中，按一下&#x200B;**[!UICONTROL 資料串流]**。
 

@@ -4,9 +4,9 @@ description: Microsoft Azure事件中心Audience Activation — 定義Azure函�
 kt: 5342
 doc-type: tutorial
 exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Visual Studio Code可讓您輕鬆……
 
 ![3-05-vsc-create-project.png](./images/vsc2.png)
 
-選取您選擇的本機資料夾以儲存專案，然後按一下&#x200B;**選取**：
+選取或建立您選擇的本機資料夾以儲存專案，然後按一下[選取] ****：
 
 ![3-06-vsc-select-folder.png](./images/vsc3.png)
 
@@ -104,66 +104,73 @@ Visual Studio Code可讓您輕鬆……
 
 ![3-15-vsc-project-add-to-workspace.png](./images/vsc12a.png)
 
-建立專案後，按一下&#x200B;**index.js**&#x200B;在編輯器中開啟檔案：
+建立專案後，在編輯器中開啟檔案`--aepUserLdap---aep-event-hub-trigger.js`：
 
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 
-Adobe Experience Platform傳送至事件中心的裝載將包含對象ID：
+Adobe Experience Platform傳送至事件中心的裝載看起來會像這樣：
 
 ```json
-[{
-"segmentMembership": {
-"ups": {
-"ca114007-4122-4ef6-a730-4d98e56dce45": {
-"lastQualificationTime": "2020-08-31T10:59:43Z",
-"status": "realized"
-},
-"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
-},
-"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
 }
-}
-},
-"identityMap": {
-"ecid": [{
-"id": "08130494355355215032117568021714632048"
-}]
-}
-}]
 ```
 
-將Visual Studio Code的index.js中的程式碼取代為下列程式碼。 每次Real-time CDP將對象資格傳送至事件中心目的地時，都會執行此程式碼。 在我們的範例中，程式碼只是顯示和增強已接收的裝載。 但您可以想像任何型別的功能，以即時處理對象資格。
+使用下列程式碼更新您Visual Studio Code `--aepUserLdap---aep-event-hub-trigger.js`中的程式碼。 每次Real-time CDP將對象資格傳送至事件中心目的地時，都會執行此程式碼。 在此範例中，程式碼只是關於顯示傳入裝載，但您可以想像任何種類的額外功能，以即時處理對象資格，並在資料管道生態系統更下游使用。
+
+檔案`--aepUserLdap---aep-event-hub-trigger.js`中的第11行目前顯示如下：
 
 ```javascript
-// Marc Meewis - Solution Consultant Adobe - 2020
-// Adobe Experience Platform Enablement - Module 2.4
-
-// Main function
-// -------------
-// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
-// Eventhub destination
-// This function enriched the received audience payload with the name of the audience. 
-// You can replace this function with any logic that is require to process and deliver
-// Adobe Experience Platform audiences in real-time to any application or platform that 
-// would need to act upon an AEP audience qualification.
-// 
-
-module.exports = async function (context, eventHubMessages) {
-
-    return new Promise (function (resolve, reject) {
-
-        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
-
-        resolve();
-
-    });    
-
-};
+context.log('Event hub message:', message);
 ```
+
+將`--aepUserLdap---aep-event-hub-trigger.js`中的第11行變更為如下所示：
+
+```javascript
+context.log('Event hub message:', JSON.stringify(message));
+```
+
+總裝載隨後應如下所示：
+
+```javascript
+const { app } = require('@azure/functions');
+
+app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
+    connection: '--aepUserLdap--aepenablement_RootManageSharedAccessKey_EVENTHUB',
+    eventHubName: '--aepUserLdap---aep-enablement-event-hub',
+    cardinality: 'many',
+    handler: (messages, context) => {
+        if (Array.isArray(messages)) {
+            context.log(`Event hub function processed ${messages.length} messages`);
+            for (const message of messages) {
+                context.log('Event hub message:', message);
+            }
+        } else {
+            context.log('Event hub function processed message:', messages);
+        }
+    }
+});
+```
+
 
 結果應如下所示：
 
@@ -175,7 +182,13 @@ module.exports = async function (context, eventHubMessages) {
 
 ![3-17-vsc-run-project.png](./images/vsc14.png)
 
-第一次以偵錯模式執行專案時，您必須附加Azure儲存體帳戶，按一下[選取儲存體帳戶] **，然後選取您先前建立的儲存體帳戶，名為`--aepUserLdap--aepstorage`。**
+第一次以偵錯模式執行專案時，您必須附加Azure儲存體帳戶，請按一下[選取儲存體帳戶]。****
+
+![3-17-vsc-run-project.png](./images/vsc14a.png)
+
+然後選取您先前建立的儲存體帳戶，名為`--aepUserLdap--aepstorage`。
+
+![3-17-vsc-run-project.png](./images/vsc14b.png)
 
 您的專案現在已啟動且執行中，並列出事件中心中的事件。 在下個練習中，您將會在CitiSignal示範網站上示範行為，以符合您的受眾資格。 因此，您將在事件中心觸發函式的終端機中收到對象資格裝載。
 

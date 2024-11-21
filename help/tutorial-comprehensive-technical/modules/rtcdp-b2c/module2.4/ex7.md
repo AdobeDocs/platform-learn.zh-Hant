@@ -3,7 +3,8 @@ title: Audience Activation至Microsoft Azure事件中心 — 動作
 description: Audience Activation至Microsoft Azure事件中心 — 動作
 kt: 5342
 doc-type: tutorial
-source-git-commit: cefebfe0336952f0e3099fd2dd9f4395d453f713
+exl-id: f5b224bf-60b9-46e0-abdb-9d96a7e8c59f
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -76,11 +77,36 @@ For detailed output, run func with --verbose flag.
 
 切換回Visual Studio Code並檢視您的&#x200B;**終端機**&#x200B;標籤，您應該會看到您特定&#x200B;**ECID**&#x200B;的對象清單。 一旦您符合`--aepUserLdap-- - Interest in Plans`對象的資格，此啟用裝載就會立即傳送至您的事件中樞。
 
+![6-06-vsc-activation-realized.png](./images/cs3.png)
+
 當您進一步瞭解對象承載時，可以看到`--aepUserLdap-- - Interest in Plans`處於&#x200B;**已實現**&#x200B;狀態。
 
-**已實現**&#x200B;的對象狀態表示您的設定檔是對象的一部分，而&#x200B;**已退出**&#x200B;狀態表示我們的設定檔已從對象中移除。
+```json
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
+}
+```
 
-![6-06-vsc-activation-realized.png](./images/cs3.png)
+**已實現**&#x200B;的對象狀態表示您的設定檔是對象的一部分，而&#x200B;**已退出**&#x200B;狀態表示我們的設定檔已從對象中移除。
 
 下一步： [摘要與優點](./summary.md)
 

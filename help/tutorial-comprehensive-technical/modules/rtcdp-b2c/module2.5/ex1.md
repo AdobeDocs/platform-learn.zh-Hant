@@ -3,22 +3,19 @@ title: Adobe Experience Platform資料收集和即時事件轉送端轉送 — �
 description: 建立Adobe Experience Platform資料收集事件轉送屬性
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 9c64e57d-c91c-4d4c-923f-91a02edeb2ac
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '737'
 ht-degree: 1%
 
 ---
 
 # 2.5.1建立Adobe Experience Platform資料收集事件轉送屬性
 
->[!NOTE]
->
->Adobe Experience Platform Edge行動擴充功能目前在BETA中。 只有受邀者才能使用此擴充功能。 請聯絡您的Adobe客戶成功案例經理，以瞭解更多資訊，並存取本教學課程的材料。
+## 什麼是Adobe Experience Platform資料收集事件轉送屬性？
 
-## 2.5.1.1什麼是Adobe Experience Platform資料收集事件轉送屬性？
-
-通常在使用Adobe Experience Platform Data Collection收集資料時，會在&#x200B;**使用者端**&#x200B;收集資料。 **使用者端**&#x200B;是網站或行動應用程式之類的環境。 在模組0和模組1中，已深入討論Adobe Experience Platform資料收集使用者端屬性的設定，而您已在您的網站和行動應用程式上實作Adobe Experience Platform資料收集使用者端屬性，以便在客戶與網站和行動應用程式互動時可以在那裡收集資料。
+通常在使用Adobe Experience Platform Data Collection收集資料時，會在&#x200B;**使用者端**&#x200B;收集資料。 **使用者端**&#x200B;是網站或行動應用程式之類的環境。 在「快速入門」和「資料收集」中，已深入討論Adobe Experience Platform資料收集使用者端屬性的設定，且您已將Adobe Experience Platform資料收集使用者端屬性實施至您的網站和行動應用程式，以便在客戶與網站和行動應用程式互動時可以在那裡收集資料。
 
 當互動資料由Adobe Experience Platform資料收集使用者端屬性收集時，網站或行動應用程式會傳送請求給Adobe的Edge。 Edge是Adobe的資料收集環境，也是點按資料流資料進入Adobe生態系統的入口點。 收集到的資料會從Edge傳送至Adobe Experience Platform、Adobe Analytics、Adobe Audience Manager或Adobe Target等應用程式。
 
@@ -28,11 +25,15 @@ ht-degree: 1%
 
 讓我們從建立Adobe Experience Platform資料收集事件轉送屬性開始。
 
-## 2.5.1.2建立Adobe Experience Platform資料收集事件轉送屬性
+## 建立Adobe Experience Platform資料收集事件轉送屬性
 
-移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 在左側功能表中，按一下&#x200B;**事件轉送**。 接著，您會看到所有可用Adobe Experience Platform資料收集事件轉送屬性的總覽。 按一下&#x200B;**新增屬性**&#x200B;按鈕。
+移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 在左側功能表中，按一下&#x200B;**事件轉送**。 接著，您會看到所有可用Adobe Experience Platform資料收集事件轉送屬性的總覽。 按一下&#x200B;**建立屬性**&#x200B;按鈕。
 
 ![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
+
+或者，如果已經建立其他事件轉送屬性，UI看起來會有點不同。 在這種情況下，請按一下&#x200B;**新增屬性**。
+
+![Adobe Experience Platform Data Collection SSF](./images/launchhomea.png)
 
 您現在需要輸入Adobe Experience Platform資料收集事件轉送屬性的名稱。 作為命名慣例，請使用`--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)`。 例如，在此範例中，名稱為&#x200B;**vangeluw - Demo System (22/02/2022) (Edge)**。 按一下&#x200B;**儲存**。
 
@@ -42,13 +43,13 @@ ht-degree: 1%
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf2.png)
 
-## 2.5.1.2設定Adobe Cloud Connector擴充功能
+## 設定Adobe Cloud Connector擴充功能
 
 在左側功能表中，移至&#x200B;**擴充功能**。 您會看到&#x200B;**核心**&#x200B;擴充功能已設定。
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf3.png)
 
-移至&#x200B;**目錄**。 您會看到&#x200B;**Adobe雲端聯結器**&#x200B;擴充功能。 按一下&#x200B;**安裝**&#x200B;以進行安裝。
+移至&#x200B;**目錄**。 您將會看到&#x200B;**Adobe Cloud Connector**&#x200B;擴充功能以及其他許多擴充功能。 按一下&#x200B;**安裝**&#x200B;以進行安裝。
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf4.png)
 
@@ -71,10 +72,6 @@ ht-degree: 1%
 ![Adobe Experience Platform Data Collection SSF](./images/ssf8.png)
 
 接著將建置您的程式庫，這可能需要1-2分鐘的時間。
-
-![Adobe Experience Platform Data Collection SSF](./images/ssf9.png)
-
-最後，您的程式庫將會建置並準備就緒。
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf10.png)
 
