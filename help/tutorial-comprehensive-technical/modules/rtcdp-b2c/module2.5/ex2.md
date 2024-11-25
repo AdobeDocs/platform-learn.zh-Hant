@@ -4,16 +4,16 @@ description: 更新您的資料串流，讓資料可用於您的Adobe Experience
 kt: 5342
 doc-type: tutorial
 exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 1%
 
 ---
 
 # 2.5.2更新您的資料串流，讓資料可用於您的Adobe Experience Platform資料收集伺服器屬性
 
-## 2.5.2.1更新您的資料流
+## 更新您的資料流
 
 在[快速入門](./../../gettingstarted/gettingstarted/ex2.md)中，您已建立自己的&#x200B;**[!UICONTROL 資料流]**。 您接著使用名稱`--aepUserLdap-- - Demo System Datastream`。
 

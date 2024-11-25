@@ -4,16 +4,14 @@ description: 在本單元中，您將瞭解如何設定您自己的Apache Kafka�
 kt: 5342
 doc-type: tutorial
 exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '366'
 ht-degree: 1%
 
 ---
 
 # 2.6將Apache Kafka的資料串流至Adobe Experience Platform
-
-**作者：[Vivek Tiwari](https://www.linkedin.com/in/vivek-tiwari-25092656/)，[Nipun Nair](https://www.linkedin.com/in/nipunnair/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 在本單元中，您將瞭解如何設定您自己的Apache Kafka叢集、定義主題、製作者和消費者，以及透過Kafka Connect使用Adobe Experience Platform Sink Connector將資料串流到Adobe Experience Platform。
 
@@ -27,7 +25,7 @@ ht-degree: 1%
 
 ## 先決條件
 
-- 您的電腦必須安裝Java JDK11或以上版本，您可以在此處下載該JDK： [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- 您的電腦必須安裝Java JDK23或以上版本，您可以在此處下載該JDK： [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - 存取Adobe Experience Platform
 
 >[!NOTE]

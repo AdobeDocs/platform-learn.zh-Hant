@@ -6,24 +6,20 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: adffeead-9bcb-4632-9a2c-c6da1c40b7f2
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: be5a7dec47a83a14d74024015a15a9c24d04cd95
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 
 # 2.6.2安裝及設定Kafka叢集
 
-## 2.6.2.1下載Apache Kafka
+## 下載Apache Kafka
 
-移至[https://kafka.apache.org/downloads](https://kafka.apache.org/downloads)並下載最新發行版本。 選取最新的二進位版本，在此案例中為&#x200B;**Scala 2.13**。
+移至[https://kafka.apache.org/downloads](https://kafka.apache.org/downloads)並下載最新發行版本。 選取最新的二進位版本，在此案例中為&#x200B;**3.9.0**。 將會開始下載。
 
 ![Kafka](./images/kafka1.png)
-
-然後您會被帶往映象網站。 按一下建議的連結以下載Kafka。
-
-![Kafka](./images/kafka2.png)
 
 在案頭上建立一個名為&#x200B;**Kafka_AEP**&#x200B;的資料夾，並將下載的檔案放在該目錄中。
 
@@ -35,7 +31,7 @@ ht-degree: 0%
 
 在「終端機」視窗中執行此命令，將下載的檔案解壓縮：
 
-`tar -xvf kafka_2.13-3.1.0.tgz`
+`tar -xvf kafka_2.13-3.9.0.tgz`
 
 >[!NOTE]
 >
@@ -57,7 +53,7 @@ ht-degree: 0%
 
 返回「終端機」視窗。 輸入下列命令：
 
-`cd kafka_2.13-3.1.0`
+`cd kafka_2.13-3.9.0`
 
 >[!NOTE]
 >
@@ -69,15 +65,15 @@ ht-degree: 0%
 
 ![Kafka](./images/kafka10a.png)
 
-之後，您應該會看到此回應。 這表示Kafka已正確安裝，且Java運作正常。 (提醒：您必須安裝Java 8 JDK或Java 11 JDK，才能順利運作！ 您可以使用命令`java -version`檢視您已安裝的Java版本。)
+之後，您應該會看到此回應。 這表示Kafka已正確安裝，且Java運作正常。 (提醒：您需要安裝Java 23 JDK才能使用此功能！ 您可以使用命令`java -version`檢視您已安裝的Java版本。)
 
 ![Kafka](./images/kafka10.png)
 
-## 2.6.2.2啟動Kafka
+## 啟動Kafka
 
 若要啟動Kafka，您必須依此順序啟動Kafka Zookeeper和Kafka。
 
-開啟&#x200B;**終端機**&#x200B;視窗，方法是以滑鼠右鍵按一下資料夾&#x200B;**kafka_2.13-3.1.0**，然後按一下&#x200B;**資料夾中的新終端機**。
+開啟&#x200B;**終端機**&#x200B;視窗，方法是以滑鼠右鍵按一下資料夾&#x200B;**kafka_2.13-3.9.0**，然後按一下&#x200B;**資料夾中的新終端機**。
 
 ![Kafka](./images/kafka11.png)
 
@@ -93,7 +89,7 @@ ht-degree: 0%
 
 進行這些練習時，請保持此視窗開啟！
 
-開啟另一個新的&#x200B;**終端機**&#x200B;視窗，方法是用滑鼠右鍵按一下資料夾&#x200B;**kafka_2.13-3.1.0**，然後按一下&#x200B;**資料夾中的新終端機**。
+在資料夾&#x200B;**kafka_2.13-3.9.0**&#x200B;上按一下滑鼠右鍵，然後按一下&#x200B;**資料夾**&#x200B;的新終端機，開啟另一個新的&#x200B;**終端機**&#x200B;視窗。
 
 ![Kafka](./images/kafka11.png)
 
@@ -109,9 +105,9 @@ ht-degree: 0%
 
 進行這些練習時，請保持此視窗開啟！
 
-## 2.6.2.3建立Kafka主題
+## 建立Kafka主題
 
-開啟&#x200B;**終端機**&#x200B;視窗，方法是以滑鼠右鍵按一下資料夾&#x200B;**kafka_2.13-3.1.0**，然後按一下&#x200B;**資料夾中的新終端機**。
+開啟&#x200B;**終端機**&#x200B;視窗，方法是以滑鼠右鍵按一下資料夾&#x200B;**kafka_2.13-3.9.0**，然後按一下&#x200B;**資料夾中的新終端機**。
 
 ![Kafka](./images/kafka11.png)
 
@@ -119,9 +115,7 @@ ht-degree: 0%
 
 `bin/kafka-topics.sh --create --topic aeptest --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16a.png)
-
-然後您會看到類似的確認：
+然後您會看到確認：
 
 ![Kafka](./images/kafka17a.png)
 
@@ -129,13 +123,11 @@ ht-degree: 0%
 
 `bin/kafka-topics.sh --create --topic aep --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16.png)
-
 然後您會看到類似的確認：
 
 ![Kafka](./images/kafka17.png)
 
-## 2.6.2.4產生事件
+## 產生事件
 
 返回您建立第一個Kafka主題的「終端機」視窗，然後輸入以下命令：
 
@@ -163,7 +155,7 @@ ht-degree: 0%
 
 ![Kafka](./images/kafka22.png)
 
-## 2.6.2.4使用事件
+## 使用事件
 
 在您用來產生事件的同一個「終端機」視窗中，輸入下列命令：
 
