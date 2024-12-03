@@ -1,606 +1,178 @@
 ---
-title: 查詢服務 — 查詢、查詢、查詢……和流失分析
-description: 查詢服務 — 查詢、查詢、查詢……和流失分析
+title: 查詢服務 — 使用查詢服務
+description: 查詢服務 — 使用查詢服務
 kt: 5342
+audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 31c14a9b-cb62-48ab-815c-caa6e832794f
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
 
-# 5.1.3查詢、查詢、查詢……和流失分析
+# 5.1.3使用查詢服務
 
 ## 目標
 
-* 寫入資料分析的查詢
-* 撰寫結合線上、客服中心和忠誠度資料的SQL查詢(可在Adobe Experience Platform中使用)
-* 瞭解Adobe定義的函式
+- 尋找和探索資料集
+- 瞭解如何在查詢中處理Experience Data Models物件和屬性
 
 ## 內容
 
-在本練習中，您將編寫查詢來分析產品檢視、產品漏斗、流失率等。
+在本課程中，您將學習如何使用PSQL來擷取有關可用資料集的資訊、如何編寫Experience Data Model (XDM)的查詢，以及使用查詢服務和Citi Signal資料集編寫您的第一個簡單報告查詢。
 
-本章中列出的所有查詢將會在您的&#x200B;**PSQL命令列介面**&#x200B;中執行。 您應該複製(CTRL-c)以&#x200B;**SQL**&#x200B;表示的陳述式區塊，並將其貼到&#x200B;**PSQL命令列介面**&#x200B;中(CTRL-v)。 **查詢結果**&#x200B;區塊會顯示貼上的SQL陳述式和相關聯的查詢結果。
+## 基本查詢
 
-## 5.1.3.1寫入資料分析的基本查詢
+在本節中，您將瞭解如何擷取可用資料集的資訊，以及如何透過XDM資料集的查詢正確擷取資料。
 
-### 時間戳記
+我們在1月初透過Adobe Experience Platform探索過的所有資料集，也都可以透過SQL介面做為表格存取。 若要列出這些表格，您可以使用&#x200B;**show tables；**&#x200B;命令。
 
-在Adobe Experience Platform中擷取的資料會加上時間戳記。 **timestamp**&#x200B;屬性可讓您分析一段時間的資料。
+在您的&#x200B;**PSQL命令列介面**&#x200B;中執行&#x200B;**顯示資料表；**。 （別忘了以分號結束您的命令）。
 
-我們每天檢視多少項產品？
+複製命令&#x200B;**show tables；**&#x200B;並在提示字元貼上：
 
-**SQL**
+![command-prompt-show-tables.png](./images/command-prompt-show-tables.png)
 
-```sql
-select date_format( timestamp , 'yyyy-MM-dd') AS Day,
-       count(*) AS productViews
-from   demo_system_event_dataset_for_website_global_v1_1
-where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-and eventType = 'commerce.productViews'
-group by Day
-limit 10;
-```
-
-複製上述陳述式，並在&#x200B;**PSQL命令列介面**&#x200B;中執行。
-
-**查詢結果**
+您會看到下列結果：
 
 ```text
-aepenablementfy21:all=> select date_format( timestamp , 'yyyy-MM-dd') AS Day,
-aepenablementfy21:all->        count(*) AS productViews
+aepenablementfy21:all=> show tables;
+                            name                            |        dataSetId         |                            dataSet                             | description | resolved 
+------------------------------------------------------------+--------------------------+----------------------------------------------------------------+-------------+----------
+ demo_system_event_dataset_for_call_center_global_v1_1      | 5fd1a9dea30603194baeea43 | Demo System - Event Dataset for Call Center (Global v1.1)      |             | false
+ demo_system_event_dataset_for_mobile_app_global_v1_1       | 5fd1a9de250e4f194bec84cd | Demo System - Event Dataset for Mobile App (Global v1.1)       |             | false
+ demo_system_event_dataset_for_voice_assistants_global_v1_1 | 5fd1a9de49ee76194b85f73c | Demo System - Event Dataset for Voice Assistants (Global v1.1) |             | false
+ demo_system_event_dataset_for_website_global_v1_1          | 5fd1a9dee3224d194cdfe786 | Demo System - Event Dataset for Website (Global v1.1)          |             | false
+ demo_system_profile_dataset_for_loyalty_global_v1_1        | 5fd1a9de250e4f194bec84cc | Demo System - Profile Dataset for Loyalty (Global v1.1)        |             | false
+ demo_system_profile_dataset_for_ml_predictions_global_v1_1 | 5fd1a9de241f58194b0cb117 | Demo System - Profile Dataset for ML Predictions (Global v1.1) |             | false
+ demo_system_profile_dataset_for_mobile_app_global_v1_1     | 5fd1a9deddf353194a2e00b7 | Demo System - Profile Dataset for Mobile App (Global v1.1)     |             | false
+ demo_system_profile_dataset_for_website_global_v1_1        | 5fd1a9de42a61c194dd7b810 | Demo System - Profile Dataset for Website (Global v1.1)        |             | false
+ journey_step_events                                        | 5fd1a7f30268c5194bbb7e5e | Journey Step Events                                            |             | false
+```
+
+在冒號處，按空格鍵檢視結果集的下一頁，或輸入`q`還原到命令提示字元。
+
+Platform中的每個資料集都有其對應的查詢服務表格。 您可以透過資料集UI找到資料集的表格：
+
+![ui-dataset-tablename.png](./images/ui-dataset-tablename.png)
+
+`demo_system_event_dataset_for_website_global_v1_1`資料表是與`Demo System - Event Schema for Website (Global v1.1)`資料集對應的查詢服務資料表。
+
+若要查詢產品檢視位置的相關資訊，我們將選取&#x200B;**地理**&#x200B;資訊。
+
+複製下列陳述式，並在&#x200B;**PSQL命令列介面**&#x200B;的提示字元貼上，然後按下Enter：
+
+```sql
+select placecontext.geo
+from   demo_system_event_dataset_for_website_global_v1_1
+where  eventType = 'commerce.productViews'
+and placecontext.geo.countryCode <> ''
+limit 1;
+```
+
+在您的查詢結果中，您會注意到Experience Data Model (XDM)中的欄可以是複雜型別，而不只是純量型別。 在上述查詢中，我們想要識別&#x200B;**commerce.productViews**&#x200B;確實發生的地理位置。 若要識別&#x200B;**commerce.productViews**，我們必須使用&#x200B;**瀏覽XDM模型。** （點）標籤法。
+
+```text
+aepenablementfy21:all=> select placecontext.geo
 aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-aepenablementfy21:all-> and    eventType = 'commerce.productViews'
-aepenablementfy21:all-> group by Day
-aepenablementfy21:all-> limit 10;
-    Day     | productViews 
-------------+--------------
- 2020-07-31 |         2297
+aepenablementfy21:all-> where  eventType = 'commerce.productViews'
+aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
+aepenablementfy21:all-> limit 1;
+                  geo                   
+----------------------------------------
+ ("(57.4694803,-3.1269422)",Tullich,GB)
 (1 row)
 ```
 
-### 已檢視的前5大產品
+是否注意到結果為平面物件，而非單一值？ **placecontext.geo**&#x200B;物件包含四個屬性：結構描述、國家/地區和城市。 當物件宣告為欄時，會將整個物件傳回為字串。 XDM結構描述可能比您熟悉的要複雜，但它的功能非常強大，而且架構可支援許多解決方案、管道和使用案例。
 
-檢視的前5項產品為何？
+若要選取物件的個別屬性，請使用&#x200B;**。** （點）標籤法。
 
-#### SQL
+複製下列陳述式，並貼到&#x200B;**PSQL命令列介面**&#x200B;的提示字元上：
 
 ```sql
-select productListItems.name, count(*)
+select placecontext.geo._schema.longitude
+      ,placecontext.geo._schema.latitude
+      ,placecontext.geo.city
+      ,placecontext.geo.countryCode
 from   demo_system_event_dataset_for_website_global_v1_1
-where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-and    eventType = 'commerce.productViews'
-group  by productListItems.name
-order  by 2 desc
-limit 5;
+where  eventType = 'commerce.productViews'
+and placecontext.geo.countryCode <> ''
+limit 1;
 ```
 
-複製上述陳述式，並在&#x200B;**PSQL命令列介面**&#x200B;中執行。
-
-**查詢結果**
+上述查詢的結果看起來應該像這樣。
+結果現在是一組簡單值：
 
 ```text
-aepenablementfy21:all=> select productListItems.name, count(*)
+aepenablementfy21:all=> select placecontext.geo._schema.longitude
+aepenablementfy21:all->       ,placecontext.geo._schema.latitude
+aepenablementfy21:all->       ,placecontext.geo.city
+aepenablementfy21:all->       ,placecontext.geo.countryCode
 aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-aepenablementfy21:all-> and    eventType = 'commerce.productViews'
-aepenablementfy21:all-> group  by productListItems.name
-aepenablementfy21:all-> order  by 2 desc
-aepenablementfy21:all-> limit 5;
-                 name                  | count(1) 
----------------------------------------+----------
- Google Pixel XL 32GB Black Smartphone |      938
- SIM Only                              |      482
- Samsung Galaxy S8                     |      456
- Samsung Galaxy S7 32GB Black          |      421
-(4 rows)
+aepenablementfy21:all-> where  eventType = 'commerce.productViews'
+aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
+aepenablementfy21:all-> limit 1;
+ longitude  |  latitude  |  city   | countrycode 
+------------+------------+---------+-------------
+ -3.1269422 | 57.4694803 | Tullich | GB
+(1 row)
 ```
 
-### 產品互動漏斗，從檢視到購買
+別擔心，要取得特定屬性的路徑，有一個簡單的方式。 在接下來的部分中，您將瞭解如何操作。
 
-**SQL**
+您將需要編輯查詢，因此讓我們先開啟編輯器。
 
-```sql
-select eventType, count(*)
-from   demo_system_event_dataset_for_website_global_v1_1
-where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-and    eventType is not null
-and    eventType <> ''
-group  by eventType;
-```
+在Windows上
 
-複製上述陳述式，並在&#x200B;**PSQL命令列介面**&#x200B;中執行。
-
-**查詢結果**
-
-```text
-aepenablementfy21:all=> select eventType, count(*)
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-aepenablementfy21:all-> and    eventType is not null
-aepenablementfy21:all-> and    eventType <> ''
-aepenablementfy21:all-> group  by eventType;
-          eventType           | count(1) 
-------------------------------+----------
- commerce.productViews        |     2297
- commerce.productListAdds     |      494
- commerce.purchases           |      246
-(3 rows)
-```
-
-### 識別有流失風險的訪客（造訪頁面=>取消服務）
-
-**SQL**
-
-```sql
-select distinct --aepTenantId--.identification.core.ecid
-from   demo_system_event_dataset_for_website_global_v1_1
-where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-and    web.webPageDetails.name = 'Cancel Service'
-group  by --aepTenantId--.identification.core.ecid
-limit 10;
-```
-
-複製上述陳述式，並在&#x200B;**PSQL命令列介面**&#x200B;中執行。
-
-**查詢結果**
-
-```text
-aepenablementfy21:all=> select distinct --aepTenantId--.identification.core.ecid
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-aepenablementfy21:all-> and    web.webPageDetails.name = 'Cancel Service'
-aepenablementfy21:all-> group  by --aepTenantId--.identification.core.ecid
-aepenablementfy21:all-> limit 10;
-               ecid               
-----------------------------------
- 67802232253493573025911610627278
- 27147331741697745713411940873426
- 19806347932758146991274525406147
- 06339676267512351981624626408225
- 23933440740775575701680766564499
- 11860828134020790182705892056898
- 04258863338643046907489131372300
- 90257333076958492787834714105751
- 66695181015407529430237951973742
- 19103852558440070949457567094096
-(10 rows)
-```
-
-在下一組查詢中，我們將擴充上述查詢，以完整檢視瀏覽「取消服務」頁面的客戶及其行為。 您將瞭解如何使用Adobe定義函式來將資訊工作階段化、識別事件的順序和時間。 您也將聯合資料集，以進一步豐富及準備資料，以便在MicrosoftPower BI中進行分析。
-
-## 5.1.3.2進階查詢
-
-大部分的商業邏輯需要收集客戶的接觸點並依時間排序。 Spark SQL會以視窗函式的形式提供這項支援。 視窗函式是標準SQL的一部分，並受到許多其他SQL引擎的支援。
-
-### Adobe定義的函式
-
-Adobe已將一組&#x200B;**Adobe定義函式**&#x200B;新增至標準SQL語法，讓您更清楚瞭解您的體驗資料。 在接下來的幾個查詢中，您將瞭解這些ADF函式。 您可以在檔案](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html)中找到詳細資訊和完整清單[。
-
-### 當使用者進入工作階段的第3頁時，「取消服務」頁面前會在網站上執行什麼動作？
-
-透過此查詢，您將發現前兩個Adobe定義的函式&#x200B;**SESS_TIMEOUT**&#x200B;和&#x200B;**NEXT**
-
-> **SESS_TIMEOUT()**&#x200B;會重新產生使用Adobe Analytics找到的造訪群組。 它會執行類似的以時間為基礎的分組，但可自訂引數。
->
-> **NEXT()**&#x200B;和&#x200B;**PREVIOUS()**&#x200B;可協助您瞭解客戶如何瀏覽您的網站。
-
-**SQL**
-
-```sql
-SELECT
-  webPage,
-  webPage_2,
-  webPage_3,
-  webPage_4,
-  count(*) journeys
-FROM
-  (
-      SELECT
-        webPage,
-        NEXT(webPage, 1, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_2,
-        NEXT(webPage, 2, true)
-          OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_3,
-        NEXT(webPage, 3, true)
-           OVER(PARTITION BY ecid, session.num
-                ORDER BY timestamp
-                ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING).value
-          AS webPage_4,
-        session.depth AS SessionPageDepth
-      FROM (
-            select a.--aepTenantId--.identification.core.ecid as ecid,
-                   a.timestamp,
-                   web.webPageDetails.name as webPage,
-                    SESS_TIMEOUT(timestamp, 60 * 30) 
-                       OVER (PARTITION BY a.--aepTenantId--.identification.core.ecid 
-                             ORDER BY timestamp 
-                             ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) 
-                  AS session
-            from   demo_system_event_dataset_for_website_global_v1_1 a
-            where  a.--aepTenantId--.identification.core.ecid in ( 
-                select b.--aepTenantId--.identification.core.ecid
-                from   demo_system_event_dataset_for_website_global_v1_1 b
-                where  b.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-                and    b.web.webPageDetails.name = 'Cancel Service'
-            )
-        )
-)
-WHERE SessionPageDepth=1
-and   webpage_3 = 'Cancel Service'
-GROUP BY webPage, webPage_2, webPage_3, webPage_4
-ORDER BY journeys DESC
-LIMIT 10;
-```
-
-複製上述陳述式，並在&#x200B;**PSQL命令列介面**&#x200B;中執行。
-
-**查詢結果**
-
-```text
-                webPage                |               webPage_2               |   webPage_3    | webPage_4  | journeys 
----------------------------------------+---------------------------------------+----------------+------------+----------
- Citi Signal Sport                     | Google Pixel XL 32GB Black Smartphone | Cancel Service | Call Start |        2
- SIM Only                              | Citi Signal Shop                      | Cancel Service |            |        2
- SIM Only                              | Telco Home                            | Cancel Service |            |        2
- TV & Broadband Deals                  | Samsung Galaxy S7 32GB Black          | Cancel Service |            |        2
- Telco Home                            | Citi Signal Sport                     | Cancel Service | Call Start |        2
- Google Pixel XL 32GB Black Smartphone | Broadband Deals                       | Cancel Service |            |        2
- Broadband Deals                       | Samsung Galaxy S7 32GB Black          | Cancel Service |            |        2
- Broadband Deals                       | Samsung Galaxy S8                     | Cancel Service |            |        1
- Samsung Galaxy S8                     | Google Pixel XL 32GB Black Smartphone | Cancel Service |            |        1
- SIM Only                              | Google Pixel XL 32GB Black Smartphone | Cancel Service | Call Start |        1
-(10 rows)
-```
-
-### 訪客造訪「取消服務」頁面後，我們還有多久的時間可以致電客服中心？
-
-若要回答這類查詢，我們將使用&#x200B;**TIME_BETWEEN_NEXT_MATCH()** Adobe定義函式。
-
-> 上一個或下一個相符函式之間的時間提供一個新維度，可測量自特定事件以來經過的時間。
-
-**SQL**
-
-```sql
-select * from (
-       select --aepTenantId--.identification.core.ecid as ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY --aepTenantId--.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-       and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-where r.webPage = 'Cancel Service'
-limit 15;
-```
-
-複製上述陳述式，並在&#x200B;**PSQL命令列介面**&#x200B;中執行。
-
-**查詢結果**
-
-```text
-               ecid               |    webPage     | contact_callcenter_after_seconds 
-----------------------------------+----------------+----------------------------------
- 00331886620679939148047665693117 | Cancel Service |                                 
- 00626561600197295782131349716866 | Cancel Service |                                 
- 00630470663554417679969244202779 | Cancel Service |                             -797
- 00720875344152796154458668700428 | Cancel Service |                             -519
- 00746064605049656090779523644276 | Cancel Service |                              -62
- 00762093837616944422322357210965 | Cancel Service |                                 
- 00767875779073091876070699689209 | Cancel Service |                                 
- 00798691264980137616449378075855 | Cancel Service |                                 
- 00869613691740150556826953447162 | Cancel Service |                             -129
- 00943638725078228957873279219207 | Cancel Service |                             -750
- 01167540466536077846425644389346 | Cancel Service |                                 
- 01412448537869549016063764484810 | Cancel Service |                                 
- 01419076946514450291741574452702 | Cancel Service |                             -482
- 01533124771963987423015507880755 | Cancel Service |                                 
- 01710651086750904478559809475925 | Cancel Service |                                 
-(15 rows)
-```
-
-### 連絡的結果如何？
-
-說明我們要一起加入資料集，在此案例中，我們將與`demo_system_event_dataset_for_call_center_global_v1_1`一起加入`demo_system_event_dataset_for_website_global_v1_1`。 我們這麼做是為了瞭解客服中心互動的結果。
-
-**SQL**
-
-```sql
-select distinct r.*,
-       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling,
-       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic,
-       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled
-from (
-       select --aepTenantId--.identification.core.ecid ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY --aepTenantId--.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-       and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-, demo_system_event_dataset_for_call_center_global_v1_1 c
-where r.ecid = c.--aepTenantId--.identification.core.ecid
-and r.webPage = 'Cancel Service'
-and c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled IN (true,false)
-and c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic IN ('contract', 'invoice','complaint','wifi')
-limit 15;
-```
-
-複製上述陳述式，並在&#x200B;**PSQL命令列介面**&#x200B;中執行。
-
-**查詢結果**
-
-```text
-               ecid               |    webPage     | contact_callcenter_after_seconds | callfeeling | calltopic | callcontractcancelled 
-----------------------------------+----------------+----------------------------------+-------------+-----------+-----------------------
- 65003638134805559755890758041032 | Cancel Service |                             -440 | negative    | contract  | true
- 24197860921105808861772992106002 | Cancel Service |                             -109 | negative    | contract  | true
- 96145097889556586310105454800766 | Cancel Service |                             -501 | neutral     | contract  | true
- 18680613140217544548647790969994 | Cancel Service |                             -502 | negative    | contract  | true
- 66121898576007921287545496624574 | Cancel Service |                             -546 | negative    | contract  | true
- 35086866174626846547860375146326 | Cancel Service |                             -493 | negative    | contract  | false
- 30502827193916828536733220567055 | Cancel Service |                             -924 | negative    | contract  | true
- 85319114253582167371394801608573 | Cancel Service |                             -267 | positive    | contract  | true
- 04258863338643046907489131372300 | Cancel Service |                             -588 | positive    | contract  | false
- 23933440740775575701680766564499 | Cancel Service |                             -261 | neutral     | contract  | true
- 17332005215125613039685855763735 | Cancel Service |                             -478 | neutral     | contract  | true
- 02666934104296797891818818456669 | Cancel Service |                             -297 | positive    | contract  | true
- 48158305927116134877913019413025 | Cancel Service |                              -47 | neutral     | contract  | false
- 13294750130353985087337266864522 | Cancel Service |                              -71 | positive    | contract  | false
- 69034679856689334967307492458080 | Cancel Service |                             -812 | negative    | contract  | true
-(15 rows)
-```
-
-### 這些客戶的忠誠度設定檔為何？
-
-在此查詢中，我們會加入已在Adobe Experience Platform中上線的忠誠度資料。 這可讓流失分析更富於忠誠度資料。
-
-**SQL**
-
-```sql
-select r.*,
-       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling,
-       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic,
-       l.--aepTenantId--.loyaltyDetails.level,
-       l.--aepTenantId--.identification.core.loyaltyId
-from (
-       select --aepTenantId--.identification.core.ecid ecid,
-              web.webPageDetails.name as webPage,
-              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY --aepTenantId--.identification.core.ecid
-                  ORDER BY timestamp
-                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-              AS contact_callcenter_after_seconds
-       from   demo_system_event_dataset_for_website_global_v1_1
-       where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-       and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
-) r
-, demo_system_event_dataset_for_call_center_global_v1_1 c
-, demo_system_profile_dataset_for_loyalty_global_v1_1 l
-where r.ecid = c.--aepTenantId--.identification.core.ecid
-and r.webPage = 'Cancel Service'
-and l.--aepTenantId--.identification.core.ecid = r.ecid
-and c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic IN ('contract', 'invoice','complaint','wifi','promo')
-limit 15;
-```
-
-複製上述陳述式，並在&#x200B;**PSQL命令列介面**&#x200B;中執行。
-
-**查詢結果**
-
-```text
-               ecid               |    webPage     | contact_callcenter_after_seconds | callfeeling | calltopic | level  | loyaltyid 
-----------------------------------+----------------+----------------------------------+-------------+-----------+--------+-----------
- 65003638134805559755890758041032 | Cancel Service |                             -440 | negative    | contract  | Gold   | 924854108
- 65003638134805559755890758041032 | Cancel Service |                             -440 | negative    | contract  | Gold   | 924854108
- 24197860921105808861772992106002 | Cancel Service |                             -109 | negative    | contract  | Bronze | 094259678
- 24197860921105808861772992106002 | Cancel Service |                             -109 | negative    | contract  | Bronze | 094259678
- 96145097889556586310105454800766 | Cancel Service |                             -501 | neutral     | contract  | Gold   | 644887358
- 96145097889556586310105454800766 | Cancel Service |                             -501 | neutral     | contract  | Gold   | 644887358
- 18680613140217544548647790969994 | Cancel Service |                             -502 | negative    | contract  | Gold   | 205300004
- 18680613140217544548647790969994 | Cancel Service |                             -502 | negative    | contract  | Gold   | 205300004
- 66121898576007921287545496624574 | Cancel Service |                             -546 | negative    | contract  | Bronze | 095728673
- 66121898576007921287545496624574 | Cancel Service |                             -546 | negative    | contract  | Bronze | 095728673
- 35086866174626846547860375146326 | Cancel Service |                             -493 | negative    | contract  | Bronze | 453145930
- 35086866174626846547860375146326 | Cancel Service |                             -493 | negative    | contract  | Bronze | 453145930
- 30502827193916828536733220567055 | Cancel Service |                             -924 | negative    | contract  | Gold   | 269406417
- 30502827193916828536733220567055 | Cancel Service |                             -924 | negative    | contract  | Gold   | 269406417
- 85319114253582167371394801608573 | Cancel Service |                             -267 | positive    | contract  | Bronze | 899276035
-(15 rows)
-```
-
-### 他們從哪個地區造訪我們？
-
-讓我們加入Adobe Experience Platform所擷取的地理資訊，例如經度、態度、城市、國家代碼，以便取得關於客戶流失的地理位置見解。
-
-**SQL**
-
-```sql
-       select distinct r.ecid,
-              r.city,
-              r.countrycode,
-              r.lat as latitude,
-              r.lon as longitude,
-              r.contact_callcenter_after_seconds as seconds_to_contact_callcenter,
-              c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling,
-              c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic,
-              c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled,
-              l.--aepTenantId--.loyaltyDetails.level,
-              l.--aepTenantId--.identification.core.loyaltyId
-       from (
-              select --aepTenantId--.identification.core.ecid ecid,
-                     placeContext.geo._schema.latitude lat,
-                     placeContext.geo._schema.longitude lon,
-                     placeContext.geo.city,
-                     placeContext.geo.countryCode,
-                     web.webPageDetails.name as webPage,
-                     TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-                     OVER(PARTITION BY --aepTenantId--.identification.core.ecid
-                         ORDER BY timestamp
-                         ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-                     AS contact_callcenter_after_seconds
-              from   demo_system_event_dataset_for_website_global_v1_1
-              where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-              and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
-       ) r
-       , demo_system_event_dataset_for_call_center_global_v1_1 c
-       , demo_system_profile_dataset_for_loyalty_global_v1_1 l
-       where r.ecid = c.--aepTenantId--.identification.core.ecid
-       and r.webPage = 'Cancel Service'
-       and l.--aepTenantId--.identification.core.ecid = r.ecid
-       and c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic IN ('contract', 'invoice','complaint','wifi','promo')
-       limit 15;
-```
-
-複製上述陳述式，並在&#x200B;**PSQL命令列介面**&#x200B;中執行。
-
-**查詢結果**
-
-```text
-               ecid               |   city    | countrycode |  latitude  | longitude  | seconds_to_contact_callcenter | callfeeling | calltopic | callcontractcancelled | level  | loyaltyid 
-----------------------------------+-----------+-------------+------------+------------+-------------------------------+-------------+-----------+-----------------------+--------+-----------
- 00630470663554417679969244202779 | Charlton  | GB          |   51.59119 |  -1.407848 |                          -797 | negative    | contract  | false                 | Bronze | 524483285
- 00630470663554417679969244202779 | Charlton  | GB          |   51.59119 |  -1.407848 |                          -797 | negative    | contract  |                       | Bronze | 524483285
- 00720875344152796154458668700428 | Ashley    | GB          | 51.4139633 | -2.2685462 |                          -519 | positive    | contract  | false                 | Silver | 860696333
- 00720875344152796154458668700428 | Ashley    | GB          | 51.4139633 | -2.2685462 |                          -519 | positive    | contract  |                       | Silver | 860696333
- 00746064605049656090779523644276 | Liverpool | GB          | 53.4913801 |  -2.867264 |                           -62 | positive    | contract  | true                  | Bronze | 072387270
- 00746064605049656090779523644276 | Liverpool | GB          | 53.4913801 |  -2.867264 |                           -62 | positive    | contract  |                       | Bronze | 072387270
- 00869613691740150556826953447162 | Langley   | GB          |  51.888151 |   -0.23924 |                          -129 | negative    | contract  | true                  | Bronze | 789347684
- 00869613691740150556826953447162 | Langley   | GB          |  51.888151 |   -0.23924 |                          -129 | negative    | contract  |                       | Bronze | 789347684
- 00943638725078228957873279219207 | Eaton     | GB          | 53.2945961 | -0.9335791 |                          -750 | positive    | contract  | false                 | Gold   | 033926162
- 00943638725078228957873279219207 | Eaton     | GB          | 53.2945961 | -0.9335791 |                          -750 | positive    | contract  |                       | Gold   | 033926162
- 01419076946514450291741574452702 | Tullich   | GB          | 57.4694803 | -3.1269422 |                          -482 | neutral     | contract  | false                 | Bronze | 105063634
- 01419076946514450291741574452702 | Tullich   | GB          | 57.4694803 | -3.1269422 |                          -482 | neutral     | contract  |                       | Bronze | 105063634
- 01738842540109643781526526573341 | Whitwell  | GB          | 54.3886617 |  -1.555363 |                          -562 | neutral     | contract  | false                 | Gold   | 791324509
- 01738842540109643781526526573341 | Whitwell  | GB          | 54.3886617 |  -1.555363 |                          -562 | neutral     | contract  |                       | Gold   | 791324509
- 02052460258994877317679083617975 | Edinburgh | GB          | 55.9309486 | -3.1859102 |                          -545 | neutral     | contract  | false                 | Gold   | 443477555
-(15 rows)
-```
-
-## 客服中心互動分析
-
-在上述查詢中，我們只會檢視最後因服務取消而聯絡客服中心的訪客。 我們希望將此考慮範圍更廣，並考量所有客服中心互動，包括（wifi、促銷、發票、投訴及合約）。
-
-您需要編輯查詢，所以請先開啟記事本或括弧。
-
-在Windows上，按一下Windows工具列中的[搜尋] — 圖示(1)，在[搜尋]欄位中輸入&#x200B;**記事本**，然後按一下(3) [記事本]結果：
+按一下Windows工具列中的&#x200B;**搜尋**&#x200B;圖示，在&#x200B;**搜尋**&#x200B;欄位中輸入&#x200B;**記事本**，按一下&#x200B;**記事本**&#x200B;結果：
 
 ![windows-start-notepad.png](./images/windows-start-notepad.png)
 
 在Mac上
 
-![osx-start-brackets.png](./images/osx-start-brackets.png)
+安裝[Brackets](https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.dmg)，或者如果您尚未安裝，則使用其他選擇的文字編輯器，然後依照指示操作。 安裝後，透過Mac的Spotlight搜尋來搜尋&#x200B;**Brackets**&#x200B;並開啟。
 
-將下列陳述式複製到記事本/括弧：
+將下列陳述式複製到記事本或方括弧：
 
 ```sql
-select /* enter your name */
-       e.--aepTenantId--.identification.core.ecid as ecid,
-       e.placeContext.geo.city as city,
-       e.placeContext.geo._schema.latitude latitude,
-       e.placeContext.geo._schema.longitude longitude,
-       e.placeContext.geo.countryCode as countrycode,
-       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling as callFeeling,
-       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic as callTopic,
-       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
-       l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
-       l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
-       l.--aepTenantId--.identification.core.loyaltyId as crmid
-from   demo_system_event_dataset_for_website_global_v1_1 e
-      ,demo_system_event_dataset_for_call_center_global_v1_1 c
-      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
-where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
-and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
-and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
+select your_attribute_path_here
+from   demo_system_event_dataset_for_website_global_v1_1
+where  eventType = 'commerce.productViews'
+and placecontext.geo.countryCode <> ''
+limit 1;
 ```
 
-和取代
+返回您的Adobe Experience Platform UI （應在瀏覽器中開啟）或導覽至[https://platform.adobe.com](https://platform.adobe.com)。
+
+選取&#x200B;**結構描述**，在&#x200B;**搜尋**&#x200B;欄位中輸入`Demo System - Event Schema for Website (Global v1.1)`，然後從清單中選取`Demo System - Event Schema for Website (Global v1.1) Schema`。
+
+![browse-schema.png](./images/browse-schema.png)
+
+按一下物件，以探索&#x200B;**示範系統 — 網站（全域v1.1）**&#x200B;的事件結構描述的XDM模型。 展開&#x200B;**placecontext**、**geo**&#x200B;和&#x200B;**結構描述**&#x200B;的樹狀結構。 當您選取實際屬性&#x200B;**longitude**&#x200B;時，您會在醒目提示的紅色方塊中看到完整路徑。 若要複製屬性的路徑，請按一下複製路徑圖示。
+
+![explore-schema-for-path.png](./images/explore-schema-for-path.png)
+
+切換到您的記事本/括弧，並從第一行移除&#x200B;**your_attribute_path_here**。 將游標放在第一行上&#x200B;**選取**&#x200B;之後並貼上(CTRL-V)。
+
+從記事本/方括弧複製修改過的陳述式，然後貼到&#x200B;**PSQL命令列介面**&#x200B;的提示字元，然後按Enter鍵。
+
+結果應如下所示：
 
 ```text
-enter your name
+aepenablementfy21:all=> select placeContext.geo._schema.longitude
+aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
+aepenablementfy21:all-> where  eventType = 'commerce.productViews'
+aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
+aepenablementfy21:all-> limit 1;
+ longitude  
+------------
+ -3.1269422
 ```
 
-不要移除`/\*`和`\*/`。 您在記事本中修改過的陳述式應如下所示：
-
-![edit-query-notepad.png](./images/edit-query-notepad.png)
-
-將您修改的陳述式從&#x200B;**記事本**&#x200B;複製到&#x200B;**PSQL命令列視窗**，然後按下Enter。 您應該會在PSQL命令列視窗中看到下列結果：
-
-```text
-aepenablementfy21:all=> 
-aepenablementfy21:all=> select /* vangeluw */
-aepenablementfy21:all->        e._experienceplatform.identification.core.ecid as ecid,
-aepenablementfy21:all->        e.placeContext.geo.city as city,
-aepenablementfy21:all->        e.placeContext.geo._schema.latitude latitude,
-aepenablementfy21:all->        e.placeContext.geo._schema.longitude longitude,
-aepenablementfy21:all->        e.placeContext.geo.countryCode as countrycode,
-aepenablementfy21:all->        c._experienceplatform.interactionDetails.core.callCenterAgent.callFeeling as callFeeling,
-aepenablementfy21:all->        c._experienceplatform.interactionDetails.core.callCenterAgent.callTopic as callTopic,
-aepenablementfy21:all->        c._experienceplatform.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
-aepenablementfy21:all->        l._experienceplatform.loyaltyDetails.level as loyaltystatus,
-aepenablementfy21:all->        l._experienceplatform.loyaltyDetails.points as loyaltypoints,
-aepenablementfy21:all->        l._experienceplatform.identification.core.loyaltyId as crmid
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1 e
-aepenablementfy21:all->       ,demo_system_event_dataset_for_call_center_global_v1_1 c
-aepenablementfy21:all->       ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
-aepenablementfy21:all-> where  e._experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-aepenablementfy21:all-> and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
-aepenablementfy21:all-> and    e._experienceplatform.identification.core.ecid = c._experienceplatform.identification.core.ecid
-aepenablementfy21:all-> and    l._experienceplatform.identification.core.ecid = e._experienceplatform.identification.core.ecid;
-               ecid               |    city    |  latitude  | longitude  | countrycode | callFeeling | callTopic | contractCancelled | loyaltystatus | loyaltypoints |   crmid   
-----------------------------------+------------+------------+------------+-------------+-------------+-----------+-------------------+---------------+---------------+-----------
- 33977405947573095768416894125891 | Tullich    | 57.4694803 | -3.1269422 | GB          | positive    | wifi      | false             | Bronze        |          73.0 | 904552921
- 33977405947573095768416894125891 | Tullich    | 57.4694803 | -3.1269422 | GB          | positive    | wifi      | false             | Bronze        |          73.0 | 904552921
- 33977405947573095768416894125891 | Tullich    | 57.4694803 | -3.1269422 | GB          | positive    | wifi      |                   | Bronze        |          73.0 | 904552921
- 33977405947573095768416894125891 | Tullich    | 57.4694803 | -3.1269422 | GB          | positive    | wifi      |                   | Bronze        |          73.0 | 904552921
- 67802232253493573025911610627278 | Linton     | 54.0542238 | -2.0215836 | GB          | none        | none      | false             | Silver        |         522.0 | 417981877
- 67802232253493573025911610627278 | Linton     | 54.0542238 | -2.0215836 | GB          | none        | none      | false             | Silver        |         522.0 | 417981877
- 67802232253493573025911610627278 | Linton     | 54.0542238 | -2.0215836 | GB          | none        | none      |                   | Silver        |         522.0 | 417981877
- 67802232253493573025911610627278 | Linton     | 54.0542238 | -2.0215836 | GB          | none        | none      |                   | Silver        |         522.0 | 417981877
- 27147331741697745713411940873426 | Langley    |  51.888151 |   -0.23924 | GB          | none        | none      | false             | Bronze        |         790.0 | 826545716
- 27147331741697745713411940873426 | Langley    |  51.888151 |   -0.23924 | GB          | none        | none      | false             | Bronze        |         790.0 | 826545716
- 27147331741697745713411940873426 | Langley    |  51.888151 |   -0.23924 | GB          | none        | none      |                   | Bronze        |         790.0 | 826545716
- 27147331741697745713411940873426 | Langley    |  51.888151 |   -0.23924 | GB          | none        | none      |                   | Bronze        |         790.0 | 826545716
- 19806347932758146991274525406147 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      | false             | Gold          |         981.0 | 412492571
- 19806347932758146991274525406147 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      | false             | Gold          |         981.0 | 412492571
- 19806347932758146991274525406147 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      |                   | Gold          |         981.0 | 412492571
- 19806347932758146991274525406147 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      |                   | Gold          |         981.0 | 412492571
- 06339676267512351981624626408225 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      | false             | Bronze        |         632.0 | 024761880
- 06339676267512351981624626408225 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      | false             | Bronze        |         632.0 | 024761880
- 06339676267512351981624626408225 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      |                   | Bronze        |         632.0 | 024761880
- 06339676267512351981624626408225 | Edinburgh  | 55.9309486 | -3.1859102 | GB          | none        | none      |                   | Bronze        |         632.0 | 024761880
- 23933440740775575701680766564499 | Whitwell   | 54.3886617 |  -1.555363 | GB          | neutral     | contract  | true              | Gold          |         853.0 | 696923821
- 23933440740775575701680766564499 | Whitwell   | 54.3886617 |  -1.555363 | GB          | neutral     | contract  | true              | Gold          |         853.0 | 696923821
- 23933440740775575701680766564499 | Whitwell   | 54.3886617 |  -1.555363 | GB          | neutral     | contract  |                   | Gold          |         853.0 | 696923821
- 23933440740775575701680766564499 | Whitwell   | 54.3886617 |  -1.555363 | GB          | neutral     | contract  |                   | Gold          |         853.0 | 696923821
- 11860828134020790182705892056898 | Norton     | 52.2679288 | -1.1202549 | GB          | none        | none      | false             | Gold          |         139.0 | 271933383
- 11860828134020790182705892056898 | Norton     | 52.2679288 | -1.1202549 | GB          | none        | none      | false             | Gold          |         139.0 | 271933383
- 11860828134020790182705892056898 | Norton     | 52.2679288 | -1.1202549 | GB          | none        | none      |                   | Gold          |         139.0 | 271933383
- 11860828134020790182705892056898 | Norton     | 52.2679288 | -1.1202549 | GB          | none        | none      |                   | Gold          |         139.0 | 271933383
-:
-```
-
-接下來，您將持續儲存您的查詢（也稱為&#x200B;**建立資料表作為select**&#x200B;或&#x200B;**CTAS**），作為您將在MicrosoftPower BI中使用的新資料集。
-
-下一步： [5.1.4從查詢](./ex4.md)產生資料集
+下一步： [5.1.4查詢、查詢、查詢……和流失分析](./ex4.md)
 
 [返回模組5.1](./query-service.md)
 

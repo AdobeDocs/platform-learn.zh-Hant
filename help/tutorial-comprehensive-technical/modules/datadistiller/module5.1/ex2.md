@@ -1,177 +1,112 @@
 ---
-title: 查詢服務 — 使用查詢服務
-description: 查詢服務 — 使用查詢服務
+title: 查詢服務 — 快速入門
+description: 查詢服務 — 快速入門
 kt: 5342
-audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 5c4615c6-41c0-465a-b9b6-f59eef388c73
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
-# 5.1.2使用查詢服務
+# 5.1.2快速入門
 
-## 目標
+## 熟悉Adobe Experience Platform UI
 
-- 尋找和探索資料集
-- 瞭解如何在查詢中處理Experience Data Models物件和屬性
+移至[Adobe Experience Platform](https://experience.adobe.com/platform)。 登入後，您會登入Adobe Experience Platform的首頁。
 
-## 內容
+![資料擷取](./../../../modules/datacollection/module1.2/images/home.png)
 
-在本課程中，您將學習如何使用PSQL來擷取有關可用資料集的資訊、如何編寫Experience Data Model (XDM)的查詢，以及使用查詢服務和Citi Signal資料集編寫您的第一個簡單報告查詢。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
 
-## 5.1.2.1基本查詢
+![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-在本節中，您將瞭解如何擷取可用資料集的資訊，以及如何透過XDM資料集的查詢正確擷取資料。
 
-我們在1月初透過Adobe Experience Platform探索過的所有資料集，也都可以透過SQL介面做為表格存取。 若要列出這些表格，您可以使用&#x200B;**show tables；**&#x200B;命令。
+## 在平台上探索資料
 
-在您的&#x200B;**PSQL命令列介面**&#x200B;中執行&#x200B;**顯示資料表；**。 （別忘了以分號結束您的命令）。
+對於任何品牌而言，從不同管道取得資料都是一項艱鉅的任務。 在此練習中，Citi Signal客戶在其網站、行動應用程式上與Citi Signal互動，購買資料由Citi Signal的銷售點系統收集，他們有CRM和忠誠度資料。 Citi Signal使用Adobe Analytics和Adobe Launch來擷取其網站、行動應用程式以及POS系統的資料，因此這些資料已流入Adobe Experience Platform。 讓我們先來探索Adobe Experience Platform中已存在的Citi Signal所有資料。
 
-複製命令&#x200B;**show tables；**&#x200B;並在提示字元貼上：
+在左側功能表中，移至&#x200B;**資料集**。
 
-![command-prompt-show-tables.png](./images/command-prompt-show-tables.png)
+![emea-website-interaction-dataset.png](./images/emea-website-interaction-dataset.png)
 
-您會看到下列結果：
+Citi Signal正在將資料串流至Adobe Experience Platform，此資料可在`Demo System - Event Dataset for Website (Global v1.1)`資料集中取得。 搜尋`Demo System - Event Dataset for Website`。
 
-```text
-aepenablementfy21:all=> show tables;
-                            name                            |        dataSetId         |                            dataSet                             | description | resolved 
-------------------------------------------------------------+--------------------------+----------------------------------------------------------------+-------------+----------
- demo_system_event_dataset_for_call_center_global_v1_1      | 5fd1a9dea30603194baeea43 | Demo System - Event Dataset for Call Center (Global v1.1)      |             | false
- demo_system_event_dataset_for_mobile_app_global_v1_1       | 5fd1a9de250e4f194bec84cd | Demo System - Event Dataset for Mobile App (Global v1.1)       |             | false
- demo_system_event_dataset_for_voice_assistants_global_v1_1 | 5fd1a9de49ee76194b85f73c | Demo System - Event Dataset for Voice Assistants (Global v1.1) |             | false
- demo_system_event_dataset_for_website_global_v1_1          | 5fd1a9dee3224d194cdfe786 | Demo System - Event Dataset for Website (Global v1.1)          |             | false
- demo_system_profile_dataset_for_loyalty_global_v1_1        | 5fd1a9de250e4f194bec84cc | Demo System - Profile Dataset for Loyalty (Global v1.1)        |             | false
- demo_system_profile_dataset_for_ml_predictions_global_v1_1 | 5fd1a9de241f58194b0cb117 | Demo System - Profile Dataset for ML Predictions (Global v1.1) |             | false
- demo_system_profile_dataset_for_mobile_app_global_v1_1     | 5fd1a9deddf353194a2e00b7 | Demo System - Profile Dataset for Mobile App (Global v1.1)     |             | false
- demo_system_profile_dataset_for_website_global_v1_1        | 5fd1a9de42a61c194dd7b810 | Demo System - Profile Dataset for Website (Global v1.1)        |             | false
- journey_step_events                                        | 5fd1a7f30268c5194bbb7e5e | Journey Step Events                                            |             | false
-```
+![emea-callcenter-interaction-dataset.png](./images/emea-website-interaction-dataset1.png)
 
-在冒號處，按空格鍵檢視結果集的下一頁，或輸入`q`還原到命令提示字元。
+已在`Demo System - Event Dataset for Call Center (Global v1.1)`資料集中擷取Citi Signal的呼叫中心互動資料。 在搜尋方塊中搜尋`Demo System - Event Dataset for Call Center`資料。 按一下資料集的名稱以開啟。
 
-Platform中的每個資料集都有其對應的查詢服務表格。 您可以透過資料集UI找到資料集的表格：
+![emea-callcenter-interaction-dataset.png](./images/emea-callcenter-interaction-dataset.png)
 
-![ui-dataset-tablename.png](./images/ui-dataset-tablename.png)
+按一下資料集後，您將會獲得資料集活動的概覽，例如擷取和失敗的批次。
 
-`demo_system_event_dataset_for_website_global_v1_1`資料表是與`Demo System - Event Schema for Website (Global v1.1)`資料集對應的查詢服務資料表。
+![preview-interaction-dataset.png](./images/preview-interaction-dataset.png)
 
-若要查詢產品檢視位置的相關資訊，我們將選取&#x200B;**地理**&#x200B;資訊。
+按一下&#x200B;**預覽資料集**&#x200B;以檢視`Demo System - Event Dataset for Call Center (Global v1.1)`資料集中儲存的資料範例。 左側面板會顯示此資料集的結構描述。
 
-複製下列陳述式，並在&#x200B;**PSQL命令列介面**&#x200B;的提示字元貼上，然後按下Enter：
+![explore-interaction-dataset.png](./images/explore-interaction-dataset.png)
 
-```sql
-select placecontext.geo
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+按一下「**關閉**」按鈕以關閉「**預覽資料集**」視窗。
 
-在您的查詢結果中，您會注意到Experience Data Model (XDM)中的欄可以是複雜型別，而不只是純量型別。 在上述查詢中，我們想要識別&#x200B;**commerce.productViews**&#x200B;確實發生的地理位置。 若要識別&#x200B;**commerce.productViews**，我們必須使用&#x200B;**瀏覽XDM模型。** （點）標籤法。
+## 查詢服務簡介
 
-```text
-aepenablementfy21:all=> select placecontext.geo
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
-                  geo                   
-----------------------------------------
- ("(57.4694803,-3.1269422)",Tullich,GB)
-(1 row)
-```
+按一下左側功能表中的&#x200B;**查詢**，即可存取Adobe Experience Platform查詢服務。
 
-是否注意到結果為平面物件，而非單一值？ **placecontext.geo**&#x200B;物件包含四個屬性：結構描述、國家/地區和城市。 當物件宣告為欄時，會將整個物件傳回為字串。 XDM結構描述可能比您熟悉的要複雜，但它的功能非常強大，而且架構可支援許多解決方案、管道和使用案例。
+![select-queries.png](./images/select-queries.png)
 
-若要選取物件的個別屬性，請使用&#x200B;**。** （點）標籤法。
+移至&#x200B;**Log**，您會看到「查詢清單」頁面，此頁面會提供您在此組織中執行的所有查詢清單，最新的查詢會顯示在頂端。
 
-複製下列陳述式，並貼到&#x200B;**PSQL命令列介面**&#x200B;的提示字元上：
+![query-list.png](./images/query-list.png)
 
-```sql
-select placecontext.geo._schema.longitude
-      ,placecontext.geo._schema.latitude
-      ,placecontext.geo.city
-      ,placecontext.geo.countryCode
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+按一下清單中的任何SQL查詢，並觀察右側邊欄中提供的詳細資訊。
 
-上述查詢的結果看起來應該像這樣。
-結果現在是一組簡單值：
+![click-sql-query.png](./images/click-sql-query.png)
 
-```text
-aepenablementfy21:all=> select placecontext.geo._schema.longitude
-aepenablementfy21:all->       ,placecontext.geo._schema.latitude
-aepenablementfy21:all->       ,placecontext.geo.city
-aepenablementfy21:all->       ,placecontext.geo.countryCode
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  |  latitude  |  city   | countrycode 
-------------+------------+---------+-------------
- -3.1269422 | 57.4694803 | Tullich | GB
-(1 row)
-```
+您可以捲動視窗以檢視整個查詢，也可以按一下下面醒目提示的圖示以將整個查詢複製到您的記事本。 您目前不必複製查詢。
 
-別擔心，要取得特定屬性的路徑，有一個簡單的方式。 在接下來的部分中，您將瞭解如何操作。
+![click-copy-query.png](./images/click-copy-query.png)
 
-您將需要編輯查詢，因此讓我們先開啟編輯器。
+您不能只看到已執行的查詢，此使用者介面可讓您從查詢建立新的資料集。 這些資料集可以連結到Adobe Experience Platform的即時客戶個人檔案，或用作Adobe Experience Platform資料科學Workspace的輸入。
 
-在Windows上
+## 將PSQL使用者端連線至查詢服務
 
-按一下Windows工具列中的&#x200B;**搜尋**&#x200B;圖示，在&#x200B;**搜尋**&#x200B;欄位中輸入&#x200B;**記事本**，按一下&#x200B;**記事本**&#x200B;結果：
+查詢服務支援具有PostgreSQL驅動程式的使用者端。 在此我們將使用PSQL、命令列介面以及Power BI或Tableau。 讓我們連線到PSQL。
 
-![windows-start-notepad.png](./images/windows-start-notepad.png)
+按一下&#x200B;**認證**。
 
-在Mac上
+![queries-select-configuration.png](./images/queries-select-configuration.png)
 
-安裝[Brackets](https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.dmg)，或者如果您尚未安裝，則使用其他選擇的文字編輯器，然後依照指示操作。 安裝後，透過Mac的Spotlight搜尋來搜尋&#x200B;**Brackets**&#x200B;並開啟。
+您將會看到下方的畫面。 「組態」畫面會提供伺服器資訊和認證，以驗證「查詢服務」。 目前，我們著重於包含PSQL連線指令的畫面右側。 按一下「複製」按鈕，將命令複製到剪貼簿。
 
-將下列陳述式複製到記事本或方括弧：
+![copy-psql-connection.png](./images/copy-psql-connection.png)
 
-```sql
-select your_attribute_path_here
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Windows：按下Windows鍵並輸入cmd，然後按一下「命令提示字元」結果以開啟命令列。
 
-返回您的Adobe Experience Platform UI （應在瀏覽器中開啟）或導覽至[https://platform.adobe.com](https://platform.adobe.com)。
+![open-command-prompt.png](./images/open-command-prompt.png)
 
-選取&#x200B;**結構描述**，在&#x200B;**搜尋**&#x200B;欄位中輸入`Demo System - Event Schema for Website (Global v1.1)`，然後從清單中選取`Demo System - Event Schema for Website (Global v1.1) Schema`。
+macOS：透過Spotlight搜尋開啟terminal.app：
 
-![browse-schema.png](./images/browse-schema.png)
+![open-terminal-osx.png](./images/open-terminal-osx.png)
 
-按一下物件，以探索&#x200B;**示範系統 — 網站（全域v1.1）**&#x200B;的事件結構描述的XDM模型。 展開&#x200B;**placecontext**、**geo**&#x200B;和&#x200B;**結構描述**&#x200B;的樹狀結構。 當您選取實際屬性&#x200B;**longitude**&#x200B;時，您會在醒目提示的紅色方塊中看到完整路徑。 若要複製屬性的路徑，請按一下複製路徑圖示。
+貼上您從Query Service UI複製的連線命令，然後在命令提示字元視窗中按下Enter：
 
-![explore-schema-for-path.png](./images/explore-schema-for-path.png)
+Windows：
 
-切換到您的記事本/括弧，並從第一行移除&#x200B;**your_attribute_path_here**。 將游標放在第一行上&#x200B;**選取**&#x200B;之後並貼上(CTRL-V)。
+![command-prompt-connected.png](./images/command-prompt-connected.png)
 
-從記事本/方括弧複製修改過的陳述式，然後貼到&#x200B;**PSQL命令列介面**&#x200B;的提示字元，然後按Enter鍵。
+macOS：
 
-結果應如下所示：
+![command-prompt-paste-osx.png](./images/command-prompt-paste-osx.png)
 
-```text
-aepenablementfy21:all=> select placeContext.geo._schema.longitude
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  
-------------
- -3.1269422
-```
+您現在已使用PSQL連線至查詢服務。
 
-下一步： [5.1.3查詢、查詢、查詢……和流失分析](./ex3.md)
+在接下來的練習中，將會有一些與此視窗的互動。 我們將它稱為您的&#x200B;**PSQL命令列介面**。
+
+現在您已準備好開始提交查詢。
+
+下一步： [5.1.3使用查詢服務](./ex3.md)
 
 [返回模組5.1](./query-service.md)
 

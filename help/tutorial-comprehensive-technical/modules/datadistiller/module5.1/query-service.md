@@ -4,16 +4,14 @@ description: 查詢服務
 kt: 5342
 doc-type: tutorial
 exl-id: 6eb65de3-d0e8-49d4-a702-5c9d6a1952b7
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
 
 # 5.1查詢服務
-
-**作者：[Marc Meewis](https://www.linkedin.com/in/marcmeewis/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 在本單元中，您將實際預覽Adobe Experience Platform查詢服務。 查詢服務可讓您對所有Adobe Experience Cloud應用程式資料執行全通道查詢，加入及分析跨Adobe Campaign、Analytics、Audience Manager、Target和Advertising Cloud的資料，以及其他載入/插入Adobe Experience Platform的客戶資料。
 
@@ -45,35 +43,35 @@ ht-degree: 1%
 
 ## 練習
 
-[5.1.0必要條件](./ex0.md)
+[5.1.1必要條件](./ex1.md)
 
 您必須安裝PSQL，才能執行此啟用練習中的查詢。 根據您的作業系統，您必須安裝MicrosoftPower BI或Tableau。 Windows使用者可以選擇Power BI或Tableau。 Mac使用者應安裝Tableau。
 
-[5.1.1快速入門](./ex1.md)
+[5.1.2快速入門](./ex2.md)
 
 在本練習中，您將探索Adobe Experience Platform查詢服務使用者介面、瞭解資料集、尋找您的查詢，以及最終設定來自PSQL的連線。
 
-[5.1.2使用查詢服務](./ex2.md)
+[5.1.3使用查詢服務](./ex3.md)
 
 在本練習中，您將瞭解基本查詢服務語法，並可以在查詢中識別XDM結構的屬性。
 
-[5.1.3查詢、查詢、查詢……和流失分析](./ex3.md)
+[5.1.4查詢、查詢、查詢……和流失分析](./ex4.md)
 
 在本練習中，您將進行查詢，在進行某些流失分析時會瞭解Adobe定義的函式。 最後，您將撰寫查詢以準備資料集，以便用於MicrosoftPower BI。
 
-[5.1.4從查詢產生資料集](./ex4.md)
+[5.1.5從查詢產生資料集](./ex5.md)
 
 在本練習中，您將會從上一個執行的查詢產生資料集，並在下一個練習中使用此資料集。
 
-[5.1.5查詢服務與Power BI](./ex5.md)
+[5.1.6查詢服務與Power BI](./ex6.md)
 
 在本練習中，您會將Power BI連線至Adobe Experience Platform和查詢服務，以執行Callcenter互動分析。
 
-[5.1.6 Query Service和Tableau](./ex6.md)
+[5.1.7查詢服務和Tableau](./ex7.md)
 
 在本練習中，您會將Tableau連線至Adobe Experience Platform和查詢服務，以執行Callcenter互動分析。
 
-[5.1.7查詢服務API](./ex7.md)
+[5.1.8查詢服務API](./ex8.md)
 
 在本練習中，您將使用「查詢服務API」來管理查詢範本和查詢排程。
 
