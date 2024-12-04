@@ -4,9 +4,9 @@ description: 查詢服務 — 必要條件
 kt: 5342
 doc-type: tutorial
 exl-id: b8a404d1-7796-46e3-b245-553acdc753ae
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,12 @@ ht-degree: 0%
 
 依照Adobe Experience Platform檔案中概述的指示，安裝psql使用者端：
 [PSQL安裝指南](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html)
+
+安裝PSQL之後，您可能需要在終端機視窗中執行下列命令，以更新您的&#x200B;**PATH**：
+
+對於macOS （以下命令中的XX取代為您安裝的PSQL版本號碼）：
+
+`export PATH=/Library/PostgreSQL/XX/bin:$PATH`
 
 ## 安裝Power BI
 
