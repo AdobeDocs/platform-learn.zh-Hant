@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
+source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 16%
+source-wordcount: '947'
+ht-degree: 17%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 16%
    + [概觀](/help/platform/ai-assistant/overview.md)
    + [設定存取權](/help/platform/ai-assistant/access.md)
    + [清除對象](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [與新產品一同上線](/help/platform/ai-assistant/onboard.md)
 + 對象與細分{#audiences}
    + [對象入口網站和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上傳對象](audiences/upload-audiences.md)

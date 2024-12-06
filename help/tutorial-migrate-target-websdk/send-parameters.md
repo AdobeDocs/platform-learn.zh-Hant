@@ -2,9 +2,9 @@
 title: 傳送引數 — 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何使用Experience PlatformWeb SDK將mbox、設定檔和實體引數傳送至Adobe Target。
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
+source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -306,7 +306,7 @@ targetPageParams = function() {
 
 當`commerce`欄位群組將`purchases.value`設定為`1`時，購買資訊會傳遞至Target。 訂單識別碼與訂單總計會自動從`order`物件對應。 如果`productListItems`陣列存在，則`SKU`值會用於`productPurchasedId`。
 
-使用`sendEvent`命令的平台Web SDK範例：
+使用`sendEvent`的平台Web SDK範例：
 
 >[!BEGINTABS]
 
@@ -328,14 +328,24 @@ alloy("sendEvent", {
       "SKU": "SKU-00002"
     }, {
       "SKU": "SKU-00003"
-    }]
+    }],
+      "_experience": {
+          "decisioning": {
+              "propositions": [{
+                  "scope": "<your_mbox>"
+              }],
+              "propositionEventType": {
+                  "display": 1
+              }
+          }
+      }
   }
 });
 ```
 
 >[!TAB 標記]
 
-在標籤中，請先使用[!UICONTROL XDM物件]資料元素來對應至XDM欄位：
+在標籤中，請先使用[!UICONTROL XDM物件]資料元素來對應到必要的XDM欄位(請參閱JavaScript範例)和選用的自訂範圍：
 
 ![對應到XDM物件資料元素中的XDM欄位](assets/params-tags-purchase.png){zoomable="yes"}
 
@@ -345,6 +355,13 @@ alloy("sendEvent", {
 
 >[!ENDTABS]
 
+>[!IMPORTANT]
+>
+> `_experience.decisioning.propositionEventType`必須設定為`display: 1`，才能使用呼叫來遞增Target量度。
+
+>[!NOTE]
+>
+> 如果您想要在Target量度定義中使用自訂位置/mbox名稱（例如`orderConfirmPage`），請以如上範例中的自訂範圍填入`_experience.decisioning.propositions`陣列。
 
 >[!NOTE]
 >
@@ -384,7 +401,8 @@ alloy("sendEvent", {
     "identityMap": {
       "GLOBAL_CUSTOMER_ID": [{
         "id": "TT8675309",
-        "authenticatedState": "authenticated"
+        "authenticatedState": "authenticated",
+        "primary": true
       }]
     }
   }
@@ -407,6 +425,12 @@ alloy("sendEvent", {
 ![在資料流中設定目標第三方ID名稱空間](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+>[!NOTE]
+>
+> Adobe建議將代表個人的名稱空間（例如已驗證的身分）傳送為主要身分。
+
+
 
 ## 平台Web SDK範例
 
@@ -458,7 +482,8 @@ alloy("sendEvent", {
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "web": {
@@ -534,7 +559,8 @@ alloy("sendEvent", {
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "commerce": {
@@ -550,7 +576,17 @@ alloy("sendEvent", {
           "SKU": "SKU-00002"
         }, {
           "SKU": "SKU-00003"
-        }]
+        }],
+        "_experience": {
+            "decisioning": {
+                "propositions": [{
+                    "scope": "<your_mbox>"
+                }],
+                "propositionEventType": {
+                    "display": 1
+                }
+            }
+        }
       }
     });
   </script>
