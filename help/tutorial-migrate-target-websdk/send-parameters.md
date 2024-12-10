@@ -2,9 +2,9 @@
 title: 傳送引數 — 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何使用Experience PlatformWeb SDK將mbox、設定檔和實體引數傳送至Adobe Target。
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
+source-git-commit: 0697c6d13272182432e11fdb9d84a752d39527b6
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
@@ -372,7 +372,7 @@ alloy("sendEvent", {
 
 Target允許使用單一客戶ID跨裝置和系統同步設定檔。 使用at.js時，可將此值設定為Target請求中的`mbox3rdPartyId`，或設定為第一個傳送至Experience CloudIdentity Service的客戶ID。 不像at.js，Platform Web SDK實作可讓您指定在有多個`mbox3rdPartyId`時使用哪個客戶ID。 例如，如果您的企業擁有全域客戶ID，以及不同業務線的個別客戶ID，您可以設定Target應使用哪個ID。
 
-針對Target跨裝置和客戶屬性使用案例設定ID同步的步驟如下：
+針對跨裝置和客戶屬性使用案例設定ID同步的步驟如下：
 
 1. 為Data Collection或Platform的&#x200B;**[!UICONTROL 身分]**&#x200B;畫面中的客戶ID建立&#x200B;**[!UICONTROL 身分名稱空間]**
 1. 請確定客戶屬性中的&#x200B;**[!UICONTROL 別名]**&#x200B;符合您名稱空間中的&#x200B;**[!UICONTROL 身分符號]**
