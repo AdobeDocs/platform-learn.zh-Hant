@@ -5,9 +5,9 @@ user-guide-description: 此實作教學課程涵蓋Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ca6370660b676cef48890d23652258015aa2b9ed
+source-git-commit: cf8b97f06bbe6741fc6dfa70c207c6a748f5fe85
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 4%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 4%
       + [使用行動應用程式](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1個資料集合{#datacollection}
-   + 1.1 Adobe Experience Platform Data Collection和Web SDK {#module11}
+   + 1.1 Adobe Experience Platform Data Collection與Web SDK {#module11}
       + [概觀](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
       + [1.1.1瞭解Adobe Experience Platform資料收集](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex1.md)
       + [1.1.2Edge Network、資料串流和伺服器端資料收集](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex2.md)
@@ -108,8 +108,9 @@ ht-degree: 4%
    + 3.1 Adobe Journey Optimizer：協調流程{#module31}
       + [概觀](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/journey-orchestration-create-account.md)
       + [3.1.1建立您的活動](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex1.md)
-      + [3.1.2建立您的歷程與電子郵件訊息](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
-      + [3.1.3更新您的資料收集屬性並測試您的歷程](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.2建立要在訊息中使用的片段](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
+      + [3.1.3建立您的歷程和電子郵件訊息](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.4更新您的資料收集屬性並測試您的歷程](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex4.md)
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/summary.md)
    + 3.2 Adobe Journey Optimizer：外部資料來源和自訂動作{#module32}
       + [概觀](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)

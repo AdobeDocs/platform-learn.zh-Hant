@@ -1,258 +1,240 @@
 ---
-title: Journey Optimizer建立您的歷程與電子郵件訊息
-description: Journey Optimizer建立您的電子郵件訊息
+title: Journey Optimizer — 建立您的片段
+description: Journey Optimizer — 建立您的片段
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 81810b3a-7eca-436f-a5dc-48c46cb33980
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '1413'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
 
-# 3.1.2建立您的歷程與電子郵件訊息
+# 3.1.2建立要在訊息中使用的片段
 
-在本練習中，您將設定當有人在示範網站上建立帳戶時，需要觸發的歷程和訊息。
+在本練習中，您將設定2個片段，1個用於可重複使用的頁首，1個用於可重複使用的頁尾。
 
 前往[Adobe Experience Cloud](https://experience.adobe.com)登入Adobe Journey Optimizer。 按一下&#x200B;**Journey Optimizer**。
 
 ![ACOP](./images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.1.2.1建立您的歷程
+## 3.1.2.1建立您的標頭片段
 
-在左側功能表中，按一下&#x200B;**歷程**。 接著，按一下&#x200B;**建立歷程**&#x200B;以建立新歷程。
+在左側功能表中，按一下&#x200B;**片段**。 片段是Journey Optimizer中的可重複使用元件，可避免重複並方便未來應影響所有訊息的變更，例如電子郵件訊息中頁首或頁尾的變更。
 
-![ACOP](./images/createjourney.png)
+按一下&#x200B;**建立片段**。
 
-接著，您會看到空白的歷程畫面。
+![ACOP](./images/fragm1.png)
 
-![ACOP](./images/journeyempty.png)
+輸入名稱`--aepUserLdap-- - CitiSignal - Header`並選取&#x200B;**型別：視覺片段**。 按一下&#x200B;**建立**。
 
-在上一個練習中，您已建立新的&#x200B;**事件**。 您將其命名為`ldapAccountCreationEvent`，並將`ldap`取代為您的LDAP。 這是建立事件的結果：
+![ACOP](./images/fragm2.png)
 
-![ACOP](./images/eventdone.png)
+您將會看到此訊息。 在左側選單中，您會找到可用來定義電子郵件結構（列和欄）的結構元件。
 
-您現在需要將此事件當作此歷程的開端。 您可以移至畫面左側，在事件清單中搜尋您的事件，以執行此操作。
+將&#x200B;**1:1欄**&#x200B;從功能表拖放到畫布中。 這將是標誌影像的預留位置。
 
-![ACOP](./images/eventlist.png)
+![Journey Optimizer](./images/fragm3.png)
 
-選取您的事件，將其拖放至「歷程」畫布上。 您的歷程現在看起來像這樣：
+接下來，您可以使用內容元件來新增這些區塊中的內容。 將&#x200B;**Image**&#x200B;元件拖放到第一列的第一個儲存格。 按一下&#x200B;**瀏覽**。
 
-![ACOP](./images/journeyevent.png)
+![Journey Optimizer](./images/fragm4.png)
 
-作為歷程的第二步，您需要新增一個短的&#x200B;**等待**&#x200B;步驟。 移至畫面左側的&#x200B;**協調流程**&#x200B;區段以尋找此專案。 您將使用設定檔屬性，而且需要確定這些屬性已填入即時客戶設定檔中。
+然後您會看到快顯視窗開啟，顯示您的AEM Assets Media Library。 前往資料夾&#x200B;**citi-signal-images**，按一下以選取影像&#x200B;**CitiSignal-Logo-White.png**，然後按一下&#x200B;**選取**。
 
-![ACOP](./images/journeywait.png)
+>[!NOTE]
+>
+>如果您在AEM Assets資料庫中看不到Citi Signal影像，您可以在[這裡](../../../assets/ajo/CitiSignal-images.zip)找到它們。 將它們下載到您的案頭，建立資料夾&#x200B;**citi-signal-images**，然後上傳該資料夾中的所有影像。
 
-您的歷程現在看起來像這樣。 在畫面右側，您需要設定等待時間。 設定為1分鐘。 這會在事件觸發後，提供充足的時間讓設定檔屬性可用。
+![Journey Optimizer](./images/fragm5.png)
 
-![ACOP](./images/journeywait1.png)
+您將會看到此訊息。 您的影像是白色的，尚未顯示。 您現在應該定義背景顏色，讓影像正確顯示。 按一下&#x200B;**樣式**，然後按一下&#x200B;**背景顏色**&#x200B;方塊。
 
-按一下&#x200B;**確定**&#x200B;以儲存變更。
+![Journey Optimizer](./images/fragm6.png)
 
-作為歷程的第三個步驟，您需要新增&#x200B;**電子郵件**&#x200B;動作。 移至畫面左側的&#x200B;**動作**，選取&#x200B;**電子郵件**&#x200B;動作，然後將其拖放到歷程的第二個節點。 您現在看到這個了。
+在快顯視窗中，將&#x200B;**十六進位**&#x200B;色彩代碼變更為&#x200B;**#8821F4**，然後按一下&#x200B;**100%**&#x200B;欄位來變更焦點。 然後您會看到新顏色套用到影像。
 
-![ACOP](./images/journeyactions.png)
+![Journey Optimizer](./images/fragm7.png)
 
-將&#x200B;**類別**&#x200B;設定為&#x200B;**行銷**，並選取可讓您傳送電子郵件的電子郵件表面。 在此情況下，要選取的電子郵件表面為&#x200B;**電子郵件**。 請確定已同時啟用&#x200B;**電子郵件**&#x200B;點按和&#x200B;**電子郵件開啟**&#x200B;的核取方塊。
+影像目前也有些變大。 讓我們將&#x200B;**寬度**&#x200B;切換器滑動至&#x200B;**40%**，以變更寬度。
 
-![ACOP](./images/journeyactions1.png)
+![Journey Optimizer](./images/fragm8.png)
 
-下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。****
+您的標頭片段現已準備就緒。 按一下&#x200B;**儲存**，然後按一下箭頭，返回上一個畫面。
 
-![ACOP](./images/journeyactions2.png)
+![Journey Optimizer](./images/fragm9.png)
 
-## 3.1.2.2建立您的訊息
+您的片段必須先發佈，才能使用。 按一下&#x200B;**Publish**。
 
-若要建立您的訊息，請按一下[編輯內容]。****
+![Journey Optimizer](./images/fragm10.png)
 
-![ACOP](./images/journeyactions2.png)
+幾分鐘後，您會看到片段的狀態已變更為&#x200B;**即時**。
+接下來，您應該為電子郵件訊息的頁尾建立新的片段。 按一下**建立片段**。
 
-您現在看到這個了。
+![Journey Optimizer](./images/fragm11.png)
 
-![ACOP](./images/journeyactions3.png)
+## 3.1.2.1建立您的頁尾片段
 
-按一下&#x200B;**主旨列**&#x200B;文字欄位。
+按一下&#x200B;**建立片段**。
 
-![Journey Optimizer](./images/msg5.png)
+![Journey Optimizer](./images/fragm11.png)
 
-在文字區域中開始寫入&#x200B;**您好**
+輸入名稱`--aepUserLdap-- - CitiSignal - Footer`並選取&#x200B;**型別：視覺片段**。 按一下&#x200B;**建立**。
 
-![Journey Optimizer](./images/msg6.png)
+![Journey Optimizer](./images/fragm12.png)
 
-主旨列尚未完成。 接下來，您需要為&#x200B;**名字**&#x200B;欄位（儲存在`profile.person.name.firstName`下）引入個人化權杖。 在左側功能表中，向下捲動以尋找&#x200B;**人員**&#x200B;元素，然後按一下箭頭以深入瞭解。
+您將會看到此訊息。 在左側選單中，您會找到可用來定義電子郵件結構（列和欄）的結構元件。
 
-![Journey Optimizer](./images/msg7.png)
+將&#x200B;**1:1欄**&#x200B;從功能表拖放到畫布中。 這會是頁尾內容的預留位置。
 
-現在找到&#x200B;**全名**&#x200B;元素，然後按一下箭頭，即可深入瞭解。
+![Journey Optimizer](./images/fragm13.png)
 
-![Journey Optimizer](./images/msg8.png)
+接下來，您可以使用內容元件來新增這些區塊中的內容。 將&#x200B;**HTML**&#x200B;元件拖放到第一列的第一個儲存格。 按一下元件以選取它，然後按一下&#x200B;**&lt;/>**&#x200B;圖示以編輯HTML原始程式碼。
 
-最後，找到&#x200B;**名字**&#x200B;欄位，然後按一下它旁邊的&#x200B;**+**&#x200B;符號。 然後，您會看到個人化權杖出現在文字欄位中。
+![Journey Optimizer](./images/fragm14.png)
 
-![Journey Optimizer](./images/msg9.png)
+您將會看到此訊息。
 
-接下來，新增文字&#x200B;**，感謝您註冊！**。按一下&#x200B;**儲存**。
+![Journey Optimizer](./images/fragm15.png)
 
-![Journey Optimizer](./images/msg10.png)
+複製以下HTML程式碼片段，並將其貼到Journey Optimizer的&#x200B;**編輯HTML**&#x200B;視窗中。
 
-然後您就會回到這裡。 按一下&#x200B;**電子郵件Designer**&#x200B;以建立電子郵件的內容。
+```html
+<!--[if mso]><table cellpadding="0" cellspacing="0" border="0" width="100%"><tr><td style="text-align: center;" ><![endif]-->
+<table style="width: auto; display: inline-block;">
+  <tbody>
+    <tr class="component-social-container">
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://www.facebook.com" data-component-social-icon-id="facebook">
+        
+        </a>
+      </td>
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://x.com" data-component-social-icon-id="twitter">
+        
+        </a>
+      </td>
+      <td style="padding: 5px">
+        <a style="text-decoration: none;" href="https://www.instagram.com" data-component-social-icon-id="instagram">
+         
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--[if mso]></td></tr></table><![endif]-->
+```
 
-![Journey Optimizer](./images/msg11.png)
+您就會擁有此專案。 在第7、12和17行，您現在需要使用AEM Assets資料庫中的資產插入影像檔案。
 
-在下一個畫面中，系統會使用3種不同的方法來提示您提供電子郵件內容：
+![Journey Optimizer](./images/fragm16.png)
 
-- **從草稿開始設計**：從空白畫布開始，並使用WYSIWYG編輯器拖放結構和內容元件，以視覺化方式建置電子郵件的內容。
-- **為您自己的電子郵件編碼**：使用HTML編碼來建立您自己的電子郵件範本
-- **匯入HTML**：匯入現有的HTML範本，您可以編輯該範本。
+請確定游標位於第7行，然後按一下左側功能表中的&#x200B;**Assets**。 按一下&#x200B;**開啟資產選擇器**&#x200B;以選取您的影像。
 
-按一下&#x200B;**從頭開始設計**。
+![Journey Optimizer](./images/fragm17.png)
 
-![Journey Optimizer](./images/msg12.png)
+開啟資料夾&#x200B;**citi-signal-images**，然後按一下以選取影像&#x200B;**Icon_Facebook.png**。 按一下&#x200B;**選取**。
 
-在左側選單中，您會找到可用來定義電子郵件結構（列和欄）的結構元件。
+![Journey Optimizer](./images/fragm18.png)
 
-![Journey Optimizer](./images/msg13.png)
+請確定您的游標位於第12行，然後按一下[開啟資產選取器] **以選取您的影像。**
 
-從功能表將&#x200B;**1:2資料行左側**&#x200B;拖放到畫布中。 這將是標誌影像的預留位置。
+![Journey Optimizer](./images/fragm19.png)
 
-![Journey Optimizer](./images/msg14.png)
+開啟資料夾&#x200B;**citi-signal-images**，然後按一下以選取影像&#x200B;**Icon_X.png**。 按一下&#x200B;**選取**。
 
-將&#x200B;**1:1欄**&#x200B;拖放到上一個元件下。 這將是橫幅區塊。
+![Journey Optimizer](./images/fragm20.png)
 
-![Journey Optimizer](./images/msg15.png)
+請確定您的游標位於第17行，然後按一下[開啟資產選取器] **以選取您的影像。**
 
-將&#x200B;**1:2欄向左**&#x200B;拖放到上一個元件下。 這是實際內容，左側有影像，右側有文字。
+![Journey Optimizer](./images/fragm21.png)
 
-![Journey Optimizer](./images/msg16.png)
+開啟資料夾&#x200B;**citi-signal-images**，然後按一下以選取影像&#x200B;**Icon_Instagram.png**。 按一下&#x200B;**選取**。
 
-接著，將&#x200B;**1:1欄**&#x200B;拖放到上一個元件下。 這將是電子郵件的頁尾。 您的畫布現在看起來應該像這樣：
+![Journey Optimizer](./images/fragm22.png)
 
-![Journey Optimizer](./images/msg17.png)
+您將會看到此訊息。 按一下&#x200B;**儲存**。
 
-接下來，讓我們使用「內容元件」在這些區塊中新增內容。 按一下&#x200B;**內容元件**&#x200B;功能表專案
+![Journey Optimizer](./images/fragm23.png)
 
-![Journey Optimizer](./images/msg18.png)
+然後您會回到編輯器中。 您的圖示尚未顯示，因為背景和影像檔案都是白色的。 若要變更背景顏色，請移至&#x200B;**樣式**&#x200B;並按一下&#x200B;**背景顏色**&#x200B;核取方塊。
 
-將&#x200B;**Image**&#x200B;元件拖放到第一列的第一個儲存格。 按一下&#x200B;**瀏覽**。
+![Journey Optimizer](./images/fragm24.png)
 
-![Journey Optimizer](./images/msg19.png)
+將&#x200B;**十六進位**&#x200B;色彩代碼變更為&#x200B;**#000000**。
 
-您將會看到此訊息。 導覽至資料夾&#x200B;**enablement-assets**，並選取檔案&#x200B;**luma-logo.png**。 按一下&#x200B;**選取**。
+![Journey Optimizer](./images/fragm25.png)
 
-![Journey Optimizer](./images/msg21.png)
+將對齊方式變更為置中。
 
-您現在回到這裡：
+![Journey Optimizer](./images/fragm26.png)
 
-![Journey Optimizer](./images/msg25.png)
+讓我們將其他部分新增到頁尾。 將&#x200B;**Image**&#x200B;元件拖放至您剛建立的HTML元件上方。 按一下&#x200B;**瀏覽**。
 
-移至&#x200B;**內容元件**，並將&#x200B;**Image**&#x200B;元件拖放到第一列的第一個儲存格中。 按一下&#x200B;**瀏覽**。
+![Journey Optimizer](./images/fragm27.png)
 
-![Journey Optimizer](./images/msg26.png)
+按一下以選取影像檔&#x200B;**`CitiSignal_Footer_Logo.png`**，然後按一下&#x200B;**選取**。
 
-在&#x200B;**Assets**&#x200B;快顯視窗中，前往&#x200B;**enablement-assets**&#x200B;資料夾。 在此資料夾中，您會找到創意團隊先前準備及上傳的所有資產。 選取&#x200B;**module23-thankyou-new.png**&#x200B;並按一下&#x200B;**選取**。
+![Journey Optimizer](./images/fragm28.png)
 
-![Journey Optimizer](./images/msg28.png)
+移至&#x200B;**樣式**&#x200B;並按一下&#x200B;**背景顏色**&#x200B;核取方塊，讓我們再次將其變更為黑色。 將&#x200B;**十六進位**&#x200B;色彩代碼變更為&#x200B;**#000000**。
 
-之後，您將會擁有此專案：
+![Journey Optimizer](./images/fragm29.png)
 
-![Journey Optimizer](./images/msg30.png)
+將寬度變更為&#x200B;**20%**，並確認對齊方式已設定為置中。
 
-選取您的影像，然後在右方功能表中向下捲動，直到您看到&#x200B;**大小**&#x200B;寬度滑桿元件為止。 使用滑桿將寬度變更為&#x200B;**60%**。
+![Journey Optimizer](./images/fragm30.png)
 
-![Journey Optimizer](./images/msg31.png)
+接著，將&#x200B;**Text**&#x200B;元件拖放到您建立的HTML元件下。 按一下&#x200B;**瀏覽**。
 
-接著，前往&#x200B;**內容元件**，並將&#x200B;**文字**&#x200B;元件拖放到結構元件的第四列。
+![Journey Optimizer](./images/fragm31.png)
 
-![Journey Optimizer](./images/msg33.png)
+取代預留位置文字，複製並貼上以下文字。
 
-選取預設文字&#x200B;**請在此輸入您的文字。**，如同處理任何文字編輯器一樣。 請改寫&#x200B;**親愛的**。 請注意文字模式中顯示的文字工具列。
+```
+1234 N. South Street, Anywhere, US 12345
 
-![Journey Optimizer](./images/msg34.png)
+Unsubscribe
 
-在工具列中按一下&#x200B;**新增個人化**&#x200B;圖示。
+©2024 CitiSignal, Inc and its affiliates. All rights reserved.
+```
 
-![Journey Optimizer](./images/msg35.png)
+將&#x200B;**文字對齊方式**&#x200B;設定為置中。
 
-接下來，您需要帶上儲存在`profile.person.name.firstName`底下的&#x200B;**名字**&#x200B;個人化權杖。 在功能表中，尋找&#x200B;**人員**&#x200B;元素，向下展開至&#x200B;**全名**&#x200B;元素，然後按一下&#x200B;**+**&#x200B;圖示，將「名字」欄位新增至運算式編輯器。
+![Journey Optimizer](./images/fragm32.png)
 
-按一下&#x200B;**儲存**。
+將&#x200B;**字型顏色**&#x200B;變更為白色，**#FFFFFF**。
 
-![Journey Optimizer](./images/msg36.png)
+![Journey Optimizer](./images/fragm33.png)
 
-您現在會注意到個人化欄位已新增至文字的方式。
+將&#x200B;**背景顏色**&#x200B;變更為黑色，**#000000**。
 
-![Journey Optimizer](./images/msg37.png)
+![Journey Optimizer](./images/fragm34.png)
 
-在相同的文字欄位中，按兩下&#x200B;**Enter**&#x200B;以新增兩行並寫入&#x200B;**感謝您使用Luma建立您的帳戶！**。
+在頁尾中選取文字&#x200B;**取消訂閱**，然後按一下功能表列中的&#x200B;**連結**&#x200B;圖示。 將&#x200B;**Type**&#x200B;設定為&#x200B;**外部選擇退出/取消訂閱**，並將URL設定為&#x200B;**https://aepdemo.net/unsubscribe.html** （取消訂閱連結不允許有空白URL）。
 
-![Journey Optimizer](./images/msg38.png)
+![Journey Optimizer](./images/fragm35.png)
 
-要執行的最終檢查以確保您的電子郵件已準備好進行預覽，請按一下&#x200B;**模擬內容**&#x200B;按鈕。
+您就會擁有此專案。 您的頁尾現已準備就緒。 按一下&#x200B;**儲存**，然後按一下箭頭返回上一頁。
 
-![Journey Optimizer](./images/msg50.png)
+![Journey Optimizer](./images/fragm36.png)
 
-首先，識別您要用於預覽的設定檔。 按一下&#x200B;**輸入身分名稱空間**&#x200B;欄位旁的圖示，以選取&#x200B;**電子郵件**&#x200B;名稱空間。
+按一下&#x200B;**Publish**&#x200B;發佈您的頁尾，以便用於電子郵件中。
 
-在身分識別名稱空間清單中，選取&#x200B;**電子郵件**&#x200B;名稱空間。
+![Journey Optimizer](./images/fragm37.png)
 
-在&#x200B;**身分值**&#x200B;欄位中，輸入已儲存在即時客戶設定檔中之先前示範設定檔的電子郵件地址。 例如&#x200B;**woutervangeluwe+06022022-01@gmail.com**&#x200B;並按一下&#x200B;**尋找測試設定檔**&#x200B;按鈕
+幾分鐘後，您會看到頁尾的狀態已變更為&#x200B;**即時**。
 
-![Journey Optimizer](./images/msg53.png)
-
-您的設定檔顯示在表格中後，請按一下&#x200B;**預覽**&#x200B;標籤以存取預覽畫面。
-
-預覽準備就緒時，請驗證主旨行中的個人化是否正確，內文和取消訂閱連結會醒目提示為超連結。
-
-按一下&#x200B;**關閉**&#x200B;以關閉預覽。
-
-![Journey Optimizer](./images/msg54.png)
-
-按一下&#x200B;**儲存**&#x200B;以儲存您的訊息。
-
-![Journey Optimizer](./images/msg55.png)
-
-按一下左上角主旨列文字旁的&#x200B;**箭頭**，返回訊息儀表板。
-
-![Journey Optimizer](./images/msg56.png)
-
-您現在已經完成建立註冊電子郵件。 按一下左上角的箭頭，返回您的歷程。
-
-![Journey Optimizer](./images/msg57.png)
-
-按一下&#x200B;**確定**。
-
-![Journey Optimizer](./images/msg57a.png)
-
-## 3.1.2.3 Publish您的歷程
-
-您仍需要提供歷程名稱。 若要這麼做，請按一下熒幕右上方的&#x200B;**屬性**&#x200B;圖示。
-
-![ACOP](./images/journeyname.png)
-
-然後，您可以在此處輸入歷程的名稱。 請使用`--aepUserLdap-- - Account Creation Journey`。 按一下&#x200B;**確定**&#x200B;以儲存變更。
-
-![ACOP](./images/journeyname1.png)
-
-您現在可以按一下&#x200B;**Publish**&#x200B;發佈您的歷程。
-
-![ACOP](./images/publishjourney.png)
-
-再按一下&#x200B;**Publish**。
-
-![ACOP](./images/publish1.png)
-
-接著，您會看到綠色確認列，指出您的歷程已發佈。
-
-![ACOP](./images/published.png)
+![Journey Optimizer](./images/fragm38.png)
 
 您現在已經完成此練習。
 
-下一步： [3.1.3更新您的資料收集屬性並測試您的歷程](./ex3.md)
+下一步： [3.1.3建立您的歷程與電子郵件訊息](./ex3.md)
 
 [返回模組3.1](./journey-orchestration-create-account.md)
 

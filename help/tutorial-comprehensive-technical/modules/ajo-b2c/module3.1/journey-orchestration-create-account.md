@@ -4,18 +4,16 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: 73812caa-29a1-4931-944d-9651c6de2c19
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '268'
 ht-degree: 3%
 
 ---
 
 # 3.1 Adobe Journey Optimizer：協調流程
 
-**作者：[Rob In der Maur](https://www.linkedin.com/in/ridmaur/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-在本單元中，我們將引導您完成使用Adobe Journey Optimizer的步驟。 您將能存取Adobe Journey Optimizer，並設定根據傳送至Platform的體驗事件的觸發程式啟動的事件和歷程。
+在本單元中，我們將引導您完成使用Adobe Journey Optimizer的步驟。 您將設定事件和歷程，使其根據傳送至AEP的體驗事件的觸發器啟動。
 
 ## 學習目標
 
@@ -37,11 +35,15 @@ ht-degree: 3%
 
 在本練習中，您將學習如何設定事件。
 
-[3.1.2建立您的歷程與電子郵件訊息](./ex2.md)
+[3.1.2建立要在訊息中使用的片段](./ex2.md)
+
+在本練習中，您將瞭解如何設定建立電子郵件訊息時將會使用的可重複使用片段。
+
+[3.1.3建立您的歷程和電子郵件訊息](./ex3.md)
 
 在本練習中，您將瞭解如何設定電子郵件訊息。
 
-[3.1.3更新您的資料收集屬性並測試您的歷程](./ex3.md)
+[3.1.3更新您的資料收集屬性並測試您的歷程](./ex4.md)
 
 這將引導您完成Launch的設定，以觸發您的事件並提供正確的裝載，最後，您將能夠傳送電子郵件給自己。
 
