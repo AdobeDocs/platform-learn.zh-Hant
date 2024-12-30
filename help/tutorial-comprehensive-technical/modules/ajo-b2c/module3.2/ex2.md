@@ -3,10 +3,11 @@ title: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 定義外�
 description: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 定義外部資料來源
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aeafa053-16f1-4fd3-944e-91401daeeced
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 3%
+source-wordcount: '568'
+ht-degree: 4%
 
 ---
 
@@ -16,11 +17,11 @@ ht-degree: 3%
 
 前往[Adobe Experience Cloud](https://experience.adobe.com)登入Adobe Journey Optimizer。 按一下&#x200B;**Journey Optimizer**。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 在左側功能表中，向下捲動並按一下&#x200B;**組態**。 接著，按一下&#x200B;**資料來源**&#x200B;下的&#x200B;**管理**&#x200B;按鈕。
 
@@ -45,13 +46,9 @@ ht-degree: 3%
 
 ![天氣地圖](./images/owm1.png)
 
-請填寫詳細資料。
+請填寫詳細資料。 按一下&#x200B;**建立帳戶**。
 
 ![天氣地圖](./images/owm2.png)
-
-按一下&#x200B;**建立帳戶**。
-
-![天氣地圖](./images/owm3.png)
 
 系統會將您重新導向至帳戶頁面。
 
@@ -65,7 +62,7 @@ ht-degree: 3%
 
 您可以在[這裡](https://openweathermap.org/current)找到&#x200B;**目前氣候**&#x200B;的&#x200B;**API檔案**。
 
-在我們的使用案例中，我們將根據客戶所在的城市實施與開放氣象地圖的連線。
+針對此使用案例，您將使用依城市名稱&#x200B;**的**&#x200B;內建API要求，根據客戶所在的城市來實作開放氣象地圖連線。
 
 ![天氣地圖](./images/owm6.png)
 
@@ -73,7 +70,7 @@ ht-degree: 3%
 
 ![示範](./images/emptyds.png)
 
-作為資料來源的名稱，請使用`--aepUserLdap--WeatherApi`。 在此範例中，資料來源名稱為`vangeluwWeatherApi `。
+作為資料來源的名稱，請使用`--aepUserLdap--WeatherApi`。
 
 設定描述為： `Access to the Open Weather Map`。
 
@@ -98,7 +95,7 @@ ht-degree: 3%
 
 ![示範](./images/fg.png)
 
-根據氣象API檔案，我們需要傳送引數`q=City`。
+根據天氣API檔案，您必須傳送引數`q=City`。
 
 ![示範](./images/owmapi.png)
 
@@ -106,58 +103,68 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->欄位群組名稱必須是唯一的，請使用這個命名慣例： `--aepUserLdap--WeatherByCity`，所以在此情況下，名稱應該是`vangeluwWeatherByCity`
+>欄位群組名稱必須是唯一的，請使用以下命名慣例： `--aepUserLdap--WeatherByCity`
 
 ![示範](./images/fg1.png)
 
 針對回應裝載，您需要貼上氣象API將傳送的回應範例。
 
-您可以在API檔案頁面[這裡](https://openweathermap.org/current)找到預期的API JSON回應。
+您可以在API檔案頁面[這裡](https://openweathermap.org/current)的&#x200B;**JSON**&#x200B;主題下找到預期的API JSON回應。
 
 ![示範](./images/owmapi1.png)
 
 或者，您可以從此處複製JSON回應：
 
 ```json
-{"coord": { "lon": 139,"lat": 35},
-  "weather": [
-    {
-      "id": 800,
-      "main": "Clear",
-      "description": "clear sky",
-      "icon": "01n"
-    }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 281.52,
-    "feels_like": 278.99,
-    "temp_min": 280.15,
-    "temp_max": 283.71,
-    "pressure": 1016,
-    "humidity": 93
-  },
-  "wind": {
-    "speed": 0.47,
-    "deg": 107.538
-  },
-  "clouds": {
-    "all": 2
-  },
-  "dt": 1560350192,
-  "sys": {
-    "type": 3,
-    "id": 2019346,
-    "message": 0.0065,
-    "country": "JP",
-    "sunrise": 1560281377,
-    "sunset": 1560333478
-  },
-  "timezone": 32400,
-  "id": 1851632,
-  "name": "Shuzenji",
-  "cod": 200
-}
+{
+   "coord": {
+      "lon": 7.367,
+      "lat": 45.133
+   },
+   "weather": [
+      {
+         "id": 501,
+         "main": "Rain",
+         "description": "moderate rain",
+         "icon": "10d"
+      }
+   ],
+   "base": "stations",
+   "main": {
+      "temp": 284.2,
+      "feels_like": 282.93,
+      "temp_min": 283.06,
+      "temp_max": 286.82,
+      "pressure": 1021,
+      "humidity": 60,
+      "sea_level": 1021,
+      "grnd_level": 910
+   },
+   "visibility": 10000,
+   "wind": {
+      "speed": 4.09,
+      "deg": 121,
+      "gust": 3.47
+   },
+   "rain": {
+      "1h": 2.73
+   },
+   "clouds": {
+      "all": 83
+   },
+   "dt": 1726660758,
+   "sys": {
+      "type": 1,
+      "id": 6736,
+      "country": "IT",
+      "sunrise": 1726636384,
+      "sunset": 1726680975
+   },
+   "timezone": 7200,
+   "id": 3165523,
+   "name": "Province of Turin",
+   "cod": 200
+}    
 ```
 
 將上述JSON回應複製到剪貼簿，然後前往自訂資料來源設定畫面。

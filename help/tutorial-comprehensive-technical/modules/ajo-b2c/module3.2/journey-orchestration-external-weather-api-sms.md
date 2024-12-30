@@ -6,16 +6,14 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 7f3d6dcb-845d-4ff1-97c3-8e93b8d2c624
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 07153124eb3cd4c07bbabb6f7b137f525fa1a27f
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
 # 3.2 Adobe Journey Optimizer：外部資料來源和自訂動作
-
-**作者：[Wouter Van Glouwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 在此單元中，您將使用Adobe Journey Optimizer來線上及離線監聽客戶行為，並以智慧、情境式且即時的方式回應。 您已在單元6中對Adobe Journey Optimizer有初始的實作體驗。 在本練習中，您將更深入並探索更進階的使用案例，其中外部資料來源會作為歷程的一部分使用。
 

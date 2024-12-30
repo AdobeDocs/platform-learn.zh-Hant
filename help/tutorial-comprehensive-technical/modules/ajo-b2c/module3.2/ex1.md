@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 定義事�
 description: Adobe Journey Optimizer — 外部氣象API、SMS動作等
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: d4e37338-bde2-41b9-948c-11d9216b8cf3
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '756'
 ht-degree: 2%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 2%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
@@ -29,18 +30,13 @@ ht-degree: 2%
 ![ACOP](./images/emptyevent.png)
 
 隨後即會出現新的空白事件視窗。
-
-![ACOP](./images/emptyevent1.png)
-
-作為事件的名稱，請使用`--aepUserLdap--GeofenceEntry`。 在此範例中，事件名稱為`vangeluwGeofenceEntry`。
+作為事件的名稱，請使用`--aepUserLdap--GeofenceEntry`。
 
 設定描述為： `Geofence Entry Event`。
 
+確定&#x200B;**型別**&#x200B;設定為&#x200B;**單一**，並且針對&#x200B;**事件識別碼型別**&#x200B;選取專案，選取&#x200B;**系統產生**
+
 ![示範](./images/evname.png)
-
-接下來，確定&#x200B;**型別**&#x200B;設定為&#x200B;**單一**，並且針對&#x200B;**事件識別碼型別**&#x200B;選取專案，選取&#x200B;**系統產生**
-
-![ACOP](./images/eventidtype.png)
 
 接下來，您需要選取結構描述。 此處顯示的所有結構描述都是Adobe Experience Platform結構描述。
 
@@ -83,7 +79,7 @@ Adobe Journey Optimizer會自動選取一些必填欄位，但您可以編輯可
 
 需要類似ECID和Orchestration eventID等欄位，而且必須預先選取。
 
-不過，行銷人員需要以彈性方式存取為「歷程」提供內容的所有資料點。 因此，讓我們也確定至少選取以下欄位（可在「置入」上下文節點中找到）：
+然而，行銷人員需要靈活存取所有為歷程提供內容的資料點。 因此，讓我們也確定至少選取以下欄位（可在「置入」上下文節點中找到）：
 
 - 城市
 
@@ -92,13 +88,9 @@ Adobe Journey Optimizer會自動選取一些必填欄位，但您可以編輯可
 ![示範](./images/popupok.png)
 
 Adobe Journey Optimizer也需要識別碼來識別客戶。 由於Adobe Journey Optimizer已連結至Adobe Experience Platform，結構描述的主要識別碼會自動被當作歷程的識別碼。
-主要識別碼也會自動考量Adobe Experience Platform的完整身分圖表，並將所有可用身分、裝置和頻道的所有行為連結至相同的設定檔，以便Adobe Journey Optimizer符合情境、相關且一致。
+主要識別碼也會自動考量Adobe Experience Platform的完整身分圖表，並將所有可用身分、裝置和頻道的所有行為連結至相同的設定檔，以便Adobe Journey Optimizer符合情境、相關且一致。 按一下**儲存**。
 
 ![示範](./images/eventidentifier.png)
-
-按一下[儲存]****&#x200B;儲存您的自訂事件。
-
-![示範](./images/save.png)
 
 您的事件會成為可用事件清單的一部分。
 
@@ -109,23 +101,19 @@ Adobe Journey Optimizer也需要識別碼來識別客戶。 由於Adobe Journey 
 按一下事件清單中的事件，再次開啟事件。
 在您的事件上，按一下**欄位**&#x200B;旁的&#x200B;**檢視裝載**&#x200B;圖示。
 
-![示範](./images/eventlist1.png)
-
-按一下&#x200B;**檢視裝載**&#x200B;圖示會開啟此事件的範例XDM裝載。
-
 ![示範](./images/fieldseyepayload.png)
 
-在&#x200B;**承載**&#x200B;中向下捲動，直到您看到第`eventID`行為止。
+按一下&#x200B;**檢視裝載**&#x200B;圖示會開啟此事件的範例XDM裝載。 在&#x200B;**承載**&#x200B;中向下捲動，直到您看到第`eventID`行為止。
 
 ![示範](./images/fieldseyepayloadev.png)
 
 寫下`eventID`，因為您最後需要它來測試您的設定。
 
-在此範例中，`eventID`是`fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934`。
+在此範例中，`eventID`是`4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`。
 
 您現在已定義將觸發我們正在建置之歷程的事件。 一旦觸發歷程，地理柵欄欄位（例如城市）和您可能選擇的任何其他欄位（例如國家/地區、緯度和經度）將可供歷程使用。
 
-如使用案例說明中所述，我們隨後需要根據天氣提供內容相關的促銷活動。 為了取得天氣資訊，我們需要定義外部資料來源，以便提供該位置的天氣資訊。 您將使用&#x200B;**OpenWeather**&#x200B;服務來提供哪些資訊，作為2的一部分。
+如使用案例說明中所述，我們隨後需要根據天氣提供內容相關的促銷活動。 為了取得天氣資訊，我們需要定義外部資料來源，以便提供該位置的天氣資訊。 您將使用&#x200B;**OpenWeather API**&#x200B;服務來提供這項資訊。
 
 下一步： [3.2.2定義外部資料來源](./ex2.md)
 

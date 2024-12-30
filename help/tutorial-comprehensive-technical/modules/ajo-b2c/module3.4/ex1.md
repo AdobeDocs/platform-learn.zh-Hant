@@ -4,9 +4,9 @@ description: 在本節中，您將設定觸發式歷程 — 訂購確認
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1921'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 前往[Adobe Experience Cloud](https://experience.adobe.com)登入Adobe Journey Optimizer。 按一下&#x200B;**Journey Optimizer**。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 若要從一個沙箱變更為另一個沙箱，請按一下&#x200B;**PRODUCTION Prod (VA7)**，然後從清單中選取沙箱。 在此範例中，沙箱名為&#x200B;**AEP Enablement FY22**。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.1.1建立您的活動
 
@@ -33,23 +33,14 @@ ht-degree: 0%
 
 然後您會看到空白的事件設定。
 
-![Journey Optimizer](./images/oc32.png)
-
 首先，請為事件命名如下： `--aepUserLdap--PurchaseEvent`，然後新增如下描述： `Purchase Event`。
 
-![Journey Optimizer](./images/oc34.png)
-
-下一個是&#x200B;**事件型別**&#x200B;選項。 選取&#x200B;**單一**。
-
-![Journey Optimizer](./images/eventidtype1.png)
-
-下一個是&#x200B;**事件ID型別**&#x200B;選擇。 選取&#x200B;**系統產生**
+針對&#x200B;**型別**，選取&#x200B;**單一**。
+針對**事件識別碼型別**，選取&#x200B;**系統產生**。
 
 ![Journey Optimizer](./images/eventidtype.png)
 
 接下來是「結構描述」選項。 已針對此練習準備結構描述。 請使用結構描述`Demo System - Event Schema for Website (Global v1.1) v.1`。
-
-![Journey Optimizer](./images/oc35.png)
 
 選取結構描述後，您將會在&#x200B;**裝載**&#x200B;區段中看到一些正在選取的欄位。 按一下&#x200B;**編輯/鉛筆**&#x200B;圖示以新增其他欄位至此事件。
 
@@ -63,21 +54,19 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/oc38.png)
 
-接下來，向下捲動並勾選`productListItems`行上的核取方塊。
-
-![Journey Optimizer](./images/oc39.png)
-
 接下來，向下捲動並勾選`commerce`行上的核取方塊。
 
 ![Journey Optimizer](./images/oc391.png)
 
-接著，按一下&#x200B;**確定**。
+接下來，向下捲動並勾選`productListItems`行上的核取方塊。 按一下&#x200B;**確定**。
+
+![Journey Optimizer](./images/oc39.png)
 
 之後，您會看到其他欄位已新增至事件。 按一下&#x200B;**儲存**。
 
 ![Journey Optimizer](./images/oc40.png)
 
-您的新活動會隨即共用，而您現在將在可用活動清單中看到您的活動。
+接著會儲存您的新事件，而您現在會在可用事件清單中看到您的事件。
 
 再次按一下您的事件以再次開啟&#x200B;**編輯事件**畫面。
 再次將游標暫留在**承載**&#x200B;欄位上，可再次看到3個圖示。 按一下&#x200B;**檢視裝載**&#x200B;圖示。
@@ -89,7 +78,7 @@ ht-degree: 0%
 ![Journey Optimizer](./images/oc42.png)
 
 事件ID需要傳送至Adobe Journey Optimizer，才能觸發您將在下一個步驟中建立的歷程。 記下此eventID，因為您會在後續步驟中用到它。
-`"eventID": "ef6dd943c94fe1b4763c098ccd1772344662f2a9f614513106cb5ada8be36857"`
+`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
 
 按一下&#x200B;**確定**，然後按一下&#x200B;**取消**。
 
@@ -101,11 +90,11 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/oc43.png)
 
-您將會看到此訊息。 為您的歷程命名。 使用`--aepUserLdap-- - Order Confirmation journey`。 按一下&#x200B;**「確定」**。
+您將會看到此訊息。 為您的歷程命名。 使用`--aepUserLdap-- - Order Confirmation journey`。 按一下&#x200B;**儲存**。
 
 ![Journey Optimizer](./images/oc45.png)
 
-首先，您需要新增活動作為歷程的起點。 搜尋您的活動`--aepUserLdap--PurchaseEvent`，並將其拖放到畫布上。 按一下&#x200B;**「確定」**。
+首先，您需要新增活動作為歷程的起點。 搜尋您的活動`--aepUserLdap--PurchaseEvent`，並將其拖放到畫布上。 按一下&#x200B;**儲存**。
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -125,7 +114,7 @@ ht-degree: 0%
 
 ![ACOP](./images/journeyactions3.png)
 
-在文字區域開始寫入&#x200B;**感謝您的訂購，**
+在文字區域開始寫入&#x200B;**感謝您的訂購，**&#x200B;並按一下&#x200B;**Personalization**&#x200B;圖示。
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -133,7 +122,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/oc6.png)
 
-然後您就會回到這裡。 按一下&#x200B;**電子郵件Designer**&#x200B;以建立電子郵件的內容。
+然後您就會回到這裡。 按一下&#x200B;**編輯電子郵件內文**&#x200B;以建立電子郵件的內容。
 
 ![Journey Optimizer](./images/oc7.png)
 
@@ -147,35 +136,27 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/oc9.png)
 
-移至&#x200B;**內容元件**。
+在左側功能表中，移至&#x200B;**片段**。 將您先前在練習3.2.2中建立的標頭拖曳至畫布中的第一個元件。 將您先前在練習3.2.2中建立的頁尾拖曳至畫布中的最後一個元件。
+
+![Journey Optimizer](./images/fragm1.png)
+
+按一下左側功能表中的&#x200B;**+**&#x200B;圖示。 移至&#x200B;**內容**，開始將內容新增至畫布。
 
 ![Journey Optimizer](./images/oc10.png)
 
-將&#x200B;**Image**&#x200B;元件拖放到第一列。 按一下&#x200B;**瀏覽**。
-
-![Journey Optimizer](./images/oc11.png)
-
-前往資料夾&#x200B;**enablement-assets**，選取檔案&#x200B;**luma-logo.png**，然後按一下&#x200B;**選取**。
-
-![Journey Optimizer](./images/oc12.png)
-
-您現在已回到這裡。 按一下您的影像加以選取，然後使用&#x200B;**大小**&#x200B;滑桿將標誌影像縮小一點。
-
-![Journey Optimizer](./images/oc13.png)
-
-移至&#x200B;**內容元件**，並將&#x200B;**Image**&#x200B;元件拖放到第二列。 選取&#x200B;**影像元件**，但不要按一下[瀏覽]。
+移至&#x200B;**內容**&#x200B;並將&#x200B;**影像**&#x200B;元件拖放到第二列。 按一下&#x200B;**瀏覽**。
 
 ![Journey Optimizer](./images/oc15.png)
 
-將此影像URL貼到欄位&#x200B;**Source**： `https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/29043bedcde632a9cbe8a02a164189c9_preparing.png`。 此影像在Adobe以外託管。
+開啟資料夾&#x200B;**citi-signal-images**，按一下以選取影像&#x200B;**citisignal-preparing.png**，然後按一下&#x200B;**選取**。
 
 ![Journey Optimizer](./images/oc14.png)
 
-當您將範圍變更為另一個欄位時，將會演算影像，您將看到以下畫面：
+在&#x200B;**樣式**&#x200B;下，將寬度變更為&#x200B;**40%**。
 
-![Journey Optimizer](./images/oc16.png)
+![Journey Optimizer](./images/oc14a.png)
 
-接著，移至&#x200B;**內容元件**，並將&#x200B;**文字**&#x200B;元件拖放到第三列。
+接著，移至&#x200B;**內容**&#x200B;並將&#x200B;**文字**&#x200B;元件拖放到第三列。
 
 ![Journey Optimizer](./images/oc17.png)
 
@@ -207,7 +188,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc21.png)
 
-接著，移至&#x200B;**內容元件**，並將&#x200B;**文字**&#x200B;元件拖放到第四列。
+接著，移至&#x200B;**內容**&#x200B;並將&#x200B;**文字**&#x200B;元件拖放到第四列。
 
 ![Journey Optimizer](./images/oc22.png)
 
@@ -219,7 +200,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc23.png)
 
-接著，移至&#x200B;**內容元件**，並將&#x200B;**HTML**&#x200B;元件拖放至第五列。 按一下HTML元件，然後按一下&#x200B;**顯示原始程式碼**。
+接著，移至&#x200B;**內容**，並將&#x200B;**HTML**&#x200B;元件拖放至第五列。 按一下HTML元件，然後按一下&#x200B;**顯示原始程式碼**。
 
 ![Journey Optimizer](./images/oc24.png)
 
@@ -235,7 +216,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc26.png)
 
-移至&#x200B;**內容元件**，並將&#x200B;**HTML**&#x200B;元件拖放至第六列。 按一下HTML元件，然後按一下&#x200B;**顯示原始程式碼**。
+移至&#x200B;**內容**&#x200B;並將&#x200B;**HTML**&#x200B;元件拖放到第六列。 按一下HTML元件，然後按一下&#x200B;**顯示原始程式碼**。
 
 ![Journey Optimizer](./images/oc57.png)
 
@@ -257,11 +238,9 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 在左側功能表中，按一下&#x200B;**內容屬性**。 此內容會傳遞至歷程中的訊息。
 
-![Journey Optimizer](./images/oc601.png)
-
 您將會看到此訊息。 按一下&#x200B;**Journey Orchestration**&#x200B;旁的箭頭以深入鑽研。
 
-![Journey Optimizer](./images/oc61.png)
+![Journey Optimizer](./images/oc601.png)
 
 按一下&#x200B;**事件**&#x200B;旁的箭頭，以深入探討。
 
@@ -287,7 +266,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc67.png)
 
-接著，前往&#x200B;**內容元件**，並將&#x200B;**HTML**&#x200B;元件拖放至第七列。 按一下HTML元件，然後按一下&#x200B;**顯示原始程式碼**。
+接著，移至&#x200B;**內容**，並將&#x200B;**HTML**&#x200B;元件拖放至第七列。 按一下HTML元件，然後按一下&#x200B;**顯示原始程式碼**。
 
 ![Journey Optimizer](./images/oc68.png)
 
@@ -304,10 +283,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 ![Journey Optimizer](./images/oc71.png)
 
 在左側功能表中，按一下&#x200B;**內容屬性**。
-
-![Journey Optimizer](./images/oc711.png)
-
-按一下&#x200B;**Journey Orchestration**&#x200B;旁的箭頭以深入鑽研。
+按一下**Journey Orchestration**&#x200B;旁的箭頭以深入鑽研。
 
 ![Journey Optimizer](./images/oc72.png)
 
@@ -335,14 +311,11 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc76.png)
 
-再按一下&#x200B;**總價**&#x200B;旁的&#x200B;**+**&#x200B;圖示以將其新增至畫布。
-
-![Journey Optimizer](./images/oc77.png)
-
-您也可以將&#x200B;**Order**&#x200B;物件內的&#x200B;**Currency**欄位新增至畫布，如這裡所示。
+再按一下&#x200B;**總價**&#x200B;旁的&#x200B;**+**圖示以將其新增至畫布。
+您也可以將**Order**&#x200B;物件內的&#x200B;**Currency**欄位新增至畫布，如這裡所示。
 完成時，按一下[儲存]儲存變更。****
 
-![Journey Optimizer](./images/oc771.png)
+![Journey Optimizer](./images/oc77.png)
 
 接著，您會回到電子郵件Designer。 再按一下&#x200B;**儲存**。
 
@@ -356,7 +329,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc79a.png)
 
-按一下&#x200B;**確定**&#x200B;以關閉您的電子郵件動作。
+按一下&#x200B;**儲存**&#x200B;以關閉您的電子郵件動作。
 
 ![Journey Optimizer](./images/oc79b.png)
 
@@ -380,7 +353,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![屬性頁面](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-在模組0中，示範系統為您建立了兩個使用者端屬性：一個用於網站，另一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--aepUserLdap--`以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
+在&#x200B;**快速入門**&#x200B;中，示範系統為您建立了兩個使用者端屬性：一個用於網站，一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--aepUserLdap--`以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
 
 ![搜尋方塊](./../../../modules/datacollection/module1.1/images/property6.png)
 
@@ -388,11 +361,11 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc91.png)
 
-您將會看到此訊息。 導覽至&#x200B;**_experience.campaign.orchestration.eventID**&#x200B;欄位，並在這裡填寫您的eventID。 此處要填寫的eventID是您在練習10.1.2中建立的eventID。按一下&#x200B;**儲存**&#x200B;或&#x200B;**儲存至資料庫**。
+您將會看到此訊息。 導覽至&#x200B;**_experience.campaign.orchestration.eventID**&#x200B;欄位，並在這裡填寫您的eventID。 此處要填寫的eventID是您於練習3.4.1.1中建立的eventID。1按一下「儲存」**或「儲存至程式庫」**。****
 
 ![Journey Optimizer](./images/oc92.png)
 
-將變更儲存在使用者端屬性中，然後更新開發程式庫以發佈變更。
+將變更儲存在屬性中，然後更新開發程式庫以發佈變更。
 
 ![Journey Optimizer](./images/oc93.png)
 
@@ -402,33 +375,29 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 讓我們在示範網站上購買產品，以測試更新的歷程。
 
-移至[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案以開啟。
+移至[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案上的3個點&#x200B;**...**，然後按一下&#x200B;**執行**&#x200B;以開啟它。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 然後您會看到示範網站已開啟。 選取URL並將其複製到剪貼簿。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
 開啟新的無痕瀏覽器視窗。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
 貼上您在上一步中複製的示範網站URL。 接著，系統會要求您使用Adobe ID登入。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
 選取您的帳戶型別並完成登入程式。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-接著，您會在無痕瀏覽器視窗中看到您的網站已載入。 對於每個示範，您都需要使用全新的無痕瀏覽器視窗來載入您的示範網站URL。
+接著，您會在無痕瀏覽器視窗中看到您的網站已載入。 每次練習都需要使用全新的無痕瀏覽器視窗，才能載入您的示範網站URL。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
-
-按一下畫面左上角的Adobe標誌圖示，開啟設定檔檢視器。
-
-![示範](./../../../modules/datacollection/module1.2/images/pv1.png)
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 請檢視「設定檔檢視器」面板和即時客戶設定檔，並將&#x200B;**Experience CloudID**&#x200B;設為此目前未知客戶的主要識別碼。
 
@@ -442,13 +411,25 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![示範](./../../../modules/datacollection/module1.2/images/pv10.png)
 
-新增任何產品至購物車，然後前往&#x200B;**購物車**&#x200B;頁面。 按一下&#x200B;**繼續結帳**。
+新增任何產品至購物車
+
+![Journey Optimizer](./images/cart1a.png)
+
+移至&#x200B;**購物車**&#x200B;頁面。 按一下&#x200B;**簽出**。
 
 ![Journey Optimizer](./images/cart1.png)
 
-接下來，驗證簽出頁面上的欄位，然後按一下&#x200B;**簽出**。
+接下來，驗證欄位並在必要時完成。 按一下&#x200B;**繼續**。
 
 ![Journey Optimizer](./images/cart2.png)
+
+按一下&#x200B;**確認訂單**。
+
+![Journey Optimizer](./images/cart2a.png)
+
+您的訂單現已確認。
+
+![Journey Optimizer](./images/cart2b.png)
 
 您將在數秒內收到訂單確認電子郵件。
 
