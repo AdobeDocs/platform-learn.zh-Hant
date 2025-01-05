@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 ![位置](./images/homedec.png)
 
-按一下&#x200B;**元件**。 您現在會看到「選件」功能表，其中包含「位置」、「標籤」、「規則」和「排名」等專案。
+按一下&#x200B;**元件**。 您現在會看到位置、集合限定詞、規則和排名等專案。
 
 ![位置](./images/components.png)
 
@@ -61,7 +61,7 @@ ht-degree: 2%
 
 在&#x200B;**版位**&#x200B;索引標籤中，您可以定義優惠方案的版位。 當您定義決定時，版位會定義所產生優惠的出現位置（頻道型別），以及形狀或形式（內容型別）。
 
-如果您在Adobe Experience Platform執行個體中未看到任何版位，請按照底下和熒幕擷取畫面中的指示建立版位。
+如果您的環境中沒有看到任何版位，請按照底下和熒幕擷取畫面中的指示建立版位。
 
 | 名稱 | 頻道型別 | 內容類型 |
 | ---------------------- | ------------ | ------------ |
@@ -101,19 +101,17 @@ ht-degree: 2%
 
 ![決定規則](./images/rules.png)
 
-然後您會看到Adobe Experience Platform的分段環境。
+然後您會看到Adobe Experience Platform的對象建立介面。
 
 ![決定規則](./images/createrule1.png)
 
 您現在可以為即時客戶個人檔案存取所有屬於聯合結構描述的欄位，並且可以建置任何規則。
 
-您也可前往「**對象** > ``--aepTenantId--``」，重複使用已在Adobe Experience Platform中定義的對象，這也是一件有趣的事。
-
-![決定規則](./images/decisionruleaud.png)
+您也可前往「**對象** > ``--aepTenantId--``」，重複使用Adobe Experience Platform中已定義的對象，這也很好。
 
 然後您會看到以下內容：
 
-![決定規則](./images/decisionruleaud1.png)
+![決定規則](./images/decisionruleaud.png)
 
 您也可設定自己的規則。 在本練習中，您將需要兩個規則：
 

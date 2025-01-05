@@ -2,9 +2,10 @@
 title: 概觀
 description: 讓資料工程師、資料分析師、資料架構師、資料科學家、協調工程師和行銷人員開始瞭解Adobe Experience Platform及其所有應用程式服務的完整商業價值。
 doc-type: multipage-overview
-source-git-commit: 8270f69dd04714e217ddbb4d125157799cba2940
+exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -67,6 +68,8 @@ ht-degree: 2%
 
 ## 內容
 
+若要檢查下列內容的狀態，請移至[狀態頁面](./status.md)。
+
 [0.快速入門](./modules/gettingstarted/gettingstarted/getting-started.md)
 
 在此基本單元中，您將設定所有專案，以便存取和使用示範環境。
@@ -75,9 +78,9 @@ ht-degree: 2%
 
 ### 1.資料收集
 
-[1.1 Foundation - Adobe Experience Platform Data Collection &amp; Web SDK設定](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
+[1.1基礎 — Adobe Experience Platform資料收集與網頁SDK的設定](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
 
-在此基本單元中，您將瞭解Adobe Experience Platform資料收集和新的Web SDK擴充功能。
+在本基本單元中，您將瞭解Adobe Experience Platform資料收集和新的Web SDK擴充功能。
 
 **時間投資：** 30分鐘
 
