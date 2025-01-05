@@ -4,16 +4,14 @@ description: 在本單元中，您將瞭解Journey Optimizer的所有須知事�
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '285'
 ht-degree: 2%
 
 ---
 
 # 3.4 Adobe Journey Optimizer
-
-**作者：[Maxime Foutrel](https://www.linkedin.com/in/maximefoutrel/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 在本單元中，您將瞭解Adobe Journey Optimizer的所有須知事項，其可幫助公司為其客戶設計和提供連結、情境式和個人化的體驗。
 
@@ -28,7 +26,7 @@ ht-degree: 2%
 
 - 存取Adobe Journey Optimizer
 - **下載這些資產**：
-   - [資產](./../../../assets/ajo/ajo_assets.zip)
+   - [資產](./../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >
@@ -40,21 +38,17 @@ ht-degree: 2%
 
 在本練習中，您將設定觸發式歷程，以傳送您在上一個練習中建立的電子郵件訊息。
 
-[3.4.2設定批次式Newsletter歷程](./ex2.md)
+[3.4.2設定行銷活動](./ex2.md)
 
-在本練習中，您將設定批次型歷程，以傳送您在上一個練習中建立的電子郵件訊息。
+在本練習中，您將設定傳統的電子郵件行銷活動。
 
-[3.4.3在電子郵件訊息中套用個人化](./ex3.md)
+[3.4.3在電子郵件訊息中套用區段型個人化](./ex3.md)
 
 在本練習中，您將使用區段成員資格來定義要在電子郵件中顯示的內容。
 
 [3.4.4設定及使用推播通知](./ex4.md)
 
 在本練習中，您會在iOS裝置上安裝行動應用程式，並設定推播通知並傳送至裝置。
-
-[3.4.5建立商務活動歷程](./ex5.md)
-
-在本練習中，您將定義一個業務事件，該業務事件會透過簡訊傳送庫存訊息，給先前對該產品表現出興趣，但因該產品無庫存而無法購買的客戶。
 
 [摘要和優點](./summary.md)
 

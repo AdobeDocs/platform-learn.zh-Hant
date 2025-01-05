@@ -4,10 +4,10 @@ description: 設定和使用iOS的推播通知
 kt: 5342
 doc-type: tutorial
 exl-id: a49fa91c-5235-4814-94c1-8dcdec6358c5
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 0%
+source-wordcount: '1845'
+ht-degree: 1%
 
 ---
 
@@ -39,8 +39,6 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 您可以在畫面左側的功能表中前往&#x200B;**[!UICONTROL 資料集]**&#x200B;找到這些資料集。 若要顯示系統資料集，請按一下篩選圖示。
 
-![資料擷取](./images/menudsjo.png)
-
 啟用選項&#x200B;**顯示系統資料集**&#x200B;並搜尋&#x200B;**AJO**。 然後您會看到用於推播通知的資料集。
 
 ![資料擷取](./images/menudsjo1.png)
@@ -49,7 +47,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
 
-在左側功能表中，移至&#x200B;**[!UICONTROL 資料流]**&#x200B;並搜尋您在[練習0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)中建立的資料流（名為`--aepUserLdap-- - Demo System Datastream (Mobile)`）。 按一下以開啟它。
+在左側功能表中，移至&#x200B;**[!UICONTROL 資料流]**&#x200B;並搜尋您在[快速入門](./../../../modules/gettingstarted/gettingstarted/ex2.md)中建立的資料流（名為`--aepUserLdap-- - Demo System Datastream (Mobile)`）。 按一下以開啟它。
 
 ![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1a.png)
 
@@ -59,13 +57,19 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 然後您會看到已定義的資料流設定，以及將會儲存資料集事件和設定檔屬性的資料。
 
-![命名資料流並儲存](./images/edgeconfig2.png)
+您也應該啟用下列選項（如果尚未啟用）：
 
-無需變更，您的資料串流現已準備就緒，可用於行動裝置的資料收集使用者端屬性。
+- **Offer Decisioning**
+- **個人化目的地**
+- **Adobe Journey Optimizer**
+
+按一下&#x200B;**儲存**。
+
+![命名資料流並儲存](./images/edgeconfig2.png)
 
 ## 3.4.4.3檢閱行動裝置的資料收集屬性
 
-移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 作為[練習0.1](./../../../modules/gettingstarted/gettingstarted/ex1.md)的一部分，已建立2個資料收集屬性。
+移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 在[快速入門](./../../../modules/gettingstarted/gettingstarted/ex1.md)中，已建立2個資料收集屬性。
 您已在先前的模組中使用這些資料收集使用者端屬性。
 
 按一下以開啟行動裝置的「資料收集」屬性。
@@ -130,21 +134,17 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn6.png)
 
-練習0.1之後會有此結果。 按一下以開啟為您建立的&#x200B;**行動零售專案**。
+完成&#x200B;**快速入門**&#x200B;區段後，您便有了此結果。 按一下以開啟為您建立的&#x200B;**行動零售專案**。
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/dsn5b.png)
 
-如果您不小心關閉了瀏覽器視窗，或是為了未來的示範或啟用工作階段，您也可以前往[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)存取您的網站專案。 使用Adobe ID登入後，您會看到此訊息。 按一下您的行動應用程式專案以開啟。
+如果您不小心關閉了瀏覽器視窗，或是為了未來的示範或啟用工作階段，您也可以前往[https://dsn.adobe.com/projects](https://dsn.adobe.com/projects)存取您的網站專案。 使用Adobe ID登入後，您會看到此訊息。 按一下您的行動應用程式專案以開啟。
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8a.png)
 
-您將會看到此訊息。 按一下&#x200B;**整合**。
+接著，按一下&#x200B;**執行**。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8aa.png)
-
-您必須選取在練習0.1中建立的行動裝置資料收集屬性。接著，按一下&#x200B;**執行**。
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8b.png)
+![DSN](./images/web8b.png)
 
 然後您會看到這個快顯視窗，其中包含QR碼。 從行動應用程式內掃描此QR碼。
 
@@ -160,7 +160,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 您現在需要掃描QR碼，將行動裝置連線至AEP Assurance工作階段。
 
-若要啟動AEP Assurance工作階段，請前往[https://experience.adobe.com/#/@experienceplatform/griffon](https://experience.adobe.com/#/@experienceplatform/griffon)。 按一下&#x200B;**建立工作階段**。
+若要啟動AEP Assurance工作階段，請前往[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 按一下左側功能表中的&#x200B;**Assurance**。 然後，按一下&#x200B;**建立工作階段**。
 
 ![Adobe Experience Platform資料彙集](./images/griffon3.png)
 
@@ -171,7 +171,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 填入值：
 
 - 工作階段名稱：使用`--aepUserLdap-- - push debugging`並以您的ldap取代ldap
-- 基礎URL：使用&#x200B;**dxdemo://default**
+- 基底URL：使用`dxdemo://default`
 
 按一下&#x200B;**下一步**。
 
@@ -193,21 +193,27 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![Adobe Experience Platform資料彙集](./images/ipadPushTest11.png)
 
-在AEP Assurance中，您現在會看到裝置正在前往AEP Assurance工作階段。
+在Assurance中，您現在會看到裝置正在前往Assurance工作階段。 按一下&#x200B;**「完成」**。
 
 ![Adobe Experience Platform資料彙集](./images/griffon7.png)
 
-移至&#x200B;**推送偵錯**。 您將會看到類似這樣的內容。
+移至&#x200B;**推送偵錯**。
+
+>[!NOTE]
+>
+>如果您在左側功能表中找不到&#x200B;**推播偵錯**，請按一下畫面左下角的&#x200B;**設定**，然後新增&#x200B;**推播偵錯**&#x200B;至功能表。
+
+您將會看到類似這樣的內容。
 
 ![Adobe Experience Platform資料彙集](./images/griffon10.png)
 
 部分說明：
 
 - 第一欄&#x200B;**Client**&#x200B;顯示您的iOS裝置上可用的識別碼。 您會看到ECID和推播權杖。
+- 第2欄顯示&#x200B;**App Store認證與設定**，此專案是在練習&#x200B;**3.4.5.4在Launch中建立應用程式設定**&#x200B;中設定的
 - 第二欄顯示&#x200B;**設定檔**&#x200B;資訊，以及推播權杖所在平台（APNS或APNSSandbox）的其他資訊。 如果您按一下&#x200B;**Inspect設定檔**&#x200B;按鈕，您將會被帶到Adobe Experience Platform並看到完整的即時客戶設定檔。
-- 第3欄顯示&#x200B;**應用程式設定**，此設定是練習&#x200B;**3.4.5.4在Launch中建立應用程式設定**&#x200B;的一部分
 
-若要測試推播組態設定，請按一下&#x200B;**傳送推播通知**&#x200B;按鈕。
+若要測試推播設定設定，請移至&#x200B;**傳送測試推播設定**&#x200B;按鈕。 按一下&#x200B;**傳送測試推播通知**
 
 ![Adobe Experience Platform資料彙集](./images/griffon11.png)
 
@@ -217,11 +223,11 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![Adobe Experience Platform資料彙集](./images/ipadPush2.png)
 
-如果您已收到推播通知，表示您的設定正確且運作正常。
+如果您已收到推播通知，這表示您的設定正確且運作正常，您現在可以建立真正的歷程，進而從Journey Optimizer傳送推播訊息。
 
 ## 3.4.4.6建立新事件
 
-在功能表中，移至&#x200B;**歷程管理**&#x200B;並按一下&#x200B;**事件**&#x200B;底下的&#x200B;**管理**。
+移至&#x200B;**Journey Optimizer**。 在左側功能表中，移至&#x200B;**組態**&#x200B;並按一下&#x200B;**事件**&#x200B;底下的&#x200B;**管理**。
 
 ![ACOP](./images/acopmenu.png)
 
@@ -230,32 +236,19 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 ![ACOP](./images/add.png)
 
 然後您會看到空白的事件設定。
-
-![ACOP](./images/emptyevent.png)
-
 首先，請為事件命名，如下所示： `--aepUserLdap--StoreEntryEvent`並將說明設定為`Store Entry Event`。
+下一個是**事件型別**&#x200B;選項。 選取&#x200B;**單一**。
+下一個是**事件ID型別**&#x200B;選擇。 選取&#x200B;**系統產生**。
 
 ![ACOP](./images/eventname.png)
 
-下一個是&#x200B;**事件型別**&#x200B;選項。 選取&#x200B;**單一**。
-
-![ACOP](./images/eventidtype1.png)
-
-下一個是&#x200B;**事件ID型別**&#x200B;選擇。 選取&#x200B;**系統產生**
-
-![ACOP](./images/eventidtype.png)
-
 接下來是「結構描述」選項。 已針對此練習準備結構描述。 請使用結構描述`Demo System - Event Schema for Mobile App (Global v1.1) v.1`。
-
-![ACOP](./images/eventschema.png)
 
 選取結構描述後，您將會在&#x200B;**裝載**&#x200B;區段中看到一些正在選取的欄位。 您的事件現已完整設定。
 
-![ACOP](./images/eventpayload.png)
+按一下&#x200B;**儲存**。
 
-您應該會看到此訊息。 按一下&#x200B;**儲存**。
-
-![ACOP](./images/eventsave.png)
+![ACOP](./images/eventschema.png)
 
 您的事件現在已設定並儲存。 再次按一下您的事件以再次開啟&#x200B;**編輯事件**&#x200B;畫面。
 
@@ -267,14 +260,12 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 您現在將看到預期裝載的範例。
 
-![ACOP](./images/fullpayload.png)
-
 您的事件具有獨特的協調流程eventID，您可以在該承載中向下捲動直到看到`_experience.campaign.orchestration.eventID`為止。
 
 ![ACOP](./images/payloadeventID.png)
 
 事件ID需要傳送至Adobe Experience Platform，才能觸發您將在下一個步驟建立的歷程。 記下此eventID，因為您會在下一個步驟中需要它。
-`"eventID": "e3a8f0bdc0b609667cd96a72a6b1e5aafa0ddaf6ccf121c574e6a2030860a633"`
+`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
 
 按一下&#x200B;**確定**，然後按一下&#x200B;**取消**。
 
@@ -284,20 +275,21 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![DSN](./images/sjourney1.png)
 
-您將會看到此訊息。 為您的歷程命名。 使用`--aepUserLdap-- - Store Entry journey`。 按一下&#x200B;**「確定」**。
+您將會看到此訊息。 為您的歷程命名。 使用`--aepUserLdap-- - Store Entry journey`。 按一下&#x200B;**儲存**。
 
 ![DSN](./images/sjourney3.png)
 
-首先，您需要新增活動作為歷程的起點。 搜尋您的活動`--aepUserLdap--StoreEntryEvent`，並將其拖放到畫布上。 按一下&#x200B;**「確定」**。
+首先，您需要新增活動作為歷程的起點。 搜尋您的活動`--aepUserLdap--StoreEntryEvent`，並將其拖放到畫布上。 按一下&#x200B;**儲存**。
 
 ![DSN](./images/sjourney4.png)
 
-接下來，在&#x200B;**動作**&#x200B;下搜尋&#x200B;**推播**動作。
-將**推播**&#x200B;動作拖放到畫布上。
-
-![DSN](./images/sjourney5.png)
+接下來，在&#x200B;**動作**&#x200B;下搜尋&#x200B;**推播**&#x200B;動作。 將&#x200B;**推播**&#x200B;動作拖放到畫布上。
 
 將&#x200B;**類別**&#x200B;設定為&#x200B;**行銷**，並選取可讓您傳送推播通知的推播表面。 在此情況下，要選取的電子郵件表面為&#x200B;**Push-iOS-Android**。
+
+>[!NOTE]
+>
+>Journey Optimizer中的管道必須存在使用&#x200B;**應用程式介面**&#x200B;且先前已檢閱過的管道。
 
 ![ACOP](./images/journeyactions1push.png)
 
@@ -310,8 +302,6 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 ![推播](./images/bp5.png)
 
 您將會看到此訊息。 您現在可以直接從即時客戶個人檔案中選取任何個人檔案屬性。
-
-![推播](./images/bp6.png)
 
 搜尋欄位&#x200B;**名字**，然後按一下欄位&#x200B;**名字**&#x200B;旁的&#x200B;**+**&#x200B;圖示。 接著您會看到新增的名字的個人化權杖： **{{profile.person.name.firstName}}**。
 
@@ -335,7 +325,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![Journey Optimizer](./images/bp12a.png)
 
-按一下&#x200B;**確定**&#x200B;以關閉您的推送動作。
+按一下&#x200B;**儲存**&#x200B;以關閉您的推送動作。
 
 ![DSN](./images/sjourney8.png)
 
@@ -363,15 +353,13 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 請確定在按一下&#x200B;**市集專案**&#x200B;圖示後立即關閉應用程式，否則將不會顯示推送訊息。
 
-![DSN](./images/demo2.png)
-
 幾秒後，您會看到訊息出現。
 
-![DSN](./images/demo3.png)
+![DSN](./images/demo2.png)
 
 您已完成此練習。
 
-下一步： [3.4.5建立商務活動歷程](./ex5.md)
+下一步： [摘要與優點](./summary.md)
 
 [返回模組3.4](./journeyoptimizer.md)
 

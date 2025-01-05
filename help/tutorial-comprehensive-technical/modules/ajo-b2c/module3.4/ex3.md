@@ -4,14 +4,14 @@ description: 此練習說明如何在電子郵件內容中使用區段個人化
 kt: 5342
 doc-type: tutorial
 exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
-# 3.4.3在電子郵件訊息中套用個人化
+# 3.4.3在電子郵件訊息中套用區段型個人化
 
 前往[Adobe Experience Cloud](https://experience.adobe.com)登入Adobe Experience Cloud。 按一下&#x200B;**Adobe Journey Optimizer**。
 
@@ -23,25 +23,25 @@ ht-degree: 0%
 
 ## 3.4.3.1區段型個人化
 
-在本練習中，您將利用根據區段會籍的個人化文字，改善電子報電子郵件訊息。
+在本練習中，您將使用根據區段會籍建立的個人化文字，來改善您在上一個練習中建立的電子報電子郵件訊息。
 
-移至&#x200B;**歷程**。 尋找您在上一個練習中建立的Newsletter歷程。 搜尋`--aepUserLdap-- - Newsletter`。 按一下您的歷程以開啟。
+前往&#x200B;**行銷活動**。 尋找您在上一個練習中建立的Newsletter歷程。 搜尋`--aepUserLdap-- - CitiSignal Newsletter`。 用滑鼠右鍵按一下3個點&#x200B;**...**，然後按一下&#x200B;**複製**。
 
 ![Journey Optimizer](./images/sbp1.png)
 
-您將會看到此訊息。 按一下&#x200B;**複製**。
+您將會看到此訊息。 將此用於&#x200B;**標題**： `--aepUserLdap-- - CitiSignal Newsletter (SBP)`。 按一下&#x200B;**複製**。
 
 ![Journey Optimizer](./images/sbp2.png)
 
-按一下&#x200B;**複製**。
+按一下複製的促銷活動以開啟。
 
 ![Journey Optimizer](./images/sbp3.png)
 
-選取您的&#x200B;**電子郵件**&#x200B;動作並按一下&#x200B;**編輯內容**。
+按一下&#x200B;**編輯**&#x200B;以變更內容。
 
 ![Journey Optimizer](./images/sbp3a.png)
 
-按一下&#x200B;**電子郵件Designer**。
+按一下&#x200B;**編輯電子郵件內文**。
 
 ![Journey Optimizer](./images/sbp4.png)
 
@@ -49,88 +49,58 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/sbp5.png)
 
-開啟&#x200B;**內容元件**，並將&#x200B;**文字**&#x200B;元件拖曳到目前的Newsletter內容下方。
+開啟&#x200B;**內容元件**，並將&#x200B;**1:1欄**&#x200B;拖曳到AirPods選件上方。
 
 ![Journey Optimizer](./images/sbp6.png)
+
+將&#x200B;**Text**&#x200B;元件拖放至該1:1欄。
+
+![Journey Optimizer](./images/sbp6a.png)
 
 選取整個預設文字並將其刪除。 然後按一下工具列中的&#x200B;**新增個人化**&#x200B;按鈕。
 
 ![Journey Optimizer](./images/sbp7.png)
 
-然後您會看到以下內容：
+您將會看到此訊息。 在左側功能表中，按一下&#x200B;**對象**。
 
 ![Journey Optimizer](./images/seg1.png)
 
-在左側功能表中，按一下&#x200B;**區段會籍**。
-
-![Journey Optimizer](./images/seg2.png)
-
->[!NOTE]
->
->如果您在此清單中找不到您的區段，請向下捲動一點，尋找如何手動擷取區段ID的說明。
-
-選取區段`Luma - Women's Category Interest`並按一下&#x200B;**+**&#x200B;圖示，如下所示：
+選取區段`--aepUserLdap-- - Interest in Plans`並按一下&#x200B;**+**&#x200B;圖示以將其新增至畫布。
 
 ![Journey Optimizer](./images/seg3.png)
 
 然後，您應該保留第一行原樣，並以下列程式碼取代第2行和第3行：
 
 ``
-    Psssst... a private sale in the women category will launch soon, we will keep you posted
+    PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
-    Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: READER10
+    PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
 ``
 
-之後，您將會擁有此專案：
+您就會擁有此專案。 按一下&#x200B;**儲存**。
 
 ![Journey Optimizer](./images/seg4.png)
 
-按一下&#x200B;**驗證**&#x200B;以確定程式碼正確。 按一下&#x200B;**儲存**。
-
-![Journey Optimizer](./images/sbp8.png)
-
-您現在可以按一下右上角的&#x200B;**儲存**&#x200B;按鈕來儲存此訊息。 然後，按一下&#x200B;**模擬內容**。
+將文字對齊方式變更為&#x200B;**置中對齊**。
 
 ![Journey Optimizer](./images/sbp9.png)
 
-選取您在本教學課程中建立的其中一個設定檔，然後按一下[預覽]。**** 然後您會看到設定結果。
+您現在可以按一下右上角的&#x200B;**儲存**&#x200B;按鈕來儲存此訊息。 然後，按一下左上角主旨列文字旁的&#x200B;**箭頭**。
 
-![Journey Optimizer](./images/sbp10.png)
+![Journey Optimizer](./images/sbp9a.png)
 
-您將會看到此訊息。 然後，按一下&#x200B;**關閉**。
-
-![Journey Optimizer](./images/sbp10fff.png)
-
-按一下左上角主旨列文字旁的&#x200B;**箭頭**，返回訊息儀表板。
-
-![Journey Optimizer](./images/sbp11.png)
-
-按一下左上角的箭頭，返回您的歷程。
+按一下&#x200B;**檢閱以啟動**。
 
 ![Journey Optimizer](./images/oc79afff.png)
 
-按一下&#x200B;**確定**&#x200B;以關閉您的電子郵件動作。
+按一下&#x200B;**啟動**。
 
 ![Journey Optimizer](./images/oc79bfff.png)
 
-將您的&#x200B;**排程**&#x200B;變更為&#x200B;**一次**&#x200B;並定義&#x200B;**日期/時間**。 按一下&#x200B;**確定**。
+您具有區段式個人化的電子報現已發佈。 您的電子報電子郵件訊息將根據您的排程傳送，您的歷程將在傳送最後一封電子郵件後立即停止。
 
->[!NOTE]
->
->訊息傳送日期和時間必須在一小時以上。
-
-![Journey Optimizer](./images/sbp18.png)
-
-按一下歷程中的&#x200B;**Publish**&#x200B;按鈕。
-
-![Journey Optimizer](./images/sbp19.png)
-
-在快顯視窗中，再按一下&#x200B;**Publish**。
-
-![Journey Optimizer](./images/sbp20.png)
-
-您的基本Newsletter歷程現已發佈。 您的電子報電子郵件訊息將根據您的排程傳送，您的歷程將在傳送最後一封電子郵件後立即停止。
+如果您符合所使用區段的資格，將會在您將收到的電子郵件中看到以下內容：
 
 ![Journey Optimizer](./images/sbp20fff.png)
 
