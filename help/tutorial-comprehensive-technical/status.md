@@ -2,10 +2,11 @@
 title: 內容狀態
 description: 內容狀態
 doc-type: multipage-overview
-source-git-commit: 5d7b790830a46385ca019bcb23b0032478794591
+exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 9%
+source-wordcount: '220'
+ht-degree: 10%
 
 ---
 
@@ -27,7 +28,7 @@ ht-degree: 9%
 | [2.6從Apache Kafka將資料串流到Real-Time CDP](./modules/rtcdp-b2c/module2.6/aep-apache-kafka.md) | 25/11/2024 | 是 | - |
 | [3.1 Adobe Journey Optimizer：協調流程](./modules/ajo-b2c/module3.1/journey-orchestration-create-account.md) | 30/12/2024 | 是 | - |
 | [3.2 Adobe Journey Optimizer：外部資料來源和自訂動作](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md) | 30/12/2024 | 是 | - |
-| [3.3 Adobe Journey Optimizer：Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 05/01/2025 | 尚未 | 內容正在等候更新 |
+| [3.3 Adobe Journey Optimizer：Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 06/01/2025 | 是 | - |
 | [3.4 Adobe Journey Optimizer：事件型歷程](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 05/01/2025 | 是 | - |
 | [4.1Customer Journey Analytics：在Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)之上使用Analysis Workspace建置儀表板 | - | 無 | 內容正在等候更新 |
 | [4.2Customer Journey Analytics：使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | - | 無 | 內容正在等候更新 |

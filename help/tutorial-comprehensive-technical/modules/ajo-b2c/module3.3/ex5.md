@@ -3,9 +3,10 @@ title: offer decisioning — 在電子郵件中使用您的決定
 description: 在電子郵件中使用您的決定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7eddb239-2666-485a-b81a-1f7e6f3aeed2
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -14,11 +15,11 @@ ht-degree: 0%
 
 在本練習中，您將使用自己的決定來個人化電子郵件和簡訊的傳送。
 
-移至&#x200B;**歷程**。 尋找您在練習7.2中建立的名為`--aepUserLdap-- - Account Creation Journey`的歷程。 按一下您的歷程以開啟。
+移至&#x200B;**歷程**。 尋找您在練習3.1.3中建立的名為`--aepUserLdap-- - Registration Journey`的歷程。 按一下您的歷程以開啟。
 
 ![Journey Optimizer](./images/emailoffer1.png)
 
-您將會看到此訊息。 按一下&#x200B;**建立新版本**。
+您將會看到此訊息。 按一下&#x200B;**...更多**，然後按一下&#x200B;**建立新版本**。
 
 ![Journey Optimizer](./images/journey1.png)
 
@@ -30,51 +31,35 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/journey3.png)
 
-然後您會看到訊息儀表板。 按一下&#x200B;**電子郵件Designer**。
+然後您會看到訊息儀表板。 按一下&#x200B;**編輯電子郵件內文**。
 
 ![Journey Optimizer](./images/emailoffer2.png)
-
-您將會看到此訊息。
-
-![Journey Optimizer](./images/emailoffer5.png)
 
 您將會看到此訊息。 將新的&#x200B;**1:1欄**&#x200B;結構元件拖曳到畫布上。
 
 ![Journey Optimizer](./images/emailoffer6.png)
 
-在功能表中，移至&#x200B;**內容元件**。 選取&#x200B;**優惠決定**&#x200B;元件，並依指示將此元件拖放到電子郵件的內容優惠預留位置。 然後，按一下&#x200B;**新增**。
+在功能表中，移至&#x200B;**內容**。 選取&#x200B;**優惠決定**&#x200B;元件，並依指示將此元件拖放到電子郵件的內容優惠預留位置。 然後，按一下&#x200B;**新增**。
 
 ![Journey Optimizer](./images/emailoffer7.png)
 
-選取您要納入電子郵件中的版位型別。 在&#x200B;**位置**&#x200B;下拉式功能表中選取&#x200B;**電子郵件 — 影像**，然後選取您的決定`--aepUserLdap-- - Luma Decision`。 按一下&#x200B;**新增**。
+選取您要納入電子郵件中的版位型別。 在&#x200B;**位置**&#x200B;下拉式功能表中選取&#x200B;**電子郵件 — 影像**，然後選取您的決定`--aepUserLdap-- - CitiSignal Decision`。 按一下&#x200B;**新增**。
 
 ![Journey Optimizer](./images/emailoffer8.png)
 
-您現在會在電子郵件設計工具中看到所有個人化優惠和遞補優惠方案。 按一下&#x200B;**模擬內容**，以實際客戶設定檔預覽電子郵件訊息。
+您現在可以循環檢視所有個人化優惠和遞補優惠，所有這些都在電子郵件設計工具中視覺化。 按一下&#x200B;**儲存**。
 
 ![Journey Optimizer](./images/emailoffer9.png)
-
-首先，識別您要用於預覽的設定檔。 選取&#x200B;**電子郵件**&#x200B;名稱空間，並輸入您在示範網站上建立的客戶設定檔電子郵件地址。 接著，按一下&#x200B;**預覽**。
-
-![Journey Optimizer](./images/emailoffer10.png)
-
-電子郵件顯示且選件正確顯示後，請按一下&#x200B;**關閉**&#x200B;按鈕。
-
-![Journey Optimizer](./images/emailoffer11.png)
-
-最後，按一下&#x200B;**儲存**。
-
-![Journey Optimizer](./images/emailoffer12.png)
 
 現在，按一下箭頭返回上一個畫面。
 
 ![Journey Optimizer](./images/emailoffer13.png)
 
-您將會看到此訊息。 按一下左上角的箭頭，返回您的歷程。
+按一下左上角的箭頭，返回您的歷程。
 
 ![Journey Optimizer](./images/emailoffer14.png)
 
-按一下&#x200B;**確定**&#x200B;以關閉您的&#x200B;**電子郵件**&#x200B;動作。
+按一下[儲存]以關閉您的[電子郵件]動作。********
 
 ![Journey Optimizer](./images/emailoffer14a.png)
 
