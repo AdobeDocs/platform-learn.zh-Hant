@@ -4,16 +4,14 @@ description: 資料收集 — 同盟對象構成
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # 1.3同盟對象構成
-
-**作者：[Ludovic Latapie](https://www.linkedin.com/in/ludoviclatapie/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 在本單元中，目標是瞭解使用同盟對象構成建立對象的所有相關資訊。
 
@@ -38,7 +36,7 @@ Experience Platform中的同盟對象構成(FAC)可讓您透過企業資料倉�
 
 ## 練習
 
-[1.3.1設定您的Snowflake帳戶](./ex1.md)
+[1.3.1設定您的Snowflake環境](./ex1.md)
 
 在本練習中，您將設定您的Snowflake試用帳戶，並將其連結至Adobe Experience Platform
 

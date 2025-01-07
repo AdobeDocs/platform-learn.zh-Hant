@@ -4,9 +4,9 @@ description: 使用BigQuery Source Connector在Adobe Experience Platform中擷�
 kt: 5342
 doc-type: tutorial
 exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3100'
 ht-degree: 2%
 
 ---
@@ -119,69 +119,44 @@ ht-degree: 2%
 
 ![示範](./images/22.png)
 
+按一下&#x200B;**儲存**。
+
+![示範](./images/22a.png)
+
 您現在可以將元件新增至資料檢視。 如您所見，有些量度和維度會自動新增。
 
 ![示範](./images/24.png)
 
-將下列元件新增至資料檢視：
+將下列元件新增至資料檢視。 也請務必將欄位名稱更新為好記名稱。 若要這麼做，請選取量度或維度，並更新右側功能表中的&#x200B;**元件名稱**&#x200B;欄位。
 
-| 元件名稱 | 元件型別 | 元件路徑 |
-| -----------------|-----------------|-----------------|
-| level | 維度 | _experienceplatform.loyaltyDetails.level |
-| 點 | 量度 | _experienceplatform.loyaltyDetails.points |
-| commerce.checkouts.value | 量度 | commerce.checkouts.value |
-| commerce.productListRemovals.value | 量度 | commerce.productListRemovals.value |
-| commerce.productListAdds | 量度 | commerce.productListAdds |
-| commerce.productViews.value | 量度 | commerce.productViews.value |
-| commerce.purchases.value | 量度 | commerce.purchases.value |
-| web.webPageDetails.pageViews | 量度 | web.webPageDetails.pageViews |
-| 交易 ID | 維度 | commerce.order.payments.transactionID |
-| channel.mediaType | 維度 | channel.mediaType |
-| channel.typeAtSource | 維度 | channel.typeAtSource |
-| 追蹤程式碼 | 維度 | marketing.trackingCode |
-| gaid | 維度 | _experienceplatform.identification.core.gaid |
-| web.webPageDetails.name | 維度 | web.webPageDetails.name |
-| 事件類型 | 維度 | eventType |
-| 供應商 | 維度 | environment.browserDetails.vendor |
-| 識別碼 | 維度 | _id |
-| 時間戳記 | 維度 | 時間戳記 |
-| 類型 | 維度 | device.type |
-| loyaltyId | 維度 | _experienceplatform.identification.core.loyaltyId |
-
-之後，您將會擁有此專案：
-
-![示範](./images/25.png)
-
-接下來，您需要變更上述部分量度和維度的易記名稱，以便在建置分析時能夠輕鬆使用。 若要這麼做，請選取量度或維度並更新&#x200B;**名稱**&#x200B;欄位，如下圖所示。
-
-![示範](./images/25a.png)
-
-| 元件原始名稱 | 顯示名稱 |
-| -----------------|-----------------|
-| level | 熟客級別 |
-| 點 | 熟客點數 |
-| commerce.checkouts.value | 結帳次數 |
-| commerce.productListRemovals.value | 購物車移除 |
-| commerce.productListAdds | 購物車新增次數 |
-| commerce.productViews.value | 產品檢視 |
-| commerce.purchases.value | 購買次數 |
-| web.webPageDetails.pageViews | 頁面檢視 |
-| channel.mediaType | 流量Medium |
-| channel.typeAtSource | 流量來源 |
-| 追蹤程式碼 | 行銷管道 |
-| gaid | GOOGLE ANALYTICSID |
-| 名稱 | 頁面標題 |
-| 供應商 | 瀏覽器 |
-| 類型 | 裝置類型 |
-| loyaltyId | 熟客方案 ID |
+| 元件型別 | 元件原始名稱 | 顯示名稱 | 元件路徑 |
+| -----------------| -----------------|-----------------|-----------------|
+| 量度 | commerce.checkouts.value | 結帳次數 | `commerce.checkouts.value` |
+| 量度 | commerce.productListRemovals.value | 購物車移除 | `commerce.productListRemovals.value` |
+| 量度 | commerce.productListAdds | 購物車新增次數 | `commerce.productListAdds` |
+| 量度 | commerce.productViews.value | 產品檢視 | `commerce.productViews.value` |
+| 量度 | commerce.purchases.value | 購買次數 | `commerce.purchases.value` |
+| 量度 | web.webPageDetails.pageViews | 頁面檢視 | `web.webPageDetails.pageViews` |
+| 量度 | 點 | 熟客點數 | `_experienceplatform.loyaltyDetails.points` |
+| 維度 | level | 熟客級別 | `_experienceplatform.loyaltyDetails.level` |
+| 維度 | channel.mediaType | 流量Medium | `channel.mediaType` |
+| 維度 | channel.typeAtSource | 流量來源 | `channel.typeAtSource` |
+| 維度 | 追蹤程式碼 | 行銷管道 | `marketing.trackingCode` |
+| 維度 | gaid | GOOGLE ANALYTICSID | `_experienceplatform.identification.core.gaid` |
+| 維度 | web.webPageDetails.name | 頁面標題 | `web.webPageDetails.name` |
+| 維度 | 供應商 | 瀏覽器 | `environment.browserDetails.vendor` |
+| 維度 | 類型 | 裝置類型 | `device.type` |
+| 維度 | loyaltyId | 熟客方案 ID | `_experienceplatform.identification.core.loyaltyId` |
+| 維度 | commerce.order.payments.transactionID | 交易 ID | `commerce.order.payments.transactionID` |
+| 維度 | eventType | 事件類型 | `eventType` |
+| 維度 | 時間戳記 | 時間戳記 | `timestamp` |
+| 維度 | `_id` | 識別碼 | `_id` |
 
 之後，您將會看到類似以下的內容：
 
 ![示範](./images/25b.png)
 
-接下來，您必須變更&#x200B;**歸因設定**，以變更部分元件的人員和工作階段內容。
-
-![示範](./images/25c.png)
+接下來，您必須變更&#x200B;**歸因或持續性設定**，以變更其中部分元件的人員和工作階段內容。
 
 請變更下列元件的&#x200B;**歸因設定**：
 
@@ -193,39 +168,32 @@ ht-degree: 2%
 | 流量Medium |
 | 裝置類型 |
 | GOOGLE ANALYTICSID |
-| 熟客方案 ID |
-| 熟客級別 |
-| 熟客點數 |
 
-若要這麼做，請選取元件，按一下&#x200B;**使用自訂歸因模型**，並將&#x200B;**模型**&#x200B;設定為&#x200B;**上次接觸**，並將&#x200B;**有效期**&#x200B;設定為&#x200B;**人員（報告期間）**。 對上述所有元件重複此步驟。
+若要這麼做，請選取元件，按一下&#x200B;**使用自訂歸因模型**，並將&#x200B;**模型**&#x200B;設定為&#x200B;**最近**，並將&#x200B;**有效期**&#x200B;設定為&#x200B;**人員報告期間**。 對上述所有元件重複此步驟。
 
 ![示範](./images/27a.png)
 
-在變更上述所有元件的歸因設定後，您應該具備此檢視：
+在變更上述所有元件的歸因設定後，您應該就會擁有此檢視。 按一下&#x200B;**儲存並繼續**。
 
 ![示範](./images/27.png)
 
-您的資料檢視現已設定完成。 按一下&#x200B;**儲存**。
+在&#x200B;**設定**&#x200B;畫面上，不需要變更。 按一下&#x200B;**儲存並完成**。
 
-![示範](./images/30.png)
+![示範](./images/27b.png)
 
 您現在已準備好在Adobe Analytics Analysis Workspace中分析Google Analytics資料。 讓我們移至下一個練習。
 
 ## 4.2.5.3建立專案
 
-在Customer Journey Analytics中，移至&#x200B;**專案**。
+在Customer Journey Analytics中，移至&#x200B;**Workspace**。 按一下&#x200B;**建立專案**
 
 ![示範](./images/pro1.png)
 
-然後您會看到以下內容：
+選取&#x200B;**空白Workspace專案**&#x200B;並按一下&#x200B;**建立**。
 
 ![示範](./images/pro2.png)
 
-按一下&#x200B;**建立新專案**&#x200B;以建立專案。
-
-![示範](./images/pro3.png)
-
-您現在有空白專案：
+您現在有一個空白專案：
 
 ![示範](./images/pro4.png)
 
@@ -236,27 +204,21 @@ ht-degree: 2%
 | Windows | Control + S |
 | Mac | Command + S |
 
-您會看到這個快顯視窗：
-
-![示範](./images/prsave.png)
-
-請使用此命名慣例：
+您將會看到此快顯視窗。 請使用此命名慣例：
 
 | 名稱 | 說明 |
 | ----------------- |-------------| 
-| ldap - GA +忠誠度Workspace | ldap - GA +忠誠度Workspace |
+| `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
-接著，按一下&#x200B;**儲存專案**。
+接著，按一下&#x200B;**儲存**。
 
-![示範](./images/prsave2.png)
+![示範](./images/prsave.png)
 
-接下來，請務必在熒幕右上角選取正確的資料檢視。 這是您在上一個練習中建立的資料檢視，其命名慣例為`ldap - GA + Loyalty Data View`。 在此範例中，要選取的資料檢視為`ldap - GA + Loyalty Data View`。
+接下來，請務必在熒幕右上角選取正確的資料檢視。 這是您在上一個練習中建立的資料檢視，其命名慣例為`--aepUserLdap-- - GA + Loyalty Data View`。
 
 ![示範](./images/prdvlist.png)
 
-![示範](./images/prdv.png)
-
-### 12.5.3.1自由格式表格
+### 4.2.5.3.1自由格式表格
 
 自由表格或多或少都可作為Excel中的樞紐分析表。 您從左側列選取某專案，然後將其拖放至自由格式，即可取得表格報表。
 
@@ -270,13 +232,9 @@ ht-degree: 2%
 
 讓我們在CJA中透過Analysis Workspace回答這些問題及更多問題。
 
-首先，在面板右側選取正確的日期範圍（**最近53週整**）。
+首先，在面板右側選取正確的日期範圍(**Today**)。 CLick **套用**。
 
 ![示範](./images/pro11.png)
-
-然後按一下&#x200B;**套用**&#x200B;以套用日期範圍。 請記住此步驟以進行下一個練習。
-
-![示範](./images/apply.png)
 
 >[!NOTE]
 >
@@ -296,9 +254,13 @@ ht-degree: 2%
 
 ![示範](./images/procalc1.png)
 
-作為計算量度的名稱，請使用&#x200B;**轉換率**。 然後將量度&#x200B;**購買**&#x200B;和&#x200B;**工作階段**&#x200B;拖曳到畫布上。 將&#x200B;**Format**&#x200B;設為&#x200B;**Percent**&#x200B;並將&#x200B;**小數位數**&#x200B;設為&#x200B;**2**。 最後，按一下&#x200B;**儲存**。
+作為計算量度的名稱，請使用&#x200B;**轉換率**&#x200B;並針對&#x200B;**外部識別碼**&#x200B;使用&#x200B;**轉換率**。 然後將量度&#x200B;**購買**&#x200B;和&#x200B;**工作階段**&#x200B;拖曳到畫布上。 將&#x200B;**Format**&#x200B;設為&#x200B;**Percent**&#x200B;並將&#x200B;**小數位數**&#x200B;設為&#x200B;**2**。 最後，按一下&#x200B;**儲存**。
 
 ![示範](./images/procalc2.png)
+
+按一下&#x200B;**儲存**。
+
+![示範](./images/procalc2a.png)
 
 接下來，若要在&#x200B;**自由格式表格**&#x200B;中使用所有這些量度，請逐一拖放至&#x200B;**自由格式表格**&#x200B;上。 請參閱下列範例。
 

@@ -5,7 +5,7 @@ user-guide-description: 此實作教學課程涵蓋Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ac55aa9e588655c5d68abf62bff62e748c13aaa1
+source-git-commit: 7532eed1074062451d6ac171629742dbdc9c3fdc
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 4%
@@ -49,7 +49,7 @@ ht-degree: 4%
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
    + 1.3同盟對象構成{#module13}
       + [概觀](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
-      + [1.3.1設定您的Snowflake帳戶](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+      + [1.3.1設定您的Snowflake環境](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
       + [1.3.2建立結構描述、資料模型和連結](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
       + [1.3.3建立同盟組合](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)
