@@ -3,9 +3,10 @@ title: Customer Journey Analytics — 使用Customer Journey Analytics的視覺�
 description: Customer Journey Analytics — 使用Customer Journey Analytics的視覺效果
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -24,11 +25,11 @@ ht-degree: 0%
 
 我們將說明在「模組7 — 查詢服務」中完成的一些查詢，讓您瞭解執行相同查詢及其他操作有多容易，但您不會使用SQL，並且僅依賴Analysis Workspace的拖放原則。
 
-讓我們使用您在Analysis Workspace](./ex4.md)的[11.4資料準備中建立的專案，請移至[https://analytics.adobe.com](https://analytics.adobe.com)。
+讓我們使用您在Analysis Workspace](./ex4.md)的[4.1.4資料準備中建立的專案，請移至[https://analytics.adobe.com](https://analytics.adobe.com)。
+
+按一下以開啟您的專案`--aepUserLdap-- - Omnichannel Analysis`。
 
 ![示範](./images/prohome.png)
-
-開啟您的專案`--aepUserLdap-- - Omnichannel Analysis`。
 
 開啟專案並選取資料檢視`--aepUserLdap-- - Omnichannel Analysis`後，您就可以開始建立第一個視覺效果了。
 
@@ -36,7 +37,7 @@ ht-degree: 0%
 
 ## 我們每天檢視多少項產品
 
-首先，我們需要選擇正確的日期來分析資料。 前往畫布右側的行事曆下拉式清單。 按一下日期範圍並選取適用的日期範圍。
+首先，您需要選取正確的日期來分析資料。 前往畫布右側的行事曆下拉式清單。 按一下日期範圍並選取適用的日期範圍。
 
 ![示範](./images/pro1.png)
 

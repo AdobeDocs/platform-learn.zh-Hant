@@ -3,9 +3,10 @@ title: Customer Journey Analytics — 連線Customer Journey Analytics中的Adob
 description: Customer Journey Analytics — 連線Customer Journey Analytics中的Adobe Experience Platform資料集
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 96e7a5b2-9833-430a-8eab-27651a113675
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -41,23 +42,21 @@ ht-degree: 1%
 
 請使用此命名慣例： `--aepUserLdap-- – Omnichannel Data Connection`。
 
-範例：`vangeluw - Omnichannel Data Connection`
-
-您也需要選取要使用的正確沙箱。 在沙箱功能表中，選取您的沙箱，應為`Bootcamp`。 在此範例中，要使用的沙箱是&#x200B;**Bootcamp**。 您也必須將&#x200B;**每日事件平均數量**&#x200B;設定為&#x200B;**小於100萬**。
+您也需要選取要使用的正確沙箱。 在沙箱功能表中，選取您的沙箱，應為`--aepSandboxName--`。 在此範例中，沙箱是&#x200B;**技術內部人士**。 您也必須將&#x200B;**每日事件平均數量**&#x200B;設定為&#x200B;**小於100萬**。
 
 ![示範](./images/cjasb.png)
 
-選取您的沙箱後，可用的資料集將會更新。
+選取沙箱後，您可以開始新增資料集。 按一下&#x200B;**新增資料集**。
 
 ![示範](./images/cjasb1.png)
 
 ## 4.1.2.2選取Adobe Experience Platform資料集
 
-搜尋資料集`Demo System - Event Dataset for Website (Global v1.1)`。 按一下&#x200B;**+**&#x200B;將資料集新增到此連線。
+搜尋資料集`Demo System - Event Dataset for Website (Global v1.1)`。 啟用此資料集的方塊，以將其新增至此連線。
 
 ![示範](./images/cja7.png)
 
-現在搜尋並核取`Demo System - Event Dataset for Voice Assistants (Global v1.1)`和`Demo System - Event Dataset for Call Center (Global v1.1)`的核取方塊。
+停留在相同的畫面中，現在搜尋並核取`Demo System - Event Dataset for Call Center (Global v1.1)`的核取方塊。
 
 您就會擁有此專案。 按一下&#x200B;**下一步**。
 
@@ -71,7 +70,7 @@ ht-degree: 1%
 
 ![示範](./images/cja11.png)
 
-如您所見，其中大多數都會自動選取人員ID。 這是因為在Adobe Experience Platform的每個結構描述中都會選取主要識別碼。 例如，這裡是`Demo System - Event Schema for Call Center (Global v1.1)`的結構描述，您可以看到主要識別碼設定為`phoneNumber`。
+如您所見，其中大多數都會自動選取人員ID。 這是因為在Adobe Experience Platform的每個結構描述中都會選取主要身分。 例如，這裡是`Demo System - Event Schema for Website (Global v1.1)`的結構描述，您可以看到主要身分設定為`ecid`。
 
 ![示範](./images/cja13.png)
 
@@ -83,7 +82,7 @@ ht-degree: 1%
 
 只要人員ID欄位中的值對應，人員ID欄位的名稱就不重要。 假設我們在一個資料集中有`email`，在另一個定義為「人員ID」的資料集中有`emailAddress`。 如果兩個資料集上的人員ID欄位的`delaigle@adobe.com`值相同，CJA將能夠拼接資料。
 
-目前有一些其他限制，例如拼接已知匿名行為。 請在此檢閱常見問題集： [常見問題集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html)。
+請在此檢閱CJA常見問題集，以瞭解身分拼接的細微差異： [常見問題集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html)。
 
 ### 使用人員ID彙整資料
 
@@ -91,33 +90,39 @@ ht-degree: 1%
 
 ![示範](./images/cja15.png)
 
-前往每個資料集以更新人員ID。
+前往每個資料集以更新人員ID。 現在在下拉式清單中選擇`email`，填寫欄位人員ID。
 
 ![示範](./images/cja12a.png)
 
-現在在下拉式清單中選擇`email`，填寫欄位人員ID。
-
-![示範](./images/cja17.png)
-
-在您彙整三個資料集後，我們就可以繼續了。
+一旦您彙整好這兩個資料集，您就可以繼續了。
 
 | 資料集 | 人員 ID |
 | ----------------- |-------------| 
 | 示範系統 — 網站的事件資料集（全域v1.1） | 電子郵件 |
-| 示範系統 — 語音助理的事件資料集（全域v1.1） | 電子郵件 |
 | 示範系統 — 客服中心的事件資料集（全域v1.1） | 電子郵件 |
 
-您也需要確保針對每個資料集啟用以下選項：
+您還需要確保針對這兩個資料集啟用以下選項：
 
 - 匯入所有新資料
 - 回填所有現有資料
+
+（別忘了為第二個資料集啟用這兩個選項）
+
+您還需要為每個資料集選取&#x200B;**資料來源型別**。
+
+這些是資料集&#x200B;**示範系統 — 網站（全域v1.1）**&#x200B;的事件資料集的設定。
+
+![示範](./images/cja16a.png)
+
+這些是資料集&#x200B;**示範系統 — 網站（全域v1.1）**&#x200B;的事件資料集的設定。
 
 按一下&#x200B;**新增資料集**。
 
 ![示範](./images/cja16.png)
 
 按一下&#x200B;**儲存**，然後前往下一個練習。
-建立您的**連線**&#x200B;後，可能需要幾個小時才能在CJA中使用您的資料。
+
+建立您的&#x200B;**連線**&#x200B;後，可能需要幾個小時才能在CJA中使用您的資料。
 
 ![示範](./images/cja20.png)
 

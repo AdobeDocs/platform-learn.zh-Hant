@@ -4,16 +4,14 @@ description: 使用BigQuery Source Connector在Adobe Experience Platform中擷�
 kt: 5342
 doc-type: tutorial
 exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
 
 # 4.2使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料
-
-**作者：[Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 在本單元中，您將設定自己的Google Cloud Platform執行個體、在Google Cloud Platform中載入範例資料，然後使用BigQuery Source Connector將該資料從Google Cloud Platform擷取到Adobe Experience Platform。 最後，您可以使用Customer Journey Analytics將該資料視覺化。
 
@@ -43,9 +41,9 @@ Adobe Experience Platform中的Source聯結器可讓您輕鬆將資料傳入Adob
 
 ## 練習
 
-[4.2.1建立您的Google Cloud Platform帳戶](./ex1.md)
+[4.2.1開始使用Google Cloud Platform](./ex1.md)
 
-建立您的Google Cloud Platform帳戶。
+開始使用您的Google Cloud平台環境。
 
 [4.2.2在BigQuery中建立第一個查詢](./ex2.md)
 

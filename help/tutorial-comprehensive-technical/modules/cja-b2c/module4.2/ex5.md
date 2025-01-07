@@ -3,9 +3,10 @@ title: 使用BigQuery Source Connector在Adobe Experience Platform中擷取和�
 description: 使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料 — 使用Customer Journey Analytics分析Google Analytics資料
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3184'
 ht-degree: 2%
 
 ---
@@ -26,11 +27,7 @@ ht-degree: 2%
 
 在Customer Journey Analytics首頁上，移至&#x200B;**連線**。
 
-![示範](./images/conn1.png)
-
 在這裡，您可以看到CJA與Platform之間建立的所有不同連線。 這些連線與Adobe Analytics中的報表套裝有相同的目標。 不過，資料的收集是完全不同的。 所有資料都來自Adobe Experience Platform資料集。
-
-![示範](./images/2.png)
 
 按一下&#x200B;**建立新連線**。
 
@@ -40,71 +37,45 @@ ht-degree: 2%
 
 ![示範](./images/5.png)
 
-首先，您需要選取要使用的正確沙箱。 在沙箱功能表中，選取您的沙箱，應為`--aepSandboxName--`。 在此範例中，要使用的沙箱是&#x200B;**AEP Enablement FY21**。
+對於名稱，請使用此： `--aepUserLdap-- - GA + Loyalty Data Connection`。
 
-![示範](./images/cjasb.png)
+您需要選取要使用的正確沙箱。 在沙箱功能表中，選取您的沙箱，應為`--aepSandboxName--`。 在此範例中，要使用的沙箱是&#x200B;**技術內部人員**。
 
-選取您的沙箱後，可用的資料集將會更新。
+將&#x200B;**每日事件平均數量**&#x200B;設定為&#x200B;**小於100萬**。
 
-![示範](./images/cjasb1.png)
-
-在左側功能表中，您可以看到所有可用的Adobe Experience Platform資料集。 搜尋資料集`Demo System - Event Dataset for BigQuery (Global v1.1)`。 按一下&#x200B;**+**&#x200B;將資料集新增到此連線。
+在資料集功能表中，您現在可以開始新增資料集。 按一下&#x200B;**新增資料集**。
 
 ![示範](./images/6.png)
 
-新增之後，您會在連線中看到資料集。
+要新增的資料集包括：
+- `Demo System - Profile Dataset for CRM (Global v1.1)`
+- `Demo System - Event Dataset for BigQuery (Global v1.1)`
 
-您現在必須選取&#x200B;**個人識別碼**。 請確定已選取&#x200B;**loyaltyId**&#x200B;作為人員ID。
+搜尋這兩個資料集，核取其核取方塊，然後按一下&#x200B;**下一步**。
+
+![示範](./images/d1.png)
+
+然後您會看到以下內容：
 
 ![示範](./images/8.png)
 
-您現在會以其他Adobe Experience Platform資料集擴充Google Analytics網站互動資料。
+針對資料集`Demo System - Event Dataset for BigQuery (Global v1.1)`，將&#x200B;**人員ID**&#x200B;變更為&#x200B;**忠誠度ID**，並將&#x200B;**資料來源型別**&#x200B;設定為&#x200B;**網頁資料**。 啟用&#x200B;**匯入所有新資料**&#x200B;和&#x200B;**回填所有現有資料**&#x200B;的兩個選項。
 
-搜尋資料集`Demo System - Profile Dataset for Loyalty (Global v1.1)`資料集，並將其新增至此連線。
+![示範](./images/d2.png)
 
-![示範](./images/10.png)
+針對資料集`Demo System - Event Dataset for BigQuery (Global v1.1)`，確認&#x200B;**人員ID**&#x200B;已設定為&#x200B;**crmId**，並將&#x200B;**資料來源型別**&#x200B;設定為&#x200B;**網頁資料**。 啟用&#x200B;**匯入所有新資料**&#x200B;和&#x200B;**回填所有現有資料**&#x200B;的兩個選項。 按一下&#x200B;**新增資料集**。
 
-然後您會看到以下內容：
+![示範](./images/d3.png)
 
-![示範](./images/10a.png)
+到時您就會在這裡。 按一下&#x200B;**儲存**。
 
-為了合併兩個資料集，您需要選取包含相同型別ID的&#x200B;**人員ID**。 資料集`Demo System - Profile Dataset for Loyalty (Global v1.1)`使用&#x200B;**loyaltyId**&#x200B;作為人員ID，其中包含與`Demo System - Event Dataset for BigQuery (Global v1.1)`相同型別的ID，也使用&#x200B;**loyaltyId**&#x200B;作為人員ID。
-
-![示範](./images/12.png)
-
-按一下&#x200B;**下一步**。
-
-![示範](./images/14.png)
-
-然後您會看到以下內容：
-
-![示範](./images/15.png)
-
-您需要為連線命名。
-
-請使用此命名慣例： `ldap - GA + Loyalty Data Connection`。
-
-範例：`vangeluw - GA + Loyalty Data Connection`
-
-完成之前，請同時啟動&#x200B;**從今天開始，自動匯入此連線中所有資料集的所有新資料。**&#x200B;如下圖所示。
-
-![示範](./images/16.png)
-
-這將每60分鐘啟動一次從Adobe Experience Platform到CJA的資料流，但如果資料量很大，最多可能需要24小時。
-
-您也需要回填歷史資料，因此請勾選「**匯入所有現有資料**」的核取方塊，並在「**每日事件平均數**」下選取「**小於100萬**」。
-
-![示範](./images/17.png)
+![示範](./images/d4.png)
 
 建立您的&#x200B;**連線**&#x200B;後，可能需要幾個小時才能在CJA中使用您的資料。
 
-按一下&#x200B;**儲存**，然後前往下一個練習。
-
-![示範](./images/cjasave.png)
-
 之後，您會在可用連線清單中看到您的連線。
 
-![示範](./images/18.png)
+![示範](./images/d5.png)
 
 ## 4.2.5.2建立資料檢視
 
@@ -120,13 +91,9 @@ ht-degree: 2%
 - 對Google Analytics的KPI和量度使用與Customer Journey Analytics相同的名稱，好讓數位分析團隊只能說1種語言。
 - 資料檢視經過篩選，僅顯示1個市場、1個品牌或行動裝置的例項資料。
 
-在&#x200B;**連線**&#x200B;畫面上，勾選您剛建立的連線前面的核取方塊。
+在&#x200B;**連線**&#x200B;畫面上，勾選您剛建立的連線前面的核取方塊。 按一下&#x200B;**建立資料檢視**。
 
 ![示範](./images/exta.png)
-
-現在按一下&#x200B;**建立資料檢視**。
-
-![示範](./images/extb.png)
 
 您將會被重新導向至&#x200B;**建立資料檢視**&#x200B;工作流程。
 
@@ -134,26 +101,23 @@ ht-degree: 2%
 
 您現在可以設定資料檢視的基本定義。 時區、工作階段逾時或資料檢視篩選等(區段部分類似於Adobe Analytics中的虛擬報表套裝)。
 
-您在上一個練習中建立的&#x200B;**連線**&#x200B;已經選取。 您的連線名為`ldap - GA + Loyalty Data Connection`。
+您在上一個練習中建立的&#x200B;**連線**&#x200B;已經選取。 您的連線名為`--aepUserLdap-- - GA + Loyalty Data Connection`。
 
-![示範](./images/ext5.png)
+接下來，依照此命名慣例為資料檢視命名： `--aepUserLdap-- - GA + Loyalty Data View`。
 
-接下來，依照此命名慣例為資料檢視命名： `ldap - GA + Loyalty Data View`。
-
-為描述輸入相同的值： `ldap - GA + Loyalty Data View`。
+為描述輸入相同的值： `--aepUserLdap-- - GA + Loyalty Data View`。
 
 在執行任何分析或視覺效果之前，我們需要建立資料檢視，其中包含所有欄位、維度和量度及其歸因設定。
 
-| 欄位 | 命名慣例 | 範例 |
-| ----------------- |-------------|-------------|  
-| 連線名稱 | ldap - GA +忠誠度資料檢視 | vangeluw - GA +忠誠度資料檢視 |
-| 說明 | ldap - GA +忠誠度資料檢視 | vangeluw - GA +忠誠度資料檢視 |
-
-![示範](./images/22.png)
+| 欄位 | 命名慣例 |
+| ----------------- |-------------|  
+| 連線名稱 | `--aepUserLdap-- - GA + Loyalty Data View` | vangeluw - GA +忠誠度資料檢視 |
+| 說明 | `--aepUserLdap-- - GA + Loyalty Data View` |
+| 外部 ID | `--aepUserLdap--GA` |
 
 按一下&#x200B;**儲存並繼續**。
 
-![示範](./images/23.png)
+![示範](./images/22.png)
 
 您現在可以將元件新增至資料檢視。 如您所見，有些量度和維度會自動新增。
 

@@ -3,9 +3,10 @@ title: Customer Journey Analytics - Analysis Workspace中的資料準備
 description: Customer Journey Analytics - Analysis Workspace中的資料準備
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aa2fab85-d56e-4a00-8b8f-8a2053d8674a
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '758'
 ht-degree: 1%
 
 ---
@@ -32,12 +33,12 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 
 ### 建立您的專案
 
-現在該建立您的第一個CJA專案了。 前往CJA內的專案標籤。
-按一下**新建**。
+現在該建立您的第一個CJA工作區了。 前往CJA內的&#x200B;**Workspace**標籤。
+按一下**建立專案**。
 
 ![示範](./images/prmenu.png)
 
-您將會看到此訊息。 選取&#x200B;**空白專案**，然後按一下&#x200B;**建立**。
+您將會看到此訊息。 選取&#x200B;**空白Workspace專案**，然後按一下&#x200B;**建立**。
 
 ![示範](./images/prmenu1.png)
 
@@ -45,7 +46,7 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 
 ![示範](./images/premptyprojects.png)
 
-首先，請確定在熒幕右上角選取正確的資料檢視。 在此範例中，要選取的資料檢視為`vangeluwe - Omnichannel Data View`。
+首先，請確定在熒幕右上角選取正確的資料檢視。 要選取的資料檢視是`--aepUserLdap-- - Omnichannel Data View`。
 
 ![示範](./images/prdv.png)
 
@@ -108,17 +109,17 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 
 最後，變更計算量度的名稱和說明：
 
-| 標題 | 說明 |
-| ----------------- |-------------| 
-| 轉換率 | 轉換率 |
+| 標題 | 說明 | 外部 ID |
+| ----------------- |-------------| -------------| 
+| 轉換率 | 轉換率 | conversionRate |
 
-您的熒幕上有類似以下的畫面：
+您就會擁有此專案。 按一下&#x200B;**儲存**。
 
 ![示範](./images/calcbuildercr6.png)
 
-別忘了&#x200B;**儲存**&#x200B;計算量度。
+再按一下&#x200B;**儲存**。
 
-![示範](./images/pr9.png)
+![示範](./images/calcbuildercr6a.png)
 
 ## 4.1.4.3計算Dimension：篩選器（細分）和日期範圍
 
