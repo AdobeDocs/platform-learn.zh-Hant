@@ -4,9 +4,9 @@ breadcrumb-title: 從Creative Cloud到Experience Cloud，Adobe應用程式的完
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: a1f7cea15f65ceb5c2447f2a73b504da6ab7e416
+source-git-commit: 76723130c0b817110f348a3136246d808bc7b0a9
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '94'
 ht-degree: 5%
 
 ---
@@ -20,6 +20,7 @@ ht-degree: 5%
    + 1.1Adobe Firefly服務{#module11}
       + [概觀](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1Firefly服務快速入門](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
+      + [1.1.2要求符合規格的影像](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
 
 + 2內容供應鏈{#csc}
