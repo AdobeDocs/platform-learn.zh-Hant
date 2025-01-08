@@ -4,9 +4,9 @@ description: Firefly服務快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
+source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（極長的ac
 
 在繼續進行下一個練習之前，請隨時嘗試使用API請求。
 
-下一步： [1.1.2要求具有規格的影像](./ex2.md)
+下一步： [1.1.2使用Microsoft Azure和預先簽署的URL最佳化Firefly程式](./ex2.md)
 
 [返回模組1.1](./firefly-services.md)
 
