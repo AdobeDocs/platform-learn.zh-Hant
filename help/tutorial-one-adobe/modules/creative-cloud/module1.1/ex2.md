@@ -4,10 +4,10 @@ description: Firefly服務快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 0%
+source-wordcount: '1114'
+ht-degree: 1%
 
 ---
 
@@ -119,13 +119,13 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/az18.png)
 
-## 1.1.2.4手動上傳檔案並使用漸層檔案作為樣式參照
+## 1.1.2.4手動檔案上傳和使用影像檔案作為樣式參考
 
-您現在應該將所選擇的漸層檔案上傳到容器中。 您可以使用任何選擇的漸層檔案，也可以透過下載到電腦來使用[這個檔案](./images/gradient.jpg)。
+您現在應上傳所選影像檔案至容器。 您可以使用任何選擇的影像檔案，也可以透過下載到電腦來使用[這個檔案](./images/gradient.jpg)。
 
 ![Azure儲存體](./images/gradient.jpg)
 
-將漸層檔案拖放到Azure儲存體總管的容器中。
+將影像檔案拖放到Azure儲存體總管的容器中。
 
 上傳後，您會在容器中看到：
 
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/az23.png)
 
-將預留位置URL取代為您從Azure儲存體總管複製的漸層檔案預先簽署的URL。 您就會擁有此專案。 按一下&#x200B;**傳送**。
+將預留位置URL取代為您從Azure儲存體總管複製的影像檔案預先簽署的URL。 您就會擁有此專案。 按一下&#x200B;**傳送**。
 
 ![Azure儲存體](./images/az24.png)
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/az25.png)
 
-您之後會看到另一個含有`horses in a field`的影像，但這次的樣式將與您提供做為樣式參考的漸層檔案類似。
+您之後會看到另一個含有`horses in a field`的影像，但這次的樣式將與您提供做為樣式參考的影像檔案類似。
 
 ![Azure儲存體](./images/az26.png)
 
@@ -195,7 +195,7 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/az31.png)
 
-您現在需要從本機電腦中選取檔案。 您可以使用選擇的新影像檔案，或使用其他可以在[這裡](./images/gradient2-p.jpg)找到的漸層檔案。
+您現在需要從本機電腦中選取檔案。 您可以使用選擇的新影像檔，或使用另一個您可以在[這裡](./images/gradient2-p.jpg)找到的影像檔。
 
 ![漸層檔案](./images/gradient2-p.jpg)
 
@@ -223,7 +223,10 @@ URL目前看起來像這樣，但需要變更。
 
 接著，移至&#x200B;**Headers**，您必須在此手動新增標題。 使用此：
 
-x-ms-blob-type BlockBlob
+| 索引鍵 | 值 |
+|:-------------:| :---------------:| 
+| `x-ms-blob-type` | `BlockBlob` |
+
 
 ![Azure儲存體](./images/az35.png)
 
@@ -238,6 +241,27 @@ x-ms-blob-type BlockBlob
 如果您接著返回Azure儲存體總管並重新整理資料夾的內容，您現在可以在那裡找到新上傳的檔案。
 
 ![Azure儲存體](./images/az38.png)
+
+## 1.1.2.5程式化檔案使用
+
+若要以程式設計方式從Azure儲存體帳戶讀取檔案，您必須建立新的&#x200B;**共用存取簽章(SAS)**&#x200B;權杖，其許可權可讓您讀取檔案。 從技術上講，您可以使用您在上一個練習中建立的SAS-Token，但最佳實務是隻使用具有&#x200B;**讀取**&#x200B;許可權的個別Token。
+
+若要這麼做，請返回Azure儲存體總管。 用滑鼠右鍵按一下您的容器，然後按一下&#x200B;**取得共用存取權簽章**。
+
+![Azure儲存體](./images/az27.png)
+
+在&#x200B;**許可權**&#x200B;下，需要下列許可權：
+
+- **讀取**
+- **新增**
+- **建立**
+- **寫入**
+- **清單**
+
+按一下&#x200B;**建立**。
+
+![Azure儲存體](./images/az28.png)
+
 
 下一步： [1.1.3 ...](./ex3.md)
 
