@@ -4,9 +4,9 @@ description: Adobe Experience ManagerCloud Service
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
+source-git-commit: ce8e9f193765f362b3ea1396626d56b453e1d5ec
 workflow-type: tm+mt
-source-wordcount: '151'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 2%
 [2.1.2設定您的AEM CS環境](./ex2.md)
 
 在本練習中，您將設定您的AEM CS環境並存取您的CitiSignal網站。
+
+[2.1.3開發自訂區塊](./ex3.md)
+
+在本練習中，您將為網站開發自訂區塊元件。
 
 [摘要和優點](./summary.md)
 

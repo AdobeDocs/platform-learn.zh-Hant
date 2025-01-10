@@ -3,9 +3,9 @@ title: 建立您的Cloud Manager程式
 description: 建立您的Cloud Manager程式
 kt: 5342
 doc-type: tutorial
-source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
+source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -307,9 +307,38 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup45.png)
 
-您現在也可以前往`main--citisignal--woutervangeluwe.aem.live/us/en`導覽至您的網站
+您現在可以移至`main--citisignal--XXX.aem.page/us/en`及/或`main--citisignal--XXX.aem.live/us/en`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）後存取您的網站。
 
+在此範例中，完整URL會變成：
+`https://main--citisignal--woutervangeluwe.aem.page/us/en`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en`。
 
+可能需要一些時間，才能正確顯示所有資產，因為它們必須先發佈。
+
+然後您會看到以下內容：
+
+![AEMCS](./images/aemcssetup46.png)
+
+幾分鐘後，資產將全部正確載入。
+
+![AEMCS](./images/aemcssetup47.png)
+
+## 2.1.2.7測試頁面效能
+
+移至[https://pagespeed.web.dev/](https://pagespeed.web.dev/)。 輸入您的URL並按一下&#x200B;**分析**。
+
+![AEMCS](./images/aemcssetup48.png)
+
+然後您會發現，您的網站（在行動裝置和案頭視覺效果中）會獲得高分：
+
+**行動裝置**：
+
+![AEMCS](./images/aemcssetup49.png)
+
+**案頭**：
+
+![AEMCS](./images/aemcssetup50.png)
+
+下一步： [2.1.3設定自訂區塊](./ex3.md)
 
 [返回模組2.1](./aemcs.md)
 
