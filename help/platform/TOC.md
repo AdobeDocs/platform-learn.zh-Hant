@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
+source-git-commit: f64623255c045396799d0d627f199ce59c794d70
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '958'
 ht-degree: 17%
 
 ---
@@ -49,8 +49,13 @@ ht-degree: 17%
 + AI 助理 {#ai-assistant}
    + [概觀](/help/platform/ai-assistant/overview.md)
    + [設定存取權](/help/platform/ai-assistant/access.md)
-   + [清除對象](/help/platform/ai-assistant/find-unused-audiences.md)
    + [與新產品一同上線](/help/platform/ai-assistant/onboard.md)
+   + [瞭解產品](/help/platform/ai-assistant/product-knowledge.md)
+   + [驗證回應](/help/platform/ai-assistant/validate-responses.md)
+   + [探索可能性面板](/help/platform/ai-assistant/discoverability-panel.md)
+   + [尋找未使用的對象](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [影響分析](/help/platform/ai-assistant/impact-analysis.md)
+   + [安全性概覽](/help/platform/ai-assistant/security-overview.md)
 + 對象與細分{#audiences}
    + [對象入口網站和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上傳對象](audiences/upload-audiences.md)
@@ -109,8 +114,8 @@ ht-degree: 17%
    + [串流擷取總覽](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [使用 HTTP API 串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=zh-Hant)
    + [使用來源連接器串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hant)
-   + [Web SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
-   + [行動SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
+   + [網頁SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [Mobile SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + 資料生命週期{#data-lifecycle}
    + [讓資料集過期](/help/platform/data-lifecycle/expire-datasets.md)
 + 資料科學Workspace {#data-science-workspace}
@@ -148,7 +153,7 @@ ht-degree: 17%
       + [在Target中使用Real-Time CDP區段](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [在Target中使用Real-Time CDP設定檔屬性](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [啟用非Adobe應用程式網路研討會資料](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
-+ 身分 {#identities}
++ 身分識別 {#identities}
    + [身分和身分圖表總覽](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [標示、擷取及驗證身分資料](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [檢視身分圖](/help/platform/identities/view-identity-graphs.md)
