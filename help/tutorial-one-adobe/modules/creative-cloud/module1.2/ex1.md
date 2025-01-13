@@ -1,0 +1,234 @@
+---
+title: Firefly服務快速入門
+description: Firefly服務快速入門
+kt: 5342
+doc-type: tutorial
+source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
+workflow-type: tm+mt
+source-wordcount: '705'
+ht-degree: 2%
+
+---
+
+# 1.2.1 Workfront Fusion快速入門
+
+在本練習中，您將使用Workfront Fusion和Adobe I/O來查詢Adobe Firefly服務API。
+
+## 1.2.1.1建立新情境
+
+移至[https://experience.adobe.com/](https://experience.adobe.com/)。 按一下以開啟&#x200B;**Workfront Fusion**。
+
+![WF Fusion](./images/wffusion1.png)
+
+您應該會看到此訊息。 移至&#x200B;**案例**。
+
+![WF Fusion](./images/wffusion2.png)
+
+按一下&#x200B;**建立新情境**。
+
+![WF Fusion](./images/wffusion3.png)
+
+然後您會看到空白案例。 按一下&#x200B;**工具**&#x200B;圖示並選取&#x200B;**設定多個變數**。
+
+![WF Fusion](./images/wffusion4.png)
+
+您現在需要將&#x200B;**時鐘**&#x200B;圖示移至新新增的&#x200B;**設定多個變數**。
+
+![WF Fusion](./images/wffusion5.png)
+
+您將會看到此訊息。
+
+![WF Fusion](./images/wffusion6.png)
+
+然後，以滑鼠右鍵按一下問號，並選取&#x200B;**刪除模組**。
+
+![WF Fusion](./images/wffusion7.png)
+
+接著，在&#x200B;**設定多個變數**&#x200B;物件上按一下滑鼠右鍵，並選取&#x200B;**設定**。
+
+![WF Fusion](./images/wffusion8.png)
+
+## 1.2.1.2設定Adobe I/O驗證
+
+您現在需要設定根據Adobe I/O進行驗證所需的變數。在上一個練習中，您已建立Adobe I/O專案。 該Adobe I/O專案的變數現在需要在Workfront Fusion中定義。
+
+需要定義下列變數：
+
+| 索引鍵 | 值 |
+|:-------------:| :---------------:| 
+| `CONST_client_id` | 您的Adobe I/O專案使用者端ID |
+| `CONST_client_secret` | 您的Adobe I/O專案使用者端密碼 |
+| `CONST_scope` | 您的Adobe I/O專案範圍 |
+
+您可以前往[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)並開啟名為`--aepUserLdap-- Firefly`的Adobe I/O專案來尋找這些變數。
+
+![WF Fusion](./images/wffusion9.png)
+
+在您的專案中，按一下&#x200B;**OAuth Serverto-Server**&#x200B;以檢視上述金鑰的值。
+
+![WF Fusion](./images/wffusion10.png)
+
+使用上述索引鍵和值，您可以設定&#x200B;**設定多個變數**&#x200B;物件。 按一下&#x200B;**新增專案**。
+
+![WF Fusion](./images/wffusion11.png)
+
+輸入&#x200B;**變數名稱**： **CONST_client_id**&#x200B;及其&#x200B;**變數值**，按一下&#x200B;**新增**。
+
+![WF Fusion](./images/wffusion12.png)
+
+按一下&#x200B;**新增專案**。
+
+![WF Fusion](./images/wffusion13.png)
+
+輸入&#x200B;**變數名稱**： **CONST_client_secret**&#x200B;及其&#x200B;**變數值**，按一下&#x200B;**新增**。
+
+![WF Fusion](./images/wffusion14.png)
+
+按一下&#x200B;**新增專案**。
+
+![WF Fusion](./images/wffusion15.png)
+
+輸入&#x200B;**變數名稱**： **CONST_scope**&#x200B;及其&#x200B;**變數值**，按一下&#x200B;**新增**。
+
+![WF Fusion](./images/wffusion16.png)
+
+按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion17.png)
+
+將游標暫留在您的&#x200B;**設定多個變數**&#x200B;物件上，然後按一下巨大的&#x200B;**+**&#x200B;圖示以新增另一個模組。
+
+![WF Fusion](./images/wffusion18.png)
+
+您應該會看到此訊息。
+
+![WF Fusion](./images/wffusion19.png)
+
+在搜尋列中輸入&#x200B;**http**。 選取&#x200B;**HTTP**&#x200B;以開啟。
+
+![WF Fusion](./images/wffusion21.png)
+
+然後選取&#x200B;**提出要求**。
+
+![WF Fusion](./images/wffusion20.png)
+
+| 索引鍵 | 值 |
+|:-------------:| :---------------:| 
+| `URL` | `https://ims-na1.adobelogin.com/ims/token/v3` |
+| `Method` | `POST` |
+| `Body Type` | `x-www-form-urlencoded` |
+
+按一下&#x200B;**新增專案**。
+
+![WF Fusion](./images/wffusion22.png)
+
+為每個以下值新增專案：
+
+| 索引鍵 | 值 |
+|:-------------:| :---------------:| 
+| `client_id` | 您預先定義的`CONST_client_id`變數 |
+| `client_secret` | 您預先定義的`CONST_client_secret`變數 |
+| `scope` | 您預先定義的`CONST_scope`變數 |
+| `grant_type` | `client_credentials` |
+
+`client_id`的設定。
+
+![WF Fusion](./images/wffusion23.png)
+
+`client_secret`的設定。
+
+![WF Fusion](./images/wffusion25.png)
+
+`scope`的設定。
+
+![WF Fusion](./images/wffusion26.png)
+
+`grant_type`的設定。
+
+![WF Fusion](./images/wffusion28.png)
+
+設定概述。 向下捲動並勾選&#x200B;**剖析回應**&#x200B;的核取方塊。 按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion27.png)
+
+您應該會看到此訊息。 按一下&#x200B;**執行一次**。
+
+![WF Fusion](./images/wffusion29.png)
+
+案例執行後，您應該會看到此訊息。
+
+![WF Fusion](./images/wffusion30.png)
+
+按一下&#x200B;**設定多個變數**&#x200B;物件上的&#x200B;**問號**&#x200B;圖示，檢視該物件執行時發生的情況。
+
+![WF Fusion](./images/wffusion31.png)
+
+按一下&#x200B;**HTTP上的**&#x200B;問號&#x200B;**圖示 — 提出要求**&#x200B;物件，檢視執行物件時發生的情況。 在&#x200B;**OUTPUT**&#x200B;中，您會看到Adobe I/O傳回的&#x200B;**access_token**。
+
+![WF Fusion](./images/wffusion32.png)
+
+將游標暫留在&#x200B;**HTTP上 — 提出要求**&#x200B;物件並按一下&#x200B;**+**&#x200B;圖示以新增另一個模組。
+
+![WF Fusion](./images/wffusion33.png)
+
+在搜尋列中搜尋`tools`。 選取&#x200B;**工具**。
+
+![WF Fusion](./images/wffusion34.png)
+
+選取&#x200B;**設定多個變數**。
+
+![WF Fusion](./images/wffusion35.png)
+
+選取&#x200B;**新增專案**。
+
+![WF Fusion](./images/wffusion36.png)
+
+將&#x200B;**變數名稱**&#x200B;設為`bearer_token`。 選取`access_token`作為動態&#x200B;**變數值**。 按一下&#x200B;**新增**。
+
+![WF Fusion](./images/wffusion37.png)
+
+然後您應該擁有此專案。 按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion38.png)
+
+再按一下&#x200B;*執行一次**。
+
+![WF Fusion](./images/wffusion39.png)
+
+方案執行後，請按一下最後&#x200B;**設定多個變數**&#x200B;物件上的&#x200B;**問號**&#x200B;圖示。 然後您應該會看到access_token正在儲存到變數`bearer_token`中。
+
+![WF Fusion](./images/wffusion40.png)
+
+接著，用滑鼠右鍵按一下第一個物件&#x200B;**設定多個值**&#x200B;並選取&#x200B;**重新命名**。
+
+![WF Fusion](./images/wffusion41.png)
+
+將名稱設定為&#x200B;**初始化常數**。 按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion42.png)
+
+重新命名第二個物件，並將名稱設定為&#x200B;**驗證Adobe I/O**。 按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion43.png)
+
+重新命名第三個物件，並將名稱設定為&#x200B;**設定持有人權杖**。 按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion44.png)
+
+然後您應該擁有此專案。
+
+![WF Fusion](./images/wffusion45.png)
+
+接下來，將您的情境名稱變更為`--aepUSerLdap-- - Adobe I/O Authentication`。
+
+![WF Fusion](./images/wffusion46.png)
+
+按一下&#x200B;**儲存**。
+
+![WF Fusion](./images/wffusion47.png)
+
+下一步： [1.2.2使用Workfront Fusion的Firefly文字到影像](./ex2.md)
+
+[返回模組1.2](./automation.md)
+
+[返回所有模組](./../../../overview.md)
