@@ -4,9 +4,9 @@ description: Adobe Experience ManagerCloud Service
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: ce8e9f193765f362b3ea1396626d56b453e1d5ec
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '193'
 ht-degree: 2%
 
 ---
@@ -27,11 +27,15 @@ ht-degree: 2%
 
 在本練習中，您將建立您的Cloud Manager計畫，該計畫將為您建立Sites、Assets和Edge Delivery Services產品。
 
-[2.1.2設定您的AEM CS環境](./ex2.md)
+[2.1.2建立檔案式網站](./ex2.md)
+
+在這個快速入門練習中，您將複製現有的網站範本，以設定自己的檔案型網站。
+
+[2.1.3設定您的AEM CS環境](./ex3.md)
 
 在本練習中，您將設定您的AEM CS環境並存取您的CitiSignal網站。
 
-[2.1.3開發自訂區塊](./ex3.md)
+[2.1.4開發自訂區塊](./ex4.md)
 
 在本練習中，您將為網站開發自訂區塊元件。
 

@@ -4,9 +4,9 @@ description: 建立您的Cloud Manager程式
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '223'
 ht-degree: 4%
 
 ---
@@ -31,11 +31,13 @@ ht-degree: 4%
 
 ![AEMCS](./images/aemcs3.png)
 
-建立您的環境將需要一些時間。
+建立您的環境將需要一些時間，10到20分鐘。
 
 ![AEMCS](./images/aemcs4.png)
 
-環境建立並準備好使用後，您將會收到電子郵件確認。
+您等待時，可以從練習[2.1.2開始建立檔案型網站](./ex2.md)。
+
+環境建立並準備好使用後，您將會收到電子郵件確認，之後您可以返回此處。
 
 ![AEMCS](./images/aemcs5.png)
 
@@ -61,7 +63,7 @@ ht-degree: 4%
 
 管道執行完成後，您可以繼續進行下一個練習。
 
-下一步： [2.1.2設定您的AEM CS環境](./ex2.md)
+下一步： [2.1.2建立檔案型網站](./ex2.md)
 
 [返回模組2.1](./aemcs.md)
 

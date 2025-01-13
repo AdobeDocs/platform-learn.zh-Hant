@@ -4,9 +4,9 @@ description: Firefly服務快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1500'
 ht-degree: 1%
 
 ---
@@ -244,7 +244,9 @@ URL目前看起來像這樣，但需要變更。
 
 ## 1.1.2.5程式化檔案使用
 
-若要以程式設計方式從Azure儲存體帳戶讀取檔案，您必須建立新的&#x200B;**共用存取簽章(SAS)**&#x200B;權杖，其許可權可讓您讀取檔案。 從技術上講，您可以使用您在上一個練習中建立的SAS-Token，但最佳實務是隻使用具有&#x200B;**讀取**&#x200B;許可權的個別Token。
+若要以程式設計方式長期讀取Azure儲存體帳戶中的檔案，您必須建立新的&#x200B;**共用存取簽章(SAS)**&#x200B;權杖，並具有可讓您讀取檔案的許可權。 從技術上講，您可以使用您在上一個練習中建立的SAS-Token，但最佳實務是讓個別的Token只有&#x200B;**讀取**&#x200B;許可權，而個別的Token只有&#x200B;**寫入**&#x200B;許可權。
+
+### 長期讀取SAS權杖
 
 若要這麼做，請返回Azure儲存體總管。 用滑鼠右鍵按一下您的容器，然後按一下&#x200B;**取得共用存取權簽章**。
 
@@ -253,17 +255,113 @@ URL目前看起來像這樣，但需要變更。
 在&#x200B;**許可權**&#x200B;下，需要下列許可權：
 
 - **讀取**
-- **新增**
-- **建立**
-- **寫入**
 - **清單**
+
+將&#x200B;**到期時間**&#x200B;設定為從現在起的1年。
 
 按一下&#x200B;**建立**。
 
-![Azure儲存體](./images/az28.png)
+![Azure儲存體](./images/az100.png)
 
+接著，您將會取得具有讀取許可權的長期SAS-Token。 複製URL並將其寫入您電腦上的檔案中。
 
-下一步： [1.1.3 ...](./ex3.md)
+![Azure儲存體](./images/az101.png)
+
+您的URL如下所示：
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+您可以從上述URL衍生出一些值：
+
+- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`： `vangeluw`
+- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+### 長期寫入SAS權杖
+
+若要這麼做，請返回Azure儲存體總管。 用滑鼠右鍵按一下您的容器，然後按一下&#x200B;**取得共用存取權簽章**。
+
+![Azure儲存體](./images/az27.png)
+
+在&#x200B;**許可權**&#x200B;下，需要下列許可權：
+
+- **新增**
+- **建立**
+- **寫入**
+
+將&#x200B;**到期時間**&#x200B;設定為從現在起的1年。
+
+按一下&#x200B;**建立**。
+
+![Azure儲存體](./images/az102.png)
+
+接著，您將會取得具有讀取許可權的長期SAS-Token。 複製URL並將其寫入您電腦上的檔案中。
+
+![Azure儲存體](./images/az103.png)
+
+您的URL如下所示：
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+您可以再次從上述URL衍生一些值：
+
+- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`： `vangeluw`
+- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+### Postman中的變數
+
+如上節所述，讀取和寫入權杖中都有一些常見的變數。
+
+您現在需要在Postman中建立變數，以儲存上述SAS-Token的各種元素。
+兩個URL中的某些值相同：
+
+- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`： `vangeluw`
+- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+對於未來的API互動，主要的變化是資產名稱，而上述變數將維持不變。 在此情況下，建議您在Postman中建立變數，如此您就不需要每次都手動指定它們。
+
+若要這麼做，請開啟Postman。 按一下&#x200B;**環境**&#x200B;圖示，開啟&#x200B;**所有變數**&#x200B;功能表，然後按一下&#x200B;**環境**。
+
+![Azure儲存體](./images/az104.png)
+
+然後您會看到這個訊息。 在顯示的表格中建立這4個變數，並針對欄&#x200B;**初始值**&#x200B;和&#x200B;**目前值**，輸入您特定的個人值。
+
+- `AZURE_STORAGE_URL`：您的url
+- `AZURE_STORAGE_CONTAINER`：您的容器名稱
+- `AZURE_STORAGE_SAS_READ`：您的SAS讀取權杖
+- `AZURE_STORAGE_SAS_WRITE`：您的SAS寫入權杖
+
+按一下&#x200B;**儲存**。
+
+![Azure儲存體](./images/az105.png)
+
+在先前的練習中，您請求&#x200B;**Firefly- T2I (styleref) V3**&#x200B;的&#x200B;**內文**&#x200B;看起來像這樣：
+
+`"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+
+![Azure儲存體](./images/az24.png)
+
+您現在可以將URL變更為：
+
+`"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+
+按一下&#x200B;**傳送**&#x200B;以測試您所做的變更。
+
+![Azure儲存體](./images/az106.png)
+
+如果變數的設定正確，您會看到傳回的影像URL。
+
+![Azure儲存體](./images/az107.png)
+
+開啟影像URL以驗證您的影像。
+
+![Azure儲存體](./images/az108.png)
+
+下一步： [1.1.3Adobe Firefly和Adobe Photoshop](./ex3.md)
 
 [返回模組1.1](./firefly-services.md)
 

@@ -3,16 +3,67 @@ title: 建立您的Cloud Manager程式
 description: 建立您的Cloud Manager程式
 kt: 5342
 doc-type: tutorial
-source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
+exl-id: db366111-3873-4504-95f1-b240836c833f
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '761'
 ht-degree: 1%
 
 ---
 
-# 2.1.2設定您的AEM CS環境
+# 2.1.2建立檔案式網站
 
-## 2.1.2.1設定您的GitHub存放庫
+當您等待建立您的Cloud Manager程式時，您就有足夠的時間來設定您的第一個檔案型撰寫網站。 以下練習是根據[aem.live開發人員教學課程](https://www.aem.live/developer/tutorial)。 請依照下列步驟開始。
+
+## 2.1.2.1設定您的Google硬碟
+
+移至[https://drive.google.com](https://drive.google.com)。 按一下&#x200B;**+新增**，然後按一下&#x200B;**新增資料夾**。
+
+![AEMCS](./images/googledrive1.png)
+
+為資料夾命名`aemdocb-test`。 按一下&#x200B;**建立**。
+
+![AEMCS](./images/googledrive2.png)
+
+下載檔案[aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip)並在您的電腦上解壓縮。
+
+![AEMCS](./images/googledrive3.png)
+
+您會在該資料夾中看到3個檔案。 將這些檔案複製到新的Google Drive資料夾。
+
+![AEMCS](./images/googledrive4.png)
+
+您現在需要將這些檔案轉換為原生Google檔案。 若要這麼做，請開啟每個檔案，然後前往&#x200B;**檔案** > **儲存為Google Docs**。
+
+![AEMCS](./images/googledrive5.png)
+
+您應該針對所有3個檔案執行此動作，之後您會在Google磁碟機資料夾中看到6個檔案。
+
+![AEMCS](./images/googledrive6.png)
+
+然後將此檔案放入資料夾中。
+
+![AEMCS](./images/googledrive7.png)
+
+為了讓檔案型編寫示範發揮作用，您現在需要與電子郵件地址&#x200B;**helix@adobe.com**&#x200B;共用您的Google磁碟機資料夾。 按一下您的資料夾名稱，按一下&#x200B;**共用**，然後再次按一下&#x200B;**共用**。
+
+![AEMCS](./images/googledrive8.png)
+
+輸入電子郵件地址&#x200B;**helix@adobe.com**&#x200B;並按一下&#x200B;**傳送**。
+
+![AEMCS](./images/googledrive9.png)
+
+接下來，複製並記下Google Drive資料夾的URL，因為您會在下一個練習中用到它。 按一下您的資料夾名稱，按一下&#x200B;**共用**，然後按一下&#x200B;**複製連結**。
+
+![AEMCS](./images/googledrive10.png)
+
+`https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5?usp=drive_link`
+
+您應該移除查詢字串引數`?usp=drive_link`，讓URL看起來像這樣：
+
+`https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5`
+
+## 2.1.2.2設定您的GitHub存放庫
 
 移至[https://github.com](https://github.com)。 按一下&#x200B;**登入**。
 
@@ -26,17 +77,17 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup3.png)
 
-移至[https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one)。 您將會看到此訊息。 按一下&#x200B;**使用此範本**，然後按一下&#x200B;**建立新的存放庫**。
+移至[https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate)。 您將會看到此訊息。 按一下&#x200B;**使用此範本**，然後按一下&#x200B;**建立新的存放庫**。
 
-![AEMCS](./images/aemcssetup4.png)
+![AEMCS](./images/aemdocbcssetup4.png)
 
-在&#x200B;**存放庫名稱**&#x200B;之前，使用`citisignal`。 將可見度設定為&#x200B;**私人**。 按一下&#x200B;**建立存放庫**。
+對於&#x200B;**存放庫名稱**，請使用`aemdocb-test`。 將可見度設定為&#x200B;**私人**。 按一下&#x200B;**建立存放庫**。
 
-![AEMCS](./images/aemcssetup5.png)
+![AEMCS](./images/aemdocbcssetup5.png)
 
 幾秒鐘後，您就會建立存放庫。
 
-![AEMCS](./images/aemcssetup6.png)
+![AEMCS](./images/aemdocbcssetup6.png)
 
 接著，移至[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync)。 按一下&#x200B;**設定**。
 
@@ -48,297 +99,113 @@ ht-degree: 1%
 
 按一下&#x200B;**僅選取存放庫**，然後新增您剛建立的存放庫。 接著，按一下[安裝]。****
 
-![AEMCS](./images/aemcssetup9.png)
+![AEMCS](./images/aemdocbcssetup9.png)
 
 然後您會取得此確認。
 
 ![AEMCS](./images/aemcssetup10.png)
 
-## 2.1.2.2更新檔案fstab.yaml
+## 2.1.2.3更新檔案fstab.yaml
 
 在您的GitHub存放庫中，按一下以開啟檔案`fstab.yaml`。
 
-![AEMCS](./images/aemcssetup11.png)
+![AEMCS](./images/aemdocbcssetup11.png)
 
 按一下&#x200B;**編輯**&#x200B;圖示。
 
-![AEMCS](./images/aemcssetup12.png)
+![AEMCS](./images/aemdocbcssetup12.png)
 
-您現在需要在第4行更新欄位&#x200B;**url**&#x200B;的值。
+您現在需要在第2行更新欄位&#x200B;**url**&#x200B;的值。
 
-![AEMCS](./images/aemcssetup13.png)
+![AEMCS](./images/aemdocbcssetup13.png)
 
 您需要使用特定AEM CS環境的URL以及GitHub存放庫的設定，來取代目前值。
 
-這是URL目前的值： `https://author-p131639-e1282833.adobeaemcloud.com/bin/franklin.delivery/adobedevxsc/citisignal-one/main`。
+這是URL目前的值： `https://drive.google.com/drive/u/0/folders/1MGzOt7ubUh3gu7zhZIPb7R7dyRzG371j`。
 
-URL有3個部分需要更新
+以您從Google磁碟機資料夾`https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5`複製的URL取代該值。 按一下&#x200B;**認可變更……**。
 
-`https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
-
-XXX應由您的AEM CS作者環境的URL取代。
-
-您的GitHub使用帳戶應取代YYYY。
-
-ZZZ應取代為您在上一個練習中使用的GitHub存放庫名稱。
-
-您可以前往[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)找到AEM CS Author環境的URL。 按一下您的&#x200B;**程式**&#x200B;以開啟。
-
-![AEMCS](./images/aemcs6.png)
-
-接著，按一下&#x200B;**環境**&#x200B;標籤上的3個點&#x200B;**...**，然後按一下&#x200B;**檢視詳細資料**。
-
-![AEMCS](./images/aemcs9.png)
-
-然後您將會看到您的環境詳細資料，包括&#x200B;**作者**&#x200B;環境的URL。 複製URL。
-
-![AEMCS](./images/aemcs10.png)
-
-XXX = `author-p148073-e1511503.adobeaemcloud.com`
-
-若為GitHub使用者帳戶名稱，您可輕鬆在瀏覽器的URL中找到。 在此範例中，使用者帳戶名稱為`woutervangeluwe`。
-
-YYYY = `woutervangeluwe`
-
-![AEMCS](./images/aemcs11.png)
-
-如需GitHub存放庫名稱，您也可以在已在GitHub中開啟的瀏覽器視窗中找到。 在此案例中，存放庫名稱為`citisignal`。
-
-ZZZ = `citisignal`
-
-![AEMCS](./images/aemcs12.png)
-
-這3個值合併後，會產生這個需要在檔案`fstab.yaml`中設定的新URL。
-
-`https://author-p148073-e1511503.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal/main`
-
-按一下&#x200B;**認可變更……**。
-
-![AEMCS](./images/aemcs13.png)
+![AEMCS](./images/aemdocbcssetup14.png)
 
 按一下&#x200B;**認可變更**。
 
-![AEMCS](./images/aemcs14.png)
+![AEMCS](./images/aemdocbcssetup15.png)
 
-檔案`fstab.yaml`現在已更新。
+## 2.1.2.4安裝AEM Sidekick擴充功能
 
-## 2.1.2.3上傳CitiSignal資產
+移至[https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)。 按一下&#x200B;**新增至Chrome**。
 
-移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)。 按一下您的&#x200B;**程式**&#x200B;以開啟。
+![AEMCS](./images/aemdocbcssetup16.png)
 
-![AEMCS](./images/aemcs6.png)
+釘選&#x200B;**AEM Sidekick**&#x200B;延伸。
 
-接著，按一下作者環境的URL。
+![AEMCS](./images/aemdocbcssetup17.png)
 
-![AEMCS](./images/aemcssetup18.png)
+## 2.1.2.5預覽和Publish您的檔案式網站
 
-按一下&#x200B;**使用Adobe**&#x200B;登入。
+返回Google Drive資料夾。 在工作列中，按一下&#x200B;**AEM Sidekick**&#x200B;延伸。 然後您會在資料夾中看到AEM Sidekick列快顯視窗。
 
-![AEMCS](./images/aemcssetup19.png)
+![AEMCS](./images/aemdocbcssetup18.png)
 
-然後您會看到您的作者環境。
+選取Google Drive資料夾中的3個檔案。 按一下&#x200B;**預覽**。
 
-![AEMCS](./images/aemcssetup20.png)
+![AEMCS](./images/aemdocbcssetup19.png)
 
-您的URL如下所示： `https://author-p148073-e1511503.adobeaemcloud.com/ui#/aem/aem/start.html?appId=aemshell`
+再按一下&#x200B;**預覽**。
 
-您現在需要存取AEM的&#x200B;**CRX封裝管理員**&#x200B;環境。 若要這麼做，請從URL移除`ui#/aem/aem/start.html?appId=aemshell`，並以`crx/packmgr`取代，這表示您的URL現在看起來應該像這樣：
-`https://author-p148073-e1511503.adobeaemcloud.com/crx/packmgr`。
-點選**Enter**&#x200B;以載入封裝管理員環境
+![AEMCS](./images/aemdocbcssetup20.png)
 
-![AEMCS](./images/aemcssetup22.png)
+按一下以關閉綠色對話方塊快顯視窗。
 
-接著，按一下&#x200B;**上傳封裝**。
+![AEMCS](./images/aemdocbcssetup21.png)
 
-![AEMCS](./images/aemcssetup21.png)
+再次選取Google Drive資料夾中的3個檔案。 現在，按一下&#x200B;**Publish**。
 
-按一下&#x200B;**瀏覽**&#x200B;以找出要上傳的封裝。
-
-要上傳的封裝名稱為&#x200B;**citisignal-assets.zip**，可從此處下載： [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip)。
-
-![AEMCS](./images/aemcssetup23.png)
-
-選取封裝並按一下&#x200B;**開啟**。
-
-![AEMCS](./images/aemcssetup24.png)
-
-接著，按一下&#x200B;**確定**。
-
-![AEMCS](./images/aemcssetup25.png)
-
-然後會上傳套件。
-
-![AEMCS](./images/aemcssetup26.png)
-
-接著，在您剛上傳的封裝上按一下&#x200B;**安裝**。
-
-![AEMCS](./images/aemcssetup27.png)
-
-按一下&#x200B;**安裝**。
-
-![AEMCS](./images/aemcssetup28.png)
-
-幾分鐘後，就會安裝您的套件。
-
-![AEMCS](./images/aemcssetup29.png)
-
-您現在可以關閉此視窗。
-
-
-## 2.1.2.4Publish花旗訊號資產
-
-移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)。 按一下您的&#x200B;**程式**&#x200B;以開啟。
-
-![AEMCS](./images/aemcs6.png)
-
-接著，按一下作者環境的URL。
-
-![AEMCS](./images/aemcssetup18.png)
-
-按一下&#x200B;**使用Adobe**&#x200B;登入。
-
-![AEMCS](./images/aemcssetup19.png)
-
-然後您會看到您的作者環境。 按一下&#x200B;**網站**。
-
-![AEMCS](./images/aemcsassets1.png)
-
-按一下&#x200B;**檔案**。
-
-![AEMCS](./images/aemcsassets2.png)
-
-按一下以選取資料夾&#x200B;**CitiSignal**，然後按一下&#x200B;**管理出版物**。
-
-![AEMCS](./images/aemcsassets3.png)
-
-按一下&#x200B;**下一步**。
-
-![AEMCS](./images/aemcsassets4.png)
+![AEMCS](./images/aemdocbcssetup22.png)
 
 按一下&#x200B;**Publish**。
 
-![AEMCS](./images/aemcsassets5.png)
+![AEMCS](./images/aemdocbcssetup23.png)
 
-您的資產現已發佈。
+按一下以再次關閉綠色對話方塊。 現在，選取檔案&#x200B;**索引**，按一下&#x200B;**複製URL**，然後按一下&#x200B;**複製即時URL**。
 
-## 2.1.2.5建立CitiSignal網站
+![AEMCS](./images/aemdocbcssetup24.png)
 
-移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)。 按一下您的&#x200B;**程式**&#x200B;以開啟。
+複製的URL看起來像這樣： `https://main--aemdocb-test--woutervangeluwe.aem.live/`。
 
-![AEMCS](./images/aemcs6.png)
+在上述URL中：
 
-接著，按一下作者環境的URL。
+- **main**&#x200B;參考您GitHub存放庫上的分支
+- **aemdocb-test**&#x200B;參考GitHub存放庫名稱
+- **woutervangeluwe**&#x200B;參考GitHub使用者帳戶名稱
+- **.live**&#x200B;參考您的AEM執行個體的即時環境
+- 您可以將&#x200B;**.live**&#x200B;取代為&#x200B;**.page**，以開啟AEM執行個體的預覽環境
 
-![AEMCS](./images/aemcssetup18.png)
+開啟新的瀏覽器視窗並導覽至URL。
 
-按一下&#x200B;**使用Adobe**&#x200B;登入。
+![AEMCS](./images/aemdocbcssetup25.png)
 
-![AEMCS](./images/aemcssetup19.png)
+## 2.1.2.6變更並發佈變更
 
-然後您會看到您的作者環境。 按一下&#x200B;**網站**。
+返回您的Google磁碟機，並在Google中開啟檔案管理員&#x200B;**索引**。
 
-![AEMCS](./images/aemcssetup30.png)
+![AEMCS](./images/aemdocbcssetup27.png)
 
-按一下&#x200B;**建立**，然後按一下&#x200B;**來自範本的網站**。
+以任何其他選擇的文字取代文字&#x200B;**測試**。 按一下&#x200B;**預覽**。
 
-![AEMCS](./images/aemcssetup31.png)
+![AEMCS](./images/aemdocbcssetup28.png)
 
-按一下&#x200B;**匯入**。
+接著會開啟您網站的預覽版本。 檢閱您的變更並按一下&#x200B;**Publish**。
 
-![AEMCS](./images/aemcssetup32.png)
+![AEMCS](./images/aemdocbcssetup29.png)
 
-您現在需要為網站匯入預先設定的範本。 您可以在[這裡](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip)下載範本。 將檔案儲存到您的案頭。
+接著，您就會看到網站的即時版本。
 
-接著，選取檔案`citisignal-edge-delivery-services-template-0.0.4.zip`並按一下&#x200B;**開啟**。
+![AEMCS](./images/aemdocbcssetup30.png)
 
-![AEMCS](./images/aemcssetup33.png)
+上述練習是您開始使用並體驗檔案式編寫的好地方。 您現在可以繼續下一個練習，在那裡您將使用CitiSignal作為示範品牌來設定您自己的示範網站。
 
-您將會看到此訊息。 按一下以選取您剛上傳的範本，然後按一下[下一步] ****。
-
-![AEMCS](./images/aemcssetup34.png)
-
-您現在需要填寫一些詳細資料。
-
-- 網站標題：使用&#x200B;**CitiSignal**
-- 網站名稱：使用&#x200B;**citisignal-one**
-- GitHub URL：複製您之前使用的GitHub存放庫的URL
-
-![AEMCS](./images/aemcssetup35.png)
-
-您就會擁有此專案。 按一下&#x200B;**建立**。
-
-![AEMCS](./images/aemcssetup36.png)
-
-正在建立您的網站。 這可能需要幾分鐘的時間。 按一下&#x200B;**確定**。
-
-![AEMCS](./images/aemcssetup37.png)
-
-幾分鐘後重新整理您的熒幕，您就會看到新建立的CitiSignal網站。
-
-![AEMCS](./images/aemcssetup38.png)
-
-## 2.1.2.6Publish花旗訊號網站
-
-接著，按一下&#x200B;**CitiSignal**&#x200B;前面的核取方塊。 然後，按一下&#x200B;**管理出版物**。
-
-![AEMCS](./images/aemcssetup39.png)
-
-按一下&#x200B;**下一步**。
-
-![AEMCS](./images/aemcssetup40.png)
-
-按一下&#x200B;**包含子設定**。
-
-![AEMCS](./images/aemcssetup41.png)
-
-按一下以選取核取方塊&#x200B;**包含子項**，然後按一下以取消選取其他核取方塊。 按一下&#x200B;**「確定」**。
-
-![AEMCS](./images/aemcssetup42.png)
-
-按一下&#x200B;**Publish**。
-
-![AEMCS](./images/aemcssetup43.png)
-
-然後您將被送回這裡。 瀏覽至&#x200B;**CitiSignal** > **us** > **en**。 按一下&#x200B;**索引**&#x200B;前面的核取方塊，然後按一下&#x200B;**編輯**。
-
-![AEMCS](./images/aemcssetup44.png)
-
-您的網站將在&#x200B;**通用編輯器**&#x200B;中開啟。
-
-![AEMCS](./images/aemcssetup45.png)
-
-您現在可以移至`main--citisignal--XXX.aem.page/us/en`及/或`main--citisignal--XXX.aem.live/us/en`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）後存取您的網站。
-
-在此範例中，完整URL會變成：
-`https://main--citisignal--woutervangeluwe.aem.page/us/en`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en`。
-
-可能需要一些時間，才能正確顯示所有資產，因為它們必須先發佈。
-
-然後您會看到以下內容：
-
-![AEMCS](./images/aemcssetup46.png)
-
-幾分鐘後，資產將全部正確載入。
-
-![AEMCS](./images/aemcssetup47.png)
-
-## 2.1.2.7測試頁面效能
-
-移至[https://pagespeed.web.dev/](https://pagespeed.web.dev/)。 輸入您的URL並按一下&#x200B;**分析**。
-
-![AEMCS](./images/aemcssetup48.png)
-
-然後您會發現，您的網站（在行動裝置和案頭視覺效果中）會獲得高分：
-
-**行動裝置**：
-
-![AEMCS](./images/aemcssetup49.png)
-
-**案頭**：
-
-![AEMCS](./images/aemcssetup50.png)
-
-下一步： [2.1.3設定自訂區塊](./ex3.md)
+下一步： [2.1.3設定您的AEM CS環境](./ex3.md)
 
 [返回模組2.1](./aemcs.md)
 

@@ -4,9 +4,9 @@ description: Adobe Firefly服務
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '156'
 ht-degree: 2%
 
 ---
@@ -30,6 +30,10 @@ ht-degree: 2%
 [1.1.2使用Microsoft Azure和預先簽署的URL最佳化Firefly程式](./ex2.md)
 
 在本練習中，請探索Firefly服務並瞭解其功能。
+
+[1.1.3Adobe Firefly與Adobe Photoshop](./ex3.md)
+
+在本練習中，您將會將Firefly服務與Adobe Photoshop搭配使用。
 
 [摘要和優點](./summary.md)
 
