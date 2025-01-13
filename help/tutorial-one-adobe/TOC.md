@@ -4,9 +4,9 @@ breadcrumb-title: 從Creative Cloud到Experience Cloud，Adobe應用程式的完
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
+source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '160'
 ht-degree: 6%
 
 ---
@@ -41,8 +41,10 @@ ht-degree: 6%
       + [摘要和優點](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
 + 3個整合式客戶體驗{#uce}
-   + 3.1 Adobe Real-Time CDP {#module31}
-      + [概觀](/help/tutorial-one-adobe/modules/uce/module3.1/rtcdp.md)
-      + [3.1.1建立您的活動](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+   + 3.1同盟對象構成{#module31}
+      + [概觀](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
+      + [3.1.1設定您的Snowflake環境](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+      + [3.1.2建立結構描述、資料模型和連結](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
+      + [3.1.3建立同盟組合](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
 

@@ -4,7 +4,7 @@ description: Firefly服務快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 1%
@@ -242,7 +242,7 @@ URL目前看起來像這樣，但需要變更。
 
 ![Azure儲存體](./images/az38.png)
 
-## 1.1.2.5程式化檔案使用
+## 1.1.2.6程式化檔案使用
 
 若要以程式設計方式長期讀取Azure儲存體帳戶中的檔案，您必須建立新的&#x200B;**共用存取簽章(SAS)**&#x200B;權杖，並具有可讓您讀取檔案的許可權。 從技術上講，您可以使用您在上一個練習中建立的SAS-Token，但最佳實務是讓個別的Token只有&#x200B;**讀取**&#x200B;許可權，而個別的Token只有&#x200B;**寫入**&#x200B;許可權。
 
@@ -359,7 +359,7 @@ URL目前看起來像這樣，但需要變更。
 
 開啟影像URL以驗證您的影像。
 
-![Azure儲存體](./images/az108.png)
+![Azure儲存體](./images/az108.jpg)
 
 下一步： [1.1.3Adobe Firefly和Adobe Photoshop](./ex3.md)
 
