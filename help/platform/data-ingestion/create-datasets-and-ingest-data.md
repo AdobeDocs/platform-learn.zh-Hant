@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2700
 thumbnail: 27269.jpg
 exl-id: f01c7d88-a77e-4fb2-aa5a-d647abc41790
-source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
+source-git-commit: eb3d3fce216b7665e53a125d0141bef53e742799
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 9%
@@ -19,4 +19,3 @@ ht-degree: 9%
 本影片說明如何在Adobe Experience Platform介面中建立資料集和內嵌資料。 如需更詳細的產品檔案，請參閱[使用UI擷取批次資料](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=zh-Hant)和[使用API建立資料集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html)。 如需詳細資訊，請瀏覽[資料擷取檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
-
