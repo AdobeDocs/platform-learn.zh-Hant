@@ -4,9 +4,9 @@ description: Firefly服務快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: a0c16a47372d322a7931578adca30a246b537183
+source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '1759'
 ht-degree: 2%
 
 ---
@@ -218,7 +218,227 @@ ht-degree: 2%
 
 ![WF Fusion](./images/wffusion74.png)
 
-下一步： [1.2.3 ...](./ex3.md)
+按一下&#x200B;**執行一次**。
+
+![WF Fusion](./images/wffusion75.png)
+
+按一下&#x200B;**Photoshop變更文字**&#x200B;節點上的&#x200B;**搜尋**&#x200B;圖示以檢視回應。 您應該有如下的回應，其中包含狀態檔案的連結。
+
+![WF Fusion](./images/wffusion76.png)
+
+在繼續Photoshop API互動之前，請先停用指向&#x200B;**FireflyT2I**&#x200B;節點的路由，以免傳送不需要的API呼叫至該API端點。 按一下&#x200B;**扳手**&#x200B;圖示，然後選取&#x200B;**停用路由**。
+
+![WF Fusion](./images/wffusion77.png)
+
+然後您應該擁有此專案。
+
+![WF Fusion](./images/wffusion78.png)
+
+接下來，新增另一個&#x200B;**設定多個變數**&#x200B;節點。
+
+![WF Fusion](./images/wffusion79.png)
+
+將它置於&#x200B;**Photoshop變更文字**&#x200B;節點之後。
+
+![WF Fusion](./images/wffusion80.png)
+
+按一下&#x200B;**設定多個變數**&#x200B;節點，選取&#x200B;**新增專案**。 從先前請求的回應中選取變數值。
+
+| 變數名稱 | 變數值 |
+|:-------------:| :---------------:| 
+| `psdStatusUrl` | `data > _links > self > href` |
+
+按一下&#x200B;**新增**。
+
+![WF Fusion](./images/wffusion81.png)
+
+按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion82.png)
+
+以滑鼠右鍵按一下&#x200B;**Photoshop變更文字**&#x200B;節點，然後選取&#x200B;**複製**。
+
+![WF Fusion](./images/wffusion83.png)
+
+將複製的HTTP要求拖曳到您剛建立的&#x200B;**設定多個變數**&#x200B;節點之後。
+
+![WF Fusion](./images/wffusion83.png)
+
+用滑鼠右鍵按一下複製的HTTP要求，選取&#x200B;**重新命名**，並將名稱變更為&#x200B;**Photoshop檢查狀態**。
+
+![WF Fusion](./images/wffusion84.png)
+
+按一下以開啟HTTP要求。 變更URL，使其參考您在上一步中建立的變數，並將&#x200B;**方法**&#x200B;設定為&#x200B;**GET**。
+
+![WF Fusion](./images/wffusion85.png)
+
+選取空白選項，移除&#x200B;**內文**。
+
+![WF Fusion](./images/wffusion86.png)
+
+按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion87.png)
+
+按一下&#x200B;**執行一次**。
+
+![WF Fusion](./images/wffusion88.png)
+
+您應該會收到包含欄位&#x200B;**狀態**&#x200B;的回應，其狀態設定為&#x200B;**正在執行**。 Photoshop需要幾秒鐘才能完成程式。
+
+![WF Fusion](./images/wffusion89.png)
+
+現在您知道回應需要更多時間才能完成，所以最好在此HTTP要求前面新增計時器，以免立即執行。
+
+按一下&#x200B;**工具**&#x200B;節點，然後選取&#x200B;**睡眠**。
+
+![WF Fusion](./images/wffusion90.png)
+
+將&#x200B;**睡眠**&#x200B;節點放置在&#x200B;**設定多個變數**&#x200B;和&#x200B;**Photoshop檢查狀態**&#x200B;之間。 將&#x200B;**延遲**&#x200B;設定為&#x200B;**5**&#x200B;秒。 按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion91.png)
+
+您就會擁有此專案。 使用下列設定的挑戰是，等待5秒可能足夠了，但可能還不夠。 實際上，最好有更智慧型的解決方案，例如do...while回圈，每5秒檢查一次狀態，直到狀態等於&#x200B;**succeeded**。 您現在將在後續步驟中實施這類策略。
+
+![WF Fusion](./images/wffusion92.png)
+
+按一下介於&#x200B;**設定多個變數**&#x200B;和&#x200B;**睡眠**&#x200B;之間的&#x200B;**扳手**&#x200B;圖示。 選取&#x200B;**新增模組**。
+
+![WF Fusion](./images/wffusion93.png)
+
+搜尋`flow`，然後選取&#x200B;**流量控制**。
+
+![WF Fusion](./images/wffusion94.png)
+
+選取&#x200B;**中繼器**。
+
+![WF Fusion](./images/wffusion95.png)
+
+將&#x200B;**重複**&#x200B;設定為&#x200B;**20**。 按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion96.png)
+
+接著，在&#x200B;**Photoshop檢查狀態**&#x200B;上按一下&#x200B;**+**&#x200B;以新增另一個模組。
+
+![WF Fusion](./images/wffusion97.png)
+
+搜尋&#x200B;**流量**&#x200B;並選取&#x200B;**流量控制**。
+
+![WF Fusion](./images/wffusion98.png)
+
+選取&#x200B;**陣列彙總**。
+
+![WF Fusion](./images/wffusion99.png)
+
+將&#x200B;**Source模組**&#x200B;設定為&#x200B;**中繼器**。 按一下&#x200B;**確定**。
+
+![WF Fusion](./images/wffusion100.png)
+
+之後，您應該具備此功能：
+
+![WF Fusion](./images/wffusion101.png)
+
+按一下&#x200B;**扳手**&#x200B;圖示並選取&#x200B;**新增模組**。
+
+![WF Fusion](./images/wffusion102.png)
+
+搜尋&#x200B;**工具**&#x200B;並選取&#x200B;**工具**。
+
+![WF Fusion](./images/wffusion103.png)
+
+選取&#x200B;**取得多個變數**。
+
+![WF Fusion](./images/wffusion104.png)
+
+按一下「**+新增專案**」並將&#x200B;**變數名稱**&#x200B;設定為`done`。
+
+![WF Fusion](./images/wffusion105.png)
+
+按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion106.png)
+
+按一下您之前設定的&#x200B;**設定多個變數**&#x200B;節點。 若要初始化變數&#x200B;**done**，您必須在這裡將其設為`false`。 按一下&#x200B;**+新增專案**。
+
+![WF Fusion](./images/wffusion107.png)
+
+對於&#x200B;**變數名稱**，請使用`done`。 若要設定狀態，需要一個布林值。 若要尋找布林值，請按一下&#x200B;**齒輪**&#x200B;圖示，然後選取`false`。 按一下&#x200B;**新增**。
+
+![WF Fusion](./images/wffusion108.png)
+
+按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion109.png)
+
+接著，在您設定的&#x200B;**取得多個變數**&#x200B;節點後，按一下&#x200B;**扳手**&#x200B;圖示。
+
+![WF Fusion](./images/wffusion110.png)
+
+選取&#x200B;**設定篩選器**。 您現在需要檢查變數&#x200B;**done**&#x200B;的值。 如果該值設定為&#x200B;**false**，則必須執行回圈的下一部分。 如果值設定為&#x200B;**true**，則表示處理序已順利完成，因此不需要繼續回圈的下一部分。
+
+![WF Fusion](./images/wffusion111.png)
+
+對於標籤，請使用&#x200B;**我們完成了嗎？**。使用現有的變數&#x200B;**done**&#x200B;設定&#x200B;**條件**，運運算元應設為&#x200B;**等於**，而值應為布林值變數`false`。 按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion112.png)
+
+接下來，在節點&#x200B;**Photoshop檢查狀態**&#x200B;和&#x200B;**陣列彙總**&#x200B;之間騰出一些空間。 然後，按一下&#x200B;**扳手**&#x200B;圖示並選取&#x200B;**新增路由器**。 您之所以這麼做，是因為在檢查Photoshop檔案的狀態後，應該會有2個路徑。 如果狀態為`succeeded`，則&#x200B;**done**&#x200B;的變數應設為`true`。 如果狀態不等於`succeeded`，則應該繼續回圈。 路由器可以檢查並設定此專案。
+
+![WF Fusion](./images/wffusion113.png)
+
+新增路由器後，按一下&#x200B;**扳手**&#x200B;圖示，然後選取&#x200B;**設定篩選器**。
+
+![WF Fusion](./images/wffusion114.png)
+
+對於標籤，請使用&#x200B;**我們已完成**。 選擇回應欄位&#x200B;**data.outputs[].status**，使用來自&#x200B;**Photoshop Check Status**&#x200B;節點的回應設定&#x200B;**條件**，運運算元應設為&#x200B;**等於**，而值應為`succeeded`。 按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion115.png)
+
+接著，按一下帶有問號的空白節點，並搜尋&#x200B;**工具**。 然後，選取&#x200B;**工具**。
+
+![WF Fusion](./images/wffusion116.png)
+
+選取&#x200B;**設定多個變數**。
+
+![WF Fusion](./images/wffusion117.png)
+
+使用路由器的這個分支時，表示Photoshop檔案建立的狀態已順利完成。 這表示do...while回圈不再需要繼續檢查Photoshop中的狀態，因此您應該將變數`done`設定為`true`。
+
+對於&#x200B;**變數名稱**，請使用`done`。 對於&#x200B;**變數值**，您應該使用布林值`true`。 按一下&#x200B;**齒輪**&#x200B;圖示，然後選取`true`。 按一下&#x200B;**新增**。
+
+![WF Fusion](./images/wffusion118.png)
+
+按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffusion119.png)
+
+接著，用滑鼠右鍵按一下您剛建立的&#x200B;**設定多個變數**&#x200B;節點，並選取&#x200B;**複製**。
+
+![WF Fusion](./images/wffusion120.png)
+
+拖曳複製的節點，使其與&#x200B;**陣列彙總**&#x200B;連線。 然後，以滑鼠右鍵按一下節點，並選取&#x200B;**重新命名**，然後將名稱變更為`Placeholder End`。
+
+![WF Fusion](./images/wffusion122.png)
+
+移除現有的變數，然後按一下&#x200B;**+新增專案**。 對於&#x200B;**變數名稱**，請使用`placeholder`，對於&#x200B;**變數值**，請使用`end`。 按一下[新增]****，然後按一下[確定]****。
+
+![WF Fusion](./images/wffusion123.png)
+
+按一下&#x200B;**儲存**&#x200B;以儲存您的情境。 接著，按一下&#x200B;**執行一次**。
+
+![WF Fusion](./images/wffusion124.png)
+
+接著將會執行您的情境，而且應該會成功完成。 您會發現您設定的do...while回圈運作正常。 在下列執行中，您可以看到根據&#x200B;**工具>取得多個變數**&#x200B;節點上的泡泡圖，**中繼器**&#x200B;已執行20次。 在該節點之後，您已設定篩選器以檢查狀態，而且只有在狀態不等於&#x200B;**succeeded**&#x200B;時，才會執行下一個節點。 在這個執行中，篩選之後的部分只執行一次，因為狀態在第一次執行中已經是&#x200B;**succeeded**。
+
+![WF Fusion](./images/wffusion125.png)
+
+您可以按一下&#x200B;**Photoshop Check Status** HTTP請求上的泡泡並向下展開至&#x200B;**狀態**&#x200B;欄位，以驗證建立新Photoshop檔案的狀態。
+
+![WF Fusion](./images/wffusion126.png)
+
+您現在已設定可重複案例的基本版本，可自動化許多步驟。 在下一個練習中，您將透過增加複雜性來反複研究這個問題。
+
+下一步： [1.2.3使用Workfront Fusion自動化程式](./ex3.md)
 
 [返回模組1.2](./automation.md)
 
