@@ -3,7 +3,8 @@ title: Firefly服務自動化 — 摘要
 description: Firefly服務自動化 — 摘要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
+exl-id: 96c76fac-9acb-44ac-9534-546dc635ff73
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
 source-wordcount: '45'
 ht-degree: 2%
@@ -16,11 +17,9 @@ ht-degree: 2%
 
 ## 優點
 
-現在來強調使用Firefly服務的好處……
-
+現在來著重說明使用Workfront Fusion的優點。
 
 ## 看看這個
-
 
 [返回模組1.2](./automation.md)
 

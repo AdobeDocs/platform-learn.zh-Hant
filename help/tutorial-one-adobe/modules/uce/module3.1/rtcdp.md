@@ -1,37 +1,29 @@
 ---
-title: 3.1 Adobe Real-Time CDP
-description: Adobe Real-Time CDP
+title: Foundation - FAC — 摘要
+description: Foundation - FAC — 摘要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: cab61d74-9e16-4eda-b704-e103ab5350e2
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '53'
+ht-degree: 1%
 
 ---
 
-# 3.1 Adobe Real-Time CDP
+# 摘要與優點
 
-## 學習目標
+恭喜您將Adobe Experience Platform的相關學習投入寶貴時間！
 
-- 瞭解如何以各種方式使用Adobe Real-Time CDP。
+## 優點
 
-## 先決條件
+現在來著重說明Adobe Experience Platform中同盟受眾構成之資料擷取功能的好處：
 
-- 存取Adobe Real-Time CDP
 
-## 練習
 
-[3.1.1 Real-Time CDP](./ex1.md)
+## 看看這個
 
-在本練習中， ...
 
-[摘要和優點](./summary.md)
-
-本單元摘要和優點概觀。
-
->[!NOTE]
->
->感謝您花時間學習Adobe Experience Platform及其應用程式的所有知識。 如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
+[返回模組3.1](./fac.md)
 
 [返回所有模組](../../../overview.md)

@@ -1,16 +1,17 @@
 ---
-title: 2.2 Workfront
-description: 2.2 Workfront
+title: 使用Adobe Workfront進行工作流程管理
+description: 使用Adobe Workfront進行工作流程管理
 kt: 5342
 doc-type: tutorial
-source-git-commit: d658ebcecea1cb98f6c7176a9238fcb740fb03e3
+exl-id: 96685851-b446-4bae-890e-4f96a59cedba
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '130'
 ht-degree: 3%
 
 ---
 
-# 2.2 Workfront
+# 2.2使用Adobe Workfront管理工作流程
 
 ## 學習目標
 
