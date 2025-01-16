@@ -3,9 +3,9 @@ title: 概覽 — 完整技術教學課程 — 單一Adobe
 description: 完整技術教學課程 — 單一Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
+source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '342'
 ht-degree: 4%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 4%
 - Google Cloud Platform
 - Microsoft Azure
 - Postman
+- Snowflake
 - ...
 
 完成本教學課程中的練習後，您將能夠：
@@ -55,7 +56,11 @@ ht-degree: 4%
 
 [1.1Adobe Firefly服務](./modules/creative-cloud/module1.1/firefly-services.md)
 
-在此基本單元中，您將使用Adobe Firefly來……
+在此單元中，您將使用Adobe Firefly服務API、Photoshop API和Microsoft Azure儲存服務產生影像並以程式設計方式儲存。
+
+[1.2使用Workfront Fusion實現創意工作流程自動化](./modules/creative-cloud/module1.2/automation.md)
+
+在此基本單元中，您將使用Adobe Workfront Fusion來自動化及調整您的內容建立工作流程。
 
 ### 2.內容供應鏈
 

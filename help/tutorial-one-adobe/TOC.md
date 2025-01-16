@@ -4,9 +4,9 @@ breadcrumb-title: 從Creative Cloud到Experience Cloud，Adobe應用程式的完
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7b88a325bcf827f951f400f310dec4fcb394fb42
+source-git-commit: 0c89770961c1f0c46685233b5446223c9ff2bc13
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 5%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 5%
       + [1.1.2使用Microsoft Azure和預先簽署的URL最佳化Firefly程式](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3Adobe Firefly與Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
-   + 1.2自動化Adobe Firefly服務{#module21}
+   + 1.2使用Workfront Fusion {#module21}自動化創意工作流程
       + [概觀](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
       + [1.2.1 Workfront Fusion快速入門](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
       + [1.2.2在Workfront Fusion中使用Adobe API](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
