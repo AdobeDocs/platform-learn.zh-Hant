@@ -4,7 +4,7 @@ description: 使用Workfront Fusion實現創意工作流程自動化
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 2%
@@ -42,7 +42,8 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
 
 [返回所有模組](../../../overview.md)

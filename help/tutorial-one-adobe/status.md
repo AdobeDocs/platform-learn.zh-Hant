@@ -2,10 +2,11 @@
 title: 內容狀態
 description: 內容狀態
 doc-type: multipage-overview
-source-git-commit: 24153b07074c053e0623a4167507d4a6aa37f212
+exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 12%
+source-wordcount: '142'
+ht-degree: 9%
 
 ---
 
@@ -25,5 +26,11 @@ ht-degree: 12%
 | [3.3 Adobe Journey Optimizer：Offer decisioning](./modules/uce/module3.3/offer-decisioning.md) | 14/11/2024 | 是 | - |
 
 {style="table-layout:auto"}
+
+>[!NOTE]
+>
+>![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
+>
+>如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
 
 [返回所有模組](./overview.md)
