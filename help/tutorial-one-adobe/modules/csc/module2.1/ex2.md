@@ -4,7 +4,7 @@ description: 建立您的Cloud Manager程式
 kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 2.1.2建立檔案式網站
 
-當您等待建立您的Cloud Manager程式時，您就有足夠的時間來設定您的第一個檔案型撰寫網站。 以下練習是根據[aem.live開發人員教學課程](https://www.aem.live/developer/tutorial)。 請依照下列步驟開始。
+當您等待建立您的Cloud Manager程式時，您就有足夠的時間來設定您的第一個檔案型撰寫網站。 下列練習是根據[aem.live開發人員教學課程](https://www.aem.live/developer/tutorial){target="_blank"}進行。 請依照下列步驟開始。
 
 ## 2.1.2.1設定您的Google硬碟
 
-移至[https://drive.google.com](https://drive.google.com)。 按一下&#x200B;**+新增**，然後按一下&#x200B;**新增資料夾**。
+移至[https://drive.google.com](https://drive.google.com){target="_blank"}。 按一下&#x200B;**+新增**，然後按一下&#x200B;**新增資料夾**。
 
 ![AEMCS](./images/googledrive1.png)
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/googledrive2.png)
 
-下載檔案[aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip)並在您的電腦上解壓縮。
+下載檔案[aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip){target="_blank"}並在您的電腦上解壓縮。
 
 ![AEMCS](./images/googledrive3.png)
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 ## 2.1.2.2設定您的GitHub存放庫
 
-移至[https://github.com](https://github.com)。 按一下&#x200B;**登入**。
+移至[https://github.com](https://github.com){target="_blank"}。 按一下&#x200B;**登入**。
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -77,7 +77,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup3.png)
 
-移至[https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate)。 您將會看到此訊息。 按一下&#x200B;**使用此範本**，然後按一下&#x200B;**建立新的存放庫**。
+移至[https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate){target="_blank"}。 您將會看到此訊息。 按一下&#x200B;**使用此範本**，然後按一下&#x200B;**建立新的存放庫**。
 
 ![AEMCS](./images/aemdocbcssetup4.png)
 
@@ -89,7 +89,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemdocbcssetup6.png)
 
-接著，移至[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync)。 按一下&#x200B;**設定**。
+接著，移至[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}。 按一下&#x200B;**設定**。
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -133,7 +133,7 @@ ht-degree: 1%
 
 ## 2.1.2.4安裝AEM Sidekick擴充功能
 
-移至[https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)。 按一下&#x200B;**新增至Chrome**。
+移至[https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo){target="_blank"}。 按一下&#x200B;**新增至Chrome**。
 
 ![AEMCS](./images/aemdocbcssetup16.png)
 
@@ -205,8 +205,8 @@ ht-degree: 1%
 
 上述練習是您開始使用並體驗檔案式編寫的好地方。 您現在可以繼續下一個練習，在那裡您將使用CitiSignal作為示範品牌來設定您自己的示範網站。
 
-下一步： [2.1.3設定您的AEM CS環境](./ex3.md)
+下一步： [2.1.3設定您的AEM CS環境](./ex3.md){target="_blank"}
 
-[返回模組2.1](./aemcs.md)
+[返回模組2.1](./aemcs.md){target="_blank"}
 
-[返回所有模組](./../../../overview.md)
+[返回所有模組](./../../../overview.md){target="_blank"}

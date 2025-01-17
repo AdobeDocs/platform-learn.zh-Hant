@@ -5,9 +5,10 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 91dbf1aac923c26608528b163bbd68218d45425b
+exl-id: d52ec3c8-8628-4a52-9107-471342118a53
+source-git-commit: 432ccc96f4bc80085e7bd9cd51c3878d9090dc9d
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '326'
 ht-degree: 2%
 
 ---
@@ -65,6 +66,7 @@ Adobe Journey Optimizer可讓您建立個人化優惠，並以協調的方式將
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform及其應用程式的所有知識。 如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
+>![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
 
 [返回所有模組](../../../overview.md)

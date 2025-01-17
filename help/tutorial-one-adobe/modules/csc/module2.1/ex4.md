@@ -3,7 +3,8 @@ title: 開發自訂區塊
 description: 開發自訂區塊
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5242f77e2756e1bcd9ed25a7b95b06a01114fcd5
+exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 ## 2.1.4.1設定您的本機開發環境
 
-移至[https://desktop.github.com/download/](https://desktop.github.com/download/)，下載並安裝&#x200B;**Github案頭版**。
+移至[https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}，下載並安裝&#x200B;**Github案頭**。
 
 ![區塊](./images/block1.png)
 
@@ -29,6 +30,6 @@ ht-degree: 0%
 本機fo
 
 
-[返回模組2.1](./aemcs.md)
+[返回模組2.1](./aemcs.md){target="_blank"}
 
-[返回所有模組](./../../../overview.md)
+[返回所有模組](./../../../overview.md){target="_blank"}

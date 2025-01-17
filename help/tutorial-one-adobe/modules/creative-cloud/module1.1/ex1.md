@@ -4,7 +4,7 @@ description: Firefly服務快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在本練習中，您將密集使用Adobe I/O來查詢Firefly服務API。 請依照下列步驟設定Adobe I/O。
 
-移至[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
+移至[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}
 
 ![Adobe I/O新整合](./images/iohome.png)
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ## Adobe I/O的Postman驗證
 
-移至[https://www.postman.com/downloads/](https://www.postman.com/downloads/)。
+移至[https://www.postman.com/downloads/](https://www.postman.com/downloads/){target="_blank"}。
 
 下載並安裝作業系統的相關Postman版本。
 
@@ -178,8 +178,8 @@ Adobe I/O已為您提供&#x200B;**bearer**-token，具有特定值（極長的ac
 
 在繼續進行下一個練習之前，請隨時嘗試使用API請求。
 
-下一步： [1.1.2使用Microsoft Azure和預先簽署的URL最佳化Firefly程式](./ex2.md)
+下一步： [1.1.2使用Microsoft Azure和預先簽署的URL最佳化Firefly程式](./ex2.md){target="_blank"}
 
-[返回模組1.1](./firefly-services.md)
+[返回模組1.1](./firefly-services.md){target="_blank"}
 
-[返回所有模組](./../../../overview.md)
+[返回所有模組](./../../../overview.md){target="_blank"}

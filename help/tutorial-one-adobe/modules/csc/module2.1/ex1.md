@@ -4,7 +4,7 @@ description: 建立您的Cloud Manager程式
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 2.1.1建立您的Cloud Manager程式
 
-移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)。 您應該選取的組織是`--aepImsOrgName--`。 您將會看到類似這樣的內容。 按一下&#x200B;**新增程式**。
+移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 您應該選取的組織是`--aepImsOrgName--`。 您將會看到類似這樣的內容。 按一下&#x200B;**新增程式**。
 
 ![AEMCS](./images/aemcs1.png)
 
@@ -35,13 +35,13 @@ ht-degree: 4%
 
 ![AEMCS](./images/aemcs4.png)
 
-您等待時，可以從練習[2.1.2開始建立檔案型網站](./ex2.md)。
+您等待時，可以從練習[2.1.2開始建立檔案型網站](./ex2.md){target="_blank"}。
 
 環境建立並準備好使用後，您將會收到電子郵件確認，之後您可以返回此處。
 
 ![AEMCS](./images/aemcs5.png)
 
-收到電子郵件確認後，請返回[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)。 然後您會看到程式的狀態已變更為&#x200B;**就緒**。 按一下您的程式以開啟。
+收到電子郵件確認後，請返回[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 然後您會看到程式的狀態已變更為&#x200B;**就緒**。 按一下您的程式以開啟。
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -63,8 +63,8 @@ ht-degree: 4%
 
 管道執行完成後，您可以繼續進行下一個練習。
 
-下一步： [2.1.2建立檔案型網站](./ex2.md)
+下一步： [2.1.2建立檔案型網站](./ex2.md){target="_blank"}
 
-[返回模組2.1](./aemcs.md)
+[返回模組2.1](./aemcs.md){target="_blank"}
 
-[返回所有模組](./../../../overview.md)
+[返回所有模組](./../../../overview.md){target="_blank"}

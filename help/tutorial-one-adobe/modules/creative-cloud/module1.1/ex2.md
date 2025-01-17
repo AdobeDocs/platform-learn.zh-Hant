@@ -4,7 +4,7 @@ description: 使用Microsoft Azure和預先簽署的URL最佳化Firefly程式
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >如果您已有現有的Azure訂閱，可以略過此步驟。 請繼續進行該案例的下一個練習。
 
-移至[https://portal.azure.com](https://portal.azure.com)並使用您的Azure帳戶登入。 如果您沒有電子郵件地址，請使用個人電子郵件地址來建立您的Azure帳戶。
+移至[https://portal.azure.com](https://portal.azure.com){target="_blank"}並使用您的Azure帳戶登入。 如果您沒有電子郵件地址，請使用個人電子郵件地址來建立您的Azure帳戶。
 
 ![Azure儲存體](./images/02azureportalemail.png)
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 ## 1.1.2.3安裝Azure儲存體總管
 
-您將使用Microsoft Azure儲存體總管來管理您的檔案。 您可以透過[此連結](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4)下載。 針對您的特定作業系統選取正確的版本，下載並安裝。
+您將使用Microsoft Azure儲存體總管來管理您的檔案。 您可以透過[此連結](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}下載。 針對您的特定作業系統選取正確的版本，下載並安裝。
 
 ![Azure儲存體](./images/az10.png)
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 ## 1.1.2.4手動檔案上傳和使用影像檔案作為樣式參考
 
-您現在應上傳所選影像檔案至容器。 您可以使用任何選擇的影像檔案，也可以透過下載到電腦來使用[這個檔案](./images/gradient.jpg)。
+您現在應上傳所選影像檔案至容器。 您可以使用任何選擇的影像檔案，也可以透過下載到電腦來使用[這個檔案](./images/gradient.jpg){target="_blank"}。
 
 ![Azure儲存體](./images/gradient.jpg)
 
@@ -199,7 +199,7 @@ ht-degree: 1%
 
 ![Azure儲存體](./images/az31.png)
 
-您現在需要從本機電腦中選取檔案。 您可以使用選擇的新影像檔，或使用另一個您可以在[這裡](./images/gradient2-p.jpg)找到的影像檔。
+您現在需要從本機電腦中選取檔案。 您可以使用選擇的新影像檔，或使用另一個您可以在[這裡](./images/gradient2-p.jpg){target="_blank"}找到的影像檔。
 
 ![漸層檔案](./images/gradient2-p.jpg)
 
@@ -365,8 +365,8 @@ URL目前看起來像這樣，但需要變更。
 
 ![Azure儲存體](./images/az108.jpg)
 
-下一步： [1.1.3Adobe Firefly和Adobe Photoshop](./ex3.md)
+下一步： [1.1.3Adobe Firefly和Adobe Photoshop](./ex3.md){target="_blank"}
 
-[返回模組1.1](./firefly-services.md)
+[返回模組1.1](./firefly-services.md){target="_blank"}
 
-[返回所有模組](./../../../overview.md)
+[返回所有模組](./../../../overview.md){target="_blank"}

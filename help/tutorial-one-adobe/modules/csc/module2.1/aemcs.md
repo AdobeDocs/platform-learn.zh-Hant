@@ -4,10 +4,10 @@ description: Adobe Experience ManagerCloud Service與Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '183'
+ht-degree: 2%
 
 ---
 
@@ -23,28 +23,29 @@ ht-degree: 1%
 
 ## 練習
 
-[2.1.1建立您的Cloud Manager程式](./ex1.md)
+[2.1.1建立您的Cloud Manager程式](./ex1.md){target="_blank"}
 
 在本練習中，您將建立您的Cloud Manager計畫，該計畫將為您建立Sites、Assets和Edge Delivery Services產品。
 
-[2.1.2建立檔案式網站](./ex2.md)
+[2.1.2建立檔案型網站](./ex2.md){target="_blank"}
 
 在這個快速入門練習中，您將複製現有的網站範本，以設定自己的檔案型網站。
 
-[2.1.3設定您的AEM CS環境](./ex3.md)
+[2.1.3設定您的AEM CS環境](./ex3.md){target="_blank"}
 
 在本練習中，您將設定您的AEM CS環境並存取您的CitiSignal網站。
 
-[2.1.4開發自訂區塊](./ex4.md)
+[2.1.4開發自訂區塊](./ex4.md){target="_blank"}
 
 在本練習中，您將為網站開發自訂區塊元件。
 
-[摘要和優點](./summary.md)
+[摘要與優點](./summary.md){target="_blank"}
 
 本單元摘要和優點概觀。
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform及其應用程式的所有知識。 如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
+>![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
 
-[返回所有模組](../../../overview.md)
+[返回所有模組](../../../overview.md){target="_blank"}

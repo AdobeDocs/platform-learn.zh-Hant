@@ -3,10 +3,11 @@ title: Adobe Journey Optimizer翻譯服務
 description: Adobe Journey Optimizer翻譯服務
 kt: 5342
 doc-type: tutorial
-source-git-commit: 91dbf1aac923c26608528b163bbd68218d45425b
+exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
+source-git-commit: 432ccc96f4bc80085e7bd9cd51c3878d9090dc9d
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 3%
+source-wordcount: '86'
+ht-degree: 4%
 
 ---
 
@@ -32,6 +33,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform及其應用程式的所有知識。 如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
+>![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
 
 [返回所有模組](../../../overview.md)

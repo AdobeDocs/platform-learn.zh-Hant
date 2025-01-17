@@ -4,9 +4,9 @@ description: 使用Adobe Workfront進行工作流程管理
 kt: 5342
 doc-type: tutorial
 exl-id: 96685851-b446-4bae-890e-4f96a59cedba
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '112'
 ht-degree: 3%
 
 ---
@@ -23,20 +23,21 @@ ht-degree: 3%
 
 ## 練習
 
-[2.2.1 Workfront快速入門](./ex1.md)
+[2.2.1 Workfront快速入門](./ex1.md){target="_blank"}
 
 在本練習中， ...
 
-[2.2.5 Workfront + Photoshop整合](./ex5.md)
+[2.2.5 Workfront + Photoshop整合](./ex5.md){target="_blank"}
 
 在本練習中，您將設定並開始使用將Adobe Photoshop與Adobe Workfront連線的外掛程式。
 
-[摘要和優點](./summary.md)
+[摘要與優點](./summary.md){target="_blank"}
 
 本單元摘要和優點概觀。
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform及其應用程式的所有知識。 如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
+>![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
 
-[返回所有模組](../../../overview.md)
+[返回所有模組](../../../overview.md){target="_blank"}
