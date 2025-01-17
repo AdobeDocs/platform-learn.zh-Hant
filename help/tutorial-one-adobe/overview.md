@@ -3,7 +3,7 @@ title: 概覽 — 完整技術教學課程 — 單一Adobe
 description: 完整技術教學課程 — 單一Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 4%
@@ -94,8 +94,8 @@ ht-degree: 4%
 
 在本單元中，您將以實作方式使用Adobe Journey Optimizer搭配offer decisioning服務來設定個人化優惠方案及您自己的決定。
 
+![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
