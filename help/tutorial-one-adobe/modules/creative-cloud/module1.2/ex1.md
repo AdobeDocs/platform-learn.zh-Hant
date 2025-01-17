@@ -4,10 +4,10 @@ description: Workfront Fusion快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,15 @@ ht-degree: 2%
 
 ![WF Fusion](./images/wffusion2.png)
 
-按一下&#x200B;**建立新情境**。
+按一下&#x200B;**+**&#x200B;圖示以建立新資料夾。
+
+![WF Fusion](./images/wffusion2a.png)
+
+資料夾名稱請使用： `--aepUserLdap--`。 按一下&#x200B;**儲存**。
+
+![WF Fusion](./images/wffusion2b.png)
+
+選取您的資料夾，然後按一下[建立新情境] ****。
 
 ![WF Fusion](./images/wffusion3.png)
 

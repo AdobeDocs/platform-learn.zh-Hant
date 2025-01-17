@@ -4,9 +4,9 @@ description: Firefly服務快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -130,13 +130,15 @@ Postman中有2個概念：「環境」和「集合」。
 
 在執行任何要求之前，請確定您已選取正確的環境。 您可以驗證右上角的環境下拉式清單，以檢查目前選取的環境。
 
+![Postman](./images/envselemea1.png)
+
 所選環境的名稱應該與此環境類似，`--aepUserLdap-- Firefly Services OAuth Credential`。
 
 ![Postman](./images/envselemea.png)
 
 您的Postman環境和集合現已設定完畢，可正常運作。 您現在可以從Postman驗證Adobe I/O。
 
-在&#x200B;**AdobeIO - OAuth**&#x200B;集合中，選取名稱為&#x200B;**POST — 取得存取權杖**&#x200B;的要求。 您會在&#x200B;**引數**&#x200B;下參考2個變數： `API_KEY`和`CLIENT_SECRET`。 這些變數是從選取的環境`--aepUserLdap-- Firefly Services OAuth Credential`中取得。
+在&#x200B;**AdobeIO - OAuth**&#x200B;集合中，選取名稱為&#x200B;**POST — 取得存取權杖**&#x200B;的要求。 您接著會看到在&#x200B;**引數**&#x200B;下，有2個變數被引用，`API_KEY`和`CLIENT_SECRET`。 這些變數是從選取的環境`--aepUserLdap-- Firefly Services OAuth Credential`中取得。
 
 按一下&#x200B;**傳送**。
 

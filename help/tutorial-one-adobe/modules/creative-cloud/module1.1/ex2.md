@@ -4,9 +4,9 @@ description: 使用Microsoft Azure和預先簽署的URL最佳化Firefly程式
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1527'
 ht-degree: 1%
 
 ---
@@ -108,6 +108,10 @@ ht-degree: 1%
 ![Azure儲存體](./images/az15.png)
 
 切換回Microsoft Azure儲存體總管應用程式。 選取您的訂閱，然後按一下&#x200B;**開啟總管**。
+
+>[!NOTE]
+>
+>如果您的帳戶未顯示，請按一下電子郵件地址旁的&#x200B;**齒輪**&#x200B;圖示，並選取&#x200B;**取消篩選**。
 
 ![Azure儲存體](./images/az16.png)
 

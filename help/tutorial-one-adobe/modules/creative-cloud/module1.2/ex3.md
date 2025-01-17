@@ -4,9 +4,9 @@ description: 使用Workfront Fusion實現流程自動化
 kt: 5342
 doc-type: tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ split函式預期分號前的值陣列，並預期您指定分號後的分隔符
 
 ![WF Fusion](./images/wffusion209.png)
 
-您也需要更新用來在您的Azure儲存體帳戶中寫入檔案的檔案名稱。 如果檔案名稱是靜態的，則每個新的版序都將僅覆寫先前的檔案，因此您將遺失自訂的檔案。 目前的靜態檔案名稱是&#x200B;**sevoi-psd-changed-text.psd**，您現在需要更新它。 將游標放在單字`text`後面。
+您也需要更新用來在您的Azure儲存體帳戶中寫入檔案的檔案名稱。 如果檔案名稱是靜態的，則每個新的版序都將僅覆寫先前的檔案，因此您將遺失自訂的檔案。 目前的靜態檔案名稱是&#x200B;**citisignal-fiber-changed-text.psd**，您現在需要更新它。 將游標放在單字`text`後面。
 
 ![WF Fusion](./images/wffusion210.png)
 
@@ -77,11 +77,11 @@ split函式預期分號前的值陣列，並預期您指定分號後的分隔符
 
 ![WF Fusion](./images/wffusion213.png)
 
-下載並開啟每個檔案。 然後您應該會在按鈕上看到各種文字。 這是檔案`sevoi-psd-changed-text-1.psd`。
+下載並開啟每個檔案。 然後您應該會在按鈕上看到各種文字。 這是檔案`citisignal-fiber-changed-text-1.psd`。
 
 ![WF Fusion](./images/wffusion214.png)
 
-這是檔案`sevoi-psd-changed-text-2.psd`。
+這是檔案`citisignal-fiber-changed-text-2.psd`。
 
 ![WF Fusion](./images/wffusion215.png)
 
@@ -162,9 +162,31 @@ split函式預期分號前的值陣列，並預期您指定分號後的分隔符
 
 ![WF Fusion](./images/wffusion232.png)
 
-最後，將您的Postman請求名稱變更為`POST - Send Request to Workfront Fusion Webhook`。
+將您的Postman請求名稱變更為`POST - Send Request to Workfront Fusion Webhook`。
 
 ![WF Fusion](./images/wffusion233.png)
+
+您現在需要開始使用變數&#x200B;**psdTemplate**。 您現在不會以硬式編碼將&#x200B;**Photoshop變更文字**&#x200B;節點的輸入檔案位置編碼出來，而是會使用Postman要求的傳入變數。
+
+開啟&#x200B;**Photoshop變更文字**&#x200B;節點並移至&#x200B;**要求內容**。 選取&#x200B;**inputs**&#x200B;下的硬式編碼檔案名稱&#x200B;**citisignal-fiber.psd**&#x200B;並刪除它。
+
+![WF Fusion](./images/wffusion234.png)
+
+選取變數&#x200B;**psdTemplate**。 按一下「**確定**」，然後儲存您的情境。
+
+![WF Fusion](./images/wffusion235.png)
+
+按一下&#x200B;**開啟**&#x200B;以開啟您的情境。 您的情境現在會不間斷執行。
+
+![WF Fusion](./images/wffusion236.png)
+
+返回Postman。 輸入檔案名稱`citisignal-fiber.psd`做為變數&#x200B;**psdTemplate**&#x200B;的值，然後再次按一下&#x200B;**傳送**&#x200B;以再次執行您的案例。
+
+![WF Fusion](./images/wffusion237.png)
+
+透過將PSD範本指定為外部系統提供的變數，您現在已建置可重複使用的案例。
+
+您現在已經完成此練習。
 
 下一步： [摘要與優點](./summary.md)
 
