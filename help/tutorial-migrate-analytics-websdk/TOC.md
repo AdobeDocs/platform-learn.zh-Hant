@@ -1,7 +1,7 @@
 ---
-user-guide-title: 從Adobe Analytics Tags擴充功能移轉至Web SDK Tags擴充功能
-breadcrumb-title: 從Adobe Analytics Tags擴充功能移轉至Web SDK Tags擴充功能
-user-guide-description: Analytics客戶的實作教學課程，說明如何成功從Adobe Analytics Tags擴充功能移轉至Web SDK Tags擴充功能
+user-guide-title: 使用標籤Adobe Analytics至網路SDK
+breadcrumb-title: 使用標籤Adobe Analytics至網路SDK
+user-guide-description: Analytics客戶的實作教學課程，說明如何使用Adobe Experience Platform標籤成功將Adobe Analytics移轉至Web SDK
 solution: Analytics,Data Collection,Experience Platform
 feature-set: Analytics,Experience Platform
 feature: Web SDK
@@ -11,15 +11,15 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
 index: false
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '116'
 ht-degree: 1%
 
 ---
 
 
-# 從Adobe Analytics Tags擴充功能移轉至Web SDK Tags擴充功能 {#migrate-analytics-to-websdk}
+# 使用標籤將Adobe Analytics移轉至網路SDK {#migrate-analytics-to-websdk}
 
 + [移轉概述](migration-to-websdk-overview.md)
 

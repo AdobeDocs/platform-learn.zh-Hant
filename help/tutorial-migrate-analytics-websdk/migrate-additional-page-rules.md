@@ -4,13 +4,13 @@ description: 瞭解如何將其他頁面型規則移轉至Web SDK擴充功能。
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16764
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: d1345da7-018d-4c0c-ba9b-d4ff7b35df03
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # 移轉其他頁面規則
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 現在讓我們稍微備份一下，討論Analytics實作與Adobe Analytics標籤擴充功能的搭配情況(也稱為「AppMeasurement」實作，因為這是JavaScript檔案的名稱)。
 
-我不認為您會確切瞭解自己的實施方式，但在許多使用Experience Platform標籤（先前稱為「Launch」）的實施中，有許多規則只會根據頁面或URL中的內容有條件地引發。 此範例可能包括：
+我不認為您會確切知道如何實作，但在使用Experience Platform標籤的許多實作中，會有任意數量的規則僅根據頁面或URL中的內容有條件引發。 此範例可能包括：
 
 * 搜尋結果規則，僅在執行內部搜尋且搜尋結果頁面出現時引發
 * 促銷活動登陸頁面規則，僅在URL中有追蹤代碼時引發
@@ -68,6 +68,3 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >就像預設頁面載入規則一樣，我們在規則中保留了Analytics擴充功能的&#x200B;**設定變數**&#x200B;動作，以便在驗證移轉時可以比較資料。 別忘了稍後再來，當您進行最終清理時，請移除Analytics擴充功能的動作。
-
-
-

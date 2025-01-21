@@ -4,13 +4,13 @@ description: 在本練習中，您將瞭解如何將Adobe Experience Cloud Tags�
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
-
 
 # 移轉預設頁面載入規則
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 概觀
 
-讓我們先回顧一下。 標籤中可能有一個規則（舊稱為「Launch」），會在每個頁面上引發，也就是設定一或多個預設變數，然後向Adobe Analytics觸發信標或點選的規則。 此規則目前正在使用Adobe Analytics擴充功能中的「動作」來執行這些動作。 當我們將實作移轉至Web SDK時，需要能夠移除Analytics擴充功能的任何參考（如動作），並以屬於Web SDK的動作加以取代。 在下列步驟中，我們會假設上述情況；也就是說，您有預設頁面載入規則，此規則會設定變數，並在追蹤信標中傳送至Analytics。
+讓我們先回顧一下。 標籤中可能有一個規則，會在每個頁面上觸發，此規則會設定一或多個預設變數，然後向Adobe Analytics觸發信標或點選。 此規則目前正在使用Adobe Analytics擴充功能中的「動作」來執行這些動作。 當我們將實作移轉至Web SDK時，需要能夠移除Analytics擴充功能的任何參考（如動作），並以屬於Web SDK的動作加以取代。 在下列步驟中，我們會假設上述情況；也就是說，您有預設頁面載入規則，此規則會設定變數，並在追蹤信標中傳送至Analytics。
 
 ## 移轉「設定變數」動作
 

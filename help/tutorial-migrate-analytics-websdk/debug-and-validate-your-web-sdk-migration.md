@@ -4,15 +4,15 @@ description: 瞭解在移轉至Web SDK時如何除錯和驗證資料
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16763
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 68f87266-4b87-4953-8de4-6a9a62bac9e6
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
-
-# 偵錯和驗證Web SDK移轉
+# 偵錯並驗證Web SDK移轉
 
 在本練習中，您將瞭解在移轉至Web SDK時，如何除錯及驗證資料。 我們建議您進行兩種不同的驗證活動，協助您確保一切正常進行：
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 1. 在Analysis Workspace中建立新專案並新增兩個面板
 1. 將面板1中的報表套裝設定為目前的Adobe Analytics生產報表套裝
 1. 在面板2中將報表套裝設定為新的Web SDK開發報表套裝
-1. 使用行事曆中的時段，將相同的報表放入兩個面板中；此時資料會使用兩個擴充功能流入Analytics
+1. 使用只包含完整天數的時段，將相同的報表放入兩個面板中，此時資料已傳送至兩個報表套裝
 1. 比較資料
 
 這可能看起來像這樣（請瞭解這些空白示範報表套裝中沒有資料）：
