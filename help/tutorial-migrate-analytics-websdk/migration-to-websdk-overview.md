@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
+source-git-commit: 10982e1d5fa61d2f13ec7686f251a4c7cf6a3565
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1079'
 ht-degree: 0%
 
 ---
@@ -68,5 +68,6 @@ ht-degree: 0%
 1. 完成所有變更後，將程式庫推送至測試環境，然後再推送至生產環境。
 1. 完成所有工作後，請再次測試。 此為必要操作，因為您已移除對舊版Analytics程式碼的參照，以進行變更，而且您想要確定一切仍正常運作。
 
-
-### DOUG注意事項 — 測試教學課程後，請在此處放置社群貼文的連結，客戶可在其中詢問關於教學課程和移轉至Web SDK的問題。
+>[!NOTE]
+>
+>我們致力協助您成功將Analytics移轉至Web SDK。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}中張貼以告知我們。
