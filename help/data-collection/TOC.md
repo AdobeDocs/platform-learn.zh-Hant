@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 38696ad5f8e151d1b7a42055d844fb98e8dccb86
+source-git-commit: 3ebcb866cd16b036d09def8cf629fd0ccb348dc7
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 24%
+source-wordcount: '195'
+ht-degree: 23%
 
 ---
 
@@ -27,14 +27,15 @@ ht-degree: 24%
    + [建置規則](tags/build-rules.md)
    + [棧疊規則](tags/stack-rules.md)
    + [建置及發佈程式庫](tags/build-and-publish-a-library.md)
-   + [使用Web SDK在網站中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant){target="_blank"}
+   + [透過Web SDK在網站中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant){target="_blank"}
    + [使用解決方案SDK在網站中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [在行動應用程式中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
-+ Web SDK{#web-sdk}
++ 網頁SDK{#web-sdk}
    + [概觀](web-sdk/overview.md)
    + [示範](web-sdk/demo.md)
    + [實作教學課程（含標籤）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant){target="_blank"}
    + [移轉Target教學課程](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
+   + [移轉Analytics教學課程](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + 同意{#consent}
       + [概觀](web-sdk/consent/overview.md)
       + [使用Adobe標準設定同意值](web-sdk/consent/set-consent-adobe.md)
