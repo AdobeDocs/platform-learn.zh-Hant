@@ -4,7 +4,7 @@ description: 基礎 — FAC — 建立方案、資料模型和連結
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 2%
@@ -130,6 +130,8 @@ ht-degree: 2%
 
 您將會看到此訊息。 按一下&#x200B;**儲存**。
 
+### `CK_USERS` - `CK_PERSONS`
+
 您現在可以開始定義綱要之間的連結。 若要開始定義連結，您必須按一下[建立連結]。****
 
 ![FAC](./images/fdb16.png)
@@ -140,6 +142,9 @@ ht-degree: 2%
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
 ![FAC](./images/fdb17.png)
@@ -147,6 +152,8 @@ ht-degree: 2%
 接下來，讓我們定義表格`CK_HOUSEHOLDS`與`CK_PERSONS`之間的連結。
 
 ![FAC](./images/fdb19.png)
+
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
 
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
@@ -156,6 +163,9 @@ ht-degree: 2%
 
 ![FAC](./images/fdb21.png)
 
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
+
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
 ![FAC](./images/fdb22.png)
@@ -163,6 +173,8 @@ ht-degree: 2%
 接下來，讓我們定義表格`CK_USERS`與`CK_HOUSEHOLDS`之間的連結。
 
 ![FAC](./images/fdb23.png)
+
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
 
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
