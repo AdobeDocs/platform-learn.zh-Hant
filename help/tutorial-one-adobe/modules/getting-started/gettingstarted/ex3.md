@@ -3,9 +3,10 @@ title: 快速入門 — 建立您的資料流
 description: 快速入門 — 建立您的資料流
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1cba79313a651c929d76008943c1c5f8a64a9f7
+exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 ![DSN](./images/launchprop.png)
 
-在左側功能表中，按一下&#x200B;**[!UICONTROL 標籤]**。 在上一個練習後，您現在有兩個資料收集屬性：一個用於網頁，一個用於行動裝置。
+在左側功能表中，按一下&#x200B;**[!UICONTROL 標籤]**。 在上一個練習後，您現在有3個資料收集屬性：一個用於網頁，一個用於行動裝置，一個用於CX應用程式。
 
 ![DSN](./images/launchprop1.png)
 
@@ -38,7 +39,7 @@ ht-degree: 1%
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1.png)
 
-對於&#x200B;**[!UICONTROL Name]**，以及選用的說明，請輸入`--aepUserLdap-- - Demo System Datastream`。 針對&#x200B;**對應結構描述**，請選取&#x200B;**示範系統 — 網站的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
+對於&#x200B;**[!UICONTROL Name]**，以及選用的說明，請輸入`--aepUserLdap-- - One Adobe Datastream`。 針對&#x200B;**對應結構描述**，請選取&#x200B;**示範系統 — 網站的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
 
 ![命名Edge設定並儲存](./images/edgeconfig2.png)
 
@@ -58,7 +59,7 @@ ht-degree: 1%
 
 在左側功能表中，按一下&#x200B;**[!UICONTROL 標籤]**。
 
-篩選搜尋結果以檢視您的兩個資料收集屬性。 按一下&#x200B;**Web**&#x200B;的屬性以將其開啟。
+篩選搜尋結果以檢視您的資料收集屬性。 按一下&#x200B;**Web**&#x200B;的屬性以將其開啟。
 
 ![命名Edge設定並儲存](./images/edgeconfig10a.png)
 
@@ -70,7 +71,7 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig12.png)
 
-您將會看到此訊息。 在&#x200B;**Datastreams**&#x200B;功能表取得kook，並確定已選取正確的沙箱，此情況下應為`--aepSandboxName--`。
+您將會看到此訊息。 請檢視&#x200B;**資料串流**&#x200B;功能表，並確定已選取正確的沙箱，此情況下應為`--aepSandboxName--`。
 
 ![命名Edge設定並儲存](./images/edgeconfig12a.png)
 
@@ -114,7 +115,7 @@ ht-degree: 1%
 
 ![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1.png)
 
-針對&#x200B;**[!UICONTROL 易記名稱]**，以及選用的說明，請輸入`--aepUserLdap-- - Demo System Datastream (Mobile)`。 針對&#x200B;**對應結構描述**，請選取&#x200B;**示範系統 — 行動應用程式的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
+針對&#x200B;**[!UICONTROL 易記名稱]**，以及選用的說明，請輸入`--aepUserLdap-- - One Adobe Datastream (Mobile)`。 針對&#x200B;**對應結構描述**，請選取&#x200B;**示範系統 — 行動應用程式的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
 
 按一下&#x200B;**[!UICONTROL 儲存]**。
 

@@ -4,9 +4,9 @@ description: 快速入門 — 安裝Chrome擴充功能以取得Experience League
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,13 @@ ht-degree: 0%
 
 您可在下方找到這類值的範例。 目前，這些值尚無法使用，但當您安裝並啟動Chrome擴充功能時，就會看到這些變數變數變更為您可複製並重複使用的正常文字。
 
-| 名稱 | 索引鍵 |
-|:-------------:| :---------------:|
-| AEP IMS組織ID | `--aepImsOrgId--` |
-| AEP租使用者ID | `--aepTenantId--` |
-| AEP沙箱名稱 | `--aepSandboxName--` |
-| 學習者設定檔LDAP | `--aepUserLdap--` |
+| 名稱 | 索引鍵 | 範例 |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS組織ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| AEP IMS組織名稱 | `--aepImsOrgName--` | `Experience Platform International` |
+| AEP租使用者ID | `--aepTenantId--` | `_experienceplatform` |
+| AEP沙箱名稱 | `--aepSandboxName--` | `tech-insiders` |
+| 學習者設定檔LDAP | `--aepUserLdap--` | `vangeluw` |
 
 例如，在下方熒幕擷圖中，您可以看到`aepTenantId`的參考。
 

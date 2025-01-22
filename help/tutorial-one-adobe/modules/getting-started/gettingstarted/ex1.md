@@ -3,9 +3,10 @@ title: 快速入門 — 安裝Chrome擴充功能以取得Experience League檔案
 description: 快速入門 — 安裝Chrome擴充功能以取得Experience League檔案
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,14 +20,15 @@ ht-degree: 0%
 
 您可在下方找到這類值的範例。 目前，這些值尚無法使用，但當您安裝並啟動Chrome擴充功能時，就會看到這些變數變數變更為您可複製並重複使用的正常文字。
 
-| 名稱 | 索引鍵 |
-|:-------------:| :---------------:|
-| AEP IMS組織ID | `--aepImsOrgId--` |
-| AEP租使用者ID | `--aepTenantId--` |
-| AEP沙箱名稱 | `--aepSandboxName--` |
-| 學習者設定檔LDAP | `--aepUserLdap--` |
+| 名稱 | 索引鍵 | 範例 |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS組織ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| AEP IMS組織名稱 | `--aepImsOrgName--` | `Experience Platform International` |
+| AEP租使用者ID | `--aepTenantId--` | `_experienceplatform` |
+| AEP沙箱名稱 | `--aepSandboxName--` | `one-adobe` |
+| 學習者設定檔LDAP | `--aepUserLdap--` | `vangeluw` |
 
-例如，在下方熒幕擷圖中，您可以看到`aepTenantId`的參考。
+例如，在下方熒幕擷圖中，您可以看到`aepSandboxName`的參考。
 
 ![DSN](./images/mod7before.png)
 
@@ -108,7 +110,7 @@ IMS組織ID是您Adobe Experience Cloud執行個體的唯一識別碼，本教�
 
 ![DSN](./images/aepsandboxsw.png)
 
-在此範例中，AEP沙箱名稱為&#x200B;**技術內部人員**。
+在此範例中，AEP沙箱名稱為&#x200B;**one-adobe**。
 
 ![DSN](./images/aepsname.png)
 
@@ -123,7 +125,6 @@ LDAP可用來確保您即將進行的設定會連結至您，而不會與可能�
 
 ![DSN](./images/c8a.png)
 
-
 在擴充功能的左側功能表中，您現在會看到環境縮寫的新圖示。 按一下它。 然後您會看到&#x200B;**環境變數**&#x200B;和您的特定Adobe Experience Platform執行個體值之間的對應。 按一下&#x200B;**啟動設定**。
 
 ![DSN](./images/c9.png)
@@ -134,11 +135,11 @@ LDAP可用來確保您即將進行的設定會連結至您，而不會與可能�
 
 ## 驗證教學課程內容
 
-作為測試，請移至[此頁面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3)。
+作為測試，請移至[此頁面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2)。
 
-您現在應該會看到根據Chrome擴充功能中啟用的環境，所有&#x200B;**環境變數**&#x200B;都已取代為其True值。
+您現在應該會看到，根據Chrome擴充功能中啟用的環境，此頁面上的所有&#x200B;**環境變數**&#x200B;都已取代為其True值。
 
-您現在應該有類似下列的檢視，其中環境變數`aepTenantId`已由您的實際AEP租使用者ID取代，在此案例中為&#x200B;**_experienceplatform**。
+您現在應該有類似下列的檢視，其中環境變數`aepSandboxName`已由您的實際AEP沙箱名稱取代，在此案例中是&#x200B;**one-adobe**。
 
 ![DSN](./images/mod7.png)
 

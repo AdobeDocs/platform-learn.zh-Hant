@@ -4,9 +4,9 @@ description: 基礎 — FAC — 建立方案、資料模型和連結
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 2%
 
 ---
@@ -152,7 +152,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb20.png)
 
-接下來，讓我們定義表格`CK_MONTHLY_DATA_USAGE`與`CK_USERS`之間的連結。
+接下來，讓我們定義表格`CK_USERS`與`CK_MONTHLY_DATA_USAGE`之間的連結。
 
 ![FAC](./images/fdb21.png)
 
@@ -164,8 +164,17 @@ ht-degree: 2%
 
 ![FAC](./images/fdb23.png)
 
-然後您就會回到這裡。 按一下&#x200B;**儲存**。
+然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
+
 ![FAC](./images/fdb24.png)
+
+接下來，讓我們定義表格`CK_USERS`與`CK_MOBILE_DATA_USAGE`之間的連結。
+
+![FAC](./images/fdb25.png)
+
+您應該會看到此訊息。 按一下&#x200B;**儲存**。
+
+![FAC](./images/fdb26.png)
 
 AEP中的設定現已完成。 您現在可以在同盟對象構成中開始使用同盟資料。
 

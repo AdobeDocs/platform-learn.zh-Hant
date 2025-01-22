@@ -3,7 +3,8 @@ title: 快速入門 — 使用示範系統設定您的Launch屬性
 description: 快速入門 — 使用示範系統設定您的Launch屬性
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,7 +33,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsn2.png)
 
-在快顯視窗中，輸入資料收集屬性和Experience Builder專案的名稱。 請使用此命名慣例： **示範系統(DD/MM/YYYY)**。 僅供參考：您的LDAP將會自動附加，您不需要自行新增。
+在快顯視窗中，輸入資料收集屬性和Experience Builder專案的名稱。 請使用此命名慣例： **一個Adobe(DD/MM/YYYY)**。 僅供參考：您的LDAP將會自動附加，您不需要自行新增。
 
 按一下&#x200B;**開始**。
 
