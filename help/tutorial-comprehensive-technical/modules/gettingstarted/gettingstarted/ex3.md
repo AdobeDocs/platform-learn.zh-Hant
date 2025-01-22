@@ -4,9 +4,9 @@ description: 快速入門 — 建立您的資料流
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![DSN](./images/launchprop.png)
 
-在左側功能表中，按一下&#x200B;**[!UICONTROL 標籤]**。 在上一個練習後，您現在有兩個資料收集屬性：一個用於網頁，一個用於行動裝置。
+在左側功能表中，按一下&#x200B;**[!UICONTROL 標籤]**。 在上一個練習後，您現在有3個資料收集屬性：一個適用於Web、一個適用於行動裝置，一個適用於CX應用程式。
 
 ![DSN](./images/launchprop1.png)
 
@@ -57,11 +57,11 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig5.png)
 
-就目前而言，答案是肯定的。 在[模組1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)中，您將會進一步瞭解Web SDK以及如何設定其所有功能。
+就目前而言，答案是肯定的。 在[模組1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)中，您將深入瞭解Web SDK以及如何設定其所有功能。
 
 在左側功能表中，按一下&#x200B;**[!UICONTROL 標籤]**。
 
-篩選搜尋結果以檢視您的兩個資料收集屬性。 按一下&#x200B;**Web**&#x200B;的屬性以將其開啟。
+篩選搜尋結果以檢視您的資料收集屬性。 按一下&#x200B;**Web**&#x200B;的屬性以將其開啟。
 
 ![命名Edge設定並儲存](./images/edgeconfig10a.png)
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 您的資料流現在已準備好用於行動裝置的Adobe Experience Platform Data Collection使用者端屬性。
 
-移至&#x200B;**標籤**&#x200B;並篩選搜尋結果，以檢視您的兩個資料收集屬性。 按一下&#x200B;**Mobile**&#x200B;以開啟屬性。
+移至&#x200B;**標籤**&#x200B;並篩選搜尋結果，以檢視您的資料收集屬性。 按一下&#x200B;**Mobile**&#x200B;以開啟屬性。
 
 ![命名Edge設定並儲存](./images/edgeconfig10am.png)
 

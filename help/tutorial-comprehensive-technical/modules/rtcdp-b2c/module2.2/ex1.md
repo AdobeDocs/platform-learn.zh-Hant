@@ -4,9 +4,9 @@ description: Customer AI — 資料準備（擷取）
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 ![資料集](./images/createdatasetfromschema.png)
 
-在下一個畫面中，選取您在上一個練習中建立的資料集，名稱為&#x200B;**[!UICONTROL ldap — 示範系統 — 客戶體驗事件]**。 按一下&#x200B;**下一步**。
+在下一個畫面中，選取您在上一個練習中建立的資料集，名為`--aepUserLdap-- - Demo System - Customer Experience Event`。 按一下&#x200B;**下一步**。
 
 ![資料集](./images/createds1.png)
 

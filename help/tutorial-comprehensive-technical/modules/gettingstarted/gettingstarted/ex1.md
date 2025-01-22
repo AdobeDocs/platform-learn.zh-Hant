@@ -4,9 +4,9 @@ description: 快速入門 — 安裝Chrome擴充功能以取得Experience League
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ IMS組織ID是您Adobe Experience Cloud執行個體的唯一識別碼，本教�
 
 尋找您的IMS組織ID可以多種方式完成。 如果您不確定，請洽詢執行個體的系統管理員以尋找ID。
 
-您可以前往[Admin Console](https://https://adminconsole.adobe.com/)找到它，您可以在此找到它作為URL的一部分。
+您可以前往[Admin Console](https://adminconsole.adobe.com/)找到它，您可以在此找到它作為URL的一部分。
 
 ![DSN](./images/aepid1.png)
 
@@ -100,7 +100,7 @@ IMS組織ID是您Adobe Experience Cloud執行個體的唯一識別碼，本教�
 
 ![DSN](./images/aeptenantid.png)
 
-當您在Chrome擴充功能中輸入時，應確保加上底線作為前置詞，因此在此範例中，**experienceplatform**&#x200B;會變成&#x200B;**_experienceplatform**。
+當您在Chrome擴充功能中輸入時，應確保加上底線作為前置詞，因此在此範例中，**experienceplatform**&#x200B;會變成&#x200B;**_experienceplatform**。 此外，從URL複製時，請務必移除&#x200B;**@**&#x200B;符號。
 
 **AEP沙箱名稱**
 
