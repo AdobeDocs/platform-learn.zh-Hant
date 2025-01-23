@@ -3,16 +3,17 @@ title: 資料收集 — FAC — 建立結構描述、資料模型和連結
 description: 基礎 — FAC — 建立方案、資料模型和連結
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
+source-git-commit: 246bb91496104818f357848f41b79523b7771638
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
 
 # 3.1.2建立結構描述、資料模型和連結
 
-您現在可以在AEP中設定同盟資料庫。
+您現在可以在Adobe Experience Platform中設定同盟資料庫。
 
 前往此URL登入Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 
@@ -129,6 +130,8 @@ ht-degree: 2%
 
 您將會看到此訊息。 按一下&#x200B;**儲存**。
 
+### `CK_USERS` - `CK_PERSONS`
+
 您現在可以開始定義綱要之間的連結。 若要開始定義連結，您必須按一下[建立連結]。****
 
 ![FAC](./images/fdb16.png)
@@ -139,6 +142,9 @@ ht-degree: 2%
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
 ![FAC](./images/fdb17.png)
@@ -147,13 +153,18 @@ ht-degree: 2%
 
 ![FAC](./images/fdb19.png)
 
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
 ![FAC](./images/fdb20.png)
 
-接下來，讓我們定義表格`CK_MONTHLY_DATA_USAGE`與`CK_USERS`之間的連結。
+接下來，讓我們定義表格`CK_USERS`與`CK_MONTHLY_DATA_USAGE`之間的連結。
 
 ![FAC](./images/fdb21.png)
+
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
 
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
@@ -163,8 +174,19 @@ ht-degree: 2%
 
 ![FAC](./images/fdb23.png)
 
-然後您就會回到這裡。 按一下&#x200B;**儲存**。
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+
+然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
+
 ![FAC](./images/fdb24.png)
+
+接下來，讓我們定義表格`CK_USERS`與`CK_MOBILE_DATA_USAGE`之間的連結。
+
+![FAC](./images/fdb25.png)
+
+您應該會看到此訊息。 按一下&#x200B;**儲存**。
+
+![FAC](./images/fdb26.png)
 
 AEP中的設定現已完成。 您現在可以在同盟對象構成中開始使用同盟資料。
 

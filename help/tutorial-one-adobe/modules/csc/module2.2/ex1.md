@@ -4,9 +4,9 @@ description: Workfront快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: ec79d3fcfe971faee584a221eb55ddcb015a1e50
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
@@ -54,9 +54,93 @@ ht-degree: 1%
 
 ![WF](./images/wfb6.png)
 
-現已設定好Workfront與AEM Assets CS的整合。
+您從Workfront到AEM Assets CS的整合現已設定完成。
 
 ![WF](./images/wfb7.png)
+
+## 2.2.1.2使用AEM Assets設定中繼資料整合
+
+接下來，您需要設定AEM Assets，以便與AEM共用來自Workfront中資產的中繼資料欄位。
+
+若要這麼做，請前往[https://experience.adobe.com/](https://experience.adobe.com/)。 按一下&#x200B;**Experience Manager Assets**。
+
+![WF](./images/wfbaem1.png)
+
+按一下以選取您的AEM Assets環境，應命名為`--aepUserLdap-- - Citi Signal dev`。
+
+![WF](./images/wfbaem2.png)
+
+您應該會看到此訊息。 在左側功能表中，前往&#x200B;**Assets**&#x200B;並按一下&#x200B;**建立資料夾**。
+
+![WF](./images/wfbaem3.png)
+
+為資料夾命名`--aepUserLdap-- - Workfront Assets`並按一下&#x200B;**建立**。
+
+![WF](./images/wfbaem4.png)
+
+接著，前往左側功能表中的&#x200B;**中繼資料Forms**，然後按一下&#x200B;**建立**。
+
+![WF](./images/wfbaem5.png)
+
+使用名稱`--aepUserLdap-- - Metadata Form`並按一下&#x200B;**建立**。
+
+![WF](./images/wfbaem6.png)
+
+新增3個新的&#x200B;**單行文字**&#x200B;欄位至表單，並選取第一個欄位。 然後，按一下&#x200B;**中繼資料屬性**&#x200B;欄位旁的&#x200B;**結構描述**&#x200B;圖示。
+
+![WF](./images/wfbaem7.png)
+
+在搜尋欄位中輸入`wm:project`，然後選取欄位&#x200B;**專案描述**。 按一下&#x200B;**選取**。
+
+![WF](./images/wfbaem8.png)
+
+將欄位標籤變更為&#x200B;**專案描述**。
+
+![WF](./images/wfbaem9.png)
+
+接著，選取第2個&#x200B;**單行文字**&#x200B;欄位，然後再次按一下&#x200B;**中繼資料屬性**&#x200B;欄位旁的&#x200B;**結構描述**&#x200B;圖示。
+
+![WF](./images/wfbaem10b.png)
+
+之後您會再次看到此快顯視窗。 在搜尋欄位中輸入`wm:project`，然後選取欄位&#x200B;**專案識別碼**。 按一下&#x200B;**選取**。
+
+![WF](./images/wfbaem10.png)
+
+將欄位標籤變更為&#x200B;**專案識別碼**。
+
+![WF](./images/wfbaem10a.png)
+
+選取第3個&#x200B;**單行文字**&#x200B;欄位，然後再次按一下&#x200B;**中繼資料屬性**&#x200B;欄位旁的&#x200B;**結構描述**&#x200B;圖示。
+
+![WF](./images/wfbaem11a.png)
+
+之後您會再次看到此快顯視窗。 在搜尋欄位中輸入`wm:project`，然後選取欄位&#x200B;**專案名稱**。 按一下&#x200B;**選取**。
+
+![WF](./images/wfbaem11.png)
+
+將欄位標籤變更為&#x200B;**專案名稱**。 按一下&#x200B;**儲存**。
+
+![WF](./images/wfbaem12.png)
+
+將表單上的&#x200B;**索引標簽名稱**&#x200B;變更為`--aepUserLdap-- - Workfront Metadata`。 按一下&#x200B;**儲存**&#x200B;和&#x200B;**關閉**。
+
+![WF](./images/wfbaem13.png)
+
+您的&#x200B;**中繼資料表單**&#x200B;現已設定。
+
+![WF](./images/wfbaem14.png)
+
+接下來，您需要將中繼資料表單指派給您之前建立的資料夾。 勾選中繼資料表單的核取方塊，然後按一下&#x200B;**指派至資料夾**。
+
+![WF](./images/wfbaem15.png)
+
+選取應命名為`--aepUserLdap-- - Workfront Assets`的資料夾。 按一下&#x200B;**指派**。
+
+![WF](./images/wfbaem16.png)
+
+中繼資料表單現在已成功指派至您的資料夾。
+
+![WF](./images/wfbaem17.png)
 
 ## 2.2.1.2設定您的AEM Sites整合
 
@@ -155,6 +239,8 @@ ht-degree: 1%
 之後，您應該有2個可用的自訂表格。
 
 ![WF](./images/wfb20.png)
+
+下一步： [使用Workfront校訂2.2.2](./ex2.md){target="_blank"}
 
 [返回模組2.2](./workfront.md){target="_blank"}
 
