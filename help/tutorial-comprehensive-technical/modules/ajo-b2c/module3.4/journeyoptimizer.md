@@ -4,9 +4,9 @@ description: 在本單元中，您將瞭解Journey Optimizer的所有須知事�
 kt: 5342
 doc-type: tutorial
 exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
-source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '286'
+source-wordcount: '288'
 ht-degree: 2%
 
 ---
@@ -53,6 +53,8 @@ ht-degree: 2%
 [摘要和優點](./summary.md)
 
 本單元摘要和優點概觀。
+
+![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

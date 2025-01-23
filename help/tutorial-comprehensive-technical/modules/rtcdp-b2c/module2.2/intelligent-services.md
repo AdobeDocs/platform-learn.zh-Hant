@@ -4,9 +4,9 @@ description: Intelligent Services
 kt: 5342
 doc-type: tutorial
 exl-id: 3668f06b-df76-43db-be6a-36c339256a22
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '251'
 ht-degree: 3%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 3%
 [2.2.3 Customer AI — 評分儀表板和細分（預測和採取行動）](./ex3.md)
 
 模型完成訓練和評分後，分數會回寫至Platform。 您可以決定要對預測採取的行動，例如定義區段、建立自訂儀表板等。
+
+![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: 快速入門 — 使用行動應用程式
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >在iOS裝置上首次安裝應用程式後，嘗試開啟應用程式時可能會收到錯誤訊息，顯示： **不受信任的企業開發人員**。 若要修正此問題，您必須前往&#x200B;**設定>一般> VPN與裝置管理> Adobe Systems Inc.**，然後按一下&#x200B;**信任Adobe Systems Inc.**。
+>您的iOS裝置可能需要重新啟動，才能完成信任開發人員的程式。
 
 應用程式安裝後，您會在裝置的主畫面上找到。 按一下圖示以開啟應用程式。
 

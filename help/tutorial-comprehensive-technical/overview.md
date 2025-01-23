@@ -3,14 +3,16 @@ title: 概觀
 description: 讓資料工程師、資料分析師、資料架構師、資料科學家、協調工程師和行銷人員開始瞭解Adobe Experience Platform及其所有應用程式服務的完整商業價值。
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
 
 # Adobe Experience Platform 的完整技術教學課程
+
+![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概觀
 
@@ -182,3 +184,9 @@ ht-degree: 2%
 在本單元中，您將學習如何使用Adobe Experience Platform查詢服務。
 
 **時間投資：** 90分鐘
+
+![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。

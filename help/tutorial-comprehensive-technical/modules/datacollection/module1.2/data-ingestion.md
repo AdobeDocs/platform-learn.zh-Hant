@@ -4,9 +4,9 @@ description: Foundation — 資料擷取
 kt: 5342
 doc-type: tutorial
 exl-id: 976d801a-3dcb-4cd9-8b9f-b1c964fe7c25
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '399'
 ht-degree: 1%
 
 ---
@@ -59,6 +59,8 @@ ht-degree: 1%
 [摘要和優點](./summary.md)
 
 本單元摘要和優點概觀。
+
+![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

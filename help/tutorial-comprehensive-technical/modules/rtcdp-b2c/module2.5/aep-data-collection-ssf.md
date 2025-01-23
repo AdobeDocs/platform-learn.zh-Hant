@@ -4,9 +4,9 @@ description: 在此單元中，您會使用先前設定的資料集、結構描�
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,13 @@ ht-degree: 0%
 
 [2.5.5將事件轉送至AWS Kinesis和AWS S3](./ex5.md)
 
-在本練習中，您將使用AWS IAM、AWS Kinesis、AWS Firehose和AWS S3設定您的AWS環境，之後您將開始轉送Web SDK所收集的事件資料。
+在本練習中，您將使用AWS IAM、AWS Kinesis、AWS Firehose和AWS S3設定您的AWS環境，之後您將開始轉送Web SDK收集的事件資料。
 
 [摘要和優點](./summary.md)
 
 本單元摘要和優點概觀。
+
+![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

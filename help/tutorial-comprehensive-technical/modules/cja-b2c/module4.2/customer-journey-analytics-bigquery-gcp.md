@@ -4,9 +4,9 @@ description: 使用BigQuery Source Connector在Adobe Experience Platform中擷�
 kt: 5342
 doc-type: tutorial
 exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,8 @@ Adobe Experience Platform中的Source聯結器可讓您輕鬆將資料傳入Adob
 [摘要和優點](./summary.md)
 
 本單元摘要和優點概觀。
+
+![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
