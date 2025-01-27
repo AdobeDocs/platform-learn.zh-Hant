@@ -4,9 +4,9 @@ description: Adobe Experience ManagerCloud Service與Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -35,9 +35,13 @@ ht-degree: 2%
 
 在本練習中，您將設定您的AEM CS環境並存取您的CitiSignal網站。
 
-[2.1.4開發自訂區塊](./ex4.md){target="_blank"}
+[2.1.4基本自訂區塊](./ex4.md){target="_blank"}
 
-在本練習中，您將為網站開發自訂區塊元件。
+在本練習中，您將開發網站的基本自訂區塊。
+
+[2.1.5進階自訂區塊](./ex5.md){target="_blank"}
+
+在本練習中，您將開發網站的進階自訂區塊。
 
 [摘要與優點](./summary.md){target="_blank"}
 
