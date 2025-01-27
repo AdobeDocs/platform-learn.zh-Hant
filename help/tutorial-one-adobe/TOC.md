@@ -4,9 +4,9 @@ breadcrumb-title: 從Creative Cloud到Experience Cloud，Adobe應用程式的完
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 55a7e6fccb0c2a91f12a3a65226097ca701e655f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '318'
 ht-degree: 4%
 
 ---
@@ -16,7 +16,6 @@ ht-degree: 4%
 
 + [教學課程概觀](/help/tutorial-one-adobe/overview.md)
 + [內容狀態](/help/tutorial-one-adobe/status.md)
-+ [前期工作](/help/tutorial-one-adobe/prework.md)
 
 + 快速入門 {#gettingstarted}
    + 快速入門 {#gettingstarted}
@@ -26,6 +25,8 @@ ht-degree: 4%
       + [建立您的資料串流](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [使用網站](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [使用行動應用程式](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+   + [前期工作](/help/tutorial-one-adobe/prework.md)
+   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1 Adobe Creative Cloud {#creativecloud}
    + 1.1Adobe Firefly服務{#module11}

@@ -4,9 +4,9 @@ description: 開發自訂區塊
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,21 @@ ht-degree: 0%
 
 ![區塊](./images/block3.png)
 
-本機fo
+現在將建立本機資料夾。
+
+![區塊](./images/block4.png)
+
+開啟Visual Studio Code。 移至&#x200B;**檔案** > **開啟資料夾**。
+
+![區塊](./images/block5.png)
+
+
+
+![區塊](./images/block6.png)
+
+
+
+![區塊](./images/block7.png)
 
 
 [返回模組2.1](./aemcs.md){target="_blank"}
