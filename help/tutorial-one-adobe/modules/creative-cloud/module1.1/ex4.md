@@ -1,22 +1,26 @@
 ---
-title: 使用Photoshop API
-description: 使用Photoshop API
-kt: 5342
-doc-type: tutorial
+title: Firefly自訂模型API
+description: 使用Firefly自訂模型API
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 56320edcdf2fe588fe644072fe442547b1836f86
+source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
 workflow-type: tm+mt
-source-wordcount: '37'
-ht-degree: 0%
+source-wordcount: '44'
+ht-degree: 4%
 
 ---
 
-# 1.1.4Firefly自訂模型API
+# Firefly自訂模型API
 
 此內容將在稍後階段發行。
 
-下一步： [摘要與優點](./summary.md){target="_blank"}
+## 後續步驟
 
-[返回模組1.1](./firefly-services.md){target="_blank"}
+移至[摘要與優點](./summary.md){target="_blank"}
 
-[返回所有模組](./../../../overview.md){target="_blank"}
+返回[使用Photoshop API](./ex3.md){target="_blank"}
+
+返回[Adobe Firefly服務總覽](./firefly-services.md){target="_blank"}
