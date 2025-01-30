@@ -1,10 +1,10 @@
 ---
-title: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — 實作Adobe Target
-description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — 實作Adobe Target
+title: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功能的設定 — 實作Adobe Target
+description: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功能的設定 — 實作Adobe Target
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
-您將會看到此訊息。 若要啟用Adobe Target，請按一下&#x200B;**+新增服務**。
+您將會看到此訊息。 若要啟用Adobe Target，請按一下[新增服務]。****
 
 ![AEP偵錯工具](./images/aa2.png)
 

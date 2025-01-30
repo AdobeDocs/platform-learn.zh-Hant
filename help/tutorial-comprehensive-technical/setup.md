@@ -1,16 +1,17 @@
 ---
 title: 設定
-description: 設定您的AEP執行個體
+description: 設定您的Adobe Experience Platform執行個體
 doc-type: multipage-overview
 hide: false
-source-git-commit: c0649aeacdce00e09c993f2130de3423efc352fa
+exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1048'
 ht-degree: 3%
 
 ---
 
-# 設定
+# 設定您的Adobe Experience Platform執行個體
 
 >[!IMPORTANT]
 >
@@ -31,7 +32,7 @@ ht-degree: 3%
 
 ## 建立沙箱
 
-若要在自己的AEP執行個體中完成教學課程，建議您先設定新的開發沙箱。 若要建立新沙箱，請移至[https://experience.adobe.com/platform](https://experience.adobe.com/platform)，移至[沙箱]，然後移至&#x200B;**瀏覽**。 按一下&#x200B;**建立沙箱**。
+若要在自己的Adobe Experience Platform執行個體中完成教學課程，建議您先設定新的開發沙箱。 若要建立新沙箱，請移至[https://experience.adobe.com/platform](https://experience.adobe.com/platform)，移至[沙箱]，然後移至&#x200B;**瀏覽**。 按一下&#x200B;**建立沙箱**。
 
 ![建立沙箱](./assets/images/sandbox1.png)
 
@@ -39,7 +40,7 @@ ht-degree: 3%
 
 - 型別： **開發**
 - 名稱： **aep-tutorial**
-- 標題： **AEP教學課程**
+- 標題： **Adobe Experience Platform教學課程**
 
 按一下&#x200B;**建立**。
 
@@ -57,7 +58,7 @@ ht-degree: 3%
 
 ![建立沙箱](./assets/images/perm1.png)
 
-提供角色名稱，例如&#x200B;**AEP教學課程**，按一下&#x200B;**確認**。
+提供角色名稱，例如&#x200B;**Adobe Experience Platform教學課程**，按一下&#x200B;**確認**。
 
 ![建立沙箱](./assets/images/perm2.png)
 
@@ -84,7 +85,7 @@ ht-degree: 3%
 
 ![建立沙箱](./assets/images/io1.png)
 
-按一下&#x200B;**+新增至專案**，然後按一下&#x200B;**API**。
+按一下&#x200B;**新增至專案**，然後按一下&#x200B;**API**。
 
 ![建立沙箱](./assets/images/io2.png)
 
@@ -100,7 +101,7 @@ ht-degree: 3%
 
 ![建立沙箱](./assets/images/io5.png)
 
-按一下「**+加入專案**」，然後再次按一下「**API**」。
+按一下&#x200B;**新增至專案**，然後再次按一下&#x200B;**API**。
 
 ![建立沙箱](./assets/images/io6.png)
 
@@ -124,7 +125,7 @@ ht-degree: 3%
 
 ![建立沙箱](./assets/images/io11.png)
 
-輸入新的&#x200B;**專案標題**，例如&#x200B;**DSN AEP教學課程**。 按一下&#x200B;**儲存**。
+輸入新的&#x200B;**專案標題**，例如&#x200B;**DSN Adobe Experience Platform教學課程**。 按一下&#x200B;**儲存**。
 
 ![建立沙箱](./assets/images/io12.png)
 
@@ -237,7 +238,7 @@ ht-degree: 3%
 
 ![建立沙箱](./assets/images/dsnorg15.png)
 
-一切順利完成後，您的AEP執行個體即已成功設定，可供學習者參加教學課程。
+一切順利完成後，您的Adobe Experience Platform執行個體即已成功設定，可供學習者參加教學課程。
 
 >[!NOTE]
 >

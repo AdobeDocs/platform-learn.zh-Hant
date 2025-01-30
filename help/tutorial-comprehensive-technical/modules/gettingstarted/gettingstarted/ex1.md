@@ -4,9 +4,9 @@ description: 快速入門 — 安裝Chrome擴充功能以取得Experience League
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -72,13 +72,13 @@ ht-degree: 0%
 
 如果您不確定要為這些欄位輸入哪些值，請遵循以下指引。
 
-**AEP IMS組織名稱**
+**Adobe Experience Platform IMS組織名稱**
 
 當您在[https://platform.adobe.com/](https://platform.adobe.com/)登入Adobe Experience Platform執行個體時，您會在畫面的右上角找到執行個體的名稱。
 
 ![DSN](./images/aepname.png)
 
-**AEP IMS組織ID**
+**Adobe Experience Platform IMS組織ID**
 
 IMS組織ID是您Adobe Experience Cloud執行個體的唯一識別碼，本教學課程中的多個位置會參照此ID。
 
@@ -88,29 +88,29 @@ IMS組織ID是您Adobe Experience Cloud執行個體的唯一識別碼，本教�
 
 ![DSN](./images/aepid1.png)
 
-您也可以前往AEP功能表中的&#x200B;**資料管理>查詢**，在&#x200B;**使用者名稱**&#x200B;下找到它。
+您也可以前往Adobe Experience Platform功能表中的&#x200B;**資料管理>查詢**，在&#x200B;**使用者名稱**&#x200B;下找到它。
 
 ![DSN](./images/aepid2.png)
 
 請確定複製並貼上&#x200B;**@AdobeOrg**&#x200B;部分及ID。
 
-**AEP租使用者ID**
+**Adobe Experience Platform租使用者ID**
 
-您的租使用者ID是您組織AEP執行個體的唯一識別碼。 當您在[https://platform.adobe.com/](https://platform.adobe.com/)登入您的Adobe Experience Platform執行個體時，您會在URL中找到租使用者ID。
+您的租使用者ID是您組織Adobe Experience Platform執行個體的唯一識別碼。 當您在[https://platform.adobe.com/](https://platform.adobe.com/)登入您的Adobe Experience Platform執行個體時，您會在URL中找到租使用者ID。
 
 ![DSN](./images/aeptenantid.png)
 
 當您在Chrome擴充功能中輸入時，應確保加上底線作為前置詞，因此在此範例中，**experienceplatform**&#x200B;會變成&#x200B;**_experienceplatform**。 此外，從URL複製時，請務必移除&#x200B;**@**&#x200B;符號。
 
-**AEP沙箱名稱**
+**Adobe Experience Platform沙箱名稱**
 
-您的沙箱名稱是您將在AEP執行個體中使用的環境名稱。 當您在[https://platform.adobe.com/](https://platform.adobe.com/)登入您的Adobe Experience Platform執行個體時，您會在URL中找到租使用者ID。
+您的沙箱名稱是您將在Adobe Experience Platform執行個體中使用的環境名稱。 當您在[https://platform.adobe.com/](https://platform.adobe.com/)登入您的Adobe Experience Platform執行個體時，您會在URL中找到租使用者ID。
 
 在從URL取得沙箱名稱之前，您應該確保您處於您應用於本教學課程的沙箱中。 您可以按一下熒幕右上角的沙箱切換器選單，切換至右沙箱。
 
 ![DSN](./images/aepsandboxsw.png)
 
-在此範例中，AEP沙箱名稱為&#x200B;**技術內部人員**。
+在此範例中，Adobe Experience Platform沙箱名稱為&#x200B;**技術內部人士**。
 
 ![DSN](./images/aepsname.png)
 
@@ -140,7 +140,7 @@ LDAP可用來確保您即將進行的設定會連結至您，而不會與可能�
 
 您現在應該會看到根據Chrome擴充功能中啟用的環境，所有&#x200B;**環境變數**&#x200B;都已取代為其True值。
 
-您現在應該有類似下列的檢視，其中環境變數`aepTenantId`已由您的實際AEP租使用者ID取代，在此案例中為&#x200B;**_experienceplatform**。
+您現在應該有類似下列的檢視，其中環境變數`aepTenantId`已由您的實際Adobe Experience Platform租使用者ID取代，在此案例中為&#x200B;**_experienceplatform**。
 
 ![DSN](./images/mod7.png)
 

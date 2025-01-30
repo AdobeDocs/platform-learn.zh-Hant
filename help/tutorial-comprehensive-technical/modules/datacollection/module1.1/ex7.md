@@ -4,16 +4,16 @@ description: 基礎 — Adobe Experience Platform資料彙集的設定和Web SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # 1.1.7 Adobe Experience Platform中的XDM結構描述需求
 
-為確保Web SDK和alloy.js能夠擷取資料至Adobe Experience Platform，需將特定XDM Mixin納入Adobe Experience Platform的XDM結構描述。
+為確保網頁SDK能夠將資料擷取到Adobe Experience Platform，您需要將特定XDM Mixin納入Adobe Experience Platform的XDM結構描述。
 
 前往[https://experience.adobe.com/platform](https://experience.adobe.com/platform)並登入。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ![AEP偵錯工具](./images/exp3.png)
 
-在該結構描述中，您會看到已新增欄位群組&#x200B;**AEP Web SDK ExperienceEvent**&#x200B;欄位群組。 此欄位群組會將所有最低必要欄位新增至結構描述。 Web SDK在Adobe Experience Platform中使用的每個體驗事件結構描述一律會要求該欄位群組成為結構描述的一部分。
+在該結構描述中，您會看到已新增欄位群組&#x200B;**AEP Web SDK ExperienceEvent**&#x200B;欄位群組。 此欄位群組會將所有最低必要欄位新增至結構描述。 Web SDK在Adobe Experience Platform中使用的每個「體驗事件結構描述」，一律都會要求欄位群組成為結構描述的一部分。
 
 ![AEP偵錯工具](./images/exp4.png)
 

@@ -1,12 +1,12 @@
 ---
-title: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — Adobe Experience Platform資料收集簡介
-description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — Adobe Experience Platform資料收集簡介
+title: 基礎 — Adobe Experience Platform Data Collection與Web SDK擴充功能的設定 — Adobe Experience Platform Data Collection簡介
+description: 基礎 — Adobe Experience Platform Data Collection與Web SDK擴充功能的設定 — Adobe Experience Platform Data Collection簡介
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1272'
 ht-degree: 10%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 10%
 
 ## 內容
 
-現在，讓我們更深入瞭解Adobe Experience Platform資料收集的建置區塊，以瞭解示範網站上所安裝的專案。 您將深入瞭解Adobe Experience Platform Web SDK擴充功能，設定資料元素和規則，並瞭解如何發佈程式庫。
+現在，讓我們更深入瞭解Adobe Experience Platform資料收集的建置區塊，以瞭解示範網站上所安裝的專案。 您將會更進一步瞭解Adobe Experience Platform Web SDK擴充功能、設定資料元素和規則，以及瞭解如何發佈程式庫。
 
-## Adobe Experience Platform Web SDK 擴充功能
+## Adobe Experience Platform Web SDK標籤擴充功能
 
-擴充功能是一組封裝程式碼，可擴充Adobe Experience Platform資料收集介面和程式庫功能。 Adobe Experience Platform Data Collection是平台，而擴充功能就像在平台上執行的應用程式。 教學課程中使用的所有擴充功能皆由Adobe建立和管理，但第三方可以建立自己的擴充功能，以限制Adobe Experience Platform資料收集使用者必須管理的自訂程式碼數量。
+標籤擴充功能是一組封裝程式碼，可擴充Adobe Experience Platform資料收集介面和程式庫功能。 Adobe Experience Platform Data Collection是平台，而標籤擴充功能就像在平台上執行的應用程式。 教學課程中使用的所有擴充功能皆由Adobe建立和管理，但第三方可以建立自己的擴充功能，以限制Adobe Experience Platform資料收集使用者必須管理的自訂程式碼數量。
 
 移至[Adobe Experience Platform資料彙集](https://experience.adobe.com/launch/)並選取&#x200B;**標籤**。
 
@@ -72,7 +72,7 @@ ht-degree: 10%
 
 ![搜尋ruleArticlePages](./images/dataelement2.png)
 
-此畫面會顯示您將編輯的XDM物件。 Experience Data Model (XDM)概念在本技術教學課程中將會深入探討，但目前足以將其理解為Adobe Experience Platform Web SDK所需的格式。 您將新增一些詳細資訊至示範網站文章頁面上收集的資料。
+此畫面會顯示您將編輯的XDM物件。 Experience Data Model (XDM)是將在本技術教學課程中深入探討的概念，但目前足以將其理解為Adobe Experience Platform Web SDK所需的格式。 您將新增一些詳細資訊至示範網站文章頁面上收集的資料。
 
 按一下樹狀結構底部&#x200B;**網頁**&#x200B;旁的加號按鈕。
 

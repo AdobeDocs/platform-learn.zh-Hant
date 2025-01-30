@@ -4,7 +4,7 @@ description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功
 kt: 5342
 doc-type: tutorial
 exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -20,16 +20,16 @@ ht-degree: 2%
 - 實作Adobe Experience Cloud應用程式以及Adobe Experience Platform。
 - 為組織內不同部門提供各自要管理的&#x200B;**屬性**，以管理這些部門的不同需求。
 - 可進行測試和生命週期管理。
-- 插入自訂JavaScript和第三方標籤，全都在一個位置進行管理。
+- 插入自訂JavaScript和第三方標籤，並集中管理。
 
 ## 探索UI
 
 移至[Adobe Experience Platform資料彙集](https://experience.adobe.com/#/data-collection/)。
 
-移至&#x200B;**標籤**。 您現在看到&#x200B;**[!UICONTROL 屬性]**&#x200B;檢視。 此處列出的屬性用於教學課程管理。 這些屬性代表……
+移至&#x200B;**標籤**。 您現在看到&#x200B;**[!UICONTROL 屬性]**&#x200B;檢視。 此處列出的屬性用於教學課程管理。 這些屬性代表：
 
 - 應用程式和Web屬性
-- 不同的網站以不同的方式為客戶提供服務。 例如Luma Retail會有一個屬性，Luma Travel則會有另一個
+- 不同的網站以不同的方式為客戶提供服務。 例如，Luma Retail會有一個屬性，Luma Travel則會有另一個屬性。
 - 舊版以及目前的網站
 - 適用於多個不同網站的特定Adobe Analytics設計
 - 內部內部網路頁面與外部網站並存

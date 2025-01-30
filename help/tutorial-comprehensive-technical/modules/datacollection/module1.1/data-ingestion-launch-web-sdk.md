@@ -4,16 +4,18 @@ description: 基礎 — Adobe Experience Platform Data Collection和Web SDK擴�
 kt: 5342
 doc-type: tutorial
 exl-id: b69ebe41-ff28-4dde-b639-198201120742
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
 
-# 1.1基礎 — Adobe Experience Platform資料收集與Web SDK擴充功能的設定
+# 1.1 Foundation - Adobe Experience Platform資料收集與Web SDK標籤擴充功能的設定
 
-此基礎模組會向您介紹Adobe的資料收集願景，並說明如何透過Adobe Experience Platform Data Collection、Adobe Experience Platform SDK和Adobe Experience PlatformEdge Network，將網站和行動應用程式的資料匯入Adobe Experience Platform和其他應用程式。 此單元會介紹一些概念和技術，其影響超出Adobe Experience Platform技術教學課程的範圍。 應該清楚這些練習的哪些部分是完整教學課程其他部分的基礎，這些部分會教您更多有關Experience Edge及其功能的知識，以及到哪裡取得進一步資訊和教學課程。
+此基礎模組會向您介紹Adobe的資料收集願景，並說明如何透過Adobe Experience Platform Data Collection、Adobe Experience Platform SDK和Adobe Experience PlatformEdge Network，將網站和行動應用程式的資料匯入Adobe Experience Platform和其他應用程式。
+
+此單元會介紹一些概念和技術，其影響超出Adobe Experience Platform技術教學課程的範圍。 應該清楚這些練習的哪些部分是完整教學課程其他部分的基礎，這些部分會教您更多有關Edge Network及其功能的知識，以及到哪裡取得進一步的資訊和教學課程。
 
 ## 學習目標
 
@@ -21,9 +23,9 @@ ht-degree: 0%
 - 瞭解品牌用來將資料擷取至其Adobe產品的資料流程。
 - 瞭解如何透過Adobe Experience PlatformEdge Network將資料傳送至Adobe Experience Platform和其他產品。
 - 瞭解如何建立從Web和Mobile收集資料的資料元素和規則。
-- 瞭解網路SDK追蹤事件以及如何對其內容進行偵錯。
+- 瞭解[網頁SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)追蹤事件以及如何偵錯其內容。
 - 瞭解什麼是資料層，以及實作資料層時Adobe的建議。
-- 瞭解從頭開始實作Web SDK的步驟。
+- 瞭解從頭開始實作[網頁SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)的步驟。
 - 瞭解網頁版和行動版實作之間的差異。
 
 ## 先決條件
@@ -64,7 +66,7 @@ ht-degree: 0%
 
 [1.1.7 Adobe Experience Platform中的XDM結構描述需求](./ex7.md)
 
-為確保Web SDK和alloy.js能夠將資料擷取到Adobe Experience Platform，需要特定的XDM Mixin才能成為Adobe Experience Platform中XDM結構描述的一部分。
+為確保網頁SDK能夠將資料擷取到Adobe Experience Platform，您需要將特定XDM Mixin納入Adobe Experience Platform的XDM結構描述。
 
 [摘要和優點](./summary.md)
 

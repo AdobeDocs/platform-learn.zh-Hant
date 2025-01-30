@@ -1,10 +1,10 @@
 ---
-title: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — 實作Adobe Analytics和Adobe Audience Manager
-description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功能的設定 — 實作Adobe Analytics和Adobe Audience Manager
+title: 基礎 — Adobe Experience Platform Data Collection和Web SDK擴充功能的設定 — 實作Adobe Analytics和Adobe Audience Manager
+description: 基礎 — Adobe Experience Platform Data Collection和Web SDK擴充功能的設定 — 實作Adobe Analytics和Adobe Audience Manager
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 在Analytics中對應變數
 
-Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過Web SDK快速完成新的Analytics實作。 [這裡](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)列出自動對應的變數。
+Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過Web SDK進行新的Analytics實作。 [這裡](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)列出自動對應的變數。
 
 對於未自動對應至Adobe Analytics的XDM資料，您可以使用[內容資料](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html)來比對您的[結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant)。 然後可以使用[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)將其對應至Analytics以填入Analytics變數。 內容資料與處理規則將會是過去與Analytics搭配使用時熟悉的概念，但如果是新概念，目前無需擔心詳細資訊。
 
@@ -60,9 +60,9 @@ Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過W
 
 伺服器端轉送不是Audience Manager的新概念，與之前的程式相同。 您也可以同步身分。
 
-## 檢閱您的資料串流以傳送資料至Adobe Analytics
+## 檢閱您的資料流以傳送資料至Adobe Analytics
 
-如果您想要將Web SDK收集的資料傳送至Adobe Analytics和Adobe Audience Manager，請依照下列步驟操作。
+如果您想要將Web SDK收集的資料傳送至Adobe Analytics和Adobe Audience Manager，請按照下列步驟操作。
 
 移至[https://experience.adobe.com/launch/](https://experience.adobe.com/launch/)並移至&#x200B;**資料串流**。
 
@@ -70,7 +70,7 @@ Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過W
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
-您將會看到此訊息。 若要啟用Adobe Analytics，請按一下&#x200B;**+新增服務**。
+您將會看到此訊息。 若要啟用Adobe Analytics，請按一下[新增服務]。****
 
 ![AEP偵錯工具](./images/aa2.png)
 
@@ -78,9 +78,9 @@ Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過W
 
 ![AEP偵錯工具](./images/aa3.png)
 
-## 檢閱您的資料串流以傳送資料至Adobe Audience Manager
+## 檢閱您的資料流以傳送資料至Adobe Audience Manager
 
-您將會看到此訊息。 若要啟用Adobe Audience Manager，請按一下&#x200B;**+新增服務**。
+您將會看到此訊息。 若要啟用Adobe Audience Manager，請按一下[新增服務]。****
 
 ![AEP偵錯工具](./images/aa2.png)
 

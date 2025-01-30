@@ -4,9 +4,9 @@ description: 快速入門 — 建立您的資料流
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 目前，請依照下列步驟操作。
 
-## 建立網頁的資料流
+## 為網頁資料收集建立資料串流
 
 按一下&#x200B;**[!UICONTROL 資料串流]**。
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig17a.png)
 
-## 為行動裝置建立資料流
+## 建立行動資料收集的資料串流
 
 移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
 
