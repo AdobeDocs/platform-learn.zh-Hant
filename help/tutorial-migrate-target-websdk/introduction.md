@@ -3,9 +3,9 @@ title: 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何將Adobe Target實作從at.js 2.x移轉至Adobe Experience Platform Web SDK。 主題包括載入JavaScript程式庫、傳送引數、轉譯活動以及其他值得注意的圖說文字。
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
-source-git-commit: 485e79e3569052184475fbc49ab5f43cebcac9a6
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '611'
 ht-degree: 4%
 
 ---
@@ -16,9 +16,23 @@ ht-degree: 4%
 
 Adobe Experience Platform Web SDK是使用者端的JavaScript資料庫，可讓Adobe Experience Cloud客戶透過Adobe Experience PlatformEdge Network與Experience Cloud服務互動。 這個新程式庫將個別Adobe應用程式庫的功能結合為單一輕量型套件，可充分運用Adobe Experience Platform的新功能。
 
+
+>[!NOTE]
+>
+>類似的移轉教學課程適用於：
+>
+> * [Adobe Analytics](../tutorial-migrate-analytics-websdk/migration-to-websdk-overview.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/zh-hant/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> 由於Platform Web SDK支援多個Adobe應用程式，因此指定頁面上的所有Adobe程式庫都應同時移轉。 例如，不支援在單一頁面&#x200B;_上混合實作適用於Target的Web SDK和適用於Analytics的AppMeasurement_。 不過，支援跨不同頁面的混合實作，例如頁面A上的網頁SDK以及頁面B上具有AppMeasurement的at.js。
+
+
+
 ## 主要優點
 
-與獨立at.js程式庫相比，Platform Web SDK的一些優點包括：
+與獨立at.js程式庫相比，Platform Web SDK的部分優點包括：
 
 * 更快共用[Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hant)的對象
 * 整合Target與Journey Optimizer以支援[Offer decisioning傳遞](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
@@ -55,7 +69,7 @@ Adobe Experience Platform Web SDK是使用者端的JavaScript資料庫，可讓A
    * [使用表單式體驗撰寫器](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [建立體驗鎖定目標活動](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-準備就緒後，成功移轉的第一步就是[瞭解移轉程式](migration-overview.md)以及at.js和平台Web SDK的差異。
+準備就緒後，成功移轉的第一步就是[瞭解移轉程式](migration-overview.md)以及at.js和平台Web SDK之間的差異。
 
 >[!NOTE]
 >
