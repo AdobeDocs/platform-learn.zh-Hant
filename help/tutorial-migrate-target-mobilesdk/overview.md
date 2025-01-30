@@ -3,18 +3,18 @@ title: 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充
 description: 瞭解如何將您的行動應用程式實作從Adobe Target移轉至Adobe Journey Optimizer - Decisioning擴充功能
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 485e79e3569052184475fbc49ab5f43cebcac9a6
+source-git-commit: 6e442413c178e76183f88454d97d3896f8efa8bc
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '397'
 ht-degree: 3%
 
 ---
 
 # 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充功能
 
-本指南適用於經驗豐富的Adobe Target實作人員，協助他們瞭解如何將現有的Adobe Experience Platform Mobile SDK實作從Adobe Target擴充功能移轉至Adobe Journey Optimizer - Decisioning擴充功能。
+本指南適用於經驗豐富的Adobe Target實作人員，協助瞭解如何將現有AdobeExperience Platform Mobile SDK實作從Adobe Target擴充功能移轉至Adobe Journey Optimizer - Decisioning擴充功能。
 
-Adobe Experience Platform Mobile SDK支援行動應用程式中的端對端參與。 Target擴充功能以Mobile SDK為基礎，可協助您使用Adobe Target打造個人化應用程式體驗。 Decisioning擴充功能是在行動應用程式中實施Adobe Target的較新方法，其使用Adobe Experience PlatformEdge Network功能，協助將Target與Real-Time CDP和Journey Optimizer等平台型應用程式整合。
+Adobe Experience Platform Mobile SDK可在您的行動應用程式中強化端對端參與。 Target擴充功能以Mobile SDK為基礎，可協助您使用Adobe Target打造個人化應用程式體驗。 Decisioning擴充功能是在行動應用程式中實施Adobe Target的較新方法，其使用Adobe Experience PlatformEdge Network功能，協助將Target與Real-Time CDP和Journey Optimizer等平台型應用程式整合。
 
 ## 主要優點
 
@@ -25,7 +25,7 @@ Decisioning擴充功能的一些優點包括：
 * 與Adobe Analytics更緊密整合，不仰賴拼接來自個別網路呼叫的資訊
 * 為開發人員提供額外的實作彈性
 
-可以說移轉對Target客戶最大的好處是與Real-time Customer Data Platform整合。 Real-Time CDP根據擷取到Experience Platform的所有資料及其即時客戶設定檔功能，提供龐大的受眾建立功能。 內建的資料控管架構，可自動負責使用這些資料。 Customer AI可讓您輕鬆使用機器學習模型來建構傾向性和流失模型，而模型的輸出可分享回Adobe Target。 最後，選購的Healthcare及Privacy &amp; Security Shield附加元件的客戶可使用同意執行功能，輕鬆強制執行個別客戶的同意偏好設定。 若要在您的Web Channel中使用這些Real-Time CDP功能，必須使用Platform Web SDK。
+可以說移轉對Target客戶最大的好處是與Real-time Customer Data Platform整合。 Real-Time CDP根據擷取到Experience Platform的所有資料及其即時客戶設定檔功能，提供龐大的受眾建立功能。 內建的資料控管架構，可自動負責使用這些資料。 Customer AI可讓您輕鬆使用機器學習模型來建構傾向性和流失模型，而模型的輸出可分享回Adobe Target。 最後，選購的Healthcare及Privacy &amp; Security Shield附加元件的客戶可使用同意執行功能，輕鬆強制執行個別客戶的同意偏好設定。 若要在行動裝置頻道中使用這些Real-Time CDP功能，必須使用Platform Mobile SDK和Decisioning擴充功能。
 
 ## 學習目標
 
