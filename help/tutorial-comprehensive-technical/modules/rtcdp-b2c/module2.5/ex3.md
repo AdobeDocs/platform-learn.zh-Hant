@@ -4,7 +4,7 @@ description: 建立及設定自訂webhook
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: ca4c53ba88bc6a256fc540091413f5efb05945ee
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 建立您的自訂webhook
 
-移至[https://pipedream.com/requestbin](https://pipedream.com/requestbin)。 您已在[練習2.3.7 Destinations SDK](./../../../modules/rtcdp-b2c/module2.3/ex7.md)中使用此應用程式
+移至[https://pipedream.com/requestbin](https://pipedream.com/requestbin)。 您已在[練習2.3.6目的地SDK](./../../../modules/rtcdp-b2c/module2.3/ex6.md)中使用此應用程式
 
 如果您尚未使用該服務，請建立帳戶，然後建立工作區。 建立工作區後，您會看到類似以下畫面。
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 >
 >在上述路徑中，參考為&#x200B;**arc**。 **arc**&#x200B;代表Adobe資源內容，**arc**&#x200B;永遠代表伺服器端內容中可用的最高物件。 可以使用Adobe Experience Platform資料收集伺服器功能將擴充與轉換新增至該&#x200B;**arc**&#x200B;物件。
 >
->在上述路徑中，參考了&#x200B;**事件**。 **event**&#x200B;代表不重複事件，Adobe Experience Platform Data Collection Server一律會個別評估每個事件。 有時您可能會在Web SDK Client Side傳送的裝載中看到&#x200B;**事件**&#x200B;的參考，但在Adobe Experience Platform Data Collection Server中，每個事件都會個別評估。
+>在上述路徑中，參考了&#x200B;**事件**。 **event**&#x200B;代表不重複事件，Adobe Experience Platform Data Collection Server一律會個別評估每個事件。 有時您可能會在Web SDK Client Side傳送的裝載中看到&#x200B;**事件**&#x200B;的參考，但在Adobe Experience Platform資料收集伺服器中，每個事件都會個別評估。
 
 ## 更新您的Adobe Experience Platform資料收集伺服器屬性：建立規則
 

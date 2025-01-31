@@ -6,9 +6,9 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '323'
 ht-degree: 1%
 
 ---
@@ -56,11 +56,7 @@ ht-degree: 1%
 
 使用您建立的對象在Adobe Target中設定體驗鎖定目標活動。
 
-[2.3.6外部對象](./ex6.md)
-
-從外部來源系統匯入對象至Adobe Experience Platform。
-
-[2.3.7目的地SDK](./ex7.md)
+[2.3.6目的地SDK](./ex6.md)
 
 使用目的地SDK設定您自己的目的地。
 

@@ -1,413 +1,296 @@
 ---
-title: Real-time CDP — 外部受眾
-description: Real-time CDP — 外部受眾
+title: Real-time CDP — 目的地SDK
+description: Real-time CDP — 目的地SDK
 kt: 5342
 doc-type: tutorial
-exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
+source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 0%
+source-wordcount: '1098'
+ht-degree: 5%
 
 ---
 
-# 2.3.6外部對象
+# 2.3.6目的地SDK
 
-在許多情況下，您的公司可能會想要使用其他應用程式的現有對象，以擴充Adobe Experience Platform中的客戶設定檔。
-這些外部受眾可能已根據資料科學模型或使用外部資料平台來定義。
+## 設定您的Adobe I/O專案
 
-Adobe Experience Platform的外部受眾功能可讓您專注在外部受眾的擷取及其啟用，而不需要在Adobe Experience Platform中重新詳細定義對應的受眾定義。
+在本練習中，您將再次使用Adobe I/O來查詢Adobe Experience Platform的API。如果您尚未設定Adobe I/O專案，請回到模組2.1](../module2.1/ex3.md)中的[練習3，並遵循其中的指示。
 
-整個程式分為三個主要步驟：
+## Adobe I/O的Postman驗證
 
-- 匯入外部對象中繼資料：此步驟旨在將外部對象中繼資料（例如對象名稱）擷取至Adobe Experience Platform。
-- 將外部對象成員指派給客戶設定檔：此步驟旨在使用外部對象成員資格屬性擴充客戶設定檔。
-- 在Adobe Experience Platform中建立對象：此步驟旨在根據外部對象成員資格建立可操作的對象。
+在本練習中，您將再次使用Postman來查詢Adobe Experience Platform的API。如果您尚未設定Postman應用程式，請回到單元2.1](../module2.1/ex3.md)中的[練習3，並遵循其中的指示。
 
-## 中繼資料
+## 定義端點與格式
+
+在本練習中，您將需要端點來設定，以便在對象符合資格時，資格事件可串流至該端點。 在本練習中，您將使用[https://pipedream.com/requestbin](https://pipedream.com/requestbin)的範例端點。 移至[https://pipedream.com/requestbin](https://pipedream.com/requestbin)，建立帳戶，然後建立工作區。 建立工作區後，您會看到類似以下畫面。
+
+按一下&#x200B;**複製**&#x200B;以複製URL。 您需要在下一個練習中指定此URL。 此範例中的URL是`https://eodts05snjmjz67.m.pipedream.net`。
+
+![資料擷取](./images/webhook1.png)
+
+至於格式，我們將使用標準範本，以串流方式處理對象資格或取消資格以及客戶識別碼等中繼資料。 您可以自訂範本以符合特定端點的期望，但在本練習中，我們將重複使用標準範本，這將導致類似以下的裝載將串流到端點。
+
+```json
+{
+  "profiles": [
+    {
+      "identities": [
+        {
+          "type": "ecid",
+          "id": "64626768309422151580190219823409897678"
+        }
+      ],
+      "AdobeExperiencePlatformSegments": {
+        "add": [
+          "f58c723c-f1e5-40dd-8c79-7bb4ab47f041"
+        ],
+        "remove": []
+      }
+    }
+  ]
+}
+```
+
+## 建立伺服器和範本設定
+
+在Adobe Experience Platform中建立專屬目的地的第一個步驟，是使用Postman建立伺服器和範本設定。
+
+若要這麼做，請開啟您的Postman應用程式，並移至&#x200B;**目的地編寫API**、**目的地伺服器和範本**，然後按一下以開啟要求&#x200B;**POST — 建立目的地伺服器組態**。
+
+>[!NOTE]
+>
+>如果您沒有Postman集合，請回到模組2.1](../module2.1/ex3.md)中的[練習3，並依照這裡的指示設定Postman與提供的Postman集合。
+
+您將會看到此訊息。 在&#x200B;**Headers**&#x200B;底下，您需要手動更新機碼&#x200B;**x-sandbox-name**&#x200B;的值，並將其設定為`--aepSandboxName--`。 選取值&#x200B;**{{SANDBOX_NAME}}**。
+
+![資料擷取](./images/sdkpm1.png)
+
+以`--aepSandboxName--`取代。
+
+![資料擷取](./images/sdkpm2.png)
+
+接著，移至&#x200B;**內文**。 選取預留位置&#x200B;**{{body}}**。
+
+![資料擷取](./images/sdkpm3.png)
+
+您現在需要用下列程式碼取代預留位置&#x200B;**{{body}}**：
+
+```json
+{
+    "name": "Custom HTTP Destination",
+    "destinationServerType": "URL_BASED",
+    "urlBasedDestination": {
+        "url": {
+            "templatingStrategy": "PEBBLE_V1",
+            "value": "yourURL"
+        }
+    },
+    "httpTemplate": {
+        "httpMethod": "POST",
+        "requestBody": {
+            "templatingStrategy": "PEBBLE_V1",
+            "value": "{\n    \"profiles\": [\n    {%- for profile in input.profiles %}\n        {\n            \"identities\": [\n            {%- for idMapEntry in profile.identityMap -%}\n            {%- set namespace = idMapEntry.key -%}\n                {%- for identity in idMapEntry.value %}\n                {\n                    \"type\": \"{{ namespace }}\",\n                    \"id\": \"{{ identity.id }}\"\n                }{%- if not loop.last -%},{%- endif -%}\n                {%- endfor -%}{%- if not loop.last -%},{%- endif -%}\n            {% endfor %}\n            ],\n            \"AdobeExperiencePlatformSegments\": {\n                \"add\": [\n                {%- for segment in profile.segmentMembership.ups | added %}\n                    \"{{ segment.key }}\"{%- if not loop.last -%},{%- endif -%}\n                {% endfor %}\n                ],\n                \"remove\": [\n                {#- Alternative syntax for filtering segments by status: -#}\n                {% for segment in removedSegments(profile.segmentMembership.ups) %}\n                    \"{{ segment.key }}\"{%- if not loop.last -%},{%- endif -%}\n                {% endfor %}\n                ]\n            }\n        }{%- if not loop.last -%},{%- endif -%}\n    {% endfor %}\n    ]\n}"
+        },
+        "contentType": "application/json"
+    }
+}
+```
+
+貼上上述程式碼後，您必須手動更新欄位&#x200B;**urlBasedDestination.url.value**，而且您必須將其設定為您在上一步中建立的webhook的URL，在此範例中為`https://eodts05snjmjz67.m.pipedream.net`。
+
+![資料擷取](./images/sdkpm4.png)
+
+更新欄位&#x200B;**urlBasedDestiantion.url.value**&#x200B;後，它應該如下所示。 按一下&#x200B;**傳送**。
+
+![資料擷取](./images/sdkpm5.png)
+
+>[!NOTE]
+>
+>別忘了，在傳送要求給Adobe I/O之前，您必須具備有效的`access_token`。 若要取得有效的`access_token`，請執行要求&#x200B;**POST — 取得集合** AdobeIO - OAuth **中的存取權杖**。
+
+按一下&#x200B;**傳送**&#x200B;之後，將會建立您的伺服器範本，而在回應中，您會看到名為&#x200B;**instanceId**&#x200B;的欄位。 記下它，因為您會在下一個步驟中需要它。 在此範例中，**instanceId**為
+`52482c90-8a1e-42fc-b729-7f0252e5cebd`。
+
+![資料擷取](./images/sdkpm6.png)
+
+## 建立您的目的地設定
+
+在Postman中的&#x200B;**目的地編寫API**&#x200B;底下，移至&#x200B;**目的地組態**&#x200B;並按一下以開啟要求&#x200B;**POST — 建立目的地組態**。 您將會看到此訊息。 在&#x200B;**Headers**&#x200B;底下，您需要手動更新機碼&#x200B;**x-sandbox-name**&#x200B;的值，並將其設定為`--aepSandboxName--`。 選取值&#x200B;**{{SANDBOX_NAME}}**&#x200B;並以`--aepSandboxName--`取代。
+
+![資料擷取](./images/sdkpm7.png)
+
+接著，移至&#x200B;**內文**。 選取預留位置&#x200B;**{{body}}**。
+
+![資料擷取](./images/sdkpm9.png)
+
+您現在需要用下列程式碼取代預留位置&#x200B;**{{body}}**：
+
+```json
+{
+    "name": "--aepUserLdap-- - Webhook",
+    "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
+    "status": "TEST",
+    "customerAuthenticationConfigurations": [
+        {
+            "authType": "BEARER"
+        }
+    ],
+    "customerDataFields": [
+        {
+            "name": "endpointsInstance",
+            "type": "string",
+            "title": "Select Endpoint",
+            "description": "We could manage several instances across the globe for REST endpoints that our customers are provisioned for. Select your endpoint in the dropdown list.",
+            "isRequired": true,
+            "enum": [
+                "US",
+                "EU",
+                "APAC",
+                "NZ"
+            ]
+        }
+    ],
+    "uiAttributes": {
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
+        "category": "streaming",
+        "connectionType": "Server-to-server",
+        "frequency": "Streaming"
+    },
+    "identityNamespaces": {
+        "ecid": {
+            "acceptsAttributes": true,
+            "acceptsCustomNamespaces": false
+        }
+    },
+    "segmentMappingConfig": {
+        "mapExperiencePlatformSegmentName": true,
+        "mapExperiencePlatformSegmentId": true,
+        "mapUserInput": false
+    },
+    "aggregation": {
+        "aggregationType": "BEST_EFFORT",
+        "bestEffortAggregation": {
+            "maxUsersPerRequest": "1000",
+            "splitUserById": false
+        }
+    },
+    "schemaConfig": {
+        "profileRequired": false,
+        "segmentRequired": true,
+        "identityRequired": true
+    },
+    "destinationDelivery": [
+        {
+            "authenticationRule": "NONE",
+            "destinationServerId": "yourTemplateInstanceID"
+        }
+    ]
+}
+```
+
+![資料擷取](./images/sdkpm11.png)
+
+貼上上述程式碼後，您必須手動更新&#x200B;**destinationDelivery欄位。 destinationServerId**，而且您必須將它設定為您在上一步中建立的目的地伺服器範本的&#x200B;**instanceId**，在此範例中為`52482c90-8a1e-42fc-b729-7f0252e5cebd`。 接著，按一下&#x200B;**傳送**。
+
+![資料擷取](./images/sdkpm10.png)
+
+您會看到此回應。
+
+![資料擷取](./images/sdkpm12.png)
+
+您的目的地現在已建立在Adobe Experience Platform中。 讓我們到那裡檢查一下。
 
 移至[Adobe Experience Platform](https://experience.adobe.com/platform)。 登入後，您會登入Adobe Experience Platform的首頁。
 
 ![資料擷取](./../../../modules/datacollection/module1.2/images/home.png)
 
->[!IMPORTANT]
->
->用於此練習的沙箱是``--aepSandboxName--``！
-
 繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 選取適當的[!UICONTROL 沙箱]後，您將會看到畫面變更，現在您已在專屬的[!UICONTROL 沙箱]中。
 
-![資料擷取](./images/sb1.png)
+![資料擷取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-雖然受眾資料會定義個人檔案成為受眾一部分的條件，但受眾中繼資料則是有關受眾的資訊，例如名稱、說明和受眾的狀態。 由於外部受眾中繼資料將會儲存在Adobe Experience Platform中，因此您需要使用身分名稱空間來將中繼資料擷取到Adobe Experience Platform。
+在左側功能表中，移至&#x200B;**目的地**，按一下&#x200B;**目錄**，然後向下捲動至類別&#x200B;**串流**。 您現在會看到目的地可供使用。
 
-## 2.3.6.1.1外部對象的身分名稱空間
+![資料擷取](./images/destsdk1.png)
 
-已建立身分名稱空間以用於&#x200B;**外部對象**。
-若要檢視已建立的身分，請移至**身分**，然後搜尋&#x200B;**外部**。 按一下「外部對象」專案。
+## 將您的對象連結至目的地
 
-請注意：
+在&#x200B;**目的地** > **目錄**&#x200B;中，按一下目的地上的&#x200B;**設定**，開始將對象新增至您的新目的地。
 
-- 身分符號&#x200B;**externalaudiences**&#x200B;將在後續步驟中使用，以參考外部受眾身分。
-- **非人員識別碼**&#x200B;型別用於此身分名稱空間，因為此名稱空間並非用來識別客戶設定檔，而是用來識別對象。
+![資料擷取](./images/destsdk2.png)
 
-![外部對象識別](images/extAudIdNS.png)
+輸入&#x200B;**持有人權杖**&#x200B;的隨機值，例如&#x200B;**1234**。 按一下&#x200B;**連線到目的地**。
 
-## 2.3.6.1.2建立外部對象中繼資料結構
+![資料擷取](./images/destsdk3.png)
 
-外部對象中繼資料是以&#x200B;**對象定義結構描述**&#x200B;為基礎。 您可以在[XDM Github存放庫](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md)中找到更多詳細資料。
+您將會看到此訊息。 作為目的地的名稱，請使用`--aepUserLdap-- - Webhook`。 選取選取的端點，在此範例中為&#x200B;**EU**。 按一下&#x200B;**下一步**。
 
-在左側選單中，前往結構描述。 按一下&#x200B;**+建立結構描述**，然後按一下&#x200B;**瀏覽**。
+![資料擷取](./images/destsdk4.png)
 
-![外部對象中繼資料結構描述1](images/extAudMDXDM1.png)
+您可以選擇選取資料治理原則。 按一下&#x200B;**下一步**。
 
-若要指派類別，請搜尋&#x200B;**對象定義**。 選取&#x200B;**對象定義**&#x200B;類別並按一下&#x200B;**指派類別**。
+![資料擷取](./images/destsdk5.png)
 
-![外部對象中繼資料結構描述2](images/extAudMDXDM2.png)
+選取您先前建立的對象，名為`--aepUserLdap-- - Interest in Galaxy S24`。 按一下&#x200B;**下一步**。
 
-您將會看到此訊息。 按一下&#x200B;**取消**。
+![資料擷取](./images/destsdk6.png)
 
-![外部對象中繼資料結構描述3](images/extAudMDXDM3.png)
+您將會看到此訊息。 確定將&#x200B;**SOURCE欄位** `--aepTenantId--.identification.core.ecid`對應到欄位`Identity: ecid`。 按一下&#x200B;**下一步**。
 
-您將會看到此訊息。 選取欄位&#x200B;**_id**。 在右方功能表中，向下捲動並啟用&#x200B;**身分**&#x200B;和&#x200B;**主要身分**&#x200B;核取方塊。 選取&#x200B;**外部對象**&#x200B;身分名稱空間。 按一下&#x200B;**套用**。
+![資料擷取](./images/destsdk7.png)
 
-![外部對象中繼資料結構描述4](images/extAudMDXDM4.png)
+按一下&#x200B;**完成**。
 
-接著，選取結構描述名稱&#x200B;**未命名結構描述**。 將名稱變更為`--aepUserLdap-- - External Audiences Metadata`。
+![資料擷取](./images/destsdk8.png)
 
-![外部對象中繼資料結構描述5](images/extAudMDXDM5.png)
+您的目的地現在已上線，新的對象資格將立即串流到您的自訂webhook。
 
-啟用&#x200B;**設定檔**&#x200B;切換並確認。 最後，按一下&#x200B;**儲存**。
+![資料擷取](./images/destsdk9.png)
 
-![外部對象中繼資料結構描述5](images/extAudMDXDM6.png)
+## 測試您的對象啟用
 
-## 2.3.6.1.3建立外部對象中繼資料資料集
+移至[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案上的3個點&#x200B;**...**，然後按一下&#x200B;**執行**&#x200B;以開啟它。
 
-在&#x200B;**結構描述**&#x200B;中，移至&#x200B;**瀏覽**。 搜尋並按一下您在上一步建立的`--aepUserLdap-- - External Audiences Metadata`結構描述。 接著，按一下&#x200B;**從結構描述建立資料集**。
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
-![外部對象中繼資料DS 1](images/extAudMDDS1.png)
+然後您會看到示範網站已開啟。 選取URL並將其複製到剪貼簿。
 
-在&#x200B;**Name**&#x200B;欄位中輸入`--aepUserLdap-- - External Audience Metadata`。 按一下&#x200B;**建立資料集**。
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
-![外部對象中繼資料DS 2](images/extAudMDDS2.png)
+開啟新的無痕瀏覽器視窗。
 
-您將會看到此訊息。 別忘了啟用&#x200B;**設定檔**&#x200B;切換按鈕！
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
-![外部對象中繼資料DS 3](images/extAudMDDS3.png)
+貼上您在上一步中複製的示範網站URL。 接著，系統會要求您使用Adobe ID登入。
 
-## 2.3.6.1.4建立HTTP API Source連線
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
-接下來，您需要設定HTTP API Source Connector ，將中繼資料擷取至資料集。
+選取您的帳戶型別並完成登入程式。
 
-移至&#x200B;**來源**。 在搜尋欄位中，輸入&#x200B;**HTTP**。 按一下&#x200B;**新增資料**。
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-![外部對象中繼資料http 1](images/extAudMDhttp1.png)
+接著，您會在無痕瀏覽器視窗中看到您的網站已載入。 每次練習都需要使用全新的無痕瀏覽器視窗，才能載入您的示範網站URL。
 
-輸入下列資訊：
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-- **帳戶型別**：選取&#x200B;**新帳戶**
-- **帳戶名稱**：輸入`--aepUserLdap-- - External Audience Metadata`
-- 核取核取方塊&#x200B;**XDM相容方塊**
+在此範例中，您想要回應檢視特定產品的特定客戶。
+從**Citi Signal**&#x200B;首頁，移至&#x200B;**手機和裝置**，然後按一下產品&#x200B;**Galaxy S24**。
 
-接著，按一下&#x200B;**連線到來源**。
+![資料擷取](./images/homegalaxy.png)
 
-![外部對象中繼資料http 2](images/extAudMDhttp2.png)
+Galaxy S24的產品頁面現已檢視，因此您的對象將在數分鐘內符合您的個人資料資格。
 
-您將會看到此訊息。 按一下&#x200B;**下一步**。
+![資料擷取](./images/homegalaxy1.png)
 
-![外部對象中繼資料http 2](images/extAudMDhttp2a.png)
+當您開啟設定檔檢視器並移至&#x200B;**對象**&#x200B;時，您將看到對象符合資格。
 
-選取&#x200B;**現有的資料集**，然後在下拉式功能表中搜尋並選取資料集`--aepUserLdap-- - External Audience Metadata`。
+![資料擷取](./images/homegalaxydsdk.png)
 
-驗證&#x200B;**資料流詳細資料**，然後按一下[下一步] **。**
+現在返回您在[https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net)上開啟的webhook，您應該會看到新的傳入要求，這些要求來自Adobe Experience Platform且包含對象資格事件。
 
-![外部對象中繼資料http 3](images/extAudMDhttp3.png)
+![資料擷取](./images/destsdk10.png)
 
-您將會看到此訊息。
-
-精靈的&#x200B;**對應**&#x200B;步驟是空的，因為您會將XDM相容的承載擷取到HTTP API Source Connector，所以不需要對應。 按一下&#x200B;**下一步**。
-
-![外部對象中繼資料http 3](images/extAudMDhttp3a.png)
-
-在&#x200B;**檢閱**&#x200B;步驟中，您可以選擇檢閱連線和對應詳細資料。 按一下&#x200B;**完成**。
-
-![外部對象中繼資料http 4](images/extAudMDhttp4.png)
-
-您將會看到此訊息。
-
-![外部對象中繼資料http 4](images/extAudMDhttp4a.png)
-
-## 2.3.6.1.5擷取外部對象中繼資料
-
-在您的Source Connector概觀標籤上，按一下&#x200B;**...**，然後按一下&#x200B;**複製結構描述承載**。
-
-![外部對象中繼資料str 1](images/extAudMDstr1a.png)
-
-在電腦上開啟文字編輯器應用程式，然後貼上您剛才複製的裝載，如下所示。 接下來，您需要更新此承載中的&#x200B;**xdmEntity**&#x200B;物件。
-
-![外部對象中繼資料str 1](images/extAudMDstr1b.png)
-
-物件&#x200B;**xdmEntity**&#x200B;必須取代為下列程式碼。 複製下列程式碼，然後取代文字編輯器中的&#x200B;**xdmEntity**&#x200B;物件，將其貼到文字檔案中。
-
-```
-"xdmEntity": {
-    "_id": "--aepUserLdap---extaudience-01",
-    "description": "--aepUserLdap---extaudience-01 description",
-    "segmentIdentity": {
-      "_id": "--aepUserLdap---extaudience-01",
-      "namespace": {
-        "code": "externalaudiences"
-      }
-    },
-    "segmentName": "--aepUserLdap---extaudience-01 name",
-    "segmentStatus": "ACTIVE",
-    "version": "1.0"
-  }
-```
-
-您應該會看到以下內容：
-
-![外部對象中繼資料str 1](images/extAudMDstr1.png)
-
-接著，開啟新的&#x200B;**終端機**&#x200B;視窗。 複製文字編輯器中的所有文字，並將其貼到終端機視窗中。
-
-![外部對象中繼資料str 1](images/extAudMDstr1d.png)
-
-接著，按&#x200B;**Enter**。
-
-然後，您會在「終端機」視窗中看到資料擷取的確認：
-
-![外部對象中繼資料str 1](images/extAudMDstr1e.png)
-
-重新整理HTTP API Source聯結器畫面，您現在可以看到正在處理資料：
-
-![外部對象中繼資料str 2](images/extAudMDstr2.png)
-
-## 2.3.6.1.6驗證外部對象中繼資料擷取
-
-處理完成後，您可以使用查詢服務檢查資料集中的資料可用性。
-
-在右方功能表中，前往&#x200B;**資料集**&#x200B;並選取您先前建立的`--aepUserLdap-- - External Audience Metadata`資料集。
-
-![外部對象中繼資料str 3](images/extAudMDstr3.png)
-
-在右選單中，移至[查詢]並按一下[建立查詢]。****。
-
-![外部對象中繼資料str 4](images/extAudMDstr4.png)
-
-輸入下列程式碼，然後按下&#x200B;**SHIFT + ENTER**：
-
-```
-select * from --aepUserLdap--_external_audience_metadata
-```
-
-在查詢結果中，您會看到您擷取的外部對象中繼資料。
-
-![外部對象中繼資料str 5](images/extAudMDstr5.png)
-
-## 對象會籍
-
-有了可用的外部對象中繼資料，您現在可以擷取特定客戶設定檔的對象成員資格。
-
-您現在需要準備設定檔資料集，以擴充對象成員架構。 您可以在[XDM Github存放庫](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md)中找到更多詳細資料。
-
-### 建立外部對象成員資格結構
-
-在右方功能表中，移至&#x200B;**結構描述**。 按一下&#x200B;**建立結構描述**，然後按一下&#x200B;**XDM個別設定檔**。
-
-![外部對象設定檔結構描述1](images/extAudPrXDM1.png)
-
-在&#x200B;**新增欄位群組**&#x200B;快顯視窗中，搜尋&#x200B;**設定檔核心**。 選取&#x200B;**設定檔核心v2**&#x200B;欄位群組。
-
-![外部對象設定檔結構描述2](images/extAudPrXDM2.png)
-
-接下來，在&#x200B;**新增欄位群組**&#x200B;快顯視窗中，搜尋&#x200B;**區段會籍**。 選取&#x200B;**區段成員資格詳細資料**&#x200B;欄位群組。 接著，按一下&#x200B;**新增欄位群組**。
-
-![外部對象設定檔結構描述3](images/extAudPrXDM3.png)
-
-您將會看到此訊息。 瀏覽至欄位`--aepTenantId--.identification.core`。 按一下&#x200B;**crmId**&#x200B;欄位。 在右方功能表中，向下捲動並勾選&#x200B;**身分**&#x200B;和&#x200B;**主要身分**&#x200B;核取方塊。 為&#x200B;**身分識別名稱空間**&#x200B;選取&#x200B;**示範系統 — CRMID**。
-
-按一下&#x200B;**套用**。
-
-![外部對象設定檔結構描述4](images/extAudPrXDM4.png)
-
-接著，選取結構描述名稱&#x200B;**未命名結構描述**。 在顯示名稱欄位中，輸入`--aepUserLdap-- - External Audiences Membership`。
-
-![外部對象設定檔結構描述5](images/extAudPrXDM5a.png)
-
-接下來，啟用&#x200B;**設定檔**&#x200B;切換並確認。 按一下&#x200B;**儲存**。
-
-![外部對象設定檔結構描述5](images/extAudPrXDM5.png)
-
-### 建立外部對象成員資格資料集
-
-在&#x200B;**結構描述**&#x200B;中，移至&#x200B;**瀏覽**。 搜尋並按一下您在上一步建立的`--aepUserLdap-- - External Audiences Membership`結構描述。 接著，按一下&#x200B;**從結構描述建立資料集**。
-
-![外部對象中繼資料DS 1](images/extAudPrDS1.png)
-
-在&#x200B;**Name**&#x200B;欄位中輸入`--aepUserLdap-- - External Audiences Membership`。 按一下&#x200B;**建立資料集**。
-
-![外部對象中繼資料DS 2](images/extAudPrDS2.png)
-
-您將會看到此訊息。 別忘了啟用&#x200B;**設定檔**&#x200B;切換按鈕！
-
-![外部對象中繼資料DS 3](images/extAudPrDS3.png)
-
-### 建立HTTP API Source連線
-
-
-接下來，您需要設定HTTP API Source Connector ，將中繼資料擷取至資料集。
-
-移至&#x200B;**來源**。 在搜尋欄位中，輸入&#x200B;**HTTP**。 按一下&#x200B;**新增資料**。
-
-![外部對象中繼資料http 1](images/extAudMDhttp1.png)
-
-輸入下列資訊：
-
-- **帳戶型別**：選取&#x200B;**新帳戶**
-- **帳戶名稱**：輸入`--aepUserLdap-- - External Audience Membership`
-- 核取核取方塊&#x200B;**XDM相容方塊**
-
-接著，按一下&#x200B;**連線到來源**。
-
-![外部對象中繼資料http 2](images/extAudPrhttp2.png)
-
-您將會看到此訊息。 按一下&#x200B;**下一步**。
-
-![外部對象中繼資料http 2](images/extAudPrhttp2a.png)
-
-選取&#x200B;**現有的資料集**，然後在下拉式功能表中搜尋並選取資料集`--aepUserLdap-- - External Audiences Membership`。
-
-驗證&#x200B;**資料流詳細資料**，然後按一下[下一步] **。**
-
-![外部對象中繼資料http 3](images/extAudPrhttp3.png)
-
-您將會看到此訊息。
-
-精靈的&#x200B;**對應**&#x200B;步驟是空的，因為您會將XDM相容的承載擷取到HTTP API Source Connector，所以不需要對應。 按一下&#x200B;**下一步**。
-
-![外部對象中繼資料http 3](images/extAudPrhttp3a.png)
-
-在&#x200B;**檢閱**&#x200B;步驟中，您可以選擇檢閱連線和對應詳細資料。 按一下&#x200B;**完成**。
-
-![外部對象中繼資料http 4](images/extAudPrhttp4.png)
-
-您將會看到此訊息。
-
-![外部對象中繼資料http 4](images/extAudPrhttp4a.png)
-
-### 擷取外部對象成員資格資料
-
-在您的Source Connector概觀標籤上，按一下&#x200B;**...**，然後按一下&#x200B;**複製結構描述承載**。
-
-![外部對象中繼資料str 1](./images/extAudPrstr1a.png)
-
-在電腦上開啟文字編輯器應用程式，然後貼上您剛才複製的裝載，如下所示。 接下來，您需要更新此承載中的&#x200B;**xdmEntity**&#x200B;物件。
-
-![外部對象中繼資料str 1](images/extAudPrstr1b.png)
-
-物件&#x200B;**xdmEntity**&#x200B;必須取代為下列程式碼。 複製下列程式碼，然後取代文字編輯器中的&#x200B;**xdmEntity**&#x200B;物件，將其貼到文字檔案中。
-
-```
-  "xdmEntity": {
-    "_id": "--aepUserLdap---profile-test-01",
-    "_experienceplatform": {
-      "identification": {
-        "core": {
-          "crmId": "--aepUserLdap---profile-test-01"
-        }
-      }
-    },
-    "personID": "--aepUserLdap---profile-test-01",
-    "segmentMembership": {
-      "externalaudiences": {
-        "--aepUserLdap---extaudience-01": {
-          "status": "realized",
-          "lastQualificationTime": "2022-03-05T00:00:00Z"
-        }
-      }
-    }
-  }
-```
-
-您應該會看到以下內容：
-
-![外部對象中繼資料str 1](images/extAudPrstr1.png)
-
-接著，開啟新的&#x200B;**終端機**&#x200B;視窗。 複製文字編輯器中的所有文字，並將其貼到終端機視窗中。
-
-![外部對象中繼資料str 1](images/extAudPrstr1d.png)
-
-接著，按&#x200B;**Enter**。
-
-然後，您會在「終端機」視窗中看到資料擷取的確認：
-
-![外部對象中繼資料str 1](images/extAudPrstr1e.png)
-
-重新整理HTTP API Source聯結器畫面，幾分鐘後，您就會看到資料正在處理中：
-
-![外部對象中繼資料str 2](images/extAudPrstr2.png)
-
-### 驗證外部對象成員資格擷取
-
-處理完成後，您可以使用查詢服務檢查資料集中的資料可用性。
-
-在右方功能表中，前往&#x200B;**資料集**&#x200B;並選取您先前建立的`--aepUserLdap-- - External Audiences Membership `資料集。
-
-![外部對象中繼資料str 3](images/extAudPrstr3.png)
-
-在右選單中，移至[查詢]並按一下[建立查詢]。****。
-
-![外部對象中繼資料str 4](images/extAudPrstr4.png)
-
-輸入下列程式碼，然後按下&#x200B;**SHIFT + ENTER**：
-
-```
-select * from --aepUserLdap--_external_audiences_membership
-```
-
-在查詢結果中，您會看到您擷取的外部對象中繼資料。
-
-![外部對象中繼資料str 5](images/extAudPrstr5.png)
-
-## 建立區段
-
-現在您已準備好對外部對象採取行動。
-在Adobe Experience Platform中，採取動作的途徑包括建立區段、填入個別受眾並將這些受眾分享至目的地。
-您現在會使用剛建立的外部受眾來建立區段。
-
-在左側功能表中，前往&#x200B;**區段**&#x200B;並按一下&#x200B;**建立區段**。
-
-![外部對象SegBuilder 1](images/extAudSegUI2.png)
-
-移至&#x200B;**對象**。 您將會看到此訊息。 按一下&#x200B;**外部對象**。
-
-![外部對象SegBuilder 1](images/extAudSegUI2a.png)
-
-選取您先前建立的外部對象，其名稱為`--aepUserLdap---extaudience-01`。 將對象拖放到畫布上。
-
-![外部對象SegBuilder 1](images/extAudSegUI2b.png)
-
-提供區段名稱，使用`--aepUserLdap-- - extaudience-01`。 按一下&#x200B;**儲存並關閉**。
-
-![外部對象SegBuilder 1](images/extAudSegUI1.png)
-
-您將會看到此訊息。 您也會注意到您擷取區段會籍的設定檔現在顯示在&#x200B;**範例設定檔**&#x200B;的清單中。
-
-![外部對象SegBuilder 1](images/extAudSegUI3.png)
-
-您的區段現已準備就緒，可傳送至目的地進行啟用。
-
-## 視覺化您的客戶設定檔
-
-您現在也可以將客戶設定檔中的區段資格視覺化。 移至&#x200B;**設定檔**，使用身分識別名稱空間&#x200B;**Demo System - CRMID**&#x200B;並提供身分識別`--aepUserLdap---profile-test-01` （您做為練習6.6.2.4的一部分使用），然後按一下&#x200B;**檢視**。 接著，按一下&#x200B;**設定檔識別碼**&#x200B;以開啟設定檔。
-
-![外部對象SegBuilder 1](images/extAudProfileUI1.png)
-
-移至&#x200B;**區段會籍**，您將在其中看到外部對象。
-
-![外部對象SegBuilder 1](images/extAudProfileUI2.png)
-
-下一步： [2.3.7目的地SDK](./ex7.md)
+下一步： [摘要與優點](./summary.md)
 
 [返回模組2.3](./real-time-cdp-build-a-segment-take-action.md)
 
