@@ -4,9 +4,9 @@ description: Foundation — 資料擷取 — 從離線來源擷取資料
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1513'
 ht-degree: 5%
 
 ---
@@ -82,8 +82,11 @@ ht-degree: 5%
 
 ![資料擷取](./images/emeacrmoverview.png)
 
-
 在概觀畫面上，您可以看到3個主要資訊。
+
+>[!NOTE]
+>
+>如果過去7天內未發生任何活動，您的資料集檢視可能為空白。
 
 ![資料擷取](./images/dashboard.png)
 
@@ -146,6 +149,10 @@ ht-degree: 5%
 您現在需要在&#x200B;**[!UICONTROL 示範系統 — CRM]**&#x200B;的設定檔資料集中，以XDM屬性對應CSV檔案的欄標題。
 
 Adobe Experience Platform已嘗試將[!UICONTROL Source屬性]與[!UICONTROL 目標結構描述欄位]連結，為您提出一些建議。
+
+>[!NOTE]
+>
+>如果您在對應畫面上看到任何錯誤，請不要擔心。 依照下列指示操作後，這些錯誤即會解決。
 
 ![資料擷取](./images/mapschema.png)
 
@@ -251,7 +258,7 @@ Source結構描述欄位&#x200B;**last_name**&#x200B;應連結至目標欄位&#x
 
 ![資料擷取](./images/pencil.png)
 
-移至&#x200B;**[!UICONTROL 身分資料]**，您會看到已核取&#x200B;**[!UICONTROL I2]**&#x200B;選項 — 這將會假設此資料集中的所有資訊片段至少可間接識別給人員。
+移至&#x200B;**[!UICONTROL 身分標籤]**，您會看到已核取&#x200B;**[!UICONTROL I2]**&#x200B;選項 — 這將會假設此資料集中的所有資訊片段至少可間接識別給人員。
 
 按一下&#x200B;**[!UICONTROL 儲存變更]**。
 

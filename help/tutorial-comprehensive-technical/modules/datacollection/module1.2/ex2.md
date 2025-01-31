@@ -4,9 +4,9 @@ description: Foundation — 資料擷取 — 設定結構描述並設定識別�
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3138'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ ht-degree: 4%
 ![資料擷取](./images/schemastructurem.png)
 
 您的新[!UICONTROL 欄位群組]仍然是空的，所以現在您必須將欄位新增到該[!UICONTROL 欄位群組]。
-在[!UICONTROL 欄位群組] — 清單中，按一下您的自訂[!UICONTROL 欄位群組]。
+在[!UICONTROL 欄位群組] — 清單中，按一下您的自訂[!UICONTROL 欄位群組]，然後按一下&#x200B;**瀏覽**。
 
 ![資料擷取](./images/schemastructurem.png)
 
@@ -305,7 +305,7 @@ ht-degree: 4%
 
 ![資料擷取](./images/sb1.png)
 
-在Adobe Experience Platform中，按一下熒幕左邊功能表中的&#x200B;**[!UICONTROL 結構描述]**。
+在Adobe Experience Platform中，按一下熒幕左邊功能表中的&#x200B;**[!UICONTROL 結構描述]**，然後前往&#x200B;**瀏覽**。
 
 ![資料擷取](./images/menuschemas.png)
 
@@ -333,7 +333,7 @@ ht-degree: 4%
 在本實驗的簡介中，我們注意到需要下列屬性來定義客戶的行為：
 
 - 造訪過哪些頁面或產品？
-- 此客戶是否已新增產品至購物車，或甚至購買商品？
+- 此客戶是否將產品新增至購物車，或甚至購買商品？
 - 使用哪些裝置和瀏覽器來瀏覽網站？
 - 這位客戶想要的是什麼資訊，以及我們如何運用這些資訊，為這位客戶設定並提供愉快的體驗？
 - 客戶的主要識別碼
@@ -446,10 +446,10 @@ ECID — 欄位將定義為型別&#x200B;**[!UICONTROL 字串]**，而您將設�
 ![資料擷取](./images/applyidenee.png)
 
 請務必注意，最終針對此結構擷取資料時，需要一些欄位。
-例如，欄位**[!UICONTROL _id]**&#x200B;和&#x200B;**[!UICONTROL timestamp]**&#x200B;為必要欄位。
+例如，欄位**[!UICONTROL _id]**&#x200B;和&#x200B;**[!UICONTROL timestamp]**&#x200B;是必要欄位，這是ExperienceEvent類別所強加的要求。
 
 - _id必須包含用於特定資料擷取的唯一id
-- 時間戳記必須為此點選的時間戳記，格式為&#x200B;**[!UICONTROL &quot;YYYY-MM-DDTHH:MM:SSSZ&quot;]**，例如： **[!UICONTROL &quot;2024-11-18T07:20:000Z&quot;]**
+- 時間戳記必須是此點選的時間戳記，格式為&#x200B;**`"YYYY-MM-DDTHH:MM:SSSZ"`**，例如： **`"2024-11-18T07:20:000Z"`**
 
 您現在已定義結構描述、連結現有和新建立的[!UICONTROL 欄位群組]且已定義識別碼。
 

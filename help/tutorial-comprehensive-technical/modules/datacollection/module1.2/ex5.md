@@ -4,7 +4,7 @@ description: Foundation — 資料擷取 — 從離線來源擷取資料
 kt: 5342
 doc-type: tutorial
 exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 2%
@@ -28,11 +28,11 @@ Data Landing Zone是Adobe Experience Platform布建的Azure Blob儲存體介面�
 
 ![dlz-install-az-copy.png](./images/dlzinstallazcopy.png)
 
-- 解壓縮下載檔案
+- 將下載的檔案解壓縮
 
 ![dlz-install-az-copy.png](./images/dlz1.png)
 
-- 下載範例資料檔global-context-websiteinteractions.csv，其中包含範例網站互動，並將其儲存至您解壓縮&#x200B;**azcopy**&#x200B;的資料夾。
+- 下載包含範例網站互動的範例資料檔[global-context-websiteinteractions.csv](./../../../assets/csv/data-ingestion/global-context-websiteinteractions.csv)，並將其儲存到您解壓縮&#x200B;**azcopy**&#x200B;的資料夾中。
 
 ![dlz-install-az-copy.png](./images/dlz2.png)
 

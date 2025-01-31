@@ -3,9 +3,10 @@ title: AEM CS — 進階自訂區塊
 description: AEM CS — 進階自訂區塊
 kt: 5342
 doc-type: tutorial
-source-git-commit: baa9b176213883559fafba9be19e0c5749623d56
+exl-id: fa299668-c902-4775-a540-7555ca461d3e
+source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ export default function decorate(block) {
 
 您現在已在專案中進行數項變更，這些變更需要提交回GitHub存放庫。 若要這麼做，請開啟&#x200B;**GitHub Desktop**。
 
-您應該會在&#x200B;**變更**&#x200B;下看到剛才編輯的3個檔案。 檢閱您的變更。
+然後您應該會在&#x200B;**變更**&#x200B;下看到您剛才編輯的2個檔案。 檢閱您的變更。
 
 輸入您的PR名稱，`js css`。 按一下&#x200B;**認可至主要**。
 
@@ -344,7 +345,7 @@ async function getOffer(ECID) {
 
 ![區塊](./images/blockadv20.png)
 
-下一步： [摘要與優點](./summary.md){target="_blank"}
+下一步： [2.1.6 AEM Edge Delivery Services MarTech外掛程式](./ex6.md){target="_blank"}
 
 [返回模組2.1](./aemcs.md){target="_blank"}
 

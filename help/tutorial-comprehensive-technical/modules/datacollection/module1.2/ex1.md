@@ -4,9 +4,9 @@ description: 基礎 — 資料擷取 — 從未知到網站上已知
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Platform是一個環境，其中單字&#x200B;**customer**&#x200B;不只是&#x20
 
 ![示範](./images/pv1.png)
 
-請檢視「設定檔檢視器」面板和即時客戶設定檔，並將&#x200B;**Experience CloudID**&#x200B;設為此目前未知客戶的主要識別碼。
+請檢視「設定檔檢視器」面板，以及將&#x200B;**Experience CloudID**&#x200B;作為目前未知客戶主要識別碼的即時客戶設定檔。
 
 ![示範](./images/pv2.png)
 
@@ -61,11 +61,15 @@ Platform是一個環境，其中單字&#x200B;**customer**&#x200B;不只是&#x20
 
 ![示範](./images/pv4.png)
 
-然後您會看到產品詳細資料頁面。 型別&#x200B;**產品檢視**&#x200B;的體驗事件現在已使用您在上一個模組中檢閱的Web SDK實作傳送至Adobe Experience Platform。
+然後您會看到產品詳細資料頁面。 型別&#x200B;**產品檢視**&#x200B;的體驗事件現在已使用您在上一個模組中檢閱的Web SDK實作傳送到Adobe Experience Platform。
 
 ![示範](./images/pv5.png)
 
 開啟「設定檔檢視器」面板，並檢視您的&#x200B;**體驗事件**。
+
+>[!NOTE]
+>
+>如果您沒有看到事件立即顯示，請重新整理頁面。
 
 ![示範](./images/pv6.png)
 

@@ -4,10 +4,10 @@ description: Adobe Experience ManagerCloud Service與Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +42,10 @@ ht-degree: 2%
 [2.1.5進階自訂區塊](./ex5.md){target="_blank"}
 
 在本練習中，您將開發網站的進階自訂區塊。
+
+[2.1.6 AEM Edge Delivery Services MarTech外掛程式](./ex6.md){target="_blank"}
+
+在本練習中，您將實施AEM MarTech外掛程式。 AEM MarTech外掛程式可協助您為AEM專案快速設定完整的MarTech棧疊。
 
 [摘要與優點](./summary.md){target="_blank"}
 
