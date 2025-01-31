@@ -10,10 +10,10 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: 477d1dc9d626f18b6b1c397202ab9ba0d9cc3521
+source-git-commit: deac800691c130033e1d4c5c7424a3a87fc40830
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 1%
+source-wordcount: '96'
+ht-degree: 2%
 
 ---
 
@@ -24,24 +24,24 @@ ht-degree: 1%
 
 + [建立驗證報表套裝](create-a-validation-report-suite.md)
 
-+ [建立及設定資料串流](create-and-configure-the-analytics-datastream.md)
++ [建立資料串流](create-and-configure-the-analytics-datastream.md)
 
-+ [新增及設定網頁SDK擴充功能](add-and-configure-the-web-sdk-extension.md)
++ [新增網頁SDK擴充功能](add-and-configure-the-web-sdk-extension.md)
 
 + [建立變數資料元素](create-a-variable-data-element.md)
 
 + [移轉預設頁面載入規則](migrate-your-default-page-load-rule.md)
 
-+ [將自訂程式碼移轉至網頁SDK](migrate-custom-code-to-the-web-sdk.md)
++ [移轉自訂程式碼](migrate-custom-code-to-the-web-sdk.md)
 
-+ [建置開發程式庫的實作變更](build-the-implementation-changes.md)
++ [建置開發程式庫](build-the-implementation-changes.md)
 
-+ [偵錯並驗證Web SDK移轉](debug-and-validate-your-web-sdk-migration.md)
++ [偵錯和驗證](debug-and-validate-your-web-sdk-migration.md)
 
 + [移轉其他頁面規則](migrate-additional-page-rules.md)
 
 + [移轉自訂連結規則](migrate-custom-link-rules.md)
 
-+ [刪除Adobe Analytics擴充功能專案](delete-analytics-extension-items.md)
++ [刪除Analytics擴充功能](delete-analytics-extension-items.md)
 
-+ [Publish移轉至中繼和生產環境](publish-the-migration.md)
++ [Publish至測試和生產](publish-the-migration.md)
