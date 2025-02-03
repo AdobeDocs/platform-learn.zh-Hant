@@ -3,10 +3,10 @@ title: 內容狀態
 description: 內容狀態
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 10%
+source-wordcount: '256'
+ht-degree: 8%
 
 ---
 
@@ -35,5 +35,11 @@ ht-degree: 10%
 | [5.1查詢服務](./modules/datadistiller/module5.1/query-service.md) | 04/12/2024 | 是 | - |
 
 {style="table-layout:auto"}
+
+![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>如果您有任何問題，想要分享對未來內容有建議的一般意見回饋，請傳送電子郵件至&#x200B;**techinsiders@adobe.com**，直接連絡技術業內人士。
 
 [返回所有模組](./overview.md)
