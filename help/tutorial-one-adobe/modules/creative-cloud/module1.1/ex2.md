@@ -1,374 +1,368 @@
 ---
-title: 使用Microsoft Azure和預先簽署的URL最佳化Firefly程式
-description: 瞭解如何使用Microsoft Azure和預先簽署的URL最佳化Firefly程式
+title: Optimize your Firefly Process using Microsoft Azure and Presigned URLs
+description: Learn how to optimize your Firefly process using Microsoft Azure and presigned URLs
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
-workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 1%
-
 ---
+# Optimize your Firefly process using Microsoft Azure and presigned URLs
 
-# 使用Microsoft Azure和預先簽署的URL最佳化Firefly程式
+Learn how to optimize your Firefly process using Microsoft Azure and presigned URLs.
 
-瞭解如何使用Microsoft Azure和預先簽署的URL最佳化Firefly程式。
-
-## 建立Azure訂閱
-
->[!NOTE]
->
->如果您已有現有的Azure訂閱，可以略過此步驟。 請繼續進行該案例的下一個練習。
-
-1. 移至[https://portal.azure.com](https://portal.azure.com){target="_blank"}並使用您的Azure帳戶登入。 如果您沒有電子郵件地址，請使用個人電子郵件地址來建立您的Azure帳戶。
-
-   ![Azure儲存體](./images/02azureportalemail.png)
-
-   成功登入後，您應該會看到下列畫面：
-
-   ![Azure儲存體](./images/03azureloggedin.png)
-
-1. 在左側功能表選取&#x200B;**所有資源**，如果您尚未訂閱，就會顯示Azure訂閱畫面。
-
-1. 如果您尚未訂閱，請選取&#x200B;**開始使用Azure免費試用**。
-
-   ![Azure儲存體](./images/04azurestartsubscribe.png)
-
-1. 填寫Azure訂閱表單，並提供您的行動電話和信用卡以進行啟用（您將有30天的免費套餐，除非您升級，否則不會向您收費）。
-
-   訂閱程式完成後，您就可以開始了。
-
-   ![Azure儲存體](./images/06azuresubscriptionok.png)
-
-## 建立Azure儲存體帳戶
-
-1. 搜尋`storage account`，然後選取&#x200B;**儲存帳戶**。
-
-   ![Azure儲存體](./images/azs1.png)
-
-1. 選取&#x200B;**+建立**。
-
-![Azure儲存體](./images/azs2.png)
-
-1. 選取您的&#x200B;**訂閱**，然後選取（或建立） **資源群組**。
-
-1. 在&#x200B;**儲存體帳戶名稱**&#x200B;下，使用`--aepUserLdap--`。
-
-1. 選取&#x200B;**檢閱+建立**。
-
-   ![Azure儲存體](./images/azs3.png)
-
-1. 選取「**建立**」。
-
-   ![Azure儲存體](./images/azs4.png)
-
-1. 確認後，選取&#x200B;**前往資源**。
-
-       ![Azure儲存體](./images/azs5.png)
-   
-您的Azure儲存體帳戶現在已可供使用。
-
-    ![Azure儲存體](./images/azs6.png)
-
-1. 選取&#x200B;**資料儲存體**，然後移至&#x200B;**容器**。 選取&#x200B;**+容器**。
-
-   ![Azure儲存體](./images/azs7.png)
-
-1. 使用`--aepUserLdap--`作為名稱，並選取&#x200B;**建立**。
-
-   ![Azure儲存體](./images/azs8.png)
-
-   您的容器現在已可供使用。
-
-   ![Azure儲存體](./images/azs9.png)
-
-## 1.1.2.3安裝Azure儲存體總管
-
-1. [下載Microsoft Azure Storage Explorer以管理您的檔案](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}。 選取適合您特定作業系統的正確版本，下載並安裝。
-
-   ![Azure儲存體](./images/az10.png)
-
-1. 開啟應用程式並選取&#x200B;**使用Azure登入**。
-
-   ![Azure儲存體](./images/az11.png)
-
-1. 選取&#x200B;**訂閱**。
-
-   ![Azure儲存體](./images/az12.png)
-
-1. 選取&#x200B;**Azure**，然後選取&#x200B;**下一步**。
-
-   ![Azure儲存體](./images/az13.png)
-
-1. 選取您的Microsoft Azure帳戶並完成驗證程式。
-
-   ![Azure儲存體](./images/az14.png)
-
-   驗證後，此訊息會出現。
-
-   ![Azure儲存體](./images/az15.png)
-
-1. 返回Microsoft Azure Storage Explorer應用程式，選取您的訂閱，然後選擇&#x200B;**開啟總管**。
+## Create an Azure Subscription
 
 >[!NOTE]
 >
->如果您的帳戶未顯示，請按一下電子郵件地址旁的&#x200B;**齒輪**&#x200B;圖示，並選取&#x200B;**取消篩選**。
+>If you already have an existing Azure Subscription, you can skip this step. Please proceed with the next exercise in that case.
 
-    ![Azure儲存體](./images/az16.png)
+1. Go to [https://portal.azure.com](https://portal.azure.com){target="_blank"} and login with your Azure account. If you don't have one, please use your personal email address to create your Azure account.
 
-您的儲存體帳戶出現在&#x200B;**儲存體帳戶**&#x200B;下。
+    ![Azure Storage](./images/02azureportalemail.png)
 
-    ![Azure儲存體](./images/az17.png)
+    After successful login you should see the following screen:
 
-1. 開啟&#x200B;**Blob容器**，然後選取您在上一個練習中建立的容器。
+    ![Azure Storage](./images/03azureloggedin.png)
 
-   ![Azure儲存體](./images/az18.png)
+1. On the left menu select **All Resources**, the Azure subscription screen appears if you are not yet subscribed. 
 
-## 手動上傳檔案並使用影像檔案作為樣式參考
+1. If you are not subscribed, select **Start with an Azure free Trial**. 
 
-1. 將您選擇的影像檔案或[此檔案](./images/gradient.jpg){target="_blank"}上傳至容器。
+    ![Azure Storage](./images/04azurestartsubscribe.png)
 
-   ![Azure儲存體](./images/gradient.jpg)
+1. Fill in the Azure subscription form and provide your mobile phone and credit card for activation (you will have a free tier for 30 days and you will not be charged, unless you upgrade).
 
-   上傳後，即可在容器中看到：
+    When the subscription process is finished you are good to go.
 
-   ![Azure儲存體](./images/az19.png)
+    ![Azure Storage](./images/06azuresubscriptionok.png)
 
-1. 在`gradient.jpg`上按一下滑鼠右鍵，然後選取&#x200B;**取得共用存取權簽章**。
+## Create Azure Storage Account
 
-   ![Azure儲存體](./images/az20.png)
+1. Search for `storage account` and then select **Storage accounts**.
 
-1. 在&#x200B;**許可權**&#x200B;之下，只需要&#x200B;**讀取**。 選取「**建立**」。
+    ![Azure Storage](./images/azs1.png)
 
-   ![Azure儲存體](./images/az21.png)
+1. Select **+ Create**.
 
-1. 複製此影像檔案的預先簽署URL，以供下一個API請求進行Firefly。
+ ![Azure Storage](./images/azs2.png)
 
-   ![Azure儲存體](./images/az22.png)
+1. Select your **Subscription** and select (or create) a **Resource group**.
 
-1. 返回Postman開啟請求&#x200B;**POST-Firefly- T2I (styleref) V3**。
-此出現在**主體**&#x200B;中。
+1. Under **Storage account name** use `--aepUserLdap--`.
 
-   ![Azure儲存體](./images/az23.png)
+1. Select **Review + create**.
 
-1. 將預留位置URL取代為您的影像檔案預先簽署的URL，並選取&#x200B;**傳送**。
+    ![Azure Storage](./images/azs3.png)
 
-   ![Azure儲存體](./images/az24.png)
+1. Select **Create**.
 
-1. 在瀏覽器中開啟回應Firefly服務新影像。
+    ![Azure Storage](./images/azs4.png)
 
-   ![Azure儲存體](./images/az25.png)
+1. After confirmation select **Go to resource**.
 
-   另一個影像會以`horses in a field`顯示，但這次的樣式與您提供做為樣式參考的影像檔案類似。
+        ![Azure Storage](./images/azs5.png)
 
-   ![Azure儲存體](./images/az26.png)
+Your Azure Storage Account is now ready to be used.
 
-## 程式化檔案上傳
+    ![Azure Storage](./images/azs6.png)
 
-若要搭配Azure儲存體帳戶使用程式化檔案上傳，您必須建立新的&#x200B;**共用存取簽章(SAS)**&#x200B;權杖，其許可權可讓您寫入檔案。
+1. Select **Data Storage**, and then go to **Containers**. Select **+ Container**.
 
-1. 在Azure儲存體總管中，用滑鼠右鍵按一下您的容器，然後選取&#x200B;**取得共用存取權簽章**。
+    ![Azure Storage](./images/azs7.png)
 
-   ![Azure儲存體](./images/az27.png)
+1. Use `--aepUserLdap--`for the name and select **Create**.
 
-1. 在&#x200B;**許可權**&#x200B;下，選取下列必要許可權：
+    ![Azure Storage](./images/azs8.png)
 
-   - **讀取**
-   - **新增**
-   - **建立**
-   - **寫入**
-   - **清單**
+    Your container is now ready to be used.
 
-1. 選取「**建立**」。
+    ![Azure Storage](./images/azs9.png)
 
-   ![Azure儲存體](./images/az28.png)
+## 1.1.2.3 Install Azure Storage Explorer
 
-1. 收到您的&#x200B;**SAS-Token**&#x200B;後，請選取&#x200B;**複製**。
+1. [Download Microsoft Azure Storage Explorer to manage your files](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Select the correct version for your specific OS, download and install it.
 
-   ![Azure儲存體](./images/az29.png)
+    ![Azure Storage](./images/az10.png)
 
-   使用&#x200B;**SAS-token**&#x200B;將檔案上傳至您的Azure儲存體帳戶。
+1. Open the application and select **Sign in with Azure**.
 
-1. 返回Postman，選取資料夾&#x200B;**FF - Firefly服務技術內部人員**，然後選取&#x200B;**Firefly**&#x200B;資料夾中的&#x200B;**...**，然後選取&#x200B;**新增要求**。
+    ![Azure Storage](./images/az11.png)
 
-   ![Azure儲存體](./images/az30.png)
+1. Select **Subscription**.
 
-1. 將空白要求的名稱變更為&#x200B;**上傳檔案至Azure儲存體帳戶**，將&#x200B;**要求型別**&#x200B;變更為&#x200B;**PUT**，並在URL區段中貼上SAS權杖URL，然後選取&#x200B;**內文**。
+    ![Azure Storage](./images/az12.png)
 
-   ![Azure儲存體](./images/az31.png)
+1. Select **Azure** and then **Next**.
 
-1. 接著，從本機電腦選取檔案，或使用其他位於[這裡](./images/gradient2-p.jpg){target="_blank"}的影像檔。
+    ![Azure Storage](./images/az13.png)
 
-   ![漸層檔案](./images/gradient2-p.jpg)
+1. Select your Microsoft Azure account and complete the authentication process.
 
-1. 在&#x200B;**內文**&#x200B;中，選取&#x200B;**二進位**，然後&#x200B;**選取檔案**，然後從本機電腦&#x200B;**選取**+新檔案。
+    ![Azure Storage](./images/az14.png)
 
-   ![Azure儲存體](./images/az32.png)
+    After authentication, this message appears.
 
-1. 選取您選擇的檔案，並選取&#x200B;**開啟**。
+    ![Azure Storage](./images/az15.png)
 
-   ![Azure儲存體](./images/az33.png)
+1. Back in the Microsoft Azure Storage Explorer app, select your subscription and choose **Open Explorer**.
 
-1. 接下來，將游標放在問號&#x200B;**之前，以指定要在您的Azure儲存體帳戶中使用的檔案名稱？URL中的**&#x200B;如下：
+>[!NOTE]
+>
+>If your account isn't shown, click the **gear** icon next to your email address and select **Un-filter**.
 
-   ![Azure儲存體](./images/az34.png)
+    ![Azure Storage](./images/az16.png)
 
-   URL目前看起來像這樣，但需要變更。
+   Your storage account appears under **Storage Accounts**.
 
-   `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03...`
+    ![Azure Storage](./images/az17.png)
 
-1. 將檔案名稱變更為`gradient2-p.jpg`，並將URL變更為包含檔案名稱，如下所示：
+1. Open **Blob Containers** and then select the container you created in the previous exercise.
 
-   `https://vangeluw.blob.core.windows.net/vangeluw/gradient2-p.jpg?sv=2023-01-03...`
+    ![Azure Storage](./images/az18.png)
 
-   ![Azure儲存體](./images/az34a.png)
+## Manual file upload and using an image file as style reference
 
-1. 接著，移至&#x200B;**標頭**&#x200B;手動新增標頭，如下所示：
+1. Upload a image file of your choice or [this file](./images/gradient.jpg){target="_blank"} into the container.
 
-   | 索引鍵 | 值 |
-   |:-------------:| :---------------:| 
-   | `x-ms-blob-type` | `BlockBlob` |
+    ![Azure Storage](./images/gradient.jpg)
 
+    Once uploaded, you can see it in your container:
 
-   ![Azure儲存體](./images/az35.png)
+    ![Azure Storage](./images/az19.png)
 
-1. 移至&#x200B;**授權**&#x200B;並將&#x200B;**驗證型別**&#x200B;設定為&#x200B;**無驗證**，然後選取&#x200B;**傳送**。
+1. Right-click on `gradient.jpg` and then select **Get Shared Access Signature**.
 
-   ![Azure儲存體](./images/az36.png)
+    ![Azure Storage](./images/az20.png)
 
-1. 接著，這個空白回應會顯示在Postman中，表示您的檔案上傳可以正常進行。
+1. Under **Permissions**, only **Read** is required. Select **Create**.
 
-   ![Azure儲存體](./images/az37.png)
+    ![Azure Storage](./images/az21.png)
 
-1. 返回Azure Storage Explorer重新整理資料夾的內容，新上傳的檔案隨即顯示。
+1. Copy your presigned URL for this image file for the next API request to Firefly.
 
-   ![Azure儲存體](./images/az38.png)
+    ![Azure Storage](./images/az22.png)
 
-## 程式化檔案使用
+1. Back in Postman open the request **POST - Firefly - T2I (styleref) V3**. 
+    This appearsin **Body**.    
 
-若要以程式設計方式長期讀取Azure儲存體帳戶的檔案，您必須建立新的&#x200B;**共用存取簽章(SAS)**&#x200B;權杖，其許可權可讓您讀取檔案。 技術上，您可以使用先前練習中建立的SAS-Token，但最佳實務是讓個別的Token只有&#x200B;**讀取**&#x200B;許可權，而個別的Token只有&#x200B;**寫入**&#x200B;許可權。
+    ![Azure Storage](./images/az23.png)
 
-### 長期讀取SAS權杖
+1. Replace the placeholder URL with the presigned URL for your image file and select **Send**.
 
-1. 返回Azure儲存體總管，用滑鼠右鍵按一下您的容器，然後選取&#x200B;**取得共用存取權簽章**。
+    ![Azure Storage](./images/az24.png)
 
-   ![Azure儲存體](./images/az27.png)
+1. Open the response Firefly Services new image in your browser.
 
-1. 在&#x200B;**許可權**&#x200B;下，選取下列必要許可權：
+    ![Azure Storage](./images/az25.png)
 
-   - **讀取**
-   - **清單**
+    Another image appears with `horses in a field`, but this time the style is similar to the image file that you provided as style reference.
 
-1. 將&#x200B;**到期時間**&#x200B;設定為從現在起的1年。
+    ![Azure Storage](./images/az26.png)
 
-1. 選取「**建立**」。
+## Programmatic file upload 
 
-   ![Azure儲存體](./images/az100.png)
+In order to use programmatic file upload with Azure Storage Accounts, you need to create a new **Shared Access Signature (SAS)** token with permissions that allow you to write a file.
 
-1. 複製URL並將其寫入您電腦上的檔案中，以取得具有讀取許可權的長期SAS權杖。
+1. In Azure Storage Explorer, right-click your container, and select **Get Shared Access Signature**.
 
-   ![Azure儲存體](./images/az101.png)
+    ![Azure Storage](./images/az27.png)
 
-   您的URL應如下所示：
+1. Under **Permissions**, select the following required permissions:
 
-   `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+    - **Read**
+    - **Add**
+    - **Create**
+    - **Write**
+    - **List**
 
-   您可以從上述URL衍生出一些值：
+1. Select **Create**.
 
-   - `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
-   - `AZURE_STORAGE_CONTAINER`： `vangeluw`
-   - `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+    ![Azure Storage](./images/az28.png)
 
-### 長期寫入SAS權杖
+1. After receiving your **SAS-token**, select **Copy**.
 
-1. 返回Azure儲存體總管，用滑鼠右鍵按一下您的容器，然後選取&#x200B;**取得共用存取權簽章**。
+    ![Azure Storage](./images/az29.png)
 
-   ![Azure儲存體](./images/az27.png)
+     Use the **SAS-token** to upload a file into your Azure Storage Account. 
 
-1. 在&#x200B;**許可權**&#x200B;下，選取下列必要許可權：
+1. Back in Postman, select the folder **FF - Firefly Services Tech Insiders**, then select **...** on the **Firefly** folder, and then select **Add request**.
 
-   - **新增**
-   - **建立**
-   - **寫入**
+    ![Azure Storage](./images/az30.png)
 
-1. 將&#x200B;**到期時間**&#x200B;設定為從現在起的1年。
+1. Change the name of the empty request to **Upload file to Azure Storage Account**, change the **Request Type** to **PUT** and paste the SAS-token URL in the URL section, then select **Body**.
 
-1. 選取「**建立**」。
+    ![Azure Storage](./images/az31.png)
 
-   ![Azure儲存體](./images/az102.png)
+1. Next, select a file from your local machine or use another image file located [here](./images/gradient2-p.jpg){target="_blank"}.
 
-1. 複製URL並將其寫入您電腦上的檔案中，以取得具有讀取許可權的長期SAS權杖。
+    ![Gradient file](./images/gradient2-p.jpg)
 
-   ![Azure儲存體](./images/az103.png)
+1. In **Body**, select **binary** then **Select file**, then select **+ New file from local machine**.
 
-   您的URL應如下所示：
+    ![Azure Storage](./images/az32.png)
 
-   `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+1. Select your file of choice and select **Open**.  
 
-您可以從上述URL衍生出一些值：
+    ![Azure Storage](./images/az33.png)
 
-    - &#39;AZURE_STORAGE_URL&#39;： &#39;https://vangeluw.blob.core.windows.net&#39;
-    - &#39;AZURE_STORAGE_CONTAINER&#39;： &#39;vangeluw&#39;
-    - &#39;AZURE_STORAGE_SAS_READ&#39;： &#39;？sv=2023-01-03&amp;st=2025-01-13T07%3A36%3A35Z&amp;se=2026-01-14T t07%3A36%3A00Z&amp;sr=c&amp;sp=rl&amp;sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D&#39;
-    - &#39;AZURE_STORAGE_SAS_WRITE&#39;： &#39;？sv=2023-01-03&amp;st=2025-01-13T07%3A38%3A59Z&amp;se=2026-01-14T07%3A38%3A00Z&amp;sr=c&amp;sp=acw&amp;sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz
+1. Next specify the file name to be used in your Azure Storage Account by placing your cursor in front of the question mark **?** in the URL like this:
 
-### Postman中的變數
+    ![Azure Storage](./images/az34.png)
 
-如上節所述，讀取和寫入權杖中都有一些常見的變數。
+    The URL currently looks like this, but needs to be changed. 
 
-接下來，您需要在Postman中建立變數，以儲存上述SAS-Token的各種元素。 兩個URL中的某些值相同：
+    `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03...`
 
-- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`： `vangeluw`
-- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
-- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+1. Change the file name to `gradient2-p.jpg`, and change the URL to include the filename like this:
 
-對於未來的API互動，主要變更的是資產名稱，而上述變數維持不變。 在此情況下，建議您在Postman中建立變數，如此您就不需要每次都手動指定它們。
+    `https://vangeluw.blob.core.windows.net/vangeluw/gradient2-p.jpg?sv=2023-01-03...`
 
-1. 在Postman中，選取&#x200B;**環境**，開啟&#x200B;**所有變數**&#x200B;並選取&#x200B;**環境**。
+    ![Azure Storage](./images/az34a.png)
 
-   ![Azure儲存體](./images/az104.png)
+1. Next, go to **Headers** to add a new header manually like this:
 
-1. 在顯示的表格中建立這4個變數，並針對欄&#x200B;**初始值**&#x200B;和&#x200B;**目前值**，輸入您特定的個人值。
+    | Key     | Value     | 
+    |:-------------:| :---------------:| 
+    | `x-ms-blob-type`          | `BlockBlob` |
 
-   - `AZURE_STORAGE_URL`：您的url
-   - `AZURE_STORAGE_CONTAINER`：您的容器名稱
-   - `AZURE_STORAGE_SAS_READ`：您的SAS讀取權杖
-   - `AZURE_STORAGE_SAS_WRITE`：您的SAS寫入權杖
 
-1. 選取「**儲存**」。
+    ![Azure Storage](./images/az35.png)
 
-   ![Azure儲存體](./images/az105.png)
+1. Go to **Authorization** and set the **Auth Type** to **No Auth**, and select **Send**.
 
-   在先前的練習中，您請求&#x200B;**Firefly- T2I (styleref) V3**&#x200B;的&#x200B;**內文**&#x200B;看起來像這樣：
+    ![Azure Storage](./images/az36.png)
 
-   `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+1. Next, this empty response appears in Postman, which means that your file upload is fine.
 
-   ![Azure儲存體](./images/az24.png)
+    ![Azure Storage](./images/az37.png)
 
-1. 將URL變更為：
+1. Back in Azure Storage Explorer refresh the content of your folder, and the newly uploaded file appears.
 
-   `"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+    ![Azure Storage](./images/az38.png)
 
-1. 選取&#x200B;**傳送**&#x200B;以測試您所做的變更。
+## Programmatic file usage
 
-   ![Azure儲存體](./images/az106.png)
+To programmatically read files from Azure Storage Accounts in the long term, you need to create a new **Shared Access Signature (SAS)** token, with permissions that allow you to read a file. Technically you could use the SAS-token created in the previous exercise, but it's best practice to have a separate token with only **Read** permissions and separate token with only **Write** permissions.
 
-   如果變數已正確設定，則會傳回影像URL。
+### Long-term Read SAS token
 
-   ![Azure儲存體](./images/az107.png)
+1. Go back to Azure Storage Explorer, right-click your container and then select **Get Shared Access Signature**.
 
-1. 開啟影像URL以驗證您的影像。
+    ![Azure Storage](./images/az27.png)
 
-   ![Azure儲存體](./images/az108.jpg)
+1. Under **Permissions**, select the following required permissions:
 
-## 後續步驟
+    - **Read**
+    - **List**
 
-移至[Adobe Firefly與Adobe Photoshop API](./ex3.md){target="_blank"}
+1. Set **Expiry Time** to 1 year from now.
 
-返回[Adobe Firefly服務總覽](./firefly-services.md){target="_blank"}
+1. Select **Create**.
 
-返回[所有模組](./../../../overview.md){target="_blank"}
+    ![Azure Storage](./images/az100.png)
+
+1. Copy the URL and write it down in a file on your computer to get your long-term SAS-token with Read permissions. 
+
+    ![Azure Storage](./images/az101.png)
+
+    Your URL should look like this:
+
+    `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+    You can derive a couple of values out of the above URL:
+
+    - `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+    - `AZURE_STORAGE_CONTAINER`: `vangeluw`
+    - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+### Long-term Write SAS token
+
+1. Go back to Azure Storage Explorer, right-click your container and select **Get Shared Access Signature**.
+
+    ![Azure Storage](./images/az27.png)
+
+1. Under **Permissions**, select the following required permissions:
+
+    - **Add**
+    - **Create**
+    - **Write**
+
+1. Set the **Expiry Time** to 1 year from now.
+
+1. Select **Create**.
+
+    ![Azure Storage](./images/az102.png)
+
+1. Copy the URL and write it down in a file on your computer to get your long-term SAS-token with Read permissions.
+
+    ![Azure Storage](./images/az103.png)
+
+   Your URL should look like this:
+
+    `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+You can derive a couple of values out of the above URL:
+
+    - `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+    - `AZURE_STORAGE_CONTAINER`: `vangeluw`
+    - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+    - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+### Variables in Postman
+
+As you can see in the above section, there are some common variables in both the Read and the Write token.
+
+Next you need to create variables in Postman that store the various elements of the above SAS-tokens. There are some values that are the same in both URLs:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+For future API interactions, the main thing that changes is the asset name, while the above variables remain the same. In that case, it makes sense to create variables in Postman so that you don't need to specify them manually every time..
+
+1. In Postman, select **Environments**, open **All variables** and select **Environment**.
+
+    ![Azure Storage](./images/az104.png)
+
+1. Create these 4 variables in the table that is shown and for the columns **Initial value** and **Current value**, enter your specific personal values.
+
+    - `AZURE_STORAGE_URL`: your url
+    - `AZURE_STORAGE_CONTAINER`: your container name
+    - `AZURE_STORAGE_SAS_READ`: your SAS Read token
+    - `AZURE_STORAGE_SAS_WRITE`: your SAS Write token
+
+1. Select **Save**.
+
+    ![Azure Storage](./images/az105.png)
+
+    In one of the previous exercises, the **Body** of your the request **Firefly - T2I (styleref) V3** looked like this:
+
+    `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+
+    ![Azure Storage](./images/az24.png)
+
+1. Change the URL to:
+
+    `"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+
+1. Select **Send** to test the changes you made.
+
+    ![Azure Storage](./images/az106.png)
+
+    If the variables were configured correctly, an image URL is returned.
+
+    ![Azure Storage](./images/az107.png)
+
+1. Open the image URL to verify your image.
+
+    ![Azure Storage](./images/az108.jpg)
+
+## Next Steps
+
+Go to [Adobe Firefly & Adobe Photoshop APIs](./ex3.md){target="_blank"}
+
+Go back to [Overview of Adobe Firefly Services](./firefly-services.md){target="_blank"}
+
+Go back to [All Modules](./../../../overview.md){target="_blank"}
