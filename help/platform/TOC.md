@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
+source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 17%
+source-wordcount: '873'
+ht-degree: 18%
 
 ---
 
@@ -118,22 +118,6 @@ ht-degree: 17%
    + [Mobile SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + 資料生命週期{#data-lifecycle}
    + [讓資料集過期](/help/platform/data-lifecycle/expire-datasets.md)
-+ 資料科學Workspace {#data-science-workspace}
-   + [概觀](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
-   + [架構](data-science-workspace/architecture-overview.md)
-   + [建立課程結構和資料集](data-science-workspace/create-the-course-schema-and-dataset.md)
-   + [將資料載入JupyterLab Notebook](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-   + [在JupyterLab Notebook中查詢和探索資料](data-science-workspace/dsw-query-service.md)
-   + [探索資料分析](data-science-workspace/eda.md)
-   + [配方、模型和服務概觀](data-science-workspace/recipes-models-services-overview.md)
-   + [使用配方產生器範本建立模型](data-science-workspace/recipe-builder-template.md)
-   + [分析模型效能](data-science-workspace/analyze-model-performance.md)
-   + [建立並發佈經過訓練的模型(UI)](data-science-workspace/create-model-ui.md)
-   + [排程服務的自動化訓練和評分](data-science-workspace/schedule-training-scoring.md)
-   + [透過機器學習見解豐富即時客戶設定檔](data-science-workspace/dsw-profile-segmentation.md)
-   + [將來源檔案封裝到配方](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [匯入封裝的配方(UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-   + [匯入封裝的配方(API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + 目的地 {#destinations}
    + [目的地概觀](/help/platform/destinations/understanding-destinations.md)
    + [正在連線到目的地](/help/platform/destinations/connecting-to-destinations.md)
@@ -216,7 +200,7 @@ ht-degree: 17%
    + [為您的客戶資料重新充電](/help/platform/queries/recharge-your-customer-data.md)
    + [將使用者端連線至查詢服務](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
    + [驗證Datalake中的資料](/help/platform/queries/validate-data-in-the-datalake.md)
-+ 綱要 {#schemas}
++ 結構描述 {#schemas}
    + [概觀](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [建置區塊](/help/platform/schemas/schema-building-blocks.md)
    + [規劃您的資料模型](/help/platform/schemas/plan-your-data-model.md)
