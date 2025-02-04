@@ -3,7 +3,8 @@ title: 使用Workfront校訂
 description: 使用Workfront校訂
 kt: 5342
 doc-type: tutorial
-source-git-commit: 246bb91496104818f357848f41b79523b7771638
+exl-id: 1b5ca13b-2a32-44a1-a3ae-342bccc6baeb
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
@@ -202,7 +203,7 @@ ht-degree: 0%
 
 ## 2.2.2.5在AEM Assets中檢視檔案
 
-移至AEM Assets中名為`--aepUserLdap - Workfront Assets`的資料夾。
+移至AEM Assets中名為`--aepUserLdap-- - Workfront Assets`的資料夾。
 
 ![WF](./images/wfppaem1.png)
 

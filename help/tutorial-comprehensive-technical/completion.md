@@ -3,7 +3,7 @@ title: 完成
 description: 如何測量完成度？
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 模組&#x200B;**快速入門**&#x200B;的預期完成證明是您建立之網頁的示範系統專案識別碼。
 
-Web格式的示範系統專案識別碼看起來像這樣： `--demoProfileLdap-- - QIMU`。
+Web格式的示範系統專案識別碼看起來像這樣： `--aepUserLdap-- - QIMU`。
 
 ![3](./assets/images/module0dtl.png)
 
@@ -52,7 +52,7 @@ Federated Data Model的ID看起來像這樣： **DMO5110**，可以從URL取得�
 
 ## 2.1即時客戶個人檔案
 
-模組&#x200B;**即時客戶設定檔**&#x200B;的預期完成證明是您透過UI `--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro`建立的對象之&#x200B;**對象ID**。
+模組&#x200B;**即時客戶設定檔**&#x200B;的預期完成證明是您透過UI `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro`建立的對象之&#x200B;**對象ID**。
 
 對象ID如下所示： **81a9acbe-12e6-424b-b658-abba3a435c83**。
 
@@ -60,7 +60,7 @@ Federated Data Model的ID看起來像這樣： **DMO5110**，可以從URL取得�
 
 ## 2.2智慧型服務
 
-模組&#x200B;**Intelligent Services**&#x200B;的預期完成證明是您透過UI `--demoProfileLdap-- - Customer AI High Propensity`所建立對象的&#x200B;**對象ID**。
+模組&#x200B;**Intelligent Services**&#x200B;的預期完成證明是您透過UI `--aepUserLdap-- - Customer AI High Propensity`所建立對象的&#x200B;**對象ID**。
 
 對象ID如下所示： **cb6db21d-8fa3-484a-93ac-25aa1ab48412**。
 
@@ -92,7 +92,7 @@ Federated Data Model的ID看起來像這樣： **DMO5110**，可以從URL取得�
 
 ## 2.6將Apache Kafka的資料串流至Real-Time CDP
 
-模組&#x200B;**從Apache Kafka將資料串流到Real-Time CDP**&#x200B;的預期完成證明是來源聯結器`--demoProfileLdap-- - Kafka`的識別碼。
+模組&#x200B;**從Apache Kafka將資料串流到Real-Time CDP**&#x200B;的預期完成證明是來源聯結器`--aepUserLdap-- - Kafka`的識別碼。
 
 ID看起來像這樣&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在這裡找到它：
 
@@ -132,7 +132,7 @@ ID看起來像這樣&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以
 
 ## 4.1Customer Journey Analytics：使用Analysis Workspace建置控制面板
 
-模組&#x200B;**Customer Journey Analytics的預期完成證明：使用Analysis Workspace**&#x200B;建置儀表板是專案`--demoProfileLdap-- - Omnichannel Analysis`的識別碼。
+模組&#x200B;**Customer Journey Analytics的預期完成證明：使用Analysis Workspace**&#x200B;建置儀表板是專案`--aepUserLdap-- - Omnichannel Analysis`的識別碼。
 
 格式看起來像這樣： **677bcb247064db3c7de2a0e4**，當您開啟專案時，可以在URL中找到它。
 
@@ -148,7 +148,7 @@ ID看起來像這樣&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以
 
 ## 5.1查詢服務
 
-模組&#x200B;**查詢服務**&#x200B;的預期完成證明是您`--demoProfileLdap--_callcenter_interaction_analysis`的資料集ID — 完成模組後所取得的資料集。
+模組&#x200B;**查詢服務**&#x200B;的預期完成證明是您`--aepUserLdap--_callcenter_interaction_analysis`的資料集ID — 完成模組後所取得的資料集。
 
 識別碼看起來像這樣： **675033c903fb3b2aefed8a0a**。
 

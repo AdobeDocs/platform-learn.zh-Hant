@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 0%
@@ -93,7 +93,7 @@ ht-degree: 0%
 
    ![WF Fusion](./images/wffusion215.png)
 
-## 使用webhook啟動您的情境
+## 使用webhook啟用您的情境
 
 到目前為止，您已手動執行您的案例以進行測試。 現在來使用webhook更新您的情境，以便從外部環境啟動它。
 
