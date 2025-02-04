@@ -4,7 +4,7 @@ description: Real-time CDP — 建立對象並採取行動 — 將對象傳送�
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 驗證您的資料流
 
-Real-Time CDP中的Adobe Target目的地已連線至資料流，該資料流用於將資料擷取至Adobe邊緣網路。 如果您想要設定Adobe Target目的地，必須先確認資料流是否已啟用Adobe Target。 您的資料串流已在[練習0.2建立您的資料串流](./../../../modules/gettingstarted/gettingstarted/ex2.md)中設定，名稱為`--aepUserLdap-- - Demo System Datastream`。
+Real-Time CDP中的Adobe Target目的地已連線至資料流，該資料流用於將資料擷取至Adobe Edge網路。 如果您想要設定Adobe Target目的地，必須先確認資料流是否已啟用Adobe Target。 您的資料串流已在[練習0.2建立您的資料串流](./../../../modules/gettingstarted/gettingstarted/ex2.md)中設定，名稱為`--aepUserLdap-- - Demo System Datastream`。
 
 在左側功能表中，向下捲動並按一下&#x200B;**資料串流**。 在資料串流中，搜尋名為`--aepUserLdap-- - Demo System Datastream`的資料串流。 按一下您的資料流以開啟。
 
@@ -71,7 +71,7 @@ Adobe Target可作為Real-Time CDP的目的地。 若要設定您的Adobe Target
 
 ![在](./images/atdest5.png)
 
-您現在可以選擇選取資料治理政策。 按一下&#x200B;**下一步**。
+您現在可以選擇選取資料治理原則。 按一下&#x200B;**下一步**。
 
 ![在](./images/atdest2.png)
 
@@ -159,11 +159,16 @@ document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main
 
 按一下&#x200B;**新增**&#x200B;按鈕之前，請務必移至您看到`... > h1").innerHTML="Hi there ";`的行並將游標放在`there`字後面的方括弧內，如下所示：
 
-`... > h1").innerHTML="Hi there ";`
+```
+... > h1").innerHTML="Hi there ";
+```
 
 接著，按一下&#x200B;**新增**&#x200B;按鈕，接著應新增權杖，如此將更新程式碼：
 
-`... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
+```
+... > h1").innerHTML="Hi there ${aep.person.name.firstName}";
+```
+
 
 按一下&#x200B;**下一步**。
 

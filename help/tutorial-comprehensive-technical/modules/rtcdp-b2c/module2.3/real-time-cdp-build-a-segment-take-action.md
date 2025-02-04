@@ -6,23 +6,22 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
 
-# 2.3 Real-time CDP — 建立區段並採取行動
+# 2.3 Real-time CDP — 建立受眾並採取行動
 
-在此單元中，您將設定串流區段並啟用對多個目的地的區段。
+在本單元中，您將設定串流區段並啟用多個目的地的對象。
 
 ## 學習目標
 
-- 瞭解如何建立區段並啟用它以進行串流。
+- 瞭解如何建立受眾並啟用它以進行串流。
 - 瞭解如何使用Adobe Experience Platform UI設定Advertising目的地。
-- 瞭解如何將區段連線至目的地並加以啟用。
-- 瞭解如何在Adobe Audience Manager中使用Adobe Experience Platform區段，以及如何在Adobe Experience Platform中使用Adobe Audience Manager區段，這要歸功於雙向區段共用。
+- 瞭解如何將受眾連結到目的地並加以啟用。
 
 ## 先決條件
 

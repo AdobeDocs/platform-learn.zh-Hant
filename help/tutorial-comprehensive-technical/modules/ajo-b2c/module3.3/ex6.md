@@ -4,9 +4,9 @@ description: 使用API測試您的決定
 kt: 5342
 doc-type: tutorial
 exl-id: 75515a3e-5df8-42ed-95dc-daae60ee9c72
-source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 0%
 # 3.3.6使用API測試您的決定
 
 ## 3.3.6.1使用Postman處理Offer Decisioning API
+
+>[!IMPORTANT]
+>
+>如果您是Adobe員工，請依照這裡的指示使用[PostBuster](./../../../postbuster.md)。
 
 將[此Offer decisioning的Postman集合](./../../../assets/postman/postman_offer-decisioning.zip)下載到您的案頭並解壓縮。 之後，您將會擁有此專案：
 

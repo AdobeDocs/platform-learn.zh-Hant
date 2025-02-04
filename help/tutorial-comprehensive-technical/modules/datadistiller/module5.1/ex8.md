@@ -4,9 +4,9 @@ description: 查詢服務 — 查詢服務API
 kt: 5342
 doc-type: tutorial
 exl-id: d356f7e2-523b-41a2-9cc6-1ea2a028c3a7
-source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -51,6 +51,10 @@ limit 10;
 ```
 
 ## 查詢
+
+>[!IMPORTANT]
+>
+>如果您是Adobe員工，請依照這裡的指示使用[PostBuster](./../../../postbuster.md)。
 
 在電腦上開啟Postman。 在模組2.1中，您已建立Postman環境並匯入Postman集合。 請依照[練習2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md)中的指示操作，以防您尚未執行該操作。
 
