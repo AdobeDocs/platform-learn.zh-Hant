@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
 exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
-source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
+source-git-commit: 2150ead50fee06b434d996183a959ad5f01dd2a8
 workflow-type: tm+mt
-source-wordcount: '1260'
+source-wordcount: '1259'
 ht-degree: 0%
 
 ---
@@ -54,11 +54,9 @@ ht-degree: 0%
 
 1. 從「擴充功能」下拉式清單中選取&#x200B;**Adobe Experience Platform Web SDK**。
 1. 從「動作型別」下拉式清單中選取&#x200B;**更新變數**。
-1. 在右側面板中，選取資料物件內的&#x200B;**Analytics**&#x200B;物件
-1. 另請確認右側面板頂端所列的資料元素確實是新的變數型別資料元素。
-
-   ![更新變數動作](assets/update-variable-action-analytics.jpg)
-
+1. 請確定列在右面板頂端的&#x200B;**資料元素**&#x200B;確實是您新的變數型別資料元素。
+1. 在右側面板中，選取資料物件內的&#x200B;**Analytics**物件
+   ![更新變數動作](assets/define-update-variable-action.jpg)
 1. 現在將選項按鈕變更為&#x200B;**提供JSON或資料元素**，並將您在上一步從「設定變數」複製的程式碼貼到這個程式碼視窗中。 請記住，我們在本教學課程中顯示的只是範例。 您正在複製和貼上自己的變數。
 
    ![貼上新的Web SDK程式碼](assets/new-websdk-code-paste.jpg)
