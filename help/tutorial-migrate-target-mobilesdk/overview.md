@@ -3,10 +3,10 @@ title: 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充
 description: 瞭解如何將您的行動應用程式實作從Adobe Target移轉至Adobe Journey Optimizer - Decisioning擴充功能
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 6e442413c178e76183f88454d97d3896f8efa8bc
+source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '376'
+ht-degree: 0%
 
 ---
 
@@ -18,29 +18,14 @@ Adobe Experience Platform Mobile SDK可在您的行動應用程式中強化端�
 
 ## 主要優點
 
-Decisioning擴充功能的一些優點包括：
+相較於Target擴充功能，Adobe Journey Optimizer Decisioning擴充功能的一些優點包括：
 
 * 更快共用[Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hant)的對象
 * 整合Target與Journey Optimizer以支援[Offer decisioning傳遞](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
 * 與Adobe Analytics更緊密整合，不仰賴拼接來自個別網路呼叫的資訊
 * 為開發人員提供額外的實作彈性
 
-可以說移轉對Target客戶最大的好處是與Real-time Customer Data Platform整合。 Real-Time CDP根據擷取到Experience Platform的所有資料及其即時客戶設定檔功能，提供龐大的受眾建立功能。 內建的資料控管架構，可自動負責使用這些資料。 Customer AI可讓您輕鬆使用機器學習模型來建構傾向性和流失模型，而模型的輸出可分享回Adobe Target。 最後，選購的Healthcare及Privacy &amp; Security Shield附加元件的客戶可使用同意執行功能，輕鬆強制執行個別客戶的同意偏好設定。 若要在行動裝置頻道中使用這些Real-Time CDP功能，必須使用Platform Mobile SDK和Decisioning擴充功能。
-
-## 學習目標
-
-在本教學課程結束時，您將能:
-
-* 專案符號1
-* 專案符號2
-
-
-## 先決條件
-
-若要完成本教學課程，您應該首先：
-
-* 專案符號1
-* 專案符號2
+可以說移轉對Target客戶最大的好處是與Real-time Customer Data Platform整合。 Real-Time CDP根據擷取到Experience Platform的所有資料及其即時客戶設定檔功能，提供龐大的受眾建立功能。 內建的資料控管架構可讓您以負責任的方式自動使用這些資料。 Customer AI可讓您輕鬆使用機器學習模型來建構傾向性和流失模型，而模型的輸出可分享回Adobe Target。 最後，選購的Healthcare及Privacy &amp; Security Shield附加元件的客戶可使用同意執行功能，輕鬆強制執行個別客戶的同意偏好設定。 若要在行動裝置頻道中使用這些Real-Time CDP功能，必須使用Platform Mobile SDK和Decisioning擴充功能。
 
 
 >[!NOTE]

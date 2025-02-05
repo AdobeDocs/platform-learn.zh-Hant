@@ -1,54 +1,51 @@
 ---
-title: 規劃 — 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充功能
-description: 瞭解如何針對從at.js 2.x到Adobe Experience Platform Web SDK的Adobe Target實作進行規劃。
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+title: 規劃移轉 — 從Adobe Target移轉到Adobe Journey Optimizer - Decisioning Mobile擴充功能
+description: 瞭解at.js與Platform Web SDK之間的主要差異，以及如何規劃您的移轉作業。
+exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
+source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
 
-# 規劃Target移轉至Decisioning擴充功能
+# 規劃移轉
 
-在行動應用程式中將Target從Target擴充功能升級為Decisioning擴充功能之前，您應該先評估目前的實施情形。
+從Target擴充功能移轉至Decisioning擴充功能的工作量等級，取決於您目前實作和所用產品功能的複雜性。
 
-## 評估目前的Target擴充功能實作
+無論您的實作有多麼簡單或複雜，移轉前都必須充分瞭解您目前的狀態。 本指南可協助您劃分目前實作的元件，並制訂管理得宜的計畫來移轉每個專案。
 
-成功移轉的第一步，就是要清楚瞭解您目前的Target擴充功能實作。 有些您可能會使用的功能、函式及自訂程式碼需要更新。 評估時請考量下列事項：
+移轉程式包含下列重要步驟：
 
-### 支援哪些功能？
+1. 評估您目前的實施，並決定移轉方法
+1. 設定初始元件以連線至Adobe Experience PlatformEdge Network
+1. 更新基本實作，以取代Target擴充功能和Decisioning擴充功能
+1. 針對您的特定使用案例增強「最佳化SDK」實作。 這可能涉及傳遞其他引數、使用回應Token等。
+1. 更新Target介面中的物件，例如設定檔指令碼、活動和對象定義
+1. 在生產環境中切換之前，請驗證最終實施
 
-<!--Platform Web SDK is under continuous active development and features and enhancements are added regularly. As you evaluate your current at.js implementation, refer to the [supported use cases](https://github.com/orgs/adobe/projects/18/views/1) page for the latest information.-->
+## Target擴充功能與決策擴充功能之間的主要差異
 
-### 您現在使用哪些功能？
+在開始移轉程式之前，請務必瞭解Target擴充功能與決定擴充功能之間的差異。
 
-<!--Platform Web SDK is a new library that consolidates all Adobe solutions for the websites into a single SDK. This enables tighter integration and enables new capabilities unique to Adobe Experience Platform. However, this also means at.js functions are not backwards compatible with Platform Web SDK. As you evaluate your current implementation, make note of the following:
+### 營運差異
 
-- at.js functions such as `getOffer()` and `applyOffer()`
-- Modifications to Target's global settings
-- Integration with Adobe Analytics
-- Use of a flicker mitigation script
-- Use of response tokens
-- Use of mbox, profile, and entity parameters
-- Custom code unique to your implementation-->
+| | Target at.js 2.x | 平台網頁SDK |
+|---|---|---|
+| 程式 | 變更Target實作可能會遵循的流程與其他應用程式（例如Analytics）具有不同的步調或QA需求。 | 對決策擴充功能實作的變更應考慮所有下游應用程式，並應相應地調整QA和發佈程式。 |
+| 共同作業 | Target專屬的資料可直接在Target呼叫中傳遞。 如果Target報表來源是Adobe Analytics，則當Target擴充功能中呼叫適當的追蹤方法來用於Target內容顯示和互動時，特定於Target的資料也可以傳遞到Adobe Analytics。 | 如果Target報表來源為Adobe Analytics、已在資料串流中啟用Adobe Analytics，且顯示Target內容並與之互動時，系統可將Decisioning擴充功能呼叫中傳遞的資料轉送至Target和Analytics。 |
 
-### 您將採取哪種移轉方法？
+### 技術差異
 
-<!--Once you have revisited your at.js implementation, you need to determine a migration approach. There are two options:
-
-- Migrate all Adobe applications at once across the entire site
-- Migrate on a page-by-page basis
-
-Because Platform Web SDK combines and enables multiple Adobe applications, you must coordinate the Target migration of other Adobe applications like Analytics and Audience Manager. All Adobe libraries on a given page should be migrated at the same time. A mixed implementation of Platform Web SDK for Target and AppMeasurement for Analytics on a particular page is not supported. However, a mixed implementation across different pages is supported, for example Platform Web SDK on page A, and at.js with AppMeasurement on page B.
-
-As you migrate, you should plan on following your company's process for testing and releasing new code and use things like development, qa, and staging environments before you release to production.-->
-
-<!--
->[!CAUTION]
->
->Redirect offers are not supported in page-by-page migrations if redirecting from a page with one library to a page with a different library
--->
-
+| | 目標延伸功能 | Decisioning擴充功能 |
+|---|---|---|
+| 相依性 | 僅取決於行動核心SDK | 取決於行動核心和Edge NetworkSDK |
+| 程式庫功能 | 僅支援從Adobe Target擷取內容 | 支援從Adobe Target和Offer decisioning擷取內容 |
+| 請求 | Target呼叫基本上獨立於其他網路呼叫 | Target網路呼叫會針對其他Edge型解決方案(例如Edge SDK中的傳訊)與網路呼叫一起排入佇列，並依序執行。 |
+| Edge Network | 使用Target伺服器值或具有使用者端代碼(clientcode.tt.omtrdc.net)的Adobe Experience CloudEdge Network，兩者都在資料收集UI的[Target組態](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui)中指定 | 在資料收集UI中使用Adobe Experience Platform [Edge Network組態](https://developer.adobe.com/client-sdks/edge/edge-network/#configure-the-edge-network-extension-in-data-collection-ui)中指定的Edge網路網域。 |
+| 基本術語 | mbox， TargetParameters | 目標引數的DecisionScope， Map (Android)/dictionary (iOS) |
+| 預設內容 | 允許在TargetRequest中傳遞使用者端預設內容，如果網路呼叫失敗或導致錯誤，則會傳回此內容。 | 不允許傳遞使用者端預設內容。 如果網路呼叫失敗或導致錯誤，則不會傳回任何內容。 |
+| Target引數 | 允許傳遞每個要求的全域TargetParameters和每個mbox的不同TargetParameters | 僅允許傳遞每個要求的全域TargetParameters |
 
 接下來，檢閱Target擴充功能與Decisioning擴充功能](detailed-comparison.md)的詳細[比較，以更清楚瞭解技術差異，並找出需要額外關注的領域。
 
