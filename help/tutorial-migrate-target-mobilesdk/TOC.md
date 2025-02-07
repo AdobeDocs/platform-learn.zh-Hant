@@ -10,9 +10,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '80'
 ht-degree: 3%
 
 ---
@@ -22,9 +22,7 @@ ht-degree: 3%
 
 + [教學課程簡介](overview.md)
 
-+ [規劃移轉](plan-migration.md)
-
-+ [比較Target擴充功能與Decisioning擴充功能](detailed-comparison.md)
++ [比較擴充功能](detailed-comparison.md)
 
 + [執行初始設定](initial-setup.md)
 
