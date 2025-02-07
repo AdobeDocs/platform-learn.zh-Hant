@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
 
-# Firefly服務快速入門
+# 1.1.1Firefly服務快速入門
 
 瞭解如何使用Postman和Adobe I/O來查詢Adobe Firefly服務API。
 
-## 設定您的Adobe I/O專案
+## 1.1.1.2設定您的Adobe I/O專案
 
 在本練習中，Adobe I/O是用來查詢Firefly服務API。 請依照下列步驟設定Adobe I/O。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ![Adobe I/O新整合](./images/api11.png)
 
-## 下載Postman環境
+## 1.1.1.3下載Postman環境
 
 1. 選取「下載Postman **」，然後選擇「** OAuth伺服器對伺服器&#x200B;**」以下載Postman環境。**
 
@@ -75,7 +75,11 @@ ht-degree: 0%
 
 ![Adobe I/O新整合](./images/api16.png)
 
-## Adobe I/O的Postman驗證
+## 1.1.1.4 Postman驗證至Adobe I/O
+
+>[!IMPORTANT]
+>
+>如果您是Adobe員工，請依照這裡的指示使用[PostBuster](./../../../postbuster.md)。
 
 1. 在[Postman下載](https://www.postman.com/downloads/){target="_blank"}下載並安裝作業系統的相關Postman版本。
 
@@ -123,7 +127,7 @@ Postman中有2個概念：「環境」和「集合」。
 
 否，您已在Postman中擁有開始透過API與Firefly服務互動所需的一切。
 
-## 要求存取權杖
+## 1.1.1.5要求存取權杖
 
 接下來，為確保您經過正確驗證，您需要請求存取權杖。
 
@@ -158,7 +162,7 @@ Postman中有2個概念：「環境」和「集合」。
 
 Adobe I/O **bearer-token**&#x200B;具有特定值（極長的access_token）和到期視窗，現在有效期為24小時。 這表示24小時後，如果您要使用Postman驗證Adobe I/O，必須再次執行此請求以產生新Token。
 
-## Firefly服務API，文字2影像
+## 1.1.1.6Firefly服務API，文字2影像
 
 現在您已準備好傳送您的第一個要求至Firefly服務API。
 

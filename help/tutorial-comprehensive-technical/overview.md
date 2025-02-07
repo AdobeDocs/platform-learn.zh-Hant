@@ -1,11 +1,11 @@
 ---
-title: 概觀
+title: 概覽 — AEP和應用程式的完整技術教學課程
 description: 讓資料工程師、資料分析師、資料架構師、資料科學家、協調工程師和行銷人員開始瞭解Adobe Experience Platform及其所有應用程式服務的完整商業價值。
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1258'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 ## 完成與認證
 
-本教學課程是Adobe認證課程的一部分。 您可以連同本教學課程一起註冊此課程，方法是前往[https://certification.adobe.com](https://certification.adobe.com)。
+本教學課程是Adobe認證課程的一部分。 您可以連同本教學課程一起註冊此課程，方法是前往[https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258)。
 
 使用下列教學課程完成的每個模組，都需要提交完成證明，如[此處](./completion.md)所示。
 

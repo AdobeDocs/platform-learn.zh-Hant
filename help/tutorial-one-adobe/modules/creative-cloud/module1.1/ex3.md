@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
 
-# 使用Photoshop API
+# 1.1.3使用Photoshop API
 
 瞭解如何使用Photoshop API和Firefly服務。
 
-## 更新您的Adobe I/O整合
+## 1.1.3.1更新您的Adobe I/O整合
 
 1. 移至[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}。
 
@@ -51,7 +51,11 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/ps6.png)
 
-## 以程式設計方式與PSD檔案互動
+## 1.1.3.2以程式設計方式與PSD檔案互動
+
+>[!IMPORTANT]
+>
+>如果您是Adobe員工，請依照這裡的指示使用[PostBuster](./../../../postbuster.md)。
 
 1. 將[citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}下載到您的案頭。
 

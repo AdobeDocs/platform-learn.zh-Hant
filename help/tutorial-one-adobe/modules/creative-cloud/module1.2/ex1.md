@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
 
-# Workfront Fusion快速入門
+# 1.2.1 Workfront Fusion快速入門
 
 瞭解如何使用Workfront Fusion和Adobe I/O來查詢Adobe Firefly服務API。
 
-## 建立新情境
+## 1.2.1.1建立新情境
 
 1. 移至[https://experience.adobe.com/](https://experience.adobe.com/)。 開啟&#x200B;**Workfront Fusion**。
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
    ![WF Fusion](./images/wffusion8.png)
 
-## 設定Adobe I/O驗證
+## 1.2.1.2設定Adobe I/O驗證
 
 您現在需要設定根據Adobe I/O進行驗證所需的變數。在上一個練習中，您已建立Adobe I/O專案。 該Adobe I/O專案的變數現在需要在Workfront Fusion中定義。
 

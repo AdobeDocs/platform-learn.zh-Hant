@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '158'
 ht-degree: 2%
 
 ---
 
-# Adobe Firefly服務概觀
+# 1.1Adobe Firefly服務概觀
 
 瞭解您可以使用Adobe Firefly服務的各種方式。
 
@@ -23,19 +23,19 @@ ht-degree: 2%
 
 ## 練習
 
-[開始使用Firefly服務](./ex1.md){target="_blank"}
+[1.1.1Firefly服務快速入門](./ex1.md){target="_blank"}
 
 在本練習中，請探索Firefly服務並瞭解其功能。
 
-[使用Microsoft Azure和預先簽署的URL最佳化Firefly程式](./ex2.md){target="_blank"}
+[1.1.2使用Microsoft Azure和預先簽署的URL最佳化Firefly程式](./ex2.md){target="_blank"}
 
 在本練習中，請探索Firefly服務並瞭解其功能。
 
-[Adobe Firefly與Adobe Photoshop API](./ex3.md){target="_blank"}
+[1.1.3使用Photoshop API](./ex3.md){target="_blank"}
 
 在本練習中，瞭解如何將Firefly服務與Adobe Photoshop搭配使用。
 
-[Firefly自訂模型API](./ex4.md){target="_blank"}
+[1.1.4Firefly自訂模型API](./ex4.md){target="_blank"}
 
 在本練習中，您將瞭解如何使用Firefly客戶模型API。
 

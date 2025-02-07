@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
-source-git-commit: e419f07dbef519d9cf2f0100878e4cc880ad5f94
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1749'
 ht-degree: 0%
 
 ---
 
-# 在Workfront Fusion中使用Adobe API
+# 1.2.2在Workfront Fusion中使用Adobe API
 
 瞭解如何在Workfront Fusion中使用Adobe API。
 
-## 透過Workfront Fusion使用Firefly文字對影像API
+## 1.2.2.1透過Workfront Fusion使用Firefly文字到影像API
 
 1. 將滑鼠停留在第二個&#x200B;**設定多個變數**&#x200B;節點，並選取&#x200B;**+**&#x200B;以新增另一個模組。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 ![WF Fusion](./images/wffusion61.png)
 
-## 透過Workfront Fusion使用Photoshop API
+## 1.2.2.2搭配使用Photoshop API與Workfront Fusion
 
 1. 在節點&#x200B;**設定持有人權杖**&#x200B;和&#x200B;**FireflyT2I**&#x200B;之間選取&#x200B;**扳手**。 選取&#x200B;**新增路由器**。
 

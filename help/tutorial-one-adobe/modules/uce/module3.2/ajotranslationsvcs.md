@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer翻譯服務
 kt: 5342
 doc-type: tutorial
 exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: b68e8578f2bd535662522e752d4cbd2947a9677d
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 4%
+source-wordcount: '134'
+ht-degree: 2%
 
 ---
 
@@ -20,12 +20,17 @@ ht-degree: 4%
 ## 先決條件
 
 - 存取Adobe Journey Optimizer
+- 存取Microsoft Azure翻譯工具
 
 ## 練習
 
-[3.2.1 ...](./ex1.md)
+[3.2.1翻譯提供者](./ex1.md)
 
-在本練習中， ...
+在本練習中，您將使用Microsoft Translator設定您的翻譯提供者，並在Adobe Journey Optimizer中進行設定。
+
+[3.2.2翻譯專案](./ex2.md)
+
+在本練習中，您將使用Microsoft Translator設定您的翻譯提供者，並在Adobe Journey Optimizer中進行設定。
 
 [摘要和優點](./summary.md)
 

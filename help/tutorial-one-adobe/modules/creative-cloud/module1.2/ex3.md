@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
-# 使用Workfront Fusion實現流程自動化
+# 1.2.3使用Workfront Fusion實現流程自動化
 
 瞭解如何使用Workfront Fusion處理自動化。
 
-## 反複處理多個值
+## 1.2.3.1反複處理多個值
 
 您的情境應如下所示：
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 
    ![WF Fusion](./images/wffusion215.png)
 
-## 使用webhook啟用您的情境
+## 1.2.3.2使用webhook啟動您的情境
 
 到目前為止，您已手動執行您的案例以進行測試。 現在來使用webhook更新您的情境，以便從外部環境啟動它。
 
