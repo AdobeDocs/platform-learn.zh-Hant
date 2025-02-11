@@ -1,26 +1,29 @@
 ---
 title: 追蹤事件 — 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充功能
 description: 瞭解如何使用Adobe Journey Optimizer - Decisioning Mobile擴充功能追蹤Adobe Target轉換事件
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+exl-id: 7b53aab1-0922-4d9f-8bf0-f5cf98ac04c4
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
 # 使用Adobe Journey Optimizer - Decisioning Mobile擴充功能追蹤Target轉換事件
 
+如需相關內容，請參閱本頁面： https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#tracking
+
 可追蹤Target的轉換事件……轉換事件通常分為下列類別：
 
 * 自動追蹤不需要任何設定的事件
-* 針對最佳實務Platform Web SDK實作而應調整的購買轉換事件
+* 針對最佳作法決策擴充功能實作，應調整的購買轉換事件
 * 需要程式碼更新的非購買轉換事件
 
 ## 目標追蹤比較
 
 下表比較at.js和Platform Web SDK追蹤轉換事件的方式
 
-| 活動目標 | Target at.js 2.x | Platform Web SDK |
+| 活動目標 | Target at.js 2.x | 平台網頁SDK |
 |---|---|---|
 | | | |
 
@@ -31,7 +34,7 @@ ht-degree: 0%
 
 
 
-接下來，瞭解如何[啟用跨網域ID共用](cross-domain.md)，以取得一致的訪客設定檔。
+接下來，瞭解如何[啟用跨網域ID共用](webview.md)，以取得一致的訪客設定檔。
 
 >[!NOTE]
 >

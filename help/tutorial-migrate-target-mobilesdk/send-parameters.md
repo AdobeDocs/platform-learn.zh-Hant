@@ -1,10 +1,11 @@
 ---
 title: 傳送引數 — 從Adobe Target移轉至Adobe Journey Optimizer — 決策行動擴充功能
-description: 瞭解如何使用Experience PlatformWeb SDK將mbox、設定檔和實體引數傳送至Adobe Target。
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+description: 瞭解如何使用Experience Platform Web SDK將mbox、設定檔和實體引數傳送至Adobe Target。
+exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '658'
-ht-degree: 0%
+source-wordcount: '777'
+ht-degree: 1%
 
 ---
 
@@ -12,8 +13,45 @@ ht-degree: 0%
 
 由於網站架構、業務需求及使用的功能，Target實施在各網站間會有所不同。 大部分的Target實作包括傳遞內容資訊、受眾和內容推薦的各種引數。
 
-讓我們使用簡單的產品詳細資訊頁面和訂單確認頁面，示範將引數傳遞至Target時擴充功能之間的差異。
+使用Target擴充功能時，所有的Target引數都是使用`TargetParameters`函式傳遞。
 
+搭配決策擴充功能：
+
+* 可在XDM物件中傳遞用於多個Adobe應用程式的引數
+* 只能用於Target的引數可以在`data.__adobe.target`物件中傳遞
+
+
+>[!IMPORTANT]
+>
+> 使用Decisioning擴充功能時，在要求中傳送的引數會套用至要求中的所有範圍。 如果您需要為不同的範圍設定不同的引數，則必須提出其他要求。
+
+## 自訂引數
+
+自訂mbox引數是傳遞資料至Target的最基本方式，並可在XDM或`data.__adobe.target`物件中傳遞。
+
+## 輪廓參數
+
+設定檔引數會將資料長時間儲存在使用者的Target設定檔中，且必須在`data.__adobe.target`物件中傳遞。
+
+## 實體引數
+
+[實體引數](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html)是用來傳遞Target Recommendations的行為資料和補充目錄資訊。 與設定檔引數類似，所有實體引數都應在`data.__adobe.target`物件下傳遞。
+
+特定專案的實體引數必須以`entity.`為前置詞，才能正確擷取資料。 建議演演算法的保留`cartIds`和`excludedIds`引數不應加上前置詞，而且每個引數的值都必須包含以逗號分隔的實體ID清單。
+
+## 購買引數
+
+成功訂單後，購買引數會在訂單確認頁面上傳遞，並用於Target轉換和最佳化目標。 透過使用決策擴充功能的Platform Mobile SDK實作，這些引數和會自動從作為`commerce`欄位群組的一部分傳遞的XDM資料進行對應。
+
+當`commerce`欄位群組將`purchases.value`設定為`1`時，購買資訊會傳遞至Target。 訂單識別碼與訂單總計會自動從`order`物件對應。 如果`productListItems`陣列存在，則`SKU`值會用於`productPurchasedId`。
+
+如果您未在XDM物件中傳遞`commerce`欄位，您可以使用`data.__adobe.target.orderId`、`data.__adobe.target.orderTotal`和`data.__adobe.target.productPurchasedId`欄位將訂單詳細資料傳遞至目標。
+
+## 客戶ID (mbox3rdPartyId)
+
+Target允許使用單一客戶ID跨裝置和系統同步設定檔。 此客戶ID應在XDM物件的`identityMap`欄位中傳遞，並對應至資料流中的目標協力廠商ID欄位。
+
+## 表格
 
 | at.js引數範例 | Platform Web SDK選項 | 附註 |
 | --- | --- | --- |
@@ -23,45 +61,78 @@ ht-degree: 0%
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | 用於目標類別相關性功能的保留引數，必須作為`data`物件的一部分傳遞。 |
 | `entity.id` | `data.__adobe.target.entity.id` <br>或<br> `xdm.productListItems[0].SKU` | 實體ID可用於Target Recommendations行為計數器。 這些實體ID可以作為`data`物件的一部分傳遞，或者如果您的實作使用該欄位群組，則會自動從`xdm.productListItems`陣列中的第一個專案進行對應。 |
 | `entity.categoryId` | `data.__adobe.target.entity.categoryId` | 實體類別ID可作為`data`物件的一部分傳遞。 |
-| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自訂實體引數可用來更新Recommendations產品目錄。 這些自訂引數必須作為`data`物件的一部分傳遞。 |
+| `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自訂實體引數用於更新Recommendations產品目錄。 這些自訂引數必須作為`data`物件的一部分傳遞。 |
 | `cartIds` | `data.__adobe.target.cartIds` | 用於Target的購物車型建議演演算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用來防止特定實體ID在建議設計中傳回。 |
 | `mbox3rdPartyId` | 在`xdm.identityMap`物件中設定 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html)的[Target設定中指定用於客戶ID的名稱空間。 |
-| `orderId` | `xdm.commerce.order.purchaseID` | 用於識別Target轉換追蹤的唯一訂單。 |
-| `orderTotal` | `xdm.commerce.order.priceTotal` | 用於追蹤Target轉換和最佳化目標的訂單總計。 |
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>或<br> `xdm.productListItems[0-n].SKU` | 用於Target轉換追蹤和建議演演算法。 如需詳細資訊，請參閱下方的[實體引數](#entity-parameters)區段。 |
+| `orderId` | `xdm.commerce.order.purchaseID`<br> （當`commerce.purchases.value`設定為`1`時） | 用於識別Target轉換追蹤的唯一訂單。 |
+| `orderTotal` | `xdm.commerce.order.priceTotal`<br> （當`commerce.purchases.value`設定為`1`時） | 用於追蹤Target轉換和最佳化目標的訂單總計。 |
+| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> （當`commerce.purchases.value`設定為`1`時） <br>或<br> `data.__adobe.target.productPurchasedId` | 用於Target轉換追蹤和建議演演算法。 如需詳細資訊，請參閱下方的[實體引數](#entity-parameters)區段。 |
 | `mboxPageValue` | `data.__adobe.target.mboxPageValue` | 用於[自訂評分](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html)活動目標。 |
 
 {style="table-layout:auto"}
 
-## 自訂引數
 
-自訂mbox引數必須以XDM或資料物件搭配`sendEvent`命令來傳遞。 請務必確保XDM結構描述包含Target實作所需的所有欄位。
+## 傳遞引數的範例
+
+以簡單範例說明將引數傳遞至Target時，擴充功能之間的差異。
+
+### Android
+
+>[!BEGINTABS]
+
+>[!TAB 目標SDK]
+
+```Java
+Map<String, String> mboxParameters = new HashMap<String, String>();
+mboxParameters1.put("status", "platinum");
+ 
+Map<String, String> profileParameters = new HashMap<String, String>();
+profileParameters1.put("gender", "male");
+ 
+List<String> purchasedProductIds = new ArrayList<String>();
+purchasedProductIds.add("ppId1");
+TargetOrder targetOrder = new TargetOrder("id1", 1.0, purchasedProductIds);
+ 
+TargetProduct targetProduct = new TargetProduct("pId1", "cId1");
+ 
+TargetParameters targetParameters = new TargetParameters.Builder()
+                                    .parameters(mboxParameters)
+                                    .profileParameters(profileParameters)
+                                    .product(targetProduct)
+                                    .order(targetOrder)
+                                    .build();
+```
+
+>[!ENDTABS]
+
+### iOS
+
+>[!BEGINTABS]
+
+>[!TAB 目標SDK]
+
+```Swift
+let mboxParameters = [
+                        "status": "platinum"
+                     ]
+ 
+let profileParameters = [
+                            "gender": "male"
+                        ]
+ 
+let order = TargetOrder(id: "id1", total: 1.0, purchasedProductIds: ["ppId1"])
+ 
+let product = TargetProduct(productId: "pId1", categoryId: "cId1")
+ 
+let targetParameters = TargetParameters(parameters: mboxParameters, profileParameters: profileParameters, order: order, product: product))
+```
 
 
-## 輪廓參數
-
-必須傳遞目標設定檔引數……
-
-## 實體引數
-
-實體引數可用來傳遞行為資料和Target Recommendations的補充目錄資訊。 at.js支援的所有[實體引數](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html)也受Platform Web SDK支援。 與設定檔引數類似，所有實體引數都應在Platform Web SDK `sendEvent`命令承載中的`data.__adobe.target`物件下傳遞。
-
-特定專案的實體引數必須以`entity.`為前置詞，才能正確擷取資料。 建議演演算法的保留`cartIds`和`excludedIds`引數不應加上前置詞，而且每個引數的值都必須包含以逗號分隔的實體ID清單。
+>[!ENDTABS]
 
 
 
-## 購買引數
-
-成功訂單後，購買引數會在訂單確認頁面上傳遞，並用於Target轉換和最佳化目標。 透過使用決策擴充功能的Platform Mobile SDK實作，這些引數和會自動從作為`commerce`欄位群組的一部分傳遞的XDM資料進行對應。
-
-
-當`commerce`欄位群組將`purchases.value`設定為`1`時，購買資訊會傳遞至Target。 訂單識別碼與訂單總計會自動從`order`物件對應。 如果`productListItems`陣列存在，則`SKU`值會用於`productPurchasedId`。
-
-
-## 客戶ID (mbox3rdPartyId)
-
-Target允許使用單一客戶ID跨裝置和系統同步設定檔。
 
 
 

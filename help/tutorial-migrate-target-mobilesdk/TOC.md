@@ -10,7 +10,7 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 3%
@@ -22,11 +22,11 @@ ht-degree: 3%
 
 + [教學課程簡介](overview.md)
 
-+ [比較擴充功能](detailed-comparison.md)
++ [比較擴充功能](comparison.md)
 
 + [執行初始設定](initial-setup.md)
 
-+ [取代SDK](replace-library.md)
++ [取代SDK](replace-sdk.md)
 
 + [轉譯活動](render-activities.md)
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 + [追蹤轉換事件](track-events.md)
 
-+ [啟用WebView支援](cross-domain.md)
++ [啟用WebView支援](webview.md)
 
 + [更新對象和個人資料指令碼](update-audiences.md)
 
