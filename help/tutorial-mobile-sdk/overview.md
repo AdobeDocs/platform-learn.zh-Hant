@@ -4,7 +4,7 @@ description: 瞭解如何實作Adobe Experience Cloud行動應用程式。 本�
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 了解如何透過 Adobe Experience Platform Mobile SDK 在行動應用程式中實作 Adobe Experience Cloud 應用程式。
 
-Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud客戶透過Adobe Experience PlatformEdge Network與Adobe應用程式和協力廠商服務互動。 如需更多詳細資訊，請參閱[Adobe Experience Platform Mobile SDK檔案](https://developer.adobe.com/client-sdks/home/)。
+Experience Platform Mobile SDK是使用者端的SDK，可讓Adobe Experience Cloud的客戶透過Adobe Experience Platform Edge Network與Adobe應用程式和協力廠商服務互動。 如需更多詳細資訊，請參閱[Adobe Experience Platform Mobile SDK檔案](https://developer.adobe.com/client-sdks/home/)。
 
 ![架構](assets/architecture.png)
 
@@ -32,13 +32,13 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 * 設定Experience Platform資料集（選用）。
 * 在應用程式中安裝及實作標籤擴充功能。
 * 正確傳遞Experience Cloud引數至[webview](web-views.md)。
-* 使用[Adobe Experience Platform保證](assurance.md)驗證實作。
+* 使用[Adobe Experience Platform Assurance](assurance.md)驗證實作。
 * 新增下列Adobe Experience Cloud應用程式/擴充功能：
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [生命週期資料集合](lifecycle-data.md)
    * [同意](consent.md)
-   * [身分](identity.md)
-   * [設定檔](profile.md)
+   * [身分識別](identity.md)
+   * [輪廓](profile.md)
    * [地點](places.md)
    * [Analytics](analytics.md)
    * [Experience Platform](platform.md)
@@ -50,15 +50,15 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 
 >[!NOTE]
 >
->[Web SDK](../tutorial-web-sdk/overview.md)也提供類似的多解決方案教學課程。
+>[網頁SDK](../tutorial-web-sdk/overview.md)有類似的多解決方案教學課程。
 
-## 先決條件
+## 權限
 
-這些課程假設您擁有AdobeID和完成練習所需的使用者層級許可權。 如果沒有，您應該聯絡您的Adobe管理員以請求存取權。
+這些課程假設您擁有Adobe ID和完成練習所需的使用者層級許可權。 如果沒有，您應該聯絡Adobe管理員以要求存取權。
 
 * 在資料收集中，您必須擁有：
    * **[!UICONTROL 平台]** — 許可權專案&#x200B;**[!UICONTROL 行動裝置]**
-   * **[!UICONTROL 屬性權利]** — 許可權專案： **[!UICONTROL 開發]**、**[!UICONTROL 核准]**、**[!UICONTROL Publish]**、**[!UICONTROL 管理擴充功能]**&#x200B;和&#x200B;**[!UICONTROL 管理環境]**。
+   * **[!UICONTROL 屬性權利]** — 許可權專案： **[!UICONTROL 開發]**、**[!UICONTROL 核准]**、**[!UICONTROL 發佈]**、**[!UICONTROL 管理擴充功能]**&#x200B;和&#x200B;**[!UICONTROL 管理環境]**。
    * **[!UICONTROL 公司權利]** — 用於&#x200B;**[!UICONTROL 管理屬性]**&#x200B;的許可權專案，如果完成選用的推播訊息課程，**[!UICONTROL 管理應用程式設定]**
 
      如需有關標籤許可權的詳細資訊，請參閱產品檔案中的[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hant)的使用者許可權{target="_blank"}。
@@ -92,7 +92,7 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 範例應用程式有兩個版本可供下載。 兩個版本均可從[Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App)下載/複製。 您會找到兩個資料夾：
 
 
-1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：專案，不含程式碼或具有預留位置程式碼的大部分Experience Platform Mobile SDK程式碼，您需要使用這些程式碼來完成本教學課程中的實作練習。
+1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：專案，不含程式碼或具有預留位置程式碼的大多數Experience Platform Mobile SDK程式碼，您需要使用這些程式碼來完成本教學課程中的實作練習。
 1. [完成](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：具有完整實作以供參考的版本。
 
 >[!NOTE]
@@ -109,6 +109,6 @@ Experience Platform Mobile SDK是使用者端SDK，可讓Adobe Experience Cloud�
 
 >[!SUCCESS]
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
 
 下一步： **[建立XDM結構描述](create-schema.md)**

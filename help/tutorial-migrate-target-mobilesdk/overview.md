@@ -3,20 +3,20 @@ title: 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充
 description: 瞭解如何將您的行動應用程式實作從Adobe Target移轉至Adobe Journey Optimizer - Decisioning擴充功能
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
 
 # 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning行動擴充功能
 
-本指南適用於經驗豐富的Adobe Target實作人員，協助瞭解如何將現有AdobeExperience Platform Mobile SDK實作從Adobe Target擴充功能移轉至Adobe Journey Optimizer - Decisioning擴充功能。
+本指南適用於經驗豐富的Adobe Target實作人員，以瞭解如何將現有的Adobe Experience Platform Mobile SDK實作從Adobe Target擴充功能移轉至Adobe Journey Optimizer - Decisioning擴充功能。
 
-Adobe Experience Platform Mobile SDK可在您的行動應用程式中強化端對端參與。 Target擴充功能以Mobile SDK為基礎，可協助您使用Adobe Target打造個人化應用程式體驗。 Decisioning擴充功能是在行動應用程式中實施Adobe Target的較新方法，其使用Adobe Experience PlatformEdge Network功能，協助將Target與Real-Time CDP和Journey Optimizer等平台型應用程式整合。
+Adobe Experience Platform Mobile SDK可在您的行動應用程式中強化端對端參與。 Target擴充功能以Mobile SDK為基礎，可協助您使用Adobe Target打造個人化應用程式體驗。 Decisioning擴充功能是在行動應用程式中實施Adobe Target的較新方法，其使用Adobe Experience Platform Edge Network功能，協助將Target與Real-Time CDP和Journey Optimizer等平台型應用程式整合。
 
-![圖表顯示行動SDK透過具有決策擴充功能的Edge Network連線至Target](assets/datacollection.png)
+![圖表顯示透過具有Decisioning擴充功能的Edge Network連線至Target的行動裝置SDK](assets/datacollection.png)
 
 >[!INFO]
 >
@@ -30,12 +30,12 @@ Adobe Experience Platform Mobile SDK可在您的行動應用程式中強化端�
 
 相較於Target擴充功能，Adobe Journey Optimizer Decisioning擴充功能的一些優點包括：
 
-* 更快共用[Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hant)的對象
-* 整合Target與Journey Optimizer以支援[Offer decisioning傳遞](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
+* 更快共用[Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hant)的對象
+* 將Target與Journey Optimizer整合以支援[Offer Decisioning傳遞](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
 * 與Adobe Analytics更緊密整合，不仰賴拼接來自個別網路呼叫的資訊
 * 為開發人員提供額外的實作彈性
 
-可以說移轉對Target客戶最大的好處是與Real-time Customer Data Platform整合。 Real-Time CDP根據擷取到Experience Platform的所有資料及其即時客戶設定檔功能，提供龐大的受眾建立功能。 內建的資料控管架構可讓您以負責任的方式自動使用這些資料。 Customer AI可讓您輕鬆使用機器學習模型來建構傾向性和流失模型，而模型的輸出可分享回Adobe Target。 最後，選購的Healthcare和Privacy &amp; Security Shield附加元件的客戶可使用同意執行功能來強制實施個別客戶的同意偏好設定。 若要在行動裝置頻道中使用這些Real-Time CDP功能，必須使用Platform Mobile SDK和Decisioning擴充功能。
+可以說移轉對Target客戶最大的好處是與Real-Time Customer Data Platform整合。 Real-Time CDP根據擷取到Experience Platform的所有資料及其即時客戶個人檔案功能，提供龐大的受眾建立功能。 內建的資料控管架構可讓您以負責任的方式自動使用這些資料。 Customer AI可讓您輕鬆使用機器學習模型來建構傾向性和流失模型，而模型的輸出可分享回Adobe Target。 最後，選購的Healthcare和Privacy &amp; Security Shield附加元件的客戶可使用同意執行功能來強制實施個別客戶的同意偏好設定。 若要在行動裝置頻道中使用這些Real-Time CDP功能，必須使用Platform Mobile SDK和Decisioning擴充功能。
 
 ## 移轉步驟
 
@@ -45,8 +45,8 @@ Adobe Experience Platform Mobile SDK可在您的行動應用程式中強化端�
 
 移轉程式包含下列重要步驟：
 
-1. 評估您目前的實施，並決定移轉方法
-1. 設定初始元件以連線至Adobe Experience PlatformEdge Network
+1. 評估您目前的實施
+1. 設定初始元件以連線至Adobe Experience Platform Edge Network
 1. 更新基本實施，以決策擴充功能取代Target擴充功能
 1. 針對您的特定使用案例增強「最佳化SDK」實作。 這可能涉及傳遞其他引數、使用回應Token等。
 1. 更新Target介面中的物件，例如設定檔指令碼、活動和對象定義
