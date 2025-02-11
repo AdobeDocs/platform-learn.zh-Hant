@@ -3,15 +3,15 @@ title: 使用AJO翻譯服務建立您的行銷活動
 description: 使用AJO翻譯服務建立您的行銷活動
 kt: 5342
 doc-type: tutorial
-exl-id: a9d674f4-6f49-4d4d-a24d-84751f3a438e
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: 441b3b6a-74e5-4294-9a30-9c44ea4bbf84
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1596'
 ht-degree: 0%
 
 ---
 
-# 3.2.2建立您的行銷活動
+# 3.5.2建立您的行銷活動
 
 移至[https://experience.adobe.com/](https://experience.adobe.com/)。 按一下&#x200B;**Journey Optimizer**。
 
@@ -21,7 +21,11 @@ ht-degree: 0%
 
 ![ACOP](./images/ajolp2.png)
 
-## 3.2.2.1建立您的標頭片段
+>[!NOTE]
+>
+>如果您已在練習[練習3.1.2.1](./../module3.1/ex2.md)和[練習3.1.2.2](./../module3.1/ex2.md)中建立頁首和頁尾片段，請跳到練習3.5.2.3 「建立Fiber促銷活動」。 不要再建立您的頁首與頁尾片段。
+
+## 3.5.2.1建立您的標頭片段
 
 在左側功能表中，按一下&#x200B;**片段**。 片段是Journey Optimizer中的可重複使用元件，可避免重複並方便未來應影響所有訊息的變更，例如電子郵件訊息中頁首或頁尾的變更。
 
@@ -76,7 +80,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.2.2.2建立您的頁尾片段
+## 3.5.2.2建立您的頁尾片段
 
 按一下&#x200B;**建立片段**。
 
@@ -230,7 +234,7 @@ Unsubscribe
 
 ![Journey Optimizer](./images/fragm38.png)
 
-## 3.2.2.3建立Fiber促銷活動
+## 3.5.2.3建立Fiber促銷活動
 
 您現在將建立行銷活動。 上一個練習的事件型歷程仰賴傳入體驗事件或對象進入或退出，以觸發1個特定客戶的歷程，而行銷活動則以唯一內容（例如電子報、一次性促銷活動或一般資訊）鎖定整個對象，或定期傳送類似內容（例如例項生日行銷活動和提醒）。
 
@@ -262,7 +266,7 @@ Unsubscribe
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-針對&#x200B;**對象**，選取您在上一步建立的對象`--aepUserLdap-- - CitiSignal Eligible for Fiber`。 按一下&#x200B;**儲存**。
+針對&#x200B;**對象**，選取您在[1.3.3中建立的對象，建立名為`--aepUserLdap-- - CitiSignal Eligible for Fiber`的同盟組合](./../../datacollection/module1.3/ex3.md)。 按一下&#x200B;**儲存**。
 
 ![Journey Optimizer](./images/campaign2a.png)
 
@@ -358,8 +362,8 @@ Stay connected.
 
 ## 後續步驟
 
-移至[3.2.3新增語言至您的電子郵件](./ex3.md)
+移至[3.5.3新增語言至您的電子郵件](./ex3.md)
 
-返回[模組3.2](./ajotranslationsvcs.md){target="_blank"}
+返回[模組3.5](./ajotranslationsvcs.md){target="_blank"}
 
 返回[所有模組](./../../../overview.md){target="_blank"}

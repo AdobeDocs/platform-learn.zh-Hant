@@ -4,9 +4,9 @@ description: Foundation — 即時客戶個人檔案 — 視覺化您自己的�
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2343'
 ht-degree: 1%
 
 ---
@@ -109,6 +109,10 @@ ht-degree: 1%
 >此外還有另一個步驟，可確保此Adobe I/O專案可存取Adobe Experience Platform的許可權設定。 專案的API認證需要新增到Adobe Experience Platform的許可權UI，而這需要系統管理員存取許可權。 這些步驟記錄如下，但如果您沒有所需的存取許可權，您可能需要聯絡系統管理員以便為您處理。
 
 ## API認證的AEP許可權
+
+>[!IMPORTANT]
+>
+>如果您沒有系統管理員存取權，您將無法自行執行此步驟，而且您將沒有存取&#x200B;**許可權** UI的許可權。 在這種情況下，請聯絡您的系統管理員或在您組織的支援頻道中發佈您的問題。
 
 移至[Adobe Experience Platform](https://experience.adobe.com/platform)。 登入後，您會登入Adobe Experience Platform的首頁。
 

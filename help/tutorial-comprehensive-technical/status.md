@@ -3,10 +3,10 @@ title: 內容狀態
 description: 內容狀態
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 8%
+source-wordcount: '264'
+ht-degree: 9%
 
 ---
 
@@ -30,6 +30,7 @@ ht-degree: 8%
 | [3.2 Adobe Journey Optimizer：外部資料來源和自訂動作](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md) | 30/12/2024 | 是 | - |
 | [3.3 Adobe Journey Optimizer：Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 06/01/2025 | 是 | - |
 | [3.4 Adobe Journey Optimizer：事件型歷程](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 05/01/2025 | 是 | - |
+| [3.5 Adobe Journey Optimizer：翻譯服務](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md) | 08/02/2025 | 是 | - |
 | [4.1Customer Journey Analytics：在Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)之上使用Analysis Workspace建置儀表板 | 06/01/2025 | 是 | - |
 | [4.2Customer Journey Analytics：使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 07/01/2025 | 無 | 來源資料的資料準備模型化發生問題。 此問題正在等候修正。 |
 | [5.1查詢服務](./modules/datadistiller/module5.1/query-service.md) | 04/12/2024 | 是 | - |

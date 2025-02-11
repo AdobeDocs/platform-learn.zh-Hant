@@ -4,7 +4,7 @@ description: 快速入門 — 使用行動應用程式
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 0%
@@ -62,7 +62,7 @@ ht-degree: 0%
 
 ![DSN](./images/web8aa.png)
 
-在上一步建立的資料收集屬性（名為`--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`）上按一下&#x200B;**選取**。 然後，按一下&#x200B;**儲存**。
+在上一步建立的資料收集屬性（名為`--aepUserLdap-- - Demo System (DD/MM/YYYY) (mobile)`）上按一下&#x200B;**選取**。 然後，按一下&#x200B;**儲存**。
 
 ![DSN](./images/web8b.png)
 

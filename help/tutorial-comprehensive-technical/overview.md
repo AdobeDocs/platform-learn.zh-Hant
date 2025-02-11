@@ -3,9 +3,9 @@ title: 概覽 — AEP和應用程式的完整技術教學課程
 description: 讓資料工程師、資料分析師、資料架構師、資料科學家、協調工程師和行銷人員開始瞭解Adobe Experience Platform及其所有應用程式服務的完整商業價值。
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
+source-git-commit: 24b0b774fe19e5938555491b3dc9d04717bb95c6
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1291'
 ht-degree: 2%
 
 ---
@@ -162,6 +162,12 @@ ht-degree: 2%
 在本單元中，您將瞭解Journey Optimizer的所有須知事項，其可幫助公司為其客戶設計和提供連結、情境式和個人化的體驗。
 
 **時間投資：** 120分鐘
+
+[3.5 Adobe Journey Optimizer：翻譯服務](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
+
+在本單元中，您將瞭解如何設定並使用Adobe Journey Optimizer中的翻譯服務，將您的訊息當地語系化給您的客戶。
+
+**時間投資：** 60分鐘
 
 ### 4.Adobe Customer Journey Analytics
 

@@ -3,15 +3,15 @@ title: Adobe Journey Optimizer翻譯服務
 description: Adobe Journey Optimizer翻譯服務
 kt: 5342
 doc-type: tutorial
-exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: b2624546b221c1fd8de2b503c90e73d07ff4283b
+exl-id: f518e1d9-2f5b-4ab3-b3dd-16f722f7177d
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 2%
 
 ---
 
-# 3.2 Adobe Journey Optimizer翻譯服務
+# 3.5 Adobe Journey Optimizer：翻譯服務
 
 ## 學習目標
 
@@ -24,15 +24,15 @@ ht-degree: 2%
 
 ## 練習
 
-[3.2.1翻譯提供者](./ex1.md)
+[3.5.1翻譯提供者](./ex1.md)
 
 在本練習中，您將使用Microsoft Translator設定您的翻譯提供者，並在Adobe Journey Optimizer中進行設定。
 
-[3.2.2翻譯專案](./ex2.md)
+[3.5.2翻譯專案](./ex2.md)
 
 在本練習中，您將使用Microsoft Translator設定您的翻譯提供者，並在Adobe Journey Optimizer中進行設定。
 
-[3.2.3新增語言至您的電子郵件](./ex3.md)
+[3.5.3新增語言至您的電子郵件](./ex3.md)
 
 在本練習中，您會將語言新增至行銷活動中的電子郵件。
 

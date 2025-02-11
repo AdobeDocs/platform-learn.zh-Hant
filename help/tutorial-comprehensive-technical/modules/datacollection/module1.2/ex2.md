@@ -4,9 +4,9 @@ description: Foundation — 資料擷取 — 設定結構描述並設定識別�
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3117'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ ht-degree: 4%
 ![資料擷取](./images/schemastructurem.png)
 
 您的新[!UICONTROL 欄位群組]仍然是空的，所以現在您必須將欄位新增到該[!UICONTROL 欄位群組]。
-在[!UICONTROL 欄位群組] — 清單中，按一下您的自訂[!UICONTROL 欄位群組]，然後按一下&#x200B;**瀏覽**。
+在[!UICONTROL 欄位群組] — 清單中，按一下您的自訂[!UICONTROL 欄位群組]。
 
 ![資料擷取](./images/schemastructurem.png)
 
@@ -165,7 +165,7 @@ ht-degree: 4%
 
 ![資料擷取](./images/tenantfielddef.png)
 
-您現在會在結構描述中看到新物件，代表結構描述中的自訂&#x200B;**[!UICONTROL 物件]**，並以您的Adobe Experience Platform租使用者ID命名。 您的Adobe Experience Platform租使用者ID為`--aepTenantId--`，每個AEP執行個體皆不需要。
+您現在會在結構描述中看到新物件，代表結構描述中的自訂&#x200B;**[!UICONTROL 物件]**，並以您的Adobe Experience Platform租使用者ID命名。 您的Adobe Experience Platform租使用者ID是`--aepTenantId--`，並且在每個AEP執行個體中都是唯一的。
 
 ![資料擷取](./images/tenant.png)
 
@@ -176,26 +176,26 @@ ht-degree: 4%
 使用以下資訊在&#x200B;**[!UICONTROL 識別碼]**&#x200B;物件下建立這3個新欄位：
 
 - ecid：
-   - 欄位名稱： **[!UICONTROL ecid]**
-   - 顯示名稱： **[!UICONTROL ecid]**
+   - 欄位名稱: **`--aepUserLdap--_ecid`**
+   - 顯示名稱： **`--aepUserLdap--ecid`**
    - 型別： **[!UICONTROL 字串]**
    - 欄位群組： **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - emailId
-   - 欄位名稱： **[!UICONTROL 電子郵件ID]**
-   - 顯示名稱： **[!UICONTROL 電子郵件ID]**
+   - 欄位名稱: **`--aepUserLdap--_emailId`**
+   - 顯示名稱： **`--aepUserLdap--_emailId`**
    - 型別： **[!UICONTROL 字串]**
    - 欄位群組： **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - mobilenr
-   - 欄位名稱： **[!UICONTROL mobilenr]**
-   - 顯示名稱： **[!UICONTROL mobilenr]**
+   - 欄位名稱: **`--aepUserLdap--_mobilenr`**
+   - 顯示名稱： **`--aepUserLdap--_mobilenr`**
    - 型別： **[!UICONTROL 字串]**
    - 欄位群組： **`--aepUserLdap-- - Profile Identification Field Group`**
 
 這是每個欄位在初始欄位設定之後的顯示方式。
 
-- mobilenr
+- `--aepUserLdap--_mobilenr`
 
 ![資料擷取](./images/mobilenrfield.png)
 
@@ -203,13 +203,13 @@ ht-degree: 4%
 
 ![資料擷取](./images/apply.png)
 
-- ecid
+- `--aepUserLdap--_ecid`
 
 ![資料擷取](./images/ecidfield.png)
 
 別忘了向下捲動並按一下&#x200B;**套用**。
 
-- emailId
+- `--aepUserLdap--_emailId`
 
 ![資料擷取](./images/emailidfield.png)
 
@@ -223,7 +223,7 @@ ht-degree: 4%
 
 若要開始將這些欄位定義為&#x200B;**[!UICONTROL 身分]** — 欄位，請遵循下列步驟：
 
-- 選取欄位&#x200B;**[!UICONTROL emailId]**。
+- 選取欄位&#x200B;**`--aepUserLdap--_emailId`**。
 - 在右側的欄位屬性中，向下捲動直到您看到&#x200B;**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**&#x200B;的核取方塊。
 
 ![資料擷取](./images/emailidid.png)
@@ -236,15 +236,15 @@ ht-degree: 4%
 
 ![資料擷取](./images/emailidprimidns.png)
 
-接下來，您必須將&#x200B;**[!UICONTROL ecid]**&#x200B;和&#x200B;**[!UICONTROL mobilenr]**&#x200B;的其他欄位定義為標準識別碼。
+接下來，您必須將&#x200B;**`--aepUserLdap--_ecid`**&#x200B;和&#x200B;**`--aepUserLdap--_mobilenr`**&#x200B;的其他欄位定義為標準識別碼。
 
-選取欄位&#x200B;**[!UICONTROL ecid]**。 在右側的欄位屬性中，向下捲動直到您看到&#x200B;**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**的核取方塊。
+選取欄位&#x200B;**`--aepUserLdap--_ecid`**。 在右側的欄位屬性中，向下捲動直到您看到&#x200B;**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**的核取方塊。
 接著，從**[!UICONTROL 名稱空間]**&#x200B;清單中選取名稱空間&#x200B;**[!UICONTROL ECID]**。
 按一下**[!UICONTROL 套用]**&#x200B;以儲存變更。
 
 ![資料擷取](./images/ecidid.png)
 
-選取欄位&#x200B;**[!UICONTROL mobilenr]**。 在右側的欄位屬性中，向下捲動直到您看到&#x200B;**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**的核取方塊。
+選取欄位&#x200B;**`--aepUserLdap--_mobilenr`**。 在右側的欄位屬性中，向下捲動直到您看到&#x200B;**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**的核取方塊。
 從**[!UICONTROL 名稱空間]**&#x200B;清單中選取名稱空間&#x200B;**[!UICONTROL 電話]**。
 按一下**[!UICONTROL 套用]**&#x200B;以儲存變更。
 
@@ -415,12 +415,12 @@ ECID — 欄位將定義為型別&#x200B;**[!UICONTROL 字串]**，而您將設�
 
 - ecid：
 
-   - 欄位名稱： **[!UICONTROL ecidweb]**
-   - 顯示名稱： **[!UICONTROL ecidweb]**
+   - 欄位名稱: **`--aepUserLdap--_ecidweb`**
+   - 顯示名稱： **`--aepUserLdap--_ecidweb`**
    - 型別： **[!UICONTROL 字串]**
    - 欄位群組： `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
-這是[!UICONTROL ecid] — 欄位在初始欄位設定之後的處理方式：
+這是`--aepUserLdap--_ecidweb`欄位在初始欄位設定之後的顯示方式：
 
 ![資料擷取](./images/ecidfieldee.png)
 
@@ -432,7 +432,7 @@ ECID — 欄位將定義為型別&#x200B;**[!UICONTROL 字串]**，而您將設�
 
 ![資料擷取](./images/3fieldsee.png)
 
-若要開始將這些欄位定義為&#x200B;**[!UICONTROL 身分]** — 欄位，請選取欄位&#x200B;**[!UICONTROL ecid]**。
+若要開始將這些欄位定義為&#x200B;**[!UICONTROL 身分]** — 欄位，請選取欄位&#x200B;**`--aepUserLdap--_ecidweb`**。
 在右側的欄位屬性中，向下捲動直到您看到**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**&#x200B;的核取方塊，並核取&#x200B;**[!UICONTROL 主要身分]**的核取方塊。
 從**[!UICONTROL 名稱空間]**&#x200B;清單中選取名稱空間&#x200B;**[!UICONTROL ECID]**。
 

@@ -3,9 +3,9 @@ title: 完成 — Adobe Experience Platform的完整技術教學課程
 description: 如何測量完成度？
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,15 @@ ht-degree: 0%
 
 移至[https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258)。
 
-![3](./assets/images/certcourse.png)
+![3](./assets/images/certcourse.png){zoomable="yes"}
 
-若要完成模組，您需要提供完成證明。
+按一下您要提交完成的模組旁的&#x200B;**開始**。
+
+![3](./assets/images/certcourse2.png){zoomable="yes"}
+
+若要完成模組，您需要提供完成證明並為每個模組提交。
+
+![3](./assets/images/certcourse3.png){zoomable="yes"}
 
 以下是每個模組的預期完成校樣。
 
@@ -26,7 +32,7 @@ ht-degree: 0%
 
 Web格式的示範系統專案識別碼看起來像這樣： `--aepUserLdap-- - QIMU`。
 
-![3](./assets/images/module0dtl.png)
+![3](./assets/images/module0dtl.png){zoomable="yes"}
 
 ## 1.1 Adobe Experience Platform Data Collection與Web SDK擴充功能
 
@@ -34,7 +40,7 @@ Web格式的示範系統專案識別碼看起來像這樣： `--aepUserLdap-- - 
 
 Web格式之資料收集屬性的環境識別碼看起來像這樣： `EN5211f7792b4442f8a45deb68f8902d3a`。
 
-![3](./assets/images/module1dtl.png)
+![3](./assets/images/module1dtl.png){zoomable="yes"}
 
 ## 1.2資料擷取
 
@@ -42,7 +48,7 @@ Web格式之資料收集屬性的環境識別碼看起來像這樣： `EN5211f77
 
 資料流ID如下所示： **374c2c6d-f39a-4b0b-b568-40c41e6c4e8e**。
 
-![3](./assets/images/completemodule2seg.png)
+![3](./assets/images/completemodule2seg.png){zoomable="yes"}
 
 ## 1.3同盟對象構成
 
@@ -50,7 +56,7 @@ Web格式之資料收集屬性的環境識別碼看起來像這樣： `EN5211f77
 
 Federated Data Model的ID看起來像這樣： **DMO5110**，可以從URL取得，如下圖所示。
 
-![3](./assets/images/completemodule3fac.png)
+![3](./assets/images/completemodule3fac.png){zoomable="yes"}
 
 ## 2.1即時客戶個人檔案
 
@@ -58,7 +64,7 @@ Federated Data Model的ID看起來像這樣： **DMO5110**，可以從URL取得�
 
 對象ID如下所示： **81a9acbe-12e6-424b-b658-abba3a435c83**。
 
-![3](./assets/images/completemodule3seg.png)
+![3](./assets/images/completemodule3seg.png){zoomable="yes"}
 
 ## 2.2智慧型服務
 
@@ -66,7 +72,7 @@ Federated Data Model的ID看起來像這樣： **DMO5110**，可以從URL取得�
 
 對象ID如下所示： **cb6db21d-8fa3-484a-93ac-25aa1ab48412**。
 
-![12](./assets/images/completemodule10.png)
+![12](./assets/images/completemodule10.png){zoomable="yes"}
 
 ## 2.3 Real-Time CDP：建立受眾並採取行動！
 
@@ -74,7 +80,7 @@ Federated Data Model的ID看起來像這樣： **DMO5110**，可以從URL取得�
 
 您webhook目的地的ID看起來像這樣： **b5b4b959-3166-40e2-8279-8223d00c3987**，並且可以從URL取得，如下圖所示。
 
-![12](./assets/images/vec4.png)
+![12](./assets/images/vec4.png){zoomable="yes"}
 
 ## 2.4 Real-Time CDP：Audience Activation至Microsoft Azure事件中心
 
@@ -82,7 +88,7 @@ Federated Data Model的ID看起來像這樣： **DMO5110**，可以從URL取得�
 
 您可以在URL中找到看起來像這樣&#x200B;**43cf85bc-3d01-49fd-80c9-a2913db45e3c**&#x200B;的&#x200B;**Microsoft Azure事件中樞目的地ID**，如下所示：
 
-![14](./assets/images/azuredestid.png)
+![14](./assets/images/azuredestid.png){zoomable="yes"}
 
 ## 2.5 Real-Time CDP連線：事件轉送
 
@@ -90,7 +96,7 @@ Federated Data Model的ID看起來像這樣： **DMO5110**，可以從URL取得�
 
 您可以在URL中找到看起來像這樣&#x200B;**PRa18819171c1241dfb16d74a49993dd5b**&#x200B;的&#x200B;**事件轉送屬性ID**，如下圖所示：
 
-![14](./assets/images/launchssfid.png)
+![14](./assets/images/launchssfid.png){zoomable="yes"}
 
 ## 2.6將Apache Kafka的資料串流至Real-Time CDP
 
@@ -98,7 +104,7 @@ Federated Data Model的ID看起來像這樣： **DMO5110**，可以從URL取得�
 
 ID看起來像這樣&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在這裡找到它：
 
-![14](./assets/images/kafkaflowid.png)
+![14](./assets/images/kafkaflowid.png){zoomable="yes"}
 
 ## 3.1 Adobe Journey Optimizer：協調流程
 
@@ -106,7 +112,7 @@ ID看起來像這樣&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以
 
 歷程的ID看起來像這樣，**594fa01f-1a3b-450c-ba09-b7e3ff377c0f**，並且可以從URL取得，如下圖所示。
 
-![12](./assets/images/ajoo.png)
+![12](./assets/images/ajoo.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer：外部資料來源和自訂動作
 
@@ -114,7 +120,7 @@ ID看起來像這樣&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以
 
 歷程的ID看起來像這樣： **6962d3bc-4f44-4f9c-b326-83978f245f2a**，並且可以從URL取得，如下圖所示。
 
-![12](./assets/images/jofinal.png)
+![12](./assets/images/jofinal.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer：Offer decisioning
 
@@ -122,7 +128,7 @@ ID看起來像這樣&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以
 
 您可在下列位置找到&#x200B;**決定ID**，它看起來像這樣&#x200B;**dps:offer-activity:1a08ba4b529b2fb2**：
 
-![14](./assets/images/offers.png)
+![14](./assets/images/offers.png){zoomable="yes"}
 
 ## 3.4 Adobe Journey Optimizer：事件型歷程
 
@@ -130,7 +136,15 @@ ID看起來像這樣&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以
 
 歷程的ID看起來像這樣： **5f5efc7e-49f7-44c1-85df-b23482b38d32**，並且可以從URL取得，如下圖所示。
 
-![14](./assets/images/jojourneyid.png)
+![14](./assets/images/jojourneyid.png){zoomable="yes"}
+
+## 3.5 Adobe Journey Optimizer：翻譯服務
+
+模組&#x200B;**Adobe Journey Optimizer：翻譯服務**&#x200B;的預期完成證明是您CitiSignal Fiber促銷活動的&#x200B;**促銷活動版本ID**。
+
+同盟資料模型的Campaign版本ID看起來像這樣： **b11c998b-a345-4f8e-afb1-6285547eb693**，並且可以從Campaign概述畫面複製，如下圖所示。
+
+![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
 ## 4.1Customer Journey Analytics：使用Analysis Workspace建置控制面板
 
@@ -138,7 +152,7 @@ ID看起來像這樣&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以
 
 格式看起來像這樣： **677bcb247064db3c7de2a0e4**，當您開啟專案時，可以在URL中找到它。
 
-![12](./assets/images/cjacompletion.png)
+![12](./assets/images/cjacompletion.png){zoomable="yes"}
 
 ## 4.2Customer Journey Analytics：使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料
 
@@ -146,7 +160,7 @@ ID看起來像這樣&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以
 
 您可在下列位置找到&#x200B;**BigQuery連線識別碼**，它看起來像這樣&#x200B;**b63a810c-a8cc-4c6b-a57e-dcb7e3368cf8**：
 
-![14](./assets/images/bqid.png)
+![14](./assets/images/bqid.png){zoomable="yes"}
 
 ## 5.1查詢服務
 
@@ -156,7 +170,7 @@ ID看起來像這樣&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以
 
 ![12](./assets/images/completemodule7.png)
 
-![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
+![技術內部人士](./assets/images/techinsiders.png){zoomable="yes"}{width="50px" align="left"}
 
 >[!NOTE]
 >

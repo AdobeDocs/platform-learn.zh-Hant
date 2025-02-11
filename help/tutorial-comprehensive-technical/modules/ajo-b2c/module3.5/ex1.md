@@ -1,19 +1,19 @@
 ---
-title: AJO翻譯提供者
-description: AJO翻譯提供者
+title: AJO翻譯服務快速入門
+description: AJO翻譯服務快速入門
 kt: 5342
 doc-type: tutorial
-exl-id: ee0b8650-a59f-4888-8228-4caafe4143e4
-source-git-commit: 24b0b774fe19e5938555491b3dc9d04717bb95c6
+exl-id: 28c925dd-8a7b-4b9a-a128-ecbfbfbeaf04
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '546'
 ht-degree: 1%
 
 ---
 
-# 3.2.1翻譯提供者
+# 3.5.1翻譯提供者
 
-## 3.2.1.1設定Microsoft Azure Translator
+## 3.5.1.1設定Microsoft Azure Translator
 
 移至[https://portal.azure.com/#home](https://portal.azure.com/#home)。
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ![翻譯](./images/transl7.png)
 
-## 3.2.1.2地區設定字典
+## 3.5.1.2地區設定字典
 
 移至[https://experience.adobe.com/](https://experience.adobe.com/)。 按一下&#x200B;**Journey Optimizer**。
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 ![翻譯](./images/locale2.png)
 
-## 3.2.1.3在AJO中設定翻譯提供者
+## 3.5.1.3在AJO中設定翻譯提供者
 
 移至[https://experience.adobe.com/](https://experience.adobe.com/)。 按一下&#x200B;**Journey Optimizer**。
 
@@ -91,7 +91,7 @@ ht-degree: 1%
 
 ![翻譯](./images/transl13.png)
 
-## 3.2.1.4設定翻譯專案
+## 3.5.1.4設定翻譯專案
 
 移至[https://experience.adobe.com/](https://experience.adobe.com/)。 按一下&#x200B;**Journey Optimizer**。
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 ![翻譯](./images/ajoprovider9.png)
 
-## 3.2.1.5設定語言設定
+## 3.5.1.5設定語言設定
 
 移至&#x200B;**管道** > **一般設定** > **語言設定**。 按一下&#x200B;**建立語言設定**。
 
@@ -171,8 +171,8 @@ ht-degree: 1%
 
 ## 後續步驟
 
-移至[3.2.2建立您的行銷活動](./ex2.md)
+移至[3.5.2建立您的行銷活動](./ex2.md)
 
-返回[模組3.2](./ajotranslationsvcs.md){target="_blank"}
+返回[模組3.5](./ajotranslationsvcs.md){target="_blank"}
 
 返回[所有模組](./../../../overview.md){target="_blank"}

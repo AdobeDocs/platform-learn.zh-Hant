@@ -4,7 +4,7 @@ description: 在本節中，您將設定批次電子郵件歷程以傳送電子�
 kt: 5342
 doc-type: tutorial
 exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
-source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
+source-git-commit: b2624546b221c1fd8de2b503c90e73d07ff4283b
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
@@ -176,7 +176,7 @@ Make the switch to CitiSignal and say goodbye to phone payments! Switching to Ci
 
 ![Journey Optimizer](./images/campaign21.png)
 
-啟用後，您的行銷活動將排程執行。
+啟動後，您的行銷活動將排程執行。
 
 ![Journey Optimizer](./images/campaign22.png)
 

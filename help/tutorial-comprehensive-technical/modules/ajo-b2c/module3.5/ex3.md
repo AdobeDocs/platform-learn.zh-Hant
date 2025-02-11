@@ -1,17 +1,17 @@
 ---
-title: 使用AJO翻譯服務新增語言至您的電子郵件
-description: 使用AJO翻譯服務新增語言至您的電子郵件
+title: AJO翻譯服務
+description: AJO翻譯服務
 kt: 5342
 doc-type: tutorial
-exl-id: 806e104a-3df9-4711-bc16-026f53b51118
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: e957856f-d6e5-4b39-ac0a-b9249f47eac4
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
 
-# 3.2.3新增語言至您的電子郵件
+# 3.5.3新增語言至您的電子郵件
 
 移至[https://experience.adobe.com/](https://experience.adobe.com/)。 按一下&#x200B;**Journey Optimizer**。
 
@@ -91,6 +91,6 @@ ht-degree: 0%
 
 移至[摘要與優點](./summary.md)
 
-返回[模組3.2](./ajotranslationsvcs.md){target="_blank"}
+返回[模組3.5](./ajotranslationsvcs.md){target="_blank"}
 
 返回[所有模組](./../../../overview.md){target="_blank"}
