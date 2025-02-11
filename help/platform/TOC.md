@@ -5,7 +5,7 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
+source-git-commit: ce28c48d554727ce42803400373826315f5b2153
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 18%
@@ -15,14 +15,14 @@ ht-degree: 18%
 
 # Adobe Experience Platform 教學課程 {#tutorials}
 
-+ [平台Tutorials](/help/platform/overview.md)
++ [平台教學課程](/help/platform/overview.md)
 + Platform {#intro-to-platform}簡介
    + [Experience Platform 所支援的客戶體驗](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [幕後：Experience Platform支援的客戶體驗](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience 平台概觀](/help/platform/intro-to-platform/overview.md)
    + [主要功能](/help/platform/intro-to-platform/key-capabilities.md)
    + [平台式應用程式](/help/platform/intro-to-platform/native-applications.md)
-   + [與Experience Cloud應用程式整合](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
+   + [與Experience Cloud應用程式的整合](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [主要使用案例](/help/platform/intro-to-platform/key-use-cases.md)
    + [基本架構](/help/platform/intro-to-platform/basic-architecture.md)
    + [使用者介面](/help/platform/intro-to-platform/interface-tour.md)
@@ -35,7 +35,7 @@ ht-degree: 18%
    + [使用Marketo Engage協調行銷活動](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [快速入門：資料架構師和資料工程師](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [驗證Experience Platform API](/help/platform/authentication/platform-api-authentication.md)
-+ [將範例資料匯入至Experience Platform](/help/platform/data-generator/import-sample-data.md)
++ [將範例資料匯入Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [使用警示](/help/platform/admin/use-alerts.md)
    + [使用沙箱](/help/platform/admin/use-sandboxes.md)
@@ -108,7 +108,7 @@ ht-degree: 18%
    + [將CSV檔案對應至XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [來源概觀](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [從Adobe Analytics擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
-   + [從Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)擷取資料
+   + [從Audience Manager擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [從雲端儲存空間擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=zh-Hant)
    + [從CRM擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=zh-Hant)
    + [從資料庫擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
@@ -121,7 +121,7 @@ ht-degree: 18%
    + [讓資料集過期](/help/platform/data-lifecycle/expire-datasets.md)
 + 目的地 {#destinations}
    + [目的地概觀](/help/platform/destinations/understanding-destinations.md)
-   + [正在連線到目的地](/help/platform/destinations/connecting-to-destinations.md)
+   + [連線到目的地](/help/platform/destinations/connecting-to-destinations.md)
    + [建立目的地並啟用資料](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [對目的地啟用設定檔和區段](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
    + [設定資料集匯出目的地](/help/platform/destinations/configure-dataset-export-destination.md)
@@ -137,7 +137,7 @@ ht-degree: 18%
       + [啟用區段和設定檔屬性](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [在Target中使用Real-Time CDP區段](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [在Target中使用Real-Time CDP設定檔屬性](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
-   + [啟用非Adobe應用程式網路研討會資料](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
+   + [啟用非Adobe應用程式網路研討會的資料](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + 身分識別 {#identities}
    + [身分和身分圖表總覽](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [標示、擷取及驗證身分資料](/help/platform/identities/label-ingest-and-verify-identity-data.md)
@@ -181,7 +181,7 @@ ht-degree: 18%
    + [隱私權JavaScript資料庫](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analytics中的隱私權標籤](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Privacy Service API快速入門](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [PRIVACY SERVICEUI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [PRIVACY SERVICE UI](/help/platform/privacy/using-privacy-services-ui.md)
    + [PRIVACY SERVICE API](/help/platform/privacy/using-the-privacy-service-api.md)
    + [訂閱隱私權事件](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [設定客戶自控金鑰](/help/platform/privacy/set-up-customer-managed-keys.md)
