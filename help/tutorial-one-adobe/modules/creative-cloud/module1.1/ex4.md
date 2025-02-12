@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0e9d1b5866d789ca2693d9c1a6ef7119c25ed009
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
 
 ---
 
-# 1.1.4Firefly自訂模型API
+# 1.1.4 Firefly自訂模型API
 
 ## 1.1.4.1設定自訂模型
 
@@ -74,11 +74,11 @@ ht-degree: 0%
 
 ![Firefly自訂模型](./images/ffcm13.png){zoomable="yes"}
 
-20-30分鐘後，您的模型現在已訓練完畢，可以發佈。 按一下&#x200B;**Publish**。
+20-30分鐘後，您的模型現在已訓練完畢，可以發佈。 按一下&#x200B;**發佈**。
 
 ![Firefly自訂模型](./images/ffcm14.png){zoomable="yes"}
 
-再按一下&#x200B;**Publish**。
+再按一下&#x200B;**發佈**。
 
 ![Firefly自訂模型](./images/ffcm15.png){zoomable="yes"}
 
@@ -140,7 +140,7 @@ ht-degree: 0%
 >
 >如果您是Adobe員工，請依照這裡的指示使用[PostBuster](./../../../postbuster.md)。
 
-在練習1.1.1開始使用Firefly服務時，您將此檔案： [postman-ff.zip](./../../../assets/postman/postman-ff.zip)下載到您的本機案頭，然後將該集合匯入Postman。
+在練習1.1.1開始使用Firefly Services時，您將此檔案： [postman-ff.zip](./../../../assets/postman/postman-ff.zip)下載到您的本機案頭，然後將該集合匯入Postman。
 
 開啟Postman並前往資料夾&#x200B;**FF — 自訂模型API**。
 

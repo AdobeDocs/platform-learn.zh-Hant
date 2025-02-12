@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: bb4b760335fa41b70a1693546047b5bcdfb9f5f2
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 1%
@@ -145,11 +145,11 @@ ht-degree: 1%
 
    ![Azure儲存體](./images/az21.png){zoomable="yes"}
 
-1. 複製此影像檔案的預先簽署URL，以供下一個API請求進行Firefly。
+1. 複製此影像檔案的預先簽署URL，以供下一個API請求傳送至Firefly。
 
    ![Azure儲存體](./images/az22.png){zoomable="yes"}
 
-1. 返回Postman開啟請求&#x200B;**POST-Firefly- T2I (styleref) V3**。
+1. 返回Postman開啟請求&#x200B;**POST - Firefly - T2I (styleref) V3**。
 此出現在**主體**&#x200B;中。
 
    ![Azure儲存體](./images/az23.png){zoomable="yes"}
@@ -192,7 +192,7 @@ ht-degree: 1%
 
    使用&#x200B;**SAS-token**&#x200B;將檔案上傳至您的Azure儲存體帳戶。
 
-1. 返回Postman，選取資料夾&#x200B;**FF - Firefly服務技術內部人員**，然後選取&#x200B;**Firefly**&#x200B;資料夾中的&#x200B;**...**，然後選取&#x200B;**新增要求**。
+1. 返回Postman，選取資料夾&#x200B;**FF - Firefly Services技術內部人員**，然後選取&#x200B;**Firefly**&#x200B;資料夾中的&#x200B;**...**，然後選取&#x200B;**新增要求**。
 
    ![Azure儲存體](./images/az30.png){zoomable="yes"}
 
@@ -347,7 +347,7 @@ ht-degree: 1%
 
    ![Azure儲存體](./images/az105.png){zoomable="yes"}
 
-   在先前的練習中，您請求&#x200B;**Firefly- T2I (styleref) V3**&#x200B;的&#x200B;**內文**&#x200B;看起來像這樣：
+   在先前的練習中，您請求&#x200B;**Firefly - T2I (styleref) V3**&#x200B;的&#x200B;**內文**&#x200B;看起來像這樣：
 
    `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 

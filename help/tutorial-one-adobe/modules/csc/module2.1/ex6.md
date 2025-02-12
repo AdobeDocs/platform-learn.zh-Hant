@@ -4,14 +4,14 @@ description: AEM CS - MarTech外掛程式
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
 
 ---
 
-# 2.1.6 AEM Edge Delivery Services MarTech外掛程式
+# 2.1.6 AEM Edge Delivery Services MarTech增效模組
 
 AEM MarTech外掛程式可協助您為AEM專案快速設定完整的MarTech棧疊。
 
@@ -28,7 +28,7 @@ AEM MarTech外掛程式可協助您為AEM專案快速設定完整的MarTech棧�
 您將會看到此訊息。 貼上下列命令並按&#x200B;**Enter**。
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-experimentation.git main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
 ```
 
 您應該會看到此訊息。
@@ -171,7 +171,7 @@ const AUDIENCES = {
 
 ![AEMCS](./images/scriptsvar4.png){zoomable="yes"}
 
-您會找到所需的URL，但位於HTML`<script></script>`標籤內。 您應該只複製從`https`開始直到`.min.js`的部分。
+您會找到所需的URL，但位於HTML `<script></script>`標籤內。 您應該只複製從`https`開始直到`.min.js`的部分。
 
 ![AEMCS](./images/scriptsvar5.png){zoomable="yes"}
 
@@ -317,13 +317,13 @@ window.setTimeout(() => {
 
 ## Tags屬性中的2.1.6.4 ACDL擴充功能
 
-為了讓AEM Edge Delivery Services MarTech外掛程式正常運作，您需要為
+為了讓AEM Edge Delivery Services MarTech外掛程式能夠正常運作，您需要為
 
 移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 搜尋Web的Tags屬性，然後開啟，其名稱為`--aepUserLdap-- - One Adobe (DD/MM/YYYY)`。
 
 ![AEMCS](./images/acdl3.png){zoomable="yes"}
 
-移至&#x200B;**延伸模組**，移至&#x200B;**目錄**。 按一下擴充功能&#x200B;**Adobe使用者端資料層**，然後按一下&#x200B;**安裝**。
+移至&#x200B;**延伸模組**，移至&#x200B;**目錄**。 按一下擴充功能&#x200B;**Adobe Client Data Layer**，然後按一下&#x200B;**安裝**。
 
 ![AEMCS](./images/acdl4.png){zoomable="yes"}
 
@@ -341,7 +341,7 @@ window.setTimeout(() => {
 
 您的變更現已部署。
 
-## 2.1.6.5傳送資料至Adobe Experience PlatformEdge Network
+## 2.1.6.5傳送資料至Adobe Experience Platform Edge Network
 
 您現在可以移至`main--citisignal--XXX.aem.page/us/en`及/或`main--citisignal--XXX.aem.live/us/en`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
 
