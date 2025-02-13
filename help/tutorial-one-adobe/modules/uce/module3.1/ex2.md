@@ -4,7 +4,7 @@ description: 基礎 — FAC — 建立方案、資料模型和連結
 kt: 5342
 doc-type: tutorial
 exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
-source-git-commit: 246bb91496104818f357848f41b79523b7771638
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 2%
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb1.png)
 
-作為&#x200B;**標籤**，使用`--aepUserLdap-- - CitiSignal Snowflake`，並且針對型別，選擇&#x200B;**Snowflake**。
+作為&#x200B;**標籤**，使用`--aepUserLdap-- - CitiSignal Snowflake`，針對型別，選擇&#x200B;**Snowflake**。
 
 在「詳細資料」底下，您需要填寫憑證，看起來像這樣：
 
@@ -73,11 +73,11 @@ ht-degree: 2%
 
 您將會看到此訊息。 選取您之前在Snowflake中建立的5個表格：
 
-- `CK_HOUSEHOLDS`
-- `CK_MOBILE_DATA_USAGE`
-- `CK_MONTHLY_DATA_USAGE`
-- `CK_PERSONS`
-- `CK_USERS`
+- `--aepUserLdap--_HOUSEHOLDS`
+- `--aepUserLdap--_MOBILE_DATA_USAGE`
+- `--aepUserLdap--_MONTHLY_DATA_USAGE`
+- `--aepUserLdap--_PERSONS`
+- `--aepUserLdap--_USERS`
 
 按一下&#x200B;**新增**。
 
@@ -98,7 +98,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb8.png)
 
-您將會看到此訊息。 您可以按一下任何結構描述並檢閱資訊。 例如，按一下&#x200B;**CK_PERSON**。
+您將會看到此訊息。 您可以按一下任何結構描述並檢閱資訊。 例如，按一下&#x200B;**—aepUserLdap—_PERSONES**。
 
 ![FAC](./images/fdb9.png)
 
@@ -130,57 +130,57 @@ ht-degree: 2%
 
 您將會看到此訊息。 按一下&#x200B;**儲存**。
 
-### `CK_USERS` - `CK_PERSONS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_PERSONS`
 
 您現在可以開始定義綱要之間的連結。 若要開始定義連結，您必須按一下[建立連結]。****
 
 ![FAC](./images/fdb16.png)
 
-首先，讓我們定義表格`CK_USERS`與`CK_PERSONS`之間的連結。
+首先，讓我們定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_PERSONS`之間的連結。
 
 按一下&#x200B;**新增**。
 
 ![FAC](./images/fdb18.png)
 
 
-### `CK_HOUSEHOLDS` - `CK_PERSONS`
+### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
 
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
 ![FAC](./images/fdb17.png)
 
-接下來，讓我們定義表格`CK_HOUSEHOLDS`與`CK_PERSONS`之間的連結。
+接下來，讓我們定義表格`--aepUserLdap--_HOUSEHOLDS`與`--aepUserLdap--_PERSONS`之間的連結。
 
 ![FAC](./images/fdb19.png)
 
-### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
 ![FAC](./images/fdb20.png)
 
-接下來，讓我們定義表格`CK_USERS`與`CK_MONTHLY_DATA_USAGE`之間的連結。
+接下來，讓我們定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_MONTHLY_DATA_USAGE`之間的連結。
 
 ![FAC](./images/fdb21.png)
 
 
-### `CK_USERS` - `CK_HOUSEHOLDS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
 
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
 ![FAC](./images/fdb22.png)
 
-接下來，讓我們定義表格`CK_USERS`與`CK_HOUSEHOLDS`之間的連結。
+接下來，讓我們定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_HOUSEHOLDS`之間的連結。
 
 ![FAC](./images/fdb23.png)
 
-### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
 ![FAC](./images/fdb24.png)
 
-接下來，讓我們定義表格`CK_USERS`與`CK_MOBILE_DATA_USAGE`之間的連結。
+接下來，讓我們定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_MOBILE_DATA_USAGE`之間的連結。
 
 ![FAC](./images/fdb25.png)
 

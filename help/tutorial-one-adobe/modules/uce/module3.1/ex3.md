@@ -4,9 +4,9 @@ description: Foundation - FAC — 建立同盟構成
 kt: 5342
 doc-type: tutorial
 exl-id: dc044a26-f16a-491e-a795-4cd16f211256
-source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '494'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp5.png)
 
-選取結構描述&#x200B;**CK_HOMETHERS**。 按一下「**確認**」。
+選取結構描述&#x200B;**—aepUserLdap—_HOMETHINGS**。 按一下「**確認**」。
 
 ![FAC](./images/fedcomp6.png)
 
@@ -63,7 +63,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp9.png)
 
-您將會看到此訊息。 將欄位&#x200B;**值**&#x200B;設定為&#x200B;**True**。 按一下&#x200B;**計算**，將查詢向下推入Snowflake，並取得目前符合資格的設定檔的估計。
+您將會看到此訊息。 將欄位&#x200B;**值**&#x200B;設定為&#x200B;**True**。 按一下&#x200B;**計算**，將查詢向下推送到Snowflake，並取得目前符合資格的設定檔的估計值。
 
 ![FAC](./images/fedcomp10.png)
 
@@ -71,7 +71,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp11.png)
 
-要新增的第二個條件是： `Is the user an existing CitiSignal Mobile subscriber?`。 要回答這個問題，請使用家庭與家庭中主要客戶之間的關係，這已在另一個資料表&#x200B;**CK_PERSONES**&#x200B;中定義。 您可以使用&#x200B;**household2person**&#x200B;連結，在屬性功能表中向下展開。
+要新增的第二個條件是： `Is the user an existing CitiSignal Mobile subscriber?`。 回答該問題的方法是使用家庭與家庭中主要客戶之間的關係，這已在另一個資料表&#x200B;**—aepUserLdap—_PERSONES**&#x200B;中定義。 您可以使用&#x200B;**household2person**&#x200B;連結，在屬性功能表中向下展開。
 
 ![FAC](./images/fedcomp12.png)
 
@@ -136,6 +136,8 @@ ht-degree: 3%
 ![FAC](./images/fedcomp21.png)
 
 您的構成現已完成。 按一下&#x200B;**開始**&#x200B;執行。
+
+![FAC](./images/fedcomp21a.png)
 
 現在會將查詢向下推送到Snowflake，以便在該處查詢來源資料。 結果將會推送回AEP，但來源資料仍會保留在Snowflake中。
 
