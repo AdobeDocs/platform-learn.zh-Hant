@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: d33df99e9c75e7d5feef503b68174b93860ac245
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/ps2.png){zoomable="yes"}
 
-1. 選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Photoshop -Firefly服務**。 選取&#x200B;**下一步**。
+1. 選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Photoshop - Firefly服務**。 選取&#x200B;**下一步**。
 
 ![Azure儲存體](./images/ps3.png){zoomable="yes"}
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/ps5.png){zoomable="yes"}
 
-您的Adobe I/O專案現已更新，可搭配Photoshop和Firefly服務API使用。
+您的Adobe I/O專案現已更新，可搭配Photoshop和Firefly Services API使用。
 
 ![Azure儲存體](./images/ps6.png){zoomable="yes"}
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/ps7.png){zoomable="yes"}
 
-在&#x200B;**圖層**&#x200B;窗格中，檔案的設計者已為每個圖層指定唯一的名稱。 您可以在Photoshop中開啟PSD檔案來檢視圖層資訊，也可以利用程式設計方式來進行。
+在&#x200B;**圖層**&#x200B;窗格中，檔案的設計者已為每個圖層指定唯一的名稱。 您可以在Photoshop中開啟PSD檔案，檢視圖層資訊，也可以使用程式設計方式執行此操作。
 
 讓我們將您的第一個API要求傳送至Photoshop API。
 
@@ -154,7 +154,7 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/ps17.png){zoomable="yes"}
 
-1. 若要讀取狀態檔案，請開啟要求&#x200B;**Photoshop — 取得PS狀態**。 您可以看到此要求正在使用變數做為URL，這是由您傳送的上一個要求所設定的變數，**Photoshop — 取得PSD資訊清單**。 變數是在每個要求的&#x200B;**指令碼**&#x200B;中設定。 選取&#x200B;**傳送**。
+1. 若要讀取狀態檔案，請開啟要求&#x200B;**Photoshop — 取得PS狀態**。 您可以看到此請求正在使用變數做為URL，這是由您傳送的上一個請求所設定的變數，**Photoshop — 取得PSD資訊清單**。 變數是在每個要求的&#x200B;**指令碼**&#x200B;中設定。 選取&#x200B;**傳送**。
 
 ![Azure儲存體](./images/ps18.png){zoomable="yes"}
 
@@ -164,7 +164,7 @@ ht-degree: 0%
 
 1. 在&#x200B;**Photoshop — 取得PS Status**&#x200B;上再選取傳送幾次，直到狀態變更為&#x200B;**succeeded**。 這可能需要幾分鐘的時間。
 
-當回應可用時，您可以看到json檔案包含PSD檔案所有層的資訊。 這是有用的資訊，因為可以識別圖層名稱或圖層ID等。
+當回應可用時，您可以看到json檔案包含PSD檔案所有圖層的資訊。 這是有用的資訊，因為可以識別圖層名稱或圖層ID等。
 
 ![Azure儲存體](./images/ps20.png){zoomable="yes"}
 
