@@ -4,9 +4,9 @@ description: Foundation — 資料擷取 — 從離線來源擷取資料
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1562'
 ht-degree: 5%
 
 ---
@@ -53,6 +53,10 @@ ht-degree: 5%
 - country_code
 - 城市
 - 國家/地區
+- crmId
+- consent.email
+- consent.commercialEmail
+- consent.any
 
 所有這些欄位都定義用於產生與Platform相容的資料。
 
@@ -68,7 +72,9 @@ ht-degree: 5%
 
 ### 驗證資料集
 
-開啟[Adobe Experience Platform](https://experience.adobe.com/platform)並移至&#x200B;**[!UICONTROL 資料集]**。
+移至[https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
+
+![資料擷取](./images/home.png)
 
 繼續之前，您必須選取&#x200B;**[!UICONTROL 沙箱]**。 要選取的沙箱名為``--aepSandboxName--``。
 
@@ -115,8 +121,6 @@ ht-degree: 5%
 您也可以看到我們的主要身分位於`--aepTenantId--.identification.core.crmId`，連結至&#x200B;**[!UICONTROL 示範系統 — CRMID]**&#x200B;的[!UICONTROL 名稱空間]。
 
 ![資料擷取](./images/schema_descriptor.png)
-
-
 
 每個結構描述以及應在[!UICONTROL 即時客戶設定檔]中使用的每個資料集都應該有一個[!UICONTROL 主要識別碼]。 此[!UICONTROL 主要識別碼]是該資料集中該客戶的品牌識別碼使用者。 在CRM資料集的情況下，它可能是電子郵件地址或CRM ID；在呼叫中心資料集的情況下，它可能是客戶的行動電話號碼。
 
@@ -229,6 +233,24 @@ Source結構描述欄位&#x200B;**id**&#x200B;應連結至目標欄位&#x200B;**
 Source結構描述欄位&#x200B;**last_name**&#x200B;應連結至目標欄位&#x200B;**person.name.lastName**。
 
 ![資料擷取](./images/tflname.png)
+
+#### consents.marketing.email.val
+
+Source結構描述欄位&#x200B;**last_name**&#x200B;應連結至目標欄位&#x200B;**consents.marketing.email.val**。
+
+![資料擷取](./images/cons1.png)
+
+#### consents.marketing.commercialEmail.val
+
+Source結構描述欄位&#x200B;**last_name**&#x200B;應連結至目標欄位&#x200B;**consents.marketing.commercialEmail.val**。
+
+![資料擷取](./images/cons2.png)
+
+#### consents.marketing.any.val
+
+Source結構描述欄位&#x200B;**last_name**&#x200B;應連結至目標欄位&#x200B;**consents.marketing.any.val**。
+
+![資料擷取](./images/cons3.png)
 
 您現在應該擁有此專案。 按一下&#x200B;**完成**。
 
