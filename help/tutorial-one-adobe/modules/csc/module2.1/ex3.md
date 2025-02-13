@@ -4,7 +4,7 @@ description: 設定您的AEM CS環境
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0a0909b639e34d92266a326c3338d7f17db7ecc6
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -69,7 +69,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup13.png){zoomable="yes"}
 
-您需要使用特定AEM CS環境的URL以及GitHub存放庫的設定，來取代目前值。
+您需要使用特定AEM CS環境的URL結合GitHub存放庫的設定，來取代目前值。
 
 這是URL目前的值： `https://author-p131639-e1282833.adobeaemcloud.com/bin/franklin.delivery/adobedevxsc/citisignal-one/main`。
 
@@ -77,7 +77,7 @@ URL有3個部分需要更新
 
 `https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
 
-XXX應由您的AEM CS作者環境的URL取代。
+XXX應取代為AEM CS作者環境的URL。
 
 YYYY應取代為您的GitHub使用者帳戶。
 
@@ -133,7 +133,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
-按一下&#x200B;**使用Adobe**&#x200B;登入。
+按一下&#x200B;**使用Adobe登入**。
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
@@ -186,7 +186,7 @@ ZZZ = `citisignal`
 您現在可以關閉此視窗。
 
 
-## 2.1.3.4Publish花旗訊號資產
+## 2.1.3.4發佈CitiSignal資產
 
 移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 按一下您的&#x200B;**程式**&#x200B;以開啟。
 
@@ -196,11 +196,11 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
-按一下&#x200B;**使用Adobe**&#x200B;登入。
+按一下&#x200B;**使用Adobe登入**。
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
-然後您會看到您的作者環境。 按一下&#x200B;**網站**。
+然後您會看到您的作者環境。 按一下&#x200B;**Assets**。
 
 ![AEMCS](./images/aemcsassets1.png){zoomable="yes"}
 
@@ -216,7 +216,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcsassets4.png){zoomable="yes"}
 
-按一下&#x200B;**Publish**。
+按一下&#x200B;**發佈**。
 
 ![AEMCS](./images/aemcsassets5.png){zoomable="yes"}
 
@@ -232,7 +232,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
-按一下&#x200B;**使用Adobe**&#x200B;登入。
+按一下&#x200B;**使用Adobe登入**。
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
@@ -278,7 +278,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup38.png){zoomable="yes"}
 
-## 2.1.3.6Publish花旗訊號網站
+## 2.1.3.6發佈CitiSignal網站
 
 接著，按一下&#x200B;**CitiSignal**&#x200B;前面的核取方塊。 然後，按一下&#x200B;**管理出版物**。
 
@@ -296,7 +296,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup42.png){zoomable="yes"}
 
-按一下&#x200B;**Publish**。
+按一下&#x200B;**發佈**。
 
 ![AEMCS](./images/aemcssetup43.png){zoomable="yes"}
 
