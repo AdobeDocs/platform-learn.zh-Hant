@@ -4,9 +4,9 @@ description: 基礎 — FAC — 建立方案、資料模型和連結
 kt: 5342
 doc-type: tutorial
 exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
-source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '648'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 2%
 
 您將會看到此訊息。 按一下&#x200B;**儲存**。
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_PERSONS`
+### 使用者 — 人員
 
 您現在可以開始定義綱要之間的連結。 若要開始定義連結，您必須按一下[建立連結]。****
 
@@ -143,7 +143,7 @@ ht-degree: 2%
 ![FAC](./images/fdb18.png)
 
 
-### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
+### 家庭 — 個人
 
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
@@ -153,7 +153,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb19.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
+### 使用者 — MONTHLY_DATA_USAGE
 
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
@@ -164,7 +164,7 @@ ht-degree: 2%
 ![FAC](./images/fdb21.png)
 
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
+### 使用者 — 家庭
 
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 
@@ -174,7 +174,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb23.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
+### 使用者 — MOBILE_DATA_USAGE
 
 然後您就會回到這裡。 按一下&#x200B;**建立連結**&#x200B;以建立其他連結。
 

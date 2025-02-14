@@ -4,9 +4,9 @@ description: Foundation — 資料擷取 — 設定結構描述並設定識別�
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3102'
 ht-degree: 4%
 
 ---
@@ -61,13 +61,9 @@ ht-degree: 4%
 
 ![資料擷取](./images/sb1.png)
 
-在Adobe Experience Platform中，按一下熒幕左邊功能表中的&#x200B;**[!UICONTROL 結構描述]**。 您會看到可用的[!UICONTROL 結構描述]清單。
+在Adobe Experience Platform中，按一下熒幕左邊功能表中的&#x200B;**[!UICONTROL 結構描述]**。 您會看到可用的[!UICONTROL 結構描述]清單。 您應該建立新的結構描述。 若要建立新結構描述，請按一下[建立結構描述]。**[!UICONTROL +]**。
 
 ![資料擷取](./images/menuschemas.png)
-
-您應該建立新的結構描述。 若要建立新結構描述，請按一下[建立結構描述]。**[!UICONTROL +]**。
-
-![資料擷取](./images/createschema.png)
 
 選取「**手動**」，然後按一下「**選取**」。
 
@@ -156,8 +152,8 @@ ht-degree: 4%
 
 您現在應該使用這些物件定義來輸入這個新欄位的資訊：
 
-- 欄位名稱： **[!UICONTROL 識別]**
-- 顯示名稱： **[!UICONTROL 識別]**
+- 欄位名稱: **`--aepUserLdap--_identification`**
+- 顯示名稱： **`--aepUserLdap--_identification`**
 - 類型：**[!UICONTROL 物件]**
 - 欄位群組： **`--aepUserLdap-- - Profile Identification Field Group`**
 
@@ -279,7 +275,7 @@ ht-degree: 4%
 
 ![資料擷取](./images/sureyps.png)
 
-### 客戶會怎麼做？
+## 此客戶會怎麼做？
 
 擷取問題&#x200B;**此客戶有何行為？您組織的**&#x200B;已透過在產品頁面上執行個體的產品檢視完成。
 
@@ -291,7 +287,7 @@ ht-degree: 4%
 
 若要指定該問題可有何種答案，您必須定義[!UICONTROL 欄位群組]。 [!UICONTROL 欄位群組]是[!UICONTROL ExperienceEvent]類別的延伸模組，而且有非常明確的設定。 例如，有關客戶檢視或新增至購物車的產品型別屬於[!UICONTROL 欄位群組] **Commerce詳細資料**&#x200B;的資訊。
 
-第二，您的組織需要決定您將如何識別此客戶的行為。 由於我們討論的是網站上的互動，因此您的組織可能瞭解客戶，但也可能有未知的匿名訪客活躍在網站上。 因此，我們無法使用像電子郵件地址之類的識別碼。 在這種情況下，您的組織可能會決定使用[!UICONTROL Experience Cloud識別碼(ECID)]作為主要識別碼。
+第二，您的組織需要決定您將如何識別此客戶的行為。 由於我們討論的是網站上的互動，因此您的組織可能瞭解客戶，但也可能有未知的匿名訪客活躍在網站上。 因此，我們無法使用像電子郵件地址之類的識別碼。 在此情況下，您的組織可能會決定使用[!UICONTROL Experience Cloud ID (ECID)]作為主要識別碼。
 
 最後，區分資料擷取的管道很重要。 在此案例中，我們將討論網站互動以及需要定義的結構描述，以反映&#x200B;**其中**&#x200B;擷取的互動資料。 管道在影響所擷取的資料方面也將發揮重要作用。 因此，最佳實務是為每個管道、主要識別碼和收集之資料型別的組合定義結構描述。
 
@@ -305,13 +301,9 @@ ht-degree: 4%
 
 ![資料擷取](./images/sb1.png)
 
-在Adobe Experience Platform中，按一下熒幕左邊功能表中的&#x200B;**[!UICONTROL 結構描述]**，然後前往&#x200B;**瀏覽**。
+在Adobe Experience Platform中，按一下熒幕左邊功能表中的&#x200B;**[!UICONTROL 結構描述]**，然後前往&#x200B;**瀏覽**。 您應該建立新的結構描述。 若要建立新的結構描述，請按一下[建立結構描述]按鈕&#x200B;**[!UICONTROL +。]**
 
 ![資料擷取](./images/menuschemas.png)
-
-在[!UICONTROL 結構描述]中，您會看到所有現有的結構描述。 您應該建立新的結構描述。 若要建立新的結構描述，請按一下[建立結構描述]按鈕&#x200B;**[!UICONTROL +。]**
-
-![資料擷取](./images/schemasee.png)
 
 選取「**手動**」，然後按一下「**選取**」。
 
@@ -390,8 +382,8 @@ ht-degree: 4%
 
 使用此欄位來定義您的新欄位：
 
-- 欄位名稱： **[!UICONTROL 識別]**
-- 顯示名稱： **[!UICONTROL 識別]**
+- 欄位名稱: **`--aepUserLdap--_identification`**
+- 顯示名稱： **`--aepUserLdap--_identification`**
 - 類型：**[!UICONTROL 物件]**
 - 欄位群組： `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
