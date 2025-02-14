@@ -10,40 +10,40 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-source-git-commit: 6311417699d49cb2a9bbb67e221b9054a8b37605
+source-git-commit: 4fc3d8815c2f0f5bed7bb0d1fe8cfcd9b1599762
 workflow-type: tm+mt
-source-wordcount: '99'
-ht-degree: 2%
+source-wordcount: '113'
+ht-degree: 0%
 
 ---
 
 
 # 使用標籤將Adobe Analytics移轉至網路SDK {#migrate-analytics-to-websdk}
 
-+ [移轉概述](migration-to-websdk-overview.md)
++ [1.移轉概觀](migration-to-websdk-overview.md)
 
-+ [建立驗證報表套裝](create-a-validation-report-suite.md)
++ [2.建立驗證報表套裝](create-a-validation-report-suite.md)
 
-+ [建立資料串流](create-and-configure-the-analytics-datastream.md)
++ [3.建立資料串流](create-and-configure-the-analytics-datastream.md)
 
-+ [新增網頁SDK擴充功能](add-and-configure-the-web-sdk-extension.md)
++ [4.新增網頁SDK擴充功能](add-and-configure-the-web-sdk-extension.md)
 
-+ [建立變數資料元素](create-a-variable-data-element.md)
++ [5.建立「變數」資料元素](create-a-variable-data-element.md)
 
-+ [移轉預設頁面載入規則](migrate-your-default-page-load-rule.md)
++ [6.移轉預設頁面載入規則](migrate-your-default-page-load-rule.md)
 
-+ [移轉自訂程式碼](migrate-custom-code-to-the-web-sdk.md)
++ [7.移轉自訂程式碼](migrate-custom-code-to-the-web-sdk.md)
 
-+ [建置開發程式庫](build-the-implementation-changes.md)
++ [8.建立開發程式庫](build-the-implementation-changes.md)
 
-+ [偵錯和驗證](debug-and-validate-your-web-sdk-migration.md)
++ [9.偵錯和驗證](debug-and-validate-your-web-sdk-migration.md)
 
-+ [移轉其他頁面規則](migrate-additional-page-rules.md)
++ [10.移轉其他頁面規則](migrate-additional-page-rules.md)
 
-+ [移轉自訂連結規則](migrate-custom-link-rules.md)
++ [11.移轉自訂連結規則](migrate-custom-link-rules.md)
 
-+ [移轉全域變數](migrate-global-variables.md)
++ [12.移轉全域變數](migrate-global-variables.md)
 
-+ [刪除Analytics擴充功能](delete-analytics-extension-items.md)
++ [13.刪除Analytics擴充功能](delete-analytics-extension-items.md)
 
-+ [Publish至測試和生產](publish-the-migration.md)
++ [14.發佈至測試環境和生產環境](publish-the-migration.md)
