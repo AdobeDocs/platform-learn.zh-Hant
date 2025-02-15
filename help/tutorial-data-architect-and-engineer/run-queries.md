@@ -8,7 +8,7 @@ feature: Queries
 jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Adobe Experience Platform查詢服務可讓您使用標準SQL在Platform中查�
 **資料架構師**&#x200B;和&#x200B;**資料工程師**&#x200B;需要在本教學課程之外使用查詢服務。
 
 在開始練習之前，請觀看此短片，以進一步瞭解查詢服務：
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
 ## 需要的許可權
 

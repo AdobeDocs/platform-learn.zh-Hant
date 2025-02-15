@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 * 您可以善用的Adobe Experience Platform資料準備功能
 * 提高Adobe Real-Time CDP、Adobe Journey Optimizer和Customer Journey Analytics的投資報酬率
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
 
 ## SQL範例
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->此影片是摘錄自Adobe Summit2020工作階段&#x200B;*[重新充電全通路資料，讓體驗充滿活力](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*。
+>此影片是摘錄自Adobe Summit 2020工作階段&#x200B;*[為充滿活力的體驗重新充電全通路資料](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*。

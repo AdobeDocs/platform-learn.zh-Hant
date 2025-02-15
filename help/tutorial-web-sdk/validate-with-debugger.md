@@ -4,7 +4,7 @@ description: 瞭解如何使用Adobe Experience Platform Debugger驗證您的Pla
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 3%
@@ -22,7 +22,7 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 
 如果您以前從未使用過除錯程式，您可以觀看這段5分鐘的概述影片：
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 在本課程中，您使用[Adobe Experience Platform Debugger擴充功能](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)，將[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)上以硬式編碼撰寫的標籤屬性取代為您自己的屬性。
 
@@ -33,8 +33,8 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 在本課程結束時，您將能夠使用除錯工具：
 
 * 載入替代標籤程式庫
-* 驗證使用者端XDM事件是否如預期擷取及傳送資料給PlatformEdge Network
-* 啟用Edge追蹤以檢視平台Edge Network傳送的伺服器端請求
+* 驗證使用者端XDM事件是否如預期般擷取及傳送資料給Platform Edge Network
+* 啟用Edge追蹤以檢視Platform Edge Network傳送的伺服器端請求
 
 ## 先決條件
 
@@ -50,12 +50,12 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 
 ## 使用Debugger載入替代標籤程式庫
 
-Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標籤程式庫取代現有的標籤程式庫。 此技巧對於驗證相當實用，可讓我們略過本教學課程中的許多實作步驟。
+Experience Platform Debugger有一種很酷的功能，可讓您使用其他標籤程式庫取代現有的標籤程式庫。 此技巧對於驗證相當實用，可讓我們略過本教學課程中的許多實作步驟。
 
-1. 確定您已開啟[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}，並選取Experience PlatformDebugger擴充功能圖示
+1. 確定您已開啟[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}，並選取Experience Platform Debugger擴充功能圖示
 1. Debugger將會開啟並顯示硬式編碼實作的一些詳細資料（您可能需要在開啟Debugger後重新載入Luma網站）
 1. 確認Debugger為&quot;**[!UICONTROL 已連線至Luma]**&quot; （如下圖所示），然後選取&quot;**[!UICONTROL 鎖定]**&quot;圖示以將Debugger鎖定至Luma網站。
-1. 選取&#x200B;**[!UICONTROL 登入]**&#x200B;按鈕，並使用您的Adobe識別碼登入Adobe Experience Cloud。
+1. 選取&#x200B;**[!UICONTROL 登入]**&#x200B;按鈕，並使用您的Adobe ID登入Adobe Experience Cloud。
 1. 現在，前往左側導覽中的&#x200B;**[!UICONTROL Experience Platform標籤]**
 
    ![偵錯工具標籤畫面](assets/validate-launch-screen.png)
@@ -75,17 +75,17 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
 
    已取代![標籤屬性](assets/validate-switch-success.png)
 
-繼續進行教學課程的過程中，您會使用此技巧將Luma網站對應至您自己的標籤屬性，以驗證您的Platform Web SDK實作。 在您自己的網站上使用標籤時，您可以使用這種相同的技巧，來驗證生產環境網站上的開發標籤程式庫。
+繼續進行教學課程的過程中，您會使用此技巧將Luma網站對應至您自己的標籤屬性，以驗證您的Platform Web SDK實施。 在您自己的網站上使用標籤時，您可以使用這種相同的技巧，來驗證生產環境網站上的開發標籤程式庫。
 
-## 使用Experience Platform偵錯工具驗證使用者端網路請求
+## 使用Experience Platform Debugger驗證使用者端網路請求
 
-您可以使用Debugger驗證從Platform Web SDK實作觸發的使用者端信標，以檢視傳送至PlatformEdge Network的資料：
+您可以使用Debugger驗證從您的Platform Web SDK實作觸發的使用者端信標，以檢視傳送至Platform Edge Network的資料：
 
 1. 前往左側導覽中的&#x200B;**[!UICONTROL 摘要]**，檢視標籤屬性的詳細資料
 
    ![摘要標籤](assets/validate-summary.png)
 
-1. 現在，前往左側導覽中的&#x200B;**[!UICONTROL Experience PlatformWeb SDK]**&#x200B;以檢視&#x200B;**[!UICONTROL 網路要求]**
+1. 現在，前往左側導覽中的&#x200B;**[!UICONTROL Experience Platform Web SDK]**，檢視&#x200B;**[!UICONTROL 網路要求]**
 1. 開啟&#x200B;**[!UICONTROL 事件]**&#x200B;列
 
    ![Adobe Experience Platform Web SDK請求](assets/validate-aep-screen.png)
@@ -112,7 +112,7 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
 
 1. 返回 [Luma 首頁](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 開啟左側導覽中的&#x200B;**[!UICONTROL Experience PlatformWeb SDK]**&#x200B;區段
+1. 開啟左側導覽中的&#x200B;**[!UICONTROL Experience Platform Web SDK]**&#x200B;區段
 
    Debugger中的![Web SDK](assets/identity-debugger-websdk-dark.png)
 
@@ -139,9 +139,9 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
    >
    > ECID值會顯示在網路回應中。 它不會包含在網路要求的`identityMap`部分中，也不會以此格式儲存在Cookie中。
 
-## 使用Experience Platform偵錯工具驗證伺服器端網路要求
+## 使用Experience Platform Debugger驗證伺服器端網路請求
 
-如您在[設定資料串流](configure-datastream.md)課程中所學，Platform Web SDK會先將資料從您的數位屬性傳送至PlatformEdge Network。 然後，平台Edge Network會對資料流中啟用的對應服務發出其他伺服器端請求。 您可以在Debugger中使用Edge追蹤來驗證PlatformEdge Network所提出的伺服器端請求。
+如您在[設定資料串流](configure-datastream.md)課程中所學習，Platform Web SDK會先將資料從您的數位屬性傳送至Platform Edge Network。 接著，Platform Edge Network會對資料流中啟用的對應服務發出其他伺服器端請求。 您可以在Debugger中使用Edge追蹤來驗證Platform Edge Network發出的伺服器端請求。
 
 <!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
@@ -150,7 +150,7 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
 
 若要啟用Edge追蹤：
 
-1. 在&#x200B;**[!UICONTROL Experience Platform偵錯工具]**&#x200B;的左側導覽中，選取&#x200B;**[!UICONTROL 記錄檔]**
+1. 在&#x200B;**[!UICONTROL Experience Platform Debugger]**&#x200B;的左側導覽中，選取&#x200B;**[!UICONTROL 記錄檔]**
 1. 選取&#x200B;**[!UICONTROL Edge]**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 連線]**
 
    ![連線Edge追蹤](assets/analytics-debugger-edgeTrace.png)
@@ -159,14 +159,14 @@ Experience PlatformDebugger有一種很酷的功能，可讓您使用其他標�
 
    ![已連線的Edge追蹤](assets/analytics-debugger-edge-connected.png)
 
-1. 重新整理[Luma首頁](https://luma.enablementadobe.com/)，並再次檢查&#x200B;**[!UICONTROL Experience Platform偵錯工具]**，以檢視資料是否通過。
+1. 重新整理[Luma首頁](https://luma.enablementadobe.com/)並再次檢查&#x200B;**[!UICONTROL Experience Platform Debugger]**，檢視是否有資料傳入。
 
    ![Analytics信標Edge追蹤](assets/validate-edge-trace.png)
 
-此時，您無法檢視任何傳送至Adobe應用程式的平台Edge Network請求，因為您尚未啟用資料流中的任何請求。 在未來的課程中，您將使用Edge追蹤來檢視用於Adobe應用程式和事件轉送的傳出伺服器端請求。 但首先，瞭解另一個用於驗證PlatformEdge Network所提出伺服器端請求的工具 — Adobe Experience Platform Assurance！
+此時，您無法檢視任何前往Adobe應用程式的Platform Edge Network請求，因為您尚未在資料流中啟用任何請求。 在未來的課程中，您將使用Edge Trace來檢視傳送至Adobe應用程式的傳出伺服器端請求和事件轉送。 但首先，您可以瞭解其他驗證Platform Edge Network伺服器端請求的工具 — Adobe Experience Platform Assurance！
 
 [下一步： ](validate-with-assurance.md)
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

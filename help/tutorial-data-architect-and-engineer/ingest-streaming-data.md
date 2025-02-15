@@ -2,13 +2,13 @@
 title: 擷取串流資料
 seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 擷取串流資料
-description: 在本課程中，您將使用Web SDK將資料串流至Experience Platform。
+description: 在本課程中，您將使用網頁SDK將資料串流至Experience Platform。
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '3309'
 ht-degree: 0%
@@ -29,15 +29,15 @@ ht-degree: 0%
 
 **資料工程師**&#x200B;需要在本教學課程之外擷取串流資料。 實作Adobe Experience Platform的Web或行動SDK時，通常會有Web或行動開發人員參與資料層建立和標籤屬性設定。
 
-在開始練習之前，請觀看這兩個短片，以進一步瞭解串流資料擷取和Web SDK：
+在開始練習之前，請觀看這兩個短片，以進一步瞭解串流資料擷取和網頁SDK：
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->雖然本教學課程著重於使用Web SDK從網站串流擷取，但您也可以使用[Adobe行動SDK](https://developer.adobe.com/client-sdks/documentation/)、[Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)和其他機制串流資料。
+>雖然本教學課程著重於使用Web SDK從網站串流擷取，但您也可以使用[Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)、[Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)和其他機制串流資料。
 
 ## 需要的許可權
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ## 設定資料串流
 
-首先，我們將設定資料串流。 資料串流會告訴Adobe Edge網路，在從Web SDK呼叫收到資料後，應將資料傳送至何處。 例如，您要將資料傳送至Experience Platform、Adobe Analytics或Adobe Target嗎？ 資料串流在資料收集使用者介面（前身為Launch）中進行管理，對於透過Web SDK進行資料收集至關重要。
+首先，我們將設定資料串流。 資料串流會告訴Adobe Edge網路，從網頁SDK呼叫收到資料後，應將資料傳送至何處。 例如，您要將資料傳送至Experience Platform、Adobe Analytics或Adobe Target嗎？ 資料串流在資料收集使用者介面（前身為Launch）中進行管理，對於透過Web SDK進行資料收集至關重要。
 
 若要建立您的[!UICONTROL 資料流]：
 
@@ -96,12 +96,12 @@ ht-degree: 0%
 
    ![命名資料串並儲存](assets/websdk-edgeConfig-name.png)
 
-在下一個畫面中，您指定要傳送資料的位置。 若要傳送資料給Experience Platform：
+在下一個畫面中，您指定要傳送資料的位置。 若要將資料傳送至Experience Platform：
 
 1. 開啟&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;以公開其他欄位
 1. 針對&#x200B;**[!UICONTROL 沙箱]**，請選取`Luma Tutorial`
 1. 針對&#x200B;**[!UICONTROL 事件資料集]**，請選取`Luma Web Events Dataset`
-1. 如果您使用其他Adobe應用程式，歡迎探索其他區段，瞭解這些其他解決方案的Edge設定需要哪些資訊。 請記住，開發Web SDK不僅是為了將資料串流到Experience Platform中，也是為了取代其他Adobe應用程式使用的所有先前JavaScript資料庫。 Edge設定是用來指定您要傳送資料之各應用程式的帳戶詳細資訊。
+1. 如果您使用其他Adobe應用程式，歡迎探索其他區段，瞭解這些其他解決方案的Edge設定需要哪些資訊。 請記住，開發Web SDK不僅是為了將資料串流到Experience Platform，也是為了取代其他Adobe應用程式使用的所有先前JavaScript資料庫。 Edge設定是用來指定您要傳送資料之各應用程式的帳戶詳細資訊。
 1. 選取&#x200B;**[!UICONTROL 儲存]**
    ![設定資料流並儲存](assets/websdk-edgeConfig-addEnvironment.png)
 
@@ -109,7 +109,7 @@ Edge設定儲存後，產生的畫面會顯示已建立用於開發、測試和�
 ![每個Edge設定都可以有多個環境](assets/websdk-edgeConfig-environments.png)
 這三個環境都包含您剛才輸入的平台詳細資料。 不過，這些詳細資料可依環境以不同方式設定。 例如，您可以讓每個環境將資料傳送至不同的Platform沙箱。 在本教學課程中，我們將不會針對資料流執行任何其他自訂。
 
-## 安裝Web SDK擴充功能
+## 安裝網頁SDK擴充功能
 
 ### 新增屬性
 
@@ -147,9 +147,9 @@ Now switch back to your browser tab with the Data Collection interface still ope
 ![Luma Platform Tutorial should appear](assets/websdk-property-showsInList.png)
 -->
 
-## 新增Web SDK擴充功能
+## 新增網頁SDK擴充功能
 
-現在您有了屬性，可以使用擴充功能新增Web SDK。 擴充功能是擴充資料收集介面和功能的程式碼套件。 若要新增擴充功能：
+現在您已擁有屬性，可以使用擴充功能新增Web SDK。 擴充功能是擴充資料收集介面和功能的程式碼套件。 若要新增擴充功能：
 
 1. 開啟您的標籤屬性
 1. 前往左側導覽中的&#x200B;**[!UICONTROL 擴充功能]**
@@ -157,9 +157,9 @@ Now switch back to your browser tab with the Data Collection interface still ope
 1. 有許多擴充功能可供標籤使用。 篩選含有字詞`Web SDK`的目錄
 1. 在&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;擴充功能中，選取&#x200B;**[!UICONTROL 安裝]**按鈕
    ![安裝Adobe Experience Platform Web SDK擴充功能](assets/websdk-property-addExtension.png)
-1. Web SDK擴充功能有數種設定可供使用，但在本教學課程中，我們將只會設定兩種。 將&#x200B;**[!UICONTROL Edge網域]**&#x200B;更新為`data.enablementadobe.com`。 此設定可讓您在Web SDK實作中設定第一方Cookie （建議使用）。 在本課程的稍後部分，您將會將`enablementadobe.com`網域上的網站對應至您的標籤屬性。 已設定`enablementadobe.com`網域的CNAME，因此`data.enablementadobe.com`將轉送至Adobe伺服器。 當您在自己的網站上實作Web SDK時，必須針對您自己的資料收集目的建立CNAME，例如`data.YOUR_DOMAIN.com`
+1. Web SDK擴充功能有數種設定可供使用，但在本教學課程中，我們只會設定兩種。 將&#x200B;**[!UICONTROL Edge網域]**&#x200B;更新為`data.enablementadobe.com`。 此設定可讓您透過網頁SDK實作設定第一方Cookie （建議使用）。 在本課程的稍後部分，您將會將`enablementadobe.com`網域上的網站對應至您的標籤屬性。 已設定`enablementadobe.com`網域的CNAME，因此`data.enablementadobe.com`將轉送至Adobe伺服器。 當您在自己的網站上實作Web SDK時，必須針對您自己的資料收集目的建立CNAME，例如`data.YOUR_DOMAIN.com`
 1. 從&#x200B;**[!UICONTROL 資料流]**&#x200B;下拉式清單中，選取您的`Luma Platform Tutorial`資料流。
-1. 歡迎檢視其他設定選項（但請勿變更！） 然後選取&#x200B;**[!UICONTROL 儲存]**
+1. 您可以檢視其他組態選項（但不要變更它們！），然後選取&#x200B;**[!UICONTROL 儲存]**
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
    ![](assets/websdk-property-configureExtension.png)
@@ -188,7 +188,7 @@ Now switch back to your browser tab with the Data Collection interface still ope
 1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存規則\
    ![儲存規則](assets/websdk-property-saveRule.png)
 
-## Publish程式庫中的規則
+## 在程式庫中發佈規則
 
 接下來，我們將規則發佈至開發環境，以便驗證它是否有效。
 
@@ -235,7 +235,7 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
    ![選取新增資料庫](assets/websdk-property-pubAddNewLib.png)
 1. 為&#x200B;**[!UICONTROL 名稱]**&#x200B;輸入`Luma Platform Tutorial`
 1. 針對&#x200B;**[!UICONTROL 環境]**，選取`Development`
-1. 選取&#x200B;**[!UICONTROL 新增所有變更的資源]**&#x200B;按鈕。 (除了[!UICONTROL Adobe Experience Platform Web SDK]擴充功能和`All Pages - Library Loaded`規則之外，您也會看到已新增的[!UICONTROL 核心]擴充功能，其中包含所有Launch Web屬性所需的基礎JavaScript。)
+1. 選取&#x200B;**[!UICONTROL 新增所有變更的資源]**&#x200B;按鈕。 (除了[!UICONTROL Adobe Experience Platform Web SDK]擴充功能和`All Pages - Library Loaded`規則外，您也會看到已新增[!UICONTROL Core]擴充功能，其中包含所有Launch Web屬性所需的基礎JavaScript。)
 1. 選取&#x200B;**[!UICONTROL 儲存並建置以供開發]**按鈕
    ![建立並建置程式庫](assets/websdk-property-buildLibrary.png)
 
@@ -255,7 +255,7 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 
 如果您從未使用過Debugger，而且此版本與舊版Adobe Experience Cloud Debugger不同，您可能會想觀看這段五分鐘的概述影片：
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### 開啟Luma網站
 
@@ -268,11 +268,11 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 
 ![Luma首頁](assets/websdk-luma-homepage.png)
 
-### 使用Experience Platform偵錯工具來對應至您的標籤屬性
+### 使用Experience Platform Debugger對應至您的標籤屬性
 
 Experience Platform Debugger有一種很酷的功能，可讓您使用其他標籤屬性來取代現有的標籤屬性。 這對於驗證非常有用，可讓我們略過本教學課程中的許多實作步驟。
 
-1. 請確定您已開啟Luma網站，並選取Experience PlatformDebugger擴充功能圖示
+1. 請確定您已開啟Luma網站，並選取Experience Platform Debugger擴充功能圖示
 1. Debugger將會開啟並顯示硬式編碼實作的部分詳細資料，這些詳細資料與本教學課程無關（您可能需要在開啟Debugger後重新載入Luma網站）
 1. 確認Debugger為&quot;**[!UICONTROL 已連線至Luma]**&quot; （如下圖所示），然後選取&quot;**[!UICONTROL 鎖定]**&quot;圖示以將Debugger鎖定至Luma網站。
 1. 選取右上方的&#x200B;**[!UICONTROL 登入]**&#x200B;按鈕以進行驗證。
@@ -343,7 +343,7 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 
 ### 將頁面名稱對應至XDM物件資料元素
 
-現在，我們將頁面名稱對應至Web SDK。
+現在，我們將頁面名稱對應至網頁SDK。
 
 >[!IMPORTANT]
 >
@@ -389,7 +389,7 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 
 ## 傳送其他身分
 
-您的Web SDK實作現在正在傳送以Experience CloudID (ECID)作為主要識別碼的事件。 ECID會由Web SDK自動產生，且每個裝置和瀏覽器皆不重複。 根據他們使用的裝置和瀏覽器，單一客戶可以有多個ECID。 那麼，我們如何取得此客戶的統一檢視，並將其線上活動連結至CRM、忠誠度和離線購買資料？ 為此，我們會在工作階段期間收集其他身分，並透過身分拼接決定性地連結其設定檔。
+您的Web SDK實作現在會傳送以Experience Cloud ID (ECID)作為主要識別碼的事件。 ECID會由Web SDK自動產生，且在每個裝置和瀏覽器中都是唯一的。 根據他們使用的裝置和瀏覽器，單一客戶可以有多個ECID。 那麼，我們如何取得此客戶的統一檢視，並將其線上活動連結至CRM、忠誠度和離線購買資料？ 為此，我們會在工作階段期間收集其他身分，並透過身分拼接決定性地連結其設定檔。
 
 如果您還記得，我在[對應身分](map-identities.md)課程中曾提到我們會使用ECID和CRM ID做為網頁資料的身分。 現在來使用Web SDK收集CRM ID！
 
@@ -408,7 +408,7 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 現在我們已擷取CRM ID值，我們必須將其與名為[!UICONTROL 身分對應]資料元素的特殊資料元素型別建立關聯：
 
 1. 新增名稱為`Identities`的資料元素
-1. 以&#x200B;**[!UICONTROL 擴充功能]**&#x200B;的形式，選取&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**
+1. 以&#x200B;**[!UICONTROL 延伸模組]**&#x200B;身分，選取&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**
 1. 以&#x200B;**[!UICONTROL 資料元素型別]**，請選取&#x200B;**[!UICONTROL 身分對應]**
 1. 以&#x200B;**[!UICONTROL 名稱空間]**&#x200B;身分，輸入`Luma CRM Id`，這是我們在先前的課程中建立的[!UICONTROL 名稱空間]
 
@@ -439,13 +439,13 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 
 ### 驗證身分
 
-若要驗證Web SDK現在是否正在傳送CRM ID：
+若要驗證CRM ID現在是否由網頁SDK傳送：
 
 1. 開啟[Luma網站](https://luma.enablementadobe.com/content/luma/us/en.html)
 1. 根據先前的指示，使用Debugger將其對應至您的標籤屬性
 1. 選取Luma網站右上角的&#x200B;**登入**&#x200B;連結
 1. 使用認證`test@adobe.com`/`test`登入
-1. 在驗證之後，請在Debugger中檢查Experience PlatformWeb SDK呼叫(**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL 網路要求]** > **[!UICONTROL 事件]**&#x200B;的最近要求)，您應該會看到`lumaCrmId`：
+1. 在驗證之後，請在Debugger中檢查Experience Platform Web SDK呼叫(**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL 網路要求]** > **[!UICONTROL 事件]**&#x200B;的最近要求)，您應該會看到`lumaCrmId`：
    ![在Debugger中驗證身分](assets/websdk-debugger-confirmIdentity.png)
 1. 使用ECID名稱空間和值再次查詢使用者設定檔。 在設定檔中，您會看到CRM ID，也會看到「忠誠度ID」和設定檔詳細資料，例如姓名和電話號碼。 所有身分和資料都已拼接到一個即時客戶個人檔案中！
    ![在Platform中驗證身分](assets/websdk-platform-lumaCrmIdProfile.png)
@@ -457,7 +457,7 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 * [串流擷取檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=zh-Hant)
 * [串流擷取API參考](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
-做得好！這是Web SDK和Launch的大量相關資訊。 完整式實作涉及的範圍更廣，但這些是協助您開始使用，並在Platform中檢視成果的基礎。
+做得好！那是有關網頁SDK和Launch的大量資訊。 完整式實作涉及的範圍更廣，但這些是協助您開始使用，並在Platform中檢視成果的基礎。
 
 >[!NOTE]
 >

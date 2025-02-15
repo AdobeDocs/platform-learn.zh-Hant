@@ -10,7 +10,7 @@ jira: KT-13827
 thumbnail: 3423071.jpg
 last-substantial-update: 2023-08-23T00:00:00Z
 exl-id: 58427feb-ed4e-43fe-921b-8deb24e2c531
-source-git-commit: e5407a227303a28a4bc1b9ca7b46c241cdb360ed
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 瞭解在[!DNL Real-Time CDP]中從合作夥伴擷取新潛在客戶以用於造訪前目標定位的工作流程。 如需詳細資訊，請造訪[透過潛在客戶使用案例](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/prospecting.html)檔案來吸引新客戶。
 
->[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423071/?learn=on&enablevpops)

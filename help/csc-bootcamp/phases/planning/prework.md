@@ -3,7 +3,7 @@ title: CSC Bootcamp — 其他前期工作
 description: CSC Bootcamp — 其他前期工作
 doc-type: multipage-overview
 exl-id: 76546141-68d5-4f09-b44a-e06cc08bbaa7
-source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '489'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Adobe Commerce是Adobe Experience Cloud中的眾多產品之一，可協助您�
 
 本影片可讓您熟悉Adobe Commerce，並展示我們建立以供在啟動營中使用的產品。 在實際情況中，您會將先前選取的品牌資產上傳至Adobe Commerce至產品設定。
 
->[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on&enablevpops)
 
 完成此工作後，您可以在Workfront中將工作3標示為100%完成。
 

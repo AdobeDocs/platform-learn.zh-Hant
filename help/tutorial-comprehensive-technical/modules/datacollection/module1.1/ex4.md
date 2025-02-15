@@ -1,10 +1,10 @@
 ---
-title: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功能的設定 — 使用者端Web資料收集
-description: 基礎 — Adobe Experience Platform資料收集與Web SDK擴充功能的設定 — 使用者端Web資料收集
+title: 基礎 — Adobe Experience Platform Data Collection設定和Web SDK擴充功能 — 使用者端Web Data Collection
+description: 基礎 — Adobe Experience Platform Data Collection設定和Web SDK擴充功能 — 使用者端Web Data Collection
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -25,9 +25,9 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 
 如果您從未使用過Debugger，而且此版本與舊版Adobe Experience Cloud Debugger不同，建議您觀看此5分鐘概觀影片：
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on&enablevpops)
 
-鑑於您將會以無痕模式載入示範網站，因此您必須確定Experience PlatformDebugger也可在無痕模式中使用。 若要這麼做，請在瀏覽器中前往&#x200B;**chrome://extensions**，並開啟Experience PlatformDebugger擴充功能。
+鑑於您將會以無痕模式載入示範網站，您必須確定Experience Platform Debugger也可在無痕模式中使用。 若要這麼做，請在瀏覽器中前往&#x200B;**chrome://extensions**，然後開啟Experience Platform Debugger擴充功能。
 
 確認已啟用這2個設定：
 
@@ -62,9 +62,9 @@ Experience Platform Debugger是適用於Chrome和Firefox瀏覽器的擴充功能
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web7.png)
 
-### 使用Experience Platform偵錯工具檢視前往Edge的呼叫
+### 使用Experience Platform Debugger檢視前往Edge的呼叫
 
-請確定您已開啟示範網站，然後按一下Experience PlatformDebugger擴充功能圖示。
+請確定您已開啟示範網站，然後按一下Experience Platform Debugger擴充功能圖示。
 
 ![EXP新聞首頁](./images/ext2.png)
 
@@ -90,17 +90,17 @@ Debugger將會開啟，顯示在Adobe Experience Platform資料收集屬性中�
 
 ![AEP Debugger AEP Web SDK擴充功能](./images/validate4.png)
 
-現在請按一下左側導覽中的&#x200B;**[!UICONTROL Experience PlatformWeb SDK]**，以檢視&#x200B;**[!UICONTROL 網路要求]**。
+現在請按一下左側導覽中的&#x200B;**[!UICONTROL Experience Platform Web SDK]**，檢視&#x200B;**[!UICONTROL 網路要求]**。
 
 每個要求都包含一個&#x200B;**[!UICONTROL 事件]**&#x200B;列。
 
 ![AEP Debugger AEP Web SDK擴充功能](./images/validate5.png)
 
-按一下以開啟&#x200B;**[!UICONTROL 事件]**&#x200B;列。 請注意您如何看見&#x200B;**web.webpagedetails.pageViews**&#x200B;事件，以及其他遵循&#x200B;**Web SDK ExperienceEvent XDM**&#x200B;格式的現成變數。
+按一下以開啟&#x200B;**[!UICONTROL 事件]**&#x200B;列。 請注意您如何檢視&#x200B;**web.webpagedetails.pageViews**&#x200B;事件，以及其他遵循&#x200B;**Web SDK ExperienceEvent XDM**&#x200B;格式的現成變數。
 
 ![事件值](./images/validate8.png)
 
-這些型別的請求詳細資訊也會顯示在網路標籤中。 篩選與&#x200B;**互動**&#x200B;的請求，以找出由Web SDK傳送的請求。 您可以在「裝載」區段中找到XDM裝載的所有詳細資訊：
+這些型別的請求詳細資訊也會顯示在網路標籤中。 篩選與&#x200B;**互動**&#x200B;的請求，以找出網頁SDK傳送的請求。 您可以在「裝載」區段中找到XDM裝載的所有詳細資訊：
 
 ![網路標籤](./images/validate9.png)
 

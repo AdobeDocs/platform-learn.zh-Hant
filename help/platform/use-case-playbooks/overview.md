@@ -9,7 +9,7 @@ duration: 141
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14806
 exl-id: 66d8992b-e812-4a5c-a696-45f29106aaab
-source-git-commit: f02bea4a92675e284be7ca86a0fcf7c17d296482
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 25%
@@ -20,7 +20,7 @@ ht-degree: 25%
 
 了解使用案例教戰手冊如何能協助 Real-Time Customer Data Platform 和 Journey Optimizer 的客戶加快實現價值。使用案例教戰手冊是涵蓋多個產業和行銷目標的數十個範本的目錄。 教戰手冊會產生受眾、歷程和結構描述等技術資產，然後可加以自訂並發佈到其他沙箱。 如需詳細資訊，請參閱[使用案例行動手冊檔案](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 
 ## 快速入門
 

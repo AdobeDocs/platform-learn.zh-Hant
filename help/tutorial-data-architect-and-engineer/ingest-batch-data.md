@@ -2,13 +2,13 @@
 title: 擷取批次資料
 seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 擷取批次資料
-description: 在本課程中，您將使用各種方法將批次資料擷取到Experience Platform中。
+description: 在本課程中，您將使用各種方法將批次資料內嵌至Experience Platform。
 role: Data Engineer
 feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2465'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 # 擷取批次資料
 
 <!-- 1hr-->
-在本課程中，您將使用各種方法將批次資料擷取到Experience Platform中。
+在本課程中，您將使用各種方法將批次資料內嵌至Experience Platform。
 
 批次資料擷取可讓您將大量資料一次擷取到Adobe Experience Platform。 您可以在Platform介面中或使用API，一次上傳內嵌批次資料。 您也可以使用Source聯結器設定從協力廠商服務（例如雲端儲存服務）定期排程的批次上傳。
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 在開始練習之前，請觀看此短片，以進一步瞭解資料擷取：
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## 需要的許可權
@@ -332,10 +332,10 @@ ht-degree: 0%
 
 ## ETL工具
 
-與多個ETL廠商Adobe合作夥伴，以支援將資料擷取到Experience Platform。 由於協力廠商眾多，本教學課程不涵蓋ETL，不過歡迎您檢閱以下部分資源：
+Adobe與多個ETL廠商合作，支援將資料擷取至Experience Platform。 由於協力廠商眾多，本教學課程不涵蓋ETL，不過歡迎您檢閱以下部分資源：
 
 * [開發Adobe Experience Platform的ETL整合](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)上的[Informatica Adobe Experience Platform Connector頁面
+* Adobe Exchange上的[Informatica Adobe Experience Platform Connector頁面](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
 * [Adobe Experience Platform Connector的Informatica檔案](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 

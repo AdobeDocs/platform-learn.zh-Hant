@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-6754
 thumbnail: 329940.jpg
 exl-id: 6e6512c2-2d8e-4b56-b8b8-d318b98f3627
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%
@@ -18,4 +18,4 @@ ht-degree: 0%
 
 此影片提供Adobe Experience Platform即時客戶個人檔案使用的聯合結構描述概觀。 聯合結構描述讓您能夠檢視共用相同類別的結構描述中包含的所有欄位的合併。 即時客戶設定檔使用聯合結構描述，以建立每個個別客戶的整體檢視。 如需詳細資訊，請瀏覽[聯合結構描述檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on&enablevpops)

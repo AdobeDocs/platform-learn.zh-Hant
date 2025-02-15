@@ -8,7 +8,7 @@ doc-type: Event
 thumbnail: 337665.jpg
 jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 17%
@@ -19,7 +19,7 @@ ht-degree: 17%
 
 實踐體驗承諾，存取較少的資料。無論您是否為廣告商、發佈者或機構，此網路研討會有助於未來在無第三方Cookie的情況下解放共同作業機會。
 
->[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on&enablevpops)
 
 ## 主要優點：
 
@@ -31,6 +31,6 @@ ht-degree: 17%
 
 [區段比對總覽](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match.html?lang=en)
 
-資料購買者的[Audience Marketplace](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
+資料購買者適用的[Audience Marketplace](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/audience-marketplace/audience-marketplace-for-data-buyers/marketplace-data-buyers.html?lang=en)
 
 [以人物為基礎的目的地](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/destinations/people-based/people-based-destinations-overview.html?lang=en)

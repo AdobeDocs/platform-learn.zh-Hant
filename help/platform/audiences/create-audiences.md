@@ -1,5 +1,5 @@
 ---
-title: 建立對象
+title: 建立客群
 description: 瞭解如何在Adobe Experience Platform中建立受眾。
 feature: Segments
 role: User
@@ -7,14 +7,14 @@ level: Beginner
 jira: KT-2704
 thumbnail: 27254.jpg
 exl-id: 5d2a8b17-baf9-4c52-9ebc-7f058ab0e64d
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 5%
 
 ---
 
-# 建立對象
+# 建立客群
 
 瞭解如何在Adobe Experience Platform中建立受眾。 建立受眾規則，並將其套用至您的即時客戶設定檔，以產生可強化客戶體驗的受眾。 如需詳細的產品檔案，請參閱[在UI中建立區段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hant)以及[使用API建立區段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html)。
 
@@ -22,5 +22,5 @@ ht-degree: 5%
 >
 > 已在Platform介面中將「[!UICONTROL 區段]」重新命名為「[!UICONTROL 對象]」。 選取&#x200B;**[!UICONTROL 建立對象]** > **[!UICONTROL 建置規則]**，以輸入此影片中精選的規則產生器。
 
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
 

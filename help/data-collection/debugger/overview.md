@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '134'
 ht-degree: 54%
@@ -19,7 +19,7 @@ ht-degree: 54%
 
 瞭解Adobe Experience Platform Debugger [Chrome擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)和[Firefox附加元件](https://addons.mozilla.org/zh-TW/firefox/addon/adobe-experience-platform-dbg/)如何協助您針對Adobe Experience Platform Web SDK、Adobe Analytics、Adobe Target、Adobe Audience Manager、標籤等等的網頁實作進行偵錯。
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ## 其他資源
 

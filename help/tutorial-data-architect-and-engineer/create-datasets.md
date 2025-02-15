@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 6%
@@ -26,7 +26,7 @@ ht-degree: 6%
 **資料架構師**&#x200B;需要在本教學課程之外建立資料集。
 
 在開始練習之前，請觀看此短片，以進一步瞭解資料集：
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
 ## 需要的許可權
 
@@ -119,7 +119,7 @@ ht-degree: 6%
 > * `400: There was a problem retrieving xdm schema`。確定您已使用您自己的`Luma CRM Schema`識別碼取代上述範例中的識別碼
 > * 無驗證權杖：執行&#x200B;**OAuth：要求存取權杖**&#x200B;要求以產生新權杖
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`：將&#x200B;**CONTAINER_ID**&#x200B;環境變數從`global`更新為`tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`：驗證Admin Console中的使用者許可權
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`：在Admin Console中驗證您的使用者許可權
 
 
 您可以回到Platform使用者介面中的&#x200B;**[!UICONTROL 資料集]**畫面，您可以驗證所有五個資料集的建立是否成功！

@@ -1,10 +1,10 @@
 ---
-title: 建立Platform Web SDK的標籤規則
-description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至PlatformEdge Network。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
+title: 為Platform Web SDK建立標籤規則
+description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至Platform Edge Network。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 建立標籤規則
 
-瞭解如何使用標籤規則，將事件與XDM物件一起傳送至Adobe Experience PlatformEdge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。 在Platform Web SDK中，規則是用來將事件與正確的資料傳送至PlatformEdge Network。
+瞭解如何使用標籤規則，透過XDM物件將事件傳送至Adobe Experience Platform Edge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。 透過Platform Web SDK，規則可用來將事件與正確的資料傳送至Platform Edge Network。
 
 ## 學習目標
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 * 使用更新變數和傳送事件動作來傳送包含XDM欄位的事件
 * 跨多個規則棧疊多組XDM欄位
 * 將個別或整個陣列資料元素對應至XDM物件
-* 將標籤規則Publish至開發程式庫
+* 將標籤規則發佈至開發程式庫
 
 
 ## 先決條件
@@ -56,7 +56,7 @@ ht-degree: 2%
 在標籤中，規則是用來在不同的條件下執行動作（引發呼叫）。 Platform Web SDK標籤擴充功能包含本課程使用的兩個動作：
 
 * **[!UICONTROL 更新變數]**&#x200B;將資料元素對應到XDM物件中的屬性
-* **[!UICONTROL 傳送事件]**&#x200B;將XDM物件傳送至Experience PlatformEdge Network
+* **[!UICONTROL 傳送事件]**&#x200B;將XDM物件傳送至Experience Platform Edge Network
 
 在本課程的其餘部分中，我們會：
 
@@ -64,13 +64,13 @@ ht-degree: 2%
 
 1. 使用&#x200B;**[!UICONTROL 更新變數]**&#x200B;動作建立其他規則，覆寫我們的「全域設定」，並在特定條件下（例如在產品頁面上新增產品詳細資訊）貢獻其他XDM欄位。
 
-1. 使用&#x200B;**[!UICONTROL 傳送事件]**&#x200B;動作建立另一個規則，該動作會將完整的XDM物件傳送至Adobe Experience PlatformEdge Network。
+1. 使用&#x200B;**[!UICONTROL 傳送事件]**&#x200B;動作建立另一個規則，該動作會將完整的XDM物件傳送至Adobe Experience Platform Edge Network。
 
 所有這些規則將使用&quot;[!UICONTROL 順序]&quot;選項正確排序。
 
 這部影片會概述此程式：
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### 全域設定欄位
 
@@ -103,7 +103,7 @@ ht-degree: 2%
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 新增]**
 
-1. 以&#x200B;**[!UICONTROL 擴充功能]**&#x200B;的形式，選取&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**
+1. 以&#x200B;**[!UICONTROL 延伸模組]**&#x200B;身分，選取&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**
 
 1. 作為&#x200B;**[!UICONTROL 動作型別]**，請選取&#x200B;**[!UICONTROL 更新變數]**
 
@@ -332,7 +332,7 @@ ht-degree: 2%
 
 ### 傳送事件規則
 
-現在您已設定變數，您可以建立規則以使用&#x200B;**[!UICONTROL 傳送事件]**&#x200B;動作將完整的XDM物件傳送至PlatformEdge Network。
+現在您已設定變數，您可以建立規則以使用&#x200B;**[!UICONTROL 傳送事件]**&#x200B;動作將完整的XDM物件傳送至Platform Edge Network。
 
 1. 在右側，選取&#x200B;**[!UICONTROL 新增規則]**&#x200B;以建立另一個規則
 
@@ -349,7 +349,7 @@ ht-degree: 2%
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 新增]**
 
-1. 以&#x200B;**[!UICONTROL 擴充功能]**&#x200B;的形式，選取&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**
+1. 以&#x200B;**[!UICONTROL 延伸模組]**&#x200B;身分，選取&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**
 
 1. 作為&#x200B;**[!UICONTROL 動作型別]**，請選取&#x200B;**[!UICONTROL 傳送事件]**
 
@@ -362,7 +362,7 @@ ht-degree: 2%
 
    ![儲存規則](assets/create-rule-save-rule.png)
 
-## Publish程式庫中的規則
+## 在程式庫中發佈規則
 
 接下來，將規則發佈至您的開發環境，以便您可以驗證其是否有效。
 
@@ -391,10 +391,10 @@ ht-degree: 2%
 
 如您在[!UICONTROL 發佈流程]畫面上所見，發佈程式還有更多內容，這不在本教學課程的討論範圍內。 本教學課程僅在您的開發環境中使用單一程式庫。
 
-現在，您已準備好使用Adobe Experience Platform Debugger來驗證請求中的資料。
+現在，您已準備好使用Adobe Experience Platform Debugger驗證請求中的資料。
 
 [下一步 ](validate-with-debugger.md)
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

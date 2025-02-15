@@ -1,21 +1,21 @@
 ---
-title: 對應身分
+title: 對應身分識別
 seo-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-breadcrumb-title: 對應身分
+breadcrumb-title: 對應身分識別
 description: 在本課程中，我們將建立身分識別名稱空間，並將身分識別欄位新增至結構描述。
 role: Data Architect
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 6%
 
 ---
 
-# 對應身分
+# 對應身分識別
 
 <!-- 30 min-->
 
@@ -26,7 +26,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 **資料架構師**&#x200B;需要在本教學課程之外對應身分。
 
 在開始練習之前，請觀看此短片，進一步瞭解Adobe Experience Platform中的身分識別：
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 ## 建立身分名稱空間
 
-在本練習中，我們將為Luma的自訂身分識別欄位`loyaltyId`、`crmId`和`productSku`建立身分識別名稱空間。 身分識別命名空間在建立即時客戶設定檔方面扮演關鍵角色，因為相同命名空間中的兩個相符值可讓兩個資料來源形成身分識別圖表。
+在本練習中，我們將為Luma的自訂身分識別欄位`loyaltyId`、`crmId`和`productSku`建立身分識別名稱空間。 身分識別命名空間在建立即時客戶輪廓方面扮演關鍵角色，因為相同命名空間中的兩個相符值可讓兩個資料來源形成身分識別圖表。
 
 
 ### 在UI中建立名稱空間
@@ -63,7 +63,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
    | 欄位 | 值 |
    |---------------|-----------|
    | 顯示名稱 | Luma忠誠度Id |
-   | 身分符號 | lumaLoyaltyId |
+   | 身分識別符號 | lumaLoyaltyId |
    | 類型 | 跨裝置 |
 
 1. 選取&#x200B;**[!UICONTROL 建立]**
@@ -75,7 +75,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 | 欄位 | 值 |
 |---------------|-----------|
 | 顯示名稱 | Luma產品SKU |
-| 身分符號 | lumaProductSKU |
+| 身分識別符號 | lumaProductSKU |
 | 類型 | 非人員識別碼 |
 
 

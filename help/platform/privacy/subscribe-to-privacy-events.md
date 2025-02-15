@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-7721
 thumbnail: 336073.png
 exl-id: f1bc3e84-0b4b-40d0-83a5-f0f76a71f81d
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '41'
 ht-degree: 21%
@@ -17,7 +17,7 @@ ht-degree: 21%
 
 # 訂閱隱私權事件
 
-瞭解如何訂閱隱私權事件，以自動化工作狀態型工作流程。 如需詳細資訊，請瀏覽[Privacy Service檔案](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)。
+瞭解如何訂閱隱私權事件，以自動化工作狀態型工作流程。 如需詳細資訊，請瀏覽[隱私權服務檔案](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on&enablevpops)
 

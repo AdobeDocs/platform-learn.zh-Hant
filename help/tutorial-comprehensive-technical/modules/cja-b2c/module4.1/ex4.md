@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Analysis Workspace中的資料準備
 kt: 5342
 doc-type: tutorial
 exl-id: aa2fab85-d56e-4a00-8b8f-8a2053d8674a
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '758'
 ht-degree: 1%
@@ -25,11 +25,11 @@ Analysis Workspace移除單一Analytics報表的所有一般限制。 它為建�
 
 Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們強烈建議您觀看這支時長四分鐘的概觀影片：
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 如果您之前未使用Analysis Workspace，強烈建議您觀看此影片：
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### 建立您的專案
 
@@ -121,11 +121,11 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 
 ![示範](./images/calcbuildercr6a.png)
 
-## 4.1.4.3計算Dimension：篩選器（細分）和日期範圍
+## 4.1.4.3計算量度：篩選器（細分）和日期範圍
 
-### 篩選器：計算Dimension
+### 篩選器：計算量度
 
-計算不僅適用於量度。 在開始任何分析之前，建立一些&#x200B;**計算Dimension**&#x200B;也是很有趣的。 這基本上是指&#x200B;**區段**&#x200B;返回Adobe Analytics。 在Customer Journey Analytics中，這些區段稱為&#x200B;**篩選器**。
+計算不僅適用於量度。 在開始任何分析之前，建立一些&#x200B;**已計算的維度**&#x200B;也是很有趣的。 這基本上是指&#x200B;**區段**&#x200B;返回Adobe Analytics。 Customer Journey Analytics中，這些區段稱為&#x200B;**篩選器**。
 
 ![示範](./images/prfilters.png)
 
@@ -137,11 +137,11 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 
 這些篩選器可在分析零件之前或分析零件期間建立（您將在下一個練習中進行）。
 
-### 日期範圍：計算時間Dimension
+### 日期範圍：計算量度時間維度
 
-時間Dimension是另一種型別的計算維度。 有些量度已建立，但您也可以在資料準備階段建立自己的自訂時間Dimension。
+時間維度是另一種計算維度。 有些已在建立，但您也可以在資料準備階段建立自己的自訂時間維度。
 
-這些計算時間Dimension可協助分析師和業務使用者記住重要日期，並使用它們來篩選和變更報表時間。 我們進行分析時，腦海中浮現出一些常見的問題和疑問：
+這些計算出的時間維度可協助分析師和業務使用者記住重要日期，並使用它們來篩選和變更報表時間。 我們進行分析時，腦海中浮現出一些常見的問題和疑問：
 
 - 去年的「黑色星期五」是什麼時候？ 21日到29日？
 - 我們在12月何時進行該電視促銷活動？
@@ -151,7 +151,7 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 
 您現在已完成使用CJA Analysis Workspace的資料準備練習。
 
-下一步：使用Customer Journey Analytics](./ex5.md)的[4.1.5視覺效果
+下一步：使用Customer Journey Analytics的[4.1.5視覺效果](./ex5.md)
 
 [返回模組4.1](./customer-journey-analytics-build-a-dashboard.md)
 

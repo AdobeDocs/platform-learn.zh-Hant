@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 XDM是公開記錄的規格，旨在改善數位體驗的效能。 它提供通用結構和定義，供任何應用程式用來與Platform服務通訊。 只要遵循XDM標準，所有客戶體驗資料都可整合到共同表現中，以更快、更整合的方式提供深入分析。 您可以從客戶動作中獲得有價值的深入分析、透過區段定義客戶對象，以及表達客戶屬性以進行個人化。
 
-XDM是基礎架構，可讓Adobe Experience Cloud在Experience Platform的支援下，於正確的時間在正確的頻道將正確的訊息傳遞給正確的人。 建置Experience Platform所依據的方法&#x200B;**XDM系統**&#x200B;可讓Platform服務使用的Experience Data Model結構描述運作化。
+XDM是基礎架構，可讓Adobe Experience Cloud (由Experience Platform提供技術支援)在適當的時間透過適當的管道將適當的訊息傳遞給適當的人。 建置Experience Platform所依據的方法&#x200B;**XDM系統**&#x200B;可讓Platform服務使用的Experience Data Model結構描述運作化。
 
 <!--
 This seems too lengthy. The video should suffice
@@ -43,11 +43,11 @@ Key terms:
 **資料架構師**&#x200B;需要在本教學課程之外建立結構描述，但&#x200B;**資料工程師**&#x200B;將與資料架構師建立的結構描述密切合作。
 
 在開始練習之前，請觀看此短片，進一步瞭解結構描述和Experience Data Model (XDM)：
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> 若要在Experience Platform中更深入探究資料模型，我們建議您使用XDM觀看播放清單[為您的客戶體驗資料建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，可在Experience League中免費使用！
+> 若要在Experience Platform中更深入探究資料模型，建議您使用XDM觀看播放清單[為您的客戶體驗資料建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，可在Experience League上免費取得！
 
 ## 需要的許可權
 
@@ -84,7 +84,7 @@ Key terms:
 
 ### 新增標準欄位群組
 
-建立結構描述後，您將會被重新導向到結構描述編輯器，您可以在其中新增欄位到結構描述。 您可以直接將個別欄位新增到結構描述或使用欄位群組。 請務必注意，所有個別欄位仍與類別或欄位群組相關聯。 您可以從Adobe提供的大量產業標準欄位群組中選取，或是建立您自己的欄位群組。 當您開始在Experience Platform中建立自己的資料模型時，最好熟悉Adobe提供的業界標準欄位群組。 最佳實務是儘可能使用這些功能，因為它們有時會支援下游服務，例如Customer AI、Attribution AI和Adobe Analytics。
+建立結構描述後，您將會被重新導向到結構描述編輯器，您可以在其中新增欄位到結構描述。 您可以直接將個別欄位新增到結構描述或使用欄位群組。 請務必注意，所有個別欄位仍與類別或欄位群組相關聯。 您可以從Adobe提供的大量產業標準欄位群組中選取，或是建立您自己的欄位群組。 當您開始在Experience Platform中建立自己的資料模型時，最好熟悉Adobe提供的業界標準欄位群組。 最佳實務是儘可能使用這些變數，因為它們有時會支援下游服務，例如Customer AI、Attribution AI和Adobe Analytics。
 
 使用您自己的資料時，決定應在Platform中擷取哪些您自己的資料，以及應如何模型化這些資料，將是重要的步驟。 此大型主題在播放清單[使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中討論得較深入。 在本教學課程中，我將引導您實作一些預先決定的結構描述。
 
@@ -136,7 +136,7 @@ Key terms:
 1. 選取&#x200B;**[!UICONTROL 新增欄位群組]**
    ![新增欄位群組](assets/schemas-loyalty-nameFieldGroup.png)
 
-新的空白欄位群組會新增至您的架構。 **[!UICONTROL +]**&#x200B;按鈕可用來將新欄位新增至階層中的任何位置。 在我們的案例中，我們想要在根層級新增欄位：
+新的空白欄位群組會新增至您的結構描述。 **[!UICONTROL +]**&#x200B;按鈕可用來將新欄位新增至階層中的任何位置。 在我們的案例中，我們想要在根層級新增欄位：
 
 1. 選取結構描述名稱旁的&#x200B;**[!UICONTROL +]**。 這會在您的租使用者ID名稱空間下新增欄位，以管理您的自訂欄位和任何標準欄位之間的衝突。
 1. 在&#x200B;**[!UICONTROL 欄位屬性]**&#x200B;側邊欄中新增新欄位的詳細資料：
@@ -231,7 +231,7 @@ Key terms:
 >
 > * 無驗證權杖：執行&#x200B;**OAuth：要求存取權杖**&#x200B;要求以產生新權杖
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`：將&#x200B;**CONTAINER_ID**&#x200B;環境變數從`global`更新為`tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`：驗證Admin Console中的使用者許可權
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`：在Admin Console中驗證您的使用者許可權
 
 ### 新增標準欄位群組
 
@@ -301,7 +301,7 @@ Key terms:
 1. 搜尋`Luma Identity profile field group`。 無法使用！ 請記住，欄位群組繫結至類別，由於我們對此結構描述使用不同的類別，因此我們無法使用它。 我們需要為包含身分欄位的XDM ExperienceEvent類別新增欄位群組。 我們的資料型別能讓您輕鬆辦到！
 1. 選取&#x200B;**[!UICONTROL 建立新欄位群組]**&#x200B;選項按鈕
 1. 輸入&#x200B;**[!UICONTROL 顯示名稱]**&#x200B;作為`Luma Identity ExperienceEvent field group`並選取&#x200B;**[!UICONTROL 新增欄位群組]**&#x200B;按鈕
-1. 選取架構名稱旁邊的 **[!UICONTROL +]**。
+1. 選取結構描述名稱旁邊的 **[!UICONTROL +]**。
 1. 作為&#x200B;**[!UICONTROL 欄位名稱]**，請輸入`systemIdentifier`。
 1. 作為&#x200B;**[!UICONTROL 顯示名稱]**，請輸入`System Identifier`。
 1. 以&#x200B;**[!UICONTROL 型別]**&#x200B;的形式，選取&#x200B;**系統識別碼**，這是您先前建立的自訂資料型別。
@@ -328,9 +328,9 @@ Key terms:
 | 欄位群組 | AEP Web SDK ExperienceEvent |
 | 欄位群組 | 消費者體驗事件 |
 
-選取&#x200B;**[!UICONTROL 消費者體驗事件]**&#x200B;欄位群組。 此欄位群組包含商務和productListItems物件，這些物件也出現在[!UICONTROL Commerce詳細資料]中。 事實上，[!UICONTROL 取用者體驗事件]是數個其他標準欄位群組的組合，這些群組也可單獨使用。 [!UICONTROL AEP Web SDK ExperienceEvent]欄位群組也包含其他欄位群組，包括[!UICONTROL 取用者體驗事件]中一些相同的欄位群組。 幸運的是，兩者完美結合。
+選取&#x200B;**[!UICONTROL 消費者體驗事件]**&#x200B;欄位群組。 此欄位群組包含商務和productListItems物件，這些物件也出現在[!UICONTROL Commerce詳細資料]中。 事實上，[!UICONTROL 取用者體驗事件]是數個其他標準欄位群組的組合，這些群組也可單獨使用。 [!UICONTROL AEP Web SDK ExperienceEvent]欄位群組也包含其他欄位群組，包括[!UICONTROL 消費者體驗事件]中一些相同的欄位群組。 幸運的是，兩者完美結合。
 
-請注意，我們並未將`Luma Identity ExperienceEvent field group`新增至此結構描述。 這是因為Web SDK收集身分的方式不同。 如果您在結構描述編輯器的&#x200B;**[!UICONTROL 構成]**&#x200B;區段中選取&#x200B;**[!UICONTROL XDM ExperienceEvent]**&#x200B;類別，您會注意到它預設新增的其中一個欄位稱為&#x200B;**[!UICONTROL IdentityMap]**。 各種Adobe應用程式使用[!DNL IdentityMap]連結至平台。 您將在串流擷取課程中看到如何透過identityMap將身分傳送至Platform。
+請注意，我們並未將`Luma Identity ExperienceEvent field group`新增至此結構描述。 這是因為網頁SDK收集身分的方式不同。 如果您在結構描述編輯器的&#x200B;**[!UICONTROL 構成]**&#x200B;區段中選取&#x200B;**[!UICONTROL XDM ExperienceEvent]**&#x200B;類別，您會注意到它預設新增的其中一個欄位稱為&#x200B;**[!UICONTROL IdentityMap]**。 各種Adobe應用程式使用[!DNL IdentityMap]連結至平台。 您將在串流擷取課程中看到如何透過identityMap將身分傳送至Platform。
 
 
 ## 建立產品目錄結構描述
@@ -339,7 +339,7 @@ Key terms:
 
 >[!NOTE]
 >
->如果您是現有Analytics或Target客戶，分類具有結構描述關係的實體類似於SAINT分類或上傳Recommendations的產品目錄
+>如果您是現有Analytics或Target客戶，分類具有結構描述關係的實體類似於為Recommendations的SAINT分類或上傳產品目錄
 
 首先，我們必須使用自訂類別為Luma的產品目錄建立結構描述：
 

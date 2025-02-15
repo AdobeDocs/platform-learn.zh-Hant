@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Adobe Experience Platform可讓您將來自多個來源的資料彙集在一起�
 **資料架構師**&#x200B;需要在本教學課程之外建立合併原則。
 
 在開始練習之前，請觀看此短片，以進一步瞭解合併原則：
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## 需要的許可權
 

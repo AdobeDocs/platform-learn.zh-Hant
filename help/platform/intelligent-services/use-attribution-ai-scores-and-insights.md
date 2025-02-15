@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-4173
 thumbnail: 32669.jpg
 exl-id: 3e3ede4b-baf4-4118-921a-6661d37f1a33
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '58'
 ht-degree: 51%
@@ -16,6 +16,6 @@ ht-degree: 51%
 
 # 使用 Attribution AI 評分和深入分析
 
-瞭解如何使用Attribution AI深入分析頁面來瞭解行銷管道和行銷活動的ROI。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)。
+瞭解如何使用Attribution AI深入分析頁面，瞭解行銷管道和行銷活動的ROI。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on&enablevpops)

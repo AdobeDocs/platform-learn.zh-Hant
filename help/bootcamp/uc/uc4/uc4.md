@@ -9,7 +9,7 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Connections, Data Views, Workspace Basics, Calculated Metrics, Visualizations, Audiences
 exl-id: cd4b423c-cd0b-44cf-8ac7-23c25876457c
-source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%
@@ -24,15 +24,15 @@ Customer Journey Analytics為商業智慧和資料科學團隊提供工具，用
 
 請觀賞此影片以瞭解價值、客戶歷程和設定程式：
 
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on&enablevpops)
 
-在[這裡](https://spark.adobe.com/page/t62eiRu9l6iWJ/)可找到Customer Journey Analytics的更多資訊。
+在[此處](https://spark.adobe.com/page/t62eiRu9l6iWJ/)找到Customer Journey Analytics的更多資訊。
 
 ## 學習目標
 
-- 熟悉Customer Journey AnalyticsUI
+- 熟悉Customer Journey Analytics UI
 - 將Adobe Experience Platform資料集帶入Customer Journey Analytics
-- 瞭解Customer Journey Analytics中的人員ID和資料彙整
+- 瞭解Customer Journey Analytics中的人員ID與資料彙整
 - 瞭解資料連線和資料檢視的概念
 - 將Analysis Workspace與Adobe Experience Platform資料集搭配使用
 
@@ -48,25 +48,25 @@ Customer Journey Analytics為商業智慧和資料科學團隊提供工具，用
 
 ## 練習
 
-[4.1Customer Journey Analytics101](./ex1.md)
+[4.1 Customer Journey Analytics 101](./ex1.md)
 
-瞭解Customer Journey Analytics概念的所有相關資訊。
+瞭解Customer Journey Analytics的所有概念。
 
-[4.2以Customer Journey Analytics連線Adobe Experience Platform資料集](./ex2.md)
+[4.2在Customer Journey Analytics中連線Adobe Experience Platform資料集](./ex2.md)
 
-瞭解如何從Adobe Experience Platform使用多個資料集來進行Customer Journey Analytics。
+瞭解如何從Adobe Experience Platform將多個資料集使用至Customer Journey Analytics。
 
 [4.3建立資料檢視](./ex3.md)
 
 瞭解如何在Customer Journey Analytics中設定資料檢視。
 
-[4.4Customer Journey Analytics中的資料準備](./ex4.md)
+[4.4 Customer Journey Analytics中的資料準備](./ex4.md)
 
 瞭解在繼續分析之前如何做好資料準備。
 
-[4.5使用Customer Journey Analytics的視覺效果](./ex5.md)
+[使用Customer Journey Analytics的4.5視覺效果](./ex5.md)
 
-瞭解如何使用Customer Journey Analytics以視覺效果呈現Adobe Experience Platform資料。
+瞭解如何使用Customer Journey Analytics將Adobe Experience Platform資料視覺化。
 
 [4.6從深入分析到動作](./ex6.md)
 
