@@ -1,25 +1,25 @@
 ---
 title: Firefly服務快速入門
-description: 瞭解如何使用Postman和Adobe I/O來查詢Adobe Firefly服務API
+description: 瞭解如何使用Postman和Adobe I/O來查詢Adobe Firefly Services API
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 219945c74c620b9a4b93cb2b7462137118d42d33
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
 
-# 1.1.1Firefly服務快速入門
+# 1.1.1 Firefly服務快速入門
 
-瞭解如何使用Postman和Adobe I/O來查詢Adobe Firefly服務API。
+瞭解如何使用Postman和Adobe I/O來查詢Adobe Firefly Services API。
 
 ## 1.1.1.1設定您的Adobe I/O專案
 
-在本練習中，Adobe I/O是用來查詢Firefly服務API。 請依照下列步驟設定Adobe I/O。
+在本練習中，Adobe I/O是用來查詢Firefly Services API。 請依照下列步驟設定Adobe I/O。
 
 1. 移至[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}。
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ![Adobe I/O新整合](./images/api1.png){zoomable="yes"}
 
-1. 選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Firefly- Firefly服務**，然後選取&#x200B;**下一步**。
+1. 選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Firefly - Firefly服務**，然後選取&#x200B;**下一步**。
 
 ![Adobe I/O新整合](./images/api3.png){zoomable="yes"}
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ![Adobe I/O新整合](./images/api4.png){zoomable="yes"}
 
-1. 選取預設設定檔&#x200B;**預設Firefly服務組態**，並選取&#x200B;**儲存設定的API**。
+1. 選取預設設定檔&#x200B;**預設Firefly Services設定**，並選取&#x200B;**儲存設定的API**。
 
 ![Adobe I/O新整合](./images/api9.png){zoomable="yes"}
 
@@ -77,10 +77,6 @@ ht-degree: 0%
 
 ## 1.1.1.3 Postman驗證至Adobe I/O
 
->[!IMPORTANT]
->
->如果您是Adobe員工，請依照這裡的指示使用[PostBuster](./../../../postbuster.md)。
-
 1. 在[Postman下載](https://www.postman.com/downloads/){target="_blank"}下載並安裝作業系統的相關Postman版本。
 
 ![Adobe I/O新整合](./images/getstarted.png){zoomable="yes"}
@@ -89,10 +85,10 @@ ht-degree: 0%
 
 Postman中有2個概念：「環境」和「集合」。
 
-- 環境檔案包含您所有大致一致的環境變數。 在環境中，您會找到Adobe環境的IMSOrg之類的專案，以及使用者端ID和其他專案之類的安全性憑證。 您先前在Adobe I/O設定期間下載了名為&#x200B;**`oauth_server_to_server.postman_environment.json`**&#x200B;的環境檔案。
+- 環境檔案包含您所有大致一致的環境變數。 在環境中，您可以找到Adobe環境的IMSOrg之類的專案，以及使用者端ID和其他專案之類的安全性憑證。 您先前在Adobe I/O設定期間下載了名為&#x200B;**`oauth_server_to_server.postman_environment.json`**&#x200B;的環境檔案。
 
 - 集合包含您可以使用的許多API請求。 我們將使用2個集合
-   - 1個用於Adobe I/O驗證的集合
+   - 1個用於驗證Adobe I/O的集合
    - 1此單元練習的集合
 
 1. 將[postman-ff.zip](./../../../assets/postman/postman-ff.zip)下載到您的本機案頭。
@@ -101,12 +97,12 @@ Postman中有2個概念：「環境」和「集合」。
 
 在&#x200B;**postman.zip**&#x200B;檔案中有以下檔案：
 
-    - &#39;AdobeIO - OAuth.postman_collection.json&#39;
-    - &#39;FF -Firefly服務技術人員.postman_collection.json&#39;
+    - &#39;Adobe IO - OAuth.postman_collection.json&#39;
+    - &#39;FF - Firefly服務技術內部人員.postman_collection.json&#39;
 
 1. 解壓縮&#x200B;**postman-ff.zip**，並將下列2個檔案儲存在您案頭的資料夾中：
-- AdobeIO - OAuth.postman_collection.json
-- FF -Firefly服務技術內幕人士.postman_collection.json
+- Adobe IO - OAuth.postman_collection.json
+- FF - Firefly服務技術內幕人士.postman_collection.json
 - oauth_server_to_server.postman_environment.json
 
 ![Adobe I/O新整合](./images/pmfolder1.png){zoomable="yes"}
@@ -125,7 +121,7 @@ Postman中有2個概念：「環境」和「集合」。
 
 ![Adobe I/O新整合](./images/impconfirm.png){zoomable="yes"}
 
-否，您已在Postman中擁有開始透過API與Firefly服務互動所需的一切。
+沒有，您已擁有Postman中所需的一切，可以開始透過API與Firefly服務互動。
 
 ## 1.1.1.4要求存取權杖
 
@@ -139,9 +135,9 @@ Postman中有2個概念：「環境」和「集合」。
 
 ![Postman](./images/envselemea.png){zoomable="yes"}
 
-現在您的Postman環境和集合已設定好並正常運作，您可以從Postman驗證Adobe I/O。
+現在您的Postman環境和集合已設定好並正常運作，您可以從Postman向Adobe I/O進行驗證。
 
-1. 在&#x200B;**AdobeIO - OAuth**&#x200B;集合中，選取名為&#x200B;**POST — 取得存取權杖**&#x200B;的要求，並選取&#x200B;**傳送**。
+1. 在&#x200B;**Adobe IO - OAuth**&#x200B;集合中，選取名為&#x200B;**POST - Get Access Token**&#x200B;的要求，並選取&#x200B;**傳送**。
 
 請注意，在&#x200B;**查詢引數**&#x200B;下，參考了兩個變數： `API_KEY`和`CLIENT_SECRET`。 這些變數是從選取的環境`--aepUserLdap-- Firefly Services OAuth Credential`中取得。
 
@@ -162,11 +158,11 @@ Postman中有2個概念：「環境」和「集合」。
 
 Adobe I/O **bearer-token**&#x200B;具有特定值（極長的access_token）和到期視窗，現在有效期為24小時。 這表示24小時後，如果您要使用Postman驗證Adobe I/O，必須再次執行此請求以產生新Token。
 
-## 1.1.1.5Firefly服務API，文字2影像
+## 1.1.1.5 Firefly Services API，文字2影像
 
-現在您已準備好傳送您的第一個要求至Firefly服務API。
+現在您已準備好將您的第一個要求傳送至Firefly Services API。
 
-1. 從&#x200B;**FF - Tech Services Tech Insiders**&#x200B;集合中選取名為&#x200B;**POST- Firefly - T2I V3**&#x200B;的Firefly。
+1. 從&#x200B;**FF - Firefly服務技術內部人士**&#x200B;集合中選取名為&#x200B;**POST - Firefly - T2I V3**&#x200B;的請求。
 
 ![Firefly](./images/ff1.png){zoomable="yes"}
 

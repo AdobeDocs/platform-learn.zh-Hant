@@ -1,12 +1,12 @@
 ---
-title: 快速入門 — 安裝Chrome擴充功能以取得Experience League檔案
-description: 快速入門 — 安裝Chrome擴充功能以取得Experience League檔案
+title: 快速入門 — 安裝適用於Experience League檔案的Chrome擴充功能
+description: 快速入門 — 安裝適用於Experience League檔案的Chrome擴充功能
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ IMS組織ID是您Adobe Experience Cloud執行個體的唯一識別碼，本教�
 
 尋找您的IMS組織ID可以多種方式完成。 如果您不確定，請洽詢執行個體的系統管理員以尋找ID。
 
-您可以前往[Admin Console](https://https://adminconsole.adobe.com/)找到它，您可以在此找到它作為URL的一部分。
+您可以前往[Admin Console](https://https://adminconsole.adobe.com/)找到它，您可以在其中找到它作為URL的一部分。
 
 ![DSN](./images/aepid1.png)
 
@@ -143,8 +143,10 @@ LDAP可用來確保您即將進行的設定會連結至您，而不會與可能�
 
 ![DSN](./images/mod7.png)
 
-下一步： [使用下一個示範系統來設定您的Adobe Experience Platform資料收集使用者端屬性](./ex2.md)
+## 後續步驟
 
-[返回快速入門](./getting-started.md)
+移至[使用示範系統下一步以設定您的Adobe Experience Platform Data Collection使用者端屬性](./ex2.md)
 
-[返回所有模組](./../../../overview.md)
+返回[快速入門](./getting-started.md){target="_blank"}
+
+返回[所有模組](./../../../overview.md){target="_blank"}

@@ -4,16 +4,16 @@ description: 快速入門 — 使用示範系統設定您的Launch屬性
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
 
 # 使用下一個示範系統來設定您的Adobe Experience Platform資料收集使用者端屬性
 
-為了將本教學課程中的學習內容視覺化，並讓您能夠在安全的環境中測試您的設定，本教學課程使用Adobe的「示範系統下一步」工具。 為了充分運用本教學課程，您的AEP執行個體需要設定為與示範系統整合「下一步」。
+為了將本教學課程中的學習內容視覺化，並讓您能夠在安全的環境中測試您的設定，本教學課程使用Adobe的示範系統下一步工具。 為了充分運用本教學課程，您的AEP執行個體需要設定為與示範系統整合「下一步」。
 
 取得示範系統存取權後，請繼續下列步驟。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsn2.png)
 
-在快顯視窗中，輸入資料收集屬性和Experience Builder專案的名稱。 請使用此命名慣例： **一個Adobe(DD/MM/YYYY)**。 僅供參考：您的LDAP將會自動附加，您不需要自行新增。
+在快顯視窗中，輸入資料收集屬性和Experience Builder專案的名稱。 請使用此命名慣例： **One Adobe (DD/MM/YYYY)**。 僅供參考：您的LDAP將會自動附加，您不需要自行新增。
 
 按一下&#x200B;**開始**。
 
@@ -55,8 +55,10 @@ ht-degree: 0%
 
 將此畫面保持開啟狀態，以備您後續步驟所需。
 
-下一步： [建立您的資料流](./ex3.md)
+## 後續步驟
 
-[返回快速入門](./getting-started.md)
+移至[建立您的資料流](./ex3.md)
 
-[返回所有模組](./../../../overview.md)
+返回[快速入門](./getting-started.md){target="_blank"}
+
+返回[所有模組](./../../../overview.md){target="_blank"}
