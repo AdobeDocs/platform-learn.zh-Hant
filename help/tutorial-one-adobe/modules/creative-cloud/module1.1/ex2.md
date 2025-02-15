@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
@@ -290,6 +290,8 @@ ht-degree: 1%
 
 1. 在&#x200B;**許可權**&#x200B;下，選取下列必要許可權：
 
+   - **讀取**
+   - **清單**
    - **新增**
    - **建立**
    - **寫入**
@@ -343,11 +345,36 @@ ht-degree: 1%
 
    ![Azure儲存體](./images/az105.png){zoomable="yes"}
 
-   在先前的練習中，您請求&#x200B;**Firefly - T2I (styleref) V3**&#x200B;的&#x200B;**內文**&#x200B;看起來像這樣：
+### PostBuster中的變數
 
-   `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+如上節所述，讀取和寫入權杖中都有一些常見的變數。
 
-   ![Azure儲存體](./images/az24.png){zoomable="yes"}
+接下來，您需要在PostBuster中建立變數，以儲存上述SAS-Token的各種元素。 兩個URL中的某些值相同：
+
+- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`： `vangeluw`
+- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+開啟PostBuster。 選取&#x200B;**基本環境**，然後按一下&#x200B;**編輯**&#x200B;圖示以開啟基本環境。
+
+![Azure儲存體](./images/pbbe1.png)
+
+然後您會看到4個空白變數。 在這裡輸入您的Azure儲存體帳戶詳細資料。
+
+![Azure儲存體](./images/pbbe2.png)
+
+您的基本環境檔案現在看起來應該像這樣。 按一下 **關閉**。
+
+![Azure儲存體](./images/pbbe3.png)
+
+### 測試您的設定
+
+在先前的練習中，您請求&#x200B;**Firefly - T2I (styleref) V3**&#x200B;的&#x200B;**內文**&#x200B;看起來像這樣：
+
+    &#39;&quot;url&quot;： &quot;https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&amp;st=2025-01-13T07%3A16%3A52Z&amp;se=2026-01-14T07%3A16%3A00Z&amp;sr=b&amp;sp=r&amp;sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D&quot;&#39;
+    
+    ！[Azure儲存體](./images/az24.png){zoomable="yes"}
 
 1. 將URL變更為：
 

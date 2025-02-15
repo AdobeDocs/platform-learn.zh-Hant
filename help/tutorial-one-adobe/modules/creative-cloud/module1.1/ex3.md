@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -17,65 +17,27 @@ ht-degree: 0%
 
 瞭解如何使用Photoshop API和Firefly服務。
 
-## 1.1.3.1更新您的Adobe I/O整合
+## 1.1.3.1必要條件
 
-1. 移至[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}。
+在繼續此練習之前，您必須先完成[您的Adobe I/O專案](./../../../modules/getting-started/gettingstarted/ex6.md)的設定，而且您還需要設定應用程式以與API互動，例如[Postman](./../../../modules/getting-started/gettingstarted/ex7.md)或[PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md)。
 
-![Adobe I/O新整合](./images/iohome.png){zoomable="yes"}
+## 1.1.3.2 Adobe I/O - access_token
 
-1. 移至&#x200B;**專案**，並選取您在上一個練習中建立的專案（稱為`--aepUserLdap-- Firefly`）。
+在&#x200B;**Adobe IO - OAuth**&#x200B;集合中，選取名為&#x200B;**POST - Get Access Token**&#x200B;的要求，並選取&#x200B;**傳送**。 回應應包含新的&#x200B;**accestoken**。
 
-![Azure儲存體](./images/ps1.png){zoomable="yes"}
+![Postman](./images/ioauthresp.png){zoomable="yes"}
 
-1. 選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
+## 1.1.3.3以程式設計方式與PSD檔案互動
 
-![Azure儲存體](./images/ps2.png){zoomable="yes"}
+將[citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}下載到您的案頭。
 
-1. 選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Photoshop - Firefly服務**。 選取&#x200B;**下一步**。
-
-![Azure儲存體](./images/ps3.png){zoomable="yes"}
-
-1. 選取&#x200B;**下一步**。
-
-![Azure儲存體](./images/ps4.png){zoomable="yes"}
-
-接下來，您需要選取產品設定檔，以定義此整合可用的許可權。
-
-1. 選取&#x200B;**預設Firefly服務組態**&#x200B;和&#x200B;**預設Creative Cloud自動化服務組態**。
-
-1. 選取&#x200B;**儲存設定的API**。
-
-![Azure儲存體](./images/ps5.png){zoomable="yes"}
-
-您的Adobe I/O專案現已更新，可搭配Photoshop和Firefly Services API使用。
-
-![Azure儲存體](./images/ps6.png){zoomable="yes"}
-
-## 1.1.3.2以程式設計方式與PSD檔案互動
-
-1. 將[citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}下載到您的案頭。
-
-1. 在Photoshop中開啟&#x200B;**citisignal-fiber.psd**。
+在Photoshop中開啟&#x200B;**citisignal-fiber.psd**。
 
 ![Azure儲存體](./images/ps7.png){zoomable="yes"}
 
 在&#x200B;**圖層**&#x200B;窗格中，檔案的設計者已為每個圖層指定唯一的名稱。 您可以在Photoshop中開啟PSD檔案，檢視圖層資訊，也可以使用程式設計方式執行此操作。
 
 讓我們將您的第一個API要求傳送至Photoshop API。
-
-1. 在Postman中，傳送API請求給Photoshop之前，您需要向Adobe I/O進行驗證。開啟名稱為&#x200B;**POST — 取得存取Token**&#x200B;的上一個要求。
-
-1. 移至&#x200B;**Params**，並確認引數&#x200B;**Scope**&#x200B;已正確設定。 **範圍**&#x200B;的&#x200B;**值**&#x200B;應該如下所示：
-
-`openid,session,AdobeID,read_organizations,additional_info.projectedProductContext, ff_apis, firefly_api`
-
-1. 選取&#x200B;**傳送**。
-
-![Azure儲存體](./images/ps8.png){zoomable="yes"}
-
-現在您擁有與Photoshop API互動的有效存取Token。
-
-![Azure儲存體](./images/ps9.png){zoomable="yes"}
 
 ### Photoshop API - Hello World
 
