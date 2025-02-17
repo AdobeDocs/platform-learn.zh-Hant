@@ -1,0 +1,36 @@
+---
+title: 設定Adobe Experience Platform資料收集和Web SDK擴充功能 — 摘要
+description: 設定Adobe Experience Platform資料收集和Web SDK擴充功能 — 摘要
+kt: 5342
+doc-type: tutorial
+exl-id: bb38d851-e13c-429a-aadc-3a83efabbc8e
+source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 1%
+
+---
+
+# 摘要與優點
+
+恭喜您將Adobe Experience Platform的相關學習投入寶貴時間！
+在本單元中，您已瞭解如何設定Web SDK，以便從XDM格式的示範網站收集資料一次，然後透過與Adobe Audience Manager和Adobe Experience Platform等多個應用程式共用該資料來重複使用該資料。
+
+## 優點
+
+讓我們強調使用Web SDK將資料擷取到Adobe Experience Platform的好處：
+
+- Web SDK取代了所有應用程式專用的舊版JavaScript，因此可大幅簡化您的實作。
+- 現在，資料收集會立即以XDM格式進行，再次簡化您的實施。
+
+## 看看這個
+
+- 技術部落格： [使用Adobe Experience Platform Web SDK簡化客戶工作流程](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
+- 技術部落格： [簡化使用者端 — 伺服器與Adobe Experience Platform Edge Network的整合](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+- 技術部落格： [將您的Adobe Experience Platform服務與Adobe Experience Platform Web SDK整合](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
+
+## 後續步驟
+
+返回[設定Adobe Experience Platform Data Collection和Web SDK標籤擴充功能](./data-ingestion-launch-web-sdk.md){target="_blank"}
+
+返回[所有模組](./../../../../overview.md){target="_blank"}
