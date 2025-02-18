@@ -1,18 +1,18 @@
 ---
-title: Publish移轉至中繼和生產環境
+title: 將移轉發佈至測試與生產
 description: 當移轉的所有開發完成並驗證時，請建置到測試環境，然後在準備就緒時發佈到生產環境。
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16767
-source-git-commit: 15f2122c53a3b2f3dc1942502e908403e55519ab
+exl-id: 47c86999-6a9c-4451-8a59-475e8c65ab6a
+source-git-commit: 3084590685bee9cd139c27b9a27026f08abf897f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-
-# Publish移轉至中繼和生產環境
+# 將移轉發佈至測試與生產
 
 當移轉的所有開發完成並驗證時，請建置到測試環境，然後在準備就緒時發佈到生產環境。
 
@@ -51,6 +51,6 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->請務必注意，您進行此實作移轉的主要原因之一，是準備使用Adobe Experience Platform應用程式，例如Customer Journey Analytics、Real-Time CDP或Journey Optimizer (如上#3所述)。 若為此目的使用您的網站資料，將會包含本教學課程中未包含的其他步驟，但本教學課程無疑是您進一步實施作業的先決條件。 因此，請完成本教學課程，然後您可以繼續執行必要步驟，將此相同的網站資料傳送至Experience Platform。
+>請務必注意，您進行此實作移轉的主要原因之一，是準備使用Adobe Experience Platform應用程式，例如Customer Journey Analytics、Real-Time CDP或Journey Optimizer。 若為此目的使用您的網站資料，將會包含本教學課程中未包含的其他步驟，但本教學課程無疑是您進一步實施作業的先決條件。 現在您已完成本教學課程，您已準備好執行必要步驟，將相同的網站資料傳送至Experience Platform。
 
 祝您使用分析和其他內容與行銷活動繼續前行！
