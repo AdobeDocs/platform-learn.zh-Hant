@@ -3,9 +3,9 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: f25c1705ae6813dc744945e8a4ee9858513f7374
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 2%
 ![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概觀
-
-本教學課程是您的最佳起點
 
 本教學課程差異很大，為下列應用程式提供清楚的深入分析：
 
@@ -50,17 +48,13 @@ ht-degree: 2%
 - Adobe Experience Platform資料彙集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - 存取示範系統： [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
-## 前期工作
-
-在[這裡](./prework.md){target="_blank"}確認需要安裝在您電腦上的必要應用程式。
-
 ## 完成與認證
 
 本教學課程是Adobe認證課程的一部分。 您可以連同本教學課程一起註冊此課程，方法是前往[https://certification.adobe.com](https://certification.adobe.com)。
 
 使用下列教學課程完成的每個模組，都需要提交完成證明，如[此處](./completion.md)所示。
 
-## 內容
+## 內容狀態
 
 若要檢查下列內容的狀態，請移至[狀態頁面](./status.md){target="_blank"}。
 
@@ -68,7 +62,7 @@ ht-degree: 2%
 
 [開始使用](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
-在此基本單元中，您將設定所有專案，以便存取和使用示範環境。
+在此基本單元中，您將準備所有內容，以便存取和使用示範環境。
 
 ### 1.工作流程與規劃
 
