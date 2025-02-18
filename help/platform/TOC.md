@@ -5,15 +5,57 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: ce28c48d554727ce42803400373826315f5b2153
+source-git-commit: 4d403a6694f856a9020fe9dfd541693603c57c69
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '882'
 ht-degree: 18%
 
 ---
 
 
 # Adobe Experience Platform 教學課程 {#tutorials}
+
+<!--
+
+Data Modeling
+
+Profile vs Data Lake vs Identity
+how a record becomes an audience member
+
+Profiles
+Identities
+Audience
+
+Data Lake
+
+Data Ingestion
+-Batch
+-Streaming
+-Edge (Data Collection)
+-Monitoring
+
+Data Governance
+Privacy
+Consent
+Audit logs
+
+Administration
+-Sandboxes
+-Permissions
+-License usage
+
+
+---
+App specific
+
+Destinations
+
+Journeys
+
+Campaigns
+
+-->
+
 
 + [平台教學課程](/help/platform/overview.md)
 + Platform {#intro-to-platform}簡介
@@ -37,15 +79,16 @@ ht-degree: 18%
 + [驗證Experience Platform API](/help/platform/authentication/platform-api-authentication.md)
 + [將範例資料匯入Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
-   + [使用警示](/help/platform/admin/use-alerts.md)
-   + [使用沙箱](/help/platform/admin/use-sandboxes.md)
-   + [在沙箱之間複製套件](/help/platform/admin/copy-objects-between-sandboxes.md)
-   + [跨IMS組織共用套件](/help/platform/admin/share-packages-across-orgs.md)
+   + [概觀](/help/platform/admin/overview.md)
    + [新增使用者](/help/platform/admin/add-users.md)
-   + [新增使用者至資料彙集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
+   + [新增使用者至資料彙集](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
    + [新增開發人員](/help/platform/admin/add-developers.md)
    + [新增產品管理員](/help/platform/admin/add-product-administrators.md)
    + [設定以屬性為基礎的存取控制](/help/platform/admin/configure-attribute-based-access-control.md)
+   + [使用沙箱](/help/platform/admin/use-sandboxes.md)
+   + [在沙箱之間複製套件](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [跨IMS組織共用套件](/help/platform/admin/share-packages-across-orgs.md)
+   + [使用警示](/help/platform/admin/use-alerts.md)
 + AI 助理 {#ai-assistant}
    + [概觀](/help/platform/ai-assistant/overview.md)
    + [取得存取權](/help/platform/ai-assistant/access.md)
