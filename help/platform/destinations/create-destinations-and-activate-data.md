@@ -1,5 +1,5 @@
 ---
-title: 在Adobe的Real-Time Customer Data Platform (RTCDP)中建立目的地和啟用資料
+title: 在Adobe的Real-Time Customer Data Platform (RTCDP)中建立目的地並啟用資料
 description: 瞭解如何在Adobe的Real-Time Customer Data Platform中建立目的地和啟用資料
 solution: Real-Time Customer Data Platform
 feature: Destinations
@@ -7,8 +7,9 @@ role: User, Admin
 level: Beginner
 jira: KT-3798
 thumbnail: 29710.jpg
+last-substantial-update: 2025-02-14T00:00:00Z
 exl-id: 53e23177-0131-44a4-9828-e54e4f279d91
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 8be73fee5a25fdb83dc2e2041be11568abcd20a1
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 0%
