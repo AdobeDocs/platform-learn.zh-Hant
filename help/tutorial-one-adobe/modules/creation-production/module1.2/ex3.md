@@ -6,16 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
 
 # 1.2.3使用Workfront Fusion實現流程自動化
 
-瞭解如何使用Workfront Fusion處理自動化。
+瞭解如何使用Workfront Fusion實現流程自動化。
 
 ## 1.2.3.1反複處理多個值
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 
    ![WF Fusion](./images/wffusion215.png)
 
-## 1.2.3.2使用webhook啟動您的情境
+## 1.2.3.2使用webhook啟用您的情境
 
 到目前為止，您已手動執行您的案例以進行測試。 現在來使用webhook更新您的情境，以便從外部環境啟動它。
 
@@ -200,7 +200,7 @@ ht-degree: 0%
 
 ## 後續步驟
 
-移至[Firefly Services Automation的摘要與優點](./summary.md){target="_blank"}
+使用聯結器](./ex4.md){target="_blank"}移至[1.2.4 Automation
 
 返回[自動化Adobe Firefly服務](./automation.md){target="_blank"}
 

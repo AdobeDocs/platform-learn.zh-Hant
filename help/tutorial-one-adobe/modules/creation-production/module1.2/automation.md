@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '176'
 ht-degree: 1%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 1%
 在本練習中，瞭解如何在Firefly Fusion中設定和使用Workfront Services API和Photoshop API，同時探索Workfront Fusion的功能。
 
 [1.2.3使用Workfront Fusion自動化程式](./ex3.md){target="_blank"}
+
+在本練習中，請繼續精簡您的歷程，以自動化影像建立程式。
+
+使用聯結器[1.2.4自動化](./ex4.md){target="_blank"}
 
 在本練習中，請繼續精簡您的歷程，以自動化影像建立程式。
 
