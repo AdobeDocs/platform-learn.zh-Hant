@@ -5,7 +5,7 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
+source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 18%
@@ -103,19 +103,19 @@ Campaigns
 + 對象與細分{#audiences}
    + [對象入口網站和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上傳對象](audiences/upload-audiences.md)
-   + [同盟對象構成概觀](audiences/overview-of-federated-audience-composition.md)
-   + [連線並設定同盟對象構成](audiences/connect-and-configure-federated-audience-composition.md)
-   + [建立同盟受眾構成](audiences/create-a-federated-audience-composition.md)
-   + [對象規則產生器概觀](audiences/audience-rule-builder-overview.md)
-   + [建立客群](audiences/create-audiences.md)
-   + [使用時間限制](audiences/time-constraints.md)
-   + [建立內容型對象](audiences/create-content-based-audiences.md)
-   + [建立轉換對象](audiences/create-conversion-audiences.md)
-   + [從現有對象建立對象](audiences/create-audiences-from-existing-audiences.md)
-   + [建立循序受眾](audiences/create-sequential-audiences.md)
-   + [建立動態客群](audiences/create-dynamic-audiences.md)
-   + [建立多實體對象](audiences/create-multi-entity-audiences.md)
-   + [建立及啟用帳戶對象(B2B)](audiences/create-audiences-with-b2b-data.md)
+   + [同盟對象構成概觀](audiences/fac/overview-of-federated-audience-composition.md)
+   + [連線並設定同盟對象構成](audiences/fac/connect-and-configure-federated-audience-composition.md)
+   + [建立同盟受眾構成](audiences/fac/create-a-federated-audience-composition.md)
+   + [對象規則產生器概觀](audiences/audience-builder/audience-rule-builder-overview.md)
+   + [建立對象](audiences/audience-builder/create-audiences.md)
+   + [使用時間限制](audiences/audience-builder/time-constraints.md)
+   + [建立內容型對象](audiences/audience-builder/create-content-based-audiences.md)
+   + [建立轉換對象](audiences/audience-builder/create-conversion-audiences.md)
+   + [從現有對象建立對象](audiences/audience-builder/create-audiences-from-existing-audiences.md)
+   + [建立循序受眾](audiences/audience-builder/create-sequential-audiences.md)
+   + [建立動態客群](audiences/audience-builder/create-dynamic-audiences.md)
+   + [建立多實體對象](audiences/audience-builder/create-multi-entity-audiences.md)
+   + [建立及啟用帳戶對象(B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [串流細分示範](/help/platform/audiences/streaming-segmentation-demo.md)
    + [評估對象規則](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [建立資料集以匯出資料](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
