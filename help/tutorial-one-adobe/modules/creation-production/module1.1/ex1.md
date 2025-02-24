@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: c5a80b87ac8e997922cb8c69b4180c4220dd9862
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 在繼續此練習之前，您必須先完成[您的Adobe I/O專案](./../../../modules/getting-started/gettingstarted/ex6.md)的設定，而且您還需要設定應用程式以與API互動，例如[Postman](./../../../modules/getting-started/gettingstarted/ex7.md)或[PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md)。
 
-## 1.1.1.1 firefly.adobe.com
+## 1.1.1.2 firefly.adobe.com
 
 移至[https://firefly.adobe.com](https://firefly.adobe.com)。 按一下&#x200B;**設定檔**&#x200B;圖示，確定您已登入正確的&#x200B;**帳戶**，應該是`--aepImsOrgName--`。 如有需要，請按一下&#x200B;**切換設定檔**&#x200B;以切換至該帳戶。
 
@@ -131,6 +131,62 @@ ht-degree: 0%
     "strength": 50
   }
 ```
+
+然後您應該擁有此專案。 按一下&#x200B;**傳送**。
+
+![Firefly](./images/ff6.png){zoomable="yes"}
+
+按一下影像URL以開啟。
+
+![Firefly](./images/ff7.png){zoomable="yes"}
+
+您的影像現在已變更了一點。 套用樣式預設集時，種子影像的套用方式不再與之前相同。
+
+![Firefly](./images/ff8.png){zoomable="yes"}
+
+從您請求的&#x200B;**Body**&#x200B;移除&#x200B;**seed**&#x200B;物件的程式碼。 按一下&#x200B;**傳送**，然後按一下您從回應中取得的影像URL。
+
+```json
+,
+  "seeds": [
+    XXX
+  ]
+```
+
+![Firefly](./images/ff9.png){zoomable="yes"}
+
+您的影像現在已再次變更。
+
+![Firefly](./images/ff10.png){zoomable="yes"}
+
+
+## 1.1.1.5 Firefly Services API，一般擴充
+
+從&#x200B;**FF - Firefly服務技術內部人員**&#x200B;集合中選取名為&#x200B;**POST - Firefly - Gen Expand**&#x200B;的請求，並移至請求的&#x200B;**Body**。
+
+- **大小**：輸入所需的解析度。 此處輸入的值應大於影像的原始大小，且不能大於4096。
+- **image.source.url**：此欄位需要需要需要展開影像的連結。 在此範例中，變數是用來參照上一個練習中產生的影像。
+
+- **水準對齊**：接受的值為： `"center"`、`"left`、`"right"`。
+- **垂直對齊**：接受的值為： `"center"`、`"top`、`"bottom"`。
+
+![Firefly](./images/ff11.png){zoomable="yes"}
+
+按一下回應中的影像URL。
+
+![Firefly](./images/ff12.png){zoomable="yes"}
+
+您現在會看到上一個練習產生的影像現在已擴展到3999x3999的解析度。
+
+![Firefly](./images/ff13.png){zoomable="yes"}
+
+當您變更位置對齊方式時，輸出也會稍有不同。 在此範例中，位置已變更為左下&#x200B;**的**。 按一下&#x200B;**傳送**，然後按一下以開啟產生的影像URL。
+
+![Firefly](./images/ff14.png){zoomable="yes"}
+
+然後您應該會看到原始影像已用於不同的位置，這會影響整個影像。
+
+![Firefly](./images/ff15.png){zoomable="yes"}
 
 ## 後續步驟
 
