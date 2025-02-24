@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
+source-git-commit: 19d1ea02c33685f250e4fdf2a94c90fa66c5ee7b
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 19%
+source-wordcount: '888'
+ht-degree: 18%
 
 ---
 
@@ -126,6 +126,8 @@ Campaigns
    + [區段比對接收資料](/help/platform/segments/segment-match-receiving-data.md)
 + [稽核記錄](/help/platform/governance/audit-logs.md)
 + [資料彙集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ Collaboration {#collaboration}
+   + [Real-Time CDP Collaboration概觀](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
 + 儀表板 {#dashboards}
    + [建立儀表板](/help/platform/dashboards/create-a-dashboard.md)
 + 資料控管{#data-governance}
