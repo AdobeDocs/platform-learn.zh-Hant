@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 19d1ea02c33685f250e4fdf2a94c90fa66c5ee7b
+source-git-commit: eb05c2116c8890d631db4da8a174007a37470ab7
 workflow-type: tm+mt
-source-wordcount: '888'
-ht-degree: 18%
+source-wordcount: '881'
+ht-degree: 19%
 
 ---
 
@@ -290,4 +290,3 @@ Campaigns
    + [兩種見解的故事 — 品牌與消費者](/help/platform/industry/brands-vs-consumers.md)
    + [發展您的卓越受眾中心](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [使用客戶設定檔建立更好的體驗](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
-   + [第一方資料內容中的資料Collaboration](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
