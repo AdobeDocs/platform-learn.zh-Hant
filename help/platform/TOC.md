@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: eb05c2116c8890d631db4da8a174007a37470ab7
+source-git-commit: 7d300c94d4d52ad4785908497afc5ec4ace038bf
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '882'
 ht-degree: 19%
 
 ---
@@ -189,6 +189,7 @@ Campaigns
    + [標示、擷取及驗證身分資料](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [檢視身分圖](/help/platform/identities/view-identity-graphs.md)
    + 身分圖表連結規則{#graph-linking-rules}
+      + [概觀](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [圖表模擬](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
    + [概觀](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
