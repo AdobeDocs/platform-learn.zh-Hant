@@ -3,9 +3,9 @@ title: 移轉全域變數
 description: 瞭解如何將全域變數從Analytics擴充功能設定移轉至Web SDK
 solution: Data Collection, Analytics
 feature: Web SDK
-jira: KT-16764
+jira: KT-17277
 exl-id: 0917e951-c7e0-4723-8354-d308890bdaac
-source-git-commit: d01889ca317e29ed0c37b20e17291c4cb5a3abd1
+source-git-commit: 744b26da58307f0d6f6e8715a534ca814e02371c
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 3%
@@ -66,7 +66,7 @@ ht-degree: 3%
    1. 對於&#x200B;**動作型別**，請選擇[更新變數]
    1. 在右側，選擇您的變數&#x200B;**資料元素** （在本教學課程中，它稱為「頁面檢視資料元素」，但您的變數可能有所不同）
    1. 選取資料物件下的&#x200B;**Analytics**
-   1. 填入您從Analytics擴充功能設定的「全域變數」區段儲存的變數(在本教學課程的範例中，將「eVar10」設定為「頁面型別資料元素」)
+   1. 填入您從Analytics擴充功能設定的「全域變數」區段儲存的變數(在本教學課程的範例中，將eVar10設定為page type資料元素)
 
    ![websdk-global-variables-action](assets/websdk-global-variables-action.jpg)
 
