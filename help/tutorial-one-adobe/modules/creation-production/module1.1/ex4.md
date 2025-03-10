@@ -6,16 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 Firefly自訂模型API
 
-## 1.1.4.1設定自訂模型
+## 1.1.4.1設定您的自訂模型
 
 移至[https://firefly.adobe.com/](https://firefly.adobe.com/)。 按一下&#x200B;**自訂模型**。
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 
 ![Firefly自訂模型](./images/ffcm16.png){zoomable="yes"}
 
-## 1.1.4.2在UI中使用自訂模型
+## 1.1.4.2在UI中使用您的自訂模型
 
 移至[https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train)。 按一下「自訂模型」以開啟。
 
@@ -112,9 +112,9 @@ ht-degree: 0%
 
 ![Firefly自訂模型](./images/ffcm20.png){zoomable="yes"}
 
-若要存取Firefly自訂模型，該自訂模型必須與Adobe I/O專案的&#x200B;**技術帳戶ID**&#x200B;共用。
+若要存取Firefly自訂模型，該自訂模型必須與Adobe I/O專案的&#x200B;**技術帳戶電子郵件**&#x200B;共用。
 
-若要擷取您的&#x200B;**技術帳戶ID**，請移至[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)。 按一下以開啟名為`--aepUserLdap-- Firefly`的專案。
+若要擷取您的&#x200B;**技術帳戶電子郵件**，請移至[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)。 按一下以開啟名為`--aepUserLdap-- One Adobe tutorial`的專案。
 
 ![Firefly自訂模型](./images/ffcm24.png){zoomable="yes"}
 
@@ -122,15 +122,15 @@ ht-degree: 0%
 
 ![Firefly自訂模型](./images/ffcm25.png){zoomable="yes"}
 
-按一下以複製您的&#x200B;**技術帳戶ID**。
+按一下以複製您的&#x200B;**技術帳戶電子郵件**。
 
 ![Firefly自訂模型](./images/ffcm23.png){zoomable="yes"}
 
-貼上您的&#x200B;**技術帳戶ID**&#x200B;並按一下&#x200B;**邀請編輯**。
+貼上您的&#x200B;**技術帳戶電子郵件**&#x200B;並按一下&#x200B;**邀請編輯**。
 
 ![Firefly自訂模型](./images/ffcm21.png){zoomable="yes"}
 
-**技術帳戶ID**&#x200B;現在應該能夠存取自訂模型。
+**技術帳戶電子郵件**&#x200B;現在應該能夠存取自訂模型。
 
 ![Firefly自訂模型](./images/ffcm22.png){zoomable="yes"}
 

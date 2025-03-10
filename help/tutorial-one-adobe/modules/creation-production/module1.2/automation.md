@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '197'
 ht-degree: 1%
 
 ---
@@ -38,6 +38,10 @@ ht-degree: 1%
 使用聯結器[1.2.4自動化](./ex4.md){target="_blank"}
 
 在本練習中，請繼續精簡您的歷程，以自動化影像建立程式。
+
+[1.2.5框架I/O與Workfront Fusion](./ex5.md){target="_blank"}
+
+在本練習中，您會將框架I/O連線至您的Workfront Fusion案例。
 
 [摘要與優點](./summary.md){target="_blank"}
 

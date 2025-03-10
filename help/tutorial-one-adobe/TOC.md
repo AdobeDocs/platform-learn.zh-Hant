@@ -4,9 +4,9 @@ breadcrumb-title: 從Creative Cloud到Experience Cloud，Adobe應用程式的完
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
 workflow-type: tm+mt
-source-wordcount: '1105'
+source-wordcount: '1113'
 ht-degree: 2%
 
 ---
@@ -42,12 +42,13 @@ ht-degree: 2%
       + [1.1.3使用Photoshop API](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
       + [1.1.4 Firefly自訂模型API](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
-   + 1.2使用Workfront Fusion {#crpr2}自動化創意工作流程
+   + 1.2 Creative Fusion的Workfront工作流程自動化{#crpr2}
       + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Workfront Fusion快速入門](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
       + [1.2.2在Workfront Fusion中使用Adobe API](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3使用Workfront Fusion實現流程自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
       + [1.2.4使用聯結器自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
+      + [1.2.5框架I/O與Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
 
 + 資產管理{#assetmgmt}
