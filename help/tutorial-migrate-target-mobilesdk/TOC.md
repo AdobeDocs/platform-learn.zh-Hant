@@ -10,7 +10,7 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-17468
 hide: true
-source-git-commit: 93ecc7ca815fc982697d432f316943dde12b62a5
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
 source-wordcount: '72'
 ht-degree: 4%
@@ -28,7 +28,7 @@ ht-degree: 4%
 
 + [取代SDK](replace-sdk.md)
 
-+ [轉譯活動](retrieve-activities.md)
++ [擷取活動](retrieve-activities.md)
 
 + [傳送引數](send-parameters.md)
 

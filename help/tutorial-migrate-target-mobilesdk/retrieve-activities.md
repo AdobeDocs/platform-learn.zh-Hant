@@ -2,9 +2,9 @@
 title: 擷取Target活動 — 將行動應用程式中的Adobe Target實作移轉至Adobe Journey Optimizer - Decisioning擴充功能
 description: 瞭解從Adobe Target移轉至Adobe Journey Optimizer - Decisioning Mobile擴充功能時，如何擷取Adobe Target活動。
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,11 @@ Target傳回的內容（也稱為「選件」）通常由文字或JSON組成，�
 
 
 ## 隨選要求並套用內容
+
+>[!IMPORTANT]
+>
+>將內容套用至應用程式後，必須引發`displayed` API，讓Target知道訪客已看到活動中指定的替代或預設內容。 如需詳細資訊，請參閱[追蹤目標轉換事件](track-events.md)頁面。
+
 
 +++ Android範例
 
