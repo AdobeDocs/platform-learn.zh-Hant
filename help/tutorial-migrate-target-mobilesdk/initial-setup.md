@@ -1,10 +1,10 @@
 ---
-title: 初始設定 — 從Adobe Target移轉至Adobe Journey Optimizer - Decisioning Mobile擴充功能
+title: 初始設定 — 將行動應用程式中的Adobe Target實作移轉至Adobe Journey Optimizer — 決策擴充功能
 description: 瞭解並設定Platform Web SDK實作所需的重要基礎元素
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '373'
 ht-degree: 6%
 
 ---

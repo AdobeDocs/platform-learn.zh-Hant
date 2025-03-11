@@ -1,62 +1,39 @@
 ---
-title: 驗證Adobe Journey Optimizer - Decisioning Mobile擴充功能的Target實作
-description: 瞭解如何使用Adobe Journey Optimizer - Decisioning Mobile擴充功能驗證活動及偵錯Adobe Target實施。
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+title: 驗證和疑難排解決策擴充功能實施
+description: 瞭解如何使用Decisioning擴充功能來驗證Adobe Target行動實作並進行疑難排解。
+exl-id: edc6e25a-58d7-4145-97c3-bf48e980914f
+source-git-commit: a4fe85580776e5d84f6deaf3c0224f0513ba8415
 workflow-type: tm+mt
-source-wordcount: '315'
-ht-degree: 1%
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
-# 驗證Adobe Journey Optimizer - Decisioning行動擴充功能實施
+# 驗證和疑難排解決策擴充功能實施
 
 將Target實作從Target擴充功能移轉至Decisioning擴充功能後，請務必驗證一切都正常運作，然後再將任何變更發佈至生產應用程式。 Adobe建議進行下列事項，本頁將詳細介紹這些事項：
 
 * 執行技術驗證，以確保基本實作和Platform Mobile SDK請求與回應看起來正確無誤
 * 確保Target活動已正確傳送和呈現
 * 檢查報表是否正常運作
-* 重新造訪對象和個人資料指令碼，以確保其與Platform Mobile SDK和最佳擴充功能相容
+* 重新造訪對象和個人資料指令碼，以確保其與Platform Mobile SDK和Optimize擴充功能相容
 * 確保與Adobe或協力廠商應用程式的整合可正常運作
 
-每個Target實作會因使用的網站架構和功能而異。 您可使用下清單格作為起點，並新增實作專用的任何專案。 本教學課程的[偵錯頁面](debugging.md)顯示您可以用來協助進行此驗證的工具。
+每個Target實作會因使用的網站架構和功能而異。 您可使用下清單格作為起點，並新增實作專用的任何專案。
 
-## 技術驗證
+## 技術驗證和疑難排解
 
-| 驗證專案 | 附註 |
-|---|---|
-| | |
+透過Assurance，Platform Mobile SDK和Decisioning擴充功能的技術驗證和疑難排解功能已大幅增強。 請參閱以下檔案頁面，以瞭解此基本工具的相關資訊：
 
+* [在Assurance中設定決策外掛程式](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/){target=_blank}
 
-## 活動傳送和呈現
+* [正在驗證最佳化SDK設定](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/optimize-configuration-view/){target=_blank}
 
-| 驗證專案 | 附註 |
-| | |
+* [檢閱要求並模擬不同的體驗](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/){target=_blank}
 
-## 報告
+執行上述驗證步驟後，您完全可以放心，含Decisioning擴充功能的Platform Mobile SDK實作已準備好投入生產環境。
 
-| 驗證專案 | 附註 |
-| | |
-
-## 對象和個人資料指令碼
-
-| 驗證專案 | 附註 |
-|---|---|
-| | |
-
-## 與Adobe應用程式整合
-
-| 驗證專案 | 附註 |
-| | |
-
-## 與協力廠商應用程式整合
-
-| 驗證專案 | 附註 |
-|---|---|
-| | |
-
-執行上述驗證步驟後，您可以放心，Platform Mobile SDK實作搭配Decisioning擴充功能已可投入生產。
-
-接下來，瞭解如何[使用Platform Web SDK](debugging.md)對Target實作進行疑難排解。
+恭喜，您已結束本教學課程！ 祝您將Adobe Target實作移轉至Decisioning擴充功能好運！
 
 >[!NOTE]
 >

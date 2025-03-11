@@ -1,10 +1,10 @@
 ---
-title: 規劃移轉 — 從Adobe Target移轉到Adobe Journey Optimizer - Decisioning Mobile擴充功能
+title: 規劃移轉 — 將行動應用程式中的Adobe Target實作移轉到Adobe Journey Optimizer — 決策擴充功能
 description: 瞭解at.js與Platform Web SDK之間的主要差異，以及如何規劃您的移轉作業。
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 移轉程式包含下列重要步驟：
 
 1. 評估您目前的實施，並決定移轉方法
-1. 設定初始元件以連線至Adobe Experience PlatformEdge Network
+1. 設定初始元件以連線至Adobe Experience Platform Edge Network
 1. 更新基本實施，以決策擴充功能取代Target擴充功能
 1. 針對您的特定使用案例增強「最佳化SDK」實作。 這可能涉及傳遞其他引數、使用回應Token等。
 1. 更新Target介面中的物件，例如設定檔指令碼、活動和對象定義
