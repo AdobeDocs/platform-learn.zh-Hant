@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 65b1ecd8b12173399d0e834a95f78a0d6d1bf6fe
+source-git-commit: 0523b4508927a4995af907371e43b48c272e973c
 workflow-type: tm+mt
-source-wordcount: '897'
+source-wordcount: '902'
 ht-degree: 18%
 
 ---
@@ -117,6 +117,7 @@ Campaigns
    + [建立多實體對象](audiences/audience-builder/create-multi-entity-audiences.md)
    + [建立及啟用帳戶對象(B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [串流細分示範](/help/platform/audiences/streaming-segmentation-demo.md)
+   + [依需求評估批次對象](/help/platform/audiences/evaluate-audiences-on-demand.md)
    + [評估對象規則](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [建立資料集以匯出資料](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [區段比對連線設定](/help/platform/segments/segment-match-connection-setup.md)

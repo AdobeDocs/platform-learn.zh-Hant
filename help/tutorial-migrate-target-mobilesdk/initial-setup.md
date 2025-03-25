@@ -2,9 +2,9 @@
 title: 初始設定 — 將行動應用程式中的Adobe Target實作移轉至Adobe Journey Optimizer — 決策擴充功能
 description: 瞭解並設定Platform Web SDK實作所需的重要基礎元素
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 45a47cde8bb5ac3baba24d7527fc4029ca3d6596
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '379'
 ht-degree: 6%
 
 ---
@@ -61,7 +61,7 @@ Target擴充功能具有[可設定的設定](https://developer.adobe.com/client-
 | 用戶端代碼 | 不適用 | 邊緣使用IMS組織詳細資料自動設定 |
 | 環境ID | 目標環境ID | 在資料流中設定 |
 | 目標Workspace屬性 | 屬性Token | 在資料流中設定 |
-| 逾時 | 無法設定 | 決策擴充功能的逾時為10秒 |
+| 逾時 | 逾時 | 可在Decisioning擴充功能和最佳化SDK中設定。 預設逾時為10秒。 |
 | 伺服器網域 | Edge Network網域 | 在Adobe Experience Platform Edge Network擴充功能中設定 |
 
 接下來，瞭解如何[取代目標SDK](replace-sdk.md)。
