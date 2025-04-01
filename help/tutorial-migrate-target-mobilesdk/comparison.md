@@ -2,9 +2,9 @@
 title: Target擴充功能與決策擴充功能的比較
 description: 瞭解Target擴充功能與Decisioning擴充功能之間的差異，包括功能、功能、設定和資料流程。
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,6 @@ Adobe Journey Optimizer - Decisioning擴充功能與適用於行動應用程式�
 | thirdPartyId (mbox3rdPartyId) | 支援 | 透過資料流中的身分對應和目標第三方ID名稱空間支援 |
 | 通知（顯示、按一下） | 支援 | 支援 |
 | 回應Token | 支援 | 支援 |
-| Analytics for Target (A4T) | 僅限使用者端 | 使用者端和伺服器端 |
 | 行動裝置預覽（QA模式） | 支援 | Assurance的有限支援 |
 
 >[!IMPORTANT]
