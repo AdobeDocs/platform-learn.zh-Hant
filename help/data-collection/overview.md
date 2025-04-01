@@ -3,16 +3,16 @@ title: 資料收集教學課程
 description: 讓您成為資料收集進階使用者的作法影片和教學課程
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
+source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
 workflow-type: tm+mt
-source-wordcount: '234'
-ht-degree: 25%
+source-wordcount: '263'
+ht-degree: 23%
 
 ---
 
 # 資料收集教學課程
 
-Data Collection是新一代Adobe的網站標籤和行動SDK管理功能。 資料收集可讓客戶透過簡單的方式部署及管理必要的分析、行銷及廣告解決方案，以便支援相關客戶體驗。 使用這些影片和教學課程來協助學習此關鍵技術。
+Data Collection是新一代Adobe的網站標籤與行動SDK管理功能。 資料收集可讓客戶透過簡單的方式部署及管理必要的分析、行銷及廣告解決方案，以便支援相關客戶體驗。 使用這些影片和教學課程來協助學習此關鍵技術。
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -28,11 +28,11 @@ Data Collection是新一代Adobe的網站標籤和行動SDK管理功能。 資�
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="將Target移轉至Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>將Adobe Target移轉至Web SDK</strong>
     </a>
     </div>
@@ -41,11 +41,11 @@ Data Collection是新一代Adobe的網站標籤和行動SDK管理功能。 資�
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/zh-hant/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
       <img alt="使用 Web SDK 實作 Adobe Experience Cloud" src="assets/thumb_analyticsWebSdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/zh-hant/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
     <strong>在標籤中將Adobe Analytics移轉至Web SDK</strong>
     </a>
     </div>
@@ -64,6 +64,25 @@ Data Collection是新一代Adobe的網站標籤和行動SDK管理功能。 資�
     <p>
   </td>
 </tr>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+      <img alt="在Edge Network上將Target移轉至Mobile SDK" src="assets/thumb_targetMobileSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview" target="_blank">
+    <strong>在Edge Network上將Adobe Target移轉至Mobile SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>以Journey Optimizer - Decisioning擴充功能取代Target擴充功能</em>
+    <p>
+  </td>
+  <td>
+  </td>
+  <td>
+  </td>
+  </tr>
 </table>
 
 ## 實施指南
@@ -76,7 +95,7 @@ Data Collection是新一代Adobe的網站標籤和行動SDK管理功能。 資�
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant" target="_blank">
-    <strong>使用網頁SDK實作Experience Cloud</strong>
+    <strong>使用Web SDK實作Experience Cloud</strong>
     </a>
     </div>
     <p>
