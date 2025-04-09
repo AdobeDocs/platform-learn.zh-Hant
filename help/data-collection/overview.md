@@ -3,10 +3,10 @@ title: 資料收集教學課程
 description: 讓您成為資料收集進階使用者的作法影片和教學課程
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 23%
+ht-degree: 22%
 
 ---
 
@@ -90,11 +90,11 @@ Data Collection是新一代Adobe的網站標籤與行動SDK管理功能。 資�
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant" target="_blank">
+    <a href="https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-web-sdk/overview" target="_blank">
       <img alt="使用 Web SDK 實作 Adobe Experience Cloud" src="assets/thumb_websdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant" target="_blank">
+      <a href="https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-web-sdk/overview" target="_blank">
     <strong>使用Web SDK實作Experience Cloud</strong>
     </a>
     </div>
@@ -103,11 +103,11 @@ Data Collection是新一代Adobe的網站標籤與行動SDK管理功能。 資�
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="行動應用程式中的實作" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>在行動應用程式中實作Experience Cloud</strong>
     </a>
     </div>
@@ -116,11 +116,11 @@ Data Collection是新一代Adobe的網站標籤與行動SDK管理功能。 資�
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="將Target移轉至Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>使用標籤實作舊版資料庫</strong>
     </a>
     </div>

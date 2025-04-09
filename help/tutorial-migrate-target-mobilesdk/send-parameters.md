@@ -2,7 +2,7 @@
 title: 傳送引數 — 將行動應用程式中的Adobe Target實作移轉至Adobe Journey Optimizer — 決策擴充功能
 description: 瞭解如何使用Experience Platform Web SDK將mbox、設定檔和實體引數傳送至Adobe Target。
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 實體引數
 
-[實體引數](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html)是用來傳遞Target Recommendations的行為資料和補充目錄資訊。 與設定檔引數類似，大部分實體引數應該在`data.__adobe.target`物件下傳遞。 唯一的例外是`xdm.productListItems`陣列存在，然後第一個`SKU`值會用作`entity.id`。
+[實體引數](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)是用來傳遞Target Recommendations的行為資料和補充目錄資訊。 與設定檔引數類似，大部分實體引數應該在`data.__adobe.target`物件下傳遞。 唯一的例外是`xdm.productListItems`陣列存在，然後第一個`SKU`值會用作`entity.id`。
 
 特定專案的實體引數必須以`entity.`為前置詞，才能正確擷取資料。 建議演演算法的保留`cartIds`和`excludedIds`引數不應加上前置詞，而且每個引數的值都必須包含以逗號分隔的實體ID清單。
 
@@ -55,7 +55,7 @@ Target允許使用單一客戶ID跨裝置和系統同步設定檔。 此客戶ID
 
 | at.js引數範例 | Platform Web SDK選項 | 附註 |
 | --- | --- | --- |
-| `at_property` | 不適用 | 屬性Token是在[資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target)中設定，無法在`sendEvent`呼叫中設定。 |
+| `at_property` | 不適用 | 屬性Token是在[資料流](https://experienceleague.adobe.com/en/docs/experience-platform/edge/datastreams/configure#target)中設定，無法在`sendEvent`呼叫中設定。 |
 | `pageName` | `xdm.web.webPageDetails.name`或<br> `data.__adobe.target.pageName` | 目標mbox引數可以做為`xdm`物件的一部分或`data.__adobe.target`物件的一部分來傳遞。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 所有Target設定檔引數都必須作為`data`物件的一部分傳遞，且前置詞為`profile.`才能正確對應。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | 用於目標類別相關性功能的保留引數，必須作為`data`物件的一部分傳遞。 |
@@ -64,11 +64,11 @@ Target允許使用單一客戶ID跨裝置和系統同步設定檔。 此客戶ID
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自訂實體引數用於更新Recommendations產品目錄。 這些自訂引數必須作為`data`物件的一部分傳遞。 |
 | `cartIds` | `data.__adobe.target.cartIds` | 用於Target的購物車型建議演演算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用來防止特定實體ID在建議設計中傳回。 |
-| `mbox3rdPartyId` | 在`xdm.identityMap`物件中設定 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html)的[Target設定中指定用於客戶ID的名稱空間。 |
+| `mbox3rdPartyId` | 在`xdm.identityMap`物件中設定 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在資料流](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid)的[Target設定中指定用於客戶ID的名稱空間。 |
 | `orderId` | `xdm.commerce.order.purchaseID`<br> （當`commerce.purchases.value`設定為`1`）<br>或<br> `data.__adobe.target.orderId` | 用於識別Target轉換追蹤的唯一訂單。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal`<br> （當`commerce.purchases.value`設定為`1`）<br>或<br> `data.__adobe.target.orderTotal` | 用於追蹤Target轉換和最佳化目標的訂單總計。 |
 | `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> （當`commerce.purchases.value`設定為`1`時） <br>或<br> `data.__adobe.target.productPurchasedId` | 用於Target轉換追蹤和建議演演算法。 |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | 用於[自訂評分](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html)活動目標。 |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | 用於[自訂評分](https://experienceleague.adobe.com/en/docs/target/using/activities/success-metrics/capture-score)活動目標。 |
 
 {style="table-layout:auto"}
 
@@ -206,4 +206,4 @@ let targetParameters = TargetParameters(parameters: mboxParameters, profileParam
 
 >[!NOTE]
 >
->我們致力協助您成功將行動Target從Target擴充功能移轉至Decisioning擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
+>我們致力協助您成功將行動Target從Target擴充功能移轉至Decisioning擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中張貼以告知我們。
