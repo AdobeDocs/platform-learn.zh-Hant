@@ -8,9 +8,9 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 73645b8b088cfdfe6f256c187b3c510dcc2386fc
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '937'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，讓您即時提供具影響力的個人數位體驗，協助您更清楚瞭解客戶及其行為。 身分欄位和名稱空間是將不同資料來源連線在一起，以建立360度即時客戶個人檔案的膠水。
 
-**資料架構師**&#x200B;需要在本教學課程之外對應身分。
+**數據架構師** 需要在此教學課程之外映射身份。
 
 在開始練習之前，請觀看此短片，進一步瞭解Adobe Experience Platform中的身分識別：
 >[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
@@ -47,18 +47,18 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 -->
 
-## 建立身分名稱空間
+## 建立身分識別命名空間
 
-在本練習中，我們將為Luma的自訂身分識別欄位`loyaltyId`、`crmId`和`productSku`建立身分識別名稱空間。 身分識別命名空間在建立即時客戶輪廓方面扮演關鍵角色，因為相同命名空間中的兩個相符值可讓兩個資料來源形成身分識別圖表。
+在本練習中，我們將為 Luma 的自訂身份欄位`loyaltyId``crmId`、、 和 `productSku`.身分識別命名空間在建立即時客戶輪廓方面扮演關鍵角色，因為相同命名空間中的兩個相符值可讓兩個資料來源形成身分識別圖表。
 
 
-### 在UI中建立名稱空間
+### 建立 UI中的命名空間
 
-讓我們從建立Luma忠誠度方案的名稱空間開始：
+讓我們開始一下，為 Luma 忠誠度結構建立命名空間：
 
-1. 在Platform使用者介面中，前往左側導覽中的&#x200B;**[!UICONTROL 身分]**
-1. 您會發現有多個現成的身分識別名稱空間可供使用。 選取&#x200B;**[!UICONTROL 建立身分名稱空間]**&#x200B;按鈕
-1. 提供詳細資訊，如下所示
+1. 在 Platform 用戶 界面中，轉到&#x200B;**[!UICONTROL 左側導覽中的標識]**
+1. 您會注意到，有幾個現成的標識命名空間可用。 選取建立 **[!UICONTROL 身分命名空間]** 按鈕
+1. 提供如下詳細數據
 
    | 欄位 | 值 |
    |---------------|-----------|
@@ -74,23 +74,23 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 | 欄位 | 值 |
 |---------------|-----------|
-| 顯示名稱 | Luma產品SKU |
+| 顯示名稱 | Luma 產品SKU |
 | 身分識別符號 | lumaProductSKU |
 | 類型 | 非人員識別碼 |
 
 
 
-## 使用API建立身分名稱空間
+## 使用 API 建立身分命名空間
 
-我們將透過API建立CRM名稱空間。
+我們將通過 API 建立我們的 CRM 命名空間。
 
 >[!NOTE]
 >
->如果您偏好略過API練習，可以透過您使用的使用者介面方法來建立CRM名稱空間，並附上下列詳細資料：
+>如果您希望跳過 API 練習，免費通過您使用的用戶介面方法創建 CRM 命名空間，並具有以下詳細信息：
 >
-> 1. 作為&#x200B;**[!UICONTROL 顯示名稱]**，請使用`Luma CRM Id`
-> 1. 作為&#x200B;**[!UICONTROL 身分符號]**，請使用`lumaCrmId`
-> 1. 以&#x200B;**[!UICONTROL 型別]**&#x200B;的身分，使用跨裝置
+> 1. 由於顯示 **[!UICONTROL 名稱]**，請使用 `Luma CRM Id`
+> 1. **[!UICONTROL 作為標識碼，]**&#x200B;請使用`lumaCrmId`
+> 1. **[!UICONTROL 作為「類型]**」，請使用「跨裝置」
 
 讓我們建立身分識別名稱空間`Luma CRM Id`：
 
@@ -108,27 +108,27 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
    }
    ```
 
-1. 按下&#x200B;**傳送**&#x200B;按鈕，您應該會收到&#x200B;**200 OK**&#x200B;回應：
+1. 按「 **發送」** 按鈕，您應該得到 **200 確定** 回應：
 
    ![身分識別命名空間](assets/identity-createUsingApi.png)
 
-如果您返回使用者介面，現在應該會看到三個新的自訂名稱空間：
-![身分識別名稱空間](assets/identity-newIdentities.png)
+如果您返回到 用戶 介面，現在應該會看到三個新的自定義命名空間：
+![身分識別命名空間 ](assets/identity-newIdentities.png)
 
 
-## 結構描述中的標籤身分欄位
+## 加標籤架構中的身分欄位
 
-現在我們有名稱空間了，下一步就是更新結構，為身分識別欄位加上標籤。
+現在我們有了命名空間，下一步是更新我們的架構以標記我們的身份欄位。
 
 
-### 主要身分的標籤XDM欄位
+### 加標籤 主要身分的 XDM 字段
 
-與Real-Time Customer Profile搭配使用的每個結構描述都需要指定主要身分。 而且每個擷取的記錄都必須有該欄位的值。
+與即時客戶配置檔一起使用的每個綱要都必須指定一個主要身份。 引入的每條記錄都必須具有該欄位的值。
 
-將主要身分新增至`Luma Loyalty Schema`：
+讓我們向 ：`Luma Loyalty Schema`
 
-1. 開啟`Luma Loyalty Schema`
-1. 選取`Luma Identity profile field group`
+1. 開啟 `Luma Loyalty Schema`
+1. 選擇 `Luma Identity profile field group`
 1. 選取`loyaltyId`欄位
 1. 檢查&#x200B;**[!UICONTROL 身分]**&#x200B;方塊
 1. 也請勾選&#x200B;**[!UICONTROL 主要身分]**&#x200B;方塊
@@ -136,7 +136,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 1. 選取&#x200B;**[!UICONTROL 套用]**
 1. 選取&#x200B;**[!UICONTROL 儲存]**
 
-   ![主要身分](assets/identity-loyalty-primary.png)
+   ![主要身份 ](assets/identity-loyalty-primary.png)
 
 對部分其他結構描述重複此程式：
 
@@ -146,19 +146,19 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 >[!NOTE]
 >
->透過Web SDK收集的資料是架構中標籤身分欄位典型做法的例外情況。 Web SDK使用身分對應來標籤實作端&#x200B;*的身分識別*，因此我們將在Luma網站上實作Web SDK時決定`Luma Web Events Schema`的身分識別。 在稍後的課程中，我們會將Experience Cloud訪客ID (ECID)收集為主要ID，並將crmId收集為次要ID。
+>使用 Web SDK 收集的數據是標記綱要中標識字段的典型做法的例外情況。 Web SDK 使用標識映射在實施端&#x200B;*標記標識*，因此，當我們在 Luma 網站上實施 Web SDK 時，我們將確定的`Luma Web Events Schema`標識。在後面的課程中，我們會收集Experience Cloud訪客 ID （ECID） 作為主要 ID，收集 crmId 作為次要 ID。
 
-透過我們選取的主要身分，可清楚瞭解`Luma CRM Schema`如何連線至`Luma Offline Purchase Events Schema`，因為它們都使用`loyaltyId`做為識別碼。 但我們如何將離線購買與線上行為聯絡起來？ 如何分類隨產品目錄一起購買的產品？ 我們將使用其他身分欄位和結構描述關係。
+通過我們選擇的主要身份，可以清楚地看到如何 `Luma Loyalty Schema` 連接到 因為它們 `Luma Offline Purchase Events Schema` 都使用loyaltyId作為標識碼。 但是，CRM 如何連接到線下購買事件？ 我們如何將離線購買與線上行為聯繫起來？ 我們如何通過我們的產品目錄對購買的產品進行分類？ 我們將使用其他身分欄位和綱要關係。
 
 <!--use a visual-->
 
-### 標示次要身分的XDM欄位
+### 加標籤輔助身份的 XDM 字段
 
-可以將多個身分欄位新增到結構描述。 非主要身分通常稱為次要身分。 若要將離線購買連結至線上行為，我們會將crmId作為次要識別碼新增至`Luma Loyalty Schema`，並於稍後新增至我們的網頁事件資料。 讓我們更新`Luma Loyalty Schema`：
+您可將多個身分欄位新增至綱要。 非主要標識通常稱為輔助標識。 為了將離線購買行為與線上行為聯繫起來，我們會將 crmId 作為輔助標識碼添加到我們的 `Luma Loyalty Schema` Web 事件數據中，稍後在我們的 Web 事件數據中。 讓我們更新 `Luma Loyalty Schema`：
 
-1. 開啟`Luma Loyalty Schema`
-1. 選取`Luma Identity Profile Field group`
-1. 選取`crmId`欄位
+1. 開啟 `Luma Loyalty Schema`
+1. 選擇 `Luma Identity Profile Field group`
+1. 選取 `crmId` 欄位
 1. 檢查&#x200B;**[!UICONTROL 身分]**&#x200B;方塊
 1. 從&#x200B;**[!UICONTROL 身分識別名稱空間]**&#x200B;下拉式清單中選取`Luma CRM Id`名稱空間
 1. 選取&#x200B;**[!UICONTROL 套用]**，然後選取&#x200B;**[!UICONTROL 儲存]**&#x200B;按鈕以儲存您的變更
@@ -174,15 +174,15 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 1. 選取&#x200B;**[!UICONTROL productListItems]** > **[!UICONTROL SKU]**&#x200B;欄位
 1. 檢查&#x200B;**[!UICONTROL Relationship]**&#x200B;方塊
 1. 選取`Luma Product Catalog Schema`做為&#x200B;**[!UICONTROL 參考結構描述]**
-1. `Luma Product SKU`應該自動填入為&#x200B;**[!UICONTROL 參考身分名稱空間]**
-1. 選取&#x200B;**[!UICONTROL 套用]**
-1. 選取&#x200B;**[!UICONTROL 儲存]**
+1. `Luma Product SKU` 應自動填入 **[!UICONTROL 為引用標識命名空間]**
+1. 選擇 **[!UICONTROL 套用]**
+1. 選取 **[!UICONTROL 儲存]**
 
-   ![參考欄位](assets/identity-offlinePurchase-relationship.png)
+   ![引用欄位](assets/identity-offlinePurchase-relationship.png)
 
-重複此程式以建立`Luma Web Events Schema`與`Luma Product Catalog Schema`之間的關係。
+重複此過程以在和 `Luma Product Catalog Schema`之間`Luma Web Events Schema`建立關係。
 
-請注意，定義關聯性後，結構描述編輯器的&#x200B;**[!UICONTROL 構成]**&#x200B;和&#x200B;**[!UICONTROL 結構]**&#x200B;區段中都會指出關聯性。
+請注意，定義關係後，在綱要編輯者的“ **[!UICONTROL 組合]** ”和 **[!UICONTROL “結構]** ”部分中都會指示它。
 
 結構描述編輯器中的![關係視覺效果](assets/identity-webEvents-relationship.png)
 
