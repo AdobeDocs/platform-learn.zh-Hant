@@ -1,19 +1,19 @@
 ---
-title: 使用Workfront Fusion實現創意工作流程自動化
+title: 使用Workfront Fusion自動化Creative工作流程
 description: 瞭解如何使用Workfront Fusion自動化創意工作流程
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
+source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 1%
+source-wordcount: '234'
+ht-degree: 0%
 
 ---
 
-# 1.2使用Workfront Fusion實現創意工作流程自動化
+# 1.2使用Workfront Fusion自動化Creative工作流程
 
 瞭解如何使用Workfront Fusion自動化創意工作流程。
 
@@ -25,11 +25,11 @@ ht-degree: 1%
 
 [1.2.1 Workfront Fusion快速入門](./ex1.md){target="_blank"}
 
-在本練習中，請結合Firefly服務來探索Workfront Fusion，並瞭解其功能。
+在本練習中，請結合Firefly Services來探索Workfront Fusion，並瞭解其功能。
 
 [1.2.2在Workfront Fusion中使用Adobe API](./ex2.md){target="_blank"}
 
-在本練習中，瞭解如何在Firefly Fusion中設定和使用Workfront Services API和Photoshop API，同時探索Workfront Fusion的功能。
+在本練習中，瞭解如何在Firefly Services Fusion中設定和使用Workfront API和Photoshop API，同時探索Workfront Fusion的功能。
 
 [1.2.3使用Workfront Fusion自動化程式](./ex3.md){target="_blank"}
 
@@ -39,9 +39,13 @@ ht-degree: 1%
 
 在本練習中，請繼續精簡您的歷程，以自動化影像建立程式。
 
-[1.2.5框架I/O與Workfront Fusion](./ex5.md){target="_blank"}
+[1.2.5 Frame.io與Workfront Fusion](./ex5.md){target="_blank"}
 
-在本練習中，您會將框架I/O連線至您的Workfront Fusion案例。
+在本練習中，您會將Frame.io連線至您的Workfront Fusion案例。
+
+[1.2.6 Frame.io到Workfront Fusion到AEM Assets](./ex6.md){target="_blank"}
+
+在本練習中，您將進一步調整設定，好讓您在Frame.io中核准的資產使用Workfront Fusion案例，然後將資產的PNG轉譯匯出至AEM Assets。
 
 [摘要與優點](./summary.md){target="_blank"}
 
