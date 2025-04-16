@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
+source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2674'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,10 @@ ht-degree: 0%
 ## 1.2.5.2 Workfront Fusion和Frame.io
 
 在上一個練習中，您建立了案例`--aepUserLdap-- - Firefly + Photoshop`，該案例以自訂webhook開始，以webhook回應結束。 接著，我們使用Postman測試了Webhook的使用情況，但很顯然，這種情況的要點是由外部應用程式呼叫。 如前所述，Frame.io將是該練習，但在Frame.io和`--aepUserLdap-- - Firefly + Photoshop`之間需要另一個Workfront Fusion案例。 您現在將設定該案例。
+
+移至[https://experience.adobe.com/](https://experience.adobe.com/)。 開啟&#x200B;**Workfront Fusion**。
+
+![WF Fusion](./images/wffusion1.png)
 
 在左側功能表中，移至&#x200B;**案例**&#x200B;並選取您的資料夾`--aepUserLdap--`。 按一下&#x200B;**建立新情境**。
 
@@ -122,7 +126,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame22.png)
 
-泡泡圖的詳細檢視畫面會顯示從Frame.io收到的資料。 您應該會看到各種ID。例如，欄位&#x200B;**resource.id**&#x200B;顯示資產&#x200B;**citisignal-fiber.psd**&#x200B;之Frame.io中的唯一ID
+泡泡圖的詳細檢視畫面會顯示從Frame.io收到的資料。 您應該會看到各種ID。例如，欄位&#x200B;**resource.id**&#x200B;會顯示資產&#x200B;**citisignal-fiber.psd**&#x200B;之Frame.io中的唯一ID。
 
 ![框架IO](./images/frame23.png)
 
