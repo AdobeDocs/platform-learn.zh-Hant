@@ -3,10 +3,10 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
+source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 2%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -18,14 +18,12 @@ ht-degree: 2%
 
 本教學課程差異很大，為下列應用程式提供清楚的深入分析：
 
-- Adobe Firefly服務
-- Adobe Photoshop
+- Adobe Firefly Services、Adobe Photoshop、Adobe框架I/O、Adobe Substance 3D Staging
 - Adobe Workfront與Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service、Sites、Assets和Edge Delivery Services
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
-
 
 本教學課程不只專注於Adobe應用程式，也考慮品牌營運的更廣泛生態系統。 為此，在某些課程中，重點是非Adobe應用程式如何與Adobe應用程式整合。 因此，您將深入瞭解以下應用程式如何與Adobe Experience Platform搭配運作：
 
@@ -40,13 +38,12 @@ ht-degree: 2%
 
 如果您想使用自己的Adobe Experience Cloud執行個體來參加此教學課程，您必須在執行個體中布建下列應用程式，而且必須能夠存取：
 
-- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
-- Adobe Photoshop
+- Adobe Firefly
+- Adobe Photoshop、Adobe框架I/O、Adobe Substance 3D Staging
 - Adobe Workfront
-- Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/){target="_blank"}
-- Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
-- Adobe Experience Platform資料彙集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
-- 存取示範系統： [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+- Adobe Workfront Fusion
+- Adobe Experience Platform、Adobe Experience Platform資料彙集
+- 存取示範系統下一步： [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
 ## 完成與認證
 
@@ -68,13 +65,17 @@ ht-degree: 2%
 
 ### 2.建立與生產
 
-[1.1 Adobe Firefly服務](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 在此單元中，您將使用Adobe Firefly Services API、Photoshop API和Microsoft Azure儲存服務產生影像並以程式設計方式儲存。
 
-[1.2使用Workfront Fusion自動化創意工作流程](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[1.2使用Workfront Fusion進行Creative工作流程自動化](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 在此基本單元中，您將使用Adobe Workfront Fusion來自動化及調整您的內容建立工作流程。
+
+[1.3 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+
+在此基礎單元中，您將使用Adobe Express建立影像和影片，並將這些資產分享至更廣泛的Adobe Experience Cloud生態系統。
 
 ### 3.資產管理
 
