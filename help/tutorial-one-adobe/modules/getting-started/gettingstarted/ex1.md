@@ -4,7 +4,7 @@ description: 快速入門 — 安裝適用於Experience League檔案的Chrome擴
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -135,7 +135,7 @@ LDAP可用來確保您即將進行的設定會連結至您，而不會與可能�
 
 ## 驗證教學課程內容
 
-作為測試，請移至[此頁面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2)。
+作為測試，請移至[此頁面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2)。
 
 您現在應該會看到，根據Chrome擴充功能中啟用的環境，此頁面上的所有&#x200B;**環境變數**&#x200B;都已取代為其True值。
 
