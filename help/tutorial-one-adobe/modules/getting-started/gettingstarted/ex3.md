@@ -4,7 +4,7 @@ description: 快速入門 — 建立您的資料流
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -149,7 +149,7 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig12m.png)
 
-您將會看到此訊息。 您現在需要選取您剛才設定的正確沙箱和資料流。 要使用的沙箱是`--aepSandboxName--`，而資料流稱為`--aepUserLdap-- - Demo System Datastream (Mobile)`。
+您將會看到此訊息。 您現在需要選取您剛才設定的正確沙箱和資料流。 要使用的沙箱是`--aepSandboxName--`，而資料流稱為`--aepUserLdap-- - One Adobe Datastream (Mobile)`。
 
 對於&#x200B;**Edge Network網域**，請使用預設網域。
 

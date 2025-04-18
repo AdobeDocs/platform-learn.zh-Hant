@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
+source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
 workflow-type: tm+mt
-source-wordcount: '1722'
+source-wordcount: '2050'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffc5.png)
 
-您應該會看到此訊息。 按一下&#x200B;**Webhook**&#x200B;節點。
+您應該會看到此訊息。 按一下&#x200B;**Webhook**&#x200B;模組。
 
 ![WF Fusion](./images/wffc6.png)
 
@@ -83,29 +83,77 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc12.png)
 
-## 1.2.4.2更新Firefly T2I節點
+## 1.2.4.2更新Firefly T2I模組
 
-按一下節點&#x200B;**Firefly T2I**。 您應該會看到此訊息。 此要求中的提示先前已硬式編碼為欄位&#x200B;**中的**&#x200B;馬。 您現在將移除該硬式編碼文字，並以webhook中的欄位取代。
+以滑鼠右鍵按一下模組&#x200B;**Firefly T2I**，然後選取&#x200B;**刪除模組**。
 
-![WF Fusion](./images/wffcfft2i1.png)
+![WF Fusion](./images/wffcff1.png)
 
-移除欄位&#x200B;**中的文字** hories，並以&#x200B;**Webhook**&#x200B;變數下的變數&#x200B;**提示字元**&#x200B;取代。 按一下&#x200B;**確定**&#x200B;以儲存變更。
+按一下&#x200B;**+**&#x200B;圖示，輸入搜尋字詞`firefly`，然後選取&#x200B;**Adobe Firefly**。
 
-![WF Fusion](./images/wffcfft2i2.png)
+![WF Fusion](./images/wffcff2.png)
+
+選取&#x200B;**產生影像**。
+
+![WF Fusion](./images/wffcff3.png)
+
+拖放&#x200B;**Adobe Firefly**&#x200B;模組，使其連線到&#x200B;**路由器**&#x200B;模組。
+
+![WF Fusion](./images/wffcff4.png)
+
+按一下&#x200B;**Adobe Firefly**&#x200B;模組以開啟，然後按一下&#x200B;**新增**&#x200B;以建立新連線。
+
+![WF Fusion](./images/wffcff5.png)
+
+填寫下列欄位：
+
+- **連線名稱**：使用`--aepUserLdap-- - Firefly connection`。
+- **環境**：使用&#x200B;**生產**。
+- **型別**：使用&#x200B;**個人帳戶**。
+- **使用者端識別碼**：從您名為`--aepUserLdap-- - One Adobe tutorial`的Adobe I/O專案複製&#x200B;**使用者端識別碼**。
+- **使用者端密碼**：從您名為`--aepUserLdap-- - One Adobe tutorial`的Adobe I/O專案複製&#x200B;**使用者端密碼**。
+
+您可以在[這裡](https://developer.adobe.com/console/projects.)找到您Adobe I/O專案的&#x200B;**使用者端識別碼**&#x200B;和&#x200B;**使用者端密碼**。
+
+![WF Fusion](./images/wffc20.png)
+
+填寫完所有欄位後，請按一下[繼續]。**** 之後，您的連線將會自動驗證。
+
+![WF Fusion](./images/wffcff6.png)
+
+接著，選取傳入的&#x200B;**自訂webhook**&#x200B;提供給情境的變數&#x200B;**提示**。 按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffcff7.png)
+
+繼續進行之前，您必須停用此練習案例中的舊繞線，您只會使用目前設定的新繞線。 若要這麼做，請按一下&#x200B;**路由器**&#x200B;模組與&#x200B;**迭代器**&#x200B;模組之間的&#x200B;**扳手**&#x200B;圖示，並選取&#x200B;**停用路由**。
+
+![WF Fusion](./images/wffcff7a.png)
+
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
+
+![WF Fusion](./images/wffcff8.png)
+
+移至Postman，驗證要求中的提示，然後按一下[傳送]。****
+
+![WF Fusion](./images/wffcff8a.png)
+
+按一下「傳送」後，請返回Workfront Fusion並按一下&#x200B;**Adobe Firefly**&#x200B;模組上的泡泡圖示以驗證詳細資料。
+
+![WF Fusion](./images/wffcff9.png)
+
+移至&#x200B;**OUTPUT**&#x200B;至&#x200B;**詳細資料** > **URL**，以尋找&#x200B;**Adobe Firefly**&#x200B;所產生之影像的URl。
+
+![WF Fusion](./images/wffcff10.png)
+
+您現在應該會看到代表您從Postman請求傳入的提示的影像，在此案例中為&#x200B;**霧狀草甸**。
+
+![WF Fusion](./images/wffcff11.png)
 
 ## 1.2.4.2變更PSD檔案的背景
 
-您現在將更新情境，使用現成可用的聯結器使其更聰明。 您也會將輸出從Firefly連線至Photoshop，以便PSD檔案的背景影像能使用Firefly「產生影像」動作的輸出動態變更。
+您現在將更新情境，使用更多現成可用的聯結器使其更聰明。 您也會將輸出從Firefly連線至Photoshop，以便PSD檔案的背景影像能使用Firefly「產生影像」動作的輸出動態變更。
 
-在上一個練習中，您已停用&#x200B;**Firefly T2I**&#x200B;路由。 您現在應該還原該動作。 按一下&#x200B;**stop**&#x200B;圖示以再次啟用路由。
-
-![WF Fusion](./images/wffc13.png)
-
-然後您會看到&#x200B;**停止**&#x200B;圖示消失。 接著，按一下通往前一個練習組態的另一個路由上的&#x200B;**扳手**&#x200B;圖示，並選取&#x200B;**停用路由**。
-
-![WF Fusion](./images/wffc14.png)
-
-您應該會看到此訊息。 接著，將游標暫留在&#x200B;**Firefly T2I**&#x200B;節點上，然後按一下&#x200B;**+**&#x200B;圖示。
+您應該會看到此訊息。 接著，將游標暫留在&#x200B;**Adobe Firefly**&#x200B;模組上，然後按一下&#x200B;**+**&#x200B;圖示。
 
 ![WF Fusion](./images/wffc15.png)
 
@@ -164,9 +212,9 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc27.png)
 
-向下捲動，直到看到&#x200B;**輸入**&#x200B;為止。 您現在需要定義需要插入背景圖層的內容。 在此情況下，您需要選取Firefly T2I物件的輸出，其中包含動態產生的影像。
+向下捲動，直到看到&#x200B;**輸入**&#x200B;為止。 您現在需要定義需要插入背景圖層的內容。 在此情況下，您需要選取包含動態產生影像的&#x200B;**Adobe Firefly**&#x200B;模組的輸出。
 
-針對&#x200B;**儲存體**，選取&#x200B;**外部**。 針對&#x200B;**檔案位置**，從&#x200B;**Firefly T2I**&#x200B;要求的輸出中搜尋並尋找變數`data.outputs[].image.url`。
+針對&#x200B;**儲存體**，選取&#x200B;**外部**。 針對&#x200B;**檔案位置**，請從&#x200B;**Adobe Firefly**&#x200B;模組的輸出複製並貼上變數`{{XX.details[].url}}`。 以&#x200B;**Adobe Firefly**&#x200B;模組的序號取代變數中的&#x200B;**XX**，此範例中為&#x200B;**22**。
 
 ![WF Fusion](./images/wffc28.png)
 
@@ -191,11 +239,27 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc33.png)
 
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
+
+![WF Fusion](./images/wffc33a.png)
+
+移至Postman，驗證要求中的提示，然後按一下[傳送]。****
+
+![WF Fusion](./images/wffcff8a.png)
+
+您應該會看到此訊息。 按一下&#x200B;**Adobe Photoshop — 套用PSD編輯**&#x200B;模組上的泡泡。
+
+![WF Fusion](./images/wffc33b.png)
+
+您現在可以看到新的PSD檔案已成功產生，並儲存在您的Microsoft Azure儲存體帳戶中。
+
+![WF Fusion](./images/wffc33c.png)
+
 ## 1.2.4.3變更PSD檔案的文字圖層
 
 ### 呼叫動作的文字
 
-接著，將游標暫留在&#x200B;**Adobe Photoshop — 套用PSD編輯**&#x200B;節點上，然後按一下&#x200B;**+**&#x200B;圖示。
+接著，將游標暫留在&#x200B;**Adobe Photoshop — 套用PSD編輯**&#x200B;模組上，然後按一下&#x200B;**+**&#x200B;圖示。
 
 ![WF Fusion](./images/wffc34.png)
 
@@ -237,9 +301,13 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ### 按鈕文字
 
-用滑鼠右鍵按一下您剛建立的節點，然後選取&#x200B;**複製**。 這會建立第二個類似的物件。
+用滑鼠右鍵按一下您剛建立的模組，然後選取&#x200B;**複製**。 這會建立第二個類似的模組。
 
 ![WF Fusion](./images/wffc42.png)
+
+將複製的模組連線至先前的&#x200B;**Adobe Photoshop — 編輯文字圖層**&#x200B;模組。
+
+![WF Fusion](./images/wffc42a.png)
 
 您應該會看到此訊息。 首先，選取您先前已設定的Adobe Photoshop連線，名稱應為`--aepUserLdap-- Adobe IO`。
 
@@ -253,11 +321,11 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc44.png)
 
-在對話方塊的&#x200B;**Name**&#x200B;下輸入名稱&#x200B;**2048x2048-cta**。
+在對話方塊的&#x200B;**Name**&#x200B;下輸入名稱&#x200B;**2048x2048-button-text**。
 
 ![WF Fusion](./images/wffc43.png)
 
-向下捲動，直到您看到&#x200B;**文字** > **內容**&#x200B;為止。 從Webhook承載中選取變數&#x200B;**cta**。
+向下捲動，直到您看到&#x200B;**文字** > **內容**&#x200B;為止。 從Webhook裝載中選取變數&#x200B;**按鈕**。
 
 ![WF Fusion](./images/wffc45.png)
 
@@ -275,11 +343,11 @@ Workfront Fusion Webhook仍在等待輸入。
 
 將這些變更套用至您的Photoshop檔案後，您現在需要設定&#x200B;**Webhook回應**，此回應將傳回已啟動此案例的任何應用程式。
 
-將游標停留在節點&#x200B;**Adobe Photoshop — 編輯文字圖層**&#x200B;並按一下&#x200B;**+**&#x200B;圖示。
+將滑鼠停留在模組&#x200B;**Adobe Photoshop — 編輯文字圖層**&#x200B;並按一下&#x200B;**+**&#x200B;圖示。
 
 ![WF Fusion](./images/wffc48.png)
 
-搜尋&#x200B;**webhook**&#x200B;並選取&#x200B;**Webhook**。
+搜尋`webhooks`並選取&#x200B;**Webhook**。
 
 ![WF Fusion](./images/wffc49.png)
 
@@ -297,11 +365,11 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc51.png)
 
-從前一個要求的輸出中選取路徑`data[]._links.renditions[].href`。 啟用&#x200B;**顯示進階設定**&#x200B;的核取方塊，然後按一下&#x200B;**新增專案**。
+複製並貼上變數`{{XX.data[]._links.renditions[].href}}`並以最後&#x200B;**Adobe Photoshop — 編輯文字圖層**&#x200B;模組的序號取代&#x200B;**XX**，在此例中為&#x200B;**25**。 啟用&#x200B;**顯示進階設定**&#x200B;的核取方塊，然後按一下&#x200B;**新增專案**。
 
 ![WF Fusion](./images/wffc52.png)
 
-在欄位&#x200B;**索引鍵**&#x200B;中，輸入`Content-Type`。 在欄位&#x200B;**值**&#x200B;中，輸入`application/json`。 按一下&#x200B;**儲存**。
+在欄位&#x200B;**索引鍵**&#x200B;中，輸入`Content-Type`。 在欄位&#x200B;**值**&#x200B;中，輸入`application/json`。 按一下&#x200B;**新增**。
 
 ![WF Fusion](./images/wffc52a.png)
 
@@ -313,7 +381,7 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc54.png)
 
-您應該會看到此訊息。 按一下&#x200B;**執行一次**。
+您應該會看到此訊息。 按一下[儲存]儲存您的變更，然後按一下[執行一次]**測試您的情境。******
 
 ![WF Fusion](./images/wffc55.png)
 
@@ -325,7 +393,7 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc58.png)
 
-提醒您：一旦案例在Workfront Fusion中執行，您就可以按一下每個節點上方的泡泡圖來檢視每個節點的資訊。
+提醒您：一旦案例在Workfront Fusion中執行，您就能按一下每個模組上方的泡泡檢視每個模組的相關資訊。
 
 ![WF Fusion](./images/wffc59.png)
 
