@@ -2,7 +2,7 @@
 title: 傳送引數 — 將行動應用程式中的Adobe Target實作移轉至Adobe Journey Optimizer — 決策擴充功能
 description: 瞭解如何使用Experience Platform Web SDK將mbox、設定檔和實體引數傳送至Adobe Target。
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Target允許使用單一客戶ID跨裝置和系統同步設定檔。 此客戶ID
 
 | at.js引數範例 | Platform Web SDK選項 | 附註 |
 | --- | --- | --- |
-| `at_property` | 不適用 | 屬性Token是在[資料流](https://experienceleague.adobe.com/en/docs/experience-platform/edge/datastreams/configure#target)中設定，無法在`sendEvent`呼叫中設定。 |
+| `at_property` | 不適用 | 屬性Token是在[資料流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target)中設定，無法在`sendEvent`呼叫中設定。 |
 | `pageName` | `xdm.web.webPageDetails.name`或<br> `data.__adobe.target.pageName` | 目標mbox引數可以做為`xdm`物件的一部分或`data.__adobe.target`物件的一部分來傳遞。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 所有Target設定檔引數都必須作為`data`物件的一部分傳遞，且前置詞為`profile.`才能正確對應。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | 用於目標類別相關性功能的保留引數，必須作為`data`物件的一部分傳遞。 |

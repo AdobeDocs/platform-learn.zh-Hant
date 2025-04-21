@@ -4,7 +4,7 @@ description: 瞭解如何在資料收集介面中安裝和設定Platform Web SDK
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # 安裝Adobe Experience Platform Web SDK標籤擴充功能
 
-瞭解如何安裝和設定Adobe Experience Platform Web SDK標籤擴充功能。 實作Web SDK最簡單的方法是使用Adobe的標籤管理員，即tags （先前稱為Launch）。 Platform Web SDK標籤擴充功能是&#x200B;_僅有的標籤擴充功能_，必須將資料傳送至&#x200B;_所有Adobe Experience Cloud應用程式_，包括[Analytics](setup-analytics.md)、[Target](setup-target.md)、[Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和[Journey Optimizer](setup-web-channel.md)！
+瞭解如何安裝和設定Adobe Experience Platform Web SDK標籤擴充功能。 實作Web SDK最簡單的方法是使用Adobe的標籤管理員，即tags （先前稱為Launch）。 Platform Web SDK標籤擴充功能是將&#x200B;_所有Adobe Experience Cloud應用程式_&#x200B;資料傳送至&#x200B;_所需的唯一標籤擴充功能_，包括[Analytics](setup-analytics.md)、[Target](setup-target.md)、[Audience Manager](setup-audience-manager.md)、Real-Time Customer Data Platform和[Journey Optimizer](setup-web-channel.md)！
 
 ## 學習目標
 
@@ -35,7 +35,7 @@ ht-degree: 11%
 
 為教學課程建立新的標籤屬性：
 
-1. 開啟[資料收集介面](https://launch.adobe.com/tw/){target="_blank"}
+1. 開啟[資料收集介面](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 在左側導覽中選取&#x200B;**[!UICONTROL 標籤]**
 1. 選取&#x200B;**[!UICONTROL 新屬性]**按鈕
    ![新增屬性](assets/websdk-property-addNewProperty.png)
@@ -44,7 +44,7 @@ ht-degree: 11%
 1. 選取&#x200B;**[!UICONTROL 儲存]**
    ![屬性詳細資料](assets/websdk-property-propertyDetails.png)
 
-## 新增Web SDK擴充功能
+## 新增網頁SDK擴充功能
 
 現在已建立XDM結構、資料流和標籤屬性，您可以安裝Platform Web SDK擴充功能：
 
@@ -79,7 +79,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->在本教學課程中，您只會設定一個資料流，並將其與所有標籤環境（開發、預備和生產）建立關聯。 在您自己的網站上實作Platform Web SDK時，您應該為每個環境設定個別的資料流，並在擴充功能設定中據以對應它們。
+>在本教學課程中，您只會設定一個資料流，並將其與所有標籤環境（開發、預備和生產）建立關聯。 在您自己的網站上實作Platform Web SDK時，應該為每個環境設定個別的資料流，並在擴充功能設定中據以對應它們。
 
 現在您已安裝Platform Web SDK並將其與資料流相關聯，您可以開始收集資料了。
 
@@ -87,4 +87,4 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

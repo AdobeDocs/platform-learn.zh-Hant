@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 18%
+ht-degree: 20%
 
 ---
 
@@ -58,7 +58,7 @@ Campaigns
 
 
 + [平台教學課程](/help/platform/overview.md)
-+ Platform {#intro-to-platform}簡介
++ Platform簡介 {#intro-to-platform}
    + [Experience Platform 所支援的客戶體驗](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [幕後：Experience Platform支援的客戶體驗](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience 平台概觀](/help/platform/intro-to-platform/overview.md)
@@ -69,13 +69,13 @@ Campaigns
    + [基本架構](/help/platform/intro-to-platform/basic-architecture.md)
    + [使用者介面](/help/platform/intro-to-platform/interface-tour.md)
    + [角色和專案階段](/help/platform/intro-to-platform/roles-and-project-phases.md)
-+ Real-Time CDP {#rtcdp}簡介
++ Real-Time CDP簡介 {#rtcdp}
    + [概觀](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [端對端示範](/help/platform/rtcdp/demo.md)
    + [工作流程](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [B2B edition概觀](/help/platform/rtcdp/b2b-overview.md)
    + [使用Marketo Engage協調行銷活動](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [快速入門：資料架構師和資料工程師](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
++ [快速入門：資料架構師與資料工程師](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [驗證Experience Platform API](/help/platform/authentication/platform-api-authentication.md)
 + [將範例資料匯入Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
@@ -100,7 +100,7 @@ Campaigns
    + [運作深入分析](/help/platform/ai-assistant/operational-insights.md)
    + [影響分析](/help/platform/ai-assistant/impact-analysis.md)
    + [安全性概覽](/help/platform/ai-assistant/security-overview.md)
-+ 對象與細分{#audiences}
++ 對象與細分 {#audiences}
    + [對象入口網站和構成簡介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上傳對象](audiences/upload-audiences.md)
    + [同盟對象構成概觀](audiences/fac/overview-of-federated-audience-composition.md)
@@ -126,8 +126,8 @@ Campaigns
    + [區段比對預先分享見解](/help/platform/segments/segment-match-pre-share-insights.md)
    + [區段比對接收資料](/help/platform/segments/segment-match-receiving-data.md)
 + [稽核記錄](/help/platform/governance/audit-logs.md)
-+ [資料彙集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ Collaboration {#collaboration}
++ [資料收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ 共同作業 {#collaboration}
    + [Real-Time CDP Collaboration概觀](collaboration/real-time-cdp-collaboration-overview.md)
    + [設定許可權](collaboration/set-permissions-for-collaboration.md)
    + [設定廣告商帳戶](collaboration/set-up-an-advertiser-account.md)
@@ -135,7 +135,7 @@ Campaigns
    + [與發佈者連結](collaboration/connect-with-publishers.md)
 + 儀表板 {#dashboards}
    + [建立儀表板](/help/platform/dashboards/create-a-dashboard.md)
-+ 資料控管{#data-governance}
++ 資料治理 {#data-governance}
    + [概觀](/help/platform/governance/understanding-data-governance.md)
    + [端對端示範](/help/platform/governance/introduction-to-data-governance.md)
    + [使用標籤進行資料分類](/help/platform/governance/classify-data-using-labels.md)
@@ -143,7 +143,7 @@ Campaigns
    + [強制執行資料使用原則](/help/platform/governance/enforce-data-usage-policies.md)
    + [強制同意](/help/platform/governance/enforce-consent.md)
    + [整合IAB透明與同意架構2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
-+ 資料衛生{#data-hygiene}
++ 資料衛生 {#data-hygiene}
    + [概觀](/help/platform/data-hygiene/overview.md)
    + [資料衛生的資料準備](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [刪除資料集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
@@ -151,7 +151,7 @@ Campaigns
    + [假名設定檔和事件有效期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [刪除輪廓](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [更新設定檔屬性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
-+ 資料擷取{#data-ingestion}
++ 資料攝取 {#data-ingestion}
    + [概觀](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批次擷取總覽](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [建立和填入資料集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
@@ -168,9 +168,9 @@ Campaigns
    + [使用來源連接器串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hant)
    + [網頁SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Mobile SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
-+ 資料生命週期{#data-lifecycle}
++ 資料生命週期 {#data-lifecycle}
    + [讓資料集過期](/help/platform/data-lifecycle/expire-datasets.md)
-+ 目的地 {#destinations}
++ 目標 {#destinations}
    + [目的地概觀](/help/platform/destinations/understanding-destinations.md)
    + [連線到目的地](/help/platform/destinations/connecting-to-destinations.md)
    + [建立目的地並啟用資料](/help/platform/destinations/create-destinations-and-activate-data.md)
@@ -193,7 +193,7 @@ Campaigns
    + [身分和身分圖表總覽](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [標示、擷取及驗證身分資料](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [檢視身分圖](/help/platform/identities/view-identity-graphs.md)
-   + 身分圖表連結規則{#graph-linking-rules}
+   + 身分識別圖連結規則 {#graph-linking-rules}
       + [概觀](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [圖表模擬](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
@@ -206,11 +206,11 @@ Campaigns
    + [Customer AI值](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [設定 Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
    + [使用 Customer AI 評分和深入分析](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ 監視 {#monitoring}
++ 監控 {#monitoring}
    + [監視資料擷取](/help/platform/monitoring/monitoring-dashboard.md)
    + [監視區段啟用](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [監視資料流](/help/platform/monitoring/data-monitoring.md)
-+ 合作夥伴資料支援{#partner-data-support}
++ 合作夥伴資料支援 {#partner-data-support}
    + [合作夥伴資料支援概述](/help/platform/partner-data-support/partner-data-support-overview.md)
    + [支援異地勘探](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
    + [將合作夥伴屬性新增至設定檔](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
@@ -227,7 +227,7 @@ Campaigns
    + [假名設定檔有效期(TTL)](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [刪除設定檔](/help/platform/profiles/delete-profiles.md)
    + [使用upsert更新特定屬性](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
-+ 隱私權與安全性{#privacy}
++ 隱私權與安全性 {#privacy}
    + [Privacy Service簡介](/help/platform/privacy/introduction-to-privacy-services.md)
    + [隱私權請求中的身分資料](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [隱私權JavaScript資料庫](/help/platform/privacy/using-privacy-javascript-library.md)
@@ -239,7 +239,7 @@ Campaigns
    + [設定客戶自控金鑰](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [負責任的客戶資料管理的十大考量因素](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [提升行銷人員作為資料管理員的角色](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
-+ 查詢{#queries}
++ 查詢 {#queries}
    + [概觀](/help/platform/queries/understanding-query-service.md)
    + [查詢服務UI](/help/platform/queries/query-service-ui.md)
    + [查詢服務API](/help/platform/queries/query-service-api.md)
@@ -285,13 +285,13 @@ Campaigns
    + [概觀](/help/platform/use-case-playbooks/overview.md)
    + [設定Playbook沙箱](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [建立及發佈Playbook例項](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
-+ Experience Cloud整合{#experience-cloud}
++ Experience Cloud 整合 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
-+ 產業趨勢{#industry}
+   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
++ 產業趨勢 {#industry}
    + [資料管理的未來和不斷變化的環境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [兩種見解的故事 — 品牌與消費者](/help/platform/industry/brands-vs-consumers.md)
    + [發展您的卓越受眾中心](/help/platform/industry/evolving-your-audience-center-of-excellence.md)

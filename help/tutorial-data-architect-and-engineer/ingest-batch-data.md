@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
-source-wordcount: '2465'
+source-wordcount: '2446'
 ht-degree: 0%
 
 ---
@@ -335,8 +335,6 @@ ht-degree: 0%
 Adobe與多個ETL廠商合作，支援將資料擷取至Experience Platform。 由於協力廠商眾多，本教學課程不涵蓋ETL，不過歡迎您檢閱以下部分資源：
 
 * [開發Adobe Experience Platform的ETL整合](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* Adobe Exchange上的[Informatica Adobe Experience Platform Connector頁面](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Adobe Experience Platform Connector的Informatica檔案](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## 其他資源

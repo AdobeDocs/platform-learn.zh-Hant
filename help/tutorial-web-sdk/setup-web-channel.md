@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '2563'
 ht-degree: 0%
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 # 使用Web SDK設定Journey Optimizer Web Channel
 
-瞭解如何使用Adobe Experience Platform Web SDK實作Adobe Journey Optimizer [Web Channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web)。 本課程涵蓋基本Web通路先決條件、設定的詳細步驟，並深入探討以忠誠度狀態為中心的使用案例。
+瞭解如何使用Adobe Experience Platform Web SDK實作Adobe Journey Optimizer [Web channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web)。 本課程涵蓋基本Web通路先決條件、設定的詳細步驟，並深入探討以忠誠度狀態為中心的使用案例。
 
 依照本課程，Journey Optimizer使用者可以使用Journey Optimizer網頁設計工具，透過網路管道進行進階的線上個人化。
 
-![Web SDK與Adobe Analytics圖表](assets/dc-websdk-ajo.png)
+![網頁SDK和Adobe Analytics圖表](assets/dc-websdk-ajo.png)
 
 ## 學習目標
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 若要完成本節中的課程，您必須先：
 
 * 完成所有Platform Web SDK初始設定的課程，包括設定資料元素和規則。
-* 確認您的Adobe Experience Platform Web SDK標籤擴充功能版本為2.16版或以上。
+* 確認您的Adobe Experience Platform Web SDK標籤擴充功能版本為2.16或更高版本。
 * 如果您使用Journey Optimizer網頁設計工具來製作您的網路頻道體驗，請務必使用Google Chrome或Microsoft®Edge瀏覽器。
 * 同時請確定您已下載並啟用[Adobe Experience Cloud Visual Editing Helper瀏覽器擴充功能](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)。
 * 確認您的瀏覽器允許第三方Cookie。 可能也需要停用瀏覽器中的任何廣告封鎖程式。
@@ -52,11 +52,11 @@ ht-degree: 0%
   > 1. 網站內嵌於iframe中。
   > 1. 無法從外部存取客戶的QA或中繼網站（這是內部網站）。
 
-* 建立Web體驗並從Adobe Experience Manager Assets Essentials資料庫包含內容時，必須[設定子網域以發佈此內容](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)。
+* 建立Web體驗並包含來自Adobe Experience Manager Assets Essentials資料庫的內容時，需要[設定用於發佈此內容的子網域](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)。
 * 如果使用內容實驗功能，請確保您的網路資料集也包含在您的報告設定中。
 * 目前，支援兩種型別的實施，以便在Web屬性上製作和傳送Web Channel行銷活動：
    * 僅限使用者端：若要修改您的網站，您必須實作Adobe Experience Platform Web SDK。
-   * 混合模式：您可以利用平台Edge Network伺服器API來要求個人化伺服器端。 來自API的回應會提供給Adobe Experience Platform Web SDK，以便在使用者端上轉譯修改。 如需詳細資訊，請參閱Adobe Experience PlatformEdge Network伺服器API檔案。 此部落格中提供混合模式的其他詳細資訊和實作範例。
+   * 混合模式：您可以利用平台Edge Network伺服器API來要求個人化伺服器端。 來自API的回應會提供給Adobe Experience Platform Web SDK，以便在使用者端上轉譯修改。 如需詳細資訊，請參閱Adobe Experience Platform Edge Network伺服器API檔案。 此部落格中提供混合模式的其他詳細資訊和實作範例。
 
   >[!NOTE]
   >
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 首先，您應該瞭解在網路通路行銷活動中使用的術語。
 
-* **網頁管道**：透過網頁進行通訊或內容傳遞的媒體。 就本指南而言，其內容是指Adobe Journey Optimizer中，透過Platform Web SDK將個人化內容傳遞至網站訪客的機制。
+* **網頁管道**：透過網頁進行通訊或內容傳遞的媒體。 就本指南而言，其內容指Adobe Journey Optimizer中，透過使用Platform Web SDK將個人化內容傳遞至網站訪客的機制。
 * **Web表面**：參考由傳送內容的URL所識別的Web屬性。 它可以包含單一或多個網頁。
 * **Journey Optimizer網頁設計工具**： Journey Optimizer中的特定工具或介面，使用者可在此設計其Web Channel體驗。
 * **Adobe Experience Cloud Visual Editing Helper**：可協助您以視覺化方式編輯及設計網頁頻道體驗的瀏覽器擴充功能。
@@ -105,7 +105,7 @@ ht-degree: 0%
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
-這可確保Adobe Experience PlatformEdge Network正確處理Journey Optimizer的傳入事件。
+這可確保Adobe Experience Platform Edge Network正確處理Journey Optimizer的傳入事件。
 
 ## 設定合併原則
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 若要在合併原則中設定選項：
 
-1. 在Experience Platform或Journey Optimizer介面中移至&#x200B;**[!UICONTROL 客戶]** > **[!UICONTROL 設定檔]**&#x200B;頁面。
+1. 前往Experience Platform或Journey Optimizer介面中的&#x200B;**[!UICONTROL 客戶]** > **[!UICONTROL 設定檔]**&#x200B;頁面。
 1. 選取&#x200B;**[!UICONTROL 合併原則]**&#x200B;索引標籤。
 1. 選取您的原則（通常最好使用[!UICONTROL 預設時間型]原則），並在&#x200B;**[!UICONTROL 設定]**&#x200B;步驟中切換&#x200B;**[!UICONTROL Edge上主動合併原則]**&#x200B;選項。
 
@@ -123,15 +123,15 @@ ht-degree: 0%
 
 若要在Web Channel行銷活動中使用內容實驗，您必須確保使用的網路資料集也包含在您的報告設定中。 Journey Optimizer報表系統以唯讀方式使用資料集來填入現成可用的內容實驗報表。
 
-[新增內容實驗報告的資料集在本節](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration#add-datasets)中有詳細說明。
+[新增內容實驗報告的資料集在本節](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)中有詳細說明。
 
 ## 使用案例概述 — 忠誠度獎勵
 
-在本課程中，熟客獎勵使用案例範例用於詳細說明使用Web SDK實施網路通路體驗。
+在本課程中，忠誠度獎勵使用案例範例用於詳細說明使用網路SDK的網路通路體驗實作。
 
 此使用案例可讓您更瞭解Journey Optimizer如何運用Journey Optimizer行銷活動和Web設計工具，協助為客戶提供最佳傳入體驗。
 
-由於本教學課程的目標是實施者，因此請注意，本課程涉及Journey Optimizer的大量介面工作。 雖然這類介面任務通常由行銷人員處理，但對於實作者來說，即便他們通常不負責建立網路通路行銷活動，獲得該程式的深入分析也會很有幫助。
+由於本教學課程的目標是實施者，因此請注意，本課程涉及Journey Optimizer的大量介面工作。 雖然這類介面任務通常由行銷人員處理，但對於實作者來說，將insight帶入流程可能有所助益，即使他們通常不需要負責建立網路通路行銷活動。
 
 ### 建立熟客獎勵行銷活動
 
@@ -201,11 +201,11 @@ ht-degree: 0%
 
 1. 也可以選擇選擇平均&#x200B;**[!UICONTROL 分配]**。 核取此選項，以確保處理分割始終平均分割。
 
-[進一步瞭解Adobe Journey Optimizer網路頻道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)中的內容實驗。
+[進一步瞭解Adobe Journey Optimizer網路頻道](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)中的內容實驗。
 
 ### 使用視覺化協助程式編輯內容
 
-現在，讓我們編寫網頁頻道體驗。 若要這麼做，請使用Adobe Experience Cloud **[!UICONTROL 視覺協助程式]**。 此工具是與Google Chrome和Microsoft® Edge相容的瀏覽器擴充功能。 在嘗試建置您的體驗之前，請確定您已下載擴充功能。 也請確定網頁包含Web SDK。
+現在，讓我們編寫網頁頻道體驗。 若要這麼做，請使用Adobe Experience Cloud **[!UICONTROL 視覺協助程式]**。 此工具是與Google Chrome和Microsoft® Edge相容的瀏覽器擴充功能。 在嘗試建置您的體驗之前，請確定您已下載擴充功能。 也請確定網頁包含網頁SDK。
 
 1. 在行銷活動的&#x200B;**[!UICONTROL 動作]**&#x200B;標籤中，按一下&#x200B;**[!UICONTROL 編輯內容]**。 由於您輸入了單一頁面URL作為介面，因此您應該已準備好開始在撰寫器中工作。
 
@@ -234,7 +234,7 @@ ht-degree: 0%
 
 如果您想要更進階，或對網站進行自訂變更，以作為忠誠獎勵行銷活動的元件，可使用一些方法。
 
-使用&#x200B;**[!UICONTROL 元件]**&#x200B;窗格直接將HTML或其他內容新增至Luma網站。
+使用&#x200B;**[!UICONTROL 元件]**&#x200B;窗格將HTML或其他內容直接新增至Luma網站。
 
 ![探索元件窗格](assets/web-channel-components-pane.png)
 
@@ -244,11 +244,11 @@ ht-degree: 0%
 
 或者，從&#x200B;**[!UICONTROL 修改]**&#x200B;窗格新增HTML編輯。 此窗格可讓您在頁面上選取元件，並從設計工具介面編輯元件。
 
-在編輯器中，新增`Luma Loyalty Rewards – Gold Status`對象的HTML。 選取&#x200B;**[!UICONTROL 驗證]**。
+在編輯器中，為`Luma Loyalty Rewards – Gold Status`對象新增HTML。 選取&#x200B;**[!UICONTROL 驗證]**。
 
 ![驗證HTML](assets/web-channel-add-custom-html-validate.png)
 
-現在，請檢閱新的自訂HTML元件，以掌握合適度與操作風格。
+現在，請檢閱新的自訂HTML元件，以掌握其使用範圍和操作方式。
 
 ![檢閱自訂HTML](assets/web-channel-review-custom-html.png)
 
@@ -310,7 +310,7 @@ ht-degree: 0%
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 在網頁上時，開啟&#x200B;**[!UICONTROL Adobe Experience Platform Debugger]**。
+1. 在網頁上，開啟&#x200B;**[!UICONTROL Adobe Experience Platform Debugger]**。
    <!--
     ![ADD SCREENSHOT](#)
     -->
@@ -318,19 +318,19 @@ ht-degree: 0%
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 接著，您可以使用各種Luma忠誠度帳戶登入網站，並使用除錯工具驗證傳送至Adobe Experience PlatformEdge Network的請求。
+1. 接著，您可以使用各種Luma忠誠度帳戶登入網站，並使用除錯工具驗證傳送至Adobe Experience Platform Edge Network的請求。
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 在「**[!UICONTROL 解決方案]**」下，導覽至&#x200B;**[!UICONTROL Experience PlatformWeb SDK]**。
+1. 在「**[!UICONTROL 解決方案]**」下，導覽至&#x200B;**[!UICONTROL Experience Platform Web SDK]**。
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 在&#x200B;**組態**&#x200B;標籤中，開啟&#x200B;**[!UICONTROL 啟用偵錯]**。 這會啟用&#x200B;**[!UICONTROL Adobe Experience Platform保證]**&#x200B;工作階段中工作階段的記錄。
+1. 在&#x200B;**組態**&#x200B;標籤中，開啟&#x200B;**[!UICONTROL 啟用偵錯]**。 這會啟用&#x200B;**[!UICONTROL Adobe Experience Platform Assurance]**&#x200B;工作階段中工作階段的記錄功能。
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 使用各種Luma忠誠度帳戶登入網站，並使用偵錯工具驗證傳送至&#x200B;**[!UICONTROL Adobe Experience Platform Edge網路]**&#x200B;的請求。 所有這些要求都應該在&#x200B;**[!UICONTROL 保證]**&#x200B;中擷取以進行記錄追蹤。
+1. 使用各種Luma忠誠度帳戶登入網站，並使用偵錯工具驗證傳送至&#x200B;**[!UICONTROL Adobe Experience Platform Edge網路]**&#x200B;的請求。 應該在&#x200B;**[!UICONTROL Assurance]**&#x200B;中擷取所有這些要求，以進行記錄檔追蹤。
 <!--
    ![ADD SCREENSHOT](#)
 -->
@@ -339,4 +339,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

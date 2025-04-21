@@ -4,7 +4,7 @@ description: 瞭解如何設定身分識別名稱空間以搭配Adobe Experience
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 12%
@@ -57,7 +57,7 @@ ht-degree: 12%
 
 現在，為Luma CRM ID建立名稱空間：
 
-1. 開啟[資料收集介面](https://launch.adobe.com/tw/){target="_blank"}
+1. 開啟[資料收集介面](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 選取您用於教學課程的沙箱
 
    >[!NOTE]
