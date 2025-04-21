@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 1.2.5.1正在存取Frame.io
 
-移至[https://app.frame.io/projects](https://app.frame.io/projects)。
+移至[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}。
 
 按一下&#x200B;**+圖示**，在Frame.io中建立您自己的專案。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 在上一個練習中，您建立了案例`--aepUserLdap-- - Firefly + Photoshop`，該案例以自訂webhook開始，以webhook回應結束。 接著，我們使用Postman測試了Webhook的使用情況，但很顯然，這種情況的要點是由外部應用程式呼叫。 如前所述，Frame.io將是該練習，但在Frame.io和`--aepUserLdap-- - Firefly + Photoshop`之間需要另一個Workfront Fusion案例。 您現在將設定該案例。
 
-移至[https://experience.adobe.com/](https://experience.adobe.com/)。 開啟&#x200B;**Workfront Fusion**。
+移至[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 開啟&#x200B;**Workfront Fusion**。
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame10.png)
 
-移至[https://developer.frame.io/](https://developer.frame.io/)。 按一下&#x200B;**開發人員工具**，然後選擇&#x200B;**自訂動作**。
+移至[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}。 按一下&#x200B;**開發人員工具**，然後選擇&#x200B;**自訂動作**。
 
 ![框架IO](./images/frame11.png)
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame14.png)
 
-返回[https://app.frame.io/projects](https://app.frame.io/projects)。 重新整理頁面。
+返回[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}。 重新整理頁面。
 
 ![框架IO](./images/frame16.png)
 
@@ -298,7 +298,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame49.png)
 
-若要取得API Token，請移至[https://developer.frame.io/](https://developer.frame.io/)。 按一下&#x200B;**開發人員工具**，然後選擇&#x200B;**代號**。
+若要取得API Token，請移至[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}。 按一下&#x200B;**開發人員工具**，然後選擇&#x200B;**代號**。
 
 ![框架IO](./images/frame50.png)
 

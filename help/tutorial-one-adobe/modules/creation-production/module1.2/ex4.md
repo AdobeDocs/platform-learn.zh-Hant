@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 1.2.4.1複製並準備您的情境
 
-在左側功能表中，移至&#x200B;**案例**&#x200B;並選取您的資料夾`--aepUserLdap--`。 然後您應該會看到您之前建立的案例，其名稱為`--aepUSerLdap-- - Adobe I/O Authentication`。
+在左側功能表中，移至&#x200B;**案例**&#x200B;並選取您的資料夾`--aepUserLdap--`。 然後您應該會看到您之前建立的案例，其名稱為`--aepUserLdap-- - Adobe I/O Authentication`。
 
 ![WF Fusion](./images/wffc1.png)
 
@@ -113,7 +113,7 @@ Workfront Fusion Webhook仍在等待輸入。
 - **使用者端識別碼**：從您名為`--aepUserLdap-- - One Adobe tutorial`的Adobe I/O專案複製&#x200B;**使用者端識別碼**。
 - **使用者端密碼**：從您名為`--aepUserLdap-- - One Adobe tutorial`的Adobe I/O專案複製&#x200B;**使用者端密碼**。
 
-您可以在[這裡](https://developer.adobe.com/console/projects.)找到您Adobe I/O專案的&#x200B;**使用者端識別碼**&#x200B;和&#x200B;**使用者端密碼**。
+您可以在[這裡](https://developer.adobe.com/console/projects.){target="_blank"}找到您Adobe I/O專案的&#x200B;**使用者端識別碼**&#x200B;和&#x200B;**使用者端密碼**。
 
 ![WF Fusion](./images/wffc20.png)
 

@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 297fba1810934e6ce4d9b8dfaea0e1250e761ab5
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ## 1.2.6.1建立新情境
 
-移至[https://experience.adobe.com/](https://experience.adobe.com/)。 開啟&#x200B;**Workfront Fusion**。
+移至[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 開啟&#x200B;**Workfront Fusion**。
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 1.2.6.2在Frame.io中設定Webhook
 
-移至[https://developer.frame.io/](https://developer.frame.io/)。 按一下&#x200B;**開發人員工具**，然後選擇&#x200B;**自訂動作**。
+移至[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}。 按一下&#x200B;**開發人員工具**，然後選擇&#x200B;**自訂動作**。
 
 ![框架IO](./images/aemf7.png)
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf11.png)
 
-前往[https://app.frame.io/projects](https://app.frame.io/projects)，然後前往您之前建立的資料夾，該資料夾應該命名為`--aepUserLdap--`。 按兩下以開啟在上一個練習中建立的資產。
+前往[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}，然後前往您之前建立的資料夾，該資料夾應該命名為`--aepUserLdap--`。 按兩下以開啟在上一個練習中建立的資產。
 
 ![框架IO](./images/aemf11a.png)
 
@@ -271,7 +271,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf51.png)
 
-若要建立新的專用資料夾，請移至[https://experience.adobe.com](https://experience.adobe.com/)。 確保選取正確的Experience Cloud執行個體，應為`--aepImsOrgName--`。 然後，按一下&#x200B;**Experience Manager Assets**。
+若要建立新的專用資料夾，請移至[https://experience.adobe.com](https://experience.adobe.com/){target="_blank"}。 確保選取正確的Experience Cloud執行個體，應為`--aepImsOrgName--`。 然後，按一下&#x200B;**Experience Manager Assets**。
 
 ![框架IO](./images/aemf52.png)
 

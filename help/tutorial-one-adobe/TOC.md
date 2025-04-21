@@ -4,9 +4,9 @@ breadcrumb-title: 從Creative Cloud到Experience Cloud，Adobe應用程式的完
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
-source-wordcount: '1146'
+source-wordcount: '1154'
 ht-degree: 3%
 
 ---
@@ -55,6 +55,7 @@ ht-degree: 3%
       + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
       + [1.3.1 Adobe Express快速入門](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2 Adobe Express中的動畫和視訊](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [1.3.3在Adobe Express中大量建立Assets](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
 
 + 資產管理 {#assetmgmt}
