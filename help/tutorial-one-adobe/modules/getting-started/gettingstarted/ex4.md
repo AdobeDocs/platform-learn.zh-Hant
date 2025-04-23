@@ -4,7 +4,7 @@ description: 快速入門 — 使用網站
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 選項2：從新的無痕瀏覽器視窗開始
 
-如果您不小心關閉了瀏覽器視窗，或是在未來的工作階段中，您也可以前往[https://dsn.adobe.com/](https://dsn.adobe.com/)存取您的網站專案。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案上的3個點&#x200B;**...**，然後按一下&#x200B;**編輯**。
+如果您不小心關閉了瀏覽器視窗，或是在未來的工作階段中，您也可以前往[https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}存取您的網站專案。 使用Adobe ID登入後，您會看到此訊息。 按一下您的網站專案上的3個點&#x200B;**...**，然後按一下&#x200B;**編輯**。
 
 ![DSN](./images/web8.png)
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 ## 後續步驟
 
-移至[使用行動應用程式](./ex5.md)
+移至[使用行動應用程式](./ex5.md){target="_blank"}
 
 返回[快速入門](./getting-started.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: Foundation - FAC — 建立同盟構成
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 ![資料擷取](./../dc1.2/images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為`--aepSandboxName--`。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
 
 ![資料擷取](./../dc1.2/images/sb1.png)
 
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp5.png)
 
-選取結構描述&#x200B;**—aepUserLdap—_HOMETHINGS**。 按一下「**確認**」。
+選取結構描述&#x200B;**`--aepUserLdap--_HOUSEHOLDS`**。 按一下「**確認**」。
 
 ![FAC](./images/fedcomp6.png)
 
@@ -71,7 +71,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp11.png)
 
-要新增的第二個條件是： `Is the user an existing CitiSignal Mobile subscriber?`。 回答該問題的方法是使用家庭與家庭中主要客戶之間的關係，這已在另一個資料表&#x200B;**—aepUserLdap—_PERSONES**&#x200B;中定義。 您可以使用&#x200B;**household2person**&#x200B;連結，在屬性功能表中向下展開。
+要新增的第二個條件是： `Is the user an existing CitiSignal Mobile subscriber?`。 要回答這個問題，請使用家庭與家庭中主要客戶之間的關係，這已在另一個資料表&#x200B;**`--aepUserLdap--_PERSONS`**&#x200B;中定義。 您可以使用&#x200B;**household2person**&#x200B;連結，在屬性功能表中向下展開。
 
 ![FAC](./images/fedcomp12.png)
 

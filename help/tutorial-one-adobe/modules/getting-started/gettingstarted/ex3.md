@@ -4,7 +4,7 @@ description: 快速入門 — 建立您的資料流
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 建立您的資料串流
 
-移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
+移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}。
 
 ![DSN](./images/launchprop.png)
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ## 為行動裝置建立資料流
 
-移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
+移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}。
 
 按一下&#x200B;**[!UICONTROL 資料串流]**。
 
@@ -175,7 +175,7 @@ ht-degree: 1%
 
 ## 後續步驟
 
-移至[使用網站](./ex4.md)
+移至[使用網站](./ex4.md){target="_blank"}
 
 返回[快速入門](./getting-started.md){target="_blank"}
 

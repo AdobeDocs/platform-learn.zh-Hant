@@ -3,7 +3,8 @@ title: 快速入門 — Postman設定
 description: 快速入門 — Postman設定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->如果您是Adobe員工，請依照指示[安裝PostBuster](./ex8.md)！
+>如果您是Adobe員工，請依照指示[安裝PostBuster](./ex8.md){target="_blank"}！
 
 ## Postman環境下載
 
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ![Adobe I/O新整合](./images/iopr.png){zoomable="yes"}
 
-按一下&#x200B;**Firefly - Firefly服務** API。 接著，按一下「下載Postman **」，然後選擇「** OAuth伺服器對伺服器&#x200B;**」來下載Postman環境。**
+按一下&#x200B;**Firefly - Firefly Services** API。 接著，按一下「下載Postman **」，然後選擇「** OAuth伺服器對伺服器&#x200B;**」來下載Postman環境。**
 
 ![Adobe I/O新整合](./images/iopm.png){zoomable="yes"}
 
@@ -43,7 +44,7 @@ Postman中有2個概念：「環境」和「集合」。
 - 1個用於驗證Adobe I/O的集合
 - 1此單元練習的集合
 
-將[postman-ff.zip](./../../../assets/postman/postman-ff.zip)下載到您的本機案頭。
+將[postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"}下載到您的本機案頭。
 
 ![Adobe I/O新整合](./images/pmfolder.png){zoomable="yes"}
 
@@ -74,7 +75,7 @@ Postman中有2個概念：「環境」和「集合」。
 
 ![Adobe I/O新整合](./images/impconfirm.png){zoomable="yes"}
 
-現在您已擁有Postman中所需的一切，可以開始透過API與Firefly服務互動。
+現在您已擁有Postman中所需的一切，可以開始透過API與Firefly Services互動。
 
 ## 要求存取權杖
 

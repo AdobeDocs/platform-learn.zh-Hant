@@ -4,9 +4,9 @@ description: 基礎 — FAC — 建立方案、資料模型和連結
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '646'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ![資料擷取](./../dc1.2/images/home.png)
 
-繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為`--aepSandboxName--`。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
 
 ![資料擷取](./../dc1.2/images/sb1.png)
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdburl2.png)
 
-**使用者**：您先前在練習1.3.1.1中建立的使用者名稱
+**使用者**：您在練習1.3.1.1中先前建立的使用者名稱
 **密碼**：您先前在練習1.3.1.1中建立的密碼
 **資料庫**：使用&#x200B;**CITISIGNAL**
 
@@ -61,7 +61,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb4.png)
 
-## 1.3.2.2在AEP中建立方案
+## 1.3.2.2在AEP中建立結構描述
 
 在左側功能表中，按一下&#x200B;**模型**，然後移至&#x200B;**結構描述**。 按一下&#x200B;**建立結構描述**。
 
@@ -83,7 +83,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb7.png)
 
-然後，AEP會載入每個表格的資訊，並顯示在UI中。
+AEP便會載入每個表格的資訊，並在UI中顯示。
 
 對於每個表格，您可以：
 
@@ -98,7 +98,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb8.png)
 
-您將會看到此訊息。 您可以按一下任何結構描述並檢閱資訊。 例如，按一下&#x200B;**—aepUserLdap—_PERSONES**。
+您將會看到此訊息。 您可以按一下任何結構描述並檢閱資訊。 例如，按一下&#x200B;**`--aepUserLdap--_PERSONS`**。
 
 ![FAC](./images/fdb9.png)
 
@@ -189,7 +189,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb26.png)
 
-AEP中的設定現已完成。 您現在可以在同盟對象構成中開始使用同盟資料。
+您在AEP中的設定現已完成。 您現在可以在同盟對象構成中開始使用同盟資料。
 
 ## 後續步驟
 

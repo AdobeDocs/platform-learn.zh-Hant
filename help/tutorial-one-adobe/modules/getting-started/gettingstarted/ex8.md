@@ -4,7 +4,7 @@ description: 快速入門 — Postman設定
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 3%
@@ -15,11 +15,11 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->如果您不是Adobe員工，請依照指示[安裝Postman](./ex7.md)。 以下指示僅適用於Adobe員工。
+>如果您不是Adobe員工，請依照指示[安裝Postman](./ex7.md){target="_blank"}。 以下指示僅適用於Adobe員工。
 
 ## 安裝PostBuster
 
-移至[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542)。
+移至[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542){target="_blank"}。
 
 按一下以下載&#x200B;**PostBuster**&#x200B;的最新版本。
 
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 ![PostBuster](./images/pb3.png)
 
-下載[postbuster.json.zip](./../../../assets/postman/postbuster.json.zip)並在您的案頭上解壓縮。
+下載[postbuster.json.zip](./../../../assets/postman/postbuster.json.zip){target="_blank"}並在您的案頭上解壓縮。
 
 ![PostBuster](./images/pbpb.png)
 

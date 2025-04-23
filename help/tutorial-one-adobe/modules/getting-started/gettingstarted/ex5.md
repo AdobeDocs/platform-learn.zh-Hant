@@ -4,7 +4,7 @@ description: 快速入門 — 使用行動應用程式
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 下載應用程式
 
-前往您電腦上的[https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app)。 您將會看到此訊息。
+前往您電腦上的[https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"}。 您將會看到此訊息。
 
 ![DSN](./images/mobileapp.png)
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsn5b.png)
 
-如果您不小心關閉了瀏覽器視窗，或是為了未來的示範或啟用工作階段，您也可以前往[https://dsn.adobe.com](https://dsn.adobe.com)存取您的網站專案。 使用Adobe ID登入後，您會看到此訊息。 按一下行動應用程式專案上的三個點&#x200B;**...**，然後按一下&#x200B;**編輯**。
+如果您不小心關閉了瀏覽器視窗，或是為了未來的示範或啟用工作階段，您也可以前往[https://dsn.adobe.com](https://dsn.adobe.com){target="_blank"}存取您的網站專案。 使用Adobe ID登入後，您會看到此訊息。 按一下行動應用程式專案上的三個點&#x200B;**...**，然後按一下&#x200B;**編輯**。
 
 ![DSN](./images/web8a.png)
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 ## 後續步驟
 
-移至[設定您的Adobe I/O專案](./ex6.md)
+移至[設定您的Adobe I/O專案](./ex6.md){target="_blank"}
 
 返回[快速入門](./getting-started.md){target="_blank"}
 

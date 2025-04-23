@@ -4,7 +4,7 @@ description: 快速入門 — 安裝適用於Experience League檔案的Chrome擴
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 安裝Chrome擴充功能
 
-若要安裝該Chrome擴充功能，請開啟Chrome瀏覽器，並移至： [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi)。 您將會看到此訊息。
+若要安裝該Chrome擴充功能，請開啟Chrome瀏覽器，並移至： [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"}。 您將會看到此訊息。
 
 按一下&#x200B;**新增至Chrome**。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## 設定Chrome擴充功能
 
-前往[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview)，然後按一下擴充功能圖示以開啟。
+前往[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}，然後按一下擴充功能圖示以開啟。
 
 ![DSN](./images/tuthome.png)
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 **AEP IMS組織名稱**
 
-當您在[https://platform.adobe.com/](https://platform.adobe.com/)登入Adobe Experience Platform執行個體時，您會在畫面的右上角找到執行個體的名稱。
+當您在[https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}登入Adobe Experience Platform執行個體時，您會在畫面的右上角找到執行個體的名稱。
 
 ![DSN](./images/aepname.png)
 
@@ -84,7 +84,7 @@ IMS組織ID是您Adobe Experience Cloud執行個體的唯一識別碼，本教�
 
 尋找您的IMS組織ID可以多種方式完成。 如果您不確定，請洽詢執行個體的系統管理員以尋找ID。
 
-您可以前往[Admin Console](https://https://adminconsole.adobe.com/)找到它，您可以在其中找到它作為URL的一部分。
+您可以前往[Admin Console](https://adminconsole.adobe.com/){target="_blank"}找到它，您可以在其中找到它作為URL的一部分。
 
 ![DSN](./images/aepid1.png)
 
@@ -96,7 +96,7 @@ IMS組織ID是您Adobe Experience Cloud執行個體的唯一識別碼，本教�
 
 **AEP租使用者ID**
 
-您的租使用者ID是您組織AEP執行個體的唯一識別碼。 當您在[https://platform.adobe.com/](https://platform.adobe.com/)登入您的Adobe Experience Platform執行個體時，您會在URL中找到租使用者ID。
+您的租使用者ID是您組織AEP執行個體的唯一識別碼。 當您在[https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}登入您的Adobe Experience Platform執行個體時，您會在URL中找到租使用者ID。
 
 ![DSN](./images/aeptenantid.png)
 
@@ -104,7 +104,7 @@ IMS組織ID是您Adobe Experience Cloud執行個體的唯一識別碼，本教�
 
 **AEP沙箱名稱**
 
-您的沙箱名稱是您將在AEP執行個體中使用的環境名稱。 當您在[https://platform.adobe.com/](https://platform.adobe.com/)登入您的Adobe Experience Platform執行個體時，您會在URL中找到租使用者ID。
+您的沙箱名稱是您將在AEP執行個體中使用的環境名稱。 當您在[https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}登入您的Adobe Experience Platform執行個體時，您會在URL中找到租使用者ID。
 
 在從URL取得沙箱名稱之前，您應該確保您處於您應用於本教學課程的沙箱中。 您可以按一下熒幕右上角的沙箱切換器選單，切換至右沙箱。
 
@@ -135,7 +135,7 @@ LDAP可用來確保您即將進行的設定會連結至您，而不會與可能�
 
 ## 驗證教學課程內容
 
-作為測試，請移至[此頁面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2)。
+作為測試，請移至[此頁面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}。
 
 您現在應該會看到，根據Chrome擴充功能中啟用的環境，此頁面上的所有&#x200B;**環境變數**&#x200B;都已取代為其True值。
 
@@ -145,7 +145,7 @@ LDAP可用來確保您即將進行的設定會連結至您，而不會與可能�
 
 ## 後續步驟
 
-移至[使用示範系統下一步以設定您的Adobe Experience Platform Data Collection使用者端屬性](./ex2.md)
+移至[使用示範系統下一步以設定您的Adobe Experience Platform Data Collection使用者端屬性](./ex2.md){target="_blank"}
 
 返回[快速入門](./getting-started.md){target="_blank"}
 

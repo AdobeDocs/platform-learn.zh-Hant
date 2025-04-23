@@ -4,7 +4,7 @@ description: 快速入門 — 使用示範系統設定您的Launch屬性
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # 使用下一個示範系統來設定您的Adobe Experience Platform資料收集使用者端屬性
 
-為了將本教學課程中的學習內容視覺化，並讓您能夠在安全的環境中測試您的設定，本教學課程使用Adobe的示範系統下一步工具。 為了充分運用本教學課程，您的AEP執行個體需要設定為與示範系統整合「下一步」。
+為了將本教學課程中的學習內容視覺化，並讓您能夠在安全的環境中測試您的設定，本教學課程使用Adobe的示範系統下一步工具。 為了充分運用本教學課程，您的AEP執行個體必須設定為與示範系統整合「下一步」。
 
 取得示範系統存取權後，請繼續下列步驟。
 
-移至[https://dsn.adobe.com/](https://dsn.adobe.com/)並導覽至&#x200B;**安裝程式**。
+移至[https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}並導覽至&#x200B;**安裝程式**。
 
 ![DSN](./images/dsnsetup.png)
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 後續步驟
 
-移至[建立您的資料流](./ex3.md)
+移至[建立您的資料流](./ex3.md){target="_blank"}
 
 返回[快速入門](./getting-started.md){target="_blank"}
 

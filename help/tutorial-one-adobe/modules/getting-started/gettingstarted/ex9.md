@@ -2,7 +2,8 @@
 title: 快速入門 — 要安裝的應用程式
 description: 快速入門 — 要安裝的應用程式
 doc-type: multipage-overview
-source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
+exl-id: 25f80da8-88c3-4273-962a-476675cf6047
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 ## Adobe Creative Cloud
 
-移至[https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud)。
+移至[https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}。
 
 ![Adobe I/O新整合](./images/cc.png)
 
@@ -45,7 +46,7 @@ ht-degree: 1%
 
 ## GitHub Desktop
 
-移至[https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}，下載並安裝&#x200B;**Github案頭**。
+移至[https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}，下載並安裝&#x200B;**Github案頭版**。
 
 ![區塊](./images/block1.png)
 
