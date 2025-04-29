@@ -4,10 +4,10 @@ description: 瞭解如何實作Adobe Experience Cloud行動應用程式。 本�
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: c08671ae28955ff090baa7aa5a47246b2196ba20
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 3%
+source-wordcount: '815'
+ht-degree: 4%
 
 ---
 
@@ -59,9 +59,9 @@ Experience Platform Mobile SDK是使用者端的SDK，可讓Adobe Experience Clo
 * 在資料收集中，您必須擁有：
    * **[!UICONTROL 平台]** — 許可權專案&#x200B;**[!UICONTROL 行動裝置]**
    * **[!UICONTROL 屬性權利]** — 許可權專案： **[!UICONTROL 開發]**、**[!UICONTROL 核准]**、**[!UICONTROL 發佈]**、**[!UICONTROL 管理擴充功能]**&#x200B;和&#x200B;**[!UICONTROL 管理環境]**。
-   * **[!UICONTROL 公司權利]** — 用於&#x200B;**[!UICONTROL 管理屬性]**&#x200B;的許可權專案，如果完成選用的推播訊息課程，**[!UICONTROL 管理應用程式設定]**
+   * **[!UICONTROL 公司權利]** — 用於&#x200B;**[!UICONTROL 管理屬性]**&#x200B;的許可權專案
 
-     如需有關標籤許可權的詳細資訊，請參閱產品檔案中的[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hant)的使用者許可權{target="_blank"}。
+     如需有關標籤許可權的詳細資訊，請參閱產品檔案中的[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hant){target="_blank"}的使用者許可權。
 * 在Experience Platform中，您必須擁有：
    * **[!UICONTROL 資料模型]** — 管理和檢視結構描述的許可權專案。
    * **[!UICONTROL Identity Management]** — 管理和檢視身分識別名稱空間的許可權專案。
@@ -92,7 +92,7 @@ Experience Platform Mobile SDK是使用者端的SDK，可讓Adobe Experience Clo
 範例應用程式有兩個版本可供下載。 兩個版本均可從[Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App)下載/複製。 您會找到兩個資料夾：
 
 
-1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：專案，不含程式碼或具有預留位置程式碼的大多數Experience Platform Mobile SDK程式碼，您需要使用這些程式碼來完成本教學課程中的實作練習。
+1. [開始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：專案，不含程式碼，或包含您完成本教學課程中實作練習所需的大部分Experience Platform Mobile SDK程式碼的預留位置程式碼。
 1. [完成](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：具有完整實作以供參考的版本。
 
 >[!NOTE]
