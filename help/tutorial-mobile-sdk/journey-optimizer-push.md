@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
+source-git-commit: 83046a6c56353ba8750c4e500f70ef2ca887fbe8
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2885'
 ht-degree: 1%
 
 ---
@@ -75,9 +75,9 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 1. 選取&#x200B;**[!UICONTROL 繼續]**。
    ![設定新金鑰](assets/mobile-push-apple-dev-config-key.png)
 1. 檢閱組態並選取&#x200B;**[!UICONTROL 註冊]**。
-1. 下載`.p8`私密金鑰。 它會在下一個練習的Journey Optimizer管道設定中使用。
-1. 記下&#x200B;**[!UICONTROL 金鑰識別碼]**。 它用於Journey Optimizer頻道設定。
-1. 記下&#x200B;**[!UICONTROL 團隊識別碼]**。 它用於Journey Optimizer頻道設定。
+1. 下載`.p8`私密金鑰。 當您設定Journey Optimizer推送認證時，它將在下一個練習中使用。
+1. 記下&#x200B;**[!UICONTROL 金鑰識別碼]**。 當您設定Journey Optimizer推送認證時，它將在下一個練習中使用。
+1. 記下&#x200B;**[!UICONTROL 團隊識別碼]**。 當您設定Journey Optimizer推送認證時，它將在下一個練習中使用。
    ![金鑰詳細資料](assets/push-apple-dev-key-details.png)
 
 其他檔案可在[此處](https://help.apple.com/developer-account/#/devcdfbb56a3)找到。
@@ -96,19 +96,17 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
    ![在Journey Optimizer中建立新的推播認證組態](assets/add-push-credential-ios.png)
 
-1. 從&#x200B;**[!UICONTROL 平台]**&#x200B;下拉式清單中，選取&#x200B;**iOS**&#x200B;作業系統：
+1. 從&#x200B;**[!UICONTROL 平台]**&#x200B;下拉式清單中，選取&#x200B;**iOS**&#x200B;作業系統。
 
+1. 在&#x200B;**[!UICONTROL 應用程式ID]** (iOS套件組合ID)欄位中輸入行動應用程式套件組合ID。 例如，com.adobe.luma.tutorial.swiftui
 
-   1. 在&#x200B;**[!UICONTROL 應用程式ID]** (iOS套件組合ID)欄位中輸入行動應用程式套件組合ID。 例如，com.adobe.luma.tutorial.swiftui
+1. 啟用&#x200B;**[!UICONTROL 套用至所有沙箱]**&#x200B;選項，讓這些推送認證可用於所有沙箱。 如果特定沙箱針對相同的平台和應用程式ID組有自己的認證，系統會優先採用這些沙箱專屬的認證。
 
-   1. 啟用&#x200B;**[!UICONTROL 套用至所有沙箱]**&#x200B;選項，讓這些推送認證可用於所有沙箱。 如果特定沙箱針對相同的平台和應用程式ID組有自己的認證，系統會優先採用這些沙箱專屬的認證。
+1. 拖放您在上一個練習中取得的.p8 **Apple推播通知驗證金鑰**&#x200B;檔案。
 
+1. 提供&#x200B;**[!UICONTROL 金鑰識別碼]**，在建立`p8`驗證金鑰期間指派的10字元字串。 您可以在Apple開發人員入口網站頁面的&#x200B;**憑證、識別碼和設定檔**&#x200B;頁面的&#x200B;**[!UICONTROL 金鑰]**&#x200B;標籤下找到它。 （您應該在上一個練習中注意到。）
 
-   1. 拖放您在上一個練習中取得的.p8 **Apple推播通知驗證金鑰**&#x200B;檔案。
-
-   1. 提供&#x200B;**[!UICONTROL 金鑰識別碼]**，在建立`p8`驗證金鑰期間指派的10字元字串。 您可以在Apple開發人員入口網站頁面的&#x200B;**憑證、識別碼和設定檔**&#x200B;頁面的&#x200B;**[!UICONTROL 金鑰]**&#x200B;標籤下找到它。 （您應該在上一個練習中注意到。）
-
-   1. 提供&#x200B;**[!UICONTROL 團隊識別碼]**。 可以在&#x200B;**成員資格**&#x200B;標籤下或Apple開發人員入口網站頁面頂端找到團隊ID的值。 （您應該在上一個練習中注意到。）
+1. 提供&#x200B;**[!UICONTROL 團隊識別碼]**。 可以在&#x200B;**成員資格**&#x200B;標籤下或Apple開發人員入口網站頁面頂端找到團隊ID的值。 （您應該在上一個練習中注意到。）
 
    在Journey Optimizer中![推播認證設定](assets/add-app-config-ios.png)
 
