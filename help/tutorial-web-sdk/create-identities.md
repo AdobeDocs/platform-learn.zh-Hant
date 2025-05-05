@@ -38,7 +38,7 @@ ht-degree: 3%
 
 ## Experience Cloud ID
 
-[Experience Cloud識別碼(ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid)是跨Adobe Experience Platform和Adobe Experience Cloud應用程式使用的共用身分名稱空間。 ECID是客戶身分識別的基礎，也是數位財產的預設身分識別。 ECID永遠存在，因此是追蹤未經驗證使用者行為的理想識別碼。
+[Experience Cloud識別碼(ECID)](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/ecid)是跨Adobe Experience Platform和Adobe Experience Cloud應用程式使用的共用身分名稱空間。 ECID是客戶身分識別的基礎，也是數位財產的預設身分識別。 ECID永遠存在，因此是追蹤未經驗證使用者行為的理想識別碼。
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -71,7 +71,7 @@ FPID是使用您自己的網頁伺服器&#x200B;_所設定的第一方Cookie_，
 
 如上所述，使用Platform Web SDK時，系統會Adobe為您數位財產的所有訪客指派ECID。 ECID是追蹤未驗證數位行為的預設身分識別。
 
-您也可以傳送已驗證的使用者ID，讓Platform可以建立[身分圖表](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs)，而Target可以設定其[協力廠商ID](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id)。 使用[!UICONTROL 身分對應]資料元素型別來設定已驗證的識別碼。
+您也可以傳送已驗證的使用者ID，讓Platform可以建立[身分圖表](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs)，而Target可以設定其[協力廠商ID](https://experienceleague.adobe.com/zh-hant/docs/target/using/audiences/visitor-profiles/3rd-party-id)。 使用[!UICONTROL 身分對應]資料元素型別來設定已驗證的識別碼。
 
 若要建立[!UICONTROL 身分對應]資料元素：
 

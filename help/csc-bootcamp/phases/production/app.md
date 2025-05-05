@@ -41,7 +41,7 @@ AEM as a Cloud Service是適用於Headless實作模式的彈性工具，提供�
 1. 傳送的內容API
    - AEM GraphQL API支援內容片段傳送。
    - AEM Assets REST API支援內容片段CRUD作業。
-   - 透過內容片段核心元件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)的JSON匯出，也可以直接傳送內容。
+   - 透過內容片段核心元件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hant)的JSON匯出，也可以直接傳送內容。
 
 ## 練習
 

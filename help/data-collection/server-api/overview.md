@@ -15,6 +15,6 @@ ht-degree: 0%
 
 # Adobe Experience Platform Edge Network伺服器API總覽
 
-瞭解使用安全、經過驗證的伺服器API傳送資料給Platform Edge Network的好處。 如需詳細資訊，請瀏覽[伺服器API檔案](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html)。
+瞭解使用安全、經過驗證的伺服器API傳送資料給Platform Edge Network的好處。 如需詳細資訊，請瀏覽[伺服器API檔案](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/341448?learn=on&enablevpops)

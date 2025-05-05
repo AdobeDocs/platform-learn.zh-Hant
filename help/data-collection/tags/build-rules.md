@@ -16,6 +16,6 @@ ht-degree: 37%
 
 # 建置標籤規則
 
-了解如何建立規則，以便您可以在標記中執行命令。事件和條件決定&#x200B;*何時*&#x200B;要做事，而動作決定&#x200B;*要做什麼*。 如需詳細資訊，請參閱[規則](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)檔案。
+了解如何建立規則，以便您可以在標記中執行命令。事件和條件決定&#x200B;*何時*&#x200B;要做事，而動作決定&#x200B;*要做什麼*。 如需詳細資訊，請參閱[規則](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hant)檔案。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on&enablevpops)

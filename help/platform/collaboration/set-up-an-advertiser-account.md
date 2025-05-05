@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 在Real-Time CDP Collaboration中設定廣告商帳戶
 
-瞭解如何在Real-Time CDP Collaboration中設定廣告商帳戶（組織）。 如需詳細檔案，請參閱[上線及管理組織](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}。
+瞭解如何在Real-Time CDP Collaboration中設定廣告商帳戶（組織）。 如需詳細檔案，請參閱[上線及管理組織](https://experienceleague.adobe.com/zh-hant/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452264/?learn=on&enablevpops)

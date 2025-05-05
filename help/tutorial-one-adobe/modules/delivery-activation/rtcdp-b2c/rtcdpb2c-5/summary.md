@@ -31,7 +31,7 @@ ht-degree: 0%
 
 - 技術部落格： [使用Adobe Experience Platform Web SDK和Edge Network解決實作上的痛點](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 - 技術部落格： [使用Adobe Experience Platform Web SDK和Edge Network提升網站效能](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
-- 檔案： [Adobe Experience Platform Data Collection Server Side概述](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
+- 檔案： [Adobe Experience Platform Data Collection Server Side概述](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant#server-side-info)
 - 影片： [使用非Edge Tag Management解決方案實作Adobe和Adobe Experience Platform資料收集伺服器](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
 
 ## 後續步驟

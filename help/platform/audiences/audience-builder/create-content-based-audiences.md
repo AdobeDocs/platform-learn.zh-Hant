@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # 建立內容型對象
 
-瞭解在Experience Platform的對象規則產生器中建立內容相關性對象的基本知識。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+瞭解在Experience Platform的對象規則產生器中建立內容相關性對象的基本知識。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

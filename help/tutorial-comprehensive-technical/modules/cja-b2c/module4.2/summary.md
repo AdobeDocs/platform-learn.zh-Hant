@@ -35,8 +35,8 @@ Adobe Experience Platform有數種現成的整套整合功能，可輕鬆快速�
 
 ## 看看這個
 
-- 說明中心： [Source聯結器 — Google BigQuery聯結器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html)
-- Experience Platform檔案： [Customer Journey Analytics — 產品檔案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
+- 說明中心： [Source聯結器 — Google BigQuery聯結器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html?lang=zh-Hant)
+- Experience Platform檔案： [Customer Journey Analytics — 產品檔案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant)
 
 [返回模組4.2](./customer-journey-analytics-bigquery-gcp.md)
 

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 與Real-Time CDP Collaboration中的發佈者連結
 
-身為廣告商，瞭解如何與發佈商建立連線，以便與他們共同作業。 如需詳細檔案，請參閱[與廣告商或發行者連線](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"}。
+身為廣告商，瞭解如何與發佈商建立連線，以便與他們共同作業。 如需詳細檔案，請參閱[與廣告商或發行者連線](https://experienceleague.adobe.com/zh-hant/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"}。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452218/?learn=on&enablevpops)

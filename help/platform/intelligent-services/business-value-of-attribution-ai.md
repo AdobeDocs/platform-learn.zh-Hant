@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # Attribution AI的商業價值
 
-此影片說明行銷人員如何透過瞭解每個客戶在客戶使用Attribution AI歷程各個階段的互動所產生的影響，來衡量行銷和廣告支出並予以最佳化。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)。
+此影片說明行銷人員如何透過瞭解每個客戶在客戶使用Attribution AI歷程各個階段的互動所產生的影響，來衡量行銷和廣告支出並予以最佳化。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on&enablevpops)
 

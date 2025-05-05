@@ -16,6 +16,6 @@ ht-degree: 38%
 
 # 建立資料元素
 
-瞭解如何建立資料元素以儲存從資料層提取的值，並讓這些值可用於標籤屬性中的規則和擴充功能。 如需詳細資訊，請參閱[資料元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html)檔案。
+瞭解如何建立資料元素以儲存從資料層提取的值，並讓這些值可用於標籤屬性中的規則和擴充功能。 如需詳細資訊，請參閱[資料元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=zh-Hant)檔案。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on&enablevpops)

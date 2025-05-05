@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # Customer AI的商業價值
 
-本影片說明Customer AI如何運用AI傾向豐富客戶個人檔案，以及執行客戶細分和目標定位工作。 如需詳細資訊，請瀏覽[Customer AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)。
+本影片說明Customer AI如何運用AI傾向豐富客戶個人檔案，以及執行客戶細分和目標定位工作。 如需詳細資訊，請瀏覽[Customer AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on&enablevpops)
 

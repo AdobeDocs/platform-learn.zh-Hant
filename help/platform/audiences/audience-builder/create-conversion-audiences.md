@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 建立轉換對象
 
-在這段影片中，瞭解如何使用Experience Platform中的對象規則產生器，建立已在網站或其他資料系統中執行轉換事件的對象。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+在這段影片中，瞭解如何使用Experience Platform中的對象規則產生器，建立已在網站或其他資料系統中執行轉換事件的對象。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # AI 助理
 
-瞭解您可以在Real-Time Customer Data Platform、Journey Optimizer和Customer Journey Analytics等Adobe Experience Platform應用程式中使用AI助理做什麼。 如需詳細資訊，請瀏覽[AI助理檔案](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home)。
+瞭解您可以在Real-Time Customer Data Platform、Journey Optimizer和Customer Journey Analytics等Adobe Experience Platform應用程式中使用AI助理做什麼。 如需詳細資訊，請瀏覽[AI助理檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/home)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on&enablevpops)
 

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 透過LiveRamp目的地對廣告合作夥伴啟用
 
-瞭解如何在Real-Time CDP中設定LiveRamp目的地，以將對象傳送給您的啟用合作夥伴。 如需詳細檔案，請參閱[LiveRamp — 上線連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html)和[LiveRamp — 散發連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html)。
+瞭解如何在Real-Time CDP中設定LiveRamp目的地，以將對象傳送給您的啟用合作夥伴。 如需詳細檔案，請參閱[LiveRamp — 上線連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html?lang=zh-Hant)和[LiveRamp — 散發連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425367/?learn=on&enablevpops)

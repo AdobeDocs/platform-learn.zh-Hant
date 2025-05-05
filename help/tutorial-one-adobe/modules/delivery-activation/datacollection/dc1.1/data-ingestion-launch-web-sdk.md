@@ -23,9 +23,9 @@ ht-degree: 0%
 - 瞭解品牌用來將資料擷取至其Adobe產品的資料流程。
 - 瞭解如何透過Adobe Experience Platform Edge Network將資料傳送至Adobe Experience Platform和其他產品。
 - 瞭解如何建立從Web和Mobile收集資料的資料元素和規則。
-- 瞭解[網頁SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)追蹤事件以及如何偵錯其內容。
+- 瞭解[網頁SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)追蹤事件以及如何偵錯其內容。
 - 瞭解什麼是資料層，以及Adobe在實作資料層時的建議。
-- 瞭解從頭開始實作[網頁SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)的步驟。
+- 瞭解從頭開始實作[網頁SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)的步驟。
 - 瞭解網頁版和行動版實作之間的差異。
 
 ## 先決條件

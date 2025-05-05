@@ -16,7 +16,7 @@ ht-degree: 0%
 ## 安裝PSQL命令列公用程式
 
 依照Adobe Experience Platform檔案中概述的指示，安裝psql使用者端：
-[PSQL安裝指南](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html)
+[PSQL安裝指南](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html?lang=zh-Hant)
 
 安裝PSQL之後，您可能需要在終端機視窗中執行下列命令，以更新您的&#x200B;**PATH**：
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 僅適用於Windows使用者
 
-[安裝MicrosoftPower BI](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html)
+[安裝MicrosoftPower BI](https://experienceleague.adobe.com/docs/experience-platform/query/clients/power-bi.html?lang=zh-Hant)
 
 請確定您如檔案中所述，安裝確切的&#x200B;**npgsql**&#x200B;版本，否則您將無法將Power BI連線到Adobe Experience Platform查詢服務。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 Windows或Mac使用者
 
-根據檔案[安裝Tableau案頭](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html)。
+根據檔案[安裝Tableau案頭](https://experienceleague.adobe.com/docs/experience-platform/query/clients/tableau.html?lang=zh-Hant)。
 
 Tableau會自動提供14天的試用期。
 

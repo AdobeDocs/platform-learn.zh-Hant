@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Adobe Experience Platform Debugger
 
-此偵錯工具是瀏覽器擴充功能，可在Chrome商店取得。 有[影片教學課程](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)會說明如何下載及使用偵錯工具，建議您先詳閱以瞭解基本用法。
+此偵錯工具是瀏覽器擴充功能，可在Chrome商店取得。 有[影片教學課程](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/debugger/overview)會說明如何下載及使用偵錯工具，建議您先詳閱以瞭解基本用法。
 
 一旦偵錯工具啟動並執行，您就可以用它來確保資料從您的網站流出，並正確流經Edge Network。 本教學課程將保留基本用途，但請盡其所能使用除錯工具來檢查您的資料。
 

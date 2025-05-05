@@ -26,7 +26,7 @@ ht-degree: 0%
 
 雖然聽起來很神奇，但您不需要為設定檔啟動&#x200B;*您的所有資料*。 實際上，您應該只啟用啟用啟用使用案例所需的資料。 啟用您想要用於行銷使用案例、客服中心整合等的資料，以便快速存取強大的客戶設定檔。 如果您上傳的資料僅供分析，則可能不應為設定檔啟用此功能。
 
-對於即時客戶設定檔資料[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)有重要的護欄，在決定您自己的哪些資料應該啟用設定檔時，您應該檢閱這些護欄。
+對於即時客戶設定檔資料[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)有重要的護欄，在決定您自己的哪些資料應該啟用設定檔時，您應該檢閱這些護欄。
 
 <!--is this accurate. Are there other considerations to point out? -->
 

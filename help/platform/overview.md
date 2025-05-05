@@ -42,11 +42,11 @@ Adobe Experience Platform是市面上功能最強大、最靈活、最開放的�
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant">
       <img alt="「資料架構師和資料工程師快速入門」教學課程的縮圖影像" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant">
     <strong>資料架構師與資料工程師快速入門</strong>
     </a>
     </div>

@@ -15,7 +15,7 @@ ht-degree: 3%
 
 了解如何在[!UICONTROL 資料收集]介面中設定標記屬性。
 
-Adobe Experience Platform中的標籤是新一代Adobe標籤管理功能。 標籤可讓客戶透過簡單的方式部署及管理必要的分析、行銷及廣告標籤功能，以便支援相關客戶體驗。 在產品檔案中進一步瞭解[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)。
+Adobe Experience Platform中的標籤是新一代Adobe標籤管理功能。 標籤可讓客戶透過簡單的方式部署及管理必要的分析、行銷及廣告標籤功能，以便支援相關客戶體驗。 在產品檔案中進一步瞭解[標籤](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)。
 
 ## 先決條件
 

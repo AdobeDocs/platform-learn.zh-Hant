@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 建立多實體對象
 
-本影片說明如何在Adobe Experience Platform的對象規則產生器中建立多實體對象。  多實體分段，或跨類別分段，可讓您根據多個XDM類別來建立結合資料的對象。 例如，您可以讓以XDM ExperienceEvent類別建立的資料集在客戶購買時擷取產品ID，讓另一個資料集以自訂產品類別建立，包含每個產品ID的目錄詳細資訊（例如顏色、大小、類別等）。 如果您在方案之間建立關係，您就可以根據兩個方案中存在的欄位來建立對象（例如購買夾克的人）。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+本影片說明如何在Adobe Experience Platform的對象規則產生器中建立多實體對象。  多實體分段，或跨類別分段，可讓您根據多個XDM類別來建立結合資料的對象。 例如，您可以讓以XDM ExperienceEvent類別建立的資料集在客戶購買時擷取產品ID，讓另一個資料集以自訂產品類別建立，包含每個產品ID的目錄詳細資訊（例如顏色、大小、類別等）。 如果您在方案之間建立關係，您就可以根據兩個方案中存在的欄位來建立對象（例如購買夾克的人）。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hant)。
 
 <!--Segment context (segment payload) allows you to provide key contextual details, such as a visitor's abandoned cart contents, in your segment definition so you can send personalized messages.-->
 

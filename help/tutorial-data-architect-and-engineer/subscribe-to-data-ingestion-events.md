@@ -81,7 +81,7 @@ ht-degree: 0%
 ## 其他資源
 
 * [Webhook.site](https://webhook.site/)
-* [資料擷取通知檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [資料擷取通知檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=zh-Hant)
 * [開始使用Adobe I/O事件檔案](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 好，讓我們終於開始[擷取資料](ingest-batch-data.md)！

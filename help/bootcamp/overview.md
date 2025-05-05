@@ -83,7 +83,7 @@ ht-degree: 1%
 
 在開始實作練習之前，請先瞭解本教學課程背後的架構。 此訓練營將深入探討Adobe Experience Platform的許多功能，並將討論跨各種來源和目標的多種整合。 為了讓您正確瞭解本教學課程背後的架構，以及Adobe Experience Platform在您的企業生態系統中的整體定位，請先檢閱架構影片和圖表。
 
-移至[架構](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en)。
+移至[架構](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=zh-Hant)。
 
 ## 影片
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
 已建立的其他數個影片會展示bootcamp的元素，以及Adobe Experience Platform和非Adobe應用程式之間的強大整合。 按一下以下連結以尋找這些影片的概觀。
 
-移至[影片](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en)。
+移至[影片](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=zh-Hant)。
 
 ## YouTube
 

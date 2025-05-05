@@ -15,7 +15,7 @@ ht-degree: 23%
 
 # 事件轉送概觀
 
-瞭解事件轉送如何集中處理資料收集、減少網頁和行動應用程式中所需的程式碼數量，以及透過Adobe Experience Platform Edge Network將資料串流至非Adobe解決方案。 如需詳細資訊，請瀏覽[事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)。
+瞭解事件轉送如何集中處理資料收集、減少網頁和行動應用程式中所需的程式碼數量，以及透過Adobe Experience Platform Edge Network將資料串流至非Adobe解決方案。 如需詳細資訊，請瀏覽[事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

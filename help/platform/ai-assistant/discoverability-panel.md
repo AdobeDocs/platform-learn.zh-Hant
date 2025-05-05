@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 使用AI Assistant中的可發現性面板
 
-瞭解如何使用AI Assistant中的可發現性面板。 如需詳細資訊，請參閱[AI助理使用者介面指南](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability)。
+瞭解如何使用AI Assistant中的可發現性面板。 如需詳細資訊，請參閱[AI助理使用者介面指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/ui-guide#use-discoverability)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3440962/?learn=on&enablevpops)

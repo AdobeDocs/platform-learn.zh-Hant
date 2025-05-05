@@ -16,6 +16,6 @@ ht-degree: 46%
 
 # 設定 Attribution AI
 
-瞭解如何建立Attribution AI例項，以明白行銷管道和行銷活動的影響。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)。
+瞭解如何建立Attribution AI例項，以明白行銷管道和行銷活動的影響。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on&enablevpops)

@@ -22,8 +22,8 @@ ht-degree: 1%
 
 ## 看看這個
 
-- 產品檔案： [Offer decisioning字彙表](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=en)
-- 產品檔案： [Web SDK -Offer decisioning概觀](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=en)
+- 產品檔案： [Offer decisioning字彙表](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=zh-Hant)
+- 產品檔案： [Web SDK -Offer decisioning概觀](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=zh-Hant)
 
 [返回模組3.3](./offer-decisioning.md)
 

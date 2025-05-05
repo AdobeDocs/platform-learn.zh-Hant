@@ -17,7 +17,7 @@ ht-degree: 20%
 
 # 建立儀表板
 
-瞭解如何在Adobe Experience Platform中建立儀表板。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html)。
+瞭解如何在Adobe Experience Platform中建立儀表板。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html?lang=zh-Hant)。
 
 >[!IMPORTANT]
 >

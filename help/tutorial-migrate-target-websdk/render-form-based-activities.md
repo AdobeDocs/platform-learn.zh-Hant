@@ -100,7 +100,7 @@ Platform Web SDK提供更好的控制功能，可讓您使用指定了`actionTyp
 | `replaceHtml` | 移除容器並以選件取代 | 無 | 是 |
 | `appendHtml` | 在指定的選取器後附加選件 | 無 | 是 |
 
-如需其他轉譯選項和範例，請參閱[有關使用Platform Web SDK轉譯內容的專屬檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)。
+如需其他轉譯選項和範例，請參閱[有關使用Platform Web SDK轉譯內容的專屬檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hant)。
 
 ## 實作範例
 

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 驗證來自AI助理的回應
 
-瞭解如何驗證及驗證Adobe Experience Platform中的AI Assistant所提供的回應。 如需詳細資訊，請參閱[AI助理使用者介面指南](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#verify-responses)。
+瞭解如何驗證及驗證Adobe Experience Platform中的AI Assistant所提供的回應。 如需詳細資訊，請參閱[AI助理使用者介面指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/ui-guide#verify-responses)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)

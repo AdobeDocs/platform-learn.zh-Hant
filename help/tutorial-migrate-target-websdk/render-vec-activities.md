@@ -32,11 +32,11 @@ Visual Editing Helper瀏覽器擴充功能適用於使用at.js或Platform Web SD
 
 Visual Editing Helper會在Target VEC中開啟網站時自動啟用，以支援撰寫。 擴充功能沒有任何條件設定。 此擴充功能會自動處理所有設定，包括SameSite Cookie設定。
 
-請參閱專屬檔案，以取得有關[Visual Editing Helper擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html)和[疑難排解Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html)的詳細資訊。
+請參閱專屬檔案，以取得有關[Visual Editing Helper擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=zh-Hant)和[疑難排解Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=zh-Hant)的詳細資訊。
 
 >[!IMPORTANT]
 >
->新的[Visual Editing Helper擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)會取代先前的[Target VEC Helper瀏覽器擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html)。 如果已安裝舊版VEC Helper擴充功能，應先移除或停用該擴充功能，再使用Visual Editing Helper擴充功能。
+>新的[Visual Editing Helper擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)會取代先前的[Target VEC Helper瀏覽器擴充功能](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=zh-Hant)。 如果已安裝舊版VEC Helper擴充功能，應先移除或停用該擴充功能，再使用Visual Editing Helper擴充功能。
 
 ## 自動要求與套用內容
 
@@ -128,9 +128,9 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->可以[手動轉譯在視覺化體驗撰寫器中進行的修改](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content)。 手動呈現VEC型修改並不常見。 檢查您的at.js實作是否使用`getOffers()`函式手動執行Target `pageLoad`要求，而不使用`applyOffers()`將內容套用至頁面。
+>可以[手動轉譯在視覺化體驗撰寫器中進行的修改](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hant#manually-rendering-content)。 手動呈現VEC型修改並不常見。 檢查您的at.js實作是否使用`getOffers()`函式手動執行Target `pageLoad`要求，而不使用`applyOffers()`將內容套用至頁面。
 
-Platform Web SDK為開發人員在請求和轉譯內容時提供極大的彈性。 如需其他選項和詳細資訊，請參閱[有關演算個人化內容](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)的專屬檔案。
+Platform Web SDK為開發人員在請求和轉譯內容時提供極大的彈性。 如需其他選項和詳細資訊，請參閱[有關演算個人化內容](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hant)的專屬檔案。
 
 ## 實作範例
 

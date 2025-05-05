@@ -47,7 +47,7 @@ Key terms:
 
 >[!TIP]
 >
-> 若要在Experience Platform中更深入探究資料模型，建議您使用XDM觀看播放清單[為您的客戶體驗資料建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，可在Experience League上免費取得！
+> 若要在Experience Platform中更深入探究資料模型，建議您使用XDM觀看播放清單[為您的客戶體驗資料建模](https://experienceleague.adobe.com/zh-hant/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，可在Experience League上免費取得！
 
 ## 需要的許可權
 
@@ -86,7 +86,7 @@ Key terms:
 
 建立結構描述後，您將會被重新導向到結構描述編輯器，您可以在其中新增欄位到結構描述。 您可以直接將個別欄位新增到結構描述或使用欄位群組。 請務必注意，所有個別欄位仍與類別或欄位群組相關聯。 您可以從Adobe提供的大量產業標準欄位群組中選取，或是建立您自己的欄位群組。 當您開始在Experience Platform中建立自己的資料模型時，最好熟悉Adobe提供的業界標準欄位群組。 最佳實務是儘可能使用這些變數，因為它們有時會支援下游服務，例如Customer AI、Attribution AI和Adobe Analytics。
 
-使用您自己的資料時，決定應在Platform中擷取哪些您自己的資料，以及應如何模型化這些資料，將是重要的步驟。 此大型主題在播放清單[使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中討論得較深入。 在本教學課程中，我將引導您實作一些預先決定的結構描述。
+使用您自己的資料時，決定應在Platform中擷取哪些您自己的資料，以及應如何模型化這些資料，將是重要的步驟。 此大型主題在播放清單[使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/zh-hant/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中討論得較深入。 在本教學課程中，我將引導您實作一些預先決定的結構描述。
 
 若要新增欄位群組：
 

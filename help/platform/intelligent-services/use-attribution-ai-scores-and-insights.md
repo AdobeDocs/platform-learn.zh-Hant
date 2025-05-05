@@ -16,6 +16,6 @@ ht-degree: 51%
 
 # 使用 Attribution AI 評分和深入分析
 
-瞭解如何使用Attribution AI深入分析頁面，瞭解行銷管道和行銷活動的ROI。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)。
+瞭解如何使用Attribution AI深入分析頁面，瞭解行銷管道和行銷活動的ROI。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on&enablevpops)

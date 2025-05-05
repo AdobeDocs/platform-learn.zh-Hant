@@ -15,6 +15,6 @@ ht-degree: 28%
 
 # 監視事件轉送
 
-瞭解如何在資料收集介面中監視事件轉送。 如需詳細資訊，請瀏覽[事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)。
+瞭解如何在資料收集介面中監視事件轉送。 如需詳細資訊，請瀏覽[事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on&enablevpops)

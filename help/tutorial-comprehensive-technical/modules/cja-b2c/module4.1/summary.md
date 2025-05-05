@@ -37,7 +37,7 @@ Customer Journey Analytics可讓您執行進階歸因模型，並將行銷資金
 
 ## 看看這個
 
-- Experience Platform檔案： [Customer Journey Analytics — 產品檔案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
+- Experience Platform檔案： [Customer Journey Analytics — 產品檔案](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hant)
 
 [返回模組4.1](./customer-journey-analytics-build-a-dashboard.md)
 

@@ -108,7 +108,7 @@ ht-degree: 0%
 按一下左側導覽中的&#x200B;**[!UICONTROL 區段]**，讓我們花點時間檢閱我們的三個區段：
 
 * 我們的兩個區段是批次區段，另一個是串流區段。
-* Platform會儘可能預設為串流細分，當客戶符合條件時，即讓他們符合區段的資格。 當區段定義太複雜而無法串流時，會自動轉換為批次。 在此情況下，這兩個區段會預設為批次，因為購買事件的回顧期間大於七天。 如需完整且最新的串流限制清單，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html)。
+* Platform會儘可能預設為串流細分，當客戶符合條件時，即讓他們符合區段的資格。 當區段定義太複雜而無法串流時，會自動轉換為批次。 在此情況下，這兩個區段會預設為批次，因為購買事件的回顧期間大於七天。 如需完整且最新的串流限制清單，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=zh-Hant)。
 * 批次工作以每日排程執行，該排程可切換。
 
 ![在過去30天區段內購買相同的產品](assets/segment-review.png)

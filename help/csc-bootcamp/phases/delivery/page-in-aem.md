@@ -176,7 +176,7 @@ AEM提供您兩個環境：作者環境和Publish環境。 這些互動可讓您
 
 >[!NOTE]
 >
-> 想進一步瞭解即時副本嗎？ 簽出[「建立和同步處理即時副本」。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=en)
+> 想進一步瞭解即時副本嗎？ 簽出[「建立和同步處理即時副本」。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=zh-Hant)
 
 - 完成後，您現在應該會看到網站上有該商店。 選取該頁面，然後按一下「建立\>頁面」 ，建立啟發靈感的產品頁面。
 

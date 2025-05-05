@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ## 設定Chrome擴充功能
 
-前往[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview)，然後按一下擴充功能圖示以開啟。
+前往[https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorial-comprehensive-technical/overview)，然後按一下擴充功能圖示以開啟。
 
 ![DSN](./images/tuthome.png)
 
@@ -136,7 +136,7 @@ LDAP可用來確保您即將進行的設定會連結至您，而不會與可能�
 
 ## 驗證教學課程內容
 
-作為測試，請移至[此頁面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex4)。
+作為測試，請移至[此頁面](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex4)。
 
 您現在應該會看到根據Chrome擴充功能中啟用的環境，所有&#x200B;**環境變數**&#x200B;都已取代為其True值。
 

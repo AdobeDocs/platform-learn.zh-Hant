@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 建立事件轉送屬性
 
-瞭解如何在資料收集中建立事件轉送屬性。 如需詳細資訊，請瀏覽[建立事件轉送屬性檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property)。
+瞭解如何在資料收集中建立事件轉送屬性。 如需詳細資訊，請瀏覽[建立事件轉送屬性檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=zh-Hant#create-an-event-forwarding-property)。
 
 >[!NOTE]
 >

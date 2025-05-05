@@ -16,6 +16,6 @@ ht-degree: 55%
 
 # 監視資料擷取
 
-瞭解如何使用監視儀表板來監視和追蹤內嵌到Adobe Experience Platform中的資料。 此監控儀表板可讓您由上而下檢視經由Data Lake到Profile和Identity服務的來源資料處理，並具備可操作的深入分析。 如需詳細資訊，請參閱 [ 說明文件](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html)。
+瞭解如何使用監視儀表板來監視和追蹤內嵌到Adobe Experience Platform中的資料。 此監控儀表板可讓您由上而下檢視經由Data Lake到Profile和Identity服務的來源資料處理，並具備可操作的深入分析。 如需詳細資訊，請參閱 [ 說明文件](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331776?learn=on&enablevpops)

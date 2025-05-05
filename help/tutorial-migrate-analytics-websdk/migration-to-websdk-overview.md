@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 使用標籤將Adobe Analytics移轉至網路SDK
 
-瞭解使用Experience Platform標籤（先前稱為Launch）中的Analytics擴充功能，以及使用Tags中的Web SDK擴充功能，將Adobe Analytics實作移轉至Web SDK的步驟。 使用Tags中的Adobe Analytics擴充功能時，會在幕後使用「AppMeasurement.js」程式碼。 因此，您可以將此視為將AppMeasurement移轉至Web SDK的教學課程，但本教學課程完全以Tags為主，不包含移至JavaScript實作或從中移轉的部分(Tags UI中使用的JavaScript程式碼除外)。 若要移轉JavaScript實作，請參閱[檔案](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)。
+瞭解使用Experience Platform標籤（先前稱為Launch）中的Analytics擴充功能，以及使用Tags中的Web SDK擴充功能，將Adobe Analytics實作移轉至Web SDK的步驟。 使用Tags中的Adobe Analytics擴充功能時，會在幕後使用「AppMeasurement.js」程式碼。 因此，您可以將此視為將AppMeasurement移轉至Web SDK的教學課程，但本教學課程完全以Tags為主，不包含移至JavaScript實作或從中移轉的部分(Tags UI中使用的JavaScript程式碼除外)。 若要移轉JavaScript實作，請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)。
 
 >[!NOTE]
 >

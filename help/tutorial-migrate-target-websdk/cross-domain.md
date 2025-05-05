@@ -62,11 +62,11 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->使用標籤功能（前身為Launch）實作Web SDK時，無需自訂程式碼即可完成跨網域ID共用。 如需詳細資訊，請參閱[專屬檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension)。
+>使用標籤功能（前身為Launch）實作Web SDK時，無需自訂程式碼即可完成跨網域ID共用。 如需詳細資訊，請參閱[專屬檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=zh-Hant#tags-extension)。
 
 >[!NOTE]
 >
->Platform Web SDK也支援原生行動應用程式使用案例的行動至網頁ID共用。 如需詳細資訊，請參閱關於[行動裝置對網頁和跨網域ID共用](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html)的專屬檔案。
+>Platform Web SDK也支援原生行動應用程式使用案例的行動至網頁ID共用。 如需詳細資訊，請參閱關於[行動裝置對網頁和跨網域ID共用](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=zh-Hant)的專屬檔案。
 
 接下來，瞭解如何[更新對象和設定檔指令碼](update-audiences.md)，以確保相容於Platform Web SDK。
 

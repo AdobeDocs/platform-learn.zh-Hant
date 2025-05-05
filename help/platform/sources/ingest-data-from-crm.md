@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 使用CRM來源聯結器擷取資料
 
-瞭解如何輕鬆地將CRM來源中的資料批次擷取到Adobe Experience Platform的即時客戶設定檔和資料湖。 如需更詳細的產品檔案，請參閱Source Connectors概觀頁面上的[客戶關係管理(CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion)。
+瞭解如何輕鬆地將CRM來源中的資料批次擷取到Adobe Experience Platform的即時客戶設定檔和資料湖。 如需更詳細的產品檔案，請參閱Source Connectors概觀頁面上的[客戶關係管理(CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant#access-control-for-sources-in-data-ingestion)。
 
 ## 標準工作流程
 
@@ -32,6 +32,6 @@ ht-degree: 0%
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
 
 如需詳細資訊，請參閱下列檔案：
-* [Salesforce建立連線檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html)。
-* [在UI中使用範本建立來源資料流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)。
+* [Salesforce建立連線檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=zh-Hant)。
+* [在UI中使用範本建立來源資料流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=zh-Hant#)。
 

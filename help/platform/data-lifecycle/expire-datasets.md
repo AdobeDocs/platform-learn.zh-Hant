@@ -26,4 +26,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 所有Platform客戶都可以[依需求](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete)刪除資料集。 排程資料集刪除目前僅適用於Healthcare Shield或Privacy and Security Shield的客戶。
+> 所有Platform客戶都可以[依需求](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hant#delete)刪除資料集。 排程資料集刪除目前僅適用於Healthcare Shield或Privacy and Security Shield的客戶。

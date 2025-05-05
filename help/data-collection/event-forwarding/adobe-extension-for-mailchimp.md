@@ -15,6 +15,6 @@ ht-degree: 0%
 
 # Mailchimp的Adobe擴充功能
 
-有關Mailchimp的Adobe事件轉送擴充功能的概觀影片。 如需詳細資訊，請瀏覽[Mailchimp事件轉送擴充功能檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html)。
+有關Mailchimp的Adobe事件轉送擴充功能的概觀影片。 如需詳細資訊，請瀏覽[Mailchimp事件轉送擴充功能檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on&enablevpops)

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 從現有對象建立對象
 
-Experience Platform中的對象規則產生器可讓您使用現有的對象，作為新對象規則定義的一部分。 觀看此影片以瞭解操作的相關提示。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+Experience Platform中的對象規則產生器可讓您使用現有的對象，作為新對象規則定義的一部分。 觀看此影片以瞭解操作的相關提示。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

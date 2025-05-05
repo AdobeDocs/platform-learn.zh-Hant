@@ -26,14 +26,14 @@ Experience Platform業務使用者通常必須完成一系列步驟，包括識�
 
 >[!NOTE]
 >
->此教學課程的最終結果是一個沙箱，其中包含與[資料架構師和資料工程師的Adobe Experience Platform快速入門教學課程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)類似的資料。 它在2023年4月更新，以支援[Journey Optimizer挑戰](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hant)。 2023年6月更新，將驗證方法切換至OAuth。
+>此教學課程的最終結果是一個沙箱，其中包含與[資料架構師和資料工程師的Adobe Experience Platform快速入門教學課程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)類似的資料。 它在2023年4月更新，以支援[Journey Optimizer挑戰](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hant)。 2023年6月更新，將驗證方法切換至OAuth。
 
 
 ## 先決條件
 
 * 您有權存取Experience Platform API，且知道如何驗證。 如果沒有，請檢閱此[教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=zh-Hant)。
 * 您可以存取Experience Platform開發沙箱。
-* 您知道您的Experience Platform租使用者ID。 您可以透過提出已驗證的[API要求](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)來取得它
+* 您知道您的Experience Platform租使用者ID。 您可以透過提出已驗證的[API要求](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=zh-Hant#know-your-tenant_id)來取得它
 或是在您登入Platform帳戶時，從URL擷取連結。 例如，在以下URL中，租使用者是&quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`。
 
 ## 使用[!DNL Postman] {#postman}
@@ -187,16 +187,16 @@ Experience Platform業務使用者通常必須完成一系列步驟，包括識�
 
 如果您想瞭解Adobe Journey Optimizer，此沙箱包含您進行[Journey Optimizer挑戰](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hant)所需的一切
 
-如果您想瞭解合併原則、資料控管、查詢服務和區段產生器，請跳到資料架構師和資料工程師快速入門教學課程[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en)中的第11課。 本其他教學課程的先前課程會讓您手動建立這些Postman集合剛才填入的所有內容 — 開心地開始吧！
+如果您想瞭解合併原則、資料控管、查詢服務和區段產生器，請跳到資料架構師和資料工程師快速入門教學課程[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=zh-Hant)中的第11課。 本其他教學課程的先前課程會讓您手動建立這些Postman集合剛才填入的所有內容 — 開心地開始吧！
 
 如果您想要建置範例Web SDK實作以連結至此沙箱，請前往
 [使用Web SDK教學課程實作Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant)。 設定Web SDK教學課程的「初始設定」、「標籤設定」和「設定Experience Platform」課程後，使用密碼`test`使用`luma-crm.json`檔案中的前10個電子郵件地址登入Luma網站，以檢視設定檔片段與本教學課程中上傳的資料合併。
 
 如果您想要建立範例行動SDK實作以連結至此沙箱，請前往
-[在行動應用程式教學課程中實作Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)。 設定Web SDK教學課程的「初始設定」、「應用程式實作」和「Experience Platform」課程後，使用`luma-crm.json`檔案中的第一個電子郵件地址登入Luma網站，檢視設定檔片段與本教學課程中上傳的資料合併。
+[在行動應用程式教學課程中實作Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hant)。 設定Web SDK教學課程的「初始設定」、「應用程式實作」和「Experience Platform」課程後，使用`luma-crm.json`檔案中的第一個電子郵件地址登入Luma網站，檢視設定檔片段與本教學課程中上傳的資料合併。
 
 ## 重設沙箱環境 {#reset-sandbox}
 
 重設非生產沙箱會刪除與該沙箱關聯的所有資源（結構描述、資料集等），同時維護沙箱的名稱和關聯的許可權。 此「乾淨」沙箱可繼續以相同名稱供擁有存取權的使用者使用。
 
-請依照步驟[這裡](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox)重設沙箱環境。
+請依照步驟[這裡](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=zh-Hant#reset-a-sandbox)重設沙箱環境。

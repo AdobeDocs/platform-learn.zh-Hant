@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 可能的追蹤問題
 
-如果您從應用程式的原生部分和應用程式內的WebView傳送資料，每個部分都會產生自己的Experience CloudID (ECID)，導致中斷連線的點選和膨脹的造訪/訪客資料。 有關ECID的詳細資訊，請參閱[ECID概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en)。
+如果您從應用程式的原生部分和應用程式內的WebView傳送資料，每個部分都會產生自己的Experience CloudID (ECID)，導致中斷連線的點選和膨脹的造訪/訪客資料。 有關ECID的詳細資訊，請參閱[ECID概觀](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=zh-Hant)。
 
 若要解決該不良情況，您必須將使用者的ECID從應用程式的原生部分傳遞至您可能會想要在應用程式中使用的WebView。
 

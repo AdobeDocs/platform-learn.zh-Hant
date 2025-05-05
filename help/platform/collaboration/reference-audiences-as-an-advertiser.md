@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 將受眾作為Real-Time CDP Collaboration中的廣告商參考
 
-作為廣告商，瞭解如何參考對象，將對象引進您的介面，以便當您與合作夥伴合作時使用這些對象。 如需詳細檔案，請參閱[匯入及管理對象](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}。
+作為廣告商，瞭解如何參考對象，將對象引進您的介面，以便當您與合作夥伴合作時使用這些對象。 如需詳細檔案，請參閱[匯入及管理對象](https://experienceleague.adobe.com/zh-hant/docs/real-time-cdp-collaboration/using/setup/onboard-audiences){target="_blank"}。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)

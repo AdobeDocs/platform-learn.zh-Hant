@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # 建立和發佈Playbook例項
 
-透過此端對端示範影片，瞭解如何探索、建立、發佈使用案例劇本的例項，並進行疑難排解。 如需詳細資訊，請參閱[建立、共用和重複使用行動手冊執行個體](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html)。
+透過此端對端示範影片，瞭解如何探索、建立、發佈使用案例劇本的例項，並進行疑難排解。 如需詳細資訊，請參閱[建立、共用和重複使用行動手冊執行個體](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on&enablevpops)

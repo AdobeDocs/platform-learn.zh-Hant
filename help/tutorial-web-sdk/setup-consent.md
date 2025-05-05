@@ -217,10 +217,10 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 ![同意Post訪客Optin](assets/consent-post-user-optin.png)
 
 
-如需Web SDK中同意的詳細資訊，請參閱[支援客戶同意偏好設定](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent)。
+如需Web SDK中同意的詳細資訊，請參閱[支援客戶同意偏好設定](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge/consent/supporting-consent)。
 
 
-如需[!UICONTROL 設定同意]動作的詳細資訊，請參閱[設定同意](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)。
+如需[!UICONTROL 設定同意]動作的詳細資訊，請參閱[設定同意](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)。
 
 [下一步： ](setup-event-forwarding.md)
 

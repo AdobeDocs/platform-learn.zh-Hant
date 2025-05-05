@@ -35,7 +35,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果您使用資料收集的[資料準備](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/data-prep)功能，您只需要選取結構描述，我們在本教學課程中不會這麼做。 請瀏覽連結以瞭解更多資訊。
+   >如果您使用資料收集的[資料準備](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/edge-network/data-prep)功能，您只需要選取結構描述，我們在本教學課程中不會這麼做。 請瀏覽連結以瞭解更多資訊。
 
 1. 選取&#x200B;**[!UICONTROL 儲存]**
 

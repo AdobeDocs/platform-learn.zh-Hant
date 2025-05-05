@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 在[!DNL Real-Time CDP]中將合作夥伴屬性新增到第一方設定檔
 
-瞭解如何將合作夥伴屬性新增到您的第一方設定檔，以透過[!DNL Real-Time CDP]中的其他管道擴大觸及率。 如需詳細資訊，請造訪[以合作夥伴提供的屬性補充第一方設定檔](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html)檔案。
+瞭解如何將合作夥伴屬性新增到您的第一方設定檔，以透過[!DNL Real-Time CDP]中的其他管道擴大觸及率。 如需詳細資訊，請造訪[以合作夥伴提供的屬性補充第一方設定檔](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html?lang=zh-Hant)檔案。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on&enablevpops)

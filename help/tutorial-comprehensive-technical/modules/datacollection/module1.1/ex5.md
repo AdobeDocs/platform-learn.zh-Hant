@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ## 在Analytics中對應變數
 
-Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過Web SDK進行新的Analytics實作。 [這裡](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)列出自動對應的變數。
+Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過Web SDK進行新的Analytics實作。 [這裡](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=zh-Hant#data-collection)列出自動對應的變數。
 
-對於未自動對應至Adobe Analytics的XDM資料，您可以使用[內容資料](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html)來比對您的[結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant)。 然後可以使用[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)將其對應至Analytics以填入Analytics變數。 內容資料與處理規則將會是過去與Analytics搭配使用時熟悉的概念，但如果是新概念，目前無需擔心詳細資訊。
+對於未自動對應至Adobe Analytics的XDM資料，您可以使用[內容資料](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=zh-Hant)來比對您的[結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hant)。 然後可以使用[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=zh-Hant)將其對應至Analytics以填入Analytics變數。 內容資料與處理規則將會是過去與Analytics搭配使用時熟悉的概念，但如果是新概念，目前無需擔心詳細資訊。
 
-您也可以使用一組預設的動作和產品清單，以透過AEP Web SDK傳送或擷取資料。 若要這麼做，請參閱[產品](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection)。
+您也可以使用一組預設的動作和產品清單，以透過AEP Web SDK傳送或擷取資料。 若要這麼做，請參閱[產品](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=zh-Hant#data-collection)。
 
 ### 上下文資料
 
@@ -54,7 +54,7 @@ Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過W
 
 ### 處理規則
 
-邊緣網路收集的所有資料都可以透過[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)來存取。 在Analytics中，您可以使用處理規則將內容資料併入Analytics變數中。
+邊緣網路收集的所有資料都可以透過[處理規則](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=zh-Hant)來存取。 在Analytics中，您可以使用處理規則將內容資料併入Analytics變數中。
 
 ## Experience PlatformEdge Network上的Audience Manager
 

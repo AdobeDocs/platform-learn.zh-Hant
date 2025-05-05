@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # 使用Experience Platform保證驗證Web SDK實作
 
-Adobe Experience Platform保證功能可協助您檢查、證明、模擬及驗證您如何收集資料或提供體驗。 深入瞭解[Adobe保證](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home)。
+Adobe Experience Platform保證功能可協助您檢查、證明、模擬及驗證您如何收集資料或提供體驗。 深入瞭解[Adobe保證](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/assurance/home)。
 
 
 ## 學習目標

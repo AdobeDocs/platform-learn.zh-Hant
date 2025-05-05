@@ -48,7 +48,7 @@ Experience Platform Web SDK是使用者端的JavaScript資料庫，可讓Adobe E
    * **[!UICONTROL 屬性權利]** — 許可權&#x200B;**[!UICONTROL 核准]**、**[!UICONTROL 開發]**、**[!UICONTROL 編輯屬性]**、**[!UICONTROL 管理環境]**、**[!UICONTROL 管理擴充功能]**&#x200B;和&#x200B;**[!UICONTROL Publish]**，
    * **[!UICONTROL 公司權利]** — 使用&#x200B;**[!UICONTROL 管理屬性]**&#x200B;的許可權
 
-     如需有關標籤許可權的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions)。
+     如需有關標籤許可權的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/admin/user-permissions)。
 
 * 針對&#x200B;**Experience Platform**，您必須擁有：
 
@@ -62,13 +62,13 @@ Experience Platform Web SDK是使用者端的JavaScript資料庫，可讓Adobe E
 
      所有Experience Cloud客戶都應該可以使用所需的功能，即使您不是Real-Time CDP等平台型應用程式的客戶。
 
-     如需有關Platform存取控制的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)。
+     如需有關Platform存取控制的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home)。
 
-* 針對選用的&#x200B;**Adobe Analytics**&#x200B;課程，您必須擁有[報表套裝設定、處理規則和Analysis Workspace的管理員存取權](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
+* 針對選用的&#x200B;**Adobe Analytics**&#x200B;課程，您必須擁有[報表套裝設定、處理規則和Analysis Workspace的管理員存取權](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-console/home)
 
-* 對於選用的&#x200B;**Adobe Target**&#x200B;課程，您必須擁有[編輯者或核准者](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)存取權。
+* 對於選用的&#x200B;**Adobe Target**&#x200B;課程，您必須擁有[編輯者或核准者](https://experienceleague.adobe.com/zh-hant/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)存取權。
 
-* 對於選用的&#x200B;**Audience Manager**&#x200B;課程，您必須具有建立、讀取和寫入特徵、區段和目的地的存取權。 如需詳細資訊，請參閱[Audience Manager角色型存取控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)的教學課程。
+* 對於選用的&#x200B;**Audience Manager**&#x200B;課程，您必須具有建立、讀取和寫入特徵、區段和目的地的存取權。 如需詳細資訊，請參閱[Audience Manager角色型存取控制](https://experienceleague.adobe.com/zh-hant/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)的教學課程。
 
 
 >[!NOTE]

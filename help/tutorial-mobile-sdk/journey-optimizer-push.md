@@ -17,7 +17,7 @@ ht-degree: 1%
 
 瞭解如何使用Experience Platform Mobile SDK和Journey Optimizer為行動應用程式建立推播通知。
 
-Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在使用Journey Optimizer傳送推播通知之前，您必須確保有適當的設定和整合。 若要瞭解Journey Optimizer中的推播通知資料流程，請參閱[檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html)。
+Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在使用Journey Optimizer傳送推播通知之前，您必須確保有適當的設定和整合。 若要瞭解Journey Optimizer中的推播通知資料流程，請參閱[檔案](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html?lang=zh-Hant)。
 
 ![架構](assets/architecture-ajo.png)
 
@@ -30,7 +30,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
 * 成功建立並執行應用程式，且已安裝並設定SDK。
 * 為Adobe Experience Platform設定應用程式。
-* 如[此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en)所述，存取Journey Optimizer和足夠的許可權。 此外，您需要足夠的許可權才能使用下列Journey Optimizer功能。
+* 如[此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=zh-Hant)所述，存取Journey Optimizer和足夠的許可權。 此外，您需要足夠的許可權才能使用下列Journey Optimizer功能。
    * 建立推播認證。
    * 建立推播通道設定。
    * 建立歷程。
@@ -127,12 +127,12 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
    > 名稱必須以字母(A-Z)開頭。 它只能包含英數字元。 您也可以使用底線 `_`、點 `.` 和連字號 `-` 字元。
 
 
-1. 若要將自訂或核心資料使用標籤指派給組態，您可以選取&#x200B;**[!UICONTROL 管理存取權]**。 [進一步瞭解物件層級存取控制(OLAC)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access)。
+1. 若要將自訂或核心資料使用標籤指派給組態，您可以選取&#x200B;**[!UICONTROL 管理存取權]**。 [進一步瞭解物件層級存取控制(OLAC)](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/access-control/object-based-access)。
 
 1. 選取&#x200B;**推播**&#x200B;頻道。
 
 
-1. 選取&#x200B;**[!UICONTROL 行銷動作]**，以使用此設定將同意原則與訊息相關聯。 系統會運用與行銷動作相關的所有同意政策，以尊重客戶的偏好設定。 [進一步瞭解行銷動作](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。
+1. 選取&#x200B;**[!UICONTROL 行銷動作]**，以使用此設定將同意原則與訊息相關聯。 系統會運用與行銷動作相關的所有同意政策，以尊重客戶的偏好設定。 [進一步瞭解行銷動作](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。
 
 1. 選擇您的&#x200B;**[!UICONTROL 平台]**。
 
@@ -153,7 +153,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
    1. 如果尚未選取，請從&#x200B;**[!UICONTROL 設定檔資料集]**&#x200B;中選取&#x200B;**[!UICONTROL AJO推播設定檔資料集]**。 使用`MobileCore.setPushIdentifier` API呼叫時需要此設定檔資料集（請參閱[註冊推播通知的裝置Token](#register-device-token-for-push-notifications)），以確保推播通知的唯一識別碼（亦即推播識別碼）會儲存為使用者設定檔的一部分。
 
-   1. 已選取&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)。
+   1. 已選取&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hant#aep)。
 
    1. 若要儲存您的資料流組態，請選取&#x200B;**[!UICONTROL 儲存]**。
 
@@ -313,7 +313,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
 ### 定義事件
 
-Journey Optimizer中的事件可讓您統一觸發歷程以傳送訊息，例如推播通知。 如需詳細資訊，請參閱[關於事件](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en)。
+Journey Optimizer中的事件可讓您統一觸發歷程以傳送訊息，例如推播通知。 如需詳細資訊，請參閱[關於事件](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=zh-Hant)。
 
 1. 在Journey Optimizer UI中，從左側邊欄選取&#x200B;**[!UICONTROL 組態]**。
 

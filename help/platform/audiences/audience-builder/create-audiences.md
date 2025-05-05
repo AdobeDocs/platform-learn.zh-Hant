@@ -16,7 +16,7 @@ ht-degree: 5%
 
 # 建立對象
 
-瞭解如何在Adobe Experience Platform中建立受眾。 建立受眾規則，並將其套用至您的即時客戶設定檔，以產生可強化客戶體驗的受眾。 如需詳細的產品檔案，請參閱[在UI中建立區段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hant)以及[使用API建立區段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html)。
+瞭解如何在Adobe Experience Platform中建立受眾。 建立受眾規則，並將其套用至您的即時客戶設定檔，以產生可強化客戶體驗的受眾。 如需詳細的產品檔案，請參閱[在UI中建立區段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hant)以及[使用API建立區段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

@@ -43,9 +43,9 @@ _使用標籤在網站中實作Experience Cloud_&#x200B;是想要瞭解如何在
 >
 >Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
 >
-> * platform launch（使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * platform launch伺服器端現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * platform launch（使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)**
+> * platform launch伺服器端現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)**
+> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hant)**
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ _使用標籤在網站中實作Experience Cloud_&#x200B;是想要瞭解如何在
 
 這些課程假設您擁有 Adobe ID 和完成練習所需的權限。如果不具備上述條件，您可能需要聯絡您的 Experience Cloud 管理員以請求存取權限。
 
-* 針對標籤，您必須擁有開發、核准、Publish、管理擴充功能及管理環境的許可權。 如需有關標籤使用者許可權的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)。
+* 針對標籤，您必須擁有開發、核准、Publish、管理擴充功能及管理環境的許可權。 如需有關標籤使用者許可權的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hant)。
 * 針對 Adobe Analytics，您必須知道您的追蹤伺服器，以及您將使用哪些報表套裝來完成本教學課程
 * 若要Audience Manager，您必須知道您的Audience Manager子網域（也稱為「合作夥伴名稱」、「合作夥伴ID」或「合作夥伴子網域」）
 
@@ -125,7 +125,7 @@ Adobe Experience Platform的標籤功能是新一代Adobe的網站標籤與行�
    <body>
        <h1>Tags: Sample HTML Page</h1>
        <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-       <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+       <p>See <a href="https://docs.adobe.com/content/help/zh-Hant/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
    </body>
    </html>
    ```

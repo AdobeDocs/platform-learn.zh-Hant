@@ -42,4 +42,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您的Tags屬性現在已具備網頁SDK擴充功能的基本安裝和設定。 在本移轉教學課程中，我們建立或修改資料元素和規則時，將會使用部分Web SDK擴充功能，但不會變更教學課程中的其他擴充功能設定專案。 其他設定專案可以也應該用於其他使用案例。 如需有關這些設定的詳細檔案，請參閱[設定Web SDK標籤擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
+>您的Tags屬性現在已具備網頁SDK擴充功能的基本安裝和設定。 在本移轉教學課程中，我們建立或修改資料元素和規則時，將會使用部分Web SDK擴充功能，但不會變更教學課程中的其他擴充功能設定專案。 其他設定專案可以也應該用於其他使用案例。 如需有關這些設定的詳細檔案，請參閱[設定Web SDK標籤擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。

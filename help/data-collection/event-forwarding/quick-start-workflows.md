@@ -22,6 +22,6 @@ ht-degree: 1%
 1. 使用工作流程建立參照物件。 
 1. 將參照物件複製到現有的實作中。
 
-如需Meta Conversions API快速入門工作流程的詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=en#quick-start)。
+如需Meta Conversions API快速入門工作流程的詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=zh-Hant#quick-start)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on&enablevpops)

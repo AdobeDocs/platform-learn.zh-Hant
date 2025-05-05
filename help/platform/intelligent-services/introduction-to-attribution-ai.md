@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Attribution AI簡介
 
-行銷人員和分析師如何使用Attribution AI的高層級概觀，以瞭解其行銷管道和行銷活動的影響。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)。
+行銷人員和分析師如何使用Attribution AI的高層級概觀，以瞭解其行銷管道和行銷活動的影響。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on&enablevpops)

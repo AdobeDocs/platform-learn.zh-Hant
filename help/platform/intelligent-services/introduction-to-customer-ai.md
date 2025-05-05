@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Customer AI簡介
 
-行銷人員如何使用Customer AI產生客戶預測的高層級概觀。 如需詳細資訊，請瀏覽[Customer AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)。
+行銷人員如何使用Customer AI產生客戶預測的高層級概觀。 如需詳細資訊，請瀏覽[Customer AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on&enablevpops)

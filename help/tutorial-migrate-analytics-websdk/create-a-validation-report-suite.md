@@ -35,5 +35,5 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如需建立報表套裝的影片逐步解說，請參閱[瞭解及建立報表套裝](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}。
+>如需建立報表套裝的影片逐步解說，請參閱[瞭解及建立報表套裝](https://experienceleague.adobe.com/zh-hant/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}。
 

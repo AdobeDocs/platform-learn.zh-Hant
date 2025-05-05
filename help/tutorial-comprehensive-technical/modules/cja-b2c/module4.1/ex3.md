@@ -108,7 +108,7 @@ ht-degree: 3%
 
 如果您不變更這些設定，CJA會將維度解譯為&#x200B;**Prop** （點選層級）。 此外，我們也可以變更持續性，讓維度成為&#x200B;**eVar** （在整個歷程中持續儲存值）。
 
-如果您不熟悉eVar和Prop，可以[在檔案](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)中進一步瞭解它們。
+如果您不熟悉eVar和Prop，可以[在檔案](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=zh-Hant)中進一步瞭解它們。
 
 讓「頁面名稱」保持為Prop。 因此，您不需要變更任何&#x200B;**持續性設定**。
 

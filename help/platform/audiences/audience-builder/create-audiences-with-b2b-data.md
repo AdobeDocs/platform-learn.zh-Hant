@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 為[!DNL B2B]和[!DNL B2P]建立並啟用帳戶對象
 
-瞭解[!DNL Real-Time Customer Data Platform]的[!DNL B2B]和[!DNL B2P]版中的Account-Based Marketing功能，包括建立和啟用帳戶對象。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html)。
+瞭解[!DNL Real-Time Customer Data Platform]的[!DNL B2B]和[!DNL B2P]版中的Account-Based Marketing功能，包括建立和啟用帳戶對象。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on&enablevpops)
 

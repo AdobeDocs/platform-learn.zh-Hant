@@ -89,7 +89,7 @@ ht-degree: 1%
 
 只要人員ID欄位中的值對應，人員ID欄位的名稱就不重要。 例如，如果人員ID在一個資料集中是`email`，在另一個資料集中是`emailAddress`，且兩個資料集中人員ID欄位的`dnb-bootcamp@adobe.com`值相同，則CJA將能夠拼接資料。
 
-目前有一些其他限制，例如拼接已知匿名行為。 請在此檢閱常見問題集： [常見問題集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html)。
+目前有一些其他限制，例如拼接已知匿名行為。 請在此檢閱常見問題集： [常見問題集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hant)。
 
 ### 使用人員ID彙整資料
 

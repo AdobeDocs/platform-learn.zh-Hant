@@ -39,7 +39,7 @@ Adobe具備AI/ML專業知識以及深入的CXM經驗，而Intelligent Services�
 
 ## 看看這個
 
-- Intelligent Services概述： [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en)
+- Intelligent Services概述： [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=zh-Hant](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=zh-Hant)
 
 ## 後續步驟
 

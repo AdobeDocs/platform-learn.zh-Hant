@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 對象規則產生器概觀
 
-取得Experience Platform中對象規則產生器的簡介，包括對象的建置區塊、使用者介面，以及開始建立對象規則的一些秘訣。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+取得Experience Platform中對象規則產生器的簡介，包括對象的建置區塊、使用者介面，以及開始建立對象規則的一些秘訣。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

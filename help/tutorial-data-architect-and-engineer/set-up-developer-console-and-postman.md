@@ -189,7 +189,7 @@ Adobe提供了一組豐富的[!DNL Postman]集合，可幫助您探索Experience
 1. 將其匯入[!DNL Postman]
 1. 開啟&#x200B;**結構描述登入API >結構描述>清單結構描述**
 1. 檢視&#x200B;**Params**&#x200B;和&#x200B;**Headers**&#x200B;標籤，並注意它們如何包含我們先前輸入的一些環境變數。
-1. 請注意，**Headers > Accept值欄位**&#x200B;已設定為`application/vnd.adobe.xed-id+json`。 結構描述登入API需要這些[指定的Accept標頭值](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept)之一，這些值在回應中提供不同的格式。
+1. 請注意，**Headers > Accept值欄位**&#x200B;已設定為`application/vnd.adobe.xed-id+json`。 結構描述登入API需要這些[指定的Accept標頭值](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=zh-Hant#accept)之一，這些值在回應中提供不同的格式。
 1. 選取&#x200B;**傳送**&#x200B;以進行您的第一個Platform API呼叫！
 
 希望您得到成功的`200 OK`回應，其中包含沙箱中可用Adobe提供的XDM結構描述清單，如下圖所示。

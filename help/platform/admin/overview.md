@@ -25,7 +25,7 @@ ht-degree: 26%
 * add-developers.md{title=Add developers}
 * add-product-administrators.md{title=Add administrators}
 * configure-attribute-based-access-control.md
-* https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions{title=Add users to Data Collection}
+* https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/users-and-permissions{title=Add users to Data Collection}
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -125,7 +125,7 @@ ht-degree: 26%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" title="將使用者新增至資料收集" target="_blank" rel="referrer">
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/users-and-permissions" title="將使用者新增至資料收集" target="_blank" rel="referrer">
                         <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="將使用者新增至資料收集"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
@@ -134,11 +134,11 @@ ht-degree: 26%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" title="將使用者新增至資料收集">新增使用者至資料彙集</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" title="將使用者新增至資料收集">新增使用者至資料彙集</a>
                     </p>
                     <p class="is-size-6">瞭解如何新增使用者並管理Adobe Experience Platform資料收集功能的許可權，以便您公司的員工擁有執行工作所需的存取權。</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/users-and-permissions" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
                 </a>
             </div>
@@ -233,7 +233,7 @@ ht-degree: 26%
 ## 授權使用情況
 
 <!-- CARDS
-* https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard
+* https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/license/license-usage-dashboard
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -241,8 +241,8 @@ ht-degree: 26%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" title="授權使用情況儀表板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard./media_15ebe5d6a87c210826e7502ba8402e61caa4a8ec8.png?width=400&format=png&optimize=medium" alt="授權使用情況儀表板"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/license/license-usage-dashboard" title="授權使用情況儀表板" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/license/license-usage-dashboard./media_15ebe5d6a87c210826e7502ba8402e61caa4a8ec8.png?width=400&format=png&optimize=medium" alt="授權使用情況儀表板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -250,11 +250,11 @@ ht-degree: 26%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" title="授權使用情況儀表板">授權使用量儀表板</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" title="授權使用情況儀表板">授權使用量儀表板</a>
                     </p>
                     <p class="is-size-6">Adobe Experience Platform UI提供控制面板，讓您檢視有關組織授權使用的重要資訊。</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/experience-platform/landing/license/license-usage-dashboard" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
                 </a>
             </div>
@@ -300,7 +300,7 @@ ht-degree: 26%
 ## 標記
 
 <!-- CARDS
-* https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags
+* https://experienceleague.adobe.com/zh-hant/docs/experience-platform/administrative-tags/ui/managing-tags
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -308,8 +308,8 @@ ht-degree: 26%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" title="管理統一標記" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags./media_14b5a89a9bf89cb36a9e78864b1568e59c9d9d86b.png?width=400&format=png&optimize=medium" alt="管理統一標記"
+                    <a href="https://experienceleague.adobe.com/zh-hant/docs/experience-platform/administrative-tags/ui/managing-tags" title="管理統一標記" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://experienceleague.adobe.com/zh-hant/docs/experience-platform/administrative-tags/ui/managing-tags./media_14b5a89a9bf89cb36a9e78864b1568e59c9d9d86b.png?width=400&format=png&optimize=medium" alt="管理統一標記"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -317,11 +317,11 @@ ht-degree: 26%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" title="管理統一標記">管理統一標籤</a>
+                        <a href="https://experienceleague.adobe.com/zh-hant/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" title="管理統一標記">管理統一標籤</a>
                     </p>
                     <p class="is-size-6">本文件會提供有關如何在 Adob​​e Experience Cloud 中管理統一標記的資訊</p>
                 </div>
-                <a href="https://experienceleague.adobe.com/en/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="https://experienceleague.adobe.com/zh-hant/docs/experience-platform/administrative-tags/ui/managing-tags" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
                 </a>
             </div>

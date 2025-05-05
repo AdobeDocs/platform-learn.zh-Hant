@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # AI Assistant的安全性概觀
 
-這是根據<a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf">安全性情況說明書</a>的AI小幫手安全性功能概觀。  如需其他資訊，請參閱[AI助理隱私權檔案](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/privacy)。
+這是根據<a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf">安全性情況說明書</a>的AI小幫手安全性功能概觀。  如需其他資訊，請參閱[AI助理隱私權檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/privacy)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441066/?learn=on&enablevpops)

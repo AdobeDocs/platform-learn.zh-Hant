@@ -13,11 +13,11 @@ ht-degree: 0%
 
 從at.js移轉至Platform Web SDK時，必須進行初始設定，才能啟用Platform Web SDK的正確資料擷取、特色和功能。 必須先完成[Platform Web SDK實作教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant)中的下列步驟，才能進行任何網站實作變更：
 
-- [在Adobe Admin Console中為資料收集設定適當的許可權](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"}
-- [設定XDM結構描述](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html){target="_blank"}，以將結構化資料傳遞至Edge Network
-- [設定身分名稱空間](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html){target="_blank"}，以使用跨裝置個人化和mbox3rdPartyId功能
-- [建立資料串流](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html){target="_blank"}以啟用從Edge Network轉送資料
-- [設定資料串流](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html#configure-the-datastream){target="_blank"}以啟用將資料轉送至Adobe Target的功能
+- [在Adobe Admin Console中為資料收集設定適當的許可權](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"}
+- [設定XDM結構描述](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html?lang=zh-Hant){target="_blank"}，以將結構化資料傳遞至Edge Network
+- [設定身分名稱空間](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html?lang=zh-Hant){target="_blank"}，以使用跨裝置個人化和mbox3rdPartyId功能
+- [建立資料串流](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html?lang=zh-Hant){target="_blank"}以啟用從Edge Network轉送資料
+- [設定資料串流](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=zh-Hant#configure-the-datastream){target="_blank"}以啟用將資料轉送至Adobe Target的功能
 
 >[!CAUTION]
 >

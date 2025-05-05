@@ -15,7 +15,7 @@ ht-degree: 5%
 
 了解如何在 Experience Platform 中建立資料流。
 
-資料串流是PlatformEdge Network上的伺服器端設定。 資料流可確保將傳入PlatformEdge Network的資料正確路由至Adobe Experience Cloud應用程式和服務。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)或此[影片](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html)。
+資料串流是PlatformEdge Network上的伺服器端設定。 資料流可確保將傳入PlatformEdge Network的資料正確路由至Adobe Experience Cloud應用程式和服務。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hant)或此[影片](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=zh-Hant)。
 
 ![架構](assets/architecture.png)
 
@@ -102,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->啟用貴組織使用的每項服務，可確保行動應用程式中收集的資料能夠用於任何地方。 如需有關資料流設定的詳細資訊，請在[這裡](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html)檢閱檔案。
+>啟用貴組織使用的每項服務，可確保行動應用程式中收集的資料能夠用於任何地方。 如需有關資料流設定的詳細資訊，請在[這裡](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hant)檢閱檔案。
 
 在您自己的應用程式中實作Platform Mobile SDK時，您最終應建立三個資料串流以對應至您的三個標籤環境（開發、預備和生產）。 如果您使用Platform Mobile SDK搭配Adobe Real-time Customer Data Platform或Adobe Journey Optimizer等平台式應用程式，請務必在適當的沙箱中建立這些資料串流。
 

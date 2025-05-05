@@ -20,7 +20,7 @@ ht-degree: 2%
 ## 很高興知道
 
 Adobe Experience Platform支援以各種Amazon服務作為目的地。
-Kinesis和S3都是[設定檔匯出目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en)，可以當作Adobe Experience PlatformReal-Time CDP的一部分使用。
+Kinesis和S3都是[設定檔匯出目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=zh-Hant)，可以當作Adobe Experience PlatformReal-Time CDP的一部分使用。
 您可以輕鬆地將高價值區段事件和相關設定檔屬性饋送至您選擇的系統。
 
 在本練習中，您將瞭解如何設定自己的Amazon Kinesis串流，以將來自Adobe Experience Platform Edge生態系統的事件資料串流到雲端儲存目的地，例如Amazon S3。 如果您想要從Web和行動屬性收集體驗事件，並將它們推送至您的資料集，以便進行分析和作業報告，這個用法很有用。 資料層級通常會在每日匯入大量檔案時，以批次方式擷取資料，不會公開公開http端點（可搭配事件轉送使用）。

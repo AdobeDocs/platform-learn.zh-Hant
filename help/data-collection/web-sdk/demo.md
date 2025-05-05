@@ -18,7 +18,7 @@ ht-degree: 61%
 
 # Adobe Experience Platform Web SDK 與 Edge Network 示範
 
-觀看Adobe Experience Platform Web SDK和Edge Network的實際運作概況，瞭解其如何透過呼叫Adobe，將資料傳送至Experience Platform、Analytics、Audience Manager和Target。 如需詳細資訊，請瀏覽[Adobe Experience Platform Web SDK檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)。
+觀看Adobe Experience Platform Web SDK和Edge Network的實際運作概況，瞭解其如何透過呼叫Adobe，將資料傳送至Experience Platform、Analytics、Audience Manager和Target。 如需詳細資訊，請瀏覽[Adobe Experience Platform Web SDK檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on&enablevpops)
 

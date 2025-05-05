@@ -113,7 +113,7 @@ Platform Web SDK提供單一一致的方式來傳送資料，而不需要額外�
 
 | at.js引數範例 | Platform Web SDK選項 | 附註 |
 | --- | --- | --- |
-| `at_property` | 不適用 | 屬性Token是在[資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target)中設定，無法在`sendEvent`呼叫中設定。 |
+| `at_property` | 不適用 | 屬性Token是在[資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hant#target)中設定，無法在`sendEvent`呼叫中設定。 |
 | `pageName` | `xdm.web.webPageDetails.name` | 所有Target mbox引數都必須作為`xdm`物件的一部分傳遞，並符合使用XDM ExperienceEvent類別的結構描述。 Mbox引數無法當作`data`物件的一部分傳遞。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 所有Target設定檔引數都必須作為`data`物件的一部分傳遞，且前置詞為`profile.`才能正確對應。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | 用於目標類別相關性功能的保留引數，必須作為`data`物件的一部分傳遞。 |
@@ -122,11 +122,11 @@ Platform Web SDK提供單一一致的方式來傳送資料，而不需要額外�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自訂實體引數可用來更新Recommendations產品目錄。 這些自訂引數必須作為`data`物件的一部分傳遞。 |
 | `cartIds` | `data.__adobe.target.cartIds` | 用於Target的購物車型建議演演算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用來防止特定實體ID在建議設計中傳回。 |
-| `mbox3rdPartyId` | 在`xdm.identityMap`物件中設定 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在資料流[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html)的Target設定中指定用於客戶ID的名稱空間。 |
+| `mbox3rdPartyId` | 在`xdm.identityMap`物件中設定 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在資料流[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html?lang=zh-Hant)的Target設定中指定用於客戶ID的名稱空間。 |
 | `orderId` | `xdm.commerce.order.purchaseID` | 用於識別Target轉換追蹤的唯一訂單。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | 用於追蹤Target轉換和最佳化目標的訂單總計。 |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>或<br> `xdm.productListItems[0-n].SKU` | 用於Target轉換追蹤和建議演演算法。 如需詳細資訊，請參閱下方的[實體引數](#entity-parameters)區段。 |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | 用於[自訂評分](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html)活動目標。 |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | 用於[自訂評分](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html?lang=zh-Hant)活動目標。 |
 
 {style="table-layout:auto"}
 
@@ -169,7 +169,7 @@ alloy("sendEvent", {
 
 ![對應到XDM物件資料元素中的XDM欄位](assets/params-tags-pageName.png){zoomable="yes"}
 
-然後將您的[!UICONTROL XDM物件]加入您的[!UICONTROL 傳送事件] [!UICONTROL 動作] （多個[!UICONTROL XDM物件]可以[合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)）：
+然後將您的[!UICONTROL XDM物件]加入您的[!UICONTROL 傳送事件] [!UICONTROL 動作] （多個[!UICONTROL XDM物件]可以[合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=zh-Hant#merged-objects)）：
 
 ![在傳送事件中包含XDM物件資料元素](assets/params-tags-sendEvent.png){zoomable="yes"}
 
@@ -223,7 +223,7 @@ alloy("sendEvent", {
 
 ![在資料元素中定義您的資料物件](assets/params-tags-dataObject.png){zoomable="yes"}
 
-然後將您的資料物件加入您的[!UICONTROL 傳送事件] [!UICONTROL 動作] （多個[!UICONTROL 物件]可以[合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)）：
+然後將您的資料物件加入您的[!UICONTROL 傳送事件] [!UICONTROL 動作] （多個[!UICONTROL 物件]可以[合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=zh-Hant#merged-objects)）：
 
 ![在傳送事件中包含資料物件](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -231,7 +231,7 @@ alloy("sendEvent", {
 
 ## 實體引數
 
-實體引數可用來傳遞行為資料和Target Recommendations的補充目錄資訊。 at.js支援的所有[實體引數](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html)也受Platform Web SDK支援。 與設定檔引數類似，所有實體引數都應在Platform Web SDK `sendEvent`命令承載中的`data.__adobe.target`物件下傳遞。
+實體引數可用來傳遞行為資料和Target Recommendations的補充目錄資訊。 at.js支援的所有[實體引數](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=zh-Hant)也受Platform Web SDK支援。 與設定檔引數類似，所有實體引數都應在Platform Web SDK `sendEvent`命令承載中的`data.__adobe.target`物件下傳遞。
 
 特定專案的實體引數必須以`entity.`為前置詞，才能正確擷取資料。 建議演演算法的保留`cartIds`和`excludedIds`引數不應加上前置詞，而且每個引數的值都必須包含以逗號分隔的實體ID清單。
 
@@ -277,7 +277,7 @@ alloy("sendEvent", {
 
 ![在資料元素中定義您的資料物件](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
-然後將您的資料物件加入您的[!UICONTROL 傳送事件] [!UICONTROL 動作] （多個[!UICONTROL 物件]可以[合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)）：
+然後將您的資料物件加入您的[!UICONTROL 傳送事件] [!UICONTROL 動作] （多個[!UICONTROL 物件]可以[合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=zh-Hant#merged-objects)）：
 
 ![在傳送事件中包含資料物件](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
@@ -349,7 +349,7 @@ alloy("sendEvent", {
 
 ![對應到XDM物件資料元素中的XDM欄位](assets/params-tags-purchase.png){zoomable="yes"}
 
-然後將您的[!UICONTROL XDM物件]加入您的[!UICONTROL 傳送事件] [!UICONTROL 動作] （多個[!UICONTROL XDM物件]可以[合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)）：
+然後將您的[!UICONTROL XDM物件]加入您的[!UICONTROL 傳送事件] [!UICONTROL 動作] （多個[!UICONTROL XDM物件]可以[合併](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=zh-Hant#merged-objects)）：
 
 ![在傳送事件中包含XDM物件資料元素](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
 

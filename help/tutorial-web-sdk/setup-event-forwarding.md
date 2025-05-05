@@ -15,7 +15,7 @@ ht-degree: 3%
 
 了解如何將事件轉送與 Adob&#x200B;&#x200B;e Experience Platform Web SDK 資料一起使用。
 
-事件轉寄是「資料收集」中可用的全新屬性型別。 事件轉送可讓您直接從Adobe Experience PlatformEdge Network傳送資料給第三方非Adobe廠商，而非傳統的使用者端瀏覽器。 在[事件轉送概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)中進一步瞭解事件轉送的優點。
+事件轉寄是「資料收集」中可用的全新屬性型別。 事件轉送可讓您直接從Adobe Experience PlatformEdge Network傳送資料給第三方非Adobe廠商，而非傳統的使用者端瀏覽器。 在[事件轉送概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/overview)中進一步瞭解事件轉送的優點。
 
 
 ![Web SDK和事件轉送圖表](assets/dc-websdk-eventforwarding.png)
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/zh-hant/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]

@@ -20,6 +20,6 @@ ht-degree: 0%
 
 瞭解如何設定連線，並使用雲端服務目標匯出資料集的工作流程。 也涵蓋此功能的好處和使用案例。
 
-如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)。
+如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/export-datasets)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)

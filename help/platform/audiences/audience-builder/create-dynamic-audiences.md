@@ -16,7 +16,7 @@ ht-degree: 7%
 
 # 建立動態客群
 
-動態受眾是Adobe Experience Platform中的進階細分功能，可解決行銷人員在建立行銷活動受眾時傳統上面臨的可擴充性問題。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+動態受眾是Adobe Experience Platform中的進階細分功能，可解決行銷人員在建立行銷活動受眾時傳統上面臨的可擴充性問題。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hant)。
 
 >[!NOTE]
 >

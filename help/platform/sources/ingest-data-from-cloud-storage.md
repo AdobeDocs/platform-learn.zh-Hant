@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 使用雲端儲存空間來源聯結器擷取資料
 
-此影片說明如何以順暢且可擴充的方式輕鬆地將雲端儲存空間服務中的資料批次擷取到Adobe Experience Platform的Real-Time Customer Profile和Data Lake。 如需更詳細的產品檔案，請參閱Source聯結器總覽頁面上的[雲端儲存空間](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#cloud-storage)或[Amazon S3來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)。
+此影片說明如何以順暢且可擴充的方式輕鬆地將雲端儲存空間服務中的資料批次擷取到Adobe Experience Platform的Real-Time Customer Profile和Data Lake。 如需更詳細的產品檔案，請參閱Source聯結器總覽頁面上的[雲端儲存空間](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant#cloud-storage)或[Amazon S3來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29695?learn=on&enablevpops)

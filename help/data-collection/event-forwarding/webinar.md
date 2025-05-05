@@ -14,6 +14,6 @@ ht-degree: 0%
 
 # 網路研討會：使用事件轉送解除鎖定您的行銷資料
 
-瞭解Adobe Experience Platform中的事件轉送使用案例和功能，例如管理對第三方目標的轉換API呼叫，以及將事件資料傳送至您的資料倉儲。 如需詳細資訊，請瀏覽[事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)。
+瞭解Adobe Experience Platform中的事件轉送使用案例和功能，例如管理對第三方目標的轉換API呼叫，以及將事件資料傳送至您的資料倉儲。 如需詳細資訊，請瀏覽[事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3434936?learn=on&enablevpops)

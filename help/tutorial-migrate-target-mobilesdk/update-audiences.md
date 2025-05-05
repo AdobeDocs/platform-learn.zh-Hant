@@ -55,11 +55,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-如需詳細資訊和最佳實務，請參閱關於[個人資料指令碼](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/profile-parameters)的專屬檔案。
+如需詳細資訊和最佳實務，請參閱關於[個人資料指令碼](https://experienceleague.adobe.com/zh-hant/docs/target/using/audiences/visitor-profiles/profile-parameters)的專屬檔案。
 
 ## 更新動態內容的引數權杖
 
-如果您將mbox引數移轉至`xdm`物件，而且您有任何使用[動態內容取代](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer)的選件、建議設計或活動，則可能需要相應更新以納入新的XDM引數名稱。
+如果您將mbox引數移轉至`xdm`物件，而且您有任何使用[動態內容取代](https://experienceleague.adobe.com/zh-hant/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer)的選件、建議設計或活動，則可能需要相應更新以納入新的XDM引數名稱。
 
 根據您使用Token取代mbox引數的方式，您或許可以增強現有設定，以處理舊引數名稱和新引數名稱。 但是，在無法執行自訂JavaScript程式碼的情況下（例如在JSON選件中），您應在移轉完成並在生產網站上即時後，建立復本和進行更新。
 

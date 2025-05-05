@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # 設定Marketo目的地
 
-瞭解如何在Adobe Experience Platform中設定Marketo目的地，以便對Marketo Engage執行個體啟用平台區段。 如需詳細資訊，請參閱[設定檔檔案](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html)。
+瞭解如何在Adobe Experience Platform中設定Marketo目的地，以便對Marketo Engage執行個體啟用平台區段。 如需詳細資訊，請參閱[設定檔檔案](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
 

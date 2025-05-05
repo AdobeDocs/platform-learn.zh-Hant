@@ -17,7 +17,7 @@ ht-degree: 0%
 
 在本練習中，您將建立&#x200B;**資料串流**。 **資料串流**&#x200B;會通知Adobe Edge Network伺服器，在Web SDK收集資料後，應將資料傳送至何處。 例如，您要將資料傳送至Adobe Experience Platform嗎？ Adobe Analytics？ Adobe Audience Manager？ Adobe Target？
 
-資料串流一律在Experience Platform資料收集使用者介面中進行管理，對於透過[網頁SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)Experience Platform資料收集至關重要。 即使您使用非Adobe標籤管理解決方案實作網頁SDK，仍需要建立資料流。
+資料串流一律在Experience Platform資料收集使用者介面中進行管理，對於透過[網頁SDK](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/home)Experience Platform資料收集至關重要。 即使您使用非Adobe標籤管理解決方案實作網頁SDK，仍需要建立資料流。
 
 在下一個練習中，您將在瀏覽器上實作Web SDK。 然後您會更清楚知道正在收集的資料是什麼樣子。 目前，我們只是告訴資料流將資料轉送至何處。
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 您在[快速入門](./../../../modules/gettingstarted/gettingstarted/ex2.md)中已建立資料流，但我們並未討論您建立資料流的背景和原因。
 
-[資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)會通知Edge Network伺服器，在網頁SDK收集資料後，要將資料傳送至何處。 如需透過資料流傳送資料的完整詳細資訊，請參閱[新增服務至資料流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services)的檔案。
+[資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overview)會通知Edge Network伺服器，在網頁SDK收集資料後，要將資料傳送至何處。 如需透過資料流傳送資料的完整詳細資訊，請參閱[新增服務至資料流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure#add-services)的檔案。
 
 資料串流在Experience Platform資料收集使用者介面中管理，且對於透過Web SDK進行資料收集至關重要，無論您是否透過Adobe Experience Platform資料收集實作Web SDK。
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 - 依預設，所有設定檔資料都會收集到資料集&#x200B;**示範系統 — 網站的設定檔資料集（全域v1.1）** (Web SDK目前尚不支援以原生方式擷取Web SDK的設定檔資料)
 - 如果您要針對此資料流使用&#x200B;**Offer decisioning**&#x200B;應用程式服務，您必須勾選Offer decisioning方塊。 （這將是[模組3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md)的一部分）
 - **Edge分段**&#x200B;預設為啟用，這表示在擷取傳入流量時，將會在邊緣評估合格對象
-- 若要使用[個人化目的地](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview)，請勾選&#x200B;**Personalization目的地**&#x200B;的方塊。
+- 若要使用[個人化目的地](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/personalization/overview)，請勾選&#x200B;**Personalization目的地**&#x200B;的方塊。
 - 若要在此資料流中使用&#x200B;**Adobe Journey Optimizer**&#x200B;的功能，您必須勾選&#x200B;**Adobe Journey Optimizer**&#x200B;的方塊。
 
 

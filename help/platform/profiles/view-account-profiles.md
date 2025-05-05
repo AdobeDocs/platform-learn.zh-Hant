@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 檢視帳戶設定檔
 
-瞭解如何在Real-Time Customer Data Platform、B2B edition和Adobe Experience Platform中檢視帳戶設定檔和機會。 如需詳細資訊，請參閱[設定檔檔案](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html)。
+瞭解如何在Real-Time Customer Data Platform、B2B edition和Adobe Experience Platform中檢視帳戶設定檔和機會。 如需詳細資訊，請參閱[設定檔檔案](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338251?learn=on&enablevpops)
 

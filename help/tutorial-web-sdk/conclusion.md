@@ -35,11 +35,11 @@ ht-degree: 3%
 而且永遠有更多的東西需要學習！ 以下是其他內容的一些建議，這些建議會在您的實作上建置：
 
 
-* **在Journey Optimizer中觸發歷程**。 您在Luma網站中實作的事件可用於觸發歷程。 在此[影片教學課程](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey)中瞭解更多。
-* **連線Customer Journey Analytics**。 如果您已建立[Platform資料集](setup-experience-platform.md)，您可以將資料集連線至Customer Journey Analytics。 在此[教學課程影片中瞭解更多](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform)
-* **在Platform**&#x200B;中建立區段。 如果您為Real-time Customer Profile[&#128279;](setup-experience-platform.md)啟用了結構描述和資料集，則可以根據您的Web事件建立區段，然後將這些區段傳送到Real-time Customer Data Platform中的目的地。 在此[影片教學課程](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/audiences/create-audiences)中進一步瞭解區段產生器。
-* **實作Platform Mobile SDK**。 現在您已精通一個SDK，請瞭解另一個！ Adobe Experience Platform Mobile SDK可用來支援行動應用程式上的Experience Cloud和第三方服務。 Mobile SDK[&#128279;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)有類似的實作教學課程。 完成兩者並檢視跨裝置的設定檔合併！
-* **進一步瞭解Experience Platform**。 在[資料架構師和資料工程師的Adobe Experience Platform快速入門](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)中瞭解如何從其他來源擷取資料
+* **在Journey Optimizer中觸發歷程**。 您在Luma網站中實作的事件可用於觸發歷程。 在此[影片教學課程](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey)中瞭解更多。
+* **連線Customer Journey Analytics**。 如果您已建立[Platform資料集](setup-experience-platform.md)，您可以將資料集連線至Customer Journey Analytics。 在此[教學課程影片中瞭解更多](https://experienceleague.adobe.com/zh-hant/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform)
+* **在Platform**&#x200B;中建立區段。 如果您為Real-time Customer Profile[&#128279;](setup-experience-platform.md)啟用了結構描述和資料集，則可以根據您的Web事件建立區段，然後將這些區段傳送到Real-time Customer Data Platform中的目的地。 在此[影片教學課程](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/audiences/create-audiences)中進一步瞭解區段產生器。
+* **實作Platform Mobile SDK**。 現在您已精通一個SDK，請瞭解另一個！ Adobe Experience Platform Mobile SDK可用來支援行動應用程式上的Experience Cloud和第三方服務。 Mobile SDK[&#128279;](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-mobile-sdk/overview)有類似的實作教學課程。 完成兩者並檢視跨裝置的設定檔合併！
+* **進一步瞭解Experience Platform**。 在[資料架構師和資料工程師的Adobe Experience Platform快速入門](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)中瞭解如何從其他來源擷取資料
 
 
 >[!NOTE]

@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 建立目的地並啟用資料
 
-瞭解如何在Adobe的Real-Time Customer Data Platform中建立目的地和啟用資料。 如需更詳細的產品檔案，請參閱[將設定檔和區段啟用至目的地](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)、[如何連線目的地](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)以及[連線至串流目的地並使用API啟用資料](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html)。
+瞭解如何在Adobe的Real-Time Customer Data Platform中建立目的地和啟用資料。 如需更詳細的產品檔案，請參閱[將設定檔和區段啟用至目的地](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html?lang=zh-Hant)、[如何連線目的地](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html?lang=zh-Hant)以及[連線至串流目的地並使用API啟用資料](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29710?learn=on&enablevpops)
 

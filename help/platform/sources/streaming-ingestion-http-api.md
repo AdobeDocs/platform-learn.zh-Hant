@@ -21,7 +21,7 @@ ht-degree: 42%
 
 ## 其他資訊
 
-* [使用API API檔案建立串流連線](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html)。
-* [使用串流擷取API檔案串流記錄資料](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
-* [使用串流擷取API檔案串流時間序列資料](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
-* [在單一HTTP要求檔案中傳送多則訊息](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
+* [使用API API檔案建立串流連線](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html?lang=zh-Hant)。
+* [使用串流擷取API檔案串流記錄資料](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html?lang=zh-Hant)
+* [使用串流擷取API檔案串流時間序列資料](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html?lang=zh-Hant)
+* [在單一HTTP要求檔案中傳送多則訊息](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html?lang=zh-Hant)

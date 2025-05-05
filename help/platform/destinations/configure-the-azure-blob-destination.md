@@ -20,7 +20,7 @@ ht-degree: 0%
 
 瞭解如何在Real-Time Customer Data Platform中設定連線並傳送資料至Azure Blob儲存體目的地。 此目的地支援匯出資料集和受眾，並可讓您自訂檔案標題和資料屬性。
 
-如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)。
+如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
 

@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 建立循序受眾
 
-在本影片中，瞭解如何將體驗事件新增至對象中的時間軸，以建立在一定時間內已依特定順序執行動作的對象。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+在本影片中，瞭解如何將體驗事件新增至對象中的時間軸，以建立在一定時間內已依特定順序執行動作的對象。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hant)。
 
 >[!NOTE]
 >
