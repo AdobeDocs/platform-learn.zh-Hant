@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 使用IAB TCF 2.0標準設定同意
 
-瞭解如何使用Adobe Experience Platform Web SDK根據IAB TCF 2.0標準設定同意值。 如需詳細資訊，請參閱有關Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html)中[IAB FCF 2.0支援的檔案。
+瞭解如何使用Adobe Experience Platform Web SDK根據IAB TCF 2.0標準設定同意值。 如需詳細資訊，請參閱有關Platform[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html)中IAB FCF 2.0支援的檔案。
 
 >[!NOTE]
 >

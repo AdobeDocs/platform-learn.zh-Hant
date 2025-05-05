@@ -60,7 +60,7 @@ Visual Studio Code可讓您輕鬆……
 
 ![3-05-vsc-create-project.png](./images/vsc2.png)
 
-選取或建立您選擇的本機資料夾以儲存專案，然後按一下[選取] ****：
+選取或建立您選擇的本機資料夾以儲存專案，然後按一下[選取] **&#x200B;**：
 
 ![3-06-vsc-select-folder.png](./images/vsc3.png)
 
@@ -182,7 +182,7 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 
 ![3-17-vsc-run-project.png](./images/vsc14.png)
 
-第一次以偵錯模式執行專案時，您必須附加Azure儲存體帳戶，請按一下[選取儲存體帳戶]。****
+第一次以偵錯模式執行專案時，您必須附加Azure儲存體帳戶，請按一下[選取儲存體帳戶]。**&#x200B;**
 
 ![3-17-vsc-run-project.png](./images/vsc14a.png)
 

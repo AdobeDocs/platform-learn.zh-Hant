@@ -121,7 +121,7 @@ ht-degree: 1%
 
 
 
-1. 在Assurance UI中，您應該會看到具有更新`profileMap`值的&#x200B;**[!UICONTROL UserProfileUpdate]**&#x200B;和&#x200B;**[!UICONTROL getUserAttributes]**事件。
+1. 在Assurance UI中，您應該會看到具有更新`profileMap`值的&#x200B;**[!UICONTROL UserProfileUpdate]**&#x200B;和&#x200B;**[!UICONTROL getUserAttributes]**&#x200B;事件。
    ![驗證設定檔](assets/profile-validate.png)
 
 >[!SUCCESS]

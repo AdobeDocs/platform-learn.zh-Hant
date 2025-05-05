@@ -242,6 +242,6 @@ ht-degree: 1%
 
 下一步： [使用Workfront校訂1.2.2](./ex2.md){target="_blank"}
 
-使用Adobe Workfront](./workfront.md){target="_blank"}返回[工作流程管理
+使用Adobe Workfront[&#128279;](./workfront.md){target="_blank"}返回工作流程管理
 
 [返回所有模組](./../../../overview.md){target="_blank"}

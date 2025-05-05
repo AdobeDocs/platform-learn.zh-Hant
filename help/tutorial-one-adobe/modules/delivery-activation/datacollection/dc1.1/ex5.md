@@ -70,7 +70,7 @@ Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過W
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
-您將會看到此訊息。 若要啟用Adobe Analytics，請按一下[新增服務]。****
+您將會看到此訊息。 若要啟用Adobe Analytics，請按一下[新增服務]。**&#x200B;**
 
 ![AEP偵錯工具](./images/aa2.png)
 
@@ -80,7 +80,7 @@ Adobe Experience Platform [!DNL Web SDK]會自動對應某些值，儘快透過W
 
 ## 檢閱您的資料流以傳送資料至Adobe Audience Manager
 
-您將會看到此訊息。 若要啟用Adobe Audience Manager，請按一下[新增服務]。****
+您將會看到此訊息。 若要啟用Adobe Audience Manager，請按一下[新增服務]。**&#x200B;**
 
 ![AEP偵錯工具](./images/aa2.png)
 

@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 使用Adobe標準設定同意
 
-瞭解如何使用Adobe Experience Platform Web SDK根據Adobe Standard 1.0和2.0設定同意值。如需使用Adobe標準的詳細資訊，請參閱有關Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html)中[同意處理的檔案。
+瞭解如何使用Adobe Experience Platform Web SDK根據Adobe Standard 1.0和2.0設定同意值。如需使用Adobe標準的詳細資訊，請參閱有關Platform[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/overview.html)中同意處理的檔案。
 
 >[!NOTE]
 >

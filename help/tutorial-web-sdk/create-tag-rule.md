@@ -98,7 +98,7 @@ ht-degree: 2%
    >
    > 訂單編號越低，執行的時間就越早。 因此，我們提供「全域組態」低訂購數量。
 
-1. 選取&#x200B;**[!UICONTROL 保留變更]**以返回主規則畫面
+1. 選取&#x200B;**[!UICONTROL 保留變更]**&#x200B;以返回主規則畫面
    ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-loaded.png)
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 新增]**
@@ -120,7 +120,7 @@ ht-degree: 2%
    >[!TIP]
    >
    > 若要瞭解要填入`eventType`欄位中的值，您必須移至結構描述頁面，並選取`eventType`欄位以檢視右側邊欄上的建議值。 如有需要，您也可以輸入新值。
-   > 結構描述頁面](assets/create-tag-rule-eventType.png)上的![eventType建議值
+   > 結構描述頁面![&#128279;](assets/create-tag-rule-eventType.png)上的eventType建議值
 
 1. 接著，在結構描述中尋找`identityMap`物件並加以選取
 
@@ -179,7 +179,7 @@ ht-degree: 2%
 1. 在&#x200B;**[!UICONTROL 條件]**&#x200B;下，選取以&#x200B;**[!UICONTROL 新增]**
 1. 保留&#x200B;**[!UICONTROL 邏輯型別]**&#x200B;為&#x200B;**[!UICONTROL 一般]**
 1. 保留&#x200B;**[!UICONTROL 延伸模組]**&#x200B;為&#x200B;**[!UICONTROL 核心]**
-1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;]**的**[!UICONTROL &#x200B;路徑
+1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**的**&#x200B;路徑
 1. 在右側，啟用&#x200B;**[!UICONTROL Regex]**&#x200B;切換
 1. 在&#x200B;**[!UICONTROL 路徑下，等於]**&#x200B;設定`/products/`。 對於Luma示範網站，這可確保規則僅在產品頁面上觸發
 1. 選取&#x200B;**[!UICONTROL 保留變更]**
@@ -237,7 +237,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->請注意數值變數的轉譯方式，資料層中的字串值（例如`price`和`qty`）會重新格式化為資料元素中的數字。 這些格式需求對於Platform中的資料完整性很重要，並在[設定結構描述](configure-schemas.md)步驟中確定。 在範例中，**[!UICONTROL 數量]**&#x200B;使用&#x200B;**[!UICONTROL 整數]**資料型別。
+>請注意數值變數的轉譯方式，資料層中的字串值（例如`price`和`qty`）會重新格式化為資料元素中的數字。 這些格式需求對於Platform中的資料完整性很重要，並在[設定結構描述](configure-schemas.md)步驟中確定。 在範例中，**[!UICONTROL 數量]**&#x200B;使用&#x200B;**[!UICONTROL 整數]**&#x200B;資料型別。
 > ![XDM結構描述資料型別](assets/set-up-analytics-quantity-integer.png)
 
 現在，我們將陣列對應至XDM物件：
@@ -255,7 +255,7 @@ ht-degree: 2%
 1. 在&#x200B;**[!UICONTROL 條件]**&#x200B;下，選取以&#x200B;**[!UICONTROL 新增]**
 1. 保留&#x200B;**[!UICONTROL 邏輯型別]**&#x200B;為&#x200B;**[!UICONTROL 一般]**
 1. 保留&#x200B;**[!UICONTROL 擴充功能]**&#x200B;為&#x200B;**[!UICONTROL 核心]**
-1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;]**的**[!UICONTROL &#x200B;路徑
+1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**的**&#x200B;路徑
 1. 在右側，**不**&#x200B;啟用&#x200B;**[!UICONTROL Regex]**&#x200B;切換
 1. 在&#x200B;**[!UICONTROL 路徑下，等於]**&#x200B;設定`/content/luma/us/en/user/cart.html`。 對於Luma示範網站，這可確保規則僅在購物車頁面上觸發
 1. 選取&#x200B;**[!UICONTROL 保留變更]**
@@ -344,7 +344,7 @@ ht-degree: 2%
 
 1. 選取&#x200B;**[!UICONTROL 進階]**&#x200B;下拉式清單，並在&#x200B;**[!UICONTROL 順序]**&#x200B;中輸入`50`。 這將確保此規則在您設定的所有其他規則（以`1`或`20`作為其[!UICONTROL 順序]）之後引發。
 
-1. 選取&#x200B;**[!UICONTROL 保留變更]**以返回主規則畫面
+1. 選取&#x200B;**[!UICONTROL 保留變更]**&#x200B;以返回主規則畫面
    ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 新增]**

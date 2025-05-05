@@ -39,7 +39,7 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 ### 建立您的專案
 
 現在該建立您的第一個CJA專案了。 前往CJA內的專案標籤。
-按一下**新建**。
+按一下&#x200B;**新建**。
 
 ![示範](./images/prmenu.png)
 

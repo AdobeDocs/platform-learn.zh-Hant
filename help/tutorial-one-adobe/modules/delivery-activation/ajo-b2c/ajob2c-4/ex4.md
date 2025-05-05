@@ -118,7 +118,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
 
-登入後，您會看到通知要求您傳送通知的許可權。 我們將在教學課程中傳送通知，因此請按一下[允許]。****
+登入後，您會看到通知要求您傳送通知的許可權。 我們將在教學課程中傳送通知，因此請按一下[允許]。**&#x200B;**
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn3.png)
 
@@ -237,8 +237,8 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 然後您會看到空白的事件設定。
 首先，請為事件命名，如下所示： `--aepUserLdap--StoreEntryEvent`並將說明設定為`Store Entry Event`。
-下一個是**事件型別**&#x200B;選項。 選取&#x200B;**單一**。
-下一個是**事件ID型別**&#x200B;選擇。 選取&#x200B;**系統產生**。
+下一個是&#x200B;**事件型別**&#x200B;選項。 選取&#x200B;**單一**。
+下一個是&#x200B;**事件ID型別**&#x200B;選擇。 選取&#x200B;**系統產生**。
 
 ![ACOP](./images/eventname.png)
 
@@ -293,7 +293,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![ACOP](./images/journeyactions1push.png)
 
-下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。****
+下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。**&#x200B;**
 
 ![ACOP](./images/journeyactions2push.png)
 

@@ -134,6 +134,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 1. 在&#x200B;**[!UICONTROL 建立新的個人化優惠方案]**&#x200B;的&#x200B;**[!UICONTROL 詳細資料]**&#x200B;步驟中：
    1. 輸入選件的&#x200B;**[!UICONTROL 名稱]**，例如`Luma - Juno Jacket`，然後輸入&#x200B;**[!UICONTROL 開始日期和時間]**&#x200B;以及&#x200B;**[!UICONTROL 結束日期和時間]**。 在這些日期之外，決策引擎將不會選取選件。
    1. 選取&#x200B;**[!UICONTROL 下一步]**。
+
       ![選件 — 詳細資料](assets/ajo-offers-details.png)
 
 1. 在&#x200B;**[!UICONTROL 建立新的個人化優惠方案]**&#x200B;的&#x200B;**[!UICONTROL 新增代表]**&#x200B;步驟中：
@@ -152,14 +153,17 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
          ```
 
       1. 選取「**[!UICONTROL 儲存]**」。
+
          ![選件 — 自訂內容](assets/ajo-offers-customcontent.png)
    1. 選取&#x200B;**[!UICONTROL 下一步]**。
+
       ![優惠方案宣告](assets/ajo-offers-representations.png)
 
 1. 在&#x200B;**[!UICONTROL 建立新的個人化優惠方案]**&#x200B;的&#x200B;**[!UICONTROL 新增限制]**&#x200B;步驟中：
    1. 將&#x200B;**[!UICONTROL 優先順序]**&#x200B;設定為`10`。
    1. 將&#x200B;**[!UICONTROL 包含上限]**&#x200B;切換為關閉。
    1. 選取&#x200B;**[!UICONTROL 下一步]**。
+
       ![優惠 — 限制](assets/ajo-offers-constraints.png)
 
 1. 在&#x200B;**[!UICONTROL 建立新的個人化]**&#x200B;優惠的&#x200B;**[!UICONTROL 檢閱]**&#x200B;步驟中：
@@ -253,9 +257,11 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
    1. 在&#x200B;**[!UICONTROL 評估准則]**&#x200B;圖磚中，選取![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]**。
       1. 在&#x200B;**[!UICONTROL 新增優惠收藏]**&#x200B;對話方塊中，選取您的優惠收藏。 例如 **[!DNL Luma - Mobile App Collection]**。
       1. 選取&#x200B;**[!UICONTROL 新增]**。
+
          ![決定 — 選取集合](assets/ajo-decision-selectcollection.png)
    1. 確定已針對&#x200B;**[!UICONTROL 資格]**&#x200B;選取&#x200B;**[!UICONTROL 無]**，且已選取&#x200B;**[!UICONTROL 優惠方案優先順序]**&#x200B;作為&#x200B;**[!UICONTROL 排名方法]**。
    1. 選取&#x200B;**[!UICONTROL 下一步]**。
+
       ![決定範圍](assets/ajo-decision-scopes.png)。
 1. 在&#x200B;**[!UICONTROL 建立新優惠決定]**&#x200B;的&#x200B;**[!UICONTROL 新增遞補優惠]**&#x200B;步驟中：
    1. 選取您的遞補優惠，例如&#x200B;**[!DNL Luma - Fallback offer]**。
@@ -401,7 +407,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 1. 在左側邊欄中選取「**[!UICONTROL 設定]**」，並選取「**[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**」底下的「**[!UICONTROL 檢閱和模擬]**」旁的「![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」。
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 在左側邊欄中選取&#x200B;**[!UICONTROL 檢閱和模擬]**。 資料串流設定都會經過驗證，並且會在您的應用程式中設定SDK。
-1. 在頂端列選取&#x200B;**[!UICONTROL 要求]**。 您看到您的&#x200B;**[!UICONTROL 選件]**要求。
+1. 在頂端列選取&#x200B;**[!UICONTROL 要求]**。 您看到您的&#x200B;**[!UICONTROL 選件]**&#x200B;要求。
    ![AJO Decisioning驗證](assets/assurance-decisioning-requests.png)
 
 1. 您可以探索&#x200B;**[!UICONTROL 模擬]**&#x200B;和&#x200B;**[!UICONTROL 事件清單]**&#x200B;標籤，以進一步瞭解功能，並檢查您的Journey Optimizer決定管理設定。

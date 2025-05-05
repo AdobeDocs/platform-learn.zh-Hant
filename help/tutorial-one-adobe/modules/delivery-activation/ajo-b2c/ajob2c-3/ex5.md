@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ![Journey Optimizer](./images/emailoffer14.png)
 
-按一下[儲存]以關閉您的[電子郵件]動作。********
+按一下[儲存]以關閉您的[電子郵件]動作。**&#x200B;**&#x200B;**&#x200B;**
 
 ![Journey Optimizer](./images/emailoffer14a.png)
 

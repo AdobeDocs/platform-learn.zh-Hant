@@ -52,7 +52,7 @@ ht-degree: 21%
 
 1. 請注意，目前實作的標籤屬性會顯示在「摘要」標籤上
 
-   Debugger](images/switchEnvironments-debuggerOnWeRetail-prod.png)中顯示的![標籤環境
+   Debugger![&#128279;](images/switchEnvironments-debuggerOnWeRetail-prod.png)中顯示的標籤環境
 
 1. 前往「工具」標籤
 1. 捲動至&#x200B;**[!UICONTROL 取代Launch內嵌程式碼]**&#x200B;區段
@@ -60,11 +60,11 @@ ht-degree: 21%
 1. 開啟「透過luma.enablementadobe.com套用」功能，使Luma網站上的所有頁面都將對應至您的標籤屬性
 1. 按一下&#x200B;**[!UICONTROL 儲存]**&#x200B;按鈕
 
-   Debugger](images/switchEnvironments-debugger-save.png)中顯示的![標籤環境
+   Debugger![&#128279;](images/switchEnvironments-debugger-save.png)中顯示的標籤環境
 
 1. 重新載入 Luma 網站並查看 Debugger 的「摘要」標籤。在 Launch 區段底下，現在應該會看到目前使用的是開發屬性。確認屬性名稱與您的屬性名稱一致，而且環境顯示為「開發」。
 
-   Debugger](images/switchEnvironments-debuggerOnWeRetail.png)中顯示的![標籤環境
+   Debugger![&#128279;](images/switchEnvironments-debuggerOnWeRetail.png)中顯示的標籤環境
 
 >[!NOTE]
 >

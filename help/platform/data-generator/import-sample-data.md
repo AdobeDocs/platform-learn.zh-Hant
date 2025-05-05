@@ -180,14 +180,14 @@ Experience Platform業務使用者通常必須完成一系列步驟，包括識�
 
 ![開啟設定檔](../assets/data-generator/images/validation-profile-open.png)
 
-瀏覽&#x200B;**[!UICONTROL 屬性]**&#x200B;和&#x200B;**[!UICONTROL 事件]**索引標籤中的資料後，您應該會看到設定檔包含來自各種資料檔的資料：
+瀏覽&#x200B;**[!UICONTROL 屬性]**&#x200B;和&#x200B;**[!UICONTROL 事件]**&#x200B;索引標籤中的資料後，您應該會看到設定檔包含來自各種資料檔的資料：
 ![離線購買事件檔案的事件資料](../assets/data-generator/images/validation-profile-events.png)
 
 ## 後續步驟
 
 如果您想瞭解Adobe Journey Optimizer，此沙箱包含您進行[Journey Optimizer挑戰](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hant)所需的一切
 
-如果您想瞭解合併原則、資料控管、查詢服務和區段產生器，請跳到資料架構師和資料工程師快速入門教學課程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en)中的[第11課。 本其他教學課程的先前課程會讓您手動建立這些Postman集合剛才填入的所有內容 — 開心地開始吧！
+如果您想瞭解合併原則、資料控管、查詢服務和區段產生器，請跳到資料架構師和資料工程師快速入門教學課程[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en)中的第11課。 本其他教學課程的先前課程會讓您手動建立這些Postman集合剛才填入的所有內容 — 開心地開始吧！
 
 如果您想要建置範例Web SDK實作以連結至此沙箱，請前往
 [使用Web SDK教學課程實作Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant)。 設定Web SDK教學課程的「初始設定」、「標籤設定」和「設定Experience Platform」課程後，使用密碼`test`使用`luma-crm.json`檔案中的前10個電子郵件地址登入Luma網站，以檢視設定檔片段與本教學課程中上傳的資料合併。

@@ -85,7 +85,7 @@ ht-degree: 0%
 
 若要進一步瞭解如何設定Web SDK擴充功能，請參閱[Platform Web SDK擴充功能概觀](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=en#configure-the-extension)和[支援客戶同意偏好設定](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html)。
 
-在此範例中，讓我們選擇[擱置中]的選項，然後選取[儲存]，以儲存我們的組態設定。****
+在此範例中，讓我們選擇[擱置中]的選項，然後選取[儲存]，以儲存我們的組態設定。**&#x200B;**
 
 ### 步驟2：通訊同意偏好設定
 

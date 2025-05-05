@@ -65,8 +65,8 @@ Adobe Target可作為Real-Time CDP的目的地。 若要設定您的Adobe Target
 
 ![RTCDP](./images/excl.png)
 
-在&#x200B;**Adobe Target**首頁上，您會看到所有現有的活動。
-按一下**+建立活動**&#x200B;以建立新活動。
+在&#x200B;**Adobe Target**&#x200B;首頁上，您會看到所有現有的活動。
+按一下&#x200B;**+建立活動**&#x200B;以建立新活動。
 
 ![RTCDP](./images/exclatov.png)
 
@@ -124,7 +124,7 @@ Adobe Target可作為Real-Time CDP的目的地。 若要設定您的Adobe Target
 
 ![RTCDP](./images/atform5.png)
 
-搜尋影像檔&#x200B;**rtcdp.png**。 選取該專案，然後按一下[儲存]。****
+搜尋影像檔&#x200B;**rtcdp.png**。 選取該專案，然後按一下[儲存]。**&#x200B;**
 
 ![RTCDP](./images/atform6.png)
 

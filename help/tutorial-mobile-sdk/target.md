@@ -169,7 +169,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
    1. 將未命名活動重新命名，例如`Luma Mobile SDK Tutorial - A/B Test Example`。
    1. 輸入A/B測試的&#x200B;**[!UICONTROL 目標]**，例如`A/B Test for Luma mobile app tutorial`。
-   1. 選取&#x200B;**[!UICONTROL 轉換]**，**[!UICONTROL 已檢視**[!UICONTROL &#x200B;目標量度&#x200B;]**>**[!UICONTROL &#x200B;我的主要目標&#x200B;]**圖磚中的mbox]**，並輸入您的位置(mbox)名稱，例如`luma-mobileapp-abtest`。
+   1. 選取&#x200B;**[!UICONTROL 轉換]**，**[!UICONTROL 已檢視**&#x200B;[!UICONTROL &#x200B;目標量度&#x200B;]&#x200B;**>**&#x200B;[!UICONTROL &#x200B;我的主要目標&#x200B;]&#x200B;**圖磚中的mbox]**，並輸入您的位置(mbox)名稱，例如`luma-mobileapp-abtest`。
    1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**。
 
       ![目標設定](assets/target-goals.png)
@@ -280,7 +280,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 1. 在左側邊欄中選取「**[!UICONTROL 設定]**」，並選取「**[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**」底下的「**[!UICONTROL 檢閱和模擬]**」旁的「![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」。
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 在左側邊欄中選取&#x200B;**[!UICONTROL 檢閱和模擬]**。 資料串流設定都會經過驗證，並且會在您的應用程式中設定SDK。
-1. 在頂端列選取&#x200B;**[!UICONTROL 要求]**。 您會看到您的&#x200B;**[!DNL Target]**要求。
+1. 在頂端列選取&#x200B;**[!UICONTROL 要求]**。 您會看到您的&#x200B;**[!DNL Target]**&#x200B;要求。
    ![AJO Decisioning驗證](assets/assurance-decisioning-requests.png)
 
 1. 您可以探索&#x200B;**[!UICONTROL 模擬]**&#x200B;和&#x200B;**[!UICONTROL 事件清單]**&#x200B;標籤，進一步瞭解檢查您的Target優惠方案設定的功能。

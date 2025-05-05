@@ -80,11 +80,11 @@ ht-degree: 54%
 
 1. 按一下磁碟圖示以儲存
 
-   Debugger](images/switchEnvironments-debugger-save.png)中顯示的![標籤環境
+   Debugger![&#128279;](images/switchEnvironments-debugger-save.png)中顯示的標籤環境
 
 1. 重新載入並查看 Debugger 的「摘要」標籤。在Launch區段底下，現在應該會看到測試屬性已實施，並顯示您的屬性名稱（例如「tags Tutorial」或您為屬性命名的任何名稱）！
 
-   Debugger](images/publishing-debugger-staging.png)中顯示的![標籤環境
+   Debugger![&#128279;](images/publishing-debugger-staging.png)中顯示的標籤環境
 
 在真實情境中，一旦 QA 團隊檢閱測試環境中的變更以進行簽核後，就可以發佈到生產環境。
 

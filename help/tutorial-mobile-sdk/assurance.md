@@ -146,6 +146,7 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
 
    1. 選取&#x200B;**[!UICONTROL 複製連結]**。
    1. 使用![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)複製深層連結，並使用深層連結在模擬器中使用Safari開啟應用程式。
+
       ![保證副本連結](assets/assurance-copy-link.png)
 
 1. 應用程式載入時，畫面會顯示強制回應對話方塊，要求您輸入步驟7顯示的PIN。

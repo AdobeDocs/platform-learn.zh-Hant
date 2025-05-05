@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
-您將會看到此訊息。 若要啟用Adobe Target，請按一下[新增服務]。****
+您將會看到此訊息。 若要啟用Adobe Target，請按一下[新增服務]。**&#x200B;**
 
 ![AEP偵錯工具](./images/aa2.png)
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 ## 後續步驟
 
-移至Adobe Experience Platform](./ex7.md){target="_blank"}中的[1.1.7 XDM結構描述需求
+移至Adobe Experience Platform[&#128279;](./ex7.md){target="_blank"}中的1.1.7 XDM結構描述需求
 
 返回[設定Adobe Experience Platform Data Collection和Web SDK標籤擴充功能](./data-ingestion-launch-web-sdk.md){target="_blank"}
 

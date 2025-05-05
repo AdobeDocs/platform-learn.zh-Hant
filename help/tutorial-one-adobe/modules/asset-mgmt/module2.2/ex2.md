@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ## 1.2.2.4新增檔案至您的工作需通過核准流程
 
-按一下[新增&#x200B;**]，然後選取[檔案****]。**
+按一下[新增&#x200B;**]，然後選取[檔案**&#x200B;**]。**
 
 ![WF](./images/wfp10.png)
 
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 ![此檔案](./images/2048x2048_buynow.png){width="50px" align="left"}
 
-在您的[工作]檢視中，選取未核准的舊影像檔。 接著，按一下[新增] **+ [新增]**，選取[版本] ****，然後選取[檔案] ****。
+在您的[工作]檢視中，選取未核准的舊影像檔。 接著，按一下[新增] **+ [新增]**，選取[版本] **&#x200B;**，然後選取[檔案] **&#x200B;**。
 
 ![WF](./images/wfp26.png)
 
@@ -215,6 +215,6 @@ ht-degree: 0%
 
 ![WF](./images/wfppaem3.png)
 
-使用Adobe Workfront](./workfront.md){target="_blank"}返回[工作流程管理
+使用Adobe Workfront[&#128279;](./workfront.md){target="_blank"}返回工作流程管理
 
 [返回所有模組](./../../../overview.md){target="_blank"}

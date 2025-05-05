@@ -64,7 +64,7 @@ Target允許使用單一客戶ID跨裝置和系統同步設定檔。 此客戶ID
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自訂實體引數用於更新Recommendations產品目錄。 這些自訂引數必須作為`data`物件的一部分傳遞。 |
 | `cartIds` | `data.__adobe.target.cartIds` | 用於Target的購物車型建議演演算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用來防止特定實體ID在建議設計中傳回。 |
-| `mbox3rdPartyId` | 在`xdm.identityMap`物件中設定 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在資料流](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid)的[Target設定中指定用於客戶ID的名稱空間。 |
+| `mbox3rdPartyId` | 在`xdm.identityMap`物件中設定 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在資料流[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid)的Target設定中指定用於客戶ID的名稱空間。 |
 | `orderId` | `xdm.commerce.order.purchaseID`<br> （當`commerce.purchases.value`設定為`1`）<br>或<br> `data.__adobe.target.orderId` | 用於識別Target轉換追蹤的唯一訂單。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal`<br> （當`commerce.purchases.value`設定為`1`）<br>或<br> `data.__adobe.target.orderTotal` | 用於追蹤Target轉換和最佳化目標的訂單總計。 |
 | `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> （當`commerce.purchases.value`設定為`1`時） <br>或<br> `data.__adobe.target.productPurchasedId` | 用於Target轉換追蹤和建議演演算法。 |

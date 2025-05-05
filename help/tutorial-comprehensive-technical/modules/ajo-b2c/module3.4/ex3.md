@@ -71,12 +71,12 @@ ht-degree: 0%
 
 然後，您應該保留第一行原樣，並以下列程式碼取代第2行和第3行：
 
-``
+&grave;&grave;
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-``
+&grave;&grave;
 
 您就會擁有此專案。 按一下&#x200B;**儲存**。
 

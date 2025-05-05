@@ -108,7 +108,7 @@ ht-degree: 5%
 
 這裡最重要的設定是資料集和結構描述之間的連結。 結構描述會定義可以擷取的資料以及該資料的外觀。
 
-在此案例中，我們使用CRM (Global v1.1)]**的**[!UICONTROL  Demo System - Profile Schema，它對應至&#x200B;**[!UICONTROL Profile]**&#x200B;的類別，並且已實作擴充功能，也稱為欄位群組。
+在此案例中，我們使用CRM (Global v1.1)**的** Demo System - Profile Schema，它對應至&#x200B;**[!UICONTROL Profile]**&#x200B;的類別，並且已實作擴充功能，也稱為欄位群組。
 
 ![資料擷取](./images/ds_schemalink.png)
 

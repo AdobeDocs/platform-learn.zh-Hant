@@ -290,7 +290,7 @@ ht-degree: 3%
 
 現在您可以使用Platform Debugger和Webhook.site來驗證事件轉送屬性：
 
-1. 請依照步驟[將[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en/men.html)上的標籤庫](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)切換為Web SDK標籤屬性，您在資料流中將事件轉送屬性對應至該屬性。
+1. 請依照步驟[&#128279;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)將[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en/men.html)上的標籤庫切換為Web SDK標籤屬性，您在資料流中將事件轉送屬性對應至該屬性。
 
 1. 在您重新載入頁面之前，請在Experience Platform偵錯工具上，從左側導覽開啟&#x200B;**[!UICONTROL 記錄檔]**
 

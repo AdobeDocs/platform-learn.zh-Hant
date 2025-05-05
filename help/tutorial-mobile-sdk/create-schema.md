@@ -97,7 +97,7 @@ Experience Platform使用結構描述，以一致且可重複使用的方式說�
 
 1. 選取&#x200B;**[!UICONTROL 建立結構描述]**。
 
-1. 在&#x200B;**[!UICONTROL 建立結構描述]**&#x200B;精靈的&#x200B;**[!UICONTROL 選取類別]**&#x200B;步驟中，選取&#x200B;**[!UICONTROL 底下的**[!UICONTROL &#x200B;體驗事件&#x200B;]**選取此結構描述的基底類別]**。
+1. 在&#x200B;**[!UICONTROL 建立結構描述]**&#x200B;精靈的&#x200B;**[!UICONTROL 選取類別]**&#x200B;步驟中，選取&#x200B;**[!UICONTROL 底下的**&#x200B;[!UICONTROL &#x200B;體驗事件&#x200B;]&#x200B;**選取此結構描述的基底類別]**。
 
 1. 選取&#x200B;**[!UICONTROL 下一步]**。
 
@@ -213,7 +213,7 @@ Experience Platform使用結構描述，以一致且可重複使用的方式說�
 
    ![提供名稱與描述](assets/schema-fieldgroup-name.png)
 
-1. 從主要構成畫面中，選取**[!UICONTROL 應用程式互動**]。
+1. 從主要構成畫面中，選取&#x200B;**[!UICONTROL 應用程式互動**]。
 
 1. 選取結構描述名稱旁的![加號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)按鈕，將欄位新增至結構描述的根目錄。
 

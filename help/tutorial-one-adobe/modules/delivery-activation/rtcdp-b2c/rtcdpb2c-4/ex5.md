@@ -27,7 +27,7 @@ ht-degree: 3%
 
 ![資料擷取](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
-移至&#x200B;**目的地**，然後按一下&#x200B;**瀏覽**。 然後您會看到所有可用的目的地。 找到您的目的地並按一下下面所示的3個點**...**，然後按一下&#x200B;**啟用對象**。
+移至&#x200B;**目的地**，然後按一下&#x200B;**瀏覽**。 然後您會看到所有可用的目的地。 找到您的目的地並按一下下面所示的3個點&#x200B;**...**，然後按一下&#x200B;**啟用對象**。
 
 ![5-01-select-destination.png](./images/501selectdestination.png)
 

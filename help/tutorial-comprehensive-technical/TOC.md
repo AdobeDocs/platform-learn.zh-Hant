@@ -145,7 +145,7 @@ ht-degree: 4%
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/summary.md)
 
 + 4Customer Journey AnalyticsB2C {#cjab2c}
-   + 4.1Customer Journey Analytics：使用Analysis Workspace {#module41}建置儀表板
+   + 4.1Customer Journey Analytics：使用Analysis Workspace建置儀表板 {#module41}
       + [概觀](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
       + [4.1.1Customer Journey Analytics101](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex1.md)
       + [4.1.2連線Customer Journey Analytics中的Adobe Experience Platform資料集](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex2.md)
@@ -153,7 +153,7 @@ ht-degree: 4%
       + [4.1.4Customer Journey Analytics中的資料準備](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex4.md)
       + [4.1.5使用Customer Journey Analytics的視覺效果](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex5.md)
       + [摘要和優點](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/summary.md)
-   + 4.2Customer Journey Analytics：使用BigQuery Source Connector {#module42}在Adobe Experience Platform中擷取和分析Google Analytics資料
+   + 4.2Customer Journey Analytics：使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料 {#module42}
       + [概觀](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)
       + [4.2.1開始使用Google Cloud Platform](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex1.md)
       + [4.2.2在BigQuery中建立第一個查詢](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex2.md)

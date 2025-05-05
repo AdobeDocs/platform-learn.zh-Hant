@@ -43,8 +43,8 @@ ht-degree: 3%
 * **啟用事件轉送**。 事件轉送可在資料流中輕鬆啟用。 以下是[從Web SDK教學課程設定事件轉送](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html)的實作課程。 使用為您的行動實施建立的資源，並選擇您在應用程式中實施的XDM欄位。
 * **連線Customer Journey Analytics**。 如果您已建立[Platform資料集](platform.md)，您可以將資料集連線至Customer Journey Analytics。 在此[教學課程影片中瞭解更多](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform.html)
 * **在您的資料串流中啟用Audience Manager**。 傳送您的XDM體驗事件以Audience Manager並開始根據行動應用程式參與Audience Manager建立區段。
-* **在Platform**&#x200B;中建立區段。 如果您為Real-time Customer Profile](platform.md)啟用了[結構描述和資料集，則可以根據您的行動應用程式事件建立區段，將其與其他來源的資料結合，然後將這些區段傳送到Real-time Customer Data Platform中的目的地。 在此[影片教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/audiences/create-audiences.html)中進一步瞭解區段產生器。
-* **實作Platform Web SDK**。 現在您已精通一個SDK，請瞭解另一個！ Adobe Experience Platform Web SDK是JavaScript SDK，用來支援網站上的Experience Cloud和協力廠商服務。 Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant)有類似的[實作教學課程。 完成兩者並檢視跨裝置的設定檔合併！
+* **在Platform**&#x200B;中建立區段。 如果您為Real-time Customer Profile[&#128279;](platform.md)啟用了結構描述和資料集，則可以根據您的行動應用程式事件建立區段，將其與其他來源的資料結合，然後將這些區段傳送到Real-time Customer Data Platform中的目的地。 在此[影片教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/audiences/create-audiences.html)中進一步瞭解區段產生器。
+* **實作Platform Web SDK**。 現在您已精通一個SDK，請瞭解另一個！ Adobe Experience Platform Web SDK是JavaScript SDK，用來支援網站上的Experience Cloud和協力廠商服務。 Web SDK[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant)有類似的實作教學課程。 完成兩者並檢視跨裝置的設定檔合併！
 * **進一步瞭解Experience Platform**。 在[資料架構師和資料工程師的Adobe Experience Platform快速入門](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)中，進一步瞭解如何從其他來源擷取資料，並將其與您的行動SDK資料結合
 
 

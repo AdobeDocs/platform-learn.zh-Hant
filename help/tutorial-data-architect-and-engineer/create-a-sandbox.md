@@ -51,7 +51,7 @@ ht-degree: 2%
 1. 選取&#x200B;**[!UICONTROL 開發]**&#x200B;作為&#x200B;**[!UICONTROL 型別]**
 1. 為您的沙箱命名`luma-tutorial` （考慮將您的名稱新增到結尾）
 1. 標題您的教學課程`Luma Tutorial` （考慮將您的名稱新增到結尾）
-1. 選取&#x200B;**[!UICONTROL 建立]**按鈕
+1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕
    ![建立您的沙箱](assets/sandbox-nameSandbox.png)
    >[!NOTE]
    >

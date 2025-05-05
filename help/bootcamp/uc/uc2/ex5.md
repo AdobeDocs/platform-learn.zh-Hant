@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ![DSN](./../uc3/images/app1.png)
 
-安裝應用程式後，請按一下[開啟]。****
+安裝應用程式後，請按一下[開啟]。**&#x200B;**
 
 ![DSN](./../uc3/images/app2.png)
 

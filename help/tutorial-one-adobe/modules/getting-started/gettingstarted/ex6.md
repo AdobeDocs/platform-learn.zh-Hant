@@ -21,7 +21,7 @@ ht-degree: 0%
 ![Adobe I/O新整合](./images/iohome.png){zoomable="yes"}
 
 請務必在熒幕右上角選取正確的例項。 您的執行個體是`--aepImsOrgName--`。
-接著，選取**建立新專案**。
+接著，選取&#x200B;**建立新專案**。
 
 ![Adobe I/O新整合](./images/iocomp.png){zoomable="yes"}
 

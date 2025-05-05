@@ -19,8 +19,10 @@ ht-degree: 0%
 
 1. 導覽至Experience Platform資料收集。 您可以透過下列兩種方式之一完成這項作業：
    1. 移至[Adobe Experience Platform介面](https://platform.adobe.com/)，然後選取左側導覽底部附近的&#x200B;**[!UICONTROL 標籤]**。
+
       ![存取標籤1](assets/access-tags-1.jpg)
    1. 如果您無法存取Platform，可以使用視窗右上角的應用程式切換器（9個點），並選取「資料收集」(登入Experience.Adobe.com後)。
+
       ![存取標籤2](assets/access-tags-2.jpg)
 1. 尋找並選取您要移轉至Web SDK的標籤屬性。
 1. 在標籤屬性的左側導覽中，選取&#x200B;**[!UICONTROL 擴充功能]**。

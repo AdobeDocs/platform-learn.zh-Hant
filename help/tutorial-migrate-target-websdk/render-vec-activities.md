@@ -26,7 +26,7 @@ Visual Editing Helper瀏覽器擴充功能適用於使用at.js或Platform Web SD
 ### 取得並安裝Visual Editing Helper
 
 1. 瀏覽至Chrome網站商店中的[Adobe Experience Cloud Visual Editing Helper瀏覽器擴充功能](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)。
-1. 按一下[新增至&#x200B;**Chrome** > **新增擴充功能**。
+1. 按一下&lbrack;新增至&#x200B;**Chrome** > **新增擴充功能**。
 1. 在Target中開啟VEC。
 1. 若要使用擴充功能，請在VEC或QA模式中時，按一下Chrome瀏覽器工具列上的Visual Editing Helper瀏覽器擴充功能圖示![Visual Editing擴充功能圖示](assets/VEC-Helper.png){zoomable="yes"}。
 

@@ -28,4 +28,4 @@ ht-degree: 0%
 >
 >在上方的影片中，影片顯示選擇「全部」區段和/或特徵的選項。 我們不建議使用此選項，除非您的區段數目有限，且這些區段中的不重複訪客數目不明。 在「所有區段」或「所有特徵」中引進大量訪客設定檔，可能會增加Real-Time CDP中的設定檔服務，進而對應用程式的定價產生巨大影響（因為設定檔數量會影響您應用程式的成本）。 因此，建議您不要選擇「全部」，而是選擇將特定區段帶入Real-Time CDP。
 >
->請觀看Experience League LIVE ](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html)的2022年4月28日集數，我們將對此進行詳細討論。[
+>請觀看Experience League LIVE [&#128279;](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html)的2022年4月28日集數，我們將對此進行詳細討論。

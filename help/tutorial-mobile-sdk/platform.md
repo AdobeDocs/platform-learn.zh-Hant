@@ -52,7 +52,7 @@ ht-degree: 2%
 
 1. 選取![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 建立資料集]**。
 
-1. 選取&#x200B;**[!UICONTROL 從結構描述]**建立資料集。
+1. 選取&#x200B;**[!UICONTROL 從結構描述]**&#x200B;建立資料集。
    ![資料集首頁](assets/dataset-create.png)
 
 1. 搜尋您的結構描述。 例如在搜尋欄位中使用`Luma Mobile`。
@@ -103,7 +103,7 @@ ht-degree: 2%
 
 ![驗證資料登陸Platform資料集批次](assets/platform-dataset-batches.png)
 
-您也應該能夠使用&#x200B;**[!UICONTROL 預覽資料集]**功能檢視範例記錄和欄位：
+您也應該能夠使用&#x200B;**[!UICONTROL 預覽資料集]**&#x200B;功能檢視範例記錄和欄位：
 ![驗證傳送至Platform資料集的生命週期](assets/lifecycle-platform-dataset.png)
 
 驗證資料的更強大工具是Platform的[查詢服務](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=zh-Hant)。

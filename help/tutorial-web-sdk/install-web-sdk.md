@@ -37,7 +37,7 @@ ht-degree: 11%
 
 1. 開啟[資料收集介面](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 在左側導覽中選取&#x200B;**[!UICONTROL 標籤]**
-1. 選取&#x200B;**[!UICONTROL 新屬性]**按鈕
+1. 選取&#x200B;**[!UICONTROL 新屬性]**&#x200B;按鈕
    ![新增屬性](assets/websdk-property-addNewProperty.png)
 1. 以&#x200B;**[!UICONTROL Name]**&#x200B;的身分，輸入`Web SDK Course` （如果貴公司的多人參加此教學課程，請在結尾加上您的姓名）
 1. 作為&#x200B;**[!UICONTROL 網域]**，請輸入`enablementadobe.com` （稍後說明）

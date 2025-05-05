@@ -32,7 +32,7 @@ ht-degree: 0%
 > * **最佳化SDK**&#x200B;實作&#x200B;**Adobe Journey Optimizer - Decisioning擴充功能**
 
 
-接下來，檢閱Target擴充功能與Decisioning擴充功能](detailed-comparison.md)的詳細[比較，以更清楚瞭解技術差異，並找出需要額外關注的領域。
+接下來，檢閱Target擴充功能與Decisioning擴充功能[&#128279;](detailed-comparison.md)的詳細比較，以更清楚瞭解技術差異，並找出需要額外關注的領域。
 
 >[!NOTE]
 >

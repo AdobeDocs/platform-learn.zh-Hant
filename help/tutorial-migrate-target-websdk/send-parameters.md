@@ -17,7 +17,7 @@ ht-degree: 0%
 
 假設以下兩個使用at.js的範例頁面：
 
-「產品詳細資料」頁面上的+++at.js：
++++「產品詳細資料」頁面上的at.js：
 
 ```HTML
 <!doctype html>
@@ -122,7 +122,7 @@ Platform Web SDK提供單一一致的方式來傳送資料，而不需要額外�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自訂實體引數可用來更新Recommendations產品目錄。 這些自訂引數必須作為`data`物件的一部分傳遞。 |
 | `cartIds` | `data.__adobe.target.cartIds` | 用於Target的購物車型建議演演算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用來防止特定實體ID在建議設計中傳回。 |
-| `mbox3rdPartyId` | 在`xdm.identityMap`物件中設定 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在資料流](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html)的[Target設定中指定用於客戶ID的名稱空間。 |
+| `mbox3rdPartyId` | 在`xdm.identityMap`物件中設定 | 用於跨裝置和客戶屬性同步Target設定檔。 必須在資料流[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html)的Target設定中指定用於客戶ID的名稱空間。 |
 | `orderId` | `xdm.commerce.order.purchaseID` | 用於識別Target轉換追蹤的唯一訂單。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | 用於追蹤Target轉換和最佳化目標的訂單總計。 |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>或<br> `xdm.productListItems[0-n].SKU` | 用於Target轉換追蹤和建議演演算法。 如需詳細資訊，請參閱下方的[實體引數](#entity-parameters)區段。 |

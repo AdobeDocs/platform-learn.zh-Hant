@@ -37,6 +37,7 @@ Adobe Experience Platform中的標籤是新一代Adobe標籤管理功能。 標�
 1. 在資料收集介面中建立新的行動標籤屬性：
    1. 在左側導覽中選取&#x200B;**[!UICONTROL 標籤]**。
    1. 選取&#x200B;**[!UICONTROL 新屬性]**
+
       ![建立標籤屬性](assets/tags-new-property.png)。
    1. 對於&#x200B;**[!UICONTROL 名稱]**，請輸入`Luma Mobile App Tutorial`。
    1. 針對&#x200B;**[!UICONTROL 平台]**，選取&#x200B;**[!UICONTROL 行動裝置]**。
@@ -64,7 +65,8 @@ Adobe Experience Platform中的標籤是新一代Adobe標籤管理功能。 標�
 
       ![建置程式庫](assets/tags-save-library.png)
 
-   1. 最後，從&#x200B;**[!UICONTROL 選取工作程式庫]**&#x200B;功能表中選取&#x200B;**[!UICONTROL 初始組建]**作為工作程式庫。
+   1. 最後，從&#x200B;**[!UICONTROL 選取工作程式庫]**&#x200B;功能表中選取&#x200B;**[!UICONTROL 初始組建]**&#x200B;作為工作程式庫。
+
       ![選取作為工作程式庫](assets/tags-working-library.png)
 1. 檢查擴充功能：
 

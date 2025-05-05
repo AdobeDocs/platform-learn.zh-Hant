@@ -21,7 +21,7 @@ ht-degree: 1%
 使用Target的表單式撰寫器建立並傳送至地區mbox的活動，無法由Platform Web SDK自動轉譯。 與at.js類似，傳遞至特定Target位置的選件需要隨選呈現。
 
 
-使用`getOffer()`和`applyOffer()`的+++at.js範例：
++++使用`getOffer()`和`applyOffer()`的at.js範例：
 
 1. 執行`getOffer()`以要求某個位置的選件
 1. 執行`applyOffer()`將選件轉譯為指定的選取器
@@ -49,7 +49,7 @@ adobe.target.getOffer({
 
 +++
 
-使用`applyPropositions`命令的+++Platform Web SDK對等專案：
++++使用`applyPropositions`命令的Platform Web SDK對等專案：
 
 1. 執行`sendEvent`命令以要求一或多個位置（範圍）的選件（主張）
 1. 使用中繼資料物件執行`applyPropositions`命令，該物件提供如何為每個範圍的頁面套用內容的指示
@@ -106,7 +106,7 @@ Platform Web SDK提供更好的控制功能，可讓您使用指定了`actionTyp
 
 以下範例頁面以上一節中概述的實作為基礎，只是將其他範圍新增到`sendEvent`命令。
 
-具有多個範圍的+++Platform Web SDK範例
++++具有多個範圍的Platform Web SDK範例
 
 ```HTML
 <!doctype html>

@@ -47,7 +47,7 @@ ht-degree: 2%
 
 讓我們快速瞭解這些結構描述在Adobe Experience Platform中的定義方式。
 
-在左側功能表中，移至&#x200B;**結構描述**，並在新的瀏覽器標籤中開啟它。 在&#x200B;**結構描述**&#x200B;中，移至&#x200B;**瀏覽**檢視可用的結構描述清單。
+在左側功能表中，移至&#x200B;**結構描述**，並在新的瀏覽器標籤中開啟它。 在&#x200B;**結構描述**&#x200B;中，移至&#x200B;**瀏覽**&#x200B;檢視可用的結構描述清單。
 開啟結構描述`Demo System - Event Schema for Website (Global v1.1)`。
 
 ![資料擷取](./images/schemas.png)
@@ -88,7 +88,7 @@ Adobe Journey Optimizer會自動選取一些必填欄位，但您可以編輯可
 ![示範](./images/popupok.png)
 
 Adobe Journey Optimizer也需要識別碼來識別客戶。 由於Adobe Journey Optimizer已連結至Adobe Experience Platform，結構描述的主要識別碼會自動被當作歷程的識別碼。
-主要識別碼也會自動考量Adobe Experience Platform的完整身分圖表，並將所有可用身分、裝置和頻道的所有行為連結至相同的設定檔，以便Adobe Journey Optimizer符合情境、相關且一致。 按一下**儲存**。
+主要識別碼也會自動考量Adobe Experience Platform的完整身分圖表，並將所有可用身分、裝置和頻道的所有行為連結至相同的設定檔，以便Adobe Journey Optimizer符合情境、相關且一致。 按一下&#x200B;**儲存**。
 
 ![示範](./images/eventidentifier.png)
 
@@ -99,7 +99,7 @@ Adobe Journey Optimizer也需要識別碼來識別客戶。 由於Adobe Journey 
 最後，您必須復原自訂事件的`Orchestration eventID`。
 
 按一下事件清單中的事件，再次開啟事件。
-在您的事件上，按一下**欄位**&#x200B;旁的&#x200B;**檢視裝載**&#x200B;圖示。
+在您的事件上，按一下&#x200B;**欄位**&#x200B;旁的&#x200B;**檢視裝載**&#x200B;圖示。
 
 ![示範](./images/fieldseyepayload.png)
 

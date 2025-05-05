@@ -68,13 +68,13 @@ ht-degree: 0%
 
 ![ACOP](./images/journeyactions1.png)
 
-下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。****
+下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。**&#x200B;**
 
 ![ACOP](./images/journeyactions2.png)
 
 ## 2.3.2建立您的訊息
 
-若要建立您的訊息，請按一下[編輯內容]。****
+若要建立您的訊息，請按一下[編輯內容]。**&#x200B;**
 
 ![ACOP](./images/journeyactions2.png)
 

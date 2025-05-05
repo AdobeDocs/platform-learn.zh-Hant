@@ -98,7 +98,7 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 
 1. 從您的裝置或模擬器刪除應用程式，以正確重設和初始化追蹤和同意。
 1. 若要將您的模擬器或裝置連線到Assurance，請檢閱[設定指示](assurance.md#connecting-to-a-session)區段。
-1. 將應用程式從&#x200B;**[!UICONTROL 首頁]**&#x200B;畫面移至&#x200B;**[!UICONTROL 產品]**&#x200B;畫面並返回&#x200B;**[!UICONTROL 首頁]**&#x200B;畫面時，您應該會在Assurance UI中看到&#x200B;**[!UICONTROL 取得同意回應]**事件。
+1. 將應用程式從&#x200B;**[!UICONTROL 首頁]**&#x200B;畫面移至&#x200B;**[!UICONTROL 產品]**&#x200B;畫面並返回&#x200B;**[!UICONTROL 首頁]**&#x200B;畫面時，您應該會在Assurance UI中看到&#x200B;**[!UICONTROL 取得同意回應]**&#x200B;事件。
    ![驗證同意](assets/consent-update.png)
 
 

@@ -46,7 +46,7 @@ ht-degree: 2%
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 在此範例中，您想要回應檢視特定產品的特定客戶。
-從**Citi Signal**&#x200B;首頁，移至&#x200B;**手機和裝置**，然後按一下產品&#x200B;**Galaxy S24**。
+從&#x200B;**Citi Signal**&#x200B;首頁，移至&#x200B;**手機和裝置**，然後按一下產品&#x200B;**Galaxy S24**。
 
 ![資料擷取](./images/homegalaxy.png)
 

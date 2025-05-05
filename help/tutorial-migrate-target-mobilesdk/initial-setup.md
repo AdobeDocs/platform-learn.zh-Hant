@@ -54,7 +54,7 @@ ht-degree: 6%
 
 ## 資料流設定
 
-Target擴充功能具有[可設定的設定](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui)，而決策擴充功能在datastream](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup)中已設定[。
+Target擴充功能具有[可設定的設定](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui)，而決策擴充功能在datastream[&#128279;](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup)中已設定。
 
 | 目標延伸功能 | Decisioning擴充功能 | 附註 |
 | --- | --- | --- | 

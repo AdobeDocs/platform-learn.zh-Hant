@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
-您將會看到此訊息。 若要啟用Adobe Target，請按一下[新增服務]。****
+您將會看到此訊息。 若要啟用Adobe Target，請按一下[新增服務]。**&#x200B;**
 
 ![AEP偵錯工具](./images/aa2.png)
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ![AEP偵錯工具](./images/at1.png)
 
-下一步： Adobe Experience Platform](./ex7.md)中的[1.1.7 XDM結構描述需求
+下一步： Adobe Experience Platform[&#128279;](./ex7.md)中的1.1.7 XDM結構描述需求
 
 [返回模組1.1](./data-ingestion-launch-web-sdk.md)
 

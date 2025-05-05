@@ -195,7 +195,7 @@ AWS資源的存取權由Amazon Identity and Access Management (IAM)控制。
 
 您可以視需要新增任意數量的其他設定檔屬性。
 
-新增所有欄位後，請按[下一步] ****。
+新增所有欄位後，請按[下一步] **&#x200B;**。
 
 ![RTCDP](./images/s3c.png)
 

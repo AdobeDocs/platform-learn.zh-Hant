@@ -81,6 +81,6 @@ ht-degree: 1%
 
 ![WF](./images/wf16.png)
 
-使用Adobe Workfront](./workfront.md){target="_blank"}返回[工作流程管理
+使用Adobe Workfront[&#128279;](./workfront.md){target="_blank"}返回工作流程管理
 
 [返回所有模組](./../../../overview.md){target="_blank"}

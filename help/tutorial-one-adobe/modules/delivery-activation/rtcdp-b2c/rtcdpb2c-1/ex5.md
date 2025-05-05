@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ## 使用您的CX應用程式
 
-移至[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登入後，您會看到此訊息。 按一下您CX App專案上的3個點&#x200B;**...**，然後按一下[編輯]**以開啟它。**
+移至[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登入後，您會看到此訊息。 按一下您CX App專案上的3個點&#x200B;**...**，然後按一下[編輯]&#x200B;**以開啟它。**
 
 ![示範](./images/cxapp3.png)
 

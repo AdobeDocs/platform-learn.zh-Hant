@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->如果`productListItems[].SKU`和`productListItems[].name`都包含資料，則使用`productListItems[].SKU`中的值。 如需詳細資訊，請參閱AdobeExperience Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en)中的[Analytics變數對應。
+>如果`productListItems[].SKU`和`productListItems[].name`都包含資料，則使用`productListItems[].SKU`中的值。 如需詳細資訊，請參閱AdobeExperience Edge[&#128279;](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en)中的Analytics變數對應。
 
 
 ### 範例#2 - scAdd
@@ -286,7 +286,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 以下是使用此資料的處理規則的外觀：
 
-* 如果設定了&#x200B;**[!UICONTROL a.x._techmarketingdemo.appstatedetails.appstatedetails.screenname]** (4) **[!UICONTROL (5)，您**[!UICONTROL &#x200B;以&#x200B;**[!UICONTROL a.x._techmarketingdemo.appstatedetails.appstatedetails.screenname]**&#x200B;的值&#x200B;**[!UICONTROL 覆寫]** (1)應用程式畫面名稱(eVar2)]**(2)]** (5)。
+* 如果設定了&#x200B;**[!UICONTROL a.x._techmarketingdemo.appstatedetails.appstatedetails.screenname]** (4) **[!UICONTROL (5)，您**&#x200B;[!UICONTROL &#x200B;以&#x200B;**[!UICONTROL a.x._techmarketingdemo.appstatedetails.appstatedetails.screenname]**&#x200B;的值&#x200B;**[!UICONTROL 覆寫]** (1)應用程式畫面名稱(eVar2)]&#x200B;**(2)]** (5)。
 
 * 如果&#x200B;**[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL 已設定]** (10)，則您&#x200B;**[!UICONTROL 將event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7)設為&#x200B;**[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8)。
 

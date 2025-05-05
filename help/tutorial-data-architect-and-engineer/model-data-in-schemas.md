@@ -71,7 +71,7 @@ Key terms:
 
 1. 前往Platform使用者介面，並確保已選取您的沙箱。
 1. 前往左側導覽中的&#x200B;**[!UICONTROL 結構描述]**。
-1. 選取右上方的&#x200B;**[!UICONTROL 建立結構描述]**按鈕。
+1. 選取右上方的&#x200B;**[!UICONTROL 建立結構描述]**&#x200B;按鈕。
    ![具有OOTB欄位群組的結構描述](assets/schemas-loyaltyCreateSchema.png)
 
 1. 在「建立結構描述」工作流程中，選取&#x200B;**[!UICONTROL 個別設定檔]**&#x200B;作為結構描述的基底類別，因為我們將針對個別客戶的屬性（點、狀態等）建立模型。
@@ -79,7 +79,7 @@ Key terms:
    ![選取基底類別](assets/schemas-loyaltySelectBaseClass.png)
 
 1. 在&#x200B;**[!UICONTROL 結構描述顯示名稱]**&#x200B;文字欄位中輸入`Luma Loyalty Schema`。 在以下畫布中，您也可以檢閱及驗證您所選擇類別所提供的基本結構描述結構。
-1. 選取&#x200B;**[!UICONTROL 完成]**以建立您的結構描述。
+1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以建立您的結構描述。
    ![完成建立忠誠度綱要](assets/schemas-loyaltyFinishSchemaCreation.png)
 
 ### 新增標準欄位群組
@@ -100,7 +100,7 @@ Key terms:
 
 1. 勾選&#x200B;**[!UICONTROL 產業]** > **[!UICONTROL 零售]**&#x200B;方塊，以公開產業特定欄位群組。
 1. 選取&#x200B;**[!UICONTROL 熟客方案詳細資料]**&#x200B;以新增熟客方案欄位。
-1. 選取&#x200B;**[!UICONTROL 新增欄位群組]**以將這三個欄位群組新增到結構描述。
+1. 選取&#x200B;**[!UICONTROL 新增欄位群組]**&#x200B;以將這三個欄位群組新增到結構描述。
    ![將標準欄位群組新增至忠誠度結構描述](assets/schemas-loyalty-saveOotbMixins.png)
 
 
@@ -144,8 +144,10 @@ Key terms:
    1. **[!UICONTROL 顯示名稱]**： `System Identifier`
    1. **[!UICONTROL 型別]**： **[!UICONTROL 物件]**
    1. 在&#x200B;**[!UICONTROL 欄位群組]**&#x200B;下拉式清單中，選取我們已建立的&#x200B;**Luma身分設定檔欄位群組**。
+
       ![新增欄位群組](assets/schemas-loyalty-addSystemIdentifier.png)
    1. 選取&#x200B;**[!UICONTROL 套用]**
+
       ![套用新欄位屬性](assets/schemas-loyalty-applySystemIdentifier.png)
 
 現在在`systemIdentifier`物件下新增兩個欄位：
@@ -159,7 +161,7 @@ Key terms:
    1. **[!UICONTROL 顯示名稱]**： `CRM Id`
    1. **[!UICONTROL 型別]**： **[!UICONTROL 字串]**
 
-您的新欄位群組應如下所示。 選取&#x200B;**[!UICONTROL 儲存]**按鈕以儲存您的結構描述，但讓結構描述保持開啟以供下一個練習使用。
+您的新欄位群組應如下所示。 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;按鈕以儲存您的結構描述，但讓結構描述保持開啟以供下一個練習使用。
 ![熟客欄位群組完成](assets/schemas-loyalty-identityFieldGroupComplete.png)
 
 ## 建立資料型別
@@ -344,12 +346,12 @@ Key terms:
 首先，我們必須使用自訂類別為Luma的產品目錄建立結構描述：
 
 1. 選取&#x200B;**[!UICONTROL 建立結構描述]**&#x200B;按鈕。
-1. 在[建立結構描述]工作流程中，選取&#x200B;**[!UICONTROL 其他]**選項。
+1. 在[建立結構描述]工作流程中，選取&#x200B;**[!UICONTROL 其他]**&#x200B;選項。
    ![建立新結構描述](assets/schemas-newSchema-browseClasses.png)
 1. 選取&#x200B;**[!UICONTROL 建立類別]**&#x200B;按鈕
 1. 將其命名為`Luma Product Catalog Class`
 1. 將&#x200B;**[!UICONTROL 行為]**&#x200B;保留為&#x200B;**[!UICONTROL 記錄]**
-1. 選取&#x200B;**[!UICONTROL 建立]**按鈕。
+1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕。
    ![建立新類別](assets/schemas-productClass.png)
 1. 您建立的&#x200B;**Luma產品目錄類別**&#x200B;會出現在下面的「類別」表格中。 確定已選取類別，然後選取&#x200B;**[!UICONTROL 下一步]**。
    ![新類別已新增](assets/schemas-productClassSelected.png)

@@ -19,10 +19,12 @@ Azure Functions可讓您執行小段程式碼（稱為&#x200B;**函式**），�
 函式是由特定型別的事件&#x200B;**觸發**。 支援的觸發器包括回應資料變更、回應訊息（例如事件中樞）、依排程執行或作為HTTP請求的結果。
 Azure Functions是一種無伺服器運算服務，可讓您執行事件觸發的程式碼，而不需明確布建或管理基礎結構。
 Azure事件中樞會整合Azure Functions以提供無伺服器架構。
+
 ## 開啟Visual Studio Code並登入Azure
 
 Visual Studio Code可讓您輕鬆……
 - 定義並將Azure函式繫結到事件中樞- 本機測試- 部署至Azure- 遠端記錄函式執行
+
 ### 開啟Visual Studio Code
 
 ### 登入Azure
@@ -36,11 +38,12 @@ Visual Studio Code可讓您輕鬆……
 ![3-03-vsc-login-ok.png](./images/303vscloginok.png)
 返回Visual Code Studio （您將會看到Azure訂閱的名稱，例如&#x200B;**Azure訂閱1**）：
 ![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
 ## 建立Azure專案
 
 按一下&#x200B;**建立函式專案……**：
 ![3-05-vsc-create-project.png](./images/vsc2.png)
-選取或建立您選擇的本機資料夾以儲存專案，然後按一下[選取] ****：
+選取或建立您選擇的本機資料夾以儲存專案，然後按一下[選取] **&#x200B;**：
 ![3-06-vsc-select-folder.png](./images/vsc3.png)
 您現在將輸入專案建立精靈。 按一下&#x200B;**Javascript**&#x200B;作為專案的語言：
 ![3-07-vsc-select-language.png](./images/vsc4.png)
@@ -65,6 +68,7 @@ Visual Studio Code可讓您輕鬆……
 建立專案後，在編輯器中開啟檔案`--aepUserLdap---aep-event-hub-trigger.js`：
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 Adobe Experience Platform傳送至事件中心的裝載看起來會像這樣：
+
 ```json
 {
   "identityMap": {
@@ -92,16 +96,19 @@ Adobe Experience Platform傳送至事件中心的裝載看起來會像這樣：
 
 使用下列程式碼更新您Visual Studio Code `--aepUserLdap---aep-event-hub-trigger.js`中的程式碼。 每次Real-time CDP將對象資格傳送至事件中心目的地時，都會執行此程式碼。 在此範例中，程式碼只是關於顯示傳入裝載，但您可以想像任何種類的額外功能，以即時處理對象資格，並在資料管道生態系統更下游使用。
 檔案`--aepUserLdap---aep-event-hub-trigger.js`中的第11行目前顯示如下：
+
 ```javascript
 context.log('Event hub message:', message);
 ```
 
 將`--aepUserLdap---aep-event-hub-trigger.js`中的第11行變更為如下所示：
+
 ```javascript
 context.log('Event hub message:', JSON.stringify(message));
 ```
 
 總裝載隨後應如下所示：
+
 ```javascript
 const { app } = require('@azure/functions');
 
@@ -125,20 +132,23 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 
 結果應如下所示：
 ![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
+
 ## 執行Azure專案
 
 現在該執行您的專案了。 目前階段，我們不會將專案部署到Azure。 我們將在偵錯模式中在本機執行。 選取「執行」圖示，按一下綠色箭頭。
 ![3-17-vsc-run-project.png](./images/vsc14.png)
-第一次以偵錯模式執行專案時，您必須附加Azure儲存體帳戶，請按一下[選取儲存體帳戶]。****
+第一次以偵錯模式執行專案時，您必須附加Azure儲存體帳戶，請按一下[選取儲存體帳戶]。**&#x200B;**
 ![3-17-vsc-run-project.png](./images/vsc14a.png)
 然後選取您先前建立的儲存體帳戶，名為`--aepUserLdap--aepstorage`。
 ![3-17-vsc-run-project.png](./images/vsc14b.png)
 您的專案現在已啟動且執行中，並列出事件中心中的事件。 在下個練習中，您將會在CitiSignal示範網站上示範行為，以符合您的受眾資格。 因此，您將在事件中心觸發函式的終端機中收到對象資格裝載。
 ![3-24-vsc-application-stop.png](./images/vsc18.png)
+
 ## 停止Azure專案
 
 若要停止您的專案，請移至VSC中的lenu **CALL STACK**，按一下執行中專案上的箭頭，然後按一下&#x200B;**停止**。
 ![3-24-vsc-application-stop.png](./images/vsc17.png)
+
 ## 後續步驟
 
 移至[2.4.7端對端案例](./ex7.md){target="_blank"}

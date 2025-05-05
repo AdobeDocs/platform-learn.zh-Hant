@@ -205,7 +205,7 @@ ht-degree: 0%
 
 ## 1.3.2.4在Adobe Express中建立新範本
 
-接著，按一下[共用]按鈕，然後選取[建立範本]。********
+接著，按一下[共用]按鈕，然後選取[建立範本]。**&#x200B;**&#x200B;**&#x200B;**
 
 ![Adobe Express](./images/expressv50.png)
 
@@ -219,7 +219,7 @@ ht-degree: 0%
 
 ## 1.3.2.5將您的視訊儲存在AEM Assets CS
 
-再按一下「共用&#x200B;**」**，然後選取「儲存至雲端」****。 選取&#x200B;**AEM Assets**。
+再按一下「共用&#x200B;**」**，然後選取「儲存至雲端」**&#x200B;**。 選取&#x200B;**AEM Assets**。
 
 ![Adobe Express](./images/expressv53.png)
 

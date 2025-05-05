@@ -158,7 +158,7 @@ Adobe Experience Platform在&#x200B;**來源**&#x200B;中提供聯結器，可�
 ## 4.2.3.3 BigQuery API和refreshToken
 
 要取得refreshToken以存取Google Cloud平台API，有許多方式。 例如，其中一個選項是使用Postman。
-不過，Google已建置一些更容易測試和使用API的工具，稱為**OAuth 2.0 Playground**。
+不過，Google已建置一些更容易測試和使用API的工具，稱為&#x200B;**OAuth 2.0 Playground**。
 
 若要存取&#x200B;**OAuth 2.0遊樂場**，請前往[https://developers.google.com/oauthplayground](https://developers.google.com/oauthplayground)。
 

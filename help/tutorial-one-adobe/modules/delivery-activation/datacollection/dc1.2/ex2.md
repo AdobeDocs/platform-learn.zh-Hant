@@ -81,7 +81,7 @@ ht-degree: 4%
 
 ![資料擷取](./images/emptyschema.png)
 
-現在您需要定義問題&#x200B;**此客戶是誰？的答案**看起來應該像這樣。
+現在您需要定義問題&#x200B;**此客戶是誰？的答案**&#x200B;看起來應該像這樣。
 在本實驗的簡介中，我們注意到需要下列屬性來定義客戶：
 
 - 名字、姓氏和地址等人口統計資訊
@@ -234,15 +234,15 @@ ht-degree: 4%
 
 接下來，您必須將&#x200B;**`--aepUserLdap--_ecid`**&#x200B;和&#x200B;**`--aepUserLdap--_mobilenr`**&#x200B;的其他欄位定義為標準識別碼。
 
-選取欄位&#x200B;**`--aepUserLdap--_ecid`**。 在右側的欄位屬性中，向下捲動直到您看到&#x200B;**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**的核取方塊。
-接著，從**[!UICONTROL 名稱空間]**&#x200B;清單中選取名稱空間&#x200B;**[!UICONTROL ECID]**。
-按一下**[!UICONTROL 套用]**&#x200B;以儲存變更。
+選取欄位&#x200B;**`--aepUserLdap--_ecid`**。 在右側的欄位屬性中，向下捲動直到您看到&#x200B;**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**&#x200B;的核取方塊。
+接著，從&#x200B;**[!UICONTROL 名稱空間]**&#x200B;清單中選取名稱空間&#x200B;**[!UICONTROL ECID]**。
+按一下&#x200B;**[!UICONTROL 套用]**&#x200B;以儲存變更。
 
 ![資料擷取](./images/ecidid.png)
 
-選取欄位&#x200B;**`--aepUserLdap--_mobilenr`**。 在右側的欄位屬性中，向下捲動直到您看到&#x200B;**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**的核取方塊。
-從**[!UICONTROL 名稱空間]**&#x200B;清單中選取名稱空間&#x200B;**[!UICONTROL 電話]**。
-按一下**[!UICONTROL 套用]**&#x200B;以儲存變更。
+選取欄位&#x200B;**`--aepUserLdap--_mobilenr`**。 在右側的欄位屬性中，向下捲動直到您看到&#x200B;**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**&#x200B;的核取方塊。
+從&#x200B;**[!UICONTROL 名稱空間]**&#x200B;清單中選取名稱空間&#x200B;**[!UICONTROL 電話]**。
+按一下&#x200B;**[!UICONTROL 套用]**&#x200B;以儲存變更。
 
 ![資料擷取](./images/mobid.png)
 
@@ -250,11 +250,11 @@ ht-degree: 4%
 
 ![資料擷取](./images/applyiden.png)
 
-按一下[儲存]儲存變更。****
+按一下[儲存]儲存變更。**&#x200B;**
 
 ![資料擷取](./images/saveschema.png)
 
-這裡要做的最後一件事，是啟動要連結至&#x200B;**[!UICONTROL 設定檔]**的結構描述。
+這裡要做的最後一件事，是啟動要連結至&#x200B;**[!UICONTROL 設定檔]**&#x200B;的結構描述。
 為設定檔啟用結構描述後，您將確保針對此結構描述傳送至Adobe Experience Platform的所有資料都會成為即時客戶設定檔環境的一部分，以確保所有資料都可用於即時查詢、細分和啟用。
 
 若要這麼做，請選取結構描述的名稱。
@@ -271,7 +271,7 @@ ht-degree: 4%
 
 ![資料擷取](./images/sureps.png)
 
-您的結構描述現在已設定為[!UICONTROL 即時客戶設定檔]的一部分。 按一下[儲存]儲存結構描述。****
+您的結構描述現在已設定為[!UICONTROL 即時客戶設定檔]的一部分。 按一下[儲存]儲存結構描述。**&#x200B;**
 
 ![資料擷取](./images/sureyps.png)
 
@@ -321,7 +321,7 @@ ht-degree: 4%
 
 ![資料擷取](./images/emptyschemaee.png)
 
-現在您必須定義問題&#x200B;**此客戶有何行為？**看起來應該像這樣。
+現在您必須定義問題&#x200B;**此客戶有何行為？**&#x200B;看起來應該像這樣。
 在本實驗的簡介中，我們注意到需要下列屬性來定義客戶的行為：
 
 - 造訪過哪些頁面或產品？
@@ -359,7 +359,7 @@ ht-degree: 4%
 ![資料擷取](./images/addmixinee2.png)
 
 您現在將建立自己的[!UICONTROL 欄位群組]，而不是重複使用現有的[!UICONTROL 欄位群組]。 選取&#x200B;**[!UICONTROL 建立新欄位群組]**，然後輸入您的欄位群組的名稱，如下所示： `--aepUserLdap-- - ExperienceEvent Identification Field Group`。
-按一下**新增欄位群組**
+按一下&#x200B;**新增欄位群組**
 
 ![資料擷取](./images/createmixineew.png)
 
@@ -425,27 +425,27 @@ ECID — 欄位將定義為型別&#x200B;**[!UICONTROL 字串]**，而您將設�
 ![資料擷取](./images/3fieldsee.png)
 
 若要開始將這些欄位定義為&#x200B;**[!UICONTROL 身分]** — 欄位，請選取欄位&#x200B;**`--aepUserLdap--_ecidweb`**。
-在右側的欄位屬性中，向下捲動直到您看到**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**&#x200B;的核取方塊，並核取&#x200B;**[!UICONTROL 主要身分]**的核取方塊。
-從**[!UICONTROL 名稱空間]**&#x200B;清單中選取名稱空間&#x200B;**[!UICONTROL ECID]**。
+在右側的欄位屬性中，向下捲動直到您看到&#x200B;**[!UICONTROL 身分]**&#x200B;為止。 核取&#x200B;**[!UICONTROL 身分]**&#x200B;的核取方塊，並核取&#x200B;**[!UICONTROL 主要身分]**&#x200B;的核取方塊。
+從&#x200B;**[!UICONTROL 名稱空間]**&#x200B;清單中選取名稱空間&#x200B;**[!UICONTROL ECID]**。
 
 按一下&#x200B;**[!UICONTROL 套用]**&#x200B;以儲存變更。
 
 ![資料擷取](./images/ecididee.png)
 
-**[!UICONTROL 識別碼]**&#x200B;物件現在看起來應該像這樣，ecid-field現在也會顯示&#x200B;**指紋**圖示，以顯示它們已定義為識別碼。
-按一下[儲存]儲存變更。****
+**[!UICONTROL 識別碼]**&#x200B;物件現在看起來應該像這樣，ecid-field現在也會顯示&#x200B;**指紋**&#x200B;圖示，以顯示它們已定義為識別碼。
+按一下[儲存]儲存變更。**&#x200B;**
 
 ![資料擷取](./images/applyidenee.png)
 
 請務必注意，最終針對此結構擷取資料時，需要一些欄位。
-例如，欄位**[!UICONTROL _id]**&#x200B;和&#x200B;**[!UICONTROL timestamp]**&#x200B;是必要欄位，這是ExperienceEvent類別所強加的要求。
+例如，欄位&#x200B;**[!UICONTROL _id]**&#x200B;和&#x200B;**[!UICONTROL timestamp]**&#x200B;是必要欄位，這是ExperienceEvent類別所強加的要求。
 
 - _id必須包含用於特定資料擷取的唯一id
 - 時間戳記必須是此點選的時間戳記，格式為&#x200B;**`"YYYY-MM-DDTHH:MM:SSSZ"`**，例如： **`"2024-11-18T07:20:000Z"`**
 
 您現在已定義結構描述、連結現有和新建立的[!UICONTROL 欄位群組]且已定義識別碼。
 
-這裡要做的最後一件事，是啟動要連結至&#x200B;**[!UICONTROL 設定檔]**的結構描述。
+這裡要做的最後一件事，是啟動要連結至&#x200B;**[!UICONTROL 設定檔]**&#x200B;的結構描述。
 為[!UICONTROL 設定檔]啟用結構描述後，您即可確保針對此結構描述傳送至Adobe Experience Platform的所有資料都會成為即時客戶設定檔的一部分，以確保所有資料都可即時用於查詢、細分和啟用。
 
 若要這麼做，請按一下結構描述的名稱。
@@ -462,7 +462,7 @@ ECID — 欄位將定義為型別&#x200B;**[!UICONTROL 字串]**，而您將設�
 
 您的結構描述現在已設定為即時客戶設定檔的一部分。
 
-按一下[儲存]儲存結構描述。****
+按一下[儲存]儲存結構描述。**&#x200B;**
 
 ![資料擷取](./images/saveeewv.png)
 

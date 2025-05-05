@@ -97,7 +97,7 @@ ht-degree: 1%
 
 ## YouTube
 
-您可在我們的YouTube頻道](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw)上找到其他有趣的影片[。
+您可在我們的YouTube頻道[&#128279;](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw)上找到其他有趣的影片。
 
 ## 使用者流程
 

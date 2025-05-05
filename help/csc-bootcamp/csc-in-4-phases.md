@@ -52,7 +52,7 @@ _Source：_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/
 
 理想情況下，您的行銷團隊應該使用工作管理解決方案，該解決方案應允許跨職能共同作業，並將專案連線到規劃的、資料導向的結果。 它也應該授權行銷團隊策略性地安排工作的優先順序，並向您的創意團隊宣佈這些優先順序。 從那裡，創意簡報、內容版本和意見反應應在每個專案中捆綁在一起，因此您的團隊不必搜尋舊電子郵件來尋找他們想要的內容。
 
-您的創意團隊應該使用[絕佳的數位資產管理](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[系統](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)，此系統與您的創意和工作管理工具整合。 如此一來，他們就能輕鬆尋找、使用、更新或重新利用相關資產。 藉由採取這些措施，您可以提高上市速度，並簡化內部作業與程式。
+您的創意團隊應該使用[絕佳的數位資產管理](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [系統](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)，此系統與您的創意和工作管理工具整合。 如此一來，他們就能輕鬆尋找、使用、更新或重新利用相關資產。 藉由採取這些措施，您可以提高上市速度，並簡化內部作業與程式。
 
 ### 透過順暢的工作流程提高生產效率
 

@@ -78,7 +78,7 @@ Platform Web SDK會將資料從您的網站傳送至PlatformEdge Network。 您�
 
 ### 自動對應的欄位
 
-許多XDM欄位會自動對應至Analytics變數。 如需最新的對應清單，請參閱AdobeExperience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)中的[Analytics變數對應。
+許多XDM欄位會自動對應至Analytics變數。 如需最新的對應清單，請參閱AdobeExperience Edge[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)中的Analytics變數對應。
 
 如果&#x200B;_即使您尚未定義自訂結構描述_，也會發生這種情況。 Experience PlatformWeb SDK會自動收集一些資料，並以XDM欄位形式將其傳送至PlatformEdge Network。 例如，Web SDK會讀取目前的頁面URL，並將其傳送為XDM欄位`web.webPageDetails.URL`。 此欄位會轉送至Adobe Analytics，並自動填入Adobe Analytics中的頁面URL報表。
 
@@ -254,7 +254,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 保留&#x200B;**[!UICONTROL 擴充功能]**&#x200B;為&#x200B;**[!UICONTROL 核心]**
 
-1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;]**的**[!UICONTROL &#x200B;路徑
+1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**的**&#x200B;路徑
 
 1. 在右側，保留&#x200B;**[!UICONTROL Regex]**&#x200B;切換功能為停用
 
@@ -449,7 +449,7 @@ Adobe Experience Platform保證可協助您檢查、證明、模擬及驗證您�
 ### 內容頁面檢視驗證
 
 使用相同的信標，驗證內容頁面檢視是否已對應至正確的Adobe Analytics變數。
-向下捲動至**[!UICONTROL pageName]**&#x200B;以驗證`Page Name`是否已正確擷取
+向下捲動至&#x200B;**[!UICONTROL pageName]**&#x200B;以驗證`Page Name`是否已正確擷取
 ![含保證的頁面名稱驗證](assets/assurance-hitdebugger-content-pagename.png)
 
 ### 產品字串和電子商務事件驗證

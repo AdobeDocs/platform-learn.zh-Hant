@@ -179,7 +179,7 @@ limit 10;
 
 ### Adobe定義的函式
 
-Adobe已將一組&#x200B;**Adobe定義函式**&#x200B;新增至標準SQL語法，讓您更清楚瞭解您的體驗資料。 在接下來的幾個查詢中，您將瞭解這些ADF函式。 您可以在檔案](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html)中找到詳細資訊和完整清單[。
+Adobe已將一組&#x200B;**Adobe定義函式**&#x200B;新增至標準SQL語法，讓您更清楚瞭解您的體驗資料。 在接下來的幾個查詢中，您將瞭解這些ADF函式。 您可以在檔案[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html)中找到詳細資訊和完整清單。
 
 ### 當使用者進入工作階段的第3頁時，「取消服務」頁面前會在網站上執行什麼動作？
 

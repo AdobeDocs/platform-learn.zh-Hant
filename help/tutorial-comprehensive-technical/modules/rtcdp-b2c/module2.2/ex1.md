@@ -14,7 +14,7 @@ ht-degree: 1%
 # 2.2.1 Customer AI — 資料準備（擷取）
 
 為了讓智慧型服務從行銷事件資料中探索見解，資料必須在語義上豐富並維護標準結構。 Intelligent Services可運用Adobe的Experience Data Model (XDM)結構描述來達成此目標。
-具體而言，Intelligent Services中使用的所有資料集都必須符合**消費者體驗事件** XDM結構描述。
+具體而言，Intelligent Services中使用的所有資料集都必須符合&#x200B;**消費者體驗事件** XDM結構描述。
 
 ## 建立結構描述
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 ![建立新結構描述](./images/xdmee4.png)
 
-您現在應該擁有此專案。 按一下[儲存]儲存結構描述。****
+您現在應該擁有此專案。 按一下[儲存]儲存結構描述。**&#x200B;**
 
 ![建立新結構描述](./images/xdmee5.png)
 

@@ -47,7 +47,7 @@ ht-degree: 3%
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-深入瞭解如何使用Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)追蹤[ECID。
+深入瞭解如何使用Platform Web SDK[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)追蹤ECID。
 
 ECID是使用第一方Cookie和平台Edge Network的組合所設定。 根據預設，第一方身分識別Cookie是由Web SDK在使用者端設定。 若要說明瀏覽器對Cookie有效期的限制，您可以選擇改為在伺服器端設定您自己的第一方身分識別Cookie 。 這些身分識別Cookie稱為第一方裝置ID (FPID)。
 

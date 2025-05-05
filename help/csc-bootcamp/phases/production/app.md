@@ -41,7 +41,7 @@ AEM as a Cloud Service是適用於Headless實作模式的彈性工具，提供�
 1. 傳送的內容API
    - AEM GraphQL API支援內容片段傳送。
    - AEM Assets REST API支援內容片段CRUD作業。
-   - 透過內容片段核心元件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)的[JSON匯出，也可以直接傳送內容。
+   - 透過內容片段核心元件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)的JSON匯出，也可以直接傳送內容。
 
 ## 練習
 
@@ -84,6 +84,7 @@ AEM as a Cloud Service是適用於Headless實作模式的彈性工具，提供�
 - 在開啟的強制回應視窗中，您會看到某些欄位尚未可編輯。 這是邏輯性的：根據我們建立片段的位置，會有不同的模型可用。
   ![建立內容片段](./images/prod-app-create-cf-details.png)
    - 首先，按一下「位置」欄位旁的資料夾圖示，以選取我們將建立片段的位置。 按一下資料夾「adobike」\>「en」\>「mobile-app」展開內容樹，然後按一下「選擇」按鈕確認您的選擇。
+
      ![選取正確的位置](./images/prod-app-folder.png)
    - 您會注意到「內容片段模式」欄位現在已可編輯。 按一下欄位旁的箭頭以開啟下拉式清單，並選取我們先前檢視的內容模式：「行動應用程式首頁」。
    - 接下來，為您的內容片段提供一個有意義的標題（提示：加入您的團隊編號，以便輕鬆找到您的內容）。 您會注意到「名稱」欄位會自動填入，這是為了讓您的生活更輕鬆：這是系統用來識別您的片段的名稱，不應該觸及。
@@ -94,6 +95,7 @@ AEM as a Cloud Service是適用於Headless實作模式的彈性工具，提供�
    - 若要選取影像資產，請按一下資料夾圖示，以瀏覽AEM Assets尋找正確的影像。
    - 針對精選產品，按一下產品查詢圖示，如此即可輕鬆選取我們的「Adobike 1」Commerce產品，而商務相關的詳細資料則會載入應用程式中。
    - 完成儲存所有編寫的內容並發佈變更時，請務必按一下「儲存」按鈕。
+
      ![發佈變更](./images/prod-app-publish.png)
 
 現在我們已經預見行動應用程式將會包含一些內容，我們可以開始傳遞行銷活動了。

@@ -29,10 +29,13 @@ ht-degree: 0%
 
 - 以下是您感興趣的內容：
    - Adobike橫幅深色：根據選取的資產建立具有深色覆蓋圖的Adobike橫幅
+
      ![深色橫幅](./images/prod-banner-dark.jpg)
    - Adobike橫幅淺色：根據選取的資產建立淺色覆蓋的Adobike橫幅
+
      ![淺色橫幅](./images/prod-banner-light.jpg)
    - Adobike橫幅綠色：根據選取的資產，建立覆蓋綠色的Adobike橫幅
+
      ![綠色橫幅](./images/prod-banner-green.jpg)
 
 - 選擇您要建立的橫幅型別後，請選取該處理設定檔，然後選取「將設定檔套用至資料夾」。

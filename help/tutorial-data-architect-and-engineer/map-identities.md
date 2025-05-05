@@ -49,7 +49,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 ## 建立身分識別命名空間
 
-在本練習中，我們將為 Luma 的自訂身份欄位`loyaltyId``crmId`、、 和 `productSku`.身分識別命名空間在建立即時客戶輪廓方面扮演關鍵角色，因為相同命名空間中的兩個相符值可讓兩個資料來源形成身分識別圖表。
+在本練習中，我們將為 Luma 的自訂身份欄位`loyaltyId` `crmId`、、 和 `productSku`.身分識別命名空間在建立即時客戶輪廓方面扮演關鍵角色，因為相同命名空間中的兩個相符值可讓兩個資料來源形成身分識別圖表。
 
 
 ### 建立 UI中的命名空間

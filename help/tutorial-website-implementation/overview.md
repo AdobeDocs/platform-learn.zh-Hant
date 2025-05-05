@@ -130,7 +130,7 @@ Adobe Experience Platform的標籤功能是新一代Adobe的網站標籤與行�
    </html>
    ```
 
-+++
+   +++
 
 1. 取得可用來變更範例 html 頁面的文字編輯器。(如果您沒有這類文字編輯器，建議您試用 [Brackets](https://brackets.io/))
 1. 將 [Luma 網站](https://luma.enablementadobe.com/content/luma/us/en.html)加入書籤

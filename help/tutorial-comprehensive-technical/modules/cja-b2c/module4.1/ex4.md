@@ -33,8 +33,8 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 
 ### 建立您的專案
 
-現在該建立您的第一個CJA工作區了。 前往CJA內的&#x200B;**Workspace**標籤。
-按一下**建立專案**。
+現在該建立您的第一個CJA工作區了。 前往CJA內的&#x200B;**Workspace**&#x200B;標籤。
+按一下&#x200B;**建立專案**。
 
 ![示範](./images/prmenu.png)
 

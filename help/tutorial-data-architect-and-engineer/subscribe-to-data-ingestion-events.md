@@ -21,7 +21,7 @@ ht-degree: 0%
 
 在本課程中，您將使用Adobe Developer Console和線上webhook開發工具設定webhook，以訂閱資料擷取事件。 在後續的課程中，您將使用這些事件來監控資料擷取工作的狀態。
 
-**資料工程師**將想要在本教學課程之外訂閱資料擷取事件。
+**資料工程師**&#x200B;將想要在本教學課程之外訂閱資料擷取事件。
 **資料架構師** _可以略過此課程_，並移至[批次擷取課程](ingest-batch-data.md)。
 
 ## 需要的許可權
@@ -59,17 +59,17 @@ ht-degree: 0%
    ![新增事件](assets/ioevents-addEvents.png)
 1. 選取&#x200B;**[!UICONTROL Experience Platform]**&#x200B;以篩選清單
 1. 選取&#x200B;**[!UICONTROL 平台通知]**
-1. 選取&#x200B;**[!UICONTROL 下一步]**按鈕
+1. 選取&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕
    ![新增通知](assets/ioevents-addNotifications.png)
 1. 選取所有事件
-1. 選取&#x200B;**[!UICONTROL 下一步]**按鈕
+1. 選取&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕
    ![選取訂閱](assets/ioevents-addSubscriptions.png)
-1. 在設定認證的下一個畫面上，再次選取&#x200B;**[!UICONTROL 下一步]**按鈕
+1. 在設定認證的下一個畫面上，再次選取&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕
    ![略過認證畫面](assets/ioevents-clickNext.png)
 1. 作為&#x200B;**[!UICONTROL 事件註冊名稱]**，請輸入`Platform notifications`
 1. 向下捲動並選取以開啟&#x200B;**[!UICONTROL Webhook]**&#x200B;區段
 1. 以&#x200B;**[!UICONTROL Webhook URL]**&#x200B;身分，從webhook.site的&#x200B;**您的唯一URL**&#x200B;欄位貼上值
-1. 選取&#x200B;**[!UICONTROL 儲存已設定的事件]**按鈕
+1. 選取&#x200B;**[!UICONTROL 儲存已設定的事件]**&#x200B;按鈕
    ![儲存事件](assets/ioevents-addWebhook.png)
 1. 等待您的設定儲存，您應該會看到您的`Platform notifications`事件為作用中，且您的webhook詳細資料沒有錯誤訊息
    ![組態已儲存](assets/ioevents-webhookConfigured.png)

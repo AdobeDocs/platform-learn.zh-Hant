@@ -102,8 +102,8 @@ ht-degree: 1%
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl10.png)
 
-您現在已在「事件轉送」屬性中設定第一個規則。 移至&#x200B;**發佈流程**以發佈您的變更。
-按一下指示的**編輯**，開啟您的開發程式庫&#x200B;**主要**。
+您現在已在「事件轉送」屬性中設定第一個規則。 移至&#x200B;**發佈流程**&#x200B;以發佈您的變更。
+按一下指示的&#x200B;**編輯**，開啟您的開發程式庫&#x200B;**主要**。
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl11.png)
 

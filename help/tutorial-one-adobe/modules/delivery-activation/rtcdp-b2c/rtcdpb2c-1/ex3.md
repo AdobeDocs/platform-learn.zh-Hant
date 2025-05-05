@@ -132,7 +132,7 @@ ht-degree: 1%
 
 ![權限](./images/perm3.png)
 
-選取新建立的Adobe I/O專案，然後按一下[儲存]。****
+選取新建立的Adobe I/O專案，然後按一下[儲存]。**&#x200B;**
 
 ![權限](./images/perm4.png)
 
@@ -179,7 +179,7 @@ Postman中有2個概念：「環境」和「集合」。
 
 ![Adobe I/O新整合](./images/choosefiles.png)
 
-導覽至您案頭上解壓縮4個下載檔案的資料夾。 同時選取這4個檔案，然後按一下[開啟]。****
+導覽至您案頭上解壓縮4個下載檔案的資料夾。 同時選取這4個檔案，然後按一下[開啟]。**&#x200B;**
 
 ![Adobe I/O新整合](./images/selectfiles.png)
 

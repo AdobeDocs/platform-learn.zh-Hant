@@ -174,6 +174,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
    1. 選取環境，例如&#x200B;**[!UICONTROL 開發]**。
    1. 從&#x200B;**[!UICONTROL 事件資料集]**&#x200B;清單中選取&#x200B;**[!UICONTROL AJO推播追蹤體驗事件資料集]**&#x200B;資料集。
    1. 選取&#x200B;**[!UICONTROL 儲存至程式庫並建置]**。
+
       ![AJO擴充功能設定](assets/push-tags-ajo.png)
 
 >[!NOTE]
@@ -307,6 +308,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
    1. 在&#x200B;**[!UICONTROL 欄位屬性]**&#x200B;窗格中，向下捲動以檢視事件型別的可能值清單。 選取&#x200B;**[!UICONTROL 新增列]**，並將`application.test`新增為&#x200B;**[!UICONTROL VALUE]**，並將`[!UICONTROL Test event for push notification]`新增為`DISPLAY NAME`。
    1. 選取&#x200B;**[!UICONTROL 「套用」]**。
    1. 選取「**[!UICONTROL 儲存]**」。
+
       ![新增值至事件型別](assets/ajo-update-schema-eventtype-enum.png)
 
 ### 定義事件
@@ -343,11 +345,13 @@ Journey Optimizer中的事件可讓您統一觸發歷程以傳送訊息，例如
 
       1. 在&#x200B;**[!UICONTROL 新增事件識別碼條件]**&#x200B;對話方塊中，將&#x200B;**[!UICONTROL 事件型別(eventType)]**&#x200B;拖放到&#x200B;**[!UICONTROL 將元素拖放到這裡]**。
       1. 在彈出視窗中，捲動到底部並選取&#x200B;**[!UICONTROL application.test]** （這是您先前新增至事件型別清單的事件型別，作為[更新您的結構描述](#update-your-schema)的一部分）。 然後向上捲動到頂端並選取&#x200B;**[!UICONTROL 確定]**。
-      1. 選取&#x200B;**[!UICONTROL 確定]**以儲存條件。
+      1. 選取&#x200B;**[!UICONTROL 確定]**&#x200B;以儲存條件。
+
          ![編輯事件條件](assets/ajo-edit-condition.png)
 
-   1. 從&#x200B;**[!UICONTROL 名稱空間]**&#x200B;清單中選取&#x200B;**[!UICONTROL ECID (ECID)]**。 **[!UICONTROL 設定檔識別碼]**&#x200B;欄位自動填入對應identityMap ]**之索引鍵ECID的第一個專案識別碼**[!UICONTROL 。
+   1. 從&#x200B;**[!UICONTROL 名稱空間]**&#x200B;清單中選取&#x200B;**[!UICONTROL ECID (ECID)]**。 **[!UICONTROL 設定檔識別碼]**&#x200B;欄位自動填入對應identityMap **之索引鍵ECID的第一個專案識別碼**。
    1. 選取「**[!UICONTROL 儲存]**」。
+
       ![編輯事件步驟2](assets/ajo-edit-event2.png)
 
 您剛才已根據您先前在本教學課程中建立的行動應用程式體驗事件結構描述建立事件設定。 此事件設定將會使用您的特定事件型別(`application.test`)篩選傳入的體驗事件，因此只有從該行動應用程式起始的特定型別事件，才會觸發您在下一個步驟中建立的歷程。 在真實情境中，您可能會想要從外部服務傳送推播通知，但相同的概念適用：從外部應用程式傳送體驗事件至Experience Platform，該事件具有您可在觸發歷程之前用來套用條件的特定欄位。
@@ -364,6 +368,7 @@ Journey Optimizer中的事件可讓您統一觸發歷程以傳送訊息，例如
    1. 輸入歷程的&#x200B;**[!UICONTROL 描述]**，例如`Journey for test push notifications in Luma mobile app`。
    1. 請確定已選取&#x200B;**[!UICONTROL 允許重新進入]**，並將&#x200B;**[!UICONTROL 重新進入等待期間]**&#x200B;設定為&#x200B;**[!UICONTROL 30]** **[!UICONTROL 秒]**。
    1. 選取&#x200B;**[!UICONTROL 確定]**。
+
       ![歷程屬性](assets/ajo-journey-properties.png)
 
 1. 回到歷程畫布，從&#x200B;**[!UICONTROL EVENTS]**，將![事件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!DNL LumaTestEvent]**&#x200B;拖放到畫布上，其中顯示&#x200B;**[!UICONTROL 選取進入事件或讀取對象活動]**。
@@ -373,7 +378,8 @@ Journey Optimizer中的事件可讓您統一觸發歷程以傳送訊息，例如
 1. 從&#x200B;**[!UICONTROL ACTIONS]**&#x200B;下拉式清單中，將![推播](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL 推播]**&#x200B;拖放到顯示於您&#x200B;**[!DNL LumaTestEvent]**&#x200B;活動右側的![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)上。 在&#x200B;**[!UICONTROL 動作：推播]**&#x200B;窗格中：
 
    1. 提供&#x200B;**[!UICONTROL 標籤]**，例如`Luma Test Push Notification`，提供&#x200B;**[!UICONTROL 描述]**，例如`Test push notification for Luma mobile app`，從&#x200B;**[!UICONTROL 類別]**&#x200B;清單中選取&#x200B;**[!UICONTROL 異動]**，並從&#x200B;**[!UICONTROL 推播表面]**&#x200B;中選取&#x200B;**[!DNL Luma]**。
-   1. 選取![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯內容]**以開始編輯實際的推播通知。
+   1. 選取![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯內容]**&#x200B;以開始編輯實際的推播通知。
+
       ![推送屬性](assets/ajo-push-properties.png)
 
       在&#x200B;**[!UICONTROL 推播通知]**&#x200B;編輯器中：
@@ -381,11 +387,12 @@ Journey Optimizer中的事件可讓您統一觸發歷程以傳送訊息，例如
       1. 輸入&#x200B;**[!UICONTROL 標題]**，例如`Luma Test Push Notification`，並輸入&#x200B;**[!UICONTROL 內文]**，例如`Test push notification for Luma mobile app`。
       1. 您可以選擇在&#x200B;**[!UICONTROL 新增媒體]**&#x200B;中輸入影像(.png或.jpg)的連結。 如果這樣做，影像將成為推播通知的一部分。
       1. 若要儲存並離開編輯器，請選取![左V形](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg)。
+
          ![推播編輯器](assets/ajo-push-editor.png)
 
    1. 若要儲存並完成推播通知定義，請選取&#x200B;**[!UICONTROL 確定]**。
 
-1. 您的歷程應如下所示。 選取&#x200B;**[!UICONTROL 發佈]**以發佈並啟用您的歷程。
+1. 您的歷程應如下所示。 選取&#x200B;**[!UICONTROL 發佈]**&#x200B;以發佈並啟用您的歷程。
    ![已完成歷程](assets/ajo-journey-finished.png)
 
 

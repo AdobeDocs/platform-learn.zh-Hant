@@ -73,7 +73,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 1. 檢閱[設定指示](assurance.md#connecting-to-a-session)區段，將您的模擬器或裝置連線到Assurance。
 1. 將應用程式傳送至背景。 檢查Assurance UI中的&#x200B;**[!UICONTROL LifecyclePause]**&#x200B;事件。
-1. 將應用程式移至前景。 檢查保證UI中的&#x200B;**[!UICONTROL LifecycleResume]**事件。
+1. 將應用程式移至前景。 檢查保證UI中的&#x200B;**[!UICONTROL LifecycleResume]**&#x200B;事件。
    ![驗證生命週期](assets/lifecycle-lifecycle-assurance.png)
 
 
@@ -93,6 +93,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. 選取&#x200B;**[!UICONTROL 行動核心]**&#x200B;做為&#x200B;**[!UICONTROL 擴充功能]**。
    1. 選取&#x200B;**[!UICONTROL 前景]**&#x200B;做為&#x200B;**[!UICONTROL 事件型別]**。
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
+
       ![規則事件設定](assets/rule-event-configuration.png)
 1. 返回&#x200B;**[!UICONTROL 「建立規則」]**&#x200B;畫面，選取&#x200B;**[!UICONTROL 行動核心 — 前景]**&#x200B;旁的![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]**。
    ![下一個事件設定](assets/rule-event-configuration-next.png)
@@ -100,6 +101,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. 選取&#x200B;**[!UICONTROL 行動核心]**&#x200B;做為&#x200B;**[!UICONTROL 擴充功能]**。
    1. 選取&#x200B;**[!UICONTROL 背景]**&#x200B;做為&#x200B;**[!UICONTROL 事件型別]**。
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
+
       ![規則事件設定](assets/rule-event-configuration-background.png)
 1. 返回&#x200B;**[!UICONTROL 建立規則]**&#x200B;畫面，選取&#x200B;**[!UICONTROL 動作]**&#x200B;下的![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]**。
    ![規則新增動作](assets/rule-action-button.png)
@@ -107,10 +109,11 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. 選取&#x200B;**[!UICONTROL Adobe體驗Edge Network]**&#x200B;做為&#x200B;**[!UICONTROL 擴充功能]**。
    1. 選取&#x200B;**[!UICONTROL 轉寄事件至Edge Network]**&#x200B;作為&#x200B;**[!UICONTROL 動作型別]**。
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
+
       ![規則動作組態](assets/rule-action-configuration.png)
 1. 選取&#x200B;**[!UICONTROL 儲存至資料庫]**。
    ![規則 — 儲存至資料庫](assets/rule-save-to-library.png)
-1. 選取&#x200B;**[!UICONTROL 建置]**以重建程式庫。
+1. 選取&#x200B;**[!UICONTROL 建置]**&#x200B;以重建程式庫。
    ![規則 — 組建](assets/rule-build.png)
 
 當您成功建立屬性後，事件會傳送至PlatformEdge Network，而事件會根據您的資料流設定轉送至其他應用程式和服務。

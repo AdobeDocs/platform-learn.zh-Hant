@@ -28,7 +28,7 @@ ht-degree: 10%
 ![屬性頁面](./images/launch1.png)
 
 在&#x200B;**快速入門**&#x200B;中，示範系統為您建立了兩個使用者端屬性：一個用於網站，一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--aepUserLdap--`以尋找它們。
-按一下以開啟**Web**&#x200B;屬性。
+按一下以開啟&#x200B;**Web**&#x200B;屬性。
 
 ![搜尋方塊](./images/property6.png)
 
@@ -140,8 +140,8 @@ Adobe Experience Platform Data Collection是以規則為基礎的系統。 它�
 
 ![資料庫存取](./images/publish1.png)
 
-按一下&#x200B;**新增所有變更的資源**按鈕。 下一個，
-按一下**儲存並建置以供開發**&#x200B;按鈕。
+按一下&#x200B;**新增所有變更的資源**&#x200B;按鈕。 下一個，
+按一下&#x200B;**儲存並建置以供開發**&#x200B;按鈕。
 
 ![資料庫存取](./images/publish1a.png)
 

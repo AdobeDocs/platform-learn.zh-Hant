@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ![示範](./images/aud7.png)
 
-選取名為&#x200B;**bootcamp-facebook**&#x200B;的目的地，然後按一下[下一步] ****。
+選取名為&#x200B;**bootcamp-facebook**&#x200B;的目的地，然後按一下[下一步] **&#x200B;**。
 
 ![示範](./images/aud8.png)
 

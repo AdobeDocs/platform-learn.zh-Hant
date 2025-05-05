@@ -76,7 +76,7 @@ ht-degree: 0%
 ![Journey Optimizer](./images/fragm10.png)
 
 幾分鐘後，您會看到片段的狀態已變更為&#x200B;**即時**。
-接下來，您應該為電子郵件訊息的頁尾建立新的片段。 按一下**建立片段**。
+接下來，您應該為電子郵件訊息的頁尾建立新的片段。 按一下&#x200B;**建立片段**。
 
 ![Journey Optimizer](./images/fragm11.png)
 

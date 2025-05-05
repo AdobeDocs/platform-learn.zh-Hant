@@ -44,14 +44,14 @@ ht-degree: 6%
 在本練習中，我們將在UI中建立資料集。 讓我們從忠誠度資料開始：
 
 1. 移至Platform使用者介面左側導覽中的&#x200B;**[!UICONTROL 資料集]**
-1. 選取&#x200B;**[!UICONTROL 建立資料集]**按鈕
+1. 選取&#x200B;**[!UICONTROL 建立資料集]**&#x200B;按鈕
    ![建立資料集](assets/datasets-createDataset.png)
 
 1. 在下一個畫面中，選取&#x200B;**從結構描述建立資料集**
-1. 在下一個畫面中，選取您的`Luma Loyalty Schema`，然後選取&#x200B;**[!UICONTROL 下一步]**按鈕
+1. 在下一個畫面中，選取您的`Luma Loyalty Schema`，然後選取&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕
    ![選取資料集](assets/datasets-selectSchema.png)
 
-1. 為資料集命名`Luma Loyalty Dataset`並選取&#x200B;**[!UICONTROL 完成]**按鈕
+1. 為資料集命名`Luma Loyalty Dataset`並選取&#x200B;**[!UICONTROL 完成]**&#x200B;按鈕
    ![命名資料集](assets/datasets-nameDataset.png)
 1. 資料集儲存後，您將會看到類似以下的畫面：
    ![已建立資料集](assets/datasets-created.png)
@@ -122,7 +122,7 @@ ht-degree: 6%
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`：在Admin Console中驗證您的使用者許可權
 
 
-您可以回到Platform使用者介面中的&#x200B;**[!UICONTROL 資料集]**畫面，您可以驗證所有五個資料集的建立是否成功！
+您可以回到Platform使用者介面中的&#x200B;**[!UICONTROL 資料集]**&#x200B;畫面，您可以驗證所有五個資料集的建立是否成功！
 ![五個資料集完成](assets/datasets-allComplete.png)
 
 

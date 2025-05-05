@@ -198,7 +198,7 @@ split函式預期分號前的值陣列，並預期您指定分號後的分隔符
 
 ## 後續步驟
 
-使用聯結器](./ex4.md){target="_blank"}移至[1.2.4 Automation
+使用聯結器[&#128279;](./ex4.md){target="_blank"}移至1.2.4 Automation
 
 返回[使用Workfront Fusion進行Creative工作流程自動化](./automation.md){target="_blank"}
 

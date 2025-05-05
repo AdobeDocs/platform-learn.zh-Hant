@@ -88,7 +88,7 @@ ht-degree: 0%
 
 - 按狀態依月份&#x200B;**專案**
 
-按狀態](./images/project-by-condition.png)的![專案
+按狀態![&#128279;](./images/project-by-condition.png)的專案
 
 - **飛行中專案**&#x200B;的清單、進度和財務詳細資訊
 

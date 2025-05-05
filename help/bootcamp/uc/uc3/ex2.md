@@ -60,7 +60,7 @@ ht-degree: 0%
 
 ![ACOP](./images/eventpayloadbr.png)
 
-您應該會看到此訊息。 再按一次「儲存&#x200B;****」以儲存變更。
+您應該會看到此訊息。 再按一次「儲存&#x200B;**&#x200B;**」以儲存變更。
 
 ![ACOP](./images/eventsave.png)
 

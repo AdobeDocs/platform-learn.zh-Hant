@@ -90,6 +90,7 @@ Identity Service擴充功能是少數標籤擴充功能的其中之一，不必�
    1. 展開左側的 `Cookies`
    1. 按一下 `https://luma.enablementadobe.com` 網域
    1. 尋找右側的 AMCV_ Cookie。您可能會看到自那時起已使用硬式編碼標籤屬性及對映至您自己的屬性載入Luma網站的數個。
+
       ![驗證 AMCV_ Cookie](images/idservice-AMCVCookie.png)
 
 完成了！您已新增第一個擴充功能！有關 Identity Service 設定選項的詳細資訊，請參閱[本文件](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html)。

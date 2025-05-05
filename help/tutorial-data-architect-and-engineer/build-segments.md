@@ -94,7 +94,7 @@ ht-degree: 0%
 1. 選取&#x200B;**[!UICONTROL 事件]**&#x200B;標籤
 1. 將清單篩選為`purchases`
 1. 將&#x200B;**[!UICONTROL 購買]**&#x200B;事件型別拖曳到畫布上
-1. 選取事件上方的時鐘下拉式清單，並選擇過去30天中的&#x200B;****
+1. 選取事件上方的時鐘下拉式清單，並選擇過去30天中的&#x200B;**&#x200B;**
 1. 篩選&#x200B;**[!UICONTROL 事件]**&#x200B;清單至`category`，然後將&#x200B;**[!UICONTROL 產品類別]**&#x200B;欄位拖曳至&#x200B;**[!UICONTROL 購買]**
 1. 將運運算元變更為&#x200B;**[!UICONTROL 開頭為]**，並在文字方塊中輸入`men`
 1. 以&#x200B;**[!UICONTROL Name]**&#x200B;的身分，輸入`Purchased a Men's product in the last 30 days`

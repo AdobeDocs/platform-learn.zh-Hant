@@ -97,7 +97,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup8.png){zoomable="yes"}
 
-按一下&#x200B;**僅選取存放庫**，然後新增您剛建立的存放庫。 接著，按一下[安裝]。****
+按一下&#x200B;**僅選取存放庫**，然後新增您剛建立的存放庫。 接著，按一下[安裝]。**&#x200B;**
 
 ![AEMCS](./images/aemdocbcssetup9.png){zoomable="yes"}
 
