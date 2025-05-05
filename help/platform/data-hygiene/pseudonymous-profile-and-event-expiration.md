@@ -22,4 +22,4 @@ ht-degree: 39%
 這些設定可讓資料管理員設定未驗證設定檔及其相關事件的到期日。 這有助於讓[!DNL Profile Service]與您的行銷和廣告使用案例保持相關。 如需詳細資訊，請造訪[體驗事件到期日](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/event-expirations)和[假名設定檔資料到期日](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/profile/event-expirations)檔案。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449868?learn=on&enablevpops&captions=chi_hant)

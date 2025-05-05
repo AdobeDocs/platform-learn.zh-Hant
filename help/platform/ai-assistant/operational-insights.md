@@ -20,4 +20,4 @@ ht-degree: 0%
 
 瞭解如何使用AI Assistant來發掘有關業務物件的營運深入分析，例如Adobe Experience Platform中的受眾、資料集、結構描述、目的地和歷程
 
->[!VIDEO](https://video.tv.adobe.com/v/3444031/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444043/?learn=on&enablevpops&captions=chi_hant)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 瞭解如何在Real-Time CDP中設定LiveRamp目的地，以將對象傳送給您的啟用合作夥伴。 如需詳細檔案，請參閱[LiveRamp — 上線連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html?lang=zh-Hant)和[LiveRamp — 散發連線](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3425367/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452669/?learn=on&enablevpops&captions=chi_hant)

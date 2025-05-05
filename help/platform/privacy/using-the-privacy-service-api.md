@@ -19,4 +19,4 @@ ht-degree: 1%
 
 瞭解如何呼叫API端點，包括清單和查詢、建立工作請求及建立同意請求。 如需詳細資訊，請瀏覽[隱私權服務檔案](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336080?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448884?learn=on&enablevpops&captions=chi_hant)

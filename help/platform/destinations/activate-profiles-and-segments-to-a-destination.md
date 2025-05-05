@@ -18,5 +18,5 @@ ht-degree: 0%
 
 瞭解如何在Real-Time CDP中啟用目的地的設定檔和對象。  在目的地或受眾使用者介面中啟動此工作流程。 如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/activate/activation-overview)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445818/?learn=on&enablevpops&captions=chi_hant)
 

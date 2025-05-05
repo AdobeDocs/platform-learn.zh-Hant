@@ -20,4 +20,4 @@ ht-degree: 0%
 
 瞭解如何使用AI Assistant識別未使用的對象，以便刪除這些對象，並讓您的行銷作業更有效率。 如需有關查詢AI助理的詳細資訊，請參閱[AI助理的問題指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/questions)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435532/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441998/?learn=on&enablevpops&captions=chi_hant)

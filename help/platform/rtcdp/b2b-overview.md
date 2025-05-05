@@ -18,4 +18,4 @@ ht-degree: 0%
 
 瞭解如何企業對企業(B2B)行銷人員可跨系統整合人員和帳戶設定檔，並充分瞭解其客戶。 如需詳細資訊，請瀏覽[Real-Time CDP B2B edition檔案](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/338249?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451937?learn=on&enablevpops&captions=chi_hant)

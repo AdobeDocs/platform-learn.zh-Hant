@@ -22,7 +22,7 @@ ht-degree: 1%
 資料集刪除可讓資料管理員和資料工程師設定資料集的到期日。 如需詳細資訊，請瀏覽[資料衛生檔案](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=zh-Hant)。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430307?learn=on&enablevpops&captions=chi_hant)
 
 >[!NOTE]
 >

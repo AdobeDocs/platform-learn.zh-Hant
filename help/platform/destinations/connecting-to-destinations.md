@@ -20,6 +20,6 @@ ht-degree: 0%
 
 從Real-Time CDP將資料傳送給目的地合作夥伴之前，您必須先與這些合作夥伴建立連線。 此影片會逐步解說此程式（通常由管理員執行）。
 
->[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444274/?learn=on&enablevpops&captions=chi_hant)
 
 如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/ui/connect-destination)。

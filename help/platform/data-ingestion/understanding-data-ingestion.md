@@ -284,7 +284,7 @@ Adobe Experience Platform的資料擷取功能可讓您將資料一起整合到�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-adobe-analytics.md" title="使用Adobe Analytics來源聯結器擷取資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740414617197" alt="使用Adobe Analytics來源聯結器擷取資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430259?format=jpeg&nocache=1740414617197&captions=chi_hant" alt="使用Adobe Analytics來源聯結器擷取資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -307,7 +307,7 @@ Adobe Experience Platform的資料擷取功能可讓您將資料一起整合到�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-marketo.md" title="從Marketo Engage擷取資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740414617186" alt="從Marketo Engage擷取資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451871?format=jpeg&nocache=1740414617186&captions=chi_hant" alt="從Marketo Engage擷取資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

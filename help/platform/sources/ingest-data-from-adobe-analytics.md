@@ -21,4 +21,4 @@ ht-degree: 0%
 
 Adobe Analytics Source聯結器可讓您從Adobe Analytics輕鬆將資料串流、對應及篩選至Adobe Experience Platform的即時客戶個人檔案和體驗資料湖。 瞭解如何使用資料準備功能來建立語意和計算欄位，以改進區段產生器和平台應用程式中的使用者體驗。 此聯結器支援跨區域報表套裝。 如需更詳細的產品檔案，請參閱[在UI中建立Adobe Analytics來源聯結器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/29687?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430259?learn=on&enablevpops&captions=chi_hant)

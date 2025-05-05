@@ -19,4 +19,4 @@ ht-degree: 1%
 
 瞭解如何使用隱私權JavaScript資料庫，在將客戶身分傳送至Privacy Service之前，先在您的應用程式中收集客戶身分。 例如，瞭解如何在Data Collection （先前稱為Launch）中設定標籤擴充功能。 如需詳細資訊，請瀏覽[隱私權服務檔案](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336078?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452091?learn=on&enablevpops&captions=chi_hant)

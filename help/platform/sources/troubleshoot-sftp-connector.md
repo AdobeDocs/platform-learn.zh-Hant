@@ -18,4 +18,4 @@ ht-degree: 0%
 
 瞭解避免SFTP來源聯結器連線問題的最佳實務。 檢閱特定檢查點，以成功將您的SFTP伺服器連線至Adobe Experience Platform。 如需詳細資訊，請參閱[SFTP來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416134?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443485?learn=on&enablevpops&captions=chi_hant)

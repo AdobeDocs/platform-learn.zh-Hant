@@ -20,6 +20,6 @@ ht-degree: 100%
 
 了解 Experience Platform 沙箱如何提供隔離環境來嘗試新功能或現有功能並使用「快速失敗」方法。了解如何重設及重新啟動開發環境，以及透過 API 呼叫使用沙箱。 如需詳細資訊，請造訪[沙箱使用手冊](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430302/?learn=on&enablevpops&captions=chi_hant)
 
 

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 瞭解如何使用套件在IMS組織之間複製Experience Platform設定。 跨多個IMS組織輕鬆複製結構描述、資料集、歷程等，以支援發行流程和多區域/多品牌部署。 如需詳細資訊，請參閱[沙箱工具檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435815/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443928/?learn=on&enablevpops&captions=chi_hant)

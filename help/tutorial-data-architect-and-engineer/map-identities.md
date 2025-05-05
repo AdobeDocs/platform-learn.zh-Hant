@@ -26,7 +26,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 **數據架構師** 需要在此教學課程之外映射身份。
 
 在開始練習之前，請觀看此短片，進一步瞭解Adobe Experience Platform中的身分識別：
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422770?learn=on&enablevpops&captions=chi_hant)
 
 >[!NOTE]
 >

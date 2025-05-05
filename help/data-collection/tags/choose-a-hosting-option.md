@@ -18,4 +18,4 @@ ht-degree: 0%
 
 瞭解如何為您的標籤庫選擇最佳託管選項。 如需詳細資訊，請參閱[主機](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html?lang=zh-Hant)檔案。
 
->[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428614/?learn=on&enablevpops&captions=chi_hant)

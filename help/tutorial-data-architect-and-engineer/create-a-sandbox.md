@@ -26,7 +26,7 @@ ht-degree: 2%
 **資料架構師**&#x200B;和&#x200B;**資料工程師**&#x200B;需要在本教學課程之外建立沙箱。
 
 在開始練習之前，請觀看此短片，以進一步瞭解沙箱：
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430302/?learn=on&enablevpops&captions=chi_hant)
 
 ## 需要的許可權
 

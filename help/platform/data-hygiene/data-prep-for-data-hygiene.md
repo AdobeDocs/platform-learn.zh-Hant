@@ -20,4 +20,4 @@ ht-degree: 85%
 
 了解如何使用 Experience Platform 的資料準備功能支援資料最小化原則。了解如何僅收錄您需要的欄位並在收錄期間對資料進行雜湊處理。
 
->[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449286/?learn=on&enablevpops&captions=chi_hant)

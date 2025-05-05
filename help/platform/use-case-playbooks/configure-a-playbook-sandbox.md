@@ -26,4 +26,4 @@ ht-degree: 1%
 
 如需詳細資訊，請參閱[開始使用使用案例教戰手冊](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449837/?learn=on&enablevpops&captions=chi_hant)

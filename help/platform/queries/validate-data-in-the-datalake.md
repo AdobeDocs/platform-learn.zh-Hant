@@ -18,4 +18,4 @@ ht-degree: 1%
 
 瞭解如何使用Adobe Experience Platform的查詢服務驗證資料是否已成功擷取到Datalake。 如需詳細的產品檔案，請參閱[查詢編輯器UI指南](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445688?learn=on&enablevpops&captions=chi_hant)

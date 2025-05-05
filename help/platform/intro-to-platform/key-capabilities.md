@@ -18,5 +18,5 @@ ht-degree: 80%
 
 了解 Experience Platform 的關鍵功能，以及這些功能如何為您的業務帶來價值。
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428514?learn=on&enablevpops&captions=chi_hant)
 

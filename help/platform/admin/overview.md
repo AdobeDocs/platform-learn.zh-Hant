@@ -57,7 +57,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-developers.md" title="新增開發人員" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426407?format=jpeg&nocache=1740173302176" alt="新增開發人員"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446409?format=jpeg&nocache=1740173302176&captions=chi_hant" alt="新增開發人員"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -103,7 +103,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribute-based-access-control.md" title="設定以屬性為基礎的存取控制" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345641?format=jpeg&nocache=1740173302190" alt="設定以屬性為基礎的存取控制"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451850?format=jpeg&nocache=1740173302190&captions=chi_hant" alt="設定以屬性為基礎的存取控制"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-sandboxes.md" title="使用沙箱" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29838/?format=jpeg&nocache=1740173302789" alt="使用沙箱"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430302/?format=jpeg&nocache=1740173302789&captions=chi_hant" alt="使用沙箱"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="copy-objects-between-sandboxes.md" title="在沙箱之間複製設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424763/?format=jpeg&nocache=1740173302776" alt="在沙箱之間複製設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446101/?format=jpeg&nocache=1740173302776&captions=chi_hant" alt="在沙箱之間複製設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="share-packages-across-orgs.md" title="跨IMS組織共用套件" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435815/?format=jpeg&nocache=1740173302764" alt="跨IMS組織共用套件"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443928/?format=jpeg&nocache=1740173302764&captions=chi_hant" alt="跨IMS組織共用套件"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -18,5 +18,5 @@ ht-degree: 0%
 
 取得Experience Platform五個主要使用案例的概觀：智慧型重新參與、「不會遺失」行銷活動、客戶轉換最佳化、情境式辨識，以及一次性終身價值值。
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430465?learn=on&enablevpops&captions=chi_hant)
 

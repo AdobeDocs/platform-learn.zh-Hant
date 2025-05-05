@@ -20,4 +20,4 @@ ht-degree: 100%
 
 了解如何設定以屬性為基礎的存取控制，以限制對特定 Experience Platform 資源的存取。如需詳細資訊，請造訪[存取控制文件](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/345641?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451850?learn=on&enablevpops&captions=chi_hant)

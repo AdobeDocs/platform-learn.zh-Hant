@@ -21,4 +21,4 @@ ht-degree: 0%
 
 瞭解[!DNL Real-Time Customer Data Platform]如何使用合作夥伴資料支援完整漏斗行銷，以進行第一方資料擴充和潛在客戶使用案例，因為第三方Cookie繼續遭到取代。 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449700/?learn=on&enablevpops&captions=chi_hant)

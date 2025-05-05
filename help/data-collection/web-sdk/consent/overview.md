@@ -20,5 +20,5 @@ ht-degree: 0%
 >
 > 啟動項現在是&#x200B;**[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332693/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3437799/?learn=on&enablevpops&captions=chi_hant)
 

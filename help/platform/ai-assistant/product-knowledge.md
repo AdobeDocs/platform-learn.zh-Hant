@@ -21,4 +21,4 @@ ht-degree: 0%
 
 瞭解來自AI助理的Adobe Experience Platform應用程式。 如需詳細資訊，請參閱[AI助理檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/home)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441024/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441035/?learn=on&enablevpops&captions=chi_hant)

@@ -19,4 +19,4 @@ ht-degree: 1%
 
 瞭解如何使用Real-Time Customer Data Platform、B2B edition為您的業務資料建立結構描述。 瞭解業務類別、欄位群組和身分名稱空間，以及如何使用Postman公用程式在您的帳戶中自動建立它們。 如需詳細資訊，請瀏覽[結構描述檔案](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/338241?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453407?learn=on&enablevpops&captions=chi_hant)

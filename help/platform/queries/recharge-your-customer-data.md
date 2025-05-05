@@ -24,7 +24,7 @@ ht-degree: 0%
 * 您可以善用的Adobe Experience Platform資料準備功能
 * 提高Adobe Real-Time CDP、Adobe Journey Optimizer和Customer Journey Analytics的投資報酬率
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454957?learn=on&enablevpops&captions=chi_hant)
 
 ## SQL範例
 

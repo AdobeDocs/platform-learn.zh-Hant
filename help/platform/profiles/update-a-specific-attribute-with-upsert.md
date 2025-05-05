@@ -19,4 +19,4 @@ ht-degree: 0%
 
 瞭解如何使用Adobe Experience Platform的`upsert`功能更新設定檔的特定屬性。 通常，當您僅使用特定屬性將記錄擷取到Platform時，它會更新值，但也會使用`null`值更新其他屬性。 `Upsert`允許您僅更新所需的屬性，而允許剩餘欄位保留其目前值。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416133/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443452/?learn=on&enablevpops&captions=chi_hant)

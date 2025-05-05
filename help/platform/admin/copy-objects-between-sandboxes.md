@@ -21,4 +21,4 @@ ht-degree: 0%
 
 瞭解如何使用套件在Experience Platform沙箱之間複製設定。 在沙箱中輕鬆複製結構描述、資料集、歷程等，以支援發行流程和多區域/多品牌部署。 如需詳細資訊，請參閱[沙箱工具檔案](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446101/?learn=on&enablevpops&captions=chi_hant)

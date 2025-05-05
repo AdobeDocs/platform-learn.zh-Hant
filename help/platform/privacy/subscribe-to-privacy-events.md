@@ -19,5 +19,5 @@ ht-degree: 21%
 
 瞭解如何訂閱隱私權事件，以自動化工作狀態型工作流程。 如需詳細資訊，請瀏覽[隱私權服務檔案](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448183?learn=on&enablevpops&captions=chi_hant)
 

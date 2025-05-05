@@ -20,4 +20,4 @@ ht-degree: 37%
 
 反覆無常的市場力量和不同的消費者隱私權要求會讓數位行銷人員面對令人怯步的情境。為了讓行銷活動符合法規要求，行銷團隊需要IT團隊簡化流程，以確保符合未來的資料控管流程，理想情況下，該流程可讓所有人遵循並執行負責任地使用消費者資料的規則。 聽取 Adobe 和 Scotiabank Digital 對於負責任的資料管理的主要考量因素。
 
->[!VIDEO](https://video.tv.adobe.com/v/332062/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3457063/?learn=on&enablevpops&captions=chi_hant)

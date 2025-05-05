@@ -24,5 +24,5 @@ ht-degree: 0%
 
 瞭解如何使用圖表模擬器來測試Adobe Experience Platform中的身分圖表連結規則。 實驗不同的情境，並使用「每個圖表皆不重複」和優先順序設定來播放，驗證您的業務需要哪些規則來避免圖表摺疊。 如需詳細資訊，請參閱[圖表模擬UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/identity-graph-linking-rules/graph-simulation)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3444032/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444054/?learn=on&enablevpops&captions=chi_hant)
 

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 瞭解如何驗證及驗證Adobe Experience Platform中的AI Assistant所提供的回應。 如需詳細資訊，請參閱[AI助理使用者介面指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/ui-guide#verify-responses)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441750/?learn=on&enablevpops&captions=chi_hant)

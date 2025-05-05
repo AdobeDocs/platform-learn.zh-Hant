@@ -19,4 +19,4 @@ ht-degree: 36%
 
 了解如何堆疊如何規定標記屬性。規則棧疊使用標籤規則事件中的`order`功能來排序規則，以便您可以管理可擴充的標籤實作。 在全域規則中設定一些變數、在頁面特定規則中新增及覆寫變數，然後將資料傳送至所需的行銷應用程式。 如需規則排序的詳細資訊，請參閱[規則](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hant#rule-ordering)檔案。
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454038/?learn=on&enablevpops&captions=chi_hant)

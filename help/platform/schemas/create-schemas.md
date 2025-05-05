@@ -18,4 +18,4 @@ ht-degree: 8%
 
 本影片說明如何使用XDM個別設定檔類別和各種欄位群組，在Adobe Experience Platform中建立結構描述。 如需詳細的產品檔案，請參閱[在UI中建立結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=zh-Hant)以及[使用API建立結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-api.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/27012?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430222?learn=on&enablevpops&captions=chi_hant)

@@ -20,4 +20,4 @@ ht-degree: 1%
 
 瞭解如何建立同盟受眾構成，以及如何在UI中建立查詢，以觸及您的Data Warehouse並選取正確的資料。 如需詳細資訊，請造訪[同盟對象組合檔案](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/home){target="_blank"}。
 
->[!VIDEO](https://video.tv.adobe.com/v/3433247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448589/?learn=on&enablevpops&captions=chi_hant)

@@ -20,7 +20,7 @@ ht-degree: 25%
 
 了解使用案例教戰手冊如何能協助 Real-Time Customer Data Platform 和 Journey Optimizer 的客戶加快實現價值。使用案例教戰手冊是涵蓋多個產業和行銷目標的數十個範本的目錄。 教戰手冊會產生受眾、歷程和結構描述等技術資產，然後可加以自訂並發佈到其他沙箱。 如需詳細資訊，請參閱[使用案例行動手冊檔案](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441826/?learn=on&enablevpops&captions=chi_hant)
 
 ## 快速入門
 
@@ -37,7 +37,7 @@ ht-degree: 25%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="設定Playbook沙箱" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="設定Playbook沙箱"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449837/?format=jpeg&nocache=1739379898120&captions=chi_hant" alt="設定Playbook沙箱"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

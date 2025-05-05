@@ -47,7 +47,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="資料衛生的資料準備" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="資料衛生的資料準備"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449286/?format=jpeg&nocache=1740251397387&captions=chi_hant" alt="資料衛生的資料準備"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -109,7 +109,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="排程資料集刪除" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="排程資料集刪除"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430307?format=jpeg&nocache=1740251397716&captions=chi_hant" alt="排程資料集刪除"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -132,7 +132,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="假名設定檔和體驗事件有效期" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="假名設定檔和體驗事件有效期"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449868?format=jpeg&nocache=1740251397705&captions=chi_hant" alt="假名設定檔和體驗事件有效期"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,7 +216,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="使用「upsert」更新特定設定檔屬性" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="使用「upsert」更新特定設定檔屬性"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443452/?format=jpeg&nocache=1740251398874&captions=chi_hant" alt="使用「upsert」更新特定設定檔屬性"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

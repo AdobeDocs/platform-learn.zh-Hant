@@ -19,4 +19,4 @@ ht-degree: 100%
 
 了解如何在您的結構描述和資料集套用標籤。資料用途標籤可讓您啟用資料標記和分類，以反映 Adobe Experience Platform 的公司政策、合約義務、合規性要求以及地區法規。此功能對於區分有關客戶的已知和未知資料，並根據資料性質對資料使用套用適當的控制項是為關鍵。如需詳細的產品文件，請參閱[在 UI 管理資料使用標籤](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html?lang=zh-Hant)和[使用 API 管理資料使用標籤](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/dataset-api.html?lang=zh-Hant)
 
->[!VIDEO](https://video.tv.adobe.com/v/29709?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422788?learn=on&enablevpops&captions=chi_hant)

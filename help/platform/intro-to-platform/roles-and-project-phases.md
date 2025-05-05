@@ -17,5 +17,5 @@ ht-degree: 0%
 
 瞭解成功的Experience Platform專案中涉及的角色、階段和關鍵結果。
 
->[!VIDEO](https://video.tv.adobe.com/v/32807?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430449?learn=on&enablevpops&captions=chi_hant)
 

@@ -18,4 +18,4 @@ ht-degree: 34%
 
 瞭解如何使用開發、測試和生產環境以及內嵌程式碼來開發和驗證您的標籤屬性。 如需詳細資訊，請參閱[環境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=zh-Hant)檔案。
 
->[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430488/?learn=on&enablevpops&captions=chi_hant)

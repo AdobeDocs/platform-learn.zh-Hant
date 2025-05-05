@@ -23,4 +23,4 @@ ht-degree: 1%
 
 瞭解如何整合Adobe Target和Real-Time Customer Data Platform，以開始從Real-Time CDP將區段和設定檔屬性傳送至Target。 如需詳細資訊，請參閱[Adobe Target連線檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3418799/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449804/?learn=on&enablevpops&captions=chi_hant)

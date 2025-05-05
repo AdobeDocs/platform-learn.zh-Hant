@@ -23,4 +23,4 @@ ht-degree: 20%
 >
 >使用者定義控制面板功能處於Beta版。 其功能和檔案可能會有所變更。
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422738/?learn=on&enablevpops&captions=chi_hant)

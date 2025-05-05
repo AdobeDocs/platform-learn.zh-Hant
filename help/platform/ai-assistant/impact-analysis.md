@@ -20,4 +20,4 @@ ht-degree: 0%
 
 在本影片中，我們將介紹Adobe Experience Platform內的AI助理如何協助您更有效地進行影響分析。 變更屬性和受眾等共用物件可能會干擾其他團隊的工作流程、使流程複雜化，並危及重要的行銷工作。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441680/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441691/?learn=on&enablevpops&captions=chi_hant)

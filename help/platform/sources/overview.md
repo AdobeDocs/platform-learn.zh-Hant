@@ -165,7 +165,7 @@ ht-degree: 10%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-adobe-analytics.md" title="使用Adobe Analytics來源聯結器擷取資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740415502122" alt="使用Adobe Analytics來源聯結器擷取資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430259?format=jpeg&nocache=1740415502122&captions=chi_hant" alt="使用Adobe Analytics來源聯結器擷取資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -188,7 +188,7 @@ ht-degree: 10%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-marketo.md" title="從Marketo Engage擷取資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740415502109" alt="從Marketo Engage擷取資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451871?format=jpeg&nocache=1740415502109&captions=chi_hant" alt="從Marketo Engage擷取資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -244,7 +244,7 @@ ht-degree: 10%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="troubleshoot-sftp-connector.md" title="疑難排解 — 無法連線至SFTP來源聯結器" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416134?format=jpeg&nocache=1740415502267" alt="疑難排解 — 無法連線至SFTP來源聯結器"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443485?format=jpeg&nocache=1740415502267&captions=chi_hant" alt="疑難排解 — 無法連線至SFTP來源聯結器"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

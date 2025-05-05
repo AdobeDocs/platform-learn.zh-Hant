@@ -18,4 +18,4 @@ ht-degree: 2%
 
 瞭解如何設定及驗證Privacy Service API。 如需詳細資訊，請瀏覽[隱私權服務檔案](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336075?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447187?learn=on&enablevpops&captions=chi_hant)
