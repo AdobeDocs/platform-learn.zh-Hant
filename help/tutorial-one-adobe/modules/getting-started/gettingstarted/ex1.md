@@ -4,9 +4,9 @@ description: 快速入門 — 安裝適用於Experience League檔案的Chrome擴
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,16 @@ ht-degree: 0%
 
 ## 關於Chrome擴充功能
 
-此檔案已改成通用檔案，任何人都能使用任何Adobe Experience Platform例項輕鬆重複使用。
-為了讓檔案可重複使用，檔案中引入了&#x200B;**環境變數**，這表示您將在檔案中找到以下&#x200B;**預留位置**。 每個預留位置都是特定環境的特定變數，Chrome擴充功能會變更該變數，方便您從教學課程頁面復製程式碼和文字，並將其貼到您將當作教學課程一部分使用的各種使用者介面中。
+本教學課程已改成通用版，任何人都能輕鬆重複使用，使用任何Adobe Experience Cloud例項。
+
+為了讓檔案可重複使用，教學課程中引進了&#x200B;**環境變數**，這表示您會在檔案中找到以下&#x200B;**預留位置**。 每個預留位置都是特定環境的特定變數，Chrome擴充功能會變更該變數，方便您從教學課程頁面復製程式碼和文字，並將其貼到您將當作教學課程一部分使用的各種使用者介面中。
 
 您可在下方找到這類值的範例。 目前，這些值尚無法使用，但當您安裝並啟動Chrome擴充功能時，就會看到這些變數變數變更為您可複製並重複使用的正常文字。
 
 | 名稱 | 索引鍵 | 範例 |
 |:-------------:| :---------------:| :---------------:|
-| AEP IMS組織ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| AEP IMS組織名稱 | `--aepImsOrgName--` | `Experience Platform International` |
+| IMS 組織 ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| IMS組織名稱 | `--aepImsOrgName--` | `Experience Platform International` |
 | AEP租使用者ID | `--aepTenantId--` | `_experienceplatform` |
 | AEP沙箱名稱 | `--aepSandboxName--` | `one-adobe` |
 | 學習者設定檔LDAP | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ ht-degree: 0%
 
 ## 設定Chrome擴充功能
 
-前往[https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}，然後按一下擴充功能圖示以開啟。
+前往[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}，然後按一下擴充功能圖示以開啟。
 
 ![DSN](./images/tuthome.png)
 
@@ -121,7 +122,7 @@ IMS組織ID是您Adobe Experience Cloud執行個體的唯一識別碼，本教�
 LDAP可用來確保您即將進行的設定會連結至您，而不會與可能使用您所使用的相同例項和沙箱的其他使用者衝突。
 
 您的值應該看起來類似這些。
-最後，按一下&#x200B;**新建**。
+最後，按一下**新建**。
 
 ![DSN](./images/c8a.png)
 
@@ -135,7 +136,7 @@ LDAP可用來確保您即將進行的設定會連結至您，而不會與可能�
 
 ## 驗證教學課程內容
 
-作為測試，請移至[此頁面](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}。
+作為測試，請移至[此頁面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}。
 
 您現在應該會看到，根據Chrome擴充功能中啟用的環境，此頁面上的所有&#x200B;**環境變數**&#x200B;都已取代為其True值。
 

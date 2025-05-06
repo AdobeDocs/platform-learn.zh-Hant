@@ -4,9 +4,9 @@ description: 快速入門 — 使用行動應用程式
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 下載應用程式
 
-前往您電腦上的[https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"}。 您將會看到此訊息。
+前往您電腦上的[https://dsn.adobe.com/install](https://dsn.adobe.com/install){target="_blank"}。 使用您的Adobe ID登入，您將會看到此訊息。
 
 ![DSN](./images/mobileapp.png)
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ![DSN](./images/mobileappn2.png)
 
-登入後，您會看到通知要求您傳送通知的許可權。 我們將在教學課程中傳送通知，因此請按一下[允許]。**&#x200B;**
+登入後，您會看到通知要求您傳送通知的許可權。 我們將在教學課程中傳送通知，因此請按一下[允許]。****
 
 ![DSN](./images/mobileappn3.png)
 

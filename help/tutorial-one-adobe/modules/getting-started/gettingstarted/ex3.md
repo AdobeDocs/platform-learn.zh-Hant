@@ -4,9 +4,9 @@ description: 快速入門 — 建立您的資料流
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,15 @@ ht-degree: 1%
 移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}。
 
 ![DSN](./images/launchprop.png)
+
+繼續之前，請使用畫面右上角的環境切換器，確認已選取正確的環境。 要使用的正確環境稱為`--aepImsOrgName--`。
+
+>[!NOTE]
+>
+> 下方熒幕擷圖顯示選取的特定組織。 完成本教學課程時，您的組織很可能有不同的名稱。 當您註冊參加本教學課程時，系統已為您提供要使用的環境詳細資訊，請依照這些指示操作。
+
+
+![DSN](./images/org.png)
 
 在左側功能表中，按一下&#x200B;**[!UICONTROL 標籤]**。 在上一個練習後，您現在有3個資料收集屬性：一個用於網頁，一個用於行動裝置，一個用於CX應用程式。
 
@@ -33,13 +42,17 @@ ht-degree: 1%
 
 在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxName--`。
 
+>[!NOTE]
+>
+> 以下熒幕擷圖顯示正在選取的特定沙箱。 當您閱讀本教學課程時，您的沙箱很可能有不同的名稱。 當您註冊參加本教學課程時，系統已為您提供要使用的環境詳細資訊，請依照這些指示操作。
+
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
 按一下&#x200B;**[!UICONTROL 新增資料流]**。
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1.png)
 
-對於&#x200B;**[!UICONTROL Name]**，以及選用的說明，請輸入`--aepUserLdap-- - One Adobe Datastream`。 針對&#x200B;**對應結構描述**，請選取&#x200B;**示範系統 — 網站的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
+對於&#x200B;**Name**，以及選用的說明，請輸入`--aepUserLdap-- - One Adobe Datastream`。 針對&#x200B;**對應結構描述**，請選取&#x200B;**示範系統 — 網站的事件結構描述（全域v1.1）**。 按一下&#x200B;**儲存**。
 
 ![命名Edge設定並儲存](./images/edgeconfig2.png)
 
@@ -91,7 +104,7 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig16.png)
 
-按一下[新增所有變更的資源]&#x200B;**，然後按一下[儲存並建置以供開發]**&#x200B;**。**
+按一下[新增所有變更的資源]**，然後按一下[儲存並建置以供開發]****。**
 
 ![命名Edge設定並儲存](./images/edgeconfig17.png)
 
@@ -108,6 +121,10 @@ ht-degree: 1%
 ![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1a.png)
 
 在熒幕的右上角，選取您的沙箱名稱，應為`--aepSandboxName--`。
+
+>[!NOTE]
+>
+> 以下熒幕擷圖顯示正在選取的特定沙箱。 當您閱讀本教學課程時，您的沙箱很可能有不同的名稱。 當您註冊參加本教學課程時，系統已為您提供要使用的環境詳細資訊，請依照這些指示操作。
 
 ![按一下左側導覽中的Edge設定圖示](./images/edgeconfig1b.png)
 
@@ -153,7 +170,7 @@ ht-degree: 1%
 
 對於&#x200B;**Edge Network網域**，請使用預設網域。
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![命名Edge設定並儲存](./images/edgeconfig13m.png)
 
@@ -165,7 +182,7 @@ ht-degree: 1%
 
 ![命名Edge設定並儲存](./images/edgeconfig16m.png)
 
-按一下[新增所有變更的資源]&#x200B;**，然後按一下[儲存並建置以供開發]**&#x200B;**。**
+按一下[新增所有變更的資源]**，然後按一下[儲存並建置以供開發]****。**
 
 ![命名Edge設定並儲存](./images/edgeconfig17m.png)
 

@@ -3,9 +3,10 @@ title: 快速入門 — Adobe I/O
 description: 快速入門 — Adobe I/O
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -21,11 +22,16 @@ ht-degree: 0%
 ![Adobe I/O新整合](./images/iohome.png){zoomable="yes"}
 
 請務必在熒幕右上角選取正確的例項。 您的執行個體是`--aepImsOrgName--`。
+
+>[!NOTE]
+>
+> 下方熒幕擷圖顯示選取的特定組織。 完成本教學課程時，您的組織很可能有不同的名稱。 當您註冊參加本教學課程時，系統已為您提供要使用的環境詳細資訊，請依照這些指示操作。
+
 接著，選取&#x200B;**建立新專案**。
 
 ![Adobe I/O新整合](./images/iocomp.png){zoomable="yes"}
 
-### Firefly服務API
+### FIREFLY SERVICES API
 
 您應該會看到此訊息。 選取&#x200B;**+新增至專案**&#x200B;並選擇&#x200B;**API**。
 
@@ -35,7 +41,7 @@ ht-degree: 0%
 
 ![Adobe I/O新整合](./images/api1.png){zoomable="yes"}
 
-選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Firefly - Firefly服務**，然後選取&#x200B;**下一步**。
+選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Firefly - Firefly Services**，然後選取&#x200B;**下一步**。
 
 ![Adobe I/O新整合](./images/api3.png){zoomable="yes"}
 
@@ -43,7 +49,7 @@ ht-degree: 0%
 
 ![Adobe I/O新整合](./images/api4.png){zoomable="yes"}
 
-選取預設設定檔&#x200B;**預設Firefly Services設定**，並選取&#x200B;**儲存設定的API**。
+選取預設設定檔&#x200B;**預設Firefly Services設定**，然後選取&#x200B;**儲存設定的API**。
 
 ![Adobe I/O新整合](./images/api9.png){zoomable="yes"}
 
@@ -57,7 +63,7 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/ps2.png){zoomable="yes"}
 
-選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Photoshop - Firefly服務**。 選取&#x200B;**下一步**。
+選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Photoshop - Firefly Services**。 選取&#x200B;**下一步**。
 
 ![Azure儲存體](./images/ps3.png){zoomable="yes"}
 
@@ -67,7 +73,7 @@ ht-degree: 0%
 
 接下來，您需要選取產品設定檔，以定義此整合可用的許可權。
 
-選取&#x200B;**預設Firefly服務組態**&#x200B;和&#x200B;**預設Creative Cloud自動化服務組態**。
+選取&#x200B;**預設Firefly Services設定**&#x200B;和&#x200B;**預設Creative Cloud Automation Services設定**。
 
 選取&#x200B;**儲存設定的API**。
 
