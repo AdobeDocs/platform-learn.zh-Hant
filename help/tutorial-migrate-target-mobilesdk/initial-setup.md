@@ -13,13 +13,13 @@ ht-degree: 6%
 
 從Target SDK移轉至「最佳化SDK」需要初始設定，以啟用「最佳化SDK」的正確資料擷取、特色和功能。 必須先完成下列步驟，才能進行任何行動應用程式實作變更：
 
-- [在Adobe Admin Console中為資料收集設定適當的許可權](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"}
-- [設定XDM結構描述](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"}，以將結構化資料傳遞至Edge Network
-- [設定結構描述](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"}以接收Adobe Target資料
-- [設定跨裝置個人化和mbox3rdPartyId功能的身分名稱空間](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"}
-- [建立資料串流](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"}以啟用從Edge Network轉送資料
-- [設定資料串流](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"}以啟用將資料轉送到Adobe Target的功能
-- [設定Decisioning擴充功能的標籤屬性](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"}
+- [在Adobe Admin Console中為資料收集設定適當的許可權](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"}
+- [設定XDM結構描述](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"}，以將結構化資料傳遞至Edge Network
+- [設定結構描述](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"}以接收Adobe Target資料
+- [設定跨裝置個人化和mbox3rdPartyId功能的身分名稱空間](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"}
+- [建立資料串流](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"}以啟用從Edge Network轉送資料
+- [設定資料串流](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"}以啟用將資料轉送到Adobe Target的功能
+- [設定Decisioning擴充功能的標籤屬性](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"}
 
 ## 擴充功能組態
 
