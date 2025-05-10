@@ -171,7 +171,7 @@ s.events = "scAdd:321435"
 
 ## 與內容資料對應
 
-轉送至Analytics的XDM資料會轉換為[內容資料](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en)，包含標準和自訂欄位。
+轉送至Analytics的XDM資料會轉換為[內容資料](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=zh-Hant)，包含標準和自訂欄位。
 
 內容資料索引鍵的建構遵循下列語法：
 
