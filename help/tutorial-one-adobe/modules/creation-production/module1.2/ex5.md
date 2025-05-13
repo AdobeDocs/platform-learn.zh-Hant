@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -212,7 +212,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame31.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/frame32.png)
 
@@ -250,7 +250,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame38.png)
 
-切換回Workfront Fusion，然後按一下&#x200B;**Webhook回應**&#x200B;模組上的泡泡。 您會在&#x200B;**OUTPUT**&#x200B;下看到包含表單之JSON裝載的主體。 再按一下&#x200B;**執行一次**。
+切換回Workfront Fusion，然後按一下&#x200B;**Webhook回應**&#x200B;模組上的泡泡。 您會在&#x200B;**INPUT**&#x200B;下看到包含表單之JSON裝載的主體。 再按一下&#x200B;**執行一次**。
 
 ![框架IO](./images/frame40.png)
 
@@ -314,7 +314,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame53.png)
 
-您的權杖現已建立。 按一下「複製&#x200B;**&#x200B;**」，將其複製到剪貼簿。
+您的權杖現已建立。 按一下「複製&#x200B;****」，將其複製到剪貼簿。
 
 ![框架IO](./images/frame54.png)
 
@@ -372,7 +372,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame63.png)
 
-將&#x200B;**儲存體**&#x200B;變更為&#x200B;**外部**，並變更&#x200B;**檔案位置**&#x200B;以僅使用從傳入&#x200B;**自訂webhook**&#x200B;模組取得的&#x200B;**psdTemplate**&#x200B;變數。 按一下[確定]&#x200B;**&#x200B;**，然後按一下[儲存]&#x200B;**&#x200B;**&#x200B;儲存您的變更。
+將&#x200B;**儲存體**&#x200B;變更為&#x200B;**外部**，並變更&#x200B;**檔案位置**&#x200B;以僅使用從傳入&#x200B;**自訂webhook**&#x200B;模組取得的&#x200B;**psdTemplate**&#x200B;變數。 按一下[確定]****，然後按一下[儲存]****&#x200B;儲存您的變更。
 
 ![框架IO](./images/frame64.png)
 
@@ -397,7 +397,7 @@ ht-degree: 0%
 ![框架IO](./images/frame69.png)
 
 將&#x200B;**主體型別**&#x200B;設定為&#x200B;**原始**，並將&#x200B;**內容型別**&#x200B;設定為&#x200B;**JSON (application/json)**。
-將下列JSON裝載貼到欄位&#x200B;**要求內容**&#x200B;中，並啟用&#x200B;**剖析回應**&#x200B;的核取方塊。
+將下列JSON裝載貼到欄位**要求內容**&#x200B;中，並啟用&#x200B;**剖析回應**&#x200B;的核取方塊。
 
 ```json
 {
@@ -423,7 +423,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame72.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/frame73.png)
 
@@ -474,7 +474,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame80.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/frame81.png)
 
@@ -496,7 +496,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame83.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/frame84.png)
 

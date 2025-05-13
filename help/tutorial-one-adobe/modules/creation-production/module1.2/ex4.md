@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 1%
 ![WF Fusion](./images/wffc2.png)
 
 將複製案例的&#x200B;**名稱**&#x200B;設定為`--aepUserLdap-- - Firefly + Photoshop`，並選取適當的&#x200B;**目標團隊**。 按一下&#x200B;**[新增**]以新增新的webhook。
+
+>[!NOTE]
+>
+>您可能無法看見選取&#x200B;**目標團隊**&#x200B;的選項。 只有當您是Workfront Fusion中一個以上團隊的使用者時，才會顯示此選項。 如果沒有看到此選項，則僅表示您僅被新增到1個團隊，因此不需要選擇。
 
 ![WF Fusion](./images/wffc3.png)
 
@@ -117,7 +121,7 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc20.png)
 
-填寫完所有欄位後，請按一下[繼續]。**&#x200B;** 之後，您的連線將會自動驗證。
+填寫完所有欄位後，請按一下[繼續]。**** 之後，您的連線將會自動驗證。
 
 ![WF Fusion](./images/wffcff6.png)
 
@@ -129,11 +133,11 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffcff7a.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![WF Fusion](./images/wffcff8.png)
 
-移至Postman，驗證要求中的提示，然後按一下[傳送]。**&#x200B;**
+移至Postman，驗證要求中的提示，然後按一下[傳送]。****
 
 ![WF Fusion](./images/wffcff8a.png)
 
@@ -214,7 +218,7 @@ Workfront Fusion Webhook仍在等待輸入。
 
 向下捲動，直到看到&#x200B;**輸入**&#x200B;為止。 您現在需要定義需要插入背景圖層的內容。 在此情況下，您需要選取包含動態產生影像的&#x200B;**Adobe Firefly**&#x200B;模組的輸出。
 
-針對&#x200B;**儲存體**，選取&#x200B;**外部**。 針對&#x200B;**檔案位置**，請從&#x200B;**Adobe Firefly**&#x200B;模組的輸出複製並貼上變數`{{XX.details[].url}}`。 以&#x200B;**Adobe Firefly**&#x200B;模組的序號取代變數中的&#x200B;**XX**，此範例中為&#x200B;**22**。
+針對&#x200B;**儲存體**，選取&#x200B;**外部**。 針對&#x200B;**檔案位置**，您必須從&#x200B;**Adobe Firefly**&#x200B;模組的輸出複製並貼上變數`{{XX.details[].url}}`，但您需要以&#x200B;**Adobe Firefly**&#x200B;模組的序號取代變數中的&#x200B;**XX**，在此範例中為&#x200B;**22**。
 
 ![WF Fusion](./images/wffc28.png)
 
@@ -230,8 +234,8 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc31.png)
 
-在&#x200B;**進階設定**&#x200B;下，選取&#x200B;**是**&#x200B;以覆寫相同名稱的檔案。
-按一下&#x200B;**新增**。
+在&#x200B;**進階設定**&#x200B;下，選取&#x200B;**是**以覆寫相同名稱的檔案。
+按一下**新增**。
 
 ![WF Fusion](./images/wffc32.png)
 
@@ -239,11 +243,11 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc33.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![WF Fusion](./images/wffc33a.png)
 
-移至Postman，驗證要求中的提示，然後按一下[傳送]。**&#x200B;**
+移至Postman，驗證要求中的提示，然後按一下[傳送]。****
 
 ![WF Fusion](./images/wffcff8a.png)
 
@@ -335,7 +339,7 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc46.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![WF Fusion](./images/wffc47.png)
 
@@ -381,7 +385,7 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc54.png)
 
-您應該會看到此訊息。 按一下[儲存]儲存您的變更，然後按一下[執行一次]&#x200B;**測試您的情境。**&#x200B;**&#x200B;**
+您應該會看到此訊息。 按一下[儲存]儲存您的變更，然後按一下[執行一次]**測試您的情境。******
 
 ![WF Fusion](./images/wffc55.png)
 

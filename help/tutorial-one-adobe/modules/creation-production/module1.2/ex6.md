@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1877'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 1.2.6.2在Frame.io中設定Webhook
 
-移至[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}。 按一下&#x200B;**開發人員工具**，然後選擇&#x200B;**自訂動作**。
+移至[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}。 按一下&#x200B;**開發人員工具**，然後選擇&#x200B;**Webhooks**。
 
 ![框架IO](./images/aemf7.png)
 
@@ -95,7 +95,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf13.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]&#x200B;**執行快速測試。**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]**執行快速測試。******
 
 ![框架IO](./images/aemf14.png)
 
@@ -133,7 +133,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf22.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![框架IO](./images/aemf23.png)
 
@@ -179,7 +179,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf33.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/aemf32.png)
 
@@ -198,7 +198,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf35.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![框架IO](./images/aemf36.png)
 
@@ -309,7 +309,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf58.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/aemf59.png)
 

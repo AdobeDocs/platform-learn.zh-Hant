@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 45f6f9db7d5b3e79e10d508a44a532261bd9cdb3
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1438'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,7 @@ ht-degree: 1%
 ![Azure儲存體](./images/az22.png){zoomable="yes"}
 
 返回Postman開啟請求&#x200B;**POST - Firefly - T2I (styleref) V3**。
-這會顯示在&#x200B;**內文**&#x200B;中。
+這會顯示在**內文**&#x200B;中。
 
 ![Azure儲存體](./images/az23.png){zoomable="yes"}
 
@@ -186,7 +186,7 @@ ht-degree: 1%
 
 ![Azure儲存體](./images/az28.png){zoomable="yes"}
 
-收到您的&#x200B;**SAS-Token**&#x200B;後，請選取&#x200B;**複製**。
+收到您的&#x200B;**共用存取簽章**&#x200B;後，請選取&#x200B;**複製**&#x200B;以複製URL。
 
 ![Azure儲存體](./images/az29.png){zoomable="yes"}
 
@@ -278,9 +278,9 @@ URL目前看起來像這樣，但需要變更。
 
 您可以從上述URL衍生出一些值：
 
-- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`： `vangeluw`
-- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_URL`：`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`：`vangeluw`
+- `AZURE_STORAGE_SAS_READ`：`?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 
 ### 長期寫入SAS權杖
 
@@ -312,10 +312,10 @@ URL目前看起來像這樣，但需要變更。
 
 您可以從上述URL衍生出一些值：
 
-- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`： `vangeluw`
-- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
-- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+- `AZURE_STORAGE_URL`：`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`：`vangeluw`
+- `AZURE_STORAGE_SAS_READ`：`?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`：`?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 ### Postman中的變數
 
@@ -323,10 +323,10 @@ URL目前看起來像這樣，但需要變更。
 
 接下來，您需要在Postman中建立變數，以儲存上述SAS-Token的各種元素。 兩個URL中的某些值相同：
 
-- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`： `vangeluw`
-- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
-- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+- `AZURE_STORAGE_URL`：`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`：`vangeluw`
+- `AZURE_STORAGE_SAS_READ`：`?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`：`?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 對於未來的API互動，主要變更的是資產名稱，而上述變數維持不變。 在此情況下，建議您在Postman中建立變數，如此您就不需要每次都手動指定它們。
 
@@ -351,10 +351,10 @@ URL目前看起來像這樣，但需要變更。
 
 接下來，您需要在PostBuster中建立變數，以儲存上述SAS-Token的各種元素。 兩個URL中的某些值相同：
 
-- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`： `vangeluw`
-- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
-- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+- `AZURE_STORAGE_URL`：`https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`：`vangeluw`
+- `AZURE_STORAGE_SAS_READ`：`?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`：`?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 開啟PostBuster。 選取&#x200B;**基本環境**，然後按一下&#x200B;**編輯**&#x200B;圖示以開啟基本環境。
 

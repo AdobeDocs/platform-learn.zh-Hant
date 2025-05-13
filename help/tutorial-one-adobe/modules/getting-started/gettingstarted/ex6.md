@@ -4,9 +4,9 @@ description: 快速入門 — Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,10 @@ ht-degree: 0%
 接下來，您需要選取產品設定檔，以定義此整合可用的許可權。
 
 選取&#x200B;**Adobe Experience Platform — 所有使用者 — PROD**。
+
+>[!NOTE]
+>
+>AEP的產品設定檔名稱取決於環境的設定方式。 如果您沒有看到上述產品設定檔，您可能會有名為&#x200B;**預設生產所有存取**&#x200B;的產品設定檔。 如果您不確定要選擇哪一個，請洽詢您的AEP系統管理員。
 
 選取&#x200B;**儲存設定的API**。
 
