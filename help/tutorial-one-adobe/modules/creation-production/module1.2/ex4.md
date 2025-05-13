@@ -121,7 +121,7 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc20.png)
 
-填寫完所有欄位後，請按一下[繼續]。**** 之後，您的連線將會自動驗證。
+填寫完所有欄位後，請按一下[繼續]。**&#x200B;** 之後，您的連線將會自動驗證。
 
 ![WF Fusion](./images/wffcff6.png)
 
@@ -133,11 +133,11 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffcff7a.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
 
 ![WF Fusion](./images/wffcff8.png)
 
-移至Postman，驗證要求中的提示，然後按一下[傳送]。****
+移至Postman，驗證要求中的提示，然後按一下[傳送]。**&#x200B;**
 
 ![WF Fusion](./images/wffcff8a.png)
 
@@ -234,8 +234,8 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc31.png)
 
-在&#x200B;**進階設定**&#x200B;下，選取&#x200B;**是**以覆寫相同名稱的檔案。
-按一下**新增**。
+在&#x200B;**進階設定**&#x200B;下，選取&#x200B;**是**&#x200B;以覆寫相同名稱的檔案。
+按一下&#x200B;**新增**。
 
 ![WF Fusion](./images/wffc32.png)
 
@@ -243,11 +243,11 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc33.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
 
 ![WF Fusion](./images/wffc33a.png)
 
-移至Postman，驗證要求中的提示，然後按一下[傳送]。****
+移至Postman，驗證要求中的提示，然後按一下[傳送]。**&#x200B;**
 
 ![WF Fusion](./images/wffcff8a.png)
 
@@ -339,7 +339,7 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc46.png)
 
-按一下[儲存]儲存變更。****
+按一下[儲存]儲存變更。**&#x200B;**
 
 ![WF Fusion](./images/wffc47.png)
 
@@ -385,7 +385,7 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc54.png)
 
-您應該會看到此訊息。 按一下[儲存]儲存您的變更，然後按一下[執行一次]**測試您的情境。******
+您應該會看到此訊息。 按一下[儲存]儲存您的變更，然後按一下[執行一次]&#x200B;**測試您的情境。**&#x200B;**&#x200B;**
 
 ![WF Fusion](./images/wffc55.png)
 
