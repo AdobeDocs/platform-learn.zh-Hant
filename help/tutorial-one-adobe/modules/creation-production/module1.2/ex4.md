@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 9ddabdf0b66ea4772352f5aa82c612fa07891db3
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2058'
 ht-degree: 1%
 
 ---
@@ -121,23 +121,27 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc20.png)
 
-填寫完所有欄位後，請按一下[繼續]。**&#x200B;** 之後，您的連線將會自動驗證。
+填寫完所有欄位後，請按一下[繼續]。**** 之後，您的連線將會自動驗證。
 
 ![WF Fusion](./images/wffcff6.png)
 
-接著，選取傳入的&#x200B;**自訂webhook**&#x200B;提供給情境的變數&#x200B;**提示**。 按一下&#x200B;**「確定」**。
+接著，選取傳入的&#x200B;**自訂webhook**&#x200B;提供給情境的變數&#x200B;**提示**。
 
 ![WF Fusion](./images/wffcff7.png)
+
+接著，將&#x200B;**模型版本** **提示字元**&#x200B;設定為&#x200B;**image4 standard**。 按一下&#x200B;**「確定」**。
+
+![WF Fusion](./images/wffcff7b.png)
 
 繼續進行之前，您必須停用此練習案例中的舊繞線，您只會使用目前設定的新繞線。 若要這麼做，請按一下&#x200B;**路由器**&#x200B;模組與&#x200B;**迭代器**&#x200B;模組之間的&#x200B;**扳手**&#x200B;圖示，並選取&#x200B;**停用路由**。
 
 ![WF Fusion](./images/wffcff7a.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![WF Fusion](./images/wffcff8.png)
 
-移至Postman，驗證要求中的提示，然後按一下[傳送]。**&#x200B;**
+移至Postman，驗證要求中的提示，然後按一下[傳送]。****
 
 ![WF Fusion](./images/wffcff8a.png)
 
@@ -234,8 +238,8 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc31.png)
 
-在&#x200B;**進階設定**&#x200B;下，選取&#x200B;**是**&#x200B;以覆寫相同名稱的檔案。
-按一下&#x200B;**新增**。
+在&#x200B;**進階設定**&#x200B;下，選取&#x200B;**是**以覆寫相同名稱的檔案。
+按一下**新增**。
 
 ![WF Fusion](./images/wffc32.png)
 
@@ -243,11 +247,11 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc33.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![WF Fusion](./images/wffc33a.png)
 
-移至Postman，驗證要求中的提示，然後按一下[傳送]。**&#x200B;**
+移至Postman，驗證要求中的提示，然後按一下[傳送]。****
 
 ![WF Fusion](./images/wffcff8a.png)
 
@@ -260,8 +264,6 @@ Workfront Fusion Webhook仍在等待輸入。
 ![WF Fusion](./images/wffc33c.png)
 
 ## 1.2.4.3變更PSD檔案的文字圖層
-
-### 呼叫動作的文字
 
 接著，將游標暫留在&#x200B;**Adobe Photoshop — 套用PSD編輯**&#x200B;模組上，然後按一下&#x200B;**+**&#x200B;圖示。
 
@@ -277,69 +279,61 @@ Workfront Fusion Webhook仍在等待輸入。
 
 您應該會看到此訊息。 首先，選取您先前已設定的Adobe Photoshop連線，名稱應為`--aepUserLdap-- Adobe IO`。
 
-您現在需要定義&#x200B;**輸入檔**&#x200B;的位置，這是上一個步驟的輸出，而且在&#x200B;**圖層**&#x200B;下，您必須輸入您要變更的文字圖層的&#x200B;**名稱**。
+您現在需要定義&#x200B;**輸入檔**&#x200B;的位置，這是上一個步驟的輸出，在&#x200B;**圖層**&#x200B;下，您必須針對需要變更文字的每個圖層按一下&#x200B;**+新增專案**。
 
 ![WF Fusion](./images/wffc37.png)
 
-針對&#x200B;**輸入檔案**，選取&#x200B;**輸入檔案儲存體**&#x200B;的&#x200B;**Azure**，並確定選取先前要求&#x200B;**Adobe Photoshop — 套用PSD編輯**&#x200B;的輸出，您可以在此取得： `data[]._links.renditions[].href`
+針對&#x200B;**輸入檔案**，選取&#x200B;**輸入檔案儲存體**&#x200B;的&#x200B;**Azure**，並確定選取先前要求的輸出，**Adobe Photoshop — 套用PSD編輯**，您可將其定義如下： ``{{XX.data[].`_links`.renditions[].href}}`` (將XX取代為先前模組Adobe Photoshop — 套用PSD編輯的序號)。
+
+接著，按一下「**圖層**」下的「**+新增專案**」以開始新增需要更新的文字圖層。
 
 ![WF Fusion](./images/wffc37a.png)
 
-開啟檔案&#x200B;**citisignal-fiber.psd**。 在檔案中，您會發現包含行動號召的圖層名為&#x200B;**2048x2048-cta**。
+需進行2項變更，檔案&#x200B;**citisignal-fiber.psd**&#x200B;中的CTA文字和按鈕文字需要更新。
+
+若要尋找圖層名稱，請開啟檔案&#x200B;**citisignal-fiber.psd**。 在檔案中，您會發現包含行動號召的圖層名為&#x200B;**2048x2048-cta**。
 
 ![WF Fusion](./images/wffc38.png)
 
-在對話方塊的&#x200B;**Name**&#x200B;下輸入名稱&#x200B;**2048x2048-cta**。
+在檔案&#x200B;**citisignal-fiber.psd**&#x200B;中，您也會注意到包含call to action的圖層名為&#x200B;**2048x2048-button-text**。
+
+![WF Fusion](./images/wffc44.png)
+
+您必須先設定層&#x200B;**2048x2048-cta**&#x200B;需要進行的變更。 在對話方塊的&#x200B;**Name**&#x200B;下輸入名稱&#x200B;**2048x2048-cta**。
 
 ![WF Fusion](./images/wffc39.png)
 
-向下捲動，直到您看到&#x200B;**文字** > **內容**&#x200B;為止。 從Webhook承載中選取變數&#x200B;**cta**。
+向下捲動，直到您看到&#x200B;**文字** > **內容**&#x200B;為止。 從Webhook承載中選取變數&#x200B;**cta**。 按一下&#x200B;**新增**。
 
 ![WF Fusion](./images/wffc40.png)
 
-向下捲動直到看到&#x200B;**輸出**&#x200B;為止。 針對&#x200B;**儲存體**，選取&#x200B;**Azure**。 對於&#x200B;**檔案位置**，請輸入以下位置。 請注意，檔案名稱中新增了變數`{{timestamp}}`，用來確保產生的每個檔案都有唯一的名稱。 此外，請將&#x200B;**Type**&#x200B;設定為&#x200B;**vnd.adobe.photoshop**。 按一下&#x200B;**「確定」**。
+您應該會看到此訊息。 按一下「**圖層**」下的「新增&#x200B;**+專案**」以開始新增需要更新的文字圖層。
+
+![WF Fusion](./images/wffc40a.png)
+
+在對話方塊的&#x200B;**Name**&#x200B;下輸入名稱&#x200B;**2048x2048-button-text**。
+
+![WF Fusion](./images/wffc40b.png)
+
+向下捲動，直到您看到&#x200B;**文字** > **內容**&#x200B;為止。 從Webhook裝載中選取變數&#x200B;**按鈕**。 按一下&#x200B;**新增**。
+
+![WF Fusion](./images/wffc40c.png)
+
+您應該會看到此訊息。
+
+![WF Fusion](./images/wffc40d.png)
+
+向下捲動直到看到&#x200B;**輸出**&#x200B;為止。 針對&#x200B;**儲存體**，選取&#x200B;**Azure**。 對於&#x200B;**檔案位置**，請輸入以下位置。 請注意，檔案名稱中新增了變數`{{timestamp}}`，用來確保產生的每個檔案都有唯一的名稱。 此外，請將&#x200B;**Type**&#x200B;設定為&#x200B;**vnd.adobe.photoshop**。
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
 ![WF Fusion](./images/wffc41.png)
 
-### 按鈕文字
+將&#x200B;**Type**&#x200B;設定為&#x200B;**vnd.adobe.photoshop**。 按一下&#x200B;**「確定」**。
 
-用滑鼠右鍵按一下您剛建立的模組，然後選取&#x200B;**複製**。 這會建立第二個類似的模組。
+![WF Fusion](./images/wffc41a.png)
 
-![WF Fusion](./images/wffc42.png)
-
-將複製的模組連線至先前的&#x200B;**Adobe Photoshop — 編輯文字圖層**&#x200B;模組。
-
-![WF Fusion](./images/wffc42a.png)
-
-您應該會看到此訊息。 首先，選取您先前已設定的Adobe Photoshop連線，名稱應為`--aepUserLdap-- Adobe IO`。
-
-您現在需要定義&#x200B;**輸入檔**&#x200B;的位置，這是上一個步驟的輸出，而且在&#x200B;**圖層**&#x200B;下，您必須輸入您要變更的文字圖層的&#x200B;**名稱**。
-
-![WF Fusion](./images/wffc43.png)
-
-針對&#x200B;**輸入檔案**，選取&#x200B;**輸入檔案儲存體**&#x200B;的&#x200B;**Azure**，並確定選取先前要求&#x200B;**Adobe Photoshop — 編輯文字圖層**&#x200B;的輸出，您可以在此取得： `data[]._links.renditions[].href`
-
-開啟檔案&#x200B;**citisignal-fiber.psd**。 在檔案中，您會注意到包含行動號召的圖層名為&#x200B;**2048x2048-button-text**。
-
-![WF Fusion](./images/wffc44.png)
-
-在對話方塊的&#x200B;**Name**&#x200B;下輸入名稱&#x200B;**2048x2048-button-text**。
-
-![WF Fusion](./images/wffc43.png)
-
-向下捲動，直到您看到&#x200B;**文字** > **內容**&#x200B;為止。 從Webhook裝載中選取變數&#x200B;**按鈕**。
-
-![WF Fusion](./images/wffc45.png)
-
-向下捲動直到看到&#x200B;**輸出**&#x200B;為止。 針對&#x200B;**儲存體**，選取&#x200B;**Azure**。 對於&#x200B;**檔案位置**，請輸入以下位置。 請注意，檔案名稱中新增了變數`{{timestamp}}`，用來確保產生的每個檔案都有唯一的名稱。 此外，請將&#x200B;**Type**&#x200B;設定為&#x200B;**vnd.adobe.photoshop**。 按一下&#x200B;**「確定」**。
-
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
-
-![WF Fusion](./images/wffc46.png)
-
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![WF Fusion](./images/wffc47.png)
 
@@ -369,9 +363,13 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc51.png)
 
-複製並貼上變數`{{XX.data[]._links.renditions[].href}}`並以最後&#x200B;**Adobe Photoshop — 編輯文字圖層**&#x200B;模組的序號取代&#x200B;**XX**，在此例中為&#x200B;**25**。 啟用&#x200B;**顯示進階設定**&#x200B;的核取方塊，然後按一下&#x200B;**新增專案**。
+複製並貼上變數`{{XX.data[]._links.renditions[].href}}`並以最後&#x200B;**Adobe Photoshop — 編輯文字圖層**&#x200B;模組的序號取代&#x200B;**XX**，在此例中為&#x200B;**30**。
 
 ![WF Fusion](./images/wffc52.png)
+
+啟用&#x200B;**顯示進階設定**&#x200B;的核取方塊，然後按一下&#x200B;**新增專案**。
+
+![WF Fusion](./images/wffc52b.png)
 
 在欄位&#x200B;**索引鍵**&#x200B;中，輸入`Content-Type`。 在欄位&#x200B;**值**&#x200B;中，輸入`application/json`。 按一下&#x200B;**新增**。
 
@@ -385,7 +383,7 @@ Workfront Fusion Webhook仍在等待輸入。
 
 ![WF Fusion](./images/wffc54.png)
 
-您應該會看到此訊息。 按一下[儲存]儲存您的變更，然後按一下[執行一次]&#x200B;**測試您的情境。**&#x200B;**&#x200B;**
+您應該會看到此訊息。 按一下[儲存]儲存您的變更，然後按一下[執行一次]**測試您的情境。******
 
 ![WF Fusion](./images/wffc55.png)
 
