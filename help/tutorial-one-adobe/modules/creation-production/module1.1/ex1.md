@@ -139,7 +139,7 @@ ht-degree: 0%
 
 ![Postman](./images/ffui4.png)
 
-您應該會看到此訊息。 移至&#x200B;**網路**&#x200B;標籤。 接著，再按一下[產生&#x200B;****]。
+您應該會看到此訊息。 移至&#x200B;**網路**&#x200B;標籤。 接著，再按一下[產生&#x200B;**&#x200B;**]。
 
 ![Postman](./images/ffui5.png)
 
@@ -317,7 +317,7 @@ ht-degree: 0%
 
 ![Firefly](./images/ffim4_3.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。****
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;**
 
 ![Firefly](./images/ffim4_4.png)
 
@@ -349,7 +349,7 @@ ht-degree: 0%
 
 ![Firefly](./images/ffim4_13.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。****
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;**
 
 ![Firefly](./images/ffim4_14.png)
 
