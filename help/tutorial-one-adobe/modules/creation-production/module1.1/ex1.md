@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 64cce12ba89112583a9cabb4558622ba970335f0
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2596'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,37 @@ ht-degree: 0%
 
 在繼續此練習之前，您必須先完成[您的Adobe I/O專案](./../../../modules/getting-started/gettingstarted/ex6.md)的設定，而且您還需要設定應用程式以與API互動，例如[Postman](./../../../modules/getting-started/gettingstarted/ex7.md)或[PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md)。
 
-## 1.1.1.2探索firefly.adobe.com — 階段1
+## 1.1.1.2 API基本知識
+
+有多種型別的API請求：
+
+- **GET**：嘗試從API端點擷取資訊時（例如取得狀態報告），就會使用此專案
+- **POST**：當有新工作需要完成時(例如讓Adobe Firefly Services產生新影像)，就會使用此專案
+- **PUT**：這可用來完全更新現有的資料
+- **PATCH**：這是用來選擇性更新現有資料
+- **DELETE**：用於刪除資料
+
+使用API時，您也會注意到各種API端點傳回回應代碼。
+
+您可能會預期5種不同的回應類別：
+
+- **1xx資訊回應**：已收到要求，正在繼續處理
+- **2xx成功**：已成功接收、理解及接受要求
+- **3xx重新導向**：需要進一步的動作才能完成要求
+- **4xx使用者端錯誤**：要求包含錯誤的語法或無法完成
+- **5xx伺服器錯誤**：伺服器無法完成明顯有效的要求
+
+以下是您可能會預期的常見回應程式碼範例：
+
+- **200 OK**：很好，您的要求已成功完成
+- **201已建立**：很好，舉例來說，您的影像已建立
+- **202 Accepted**：很好，您的要求已接受且將進行處理
+- **401未獲授權**：這不是好事，可能是您的存取權杖無效
+- **403已禁止**：這不是好事，您可能缺乏嘗試執行動作所需的許可權
+- **404找不到**：這不是好事，您嘗試存取的URL可能不存在
+- **429太多要求**：這不是好事，您可能已在短時間內傳送許多要求。 請稍後再試。
+
+## 1.1.1.3探索firefly.adobe.com — 階段1
 
 讓我們開始探索Adobe Firefly Services。 若想探索，您先來看一下CitiSignal影像產生範例。 CitiSignal設計團隊想要產生CitiSignal品牌名稱的霓虹版本。 他們想要使用Adobe Firefly Services來做這件事。
 
@@ -29,7 +59,7 @@ ht-degree: 0%
 
 ![Postman](./images/CitiSignal.jpg)
 
-### 1.1.1.2.1建立您的組合參考影像
+### 1.1.1.3.1建立您的組合參考影像
 
 您可以使用[此範例影像](./images/CitiSignal.jpg)，也可以建立自己的文字來進行實驗。 請依照下列Adobe Illustrator中的步驟，建立您自己的影像檔案。 如果您選擇使用預先定義的影像，請略過以下章節並移至步驟&#x200B;**1.1.1.2。2直接產生影像**。
 
@@ -81,7 +111,7 @@ ht-degree: 0%
 
 ![Postman](./images/ill13.png)
 
-### 1.1.1.2.2產生您的影像
+### 1.1.1.3.2產生您的影像
 
 移至[https://firefly.adobe.com](https://firefly.adobe.com)。 按一下&#x200B;**設定檔**&#x200B;圖示，並確定您已登入右側的&#x200B;**帳戶**，應為`--aepImsOrgName--`。 如有需要，請按一下&#x200B;**切換設定檔**&#x200B;以切換至該帳戶。
 
@@ -109,7 +139,7 @@ ht-degree: 0%
 
 您現在已學會使用Firefly在幾分鐘內解決設計問題。
 
-## 1.1.1.3探索firefly.adobe.com — 階段2
+## 1.1.1.4探索firefly.adobe.com — 階段2
 
 移至[https://firefly.adobe.com/generate/image](https://firefly.adobe.com/generate/image)。 您應該會看到此訊息。 按一下&#x200B;**模型**&#x200B;下拉式清單。 您會發現有3個可用版本的Adobe Firefly Services：
 
@@ -139,7 +169,7 @@ ht-degree: 0%
 
 ![Postman](./images/ffui4.png)
 
-您應該會看到此訊息。 移至&#x200B;**網路**&#x200B;標籤。 接著，再按一下[產生&#x200B;**&#x200B;**]。
+您應該會看到此訊息。 移至&#x200B;**網路**&#x200B;標籤。 接著，再按一下[產生&#x200B;****]。
 
 ![Postman](./images/ffui5.png)
 
@@ -184,13 +214,13 @@ ht-degree: 0%
 
 在下一個練習中，您將使用Firefly Services完成類似工作，但接著使用API而非UI。 在此範例中，第一個影像的種子編號為&#x200B;**142194**，該影像有2匹馬互相注視，兩匹馬的頭朝彼此。
 
-## 1.1.1.4 Adobe I/O - access_token
+## 1.1.1.5 Adobe I/O - access_token
 
 在&#x200B;**Adobe IO - OAuth**&#x200B;集合中，選取名為&#x200B;**POST - Get Access Token**&#x200B;的要求，並選取&#x200B;**傳送**。 回應應包含新的&#x200B;**accestoken**。
 
 ![Postman](./images/ioauthresp.png)
 
-## 1.1.1.5 Firefly Services API，文字2影像，影像3
+## 1.1.1.6 Firefly Services API，文字2影像，影像3
 
 現在您已具備有效且新的access_token，接下來就可以將您的第一個要求傳送至Firefly Services API了。
 
@@ -269,7 +299,7 @@ ht-degree: 0%
 
 ![Firefly](./images/ff10.png)
 
-## 1.1.1.6 Firefly Services API，一般擴展
+## 1.1.1.7 Firefly Services API，一般擴展
 
 從&#x200B;**FF - Firefly Services技術人員**&#x200B;集合中選取名為&#x200B;**POST - Firefly - Gen Expand**&#x200B;的請求，並移至請求的&#x200B;**Body**。
 
@@ -297,15 +327,25 @@ ht-degree: 0%
 
 ![Firefly](./images/ff15.png)
 
-## 1.1.1.7 Firefly Services API，文字2影像，影像4與影像4 Ultra
+## 1.1.1.8 Firefly Services API，文字2影像，影像4與影像4 Ultra
 
-### 1.1.1.7.1 image4_standard
+在最新版本的Firefly Image Model 4中，已提供幾項改善功能：
+
+- Firefly Image Model 4提供2K解析度輸出，並具備增強的定義和細節。
+- Firefly Image Model 4在文字轉譯、人類、動物和架構方面提供顯著改善。
+- Firefly Image Model 4秉承Adobe對IP友好、商業上安全的創作AI的承諾。
+
+Firefly Image Model 4為您提供卓越的人類、動物和詳細場景影像，您可以使用Image Model 4 Ultra產生具有超逼真的人際互動、建築元素和複雜風景的影像&#x200B;。
+
+### 1.1.1.8.1 image4_standard
 
 從&#x200B;**FF - Firefly Services Tech Insiders**&#x200B;集合中選取名為&#x200B;**POST - Firefly - T2I V4**&#x200B;的請求，並移至請求的&#x200B;**Headers**。
 
 您會發現要求的URL與&#x200B;**Firefly Services API，文字2影像，影像3**&#x200B;要求不同，為&#x200B;**https://firefly-api.adobe.io/v3/images/generate**。 此URL指向&#x200B;**https://firefly-api.adobe.io/v3/images/generate-async**。 在URL中新增&#x200B;**-async**&#x200B;表示您使用的是非同步端點。
 
 在&#x200B;**Header**&#x200B;變數中，您會發現名為&#x200B;**x-model-version**&#x200B;的新變數。 這是與Firefly Image 4和Image 4 Ultra互動時的必要標頭。 若要在產生影像時使用Firefly Image 4或Image 4 Ultra，則標頭的值應設為`image4_standard`或`image4_ultra`。 在此範例中，您將使用`image4_standard`。
+
+如果您未將&#x200B;**x-model-version**&#x200B;設定為`image4_standard`或`image4_ultra`，則Firefly Services目前將預設為使用`image3`。
 
 ![Firefly](./images/ffim4_1.png)
 
@@ -317,7 +357,7 @@ ht-degree: 0%
 
 ![Firefly](./images/ffim4_3.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;**
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。****
 
 ![Firefly](./images/ffim4_4.png)
 
@@ -333,7 +373,7 @@ ht-degree: 0%
 
 ![Firefly](./images/ffim4_7.png)
 
-### 1.1.1.7.2 image4_ultra
+### 1.1.1.8.2 image4_ultra
 
 從&#x200B;**FF - Firefly Services技術人員**&#x200B;集合返回名為&#x200B;**POST - Firefly - T2I V4**&#x200B;的請求，並轉到請求的&#x200B;**Headers**。
 
@@ -349,7 +389,7 @@ ht-degree: 0%
 
 ![Firefly](./images/ffim4_13.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;**
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。****
 
 ![Firefly](./images/ffim4_14.png)
 

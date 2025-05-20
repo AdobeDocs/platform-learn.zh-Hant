@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 1%
+source-wordcount: '1918'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +17,47 @@ ht-degree: 1%
 
 瞭解如何使用Microsoft Azure和預先簽署的URL最佳化Firefly程式。
 
-## 1.1.2.1建立Azure訂閱
+## 1.1.2.1什麼是預先簽署的URL？
+
+預先簽署的URL是授與您暫時存取儲存位置中特定物件的URL。 例如，使用者可以使用URL來讀取物件或寫入物件（或更新現有物件）。 URL包含由應用程式設定的特定引數。
+
+在建立內容供應鏈自動化的內容中，通常需要針對特定使用案例進行多項檔案操作。 例如，可能需要變更檔案的背景、可能必須變更各種圖層的文字等等。 並非總是可以同時執行所有檔案操作，因此需要多步驟方法。 在每個中間步驟之後，輸出就會是執行下一個步驟所需的暫存檔。 執行下一個步驟後，暫存檔案會快速失去值，通常不再需要它，因此應將其刪除。
+
+Adobe Firefly Services目前支援下列網域：
+
+- Amazon AWS： *.amazonaws.com
+- Microsoft Azure： *.windows.net
+- Dropbox： *.dropboxusercontent.com
+
+之所以經常使用雲端儲存空間解決方案，是因為要建立的中繼資產會迅速失去價值。 預先簽署的URL所解決的問題，通常最能透過商品儲存解決方案來解決，這通常是上述雲端服務之一。
+
+在Adobe生態系統中，也有儲存解決方案，例如Frame.io、Workfront Fusion和Adobe Experience Manager資產。 這些解決方案也支援預先簽署的URL，因此在實施期間經常會成為必須選擇的專案。 然後，您通常會根據現有應用程式和儲存成本進行選擇。
+
+因此，預先簽署的URL會與Adobe Firefly Services作業搭配使用，因為：
+
+- 組織通常需要在中間步驟中處理對相同影像的多項變更，並且需要中間儲存才能做到這一點。
+- 從雲端儲存空間位置讀取和寫入的存取權應是安全的，且在伺服器端環境中，無法手動登入，因此安全性需要直接寫入URL。
+
+預先簽署的URL會使用三個引數來限制使用者的存取權：
+
+- 儲存位置：可能是AWS S3貯體位置，亦即具有容器的Microsoft Azure儲存體帳戶位置
+- 檔案名稱：需要讀取、更新、刪除的特定檔案。
+- 查詢字串引數：查詢字串引數一律以問號開頭，後面接著一連串複雜引數
+
+範例：
+
+- **Amazon AWS**： `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
+- **Microsoft Azure**： `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
+
+## 1.1.2.2建立Azure訂閱
 
 >[!NOTE]
 >
 >如果您已有現有的Azure訂閱，可以略過此步驟。 請繼續進行該案例的下一個練習。
+
+>[!NOTE]
+>
+>如果您依照本教學課程進行面對面引導式研討會或引導式隨選培訓的一部分，您可能已經可以存取Microsoft Azure儲存帳戶。 在這種情況下，您無需建立自己的帳戶 — 請使用已在培訓中提供給您的帳戶。
 
 移至[https://portal.azure.com](https://portal.azure.com){target="_blank"}並使用您的Azure帳戶登入。 如果您沒有電子郵件地址，請使用個人電子郵件地址來建立您的Azure帳戶。
 
@@ -43,7 +79,7 @@ ht-degree: 1%
 
 ![Azure儲存體](./images/06azuresubscriptionok.png){zoomable="yes"}
 
-## 1.1.2.2建立Azure儲存體帳戶
+## 1.1.2.3建立Azure儲存體帳戶
 
 搜尋`storage account`，然後選取&#x200B;**儲存帳戶**。
 
@@ -85,7 +121,7 @@ ht-degree: 1%
 
 ![Azure儲存體](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.3安裝Azure儲存體總管
+## 1.1.2.4安裝Azure儲存體總管
 
 [下載Microsoft Azure Storage Explorer以管理您的檔案](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}。 選取適合您特定作業系統的正確版本，下載並安裝。
 
@@ -127,7 +163,7 @@ ht-degree: 1%
 
 ![Azure儲存體](./images/az18.png){zoomable="yes"}
 
-## 1.1.2.4手動上傳檔案並使用影像檔案作為樣式參考
+## 1.1.2.5手動上傳檔案並使用影像檔案作為樣式參考
 
 將您選擇的影像檔案或[此檔案](./images/gradient.jpg){target="_blank"}上傳至容器。
 
@@ -150,7 +186,7 @@ ht-degree: 1%
 ![Azure儲存體](./images/az22.png){zoomable="yes"}
 
 返回Postman開啟請求&#x200B;**POST - Firefly - T2I (styleref) V3**。
-這會顯示在&#x200B;**內文**&#x200B;中。
+這會顯示在**內文**&#x200B;中。
 
 ![Azure儲存體](./images/az23.png){zoomable="yes"}
 
@@ -166,7 +202,7 @@ ht-degree: 1%
 
 ![Azure儲存體](./images/az26.png){zoomable="yes"}
 
-## 1.1.2.5程式化檔案上傳
+## 1.1.2.6程式化檔案上傳
 
 若要搭配Azure儲存體帳戶使用程式化檔案上傳，您必須建立新的&#x200B;**共用存取簽章(SAS)**&#x200B;權杖，其許可權可讓您寫入檔案。
 
@@ -247,7 +283,7 @@ URL目前看起來像這樣，但需要變更。
 
 ![Azure儲存體](./images/az38.png){zoomable="yes"}
 
-## 1.1.2.6程式化檔案使用方式
+## 1.1.2.7程式化檔案使用方式
 
 若要以程式設計方式長期讀取Azure儲存體帳戶的檔案，您必須建立新的&#x200B;**共用存取簽章(SAS)**&#x200B;權杖，其許可權可讓您讀取檔案。 技術上，您可以使用先前練習中建立的SAS-Token，但最佳實務是讓個別的Token只有&#x200B;**讀取**&#x200B;許可權，而個別的Token只有&#x200B;**寫入**&#x200B;許可權。
 
