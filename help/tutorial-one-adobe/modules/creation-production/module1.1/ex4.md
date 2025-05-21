@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ![Firefly自訂模型](./images/ffcm1.png){zoomable="yes"}
 
-您可能會看到此訊息。 如果是，請按一下[同意]****&#x200B;繼續。
+您可能會看到此訊息。 如果是，請按一下[同意]&#x200B;**&#x200B;**&#x200B;繼續。
 
 ![Firefly自訂模型](./images/ffcm2.png){zoomable="yes"}
 
