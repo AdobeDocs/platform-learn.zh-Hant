@@ -6,16 +6,31 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
 workflow-type: tm+mt
-source-wordcount: '2596'
+source-wordcount: '3182'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Firefly Services快速入門
 
-瞭解如何使用Postman和Adobe I/O來查詢Adobe Firefly Services API。
+Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop API**、**InDesign API**&#x200B;和&#x200B;**內容標籤API**。
+
+這套API結合了Adobe創意工具(如Photoshop和Lightroom)的強大功能與尖端AI/ML功能，如內容標籤、產生式填色、文字轉影像等。
+
+有了Firefly Services，您不僅要建立，還要自動化、擴展內容生產，並利用最新的AI/ML技術來強化工作流程。
+
+在本練習中，您將瞭解如何使用Postman和Adobe I/O來使用各種Adobe Firefly Services API。
+
+本練習特別針對Firefly API，例如：
+
+- **Firefly產生影像API**：此API用於使用Firefly的模型產生影像
+- **Firefly產生類似影像API**：此API用於產生與既有影像類似的影像
+- **Firefly展開影像API**：此API用於將現有影像展開至更大的外觀比例/大小
+- **Firefly填滿影像API**：此API會根據Firefly根據您的提示產生的影像，填滿現有影像的區域。 這是使用定義需要填滿區域的遮色片來達成。
+- **Firefly產生物件複合API**：此API可讓您自行提供輸入影像，然後將影像與Firefly產生的影像結合，以建立影像複合或場景。
+- **Firefly自訂模型API**：此API可讓您使用自己的Firefly自訂模型，根據您的Firefly自訂模型產生新影像
 
 ## 1.1.1.1必要條件
 
@@ -169,7 +184,7 @@ ht-degree: 0%
 
 ![Postman](./images/ffui4.png)
 
-您應該會看到此訊息。 移至&#x200B;**網路**&#x200B;標籤。 接著，再按一下[產生&#x200B;**&#x200B;**]。
+您應該會看到此訊息。 移至&#x200B;**網路**&#x200B;標籤。 接著，再按一下[產生&#x200B;****]。
 
 ![Postman](./images/ffui5.png)
 
@@ -216,7 +231,7 @@ ht-degree: 0%
 
 ## 1.1.1.5 Adobe I/O - access_token
 
-在&#x200B;**Adobe IO - OAuth**&#x200B;集合中，選取名為&#x200B;**POST - Get Access Token**&#x200B;的要求，並選取&#x200B;**傳送**。 回應應包含新的&#x200B;**accestoken**。
+在&#x200B;**Adobe IO - OAuth**&#x200B;集合中，選取名為&#x200B;**POST - Get Access Token**&#x200B;的要求，並選取&#x200B;**傳送**。 回應應包含新的&#x200B;**access_token**。
 
 ![Postman](./images/ioauthresp.png)
 
@@ -224,13 +239,26 @@ ht-degree: 0%
 
 現在您已具備有效且新的access_token，接下來就可以將您的第一個要求傳送至Firefly Services API了。
 
-從&#x200B;**FF - Firefly Services Tech Insiders**&#x200B;集合中選取名為&#x200B;**POST - Firefly - T2I V3**&#x200B;的請求。 移至&#x200B;**內文**&#x200B;並驗證提示。 按一下&#x200B;**傳送**。
-
-您在此使用的要求是&#x200B;**同步**&#x200B;要求，會在幾秒內提供包含要求影像的回應。
+您在這裡使用的要求是&#x200B;**同步**&#x200B;要求，會在幾秒內提供包含要求的影像的回應。
 
 >[!NOTE]
 >
 >隨著Firefly Image 4和Image 4 Ultra的發行，將取代同步要求，而採用非同步要求。 在本教學課程的下方，您將找到有關非同步請求的練習。
+
+從&#x200B;**FF - Firefly Services Tech Insiders**&#x200B;集合中選取名為&#x200B;**POST - Firefly - T2I V3**&#x200B;的請求。 移至&#x200B;**Headers**&#x200B;並驗證索引鍵/值配對組合。
+
+| 索引鍵 | 值 |
+|:-------------:| :---------------:| 
+| `x-api-key` | `{{API_KEY}}` |
+| `Authorization` | `Bearer {{ACCESS_TOKEN}}` |
+
+此請求中的這兩個值都參照預先定義的環境變數。 `{{API_KEY}}`參考您Adobe I/O專案的欄位&#x200B;**使用者端識別碼**。 在本教學課程的&#x200B;**快速入門**&#x200B;章節中，您已在Postman中完成設定。
+
+欄位&#x200B;**授權**&#x200B;的值是位元特殊： `Bearer {{ACCESS_TOKEN}}`。 它包含您在上一步中產生的&#x200B;**存取權杖**&#x200B;的參考。 當您在&#x200B;**Adobe IO - OAuth**&#x200B;集合中收到使用要求&#x200B;**POST — 取得存取權杖**&#x200B;的&#x200B;**存取權杖**&#x200B;時，Postman中執行的指令碼會將欄位&#x200B;**access_token**&#x200B;儲存為環境變數，現在該指令碼會在要求&#x200B;**POST - Firefly - T2I V3**&#x200B;中參考。 請注意&#x200B;**Bearer**&#x200B;這個字的特定增加以及`{{ACCESS_TOKEN}}`之前的空格。 不記名文字會區分大小寫，而且需要空格。 如果未正確處理此專案，Adobe I/O將會傳回&#x200B;**401 Unauthorized**&#x200B;錯誤，因為它無法正確處理您的&#x200B;**存取Token**。
+
+![Firefly](./images/ff0.png)
+
+接著，前往&#x200B;**內文**&#x200B;並驗證提示。 按一下&#x200B;**傳送**。
 
 ![Firefly](./images/ff1.png)
 
@@ -357,7 +385,7 @@ Firefly Image Model 4為您提供卓越的人類、動物和詳細場景影像�
 
 ![Firefly](./images/ffim4_3.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;**
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。****
 
 ![Firefly](./images/ffim4_4.png)
 
@@ -389,7 +417,7 @@ Firefly Image Model 4為您提供卓越的人類、動物和詳細場景影像�
 
 ![Firefly](./images/ffim4_13.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;**
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。****
 
 ![Firefly](./images/ffim4_14.png)
 
@@ -400,6 +428,30 @@ Firefly Image Model 4為您提供卓越的人類、動物和詳細場景影像�
 然後您應該會在欄位&#x200B;**中看到**&#x200B;匹馬的超真實影像。
 
 ![Firefly](./images/ffim4_16.png)
+
+### 負面提示
+
+如果您想要求Firefly不要在即將產生的影像中包含某些專案，您可以在使用API時包含欄位`negativePrompt` （此選專案前未公開給UI）。 例如，如果您不想在執行欄位&#x200B;**中的提示**&#x200B;馬時包含任何花，則您可以在API要求的&#x200B;**Body**&#x200B;中指定此專案：
+
+```
+"negativePrompt": "no flowers",
+```
+
+從&#x200B;**FF - Firefly Services技術人員**&#x200B;集合移至請求&#x200B;**POST - Firefly - T2I V4**，並移至請求的&#x200B;**Body**。 將以上文字貼到要求內文中。 按一下&#x200B;**傳送**。
+
+![Firefly](./images/ffim4_17.png)
+
+您應該會看到此訊息。
+
+![Firefly](./images/ffim4_18.png)
+
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
+
+![Firefly](./images/ffim4_19.png)
+
+然後您會看到產生的影像，該影像不應包含任何花。
+
+![Firefly](./images/ffim4_20.png)
 
 ## 後續步驟
 
