@@ -18,7 +18,7 @@ ht-degree: 20%
 
 # 身分識別圖連結規則概觀
 
-取得身分圖表連結規則如何協助資料架構師維護精確的客戶設定檔及防止圖表摺疊的概觀。 如需詳細資訊，請參閱[身分圖表連結規則檔案](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)。
+取得身分圖表連結規則如何協助資料架構師維護精確的客戶設定檔及防止圖表摺疊的概觀。 如需詳細資訊，請參閱[身分圖表連結規則檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 
