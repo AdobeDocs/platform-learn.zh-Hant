@@ -9,10 +9,10 @@ duration: 143
 last-substantial-update: 2024-06-14T00:00:00Z
 jira: KT-15749
 exl-id: 15b9a4e3-0971-4460-859b-45118d382f64
-source-git-commit: 36062e1442e20f6697f058db762f6ff2d50ead49
+source-git-commit: f003a65188c0201030b8ecca0c0838088c814e47
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 5%
+source-wordcount: '586'
+ht-degree: 6%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 5%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="取得AI助理的存取權" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1739896314415" alt="取得AI助理的存取權"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="取得AI助理的存取權"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ ht-degree: 5%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="使用AI Assistant中的可發現性面板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440973/?format=jpeg&nocache=1739896314393&captions=chi_hant" alt="使用AI Assistant中的可發現性面板"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1748392732984" alt="使用AI Assistant中的可發現性面板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ ht-degree: 5%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="驗證來自AI助理的回應" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441750/?format=jpeg&nocache=1739896314405&captions=chi_hant" alt="驗證來自AI助理的回應"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1748392733006" alt="驗證來自AI助理的回應"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -122,7 +122,7 @@ ht-degree: 5%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="使用AI Assistant取得營運深入分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444043/?format=jpeg&nocache=1739896314636&captions=chi_hant" alt="使用AI Assistant取得營運深入分析"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1748392734347" alt="使用AI Assistant取得營運深入分析"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +130,7 @@ ht-degree: 5%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="operational-insights.md" target="_blank" rel="referrer" title="使用AI Assistant取得營運深入分析">透過AI助理取得營運深入分析</a>
+                        <a href="operational-insights.md" target="_blank" rel="referrer" title="使用AI Assistant取得營運深入分析">透過 AI 助理獲取營運深入解析</a>
                     </p>
                     <p class="is-size-6">瞭解如何使用AI Assistant來發掘有關業務物件的營運深入分析，例如Adobe Experience Platform中的受眾、資料集、結構描述、目的地和歷程</p>
                 </div>
@@ -145,7 +145,7 @@ ht-degree: 5%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="AI助理 — 對象清理使用案例" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441998/?format=jpeg&nocache=1739896314622&captions=chi_hant" alt="AI助理 — 對象清理使用案例"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1748392734324" alt="AI助理 — 對象清理使用案例"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -168,7 +168,7 @@ ht-degree: 5%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="使用AI助理進行影響分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441691/?format=jpeg&nocache=1739896314647&captions=chi_hant" alt="使用AI助理進行影響分析"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1748392734336" alt="使用AI助理進行影響分析"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -204,7 +204,7 @@ AI Assistant是學習新產品或快速獲得熟悉產品答案的有用工具�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="使用AI助理瞭解Experience Platform應用程式" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441035/?format=jpeg&nocache=1739896314791&captions=chi_hant" alt="使用AI助理瞭解Experience Platform應用程式"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1748392735046" alt="使用AI助理瞭解Experience Platform應用程式"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ AI Assistant是學習新產品或快速獲得熟悉產品答案的有用工具�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="使用AI助理縮短上線時間" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1739896314802" alt="使用AI助理縮短上線時間"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="使用AI助理縮短上線時間"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -240,6 +240,41 @@ AI Assistant是學習新產品或快速獲得熟悉產品答案的有用工具�
                     <p class="is-size-6">瞭解如何使用AI Assistant快速啟動新功能並減少上線時間。</p>
                 </div>
                 <a href="onboard.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">觀看</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+
+## 產品支援
+
+疑難排解並開啟客戶服務票證。
+
+<!-- CARDS
+* product-support-agent.md
+-->
+<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
+<div class="columns">
+    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Product Support Agent">
+        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
+            <div class="card-image">
+                <figure class="image x-is-16by9">
+                    <a href="product-support-agent.md" title="產品支援代理" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1748392735554" alt="產品支援代理"
+                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
+                    </a>
+                </figure>
+            </div>
+            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
+                <div class="top-card-content">
+                    <p class="headline is-size-6 has-text-weight-bold">
+                        <a href="product-support-agent.md" target="_blank" rel="referrer" title="產品支援代理">產品支援代理程式</a>
+                    </p>
+                    <p class="is-size-6">產品支援代理程式可運用Adobe的專家支援團隊所組織的各種知識來源，甚至您自己的資料，來協助解決問題。 如果您需要其他協助，產品支援代理現在可以建立支援案例，其中包含詳細的內容相關資訊。</p>
+                </div>
+                <a href="product-support-agent.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">觀看</span>
                 </a>
             </div>
@@ -262,7 +297,7 @@ AI Assistant是學習新產品或快速獲得熟悉產品答案的有用工具�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="AI Assistant的安全性概觀" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441091/?format=jpeg&nocache=1739896315547&captions=chi_hant" alt="AI Assistant的安全性概觀"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1748392736016" alt="AI Assistant的安全性概觀"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
