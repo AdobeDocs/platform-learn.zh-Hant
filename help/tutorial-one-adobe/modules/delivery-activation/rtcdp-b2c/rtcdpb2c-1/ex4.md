@@ -106,7 +106,7 @@ person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItem
 ![區段](./images/previewprofilesdtl.png)
 
 最後，讓我們為您的對象命名，
-將**評估方法**&#x200B;設定為&#x200B;**Edge**，然後按一下&#x200B;**發佈**。
+將&#x200B;**評估方法**&#x200B;設定為&#x200B;**Edge**，然後按一下&#x200B;**發佈**。
 
 作為命名慣例，請使用：
 
