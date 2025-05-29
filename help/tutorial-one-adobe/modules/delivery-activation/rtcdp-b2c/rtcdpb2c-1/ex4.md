@@ -4,9 +4,9 @@ description: Foundation — 即時客戶個人檔案 — 建立對象 — UI
 kt: 5342
 doc-type: tutorial
 exl-id: 4870ea42-810b-400b-8285-ab1f89c6a018
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '709'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ![區段](./images/menusegbr.png)
 
-進入新的受眾產生器後，您會立即注意到&#x200B;**屬性**&#x200B;功能表選項和&#x200B;**XDM個人設定檔**&#x200B;參考。
+進入對象產生器後，您會立即注意到&#x200B;**屬性**&#x200B;功能表選項和&#x200B;**XDM個人設定檔**&#x200B;參考。
 
 ![區段](./images/segmentationui.png)
 
@@ -83,6 +83,10 @@ ht-degree: 3%
 
 ![區段](./images/pv.png)
 
+將區段上的時間條件設定為&#x200B;**過去24小時內**。
+
+![區段](./images/pv1.png)
+
 每次將元素新增至對象產生器時，您都可以按一下&#x200B;**重新整理預估值**&#x200B;按鈕，以取得對象中母體的新預估值。
 
 到目前為止，您僅使用UI來建立對象，但也有程式碼選項來建立對象。
@@ -102,7 +106,7 @@ person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItem
 ![區段](./images/previewprofilesdtl.png)
 
 最後，讓我們為您的對象命名，
-將&#x200B;**評估方法**&#x200B;設定為&#x200B;**串流**，然後按一下&#x200B;**發佈**。
+將**評估方法**&#x200B;設定為&#x200B;**Edge**，然後按一下&#x200B;**發佈**。
 
 作為命名慣例，請使用：
 

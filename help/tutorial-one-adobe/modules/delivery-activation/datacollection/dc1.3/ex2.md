@@ -4,10 +4,10 @@ description: 基礎 — FAC — 建立方案、資料模型和連結
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 915054a0342a0e5bb003d2fbc73d1540725aa5f0
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 2%
+source-wordcount: '683'
+ht-degree: 3%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb5.png)
 
-選取您的同盟資料庫，然後按一下&#x200B;**+新增資料表**。
+選取您的同盟資料庫，然後按一下&#x200B;**下一步**。
 
 ![FAC](./images/fdb6.png)
 
@@ -79,7 +79,7 @@ ht-degree: 2%
 - `--aepUserLdap--_PERSONS`
 - `--aepUserLdap--_USERS`
 
-按一下&#x200B;**新增**。
+按一下&#x200B;**下一步**。
 
 ![FAC](./images/fdb7.png)
 
@@ -94,7 +94,7 @@ AEP便會載入每個表格的資訊，並在UI中顯示。
 
 此練習不需要任何變更。
 
-按一下&#x200B;**建立**。
+按一下&#x200B;**「完成」**。
 
 ![FAC](./images/fdb8.png)
 
@@ -106,7 +106,7 @@ AEP便會載入每個表格的資訊，並在UI中顯示。
 
 ![FAC](./images/fdb10.png)
 
-然後您會看到資料範例。
+然後您會看到資料範例。 此資料會直接從Snowflake載入，不會儲存在AEP中。
 
 ![FAC](./images/fdb11.png)
 
@@ -134,11 +134,11 @@ AEP便會載入每個表格的資訊，並在UI中顯示。
 
 ### 人員 — 使用者
 
-您現在可以開始定義綱要之間的連結。 若要開始定義連結，您必須按一下[建立連結]。**&#x200B;**
+您現在可以開始定義綱要之間的連結。 若要開始定義連結，您必須按一下[建立連結]。****
 
-![FAC](./images/fdb16.png)
+![FAC](./images/fdb16a.png)
 
-首先，讓我們定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_PERSONS`之間的連結。
+首先，您必須定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_PERSONS`之間的連結。
 
 按一下&#x200B;**新增**。
 
@@ -150,7 +150,9 @@ AEP便會載入每個表格的資訊，並在UI中顯示。
 
 ![FAC](./images/fdb17.png)
 
-接下來，讓我們定義表格`--aepUserLdap--_HOUSEHOLDS`與`--aepUserLdap--_PERSONS`之間的連結。
+接下來，您必須定義表格`--aepUserLdap--_HOUSEHOLDS`與`--aepUserLdap--_PERSONS`之間的連結。
+
+按一下&#x200B;**新增**。
 
 ![FAC](./images/fdb19.png)
 
@@ -160,10 +162,11 @@ AEP便會載入每個表格的資訊，並在UI中顯示。
 
 ![FAC](./images/fdb20.png)
 
-接下來，讓我們定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_MONTHLY_DATA_USAGE`之間的連結。
+接下來，您必須定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_MONTHLY_DATA_USAGE`之間的連結。
+
+按一下&#x200B;**新增**。
 
 ![FAC](./images/fdb21.png)
-
 
 ### 使用者 — 家庭
 
@@ -171,7 +174,9 @@ AEP便會載入每個表格的資訊，並在UI中顯示。
 
 ![FAC](./images/fdb22.png)
 
-接下來，讓我們定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_HOUSEHOLDS`之間的連結。
+接下來，您必須定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_HOUSEHOLDS`之間的連結。
+
+按一下&#x200B;**新增**。
 
 ![FAC](./images/fdb23.png)
 
@@ -181,7 +186,9 @@ AEP便會載入每個表格的資訊，並在UI中顯示。
 
 ![FAC](./images/fdb24.png)
 
-接下來，讓我們定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_MOBILE_DATA_USAGE`之間的連結。
+接下來，您必須定義表格`--aepUserLdap--_USERS`與`--aepUserLdap--_MOBILE_DATA_USAGE`之間的連結。
+
+按一下&#x200B;**新增**。
 
 ![FAC](./images/fdb25.png)
 
@@ -189,7 +196,7 @@ AEP便會載入每個表格的資訊，並在UI中顯示。
 
 ![FAC](./images/fdb26.png)
 
-您在AEP中的設定現已完成。 您現在可以在同盟對象構成中開始使用同盟資料。
+現在已在Adobe Experience Platform中設定好同盟資料庫。 您現在可以在同盟對象構成中開始使用同盟資料。
 
 ## 後續步驟
 
