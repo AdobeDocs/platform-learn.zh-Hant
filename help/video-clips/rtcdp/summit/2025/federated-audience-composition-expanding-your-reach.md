@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解同盟受眾構成如何將外部資料來源整合至Real-Time CDP，以支援即時行銷。
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-your-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458250/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459912/?learn=on&enablevpops=true&captions=chi_hant)

@@ -20,4 +20,4 @@ ht-degree: 0%
 探索Adobe如何使用資料導向深入分析和AJO來強化會員上線並提升保留率。
 
 <!-- 62_S655_3442541_35_adobes-approach-to-member-onboarding-and-retention -->
->[!VIDEO](https://video.tv.adobe.com/v/3458282/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459649/?learn=on&enablevpops=true&captions=chi_hant)

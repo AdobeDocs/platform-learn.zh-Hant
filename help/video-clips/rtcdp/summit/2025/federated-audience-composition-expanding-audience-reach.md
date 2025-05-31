@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解同盟對象構成如何讓您將外部資料倉儲連線至Real-Time CDP，以進行即時的行銷。
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-audience-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458295/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459802/?learn=on&enablevpops=true&captions=chi_hant)

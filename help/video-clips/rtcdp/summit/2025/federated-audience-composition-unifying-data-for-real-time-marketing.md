@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解Adobe Real-Time CDP中的Federated Audience Composition如何支援無縫整合外部資料倉儲，以便即時啟用行銷。
 
 <!-- 62_S508_3442517_87_federated-audience-composition-unifying-data-for-realtime-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3458196/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459901/?learn=on&enablevpops=true&captions=chi_hant)

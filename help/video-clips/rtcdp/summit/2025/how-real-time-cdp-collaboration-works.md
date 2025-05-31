@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解使用Adobe的Real-Time CDP Collaboration入門受眾、與發佈者合作及啟用行銷活動的逐步程式。
 
 <!-- 62_OS511_3442426_61_how-realtime-cdp-collaboration-works -->
->[!VIDEO](https://video.tv.adobe.com/v/3458278/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459956/?learn=on&enablevpops=true&captions=chi_hant)

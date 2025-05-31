@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解Adobe如何透過清晰的流程和工具策略，確保AEP的可擴充和可靠運作。
 
 <!-- 62_S655_3442541_134_run-and-operate-strategies-for-scaling-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458255/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3461124/?learn=on&enablevpops=true&captions=chi_hant)

@@ -20,4 +20,4 @@ ht-degree: 0%
 觀看AI Assistant如何協助行銷人員建立預測性模型，以及為行銷活動建立高度針對性的對象。
 
 <!-- 62_OS512_3442427_175_creating-targeted-audiences-with-ai-assistant -->
->[!VIDEO](https://video.tv.adobe.com/v/3458186/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460198/?learn=on&enablevpops=true&captions=chi_hant)

@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解Adobe如何使用統一設定檔來推動70多個團隊間的共同作業，並為Creative Cloud使用者提供個人化體驗。
 
 <!-- 62_S655_3442541_146_adobes-internal-use-of-unified-profiles-for-creative-cloud -->
->[!VIDEO](https://video.tv.adobe.com/v/3458283/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459682/?learn=on&enablevpops=true&captions=chi_hant)

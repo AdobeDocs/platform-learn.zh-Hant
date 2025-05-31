@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解Real-Time CDP中的相似受眾模型如何透過識別類似的高價值客戶，協助行銷人員擴大觸及面。
 
 <!-- 82_OS512_3442427_58_expanding-highvalue-audiences-with-lookalike-models -->
->[!VIDEO](https://video.tv.adobe.com/v/3458190/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459934/?learn=on&enablevpops=true&captions=chi_hant)

@@ -20,4 +20,4 @@ ht-degree: 0%
 探索在Adobe Experience Platform中管理資料和工作流程時，單一沙箱策略與多沙箱策略之間的折衷。
 
 <!-- 62_S601_3442532_179_single-vs-multisandbox-approach-in-aep -->
->[!VIDEO](https://video.tv.adobe.com/v/3458324/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3462674/?learn=on&enablevpops=true&captions=chi_hant)

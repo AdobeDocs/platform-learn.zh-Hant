@@ -20,4 +20,4 @@ ht-degree: 0%
 探索探索「編目」、「漫步」、「執行」架構，以提升資料、對象、歷程、測量和內容個人化。
 
 <!-- 85_S651_3442537_240_evolving-customer-experience-maturity -->
->[!VIDEO](https://video.tv.adobe.com/v/3458293/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460186/?learn=on&enablevpops=true&captions=chi_hant)

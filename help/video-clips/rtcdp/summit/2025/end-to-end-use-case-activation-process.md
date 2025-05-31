@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解Adobe的端對端使用案例啟動程式，從構思到最佳化的六個階段。
 
 <!-- 65_S651_3442537_212_endtoend-use-case-activation-process -->
->[!VIDEO](https://video.tv.adobe.com/v/3458248/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460253/?learn=on&enablevpops=true&captions=chi_hant)

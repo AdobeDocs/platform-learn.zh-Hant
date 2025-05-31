@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解如何使用沙箱工具來簡化工作流程，並在Adobe Experience Platform中啟用跨團隊共同作業。
 
 <!-- 62_S601_3442532_175_optimizing-aep-with-sandbox-tooling -->
->[!VIDEO](https://video.tv.adobe.com/v/3458320/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460563/?learn=on&enablevpops=true&captions=chi_hant)

@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解Adobe的Audience Agent如何主動監控受眾健康狀態、識別問題，以及建議可操作的解決方案以最佳化參與。
 
 <!-- 65_S653_3442539_53_audience-agent-proactive-audience-health-monitoring -->
->[!VIDEO](https://video.tv.adobe.com/v/3458184/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459759/?learn=on&enablevpops=true&captions=chi_hant)

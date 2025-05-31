@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解在Tiger團隊中建構和溝通的最佳實務，以改善AEP專案的共同作業並降低低效率。
 
 <!-- 62_S926_3442625_155_how-to-operate-and-communicate-effectively-in-tiger-teams -->
->[!VIDEO](https://video.tv.adobe.com/v/3458270/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460229/?learn=on&enablevpops=true&captions=chi_hant)

@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解Adobe Experience Platform如何支援跨頻道歷程的對象建立和啟用。
 
 <!-- 62_S655_3442541_49_adobes-approach-to-audience-strategy-and-activation -->
->[!VIDEO](https://video.tv.adobe.com/v/3458225/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459633/?learn=on&enablevpops=true&captions=chi_hant)

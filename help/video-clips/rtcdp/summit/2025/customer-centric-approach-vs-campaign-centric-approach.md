@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解如何從以行銷活動為中心轉變為以客戶為中心的方法，以推動可持續增長並改善客戶體驗。
 
 <!-- 85_S651_3442537_125_customercentric-approach-vs-campaigncentric-approach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458235/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460123/?learn=on&enablevpops=true&captions=chi_hant)

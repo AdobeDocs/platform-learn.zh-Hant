@@ -20,4 +20,4 @@ ht-degree: 0%
 使用可擴充性、驗證和與Adobe Experience Platform資料模型一致的最佳實務，避免架構設計上代價高昂的錯誤。
 
 <!-- 72_S655_3442541_260_best-practices-for-schema-design-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458268/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460132/?learn=on&enablevpops=true&captions=chi_hant)

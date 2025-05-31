@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解對象適用的AI助理如何協助識別高價值區段、最佳化對象策略及節省時間。
 
 <!-- 62_S508_3442517_109_ai-assistant-for-audiences-optimizing-audience-strategies -->
->[!VIDEO](https://video.tv.adobe.com/v/3458285/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459671/?learn=on&enablevpops=true&captions=chi_hant)

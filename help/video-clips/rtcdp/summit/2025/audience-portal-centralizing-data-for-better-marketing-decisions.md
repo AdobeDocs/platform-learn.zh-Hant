@@ -20,4 +20,4 @@ ht-degree: 0%
 探索Adobe Real-Time CDP中的對象入口網站如何整合客戶資料，啟用進階對象管理和即時啟用。
 
 <!-- 72_S508_3442517_82_audience-portal-centralizing-data-for-better-marketing-decisions -->
->[!VIDEO](https://video.tv.adobe.com/v/3458185/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459693/?learn=on&enablevpops=true&captions=chi_hant)

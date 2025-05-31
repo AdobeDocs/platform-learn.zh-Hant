@@ -20,4 +20,4 @@ ht-degree: 0%
 透過Adobe的Agent Orchestrator瞭解GenAI創新的下一個時代，進而提供即時、超個人化的客戶體驗。
 
 <!-- 62_S653_3442539_67_introducing-adobes-agent-orchestrator-for-intelligent-activation -->
->[!VIDEO](https://video.tv.adobe.com/v/3458205/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460038/?learn=on&enablevpops=true&captions=chi_hant)

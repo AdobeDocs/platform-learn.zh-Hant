@@ -20,4 +20,4 @@ ht-degree: 0%
 探索簡單的三階段架構，以使用Real-Time CDP來建立、擴展和最佳化對象策略。
 
 <!-- 72_S508_3442517_213_threephased-approach-to-audiencedriven-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3458299/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463001/?learn=on&enablevpops=true&captions=chi_hant)

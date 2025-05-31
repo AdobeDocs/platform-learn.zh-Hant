@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解Adobe的AI Assistant如何簡化行銷人員的受眾管理任務、提供見解及預測趨勢。
 
 <!-- 82_OS512_3442427_158_ai-assistant-boosting-productivity-in-audience-management -->
->[!VIDEO](https://video.tv.adobe.com/v/3458182/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459605/?learn=on&enablevpops=true&captions=chi_hant)

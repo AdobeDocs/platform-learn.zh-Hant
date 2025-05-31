@@ -20,4 +20,4 @@ ht-degree: 0%
 探索Real-Time CDP中的受眾入口網站如何協助整合客戶資料、管理受眾及啟用即時啟用。
 
 <!-- 62_S508_3442517_101_audience-portal-centralizing-and-managing-audiences -->
->[!VIDEO](https://video.tv.adobe.com/v/3458287/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459748/?learn=on&enablevpops=true&captions=chi_hant)
