@@ -3,10 +3,10 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 3%
+source-wordcount: '944'
+ht-degree: 2%
 
 ---
 
@@ -34,22 +34,16 @@ ht-degree: 3%
 - Snowflake
 - ...
 
-## 先決條件
+## 顯示您的知識
 
-如果您想使用自己的Adobe Experience Cloud執行個體來參加此教學課程，您必須在執行個體中布建下列應用程式，而且必須能夠存取：
+![Adobe合格](./assets/images/badge.png){width="100px" align="left"}
 
-- Adobe Firefly
-- Adobe Photoshop、Adobe框架I/O、Adobe Substance 3D Staging
-- Adobe Workfront
-- Adobe Workfront Fusion
-- Adobe Experience Platform、Adobe Experience Platform資料彙集
-- 存取示範系統下一步： [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+完成本教學課程中的部分模組後，您可以參加Adobe認證測驗，以取得&#x200B;**Adobe合格**&#x200B;徽章。
 
-## 完成與認證
-
-本教學課程是Adobe認證課程的一部分。 您可以連同本教學課程一起註冊此課程，方法是前往[https://certification.adobe.com](https://certification.adobe.com)。
-
-使用下列教學課程完成的每個模組，都需要提交完成證明，如[此處](./completion.md)所示。
+- 當您完成[Adobe Firefly Services概述](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}模組時，您已準備好可以參加並通過&#x200B;**Adobe合格**&#x200B;考試&#x200B;**AD2-E901**：
+  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential)。
+- 當您使用Workfront Fusion完成模組[Creative工作流程自動化](./modules/creation-production/module1.2/automation.md){target="_blank"}時，您已準備好可以參加並通過&#x200B;**Adobe合格**&#x200B;考試&#x200B;**XXX**：
+  [TBC](https://certification.adobe.com/certification/services-qualified-credential)。
 
 ## 內容狀態
 
@@ -65,7 +59,7 @@ ht-degree: 3%
 
 ### 2.建立與生產
 
-[1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Adobe Firefly Services概觀](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 在此單元中，您將使用Adobe Firefly Services API、Photoshop API和Microsoft Azure儲存服務產生影像並以程式設計方式儲存。
 

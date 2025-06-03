@@ -4,9 +4,9 @@ breadcrumb-title: 從Creative Cloud到Experience Cloud，Adobe應用程式的完
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1153'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 3%
 + [教學課程概觀](/help/tutorial-one-adobe/overview.md)
 + [內容狀態](/help/tutorial-one-adobe/status.md)
 + [完成](/help/tutorial-one-adobe/completion.md)
-+ [前期工作](/help/tutorial-one-adobe/prework.md)
 
 + 快速入門 {#gettingstarted}
    + 快速入門 {#gettingstarted}

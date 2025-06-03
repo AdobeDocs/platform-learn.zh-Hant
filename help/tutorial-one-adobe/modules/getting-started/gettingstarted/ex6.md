@@ -4,9 +4,9 @@ description: 快速入門 — Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 0%
 ![Adobe I/O新整合](./images/iocomp.png){zoomable="yes"}
 
 ### FIREFLY SERVICES API
+
+>[!IMPORTANT]
+>
+>根據您選取的學習路徑，您可能無法存取Firefly Services API。 您必須位於學習路徑&#x200B;**Firefly**、**Workfront Fusion**、**全部**，或正在參加&#x200B;**現場現場研討會**，才能存取Firefly Services API。 如果您不在其中一個學習路徑上，可以略過此步驟。
 
 您應該會看到此訊息。 選取&#x200B;**+新增至專案**&#x200B;並選擇&#x200B;**API**。
 
@@ -59,6 +63,10 @@ ht-degree: 0%
 
 ### PHOTOSHOP SERVICES API
 
+>[!IMPORTANT]
+>
+>根據您選取的學習路徑，您可能無法存取Photoshop Services API。 您必須位於學習路徑&#x200B;**Firefly**、**Workfront Fusion**、**全部**，或正在參加&#x200B;**現場現場研討會**，才能存取Photoshop Services API。 如果您不在其中一個學習路徑上，可以略過此步驟。
+
 選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
 
 ![Azure儲存體](./images/ps2.png){zoomable="yes"}
@@ -84,6 +92,10 @@ ht-degree: 0%
 ![Adobe I/O新整合](./images/ps7.png){zoomable="yes"}
 
 ### ADOBE EXPERIENCE PLATFORM API
+
+>[!IMPORTANT]
+>
+>根據您選取的學習路徑，您可能無法存取Adobe Experience Platform API。 只有當您位於學習路徑&#x200B;**AEP + Apps**、**ALL**&#x200B;或參加&#x200B;**現場研討會**&#x200B;時，才能存取Adobe Experience Platform API。 如果您不在其中一個學習路徑上，可以略過此步驟。
 
 選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
 
