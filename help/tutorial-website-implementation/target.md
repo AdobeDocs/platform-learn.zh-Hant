@@ -12,9 +12,9 @@ ht-degree: 68%
 
 # 新增 Adobe Target
 
-在本課程中，我們將透過頁面載入請求和自訂參數實施 [Adobe Target 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html)。
+在本課程中，我們將透過頁面載入請求和自訂參數實施 [Adobe Target 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=zh-Hant)。
 
-[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) 為 Adobe Experience Cloud 解決方案，提供一切所需工具，讓您量身打造及個人化您的客戶體驗，藉此為您的網頁以及行動網站、應用程式、社交媒體和其他數位頻道創造最高的收入。
+[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=zh-Hant) 為 Adobe Experience Cloud 解決方案，提供一切所需工具，讓您量身打造及個人化您的客戶體驗，藉此為您的網頁以及行動網站、應用程式、社交媒體和其他數位頻道創造最高的收入。
 
 >[!NOTE]
 >
@@ -91,11 +91,11 @@ ht-degree: 68%
 * `body {opacity: 0 !important}` 會指定在 Target 載入之前，要用於預先隱藏的 CSS 定義。根據預設，整個內文都會隱藏。如果您有一致的 DOM 結構以及可輕鬆識別的容器元素 (比方說，可將所有內容包裝在導覽下)，而且您絕不想測試或個人化導覽，則可使用此設定將預先隱藏限定為該容器元素。
 * `3000` 會指定預先隱藏的逾時設定。根據預設，如果 Target 未在三秒後載入，則會顯示頁面。這種情況應該非常罕見。
 
-如需詳細資訊以及瞭解如何取得未縮製的預先隱藏程式碼片段，請參閱[採用非同步部署的 Adobe Target 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html#adobe-target-extension-with-an-asynchronous-deployment)
+如需詳細資訊以及瞭解如何取得未縮製的預先隱藏程式碼片段，請參閱[採用非同步部署的 Adobe Target 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=zh-Hant#adobe-target-extension-with-an-asynchronous-deployment)
 
 ## 新增 Target 擴充功能
 
-Adobe Target 擴充功能支援將 Target 的 JavaScript SDK 用於現代網路 at.js 的用戶端實施。仍在使用Target舊版程式庫mbox.js [的客戶應升級至at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html)，才能使用標籤。
+Adobe Target 擴充功能支援將 Target 的 JavaScript SDK 用於現代網路 at.js 的用戶端實施。仍在使用Target舊版程式庫mbox.js [的客戶應升級至at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html?lang=zh-Hant)，才能使用標籤。
 
 Target v2 擴充功能包含兩個主要部分：
 
@@ -208,9 +208,9 @@ Target v2 擴充功能包含兩個主要部分：
 
 在 Target 請求中傳遞參數可將強大的功能新增到目標鎖定、測試及個人化活動。標籤擴充功能提供可傳遞引數的兩項動作：
 
-1. `Add Params to Page Load Request`，會將參數新增至頁面載入請求 (相當於 [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) 方法)
+1. `Add Params to Page Load Request`，會將參數新增至頁面載入請求 (相當於 [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=zh-Hant) 方法)
 
-1. `Add Params to All Requests`，會在所有 Target 請求中新增參數，例如頁面載入請求，加上自訂程式碼動作或在網站上以硬式編碼撰寫的其他請求 (等同於 [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) 方法)
+1. `Add Params to All Requests`，會在所有 Target 請求中新增參數，例如頁面載入請求，加上自訂程式碼動作或在網站上以硬式編碼撰寫的其他請求 (等同於 [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=zh-Hant) 方法)
 
 您可以在 `Load Target` 動作&#x200B;*前*&#x200B;使用這些動作，而且可以根據您的規則設定，在不同的頁面上設定不同參數。使用您在透過 Identity Service 設定客戶 ID 時使用的規則排序功能，在引發頁面載入請求的規則之前，設定 `Library Loaded` 事件的其他參數。
 >[!TIP]
@@ -277,7 +277,7 @@ Target v2 擴充功能包含兩個主要部分：
 
 ### 輪廓參數
 
-與請求參數類似，輪廓參數是透過 Target 請求傳遞。不過，輪廓參數會儲存在 Target 訪客輪廓資料庫中，且在[訪客的輪廓期間](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html)持續存在。您可以在網站的某個頁面上設定這些參數，並用於其他頁面上的 Target 活動。以下是來自某個汽車網站的範例。當訪客前往車輛頁面時，您可以傳遞設定檔參數「profile.lastViewed=sportscar」，以記錄其對於該特定車輛的興趣。當訪客瀏覽到其他非車輛的頁面時，您可以根據其檢視的上一個車輛鎖定目標內容。輪廓參數適用於很少變更或只會在某些頁面上使用的屬性
+與請求參數類似，輪廓參數是透過 Target 請求傳遞。不過，輪廓參數會儲存在 Target 訪客輪廓資料庫中，且在[訪客的輪廓期間](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=zh-Hant)持續存在。您可以在網站的某個頁面上設定這些參數，並用於其他頁面上的 Target 活動。以下是來自某個汽車網站的範例。當訪客前往車輛頁面時，您可以傳遞設定檔參數「profile.lastViewed=sportscar」，以記錄其對於該特定車輛的興趣。當訪客瀏覽到其他非車輛的頁面時，您可以根據其檢視的上一個車輛鎖定目標內容。輪廓參數適用於很少變更或只會在某些頁面上使用的屬性
 
 在本教學課程中，您不需要傳遞任何輪廓參數，但工作流程幾乎與剛剛傳遞 `pageName` 參數時的做法相同。有一項差異是，您必須為輪廓參數名稱加上 `profile.` 前置詞。這就是「userType」輪廓參數在 `Add Params to Page Load Request` 動作中看起來的樣子：
 
@@ -285,7 +285,7 @@ Target v2 擴充功能包含兩個主要部分：
 
 ### 實體參數
 
-實體參數是 [推薦實施](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html)中使用的特殊參數 ，主要原因有三：
+實體參數是 [推薦實施](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=zh-Hant)中使用的特殊參數 ，主要原因有三：
 
 1. 作為觸發產品建議的索引鍵。例如，使用「已檢視產品 X 的使用者也已檢視 Y」等建議演算法時，「X」是建議的「索引鍵」。這通常是訪客目前正在檢視的產品 SKU (`entity.id`) 或類別 (`entity.categoryId`)。
 1. 收集訪客行為以支援建議演算法，例如「Recently Viewed Products」或「Most Viewed Products」。
@@ -297,7 +297,7 @@ Target v2 擴充功能包含兩個主要部分：
 
 ### 新增客戶 ID 參數
 
-透過 Adobe Experience Platform Identity Service 收集客戶 ID，讓您可使用 Adobe Experience Cloud 的[客戶屬性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html)功能，輕鬆將 CRM 資料匯入 Target。此外，還可以實現[跨裝置訪客拼接](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)，讓客戶在筆記型電腦和行動裝置之間切換時，仍能維持一致的使用體驗。
+透過 Adobe Experience Platform Identity Service 收集客戶 ID，讓您可使用 Adobe Experience Cloud 的[客戶屬性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=zh-Hant)功能，輕鬆將 CRM 資料匯入 Target。此外，還可以實現[跨裝置訪客拼接](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html?lang=zh-Hant)，讓客戶在筆記型電腦和行動裝置之間切換時，仍能維持一致的使用體驗。
 
 在引發頁面載入請求之前，必須先在 Identity Service 的 `Set Customer IDs` 動作中設定客戶 ID。為此，請確認您的網站上具備下列功能：
 
@@ -334,7 +334,7 @@ Target v2 擴充功能包含兩個主要部分：
 1. Open the Debugger
 1. Go to the Target tab
 1. Expand your client code
-1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html):
+1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=zh-Hant):
 
 ![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)
 -->
@@ -349,7 +349,7 @@ Target v2 擴充功能包含兩個主要部分：
 >
 >這是適用於Target Premium客戶的選用練習。
 
-屬性代號是搭配 Target Premium [Enterprise User Permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) 功能使用的保留參數。它可用來定義不同的數位屬性，這樣 Experience Cloud 組織的不同成員就能獲派各個屬性的不同權限。例如，您可能希望一組使用者能在您的網站上設定 Target 活動，但不能在行動應用程式中設定。
+屬性代號是搭配 Target Premium [Enterprise User Permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=zh-Hant) 功能使用的保留參數。它可用來定義不同的數位屬性，這樣 Experience Cloud 組織的不同成員就能獲派各個屬性的不同權限。例如，您可能希望一組使用者能在您的網站上設定 Target 活動，但不能在行動應用程式中設定。
 
 Target屬性類似於標籤屬性和Analytics報表套裝。 如果企業擁有多個品牌、網站和行銷團隊，可能會使用不同的Target屬性、標籤屬性，以及適用於各個網站或行動應用程式的Analytics報表套裝。 標籤屬性是以其內嵌程式碼區別、Analytics報表套裝是以其報表套裝ID區別，而Target屬性是以其屬性代號引數區別。
 
@@ -430,7 +430,7 @@ Target屬性類似於標籤屬性和Analytics報表套裝。 如果企業擁有�
 
 最佳做法是在所有訂單漏斗（甚至非零售網站）中使用訂單確認請求。 例如，銷售機會開發網站通常會有潛在客戶漏斗，其尾端會產生唯一的「lead id」。這些網站應將靜態值 (例如「1」) 用於 orderTotal 以實施訂單請求。
 
-如果客戶將Analytics for Target (A4T)整合用於其大多數報表，則在使用Automated Personalization活動（不支援A4T）時，可能也想要實施訂單請求。 此外，訂單請求是Recommendations實施中的關鍵元素，可根據購買行為支援演演算法。 如需A4T支援的最新資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA)。
+如果客戶將Analytics for Target (A4T)整合用於其大多數報表，則在使用Automated Personalization活動（不支援A4T）時，可能也想要實施訂單請求。 此外，訂單請求是Recommendations實施中的關鍵元素，可根據購買行為支援演演算法。 如需A4T支援的最新資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hant#section_F487896214BF4803AF78C552EF1669AA)。
 
 訂單確認請求應從只在訂單確認頁面或事件上觸發的規則引發，通常可與設定 Adobe Analytics 購買事件的規則組合。您必須使用核心擴充功能的「自訂程式碼」動作進行設定，使用相關資料元素來設定 orderId、orderTotal 和 productPurchasedId 參數。
 
@@ -564,11 +564,11 @@ Target屬性類似於標籤屬性和Analytics報表套裝。 如果企業擁有�
 
 在某些罕見情況下，您可能需要提出頁面載入和訂單確認請求以外的Target請求。 例如，有時候您要用於個人化的重要資料，未在標籤內嵌程式碼之前的頁面上定義，而是可能會在頁面底部以硬式編碼撰寫，或從非同步API請求傳回。 雖然將此請求用於內容傳送並非最佳方法（因為頁面已顯示），此資料可使用其他請求傳送至Target。 此資料可用來讓訪客設定檔變得更加豐富以供後續使用（使用設定檔引數），或用來填入Recommendations目錄。
 
-在這些情況下，請使用核心擴充功能中的「自訂程式碼」動作，利用[getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html)和[trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html)方法引發要求。 這非常類似於您在[訂單確認請求](#order-confirmation-request)練習中所執行的操作，但您會使用不同的請求名稱，且不會使用特殊訂單引數。 從自訂程式碼發出Target請求之前，請務必使用&#x200B;**[!UICONTROL 載入Target]**&#x200B;動作。
+在這些情況下，請使用核心擴充功能中的「自訂程式碼」動作，利用[getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html?lang=zh-Hant)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html?lang=zh-Hant)和[trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html?lang=zh-Hant)方法引發要求。 這非常類似於您在[訂單確認請求](#order-confirmation-request)練習中所執行的操作，但您會使用不同的請求名稱，且不會使用特殊訂單引數。 從自訂程式碼發出Target請求之前，請務必使用&#x200B;**[!UICONTROL 載入Target]**&#x200B;動作。
 
 ## 程式庫標題和程式庫頁尾
 
-Target 使用者介面中的「編輯 at.js」畫面有可以貼上自訂 JavaScript 的位置，可使其在 at.js 檔案之前或之後立即執行。Library Header 有時可透過 [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) 函數用來覆寫 at.js 設定，或透過[資料提供者](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)功能傳遞來自協力廠商的資料。Library Footer 有時用於新增 [at.js 自訂事件](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html)接聽程式。
+Target 使用者介面中的「編輯 at.js」畫面有可以貼上自訂 JavaScript 的位置，可使其在 at.js 檔案之前或之後立即執行。Library Header 有時可透過 [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html?lang=zh-Hant) 函數用來覆寫 at.js 設定，或透過[資料提供者](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=zh-Hant)功能傳遞來自協力廠商的資料。Library Footer 有時用於新增 [at.js 自訂事件](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html?lang=zh-Hant)接聽程式。
 
 若要在標籤中複製此功能，只需使用核心擴充功能中的「自訂程式碼」動作，並將此動作排序在「載入Target」之前(Library Header)或之後(Library Footer)即可。 您可以使用與 `Load Target` 動作相同的規則執行此操作 (如下圖所示)，或使用具有事件或順序設定的個別規則，穩定地在包含 `Load Target` 的規則之前或之後引發：
 
@@ -576,8 +576,8 @@ Target 使用者介面中的「編輯 at.js」畫面有可以貼上自訂 JavaSc
 
 若要深入瞭解自訂頁首和頁尾的使用案例，請參閱下列資源：
 
-* [使用 dataProviders 將協力廠商資料整合至 Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)
-* [實施 dataProviders 以將協力廠商資料整合至 Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
-* [將回應代號和 at.js 自訂事件與 Adobe Target 搭配使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html)
+* [使用 dataProviders 將協力廠商資料整合至 Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=zh-Hant)
+* [實施 dataProviders 以將協力廠商資料整合至 Adobe Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html?lang=zh-Hant)
+* [將回應代號和 at.js 自訂事件與 Adobe Target 搭配使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html?lang=zh-Hant)
 
 [下堂課「新增Adobe Analytics」>](analytics.md)

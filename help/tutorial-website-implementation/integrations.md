@@ -28,12 +28,12 @@ ht-degree: 85%
 >
 >若要完整使用這些整合，有許多必要的使用者許可權需求、帳戶設定和布建步驟，這些不在本教學課程的討論範圍內。 如果您已在目前的 Experience Cloud 實施中使用這些整合，您應考量下列事項：
 >
->* 檢視[核心服務整合](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)的完整需求
->* 檢視 [Analytics for Target 整合](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)的完整需求
+>* 檢視[核心服務整合](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/getting-started)的完整需求
+>* 檢視 [Analytics for Target 整合](https://experienceleague.adobe.com/zh-hant/docs/target/using/integrate/a4t/before-implement)的完整需求
 
 ## 客群
 
-[客群](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview)是 People 核心服務的一部分，可讓您在不同解決方案之間共用客群。例如，您可以在 Audience Manager 中建立受眾，並透過 Target 使用該受眾來提供個人化內容。
+[客群](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/overview)是 People 核心服務的一部分，可讓您在不同解決方案之間共用客群。例如，您可以在 Audience Manager 中建立受眾，並透過 Target 使用該受眾來提供個人化內容。
 
 實施 A4T (您已完成) 的主要需求如下：
 
@@ -71,7 +71,7 @@ ht-degree: 85%
 
 ## Analytics for Target (A4T)
 
-[Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) 整合可讓您將 Analytics 資料當成 Target 中報告量度的來源。
+[Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hant) 整合可讓您將 Analytics 資料當成 Target 中報告量度的來源。
 
 實施 A4T (您已完成) 的主要需求如下：
 
