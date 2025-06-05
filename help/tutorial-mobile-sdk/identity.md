@@ -1,10 +1,10 @@
 ---
-title: 使用行動SDK在行動應用程式中收集身分資料
+title: 透過行動SDK在行動應用程式中收集身分資料
 description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 >[!NOTE]
 >
->行動SDK會在安裝應用程式時，在其專屬的名稱空間中產生唯一身分識別，命名為Experience CloudID (ECID)。 此ECID會儲存在行動裝置的永久性記憶體中，並隨著每次點選而傳送。 ECID會在使用者解除安裝應用程式，或將Mobile SDK全域隱私權狀態設為選擇退出時移除。 在範例Luma應用程式中，您應該移除並重新安裝應用程式，以建立具有自己唯一ECID的新設定檔。
+>行動SDK會在安裝應用程式時，在其專屬的名稱空間中產生一個唯一身分識別，名為Experience Cloud ID (ECID)。 此ECID會儲存在行動裝置的永久性記憶體中，並隨著每次點選而傳送。 ECID會在使用者解除安裝應用程式，或使用者將Mobile SDK全域隱私權狀態設為選擇退出時移除。 在範例Luma應用程式中，您應該移除並重新安裝應用程式，以建立具有自己唯一ECID的新設定檔。
 
 
 若要建立新的身分名稱空間：
@@ -116,7 +116,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 ## 移除身分
 
-您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API從儲存的使用者端身分對應移除身分識別。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端身分識別圖形中移除識別碼。 請參閱[檢視身分圖](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=zh-Hant)，以取得身分圖的詳細資訊。
+您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API從儲存的使用者端身分對應移除身分識別。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端身分識別圖形中移除識別碼。 請參閱[檢視身分圖](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en)，以取得身分圖的詳細資訊。
 
 1. 導覽至Xcode專案導覽器中的&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**，並將下列程式碼新增至`func removeIdentities(emailAddress: String, crmId: String)`函式：
 
@@ -125,7 +125,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
    currentEmailId = "testUser@gmail.com"
-   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
+   currentCRMId = "b642b4217b34b1e8d3bd915fc65c4452"
    ```
 
 1. 導覽至Xcode專案導覽器中的&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登入工作表]**，並尋找在選取&#x200B;**[!UICONTROL 登出]**&#x200B;按鈕時要執行的程式碼。 新增下列程式碼：
@@ -140,7 +140,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 1. 檢閱[設定指示](assurance.md#connecting-to-a-session)區段，將您的模擬器或裝置連線到Assurance。
 1. 在Luma應用程式中
-   1. 選取「**[!UICONTROL 首頁]**」標籤，並將「保證」圖示移至左側。
+   1. 選取「**[!UICONTROL 首頁]**」標籤，並將Assurance圖示向左移動。
    1. 選取 從右上角<img src="assets/login.png" width="15" />圖示。
 
       <img src="./assets/identity1.png" width="300">
@@ -152,13 +152,13 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
       <img src="./assets/identity2.png" width="300">
 
 
-1. 檢視&#x200B;**[!UICONTROL com.adobe.griffon.mobile]**&#x200B;廠商之&#x200B;**[!UICONTROL Edge身分更新身分]**&#x200B;事件的保證網頁介面。
-1. 選取事件並檢閱&#x200B;**[!UICONTROL ACPExtensionEventData]**&#x200B;物件中的資料。 您應該會看到已更新的身分識別。
+1. 檢視Assurance網頁介面中來自&#x200B;**[!UICONTROL com.adobe.griffon.mobile]**&#x200B;廠商的&#x200B;**[!UICONTROL Edge身分更新身分]**&#x200B;事件。
+1. 選取事件並檢閱&#x200B;**[!UICONTROL ACPExtensionEventData]**物件中的資料。 您應該會看到已更新的身分識別。
    ![驗證身分更新](assets/identity-validate-assurance.png)
 
 ## 使用身分圖表進行驗證
 
-完成[Experience Platform課程](platform.md)中的步驟後，即可在Platforms身分圖表檢視器中確認身分擷取：
+完成[Experience Platform課程](platform.md)中的步驟後，您就可以在Platforms身分圖表檢視器中確認身分擷取：
 
 1. 在資料收集UI中選取&#x200B;**[!UICONTROL 身分]**。
 1. 從頂端列選取&#x200B;**[!UICONTROL 身分圖表]**。
@@ -174,7 +174,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 >[!SUCCESS]
 >
->您現在已設定應用程式，以更新Edge Network中的身分識別和（設定時） Adobe Experience Platform。
+>您現在已設定應用程式，以在Edge Network和（設定後）Adobe Experience Platform中更新身分識別。
 >
 >感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享
 

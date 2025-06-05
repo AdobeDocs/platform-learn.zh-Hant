@@ -4,7 +4,7 @@ description: 瞭解如何使用Experience Platform Web SDK設定Adobe Analytics�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '2865'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 使用Adobe Experience Platform Web SDK設定Adobe Analytics
 
-瞭解如何使用[Adobe Analytics Web SDK](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/web-sdk/overview)設定Adobe Experience Platform、建立標籤規則以將資料傳送至Adobe Analytics，以及驗證Analytics是否如預期擷取資料。
+瞭解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)設定Adobe Analytics、建立標籤規則以將資料傳送至Adobe Analytics，以及驗證Analytics是否如預期擷取資料。
 
 [Adobe Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics)是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 * 瞭解哪些標準XDM欄位會自動對應至Analytics變數
 * 在資料物件中設定Analytics變數
 * 覆寫資料流，將資料傳送至其他報表套裝
-* 使用Debugger和保證驗證Adobe Analytics變數
+* 使用Debugger和Assurance驗證Adobe Analytics變數
 
 ## 先決條件
 
@@ -35,13 +35,13 @@ ht-degree: 1%
 
 * 熟悉並存取Adobe Analytics。
 
-* 至少要有一個測試/開發報表套裝ID。 如果您沒有可用於本教學課程的測試/開發報表套裝，[請建立一個](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
+* 至少要有一個測試/開發報表套裝ID。 如果您沒有可用於本教學課程的測試/開發報表套裝，[請建立一個](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
 
 * 完成本教學課程之初始設定和標籤設定區段中先前的課程。
 
 ## 設定資料串流
 
-Platform Web SDK會將資料從您的網站傳送至PlatformEdge Network。 您的資料流接著會告訴PlatformEdge Network，您的資料應該傳送到哪個Adobe Analytics報表套裝。
+Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您的資料流接著會告訴Platform Edge Network要將您的資料傳送至哪個Adobe Analytics報表套裝。
 
 1. 移至[資料彙集](https://experience.adobe.com/#/data-collection){target="blank"}介面
 1. 在左側導覽中，選取&#x200B;**[!UICONTROL 資料串流]**
@@ -67,22 +67,22 @@ Platform Web SDK會將資料從您的網站傳送至PlatformEdge Network。 您�
 
 ## 設定Analytics變數
 
-有數種方式可以在Web SDK實作中設定Analytics變數：
+有數種方式可在網頁SDK實作中設定Analytics變數：
 
 1. 將XDM欄位自動對應到Analytics變數（自動）。
 1. 在`data`物件中設定欄位（建議）。
 1. 將XDM欄位對應至Analytics處理規則中的Analytics變數（不再建議使用）。
 1. 直接在XDM結構描述中對應至Analytics變數（不再建議使用）。
 
-自2024年5月起，您不再需要建立XDM結構描述來使用Platform Web SDK實作Adobe Analytics。 `data`物件（以及您在[建立資料元素](create-data-elements.md)課程中建立的`data.variable`資料元素）可用來設定所有自訂Analytics變數。 在資料物件中設定這些變數，會讓現有的Analytics客戶熟悉，比使用處理規則介面更有效率，並防止不必要的資料佔用即時客戶設定檔中的空間(如果您有Real-time Customer Data Platform或Journey Optimizer，這很重要)。
+自2024年5月起，您不再需要建立XDM結構描述來使用Platform Web SDK實作Adobe Analytics。 `data`物件（以及您在[建立資料元素](create-data-elements.md)課程中建立的`data.variable`資料元素）可用來設定所有自訂Analytics變數。 在資料物件中設定這些變數，會讓現有的Analytics客戶熟悉，比使用處理規則介面更有效率，並防止不必要的資料佔用即時客戶設定檔中的空間(如果您有Real-Time Customer Data Platform或Journey Optimizer，這很重要)。
 
 ### 自動對應的欄位
 
-許多XDM欄位會自動對應至Analytics變數。 如需最新的對應清單，請參閱AdobeExperience Edge[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)中的Analytics變數對應。
+許多XDM欄位會自動對應至Analytics變數。 如需最新的對應清單，請參閱Adobe Experience Edge中的[Analytics變數對應](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)。
 
-如果&#x200B;_即使您尚未定義自訂結構描述_，也會發生這種情況。 Experience PlatformWeb SDK會自動收集一些資料，並以XDM欄位形式將其傳送至PlatformEdge Network。 例如，Web SDK會讀取目前的頁面URL，並將其傳送為XDM欄位`web.webPageDetails.URL`。 此欄位會轉送至Adobe Analytics，並自動填入Adobe Analytics中的頁面URL報表。
+如果&#x200B;_即使您尚未定義自訂結構描述_，也會發生這種情況。 Experience Platform Web SDK會自動收集一些資料，並將其以XDM欄位的形式傳送到Platform Edge Network。 例如，Web SDK會讀取目前頁面URL並以XDM欄位`web.webPageDetails.URL`形式傳送。 此欄位會轉送至Adobe Analytics，並自動填入Adobe Analytics中的頁面URL報表。
 
-如果您使用XDM結構描述實作適用於Adobe Analytics的Web SDK （如同本教學課程中所述），您有自訂實作自動對應至Analytics變數的部分XDM欄位，如下表所述：
+如果您使用XDM結構描述實作適用於Adobe Analytics的Web SDK （如本教學課程中所述），則有些您自訂實作並自動對應至Analytics變數的XDM欄位，如下表所述：
 
 | XDM至Analytics自動對應的變數 | Adobe Analytics變數 |
 |-------|---------|
@@ -106,17 +106,17 @@ Analytics產品字串的個別區段是透過`productListItems`物件下的不�
 >[!NOTE]
 >
 >自2022年8月18日起，`productListItems[].SKU`優先對應至s.products變數中的產品名稱。
->只有在`productListItems[].SKU`不存在時，設定為`productListItems[].name`的值才會對應至產品名稱。 否則，它將會取消對應，並可在內容資料中使用。
->請勿將空字串或Null設定為`productListItems[].SKU`。 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
+>>只有在`productListItems[].SKU`不存在時，設定為`productListItems[].name`的值才會對應至產品名稱。 否則，它將會取消對應，並可在內容資料中使用。
+>>請勿將空字串或Null設定為`productListItems[].SKU`。 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
 
 
 ### 在資料物件中設定變數
 
-但evar、prop和事件呢？ 若要使用Web SDK設定這些Analytics變數，建議在`data`物件中設定變數。 在資料物件中設定變數也可覆寫任何自動對應的變數。
+但evar、prop和事件呢？ 在`data`物件中設定變數，是使用Web SDK設定這些Analytics變數的建議方式。 在資料物件中設定變數也可覆寫任何自動對應的變數。
 
-首先，`data`物件是什麼？ 在任何Web SDK事件中，您都可以傳送包含自訂資料的兩個物件： `xdm`物件和`data`物件。 兩者都會傳送至PlatformEdge Network，但只有`xdm`物件會傳送至Experience Platform資料集。 可以使用「資料收集的資料準備」功能，將`data`物件中的屬性在Edge上對應至`xdm`欄位，否則不會傳送給Experience Platform。 這使其成為將資料傳送至Analytics等應用程式(非原生建立在Experience Platform上)的理想方式。
+首先，`data`物件是什麼？ 在任何Web SDK事件中，您都可以傳送包含自訂資料的兩個物件： `xdm`物件和`data`物件。 兩者都會傳送至Platform Edge Network，但只有`xdm`物件會傳送至Experience Platform資料集。 可以使用「資料收集的資料準備」功能，將`data`物件中的屬性在Edge上對應至`xdm`欄位，否則不會傳送至Experience Platform。 這使其成為將資料傳送至Analytics等應用程式(並非原生建置在Experience Platform上)的理想方式。
 
-以下是一般Web SDK呼叫中的兩個物件：
+以下是通用Web SDK呼叫中的兩個物件：
 
 ![資料和xdm物件](assets/analytics-data-object-intro.png)
 
@@ -254,7 +254,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 保留&#x200B;**[!UICONTROL 擴充功能]**&#x200B;為&#x200B;**[!UICONTROL 核心]**
 
-1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**的**&#x200B;路徑
+1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;]**的**[!UICONTROL &#x200B;路徑
 
 1. 在右側，保留&#x200B;**[!UICONTROL Regex]**&#x200B;切換功能為停用
 
@@ -266,7 +266,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;下，選取&#x200B;**[!UICONTROL 新增]**
 
-1. 以&#x200B;**[!UICONTROL 擴充功能]**&#x200B;的形式，選取&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**
+1. 以&#x200B;**[!UICONTROL 延伸模組]**&#x200B;身分，選取&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**
 
 1. 作為&#x200B;**[!UICONTROL 動作型別]**，請選取&#x200B;**[!UICONTROL 傳送事件]**
 
@@ -304,23 +304,23 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 ## 使用Debugger驗證Adobe Analytics
 
-瞭解如何使用Adobe Analytics Debugger的Edge追蹤功能，驗證Experience Platform是否擷取ECID、頁面檢視、產品字串以及電子商務事件。
+瞭解如何使用Adobe Analytics Debugger的Edge追蹤功能來驗證Experience Platform是否擷取ECID、頁面檢視、產品字串以及電子商務事件。
 
-在[Debugger](validate-with-debugger.md)課程中，您已瞭解如何使用Platform Debugger和瀏覽器開發人員控制檯來檢查使用者端XDM請求，其方式與為`AppMeasurement.js` Analytics實作除錯類似。 您也瞭解如何驗證傳送至Adobe應用程式的PlatformEdge Network伺服器端要求，以及如何使用Assurance檢視完全處理的裝載。
+在[Debugger](validate-with-debugger.md)課程中，您已瞭解如何使用Platform Debugger和瀏覽器開發人員控制檯來檢查使用者端XDM請求，其方式與為`AppMeasurement.js` Analytics實作除錯類似。 您也瞭解如何驗證傳送至Adobe應用程式的Platform Edge Network伺服器端請求，以及如何使用Assurance檢視完全處理的裝載。
 
-Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷取資料，您必須進一步執行下列兩個步驟：
+若要驗證Analytics是否可透過Experience Platform Web SDK正確擷取資料，您必須進一步執行下列兩個步驟：
 
-1. 使用Experience Platform Debugger的Edge追蹤功能，驗證平台Edge Network上XDM物件處理資料的方式
-1. 使用Adobe Experience Platform保證驗證Analytics完全處理資料的方式
+1. 使用Experience Platform Debugger的Edge追蹤功能，驗證XDM物件在Edge Network上處理資料的方式
+1. 驗證Analytics使用Adobe Experience Platform Assurance完整處理資料的方式
 
-### Experience CloudID驗證
+### Experience Cloud ID驗證
 
 1. 前往[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
-1. 選取右上方的登入按鈕，並使用認證u： test@adobe.com p：測試進行驗證
-1. 開啟Experience Platform偵錯工具，然後[將網站上的標籤屬性切換到您自己的開發屬性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. 選取右上方的登入按鈕，並使用認證u： test@test.com p：測試進行驗證
+1. 開啟Experience Platform Debugger並[將網站上的標籤屬性切換為您自己的開發屬性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
 
-1. 若要啟用Edge追蹤，請前往Experience Platform偵錯工具，在左側導覽中選取&#x200B;**[!UICONTROL 記錄檔]**，然後選取&#x200B;**[!UICONTROL Edge]**&#x200B;索引標籤，再選取&#x200B;**[!UICONTROL 連線]**
+1. 若要啟用Edge追蹤，請前往Experience Platform Debugger，在左側導覽中選取「**[!UICONTROL 記錄檔]**」，然後選取「**[!UICONTROL Edge]**」標籤，再選取「**[!UICONTROL 連線]**」
 
    ![連線Edge追蹤](assets/analytics-debugger-edgeTrace.png)
 
@@ -328,7 +328,7 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
    ![已連線的Edge追蹤](assets/analytics-debugger-edge-connected.png)
 
-1. 重新整理Luma頁面並再次檢查Experience Platform Debugger，您應該會看到資料傳入。 以&#x200B;**[!UICONTROL Analytics自動對應]**&#x200B;開頭的列是Adobe Analytics信標
+1. 重新整理Luma頁面並再次檢查Experience Platform Debugger，您應該會看到資料顯示。 以&#x200B;**[!UICONTROL Analytics自動對應]**&#x200B;開頭的列是Adobe Analytics信標
 1. 選取以開啟`[!UICONTROL mappedQueryParams]`下拉式清單和第二個下拉式清單，檢視Analytics變數
 
    ![Analytics信標Edge追蹤](assets/analytics-debugger-edge-analytics.png)
@@ -338,14 +338,14 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
    >第二個下拉式清單會對應至您傳送資料的Analytics報表套裝ID。 這應與您自己的報表套裝相符，而非熒幕擷圖中的報表套裝。
 
 1. 向下捲動以尋找`[!UICONTROL c.a.x.identitymap.ecid.[0].id]`。 這是可擷取ECID的內容資料變數
-1. 持續向下捲動，直到看到Analytics `[!UICONTROL mid]`變數為止。 兩個ID都和裝置的Experience CloudID相符。
-1. 在Luma網站上，
+1. 持續向下捲動，直到看到Analytics `[!UICONTROL mid]`變數為止。 這兩個ID都和您裝置的Experience Cloud ID相符。
+1. 在Luma網站上：
 
    ![Analytics ECID](assets/analytics-debugger-ecid.png)
 
    >[!NOTE]
    >
-   >由於您已登入，請花點時間驗證使用者&#x200B;**`test@adobe.com`**&#x200B;的驗證ID `112ca06ed53d3db37e4cea49cc45b71e`，此驗證識別碼也已在`[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`中擷取
+   >由於您已登入，請花點時間驗證使用者&#x200B;**`test@test.com`**&#x200B;的驗證ID `b642b4217b34b1e8d3bd915fc65c4452`，此驗證識別碼也已在`[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`中擷取
 
 ### 報表套裝覆寫驗證
 
@@ -370,7 +370,7 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
 ### 產品字串和電子商務事件驗證
 
-由於您已在產品頁面上，此練習會繼續使用相同的Edge追蹤來驗證Analytics所擷取的產品資料。 產品字串和電子商務事件都會自動將XDM變數對應至Analytics。 在[為Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)設定XDM結構描述時，只要您已對應至適當的`productListItem` XDM變數，平台Edge Network就會負責將資料對應至適當的分析變數。
+由於您已在產品頁面上，此練習會繼續使用相同的Edge追蹤來驗證Analytics所擷取的產品資料。 產品字串和電子商務事件都會自動將XDM變數對應至Analytics。 在[為Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)設定XDM結構描述時，只要您已對應至適當的`productListItem` XDM變數，Platform Edge Network就會負責將資料對應至適當的分析變數。
 
 **首先驗證`Product String`是否已設定**
 
@@ -381,9 +381,9 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
    ![Analytics產品字串](assets/analytics-debugger-prodstring.png)
 
-   Edge追蹤處理`commerce`個事件的方式與`productList`個維度略有不同。 您不會看到內容資料變數的對應方式，與看到產品名稱對應至上述`[!UICONTROL c.a.x.productlistitem.[0].name]`的方式相同。 Edge追蹤反而會在Analytics `event`變數中顯示最終事件自動對應。 只要您在[為Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)設定結構描述時，對應到適當的XDM `commerce`變數，平台Edge Network就會相應地對應它；在此例中是`commerce.productViews.value=1`。
+   Edge追蹤處理`commerce`個事件的方式與`productList`個維度略有不同。 您不會看到內容資料變數的對應方式，與看到產品名稱對應至上述`[!UICONTROL c.a.x.productlistitem.[0].name]`的方式相同。 Edge追蹤反而會在Analytics `event`變數中顯示最終事件自動對應。 只要您在[設定Adobe Analytics的結構描述](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)時對應到適當的XDM `commerce`變數，Platform Edge Network就會相應地對應它；在此例中是`commerce.productViews.value=1`。
 
-1. 返回Experience Platform偵錯工具視窗，向下捲動至`[!UICONTROL events]`變數，變數設為`[!UICONTROL prodView]`
+1. 返回Experience Platform Debugger視窗，向下捲動至`[!UICONTROL events]`變數，變數設為`[!UICONTROL prodView]`
 
 1. 另請注意`[!UICONTROL c.a.x.eventType]`已設為`commerce.productViews`，因為您位於產品頁面。
 
@@ -428,49 +428,49 @@ Experience Platform若要驗證Analytics是否透過Analytics Web SDK正確擷�
 
 ## 使用Assurance驗證Adobe Analytics
 
-Adobe Experience Platform保證可協助您檢查、證明、模擬及驗證您如何收集資料或透過您的網站和行動應用程式提供體驗。
+Adobe Experience Platform Assurance可協助您檢查、證明、模擬及驗證您如何收集資料，或如何透過您的網站和行動應用程式提供體驗。
 
-在上一個練習中，您已驗證Adobe Analytics是否使用Experience Platform Debugger的Edge追蹤功能來擷取ECID、頁面檢視、產品字串以及電子商務事件。  接下來，您可以使用Adobe Experience Platform保證來驗證這些相同事件，保證是可存取Edge追蹤中相同資料的替代介面。
+在上一個練習中，您已驗證Adobe Analytics是否使用Experience Platform Debugger的Edge追蹤功能來擷取ECID、頁面檢視、產品字串以及電子商務事件。  接下來，您可以使用Adobe Experience Platform Assurance驗證這些相同事件，這是在Edge追蹤中存取相同資料的替代介面。
 
-如您在[保證](validate-with-assurance.md)課程中瞭解到的那樣，有數種方式可啟動保證工作階段。 由於您已經使用上次練習起始的Edge追蹤工作階段開啟Adobe Experience Platform Debugger，建議您透過Debugger存取Assurance ：
-透過Adobe Experience Platform資料彙集![保證](assets/assurance-open-aep-debugger.png)
+如您在[Assurance](validate-with-assurance.md)課程中所瞭解，有數種方式可啟動Assurance工作階段。 由於您已經以Edge追蹤工作階段開啟了Adobe Experience Platform Debugger （從上次練習開始），因此建議您透過Debugger存取Assurance：
+透過Adobe Experience Platform資料彙集![Assurance](assets/assurance-open-aep-debugger.png)
 
-在&#x200B;**[!UICONTROL 「Web SDK教學課程3」]**&#x200B;保證工作階段中，在事件搜尋列中輸入&#x200B;**[!UICONTROL 「hitdebugger」]**，將結果篩選為Adobe Analytics Post已處理資料。
-![保證Adobe分析Post已處理資料](assets/assurance-hitdebugger.png)
+在&#x200B;**[!UICONTROL 「網頁SDK教學課程3」]** Assurance工作階段中，在事件搜尋列中輸入&#x200B;**[!UICONTROL 「hitdebugger」]**，將結果篩選為Adobe Analytics後續處理資料。
+![Assurance Adobe Analytics後續處理的資料](assets/assurance-hitdebugger.png)
 
-### Experience CloudID驗證
+### Experience Cloud ID驗證
 
 若要驗證Adobe Analytics是否正在擷取ECID，請選取信標並開啟裝載。  此信標的廠商應為&#x200B;**[!UICONTROL com.adobe.analytics.hitdebugger]**
-![含保證的Adobe Analytics驗證](assets/assurance-hitdebugger-payload.png)
+使用Assurance進行![Adobe Analytics驗證](assets/assurance-hitdebugger-payload.png)
 
 然後向下捲動至&#x200B;**[!UICONTROL mcvisId]**，驗證是否已正確擷取ECID
-![具有保證的Experience Cloud識別碼驗證](assets/assurance-hitdebugger-mcvisId.png)
+使用Assurance進行![Experience Cloud ID驗證](assets/assurance-hitdebugger-mcvisId.png)
 
 ### 內容頁面檢視驗證
 
 使用相同的信標，驗證內容頁面檢視是否已對應至正確的Adobe Analytics變數。
-向下捲動至&#x200B;**[!UICONTROL pageName]**&#x200B;以驗證`Page Name`是否已正確擷取
-![含保證的頁面名稱驗證](assets/assurance-hitdebugger-content-pagename.png)
+向下捲動至**[!UICONTROL pageName]**&#x200B;以驗證`Page Name`是否已正確擷取
+![使用Assurance進行頁面名稱驗證](assets/assurance-hitdebugger-content-pagename.png)
 
 ### 產品字串和電子商務事件驗證
 
-依照使用上述Experience Platform偵錯工具驗證時所使用的相同驗證使用案例，繼續使用相同的信標來驗證`Ecommerce Events`和`Product String`。
+依照使用上述Experience Platform Debugger進行驗證時所使用的相同驗證使用案例，繼續使用相同的指標來驗證`Ecommerce Events`和`Product String`。
 
 1. 尋找&#x200B;**[!UICONTROL 事件]**&#x200B;包含`prodView`的承載
-   ![產品字串驗證含保證](assets/assurance-hitdebugger-prodView-event.png)
+   使用Assurance進行![產品字串驗證](assets/assurance-hitdebugger-prodView-event.png)
 1. 向下捲動至&#x200B;**[!UICONTROL product-string]**&#x200B;以驗證`Product String`。
    * 記下`Product SKU`和`Merchandizing eVar1`。
 1. 進一步向下捲動，驗證您使用上一節中的處理規則設定的`prop1`是否包含`Product SKU`\
-   ![產品字串含含保證的銷售變數驗證](assets/assurance-hitdebugger-prodView-productString-merchVar.png)
+   ![產品字串(含Assurance的銷售變數驗證)](assets/assurance-hitdebugger-prodView-productString-merchVar.png)
 
 檢閱購物車、結帳和購買事件，繼續驗證實施。
 
 1. 尋找&#x200B;**[!UICONTROL 事件]**&#x200B;包含`scView`的裝載，並驗證產品字串。
-   ![產品字串驗證含保證](assets/assurance-hitdebugger-scView-event.png)
+   使用Assurance進行![產品字串驗證](assets/assurance-hitdebugger-scView-event.png)
 1. 尋找&#x200B;**[!UICONTROL 事件]**&#x200B;包含`scCheckout`的裝載，並驗證產品字串。
-   ![產品字串驗證含保證](assets/assurance-hitdebugger-scView-event.png)
+   使用Assurance進行![產品字串驗證](assets/assurance-hitdebugger-scView-event.png)
 1. 尋找&#x200B;**[!UICONTROL 事件]**&#x200B;包含`purchase`的承載
-   ![產品字串驗證含保證](assets/assurance-hitdebugger-purchase-event.png)
+   使用Assurance進行![產品字串驗證](assets/assurance-hitdebugger-purchase-event.png)
 1. 驗證`purchase`事件時，請注意`Product String`應該包含`Product SKU`、`Product Quantity`和`Product Total Price`。
 1. 此外，針對`purchase`，請驗證`purchase-id`及/或`purchaseId`是否已設定
 
@@ -481,4 +481,4 @@ Adobe Experience Platform保證可協助您檢查、證明、模擬及驗證您�
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

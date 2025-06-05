@@ -1,31 +1,31 @@
 ---
 title: 透過Platform Web SDK將資料串流至Adobe Experience Platform
-description: 瞭解如何使用Web SDK將網頁資料串流到Adobe Experience Platform。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
+description: 瞭解如何使用網頁SDK將網頁資料串流至Adobe Experience Platform。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 5%
 
 ---
 
-# 使用Web SDK串流資料以Experience Platform
+# 使用網頁SDK將資料串流至Experience Platform
 
 了解如何使用 Platform Web SDK 將 Web 資料串流傳輸至 Adob&#x200B;&#x200B;e Experience Platform。
 
-Experience Platform是所有新Experience Cloud應用程式的骨幹，例如Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer。 這些應用程式在設計上使用Platform Web SDK作為收集網頁資料的最佳方法。
+Experience Platform是所有新Experience Cloud應用程式(例如Adobe Real-Time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer)的骨幹。 這些應用程式的設計是要使用Platform Web SDK作為其最佳的Web資料收集方法。
 
-![Web SDK與Adobe Experience Platform圖表](assets/dc-websdk-aep.png)
+![網頁SDK和Adobe Experience Platform圖表](assets/dc-websdk-aep.png)
 
-Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網站擷取事件資料。 當該資料傳送至PlatformEdge Network時，資料流設定可以將其轉送至Experience Platform。
+Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網站擷取事件資料。 當該資料傳送到Platform Edge Network時，資料流設定可以將其轉送到Experience Platform。
 
 ## 學習目標
 
 在本課程結束時，您將能夠：
 
 * 在Adobe Experience Platform中建立資料集
-* 設定資料流以傳送Web SDK資料至Adobe Experience Platform
+* 設定資料流以將網頁SDK資料傳送至Adobe Experience Platform
 * 為即時客戶個人檔案啟用串流網頁資料
 * 驗證資料已著陸Platform資料集和即時客戶設定檔中
 * 將忠誠度計畫資料範例擷取至Platform
@@ -35,7 +35,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 若要完成本課程，您必須先：
 
-* 擁有Adobe Experience Platform應用程式的存取權，例如Real-time Customer Data Platform、Journey Optimizer或Customer Journey Analytics
+* 擁有Adobe Experience Platform應用程式的存取權，例如Real-Time Customer Data Platform、Journey Optimizer或Customer Journey Analytics
 * 完成本教學課程之初始設定和標籤設定區段中先前的課程。
 
 >[!NOTE]
@@ -44,7 +44,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ## 建立資料集
 
-所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
+所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
 
 讓我們為您的Luma Web事件資料設定資料集：
 
@@ -72,7 +72,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ## 設定資料串流
 
-現在您可以設定您的[!UICONTROL 資料串流]，將資料傳送至[!UICONTROL Adobe Experience Platform]。 資料流是標籤屬性、平台Edge Network和Experience Platform資料集之間的連結。
+現在您可以設定您的[!UICONTROL 資料串流]，將資料傳送至[!UICONTROL Adobe Experience Platform]。 資料串流是標籤屬性、Platform Edge Network和Experience Platform資料集之間的連結。
 
 1. 開啟[資料彙集](https://experience.adobe.com/#/data-collection){target="blank"}介面
 1. 從左側導覽中選取&#x200B;**[!UICONTROL 資料串流]**
@@ -89,13 +89,13 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
    ![資料流設定](assets/experience-platform-datastream-config.png)
 
-當您在[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)上產生對應至標籤屬性的流量時，資料會以Experience Platform填入資料集！
+當您在對應至標籤屬性的[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)上產生流量時，資料會填入Experience Platform中的資料集！
 
 ## 驗證資料集
 
 此步驟對於確保資料已抵達資料集至關重要。 驗證傳送至資料集的資料有兩個方面。
 
-* 使用[!UICONTROL Experience Platform偵錯工具]進行驗證
+* 使用[!UICONTROL Experience Platform Debugger]進行驗證
 * 使用[!UICONTROL 預覽資料集]進行驗證
 * 使用[!UICONTROL 查詢服務]進行驗證
 
@@ -103,17 +103,17 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 這些步驟與您在[偵錯工具課程](validate-with-debugger.md)中所執行的步驟大致相同。 不過，由於資料只有在資料流中啟用後才會傳送至Platform，因此您必須產生更多範例資料：
 
-1. 開啟[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)並選取[!UICONTROL Experience Platform偵錯工具]擴充功能圖示
+1. 開啟[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)並選取[!UICONTROL Experience Platform Debugger]擴充功能圖示
 
 1. 設定偵錯工具將標籤屬性對應至&#x200B;*您的*&#x200B;開發環境，如[使用偵錯工具驗證](validate-with-debugger.md)課程中所述
 
    ![Debugger 中顯示的 Launch 開發環境](assets/experience-platform-debugger-dev.png)
 
-1. 使用 `test@adobe.com`/`test` 憑證登入 Luma 網站
+1. 使用 `test@test.com`/`test` 認證登入 Luma 網站
 
 1. 返回 [Luma 首頁](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 在Debugger顯示的Platform Web SDK網路信標中，選取「事件」列以在快顯視窗中展開詳細資料
+1. 在Debugger顯示的Platform Web SDK網路信標中，選取「事件」列以在快顯視窗中展開詳細資訊
 
    Debugger中的![Web SDK](assets/experience-platform-debugger-dev-eventType.png)
 
@@ -124,7 +124,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ### 預覽資料集
 
-若要確認資料已著陸Platform的資料湖，快速選項是使用&#x200B;**[!UICONTROL 預覽資料集]**&#x200B;功能。 Web SDK資料會以微批次處理至資料湖，並定期在平台介面中重新整理。 您可能需要10到15分鐘的時間才能看到您產生的資料。
+若要確認資料已著陸Platform的資料湖，快速選項是使用&#x200B;**[!UICONTROL 預覽資料集]**&#x200B;功能。 網頁SDK資料會微批次處理至資料湖，並定期在平台介面中重新整理。 您可能需要10到15分鐘的時間才能看到您產生的資料。
 
 1. 在[Experience Platform](https://experience.adobe.com/platform/)介面中，選取左側導覽中的&#x200B;**[!UICONTROL 資料管理>資料集]**&#x200B;以開啟&#x200B;**[!UICONTROL 資料集]**&#x200B;儀表板。
 
@@ -160,12 +160,12 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!INFO]
 >
->  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/queries/explore-data)。
+>  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
 
 
 ## 為即時客戶個人檔案啟用資料集和結構描述
 
-對於Real-time Customer Data Platform和Journey Optimizer的客戶，下一步是啟用即時客戶個人檔案的資料集和結構描述。 從Web SDK串流的資料會是流入Platform的眾多資料來源之一，而您想要將網頁資料與其他資料來源結合，以建置360度客戶設定檔。 若要深入瞭解即時客戶個人檔案，請觀看此短片：
+對於Real-Time Customer Data Platform和Journey Optimizer的客戶，下一步是啟用即時客戶個人檔案的資料集和結構描述。 從Web SDK串流的資料會是流入Platform的眾多資料來源之一，而您想要將您的Web資料與其他資料來源結合，以建置360度客戶設定檔。 若要深入瞭解即時客戶個人檔案，請觀看此短片：
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
@@ -198,7 +198,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
    >[!IMPORTANT]
    >
-   >    傳送到Real-Time Customer Profile的每個記錄都需要主要身分。 一般而言，身分欄位會在結構描述中加上標籤。 但是，使用身分對應時，結構描述中不會顯示身分欄位。 此對話方塊是確認您心中有一個主要身分，且您會在傳送資料時，在身分對應中指定該身分。 如您所知，Web SDK會使用身分對應，以Experience CloudID (ECID)作為預設主要身分，並以已驗證的ID作為主要身分（若可用）。
+   >    傳送到Real-Time Customer Profile的每個記錄都需要主要身分。 一般而言，身分欄位會在結構描述中加上標籤。 但是，使用身分對應時，結構描述中不會顯示身分欄位。 此對話方塊是確認您心中有一個主要身分，且您會在傳送資料時，在身分對應中指定該身分。 如您所知，Web SDK會使用身分對應，以Experience Cloud ID (ECID)作為預設主要身分，並以已驗證的ID作為主要身分（若可用）。
 
 
 1. 選取&#x200B;**[!UICONTROL 啟用]**
@@ -226,18 +226,18 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 您可以在Platform介面(或Journey Optimizer介面)中查詢客戶設定檔，確認資料已著陸Real-Time Customer Profile。 顧名思義，設定檔會即時填入，因此不會像資料集中的驗證資料一樣延遲。
 
-首先，您必須產生更多範例資料。 重複本課程中先前步驟以在Luma網站對應至您的標籤屬性時登入。 Inspect Platform Web SDK要求，以確定其會傳送包含`lumaCRMId`的資料。
+首先，您必須產生更多範例資料。 重複本課程中先前步驟以在Luma網站對應至您的標籤屬性時登入。 檢查Platform Web SDK要求，以確定其會傳送包含`lumaCRMId`的資料。
 
 1. 在[Experience Platform](https://experience.adobe.com/platform/)介面中，選取左側導覽中的&#x200B;**[!UICONTROL 客戶]** > **[!UICONTROL 設定檔]**
 
 1. 作為&#x200B;**[!UICONTROL 身分識別名稱空間]**&#x200B;使用`lumaCRMId`
-1. 複製並貼上您在Experience Platform偵錯工具中檢查之呼叫中傳遞的`lumaCRMId`的值，此案例中為`112ca06ed53d3db37e4cea49cc45b71e`。
+1. 複製並貼上您在Experience Platform Debugger中檢查之呼叫中傳遞的`lumaCRMId`值，此案例中為`b642b4217b34b1e8d3bd915fc65c4452`。
 
-   ![個人資料](assets/experience-platform-validate-dataset-profile.png)
+   ![輪廓](assets/experience-platform-validate-dataset-profile.png)
 
 1. 如果`lumaCRMId`的設定檔中有有效值，則主控台中會填入設定檔ID：
 
-   ![個人資料](assets/experience-platform-validate-dataset-profile-set.png)
+   ![輪廓](assets/experience-platform-validate-dataset-profile-set.png)
 
 1. 若要檢視每個ID的完整&#x200B;**[!UICONTROL 客戶設定檔]**，請在主視窗中選取&#x200B;**[!UICONTROL 設定檔識別碼]**。
 
@@ -250,13 +250,13 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
    ![客戶設定檔](assets/experience-platform-validate-dataset-custProfile.png)
 
-您現已啟用適用於Experience Platform的Platform Web SDK (以及Real-Time CDP！ 以及Journey Optimizer！ 和Customer Journey Analytics！)。
+您現在已啟用Experience Platform (和Real-Time CDP適用的Platform Web SDK！ 以及Journey Optimizer！ 和Customer Journey Analytics！)。
 
 ### 建立忠誠度方案並擷取範例資料
 
-Real-time Customer Data Platform和Journey Optimizer的客戶可望完成此練習。
+Real-Time Customer Data Platform和Journey Optimizer的客戶可望完成此練習。
 
-將Web SDK資料擷取至Adobe Experience Platform後，您即可將資料擷取至Platform的其他資料來源加以擴充。 例如，當使用者登入Luma網站時，身分圖表會在Experience Platform中建構，而所有其他已啟用設定檔的資料集可能會連結在一起，以建置即時客戶設定檔。 若要實際瞭解此情況，請在Adobe Experience Platform中快速建立另一個資料集，其中包含一些忠誠度資料範例，以便您可以搭配Real-time Customer Data Platform和Journey Optimizer使用即時客戶設定檔。 由於您已完成類似的練習，因此會提供簡短的指示。
+將Web SDK資料擷取至Adobe Experience Platform時，其他您已擷取至Platform的資料來源可豐富該資料。 例如，當使用者登入Luma網站時，身分圖表會在Experience Platform中建構，而所有其他已啟用設定檔的資料集可能會連結在一起，以建置即時客戶設定檔。 若要實際瞭解此情況，請在Adobe Experience Platform中快速建立另一個資料集，其中包含一些忠誠度資料範例，以便您可以搭配Real-Time Customer Data Platform和Journey Optimizer使用即時客戶設定檔。 由於您已完成類似的練習，因此會提供簡短的指示。
 
 建立熟客方案：
 
@@ -282,7 +282,7 @@ Real-time Customer Data Platform和Journey Optimizer的客戶可望完成此練�
 
    ![熟客方案](assets/web-channel-loyalty-dataset.png)
 
-### 建立對象
+### 建立客群
 
 對象會根據常見特徵將設定檔分組。 建立可在網路行銷活動中使用的快速受眾：
 
@@ -291,7 +291,7 @@ Real-time Customer Data Platform和Journey Optimizer的客戶可望完成此練�
 1. 選取&#x200B;**[!UICONTROL 建置規則]**
 1. 選取&#x200B;**[!UICONTROL 建立]**
 
-   ![建立受眾](assets/web-campaign-create-audience.png)
+   ![建立客群](assets/web-campaign-create-audience.png)
 
 1. 選取&#x200B;**[!UICONTROL 屬性]**
 1. 尋找&#x200B;**[!UICONTROL 忠誠度]** > **[!UICONTROL 階層]**&#x200B;欄位，並將其拖曳至&#x200B;**[!UICONTROL 屬性]**&#x200B;區段
@@ -300,13 +300,13 @@ Real-time Customer Data Platform和Journey Optimizer的客戶可望完成此練�
 1. 選取&#x200B;**[!UICONTROL Edge]**&#x200B;做為&#x200B;**[!UICONTROL 評估方法]**
 1. 選取&#x200B;**[!UICONTROL 儲存]**
 
-   ![定義閱聽眾](assets/web-campaign-define-audience.png)
+   ![定義客群](assets/web-campaign-define-audience.png)
 
-由於這是非常簡單的對象，因此我們可以使用Edge評估方法。 Edge對象會在邊緣進行評估，因此在Web SDK對平台Edge Network發出的相同請求中，我們可以評估對象定義，並立即確認使用者是否符合條件。
+由於這是非常簡單的對象，因此我們可以使用Edge評估方法。 Edge對象會在邊緣進行評估，因此在網站SDK向Platform Edge Network提出的相同請求中，我們可以評估對象定義，並立即確認使用者是否符合資格。
 
 
 [下一步： ](setup-analytics.md)
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

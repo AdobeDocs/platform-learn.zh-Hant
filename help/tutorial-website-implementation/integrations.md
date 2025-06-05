@@ -1,8 +1,8 @@
 ---
 title: 實作Experience Cloud與標籤的整合
-description: 瞭解如何驗證 Adobe Experience Cloud 實施中的受眾、A4T 和客戶屬性整合。本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
+description: 瞭解如何驗證 Adobe Experience Cloud 實施中的客群、A4T 和客戶屬性整合。本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 85%
@@ -17,7 +17,7 @@ ht-degree: 85%
 
 在本課程結束時，您將能夠：
 
-1. 說明受眾共用、Analytics for Target (A4T) 和客戶屬性整合的基本使用案例
+1. 說明客群共用、Analytics for Target (A4T) 和客戶屬性整合的基本使用案例
 1. 驗證這些整合的基本用戶端實施環節
 
 ## 必要條件
@@ -28,22 +28,22 @@ ht-degree: 85%
 >
 >若要完整使用這些整合，有許多必要的使用者許可權需求、帳戶設定和布建步驟，這些不在本教學課程的討論範圍內。 如果您已在目前的 Experience Cloud 實施中使用這些整合，您應考量下列事項：
 >
->* 檢視[核心服務整合](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/getting-started)的完整需求
->* 檢視 [Analytics for Target 整合](https://experienceleague.adobe.com/zh-hant/docs/target/using/integrate/a4t/before-implement)的完整需求
+>* 檢視[核心服務整合](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)的完整需求
+>* 檢視 [Analytics for Target 整合](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)的完整需求
 
-## 受眾
+## 客群
 
-[受眾](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/overview)是 People 核心服務的一部分，可讓您在不同解決方案之間共用受眾。例如，您可以在 Audience Manager 中建立受眾，並透過 Target 使用該受眾來提供個人化內容。
+[客群](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview)是 People 核心服務的一部分，可讓您在不同解決方案之間共用客群。例如，您可以在 Audience Manager 中建立受眾，並透過 Target 使用該受眾來提供個人化內容。
 
 實施 A4T (您已完成) 的主要需求如下：
 
 1. 實施 Adobe Experience Platform Identity Service
 1. 實施 Audience Manager
-1. 實施您想要收到或建立受眾的其他解決方案，例如 Target 和 Analytics
+1. 實施您想要收到或建立客群的其他解決方案，例如 Target 和 Analytics
 
-### 驗證受眾整合
+### 驗證客群整合
 
-驗證受眾整合的最佳方式是實際建立受眾，將其共用給其他解決方案，然後在其他解決方案中充分使用 (例如，確認符合 AAM 區段資格的訪客，可符合目標鎖定為該區段的 Target 活動之資格)。不過，這不在本教學課程的討論範圍內。
+驗證客群整合的最佳方式是實際建立客群，將其共用給其他解決方案，然後在其他解決方案中充分使用 (例如，確認符合 AAM 區段資格的訪客，可符合目標鎖定為該區段的 Target 活動之資格)。不過，這不在本教學課程的討論範圍內。
 
 這些驗證步驟將專注於用戶端實施中可見的關鍵部分：訪客 ID。
 
@@ -71,7 +71,7 @@ ht-degree: 85%
 
 ## Analytics for Target (A4T)
 
-[Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hant) 整合可讓您將 Analytics 資料當成 Target 中報告量度的來源。
+[Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) 整合可讓您將 Analytics 資料當成 Target 中報告量度的來源。
 
 實施 A4T (您已完成) 的主要需求如下：
 
@@ -132,7 +132,7 @@ A4T 的運作方式是將從 Target 傳至 Analytics 的伺服器端請求與 An
 
    ![按一下右上角的[登入]](images/idservice-loginNav.png)
 
-1. 使用者名稱請輸入 `test@adobe.com`
+1. 使用者名稱請輸入 `test@test.com`
 1. 密碼請輸入 `test`
 1. 按一下&#x200B;**[!UICONTROL 登入]**&#x200B;按鈕
 
@@ -148,4 +148,4 @@ A4T 的運作方式是將從 Target 傳至 Analytics 的伺服器端請求與 An
 
    ![Analytics 客戶 ID 驗證](images/integrations-analyticsCustomerIDValidation.png)
 
-[下堂課「Publish您的屬性」>](publish.md)
+[下堂課「發佈您的屬性」>](publish.md)

@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '2446'
 ht-degree: 0%
@@ -79,8 +79,8 @@ ht-degree: 0%
 >
 >在本課程的各個熒幕中，您會看到一些選項，**[!UICONTROL 錯誤診斷]**&#x200B;和&#x200B;**[!UICONTROL 部分擷取]**。 本教學課程未涵蓋這些選項。 一些快速資訊：
 >
->* 啟用錯誤診斷會產生有關資料擷取的資料，然後您可以使用資料存取API進行檢閱。 在[檔案](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=zh-Hant)中進一步瞭解。
->* 部分擷取可讓您擷取包含錯誤的資料，最多可擷取您所能指定的特定臨界值。 在[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=zh-Hant)中進一步瞭解
+>* 啟用錯誤診斷會產生有關資料擷取的資料，然後您可以使用資料存取API進行檢閱。 在[檔案](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html)中進一步瞭解。
+>* 部分擷取可讓您擷取包含錯誤的資料，最多可擷取您所能指定的特定臨界值。 在[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)中進一步瞭解
 
 ### 驗證資料
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 ![資料擷取webhook](assets/ingestion-loyalty-webhook.png)
 
-如需有關通知的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=zh-Hant#available-status-notification-events)。
+如需有關通知的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)。
 
 ## 使用Platform API批次擷取資料
 
@@ -210,7 +210,7 @@ ht-degree: 0%
 
 ![批次預覽](assets/ingestion-crm-preview.png)
 
-最後，透過依照`Luma CRM Id`名稱空間查詢其中一個設定檔（例如`112ca06ed53d3db37e4cea49cc45b71e`），確認已建立您的其中一個設定檔
+最後，透過依照`Luma CRM Id`名稱空間查詢其中一個設定檔（例如`b642b4217b34b1e8d3bd915fc65c4452`），確認已建立您的其中一個設定檔
 
 ![已擷取的設定檔](assets/ingestion-crm-profile.png)
 
@@ -226,7 +226,7 @@ ht-degree: 0%
 
 ![資料擷取webhook](assets/ingestion-crm-webhook.png)
 
-如需有關通知的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=zh-Hant#available-status-notification-events)。
+如需有關通知的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)。
 
 ## 使用工作流程內嵌資料
 
@@ -242,14 +242,14 @@ ht-degree: 0%
 現在來設定工作流程：
 
 1. 前往左側導覽中的&#x200B;**[!UICONTROL 工作流程]**
-1. 選取&#x200B;**[!UICONTROL 將CSV對應至XDM結構描述]**&#x200B;並選取&#x200B;**[!UICONTROL 啟動]**&#x200B;按鈕
+1. 選取&#x200B;**[!UICONTROL 將CSV對應至XDM結構描述]**&#x200B;並選取&#x200B;**[!UICONTROL 啟動]**按鈕
    ![啟動工作流程](assets/ingestion-products-launchWorkflow.png)
-1. 選取您的`Luma Product Catalog Dataset`並選取&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕
+1. 選取您的`Luma Product Catalog Dataset`並選取&#x200B;**[!UICONTROL 下一步]**按鈕
    ![選取您的資料集](assets/ingestion-products-selectDataset.png)
-1. 新增您下載的`luma-products.csv`檔案，並選取&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕
+1. 新增您下載的`luma-products.csv`檔案，並選取&#x200B;**[!UICONTROL 下一步]**按鈕
    ![選取您的資料集](assets/ingestion-products-selectData.png)
 1. 現在您位於對應程式介面，在其中可以將來源資料（`luma-products.csv`檔案中的其中一個欄名稱）的欄位對應到目標結構描述中的XDM欄位。 在我們的範例中，欄名稱與結構描述欄位名稱足夠接近，因此對應程式能夠自動偵測正確的對應！ 如果對應程式無法自動偵測正確的欄位，您可以選取目標欄位右側的圖示，以選取正確的XDM欄位。 此外，如果您不想從CSV擷取其中一欄，可以從對應工具中刪除該列。 您可以隨意玩耍和變更`luma-products.csv`中的欄標題，以熟悉對應程式的運作方式。
-1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;按鈕
+1. 選取&#x200B;**[!UICONTROL 完成]**按鈕
    ![選取您的資料集](assets/ingestion-products-mapper.png)
 
 ### 驗證資料
@@ -282,7 +282,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->我們在本練習中將使用的離線購買資料包含日期時間資料。 日期時間資料應該使用[ISO 8061格式字串](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000-08:00&quot;)或以毫秒(1531263959000)為單位格式化的Unix時間，並在擷取時轉換為目標XDM型別。 如需資料轉換和其他限制的詳細資訊，請參閱[批次擷取API檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=zh-Hant#types)。
+>我們在本練習中將使用的離線購買資料包含日期時間資料。 日期時間資料應該使用[ISO 8061格式字串](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000-08:00&quot;)或以毫秒(1531263959000)為單位格式化的Unix時間，並在擷取時轉換為目標XDM型別。 如需資料轉換和其他限制的詳細資訊，請參閱[批次擷取API檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types)。
 
 ### 下載、準備資料，並將其上傳到您偏好的雲端儲存空間供應商
 
@@ -296,25 +296,25 @@ ht-degree: 0%
 
 1. 在Platform使用者介面中，將[!UICONTROL 來源]目錄篩選為&#x200B;**[!UICONTROL 雲端儲存空間]**
 1. 請注意，`...`底下有便利的說明檔案連結
-1. 在您偏好的雲端儲存體廠商方塊中，選取&#x200B;**[!UICONTROL 設定]**&#x200B;按鈕
+1. 在您偏好的雲端儲存體廠商方塊中，選取&#x200B;**[!UICONTROL 設定]**按鈕
    ![選取設定](assets/ingestion-offline-selectFTP.png)
 1. **[!UICONTROL 驗證]**&#x200B;是第一個步驟。 輸入您帳戶的名稱，例如`Luma's FTP Account`和您的驗證詳細資料。 雖然欄位可能會稍有不同，但對於所有雲端儲存空間來源，此步驟應該相當類似。 輸入帳戶的驗證詳細資料後，您可以將其重複用於其他來源連線，這些連線可能會以不同排程傳送來自相同帳戶中其他檔案的不同資料
 1. 選取&#x200B;**[!UICONTROL 連線到來源按鈕]**
-1. 當平台成功連線到Source時，請選取&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕
+1. 當平台成功連線到Source時，請選取&#x200B;**[!UICONTROL 下一步]**按鈕
    ![驗證來源](assets/ingestion-offline-authentication.png)
 
 1. 在&#x200B;**[!UICONTROL 選取資料]**&#x200B;步驟中，使用者介面將使用您的認證開啟雲端儲存解決方案上的資料夾
 1. 選取您要擷取的檔案，例如`luma-offline-purchases.json`
 1. 以&#x200B;**[!UICONTROL 資料格式]**，請選取`XDM JSON`
 1. 然後您可以預覽json結構和檔案中的範例資料
-1. 選取&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕
+1. 選取&#x200B;**[!UICONTROL 下一步]**按鈕
    ![選取您的資料檔](assets/ingestion-offline-selectData.png)
 
-1. 在&#x200B;**[!UICONTROL 對應]**&#x200B;步驟中，選取您的`Luma Offline Purchase Events Dataset`並選取&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕。 在訊息中請注意，由於我們要擷取的資料是JSON檔案，因此沒有我們將來源欄位對應到目標欄位的對應步驟。 JSON資料必須已位於XDM中。 如果您正在內嵌CSV，您會在這個步驟中看到完整對應使用者介面：
+1. 在&#x200B;**[!UICONTROL 對應]**&#x200B;步驟中，選取您的`Luma Offline Purchase Events Dataset`並選取&#x200B;**[!UICONTROL 下一步]**按鈕。 在訊息中請注意，由於我們要擷取的資料是JSON檔案，因此沒有我們將來源欄位對應到目標欄位的對應步驟。 JSON資料必須已位於XDM中。 如果您正在內嵌CSV，您會在這個步驟中看到完整對應使用者介面：
    ![選取您的資料集](assets/ingestion-offline-mapping.png)
-1. 在&#x200B;**[!UICONTROL 排程]**&#x200B;步驟中，您需選擇您要從Source中重新擷取資料的頻率。 請花點時間檢視選項。 我們即將執行一次性內嵌，因此請在&#x200B;**[!UICONTROL Once]**&#x200B;保留&#x200B;**[!UICONTROL Frequency]**，然後選取&#x200B;**[!UICONTROL Next]**&#x200B;按鈕：
+1. 在&#x200B;**[!UICONTROL 排程]**&#x200B;步驟中，您需選擇您要從Source中重新擷取資料的頻率。 請花點時間檢視選項。 我們即將執行一次性內嵌，因此請在&#x200B;**[!UICONTROL Once]**&#x200B;保留&#x200B;**[!UICONTROL Frequency]**，然後選取&#x200B;**[!UICONTROL Next]**按鈕：
    ![排程您的資料流程](assets/ingestion-offline-scheduling.png)
-1. 在&#x200B;**[!UICONTROL 資料流詳細資料]**&#x200B;步驟中，您可以選擇資料流的名稱、輸入選擇性說明、開啟錯誤診斷，以及部分擷取。 保持設定不變，並選取&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕：
+1. 在&#x200B;**[!UICONTROL 資料流詳細資料]**&#x200B;步驟中，您可以選擇資料流的名稱、輸入選擇性說明、開啟錯誤診斷，以及部分擷取。 保持設定不變，並選取&#x200B;**[!UICONTROL 下一步]**按鈕：
    ![編輯資料流程的詳細資料](assets/ingestion-offline-detail.png)
 1. 在&#x200B;**[!UICONTROL 檢閱]**&#x200B;步驟中，您可以同時檢閱所有設定並編輯它們，或選取&#x200B;**[!UICONTROL 完成]**&#x200B;按鈕
 1. 儲存後，您會如下所示進入畫面：
@@ -334,12 +334,12 @@ ht-degree: 0%
 
 Adobe與多個ETL廠商合作，支援將資料擷取至Experience Platform。 由於協力廠商眾多，本教學課程不涵蓋ETL，不過歡迎您檢閱以下部分資源：
 
-* [開發Adobe Experience Platform的ETL整合](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=zh-Hant)
+* [開發Adobe Experience Platform的ETL整合](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## 其他資源
 
-* [批次擷取檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=zh-Hant)
+* [批次擷取檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [批次擷取API參考](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 現在讓我們使用Web SDK[串流資料](ingest-streaming-data.md)

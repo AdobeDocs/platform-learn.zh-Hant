@@ -4,7 +4,7 @@ description: 瞭解如何設定身分識別名稱空間以搭配Adobe Experience
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 12%
@@ -15,9 +15,9 @@ ht-degree: 12%
 
 了解如何設定身分識別命名空間，以配合 Adob&#x200B;&#x200B;e Experience Platform Web SDK 使用。
 
-[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/zh-hant/docs/id-service/using/home)在SDK型Adobe應用程式中設定通用的訪客ID (ECID)，以支援Experience Cloud功能，例如應用程式之間的受眾共用。 您也可以將自己的客戶ID傳送至此服務，以啟用跨裝置目標鎖定及與其他系統(例如客戶關係管理(CRM)系統)的整合。
+[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home)在SDK型Adobe應用程式中設定通用的訪客ID (ECID)，以支援Experience Cloud功能，例如應用程式之間的受眾共用。 您也可以將自己的客戶ID傳送至此服務，以啟用跨裝置目標鎖定及與其他系統(例如客戶關係管理(CRM)系統)的整合。
 
-[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home) （是的，共有兩個！）會使用ECID和客戶ID來產生身分圖表，讓您將屬性和行為合併到即時客戶設定檔中。
+[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) （是的，共有兩個！）會使用ECID和客戶ID來產生身分圖表，讓您將屬性和行為合併到即時客戶設定檔中。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
-> 為了示範，本課程中的練習會讓您使用認證，**使用者： `test@adobe.com` /密碼： test**，擷取登入[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)之虛擬客戶的身分詳細資訊。
+> 為了示範，本課程中的練習會讓您使用認證，**使用者： `test@test.com` /密碼： test**，擷取登入[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)之虛擬客戶的身分詳細資訊。
 
 ## 學習目標
 
@@ -53,7 +53,7 @@ ht-degree: 12%
 
 在開始練習之前，請觀看此短片，進一步瞭解Adobe Experience Platform中的身分識別：
 
->[!VIDEO](https://video.tv.adobe.com/v/3422770?learn=on&enablevpops&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 現在，為Luma CRM ID建立名稱空間：
 

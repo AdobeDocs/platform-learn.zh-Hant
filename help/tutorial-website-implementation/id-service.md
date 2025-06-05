@@ -3,7 +3,7 @@ title: 使用標籤新增Adobe Experience Platform Identity Service
 description: 瞭解如何新增 Adobe Experience Platform Identity Service 擴充功能，並使用「設定客戶 ID」動作來收集客戶 ID。本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1945'
 ht-degree: 64%
@@ -12,17 +12,17 @@ ht-degree: 64%
 
 # 新增 Adobe Experience Platform Identity Service
 
-本課程將引導您逐步實施 [Adobe Experience Platform Identity Service 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hant)及傳送客戶 ID。
+本課程將引導您逐步實施 [Adobe Experience Platform Identity Service 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)及傳送客戶 ID。
 
-[Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hant)會在所有Adobe解決方案中設定通用的訪客ID，以強化Experience Cloud功能，例如解決方案之間的受眾共用。 您也可以將自己的客戶 ID 傳送至此服務，以啟用跨裝置目標鎖定與您客戶關係管理 (CRM) 系統的額外整合。
+[Adobe Experience Platform Identity服務](https://experienceleague.adobe.com/docs/id-service/using/home.html)會在所有Adobe解決方案中設定通用的訪客ID，以便支援Experience Cloud功能，例如解決方案之間的受眾共用。 您也可以將自己的客戶 ID 傳送至此服務，以啟用跨裝置目標鎖定與您客戶關係管理 (CRM) 系統的額外整合。
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
 >
-> * platform launch（使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)**
-> * platform launch伺服器端現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)**
-> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hant)**
+> * Platform Launch （使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * Platform Launch Server Side現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 學習目標
 
@@ -39,7 +39,7 @@ ht-degree: 64%
 
 ## 新增 Identity Service 擴充功能
 
-由於這是您新增的第一個擴充功能，以下提供擴充功能的快速概述。擴充功能是標籤的核心功能之一。 擴充功能是由 Adobe、Adobe 合作夥伴或任何 Adobe 客戶所建立的整合功能，能針對您可部署至網站的標記新增數量無上限的全新選項。如果您將標籤當成作業系統，擴充功能就是您安裝的應用程式，讓標籤可以為您執行所需操作。
+由於這是您新增的第一個擴充功能，以下提供擴充功能的快速概觀。擴充功能是標籤的核心功能之一。 擴充功能是由 Adobe、Adobe 合作夥伴或任何 Adobe 客戶所建立的整合功能，能針對您可部署至網站的標記新增數量無上限的全新選項。如果您將標籤當成作業系統，擴充功能就是您安裝的應用程式，讓標籤可以為您執行所需操作。
 
 **新增 Identity Service 擴充功能的方式**
 
@@ -90,14 +90,13 @@ Identity Service擴充功能是少數標籤擴充功能的其中之一，不必�
    1. 展開左側的 `Cookies`
    1. 按一下 `https://luma.enablementadobe.com` 網域
    1. 尋找右側的 AMCV_ Cookie。您可能會看到自那時起已使用硬式編碼標籤屬性及對映至您自己的屬性載入Luma網站的數個。
-
       ![驗證 AMCV_ Cookie](images/idservice-AMCVCookie.png)
 
-完成了！您已新增第一個擴充功能！有關 Identity Service 設定選項的詳細資訊，請參閱[本文件](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=zh-Hant)。
+完成了！您已新增第一個擴充功能！有關 Identity Service 設定選項的詳細資訊，請參閱[本文件](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html)。
 
 ## 傳送客戶 ID
 
-接下來要將[客戶 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hant) 傳送至 Identity Service。這可讓您[整合 CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hant??lang=zh-Hant) 與 Experience Cloud，且可跨裝置追蹤訪客。
+接下來要將[客戶 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) 傳送至 Identity Service。這可讓您[整合 CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hant??lang=zh-Hant) 與 Experience Cloud，且可跨裝置追蹤訪客。
 
 在先前的[新增資料元素、規則和程式庫](add-data-elements-rules.md)課程中，您已建立資料元素並將其用於規則中。現在，您將使用這些相同的技巧，在訪客通過驗證時傳送客戶 ID。
 
@@ -206,7 +205,7 @@ Adobe Experience Platform Identity Service 會使用「設定客戶 ID」動作�
 
    ![新增動作](images/idservice-customerId-addAction.png)
 
-   1. 為&#x200B;**[!UICONTROL 延伸模組]**&#x200B;選取&#x200B;**[!UICONTROL Experience Cloud識別碼服務]**
+   1. 為&#x200B;**[!UICONTROL 擴充功能]**&#x200B;選取&#x200B;**[!UICONTROL Experience Cloud ID服務]**
    1. 針對&#x200B;**[!UICONTROL 動作型別]**&#x200B;選取&#x200B;**[!UICONTROL 設定客戶ID]**
    1. 對於&#x200B;**[!UICONTROL 整合代碼]**，請輸入`crm_id`
    1. **[!UICONTROL 值]**&#x200B;請開啟資料元素選取器強制回應視窗，並選取`Email (Hashed)`
@@ -237,11 +236,11 @@ Adobe Experience Platform Identity Service 會使用「設定客戶 ID」動作�
 
    ![按一下頂端導覽列中的「登入」](images/idservice-loginNav.png)
 
-1. 使用者名稱請輸入 `test@adobe.com`
+1. 使用者名稱請輸入 `test@test.com`
 1. 密碼請輸入 `test`
 1. 按一下&#x200B;**[!UICONTROL 登入]**&#x200B;按鈕
 
-   ![輸入憑證並按一下登入](images/idservice-login.png)
+   ![輸入認證並按一下登入](images/idservice-login.png)
 
 1. 返回首頁
 

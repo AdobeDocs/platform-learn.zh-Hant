@@ -4,7 +4,7 @@ description: 瞭解如何使用Adobe Experience Platform Debugger驗證您的Pla
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 3%
@@ -108,7 +108,7 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 
 您也可以驗證「身分對應」詳細資料：
 
-1. 使用認證`test@adobe.com`/`test`登入Luma網站
+1. 使用認證`test@test.com`/`test`登入Luma網站
 
 1. 返回 [Luma 首頁](https://luma.enablementadobe.com/content/luma/us/en.html)
 
@@ -143,7 +143,7 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 
 如您在[設定資料串流](configure-datastream.md)課程中所學習，Platform Web SDK會先將資料從您的數位屬性傳送至Platform Edge Network。 接著，Platform Edge Network會對資料流中啟用的對應服務發出其他伺服器端請求。 您可以在Debugger中使用Edge追蹤來驗證Platform Edge Network發出的伺服器端請求。
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### 啟用Edge追蹤
