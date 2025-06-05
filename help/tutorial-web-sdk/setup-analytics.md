@@ -106,8 +106,8 @@ Analytics產品字串的個別區段是透過`productListItems`物件下的不�
 >[!NOTE]
 >
 >自2022年8月18日起，`productListItems[].SKU`優先對應至s.products變數中的產品名稱。
->>只有在`productListItems[].SKU`不存在時，設定為`productListItems[].name`的值才會對應至產品名稱。 否則，它將會取消對應，並可在內容資料中使用。
->>請勿將空字串或Null設定為`productListItems[].SKU`。 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
+>&#x200B;>只有在`productListItems[].SKU`不存在時，設定為`productListItems[].name`的值才會對應至產品名稱。 否則，它將會取消對應，並可在內容資料中使用。
+>&#x200B;>請勿將空字串或Null設定為`productListItems[].SKU`。 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
 
 
 ### 在資料物件中設定變數
@@ -254,7 +254,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 保留&#x200B;**[!UICONTROL 擴充功能]**&#x200B;為&#x200B;**[!UICONTROL 核心]**
 
-1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;]**的**[!UICONTROL &#x200B;路徑
+1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**的**&#x200B;路徑
 
 1. 在右側，保留&#x200B;**[!UICONTROL Regex]**&#x200B;切換功能為停用
 
@@ -449,7 +449,7 @@ Adobe Experience Platform Assurance可協助您檢查、證明、模擬及驗證
 ### 內容頁面檢視驗證
 
 使用相同的信標，驗證內容頁面檢視是否已對應至正確的Adobe Analytics變數。
-向下捲動至**[!UICONTROL pageName]**&#x200B;以驗證`Page Name`是否已正確擷取
+向下捲動至&#x200B;**[!UICONTROL pageName]**&#x200B;以驗證`Page Name`是否已正確擷取
 ![使用Assurance進行頁面名稱驗證](assets/assurance-hitdebugger-content-pagename.png)
 
 ### 產品字串和電子商務事件驗證

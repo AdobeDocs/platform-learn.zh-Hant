@@ -153,7 +153,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 
 
 1. 檢視Assurance網頁介面中來自&#x200B;**[!UICONTROL com.adobe.griffon.mobile]**&#x200B;廠商的&#x200B;**[!UICONTROL Edge身分更新身分]**&#x200B;事件。
-1. 選取事件並檢閱&#x200B;**[!UICONTROL ACPExtensionEventData]**物件中的資料。 您應該會看到已更新的身分識別。
+1. 選取事件並檢閱&#x200B;**[!UICONTROL ACPExtensionEventData]**&#x200B;物件中的資料。 您應該會看到已更新的身分識別。
    ![驗證身分更新](assets/identity-validate-assurance.png)
 
 ## 使用身分圖表進行驗證
