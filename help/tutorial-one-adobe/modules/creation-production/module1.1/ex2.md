@@ -193,7 +193,7 @@ Adobe Firefly Services目前支援下列網域：
 ![Azure儲存體](./images/az22.png){zoomable="yes"}
 
 返回Postman開啟請求&#x200B;**POST - Firefly - T2I (styleref) V3**。
-這會顯示在**內文**&#x200B;中。
+這會顯示在&#x200B;**內文**&#x200B;中。
 
 ![Azure儲存體](./images/az23.png){zoomable="yes"}
 

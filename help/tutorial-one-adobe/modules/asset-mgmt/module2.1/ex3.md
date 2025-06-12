@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup8.png){zoomable="yes"}
 
-按一下&#x200B;**僅選取存放庫**，然後新增您剛建立的存放庫。 接著，按一下[安裝]。****
+按一下&#x200B;**僅選取存放庫**，然後新增您剛建立的存放庫。 接著，按一下[安裝]。**&#x200B;**
 
 ![AEMCS](./images/aemcssetup9.png){zoomable="yes"}
 
@@ -145,7 +145,7 @@ ZZZ = `citisignal`
 
 您現在需要存取AEM的&#x200B;**CRX封裝管理員**&#x200B;環境。 若要這麼做，請從URL移除`ui#/aem/aem/start.html?appId=aemshell`，並以`crx/packmgr`取代，這表示您的URL現在看起來應該像這樣：
 `https://author-p148073-e1511503.adobeaemcloud.com/crx/packmgr`。
-點選**Enter**&#x200B;以載入封裝管理員環境
+點選&#x200B;**Enter**&#x200B;以載入封裝管理員環境
 
 ![AEMCS](./images/aemcssetup22.png){zoomable="yes"}
 
@@ -254,7 +254,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup33.png){zoomable="yes"}
 
-您將會看到此訊息。 按一下以選取您剛上傳的範本，然後按一下[下一步] ****。
+您將會看到此訊息。 按一下以選取您剛上傳的範本，然後按一下[下一步] **&#x200B;**。
 
 ![AEMCS](./images/aemcssetup34.png){zoomable="yes"}
 
