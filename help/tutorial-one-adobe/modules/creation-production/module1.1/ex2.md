@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1944'
 ht-degree: 0%
 
 ---
@@ -193,7 +193,7 @@ Adobe Firefly Services目前支援下列網域：
 ![Azure儲存體](./images/az22.png){zoomable="yes"}
 
 返回Postman開啟請求&#x200B;**POST - Firefly - T2I (styleref) V3**。
-這會顯示在&#x200B;**內文**&#x200B;中。
+這會顯示在**內文**&#x200B;中。
 
 ![Azure儲存體](./images/az23.png){zoomable="yes"}
 
@@ -233,7 +233,7 @@ Adobe Firefly Services目前支援下列網域：
 
 ![Azure儲存體](./images/az29.png){zoomable="yes"}
 
-使用&#x200B;**SAS-token**&#x200B;將檔案上傳至您的Azure儲存體帳戶。
+使用&#x200B;**SAS權杖URL**&#x200B;將檔案上傳至您的Azure儲存體帳戶。
 
 返回Postman，選取資料夾&#x200B;**FF - Firefly Services Tech Insiders**，然後選取&#x200B;**Firefly**&#x200B;資料夾中的&#x200B;**...**，然後選取&#x200B;**新增要求**。
 
@@ -345,7 +345,7 @@ URL目前看起來像這樣，但需要變更。
 
 ![Azure儲存體](./images/az102.png){zoomable="yes"}
 
-複製URL並將其寫入您電腦上的檔案中，以取得具有讀取許可權的長期SAS權杖。
+複製URL並將其寫入您電腦上的檔案中，以取得您具有讀取/寫入許可權的長期SAS權杖。
 
 ![Azure儲存體](./images/az103.png){zoomable="yes"}
 

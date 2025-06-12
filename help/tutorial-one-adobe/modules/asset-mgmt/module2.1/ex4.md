@@ -4,9 +4,9 @@ description: AEM CS — 基本自訂區塊
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 1.1.4.1設定您的本機開發環境
 
-移至[https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}，下載並安裝&#x200B;**Github案頭**。
+移至[https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}，下載並安裝&#x200B;**Github案頭版**。
 
 ![區塊](./images/block1.png){zoomable="yes"}
 
@@ -145,7 +145,7 @@ Adobe建議您分三階段來開發區塊：
 
 ![區塊](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3提交變更
+## 1.1.4.3認可您的變更
 
 您現在已在專案中進行數項變更，這些變更需要提交回GitHub存放庫。 若要這麼做，請開啟&#x200B;**GitHub Desktop**。
 
@@ -169,7 +169,7 @@ Adobe建議您分三階段來開發區塊：
 
 ![區塊](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4將區塊新增至頁面
+## 1.1.4.4將您的區塊新增至頁面
 
 現在您的基本報價區塊已定義並認可至CitiSignal專案，您可以將&#x200B;**fiberoffer**&#x200B;區塊新增至現有頁面。
 
@@ -249,7 +249,7 @@ Adobe建議您分三階段來開發區塊：
 
 您的新頁面現已發佈。
 
-## 1.1.4.5將新頁面新增至導覽功能表
+## 1.1.4.5將您的新頁面新增至導覽功能表
 
 在您的AEM Sites總覽中，前往&#x200B;**CitiSignal** > **Fragments**&#x200B;並勾選&#x200B;**標題**&#x200B;的核取方塊。 按一下&#x200B;**編輯**。
 
@@ -259,7 +259,7 @@ Adobe建議您分三階段來開發區塊：
 
 ![AEMCS](./images/nav1.png){zoomable="yes"}
 
-輸入此&#x200B;**URL** `/us/en/citisignal-fiber`並按一下&#x200B;**V**&#x200B;圖示以確認。
+輸入此&#x200B;**URL** `/us/en//citisignal-fiber`並按一下&#x200B;**V**&#x200B;圖示以確認。
 
 ![AEMCS](./images/nav3.png){zoomable="yes"}
 
@@ -271,10 +271,10 @@ Adobe建議您分三階段來開發區塊：
 
 ![AEMCS](./images/nav5.png){zoomable="yes"}
 
-您現在可以移至`main--citisignal--XXX.aem.page/us/en`及/或`main--citisignal--XXX.aem.live/us/en`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
+您現在可以移至`main--citisignal--XXX.aem.page/us/en/`及/或`main--citisignal--XXX.aem.live/us/en/`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
 
 在此範例中，完整URL會變成：
-`https://main--citisignal--woutervangeluwe.aem.page/us/en`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en`。
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
 
 您應該會看到此訊息。 按一下&#x200B;**Fiber**。
 

@@ -4,9 +4,9 @@ description: 設定您的AEM CS環境
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup8.png){zoomable="yes"}
 
-按一下&#x200B;**僅選取存放庫**，然後新增您剛建立的存放庫。 接著，按一下[安裝]。**&#x200B;**
+按一下&#x200B;**僅選取存放庫**，然後新增您剛建立的存放庫。 接著，按一下[安裝]。****
 
 ![AEMCS](./images/aemcssetup9.png){zoomable="yes"}
 
@@ -83,7 +83,7 @@ YYYY應取代為您的GitHub使用者帳戶。
 
 ZZZ應取代為您在上一個練習中使用的GitHub存放庫名稱。
 
-您可以前往[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}找到AEM CS作者環境的URL。 按一下您的&#x200B;**程式**&#x200B;以開啟。
+您可以前往[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}找到AEM CS Author環境的URL。 按一下您的&#x200B;**程式**&#x200B;以開啟。
 
 ![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
@@ -145,7 +145,7 @@ ZZZ = `citisignal`
 
 您現在需要存取AEM的&#x200B;**CRX封裝管理員**&#x200B;環境。 若要這麼做，請從URL移除`ui#/aem/aem/start.html?appId=aemshell`，並以`crx/packmgr`取代，這表示您的URL現在看起來應該像這樣：
 `https://author-p148073-e1511503.adobeaemcloud.com/crx/packmgr`。
-點選&#x200B;**Enter**&#x200B;以載入封裝管理員環境
+點選**Enter**&#x200B;以載入封裝管理員環境
 
 ![AEMCS](./images/aemcssetup22.png){zoomable="yes"}
 
@@ -254,7 +254,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup33.png){zoomable="yes"}
 
-您將會看到此訊息。 按一下以選取您剛上傳的範本，然後按一下[下一步] **&#x200B;**。
+您將會看到此訊息。 按一下以選取您剛上傳的範本，然後按一下[下一步] ****。
 
 ![AEMCS](./images/aemcssetup34.png){zoomable="yes"}
 
@@ -308,10 +308,10 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup45.png){zoomable="yes"}
 
-您現在可以移至`main--citisignal--XXX.aem.page/us/en`及/或`main--citisignal--XXX.aem.live/us/en`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）後存取您的網站。
+您現在可以移至`main--citisignal--XXX.aem.page/us/en/`及/或`main--citisignal--XXX.aem.live/us/en/`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）後存取您的網站。
 
 在此範例中，完整URL會變成：
-`https://main--citisignal--woutervangeluwe.aem.page/us/en`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en`。
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
 
 可能需要一些時間，才能正確顯示所有資產，因為它們必須先發佈。
 

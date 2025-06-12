@@ -4,9 +4,9 @@ description: 快速入門 — Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 移至[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}。
 
-![Adobe I/O新整合](./images/iohome.png){zoomable="yes"}
+![Adobe I/O新整合](./images/iohome.png)
 
 請務必在熒幕右上角選取正確的例項。 您的執行個體是`--aepImsOrgName--`。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 接著，選取&#x200B;**建立新專案**。
 
-![Adobe I/O新整合](./images/iocomp.png){zoomable="yes"}
+![Adobe I/O新整合](./images/iocomp.png)
 
 ### FIREFLY SERVICES API
 
@@ -39,45 +39,45 @@ ht-degree: 0%
 
 您應該會看到此訊息。 選取&#x200B;**+新增至專案**&#x200B;並選擇&#x200B;**API**。
 
-![Adobe I/O新整合](./images/adobe_io_access_api.png){zoomable="yes"}
+![Adobe I/O新整合](./images/adobe_io_access_api.png)
 
 您的熒幕應如下所示。
 
-![Adobe I/O新整合](./images/api1.png){zoomable="yes"}
+![Adobe I/O新整合](./images/api1.png)
 
 選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Firefly - Firefly Services**，然後選取&#x200B;**下一步**。
 
-![Adobe I/O新整合](./images/api3.png){zoomable="yes"}
+![Adobe I/O新整合](./images/api3.png)
 
 提供認證的名稱： `--aepUserLdap-- - One Adobe OAuth credential`並選取&#x200B;**下一步**。
 
-![Adobe I/O新整合](./images/api4.png){zoomable="yes"}
+![Adobe I/O新整合](./images/api4.png)
 
 選取預設設定檔&#x200B;**預設Firefly Services設定**，然後選取&#x200B;**儲存設定的API**。
 
-![Adobe I/O新整合](./images/api9.png){zoomable="yes"}
+![Adobe I/O新整合](./images/api9.png)
 
 您應該會看到此訊息。
 
-![Adobe I/O新整合](./images/api10.png){zoomable="yes"}
+![Adobe I/O新整合](./images/api10.png)
 
 ### PHOTOSHOP SERVICES API
 
 >[!IMPORTANT]
 >
 >根據您選取的學習路徑，您可能無法存取Photoshop Services API。 您必須位於學習路徑&#x200B;**Firefly**、**Workfront Fusion**、**全部**，或正在參加&#x200B;**現場現場研討會**，才能存取Photoshop Services API。 如果您不在其中一個學習路徑上，可以略過此步驟。
-
+>
 選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
 
-![Azure儲存體](./images/ps2.png){zoomable="yes"}
+![Azure儲存體](./images/ps2.png)
 
 選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Photoshop - Firefly Services**。 選取&#x200B;**下一步**。
 
-![Azure儲存體](./images/ps3.png){zoomable="yes"}
+![Azure儲存體](./images/ps3.png)
 
 選取&#x200B;**下一步**。
 
-![Azure儲存體](./images/ps4.png){zoomable="yes"}
+![Azure儲存體](./images/ps4.png)
 
 接下來，您需要選取產品設定檔，以定義此整合可用的許可權。
 
@@ -85,11 +85,11 @@ ht-degree: 0%
 
 選取&#x200B;**儲存設定的API**。
 
-![Azure儲存體](./images/ps5.png){zoomable="yes"}
+![Azure儲存體](./images/ps5.png)
 
 您應該會看到此訊息。
 
-![Adobe I/O新整合](./images/ps7.png){zoomable="yes"}
+![Adobe I/O新整合](./images/ps7.png)
 
 ### ADOBE EXPERIENCE PLATFORM API
 
@@ -99,15 +99,15 @@ ht-degree: 0%
 
 選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
 
-![Azure儲存體](./images/aep1.png){zoomable="yes"}
+![Azure儲存體](./images/aep1.png)
 
 選取&#x200B;**Adobe Experience Platform**&#x200B;並選擇&#x200B;**Experience Platform API**。 選取&#x200B;**下一步**。
 
-![Azure儲存體](./images/aep2.png){zoomable="yes"}
+![Azure儲存體](./images/aep2.png)
 
 選取&#x200B;**下一步**。
 
-![Azure儲存體](./images/aep3.png){zoomable="yes"}
+![Azure儲存體](./images/aep3.png)
 
 接下來，您需要選取產品設定檔，以定義此整合可用的許可權。
 
@@ -119,11 +119,43 @@ ht-degree: 0%
 
 選取&#x200B;**儲存設定的API**。
 
-![Azure儲存體](./images/aep4.png){zoomable="yes"}
+![Azure儲存體](./images/aep4.png)
 
 您應該會看到此訊息。
 
-![Adobe I/O新整合](./images/aep5.png){zoomable="yes"}
+![Adobe I/O新整合](./images/aep5.png)
+
+### Frame.io API
+
+>[!IMPORTANT]
+>
+>根據您選取的學習路徑，您可能無法存取Frame.io API。 只有當您位於學習路徑&#x200B;**Workfront Fusion**、**ALL**&#x200B;或參加&#x200B;**現場研討會**&#x200B;時，才能存取Frame.io API。 如果您不在其中一個學習路徑上，可以略過此步驟。
+
+選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
+
+![Azure儲存體](./images/fiops2.png)
+
+選取&#x200B;**Creative Cloud**&#x200B;並選擇&#x200B;**Frame.io API**。 選取&#x200B;**下一步**。
+
+![Azure儲存體](./images/fiops3.png)
+
+選取&#x200B;**伺服器對伺服器驗證**，然後按一下&#x200B;**下一步**。
+
+![Azure儲存體](./images/fiops4.png)
+
+選取&#x200B;**OAuth伺服器對伺服器**，然後按一下[下一步]**。**
+
+![Azure儲存體](./images/fiops5.png)
+
+接下來，您需要選取產品設定檔，以定義此整合可用的許可權。
+
+選取&#x200B;**預設Frame.io Enterprise - Prime設定**，然後按一下&#x200B;**儲存設定的API**。
+
+![Azure儲存體](./images/fiops6.png)
+
+您應該會看到此訊息。
+
+![Adobe I/O新整合](./images/fiops7.png)
 
 ### 專案名稱
 

@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 29a0f77f113daace66ffbba63fabac7237f7d5f3
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ![Firefly自訂模型](./images/ffcm1.png){zoomable="yes"}
 
-您可能會看到此訊息。 如果是，請按一下[同意]&#x200B;**&#x200B;**&#x200B;繼續。
+您可能會看到此訊息。 如果是，請按一下[同意]****&#x200B;繼續。
 
 ![Firefly自訂模型](./images/ffcm2.png){zoomable="yes"}
 
@@ -79,7 +79,7 @@ ht-degree: 0%
 
 ![Firefly自訂模型](./images/ffcm5.png){zoomable="yes"}
 
-您應該會看到此訊息。 按一下&#x200B;**建立**。
+您應該會看到此訊息。 按一下&#x200B;**繼續**。
 
 ![Firefly自訂模型](./images/ffcm6.png){zoomable="yes"}
 

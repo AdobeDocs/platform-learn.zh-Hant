@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 1d1ee3462bd890556037c8e24ba2fe94c3423187
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1981'
 ht-degree: 1%
 
 ---
@@ -59,35 +59,27 @@ ht-degree: 1%
 
 ## 1.2.6.2在Frame.io中設定Webhook
 
-移至[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}。 按一下&#x200B;**開發人員工具**，然後選擇&#x200B;**Webhooks**。
+移至Postman並開啟要求&#x200B;**POST — 取得集合** Adobe IO - OAuth **中的存取權杖**。 接著，按一下[傳送]，要求新的&#x200B;**access_token**。****
 
-![框架IO](./images/aemf7.png)
+![框架IO](./images/frameV4api2.png)
 
-按一下&#x200B;**建立Webhook**。
+在左側功能表中，返回&#x200B;**集合**。 開啟要求&#x200B;**POST — 在集合** Frame.io V4 — 技術內部人員&#x200B;**中建立Webhook**，在資料夾&#x200B;**Webhooks**&#x200B;中。
 
-![框架IO](./images/aemf8.png)
+前往請求的&#x200B;**內文**。 將欄位&#x200B;**name**&#x200B;變更為`--aepUserLdap--  - Fusion to AEM Assets`，然後將欄位&#x200B;**url**&#x200B;變更為您從Workfront Fusion複製的Webhook URL值。
 
-輸入下列值：
+按一下&#x200B;**傳送**。
 
-- **名稱**：使用`--aepUserLdap-- - Asset Labels Updated`
-- **URL**：輸入您剛才在Workfront Fusion中建立的webhook的URL
-- **團隊**：選取適當的Frame.io團隊，在此案例中為&#x200B;**一個Adobe教學課程**。
+![框架IO](./images/framewh1.png)
 
-![框架IO](./images/aemf9.png)
+您的Frame.io V4自訂動作現已建立。
 
-向下捲動並啟用&#x200B;**資產標籤 — 已更新**&#x200B;旁的核取方塊。 按一下&#x200B;**提交**。
+![框架IO](./images/framewh2.png)
 
-![框架IO](./images/aemf10.png)
-
-您應該會看到此訊息。
-
-![框架IO](./images/aemf11.png)
-
-前往[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}，然後前往您之前建立的資料夾，該資料夾應該命名為`--aepUserLdap--`。 按兩下以開啟在上一個練習中建立的資產。
+前往[https://next.frame.io/project](https://next.frame.io/project){target="_blank"}，並前往您之前建立的專案（應命名為`--aepUserLdap--`），並開啟資料夾&#x200B;**CitiSignal Fiber Campaign**。 您現在應該會看到上一個練習建立的資產。
 
 ![框架IO](./images/aemf11a.png)
 
-您應該會看到類似這樣的內容。 按一下欄位&#x200B;**無狀態**&#x200B;並將狀態變更為&#x200B;**進行中**。
+按一下欄位&#x200B;**狀態**&#x200B;並將狀態變更為&#x200B;**進行中**。
 
 ![框架IO](./images/aemf12.png)
 
@@ -95,7 +87,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf13.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]&#x200B;**執行快速測試。**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]**執行快速測試。******
 
 ![框架IO](./images/aemf14.png)
 
@@ -113,45 +105,82 @@ ht-degree: 1%
 
 現在Frame.io與Workfront Fusion之間的通訊已透過自訂webhook建立，您應該取得有關其狀態標籤已更新的資產的更多詳細資訊。 為此，您將再次使用Workfront Fusion中的Frame.io聯結器，類似於上一個練習。
 
-按一下&#x200B;**？**&#x200B;模組並輸入搜尋字詞`frame`。 按一下&#x200B;**Frame.io**。
+將游標暫留在&#x200B;**自訂webhook**&#x200B;物件上，然後按一下&#x200B;**+**&#x200B;圖示以新增另一個模組。
+
+![框架IO](./images/aemf18a.png)
+
+輸入搜尋字詞`frame`。 按一下&#x200B;**Frame.io**。
 
 ![框架IO](./images/aemf18.png)
 
-按一下&#x200B;**Frame.io （舊版）**。
+按一下&#x200B;**Frame.io**。
 
 ![框架IO](./images/aemf19.png)
 
-按一下&#x200B;**取得資產**。
+按一下&#x200B;**進行自訂API呼叫**。
 
 ![框架IO](./images/aemf20.png)
 
-確認連線已設定為您在上一個練習中建立的連線，應該命名為`--aepUserLdap-- - Frame.io Token`。
+確認連線已設定為您在上一個練習中建立的連線，應該命名為`--aepUserLdap-- - Adobe I/O - Frame.io S2S`。
 
 ![框架IO](./images/aemf21.png)
 
-接下來，您必須提供&#x200B;**資產識別碼**。 **資產ID**&#x200B;由Frame.io共用至Workfront Fusion，做為初始&#x200B;**自訂webhook**&#x200B;通訊的一部分，可以在&#x200B;**resource.id**&#x200B;欄位下找到。 選取&#x200B;**resource.id**&#x200B;並按一下&#x200B;**確定**。
+針對模組&#x200B;**Frame.io — 進行自訂API呼叫**，使用URL： `/v4/accounts/{{1.account.id}}/files/{{1.resource.id}}`。
+
+>[!NOTE]
+>
+>可以使用下列語法手動指定Workfront Fusion中的變數： `{{1.account.id}}`和`{{1.resource.id}}`。 變數中的數字會參考情境中的模組。 在此範例中，您可以看到情境中的第一個模組稱為&#x200B;**Webhooks**，其序號為&#x200B;**1**。 這表示變數`{{1.account.id}}`和`{{1.resource.id}}`將會從序號為1的模組存取該欄位。 序號有時可能不同，因此在複製/貼上這類變數時請務必注意，並務必確認所使用的序號是否正確。
+
+接著，按一下&#x200B;**查詢字串**&#x200B;下的&#x200B;**+新增專案**。
+
+![框架IO](./images/aemf21a.png)
+
+輸入這些值，然後按一下&#x200B;**新增**。
+
+| 索引鍵 | 值 |
+|:-------------:| :---------------:| 
+| `include` | `media_links.original` |
+
+![框架IO](./images/aemf21b.png)
+
+您現在應該擁有此專案。 按一下&#x200B;**「確定」**。
 
 ![框架IO](./images/aemf22.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![框架IO](./images/aemf23.png)
 
-切換回Frame.io並按一下欄位&#x200B;**需要檢閱**&#x200B;並將狀態變更為&#x200B;**進行中**。
+切換回Frame.io並將狀態變更為&#x200B;**進行中**。
 
 ![框架IO](./images/aemf24.png)
 
-返回Workfront Fusion並按一下&#x200B;**Frame.io — 取得資產**&#x200B;模組。 您應該會看到類似的概觀。
+返回Workfront Fusion並按一下&#x200B;**Frame.io — 進行自訂API呼叫**&#x200B;模組。 您應該會看到類似的概觀。
 
 ![框架IO](./images/aemf25.png)
 
-在Frame.io提供的資產詳細資訊中，您可以找到名為&#x200B;**Label**&#x200B;的欄位，其設定為&#x200B;**in_progress**。 您稍後必須使用該欄位來設定篩選器。
+接下來，您應該設定篩選器，以確保只有狀態為&#x200B;**已核准**&#x200B;的資產會呈現PNG檔案。 若要這麼做，請按一下模組&#x200B;**自訂webhook**&#x200B;與&#x200B;**Frame.io之間的**&#x200B;扳手&#x200B;**圖示 — 進行自訂API呼叫**，然後選取&#x200B;**設定篩選器**。
 
-![框架IO](./images/aemf26.png)
+![框架IO](./images/aemf25a.png)
+
+設定下列欄位：
+
+- **標籤**：使用`Status = Approved`。
+- **條件**： `{{1.metadata.value[]}}`。
+- **基本運運算元**：選取&#x200B;**等於**。
+- **值**： `Approved`。
+
+按一下&#x200B;**「確定」**。
+
+![框架IO](./images/aemf35.png)
+
+然後您應該擁有此專案。 按一下[儲存]儲存變更。****
+
+![框架IO](./images/aemf35a.png)
 
 ## 1.2.6.4轉換成PNG
 
-將游標暫留在模組&#x200B;**Frame.io — 取得資產**&#x200B;並按一下&#x200B;**+**&#x200B;圖示。
+將游標停留在模組&#x200B;**Frame.io — 進行自訂API呼叫**&#x200B;並按一下&#x200B;**+**&#x200B;圖示。
 
 ![框架IO](./images/aemf27.png)
 
@@ -165,13 +194,13 @@ ht-degree: 1%
 
 確認欄位&#x200B;**Connection**&#x200B;正在使用您先前建立的名為`--aepUserLdap-- - Adobe IO`的連線。
 
-在&#x200B;**Input**&#x200B;下，將欄位&#x200B;**Storage**&#x200B;設定為&#x200B;**External**，並將&#x200B;**檔案位置**&#x200B;設定為使用模組&#x200B;**Frame.io傳回的變數** Original **— 取得資產**。
+在&#x200B;**Input**&#x200B;下，將欄位&#x200B;**Storage**&#x200B;設定為&#x200B;**External**，並將&#x200B;**File Location**&#x200B;設定為使用模組&#x200B;**Frame.io傳回的變數** Original **— 進行自訂API呼叫**。
 
 接著，按一下&#x200B;**輸出**&#x200B;下的&#x200B;**新增專案**。
 
 ![框架IO](./images/aemf30.png)
 
-針對&#x200B;**輸出**&#x200B;組態，請將欄位&#x200B;**儲存體**&#x200B;設定為&#x200B;**Fusion內部儲存體**，並將&#x200B;**型別**&#x200B;設定為&#x200B;**影像/png**。 按一下&#x200B;**儲存**。
+針對&#x200B;**輸出**&#x200B;組態，請將欄位&#x200B;**儲存體**&#x200B;設定為&#x200B;**Fusion內部儲存體**，並將&#x200B;**型別**&#x200B;設定為&#x200B;**影像/png**。 按一下&#x200B;**新增**。
 
 ![框架IO](./images/aemf31.png)
 
@@ -179,28 +208,9 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf33.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![框架IO](./images/aemf32.png)
-
-接下來，您應該設定篩選器，以確保只有狀態為&#x200B;**已核准**&#x200B;的資產會呈現PNG檔案。 若要這麼做，請按一下模組&#x200B;**Frame.io — 取得資產**&#x200B;與&#x200B;**Adobe Photoshop — 轉換影像格式**&#x200B;之間的&#x200B;**扳手**&#x200B;圖示，然後選取&#x200B;**設定篩選器**。
-
-![框架IO](./images/aemf34.png)
-
-設定下列欄位：
-
-- **標籤**：使用`Is Asset Approved`。
-- **條件**：從&#x200B;**Frame.io的回應中選取欄位**&#x200B;標籤&#x200B;**— 取得資產**&#x200B;模組。
-- **基本運運算元**：選取&#x200B;**等於**。
-- **值**： `approved`。
-
-按一下&#x200B;**「確定」**。
-
-![框架IO](./images/aemf35.png)
-
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
-
-![框架IO](./images/aemf36.png)
 
 切換回Frame.io並按一下&#x200B;**進行中**&#x200B;欄位，並將狀態變更為&#x200B;**已核准**。
 
@@ -255,11 +265,19 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf47.png)
 
-接著您就會進入&#x200B;**Developer Console**。 按一下&#x200B;**建立新的技術帳戶**。
+移至&#x200B;**工具** > **整合**。
+
+![框架IO](./images/aemf47a.png)
+
+按一下&#x200B;**建立新的技術帳戶**。
 
 ![框架IO](./images/aemf48.png)
 
-您應該會看到類似這樣的內容。 將完整的JSON裝載複製到剪貼簿。
+您應該會看到類似這樣的內容。 開啟新建立的技術帳戶。 按一下3個點&#x200B;**...**，然後選取&#x200B;**檢視**。
+
+![框架IO](./images/aemf48a.png)
+
+接著，您應該會看到類似的技術帳戶Token裝載。 將完整的JSON裝載複製到剪貼簿。
 
 ![框架IO](./images/aemf50.png)
 
@@ -283,7 +301,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf54.png)
 
-輸入名稱`--aepUserLdap-- - Frame.io PNG`並按一下&#x200B;**建立**。
+輸入名稱`--aepUserLdap-- - CitiSignal Fiber Campaign`並按一下&#x200B;**建立**。
 
 ![框架IO](./images/aemf55.png)
 
@@ -291,25 +309,25 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf56.png)
 
-返回Workfront Fusion，按一下&#x200B;**按一下這裡以選擇資料夾**，然後選擇資料夾`--aepUserLdap-- - Frame.io PNG`。
+返回Workfront Fusion，選取&#x200B;**按一下這裡以選擇資料夾**，然後選擇資料夾`--aepUserLdap-- - CitiSignal Fiber Campaign`。
 
 ![框架IO](./images/aemf57.png)
 
-確認目的地已設為`--aepUserLdap-- - Frame.io PNG`。 然後，在&#x200B;**Source檔案**&#x200B;底下，選取&#x200B;**地圖**。
+確認目的地已設為`--aepUserLdap-- - CitiSignal Fiber Campaign`。 然後，在&#x200B;**Source檔案**&#x200B;底下，選取&#x200B;**地圖**。
 
-在&#x200B;**檔案名稱**&#x200B;底下，選擇變數`{{3.filenames[]}}`。
+在&#x200B;**檔案名稱**&#x200B;底下，選擇變數`{{3.filenames[1]}}`。
 
-在&#x200B;**資料**&#x200B;底下，選擇變數`{{3.files[]}}`。
+在&#x200B;**資料**&#x200B;底下，選擇變數`{{3.files[1]}}`。
 
 >[!NOTE]
 >
->可以使用下列語法手動指定Workfront Fusion中的變數： `{{3.filenames[]}}`。 變數中的數字會參考情境中的模組。 在此範例中，您可以看到情境中的第三個模組稱為&#x200B;**Adobe Photoshop — 轉換影像格式**，其序號為&#x200B;**3**。 這表示變數`{{3.filenames[]}}`將會從序號為3的模組存取欄位&#x200B;**檔案名稱[]**。 序號有時可能不同，因此在複製/貼上這類變數時請務必注意，並務必確認所使用的序號是否正確。
+>可以使用下列語法手動指定Workfront Fusion中的變數： `{{3.filenames[1]}}`。 變數中的數字會參考情境中的模組。 在此範例中，您可以看到情境中的第三個模組稱為&#x200B;**Adobe Photoshop — 轉換影像格式**，其序號為&#x200B;**3**。 這表示變數`{{3.filenames[1]}}`將會從序號為3的模組存取欄位&#x200B;**檔案名稱[]**。 序號有時可能不同，因此在複製/貼上這類變數時請務必注意，並務必確認所使用的序號是否正確。
 
 按一下&#x200B;**「確定」**。
 
 ![框架IO](./images/aemf58.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/aemf59.png)
 

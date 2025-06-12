@@ -4,9 +4,9 @@ description: AEM CS - MarTech外掛程式
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1063'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,7 @@ AEM MarTech外掛程式可協助您為AEM專案快速設定完整的MarTech棧�
 >
 >此外掛程式目前可透過共同創新專案，與AEM Engineering共同供客戶使用。 您可以在[https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech)找到更多資訊。
 
-## 1.1.6.1將外掛程式新增至存放庫
+## 1.1.6.1將外掛程式新增至您的存放庫
 
 導覽至您用於&#x200B;**citisignal** GitHub存放庫的資料夾。 在資料夾名稱上按一下滑鼠右鍵，然後選取&#x200B;**資料夾**&#x200B;的新終端機。
 
@@ -82,31 +82,31 @@ const AUDIENCES = {
 };
 ```
 
-在&#x200B;**const AUDIENCES = {...}；**&#x200B;下貼上以下程式碼：
+在&#x200B;**const AUDIENCES = {...}下；**&#x200B;貼上以下程式碼：
 
 ```javascript
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/zh-hant/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -315,7 +315,7 @@ window.setTimeout(() => {
 
 ![AEMCS](./images/mtplugin13.png){zoomable="yes"}
 
-## Tags屬性中的1.1.6.4 ACDL擴充功能
+## 標籤屬性中的1.1.6.4 ACDL延伸
 
 為了讓AEM Edge Delivery Services MarTech外掛程式能夠正常運作，您需要為
 
@@ -335,7 +335,7 @@ window.setTimeout(() => {
 
 ![AEMCS](./images/acdl6.png){zoomable="yes"}
 
-移至&#x200B;**發佈流程**&#x200B;並開啟您的&#x200B;**主要**&#x200B;資料庫。 按一下[新增所有變更的資源]&#x200B;**，然後按一下[儲存並建置至開發]**&#x200B;**。**
+移至&#x200B;**發佈流程**&#x200B;並開啟您的&#x200B;**主要**&#x200B;資料庫。 按一下[新增所有變更的資源]**，然後按一下[儲存並建置至開發]****。**
 
 ![AEMCS](./images/acdl7.png){zoomable="yes"}
 
@@ -343,10 +343,10 @@ window.setTimeout(() => {
 
 ## 1.1.6.5傳送資料至Adobe Experience Platform Edge Network
 
-您現在可以移至`main--citisignal--XXX.aem.page/us/en`及/或`main--citisignal--XXX.aem.live/us/en`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
+您現在可以移至`main--citisignal--XXX.aem.page/us/en/`及/或`main--citisignal--XXX.aem.live/us/en/`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
 
 在此範例中，完整URL會變成：
-`https://main--citisignal--woutervangeluwe.aem.page/us/en`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en`。
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
 
 >[!NOTE]
 >

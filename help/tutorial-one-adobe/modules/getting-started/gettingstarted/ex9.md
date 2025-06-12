@@ -3,9 +3,9 @@ title: 快速入門 — 要安裝的應用程式
 description: 快速入門 — 要安裝的應用程式
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '212'
 ht-degree: 1%
 
 ---
@@ -20,9 +20,15 @@ ht-degree: 1%
 
 ![Adobe I/O新整合](./images/cc.png)
 
-## Photoshop
+## Adobe Photoshop
 
 開啟&#x200B;**Adobe Creative Cloud**&#x200B;應用程式，前往&#x200B;**應用程式**。 在電腦上安裝Photoshop。
+
+![Adobe I/O新整合](./images/psd.png)
+
+## Adobe Illustrator
+
+開啟&#x200B;**Adobe Creative Cloud**&#x200B;應用程式，前往&#x200B;**應用程式**。 在電腦上安裝Illustrator。
 
 ![Adobe I/O新整合](./images/psd.png)
 
