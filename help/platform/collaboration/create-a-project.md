@@ -22,4 +22,4 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
 
-如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}。
+如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/zh-hant/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}。

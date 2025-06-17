@@ -21,9 +21,9 @@ ht-degree: 16%
 
 下方提供影片和其他資源，協助您瞭解如何設定、使用Real-Time CDP Collaboration並從中獲益。 其他資產將新增至此頁面和網站，請經常回來檢視。 學習愉快！
 
-如需詳細資訊，請參閱Real-Time CDP Collaboration [檔案](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}。
+如需詳細資訊，請參閱Real-Time CDP Collaboration [檔案](https://experienceleague.adobe.com/zh-hant/docs/real-time-cdp-collaboration/using/home){target="_blank"}。
 
-[![ExL LIVE 2025年4月10日](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE 2025年4月10日](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/zh-hant/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## 簡介
 
