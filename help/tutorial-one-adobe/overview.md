@@ -3,9 +3,9 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '986'
 ht-degree: 2%
 
 ---
@@ -65,9 +65,13 @@ ht-degree: 2%
 
 [1.2使用Workfront Fusion進行Creative工作流程自動化](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
-在此基本單元中，您將使用Adobe Workfront Fusion來自動化及調整您的內容建立工作流程。
+在本單元中，您將使用Adobe Workfront Fusion來自動化和擴展您的內容建立工作流程。
 
-[1.3 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+[1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+
+在此單元中，您將使用Adobe GenStudio for Performance Marketing，這是適用於行銷和創意團隊的Gen AI第一端對端工作流程應用程式，以數位行銷活動的企業控管來建立、啟用和最佳化全頻道內容。
+
+[1.4 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
 在此基礎單元中，您將使用Adobe Express建立影像和影片，並將這些資產分享至更廣泛的Adobe Experience Cloud生態系統。
 

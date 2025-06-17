@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
+source-git-commit: a9f2e42d001e260f79439850bc5a364a64d1fc0e
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3788'
 ht-degree: 0%
 
 ---
@@ -184,7 +184,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Postman](./images/ffui4.png)
 
-您應該會看到此訊息。 移至&#x200B;**網路**&#x200B;標籤。 接著，再按一下[產生&#x200B;**&#x200B;**]。
+您應該會看到此訊息。 移至&#x200B;**網路**&#x200B;標籤。 接著，再按一下[產生&#x200B;****]。
 
 ![Postman](./images/ffui5.png)
 
@@ -239,13 +239,13 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 現在您已具備有效且新的access_token，接下來就可以將您的第一個要求傳送至Firefly Services API了。
 
-您在這裡使用的要求是&#x200B;**同步**&#x200B;要求，會在幾秒內提供包含要求的影像的回應。
+您在這裡使用的要求是&#x200B;**非同步**&#x200B;要求，此要求會提供您包含已提交之工作URL的回應，這表示您需要使用第二個要求來檢查工作狀態並存取產生的影像。
 
 >[!NOTE]
 >
->隨著Firefly Image 4和Image 4 Ultra的發行，將取代同步要求，而採用非同步要求。 在本教學課程的下方，您將找到有關非同步請求的練習。
+>隨著Firefly Image 4和Image 4 Ultra的發行，將取代同步要求，而採用非同步要求。
 
-從&#x200B;**FF - Firefly Services Tech Insiders**&#x200B;集合中選取名為&#x200B;**POST - Firefly - T2I V3**&#x200B;的請求。 移至&#x200B;**Headers**&#x200B;並驗證索引鍵/值配對組合。
+從&#x200B;**FF - Firefly Services Tech Insiders**&#x200B;集合中選取名為&#x200B;**POST - Firefly - T2I V3 async**&#x200B;的請求。 移至&#x200B;**Headers**&#x200B;並驗證索引鍵/值配對組合。
 
 | 索引鍵 | 值 |
 |:-------------:| :---------------:| 
@@ -254,7 +254,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 此請求中的這兩個值都參照預先定義的環境變數。 `{{API_KEY}}`參考您Adobe I/O專案的欄位&#x200B;**使用者端識別碼**。 在本教學課程的&#x200B;**快速入門**&#x200B;章節中，您已在Postman中完成設定。
 
-欄位&#x200B;**授權**&#x200B;的值是位元特殊： `Bearer {{ACCESS_TOKEN}}`。 它包含您在上一步中產生的&#x200B;**存取權杖**&#x200B;的參考。 當您在&#x200B;**Adobe IO - OAuth**&#x200B;集合中收到使用要求&#x200B;**POST — 取得存取權杖**&#x200B;的&#x200B;**存取權杖**&#x200B;時，Postman中執行的指令碼會將欄位&#x200B;**access_token**&#x200B;儲存為環境變數，現在該指令碼會在要求&#x200B;**POST - Firefly - T2I V3**&#x200B;中參考。 請注意&#x200B;**Bearer**&#x200B;這個字的特定增加以及`{{ACCESS_TOKEN}}`之前的空格。 不記名文字會區分大小寫，而且需要空格。 如果未正確處理此專案，Adobe I/O將會傳回&#x200B;**401 Unauthorized**&#x200B;錯誤，因為它無法正確處理您的&#x200B;**存取Token**。
+欄位&#x200B;**授權**&#x200B;的值是位元特殊： `Bearer {{ACCESS_TOKEN}}`。 它包含您在上一步中產生的&#x200B;**存取權杖**&#x200B;的參考。 當您在&#x200B;**Adobe IO - OAuth**&#x200B;集合中收到使用要求&#x200B;**POST — 取得存取權杖**&#x200B;的&#x200B;**存取權杖**&#x200B;時，Postman中執行的指令碼會將欄位&#x200B;**access_token**&#x200B;儲存為環境變數，現在該指令碼會在要求&#x200B;**POST - Firefly - T2I V3 async**&#x200B;中參照。 請注意&#x200B;**Bearer**&#x200B;這個字的特定增加以及`{{ACCESS_TOKEN}}`之前的空格。 不記名文字會區分大小寫，而且需要空格。 如果未正確處理此專案，Adobe I/O將會傳回&#x200B;**401 Unauthorized**&#x200B;錯誤，因為它無法正確處理您的&#x200B;**存取Token**。
 
 ![Firefly](./images/ff0.png)
 
@@ -262,7 +262,23 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff1.png)
 
-從回應中複製（或按一下）影像URL，並在網頁瀏覽器中開啟以檢視影像。
+然後您會立即收到回應。 此回應不包含產生影像的影像URL，而是包含您啟動之工作的狀態報告URL，且包含另一個可讓您取消執行中工作的URL。
+
+>[!NOTE]
+>
+>您使用的Postman集合已設定為使用動態變數。 例如，欄位&#x200B;**statusUrl**&#x200B;已儲存為Postman中的動態變數，這要歸功於Postman中已設定的&#x200B;**指令碼**。
+
+![Firefly](./images/ff1a.png)
+
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
+
+>[!NOTE]
+>
+>您使用的Postman集合已設定為使用動態變數。 例如，先前請求的欄位&#x200B;**statusUrl**&#x200B;已儲存為Postman中的動態變數，現在正用作&#x200B;**GET - Firefly - Get Status Report**&#x200B;請求的URL。
+
+![Firefly](./images/ff1b.png)
+
+您應該會收到類似的回應。 這是已執行工作的概述。 您可以看到包含產生影像的欄位&#x200B;**url**。 從回應中複製（或按一下）影像URL，並在網頁瀏覽器中開啟以檢視影像。
 
 ![Firefly](./images/ff2.png)
 
@@ -270,7 +286,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff3.png)
 
-在您的請求&#x200B;**POST - Firefly - T2I V3**&#x200B;的&#x200B;**內文**&#x200B;中，在欄位`"promptBiasingLocaleCode": "en-US"`下新增下列內容，並以Firefly Services UI隨機使用的其中一個種子數字取代變數`XXX`。 在此範例中，**seed**&#x200B;編號為`142194`。
+在您的請求&#x200B;**POST - Firefly - T2I V3 async**&#x200B;的&#x200B;**內文**&#x200B;中，在欄位`"promptBiasingLocaleCode": "en-US"`下新增下列專案，並以Firefly Services UI隨機使用的其中一個種子數字取代變數`XXX`。 在此範例中，**seed**&#x200B;編號為`142194`。
 
 ```json
 ,
@@ -279,7 +295,11 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
   ]
 ```
 
-按一下&#x200B;**傳送**。 之後，您會收到Firefly Services產生新影像的回應。 開啟影像進行檢視。
+按一下&#x200B;**傳送**。 您會再次收到回應，其中包含您剛剛提交之工作的狀態報告的連結。
+
+![Firefly](./images/ff3a.png)
+
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 ![Firefly](./images/ff4.png)
 
@@ -287,7 +307,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff5.png)
 
-接著，在您的要求&#x200B;**POST - Firefly - T2I V3**&#x200B;的&#x200B;**內文**&#x200B;中，將下列&#x200B;**樣式**&#x200B;物件貼到&#x200B;**seed**&#x200B;物件下。 這會將產生的影像樣式變更為&#x200B;**art_deco**。
+接著，在您的要求&#x200B;**POST - Firefly - T2I V3 async**&#x200B;的&#x200B;**內文**&#x200B;中，將下列&#x200B;**樣式**&#x200B;物件貼到&#x200B;**種子**&#x200B;物件下。 這會將產生的影像樣式變更為&#x200B;**art_deco**。
 
 ```json
 ,
@@ -300,11 +320,11 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
   }
 ```
 
-然後您應該擁有此專案。 按一下&#x200B;**傳送**。
+然後您應該擁有此專案。 按一下&#x200B;**傳送**。 您會再次收到回應，其中包含您剛剛提交之工作的狀態報告的連結。
 
 ![Firefly](./images/ff6.png)
 
-按一下影像URL以開啟。
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 ![Firefly](./images/ff7.png)
 
@@ -312,7 +332,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff8.png)
 
-從您請求的&#x200B;**Body**&#x200B;移除&#x200B;**seed**&#x200B;物件的程式碼。 按一下&#x200B;**傳送**，然後按一下您從回應中取得的影像URL。
+從&#x200B;**POST - Firefly - T2I V3非同步**&#x200B;請求的&#x200B;**內文**&#x200B;中移除&#x200B;**seed**&#x200B;物件的程式碼。 按一下&#x200B;**傳送**，然後按一下您從回應中取得的影像URL。 您會再次收到回應，其中包含您剛剛提交之工作的狀態報告的連結。
 
 ```json
 ,
@@ -323,13 +343,17 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff9.png)
 
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
+
+![Firefly](./images/ff9a.png)
+
 您的影像現在已再次變更。
 
 ![Firefly](./images/ff10.png)
 
 ## 1.1.1.7 Firefly Services API，一般擴展
 
-從&#x200B;**FF - Firefly Services技術人員**&#x200B;集合中選取名為&#x200B;**POST - Firefly - Gen Expand**&#x200B;的請求，並移至請求的&#x200B;**Body**。
+從&#x200B;**FF - Firefly Services技術人員**&#x200B;集合中選取名為&#x200B;**POST - Firefly - Gen Expand async**&#x200B;的請求，並移至請求的&#x200B;**Body**。
 
 - **大小**：輸入所需的解析度。 此處輸入的值應大於影像的原始大小，且不能大於3999。
 - **image.source.url**：此欄位需要需要需要展開影像的連結。 在此範例中，變數是用來參照上一個練習中產生的影像。
@@ -339,7 +363,11 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff11.png)
 
-按一下回應中的影像URL。
+您會再次收到回應，其中包含您剛剛提交之工作的狀態報告的連結。
+
+![Firefly](./images/ff11a.png)
+
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 ![Firefly](./images/ff12.png)
 
@@ -347,9 +375,27 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff13.png)
 
-當您變更位置對齊方式時，輸出也會稍有不同。 在此範例中，位置已變更為左下&#x200B;**的**。 按一下&#x200B;**傳送**，然後按一下以開啟產生的影像URL。
+使用&#x200B;**Firefly - T2I V3非同步**&#x200B;要求產生新影像。
+
+![Firefly](./images/ff13a.png)
+
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
+
+![Firefly](./images/ff13b.png)
+
+然後您應該會看到類似影像。
+
+![Firefly](./images/ff13c.png)
+
+從&#x200B;**FF - Firefly Services技術人員**&#x200B;集合中選取名為&#x200B;**POST - Firefly - Gen Expand async**&#x200B;的請求，並移至請求的&#x200B;**Body**。
+
+當您變更位置對齊方式時，輸出也會稍有不同。 在此範例中，位置已變更為左下&#x200B;**的**。 按一下&#x200B;**傳送**。 您會再次收到回應，其中包含您剛剛提交之工作的狀態報告的連結。
 
 ![Firefly](./images/ff14.png)
+
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
+
+![Firefly](./images/ff14a.png)
 
 然後您應該會看到原始影像已用於不同的位置，這會影響整個影像。
 
@@ -381,11 +427,11 @@ Firefly Image Model 4為您提供卓越的人類、動物和詳細場景影像�
 
 ![Firefly](./images/ffim4_2.png)
 
-然後您會立即收到回應。 與您使用的先前同步請求相反，此回應不包含產生影像的影像URL。 它包含您啟動之工作的狀態報告的URL，而且包含另一個可讓您取消執行中工作的URL。
+然後您會立即收到回應。 此回應不包含產生影像的影像URL，而是包含您啟動之工作的狀態報告URL，且包含另一個可讓您取消執行中工作的URL。
 
 ![Firefly](./images/ffim4_3.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;**
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。****
 
 ![Firefly](./images/ffim4_4.png)
 
@@ -417,7 +463,7 @@ Firefly Image Model 4為您提供卓越的人類、動物和詳細場景影像�
 
 ![Firefly](./images/ffim4_13.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;**
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。****
 
 ![Firefly](./images/ffim4_14.png)
 
@@ -445,7 +491,7 @@ Firefly Image Model 4為您提供卓越的人類、動物和詳細場景影像�
 
 ![Firefly](./images/ffim4_18.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;** 選取所產生影像的URL，然後在瀏覽器中開啟。
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 ![Firefly](./images/ffim4_19.png)
 
