@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: badef353b0df7b678e05d2e89280393b56fd65b6
+source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3352'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ ht-degree: 0%
 
 ## 1.2.5.4 Frame.io V4自訂動作API
 
-移至Postman並開啟要求&#x200B;**POST — 取得集合** Adobe IO - OAuth **中的存取權杖**。 驗證&#x200B;**引數**&#x200B;下的欄位&#x200B;**領域**。 欄位&#x200B;**範圍**&#x200B;應包含範圍`frame.s2s.all`。 如果遺失，請新增它。 接著，按一下[傳送]，要求新的&#x200B;**access_token**。**&#x200B;**
+移至Postman並開啟要求&#x200B;**POST — 取得集合** Adobe IO - OAuth **中的存取權杖**。 驗證&#x200B;**引數**&#x200B;下的欄位&#x200B;**領域**。 欄位&#x200B;**範圍**&#x200B;應包含範圍`frame.s2s.all`。 如果遺失，請新增它。 接著，按一下[傳送]，要求新的&#x200B;**access_token**。****
 
 ![框架IO](./images/frameV4api2.png)
 
@@ -257,7 +257,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame31.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/frame32.png)
 
@@ -445,7 +445,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame63.png)
 
-將&#x200B;**儲存體**&#x200B;變更為&#x200B;**外部**，並變更&#x200B;**檔案位置**&#x200B;以僅使用從傳入&#x200B;**自訂webhook**&#x200B;模組取得的&#x200B;**psdTemplate**&#x200B;變數。 按一下[確定]&#x200B;**&#x200B;**，然後按一下[儲存]&#x200B;**&#x200B;**&#x200B;儲存您的變更。
+將&#x200B;**儲存體**&#x200B;變更為&#x200B;**外部**，並變更&#x200B;**檔案位置**&#x200B;以僅使用從傳入&#x200B;**自訂webhook**&#x200B;模組取得的&#x200B;**psdTemplate**&#x200B;變數。 按一下[確定]****，然後按一下[儲存]****&#x200B;儲存您的變更。
 
 ![框架IO](./images/frame64.png)
 
@@ -470,7 +470,7 @@ ht-degree: 0%
 ![框架IO](./images/frame69.png)
 
 將&#x200B;**主體型別**&#x200B;設定為&#x200B;**原始**，並將&#x200B;**內容型別**&#x200B;設定為&#x200B;**JSON (application/json)**。
-將下列JSON裝載貼到欄位&#x200B;**要求內容**&#x200B;中，並啟用&#x200B;**剖析回應**&#x200B;的核取方塊。
+將下列JSON裝載貼到欄位**要求內容**&#x200B;中，並啟用&#x200B;**剖析回應**&#x200B;的核取方塊。
 
 ```json
 {
@@ -498,7 +498,7 @@ ht-degree: 0%
 
 ![框架IO](./images/frame72.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/frame73.png)
 
@@ -524,14 +524,12 @@ ht-degree: 0%
 
 針對模組&#x200B;**Frame.io — 進行自訂API呼叫**，使用URL： `/v4/accounts/{{1.account_id}}/folders/{{4.body.data.parent_id}}/files/remote_upload`。
 
-您需要以資料夾的ID取代上述URL中的XXX
-
 >[!NOTE]
 >
 >如前所述，可以使用以下語法手動指定Workfront Fusion中的變數： `{{1.account_id}}`和`{{4.body.data.parent_id}}`。 變數中的數字會參考情境中的模組。
->&#x200B;>在此範例中，您可以看到情境中的第一個模組稱為&#x200B;**Webhooks**，其序號為&#x200B;**1**。 這表示變數`{{1.account_id}}`會從序號為1的模組存取該欄位。
->&#x200B;>在此範例中，您可以看到情境中的第四個模組稱為&#x200B;**Frame.io — 進行自訂API呼叫**，其序號為&#x200B;**4**。 這表示變數`{{4.body.data.parent_id}}`將會從序號為4的模組存取該欄位。
->&#x200B;>如果模組的序號不同，您必須更新上述URL中的變數，才能連結至正確的模組。
+>>在此範例中，您可以看到情境中的第一個模組稱為&#x200B;**Webhooks**，其序號為&#x200B;**1**。 這表示變數`{{1.account_id}}`會從序號為1的模組存取該欄位。
+>>在此範例中，您可以看到情境中的第四個模組稱為&#x200B;**Frame.io — 進行自訂API呼叫**，其序號為&#x200B;**4**。 這表示變數`{{4.body.data.parent_id}}`將會從序號為4的模組存取該欄位。
+>>如果模組的序號不同，您必須更新上述URL中的變數，才能連結至正確的模組。
 
 ![框架IO](./images/frame78.png)
 
@@ -551,13 +549,13 @@ ht-degree: 0%
 >[!NOTE]
 >
 >可以使用下列語法手動指定Workfront Fusion中的變數： `{{6.data.newPsdTemplate}}`。 變數中的數字會參考情境中的模組。 在此範例中，您可以看到情境中的第六個模組稱為&#x200B;**HTTP — 提出要求**，其序號為&#x200B;**6**。 這表示變數`{{6.data.newPsdTemplate}}`將會從序號為6的模組存取欄位&#x200B;**data.newPsdTemplate**。
->&#x200B;>如果模組的序號不同，您必須更新上述URL中的變數，才能連結至正確的模組。
+>>如果模組的序號不同，您必須更新上述URL中的變數，才能連結至正確的模組。
 
 按一下&#x200B;**「確定」**。
 
 ![框架IO](./images/frame79.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/frame81.png)
 

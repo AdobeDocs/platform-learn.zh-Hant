@@ -3,7 +3,7 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 2%
@@ -41,9 +41,9 @@ ht-degree: 2%
 完成本教學課程中的部分模組後，您可以參加Adobe認證測驗，以取得&#x200B;**Adobe合格**&#x200B;徽章。
 
 - 當您完成[Adobe Firefly Services概述](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}模組時，您已準備好可以參加並通過&#x200B;**Adobe合格**&#x200B;考試&#x200B;**AD2-E901**：
-  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential)。
-- 當您使用Workfront Fusion完成模組[Creative工作流程自動化](./modules/creation-production/module1.2/automation.md){target="_blank"}時，您已準備好可以參加並通過&#x200B;**Adobe合格**&#x200B;考試&#x200B;**XXX**：
-  [TBC](https://certification.adobe.com/certification/services-qualified-credential)。
+  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}。
+- 當您使用Workfront Fusion完成模組[Creative工作流程自動化](./modules/creation-production/module1.2/automation.md){target="_blank"}時，您已準備好可以參加並通過&#x200B;**Adobe合格**&#x200B;考試&#x200B;**AD2-E902**：
+  [https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}。
 
 ## 內容狀態
 
