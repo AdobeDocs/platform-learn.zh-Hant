@@ -5,18 +5,27 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 32f7cfc1aafb7a58dca99be3be9149c90bcfd040
+exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '948'
 ht-degree: 0%
 
 ---
 
 # 1.3.2設定：角色、產品和範本
 
+移至[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 開啟&#x200B;**GenStudio**。
+
+![GSPeM](./images/gspem1.png)
+
 ## 1.3.2.1產品
 
-按一下3個點&#x200B;**...**，然後選取&#x200B;**產品**。
+GenStudio for Performance Marketing中的產品可運用對產品規格、優勢和差異因素的深入瞭解，以產生具影響力的內容。
+
+產品包含特定產品的所有元素，例如影像、說明和價值主張，以建立有凝聚力的品牌代表。 運用Adobe的進階AI技術，GenStudio for Performance Marketing准則（品牌、產品和角色）共同合作產生吸引人的內容，展現您產品的優勢，並確保所有傳訊的一致性。
+
+若要開始建立您自己的產品，請按一下3個點&#x200B;**...**，然後選取&#x200B;**產品**。
 
 ![GSPeM](./images/gspem101.png)
 
@@ -102,7 +111,11 @@ Smart Home Families: “Every room. Every device. Always on. Welcome to whole-ho
 
 ## 1.3.2.2角色
 
-按一下3個點&#x200B;**...**，然後選取&#x200B;**角色**。
+角色可真實地呈現客戶區段，包含其資訊、興趣、痛點、偏好設定和行為特徵。
+
+GenStudio for Performance Marketing運用指引的力量（品牌、產品和角色）和Adobe的創作AI技術，為您的目標客戶組織個人化行銷內容&#x200B;。
+
+若要開始建立您的角色，請按一下3個點&#x200B;**...**，然後選取&#x200B;**角色**。
 
 ![GSPeM](./images/gspem111.png)
 
@@ -213,6 +226,10 @@ Messaging that highlights “work-from-anywhere” flexibility
 ![GSPeM](./images/gspem124.png)
 
 ## 1.3.2.3個範本
+
+GenStudio for Performance Marketing可讓內容建立者使用範本快速產生一致的品牌上行銷內容。 範本提供起點，包含預先設定的版面和設計元素，可大幅減少產生新內容所需的時間和精力。
+
+雖然GenStudio for Performance Marketing不支援直接在應用程式中建立範本，但您可以使用熱門設計工具(例如Adobe InDesign、Illustrator或Express)輕鬆設計和準備範本。 設計完成後，您可以加以調整以用於GenStudio for Performance Marketing。 在本練習中，您會將許多預先定義的範本匯入至GenStudio for Performance Marketing。
 
 在上一個練習中，您將[CitiSignal-GSPeM-assets.zip](../../../assets/gspem/CitiSignal-GSPeM-assets.zip)檔案下載到您的案頭並解壓縮。 該資料夾包含4個範例範本，您現在需要將這些範本匯入GenStudio。
 

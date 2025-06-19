@@ -5,15 +5,28 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
+exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 9%
+source-wordcount: '437'
+ht-degree: 2%
 
 ---
 
 # 1.3 GenStudio for Performance Marketing
 
+Adobe GenStudio for Performance Marketing提供全方位的工具套件，用於簡化內容建立、管理和分析。 它透過創作AI功能注入內容建立生命週期，轉變行銷內容的建立、檢閱、共用及分析方式。
+
+GenStudio for Performance Marketing會使用有關您的品牌和市場的資訊，來增強建立符合品牌規範的內容。 創作AI運用客戶角色、產品和品牌指引的說明，引導內容產生符合您組織的需求。
+
+為了有效使用創作AI功能來建立和檢閱行銷活動資產，需要執行幾個步驟：
+
+- 設定指南：品牌指南會擷取品牌特性，例如產品、角色和品牌詳細資訊。 GenStudio for Performance Marketing的基本創作AI功能會使用這些准則來建立護欄，以引導內容產生。 您可以上傳品牌指引檔案或手動輸入品牌資訊。
+- 上傳範本：範本可加速內容建立。 範本包含已核准的功能，例如頁首和頁尾，針對特定管道進行最佳化。 系統管理員通常會上傳和管理其組織的範本。 內容編輯人員可使用範本，在組織品牌的既定界限內，快速啟動內容建立程式。
+- 上傳已核准的資產： 「內容」中的已核准資產可供所有GenStudio for Performance Marketing編輯使用。 您可以將資產填入內容中，以供內容編輯人員用於建立新體驗或資產。
+- 連線至付費媒體帳戶：設定GenStudio for Performance Marketing與您的付費媒體帳戶之間的連線，以接收來自有效行銷活動、資產和體驗的資料。 使用深入分析來分析管道衍生的資料。
+
+在本單元中，您將學習如何自行執行上述所有步驟，並將廣告發佈到付費媒體目的地以完成單元。
 
 ## 先決條件
 
@@ -28,6 +41,10 @@ ht-degree: 9%
 [1.3.2設定：角色、產品和範本](./ex2.md){target="_blank"}
 
 在本練習中，您將設定GenStudio for Performance Marketing中的角色和產品。
+
+[1.3.3 Meta的行銷活動啟用](./ex3.md){target="_blank"}
+
+在本練習中，您將設定與中繼的連線，並將逐步完成建立廣告、使用Adobe Workfront核准廣告，以及將廣告發佈到中繼所需的所有步驟。
 
 [摘要與優點](./summary.md){target="_blank"}
 
