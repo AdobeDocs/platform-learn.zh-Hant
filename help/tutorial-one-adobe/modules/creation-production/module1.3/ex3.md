@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: b247307c3b01df2b67b2ff4301f0b7d442b725c0
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >為了完成此練習，您需要具有啟用AEM Content Hub之有效AEM Assets CS製作環境的存取權。 如果您按照練習[Adobe Experience Manager Cloud Service和Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}，您將有權存取這樣的環境。
+
+>[!IMPORTANT]
+>
+>為了執行本練習中的所有步驟，您需要具有現有Adobe Workfront環境的存取權，而且在該環境中，您需要已建立專案和核准工作流程。 如果您使用Adobe Workfront](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}進行[工作流程管理練習，您將具備所需的設定。
 
 >[!IMPORTANT]
 >
@@ -169,7 +173,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsasset5.png)
 
-將CitiSignal標誌放在左上角。
+將CitiSignal標誌放在影像上方，中間不遠。
 
 ![GSPeM](./images/gsasset6.png)
 
@@ -223,7 +227,124 @@ Zip codes with underserved or dissatisfied cable customers
 
 ## 1.3.3.4建立和核准中繼廣告
 
+在左側功能表中，移至&#x200B;**建立**。 選取&#x200B;**Meta**。
+
+![GSPeM](./images/gsad1.png)
+
+選取您之前匯入的&#x200B;**中繼廣告**&#x200B;範本，其名稱為`--aepUserLdap---citisignal-meta-ad`。 按一下&#x200B;**使用**。
+
+![GSPeM](./images/gsad2.png)
+
+您應該會看到此訊息。 將廣告名稱變更為`--aepUserLdap-- - Meta Ad Fiber Max`。
+
+在&#x200B;**引數**&#x200B;下，選取下列選項：
+
+- **品牌**： `--aepUserLdap-- - CitiSignal`
+- **語言**： `English (US)`
+- **角色**： `--aepUserLdap-- - Smart Home Families`
+- **產品**： `--aepUserLdap-- - CitiSignal Fiber Max`
+
+按一下&#x200B;**從內容選取**。
+
+![GSPeM](./images/gsad3.png)
+
+選取資產`--aepUserLdap-- - neon rabbit.png`。 按一下&#x200B;**使用**。
+
+![GSPeM](./images/gsad4.png)
+
+輸入提示`focus on lightning fast internet for big families`並按一下&#x200B;**產生**。
+
+![GSPeM](./images/gsad5.png)
+
+您應該會看到類似這樣的內容。 您的廣告現在已準備好接受稽核和核准。 若要這麼做，請按一下&#x200B;**要求核准**，這會連線至Adobe Workfront。
+
+![GSPeM](./images/gsad6.png)
+
+選取您應命名為`--aepUserLdap-- - CitiSignal Fiber Launch`的Adobe Workfront專案。 在&#x200B;**邀請朋友**&#x200B;下輸入您自己的電子郵件地址，並確定您的角色已設為&#x200B;**核准者**。
+
+![GSPeM](./images/gsad7.png)
+
+或者，您也可以使用Adobe Workfront中的現有核准工作流程。 若要這麼做，請按一下&#x200B;**[使用範本**]並選取範本`--aepuserLdap-- - Approval Workflow`。 按一下&#x200B;**傳送**。
+
+![GSPeM](./images/gsad8.png)
+
+按一下&#x200B;**在Workfront中檢視評論**，您現在將會被傳送到Adobe Workfront校訂UI。
+
+![GSPeM](./images/gsad9.png)
+
+在Adobe Workfront校訂UI中，按一下&#x200B;**做出決定**。
+
+![GSPeM](./images/gsad10.png)
+
+選取&#x200B;**已核准**&#x200B;並按一下&#x200B;**做出決定**。
+
+![GSPeM](./images/gsad11.png)
+
+按一下&#x200B;**發佈**。
+
+![GSPeM](./images/gsad12.png)
+
+選取您的行銷活動`--aepUserLdap-- - CitiSignal Fiber Launch Campaign`並按一下&#x200B;**發佈**。
+
+![GSPeM](./images/gsad13.png)
+
+按一下&#x200B;**在內容中開啟**。
+
+![GSPeM](./images/gsad14.png)
+
+4個中繼廣告現在可在&#x200B;**內容** > **體驗**&#x200B;下使用。
+
+![GSPeM](./images/gsad15.png)
+
 ## 1.3.3.5將廣告發佈至中繼資料
+
+選取其中一個廣告，然後按一下[啟用]。****
+
+![GSPeM](./images/gsmetaad1.png)
+
+從清單中選擇&#x200B;**Call to action**&#x200B;並輸入範例URL。 按一下&#x200B;**下一步**。
+
+![GSPeM](./images/gsmetaad3.png)
+
+選取中繼帳戶、連結的Facebook頁面、中繼行銷活動以及中繼廣告集。
+
+提供您的新增名稱，使用`--aepUserLdap-- Fiber Max Ad`。
+
+按一下&#x200B;**下一步**。
+
+![GSPeM](./images/gsmetaad4.png)
+
+按一下&#x200B;**發佈**。
+
+![GSPeM](./images/gsmetaad5.png)
+
+按一下&#x200B;**「確定」**。
+
+![GSPeM](./images/gsmetaad6.png)
+
+您的廣告狀態現在設為&#x200B;**發佈**，這可能需要幾分鐘的時間。
+
+![GSPeM](./images/gsmetaad7.png)
+
+幾分鐘後，廣告的狀態將變更為&#x200B;**已發佈**。 這表示廣告已從GenStudio for Performance Marketing傳送至Meta。 這並不表示廣告已經在Meta中發佈！ 在中繼業務帳戶中仍需執行一些步驟來製作和發佈廣告，以便讓使用者可以在各種中繼平台上看到。
+
+按一下&#x200B;**檢視詳細資料**。
+
+![GSPeM](./images/gsmetaad8.png)
+
+按一下&#x200B;**開啟**，即可前往您的中繼企業帳戶。
+
+>[!IMPORTANT]
+>
+>如果您沒有連線至您環境的中繼企業帳戶的存取權，那麼您將無法在中繼中視覺化此廣告。
+
+![GSPeM](./images/gsmetaad9.png)
+
+以下是您剛才已建立廣告的概觀，現在位於中繼中。
+
+![GSPeM](./images/gsmetaad10.png)
+
+您現在已經完成此練習。
 
 ## 後續步驟
 
