@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->為了執行本練習中的所有步驟，您需要具有現有Adobe Workfront環境的存取權，而且在該環境中，您需要已建立專案和核准工作流程。 如果您使用Adobe Workfront](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}進行[工作流程管理練習，您將具備所需的設定。
+>為了執行本練習中的所有步驟，您需要具有現有Adobe Workfront環境的存取權，而且在該環境中，您需要已建立專案和核准工作流程。 如果您使用Adobe Workfront[&#128279;](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}進行工作流程管理練習，您將具備所需的設定。
 
 >[!IMPORTANT]
 >
@@ -298,7 +298,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ## 1.3.3.5將廣告發佈至中繼資料
 
-選取其中一個廣告，然後按一下[啟用]。****
+選取其中一個廣告，然後按一下[啟用]。**&#x200B;**
 
 ![GSPeM](./images/gsmetaad1.png)
 
