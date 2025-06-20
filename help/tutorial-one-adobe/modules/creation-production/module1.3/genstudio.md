@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '462'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,9 @@ GenStudio for Performance Marketing會使用有關您的品牌和市場的資訊
 
 ## 先決條件
 
-- 存取Adobe GenStudio for Performance Marketing [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
+- 存取Adobe GenStudio for Performance Marketing
+- 存取Adobe Workfront和Adobe Workfront Planning
+- 存取已啟用Content Hub的Adobe Experience Manager Cloud Service沙箱
 
 ## 練習
 
@@ -40,11 +42,11 @@ GenStudio for Performance Marketing會使用有關您的品牌和市場的資訊
 
 [1.3.2設定：角色、產品和範本](./ex2.md){target="_blank"}
 
-在本練習中，您將設定GenStudio for Performance Marketing中的角色和產品。
+在本練習中，您將設定GenStudio for Performance Marketing中的角色、產品和範本。
 
 [1.3.3 Meta的行銷活動啟用](./ex3.md){target="_blank"}
 
-在本練習中，您將設定與中繼的連線，並將逐步完成建立廣告、使用Adobe Workfront核准廣告，以及將廣告發佈到中繼所需的所有步驟。
+在本練習中，您將建立一個行銷活動。 您也會設定與中繼的連線，並逐步完成建立廣告、使用Adobe Workfront核准廣告，以及將廣告發佈到中繼所需的所有步驟。
 
 [摘要與優點](./summary.md){target="_blank"}
 

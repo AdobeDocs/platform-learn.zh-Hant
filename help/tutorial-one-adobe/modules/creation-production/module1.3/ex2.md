@@ -1,23 +1,21 @@
 ---
-title: Adobe Express快速入門
-description: Adobe Express快速入門
+title: GenStudio for Performance Marketing設定角色產品範本
+description: GenStudio for Performance Marketing設定角色產品範本
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
+source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
 
 # 1.3.2設定：角色、產品和範本
 
-移至[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 開啟&#x200B;**GenStudio**。
-
-![GSPeM](./images/gspem1.png)
+在本練習中，您將設定GenStudio for Performance Marketing中的角色、產品和範本。
 
 ## 1.3.2.1產品
 

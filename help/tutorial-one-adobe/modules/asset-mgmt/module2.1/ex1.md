@@ -4,10 +4,10 @@ description: 建立您的Cloud Manager程式
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 1bcc5123f16dbde30877662159e06d61d75e7287
+source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '360'
+ht-degree: 3%
 
 ---
 
@@ -76,7 +76,34 @@ ht-degree: 4%
 
 然後您會看到您的環境詳細資料，包括&#x200B;**作者**&#x200B;環境的URL，您將在下一個練習中用到此URL。
 
+請檢視&#x200B;**Content Hub**&#x200B;行，然後選取&#x200B;**按一下以啟用**。
+
 ![AEMCS](./images/aemcs10.png)
+
+按一下&#x200B;**啟動**。
+
+![AEMCS](./images/aemcsact1.png)
+
+**Content Hub**&#x200B;啟用現已開始。 這可能需要10分鐘或更長時間。
+
+![AEMCS](./images/aemcsact2.png)
+
+大約10分鐘後，將完成&#x200B;**Content Hub**的啟用。
+接下來，檢視**Dynamic Media**&#x200B;行，並選取&#x200B;**按一下以啟用**。
+
+![AEMCS](./images/aemcsact3.png)
+
+按一下&#x200B;**啟動**。
+
+![AEMCS](./images/aemcsact4.png)
+
+**Dynamic Media**&#x200B;啟用現已開始。 這可能需要10分鐘或更長時間。
+
+![AEMCS](./images/aemcsact5.png)
+
+大約10分鐘後，將完成&#x200B;**Dynamic Media**&#x200B;的啟動。
+
+![AEMCS](./images/aemcsact6.png)
 
 管道執行完成後，您可以繼續進行下一個練習。
 
