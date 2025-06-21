@@ -18,4 +18,4 @@ ht-degree: 1%
 
 本影片將逐步解說說明Adobe Experience Platform即時客戶個人檔案功能的概觀圖表。 如需詳細資訊，請瀏覽[即時客戶個人檔案檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/33600?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3463975?learn=on&enablevpops&captions=chi_hant)

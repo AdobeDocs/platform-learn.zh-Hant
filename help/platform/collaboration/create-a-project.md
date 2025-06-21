@@ -20,6 +20,6 @@ ht-degree: 0%
 
 瞭解在Collaboration中建立專案的基本知識，包括探索、啟用和測量的簡短審視。
 
->[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464045/?learn=on&enablevpops&captions=chi_hant)
 
 如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/zh-hant/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}。

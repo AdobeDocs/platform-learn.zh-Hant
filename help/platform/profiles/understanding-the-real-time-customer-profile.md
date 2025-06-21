@@ -35,7 +35,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="即時客戶個人檔案的概觀圖表" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="即時客戶個人檔案的概觀圖表"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463975?format=jpeg&nocache=1740415066741&captions=chi_hant" alt="即時客戶個人檔案的概觀圖表"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
