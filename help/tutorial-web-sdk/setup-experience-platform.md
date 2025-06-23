@@ -44,7 +44,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ## 建立資料集
 
-所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
+所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
 
 讓我們為您的Luma Web事件資料設定資料集：
 
@@ -160,7 +160,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!INFO]
 >
->  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
+>  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/queries/explore-data)。
 
 
 ## 為即時客戶個人檔案啟用資料集和結構描述

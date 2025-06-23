@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 使用Adobe Experience Platform Web SDK設定Adobe Analytics
 
-瞭解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)設定Adobe Analytics、建立標籤規則以將資料傳送至Adobe Analytics，以及驗證Analytics是否如預期擷取資料。
+瞭解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/web-sdk/overview)設定Adobe Analytics、建立標籤規則以將資料傳送至Adobe Analytics，以及驗證Analytics是否如預期擷取資料。
 
 [Adobe Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics)是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * 熟悉並存取Adobe Analytics。
 
-* 至少要有一個測試/開發報表套裝ID。 如果您沒有可用於本教學課程的測試/開發報表套裝，[請建立一個](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
+* 至少要有一個測試/開發報表套裝ID。 如果您沒有可用於本教學課程的測試/開發報表套裝，[請建立一個](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
 
 * 完成本教學課程之初始設定和標籤設定區段中先前的課程。
 
