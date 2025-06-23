@@ -5,9 +5,9 @@ feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-3139
-thumbnail: 29795.jpg
+last-substantial-update: 2025-06-23T00:00:00Z
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
-source-git-commit: 8092c5f120a51b35f068261b70131ef303b4c51d
+source-git-commit: b0466e114d657c2584b23bfd76e4f6c185c83c06
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 13%
@@ -16,7 +16,7 @@ ht-degree: 13%
 
 # 查詢服務與資料Distiller概觀
 
-Adobe Experience Platform Query Service可讓使用者利用SQL探索、驗證及轉換儲存在Data Lake中的客戶體驗資料，並透過Data Distiller附加元件提供增強功能，例如資料輸出和排程。 此影片提供核心功能概觀，可協助使用者瞭解如何跨各種平台應用程式利用查詢服務。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/query/home)。
+Adobe Experience Platform Query Service可讓使用者利用SQL探索、驗證及轉換儲存在Data Lake中的客戶體驗資料，並透過Data Distiller附加元件提供增強功能，例如資料輸出和排程。 此影片提供核心功能概觀，可協助使用者瞭解如何跨各種平台應用程式利用查詢服務。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
@@ -186,7 +186,7 @@ Adobe Experience Platform Query Service可讓使用者利用SQL探索、驗證�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-data-in-the-datalake.md" title="使用查詢服務驗證Datalake中的資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445688?format=jpeg&nocache=1740415312076&captions=chi_hant" alt="使用查詢服務驗證Datalake中的資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416130?format=jpeg&nocache=1740415312076" alt="使用查詢服務驗證Datalake中的資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -326,7 +326,7 @@ Adobe Experience Platform Query Service可讓使用者利用SQL探索、驗證�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="為您的客戶資料重新充電，提供絕佳的體驗" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454957?format=jpeg&nocache=1740415313218&captions=chi_hant" alt="為您的客戶資料重新充電，提供絕佳的體驗"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1740415313218" alt="為您的客戶資料重新充電，提供絕佳的體驗"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
