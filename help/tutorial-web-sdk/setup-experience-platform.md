@@ -3,10 +3,10 @@ title: 透過Platform Web SDK將資料串流至Adobe Experience Platform
 description: 瞭解如何使用網頁SDK將網頁資料串流至Adobe Experience Platform。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 5%
+source-wordcount: '2307'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ## 建立資料集
 
-所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
+所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
 
 讓我們為您的Luma Web事件資料設定資料集：
 
@@ -160,7 +160,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!INFO]
 >
->  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/queries/explore-data)。
+>  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
 
 
 ## 為即時客戶個人檔案啟用資料集和結構描述
@@ -252,11 +252,15 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 您現在已啟用Experience Platform (和Real-Time CDP適用的Platform Web SDK！ 以及Journey Optimizer！ 和Customer Journey Analytics！)。
 
+## 建立Edge評估的對象
+
+建議使用Real-Time Customer Data Platform和Journey Optimizer的客戶完成此練習。
+
+將Web SDK資料擷取至Adobe Experience Platform時，其他您已擷取至Platform的資料來源可豐富該資料。 例如，當使用者登入Luma網站時，身分圖表會在Experience Platform中建構，而所有其他已啟用設定檔的資料集可能會連結在一起，以建置即時客戶設定檔。 為了實際操作，您將會在Adobe Experience Platform中快速建立另一個資料集，其中包含一些忠誠度資料範例，好讓您可以搭配Real-Time Customer Data Platform和Journey Optimizer使用即時客戶設定檔。 然後，您將根據此資料建置對象。
+
 ### 建立忠誠度方案並擷取範例資料
 
-Real-Time Customer Data Platform和Journey Optimizer的客戶可望完成此練習。
-
-將Web SDK資料擷取至Adobe Experience Platform時，其他您已擷取至Platform的資料來源可豐富該資料。 例如，當使用者登入Luma網站時，身分圖表會在Experience Platform中建構，而所有其他已啟用設定檔的資料集可能會連結在一起，以建置即時客戶設定檔。 若要實際瞭解此情況，請在Adobe Experience Platform中快速建立另一個資料集，其中包含一些忠誠度資料範例，以便您可以搭配Real-Time Customer Data Platform和Journey Optimizer使用即時客戶設定檔。 由於您已完成類似的練習，因此會提供簡短的指示。
+由於您已完成類似的練習，因此會提供簡短的指示。
 
 建立熟客方案：
 
@@ -282,9 +286,33 @@ Real-Time Customer Data Platform和Journey Optimizer的客戶可望完成此練�
 
    ![熟客方案](assets/web-channel-loyalty-dataset.png)
 
+
+### 設定Edge上主動的合併原則
+
+所有對象都是使用合併原則建立的。 合併原則會建立設定檔的不同「檢視」、可以包含資料集的子集，並會在不同的資料集貢獻相同的設定檔屬性時指定優先順序。 若要在邊緣進行評估，對象必須使用具有&#x200B;**[!UICONTROL Edge上主動式合併原則]**&#x200B;設定的合併原則。
+
+
+>[!IMPORTANT]
+>
+>每個沙箱只能有一個合併原則，**[!UICONTROL Edge上的Active合併原則]**&#x200B;設定
+
+
+1. 開啟Experience Platform或Journey Optimizer介面，並確定您是在本教學課程使用的開發環境中。
+1. 導覽至&#x200B;**[!UICONTROL 客戶]** > **[!UICONTROL 設定檔]** > **[!UICONTROL 合併原則]**&#x200B;頁面
+1. 開啟&#x200B;**[!UICONTROL 預設合併原則]** （可能名為`Default Timebased`）
+   ![建立客群](assets/merge-policy-open-default.png)
+1. 啟用&#x200B;**[!UICONTROL Edge上主動式合併原則]**&#x200B;設定
+1. 選取&#x200B;**[!UICONTROL 下一步]**
+
+   ![建立客群](assets/merge-policy-set-active-on-edge.png)
+1. 繼續選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以繼續完成工作流程的其他步驟，並選取&#x200B;**[!UICONTROL 完成]**以儲存您的設定
+   ![建立客群](assets/merge-policy-finish.png)
+
+您現在可以建立對象，以便在Edge上評估。
+
 ### 建立客群
 
-對象會根據常見特徵將設定檔分組。 建立可在網路行銷活動中使用的快速受眾：
+對象會根據常見特徵將設定檔分組。 建立可在Real-Time CDP或Journey Optimizer中使用的簡單受眾：
 
 1. 在Experience Platform或Journey Optimizer介面中，前往左側導覽中的&#x200B;**[!UICONTROL 客戶]** > **[!UICONTROL 對象]**
 1. 選取&#x200B;**[!UICONTROL 建立對象]**
@@ -301,6 +329,11 @@ Real-Time Customer Data Platform和Journey Optimizer的客戶可望完成此練�
 1. 選取&#x200B;**[!UICONTROL 儲存]**
 
    ![定義客群](assets/web-campaign-define-audience.png)
+
+>[!NOTE]
+>
+> 由於我們已將預設的合併原則設為&#x200B;**[!UICONTROL Edge上主動式合併原則]**，因此您建立的對象會自動與此合併原則產生關聯。
+
 
 由於這是非常簡單的對象，因此我們可以使用Edge評估方法。 Edge對象會在邊緣進行評估，因此在網站SDK向Platform Edge Network提出的相同請求中，我們可以評估對象定義，並立即確認使用者是否符合資格。
 

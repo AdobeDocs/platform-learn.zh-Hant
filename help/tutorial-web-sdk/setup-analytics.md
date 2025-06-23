@@ -4,16 +4,16 @@ description: 瞭解如何使用Experience Platform Web SDK設定Adobe Analytics�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
 
 # 使用Adobe Experience Platform Web SDK設定Adobe Analytics
 
-瞭解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/web-sdk/overview)設定Adobe Analytics、建立標籤規則以將資料傳送至Adobe Analytics，以及驗證Analytics是否如預期擷取資料。
+瞭解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)設定Adobe Analytics、建立標籤規則以將資料傳送至Adobe Analytics，以及驗證Analytics是否如預期擷取資料。
 
 [Adobe Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics)是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * 熟悉並存取Adobe Analytics。
 
-* 至少要有一個測試/開發報表套裝ID。 如果您沒有可用於本教學課程的測試/開發報表套裝，[請建立一個](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
+* 至少要有一個測試/開發報表套裝ID。 如果您沒有可用於本教學課程的測試/開發報表套裝，[請建立一個](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
 
 * 完成本教學課程之初始設定和標籤設定區段中先前的課程。
 
@@ -106,8 +106,8 @@ Analytics產品字串的個別區段是透過`productListItems`物件下的不�
 >[!NOTE]
 >
 >自2022年8月18日起，`productListItems[].SKU`優先對應至s.products變數中的產品名稱。
->&#x200B;>只有在`productListItems[].SKU`不存在時，設定為`productListItems[].name`的值才會對應至產品名稱。 否則，它將會取消對應，並可在內容資料中使用。
->&#x200B;>請勿將空字串或Null設定為`productListItems[].SKU`。 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
+>>只有在`productListItems[].SKU`不存在時，設定為`productListItems[].name`的值才會對應至產品名稱。 否則，它將會取消對應，並可在內容資料中使用。
+>>請勿將空字串或Null設定為`productListItems[].SKU`。 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
 
 
 ### 在資料物件中設定變數
@@ -254,7 +254,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 保留&#x200B;**[!UICONTROL 擴充功能]**&#x200B;為&#x200B;**[!UICONTROL 核心]**
 
-1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**的**&#x200B;路徑
+1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;]**的**[!UICONTROL &#x200B;路徑
 
 1. 在右側，保留&#x200B;**[!UICONTROL Regex]**&#x200B;切換功能為停用
 
@@ -366,6 +366,10 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 1. 尋找`[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`。
 1. 向下捲動以檢視`[!UICONTROL gn]`變數。 這是`[!UICONTROL s.pageName]`變數的Analytics動態語法。 它會從資料層擷取頁面名稱。
 
+   >[!NOTE]
+   >
+   > 如果您在先前的練習中使用`data`物件覆寫`xdm`物件，`gn`值可能是`test`。
+
    ![Analytics產品字串](assets/analytics-debugger-edge-page-view.png)
 
 ### 產品字串和電子商務事件驗證
@@ -389,7 +393,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    >[!TIP]
    >
-   > `ecommerce - pdp library loaded - AA (order 20)`規則正在覆寫`all pages global content variables - library loaded - AA (order 1)`規則設定的`eventType`的值，因為它設定為稍後在順序中觸發
+   > `ecommerce - library loaded - set product details variables - 20`規則正在覆寫`all pages - library loaded - set global variables - 1`規則設定的`eventType`的值，因為它設定為稍後在順序中觸發
 
 
    ![Analytics產品檢視](assets/analytics-debugger-prodView.png)
@@ -449,8 +453,14 @@ Adobe Experience Platform Assurance可協助您檢查、證明、模擬及驗證
 ### 內容頁面檢視驗證
 
 使用相同的信標，驗證內容頁面檢視是否已對應至正確的Adobe Analytics變數。
-向下捲動至&#x200B;**[!UICONTROL pageName]**&#x200B;以驗證`Page Name`是否已正確擷取
-![使用Assurance進行頁面名稱驗證](assets/assurance-hitdebugger-content-pagename.png)
+向下捲動至**[!UICONTROL pageName]**&#x200B;以驗證`Page Name`是否已正確擷取：
+
+
+    >[！NOTE]
+    >
+    >如果您在先前的練習中使用&#39;data&#39;物件覆寫&#39;xdm&#39;物件，則&#39;pageName&#39;值可能是&#39;test&#39;。
+    
+    ![使用Assurance驗證頁面名稱](assets/assurance-hitdebugger-content-pagename.png)
 
 ### 產品字串和電子商務事件驗證
 
