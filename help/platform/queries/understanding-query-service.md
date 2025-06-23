@@ -186,7 +186,7 @@ Adobe Experience Platform Query Service可讓使用者利用SQL探索、驗證�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-data-in-the-datalake.md" title="使用查詢服務驗證Datalake中的資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416130?format=jpeg&nocache=1740415312076" alt="使用查詢服務驗證Datalake中的資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445688?format=jpeg&nocache=1740415312076&captions=chi_hant" alt="使用查詢服務驗證Datalake中的資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -326,7 +326,7 @@ Adobe Experience Platform Query Service可讓使用者利用SQL探索、驗證�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="為您的客戶資料重新充電，提供絕佳的體驗" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1740415313218" alt="為您的客戶資料重新充電，提供絕佳的體驗"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454957?format=jpeg&nocache=1740415313218&captions=chi_hant" alt="為您的客戶資料重新充電，提供絕佳的體驗"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
