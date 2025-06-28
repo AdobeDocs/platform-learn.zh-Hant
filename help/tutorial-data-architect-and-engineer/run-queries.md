@@ -25,7 +25,7 @@ Adobe Experience Platform查詢服務可讓您使用標準SQL在Platform中查�
 **資料架構師**&#x200B;和&#x200B;**資料工程師**&#x200B;需要在本教學課程之外使用查詢服務。
 
 在開始練習之前，請觀看此短片，以進一步瞭解查詢服務：
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464269?learn=on&enablevpops&captions=chi_hant)
 
 ## 需要的許可權
 

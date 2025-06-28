@@ -18,7 +18,7 @@ ht-degree: 13%
 
 Adobe Experience Platform Query Service可讓使用者利用SQL探索、驗證及轉換儲存在Data Lake中的客戶體驗資料，並透過Data Distiller附加元件提供增強功能，例如資料輸出和排程。 此影片提供核心功能概觀，可協助使用者瞭解如何跨各種平台應用程式利用查詢服務。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/query/home)。
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464269?learn=on&enablevpops&captions=chi_hant)
 
 ## 基本用法
 

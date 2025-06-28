@@ -19,4 +19,4 @@ ht-degree: 0%
 
 瞭解如何使用Marketo Engage和Real-Time Customer Data Platform (CDP)、B2B edition來編排B2B行銷活動。 瞭解資料擷取、帳戶設定檔、細分和目的地如何共同啟用B2B行銷活動協調。 取得常見問題的解答。 如需詳細資訊，請瀏覽[Real-Time CDP B2B edition檔案](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/338254?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450813?learn=on&enablevpops&captions=chi_hant)
