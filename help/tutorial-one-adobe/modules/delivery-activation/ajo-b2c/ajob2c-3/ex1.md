@@ -118,7 +118,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
 
-登入後，您會看到通知要求您傳送通知的許可權。 我們將在教學課程中傳送通知，因此請按一下[允許]。****
+登入後，您會看到通知要求您傳送通知的許可權。 我們將在教學課程中傳送通知，因此請按一下[允許]。**&#x200B;**
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn3.png)
 

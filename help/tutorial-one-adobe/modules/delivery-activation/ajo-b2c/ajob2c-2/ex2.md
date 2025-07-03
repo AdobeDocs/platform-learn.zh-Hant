@@ -27,8 +27,8 @@ ht-degree: 4%
 
 ![示範](./images/menudatasources.png)
 
-然後您會看到&#x200B;**資料來源**清單。
-按一下**建立資料Source**&#x200B;以開始新增您的資料來源。
+然後您會看到&#x200B;**資料來源**&#x200B;清單。
+按一下&#x200B;**建立資料Source**&#x200B;以開始新增您的資料來源。
 
 ![示範](./images/dshome.png)
 
