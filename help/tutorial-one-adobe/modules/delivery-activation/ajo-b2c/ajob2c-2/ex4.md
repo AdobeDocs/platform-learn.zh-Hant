@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer — 設定您的歷程和訊息
 kt: 5342
 doc-type: tutorial
 exl-id: 687eb818-2d50-4293-88e6-7e5945b91db6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1484'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 4%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱&#x200B;**的**&#x200B;首頁`--aepSandboxName--`檢視。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 ![示範](./images/joname.png)
 
-在熒幕左側，檢視&#x200B;**事件**。 您應該會在該清單中看到先前建立的事件。 選取它，然後將其拖放到歷程畫布上。 您的歷程隨後將如下所示。 按一下&#x200B;**儲存**。
+在熒幕左側，檢視&#x200B;**事件**。 您應該會在該清單中看到先前建立的事件，其名稱為`--aepUserLdap--GeofenceEntry`。 選取它，然後將其拖放到歷程畫布上。 您的歷程隨後將如下所示。
 
 ![示範](./images/joevents.png)
 
@@ -147,8 +147,8 @@ ht-degree: 4%
 
 ![示範](./images/joct2.png)
 
-按兩下Path1以將名稱變更為&#x200B;**比25 C**&#x200B;熱。
-然後按一下此路徑之運算式的&#x200B;**編輯**&#x200B;圖示。
+按兩下Path1以將名稱變更為&#x200B;**比25 C**熱。
+然後按一下此路徑之運算式的**編輯**&#x200B;圖示。
 
 ![示範](./images/joct6.png)
 
@@ -201,7 +201,7 @@ ht-degree: 4%
 
 ![示範](./images/joa18.png)
 
-移至&#x200B;**動作引數**&#x200B;並按一下引數`textToSlack`的&#x200B;**編輯**&#x200B;圖示。
+向下捲動至&#x200B;**要求引數**，然後按一下引數&#x200B;**的**&#x200B;編輯`textToSlack`圖示。
 
 ![示範](./images/joa19.png)
 
@@ -215,13 +215,13 @@ ht-degree: 4%
 
 ![示範](./images/joa21.png)
 
-您將會看到已完成的動作。 按一下&#x200B;**儲存**。
+您將會看到已完成的動作。 向上捲動並按一下&#x200B;**儲存**。
 
 ![示範](./images/joa22.png)
 
 此歷程路徑現已準備就緒。
 
-## 3.2.4.3傳送路徑訊息：攝氏10度至25度之間
+## 3.2.4.3傳送下列路徑的訊息：攝氏10度至25度之間
 
 對於每個溫度環境，您都會嘗試傳送訊息給您的客戶。 在本練習中，您會傳送真實訊息至Slack頻道，而非行動電話號碼。
 
@@ -233,7 +233,7 @@ ht-degree: 4%
 
 ![示範](./images/jop18.png)
 
-移至&#x200B;**動作引數**&#x200B;並按一下引數`textToSlack`的&#x200B;**編輯**&#x200B;圖示。
+向下捲動至&#x200B;**要求引數**，然後按一下引數&#x200B;**的**&#x200B;編輯`textToSlack`圖示。
 
 ![示範](./images/joa19z.png)
 
@@ -247,13 +247,13 @@ ht-degree: 4%
 
 ![示範](./images/jop21.png)
 
-您將會看到已完成的動作。 按一下&#x200B;**確定**。
+您將會看到已完成的動作。 向上捲動並按一下&#x200B;**儲存**。
 
 ![示範](./images/jop22.png)
 
 此歷程路徑現已準備就緒。
 
-## 3.2.4.4傳送下列路徑的訊息：攝氏25度以上
+## 3.2.4.4傳送下列路徑的訊息：溫度超過25°C
 
 對於每個溫度環境，您都會嘗試傳送訊息給您的客戶。 在本練習中，您會傳送真實訊息至Slack頻道，而非行動電話號碼。
 
@@ -265,7 +265,7 @@ ht-degree: 4%
 
 ![示範](./images/jod18.png)
 
-移至&#x200B;**動作引數**&#x200B;並按一下引數`textToSlack`的&#x200B;**編輯**&#x200B;圖示。
+向下捲動至&#x200B;**要求引數**，然後按一下引數&#x200B;**的**&#x200B;編輯`textToSlack`圖示。
 
 ![示範](./images/joa19zzz.png)
 

@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 定�
 kt: 5342
 doc-type: tutorial
 exl-id: 92752e84-3bbe-4d11-b187-bd9fdbbee709
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '416'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱&#x200B;**的**&#x200B;首頁`--aepSandboxName--`檢視。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -54,10 +54,6 @@ ht-degree: 3%
 
 ![示範](./images/slackname.png)
 
-您不需要變更標題欄位。
-
-![示範](./images/slackurl.png)
-
 **驗證**&#x200B;應該設定為&#x200B;**無驗證**。
 
 ![示範](./images/slackauth.png)
@@ -84,7 +80,7 @@ ht-degree: 3%
 }
 ```
 
-然後您會看到以下內容：
+您將會看到此訊息。 按一下&#x200B;**儲存**。
 
 ![示範](./images/slackmsgpopup1.png)
 
@@ -96,7 +92,7 @@ ht-degree: 3%
 
 ![示範](./images/slackdone.png)
 
-您已定義事件、外部資料來源和動作。 現在，讓我們將所有這些整合到一個歷程中。
+您已定義事件、外部資料來源和動作。 接下來，您將所有這些結合在一個歷程中。
 
 ## 後續步驟
 

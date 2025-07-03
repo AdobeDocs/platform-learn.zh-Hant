@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer — 外部氣象API、SMS動作等
 kt: 5342
 doc-type: tutorial
 exl-id: bde4290a-59d1-4471-83a7-1cad69f94ff1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱&#x200B;**的**&#x200B;首頁`--aepSandboxName--`檢視。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 ![示範](./images/evname.png)
 
-接下來，您需要選取結構描述。 此處顯示的所有結構描述都是Adobe Experience Platform結構描述。
+接下來，您需要選取結構描述。
 
 ![示範](./images/evschema.png)
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 讓我們快速瞭解這些結構描述在Adobe Experience Platform中的定義方式。
 
-在左側功能表中，移至&#x200B;**結構描述**，並在新的瀏覽器標籤中開啟它。 在&#x200B;**結構描述**&#x200B;中，移至&#x200B;**瀏覽**&#x200B;檢視可用的結構描述清單。
+在左側功能表中，移至&#x200B;**結構描述**，並在新的瀏覽器標籤中開啟它。 在&#x200B;**結構描述**&#x200B;中，移至&#x200B;**瀏覽**檢視可用的結構描述清單。
 開啟結構描述`Demo System - Event Schema for Website (Global v1.1)`。
 
 ![資料擷取](./images/schemas.png)
@@ -88,7 +88,7 @@ Adobe Journey Optimizer會自動選取一些必填欄位，但您可以編輯可
 ![示範](./images/popupok.png)
 
 Adobe Journey Optimizer也需要識別碼來識別客戶。 由於Adobe Journey Optimizer已連結至Adobe Experience Platform，結構描述的主要識別碼會自動被當作歷程的識別碼。
-主要識別碼也會自動考量Adobe Experience Platform的完整身分圖表，並將所有可用身分、裝置和頻道的所有行為連結至相同的設定檔，以便Adobe Journey Optimizer符合情境、相關且一致。 按一下&#x200B;**儲存**。
+主要識別碼也會自動考量Adobe Experience Platform的完整身分圖表，並將所有可用身分、裝置和頻道的所有行為連結至相同的設定檔，以便Adobe Journey Optimizer符合情境、相關且一致。 按一下**儲存**。
 
 ![示範](./images/eventidentifier.png)
 
@@ -99,7 +99,7 @@ Adobe Journey Optimizer也需要識別碼來識別客戶。 由於Adobe Journey 
 最後，您必須復原自訂事件的`Orchestration eventID`。
 
 按一下事件清單中的事件，再次開啟事件。
-在您的事件上，按一下&#x200B;**欄位**&#x200B;旁的&#x200B;**檢視裝載**&#x200B;圖示。
+在您的事件上，按一下**欄位**&#x200B;旁的&#x200B;**檢視裝載**&#x200B;圖示。
 
 ![示範](./images/fieldseyepayload.png)
 
@@ -109,7 +109,7 @@ Adobe Journey Optimizer也需要識別碼來識別客戶。 由於Adobe Journey 
 
 寫下`eventID`，因為您最後需要它來測試您的設定。
 
-在此範例中，`eventID`是`4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`。
+在此範例中，`eventID`是`209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7`。
 
 您現在已定義將觸發我們正在建置之歷程的事件。 一旦觸發歷程，地理柵欄欄位（例如城市）和您可能選擇的任何其他欄位（例如國家/地區、緯度和經度）將可供歷程使用。
 

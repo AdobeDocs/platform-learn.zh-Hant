@@ -4,9 +4,9 @@ description: Journey Optimizer — 建立您的片段
 kt: 5342
 doc-type: tutorial
 exl-id: 4e71164d-9e25-46aa-a4b8-a2f6535c491e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您在AEM Assets資料庫中看不到Citi Signal影像，您可以在[這裡](./../../../../assets/ajo/CitiSignal-images.zip)找到它們。 將它們下載到您的案頭，建立資料夾&#x200B;**citi-signal-images**，然後上傳該資料夾中的所有影像。
+>如果您在AEM Assets資料庫中看不到CitiSignal影像，您可以在[這裡](./../../../../assets/ajo/CitiSignal-images.zip)找到它們。 將它們下載到您的案頭，建立資料夾&#x200B;**citi-signal-images**，然後上傳該資料夾中的所有影像。
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 ![Journey Optimizer](./images/fragm10.png)
 
 幾分鐘後，您會看到片段的狀態已變更為&#x200B;**即時**。
-接下來，您應該為電子郵件訊息的頁尾建立新的片段。 按一下&#x200B;**建立片段**。
+接下來，您應該為電子郵件訊息的頁尾建立新的片段。 按一下**建立片段**。
 
 ![Journey Optimizer](./images/fragm11.png)
 
@@ -231,8 +231,6 @@ Unsubscribe
 幾分鐘後，您會看到頁尾的狀態已變更為&#x200B;**即時**。
 
 ![Journey Optimizer](./images/fragm38.png)
-
-您現在已經完成此練習。
 
 ## 後續步驟
 

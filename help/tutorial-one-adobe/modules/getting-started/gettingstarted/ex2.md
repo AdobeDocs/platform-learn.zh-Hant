@@ -4,7 +4,7 @@ description: 快速入門 — 使用示範系統設定您的Launch屬性
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
 source-wordcount: '329'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 取得示範系統存取權後，請繼續下列步驟。
 
-移至[https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}並導覽至&#x200B;**安裝程式**。
+移至[https://dsn.adobe.com/quick-setup](https://dsn.adobe.com/quick-setup){target="_blank"}並導覽至&#x200B;**安裝程式**。
 
 ![DSN](./images/dsnsetup.png)
 
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsnh1.png)
 
-接著，選取預設集&#x200B;**AEP教學課程使用者**。
+接著，選取預設集&#x200B;**一個Adobe教學課程**。
 
 ![DSN](./images/dsnhome.png)
 

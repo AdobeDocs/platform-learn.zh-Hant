@@ -1,170 +1,234 @@
 ---
-title: Offer Decisioning - Offer Decisioning 101
-description: Offer Decisioning - Offer Decisioning 101
+title: 開始使用推播通知
+description: 開始使用推播通知
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-exl-id: b46e0205-b0a1-4a14-95f6-9afe21cd2b5e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 3%
+source-wordcount: '1264'
+ht-degree: 1%
 
 ---
 
-# 3.3.1 Offer Decisioning 101
+# 3.3.1推播通知快速入門
 
-## 3.3.1.1術語
+若要搭配Adobe Journey Optimizer使用推播通知，有許多設定需要檢查並瞭解。
 
-若要進一步瞭解Offer Decisioning，強烈建議您閱讀[概觀](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=zh-Hant)，瞭解Offer Decisioning應用程式服務如何與Adobe Experience Platform搭配運作。
+以下是要驗證的所有設定：
 
-使用Offer Decisioning時，您需要瞭解下列概念：
+- Adobe Experience Platform中的資料集和結構描述
+- 適用於行動裝置的資料流
+- 行動裝置的資料收集屬性
+- 推送憑證的應用程式表面
+- 使用AEP Assurance測試推播設定
 
-| 詞語 | 說明 |
-| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **選件** | 優惠方案是行銷訊息，其中可能包含與其關聯的規則，以指定誰有資格檢視優惠方案。 優惠具有狀態：草稿、已核准或已封存。 |
-| **位置** | 位置（或頻道型別）和內容（或內容型別）的組合，優惠會出現在其中以供一般使用者使用。 實際上，這是行動裝置、網路、社交、即時訊息和非數位頻道中的文字、HTML、影像、JSON的組合。 |
-| **規則** | 定義並控制一般使用者是否符合優惠方案資格的邏輯。 |
-| **個人化優惠** | 根據適用性規則和限制的可自訂行銷訊息。 |
-| **遞補優惠** | 當一般使用者不符合使用之集合中任何優惠方案的資格時，所顯示的預設優惠方案。 |
-| **上限** | 用於優惠方案定義中，以定義某個優惠方案可總體向特定使用者顯示的次數。 |
-| **優先順序** | 從優惠方案結果集決定優先順序排名的層級。 |
-| **集合** | 用於從個人化優惠清單中篩選掉優惠方案的子集，以加快優惠方案決策流程。 |
-| **決定** | 行銷人員希望決策引擎提供適用的最佳優惠方案的一組優惠方案、位置和設定檔組合。 |
-| **AEM Assets Essentials** | 適用於在Adobe Experience Cloud解決方案和Adobe Experience Platform間儲存、尋找及選取資產的通用集中式體驗。 |
-
-{style="table-layout:auto"}
-
-## 3.3.1.2 Offer Decisioning
+讓我們逐一檢閱這些內容。
 
 前往[Adobe Experience Cloud](https://experience.adobe.com)登入Adobe Journey Optimizer。 按一下&#x200B;**Journey Optimizer**。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱&#x200B;**的**&#x200B;首頁`--aepSandboxName--`檢視。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-在左側功能表中，按一下&#x200B;**選件**。 您現在會看到優惠選單，其中包含優惠、集合和決定等專案。
+## 3.4.4.1推送資料集
 
-![位置](./images/homedec.png)
+Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類的專案，或是在Adobe Journey Optimizer的資料集中與推播訊息的互動（例如：已傳送訊息、已開啟訊息等）。
 
-按一下&#x200B;**元件**。 您現在會看到位置、集合限定詞、規則和排名等專案。
+您可以在畫面左側的功能表中前往&#x200B;**[!UICONTROL 資料集]**&#x200B;找到這些資料集。 若要顯示系統資料集，請按一下篩選圖示。
 
-![位置](./images/components.png)
+啟用選項&#x200B;**顯示系統資料集**&#x200B;並搜尋&#x200B;**AJO**。 然後您會看到用於推播通知的資料集。
 
-## 3.3.1.3版位
+![資料擷取](./images/menudsjo1.png)
 
-移至&#x200B;**位置**。
+## 行動裝置的3.4.4.2資料流
 
-![位置](./images/placements.png)
+移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
 
-在&#x200B;**版位**&#x200B;索引標籤中，您可以定義優惠方案的版位。 當您定義決定時，版位會定義所產生優惠的出現位置（頻道型別），以及形狀或形式（內容型別）。
+在左側功能表中，移至&#x200B;**[!UICONTROL 資料流]**&#x200B;並搜尋您在[快速入門](./../../../../modules/getting-started/gettingstarted/ex2.md)中建立的資料流（名為`--aepUserLdap-- - Demo System Datastream (Mobile)`）。 按一下以開啟它。
 
-如果您的環境中沒有看到任何版位，請按照底下和熒幕擷取畫面中的指示建立版位。
+![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1a.png)
 
-| 名稱 | 頻道型別 | 內容類型 |
-| ---------------------- | ------------ | ------------ |
-| **非數位 — 文字** | 非數位 | 文字 |
-| **網頁 — JSON** | Web | JSON |
-| **網頁 — HTML** | Web | HTML |
-| **網頁 — 文字** | Web | 文字 |
-| **網頁 — 影像** | Web | 影像 |
-| **電子郵件 — JSON** | 電子郵件 | JSON |
-| **電子郵件 — HTML** | 電子郵件 | HTML |
-| **電子郵件 — 文字** | 電子郵件 | 文字 |
-| **電子郵件 — 影像** | 電子郵件 | 影像 |
+在&#x200B;**Adobe Experience Platform**&#x200B;服務上按一下&#x200B;**編輯**。
 
-{style="table-layout:auto"}
+![按一下左側導覽中的[資料流]圖示](./images/edgeconfig1.png)
 
-**注意**：請勿變更任何已可用的位置。
+然後您會看到已定義的資料流設定，以及將會儲存資料集事件和設定檔屬性的資料。
 
-按一下任何位置以視覺化其設定。
+您也應該啟用下列選項（如果尚未啟用）：
 
-![位置](./images/placement1.png)
+- **Offer Decisioning**
+- **個人化目的地**
+- **Adobe Journey Optimizer**
 
-您現在會看到位置的所有欄位：
+按一下&#x200B;**儲存**。
 
-- 位置的&#x200B;**名稱**
-- **位置ID**
-- 位置的&#x200B;**頻道型別**
-- 位置的&#x200B;**內容型別**，可以是&#x200B;**文字**、**HTML**、**影像**&#x200B;或&#x200B;**JSON**
-- **說明**&#x200B;欄位，可新增此位置的額外說明
+![命名資料流並儲存](./images/edgeconfig2.png)
 
-## 3.3.1.4決定規則
+## 3.4.4.3檢閱您的行動裝置資料收集屬性
 
-規則（也稱為適用性規則）等同於&#x200B;**對象**。 規則實際上是對象本身，唯一差異在於規則可以與選件搭配使用，以在Adobe Experience Platform中為設定檔提供最佳選件。
+移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 在[快速入門](./../../../../modules/getting-started/gettingstarted/ex1.md)中，已建立2個資料收集屬性。
+您已在先前的模組中使用這些資料收集使用者端屬性。
 
-由於您已知道如何根據先前的啟用模組定義對象，讓我們快速重新造訪細分環境：
+按一下以開啟行動裝置的「資料收集」屬性。
 
-移至&#x200B;**規則**。 按一下&#x200B;**+建立規則**。
+![DSN](./images/launchprop.png)
 
-![決定規則](./images/rules.png)
+在資料收集屬性中，移至&#x200B;**擴充功能**。 接著，您會看到行動應用程式所需的各種擴充功能。 按一下以開啟擴充功能&#x200B;**Adobe Experience Platform Edge Network**。
 
-然後您會看到Adobe Experience Platform的對象建立介面。
+![Adobe Experience Platform資料彙集](./images/launchprop1.png)
 
-![決定規則](./images/createrule1.png)
+接著，您會看到行動裝置資料流已連結至此處。 接著，按一下&#x200B;**取消**，返回您的擴充功能概觀。
 
-您現在可以為即時客戶個人檔案存取所有屬於聯合結構描述的欄位，並且可以建置任何規則。
+![Adobe Experience Platform資料彙集](./images/launchprop2.png)
 
-您也可前往「**對象** > ``--aepTenantId--``」，重複使用Adobe Experience Platform中已定義的對象，這也很好。
+然後您會回到這裡。 您將會看到&#x200B;**AEP Assurance**&#x200B;的擴充功能。 AEP Assurance可協助您檢查、證明、模擬及驗證如何在行動應用程式中收集資料或提供體驗。 您可以在[https://aep-sdks.gitbook.io/docs/beta/project-griffon](https://aep-sdks.gitbook.io/docs/beta/project-griffon)閱讀更多有關AEP Assurance和Project Griffon的資訊。
 
-然後您會看到以下內容：
+![Adobe Experience Platform資料彙集](./images/launchprop8.png)
 
-![決定規則](./images/decisionruleaud.png)
+接著，按一下&#x200B;**設定**&#x200B;以開啟擴充功能&#x200B;**Adobe Journey Optimizer**。
 
-您也可設定自己的規則。 在本練習中，您將需要兩個規則：
+![Adobe Experience Platform資料彙集](./images/launchprop9.png)
 
-- 全部 — 男性客戶
-- 全部 — 女性客戶
+接著，您會看到追蹤推送事件的資料集已連結至此處。
 
-如果這些規則尚未存在，請建立它們。 如果規則已存在，請使用這些規則，且不要建立新規則。
+![Adobe Experience Platform資料彙集](./images/launchprop10.png)
 
-用於建立規則的屬性是&#x200B;**XDM個人設定檔** > **人員** > **性別**。
+您不需要變更資料收集屬性。
 
-例如，以下是規則&#x200B;**all - Male Customers**&#x200B;的規則定義：
+## 3.4.4.4檢閱您的應用程式表面設定
 
-![決定規則](./images/allmale.png)
+移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 在左側功能表中，前往&#x200B;**應用程式表面**&#x200B;並開啟&#x200B;**DX示範應用程式APNS**&#x200B;的應用程式表面。
 
-例如，以下是規則&#x200B;**all - Female Customers**&#x200B;的規則定義：
+![Adobe Experience Platform資料彙集](./images/appsf.png)
 
-![決定規則](./images/allfemale.png)
+接著，您就會看到為iOS和Android設定的應用程式表面。
 
-## 3.3.1.5選件
+![Adobe Experience Platform資料彙集](./images/appsf1.png)
 
-移至&#x200B;**選件**&#x200B;並選取&#x200B;**選件**。 按一下&#x200B;**+建立選件**。
+## 使用AEP Assurance的3.4.4.5測試推播通知設定。
 
-![決定規則](./images/offers1.png)
+應用程式安裝後，您會在裝置的主畫面上找到。 按一下圖示以開啟應用程式。
 
-然後您會看到此快顯視窗。
+![DSN](./../../../../modules/getting-started/gettingstarted/images/mobileappn1.png)
 
-![決定規則](./images/offers2.png)
+第一次使用應用程式時，系統會要求您使用Adobe ID登入。 完成登入程式。
 
-現在不要建立任何選件 — 您會在下一個練習中這樣做。
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
 
-您現在會看到有兩種優惠方案型別：
+登入後，您會看到通知要求您傳送通知的許可權。 我們將在教學課程中傳送通知，因此請按一下[允許]。****
 
-- 個人化優惠
-- 遞補優惠
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn3.png)
 
-個人化優惠是應在特定情況下顯示的特定內容。 個人化優惠是專門建置的，可在符合特定條件時提供個人和情境式體驗。
+然後您會看到應用程式的首頁。 移至&#x200B;**設定**。
 
-遞補優惠是一項在不符合個人化優惠條件時顯示的優惠。
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn4.png)
 
-## 3.3.1.6決定
+在設定中，您會看到應用程式目前已載入&#x200B;**公用專案**。 按一下&#x200B;**自訂專案**。
 
-決定結合位置、個人化優惠集合和遞補優惠，讓Offer Decisioning引擎最終根據每個個人化優惠特性（如優先順序、資格限制和總/使用者上限），為特定設定檔尋找最佳優惠。
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
 
-若要設定您的&#x200B;**決定**，請按一下&#x200B;**決定**。
+您現在可以載入自訂專案。 按一下QR碼以輕鬆載入您的專案。
 
-![決定規則](./images/activity.png)
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn6.png)
 
-在下一個練習中，您將設定自己的優惠和決定。
+完成&#x200B;**快速入門**&#x200B;區段後，您便有了此結果。 按一下以開啟為您建立的&#x200B;**行動零售專案**。
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/dsn5b.png)
+
+如果您不小心關閉了瀏覽器視窗，或是為了未來的示範或啟用工作階段，您也可以前往[https://dsn.adobe.com/projects](https://dsn.adobe.com/projects)存取您的網站專案。 使用Adobe ID登入後，您會看到此訊息。 按一下您的行動應用程式專案以開啟。
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/web8a.png)
+
+接著，按一下&#x200B;**執行**。
+
+![DSN](./images/web8b.png)
+
+然後您會看到這個快顯視窗，其中包含QR碼。 從行動應用程式內掃描此QR碼。
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/web8c.png)
+
+然後您會在應用程式中看到您的專案ID，之後您可以按一下&#x200B;**儲存**。
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn7.png)
+
+現在，請回到應用程式中的&#x200B;**首頁**。 您的應用程式現在已可供使用。
+
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn8.png)
+
+您現在需要掃描QR碼，將行動裝置連線至AEP Assurance工作階段。
+
+若要開始AEP Assurance工作階段，請前往[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 按一下左側功能表中的&#x200B;**Assurance**。 然後，按一下&#x200B;**建立工作階段**。
+
+![Adobe Experience Platform資料彙集](./images/griffon3.png)
+
+按一下&#x200B;**開始**。
+
+![Adobe Experience Platform資料彙集](./images/griffon5.png)
+
+填入值：
+
+- 工作階段名稱：使用`--aepUserLdap-- - push debugging`並以您的ldap取代ldap
+- 基底URL：使用`dxdemo://default`
+
+按一下&#x200B;**下一步**。
+
+![Adobe Experience Platform資料彙集](./images/griffon4.png)
+
+接著，您會在熒幕上看到QR碼，請使用iOS裝置掃描該碼。
+
+![Adobe Experience Platform資料彙集](./images/griffon6.png)
+
+在行動裝置上，開啟相機應用程式並掃描AEP Assurance顯示的二維碼。
+
+![Adobe Experience Platform資料彙集](./images/ipadPushTest8a.png)
+
+然後您會看到快顯畫面，要求您輸入PIN碼。 從AEP Assurance畫面複製PIN碼，然後按一下&#x200B;**連線**。
+
+![Adobe Experience Platform資料彙集](./images/ipadPushTest9.png)
+
+您將會看到此訊息。
+
+![Adobe Experience Platform資料彙集](./images/ipadPushTest11.png)
+
+在Assurance中，您現在會看到裝置正在前往Assurance工作階段。 按一下&#x200B;**「完成」**。
+
+![Adobe Experience Platform資料彙集](./images/griffon7.png)
+
+移至&#x200B;**推送偵錯**。
+
+>[!NOTE]
+>
+>如果您在左側功能表中找不到&#x200B;**推播偵錯**，請按一下畫面左下角的&#x200B;**設定**，然後新增&#x200B;**推播偵錯**&#x200B;至功能表。
+
+您將會看到類似這樣的內容。
+
+![Adobe Experience Platform資料彙集](./images/griffon10.png)
+
+部分說明：
+
+- 第一欄&#x200B;**Client**&#x200B;顯示您的iOS裝置上可用的識別碼。 您會看到ECID和推播權杖。
+- 第2欄顯示&#x200B;**App Store認證與設定**，此專案是在練習&#x200B;**3.4.5.4在Launch中建立應用程式設定**&#x200B;中設定的
+- 第二欄顯示&#x200B;**設定檔**&#x200B;資訊，以及推播權杖所在平台（APNS或APNSSandbox）的其他資訊。 如果您按一下&#x200B;**檢查設定檔**&#x200B;按鈕，您將會被帶到Adobe Experience Platform並看到完整的即時客戶設定檔。
+
+若要測試推播設定設定，請移至&#x200B;**傳送測試推播設定**&#x200B;按鈕。 按一下&#x200B;**傳送測試推播通知**
+
+![Adobe Experience Platform資料彙集](./images/griffon11.png)
+
+您必須確定按一下&#x200B;**傳送推播通知**&#x200B;按鈕時，**DX示範**&#x200B;應用程式未開啟。 如果應用程式處於開啟狀態，系統可能會在背景收到「推播通知」，因此不會顯示。
+
+接著，您會在行動裝置上看到類似這樣的推播通知。
+
+![Adobe Experience Platform資料彙集](./images/ipadPush2.png)
+
+如果您已收到推播通知，這表示您的設定正確且運作正常，您現在可以建立真正的歷程，進而從Journey Optimizer傳送推播訊息。
 
 ## 後續步驟
 
-移至[3.3.2設定優惠與決定](./ex2.md){target="_blank"}
+移至[3.3.2設定包含推送訊息的歷程](./ex2.md){target="_blank"}
 
-返回[Offer Decisioning](offer-decisioning.md){target="_blank"}
+返回[Adobe Journey Optimizer：推送和應用程式內訊息](ajopushinapp.md){target="_blank"}
 
 返回[所有模組](./../../../../overview.md){target="_blank"}

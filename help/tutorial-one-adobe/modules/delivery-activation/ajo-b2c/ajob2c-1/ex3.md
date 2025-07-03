@@ -4,14 +4,14 @@ description: Journey Optimizer建立您的電子郵件訊息
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
 
-# 3.1.3建立您的歷程、片段和訊息
+# 3.1.3建立您的歷程和電子郵件訊息
 
 在本練習中，您將設定當有人在示範網站上建立帳戶時，需要觸發的歷程和訊息。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ![ACOP](./images/journeyempty.png)
 
-在上一個練習中，您已建立新的&#x200B;**事件**。 您將其命名為`--aepUserLdap--AccountCreationEvent`，並將`ldap`取代為您的LDAP。 這是建立事件的結果：
+在上一個練習中，您已建立新的&#x200B;**事件**。 您將其命名如下`--aepUserLdap--AccountCreationEvent`。 這是建立事件的結果：
 
 ![ACOP](./images/eventdone.png)
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ![ACOP](./images/eventlist.png)
 
-選取您的事件，將其拖放至「歷程」畫布上。 您的歷程現在看起來像這樣：
+選取您的事件，將其拖放到歷程畫布上。 您的歷程現在看起來像這樣：
 
 ![ACOP](./images/journeyevent.png)
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ![ACOP](./images/journeywait.png)
 
-您的歷程現在看起來像這樣。 在畫面右側，您需要設定等待時間。 設定為1分鐘。 這會在事件觸發後，提供充足的時間讓設定檔屬性可用。 按一下[儲存]儲存變更。**&#x200B;**
+您的歷程現在看起來像這樣。 在畫面右側，您需要設定等待時間。 設定為1分鐘。 這會在事件觸發後，提供充足的時間讓設定檔屬性可用。 按一下[儲存]儲存變更。****
 
 ![ACOP](./images/journeywait1.png)
 
@@ -57,13 +57,13 @@ ht-degree: 0%
 
 ![ACOP](./images/journeyactions.png)
 
-將&#x200B;**類別**&#x200B;設定為&#x200B;**行銷**，並選取可讓您傳送電子郵件的電子郵件設定。 在此案例中，要選取的電子郵件設定是&#x200B;**電子郵件**。 請確定已同時啟用&#x200B;**電子郵件**&#x200B;點按和&#x200B;**電子郵件開啟**&#x200B;的核取方塊。
+將&#x200B;**類別**&#x200B;設定為&#x200B;**行銷**，並選取可讓您傳送電子郵件的電子郵件設定。 在此情況下，要選取的電子郵件組態是&#x200B;**Email-TI**。
 
 ![ACOP](./images/journeyactions1.png)
 
 ## 3.1.3.2建立您的訊息
 
-若要建立您的訊息，請按一下[編輯內容]。**&#x200B;**
+若要建立您的訊息，請按一下[編輯內容]。****
 
 ![ACOP](./images/journeyactions2.png)
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/msg34.png)
 
-接下來，您需要帶上儲存在`profile.person.name.firstName`底下的&#x200B;**名字**&#x200B;個人化權杖。 在功能表中，尋找&#x200B;**人員**&#x200B;元素，向下展開至&#x200B;**全名**&#x200B;元素，然後按一下&#x200B;**+**&#x200B;圖示，將「名字」欄位新增至運算式編輯器。
+接下來，您需要帶上儲存在&#x200B;**底下的**&#x200B;名字`profile.person.name.firstName`個人化權杖。 在功能表中，尋找&#x200B;**人員**&#x200B;元素，向下展開至&#x200B;**全名**&#x200B;元素，然後按一下&#x200B;**+**&#x200B;圖示，將「名字」欄位新增至運算式編輯器。
 
 按一下&#x200B;**儲存**。
 

@@ -4,9 +4,9 @@ description: 此練習說明如何在電子郵件內容中使用區段個人化
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '395'
 ht-degree: 1%
 
 ---
@@ -71,12 +71,12 @@ ht-degree: 1%
 
 然後，您應該保留第一行原樣，並以下列程式碼取代第2行和第3行：
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 您就會擁有此專案。 按一下&#x200B;**儲存**。
 
@@ -108,7 +108,7 @@ ht-degree: 1%
 
 ## 後續步驟
 
-移至[3.4.4安裝程式並使用iOS的推播通知](./ex4.md){target="_blank"}
+移至[摘要與優點](./summary.md){target="_blank"}
 
 返回[Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 

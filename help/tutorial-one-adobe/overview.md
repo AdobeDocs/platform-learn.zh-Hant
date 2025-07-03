@@ -3,9 +3,9 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
+source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1069'
 ht-degree: 2%
 
 ---
@@ -137,9 +137,9 @@ ht-degree: 2%
 
 在此單元中，您將使用Adobe Journey Optimizer來線上及離線監聽客戶行為，並透過各種管道以智慧、情境式及即時方式回應。
 
-[3.3 Adobe Journey Optimizer： Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
+[3.3 Adobe Journey Optimizer：推送和應用程式內訊息](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
 
-在此單元中，您將使用Adobe Journey Optimizer來設定個人化優惠和您自己的優惠決定。
+在本模式中，您將使用Adobe Journey Optimizer來設定推播通知和應用程式內訊息。
 
 [3.4 Adobe Journey Optimizer：事件型歷程](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
 
@@ -148,6 +148,18 @@ ht-degree: 2%
 [3.5 Adobe Journey Optimizer：翻譯服務](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
 
 在本單元中，您將瞭解如何設定並使用Adobe Journey Optimizer中的翻譯服務，將您的訊息當地語系化給您的客戶。
+
+[3.6 Adobe Journey Optimizer：內容管理](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
+
+在本單元中，您將瞭解如何設定及使用Adobe Journey Optimizer中的內容卡和登陸頁面，並將深入探討Adobe Journey Optimizer與GenStudio for Performance Marketing之間的整合。
+
+[3.7 Adobe Journey Optimizer：決策](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
+
+在本單元中，您將瞭解如何設定及使用Adobe Journey Optimizer中的決策和程式碼型體驗。
+
+[3.8 Adobe Journey Optimizer：行銷活動](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
+
+在本單元中，您將瞭解如何設定及使用Adobe Journey Optimizer中的行銷活動。
 
 ### 5.報表與深入分析
 

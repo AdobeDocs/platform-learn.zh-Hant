@@ -4,14 +4,14 @@ description: 在本單元中，您將瞭解Journey Optimizer的所有須知事�
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '263'
 ht-degree: 2%
 
 ---
 
-# 3.4 Adobe Journey Optimizer
+# 3.4 Adobe Journey Optimizer：訂單確認歷程與行銷活動
 
 在本單元中，您將瞭解Adobe Journey Optimizer的所有須知事項，其可幫助公司為其客戶設計和提供連結、情境式和個人化的體驗。
 
@@ -45,10 +45,6 @@ ht-degree: 2%
 [3.4.3在電子郵件訊息中套用區段型個人化](./ex3.md)
 
 在本練習中，您將使用區段成員資格來定義要在電子郵件中顯示的內容。
-
-[3.4.4設定及使用推播通知](./ex4.md)
-
-在本練習中，您會在iOS裝置上安裝行動應用程式，並設定推播通知並傳送至裝置。
 
 [摘要和優點](./summary.md)
 

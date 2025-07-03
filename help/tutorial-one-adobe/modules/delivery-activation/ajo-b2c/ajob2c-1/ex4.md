@@ -4,9 +4,9 @@ description: 更新設定ID並測試您的歷程
 kt: 5342
 doc-type: tutorial
 exl-id: da018975-7421-4d70-b04d-ad8b0597f460
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '634'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 ## 3.1.3.1更新您的資料收集屬性
 
-移至[Adobe Experience Platform資料彙集](https://experience.adobe.com/launch/)並選取&#x200B;**標籤**。
+移至[Adobe Experience Platform資料彙集](https://experience.adobe.com/data-collection/home)並選取&#x200B;**標籤**。
 
 ![屬性頁面](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-在&#x200B;**快速入門**&#x200B;中，示範系統為您建立了兩個使用者端屬性：一個用於網站，一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--aepUserLdap--`以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
+在&#x200B;**快速入門**&#x200B;中，「示範系統下一步」為您建立了幾個標籤屬性，其中一個用於網站，另一個用於行動應用程式。 在`--aepUserLdap-- - One Adobe`搜尋&#x200B;**[!UICONTROL 方塊中搜尋]**&#x200B;以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
 
 ![搜尋方塊](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ![啟動安裝程式](./images/rule3.png)
 
-之後您會看到，觸發此動作時，會使用特定資料元素來定義XDM資料結構。 您需要更新該資料元素，而且需要定義您在[練習3.1.1](./ex1.md)中設定之事件的&#x200B;**事件識別碼**。
+之後您會看到，觸發此動作時，會使用特定資料元素來定義XDM資料結構。 您需要更新該資料元素，而且需要定義您在&#x200B;**練習3.1.1**&#x200B;中設定之事件的[事件識別碼](./ex1.md)。
 
 ![啟動安裝程式](./images/rule4.png)
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 瀏覽至欄位`_experience.campaign.orchestration.eventID`。 移除目前的值，並將您的eventID貼到該處。
 
-提醒您，您可以在Adobe Journey Optimizer中的&#x200B;**設定>事件**&#x200B;下找到事件ID，您也可以在事件裝載的範例中找到事件ID，如下所示： `"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`。
+提醒您，您可以在Adobe Journey Optimizer中的&#x200B;**設定>事件**&#x200B;下找到事件ID，您也可以在事件裝載的範例中找到事件ID，如下所示： `"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`。
 
 ![ACOP](./images/payloadeventID.png)
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 ![啟動安裝程式](./images/rule8.png)
 
-按一下[新增所有變更的資源]&#x200B;**，然後按一下[儲存並建置至開發]**&#x200B;**。**
+按一下[新增所有變更的資源]**，然後按一下[儲存並建置至開發]****。**
 
 ![啟動安裝程式](./images/rule9.png)
 

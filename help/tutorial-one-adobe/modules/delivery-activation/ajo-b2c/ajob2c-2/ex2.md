@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer — 外部氣象API、SMS動作等 — 定�
 kt: 5342
 doc-type: tutorial
 exl-id: 0ad27ffb-51fe-4bd1-b0be-feeb232039fa
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '576'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱&#x200B;**的**&#x200B;首頁`--aepSandboxName--`檢視。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -27,8 +27,8 @@ ht-degree: 4%
 
 ![示範](./images/menudatasources.png)
 
-然後您會看到&#x200B;**資料來源**&#x200B;清單。
-按一下&#x200B;**建立資料Source**&#x200B;以開始新增您的資料來源。
+然後您會看到&#x200B;**資料來源**清單。
+按一下**建立資料Source**&#x200B;以開始新增您的資料來源。
 
 ![示範](./images/dshome.png)
 
@@ -60,7 +60,7 @@ ht-degree: 4%
 
 **API金鑰**&#x200B;看起來像這樣： `b2c4c36b6bb59c3458d6686b05311dc3`。
 
-您可以在[這裡](https://openweathermap.org/current)找到&#x200B;**目前氣候**&#x200B;的&#x200B;**API檔案**。
+您可以在&#x200B;**這裡**&#x200B;找到&#x200B;**目前氣候**&#x200B;的[API檔案](https://openweathermap.org/current)。
 
 針對此使用案例，您將使用依城市名稱&#x200B;**的**&#x200B;內建API要求，根據客戶所在的城市來實作開放氣象地圖連線。
 
@@ -74,7 +74,7 @@ ht-degree: 4%
 
 設定描述為： `Access to the Open Weather Map`。
 
-開放氣象地圖API的URL是： **http://api.openweathermap.org/data/2.5/weather?units=metric**
+開放氣象地圖API的URL是： `http://api.openweathermap.org/data/2.5/weather?units=metric`。
 
 ![示範](./images/dsname.png)
 
