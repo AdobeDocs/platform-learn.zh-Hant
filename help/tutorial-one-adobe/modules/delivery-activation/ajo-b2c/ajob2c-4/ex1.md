@@ -36,7 +36,7 @@ ht-degree: 1%
 首先，請為事件命名如下： `--aepUserLdap--PurchaseEvent`，然後新增如下描述： `Purchase Event`。
 
 針對&#x200B;**型別**，選取&#x200B;**單一**。
-針對**事件識別碼型別**，選取&#x200B;**系統產生**。
+針對&#x200B;**事件識別碼型別**，選取&#x200B;**系統產生**。
 
 ![Journey Optimizer](./images/eventidtype.png)
 
@@ -68,8 +68,8 @@ ht-degree: 1%
 
 接著會儲存您的新事件，而您現在會在可用事件清單中看到您的事件。
 
-再次按一下您的事件以再次開啟&#x200B;**編輯事件**畫面。
-再次將游標暫留在**承載**&#x200B;欄位上，可再次看到3個圖示。 按一下&#x200B;**檢視裝載**&#x200B;圖示。
+再次按一下您的事件以再次開啟&#x200B;**編輯事件**&#x200B;畫面。
+再次將游標暫留在&#x200B;**承載**&#x200B;欄位上，可再次看到3個圖示。 按一下&#x200B;**檢視裝載**&#x200B;圖示。
 
 ![Journey Optimizer](./images/oc41.png)
 
@@ -102,7 +102,7 @@ ht-degree: 1%
 
 ![Journey Optimizer](./images/oc47.png)
 
-將&#x200B;**類別**&#x200B;設定為&#x200B;**行銷**，並選取可讓您傳送電子郵件的電子郵件表面。 在此情況下，要選取的電子郵件表面為&#x200B;**電子郵件**。 下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。****
+將&#x200B;**類別**&#x200B;設定為&#x200B;**行銷**，並選取可讓您傳送電子郵件的電子郵件表面。 在此情況下，要選取的電子郵件表面為&#x200B;**電子郵件**。 下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。**&#x200B;**
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -208,7 +208,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc25.png)
 
-您就會擁有此專案。 按一下[儲存]儲存進度。****
+您就會擁有此專案。 按一下[儲存]儲存進度。**&#x200B;**
 
 ![Journey Optimizer](./images/oc26.png)
 
@@ -258,7 +258,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc66.png)
 
-您現在會回到電子郵件Designer。 按一下[儲存]儲存進度。****
+您現在會回到電子郵件Designer。 按一下[儲存]儲存進度。**&#x200B;**
 
 ![Journey Optimizer](./images/oc67.png)
 
@@ -279,7 +279,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 ![Journey Optimizer](./images/oc71.png)
 
 在左側功能表中，按一下&#x200B;**內容屬性**。
-按一下**Journey Orchestration**&#x200B;旁的箭頭以深入探討。
+按一下&#x200B;**Journey Orchestration**&#x200B;旁的箭頭以深入探討。
 
 ![Journey Optimizer](./images/oc72.png)
 
@@ -307,9 +307,9 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc76.png)
 
-再按一下&#x200B;**總價**&#x200B;旁的&#x200B;**+**圖示以將其新增至畫布。
-您也可以將**Order**&#x200B;物件內的&#x200B;**Currency**欄位新增至畫布，如這裡所示。
-完成時，按一下[儲存]儲存變更。****
+再按一下&#x200B;**總價**&#x200B;旁的&#x200B;**+**&#x200B;圖示以將其新增至畫布。
+您也可以將&#x200B;**Order**&#x200B;物件內的&#x200B;**Currency**&#x200B;欄位新增至畫布，如這裡所示。
+完成時，按一下[儲存]儲存變更。**&#x200B;**
 
 ![Journey Optimizer](./images/oc77.png)
 
