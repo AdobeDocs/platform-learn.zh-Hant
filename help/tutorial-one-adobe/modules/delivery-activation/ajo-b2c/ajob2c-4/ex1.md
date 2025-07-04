@@ -4,9 +4,9 @@ description: 在本節中，您將設定觸發式歷程 — 訂購確認
 kt: 5342
 doc-type: tutorial
 exl-id: e8cf1274-2a18-4870-b1e3-378e1779fac1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1895'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱`--aepSandboxName--`的&#x200B;**首頁**&#x200B;檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱&#x200B;**的**&#x200B;首頁`--aepSandboxName--`檢視。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -36,11 +36,11 @@ ht-degree: 1%
 首先，請為事件命名如下： `--aepUserLdap--PurchaseEvent`，然後新增如下描述： `Purchase Event`。
 
 針對&#x200B;**型別**，選取&#x200B;**單一**。
-針對&#x200B;**事件識別碼型別**，選取&#x200B;**系統產生**。
+針對**事件識別碼型別**，選取&#x200B;**系統產生**。
 
 ![Journey Optimizer](./images/eventidtype.png)
 
-接下來是「結構描述」選項。 已針對此練習準備結構描述。 請使用結構描述`Demo System - Event Schema for Website (Global v1.1) v.1`。
+接下來是結構描述選取專案。 已針對此練習準備結構描述。 請使用結構描述`Demo System - Event Schema for Website (Global v1.1) v.1`。
 
 選取結構描述後，您將會在&#x200B;**裝載**&#x200B;區段中看到一些正在選取的欄位。 按一下&#x200B;**編輯/鉛筆**&#x200B;圖示以新增其他欄位至此事件。
 
@@ -68,8 +68,8 @@ ht-degree: 1%
 
 接著會儲存您的新事件，而您現在會在可用事件清單中看到您的事件。
 
-再次按一下您的事件以再次開啟&#x200B;**編輯事件**&#x200B;畫面。
-再次將游標暫留在&#x200B;**承載**&#x200B;欄位上，可再次看到3個圖示。 按一下&#x200B;**檢視裝載**&#x200B;圖示。
+再次按一下您的事件以再次開啟&#x200B;**編輯事件**畫面。
+再次將游標暫留在**承載**&#x200B;欄位上，可再次看到3個圖示。 按一下&#x200B;**檢視裝載**&#x200B;圖示。
 
 ![Journey Optimizer](./images/oc41.png)
 
@@ -78,7 +78,7 @@ ht-degree: 1%
 ![Journey Optimizer](./images/oc42.png)
 
 事件ID需要傳送至Adobe Journey Optimizer，才能觸發您將在下一個步驟中建立的歷程。 記下此eventID，因為您會在後續步驟中用到它。
-`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
+`"eventID": "618da2a203c3392e43a538d40ff5deef0bd1e7c64f6b6bfe131d4a38a67193ae"`
 
 按一下&#x200B;**確定**，然後按一下&#x200B;**取消**。
 
@@ -102,19 +102,15 @@ ht-degree: 1%
 
 ![Journey Optimizer](./images/oc47.png)
 
-將&#x200B;**類別**&#x200B;設定為&#x200B;**行銷**，並選取可讓您傳送電子郵件的電子郵件表面。 在此情況下，要選取的電子郵件表面為&#x200B;**電子郵件**。 請確定已同時啟用&#x200B;**電子郵件**&#x200B;點按和&#x200B;**電子郵件開啟**&#x200B;的核取方塊。
+將&#x200B;**類別**&#x200B;設定為&#x200B;**行銷**，並選取可讓您傳送電子郵件的電子郵件表面。 在此情況下，要選取的電子郵件表面為&#x200B;**電子郵件**。 下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。****
 
 ![ACOP](./images/journeyactions1.png)
-
-下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。**&#x200B;**
-
-![ACOP](./images/journeyactions2.png)
 
 您現在看到這個了。 按一下&#x200B;**主旨列**&#x200B;文字欄位。
 
 ![ACOP](./images/journeyactions3.png)
 
-在文字區域開始寫入&#x200B;**感謝您的訂購，**&#x200B;並按一下&#x200B;**Personalization**&#x200B;圖示。
+在文字區域中開始寫入`Thanks for your order, `，然後按一下&#x200B;**Personalization**&#x200B;圖示。
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -136,7 +132,7 @@ ht-degree: 1%
 
 ![Journey Optimizer](./images/oc9.png)
 
-在左側功能表中，移至&#x200B;**片段**。 將您先前在[練習3.1.2.1](./../ajob2c-1/ex2.md)中建立的標頭拖曳到畫布中的第一個元件。 將您先前在[練習3.1.2.2](./../ajob2c-1/ex2.md)中建立的頁尾拖曳至畫布中的最後一個元件。
+在左側功能表中，移至&#x200B;**片段**。 將您先前在[練習3.1.2.1](./../ajob2c-1/ex2.md)中建立的標頭拖曳至畫布中的第一個元件。 將您先前在[練習3.1.2.2](./../ajob2c-1/ex2.md)中建立的頁尾拖曳至畫布中的最後一個元件。
 
 ![Journey Optimizer](./images/fragm1.png)
 
@@ -212,7 +208,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc25.png)
 
-您就會擁有此專案。 按一下[儲存]儲存進度。**&#x200B;**
+您就會擁有此專案。 按一下[儲存]儲存進度。****
 
 ![Journey Optimizer](./images/oc26.png)
 
@@ -262,7 +258,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc66.png)
 
-您現在會回到電子郵件Designer。 按一下[儲存]儲存進度。**&#x200B;**
+您現在會回到電子郵件Designer。 按一下[儲存]儲存進度。****
 
 ![Journey Optimizer](./images/oc67.png)
 
@@ -283,7 +279,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 ![Journey Optimizer](./images/oc71.png)
 
 在左側功能表中，按一下&#x200B;**內容屬性**。
-按一下&#x200B;**Journey Orchestration**&#x200B;旁的箭頭以深入探討。
+按一下**Journey Orchestration**&#x200B;旁的箭頭以深入探討。
 
 ![Journey Optimizer](./images/oc72.png)
 
@@ -311,9 +307,9 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc76.png)
 
-再按一下&#x200B;**總價**&#x200B;旁的&#x200B;**+**&#x200B;圖示以將其新增至畫布。
-您也可以將&#x200B;**Order**&#x200B;物件內的&#x200B;**Currency**&#x200B;欄位新增至畫布，如這裡所示。
-完成時，按一下[儲存]儲存變更。**&#x200B;**
+再按一下&#x200B;**總價**&#x200B;旁的&#x200B;**+**圖示以將其新增至畫布。
+您也可以將**Order**&#x200B;物件內的&#x200B;**Currency**欄位新增至畫布，如這裡所示。
+完成時，按一下[儲存]儲存變更。****
 
 ![Journey Optimizer](./images/oc77.png)
 
@@ -353,7 +349,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![屬性頁面](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-在&#x200B;**快速入門**&#x200B;中，示範系統為您建立了兩個使用者端屬性：一個用於網站，一個用於行動應用程式。 在&#x200B;**[!UICONTROL 搜尋]**&#x200B;方塊中搜尋`--aepUserLdap--`以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
+在&#x200B;**快速入門**&#x200B;中，示範系統為您建立了兩個使用者端屬性：一個用於網站，一個用於行動應用程式。 在`--aepUserLdap--`搜尋&#x200B;**[!UICONTROL 方塊中搜尋]**&#x200B;以尋找它們。 按一下以開啟&#x200B;**Web**&#x200B;屬性。
 
 ![搜尋方塊](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -361,7 +357,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc91.png)
 
-您將會看到此訊息。 導覽至&#x200B;**_experience.campaign.orchestration.eventID**&#x200B;欄位，並在這裡填寫您的eventID。 此處要填寫的eventID是您於練習3.4.1.1中建立的eventID。1按一下「儲存」**或「儲存至程式庫」**。**&#x200B;**
+您將會看到此訊息。 導覽至&#x200B;**_experience.campaign.orchestration.eventID**&#x200B;欄位，並在這裡填寫您的eventID。 要在此填寫的eventID是您為練習3.4.1.1按一下&#x200B;**儲存**&#x200B;或&#x200B;**儲存至資料庫**&#x200B;而建立的eventID。
 
 ![Journey Optimizer](./images/oc92.png)
 
@@ -403,15 +399,11 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![示範](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv2.png)
 
-前往「註冊/登入」頁面。 按一下&#x200B;**建立帳戶**。
+移至&#x200B;**登入**&#x200B;頁面，按一下&#x200B;**建立帳戶**&#x200B;並填寫這些欄位。 按一下&#x200B;**註冊**，之後您將會被重新導向到上一頁。
 
 ![示範](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv9.png)
 
-填寫您的詳細資料，然後按一下&#x200B;**註冊**，之後您將會被重新導向到上一頁。
-
-![示範](./../../../../modules/delivery-activation/datacollection/dc1.2/images/pv10.png)
-
-新增任何產品至購物車
+新增任何產品至購物車。
 
 ![Journey Optimizer](./images/cart1a.png)
 

@@ -4,9 +4,9 @@ description: 在本單元中，您將瞭解Journey Optimizer的所有須知事�
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '252'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 2%
 - 熟悉Adobe Journey Optimizer
 - 建立電子郵件和推播訊息
 - 設定觸發式和批次歷程
-- 在客戶歷程中傳送電子郵件和推播通知
 
 ## 先決條件
 

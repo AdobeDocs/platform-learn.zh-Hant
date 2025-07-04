@@ -1,18 +1,18 @@
 ---
-user-guide-title: 從Creative Cloud到Experience Cloud，Adobe應用程式的完整技術教學課程
-breadcrumb-title: 從Creative Cloud到Experience Cloud，Adobe應用程式的完整技術教學課程
+user-guide-title: 一門Adobe技術教學課程
+breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: decd2a5545cf3bb856d893d6af178b1f96ae20ae
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1200'
 ht-degree: 3%
 
 ---
 
 
-# 完整技術教學課程 — One Adobe {#tutorial-one-adobe}
+# 一門Adobe技術教學課程 {#tutorial-one-adobe}
 
 + [教學課程概觀](/help/tutorial-one-adobe/overview.md)
 + [內容狀態](/help/tutorial-one-adobe/status.md)
