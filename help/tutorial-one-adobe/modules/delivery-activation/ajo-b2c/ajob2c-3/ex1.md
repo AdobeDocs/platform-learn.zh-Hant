@@ -86,7 +86,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![Adobe Experience Platform資料彙集](./images/launchprop2.png)
 
-然後您會回到這裡。 您將會看到&#x200B;**AEP Assurance**&#x200B;的擴充功能。 AEP Assurance可協助您檢查、證明、模擬及驗證如何在行動應用程式中收集資料或提供體驗。 您可以在這裡閱讀更多有關AEP Assurance的資訊： [https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/assurance/home)。
+然後您會回到這裡。 您將會看到&#x200B;**AEP Assurance**&#x200B;的擴充功能。 AEP Assurance可協助您檢查、證明、模擬及驗證如何在行動應用程式中收集資料或提供體驗。 您可以在這裡閱讀更多有關AEP Assurance的資訊： [https://experienceleague.adobe.com/zh-hant/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/assurance/home)。
 
 ![Adobe Experience Platform資料彙集](./images/launchprop8.png)
 
