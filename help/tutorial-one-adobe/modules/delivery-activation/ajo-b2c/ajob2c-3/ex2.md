@@ -33,8 +33,8 @@ ht-degree: 1%
 
 然後您會看到空白的事件設定。
 首先，請為事件命名，如下所示： `--aepUserLdap--StoreEntryEvent`並將說明設定為`Store Entry Event`。
-下一個是**事件型別**&#x200B;選項。 選取&#x200B;**單一**。
-下一個是**事件ID型別**&#x200B;選擇。 選取&#x200B;**系統產生**。
+下一個是&#x200B;**事件型別**&#x200B;選項。 選取&#x200B;**單一**。
+下一個是&#x200B;**事件ID型別**&#x200B;選擇。 選取&#x200B;**系統產生**。
 
 ![ACOP](./images/eventname.png)
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
 ![ACOP](./images/journeyactions1push.png)
 
-下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。****
+下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。**&#x200B;**
 
 ![ACOP](./images/journeyactions2push.png)
 
@@ -175,7 +175,7 @@ ht-degree: 1%
 
 ![DSN](./images/pushpoi8.png)
 
-按一下[新增所有變更的資源]**，然後按一下[儲存並建置至開發]****。**
+按一下[新增所有變更的資源]&#x200B;**，然後按一下[儲存並建置至開發]**&#x200B;**。**
 
 ![DSN](./images/pushpoi9.png)
 

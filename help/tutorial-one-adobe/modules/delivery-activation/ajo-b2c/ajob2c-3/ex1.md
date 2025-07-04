@@ -82,7 +82,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![Adobe Experience Platform資料彙集](./images/launchprop1.png)
 
-接著，您會看到行動裝置資料流已連結至此處。 接著，按一下[取消]，返回[擴充功能概述]。****
+接著，您會看到行動裝置資料流已連結至此處。 接著，按一下[取消]，返回[擴充功能概述]。**&#x200B;**
 
 ![Adobe Experience Platform資料彙集](./images/launchprop2.png)
 
@@ -114,7 +114,7 @@ Adobe Journey Optimizer使用資料集來儲存行動裝置的推播權杖之類
 
 ![DSN](./../../../../modules/getting-started/gettingstarted/images/mobileappn1.png)
 
-登入後，您會看到通知要求您傳送通知的許可權。 我們將在教學課程中傳送通知，因此請按一下[允許]。****
+登入後，您會看到通知要求您傳送通知的許可權。 我們將在教學課程中傳送通知，因此請按一下[允許]。**&#x200B;**
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
 
