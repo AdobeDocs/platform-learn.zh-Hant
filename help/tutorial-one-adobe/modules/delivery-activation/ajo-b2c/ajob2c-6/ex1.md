@@ -250,7 +250,7 @@ ht-degree: 0%
 
 ![應用程式](./images/contentcard31.png)
 
-將下列程式碼貼到編輯器中，然後按一下[儲存]。****
+將下列程式碼貼到編輯器中，然後按一下[儲存]。**&#x200B;**
 
 ```javascript
 if (!Array.isArray(event.propositions)) {
@@ -299,7 +299,7 @@ event.propositions.forEach(function (payload) {
 
 ![應用程式](./images/contentcard35.png)
 
-按一下[新增所有變更的資源]**，然後按一下[儲存並建置至開發]****。**
+按一下[新增所有變更的資源]&#x200B;**，然後按一下[儲存並建置至開發]**&#x200B;**。**
 
 ![應用程式](./images/contentcard36.png)
 
