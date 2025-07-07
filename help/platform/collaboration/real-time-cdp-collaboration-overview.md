@@ -125,7 +125,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="設定Real-Time CDP Collaboration的許可權" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1751925455752" alt="設定Real-Time CDP Collaboration的許可權"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452241/?format=jpeg&nocache=1751925455752&captions=chi_hant" alt="設定Real-Time CDP Collaboration的許可權"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -231,7 +231,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="在Real-Time CDP Collaboration中建立專案" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1751925456092" alt="在Real-Time CDP Collaboration中建立專案"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464045/?format=jpeg&nocache=1751925456092&captions=chi_hant" alt="在Real-Time CDP Collaboration中建立專案"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
