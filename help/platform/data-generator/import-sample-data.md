@@ -180,7 +180,7 @@ Experience Platform業務使用者經常必須完成一系列步驟，包括識�
 
 ![開啟設定檔](../assets/data-generator/images/validation-profile-open.png)
 
-瀏覽&#x200B;**[!UICONTROL 屬性]**&#x200B;和&#x200B;**[!UICONTROL 事件]**索引標籤中的資料後，您應該會看到設定檔包含來自各種資料檔的資料：
+瀏覽&#x200B;**[!UICONTROL 屬性]**&#x200B;和&#x200B;**[!UICONTROL 事件]**&#x200B;索引標籤中的資料後，您應該會看到設定檔包含來自各種資料檔的資料：
 ![離線購買事件檔案的事件資料](../assets/data-generator/images/validation-profile-events.png)
 
 ## 後續步驟
