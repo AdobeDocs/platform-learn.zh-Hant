@@ -7,7 +7,7 @@ level: Experienced
 jira: KT-7349
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
+source-git-commit: 1836e80bbf3d38b600f120d83d6628a9cb3c257b
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 3%
@@ -16,24 +16,24 @@ ht-degree: 3%
 
 # 將範例資料匯入Adobe Experience Platform
 
-瞭解如何設定包含範例資料的 Experience Platform 沙箱環境。您可以使用 Postman 集合來建立欄位群組、綱要、資料集，然後將範例資料匯入 Experience Platform。
+瞭解如何設定包含範例資料的 Experience Platform 沙箱環境。您可以使用 Postman 集合來建立欄位群組、結構描述、資料集，然後將範例資料匯入 Experience Platform。
 
 ## 範例資料使用案例
 
-Experience Platform業務使用者通常必須完成一系列步驟，包括識別欄位群組、建立結構描述、準備資料、建立資料集，然後擷取資料，然後才能探索Experience Platform提供的行銷功能。 本教學課程會自動執行部分步驟，讓您儘快將資料放入Platform沙箱。
+Experience Platform業務使用者經常必須完成一系列步驟，包括識別欄位群組、建立結構描述、準備資料、建立資料集，然後擷取資料，才能探索Experience Platform提供的行銷功能。 本教學課程會自動執行部分步驟，讓您儘快將資料放入Platform沙箱。
 
 本教學課程著重於名為Luma的虛構零售品牌。 他們投資於Adobe Experience Platform，以將忠誠度、CRM、產品目錄和離線購買資料結合到即時客戶設定檔中，並啟用這些設定檔，以將他們的行銷提升到新的境界。 我們已產生Luma的範例資料，在本教學課程的其餘部分中，您會將此資料匯入您的其中一個Experience Platform沙箱環境中。
 
 >[!NOTE]
 >
->此教學課程的最終結果是一個沙箱，其中包含與[資料架構師和資料工程師的Adobe Experience Platform快速入門教學課程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant)類似的資料。 它在2023年4月更新，以支援[Journey Optimizer挑戰](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hant)。 2023年6月更新，將驗證方法切換至OAuth。
+>此教學課程的最終結果是一個沙箱，其中包含與[資料架構師和資料工程師的Adobe Experience Platform快速入門教學課程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)類似的資料。 它在2023年4月更新，以支援[Journey Optimizer挑戰](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hant)。 2023年6月更新，將驗證方法切換至OAuth。
 
 
 ## 先決條件
 
-* 您有權存取Experience Platform API，且知道如何驗證。 如果沒有，請檢閱此[教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=zh-Hant)。
+* 您可以存取Experience Platform API，並瞭解如何進行驗證。 如果沒有，請檢閱此[教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=zh-Hant)。
 * 您可以存取Experience Platform開發沙箱。
-* 您知道您的Experience Platform租使用者ID。 您可以透過提出已驗證的[API要求](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=zh-Hant#know-your-tenant_id)來取得它
+* 您知道您的Experience Platform租使用者ID。 您可以透過提出已驗證的[API要求](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)來取得它
 或是在您登入Platform帳戶時，從URL擷取連結。 例如，在以下URL中，租使用者是&quot;`techmarketingdemos`&quot; `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`。
 
 ## 使用[!DNL Postman] {#postman}
@@ -81,7 +81,7 @@ Experience Platform業務使用者通常必須完成一系列步驟，包括識�
 1. 在Postman的右上角下拉式清單中選取您的環境，然後按一下眼睛圖示以檢視環境變數：
    ![環境選擇](../assets/data-generator/images/env-selection.png)
 
-1. 請確定已填入下列環境變數。 若要瞭解如何取得環境變數的值，請檢視[向Experience PlatformAPI進行驗證](/help/platform/authentication/platform-api-authentication.md)教學課程，以取得逐步指示。
+1. 請確定已填入下列環境變數。 若要瞭解如何取得環境變數的值，請檢視[向Experience Platform API進行驗證](/help/platform/api/platform-api-authentication.md)教學課程，以取得逐步指示。
 
    * `CLIENT_SECRET`
    * Adobe Developer Console中的`API_KEY`—`Client ID`
@@ -120,7 +120,7 @@ Experience Platform業務使用者通常必須完成一系列步驟，包括識�
 
 ### 驗證
 
-接下來，您需要驗證並產生使用者權杖。 請注意，本教學課程中使用的代號產生方法僅適用於非生產用途。 本機簽署會從協力廠商主機載入JavaScript程式庫，而遠端簽署會將私密金鑰傳送至Adobe擁有且運作的Web服務。 雖然Adobe不會儲存此私密金鑰，但生產金鑰絕不可與任何人共用。
+接下來，您需要驗證並產生使用者權杖。 請注意，本教學課程中使用的代號產生方法僅適用於非生產用途。 本機簽署會從協力廠商主機載入JavaScript程式庫，而遠端簽署會將私密金鑰傳送至Adobe擁有且運作的Web服務。 雖然Adobe不會儲存此私密金鑰，但生產金鑰絕對不應與任何人共用。
 
 1. 開啟`0-Authentication`集合、選取`OAuth: Request Access Token`要求，然後按一下`SEND`以驗證及取得存取權杖。
 
@@ -180,23 +180,23 @@ Experience Platform業務使用者通常必須完成一系列步驟，包括識�
 
 ![開啟設定檔](../assets/data-generator/images/validation-profile-open.png)
 
-瀏覽&#x200B;**[!UICONTROL 屬性]**&#x200B;和&#x200B;**[!UICONTROL 事件]**&#x200B;索引標籤中的資料後，您應該會看到設定檔包含來自各種資料檔的資料：
+瀏覽&#x200B;**[!UICONTROL 屬性]**&#x200B;和&#x200B;**[!UICONTROL 事件]**索引標籤中的資料後，您應該會看到設定檔包含來自各種資料檔的資料：
 ![離線購買事件檔案的事件資料](../assets/data-generator/images/validation-profile-events.png)
 
 ## 後續步驟
 
 如果您想瞭解Adobe Journey Optimizer，此沙箱包含您進行[Journey Optimizer挑戰](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hant)所需的一切
 
-如果您想瞭解合併原則、資料控管、查詢服務和區段產生器，請跳到資料架構師和資料工程師快速入門教學課程[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=zh-Hant)中的第11課。 本其他教學課程的先前課程會讓您手動建立這些Postman集合剛才填入的所有內容 — 開心地開始吧！
+如果您想瞭解合併原則、資料控管、查詢服務和區段產生器，請跳到資料架構師和資料工程師快速入門教學課程[中的](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en)第11課。 本其他教學課程的先前課程會讓您手動建立這些Postman集合剛才填入的所有內容 — 開心地開始吧！
 
 如果您想要建置範例Web SDK實作以連結至此沙箱，請前往
-[使用Web SDK教學課程實作Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant)。 設定Web SDK教學課程的「初始設定」、「標籤設定」和「設定Experience Platform」課程後，使用密碼`test`使用`luma-crm.json`檔案中的前10個電子郵件地址登入Luma網站，以檢視設定檔片段與本教學課程中上傳的資料合併。
+[使用Web SDK教學課程實作Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant)。 設定Web SDK教學課程的「初始設定」、「標籤設定」和「設定Experience Platform」課程後，使用密碼`luma-crm.json`使用`test`檔案中的前10個電子郵件地址登入Luma網站，以檢視設定檔片段與本教學課程中上傳的資料合併。
 
-如果您想要建立範例行動SDK實作以連結至此沙箱，請前往
-[在行動應用程式教學課程中實作Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hant)。 設定Web SDK教學課程的「初始設定」、「應用程式實作」和「Experience Platform」課程後，使用`luma-crm.json`檔案中的第一個電子郵件地址登入Luma網站，檢視設定檔片段與本教學課程中上傳的資料合併。
+如果您想要建立範例行動SDK實施以連結至此沙箱，請瀏覽
+[在行動應用程式教學課程中實作Adobe Experience Cloud](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)。 設定Web SDK教學課程的「初始設定」、「應用程式實作」和「Experience Platform」課程後，使用`luma-crm.json`檔案中的第一個電子郵件地址登入Luma網站，檢視設定檔片段與本教學課程中上傳的資料合併。
 
 ## 重設沙箱環境 {#reset-sandbox}
 
 重設非生產沙箱會刪除與該沙箱關聯的所有資源（結構描述、資料集等），同時維護沙箱的名稱和關聯的許可權。 此「乾淨」沙箱可繼續以相同名稱供擁有存取權的使用者使用。
 
-請依照步驟[這裡](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=zh-Hant#reset-a-sandbox)重設沙箱環境。
+請依照步驟[這裡](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox)重設沙箱環境。
