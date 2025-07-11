@@ -26,7 +26,7 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
->若要存取[Adobe Developer Console](https://developer.adobe.com/console/home)，您必須是[Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)中的[系統管理員](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)或[開發人員](https://adminconsole.adobe.com)。
+>若要存取[Adobe Developer Console](https://developer.adobe.com/console/home)，您必須是[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-roles.html)中的[系統管理員](https://helpx.adobe.com/tw/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)或[開發人員](https://adminconsole.adobe.com)。
 >
 > 建立API認證後，系統管理員必須將該認證與Experience Platform中的角色建立關聯。
 >
