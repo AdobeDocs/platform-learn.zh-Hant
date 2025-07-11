@@ -20,4 +20,4 @@ ht-degree: 0%
 
 此影片旨在為機構或付費媒體從業人員提供Real-Time CDP價值屬性的整體概觀，包括內容、運作方式及其用途，並著重說明推動其Real-Time CDP Collaboration使用案例和工作流程的資料來源和對象。
 
->[!VIDEO](https://video.tv.adobe.com/v/3464657/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464669/?learn=on&enablevpops&captions=chi_hant)
