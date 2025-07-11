@@ -22,4 +22,4 @@ ht-degree: 0%
 * [啟用批次設定檔匯出目的地的對象資料](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=zh-Hant)，以取得如何使用Experience Platform UI啟用批次資料或電子郵件行銷目的地的指示
 * [使用流程服務API連線到批次目的地並啟用資料](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=zh-Hant)，以取得有關如何使用流程服務API啟用資料到批次或電子郵件行銷目的地的指示
 
->[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464516/?learn=on&enablevpops&captions=chi_hant)
