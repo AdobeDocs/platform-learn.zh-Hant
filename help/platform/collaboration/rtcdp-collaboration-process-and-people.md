@@ -20,4 +20,4 @@ ht-degree: 0%
 
 這部影片為Real-Time CDP Collaboration的使用者（包括機構從業人員和行銷技術團隊）提供指引，說明這些跨職能團隊應如何在不同的使用案例、資料來源、對象和目標中合作，以確保採用Real-Time CDP Collaboration時的成功和營運效率
 
->[!VIDEO](https://video.tv.adobe.com/v/3464658/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464680/?learn=on&enablevpops&captions=chi_hant)
