@@ -4,9 +4,9 @@ description: Journey Optimizer建立您的電子郵件訊息
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
+source-git-commit: ea8255de9869061cd21d2b5e7c8690f84be0a25b
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ![ACOP](./images/journeywait.png)
 
-您的歷程現在看起來像這樣。 在畫面右側，您需要設定等待時間。 設定為1分鐘。 這會在事件觸發後，提供充足的時間讓設定檔屬性可用。 按一下[儲存]儲存變更。**&#x200B;**
+您的歷程現在看起來像這樣。 在畫面右側，您需要設定等待時間。 設定為1分鐘。 這會在事件觸發後，提供充足的時間讓設定檔屬性可用。 按一下[儲存]儲存變更。****
 
 ![ACOP](./images/journeywait1.png)
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 ## 3.1.3.2建立您的訊息
 
-若要建立您的訊息，請按一下[編輯內容]。**&#x200B;**
+若要建立您的訊息，請按一下[編輯內容]。****
 
 ![ACOP](./images/journeyactions2.png)
 
@@ -216,7 +216,7 @@ At CitiSignal, we understand that staying connected is more than just a convenie
 
 ![ACOP](./images/publish1.png)
 
-幾分鐘後，您的歷程狀態將變更為&#x200B;**即時**，而您將看到歷程績效的即時儀表板。
+幾分鐘後，您的歷程狀態將變更為&#x200B;**即時**，您將會看到歷程績效的即時儀表板。
 
 ![ACOP](./images/published.png)
 
