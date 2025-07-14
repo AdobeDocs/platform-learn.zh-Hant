@@ -40,7 +40,7 @@ CitiSignal想要詢問客戶對下列網域的興趣：
 ![登錄頁面](./images/lp1.png)
 
 對於&#x200B;**Title**，使用： `--aepUserLdap--_SL_Interest_in_Smart_Home`。
-對於**描述**，使用： `Interest in Smart Home`。
+對於&#x200B;**描述**，使用： `Interest in Smart Home`。
 
 按一下&#x200B;**提交**。
 
@@ -51,7 +51,7 @@ CitiSignal想要詢問客戶對下列網域的興趣：
 ![登錄頁面](./images/lp3.png)
 
 對於&#x200B;**Title**，使用： `--aepUserLdap--_SL_Interest_WFH`。
-對於**描述**，使用： `Interest in Work From Home`。
+對於&#x200B;**描述**，使用： `Interest in Work From Home`。
 
 按一下&#x200B;**提交**。
 
@@ -62,7 +62,7 @@ CitiSignal想要詢問客戶對下列網域的興趣：
 ![登錄頁面](./images/lp5.png)
 
 對於&#x200B;**Title**，使用： `--aepUserLdap--_SL_Interest_Online_Gaming`。
-對於**描述**，使用： `Interest in Online Gaming`。
+對於&#x200B;**描述**，使用： `Interest in Online Gaming`。
 
 按一下&#x200B;**提交**。
 
