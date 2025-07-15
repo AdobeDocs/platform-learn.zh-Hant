@@ -280,7 +280,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 1. 在左側邊欄中選取「**[!UICONTROL 設定]**」，並選取「![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」底下的「**[!UICONTROL 檢閱和模擬]**」旁的「**[!UICONTROL 新增]**」。
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 在左側邊欄中選取&#x200B;**[!UICONTROL 檢閱和模擬]**。 資料串流設定皆已驗證，而且您的應用程式中還有SDK設定。
-1. 在頂端列選取&#x200B;**[!UICONTROL 要求]**。 您會看到您的&#x200B;**[!DNL Target]**要求。
+1. 在頂端列選取&#x200B;**[!UICONTROL 要求]**。 您會看到您的&#x200B;**[!DNL Target]**&#x200B;要求。
    ![AJO Decisioning驗證](assets/assurance-decisioning-requests.png)
 
 1. 您可以探索&#x200B;**[!UICONTROL 模擬]**&#x200B;和&#x200B;**[!UICONTROL 事件清單]**&#x200B;標籤，進一步瞭解檢查您的Target優惠方案設定的功能。

@@ -80,6 +80,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
    1. 從&#x200B;**[!DNL Luma]**&#x200B;選取資料庫&#x200B;**[!UICONTROL 清單中選取]**。
    1. 請確定您已挑選您的工作程式庫，例如&#x200B;**[!UICONTROL 初始組建]**。
    1. 從&#x200B;**[!UICONTROL 儲存至程式庫]**&#x200B;中選取&#x200B;**[!UICONTROL 儲存至程式庫並建置]**。
+
       ![安裝Places擴充功能](assets/places-install-extension.png)。
 
 1. 已重建您的程式庫。
@@ -93,7 +94,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 1. 從頂端列選取&#x200B;**[!UICONTROL 瀏覽]**。
 1. 選取要開啟的結構描述。
 1. 在結構描述編輯器中，選取&#x200B;**[!UICONTROL 消費者體驗事件]**。
-1. 您看到&#x200B;**[!UICONTROL placeContext]**物件，其中包含要擷取POI互動與地理位置資料的物件和欄位。
+1. 您看到&#x200B;**[!UICONTROL placeContext]**&#x200B;物件，其中包含要擷取POI互動與地理位置資料的物件和欄位。
    ![結構描述位置](assets/schema-places-context.png)。
 
 
@@ -139,6 +140,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 1. 選取![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)底下的&#x200B;**[!UICONTROL 新增]**。
    1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL 地標]**，並從&#x200B;**[!UICONTROL 事件型別]**&#x200B;清單中選取&#x200B;**[!UICONTROL 輸入POI]**。
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
+
       ![標籤事件](assets/tags-event-mobile-core.png)。
 1. 選取![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)底下的&#x200B;**[!UICONTROL 新增]**。
    1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL 行動核心]**，從清單中選取&#x200B;**[!UICONTROL 動作型別]**&#x200B;中的&#x200B;**[!UICONTROL 附加資料]**。 此動作會附加裝載資料。
@@ -169,6 +171,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
       您也可以選取`{%% ... %%}`資料![，在JSON中插入](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)資料元素預留位置值。 快顯對話方塊可讓您挑選您建立的任何資料元素。
 
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
+
       ![標籤動作](assets/tags-action-mobile-core.png)
 
 1. 選取![行動核心 — 附加資料](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)動作旁的&#x200B;**[!UICONTROL 新增]**。
