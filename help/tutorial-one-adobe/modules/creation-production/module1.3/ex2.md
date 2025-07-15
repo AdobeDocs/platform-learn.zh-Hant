@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -233,6 +233,8 @@ GenStudio for Performance Marketing可讓內容建立者使用範本快速產生
 
 ![GSPeM](./images/gspem17.png)
 
+### 中繼範本
+
 移至&#x200B;**內容** > **範本**。 按一下&#x200B;**+新增範本**。
 
 ![GSPeM](./images/gspem125.png)
@@ -261,6 +263,8 @@ GenStudio for Performance Marketing可讓內容建立者使用範本快速產生
 您的範本現在已儲存，並可在範本資料庫中使用。
 
 ![GSPeM](./images/gspem131.png)
+
+### 顯示橫幅廣告范
 
 按一下&#x200B;**+新增範本**。
 
@@ -348,6 +352,39 @@ GenStudio for Performance Marketing可讓內容建立者使用範本快速產生
 您的範本現在已儲存，並可在範本資料庫中使用。
 
 ![GSPeM](./images/gspem152.png)
+
+### 電子郵件範本
+
+按一下&#x200B;**+新增範本**。
+
+![GSPeM](./images/gspem153.png)
+
+選取&#x200B;**電子郵件**，然後按一下&#x200B;**瀏覽**。
+
+![GSPeM](./images/gspem154.png)
+
+在包含下載的&#x200B;**CitiSignal-GSPeM-assets**&#x200B;檔案的資料夾中，導覽至資料夾&#x200B;**範本**。 選取檔案&#x200B;**citisignal-email-template.html**，然後按一下&#x200B;**開啟**。
+
+![GSPeM](./images/gspem155.png)
+
+您應該會看到此訊息。 按一下&#x200B;**下一步**。
+
+![GSPeM](./images/gspem156.png)
+
+按一下&#x200B;**下一步**。
+
+![GSPeM](./images/gspem157.png)
+
+將此用於欄位&#x200B;**範本名稱**：
+`--aepUserLdap---citisignal-email-template`。
+
+按一下&#x200B;**發佈範本**。
+
+![GSPeM](./images/gspem158.png)
+
+您的範本現在已儲存，並可在範本資料庫中使用。
+
+![GSPeM](./images/gspem159.png)
 
 您現在已經設定好下一次練習所需的範本。
 

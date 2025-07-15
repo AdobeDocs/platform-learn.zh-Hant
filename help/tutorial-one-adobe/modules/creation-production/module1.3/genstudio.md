@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '499'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,10 @@ GenStudio for Performance Marketing會使用有關您的品牌和市場的資訊
 [1.3.3 Meta的行銷活動啟用](./ex3.md){target="_blank"}
 
 在本練習中，您將建立一個行銷活動。 您也會設定與中繼的連線，並逐步完成建立廣告、使用Adobe Workfront核准廣告，以及將廣告發佈到中繼所需的所有步驟。
+
+[1.3.4建立AJO的電子郵件體驗](./ex4.md){target="_blank"}
+
+在本練習中，您將使用GenStudio for Performance Marketing中的範本建立電子郵件體驗，並將該體驗與Adobe Journey Optimizer共用以傳送電子郵件行銷活動。
 
 [摘要與優點](./summary.md){target="_blank"}
 
