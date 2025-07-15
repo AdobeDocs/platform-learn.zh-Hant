@@ -6,18 +6,18 @@ feature-set: Target
 feature: A/B Tests
 jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1749'
 ht-degree: 1%
 
 ---
 
 # 使用Adobe Target最佳化及個人化
 
-瞭解如何使用Platform Mobile SDK和Adobe Target將行動應用程式中的體驗最佳化及個人化。
+瞭解如何使用Platform Mobile SDK和Adobe Target最佳化及個人化行動應用程式中的體驗。
 
-Target提供一切所需工具，讓您量身打造及個人化您的客戶體驗。 Target可協助您在網站和行動網站、應用程式、社群媒體和其他數位頻道上獲得最大收入。 Target可以執行A/B測試、多變數測試、建議產品和內容、鎖定內容、使用AI自動個人化內容等等。 本課程著重於Target的A/B測試功能。 如需詳細資訊，請參閱[A/B測試總覽](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=zh-Hant)。
+Target提供一切所需工具，讓您量身打造及個人化您的客戶體驗。 Target可協助您在網站和行動網站、應用程式、社群媒體和其他數位頻道上獲得最大收入。 Target可以執行A/B測試、多變數測試、建議產品和內容、鎖定內容、使用AI自動個人化內容等等。 本課程著重於Target的A/B測試功能。 如需詳細資訊，請參閱[A/B測試總覽](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en)。
 
 ![架構](assets/architecture-at.png)
 
@@ -39,7 +39,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 在本課程中，您將會：
 
 * 更新您的Target整合資料流。
-* 使用Journey Optimizer - Decisioning擴充功能更新標籤屬性。
+* 使用Offer Decisioning和Target擴充功能更新您的標籤屬性。
 * 更新您的結構描述以擷取主張事件。
 * 驗證Assurance中的設定。
 * 在Target中建立簡單的A/B測試。
@@ -58,17 +58,17 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
 #### Adobe Target
 
-為確保從您的行動應用程式傳送到Experience PlatformEdge Network的資料能轉送到Adobe Target，您必須更新資料流設定。
+為確保從您的行動應用程式傳送至Experience Platform Edge Network的資料能轉送至Adobe Target，您必須更新資料流設定。
 
 1. 在資料收集UI中，選取&#x200B;**[!UICONTROL 資料串流]**，然後選取您的資料串流，例如&#x200B;**[!DNL Luma Mobile App]**。
 1. 選取&#x200B;**[!UICONTROL 新增服務]**，並從&#x200B;**[!UICONTROL 服務]**&#x200B;清單中選取&#x200B;**[!UICONTROL Adobe Target]**。
-1. 如果您是Target Premium客戶，且想要使用屬性代號，請輸入您要用於這項整合的Target **[!UICONTROL 屬性代號]**&#x200B;值。 Target Standard使用者可略過此步驟。
+1. 如果您是Target Premium客戶，且想要使用屬性代號，請輸入您要用於這項整合的目標&#x200B;**[!UICONTROL 屬性代號]**&#x200B;值。 Target Standard使用者可略過此步驟。
 
    您可以在Target UI的&#x200B;**[!UICONTROL 管理]** > **[!UICONTROL 屬性]**&#x200B;中找到您的屬性。 選取![代碼](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)以顯示您要使用之屬性的屬性代號。 屬性權杖的格式如`"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`；您只能輸入值`xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`。
 
-   您可以選擇指定Target環境ID。 Target會使用環境來組織您的網站和生產前環境，以便輕鬆管理和分隔報表。 預設環境包括生產、測試和開發。 如需詳細資訊，請參閱[環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=zh-Hant)和[目標環境識別碼](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=zh-Hant#target-environment-id)。
+   您可以選擇指定Target環境ID。 Target會使用環境來組織您的網站和生產前環境，以便輕鬆管理和分隔報表。 預設環境包括生產、測試和開發。 如需詳細資訊，請參閱[環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en)和[目標環境識別碼](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id)。
 
-   您可以選擇指定Target第三方ID名稱空間，以支援在身分名稱空間上同步設定檔（例如CRM ID）。 如需詳細資訊，請參閱[目標第三方ID名稱空間](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=zh-Hant#target-third-party-id-namespace)。
+   您可以選擇指定Target第三方ID名稱空間，以支援在身分名稱空間上同步設定檔（例如CRM ID）。 如需詳細資訊，請參閱[目標第三方ID名稱空間](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace)。
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
@@ -80,22 +80,22 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 為確保將從您的行動應用程式傳送到Edge Network的資料轉送到Journey Optimizer — 決策管理，請更新您的資料流設定。
 
 1. 在資料收集UI中，選取&#x200B;**[!UICONTROL 資料串流]**，然後選取您的資料串流，例如&#x200B;**[!DNL Luma Mobile App]**。
-1. 選取&#x200B;**[!UICONTROL Experience Platform]**&#x200B;的![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)，並從內容功能表選取![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯]**。
-1. 在&#x200B;**[!UICONTROL 資料串流]** > ![資料夾](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;畫面中，確定已選取&#x200B;**[!UICONTROL Offer decisioning]**、**[!UICONTROL Edge分段]**&#x200B;和&#x200B;**[!UICONTROL Personalization目的地]**。 如果您也學習過Journey Optimizer課程，請選取&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hant#aep)。
+1. 選取![Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)的&#x200B;**[!UICONTROL 更多]**，並從內容功能表選取![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯]**。
+1. 在&#x200B;**[!UICONTROL 資料串流]** > ![資料夾](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;畫面中，確定已選取&#x200B;**[!UICONTROL Offer Decisioning]**、**[!UICONTROL Edge分段]**&#x200B;和&#x200B;**[!UICONTROL Personalization目的地]**。 如果您也學習過Journey Optimizer課程，請選取&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)。
 1. 若要儲存資料流設定，請選取「**[!UICONTROL 儲存]**」。
 
    ![AEP資料流組態](assets/datastream-aep-configuration-target.png)
 
 
-### 安裝Adobe Journey Optimizer - Decisioning標籤擴充功能
+### 安裝Offer Decisioning和Target標籤擴充功能
 
 1. 導覽至&#x200B;**[!UICONTROL 標籤]**，尋找您的行動標籤屬性，然後開啟屬性。
 1. 選取&#x200B;**[!UICONTROL 延伸模組]**。
 1. 選取&#x200B;**[!UICONTROL 目錄]**。
-1. 搜尋&#x200B;**[!UICONTROL Adobe Journey Optimizer - Decisioning]**&#x200B;擴充功能。
+1. 搜尋&#x200B;**[!UICONTROL Offer Decisioning和Target]**&#x200B;擴充功能。
 1. 安裝擴充功能。 此擴充功能不需要額外設定。
 
-   ![新增Decisioning擴充功能](assets/tag-add-decisioning-extension.png)
+   ![新增Offer Decisioning和Target擴充功能](assets/tag-add-decisioning-extension.png)
 
 
 ### 更新您的結構描述
@@ -103,7 +103,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 1. 導覽至資料收集介面，然後從左側邊欄選取&#x200B;**[!UICONTROL 結構描述]**。
 1. 從頂端列選取&#x200B;**[!UICONTROL 瀏覽]**。
 1. 選取要開啟的結構描述。
-1. 在結構描述編輯器中，選取&#x200B;**[!UICONTROL 欄位群組]**&#x200B;旁的![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]**。
+1. 在結構描述編輯器中，選取![欄位群組](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)旁的&#x200B;**[!UICONTROL 新增]** **[!UICONTROL 新增]**。
 1. 在&#x200B;**[!UICONTROL 新增欄位群組]**&#x200B;對話方塊中，搜尋`proposition`，選取&#x200B;**[!UICONTROL 體驗事件 — 主張互動]**，並選取&#x200B;**[!UICONTROL 新增欄位群組]**。
    ![主張](assets/schema-fieldgroup-proposition.png)
 1. 若要儲存對結構描述的變更，請選取&#x200B;**[!UICONTROL 儲存]**。
@@ -114,9 +114,9 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 若要驗證Assurance中的設定：
 
 1. 前往Assurance UI。
-1. 在左側邊欄中選取「**[!UICONTROL 設定]**」，然後選取「**[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**」底下的「**[!UICONTROL 驗證設定]**」旁的「![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」。
+1. 在左側邊欄中選取「**[!UICONTROL 設定]**」，然後選取「![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」底下的「**[!UICONTROL 驗證設定]**」旁的「**[!UICONTROL 新增]**」。
 1. 選取「**[!UICONTROL 儲存]**」。
-1. 在左側邊欄中選取&#x200B;**[!UICONTROL 驗證設定]**。 資料串流設定都會經過驗證，並且會在您的應用程式中設定SDK。
+1. 在左側邊欄中選取&#x200B;**[!UICONTROL 驗證設定]**。 資料串流設定皆已驗證，而且您的應用程式中還有SDK設定。
    ![AJO Decisioning驗證](assets/ajo-decisioning-validation.png)
 
 ## 建立A/B測試
@@ -125,14 +125,14 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
 1. 在Target UI中，從頂端列選取&#x200B;**[!UICONTROL 活動]**。
 1. 從內容功能表選取&#x200B;**[!UICONTROL 建立活動]**&#x200B;和&#x200B;**[!UICONTROL A/B測試]**。
-1. 在&#x200B;**[!UICONTROL 建立A/B測試活動]**&#x200B;對話方塊中，選取&#x200B;**[!UICONTROL 行動裝置]**&#x200B;作為&#x200B;**[!UICONTROL 型別]**，從&#x200B;**[!UICONTROL 選擇Workspace]**&#x200B;清單中選取工作區，並從&#x200B;**[!UICONTROL 選擇屬性]**&#x200B;清單中選取您的屬性（如果您是Target Premium客戶並在資料流中指定屬性代號）。
+1. 在&#x200B;**[!UICONTROL 建立A/B測試活動]**&#x200B;對話方塊中，選取&#x200B;**[!UICONTROL 行動裝置]**&#x200B;作為&#x200B;**[!UICONTROL 型別]**，從&#x200B;**[!UICONTROL 選擇Workspace]**&#x200B;清單中選取工作區，並從&#x200B;**[!UICONTROL 選擇屬性]**&#x200B;清單中選取您的屬性(如果您是Target Premium客戶並在資料流中指定屬性權杖)。
 1. 選取「**[!UICONTROL 建立]**」。
    ![建立Target活動](assets/target-create-activity1.png)
 
 1. 在&#x200B;**[!UICONTROL 未命名的活動]**&#x200B;畫面中，於&#x200B;**[!UICONTROL 體驗]**&#x200B;步驟：
 
-   1. 在&#x200B;**[!UICONTROL 位置1]**&#x200B;下的&#x200B;**[!UICONTROL 選取位置]**&#x200B;中輸入`luma-mobileapp-abtest`。 此位置名稱（通常稱為mbox）稍後會在應用程式實作中使用。
-   1. 選取&#x200B;**[!UICONTROL 預設內容]**&#x200B;旁的![Chrevron down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)，並從內容功能表選取&#x200B;**[!UICONTROL 建立JSON選件]**。
+   1. 在`luma-mobileapp-abtest`位置1 **[!UICONTROL 下的]**&#x200B;選取位置&#x200B;**[!UICONTROL 中輸入]**。 此位置名稱（通常稱為mbox）稍後會在應用程式實作中使用。
+   1. 選取![預設內容](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg)旁的&#x200B;**[!UICONTROL Chrevron down]**，並從內容功能表選取&#x200B;**[!UICONTROL 建立JSON選件]**。
    1. 將下列JSON複製到&#x200B;**[!UICONTROL 請輸入有效的JSON物件]**。
 
       ```json
@@ -169,7 +169,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
    1. 將未命名活動重新命名，例如`Luma Mobile SDK Tutorial - A/B Test Example`。
    1. 輸入A/B測試的&#x200B;**[!UICONTROL 目標]**，例如`A/B Test for Luma mobile app tutorial`。
-   1. 選取&#x200B;**[!UICONTROL 轉換]**，**[!UICONTROL 已檢視**&#x200B;[!UICONTROL &#x200B;目標量度&#x200B;]&#x200B;**>**&#x200B;[!UICONTROL &#x200B;我的主要目標&#x200B;]&#x200B;**圖磚中的mbox]**，並輸入您的位置(mbox)名稱，例如`luma-mobileapp-abtest`。
+   1. 選取&#x200B;**[!UICONTROL 轉換]**，**[!UICONTROL 已檢視]**&#x200B;目標量度&#x200B;**[!UICONTROL >]**&#x200B;我的主要目標&#x200B;**[!UICONTROL 圖磚中的mbox]**，並輸入您的位置(mbox)名稱，例如`luma-mobileapp-abtest`。
    1. 選取&#x200B;**[!UICONTROL 儲存並關閉]**。
 
       ![目標設定](assets/target-goals.png)
@@ -240,7 +240,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
    * 根據決定範圍（即您在A/B測試中定義的位置）擷取目前設定檔的主張，
    * 從主張中擷取優惠方案，
    * 會取消包裝選件的內容，以便其在應用程式中正確顯示，並且
-   * 觸發優惠方案上的`displayed()`動作，該動作會將事件傳送回PlatformEdge Network，通知優惠方案已顯示。
+   * 觸發優惠方案上的`displayed()`動作，此動作會將事件傳送回Platform Edge Network，通知優惠方案已顯示。
 
 1. 還是在&#x200B;**[!DNL TargetOffersView]**&#x200B;中，將下列程式碼新增到`.onFirstAppear`修飾元。 此程式碼可確保用於更新優惠方案的回撥僅註冊一次。
 
@@ -274,13 +274,13 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
 ## 驗證Assurance中的實作
 
-驗證Assurance中的A/B測試：
+若要驗證Assurance中的A/B測試：
 
 1. 檢閱[設定指示](assurance.md#connecting-to-a-session)區段，將您的模擬器或裝置連線到Assurance。
-1. 在左側邊欄中選取「**[!UICONTROL 設定]**」，並選取「**[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**」底下的「**[!UICONTROL 檢閱和模擬]**」旁的「![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」。
+1. 在左側邊欄中選取「**[!UICONTROL 設定]**」，並選取「![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」底下的「**[!UICONTROL 檢閱和模擬]**」旁的「**[!UICONTROL 新增]**」。
 1. 選取「**[!UICONTROL 儲存]**」。
-1. 在左側邊欄中選取&#x200B;**[!UICONTROL 檢閱和模擬]**。 資料串流設定都會經過驗證，並且會在您的應用程式中設定SDK。
-1. 在頂端列選取&#x200B;**[!UICONTROL 要求]**。 您會看到您的&#x200B;**[!DNL Target]**&#x200B;要求。
+1. 在左側邊欄中選取&#x200B;**[!UICONTROL 檢閱和模擬]**。 資料串流設定皆已驗證，而且您的應用程式中還有SDK設定。
+1. 在頂端列選取&#x200B;**[!UICONTROL 要求]**。 您會看到您的&#x200B;**[!DNL Target]**要求。
    ![AJO Decisioning驗證](assets/assurance-decisioning-requests.png)
 
 1. 您可以探索&#x200B;**[!UICONTROL 模擬]**&#x200B;和&#x200B;**[!UICONTROL 事件清單]**&#x200B;標籤，進一步瞭解檢查您的Target優惠方案設定的功能。
@@ -291,8 +291,8 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
 >[!SUCCESS]
 >
->您已為A/B測試啟用應用程式，並針對Adobe Experience Platform Mobile SDK使用Adobe Target和Adobe Journey Optimizer - Decisioning擴充功能顯示A/B測試的結果。
+>您已為A/B測試啟用應用程式，並在Adobe Experience Platform Mobile SDK中使用Adobe Target和Offer Decisioning及Target擴充功能來顯示A/B測試的結果。
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
 
 下一步： **[結論和後續步驟](conclusion.md)**

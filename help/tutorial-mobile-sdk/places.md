@@ -1,11 +1,11 @@
 ---
-title: 搭配Platform Mobile SDK使用Places
+title: 透過Platform Mobile SDK使用地標
 description: 瞭解如何在行動應用程式中使用Places地理位置服務。
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1591'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 
 ## 設定
 
-若要讓Places服務在您的應用程式和Mobile SDK中運作，您必須進行一些設定。
+若要讓Places服務在您的應用程式內和Mobile SDK內運作，您必須進行一些設定。
 
 ### 定義地標
 
@@ -74,13 +74,12 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 1. 搜尋&#x200B;**[!UICONTROL Places]**&#x200B;延伸模組。
 1. 安裝擴充功能。
 
-   ![新增Decisioning擴充功能](assets/tag-places-extension.png)
+   ![新增Offer Decisioning和Target擴充功能](assets/tag-places-extension.png)
 
 1. 在&#x200B;**[!UICONTROL 安裝擴充功能]**&#x200B;對話方塊中：
-   1. 從&#x200B;**[!UICONTROL 選取資料庫]**&#x200B;清單中選取&#x200B;**[!DNL Luma]**。
+   1. 從&#x200B;**[!DNL Luma]**&#x200B;選取資料庫&#x200B;**[!UICONTROL 清單中選取]**。
    1. 請確定您已挑選您的工作程式庫，例如&#x200B;**[!UICONTROL 初始組建]**。
    1. 從&#x200B;**[!UICONTROL 儲存至程式庫]**&#x200B;中選取&#x200B;**[!UICONTROL 儲存至程式庫並建置]**。
-
       ![安裝Places擴充功能](assets/places-install-extension.png)。
 
 1. 已重建您的程式庫。
@@ -94,7 +93,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 1. 從頂端列選取&#x200B;**[!UICONTROL 瀏覽]**。
 1. 選取要開啟的結構描述。
 1. 在結構描述編輯器中，選取&#x200B;**[!UICONTROL 消費者體驗事件]**。
-1. 您看到&#x200B;**[!UICONTROL placeContext]**&#x200B;物件，其中包含要擷取POI互動與地理位置資料的物件和欄位。
+1. 您看到&#x200B;**[!UICONTROL placeContext]**物件，其中包含要擷取POI互動與地理位置資料的物件和欄位。
    ![結構描述位置](assets/schema-places-context.png)。
 
 
@@ -137,12 +136,11 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 1. 在您的標籤屬性中，從左側邊欄選取&#x200B;**[!UICONTROL 規則]**。
 1. 選取&#x200B;**[!UICONTROL 新增規則]**。
 1. 在&#x200B;**[!UICONTROL 建立規則]**&#x200B;畫面中，輸入規則的名稱，例如`POI - Entry`。
-1. 選取&#x200B;**[!UICONTROL EVENTS]**&#x200B;底下的![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
+1. 選取![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)底下的&#x200B;**[!UICONTROL 新增]**。
    1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL 地標]**，並從&#x200B;**[!UICONTROL 事件型別]**&#x200B;清單中選取&#x200B;**[!UICONTROL 輸入POI]**。
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
-
       ![標籤事件](assets/tags-event-mobile-core.png)。
-1. 選取&#x200B;**[!UICONTROL ACTIONS]**&#x200B;底下的![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
+1. 選取![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)底下的&#x200B;**[!UICONTROL 新增]**。
    1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL 行動核心]**，從清單中選取&#x200B;**[!UICONTROL 動作型別]**&#x200B;中的&#x200B;**[!UICONTROL 附加資料]**。 此動作會附加裝載資料。
    1. 在&#x200B;**[!UICONTROL JSON裝載]**&#x200B;中，貼上下列裝載：
 
@@ -168,14 +166,13 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
       }
       ```
 
-      您也可以選取![資料](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)，在JSON中插入`{%% ... %%}`資料元素預留位置值。 快顯對話方塊可讓您挑選您建立的任何資料元素。
+      您也可以選取`{%% ... %%}`資料![，在JSON中插入](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)資料元素預留位置值。 快顯對話方塊可讓您挑選您建立的任何資料元素。
 
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
-
       ![標籤動作](assets/tags-action-mobile-core.png)
 
-1. 選取&#x200B;**[!UICONTROL 行動核心 — 附加資料]**&#x200B;動作旁的![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
-   1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL Adobe Experience PlatformEdge Network]**，然後選取&#x200B;**[!UICONTROL 轉寄事件至Edge Network]**。 此動作可確保事件和其他裝載資料轉送至PlatformEdge Network。
+1. 選取![行動核心 — 附加資料](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)動作旁的&#x200B;**[!UICONTROL 新增]**。
+   1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**，然後選取&#x200B;**[!UICONTROL 轉寄事件至Edge Network]**。 此動作可確保將事件和其他裝載資料轉送至Platform Edge Network。
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
 
 1. 若要儲存規則，請選取&#x200B;**[!UICONTROL 儲存至資料庫]**。
@@ -185,10 +182,10 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 讓我們建立另一個規則
 
 1. 在&#x200B;**[!UICONTROL 建立規則]**&#x200B;畫面中，輸入規則的名稱，例如`POI - Exit`。
-1. 選取&#x200B;**[!UICONTROL EVENTS]**&#x200B;底下的![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
+1. 選取![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)底下的&#x200B;**[!UICONTROL 新增]**。
    1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL 地標]**，並從&#x200B;**[!UICONTROL 事件型別]**&#x200B;清單中選取&#x200B;**[!UICONTROL 結束POI]**。
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
-1. 選取&#x200B;**[!UICONTROL ACTIONS]**&#x200B;底下的![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
+1. 選取![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)底下的&#x200B;**[!UICONTROL 新增]**。
    1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL 行動核心]**，從&#x200B;**[!UICONTROL 動作型別]**&#x200B;清單中選取&#x200B;**[!UICONTROL 附加資料]**。
    1. 在&#x200B;**[!UICONTROL JSON裝載]**&#x200B;中，貼上下列裝載：
 
@@ -216,8 +213,8 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
 
-1. 選取&#x200B;**[!UICONTROL 行動核心 — 附加資料]**&#x200B;動作旁的![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
-   1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL Adobe Experience PlatformEdge Network]**，然後選取&#x200B;**[!UICONTROL 轉寄事件至Edge Network]**。
+1. 選取![行動核心 — 附加資料](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)動作旁的&#x200B;**[!UICONTROL 新增]**。
+   1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**，然後選取&#x200B;**[!UICONTROL 轉寄事件至Edge Network]**。
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
 
 1. 若要儲存規則，請選取&#x200B;**[!UICONTROL 儲存至資料庫]**。
@@ -239,7 +236,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 若要驗證Assurance中的設定：
 
 1. 前往Assurance UI。
-1. 如果左側邊欄中尚未提供，請在左側邊欄中選取&#x200B;**[!UICONTROL 設定]**，然後選取&#x200B;**[!UICONTROL 事件]**&#x200B;旁的![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)以及&#x200B;**[!UICONTROL PLACES SERVICE]**&#x200B;底下的&#x200B;**[!UICONTROL 地圖和模擬]**。
+1. 如果左側邊欄中尚未提供，請在左側邊欄中選取&#x200B;**[!UICONTROL 設定]**，然後選取![事件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)旁的&#x200B;**[!UICONTROL 新增]**&#x200B;以及&#x200B;**[!UICONTROL PLACES SERVICE]**&#x200B;底下的&#x200B;**[!UICONTROL 地圖和模擬]**。
 1. 選取「**[!UICONTROL 儲存]**」。
 1. 在左側邊欄中選取&#x200B;**[!UICONTROL 地圖和模擬]**。
 1. 將地圖移至其中一個POI的位置。
@@ -257,7 +254,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 >[!NOTE]
 >
->如果您已完成[安裝SDK](install-sdks.md)區段，則Places SDK已安裝，您可以略過此步驟。
+>如果您已完成[安裝SDK](install-sdks.md)區段，則Places SDK已經安裝，您可以略過此步驟。
 >
 
 1. 在Xcode中，請確定已將[AEP Places](https://github.com/adobe/aepsdk-places-ios)新增至套件相依性中的套件清單中。 請參閱[Swift封裝管理員](install-sdks.md#swift-package-manager)。
@@ -339,7 +336,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 ## 後續步驟
 
-您現在應該有所有的工具，以便開始將更多功能新增至應用程式中的地理位置功能。 當您已將事件轉送至Edge Network時，一旦您為[Experience Platform](platform.md)設定應用程式，您應該會看到應用程式中所使用設定檔中出現的體驗事件。
+您現在應該有所有的工具，以便開始將更多功能新增至應用程式中的地理位置功能。 當您已將事件轉送至Edge Network，當您為[Experience Platform](platform.md)設定應用程式後，應該會看到應用程式中所使用設定檔中顯示的體驗事件。
 
 在本教學課程的Journey Optimizer區段中，您會看到體驗事件可用來觸發歷程(請參閱[推播通知](journey-optimizer-inapp.md)和[使用Journey Optimizer的應用程式內傳訊](journey-optimizer-push.md))。 例如，當應用程式使用者進入實體商店的地理柵欄時，傳送推播通知給該使用者並進行某些產品促銷的常見範例。
 
@@ -349,6 +346,6 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 >
 >您現在已使用Experience Platform Mobile SDK中的Places擴充功能，為地理定位服務啟用應用程式。
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
 
 下一步： **[將資料對應至Adobe Analytics](analytics.md)**

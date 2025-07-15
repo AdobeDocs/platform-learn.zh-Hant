@@ -6,22 +6,22 @@ feature-set: Journey Optimizer
 feature: Offers
 jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '2470'
-ht-degree: 1%
+source-wordcount: '2475'
+ht-degree: 2%
 
 ---
 
 # 使用決定管理建立及顯示優惠方案
 
-瞭解如何透過Experience Platform Mobile SDK在行動應用程式中顯示Journey Optimizer決定管理提供的優惠方案。
+瞭解如何透過Experience Platform Mobile SDK在行動應用程式中顯示Journey Optimizer決定管理所提供的選件。
 
 Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的客戶提供最佳優惠和體驗。 設計完成後，透過個人化優惠目標定位對象。
 
 ![架構](assets/architecture-ajo.png)
 
-決策管理透過集中行銷優惠資料庫和決定引擎輕鬆實現個人化，該決策引擎將規則和限制套用於Adobe Experience Platform建立的豐富即時設定檔。 因此，它可讓您在適當的時間傳送適當的優惠方案給客戶。 如需詳細資訊，請參閱[關於決定管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hant)。
+決策管理透過集中行銷優惠資料庫和決定引擎輕鬆實現個人化，該決策引擎將規則和限制套用於Adobe Experience Platform建立的豐富即時設定檔。 因此，它可讓您在適當的時間傳送適當的優惠方案給客戶。 如需詳細資訊，請參閱[關於決定管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en)。
 
 
 
@@ -35,7 +35,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 * 成功建立並執行應用程式，且已安裝並設定SDK。
 * 為Adobe Experience Platform設定應用程式。
-* 存取Journey Optimizer — 決策管理，並擁有管理優惠和決策的適當許可權，如[此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=zh-Hant#decisions-permissions)所述。
+* 存取Journey Optimizer — 決策管理，並擁有管理優惠和決策的適當許可權，如[此處](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions)所述。
 
 
 ## 學習目標
@@ -43,7 +43,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 在本課程中，您將學習
 
 * 更新Edge的決策管理設定。
-* 使用Journey Optimizer - Decisioning擴充功能更新標籤屬性。
+* 使用Offer Decisioning和Target擴充功能更新您的標籤屬性。
 * 更新您的結構描述以擷取主張事件。
 * 驗證Assurance中的設定。
 * 根據Journey Optimizer中的優惠建立優惠決定 — 決定管理。
@@ -59,11 +59,11 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 ### 更新資料流設定
 
-為確保將從您的行動應用程式傳送到PlatformEdge Network的資料轉送到Journey Optimizer — 決策管理，請更新您的資料流。
+為確保將從您的行動應用程式傳送到Platform Edge Network的資料轉送到Journey Optimizer — 決策管理，請更新您的資料流。
 
 1. 在資料收集UI中，選取&#x200B;**[!UICONTROL 資料串流]**，然後選取您的資料串流，例如&#x200B;**[!DNL Luma Mobile App]**。
-1. 選取&#x200B;**[!UICONTROL Experience Platform]**&#x200B;的![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)，並從內容功能表選取![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯]**。
-1. 在&#x200B;**[!UICONTROL 資料串流]** > ![資料夾](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;畫面中，確定已選取&#x200B;**[!UICONTROL Offer decisioning]**、**[!UICONTROL Edge分段]**&#x200B;和&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如果您要進行Target課程，請同時選取&#x200B;**[!UICONTROL Personalization目的地]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hant#aep)。
+1. 選取![Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)的&#x200B;**[!UICONTROL 更多]**，並從內容功能表選取![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯]**。
+1. 在&#x200B;**[!UICONTROL 資料串流]** > ![資料夾](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;畫面中，確定已選取&#x200B;**[!UICONTROL Offer Decisioning]**、**[!UICONTROL Edge分段]**&#x200B;和&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如果您要進行Target課程，請同時選取&#x200B;**[!UICONTROL Personalization目的地]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)。
 1. 若要儲存資料流設定，請選取「**[!UICONTROL 儲存]**」。
 
    ![AEP資料流組態](assets/datastream-aep-configuration-offers.png)
@@ -76,10 +76,10 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 1. 導覽至&#x200B;**[!UICONTROL 標籤]**&#x200B;並尋找您的行動標籤屬性並開啟屬性。
 1. 選取&#x200B;**[!UICONTROL 延伸模組]**。
 1. 選取&#x200B;**[!UICONTROL 目錄]**。
-1. 搜尋&#x200B;**[!UICONTROL Adobe Journey Optimizer - Decisioning]**&#x200B;擴充功能。
+1. 搜尋&#x200B;**[!UICONTROL Offer Decisioning和Target]**&#x200B;擴充功能。
 1. 安裝擴充功能。 此擴充功能不需要額外設定。
 
-   ![新增Decisioning擴充功能](assets/tag-add-decisioning-extension.png)
+   ![新增Offer Decisioning和Target擴充功能](assets/tag-add-decisioning-extension.png)
 
 
 ### 更新您的結構描述
@@ -98,9 +98,9 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 若要驗證Assurance中的設定：
 
 1. 前往Assurance UI。
-1. 在左側邊欄中選取「**[!UICONTROL 設定]**」，然後選取「**[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**」底下的「**[!UICONTROL 驗證設定]**」旁的「![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」。
+1. 在左側邊欄中選取「**[!UICONTROL 設定]**」，然後選取「![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」底下的「**[!UICONTROL 驗證設定]**」旁的「**[!UICONTROL 新增]**」。
 1. 選取「**[!UICONTROL 儲存]**」。
-1. 在左側邊欄中選取&#x200B;**[!UICONTROL 驗證設定]**。 應用程式中的資料流設定和SDK設定均已驗證。
+1. 在左側邊欄中選取&#x200B;**[!UICONTROL 驗證設定]**。 您的應用程式中的資料流設定和SDK設定均已驗證。
    ![AJO Decisioning驗證](assets/ajo-decisioning-validation.png)
 
 
@@ -108,7 +108,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 在實際建立優惠方案之前，您必須先定義這些優惠方案在行動應用程式中的放置方式與位置。 在決定管理中，您會為此定義版位，並會為支援JSON裝載的行動裝置頻道定義版位：
 
-1. 在Journey Optimizer UI中，從左側邊欄的&#x200B;**[!UICONTROL 決定管理]**&#x200B;中選取![元件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg) **[!UICONTROL 元件]**。
+1. 在Journey Optimizer UI中，從左側邊欄的![決定管理](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)中選取&#x200B;**[!UICONTROL 元件]** **[!UICONTROL 元件]**。
 
 1. 從頂端列選取&#x200B;**[!UICONTROL 位置]**。
 
@@ -127,18 +127,17 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 ## 建立優惠
 
-1. 在Journey Optimizer UI中，從左側邊欄的&#x200B;**[!UICONTROL 決定管理]**&#x200B;中選取![優惠](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg) **[!UICONTROL 優惠]**。
+1. 在Journey Optimizer UI中，從左側邊欄的![決定管理](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg)中選取&#x200B;**[!UICONTROL 優惠]** **[!UICONTROL 優惠]**。
 1. 在&#x200B;**[!UICONTROL 選件]**&#x200B;畫面中，選取&#x200B;**[!UICONTROL 瀏覽]**&#x200B;以檢視選件清單。
 1. 選取&#x200B;**[!UICONTROL 建立選件]**。
 1. 在&#x200B;**[!UICONTROL 新優惠]**&#x200B;對話方塊中，選取&#x200B;**[!UICONTROL 個人化優惠]**，然後按一下&#x200B;**[!UICONTROL 下一步]**。
 1. 在&#x200B;**[!UICONTROL 建立新的個人化優惠方案]**&#x200B;的&#x200B;**[!UICONTROL 詳細資料]**&#x200B;步驟中：
-   1. 輸入選件的&#x200B;**[!UICONTROL 名稱]**，例如`Luma - Juno Jacket`，然後輸入&#x200B;**[!UICONTROL 開始日期和時間]**&#x200B;以及&#x200B;**[!UICONTROL 結束日期和時間]**。 在這些日期之外，決策引擎將不會選取選件。
+   1. 輸入選件的&#x200B;**[!UICONTROL 名稱]**，例如`Luma - Juno Jacket`，然後輸入&#x200B;**[!UICONTROL 開始日期和時間]**&#x200B;以及&#x200B;**[!UICONTROL 結束日期和時間]**。 在這些日期之外，決策引擎將不會選取該產品建議。
    1. 選取&#x200B;**[!UICONTROL 下一步]**。
-
       ![選件 — 詳細資料](assets/ajo-offers-details.png)
 
 1. 在&#x200B;**[!UICONTROL 建立新的個人化優惠方案]**&#x200B;的&#x200B;**[!UICONTROL 新增代表]**&#x200B;步驟中：
-   1. 從&#x200B;**[!UICONTROL 頻道]**&#x200B;清單中選取![行動裝置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL 行動裝置]**，並從&#x200B;**[!UICONTROL 位置]**&#x200B;清單中選取&#x200B;**[!UICONTROL 行動裝置JSON]**。
+   1. 從![頻道](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg)清單中選取&#x200B;**[!UICONTROL 行動裝置]** **[!UICONTROL 行動裝置]**，並從&#x200B;**[!UICONTROL 位置]**&#x200B;清單中選取&#x200B;**[!UICONTROL 行動裝置JSON]**。
    1. 選取&#x200B;**[!UICONTROL 內容]**&#x200B;的&#x200B;**[!UICONTROL 自訂]**。
    1. 選取&#x200B;**[!UICONTROL 新增內容]**。 在&#x200B;**[!UICONTROL 新增個人化]**&#x200B;對話方塊中：
       1. 如果[!UICONTROL 模式]選擇器可用，請確定它設定為&#x200B;**[!UICONTROL JSON]**。
@@ -153,17 +152,14 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
          ```
 
       1. 選取「**[!UICONTROL 儲存]**」。
-
          ![選件 — 自訂內容](assets/ajo-offers-customcontent.png)
    1. 選取&#x200B;**[!UICONTROL 下一步]**。
-
       ![優惠方案宣告](assets/ajo-offers-representations.png)
 
 1. 在&#x200B;**[!UICONTROL 建立新的個人化優惠方案]**&#x200B;的&#x200B;**[!UICONTROL 新增限制]**&#x200B;步驟中：
    1. 將&#x200B;**[!UICONTROL 優先順序]**&#x200B;設定為`10`。
    1. 將&#x200B;**[!UICONTROL 包含上限]**&#x200B;切換為關閉。
    1. 選取&#x200B;**[!UICONTROL 下一步]**。
-
       ![優惠 — 限制](assets/ajo-offers-constraints.png)
 
 1. 在&#x200B;**[!UICONTROL 建立新的個人化]**&#x200B;優惠的&#x200B;**[!UICONTROL 檢閱]**&#x200B;步驟中：
@@ -178,7 +174,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
       使用下表來定義其他四個選件。
 
-      | 優惠方案名稱 | JSON中的選件內容 |
+      | 產品建議名稱 | JSON中的選件內容 |
       |---|---|
       | Luma - Affirm Water Bottle | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
       | Luma - Desiree健身T恤 | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
@@ -193,7 +189,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
    1. 在&#x200B;**[!UICONTROL 建立新的遞補優惠]**&#x200B;的&#x200B;**[!UICONTROL 詳細資料]**&#x200B;步驟中，輸入優惠的&#x200B;**[!UICONTROL 名稱]**，例如`Luma - Fallback Offer`，然後選取&#x200B;**[!UICONTROL 下一步]**。
 
    1. 在&#x200B;**[!UICONTROL 建立新的遞補優惠]**&#x200B;的&#x200B;**[!UICONTROL 新增代表]**&#x200B;步驟中：
-      1. 從&#x200B;**[!UICONTROL 頻道]**&#x200B;清單中選取![行動裝置](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL 行動裝置]**，並從&#x200B;**[!UICONTROL 位置]**&#x200B;清單中選取&#x200B;**[!UICONTROL 行動裝置JSON]**。
+      1. 從![頻道](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg)清單中選取&#x200B;**[!UICONTROL 行動裝置]** **[!UICONTROL 行動裝置]**，並從&#x200B;**[!UICONTROL 位置]**&#x200B;清單中選取&#x200B;**[!UICONTROL 行動裝置JSON]**。
       1. 選取&#x200B;**[!UICONTROL 內容]**&#x200B;的&#x200B;**[!UICONTROL 自訂]**。
       1. 選取&#x200B;**[!UICONTROL 新增內容]**。
       1. 在&#x200B;**[!UICONTROL 新增個人化]**&#x200B;對話方塊中，輸入下列JSON並選取&#x200B;**[!UICONTROL 儲存]**：
@@ -235,7 +231,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 最後一個步驟是定義決定，此決定是一或多個決定範圍與您的遞補優惠的組合。
 
-決定範圍是特定位置(例如電子郵件中的HTML，或行動應用程式中的JSON)與一個或多個評估標準的組合。
+決定範圍是特定位置(例如電子郵件中的HTML或行動應用程式中的JSON)與一個或多個評估標準的組合。
 
 評估准則為
 
@@ -243,7 +239,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 * 適用性規則：例如，優惠方案僅適用於特定對象，
 * 排名方法：如果有多個優惠方案可供挑選，您要使用哪個方法來為其排名（例如依優惠方案優先順序、使用公式或AI模型）。
 
-如果您想要更深入瞭解位置、規則、排名、優惠、代表、集合、決定等如何相互互動及建立關聯，請參閱[建立和管理優惠的重要步驟](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=zh-Hant)。 本課程僅著重於使用決定的輸出，而非在Journey Optimizer中定義決定的彈性 — 決定管理。
+如果您想要更深入瞭解位置、規則、排名、優惠、代表、集合、決定等如何相互互動及建立關聯，請參閱[建立和管理優惠的重要步驟](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en)。 本課程僅著重於使用決定的輸出，而非在Journey Optimizer中定義決定的彈性 — 決定管理。
 
 1. 在Journey Optimizer UI中，從左側邊欄選取&#x200B;**[!UICONTROL 選件]**。
 1. 從頂端列選取&#x200B;**[!UICONTROL 決定]**。
@@ -257,11 +253,9 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
    1. 在&#x200B;**[!UICONTROL 評估准則]**&#x200B;圖磚中，選取![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 新增]**。
       1. 在&#x200B;**[!UICONTROL 新增優惠收藏]**&#x200B;對話方塊中，選取您的優惠收藏。 例如 **[!DNL Luma - Mobile App Collection]**。
       1. 選取&#x200B;**[!UICONTROL 新增]**。
-
          ![決定 — 選取集合](assets/ajo-decision-selectcollection.png)
    1. 確定已針對&#x200B;**[!UICONTROL 資格]**&#x200B;選取&#x200B;**[!UICONTROL 無]**，且已選取&#x200B;**[!UICONTROL 優惠方案優先順序]**&#x200B;作為&#x200B;**[!UICONTROL 排名方法]**。
    1. 選取&#x200B;**[!UICONTROL 下一步]**。
-
       ![決定範圍](assets/ajo-decision-scopes.png)。
 1. 在&#x200B;**[!UICONTROL 建立新優惠決定]**&#x200B;的&#x200B;**[!UICONTROL 新增遞補優惠]**&#x200B;步驟中：
    1. 選取您的遞補優惠，例如&#x200B;**[!DNL Luma - Fallback offer]**。
@@ -364,7 +358,7 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
    * 根據決定範圍(您已在Journey Optimizer — 決定管理中定義)擷取目前設定檔的主張，
    * 從主張中擷取優惠方案，
    * 會取消包裝選件的內容，以便其在應用程式中正確顯示，並且
-   * 觸發優惠方案上的`displayed()`動作，該動作會將事件傳送回通知優惠方案顯示的Edge Network。
+   * 觸發優惠方案上的`displayed()`動作，將事件傳回Edge Network，通知優惠方案顯示。
 
 1. 還是在&#x200B;**[!DNL EdgeOffersView]**&#x200B;中，將下列程式碼新增到`.onFirstAppear`修飾元。 此程式碼可確保用於更新優惠方案的回呼只會註冊一次。
 
@@ -404,10 +398,10 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 若要驗證Assurance中的優惠方案實作：
 
 1. 檢閱[設定指示](assurance.md#connecting-to-a-session)區段，將您的模擬器或裝置連線到Assurance。
-1. 在左側邊欄中選取「**[!UICONTROL 設定]**」，並選取「**[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**」底下的「**[!UICONTROL 檢閱和模擬]**」旁的「![新增](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」。
+1. 在左側邊欄中選取「**[!UICONTROL 設定]**」，並選取「![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)」底下的「**[!UICONTROL 檢閱和模擬]**」旁的「**[!UICONTROL 新增]**」。
 1. 選取「**[!UICONTROL 儲存]**」。
-1. 在左側邊欄中選取&#x200B;**[!UICONTROL 檢閱和模擬]**。 資料串流設定都會經過驗證，並且會在您的應用程式中設定SDK。
-1. 在頂端列選取&#x200B;**[!UICONTROL 要求]**。 您看到您的&#x200B;**[!UICONTROL 選件]**&#x200B;要求。
+1. 在左側邊欄中選取&#x200B;**[!UICONTROL 檢閱和模擬]**。 資料串流設定皆已驗證，而且您的應用程式中還有SDK設定。
+1. 在頂端列選取&#x200B;**[!UICONTROL 要求]**。 您看到您的&#x200B;**[!UICONTROL 選件]**要求。
    ![AJO Decisioning驗證](assets/assurance-decisioning-requests.png)
 
 1. 您可以探索&#x200B;**[!UICONTROL 模擬]**&#x200B;和&#x200B;**[!UICONTROL 事件清單]**&#x200B;標籤，以進一步瞭解功能，並檢查您的Journey Optimizer決定管理設定。
@@ -422,8 +416,8 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 
 >[!SUCCESS]
 >
->您已啟用應用程式，以便使用Experience Platform Mobile SDK的Journey Optimizer - Decisioning擴充功能來顯示優惠方案。
+>您已啟用應用程式，以便針對Experience Platform Mobile SDK使用Offer Decisioning和Target擴充功能來顯示選件。
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
 
 下一步： **[執行A/B測試](target.md)**
