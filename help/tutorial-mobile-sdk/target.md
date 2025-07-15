@@ -17,7 +17,7 @@ ht-degree: 1%
 
 瞭解如何使用Platform Mobile SDK和Adobe Target最佳化及個人化行動應用程式中的體驗。
 
-Target提供一切所需工具，讓您量身打造及個人化您的客戶體驗。 Target可協助您在網站和行動網站、應用程式、社群媒體和其他數位頻道上獲得最大收入。 Target可以執行A/B測試、多變數測試、建議產品和內容、鎖定內容、使用AI自動個人化內容等等。 本課程著重於Target的A/B測試功能。 如需詳細資訊，請參閱[A/B測試總覽](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en)。
+Target提供一切所需工具，讓您量身打造及個人化您的客戶體驗。 Target可協助您在網站和行動網站、應用程式、社群媒體和其他數位頻道上獲得最大收入。 Target可以執行A/B測試、多變數測試、建議產品和內容、鎖定內容、使用AI自動個人化內容等等。 本課程著重於Target的A/B測試功能。 如需詳細資訊，請參閱[A/B測試總覽](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=zh-Hant)。
 
 ![架構](assets/architecture-at.png)
 
@@ -66,9 +66,9 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
    您可以在Target UI的&#x200B;**[!UICONTROL 管理]** > **[!UICONTROL 屬性]**&#x200B;中找到您的屬性。 選取![代碼](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)以顯示您要使用之屬性的屬性代號。 屬性權杖的格式如`"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`；您只能輸入值`xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`。
 
-   您可以選擇指定Target環境ID。 Target會使用環境來組織您的網站和生產前環境，以便輕鬆管理和分隔報表。 預設環境包括生產、測試和開發。 如需詳細資訊，請參閱[環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en)和[目標環境識別碼](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id)。
+   您可以選擇指定Target環境ID。 Target會使用環境來組織您的網站和生產前環境，以便輕鬆管理和分隔報表。 預設環境包括生產、測試和開發。 如需詳細資訊，請參閱[環境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=zh-Hant)和[目標環境識別碼](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=zh-Hant#target-environment-id)。
 
-   您可以選擇指定Target第三方ID名稱空間，以支援在身分名稱空間上同步設定檔（例如CRM ID）。 如需詳細資訊，請參閱[目標第三方ID名稱空間](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace)。
+   您可以選擇指定Target第三方ID名稱空間，以支援在身分名稱空間上同步設定檔（例如CRM ID）。 如需詳細資訊，請參閱[目標第三方ID名稱空間](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=zh-Hant#target-third-party-id-namespace)。
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
@@ -81,7 +81,7 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 
 1. 在資料收集UI中，選取&#x200B;**[!UICONTROL 資料串流]**，然後選取您的資料串流，例如&#x200B;**[!DNL Luma Mobile App]**。
 1. 選取![Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)的&#x200B;**[!UICONTROL 更多]**，並從內容功能表選取![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯]**。
-1. 在&#x200B;**[!UICONTROL 資料串流]** > ![資料夾](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;畫面中，確定已選取&#x200B;**[!UICONTROL Offer Decisioning]**、**[!UICONTROL Edge分段]**&#x200B;和&#x200B;**[!UICONTROL Personalization目的地]**。 如果您也學習過Journey Optimizer課程，請選取&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)。
+1. 在&#x200B;**[!UICONTROL 資料串流]** > ![資料夾](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;畫面中，確定已選取&#x200B;**[!UICONTROL Offer Decisioning]**、**[!UICONTROL Edge分段]**&#x200B;和&#x200B;**[!UICONTROL Personalization目的地]**。 如果您也學習過Journey Optimizer課程，請選取&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hant#aep)。
 1. 若要儲存資料流設定，請選取「**[!UICONTROL 儲存]**」。
 
    ![AEP資料流組態](assets/datastream-aep-configuration-target.png)
