@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 設定Real-Time CDP Collaboration的許可權
 
-瞭解如何設定存取和使用Real-Time CDP Collaboration所需的許可權。 如需詳細檔案，請前往[存取控制總覽](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}。
+瞭解如何設定存取和使用Real-Time CDP Collaboration所需的許可權。 如需詳細檔案，請前往[存取控制總覽](https://experienceleague.adobe.com/zh-hant/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452216/?learn=on&enablevpops)
 
