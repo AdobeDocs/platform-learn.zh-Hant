@@ -1,22 +1,21 @@
 ---
 title: 使用查詢服務執行查詢
-description: 此影片說明如何在Adobe Experience Platform介面和PSQL使用者端中執行查詢。 此外，在XDM物件中使用個別屬性、使用Adobe定義的函式，以及使用CREATE TABLE AS SELECT (CTAS)進行示範。
+description: 瞭解如何使用Adobe Experience Platform查詢編輯器來有效率地建立、執行和管理SQL查詢。 檢視者將瞭解如何使用物件瀏覽器、自動完成、引數化查詢和排程工具等功能，以簡化資料工作流程並在其組織中產生可操作的深入分析。
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-3140
 thumbnail: 29796.jpg
 exl-id: 7b264733-a0e0-44cd-a2c0-680a473f8cf6
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 3d32a0557ef389fead5387c1e5f85d2c8c55631c
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 1%
+source-wordcount: '109'
+ht-degree: 0%
 
 ---
 
 # 執行查詢
 
-此影片說明如何在Adobe Experience Platform介面和PSQL使用者端中執行查詢。 此外，在XDM物件中使用個別屬性、使用Adobe定義的函式，以及使用CREATE TABLE AS SELECT (CTAS)進行示範。 如需詳細的產品檔案，請參閱[查詢編輯器UI指南](https://experienceleague.adobe.com/docs/experience-platform/query/ui/user-guide.html?lang=zh-Hant)。
-如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant)。
+瞭解如何使用Adobe Experience Platform查詢編輯器來有效率地建立、執行和管理SQL查詢。 檢視者將瞭解如何使用物件瀏覽器、自動完成、引數化查詢和排程工具等功能，以簡化資料工作流程並在其組織中產生可操作的深入分析。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29796?learn=on&enablevpops)
