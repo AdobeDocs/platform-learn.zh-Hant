@@ -20,7 +20,7 @@ ht-degree: 1%
 
 瞭解如何訂閱同盟對象構成警報，以接收成功和失敗執行的應用程式內或電子郵件通知。 若要啟用此功能，請在Experience Platform產品下方的「通知設定」中設定其偏好設定。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470065/?learn=on&enablevpops&captions=chi_hant)
 
 
 ## 如何啟用通知

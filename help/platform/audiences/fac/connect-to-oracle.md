@@ -20,4 +20,4 @@ ht-degree: 0%
 
 瞭解如何在Adobe Experience Platform中連線Oracle資料庫以探索結構描述、建立資料模型，並使用資料來擴充受眾。 影片會逐步說明新增同盟Oracle資料庫的程式，從導覽至「同盟資料」區段到輸入連線詳細資訊。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470069/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470087/?learn=on&enablevpops&captions=chi_hant)
