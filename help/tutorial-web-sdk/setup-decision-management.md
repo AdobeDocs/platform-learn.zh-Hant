@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2511'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 依照本教學課程指示，Journey Optimizer使用者已整備使用決策管理功能，加強其客戶互動的個人化與關聯性。
 
 
-![Web SDK與Adobe Analytics圖表](assets/dc-websdk-ajo.png)
+![網頁SDK和Adobe Analytics圖表](assets/dc-websdk-ajo.png)
 
 ## 學習目標
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 * 掌握Adobe Journey Optimizer中決策管理的核心概念，及其與Adobe Experience Platform Web SDK的整合。
 
-* 瞭解設定Web SDK以進行Offer decisioning的逐步程式，確保與Journey Optimizer無縫整合。
+* 瞭解為Offer Decisioning設定網頁SDK的逐步程式，以確保與Journey Optimizer緊密整合。
 
 * 探索以忠誠度狀態優惠為中心的詳細使用案例，深入瞭解如何有效建立和管理優惠、決定和位置。
 
@@ -56,13 +56,13 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
 ## 授予決策管理的存取權限
 
-若要授與決策管理功能的存取權，您必須建立&#x200B;**產品設定檔**，並將對應許可權指派給使用者。 [在本節](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)中進一步瞭解管理Journey Optimizer使用者和許可權。
+若要授與決策管理功能的存取權，您必須建立&#x200B;**產品設定檔**，並將對應許可權指派給使用者。 [在本節](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)中進一步瞭解管理Journey Optimizer使用者和許可權。
 
 ## 設定資料串流
 
-必須先在&#x200B;**資料串流**&#x200B;設定中啟用Offer decisioning，Platform Web SDK才能傳遞任何決定管理活動。
+必須先在&#x200B;**資料流**&#x200B;設定中啟用Offer Decisioning，Platform Web SDK才能傳遞任何決定管理活動。
 
-若要在資料流中設定Offer decisioning：
+若要在資料流中設定Offer Decisioning：
 
 1. 移至[資料彙集](https://experience.adobe.com/#/data-collection)介面。
 
@@ -76,7 +76,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
    ![編輯服務](assets/decisioning-edit-datastream.png)
 
-1. 勾選&#x200B;**Offer decisioning**&#x200B;方塊。
+1. 勾選&#x200B;**Offer Decisioning**&#x200B;方塊。
 
    ![新增熒幕擷圖](assets/decisioning-check-offer-box.png)
 
@@ -86,10 +86,10 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
 ## 設定SDK以進行決定管理
 
-視您的Web SDK實作型別而定，決定管理需要其他SDK步驟。 有兩個可用選項可設定SDK以進行決定管理。
+視您的Web SDK實作型別而定，決策管理需要其他SDK步驟。 有兩個可用選項可設定SDK以用於決策管理。
 
 * SDK獨立安裝
-   1. 使用您的`decisionScopes`設定`sendEvent`動作。
+   1. 使用您的`sendEvent`設定`decisionScopes`動作。
 
       ```javascript
       alloy("sendEvent", {
@@ -137,13 +137,13 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
 ## 使用案例概述 — 忠誠度獎勵
 
-在本課程中，您會實作一個熟客獎勵範例使用案例，以瞭解使用Web SDK的決策管理。
+在本課程中，您將實作一個熟客獎勵使用案例範例，使用網頁SDK了解決策管理。
 
 此使用案例可讓您更瞭解Journey Optimizer如何運用集中式優惠資料庫和決定管理決策引擎，為客戶提供最佳優惠。
 
 >[!NOTE]
 >
-> 由於本教學課程的目標是實施者，因此請注意，本課程涉及Journey Optimizer的大量介面工作。 雖然這類介面任務通常由行銷人員處理，但對於實作者來說，即使他們對於決策管理行銷活動的長期建立並不負責，獲得對流程的深入瞭解也會很有幫助。
+> 由於本教學課程的目標是實施者，因此請注意，本課程涉及Journey Optimizer的大量介面工作。 雖然這類介面任務通常由行銷人員處理，但對於實作者而言，將insight帶入流程可能有所助益，即使他們從長遠而言並不負責決策管理行銷活動的建立。
 
 ## 元件
 
@@ -166,7 +166,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 1. 定義位置的屬性：
    * **名稱**：位置名稱。 呼叫範例位置&#x200B;*&#39;首頁橫幅&#39;*。
    * **頻道型別**：使用位置的頻道。 讓我們使用&#x200B;*&#39;Web&#39;*，因為優惠方案顯示在Luma網站上。
-   * **內容型別**：允許刊登版位顯示的內容型別：文字、HTML、影像連結或JSON。 您可以將&#x200B;*HTML&#39;*&#x200B;用於選件。
+   * **內容型別**：允許刊登版位顯示的內容型別：文字、HTML、影像連結或JSON。 您可以將&#x200B;*&#39;HTML&#39;*&#x200B;用於選件。
    * **描述**：位置的描述（選擇性）。
 
    ![新增詳細資料](assets/decisioning-placement-details.png)
@@ -219,7 +219,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
 1. 新的集合限定詞現在應顯示在&#x200B;**集合限定詞**&#x200B;索引標籤中
 
-## 優惠
+## 產品建議
 
 現在該建立忠誠獎勵優惠方案了。
 
@@ -240,7 +240,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
    ![新增優惠詳細資料](assets/decisioning-add-offer-details.png)
 
-1. 現在您必須新增&#x200B;**代表**，以定義優惠方案的顯示位置。 讓我們選擇&#x200B;**網路頻道**。 讓我們也選擇您先前設定的&#39;*首頁橫幅*&#39; **位置**。 選取的&#x200B;**位置**&#x200B;是HTML型別，因此您可以使用&#x200B;**自訂**&#x200B;選項按鈕直接將HTML、JSON或TEXT內容新增到編輯器以建立選件。
+1. 現在您必須新增&#x200B;**代表**，以定義優惠方案的顯示位置。 讓我們選擇&#x200B;**網路頻道**。 讓我們也選擇您先前設定的&#39;*首頁橫幅*&#39; **位置**。 選取的&#x200B;**位置**&#x200B;為HTML型別，因此您可以使用&#x200B;**自訂**&#x200B;選項按鈕直接將HTML、JSON或TEXT內容新增到編輯器以建立選件。
 
    ![新增表現詳細資料](assets/decisioning-add-representation-details.png)
 
@@ -248,7 +248,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
    ![新增選件HTML](assets/decisioning-add-offer-html.png)
 
-1. 您也可以使用運算式編輯器來擷取儲存在Adobe Experience Platform中的屬性。 將設定檔的名字新增至優惠內容，以便更妥善地為忠誠會員進行1:1層級的個人化。
+1. 您也可以使用運算式編輯器來擷取儲存在Adobe Experience Platform中的屬性。 讓我們將設定檔的名字新增至優惠內容，以便更妥善地為1:1層級的忠誠會員進行個人化。
 
    ![新增優惠個人化](assets/decisioning-add-offer-personalization.png)
 
@@ -256,7 +256,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
    ![新增規則限制](assets/decisioning-add-rule-constraint.png)
 
-1. 檢閱完您的優惠方案後，請按一下[完成]。**&#x200B;** 選取&#x200B;**儲存並核准**。
+1. 檢閱完您的優惠方案後，請按一下[完成]。**** 選取&#x200B;**儲存並核准**。
 
 現在為各種Luma忠誠度層級建立其餘的優惠方案
 
@@ -339,7 +339,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
 ### 測試忠誠度優惠
 
-1. 選取要用於模擬的測試設定檔。 按一下&#x200B;**管理設定檔**。 [若要建立或指定新的測試設定檔以進行優惠方案測試，請遵循本指南](https://experienceleague.adobe.com/zh-hant/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
+1. 選取要用於模擬的測試設定檔。 按一下&#x200B;**管理設定檔**。 [若要建立或指定新的測試設定檔以進行優惠方案測試，請遵循本指南](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
 您可以在Luma網站上使用除錯工具，驗證生產環境中的決策邏輯。 忠誠獎勵使用案例啟動並執行後，此驗證是很好的做法，可確保所有專案皆已正確設定。
 
-[在此使用指南瞭解如何在瀏覽器中設定除錯工具](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/debugger/overview)。
+[在此使用指南瞭解如何在瀏覽器中設定除錯工具](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)。
 
 若要使用除錯工具開始驗證：
 
@@ -383,25 +383,23 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 瀏覽至&#x200B;**摘要**。 確認&#x200B;**資料串流識別碼**&#x200B;與您啟用Offer decisioning的&#x200B;**Adobe資料彙集**&#x200B;中的&#x200B;**資料串流**&#x200B;相符。
+1. 瀏覽至&#x200B;**摘要**。 確認&#x200B;**資料串流識別碼**&#x200B;與您啟用Offer Decisioning的&#x200B;**Adobe資料彙集**&#x200B;中的&#x200B;**資料串流**&#x200B;相符。
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 在「**解決方案**」下，導覽至&#x200B;**Experience PlatformWeb SDK**。
+1. 在「**解決方案**」下，導覽至&#x200B;**Experience Platform Web SDK**。
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 在&#x200B;**組態**&#x200B;標籤中，開啟&#x200B;**啟用偵錯**。 這會啟用&#x200B;**Adobe Experience Platform保證**&#x200B;工作階段中工作階段的記錄。
+1. 在&#x200B;**組態**&#x200B;標籤中，開啟&#x200B;**啟用偵錯**。 這會啟用&#x200B;**Adobe Experience Platform Assurance**&#x200B;工作階段中工作階段的記錄功能。
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 接著，您可以使用各種Luma忠誠度帳戶登入網站，並使用除錯工具驗證傳送至&#x200B;**Adobe Experience Platform Edge網路**&#x200B;的請求。 所有這些要求都應該在&#x200B;**保證**&#x200B;中擷取以進行記錄追蹤。
+1. 接著，您可以使用各種Luma忠誠度帳戶登入網站，並使用除錯工具驗證傳送至&#x200B;**Adobe Experience Platform Edge網路**&#x200B;的請求。 應該在&#x200B;**Assurance**&#x200B;中擷取所有這些要求，以進行記錄檔追蹤。
 <!--
    ![ADD SCREENSHOT](#)
 -->
 
-[下一步： ](setup-consent.md)
-
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

@@ -1,17 +1,17 @@
 ---
-title: 使用Platform Web SDK設定同意
-description: 瞭解如何設定Experience PlatformWeb SDK標籤擴充功能的隱私權設定。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
+title: 透過平台Web SDK設定同意
+description: 瞭解如何設定Experience Platform Web SDK標籤擴充功能的隱私權設定。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1603'
 ht-degree: 1%
 
 ---
 
-# 使用Platform Web SDK設定同意
+# 透過平台Web SDK設定同意
 
 瞭解如何設定Adobe Experience Platform Web SDK標籤擴充功能的隱私權設定。 根據訪客與同意管理平台(CMP)的橫幅互動來設定同意。
 
@@ -26,11 +26,11 @@ ht-degree: 1%
 
 * 使用標籤載入CMP
 * 在Experience Platform Web SDK標籤擴充功能中設定隱私權設定
-* 根據訪客的動作設定Experience PlatformWeb SDK的同意
+* 根據訪客的動作設定Experience Platform Web SDK的同意
 
 ## 先決條件
 
-您應熟悉標籤以及使用Experience PlatformDebugger建立規則、資料元素、建置程式庫至環境和切換標籤程式庫的步驟。
+您應熟悉標籤以及使用Experience Platform Debugger建立規則、資料元素、建置程式庫至環境和切換標籤程式庫的步驟。
 
 在您開始設定隱私權設定及建立設定同意的規則之前，請確定您已將同意管理平台指令碼插入網站，且運作正常。 CMP可以在網站開發人員的協助下直接載入原始程式碼中，或是透過標籤本身載入。 本課程將展示後一種方法。
 
@@ -106,16 +106,16 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 
 現在您將針對此情境設定並實作同意：
 
-1. 在Experience PlatformWeb SDK標籤擴充功能的&#x200B;**[!UICONTROL 隱私權]**&#x200B;區段中，確認&#x200B;**[!UICONTROL 預設同意]**&#x200B;設為&#x200B;**[!UICONTROL In]**：
+1. 在Experience Platform Web SDK標籤擴充功能的&#x200B;**[!UICONTROL 隱私權]**&#x200B;區段中，確認&#x200B;**[!UICONTROL 預設同意]**&#x200B;設為&#x200B;**[!UICONTROL In]**：
 
 
-   ![同意AEP延伸模組隱私權設定](assets/consent-web-sdk-privacy-in.png)
+   ![同意AEP擴充功能隱私權設定](assets/consent-web-sdk-privacy-in.png)
 
    >[!NOTE]
    > 
    >若為動態解決方案，請選取[提供資料元素]選項，然後傳遞傳回```klaro.getManager().consents```值的資料元素
    >
-   >如果CMP是在標籤內嵌程式碼&#x200B;*before*&#x200B;之前插入原始程式碼，以便在Experience PlatformWeb SDK擴充功能開始載入之前可以使用預設同意，就會使用此選項。 在我們的範例中，我們無法使用此選項，因為CMP是透過標籤載入，而不是在標籤之前。
+   >如果CMP是在標籤內嵌程式碼&#x200B;*before*&#x200B;之前插入原始程式碼，以便在Experience Platform Web SDK擴充功能開始載入之前可以使用預設同意，就會使用此選項。 在我們的範例中，我們無法使用此選項，因為CMP是透過標籤載入，而不是在標籤之前。
 
 
 
@@ -152,11 +152,11 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 
 1. 建立當訪客點選&#x200B;**我拒絕**&#x200B;時觸發的規則。  將此規則命名為： `all pages - click consent banner - set consent "out"`
 
-1. 作為&#x200B;**[!UICONTROL 事件]**，在符合CSS選取器&#x200B;**`#klaro .cn-decline`的**&#x200B;元素上使用&#x200B;**[!UICONTROL 按一下]**
+1. 作為&#x200B;**[!UICONTROL 事件]**，在符合CSS選取器&#x200B;****&#x200B;的&#x200B;**[!UICONTROL 元素上使用]**&#x200B;按一下`#klaro .cn-decline`
 
    ![規則條件使用者點選「我拒絕」](assets/consent-optOut-clickEvent.png)
 
-1. 現在，請使用Experience PlatformWeb SDK [!UICONTROL 設定同意] [!UICONTROL 動作型別]，將同意設定為「out」：
+1. 現在，請使用Experience Platform Web SDK [!UICONTROL 設定同意] [!UICONTROL 動作型別]，將同意設定為「out」：
 
    ![同意規則選擇退出動作](assets/consent-rule-optout-action.png)
 
@@ -166,29 +166,29 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 
 現在，當訪客選擇退出時，以上方式設定的規則將引發，並將Web SDK同意設定為&#x200B;**[!UICONTROL 退出]**。
 
-前往Luma示範網站進行驗證，拒絕Cookie，並確認選擇退出後沒有引發任何Web SDK請求。
+前往Luma示範網站進行驗證，拒絕Cookie，並確認選擇退出後不會觸發任何Web SDK請求。
 
 ### 案例2：隱含的選擇退出
 
 
-隱含的選擇退出表示訪客應被視為預設的選擇退出，且不應設定Cookie。 除非訪客決定透過同意橫幅來接受Cookie，以手動方式選擇加入，否則不應引發Web SDK請求。 您可能必須在適用GDPR的歐盟地區處理這類使用案例。
+隱含的選擇退出表示訪客應被視為預設的選擇退出，且不應設定Cookie。 除非訪客決定透過同意橫幅來接受Cookie，以手動方式選擇加入，否則不應引發網頁SDK請求。 您可能必須在適用GDPR的歐盟地區處理這類使用案例。
 
 以下說明如何設定隱含選擇退出情境的設定：
 
-1. 在Klaro中，關閉`aep web sdk`服務中的&#x200B;**服務預設狀態**，並儲存更新的設定。
+1. 在Klaro中，關閉&#x200B;**服務中的**&#x200B;服務預設狀態`aep web sdk`，並儲存更新的設定。
 
-1. 在Experience PlatformWeb SDK擴充功能的&#x200B;**[!UICONTROL 隱私權]**&#x200B;區段中，視需要將預設同意設定為&#x200B;**[!UICONTROL 退出]**&#x200B;或&#x200B;**[!UICONTROL 擱置中]**。
+1. 在Experience Platform Web SDK擴充功能的&#x200B;**[!UICONTROL 隱私權]**&#x200B;區段中，視需要將預設同意設定為&#x200B;**[!UICONTROL 退出]**&#x200B;或&#x200B;**[!UICONTROL 擱置中]**。
 
-   ![同意AEP延伸模組隱私權設定](assets/consent-implied-opt-out.png)
+   ![同意AEP擴充功能隱私權設定](assets/consent-implied-opt-out.png)
 
 1. **儲存**&#x200B;更新的設定到您的標籤程式庫並重新建置。
 
-   使用此設定，除非同意許可權變更為&#x200B;**[!UICONTROL In]**，否則Experience PlatformWeb SDK可確保不會引發任何要求。 訪客透過選擇加入以手動方式接受Cookie，因此可能會發生這種情況。
+   使用此設定時，除非同意許可權變更為&#x200B;**[!UICONTROL In]**，否則Experience Platform Web SDK可確保不會觸發任何要求。 訪客透過選擇加入以手動方式接受Cookie，因此可能會發生這種情況。
 
 1. 在Debugger中，確認Luma網站已對應至您的標籤屬性，且標籤主控台記錄已開啟。
 1. 使用瀏覽器的開發人員主控台在&#x200B;**應用程式** > **儲存空間**&#x200B;中&#x200B;**清除網站資料**
 
-1. 重新載入Luma網站，您應該會看到`defaultConsent`已設為&#x200B;**[!UICONTROL Out]**，而且尚未提出任何Web SDK請求
+1. 重新載入Luma網站，您應該會看到`defaultConsent`已設為&#x200B;**[!UICONTROL Out]**，而且尚未提出任何Web SDK要求
 
    ![同意隱含選擇退出](assets/consent-implied-out-cmp.png)
 
@@ -196,11 +196,11 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 
 1. 建立當訪客點按&#x200B;**時觸發的規則。這沒有關係**。  將此規則命名為： `all pages - click consent banner - set consent "in"`
 
-1. 作為&#x200B;**[!UICONTROL 事件]**，在符合CSS選取器&#x200B;**`#klaro .cm-btn-success`的**&#x200B;元素上使用&#x200B;**[!UICONTROL 按一下]**
+1. 作為&#x200B;**[!UICONTROL 事件]**，在符合CSS選取器&#x200B;****&#x200B;的&#x200B;**[!UICONTROL 元素上使用]**&#x200B;按一下`#klaro .cm-btn-success`
 
    ![規則條件使用者按一下「沒問題」](assets/consent-optIn-clickEvent.png)
 
-1. 使用Experience PlatformWeb SDK [!UICONTROL 延伸模組]、**[!UICONTROL 動作型別]** （共&#x200B;**[!UICONTROL 個）設定同意]**、**[!UICONTROL 一般同意]**&#x200B;作為&#x200B;**[!UICONTROL 在]**&#x200B;中)新增動作。
+1. 使用Experience Platform Web SDK [!UICONTROL 延伸模組]、**[!UICONTROL 動作型別]** （共&#x200B;**[!UICONTROL 個）設定同意]**、**[!UICONTROL 一般同意]**&#x200B;作為&#x200B;**[!UICONTROL 在]**&#x200B;中)新增動作。
 
    ![同意規則選擇加入動作](assets/consent-rule-optin-action.png)
 
@@ -214,16 +214,14 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 
 一旦您設定好此規則，事件收集就會在訪客選擇加入時開始。
 
-![同意Post訪客Optin](assets/consent-post-user-optin.png)
+![同意貼文訪客Optin](assets/consent-post-user-optin.png)
 
 
-如需Web SDK中同意的詳細資訊，請參閱[支援客戶同意偏好設定](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge/consent/supporting-consent)。
+如需在網頁SDK中同意的詳細資訊，請參閱[支援客戶同意偏好設定](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent)。
 
 
-如需[!UICONTROL 設定同意]動作的詳細資訊，請參閱[設定同意](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)。
-
-[下一步： ](setup-event-forwarding.md)
+如需[!UICONTROL 設定同意]動作的詳細資訊，請參閱[設定同意](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)。
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

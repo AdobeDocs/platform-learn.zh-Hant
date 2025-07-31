@@ -4,9 +4,9 @@ description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至P
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1982'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 2%
 
 這部影片會概述此程式：
 
->[!VIDEO](https://video.tv.adobe.com/v/3454038/?learn=on&enablevpops&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### 全域設定欄位
 
@@ -98,7 +98,7 @@ ht-degree: 2%
    >
    > 訂單編號越低，執行的時間就越早。 因此，我們提供「全域組態」低訂購數量。
 
-1. 選取&#x200B;**[!UICONTROL 保留變更]**&#x200B;以返回主規則畫面
+1. 選取&#x200B;**[!UICONTROL 保留變更]**以返回主規則畫面
    ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-loaded.png)
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 新增]**
@@ -107,7 +107,7 @@ ht-degree: 2%
 
 1. 作為&#x200B;**[!UICONTROL 動作型別]**，請選取&#x200B;**[!UICONTROL 更新變數]**
 
-1. 以&#x200B;**[!UICONTROL 資料元素]**&#x200B;的身分，選取您在[建立資料元素](create-data-elements.md)課程中建立的`xdm.variable.content`
+1. 以&#x200B;**[!UICONTROL 資料元素]**&#x200B;的身分，選取您在`xdm.variable.content`建立資料元素[課程中建立的](create-data-elements.md)
 
    ![更新變數結構描述](assets/create-rule-update-variable.png)
 
@@ -120,7 +120,7 @@ ht-degree: 2%
    >[!TIP]
    >
    > 若要瞭解要填入`eventType`欄位中的值，您必須移至結構描述頁面，並選取`eventType`欄位以檢視右側邊欄上的建議值。 如有需要，您也可以輸入新值。
-   > 結構描述頁面![&#128279;](assets/create-tag-rule-eventType.png)上的eventType建議值
+   > 結構描述頁面![上的](assets/create-tag-rule-eventType.png)eventType建議值
 
 1. 接著，在結構描述中尋找`identityMap`物件並加以選取
 
@@ -149,7 +149,7 @@ ht-degree: 2%
 
    >[!TIP]
    >
-   > 雖然Adobe Analytics不需要將設為`web.webpagedetails.pageViews`的`eventType`或`web.webPageDetails.pageViews.value`來處理作為頁面檢視的信標，但為其他下游應用程式指出頁面檢視的標準方式會很有用。
+   > 雖然Adobe Analytics不需要將設為`eventType`的`web.webpagedetails.pageViews`或`web.webPageDetails.pageViews.value`來處理作為頁面檢視的信標，但為其他下游應用程式指出頁面檢視的標準方式會很有用。
 
 
 1. 選取「**[!UICONTROL 保留變更]**」，然後在下一個畫面中選取「**[!UICONTROL 儲存]**」規則，以完成建立規則
@@ -171,7 +171,7 @@ ht-degree: 2%
 1. 選取[事件]下的![+符號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)以新增觸發器
 1. 在&#x200B;**[!UICONTROL 擴充功能]**&#x200B;下，選取&#x200B;**[!UICONTROL 核心]**
 1. 在&#x200B;**[!UICONTROL 事件型別]**&#x200B;下，選取&#x200B;**[!UICONTROL 載入的程式庫（頁面頂端）]**
-1. 選取以開啟&#x200B;**[!UICONTROL 進階選項]**，輸入`20`。 此順序值可確保規則在&#x200B;_設定全域設定的`all pages - library loaded - set global variables - 1`之後執行_。
+1. 選取以開啟&#x200B;**[!UICONTROL 進階選項]**，輸入`20`。 此順序值可確保規則在&#x200B;_設定全域設定的_&#x200B;之後執行`all pages - library loaded - set global variables - 1`。
 1. 選取&#x200B;**[!UICONTROL 保留變更]**
 
    ![Analytics XDM規則](assets/set-up-analytics-pdp.png)
@@ -179,7 +179,7 @@ ht-degree: 2%
 1. 在&#x200B;**[!UICONTROL 條件]**&#x200B;下，選取以&#x200B;**[!UICONTROL 新增]**
 1. 保留&#x200B;**[!UICONTROL 邏輯型別]**&#x200B;為&#x200B;**[!UICONTROL 一般]**
 1. 保留&#x200B;**[!UICONTROL 延伸模組]**&#x200B;為&#x200B;**[!UICONTROL 核心]**
-1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**的**&#x200B;路徑
+1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**[!UICONTROL 的]**&#x200B;路徑
 1. 在右側，啟用&#x200B;**[!UICONTROL Regex]**&#x200B;切換
 1. 在&#x200B;**[!UICONTROL 路徑下，等於]**&#x200B;設定`/products/`。 對於Luma示範網站，這可確保規則僅在產品頁面上觸發
 1. 選取&#x200B;**[!UICONTROL 保留變更]**
@@ -237,8 +237,8 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->請注意數值變數的轉譯方式，資料層中的字串值（例如`price`和`qty`）會重新格式化為資料元素中的數字。 這些格式需求對於Platform中的資料完整性很重要，並在[設定結構描述](configure-schemas.md)步驟中確定。 在範例中，**[!UICONTROL 數量]**&#x200B;使用&#x200B;**[!UICONTROL 整數]**&#x200B;資料型別。
-> ![XDM結構描述資料型別](assets/set-up-analytics-quantity-integer.png)
+>請注意數值變數的轉譯方式，資料層中的字串值（例如`price`和`qty`）會重新格式化為資料元素中的數字。 這些格式需求對於Platform中的資料完整性很重要，並在[設定結構描述](configure-schemas.md)步驟中確定。 在範例中，**[!UICONTROL 數量]**&#x200B;使用&#x200B;**[!UICONTROL 整數]**資料型別。
+>> ![XDM結構描述資料型別](assets/set-up-analytics-quantity-integer.png)
 
 現在，我們將陣列對應至XDM物件：
 
@@ -255,7 +255,7 @@ ht-degree: 2%
 1. 在&#x200B;**[!UICONTROL 條件]**&#x200B;下，選取以&#x200B;**[!UICONTROL 新增]**
 1. 保留&#x200B;**[!UICONTROL 邏輯型別]**&#x200B;為&#x200B;**[!UICONTROL 一般]**
 1. 保留&#x200B;**[!UICONTROL 擴充功能]**&#x200B;為&#x200B;**[!UICONTROL 核心]**
-1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**的**&#x200B;路徑
+1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**[!UICONTROL 的]**&#x200B;路徑
 1. 在右側，**不**&#x200B;啟用&#x200B;**[!UICONTROL Regex]**&#x200B;切換
 1. 在&#x200B;**[!UICONTROL 路徑下，等於]**&#x200B;設定`/content/luma/us/en/user/cart.html`。 對於Luma示範網站，這可確保規則僅在購物車頁面上觸發
 1. 選取&#x200B;**[!UICONTROL 保留變更]**
@@ -342,9 +342,9 @@ ht-degree: 2%
 
 1. 使用&#x200B;**[!UICONTROL 核心擴充功能]**&#x200B;並選取`Library Loaded (Page Top)`做為&#x200B;**[!UICONTROL 事件型別]**
 
-1. 選取&#x200B;**[!UICONTROL 進階]**&#x200B;下拉式清單，並在&#x200B;**[!UICONTROL 順序]**&#x200B;中輸入`50`。 這將確保此規則在您設定的所有其他規則（以`1`或`20`作為其[!UICONTROL 順序]）之後引發。
+1. 選取&#x200B;**[!UICONTROL 進階]**&#x200B;下拉式清單，並在`50`順序&#x200B;**[!UICONTROL 中輸入]**。 這將確保此規則在您設定的所有其他規則（以`1`或`20`作為其[!UICONTROL 順序]）之後引發。
 
-1. 選取&#x200B;**[!UICONTROL 保留變更]**&#x200B;以返回主規則畫面
+1. 選取&#x200B;**[!UICONTROL 保留變更]**以返回主規則畫面
    ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 新增]**
@@ -392,8 +392,6 @@ ht-degree: 2%
 如您在[!UICONTROL 發佈流程]畫面上所見，發佈程式還有更多內容，這不在本教學課程的討論範圍內。 本教學課程僅在您的開發環境中使用單一程式庫。
 
 現在，您已準備好使用Adobe Experience Platform Debugger驗證請求中的資料。
-
-[下一步 ](validate-with-debugger.md)
 
 >[!NOTE]
 >

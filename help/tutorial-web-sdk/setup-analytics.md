@@ -4,16 +4,16 @@ description: 瞭解如何使用Experience Platform Web SDK設定Adobe Analytics�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2903'
 ht-degree: 1%
 
 ---
 
 # 使用Adobe Experience Platform Web SDK設定Adobe Analytics
 
-瞭解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/web-sdk/overview)設定Adobe Analytics、建立標籤規則以將資料傳送至Adobe Analytics，以及驗證Analytics是否如預期擷取資料。
+瞭解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)設定Adobe Analytics、建立標籤規則以將資料傳送至Adobe Analytics，以及驗證Analytics是否如預期擷取資料。
 
 [Adobe Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics)是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * 熟悉並存取Adobe Analytics。
 
-* 至少要有一個測試/開發報表套裝ID。 如果您沒有可用於本教學課程的測試/開發報表套裝，[請建立一個](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
+* 至少要有一個測試/開發報表套裝ID。 如果您沒有可用於本教學課程的測試/開發報表套裝，[請建立一個](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
 
 * 完成本教學課程之初始設定和標籤設定區段中先前的課程。
 
@@ -74,7 +74,7 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 1. 將XDM欄位對應至Analytics處理規則中的Analytics變數（不再建議使用）。
 1. 直接在XDM結構描述中對應至Analytics變數（不再建議使用）。
 
-自2024年5月起，您不再需要建立XDM結構描述來使用Platform Web SDK實作Adobe Analytics。 `data`物件（以及您在[建立資料元素](create-data-elements.md)課程中建立的`data.variable`資料元素）可用來設定所有自訂Analytics變數。 在資料物件中設定這些變數，會讓現有的Analytics客戶熟悉，比使用處理規則介面更有效率，並防止不必要的資料佔用即時客戶設定檔中的空間(如果您有Real-Time Customer Data Platform或Journey Optimizer，這很重要)。
+自2024年5月起，您不再需要建立XDM結構描述來使用Platform Web SDK實作Adobe Analytics。 `data`物件（以及您在`data.variable`建立資料元素[課程中建立的](create-data-elements.md)資料元素）可用來設定所有自訂Analytics變數。 在資料物件中設定這些變數，會讓現有的Analytics客戶熟悉，比使用處理規則介面更有效率，並防止不必要的資料佔用即時客戶設定檔中的空間(如果您有Real-Time Customer Data Platform或Journey Optimizer，這很重要)。
 
 ### 自動對應的欄位
 
@@ -106,8 +106,8 @@ Analytics產品字串的個別區段是透過`productListItems`物件下的不�
 >[!NOTE]
 >
 >自2022年8月18日起，`productListItems[].SKU`優先對應至s.products變數中的產品名稱。
->&#x200B;>只有在`productListItems[].SKU`不存在時，設定為`productListItems[].name`的值才會對應至產品名稱。 否則，它將會取消對應，並可在內容資料中使用。
->&#x200B;>請勿將空字串或Null設定為`productListItems[].SKU`。 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
+>>只有在`productListItems[].name`不存在時，設定為`productListItems[].SKU`的值才會對應至產品名稱。 否則，它將會取消對應，並可在內容資料中使用。
+>>請勿將空字串或Null設定為`productListItems[].SKU`。 這會產生不想要的效果，讓對應至s.products變數中的產品名稱。
 
 
 ### 在資料物件中設定變數
@@ -243,7 +243,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 在&#x200B;**[!UICONTROL 事件型別]**&#x200B;下，選取&#x200B;**[!UICONTROL 載入的程式庫（頁面頂端）]**
 
-1. 選取以開啟&#x200B;**[!UICONTROL 進階選項]**，輸入`51`。 這可確保規則在設定基準線XDM為&#x200B;**[!UICONTROL 更新變數]**&#x200B;動作型別的`all pages - library loaded - send event - 50`之後執行。
+1. 選取以開啟&#x200B;**[!UICONTROL 進階選項]**，輸入`51`。 這可確保規則在設定基準線XDM為`all pages - library loaded - send event - 50`更新變數&#x200B;**[!UICONTROL 動作型別的]**&#x200B;之後執行。
 1. 選取&#x200B;**[!UICONTROL 保留變更]**
 
    ![Analytics報表套裝覆寫](assets/set-up-analytics-rs-override.png)
@@ -254,7 +254,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 保留&#x200B;**[!UICONTROL 擴充功能]**&#x200B;為&#x200B;**[!UICONTROL 核心]**
 
-1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**的**&#x200B;路徑
+1. 選取&#x200B;**[!UICONTROL 條件型別]**&#x200B;作為不含查詢字串&#x200B;**[!UICONTROL 的]**&#x200B;路徑
 
 1. 在右側，保留&#x200B;**[!UICONTROL Regex]**&#x200B;切換功能為停用
 
@@ -270,9 +270,9 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 作為&#x200B;**[!UICONTROL 動作型別]**，請選取&#x200B;**[!UICONTROL 傳送事件]**
 
-1. 以&#x200B;**[!UICONTROL XDM資料]**&#x200B;身分，選取您在[建立資料元素](create-data-elements.md)課程中建立的`xdm.variable.content`資料元素
+1. 以&#x200B;**[!UICONTROL XDM資料]**&#x200B;身分，選取您在`xdm.variable.content`建立資料元素[課程中建立的](create-data-elements.md)資料元素
 
-1. 以&#x200B;**[!UICONTROL 資料]**&#x200B;的身分，選取您在[建立資料元素](create-data-elements.md)課程中建立的`data.variable`資料元素
+1. 以&#x200B;**[!UICONTROL 資料]**&#x200B;的身分，選取您在`data.variable`建立資料元素[課程中建立的](create-data-elements.md)資料元素
 
    ![Analytics資料流覆寫](assets/set-up-analytics-datastream-override-1.png)
 
@@ -345,7 +345,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    >[!NOTE]
    >
-   >由於您已登入，請花點時間驗證使用者&#x200B;**`test@test.com`**&#x200B;的驗證ID `b642b4217b34b1e8d3bd915fc65c4452`，此驗證識別碼也已在`[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`中擷取
+   >由於您已登入，請花點時間驗證使用者`b642b4217b34b1e8d3bd915fc65c4452`的驗證ID **`test@test.com`**，此驗證識別碼也已在`[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`中擷取
 
 ### 報表套裝覆寫驗證
 
@@ -368,13 +368,13 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    >[!NOTE]
    >
-   > 如果您在先前的練習中使用`data`物件覆寫`xdm`物件，`gn`值可能是`test`。
+   > 如果您在先前的練習中使用`gn`物件覆寫`test`物件，`xdm`值可能是`data`。
 
    ![Analytics產品字串](assets/analytics-debugger-edge-page-view.png)
 
 ### 產品字串和電子商務事件驗證
 
-由於您已在產品頁面上，此練習會繼續使用相同的Edge追蹤來驗證Analytics所擷取的產品資料。 產品字串和電子商務事件都會自動將XDM變數對應至Analytics。 在[為Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)設定XDM結構描述時，只要您已對應至適當的`productListItem` XDM變數，Platform Edge Network就會負責將資料對應至適當的分析變數。
+由於您已在產品頁面上，此練習會繼續使用相同的Edge追蹤來驗證Analytics所擷取的產品資料。 產品字串和電子商務事件都會自動將XDM變數對應至Analytics。 在`productListItem`為Adobe Analytics[設定XDM結構描述時，只要您已對應至適當的](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) XDM變數，Platform Edge Network就會負責將資料對應至適當的分析變數。
 
 **首先驗證`Product String`是否已設定**
 
@@ -385,7 +385,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    ![Analytics產品字串](assets/analytics-debugger-prodstring.png)
 
-   Edge追蹤處理`commerce`個事件的方式與`productList`個維度略有不同。 您不會看到內容資料變數的對應方式，與看到產品名稱對應至上述`[!UICONTROL c.a.x.productlistitem.[0].name]`的方式相同。 Edge追蹤反而會在Analytics `event`變數中顯示最終事件自動對應。 只要您在[設定Adobe Analytics的結構描述](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)時對應到適當的XDM `commerce`變數，Platform Edge Network就會相應地對應它；在此例中是`commerce.productViews.value=1`。
+   Edge追蹤處理`commerce`個事件的方式與`productList`個維度略有不同。 您不會看到內容資料變數的對應方式，與看到產品名稱對應至上述`[!UICONTROL c.a.x.productlistitem.[0].name]`的方式相同。 Edge追蹤反而會在Analytics `event`變數中顯示最終事件自動對應。 只要您在`commerce`設定Adobe Analytics的結構描述[時對應到適當的XDM ](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)變數，Platform Edge Network就會相應地對應它；在此例中是`commerce.productViews.value=1`。
 
 1. 返回Experience Platform Debugger視窗，向下捲動至`[!UICONTROL events]`變數，變數設為`[!UICONTROL prodView]`
 
@@ -393,7 +393,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    >[!TIP]
    >
-   > `ecommerce - library loaded - set product details variables - 20`規則正在覆寫`all pages - library loaded - set global variables - 1`規則設定的`eventType`的值，因為它設定為稍後在順序中觸發
+   > `ecommerce - library loaded - set product details variables - 20`規則正在覆寫`eventType`規則設定的`all pages - library loaded - set global variables - 1`的值，因為它設定為稍後在順序中觸發
 
 
    ![Analytics產品檢視](assets/analytics-debugger-prodView.png)
@@ -453,7 +453,7 @@ Adobe Experience Platform Assurance可協助您檢查、證明、模擬及驗證
 ### 內容頁面檢視驗證
 
 使用相同的信標，驗證內容頁面檢視是否已對應至正確的Adobe Analytics變數。
-向下捲動至&#x200B;**[!UICONTROL pageName]**&#x200B;以驗證`Page Name`是否已正確擷取：
+向下捲動至**[!UICONTROL pageName]**&#x200B;以驗證`Page Name`是否已正確擷取：
 
 
     >[！NOTE]
@@ -486,8 +486,6 @@ Adobe Experience Platform Assurance可協助您檢查、證明、模擬及驗證
 
 
 恭喜！您成功了！ 本課程已結束，現在您已準備好透過Platform Web SDK為您自己的網站實施Adobe Analytics。
-
-[下一步： ](setup-audience-manager.md)
 
 >[!NOTE]
 >

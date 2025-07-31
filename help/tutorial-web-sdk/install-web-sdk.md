@@ -4,9 +4,9 @@ description: 瞭解如何在資料收集介面中安裝和設定Platform Web SDK
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '606'
 ht-degree: 11%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 11%
 
 1. 開啟[資料收集介面](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 在左側導覽中選取&#x200B;**[!UICONTROL 標籤]**
-1. 選取&#x200B;**[!UICONTROL 新屬性]**&#x200B;按鈕
+1. 選取&#x200B;**[!UICONTROL 新屬性]**按鈕
    ![新增屬性](assets/websdk-property-addNewProperty.png)
 1. 以&#x200B;**[!UICONTROL Name]**&#x200B;的身分，輸入`Web SDK Course` （如果貴公司的多人參加此教學課程，請在結尾加上您的姓名）
 1. 作為&#x200B;**[!UICONTROL 網域]**，請輸入`enablementadobe.com` （稍後說明）
@@ -71,7 +71,7 @@ ht-degree: 11%
 
    ![資料流選擇](assets/extension-luma-web-sdk-datastream-extension.png)
 
-如需擴充功能每個區段的詳細資訊，請參閱[設定Adobe Experience Platform Web SDK擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
+如需擴充功能每個區段的詳細資訊，請參閱[設定Adobe Experience Platform Web SDK擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
 
 >[!NOTE]
 >
@@ -82,8 +82,6 @@ ht-degree: 11%
 >在本教學課程中，您只會設定一個資料流，並將其與所有標籤環境（開發、預備和生產）建立關聯。 在您自己的網站上實作Platform Web SDK時，應該為每個環境設定個別的資料流，並在擴充功能設定中據以對應它們。
 
 現在您已安裝Platform Web SDK並將其與資料流相關聯，您可以開始收集資料了。
-
-[下一步： ](create-data-elements.md)
 
 >[!NOTE]
 >

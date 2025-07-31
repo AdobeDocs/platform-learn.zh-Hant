@@ -4,9 +4,9 @@ description: 瞭解如何在標籤中建立XDM物件並將資料元素對應至�
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1336'
 ht-degree: 2%
 
 ---
@@ -54,11 +54,11 @@ ht-degree: 2%
 
 ### 在資料層中實作XDM
 
-此方法涉及使用完整定義的XDM物件作為資料層的結構。 然後將整個資料層對應到標籤中的XDM物件資料元素。 如果您的實作未使用標籤管理程式，此方法可能是最理想的方法，因為您可以使用[XDM sendEvent命令](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data)，直接從您的應用程式傳送資料至XDM。 如果您確實使用標籤，您可以建立自訂程式碼資料元素，將擷取整個資料層作為傳遞JSON物件至XDM。 然後，您將傳遞JSON對應到「傳送事件動作」中的XDM物件欄位。
+此方法涉及使用完整定義的XDM物件作為資料層的結構。 然後將整個資料層對應到標籤中的XDM物件資料元素。 如果您的實作未使用標籤管理程式，此方法可能是最理想的方法，因為您可以使用[XDM sendEvent命令](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data)，直接從您的應用程式傳送資料至XDM。 如果您確實使用標籤，您可以建立自訂程式碼資料元素，將擷取整個資料層作為傳遞JSON物件至XDM。 然後，您將傳遞JSON對應到「傳送事件動作」中的XDM物件欄位。
 
 以下是資料層使用Adobe使用者端資料層格式的範例：
 
-+++資料層中的XDM範例
+資料層中的+++XDM範例
 
 ```JSON
 window.adobeDataLayer.push({
@@ -129,17 +129,17 @@ window.adobeDataLayer.push({
 >
 > Google資料層
 > 
-> 如果您的組織已使用Google Analytics，且您的網站上具有傳統Google資料層物件，您可以在標籤中使用[Google資料層擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/google-data-layer/overview)。 這可讓您更快部署Adobe技術，而不需要向IT團隊請求支援。 將Google資料層對應至XDM會遵循上述相同步驟。
+> 如果您的組織已使用Google Analytics，且您的網站上具有傳統Google資料層物件，您可以在標籤中使用[Google資料層擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview)。 這可讓您更快速地部署Adobe技術，而不需要向IT團隊請求支援。 將Google資料層對應至XDM會遵循上述相同步驟。
 
 ### 在資料流中對應到XDM
 
-此方法使用內建在資料流設定中的功能，稱為[資料收集的資料準備](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/data-prep)，並略過將資料層變數對應到標籤中的XDM。
+此方法使用內建在資料流設定中的功能，稱為[資料收集的資料準備](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)，並略過將資料層變數對應到標籤中的XDM。
 
 #### 優點
 
 * 靈活地對應個別變數至XDM
-* 可在資料層移至XDM之前[計算新值](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-prep/functions)或[轉換資料型別](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-prep/data-handling)
-* 運用[對應UI](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/data-prep#create-mapping)，使用點選式UI將來源資料中的欄位對應到XDM
+* 可在資料層移至XDM之前[計算新值](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions)或[轉換資料型別](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)
+* 運用[對應UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping)，使用點選式UI將來源資料中的欄位對應到XDM
 
 #### 缺點
 
@@ -174,16 +174,16 @@ window.adobeDataLayer.push({
 
 請依照相同的步驟建立這些額外的資料元素：
 
-* **`page.pageInfo.server`**&#x200B;對應至
+* **`page.pageInfo.server`**對應至
   `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`**&#x200B;對應至
+* **`page.pageInfo.hierarchie1`**對應至
   `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`**&#x200B;對應至
+* **`user.profile.attributes.username`**對應至
   `digitalData.user.0.profile.0.attributes.username`
 
-* **`user.profile.attributes.loggedIn`**&#x200B;對應至
+* **`user.profile.attributes.loggedIn`**對應至
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
 * **`product.productInfo.sku`**&#x200B;對應至`digitalData.product.0.productInfo.sku`
@@ -271,7 +271,7 @@ window.adobeDataLayer.push({
 1. 選取適當的&#x200B;**[!UICONTROL 結構描述]**，在此案例中為`Luma Web Event Data`
 1. 選取&#x200B;**[!UICONTROL 儲存]**
 
-   XDM![&#128279;](assets/analytics-tags-data-element-xdm-variable.png)的變數資料元素
+   XDM![的](assets/analytics-tags-data-element-xdm-variable.png)變數資料元素
 
 接下來，為資料物件建立變數資料元素：
 
@@ -280,7 +280,7 @@ window.adobeDataLayer.push({
 1. 選取&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;做為&#x200B;**[!UICONTROL 擴充功能]**
 1. 選取&#x200B;**[!UICONTROL 變數]**&#x200B;做為&#x200B;**[!UICONTROL 資料元素型別]**
 1. 選取&#x200B;**[!UICONTROL 資料]**&#x200B;做為&#x200B;**[!UICONTROL 屬性]**
-1. 選取您要在本教學課程中實施的Experience Cloud解決方案
+1. 選取您想要實作的Experience Cloud解決方案，作為本教學課程的一部分
 1. 選取&#x200B;**[!UICONTROL 儲存]**
 
    ![資料物件的變數資料元素](assets/data-element-data-variable.png.png)
@@ -306,10 +306,8 @@ window.adobeDataLayer.push({
 >
 >在未來的[建立標籤規則](create-tag-rule.md)課程中，您將瞭解&#x200B;**[!UICONTROL 變數]**&#x200B;資料元素如何讓您使用&#x200B;**[!UICONTROL 更新變數動作型別]**，棧疊標籤中的多個規則。
 
-設定好這些資料元素後，您就可以開始使用標籤規則將資料傳送至PlatformEdge Network了。 但首先，瞭解如何使用Web SDK收集身分資料。
-
-[下一步： ](create-identities.md)
+設定好這些資料元素後，您就可以開始使用標籤規則將資料傳送至Platform Edge Network了。 但首先，瞭解如何使用Web SDK收集身分資料。
 
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

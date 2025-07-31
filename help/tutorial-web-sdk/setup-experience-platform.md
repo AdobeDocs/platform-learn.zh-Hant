@@ -3,9 +3,9 @@ title: 透過Platform Web SDK將資料串流至Adobe Experience Platform
 description: 瞭解如何使用網頁SDK將網頁資料串流至Adobe Experience Platform。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2306'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ## 建立資料集
 
-所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
+所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
 
 讓我們為您的Luma Web事件資料設定資料集：
 
@@ -60,7 +60,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
    ![從結構描述建立資料集](assets/experience-platform-create-dataset-schema.png)
 
-1. 選取在[先前的課程](configure-schemas.md)中建立的`Luma Web Event Data`結構描述，然後選取&#x200B;**[!UICONTROL 下一步]**
+1. 選取在`Luma Web Event Data`先前的課程[中建立的](configure-schemas.md)結構描述，然後選取&#x200B;**[!UICONTROL 下一步]**
 
    ![資料集，選取結構描述](assets/experience-platform-create-dataset-schema-selection.png)
 
@@ -160,7 +160,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!INFO]
 >
->  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/queries/explore-data)。
+>  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
 
 
 ## 為即時客戶個人檔案啟用資料集和結構描述
@@ -269,7 +269,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 1. 命名結構描述`Luma Loyalty Schema`
 1. 新增[!UICONTROL 熟客方案詳細資料]欄位群組
 1. 新增[!UICONTROL 人口統計詳細資料]欄位群組
-1. 選取`Person ID`欄位，並使用`Luma CRM Id` [!UICONTROL 身分名稱空間]將其標示為[!UICONTROL 身分]和[!UICONTROL 主要身分]。
+1. 選取`Person ID`欄位，並使用身分名稱空間[!UICONTROL 將其標示為]身分`Luma CRM Id`和[!UICONTROL 主要身分]。
 1. 為[!UICONTROL 設定檔]啟用結構描述。 如果您找不到設定檔切換，請嘗試按一下左上方的結構描述名稱。
 1. 儲存結構描述
 
@@ -305,7 +305,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 1. 選取&#x200B;**[!UICONTROL 下一步]**
 
    ![建立客群](assets/merge-policy-set-active-on-edge.png)
-1. 繼續選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以繼續完成工作流程的其他步驟，並選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存您的設定
+1. 繼續選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以繼續完成工作流程的其他步驟，並選取&#x200B;**[!UICONTROL 完成]**以儲存您的設定
    ![建立客群](assets/merge-policy-finish.png)
 
 您現在可以建立對象，以便在Edge上評估。
@@ -337,8 +337,6 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 由於這是非常簡單的對象，因此我們可以使用Edge評估方法。 Edge對象會在邊緣進行評估，因此在網站SDK向Platform Edge Network提出的相同請求中，我們可以評估對象定義，並立即確認使用者是否符合資格。
 
-
-[下一步： ](setup-analytics.md)
 
 >[!NOTE]
 >

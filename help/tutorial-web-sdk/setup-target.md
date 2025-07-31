@@ -4,9 +4,9 @@ description: 瞭解如何使用Platform Web SDK實作Adobe Target。 本課程�
 solution: Data Collection, Target
 jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: b10efcfdd1867c969e887bced7a6b08237a8032d
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '4363'
+source-wordcount: '4362'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 瞭解如何使用 Adobe Experience Platform Web SDK 實施 Adobe Target。了解如何提供體驗以及如何將其他參數傳遞給 Target。
 
-[Adobe Target](https://experienceleague.adobe.com/zh-hant/docs/target/using/target-home)是Adobe Experience Cloud應用程式，提供一切所需工具，讓您量身訂造及個人化您的客戶體驗，藉此為您的網頁以及行動網站、應用程式和其他數位頻道創造最高的收入。
+[Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home)是Adobe Experience Cloud應用程式，提供一切所需工具，讓您量身訂造及個人化您的客戶體驗，藉此為您的網頁以及行動網站、應用程式和其他數位頻道創造最高的收入。
 
 ![網頁SDK和Adobe Target圖表](assets/dc-websdk-at.png)
 
@@ -42,12 +42,12 @@ ht-degree: 1%
 若要完成本節中的課程，您必須先：
 
 * 完成所有Platform Web SDK初始設定的課程，包括設定資料元素和規則。
-* 確定您在Adobe Target中有[編輯者或核准者角色](https://experienceleague.adobe.com/zh-hant/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)。
-* 如果您使用Google Chrome瀏覽器，請安裝[視覺化體驗撰寫器Helper擴充功能](https://experienceleague.adobe.com/zh-hant/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)。
+* 確定您在Adobe Target中有[編輯者或核准者角色](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)。
+* 如果您使用Google Chrome瀏覽器，請安裝[視覺化體驗撰寫器Helper擴充功能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)。
 * 瞭解如何在Target中設定活動。 如果您需要複習程式，下列教學課程和指南對本課程很有幫助：
-   * [使用視覺化體驗撰寫器(VEC) Helper擴充功能](https://experienceleague.adobe.com/zh-hant/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
-   * [使用 Visual Experience Composer](https://experienceleague.adobe.com/zh-hant/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
-   * [使用表單式體驗撰寫器](https://experienceleague.adobe.com/zh-hant/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
+   * [使用視覺化體驗撰寫器(VEC) Helper擴充功能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
+   * [使用 Visual Experience Composer](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
+   * [使用表單式體驗撰寫器](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
    * [建立體驗鎖定目標活動](https://experienceleague.adobe.com/zh-hant/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
 
 ## 新增閃爍處理
@@ -142,7 +142,7 @@ Adobe建議您非同步實作標籤，如Luma網站所示。 不過，如果同�
 
 ### 屬性代號
 
-Target Premium客戶可選擇使用屬性管理使用者許可權。 Target屬性可讓您建立使用者可執行Target活動的邊界。 如需詳細資訊，請參閱Target檔案的[企業許可權](https://experienceleague.adobe.com/zh-hant/docs/target/using/administer/manage-users/enterprise/properties-overview)區段。
+Target Premium客戶可選擇使用屬性管理使用者許可權。 Target屬性可讓您建立使用者可執行Target活動的邊界。 如需詳細資訊，請參閱Target檔案的[企業許可權](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview)區段。
 
 若要設定或尋找屬性代號，請瀏覽至&#x200B;**Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL 屬性]**。 `</>`圖示會顯示實作程式碼。 `at_property`值是您將在資料流中使用的屬性代號。
 
@@ -156,9 +156,9 @@ Target Premium客戶可選擇使用屬性管理使用者許可權。 Target屬�
 
 ### 目標環境ID
 
-Target中的[環境](https://experienceleague.adobe.com/zh-hant/docs/target/using/administer/environments)可協助您在開發的所有階段管理您的實作。 此選擇性設定會指定您要與每個資料流搭配使用的Target環境。
+Target中的[環境](https://experienceleague.adobe.com/en/docs/target/using/administer/environments)可協助您在開發的所有階段管理您的實作。 此選擇性設定會指定您要與每個資料流搭配使用的Target環境。
 
-Adobe建議針對每個開發、測試和生產資料流分別以不同方式設定「目標環境ID」，以簡化操作。 或者，您可以使用[主機](https://experienceleague.adobe.com/zh-hant/docs/target/using/administer/hosts)功能，在Target介面中組織環境。
+Adobe建議針對每個開發、測試和生產資料流分別以不同方式設定「目標環境ID」，以簡化操作。 或者，您可以使用[主機](https://experienceleague.adobe.com/en/docs/target/using/administer/hosts)功能，在Target介面中組織環境。
 
 若要設定或尋找環境ID，請瀏覽至&#x200B;**Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL 環境]**。
 
@@ -170,13 +170,13 @@ Adobe建議針對每個開發、測試和生產資料流分別以不同方式設
 
 ### 目標第三方ID名稱空間
 
-此選擇性設定可讓您指定用於Target第三方ID的身分符號。 Target僅支援在單一身分符號或名稱空間上同步設定檔。 如需詳細資訊，請參閱Target指南的[mbox3rdPartyId](https://experienceleague.adobe.com/zh-hant/docs/target/using/audiences/visitor-profiles/3rd-party-id)即時設定檔同步區段。
+此選擇性設定可讓您指定用於Target第三方ID的身分符號。 Target僅支援在單一身分符號或名稱空間上同步設定檔。 如需詳細資訊，請參閱Target指南的[mbox3rdPartyId](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id)即時設定檔同步區段。
 
 身分符號位於&#x200B;**資料彙集** > **[!UICONTROL 客戶]** > **[!UICONTROL 身分]**&#x200B;下的身分清單中。
 
 ![身分清單](assets/target-identities.png)
 
-出於本教學課程使用Luma網站的目的，請使用在[身分](configure-identities.md)課程中設定的身分符號`lumaCrmId`。
+出於本教學課程使用Luma網站的目的，請使用在`lumaCrmId`身分[課程中設定的身分符號](configure-identities.md)。
 
 
 
@@ -225,7 +225,7 @@ Adobe建議針對每個開發、測試和生產資料流分別以不同方式設
 
 >[!NOTE]
 >
->如果您使用Google Chrome作為瀏覽器，需要[視覺化體驗撰寫器(VEC) Helper擴充功能](https://experienceleague.adobe.com/zh-hant/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)才能正確載入網站，以便在VEC中編輯。
+>如果您使用Google Chrome作為瀏覽器，需要[視覺化體驗撰寫器(VEC) Helper擴充功能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)才能正確載入網站，以便在VEC中編輯。
 
 1. 導覽至Adobe Target介面
 1. 使用活動URL的Luma首頁建立體驗鎖定目標(XT)活動
@@ -249,9 +249,9 @@ Adobe建議針對每個開發、測試和生產資料流分別以不同方式設
    >如果您未使用Adobe Analytics，請選取Target作為報表來源，然後選擇其他量度，例如&#x200B;**參與>頁面檢視**。 必須有目標量度才能儲存及預覽活動。
 
 1. 儲存活動
-1. 如果您熟悉變更，那麼可以啟動活動。 否則，如果您想要預覽體驗而不啟動，可以複製[QA預覽URL](https://experienceleague.adobe.com/zh-hant/docs/target/using/activities/activity-qa/activity-qa)。
+1. 如果您熟悉變更，那麼可以啟動活動。 否則，如果您想要預覽體驗而不啟動，可以複製[QA預覽URL](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa)。
 1. 載入Luma首頁，應該會看到變更已套用
-1. 幾小時後，您應該就能在Adobe Analytics中檢視Target活動資料和轉換。 請參閱Target指南，以取得有關[Analytics for Target (A4T)報告](https://experienceleague.adobe.com/zh-hant/docs/target/using/integrate/a4t/reporting)的詳細資訊。
+1. 幾小時後，您應該就能在Adobe Analytics中檢視Target活動資料和轉換。 請參閱Target指南，以取得有關[Analytics for Target (A4T)報告](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/reporting)的詳細資訊。
 
 
 
@@ -261,7 +261,7 @@ Adobe建議針對每個開發、測試和生產資料流分別以不同方式設
 
 >[!CAUTION]
 >
->如果您使用Google Chrome並安裝[Visual Experience Composer (VEC) Helper擴充功能](https://experienceleague.adobe.com/zh-hant/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)，請確定&#x200B;**插入Target資料庫**&#x200B;設定已停用。 啟用此設定將會產生額外的Target請求。
+>如果您使用Google Chrome並安裝[Visual Experience Composer (VEC) Helper擴充功能](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)，請確定&#x200B;**插入Target資料庫**&#x200B;設定已停用。 啟用此設定將會產生額外的Target請求。
 
 1. 開啟Adobe Experience Platform Debugger瀏覽器擴充功能
 1. 移至[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)，然後使用偵錯工具來[將網站上的標籤屬性切換為您自己的開發屬性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
@@ -405,12 +405,12 @@ Adobe建議針對每個開發、測試和生產資料流分別以不同方式設
 
 1. 在[!UICONTROL 目標與設定]步驟中，選擇Adobe Target作為報告來源，並選擇[!UICONTROL 參與] > [!UICONTROL 頁面檢視]作為目標
 1. 儲存活動
-1. 如果您熟悉變更，那麼可以啟動活動。 否則，如果您想要預覽體驗而不啟動，可以複製[QA預覽URL](https://experienceleague.adobe.com/zh-hant/docs/target/using/activities/activity-qa/activity-qa)。
+1. 如果您熟悉變更，那麼可以啟動活動。 否則，如果您想要預覽體驗而不啟動，可以複製[QA預覽URL](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa)。
 1. 載入Luma首頁，應該會看到變更已套用
 
 >[!NOTE]
 >
->「已點按mbox」轉換目標無法自動運作。 由於Platform Web SDK不會自動轉譯自訂範圍，因此不會追蹤您選擇套用內容之位置的點按。 您可以使用「點選」`eventType`為每個範圍建立自己的點選追蹤，並透過`sendEvent`動作包含適用的`_experience`詳細資料。
+>「已點按mbox」轉換目標無法自動運作。 由於Platform Web SDK不會自動轉譯自訂範圍，因此不會追蹤您選擇套用內容之位置的點按。 您可以使用「點選」`eventType`為每個範圍建立自己的點選追蹤，並透過`_experience`動作包含適用的`sendEvent`詳細資料。
 
 ### 使用除錯工具進行驗證
 
@@ -440,7 +440,7 @@ Adobe建議針對每個開發、測試和生產資料流分別以不同方式設
 
 ### 頁面(mbox)引數和XDM
 
-所有XDM欄位都會以[頁面引數](https://experienceleague.adobe.com/zh-hant/docs/target-dev/developer/implementation/methods/page-parameters)或mbox引數的形式自動傳遞至Target。
+所有XDM欄位都會以[頁面引數](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters)或mbox引數的形式自動傳遞至Target。
 
 其中一些XDM欄位會對應至Target後端的特殊物件。 例如，`web.webPageDetails.URL`將自動可用於建置以URL為基礎的鎖定目標條件，或在建立設定檔指令碼時作為`page.url`物件。
 
@@ -450,10 +450,10 @@ Adobe建議針對每個開發、測試和生產資料流分別以不同方式設
 
 有些資料點未從XDM物件對應，可能對Target有用。 這些特殊的Target引數包括：
 
-* [輪廓屬性](https://experienceleague.adobe.com/zh-hant/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
-* [Recommendations實體屬性](https://experienceleague.adobe.com/zh-hant/docs/target/using/recommendations/entities/entity-attributes)
-* [Recommendations保留引數](https://experienceleague.adobe.com/zh-hant/docs/target/using/recommendations/plan-implement#pass-behavioral)
-* [類別相關性](https://experienceleague.adobe.com/zh-hant/docs/target/using/audiences/visitor-profiles/category-affinity)的類別值
+* [輪廓屬性](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
+* [Recommendations實體屬性](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
+* [Recommendations保留引數](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
+* [類別相關性](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)的類別值
 
 這些引數必須在`data`物件中傳送，而不是在`xdm`物件中傳送。 此外，頁面（或mbox）引數也可包含在`data`物件中。
 
@@ -545,7 +545,7 @@ Luma網站上的資料層完全定義在標籤內嵌程式碼之前。 這可讓
 1. 開啟[Adobe Target](https://experience.adobe.com/target)
 1. 導覽至&#x200B;**[!UICONTROL 對象]**&#x200B;區段
 1. 建立對象並選擇&#x200B;**[!UICONTROL 自訂]**&#x200B;屬性型別
-1. 搜尋`web`的&#x200B;**[!UICONTROL 引數]**&#x200B;欄位。 下拉式功能表應該會填入與網頁詳細資料相關的所有XDM欄位。
+1. 搜尋&#x200B;**[!UICONTROL 的]**&#x200B;引數`web`欄位。 下拉式功能表應該會填入與網頁詳細資料相關的所有XDM欄位。
 
    ![在Target自訂屬性中驗證](assets/validate-in-target-customattribute.png)
 
@@ -594,8 +594,6 @@ Luma網站上的資料層完全定義在標籤內嵌程式碼之前。 這可讓
 這可確認當我們進行目標決策呼叫時，在頁面上稍後觸發分析追蹤呼叫時，已佇列以供稍後傳輸的A4T資訊已正確傳送。
 
 現在您已完成本課程，應該已可使用Platform Web SDK有效實施Adobe Target。
-
-[下一步： ](setup-web-channel.md)
 
 >[!NOTE]
 >

@@ -1,12 +1,12 @@
 ---
 title: 使用Platform Web SDK資料設定事件轉送
-description: 瞭解如何使用Experience PlatformWeb SDK資料的事件轉送屬性。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
+description: 瞭解如何使用Experience Platform Web SDK資料的事件轉送屬性。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1872'
 ht-degree: 3%
 
 ---
@@ -15,22 +15,22 @@ ht-degree: 3%
 
 了解如何將事件轉送與 Adob&#x200B;&#x200B;e Experience Platform Web SDK 資料一起使用。
 
-事件轉寄是「資料收集」中可用的全新屬性型別。 事件轉送可讓您直接從Adobe Experience PlatformEdge Network傳送資料給第三方非Adobe廠商，而非傳統的使用者端瀏覽器。 在[事件轉送概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/overview)中進一步瞭解事件轉送的優點。
+事件轉寄是「資料收集」中可用的全新屬性型別。 事件轉送可讓您直接從Adobe Experience Platform Edge Network （而非傳統使用者端瀏覽器）將資料傳送至第三方非Adobe廠商。 在[事件轉送概觀](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)中進一步瞭解事件轉送的優點。
 
 
-![Web SDK和事件轉送圖表](assets/dc-websdk-eventforwarding.png)
+![網頁SDK和事件轉送圖表](assets/dc-websdk-eventforwarding.png)
 
-若要在Adobe Experience Platform中使用事件轉送，必須先使用下列一個或多個選項，將資料傳送至Adobe Experience PlatformEdge Network：
+若要在Adobe Experience Platform中使用事件轉送，必須先使用下列一個或多個選項，將資料傳送至Adobe Experience Platform Edge Network：
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/zh-hant/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
->Platform Web SDK和Platform Mobile SDK不需要透過標籤進行部署，但建議使用標籤來部署這些SDK。
+>Platform Web SDK和Platform Mobile SDK不要求透過標籤進行部署，但建議使用標籤來部署這些SDK。
 
-完成本教學課程中先前的課程後，您應使用Web SDK傳送資料至PlatformEdge Network。 資料進入平台Edge Network後，您就可以啟用事件轉送，並使用事件轉送屬性將資料傳送至非Adobe解決方案。
+完成本教學課程中先前的課程後，您應使用網頁SDK傳送資料至Platform Edge Network。 資料傳入Platform Edge Network後，您就可以啟用事件轉送，並使用事件轉送屬性將資料傳送至非Adobe解決方案。
 
 ## 學習目標
 
@@ -51,7 +51,7 @@ ht-degree: 3%
 * 事件轉送的使用者許可權。 (在[Admin Console](https://adminconsole.adobe.com/)中，在Adobe Experience Platform Launch產品底下，[!UICONTROL 平台] > [!UICONTROL Edge]的許可權專案以及所有[!UICONTROL 屬性權利])。 授與後，您應該會在Data Collection介面的左側導覽中看到[!UICONTROL 事件轉送]：
   ![事件轉送屬性](assets/event-forwarding-menu.png)
 
-* Adobe Experience Platform Web或Mobile SDK已設定為傳送資料給Edge Network。 您必須完成本教學課程的下列課程：
+* Adobe Experience Platform Web或Mobile SDK已設定為傳送資料至Edge Network。 您必須完成本教學課程的下列課程：
 
    * 初始設定
 
@@ -84,7 +84,7 @@ ht-degree: 3%
 
 ## 設定資料串流
 
-若要讓事件轉送使用您傳送至PlatformEdge Network的資料，您必須將新建立的事件轉送屬性連結至用來將資料傳送至Adobe解決方案的相同資料流。
+若要讓事件轉送使用您傳送至Platform Edge Network的資料，您必須將新建立的事件轉送屬性連結至用來將資料傳送至Adobe解決方案的相同資料流。
 
 若要在資料流中設定Target：
 
@@ -104,7 +104,7 @@ ht-degree: 3%
 
    >[!TIP]
    >
-   >    若要將資料傳送至Adobe組織外部的事件轉送環境，請選取&#x200B;**[!UICONTROL 手動輸入ID]**&#x200B;並貼入ID。 建立event-forwarding屬性時，系統就會提供ID。
+   >    若要將資料傳送至Adobe組織以外的事件轉送環境，請選取&#x200B;**[!UICONTROL 手動輸入ID]**&#x200B;並貼入ID。 建立event-forwarding屬性時，系統就會提供ID。
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
@@ -112,7 +112,7 @@ ht-degree: 3%
 
 當您準備好透過發佈流程提升您的變更時，請針對中繼和生產資料串流重複這些步驟。
 
-## 將資料從平台Edge Network轉送至非Adobe解決方案
+## 將資料從Platform Edge Network轉送至非Adobe解決方案
 
 在本練習中，您將瞭解如何設定事件轉送資料元素、設定事件轉送規則，以及使用名為[Webhook.site](https://webhook.site/)的第三方工具進行驗證。
 
@@ -122,7 +122,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->您必須已建立資料元素並將元素對應至XDM物件，且已設定標籤規則，並在程式庫中將這些變更建立至標籤環境，才能繼續進行。 若尚未設定，請參閱[先決條件](setup-event-forwarding.md#prerequisites)區段中的&#x200B;**標籤組態**&#x200B;步驟。 這些步驟可確保將資料傳送至PlatformEdge Network，且您可以從中設定事件轉送屬性，以將資料轉送至非Adobe解決方案。
+>您必須已建立資料元素並將元素對應至XDM物件，且已設定標籤規則，並在程式庫中將這些變更建立至標籤環境，才能繼續進行。 若尚未設定，請參閱&#x200B;**先決條件**&#x200B;區段中的[標籤組態](setup-event-forwarding.md#prerequisites)步驟。 這些步驟可確保將資料傳送至Platform Edge Network，且您可以從中設定事件轉送屬性，以將資料轉送至非Adobe解決方案。
 
 
 ### 建立事件轉送資料元素
@@ -138,12 +138,12 @@ ht-degree: 3%
 >
 >如果未正確指定此路徑，則不會收集資料。
 
-在本練習中，您會將瀏覽器檢視區高度和Experience CloudID從XDM物件轉送至webhook。 XDM欄位路徑是由[設定XDM結構描述](configure-schemas.md)課程期間建立的XDM結構描述所決定。
+在本練習中，您會將瀏覽器檢視區高度和Experience Cloud ID從XDM物件轉送至webhook。 XDM欄位路徑是由[設定XDM結構描述](configure-schemas.md)課程期間建立的XDM結構描述所決定。
 
 >[!TIP]
 >
 >您也可以使用網頁瀏覽器網路工具、篩選`/ee`要求、開啟信標&#x200B;[!UICONTROL **裝載**]並向下展開至您要尋找的變數，以尋找XDM物件路徑。 然後以滑鼠右鍵按一下，並選取「複製屬性路徑」。 以下是瀏覽器檢視區高度的範例：
-> ![事件轉送XDM路徑](assets/event-forwarding-xdm-path.png)
+>> ![事件轉送XDM路徑](assets/event-forwarding-xdm-path.png)
 
 1. 前往您最近建立的&#x200B;**[!UICONTROL 事件轉送]**&#x200B;屬性
 
@@ -174,7 +174,7 @@ ht-degree: 3%
 
 1. 在&#x200B;**[!UICONTROL 資料元素型別]**&#x200B;下，選取`Path`
 
-1. 輸入包含Experience Cloud識別碼`arc.event.xdm.identityMap.ECID.0.id`的XDM物件路徑
+1. 輸入包含Experience Cloud ID `arc.event.xdm.identityMap.ECID.0.id`的XDM物件路徑
 
 1. 選取&#x200B;**[!UICONTROL 儲存]**
 
@@ -192,13 +192,13 @@ ht-degree: 3%
 
 ### 安裝Adobe Cloud Connector擴充功能
 
-若要將資料傳送至協力廠商位置，您必須先安裝[!UICONTROL Adobe雲端聯結器]擴充功能。
+若要將資料傳送至協力廠商位置，您必須先安裝[!UICONTROL Adobe Cloud Connector]擴充功能。
 
 1. 在左側導覽中選取&#x200B;**[!UICONTROL 擴充功能]**
 
 1. 選取&#x200B;**[!UICONTROL 目錄]**&#x200B;索引標籤
 
-1. 搜尋&#x200B;**[!UICONTROL Adobe雲端聯結器]**，選取&#x200B;**[!UICONTROL 安裝]**
+1. 搜尋&#x200B;**[!UICONTROL Adobe Cloud Connector]**，選取&#x200B;**[!UICONTROL 安裝]**
 
    ![事件轉送ECID路徑](assets/event-forwarding-adobe-cloud-connector.png)
 
@@ -211,7 +211,7 @@ ht-degree: 3%
 * **[!UICONTROL 事件]和[!UICONTROL 條件]**：
 
    * **標籤**：所有規則都是由必須在規則中指定的事件所觸發，例如`Library Loaded - Page Top`。 條件為選用。
-   * **事件轉送**：假設每個傳送至PlatformEdge Network的事件都是轉送資料的觸發條件。 因此，在事件轉送規則中沒有必須選取的[!UICONTROL 事件]。 若要管理哪些事件會觸發事件轉送規則，您必須設定條件。
+   * **事件轉送**：假設每個傳送至Platform Edge Network的事件都是轉送資料的觸發條件。 因此，在事件轉送規則中沒有必須選取的[!UICONTROL 事件]。 若要管理哪些事件會觸發事件轉送規則，您必須設定條件。
 
 * **資料元素代碼化**：
 
@@ -250,7 +250,7 @@ ht-degree: 3%
 
 1. 新增動作
 
-1. 在&#x200B;**[!UICONTROL 擴充功能]**&#x200B;底下，選取&#x200B;**[!UICONTROL Adobe雲端聯結器]**
+1. 在&#x200B;**[!UICONTROL 擴充功能]**&#x200B;底下，選取&#x200B;**[!UICONTROL Adobe Cloud Connector]**
 
 1. 在&#x200B;**[!UICONTROL 動作型別]**&#x200B;下，選取&#x200B;**[!UICONTROL 進行擷取呼叫]**
 
@@ -260,11 +260,11 @@ ht-degree: 3%
 
 1. 在&#x200B;**[查詢引數]**&#x200B;下，您將新增您先前建立的兩個資料元素。
 
-1. 在`viewPortHeight`中的&#x200B;**[!UICONTROL 索引鍵]**&#x200B;資料行型別上。 在&#x200B;**[!UICONTROL 值]**&#x200B;欄中，輸入`{{environment.browserDetails.viewportHeight}}`資料元素，方法為輸入或從資料元素選取器圖示中選取
+1. 在&#x200B;**[!UICONTROL 中的]**&#x200B;索引鍵`viewPortHeight`資料行型別上。 在&#x200B;**[!UICONTROL 值]**&#x200B;欄中，輸入`{{environment.browserDetails.viewportHeight}}`資料元素，方法為輸入或從資料元素選取器圖示中選取
 
 1. 選取&#x200B;[!UICONTROL **+新增其他**]&#x200B;以新增其他查詢引數
 
-1. 在`ecid`中的&#x200B;**[!UICONTROL 索引鍵]**&#x200B;資料行型別上。 在值欄中，輸入`{{ecid}}`資料元素
+1. 在&#x200B;**[!UICONTROL 中的]**&#x200B;索引鍵`ecid`資料行型別上。 在值欄中，輸入`{{ecid}}`資料元素
 
 1. 選取&#x200B;**[!UICONTROL 保留變更]**
 
@@ -290,17 +290,17 @@ ht-degree: 3%
 
 現在您可以使用Platform Debugger和Webhook.site來驗證事件轉送屬性：
 
-1. 請依照步驟[&#128279;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)將[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en/men.html)上的標籤庫切換為Web SDK標籤屬性，您在資料流中將事件轉送屬性對應至該屬性。
+1. 請依照步驟[將](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)Luma示範網站[上的標籤庫](https://luma.enablementadobe.com/content/luma/us/en/men.html)切換為您在資料流中將事件轉送屬性對應到的Web SDK標籤屬性。
 
-1. 在您重新載入頁面之前，請在Experience Platform偵錯工具上，從左側導覽開啟&#x200B;**[!UICONTROL 記錄檔]**
+1. 在您重新載入頁面之前，請在Experience Platform Debugger上從左側導覽開啟&#x200B;**[!UICONTROL 記錄檔]**
 
-1. 選取&#x200B;**[!UICONTROL Edge]**&#x200B;標籤，然後選取&#x200B;**[!UICONTROL 連線]**&#x200B;以檢視PlatformEdge Network要求
+1. 選取&#x200B;**[!UICONTROL Edge]**&#x200B;標籤，然後選取&#x200B;**[!UICONTROL 連線]**&#x200B;以檢視Platform Edge Network請求
 
    ![事件轉送邊緣網路工作階段](assets/event-forwarding-edge-session.png)
 
 1. 重新載入頁面
 
-1. 您將看到其他請求，這些請求可讓您檢視平台Edge Network傳送給WebHook的伺服器端請求
+1. 您會看到其他要求，讓您瞭解Platform Edge Network傳送給WebHook的伺服器端要求
 
 1. 焦點驗證的要求是顯示Edge網路所傳送之完整建構URL的要求
 
@@ -321,8 +321,6 @@ ht-degree: 3%
 
 恭喜！您已設定事件轉送！
 
-[下一步： ](conclusion.md)
-
 >[!NOTE]
 >
->感謝您投入時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

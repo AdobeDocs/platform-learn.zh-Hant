@@ -4,9 +4,9 @@ description: 瞭解如何使用Adobe Experience Platform Debugger驗證您的Pla
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1171'
 ht-degree: 3%
 
 ---
@@ -90,7 +90,7 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 
    ![Adobe Experience Platform Web SDK請求](assets/validate-aep-screen.png)
 
-1. 請注意，您如何看到您在[!UICONTROL 更新變數]動作中指定的`web.webpagedetails.pageView`事件型別，以及其他在`AEP Web SDK ExperienceEvent`欄位群組後面的現成可用變數
+1. 請注意，您如何看到您在`web.webpagedetails.pageView`更新變數[!UICONTROL 動作中指定的]事件型別，以及其他在`AEP Web SDK ExperienceEvent`欄位群組後面的現成可用變數
 
    ![事件詳細資料](assets/validate-event-pageViews.png)
 
@@ -143,7 +143,7 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 
 如您在[設定資料串流](configure-datastream.md)課程中所學習，Platform Web SDK會先將資料從您的數位屬性傳送至Platform Edge Network。 接著，Platform Edge Network會對資料流中啟用的對應服務發出其他伺服器端請求。 您可以在Debugger中使用Edge追蹤來驗證Platform Edge Network發出的伺服器端請求。
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### 啟用Edge追蹤
@@ -164,8 +164,6 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
    ![Analytics信標Edge追蹤](assets/validate-edge-trace.png)
 
 此時，您無法檢視任何前往Adobe應用程式的Platform Edge Network請求，因為您尚未在資料流中啟用任何請求。 在未來的課程中，您將使用Edge Trace來檢視傳送至Adobe應用程式的傳出伺服器端請求和事件轉送。 但首先，您可以瞭解其他驗證Platform Edge Network伺服器端請求的工具 — Adobe Experience Platform Assurance！
-
-[下一步： ](validate-with-assurance.md)
 
 >[!NOTE]
 >
