@@ -15,9 +15,9 @@ ht-degree: 12%
 
 了解如何設定身分識別命名空間，以配合 Adob&#x200B;&#x200B;e Experience Platform Web SDK 使用。
 
-[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home)在SDK型Adobe應用程式中設定通用的訪客ID (ECID)，以支援Experience Cloud功能，例如應用程式之間的受眾共用。 您也可以將自己的客戶ID傳送至此服務，以啟用跨裝置目標鎖定及與其他系統(例如客戶關係管理(CRM)系統)的整合。
+[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/zh-hant/docs/id-service/using/home)在SDK型Adobe應用程式中設定通用的訪客ID (ECID)，以支援Experience Cloud功能，例如應用程式之間的受眾共用。 您也可以將自己的客戶ID傳送至此服務，以啟用跨裝置目標鎖定及與其他系統(例如客戶關係管理(CRM)系統)的整合。
 
-[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) （是的，共有兩個！）會使用ECID和客戶ID來產生身分圖表，讓您將屬性和行為合併到即時客戶設定檔中。
+[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home) （是的，共有兩個！）會使用ECID和客戶ID來產生身分圖表，讓您將屬性和行為合併到即時客戶設定檔中。
 
 >[!NOTE]
 >

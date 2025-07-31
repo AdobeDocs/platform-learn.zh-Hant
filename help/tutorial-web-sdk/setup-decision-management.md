@@ -56,7 +56,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
 ## 授予決策管理的存取權限
 
-若要授與決策管理功能的存取權，您必須建立&#x200B;**產品設定檔**，並將對應許可權指派給使用者。 [在本節](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)中進一步瞭解管理Journey Optimizer使用者和許可權。
+若要授與決策管理功能的存取權，您必須建立&#x200B;**產品設定檔**，並將對應許可權指派給使用者。 [在本節](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)中進一步瞭解管理Journey Optimizer使用者和許可權。
 
 ## 設定資料串流
 
@@ -339,7 +339,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
 ### 測試忠誠度優惠
 
-1. 選取要用於模擬的測試設定檔。 按一下&#x200B;**管理設定檔**。 [若要建立或指定新的測試設定檔以進行優惠方案測試，請遵循本指南](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
+1. 選取要用於模擬的測試設定檔。 按一下&#x200B;**管理設定檔**。 [若要建立或指定新的測試設定檔以進行優惠方案測試，請遵循本指南](https://experienceleague.adobe.com/zh-hant/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 
 您可以在Luma網站上使用除錯工具，驗證生產環境中的決策邏輯。 忠誠獎勵使用案例啟動並執行後，此驗證是很好的做法，可確保所有專案皆已正確設定。
 
-[在此使用指南瞭解如何在瀏覽器中設定除錯工具](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)。
+[在此使用指南瞭解如何在瀏覽器中設定除錯工具](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/debugger/overview)。
 
 若要使用除錯工具開始驗證：
 

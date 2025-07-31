@@ -15,7 +15,7 @@ ht-degree: 7%
 
 了解如何在 Adobe Experience Platform Web SDK 中設定資料流。
 
-[資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)會告訴Adobe Experience Platform Edge Network要將由Platform Web SDK收集的資料傳送至何處。 在資料串流設定中，您可以啟用Experience Cloud應用程式、Experience Platform帳戶和事件轉送。
+[資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overview)會告訴Adobe Experience Platform Edge Network要將由Platform Web SDK收集的資料傳送至何處。 在資料串流設定中，您可以啟用Experience Cloud應用程式、Experience Platform帳戶和事件轉送。
 
 ![網頁SDK、資料串流和Edge Network圖表](assets/dc-websdk-datastreams.png)
 
@@ -65,7 +65,7 @@ ht-degree: 7%
 
 ## 覆寫資料流
 
-[資料流覆寫](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides)可讓您為資料流定義其他設定，然後在特定條件下覆寫您的預設設定。
+[資料流覆寫](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overrides)可讓您為資料流定義其他設定，然後在特定條件下覆寫您的預設設定。
 
 資料流設定覆寫分為兩個步驟：
 

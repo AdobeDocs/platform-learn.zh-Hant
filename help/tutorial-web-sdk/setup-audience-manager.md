@@ -15,7 +15,7 @@ ht-degree: 4%
 
 了解如何使用 Adob&#x200B;&#x200B;e Experience Platform Web SDK 設定 Adob&#x200B;&#x200B;e Audience Manager ，並使用 cookie 目標驗證實施。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager)為Adobe Experience Cloud解決方案，提供收集網站訪客之商業相關資訊、建立可行銷區段，以及將目標定位廣告和內容提供給適當對象所需的一切。
+[Adobe Audience Manager](https://experienceleague.adobe.com/zh-hant/docs/audience-manager)為Adobe Experience Cloud解決方案，提供收集網站訪客之商業相關資訊、建立可行銷區段，以及將目標定位廣告和內容提供給適當對象所需的一切。
 
 ![網頁SDK和Adobe Audience Manager圖表](assets/dc-websdk-aam.png)
 
@@ -32,11 +32,11 @@ ht-degree: 4%
 若要完成本課程，您必須先：
 
 * 完成本教學課程之初始設定和標籤設定區段中先前的課程。
-* 擁有Adobe Audience Manager的存取權，以及建立、讀取和寫入特徵、區段和目的地的適當許可權。 如需詳細資訊，請檢閱[Audience Manager的角色型存取控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)。
+* 擁有Adobe Audience Manager的存取權，以及建立、讀取和寫入特徵、區段和目的地的適當許可權。 如需詳細資訊，請檢閱[Audience Manager的角色型存取控制](https://experienceleague.adobe.com/zh-hant/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)。
 
 ## 設定資料串流
 
-使用Platform Web SDK的Audience Manager實作與使用[伺服器端轉送(SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf)的實作不同。 伺服器端轉送會將Adobe Analytics請求資料傳遞至Audience Manager。 Platform Web SDK實作會將傳送至Platform Edge Network的XDM資料傳遞至Audience Manager。 已在資料流中啟用Audience Manager：
+使用Platform Web SDK的Audience Manager實作與使用[伺服器端轉送(SSF)](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf)的實作不同。 伺服器端轉送會將Adobe Analytics請求資料傳遞至Audience Manager。 Platform Web SDK實作會將傳送至Platform Edge Network的XDM資料傳遞至Audience Manager。 已在資料流中啟用Audience Manager：
 
 1. 移至[資料彙集](https://experience.adobe.com/#/data-collection){target="blank"}介面
 1. 在左側導覽中，選取&#x200B;**[!UICONTROL 資料串流]**
@@ -53,7 +53,7 @@ ht-degree: 4%
 
 ## 建立資料來源
 
-接下來，建立[資料Source](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings)，這是在Audience Manager中組織資料的基本工具：
+接下來，建立[資料Source](https://experienceleague.adobe.com/zh-hant/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings)，這是在Audience Manager中組織資料的基本工具：
 
 1. 前往[Audience Manager](https://experience.adobe.com/#/audience-manager/)介面
 1. 從頂端導覽中選取&#x200B;**[!UICONTROL 對象資料]**
@@ -73,7 +73,7 @@ ht-degree: 4%
 
 ## 建立特徵
 
-儲存資料Source後，請設定[特徵](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview)。 特徵是Audience Manager中一或多個訊號的組合。 為首頁訪客建立特徵。
+儲存資料Source後，請設定[特徵](https://experienceleague.adobe.com/zh-hant/docs/audience-manager/user-guide/features/traits/traits-overview)。 特徵是Audience Manager中一或多個訊號的組合。 為首頁訪客建立特徵。
 
 >[!NOTE]
 >

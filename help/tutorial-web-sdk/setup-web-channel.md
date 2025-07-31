@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 使用Web SDK設定Journey Optimizer Web Channel
 
-瞭解如何使用Adobe Experience Platform Web SDK實作Adobe Journey Optimizer [Web channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web)。 本課程涵蓋基本Web通路先決條件、設定的詳細步驟，並深入探討以忠誠度狀態為中心的使用案例。
+瞭解如何使用Adobe Experience Platform Web SDK實作Adobe Journey Optimizer [Web channel](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/web/get-started-web)。 本課程涵蓋基本Web通路先決條件、設定的詳細步驟，並深入探討以忠誠度狀態為中心的使用案例。
 
 依照本課程，Journey Optimizer使用者可以使用Journey Optimizer網頁設計工具，透過網路管道進行進階的線上個人化。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
   > 1. 網站內嵌於iframe中。
   > 1. 無法從外部存取客戶的QA或中繼網站（這是內部網站）。
 
-* 建立Web體驗並包含來自Adobe Experience Manager Assets Essentials資料庫的內容時，需要[設定用於發佈此內容的子網域](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)。
+* 建立Web體驗並包含來自Adobe Experience Manager Assets Essentials資料庫的內容時，需要[設定用於發佈此內容的子網域](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)。
 * 如果使用內容實驗功能，請確保您的網路資料集也包含在您的報告設定中。
 * 目前，支援兩種型別的實施，以便在Web屬性上製作和傳送Web Channel行銷活動：
    * 僅限使用者端：若要修改您的網站，您必須實作Adobe Experience Platform Web SDK。
@@ -123,7 +123,7 @@ ht-degree: 0%
 
 若要在Web Channel行銷活動中使用內容實驗，您必須確保使用的網路資料集也包含在您的報告設定中。 Journey Optimizer報表系統以唯讀方式使用資料集來填入現成可用的內容實驗報表。
 
-[新增內容實驗報告的資料集在本節](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)中有詳細說明。
+[新增內容實驗報告的資料集在本節](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)中有詳細說明。
 
 ## 使用案例概述 — 忠誠度獎勵
 
@@ -302,7 +302,7 @@ ht-degree: 0%
 
 您可以使用Luma網站上的除錯工具，驗證生產環境中的網路通道體驗。 一旦忠誠獎勵使用案例啟動並執行，這是最佳實務，以確保所有專案皆正確設定。
 
-[在此使用指南瞭解如何在瀏覽器中設定除錯工具](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)。
+[在此使用指南瞭解如何在瀏覽器中設定除錯工具](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/debugger/overview)。
 
 若要使用除錯工具開始驗證：
 
