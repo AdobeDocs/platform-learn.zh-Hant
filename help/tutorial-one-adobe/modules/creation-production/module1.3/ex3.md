@@ -298,7 +298,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ## 1.3.3.5將廣告發佈至中繼資料
 
-選取其中一個廣告，然後按一下[啟用]。****
+選取其中一個廣告，然後按一下[啟用]。**&#x200B;**
 
 ![GSPeM](./images/gsmetaad1.png)
 
