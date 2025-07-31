@@ -70,7 +70,7 @@ ht-degree: 2%
 
 這部影片會概述此程式：
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454038/?learn=on&enablevpops&captions=chi_hant)
 
 ### 全域設定欄位
 
