@@ -113,7 +113,7 @@ XDM結構描述是描述Experience Platform中資料的標準方式，可讓所�
 
 >[!TIP]
 > 
->在本練習中，您新增了建議的預先定義欄位群組，以用於Web資料收集： _**[!UICONTROL AEP Web SDK ExperienceEvent]**_&#x200B;和&#x200B;_**[!UICONTROL 取用者體驗事件]**_。
+>在本練習中，您新增了建議的預先定義欄位群組，以用於Web資料收集： _&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_&#x200B;和&#x200B;_&#x200B;**[!UICONTROL 取用者體驗事件]**&#x200B;_。
 >
 
 
@@ -151,7 +151,7 @@ XDM結構描述是描述Experience Platform中資料的標準方式，可讓所�
 >
 >
 >此設定將在[設定Experience Platform](setup-experience-platform.md)課程中進一步討論。
->>![設定檔結構描述](assets/schema-profile.png)
+>&#x200B;>![設定檔結構描述](assets/schema-profile.png)
 
 若要完成本課程，請選取右上方的&#x200B;**[!UICONTROL 儲存]**。
 

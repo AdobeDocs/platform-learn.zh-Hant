@@ -143,7 +143,7 @@ ht-degree: 3%
 >[!TIP]
 >
 >您也可以使用網頁瀏覽器網路工具、篩選`/ee`要求、開啟信標&#x200B;[!UICONTROL **裝載**]並向下展開至您要尋找的變數，以尋找XDM物件路徑。 然後以滑鼠右鍵按一下，並選取「複製屬性路徑」。 以下是瀏覽器檢視區高度的範例：
->> ![事件轉送XDM路徑](assets/event-forwarding-xdm-path.png)
+>&#x200B;> ![事件轉送XDM路徑](assets/event-forwarding-xdm-path.png)
 
 1. 前往您最近建立的&#x200B;**[!UICONTROL 事件轉送]**&#x200B;屬性
 

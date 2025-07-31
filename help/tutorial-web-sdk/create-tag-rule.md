@@ -98,7 +98,7 @@ ht-degree: 2%
    >
    > 訂單編號越低，執行的時間就越早。 因此，我們提供「全域組態」低訂購數量。
 
-1. 選取&#x200B;**[!UICONTROL 保留變更]**以返回主規則畫面
+1. 選取&#x200B;**[!UICONTROL 保留變更]**&#x200B;以返回主規則畫面
    ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-loaded.png)
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 新增]**
@@ -237,8 +237,8 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->請注意數值變數的轉譯方式，資料層中的字串值（例如`price`和`qty`）會重新格式化為資料元素中的數字。 這些格式需求對於Platform中的資料完整性很重要，並在[設定結構描述](configure-schemas.md)步驟中確定。 在範例中，**[!UICONTROL 數量]**&#x200B;使用&#x200B;**[!UICONTROL 整數]**資料型別。
->> ![XDM結構描述資料型別](assets/set-up-analytics-quantity-integer.png)
+>請注意數值變數的轉譯方式，資料層中的字串值（例如`price`和`qty`）會重新格式化為資料元素中的數字。 這些格式需求對於Platform中的資料完整性很重要，並在[設定結構描述](configure-schemas.md)步驟中確定。 在範例中，**[!UICONTROL 數量]**&#x200B;使用&#x200B;**[!UICONTROL 整數]**&#x200B;資料型別。
+>&#x200B;> ![XDM結構描述資料型別](assets/set-up-analytics-quantity-integer.png)
 
 現在，我們將陣列對應至XDM物件：
 
@@ -344,7 +344,7 @@ ht-degree: 2%
 
 1. 選取&#x200B;**[!UICONTROL 進階]**&#x200B;下拉式清單，並在`50`順序&#x200B;**[!UICONTROL 中輸入]**。 這將確保此規則在您設定的所有其他規則（以`1`或`20`作為其[!UICONTROL 順序]）之後引發。
 
-1. 選取&#x200B;**[!UICONTROL 保留變更]**以返回主規則畫面
+1. 選取&#x200B;**[!UICONTROL 保留變更]**&#x200B;以返回主規則畫面
    ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 新增]**

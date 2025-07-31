@@ -86,7 +86,7 @@ ht-degree: 4%
 
 1. 為您的特徵提供易記的名稱和說明，`Luma homepage view`
 1. 選取您在上一節建立的&#x200B;**[!UICONTROL 資料Source]**。
-1. **[!UICONTROL 選取資料夾]**，以便在右側的窗格中儲存您的特徵。 您可以選取現有父資料夾旁的+圖示&#x200B;****&#x200B;來建立資料夾。 您可以命名這個新資料夾`Platform Web SDK tutorial`。
+1. **[!UICONTROL 選取資料夾]**，以便在右側的窗格中儲存您的特徵。 您可以選取現有父資料夾旁的+圖示&#x200B;**&#x200B;**&#x200B;來建立資料夾。 您可以命名這個新資料夾`Platform Web SDK tutorial`。
 1. 展開&#x200B;**[!UICONTROL 特徵運算式]**&#x200B;插入號並選取&#x200B;**[!UICONTROL 運算式產生器]**&#x200B;您必須提供表示首頁造訪的索引鍵值配對。
 1. 開啟[Luma首頁](https://luma.enablementadobe.com/content/luma/us/en.html) （對應至您的標籤屬性）和&#x200B;**Adobe Experience Platform Debugger**，然後重新整理頁面。
 1. 檢視Platform Web SDK的網路要求和事件詳細資訊，找出首頁的索引鍵和名稱值。
@@ -102,7 +102,7 @@ ht-degree: 4%
 1. 在頂端導覽中選取&#x200B;**[!UICONTROL 對象資料]**，然後選取&#x200B;**[!UICONTROL 區段]**
 1. 在頁面左上方選取「**[!UICONTROL 新增]**」以開啟區段產生器
 1. 為您的區段提供易記的名稱和說明，例如`Platform Web SDK - Homepage visitors`
-1. **[!UICONTROL 選取您的區段儲存在右窗格中的資料夾]**。 您可以選取現有父資料夾旁的+圖示&#x200B;****&#x200B;來建立資料夾。 您可以命名這個新資料夾`Platform Web SDK tutorial`。
+1. **[!UICONTROL 選取您的區段儲存在右窗格中的資料夾]**。 您可以選取現有父資料夾旁的+圖示&#x200B;**&#x200B;**&#x200B;來建立資料夾。 您可以命名這個新資料夾`Platform Web SDK tutorial`。
 1. 新增整合程式碼，在此例中是隨機數字集。
 1. 在&#x200B;**[!UICONTROL 資料Source]**&#x200B;區段中，選取&#x200B;**[!UICONTROL Audience Manager]**&#x200B;以及您先前建立的資料來源
 1. 展開&#x200B;**[!UICONTROL 特徵]**&#x200B;區段並搜尋您建立的特徵

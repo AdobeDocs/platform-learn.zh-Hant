@@ -152,7 +152,7 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 
 1. 建立當訪客點選&#x200B;**我拒絕**&#x200B;時觸發的規則。  將此規則命名為： `all pages - click consent banner - set consent "out"`
 
-1. 作為&#x200B;**[!UICONTROL 事件]**，在符合CSS選取器&#x200B;****&#x200B;的&#x200B;**[!UICONTROL 元素上使用]**&#x200B;按一下`#klaro .cn-decline`
+1. 作為&#x200B;**[!UICONTROL 事件]**，在符合CSS選取器&#x200B;**&#x200B;**&#x200B;的&#x200B;**[!UICONTROL 元素上使用]**&#x200B;按一下`#klaro .cn-decline`
 
    ![規則條件使用者點選「我拒絕」](assets/consent-optOut-clickEvent.png)
 
@@ -196,7 +196,7 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 
 1. 建立當訪客點按&#x200B;**時觸發的規則。這沒有關係**。  將此規則命名為： `all pages - click consent banner - set consent "in"`
 
-1. 作為&#x200B;**[!UICONTROL 事件]**，在符合CSS選取器&#x200B;****&#x200B;的&#x200B;**[!UICONTROL 元素上使用]**&#x200B;按一下`#klaro .cm-btn-success`
+1. 作為&#x200B;**[!UICONTROL 事件]**，在符合CSS選取器&#x200B;**&#x200B;**&#x200B;的&#x200B;**[!UICONTROL 元素上使用]**&#x200B;按一下`#klaro .cm-btn-success`
 
    ![規則條件使用者按一下「沒問題」](assets/consent-optIn-clickEvent.png)
 
