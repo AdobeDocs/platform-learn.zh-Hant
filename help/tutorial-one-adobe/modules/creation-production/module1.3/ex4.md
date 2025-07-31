@@ -1,13 +1,14 @@
 ---
-title: 對中繼資料啟用GenStudio for Performance Marketing Campaign
-description: 對中繼資料啟用GenStudio for Performance Marketing Campaign
+title: GenStudio for Performance Marketing為AJO建立電子郵件體驗
+description: GenStudio for Performance Marketing為AJO建立電子郵件體驗
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+exl-id: 9837c076-e6ca-47a0-96b9-5fa5fdba3fd2
+source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->為了執行本練習中的所有步驟，您需要具有現有Adobe Workfront環境的存取權，而且在該環境中，您需要已建立專案和核准工作流程。 如果您使用Adobe Workfront[進行](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}工作流程管理練習，您將具備所需的設定。
+>為了執行本練習中的所有步驟，您需要具有現有Adobe Workfront環境的存取權，而且在該環境中，您需要已建立專案和核准工作流程。 如果您使用Adobe Workfront[進行](./../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"}工作流程管理練習，您將具備所需的設定。
 
 ## 1.3.4.1建立和核准電子郵件體驗
 
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 - **品牌**： `--aepUserLdap-- - CitiSignal`
 - **語言**： `English (US)`
-- **角色**： `--aepUserLdap-- - Smart Home Families`
+- **角色**： `--aepUserLdap-- - Online Gamers`
 - **產品**： `--aepUserLdap-- - CitiSignal Fiber Max`
 
 按一下&#x200B;**從內容選取**。
@@ -166,7 +167,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/gsemail28.png)
 
-之後，您應該會看到快顯視窗，其中顯示GenStudio for Performance Marketing中發佈的所有電子郵件體驗。 選取其中一個可用的電子郵件體驗，然後按一下[使用]。**&#x200B;**
+之後，您應該會看到快顯視窗，其中顯示GenStudio for Performance Marketing中發佈的所有電子郵件體驗。 選取其中一個可用的電子郵件體驗，然後按一下[使用]。****
 
 ![Journey Optimizer](./images/gsemail29.png)
 
@@ -192,7 +193,7 @@ ht-degree: 0%
 
 將&#x200B;**Type**&#x200B;設定為&#x200B;**外部選擇退出/取消訂閱**，並將URL設定為`https://techinsiders.org/unsubscribe.html` （取消訂閱連結不允許有空白URL）。
 
-按一下「儲存」**&#x200B;**，然後按一下熒幕左上角的&#x200B;**箭頭**，以返回促銷活動設定。
+按一下「儲存」****，然後按一下熒幕左上角的&#x200B;**箭頭**，以返回促銷活動設定。
 
 ![Journey Optimizer](./images/gsemail39.png)
 
@@ -212,7 +213,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/gsemail37.png)
 
-如果您的行銷活動設定沒有問題，您可以按一下[啟動]。**&#x200B;**
+如果您的行銷活動設定沒有問題，您可以按一下[啟動]。****
 
 ![Journey Optimizer](./images/gsemail40.png)
 

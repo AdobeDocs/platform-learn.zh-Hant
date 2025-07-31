@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: b247307c3b01df2b67b2ff4301f0b7d442b725c0
+source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->為了執行本練習中的所有步驟，您需要具有現有Adobe Workfront環境的存取權，而且在該環境中，您需要已建立專案和核准工作流程。 如果您使用Adobe Workfront[&#128279;](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}進行工作流程管理練習，您將具備所需的設定。
+>為了執行本練習中的所有步驟，您需要具有現有Adobe Workfront環境的存取權，而且在該環境中，您需要已建立專案和核准工作流程。 如果您使用Adobe Workfront[進行](./../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"}工作流程管理練習，您將具備所需的設定。
 
 >[!IMPORTANT]
 >
@@ -298,7 +298,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ## 1.3.3.5將廣告發佈至中繼資料
 
-選取其中一個廣告，然後按一下[啟用]。**&#x200B;**
+選取其中一個廣告，然後按一下[啟用]。****
 
 ![GSPeM](./images/gsmetaad1.png)
 

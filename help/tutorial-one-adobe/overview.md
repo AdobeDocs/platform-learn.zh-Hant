@@ -3,9 +3,9 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1120'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,14 @@ ht-degree: 2%
 本教學課程差異很大，為下列應用程式提供清楚的深入分析：
 
 - Adobe Firefly Services、Adobe Photoshop、Adobe框架I/O、Adobe Substance 3D Staging
-- Adobe Workfront與Adobe Workfront Fusion
-- Adobe Experience Manager Cloud Service、Sites、Assets和Edge Delivery Services
+- Adobe Workfront、Adobe Workfront Planning和Adobe Workfront Fusion
+- Adobe Experience Manager Cloud Service、Sites、Assets、Forms和Edge Delivery Services
+- AEM Assets Dynamic Media， Content Hub
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
+- Adobe Customer Journey Analytics
+- Adobe Content Analytics
 
 本教學課程不只專注於Adobe應用程式，也考慮品牌營運的更廣泛生態系統。 為此，在某些課程中，重點是非Adobe應用程式如何與Adobe應用程式整合。 因此，您將深入瞭解以下應用程式如何與Adobe Experience Platform搭配運作：
 
@@ -57,6 +60,14 @@ ht-degree: 2%
 
 ### 1.工作流程與規劃
 
+[1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+
+在本單元中，您將設定並使用Adobe Workfront Planning來建立新工作區、定義記錄型別、管理記錄、建立新請求表單並利用AI助理。
+
+[1.2使用Adobe Workfront管理工作流程](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+
+在本單元中，您將設定並使用Adobe Workfront來管理核准流程，並將使用與Adobe Experience Manager Assets、Universal Editor、Photoshop等整合。
+
 ### 2.建立與生產
 
 [1.1 Adobe Firefly Services概觀](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
@@ -80,10 +91,6 @@ ht-degree: 2%
 [1.1 Adobe Experience Manager Cloud Service與Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
 在此基本單元中，您將設定Adobe Experience Manager Cloud Service計畫、網站和Assets存放庫。
-
-[1.2使用Adobe Workfront管理工作流程](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"}
-
-在此基本單元中，您將設定並使用Adobe Workfront來管理核准流程，並將使用與Adobe Experience Manager Assets、通用編輯器、Photoshop等整合。
 
 ### 4.傳遞與啟用
 

@@ -3,9 +3,9 @@ title: 內容狀態
 description: 內容狀態
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '406'
 ht-degree: 12%
 
 ---
@@ -24,7 +24,8 @@ ht-degree: 12%
 
 | 名稱 | 上次更新日期 | 工作百分之百 | 備註 |
 | ---------------------- | ------------ | ------------ |------------ |
-| - | - | - | - |
+| [1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 29/07/2025 | 無 | 內容尚未完成 |
+| [1.2使用Adobe Workfront管理工作流程](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 29/07/2025 | 無 | 內容尚未完成 |
 
 ## 2.建立與生產
 
@@ -41,7 +42,6 @@ ht-degree: 12%
 | 名稱 | 上次更新日期 | 工作百分之百 | 備註 |
 | ---------------------- | ------------ | ------------ |------------ |
 | [2.1 Adobe Experience Manager Cloud Service與Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | 是 | - |
-| [2.2使用Adobe Workfront管理工作流程](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"} | 16/01/2025 | 無 | 內容尚未完成 |
 
 ## 4.傳遞與啟用
 
@@ -61,7 +61,7 @@ ht-degree: 12%
 | [3.3 Adobe Journey Optimizer：推播和應用程式內訊息](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"} | 03/07/2025/2025 | 是 | - |
 | [3.4 Adobe Journey Optimizer：事件型歷程](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 03/07/2025 | 是 | - |
 | [3.5 Adobe Journey Optimizer：翻譯服務](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 03/07/2025 | 是 | - |
-| [3.6 Adobe Journey Optimizer：內容管理](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | 無 | 正在開發的內容 |
+| [3.6 Adobe Journey Optimizer：內容管理](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | 是 | - |
 | [3.7 Adobe Journey Optimizer：決策](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 03/07/2025 | 無 | 正在開發的內容 |
 | [3.8 Adobe Journey Optimizer：行銷活動](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"} | 03/07/2025 | 無 | 正在開發的內容 |
 

@@ -4,7 +4,7 @@ description: AEM CS — 基本自訂區塊
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -259,7 +259,7 @@ Adobe建議您分三階段來開發區塊：
 
 ![AEMCS](./images/nav1.png){zoomable="yes"}
 
-輸入此&#x200B;**URL** `/us/en//citisignal-fiber`並按一下&#x200B;**V**&#x200B;圖示以確認。
+輸入此&#x200B;**URL** `/us/en/citisignal-fiber`並按一下&#x200B;**V**&#x200B;圖示以確認。
 
 ![AEMCS](./images/nav3.png){zoomable="yes"}
 
