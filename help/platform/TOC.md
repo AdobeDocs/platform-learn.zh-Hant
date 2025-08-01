@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的許多元件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: fb667fb7439492f8ac040291820f5899a06b305f
+source-git-commit: 4eebdcadb46d52fd15fb0874173204e4a92a60ec
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 21%
+ht-degree: 20%
 
 ---
 
@@ -75,12 +75,12 @@ Campaigns
    + [工作流程](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [B2B edition概觀](/help/platform/rtcdp/b2b-overview.md)
    + [使用Marketo Engage協調行銷活動](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [快速入門：資料架構師與資料工程師](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant){target="_blank"}
++ [快速入門：資料架構師與資料工程師](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview){target="_blank"}
 + [將範例資料匯入Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [概觀](/help/platform/admin/overview.md)
    + [新增使用者](/help/platform/admin/add-users.md)
-   + [新增使用者至資料彙集](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/users-and-permissions)
+   + [新增使用者至資料彙集](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
    + [新增開發人員](/help/platform/admin/add-developers.md)
    + [新增產品管理員](/help/platform/admin/add-product-administrators.md)
    + [設定以屬性為基礎的存取控制](/help/platform/admin/configure-attribute-based-access-control.md)
@@ -120,7 +120,7 @@ Campaigns
       + [建立及啟用帳戶對象(B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
       + [串流細分示範](/help/platform/audiences/audience-builder/streaming-segmentation-demo.md)
       + [依需求評估批次對象](/help/platform/audiences/audience-builder/evaluate-audiences-on-demand.md)
-   + 聯合客群構成 {#federated}
+   + 聯合客群構成 {#fac}
       + [概觀](audiences/fac/overview-of-federated-audience-composition.md)
       + [設定同盟連線](audiences/fac/connect-and-configure-federated-audience-composition.md)
       + [連線至Oracle](audiences/fac/connect-to-oracle.md)
@@ -133,10 +133,10 @@ Campaigns
       + [區段比對預先分享見解](/help/platform/audiences/segment-match/segment-match-pre-share-insights.md)
       + [區段比對接收資料](/help/platform/audiences/segment-match/segment-match-receiving-data.md)
    + 教學課程{#audience-tutorials}
-      + [評估對象規則](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=zh-Hant){target="_blank"}
-      + [建立資料集以匯出資料](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html?lang=zh-Hant){target="_blank"}
+      + [評估對象規則](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/evaluate-a-segment){target="_blank"}
+      + [建立資料集以匯出資料](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment){target="_blank"}
 + [稽核記錄](/help/platform/governance/audit-logs.md)
-+ [資料收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=zh-Hant){target="_blank"}
++ [資料收集](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/overview){target="_blank"}
 + 共同作業 {#collaboration}
    + [Real-Time CDP Collaboration概觀](collaboration/real-time-cdp-collaboration-overview.md)
    + [Collaboration簡介](collaboration/real-time-cdp-collaboration-intro.md)
@@ -161,27 +161,27 @@ Campaigns
    + [概觀](/help/platform/data-hygiene/overview.md)
    + [資料衛生的資料準備](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [刪除資料集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
-   + [讓資料集過期](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [讓資料集過期](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [假名設定檔和事件有效期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [刪除輪廓](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/profiles/delete-profiles)
-   + [更新設定檔屬性](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
+   + [更新設定檔屬性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 資料攝取 {#data-ingestion}
    + [概觀](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批次擷取概觀](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [建立和填入資料集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [刪除資料集和批次](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
-   + [將CSV檔案對應至XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=zh-Hant){target="_blank"}
-   + [來源概觀](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html?lang=zh-Hant)
-   + [從Adobe Analytics擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
-   + [從Audience Manager擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html?lang=zh-Hant)
-   + [從雲端儲存空間擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=zh-Hant)
-   + [從CRM擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=zh-Hant)
-   + [從資料庫擷取資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html?lang=zh-Hant)
+   + [將CSV檔案對應至XDM](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema){target="_blank"}
+   + [來源概觀](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/overview)
+   + [從Adobe Analytics擷取資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics)
+   + [從Audience Manager擷取資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-aam)
+   + [從雲端儲存空間擷取資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage)
+   + [從CRM擷取資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-crm)
+   + [從資料庫擷取資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-databases)
    + [串流擷取概觀](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [使用 HTTP API 串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=zh-Hant)
-   + [使用來源連接器串流資料](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hant)
-   + [網頁SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=zh-Hant){target="_blank"}
-   + [Mobile SDK教學課程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=zh-Hant){target="_blank"}
+   + [使用 HTTP API 串流資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api)
+   + [使用來源連接器串流資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector)
+   + [網頁SDK教學課程](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview){target="_blank"}
+   + [Mobile SDK教學課程](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/mobile-sdk/overview){target="_blank"}
 + 資料生命週期 {#data-lifecycle}
    + [讓資料集過期](/help/platform/data-lifecycle/expire-datasets.md)
 + 目標 {#destinations}
@@ -234,7 +234,7 @@ Campaigns
    + [瞭解Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [設定檔總覽圖表](/help/platform/profiles/overview-diagram.md)
    + [將資料引進輪廓中](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [自訂設定檔檢視詳細資料](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html?lang=zh-Hant){target="_blank"}
+   + [自訂設定檔檢視詳細資料](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/profile-customization){target="_blank"}
    + [檢視帳戶設定檔](/help/platform/profiles/view-account-profiles.md)
    + [建立合併原則](/help/platform/profiles/create-merge-policies.md)
    + [聯合結構概觀](/help/platform/profiles/union-schemas-overview.md)
@@ -263,12 +263,12 @@ Campaigns
    + [查詢服務API](/help/platform/queries/query-service-api.md)
    + [Adobe定義的函式](/help/platform/queries/adobe-defined-functions.md)
    + [資料使用模式](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
-   + [從查詢結果產生資料集](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html?lang=zh-Hant){target="_blank"}
+   + [從查詢結果產生資料集](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets){target="_blank"}
    + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [分析和視覺化資料](/help/platform/queries/analyze-and-visualize.md)
    + [使用BI工具建置儀表板](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [為您的客戶資料重新充電](/help/platform/queries/recharge-your-customer-data.md)
-   + [將使用者端連線至查詢服務](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=zh-Hant){target="_blank"}
+   + [將使用者端連線至查詢服務](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview){target="_blank"}
    + [驗證Datalake中的資料](/help/platform/queries/validate-data-in-the-datalake.md)
 + 結構描述 {#schemas}
    + [概觀](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -284,7 +284,7 @@ Campaigns
    + [使用列舉的欄位和建議值](/help/platform/schemas/use-enumerated-fields.md)
    + [在沙箱之間複製方案](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [更新方案](/help/platform/schemas/update-schemas.md)
-   + [建立臨時結構描述](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html?lang=zh-Hant){target="_blank"}
+   + [建立臨時結構描述](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc){target="_blank"}
 + 來源 {#sources}
    + [概觀](/help/platform/sources/overview.md)
    + [從Adobe Analytics擷取資料](/help/platform/sources/ingest-data-from-adobe-analytics.md)
@@ -301,11 +301,11 @@ Campaigns
    + [設定Playbook沙箱](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [建立及發佈Playbook例項](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloud 整合 {#experience-cloud}
-   + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hant)
-   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html?lang=zh-Hant)
+   + [Analytics](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics)
+   + [Audience Manager](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-aam)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
-   + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html?lang=zh-Hant)
-   + [Target](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+   + [Marketo Engage](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage)
+   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
 + 產業趨勢 {#industry}
    + [資料管理的未來和不斷變化的環境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [兩種見解的故事 — 品牌與消費者](/help/platform/industry/brands-vs-consumers.md)
