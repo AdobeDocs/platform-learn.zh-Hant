@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # 對象入口網站和構成簡介
 
-瞭解Adobe如何在Adobe Experience Platform中重新構想受眾，包括如何匯入、建立和管理受眾。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+瞭解Adobe如何在Adobe Experience Platform中重新構想受眾，包括如何匯入、建立和管理受眾。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3421713/?learn=on&enablevpops)

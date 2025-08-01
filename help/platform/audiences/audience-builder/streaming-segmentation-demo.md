@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 串流細分示範
 
-瞭解Adobe Experience Platform中的串流細分功能如何讓品牌根據即時資料來個人化客戶體驗。 檢視客戶體驗範例，並取得介面的快速導覽。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+瞭解Adobe Experience Platform中的串流細分功能如何讓品牌根據即時資料來個人化客戶體驗。 檢視客戶體驗範例，並取得介面的快速導覽。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hant)。
 
 >[!NOTE]
 >
