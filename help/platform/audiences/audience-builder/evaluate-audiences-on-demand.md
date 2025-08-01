@@ -20,4 +20,4 @@ ht-degree: 19%
 
 使用Adobe Experience Platform的彈性受眾評估功能，依需求評估批次受眾。 如需詳細資訊和護欄，請參閱[彈性的對象評估指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/methods/flexible-audience-evaluation)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453651/?learn=on&enablevpops&captions=chi_hant)

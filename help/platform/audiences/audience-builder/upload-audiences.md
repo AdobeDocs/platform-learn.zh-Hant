@@ -18,4 +18,4 @@ ht-degree: 0%
 
 瞭解如何將CSV格式的對象上傳至Adobe Experience Platform。 如需詳細資訊，請參閱[區段產生器檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/segmentation/ui/audience-portal#import-audience)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421714/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423355/?learn=on&enablevpops&captions=chi_hant)
