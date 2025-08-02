@@ -3,14 +3,15 @@ title: 使用Adobe Workfront進行工作流程管理
 description: 使用Adobe Workfront進行工作流程管理
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
 
-# 1.2使用Adobe Workfront管理工作流程
+# 1.2使用Adobe Workfront工作流程管理工作流程
 
 ## 學習目標
 
@@ -22,13 +23,17 @@ ht-degree: 2%
 
 ## 練習
 
-[1.2.1 Workfront快速入門](./ex1.md){target="_blank"}
+[1.2.1 Workfront + AEM Assets CS中繼資料整合](./ex1.md){target="_blank"}
 
-在本練習中，您將會在Workfront中設定許多基本設定。
+在本練習中，您將設定Workfront + AEM Assets CS整合。
 
 [1.2.2 Workfront校訂](./ex2.md)
 
 在本練習中，您將設定並使用校訂核准工作流程。
+
+[1.2.4 Workfront + AEM Sites CS整合](./ex4.md){target="_blank"}
+
+在本練習中，您將設定並開始使用將Adobe Experience Manager Cloud Service Sites與Adobe Workfront連線的外掛程式。
 
 [1.2.5 Workfront + Photoshop整合](./ex5.md){target="_blank"}
 

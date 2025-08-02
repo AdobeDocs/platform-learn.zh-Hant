@@ -3,20 +3,23 @@ title: 使用Workfront校訂
 description: 使用Workfront校訂
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
 
 # 1.2.2 Workfront校訂
 
+>[!IMPORTANT]
+>
+>如果您先前已使用AEM Assets CS環境設定AEM CS計畫，可能是您的AEM CS沙箱已休眠。 鑑於讓這樣的沙箱解除休眠需要10-15分鐘，最好現在開始解除休眠過程，這樣以後就不必等待了。
+
 ## 1.2.2.1建立新的核准流程
 
-移至[https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/){target="_blank"}。
-
-按一下9個點&#x200B;**漢堡**&#x200B;圖示並選取&#x200B;**校訂**。
+返回&#x200B;**Adobe Workfront**。 按一下&#x200B;**功能表**&#x200B;圖示並選取&#x200B;**校樣**。
 
 ![WF](./images/wfp1.png)
 
@@ -28,7 +31,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp3.png)
 
-向下捲動，在&#x200B;**階段** > **階段1**&#x200B;下，加入&#x200B;**Wouter Van Greuwe**，並具有&#x200B;**檢閱者和核准者**&#x200B;的&#x200B;**角色**。
+向下捲動，在&#x200B;**階段** > **階段1**&#x200B;下，加入&#x200B;**檢閱者和核准者**&#x200B;的&#x200B;**角色**。
 
 按一下&#x200B;**建立**。
 
@@ -40,13 +43,35 @@ ht-degree: 0%
 
 ## 1.2.2.2建立新專案
 
-從Workfront首頁，按一下「**我的專案**」標籤中的「**新增**」。 選取&#x200B;**空白專案**。
+開啟&#x200B;**功能表**&#x200B;並移至&#x200B;**程式**。
+
+![WF](./images/wfp6a.png)
+
+按一下您之前建立的程式，名為`--aepUserLdap-- CitiSignal Fiber Launch`。
+
+>[!NOTE]
+>
+>您已使用您建立並執行的自動化功能，在[Workfront Planning](./../module1.1/ex1.md)上建立方案作為練習的一部分。 如果您尚未執行此動作，您可以在這裡找到指示。
+
+![WF](./images/wfp6b.png)
+
+在您的程式中，移至&#x200B;**專案**。 按一下&#x200B;**+新增專案**，然後選取&#x200B;**新增專案**。
 
 ![WF](./images/wfp6.png)
 
 您應該會看到此訊息。 將名稱變更為`--aepUserLdap-- - CitiSignal Fiber Launch`。
 
-![WF](./images/wfp6a.png)
+![WF](./images/wfp6c.png)
+
+移至&#x200B;**專案詳細資料**。 按一下「**描述**」下的「**+新增**」。
+
+![WF](./images/wfp6d.png)
+
+將描述設為`The CitiSignal Fiber Launch project is used to plan the upcoming launch of CitiSignal Fiber.`
+
+按一下&#x200B;**儲存變更**。
+
+![WF](./images/wfp6e.png)
 
 您的專案現已建立。
 
@@ -54,7 +79,15 @@ ht-degree: 0%
 
 ## 1.2.2.3建立新任務
 
-為您的工作輸入此名稱： **為Fiber行銷活動建立資產**。 按一下&#x200B;**建立工作**。
+移至&#x200B;**工作**&#x200B;並按一下&#x200B;**+新工作**。
+
+![WF](./images/wfp7a.png)
+
+為您的工作輸入此名稱： `Create assets for Fiber campaign`。
+
+將欄位&#x200B;**描述**&#x200B;設定為： `This task is used to track the progress of the creation of the assets for the CitiSignal Fiber Launch Campaign.`
+
+按一下&#x200B;**建立工作**。
 
 ![WF](./images/wfp8.png)
 
@@ -62,9 +95,25 @@ ht-degree: 0%
 
 ![WF](./images/wfp9.png)
 
+在&#x200B;**工作分派**&#x200B;欄中，新增您自己的名稱。
+
+![WF](./images/wfp9a.png)
+
+接著，系統會將工作指派給您。
+
+![WF](./images/wfp9b.png)
+
 ## 1.2.2.4新增檔案至您的任務會通過核准流程
 
-按一下[新增&#x200B;**]，然後選取[檔案**&#x200B;**]。**
+按一下&#x200B;**Workfront**&#x200B;標誌以返回概觀頁面。 之後，您應該會看到剛才建立的專案出現在概覽中。 按一下您的專案以開啟。
+
+![WF](./images/wfp9c.png)
+
+在&#x200B;**工作**&#x200B;中，按一下以開啟工作。
+
+![WF](./images/wfp9d.png)
+
+移至&#x200B;**檔案**。 按一下[新增&#x200B;**]，然後選取[檔案****]。**
 
 ![WF](./images/wfp10.png)
 
@@ -76,21 +125,13 @@ ht-degree: 0%
 
 ![WF](./images/wfp12.png)
 
-然後您應該擁有此專案。 按一下&#x200B;**建立校訂**，然後選擇&#x200B;**進階校訂**。
+然後您應該擁有此專案。 暫留在上傳的檔案上。 按一下&#x200B;**建立校訂**，然後選擇&#x200B;**進階校訂**。
 
 ![WF](./images/wfp13.png)
 
-在&#x200B;**新校訂**&#x200B;視窗中，選取您之前建立的工作流程範本，其名稱為`--aepUserLdap-- - Approval Workflow`。 按一下&#x200B;**建立校訂**。
+在&#x200B;**新校訂**&#x200B;視窗中，選取&#x200B;**自動**，然後選取您之前建立的工作流程範本，其名稱應該是`--aepUserLdap-- - Approval Workflow`。 按一下&#x200B;**建立校訂**。
 
 ![WF](./images/wfp14.png)
-
-然後您會回到工作中。 按一下&#x200B;**指派給**&#x200B;按鈕，然後選取&#x200B;**指派給我**。
-
-![WF](./images/wfp15.png)
-
-按一下&#x200B;**儲存**。
-
-![WF](./images/wfp16.png)
 
 按一下&#x200B;**處理它**。
 
@@ -124,7 +165,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp24.png)
 
-然後您應該會回到這裡。 您現在需要上傳第二個影像，該影像會考量您提供的評論。
+返回您的&#x200B;**工作**&#x200B;和&#x200B;**檔案**。 您現在需要上傳第二個影像，該影像會考量您提供的評論。
 
 ![WF](./images/wfp25.png)
 
@@ -132,7 +173,7 @@ ht-degree: 0%
 
 ![此檔案](./images/2048x2048_buynow.png){width="50px" align="left"}
 
-在您的[工作]檢視中，選取未核准的舊影像檔。 接著，按一下[新增] **+ [新增]**，選取[版本] **&#x200B;**，然後選取[檔案] **&#x200B;**。
+在您的[工作]檢視中，選取未核准的舊影像檔。 接著，按一下[新增] **+ [新增]**，選取[版本] ****，然後選取[檔案] ****。
 
 ![WF](./images/wfp26.png)
 
@@ -160,7 +201,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp32.png)
 
-關閉校樣預覽。
+按一下&#x200B;**任務名稱**&#x200B;以返回任務總覽。
 
 ![WF](./images/wfp33.png)
 
@@ -168,11 +209,11 @@ ht-degree: 0%
 
 ![WF](./images/wfp34.png)
 
-按一下&#x200B;**共用箭頭**&#x200B;圖示，然後選取您應命名為`--aepUserLdap-- - Citi Signal AEM`的AEM Assets整合。
+選取核准的檔案。 按一下&#x200B;**共用箭頭**&#x200B;圖示，然後選取您應命名為`--aepUserLdap-- - CitiSignal AEM`的AEM Assets整合。
 
 ![WF](./images/wfp35.png)
 
-連按兩下您之前建立的資料夾，該資料夾應命名為`--aepUserLdap-- - Workfront Assets`。
+連按兩下您之前建立的資料夾，該資料夾應命名為`--aepUserLdap-- - CitiSignal Fiber Launch Assets`。
 
 ![WF](./images/wfp36.png)
 
@@ -184,29 +225,13 @@ ht-degree: 0%
 
 ![WF](./images/wfp37a.png)
 
-按一下&#x200B;**開啟摘要**。
-
-![WF](./images/wfp38.png)
-
-移至&#x200B;**中繼資料**，您應該會看到以下內容：
-
-![WF](./images/wfp39.png)
-
-移至&#x200B;**總覽**&#x200B;並按一下&#x200B;**+新增**&#x200B;以新增說明。
-
-![WF](./images/wfp40.png)
-
-輸入您的說明。 您的校訂和檔案設定現已完成。
-
-![WF](./images/wfp41.png)
-
 ## 1.2.2.5在AEM Assets中檢視您的檔案
 
-移至AEM Assets中名為`--aepUserLdap-- - Workfront Assets`的資料夾。
+移至AEM Assets CS中名為`--aepUserLdap-- - CitiSignal Fiber Launch Assets`的資料夾。
 
 ![WF](./images/wfppaem1.png)
 
-按一下影像下的3個點，然後選取&#x200B;**詳細資料**。
+選取影像，然後選擇&#x200B;**詳細資料**。
 
 ![WF](./images/wfppaem2.png)
 

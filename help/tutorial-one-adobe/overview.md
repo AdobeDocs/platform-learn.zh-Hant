@@ -3,9 +3,9 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 本教學課程差異很大，為下列應用程式提供清楚的深入分析：
 
 - Adobe Firefly Services、Adobe Photoshop、Adobe框架I/O、Adobe Substance 3D Staging
-- Adobe Workfront、Adobe Workfront Planning和Adobe Workfront Fusion
+- Adobe Workfront工作流程、Adobe Workfront規劃與Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service、Sites、Assets、Forms和Edge Delivery Services
 - AEM Assets Dynamic Media， Content Hub
 - Adobe Experience Platform
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 在本單元中，您將設定並使用Adobe Workfront Planning來建立新工作區、定義記錄型別、管理記錄、建立新請求表單並利用AI助理。
 
-[1.2使用Adobe Workfront管理工作流程](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[1.2使用Adobe Workfront工作流程管理工作流程](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 在本單元中，您將設定並使用Adobe Workfront來管理核准流程，並將使用與Adobe Experience Manager Assets、Universal Editor、Photoshop等整合。
 

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->為了完成此練習，您需要具有啟用AEM Content Hub之有效AEM Assets CS製作環境的存取權。 如果您按照練習[Adobe Experience Manager Cloud Service和Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}，您將有權存取這樣的環境。
+>為了完成此練習，您需要具有啟用AEM Assets Content Hub之有效AEM Assets CS製作環境的存取權。
+>
+>您需考慮2個選項：
+>
+>- 如果您參加GenStudio的CSC技術支援工作坊，您的講師已經為您建立了AEM Assets CS作者環境。 請和他們確認名稱及步驟。
+>
+>- 如果您依照完整的One Adobe教學課程路徑進行，請前往練習[Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}。 按照這裡的指示操作，您將可以存取這樣的環境。
 
 >[!IMPORTANT]
 >
@@ -298,7 +304,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ## 1.3.3.5將廣告發佈至中繼資料
 
-選取其中一個廣告，然後按一下[啟用]。**&#x200B;**
+選取其中一個廣告，然後按一下[啟用]。****
 
 ![GSPeM](./images/gsmetaad1.png)
 
