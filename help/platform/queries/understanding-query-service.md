@@ -105,7 +105,7 @@ Adobe Experience Platform Query Service可讓使用者利用SQL探索、驗證�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="使用查詢服務執行查詢" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1740415310683" alt="使用查詢服務執行查詢"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470202?format=jpeg&nocache=1740415310683&captions=chi_hant" alt="使用查詢服務執行查詢"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
