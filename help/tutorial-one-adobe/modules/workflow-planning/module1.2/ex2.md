@@ -4,9 +4,9 @@ description: 使用Workfront校訂
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '825'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp9d.png)
 
-移至&#x200B;**檔案**。 按一下[新增&#x200B;**]，然後選取[檔案**&#x200B;**]。**
+移至&#x200B;**檔案**。 按一下[新增&#x200B;**]，然後選取[檔案****]。**
 
 ![WF](./images/wfp10.png)
 
@@ -173,7 +173,7 @@ ht-degree: 0%
 
 ![此檔案](./images/2048x2048_buynow.png){width="50px" align="left"}
 
-在您的[工作]檢視中，選取未核准的舊影像檔。 接著，按一下[新增] **+ [新增]**，選取[版本] **&#x200B;**，然後選取[檔案] **&#x200B;**。
+在您的[工作]檢視中，選取未核准的舊影像檔。 接著，按一下[新增] **+ [新增]**，選取[版本] ****，然後選取[檔案] ****。
 
 ![WF](./images/wfp26.png)
 
@@ -224,6 +224,14 @@ ht-degree: 0%
 1-2分鐘後，您的檔案將發佈到AEM Assets中。 您會在檔名稱旁邊看到AEM圖示。
 
 ![WF](./images/wfp37a.png)
+
+按一下&#x200B;**標籤為完成**&#x200B;以完成此工作。
+
+![WF](./images/wfp37b.png)
+
+您應該會看到此訊息。
+
+![WF](./images/wfp37c.png)
 
 ## 1.2.2.5在AEM Assets中檢視您的檔案
 

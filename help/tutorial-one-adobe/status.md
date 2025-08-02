@@ -3,9 +3,9 @@ title: 內容狀態
 description: 內容狀態
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '414'
 ht-degree: 12%
 
 ---
@@ -24,8 +24,8 @@ ht-degree: 12%
 
 | 名稱 | 上次更新日期 | 工作百分之百 | 備註 |
 | ---------------------- | ------------ | ------------ |------------ |
-| [1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 29/07/2025 | 無 | 內容尚未完成 |
-| [1.2使用Adobe Workfront管理工作流程](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 29/07/2025 | 無 | 內容尚未完成 |
+| [1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 02/08/2025 | 是 | - |
+| [1.2使用Adobe Workfront管理工作流程](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025 | 是 | 內容尚未完成 |
 
 ## 2.建立與生產
 
@@ -35,6 +35,7 @@ ht-degree: 12%
 | [1.2使用Workfront Fusion進行Creative工作流程自動化](./modules/creation-production/module1.2/automation.md){target="_blank"} | 04/06/2025 | 是 | - |
 | [1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 16/06/2025 | 是 | - |
 | [1.4 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | 是 | - |
+| [1.5使用Frame.io簡化您的工作流程](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 02/08/2025 | 是 | - |
 
 
 ## 3.資產管理
@@ -72,6 +73,7 @@ ht-degree: 12%
 | [1.1 Customer Journey Analytics：在Adobe Experience Platform之上使用Analysis Workspace建置儀表板](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md){target="_blank"} | 06/01/2025 | 是 | - |
 | [1.2 Customer Journey Analytics：使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 07/01/2025 | 無 | 來源資料的資料準備模型化發生問題。 此問題正在等候修正。 |
 | [2.1查詢服務](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 04/12/2024 | 是 | - |
+| [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 02/08/2025 | 無 | 正在開發的內容 |
 
 {style="table-layout:auto"}
 

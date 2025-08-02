@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 1fcb7b56cdf9ecf3520e3f293b120ddd0b67da74
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '1239'
+source-wordcount: '1271'
 ht-degree: 3%
 
 ---
@@ -75,6 +75,10 @@ ht-degree: 3%
       + [1.4.2 Adobe Express中的動畫和視訊](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex2.md)
       + [1.4.3在Adobe Express中大量建立Assets](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex3.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/creation-production/module1.4/summary.md)
+   + 1.5使用Frame.io簡化您的工作流程 {#crpr5}
+      + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.5/frameio.md)
+      + [1.5.1 Frame.io快速入門](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex1.md)
+      + [摘要和優點](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
 
 + 資產管理 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -243,4 +247,8 @@ ht-degree: 3%
          + [2.1.7查詢服務和Tableau](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex7.md)
          + [2.1.8查詢服務API](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex8.md)
          + [摘要和優點](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/summary.md)
-
+   + Content Analytics {#contentanalytics}
+      + 3.1 Content Analytics {#ca1}
+         + [概觀](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
+         + [3.1.1 Content Analytics快速入門](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
+         + [摘要和優點](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)

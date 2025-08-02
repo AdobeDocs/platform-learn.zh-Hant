@@ -3,9 +3,9 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1166'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,11 @@ ht-degree: 2%
 
 [1.4 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
-在此基礎單元中，您將使用Adobe Express建立影像和影片，並將這些資產分享至更廣泛的Adobe Experience Cloud生態系統。
+在本單元中，您將使用Adobe Express建立影像和影片，並將這些資產分享至更廣泛的Adobe Experience Cloud生態系統。
+
+[1.5使用Frame.io簡化您的工作流程](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+在本單元中，您將搭配使用Adobe Frame.io與Adobe Premiere Pro，共同作業及檢閱影像和影片。
 
 ### 3.資產管理
 
@@ -185,6 +189,12 @@ ht-degree: 2%
 [2.1查詢服務](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
 
 在本單元中，您將學習如何使用Adobe Experience Platform查詢服務。
+
+#### Content Analytics
+
+[3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
+
+在本單元中，您將瞭解如何實作和使用Adobe Content Analytics。
 
 ![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 

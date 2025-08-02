@@ -2,9 +2,10 @@
 title: 內容供應鏈技術支援的GenStudio
 description: 內容供應鏈技術支援的GenStudio
 doc-type: multipage-overview
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
+source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -57,6 +58,10 @@ ht-degree: 1%
 
 在此基礎單元中，您將使用Adobe Express建立影像和影片，並將這些資產分享至更廣泛的Adobe Experience Cloud生態系統。
 
+[使用Frame.io簡化您的工作流程](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+在本單元中，您將搭配使用Adobe Frame.io與Adobe Premiere Pro，共同作業及檢閱影像和影片。
+
 ### 資產管理
 
 [Adobe Experience Manager Cloud Service與Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -67,9 +72,9 @@ ht-degree: 1%
 
 #### Adobe Content Analytics
 
-[Content Analytics](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
+[Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
 
-在本單元中，您將設定並設定Content Analytics。
+在本單元中，您將瞭解如何實作和使用Adobe Content Analytics。
 
 ![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -3,9 +3,9 @@ title: 快速入門 — 要安裝的應用程式
 description: 快速入門 — 要安裝的應用程式
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '274'
 ht-degree: 1%
 
 ---
@@ -31,6 +31,26 @@ ht-degree: 1%
 開啟&#x200B;**Adobe Creative Cloud**&#x200B;應用程式，前往&#x200B;**應用程式**。 在電腦上安裝Illustrator。
 
 ![Adobe I/O新整合](./images/psd.png)
+
+## Adobe Premiere Pro
+
+從[https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)在您的電腦上安裝Adobe Premiere Pro Beta版本
+
+![Adobe I/O新整合](./images/prpro.png)
+
+按一下&#x200B;**開啟Creative Cloud案頭應用程式**。
+
+![Adobe I/O新整合](./images/prpro1.png)
+
+在&#x200B;**Premiere Pro (Beta)**&#x200B;應用程式的卡片上，按一下&#x200B;**安裝**。
+
+![Adobe I/O新整合](./images/prpro2.png)
+
+## Frame.io傳輸應用程式
+
+移至[https://frame.io/transfer](https://frame.io/transfer)下載電腦的版本。
+
+![Frame.io](./images/frameio11.png)
 
 ## Visual Studio Code
 
