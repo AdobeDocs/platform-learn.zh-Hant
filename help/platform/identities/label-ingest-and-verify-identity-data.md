@@ -1,6 +1,6 @@
 ---
 title: 標示、擷取及驗證身分資料
-description: 了解如何將資料欄位標示為身分、擷取身分資料，以及驗證 Adobe Experience Platform Identity Service 私人圖表中的資料。
+description: 了解如何將資料欄位標示為身分、擷取身分資料，以及驗證 Adobe Experience Platform 身分識別服務私人圖表中的資料。
 feature: Identities
 role: Data Architect, Data Engineer, Developer
 level: Beginner
