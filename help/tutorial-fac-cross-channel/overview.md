@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 概觀
 
-同盟對象構成是一項功能強大的功能，可供Adobe Real-Time Customer Data Platform (Real-Time CDP)和Adobe Journey Optimizer環境使用。 它可讓資料架構師和資料工程師直接從[支援的](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}協力廠商資料倉儲建立及擴充對象，而不需將資料複製到Adobe Experience Platform。 本教學課程為技術使用者提供實作指引，協助他們連線企業資料倉儲、建立和豐富受眾，以及針對個人化行銷體驗啟用受眾。
+同盟對象構成是一項功能強大的功能，可供Adobe Real-Time Customer Data Platform (Real-Time CDP)和Adobe Journey Optimizer環境使用。 它可讓資料架構師和資料工程師直接從[支援的](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}協力廠商資料倉儲建立及擴充對象，而不需將資料複製到Adobe Experience Platform。 本教學課程為技術使用者提供實作指引，協助他們連線企業資料倉儲、建立和豐富受眾，以及針對個人化行銷體驗啟用受眾。
 
 ## 學習目標
 
@@ -53,7 +53,7 @@ SecurFinancial想要啟動電子郵件行銷活動，重新鎖定根據信用狀
 
 - 存取已透過Real-Time CDP或Journey Optimizer布建的Adobe Experience Platform帳戶。
 - 系統管理員許可權或設定許可權的功能。
-- 熟悉Adobe Experience Platform概念，例如結構描述、資料集和對象(建議：完成Experience League上的[Adobe Experience Platform播放清單簡介](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"})。
+- 熟悉Adobe Experience Platform概念，例如結構描述、資料集和對象(建議：完成Experience League上的[Adobe Experience Platform播放清單簡介](https://experienceleague.adobe.com/zh-hant/playlists/experience-platform-introduction?lang=en){target="_blank"})。
 - 存取支援的企業資料倉儲(例如Amazon Redshift、Azure Synapse Analytics、Snowflake或Google BigQuery)。
 - 用於查詢資料倉儲的SQL基本知識。
 
@@ -64,6 +64,6 @@ SecurFinancial想要啟動電子郵件行銷活動，重新鎖定根據信用狀
 ## 技術說明
 
 - **沙箱環境**：在您組織的Real-Time CDP執行個體中建立沙箱，以安全地實驗而不會影響生產資料。
-- **Data Warehouse連線**：此教學課程使用Snowflake連線，但您可以使用任何[支援的雲端倉儲](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites)。
+- **Data Warehouse連線**：此教學課程使用Snowflake連線，但您可以使用任何[支援的雲端倉儲](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/start/access-prerequisites)。
 
 從[Data Warehouse連線](data-warehouse-connection.md)課程開始，開始設定您的環境。
