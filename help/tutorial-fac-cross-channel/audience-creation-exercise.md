@@ -65,6 +65,6 @@ ht-degree: 3%
 
 **注意：**&#x200B;我們使用產品和信用資訊來建立對象，這些對象未將敏感資料（如信用評分）移至下游平台進行啟用。
 
-如需對象構成的詳細資訊，請造訪[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
+如需對象構成的詳細資訊，請造訪[Experience League](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
 
 現在已建立同盟對象，我們將繼續進行[將其對應至S3帳戶](map-federated-audience-to-s3.md)。
