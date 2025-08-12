@@ -33,11 +33,11 @@ ht-degree: 0%
 
 4. 按一下畫面右側「對象」方塊旁的&#x200B;**鉛筆圖示**。
 
-5. 在搜尋列中搜尋&#x200B;**`SecureFinancial Customers - No Loans, Good Credit`**，然後按一下[儲存]。****
+5. 在搜尋列中搜尋&#x200B;**`SecureFinancial Customers - No Loans, Good Credit`**，然後按一下[儲存]。**&#x200B;**
 
    ![建立歷程](assets/select-audience.png)
 
-6. 在右側功能表中保留所有設定為預設值，然後按一下[儲存]。****
+6. 在右側功能表中保留所有設定為預設值，然後按一下[儲存]。**&#x200B;**
 
    ![儲存對象設定](assets/save-audience-settings.png)
 
@@ -67,9 +67,9 @@ ht-degree: 0%
 
 10. 按一下&#x200B;**儲存**。
 
-11. 現在已新增名字個人化，請在個人化變數前新增`Hi, `。 然後按一下[儲存]。****
+11. 現在已新增名字個人化，請在個人化變數前新增`Hi, `。 然後按一下[儲存]。**&#x200B;**
 
-   ![歷程 — 電子郵件 — 儲存](assets/journey-email-save.png)
+    ![歷程 — 電子郵件 — 儲存](assets/journey-email-save.png)
 
 12. 按兩下&#x200B;**上一步**&#x200B;按鈕以返回歷程畫布。 然後在右側的&#x200B;**動作：電子郵件**&#x200B;功能表中，按一下&#x200B;**儲存**。
 
