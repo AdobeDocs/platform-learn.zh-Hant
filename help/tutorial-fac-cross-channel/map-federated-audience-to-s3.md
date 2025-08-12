@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ ht-degree: 0%
 
 5. 在&#x200B;**排程**&#x200B;區段中，保留所有預設設定並按一下&#x200B;**下一步**。
 
-6. 在&#x200B;**對應**&#x200B;步驟中，確定已包含下列專案並選取為&#x200B;**重複資料刪除索引鍵**。 然後按一下&#x200B;**下一步**：
-   - `xdm: personalEmail.address`
+6. 在&#x200B;**對應**&#x200B;步驟中，確定已包含`xdm: personalEmail.address`並選取為&#x200B;**重複資料刪除索引鍵**。 然後按一下&#x200B;**下一步**：
 
    ![重複資料刪除索引鍵](assets/deduplication-key.png)
 

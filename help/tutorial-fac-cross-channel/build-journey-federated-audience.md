@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
-source-git-commit: fcfadca95c12d0123cfb221e44909f7e0fa8abab
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -27,17 +27,17 @@ ht-degree: 0%
 
    ![建立歷程](assets/create-journey.png)
 
-2. 以新名稱更新歷程屬性： `SecurFinancial - Home Loan Offer - [your lab user ID]`。
+2. 以新名稱更新歷程屬性： **`SecurFinancial - Home Loan Offer`**。
 
 3. 按一下&#x200B;**協調流程**，然後將&#x200B;**讀取對象**&#x200B;圖磚拖放至畫布。
 
 4. 按一下畫面右側「對象」方塊旁的&#x200B;**鉛筆圖示**。
 
-5. 在搜尋列中搜尋`SecureFinancial Customers - No Loans, Good Credit`，然後按一下[儲存]。**&#x200B;**
+5. 在搜尋列中搜尋&#x200B;**`SecureFinancial Customers - No Loans, Good Credit`**，然後按一下[儲存]。****
 
    ![建立歷程](assets/select-audience.png)
 
-6. 在右側功能表中保留所有設定為預設值，然後按一下[儲存]。**&#x200B;**
+6. 在右側功能表中保留所有設定為預設值，然後按一下[儲存]。****
 
    ![儲存對象設定](assets/save-audience-settings.png)
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 2. 在右側功能表上，按一下&#x200B;**電子郵件設定**&#x200B;並選取&#x200B;**電子郵件行銷**。 然後按一下&#x200B;**編輯內容**。
 
-3. 在主旨列中，新增： `Learn more about SecurFinancial Home Loan`。 然後按一下&#x200B;**編輯電子郵件內文**。
+3. 在主旨列中，新增： **`Learn more about SecurFinancial Home Loan`**。 然後按一下&#x200B;**編輯電子郵件內文**。
 
 4. 按一下右上角的&#x200B;**內容範本**&#x200B;按鈕。 尋找並選取`SecureFinancial Template`，然後按一下&#x200B;**確認**。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 6. 您現在會收到電子郵件Designer。 將游標暫留在`{profile.person.name.firstName}`巨集上，然後按一下&#x200B;**個人化頭像**。
 
-7. 在個人化視窗中，向下展開至下列資料夾路徑： `[sandbox] > audienceEnrichment > CustomerAudienceUpload`
+7. 在個人化視窗中，向下展開至下列資料夾路徑： **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
 
 8. 按一下&#x200B;**讀取對象**&#x200B;資料夾。 您可在此處找到同盟對象的擴充屬性。
 
@@ -67,9 +67,9 @@ ht-degree: 0%
 
 10. 按一下&#x200B;**儲存**。
 
-11. 現在已新增名字個人化，請在個人化變數前新增`Hi, `。 然後按一下[儲存]。**&#x200B;**
+11. 現在已新增名字個人化，請在個人化變數前新增`Hi, `。 然後按一下[儲存]。****
 
-    ![歷程 — 電子郵件 — 儲存](assets/journey-email-save.png)
+   ![歷程 — 電子郵件 — 儲存](assets/journey-email-save.png)
 
 12. 按兩下&#x200B;**上一步**&#x200B;按鈕以返回歷程畫布。 然後在右側的&#x200B;**動作：電子郵件**&#x200B;功能表中，按一下&#x200B;**儲存**。
 
