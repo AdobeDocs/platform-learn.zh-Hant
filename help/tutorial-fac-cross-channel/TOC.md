@@ -7,9 +7,9 @@ level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
 hide: true
-source-git-commit: 0bbdc93969b4716407ecf51499d572cb50f5a0d3
+source-git-commit: 0b596d45409b5033cec132edcb75d90b679f9c7d
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '82'
 ht-degree: 4%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 4%
 
 + [同盟對象構成教學課程](overview.md)
 + [&#x200B;1. Data Warehouse連線](data-warehouse-connection.md)
-+ [2.對象建立練習](audience-creation-exercise.md)
++ [2.建立同盟受眾](audience-creation-exercise.md)
 + [3.將同盟對象對應至S3](map-federated-audience-to-s3.md)
 + [4.使用同盟受眾資料建立歷程](build-journey-federated-audience.md)
 + [5.使用同盟資料豐富受眾](federated-audience-composition.md)
