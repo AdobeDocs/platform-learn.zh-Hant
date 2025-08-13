@@ -19,7 +19,7 @@ ht-degree: 0%
 
 首先，請設定Adobe Experience Platform與您的企業Data Warehouse之間的連線，以啟用同盟對象構成。 這可讓您直接從支援的倉儲查詢資料，而不需進行復寫。 此外，我們也會根據Data Warehouse表格建立方案和資料模型。
 
-為了示範，我們連線至Snowflake帳戶。 同盟對象構成支援不斷增加的雲端倉儲連線清單。 檢視整合的[更新清單](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+為了示範，我們連線至Snowflake帳戶。 同盟對象構成支援不斷增加的雲端倉儲連線清單。 檢視整合的[更新清單](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 ## 步驟
 
