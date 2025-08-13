@@ -6,9 +6,8 @@ description: 在此視覺練習中，我們會設定Adobe Experience Platform與
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
-hide: true
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: 0b596d45409b5033cec132edcb75d90b679f9c7d
+source-git-commit: 15619a8419f608da6a77745fabf72c356a2ac4b4
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -59,12 +58,12 @@ ht-degree: 0%
    - **主要身分欄位：**&#x200B;電子郵件
    - **身分名稱空間：**&#x200B;電子郵件
 
-10. 按一下[儲存]&#x200B;**&#x200B;**，然後按一下[開始]&#x200B;**&#x200B;**&#x200B;以執行構成查詢。
+10. 按一下[儲存]****，然後按一下[開始]****&#x200B;以執行構成查詢。
 
 >[**摘要**]
 >
 > 在此範例中，我們使用產品和信用資訊來建立受眾，方法是從Snowflake直接存取企業資料，而不需在Adobe Experience Platform中複製。 外部系統處理查詢後，只有相關的電子郵件、目前產品和名字值會帶入對象定義以進行下游啟用。 這適用於RTCDP支援的所有目的地。
 
-如需對象構成的詳細資訊，請造訪[Experience League](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
+如需對象構成的詳細資訊，請造訪[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
 
 現在已建立同盟對象，我們會將其對應至S3帳戶[。](map-federated-audience-to-s3.md)
