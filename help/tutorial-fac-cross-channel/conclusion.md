@@ -2,29 +2,30 @@
 title: 結論
 seo-title: Conclusion | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: 結論
-description: 在本課程中，我們會總結學習內容與主要得益。
+description: 總而言之，我們總結了學到的一些東西和關鍵要點。
 role: Data Architect, Data Engineer
 jira: KT-18743
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+exl-id: 19f3065a-c439-44b6-9888-664c9a5cb33c
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '153'
 ht-degree: 3%
 
 ---
-
 
 # 結論
 
 Experience Platform同盟對象構成，提供新的路徑和擴充的存取許可權，從企業資料倉儲建立對象，以強化品牌啟動和當下的體驗。
 
-本教學課程提供Adobe Experience Platform中同盟對象構成的實作簡介。 您已學習如何：
+本視覺化指南介紹Adobe Experience Platform中的同盟對象構成。 您已學習如何：
 
-- 將Data Warehouse連線至Adobe Experience Platform。
-- 使用倉儲資料建立及豐富閱聽眾，無需復寫。
-- 將受眾匯出至Amazon S3以供下游使用。
-- 使用同盟受眾建立個人化客戶歷程。
-- 使用同盟資料豐富Experience Platform閱聽眾。
+- 將Adobe Experience Platform連線至企業資料倉儲。
+- 使用同盟對象構成建立和管理對象。
+- 將同盟對象對應至外部目的地，例如Amazon S3。
+- 透過同盟資料豐富現有對象。
+- 建立受眾以推動「即時」個人化。
+- 使用同盟受眾資料建置客戶歷程。
 
 ## 重點提要
 

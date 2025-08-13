@@ -7,10 +7,10 @@ level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: 0bbdc93969b4716407ecf51499d572cb50f5a0d3
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 5%
+source-wordcount: '81'
+ht-degree: 4%
 
 ---
 
@@ -22,5 +22,6 @@ ht-degree: 5%
 + [2.對象建立練習](audience-creation-exercise.md)
 + [3.將同盟對象對應至S3](map-federated-audience-to-s3.md)
 + [4.使用同盟受眾資料建立歷程](build-journey-federated-audience.md)
-+ [5.對象擴充示範](audience-enrichment-demo.md)
++ [5.使用同盟資料豐富受眾](federated-audience-composition.md)
++ [6.在Edge上推動「即時」個人化](drive-in-the-moment-personalization.md)
 + [結論](conclusion.md)
