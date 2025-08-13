@@ -64,6 +64,6 @@ ht-degree: 0%
 >
 > 在此範例中，我們使用產品和信用資訊來建立受眾，方法是從Snowflake直接存取企業資料，而不需在Adobe Experience Platform中複製。 外部系統處理查詢後，只有相關的電子郵件、目前產品和名字值會帶入對象定義以進行下游啟用。 這適用於RTCDP支援的所有目的地。
 
-如需對象構成的詳細資訊，請造訪[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
+如需對象構成的詳細資訊，請造訪[Experience League](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
 
 現在已建立同盟對象，我們會將其對應至S3帳戶[。](map-federated-audience-to-s3.md)
