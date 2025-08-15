@@ -63,7 +63,7 @@ ht-degree: 0%
 >
 >根據您選取的學習路徑，您可能無法存取Photoshop Services API。 您必須位於學習路徑&#x200B;**Firefly**、**Workfront Fusion**、**全部**，或正在參加&#x200B;**現場現場研討會**，才能存取Photoshop Services API。 如果您不在其中一個學習路徑上，可以略過此步驟。
 >
-選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
+>選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
 
 ![Azure儲存體](./images/ps2.png)
 
@@ -139,7 +139,7 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/fiops4.png)
 
-選取&#x200B;**OAuth伺服器對伺服器**，然後按一下[下一步]**。**
+選取&#x200B;**OAuth伺服器對伺服器**，然後按一下[下一步]&#x200B;**。**
 
 ![Azure儲存體](./images/fiops5.png)
 
