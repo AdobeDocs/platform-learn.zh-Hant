@@ -1,22 +1,22 @@
 ---
 title: 建立同盟對象
-seo-title: Create a federated audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 建立同盟對象
-description: 在本練習中，我們會設定Adobe Experience Platform與您的企業Data Warehouse之間的連線，以啟用同盟對象構成。
+description: 在本練習中，我們會使用同盟對象構成，從Snowflake Data Warehouse建立對象。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # 建立同盟受眾
 
-接下來，我們將引導您使用同盟受眾構成，從Data Warehouse建立受眾。 受眾包括信用積分為650或以上且目前其SecurFinancial投資組合中沒有貸款的SecurFinancial客戶。
+接下來，我們將引導您使用同盟對象構成，從Snowflake Data Warehouse建立對象。 受眾包括信用積分為650或以上且目前其SecurFinancial投資組合中沒有貸款的SecurFinancial客戶。
 
 ## 步驟
 
@@ -58,12 +58,12 @@ ht-degree: 0%
    - **主要身分欄位：**&#x200B;電子郵件
    - **身分名稱空間：**&#x200B;電子郵件
 
-10. 按一下[儲存]&#x200B;**&#x200B;**，然後按一下[開始]&#x200B;**&#x200B;**&#x200B;以執行構成查詢。
+10. 按一下[儲存]****，然後按一下[開始]****&#x200B;以執行構成查詢。
 
 >[**摘要**]
 >
 > 在此範例中，我們使用產品和信用資訊來建立受眾，方法是從Snowflake直接存取企業資料，而不需在Adobe Experience Platform中複製。 外部系統處理查詢後，只有相關的電子郵件、目前產品和名字值會帶入對象定義以進行下游啟用。 這適用於RTCDP支援的所有目的地。
 
-如需對象構成的詳細資訊，請造訪[Experience League](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
+如需對象構成的詳細資訊，請造訪[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
 
 現在已建立同盟對象，我們會將其對應至S3帳戶[。](map-federated-audience-to-s3.md)

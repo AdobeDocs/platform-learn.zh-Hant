@@ -1,12 +1,13 @@
 ---
 title: 同盟對象構成高階架構和流程
-seo-title: Federated Audience Composition High-level Architecture & Flow | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Federated Audience Composition high-level architecture & flow | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 同盟對象構成高階架構和流程
 description: 同盟對象構成的高階架構和流程概觀。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-high-level-architecture.jpg
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+exl-id: 4cb0b730-4206-476b-93d9-776dfbd464ff
+source-git-commit: 0564f516cfba7ea09ac9da19d94f46d984e9e00a
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -27,4 +28,3 @@ Adobe Experience Platform中的同盟對象構成模組無需複製基礎資料�
 ![fac-architecture](assets/fac-architecture.png)
 
 現在我們繼續建立[Data Warehouse連線](data-warehouse-connection.md)。
-

@@ -1,20 +1,20 @@
 ---
-title: 將同盟對象對應至S3
-seo-title: Map a federated audience to S3 | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+title: 將同盟對象對應至S3目的地
+seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 將同盟對象對應至S3
 description: 在本練習中，我們將對應同盟對象至下游Real-Time CDP目的地，以支援個人化的離線體驗。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '245'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# 將同盟對象對應至S3以運用對象屬性來擴充
+# 將同盟對象對應至S3目的地，以運用對象屬性來擴充
 
 您可以善用資料倉儲中的對象屬性，讓對象在使用RTCDP目的地的下游啟用工作流程中更加豐富。 對於SecurFinancial，這些同盟屬性可用於增強客戶受眾的離線個人化體驗。 下列，同盟對象已對應至預先設定的Amazon S3目的地。
 
@@ -50,6 +50,6 @@ ht-degree: 0%
 
 >[**!SUMMARY**]
 >
-> 我們已成功建立受眾，並輕鬆將其啟動至S3目的地。 此使用者易記介面可讓行銷團隊快速建立及啟用對象，而不需移動基礎資料。
+> 我們已成功建立受眾，並輕鬆將其啟動至S3目的地。 任何其他解決方案都可接收此受眾並立即使用。 此使用者易記介面可讓行銷團隊快速建立及啟用對象，而不需移動基礎資料。 採用此方法的客戶已在約一個月內首次使用。
 
 現在我們將[建置歷程](build-journey-federated-audience.md)。

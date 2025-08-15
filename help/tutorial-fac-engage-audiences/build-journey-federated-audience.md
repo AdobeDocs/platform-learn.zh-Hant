@@ -1,13 +1,13 @@
 ---
 title: 與同盟受眾建立歷程
-seo-title: Build a Journey with a Federated Audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 與同盟受眾建立歷程
 description: 在本練習中，同盟對象用於Journey Optimizer歷程中。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 同盟受眾可用於Adobe Journey Optimizer (AJO)內的歷程。 這包括使用Federated Audience Composition的查詢屬性來個人化訊息。
 
-為了繼續進行SecurFinancial案例，特別是客戶重新定位和個人化使用案例，我們為預先合格的客戶策劃了歷程。 目標是根據SecurFinancial的Data Warehouse所同盟的屬性來傳送個人化電子郵件。
+為了繼續進行SecurFinancial案例，特別是客戶重新定位和個人化使用案例，我們為預先合格的客戶策劃了歷程。 目標是根據SecurFinancial的資料倉儲所同盟的屬性，傳送個人化電子郵件。
 
 ## 步驟
 
@@ -38,7 +38,7 @@ ht-degree: 1%
 
    ![建立歷程](assets/select-audience.png)
 
-6. 在右側功能表中保留所有設定為預設值，然後按一下[儲存]。**&#x200B;**
+6. 在右側功能表中保留所有設定為預設值，然後按一下[儲存]。****
 
    ![儲存對象設定](assets/save-audience-settings.png)
 
@@ -68,9 +68,9 @@ ht-degree: 1%
 
 10. 按一下&#x200B;**儲存**。
 
-11. 現在已新增名字個人化，請在個人化變數前新增`Hi, `。 然後按一下[儲存]。**&#x200B;**
+11. 現在已新增名字個人化，請在個人化變數前新增`Hi, `。 然後按一下[儲存]。****
 
-    ![歷程 — 電子郵件 — 儲存](assets/journey-email-save.png)
+   ![歷程 — 電子郵件 — 儲存](assets/journey-email-save.png)
 
 12. 按兩下&#x200B;**上一步**&#x200B;按鈕以返回歷程畫布。 然後在右側的&#x200B;**動作：電子郵件**&#x200B;功能表中，按一下&#x200B;**儲存**。
 
