@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 使用同盟對象構成與Data Warehouse中的對象互動
 
-同盟對象構成(FAC)是一項強大的功能，可在Adobe Real-Time Customer Data Platform (Real-Time CDP)和Adobe Journey Optimizer環境中使用。 它可讓資料架構師和資料工程師直接從[支援的企業資料倉儲](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}中組織和啟用高價值對象，而不需將客戶資料複製或移至Adobe Experience Platform (AEP)。 這種可組合的CDP方法（一種為客戶量身打造的解決方案）符合業界趨勢，讓企業能夠運用資料基礎架構打造個人化數位體驗，同時維持資料控管。
+同盟對象構成(FAC)是一項強大的功能，可在Adobe Real-Time Customer Data Platform (Real-Time CDP)和Adobe Journey Optimizer環境中使用。 它可讓資料架構師和資料工程師直接從[支援的企業資料倉儲](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}中組織和啟用高價值對象，而不需將客戶資料複製或移至Adobe Experience Platform (AEP)。 這種可組合的CDP方法（一種為客戶量身打造的解決方案）符合業界趨勢，讓企業能夠運用資料基礎架構打造個人化數位體驗，同時維持資料控管。
 
 ## 業務內容
 
@@ -46,10 +46,10 @@ SecurFinancial想要啟動電子郵件行銷活動，重新鎖定根據信用狀
 
 - 存取已透過Real-Time CDP或Journey Optimizer布建的Adobe Experience Platform帳戶。
 - 系統管理員許可權或設定許可權的功能。
-- 熟悉Adobe Experience Platform概念，例如結構描述、資料集和對象(建議：完成Experience League上的[Adobe Experience Platform播放清單簡介](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"})。
-- 存取支援的[企業資料倉儲](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+- 熟悉Adobe Experience Platform概念，例如結構描述、資料集和對象(建議：完成Experience League上的[Adobe Experience Platform播放清單簡介](https://experienceleague.adobe.com/zh-hant/playlists/experience-platform-introduction?lang=en){target="_blank"})。
+- 存取支援的[企業資料倉儲](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 - 用於查詢資料倉儲的SQL基本知識。
 - **沙箱環境**：在您組織的執行個體中建立沙箱，以安全地實驗而不會影響生產資料。
-- **Data Warehouse連線**：此教學課程使用Snowflake連線，但您可以使用任何[支援的資料倉儲](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites)。
+- **Data Warehouse連線**：此教學課程使用Snowflake連線，但您可以使用任何[支援的資料倉儲](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/start/access-prerequisites)。
 
 首先，讓我們檢閱同盟對象構成的[高階架構和流程](fac-architecture-and-flow.md)。
