@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 首先，請設定Adobe Experience Platform與您的企業Data Warehouse之間的連線。 我們根據資料在Data Warehouse中的存放方式，使用結構描述和資料模型來支援查詢建立。
 
-為了示範，我們連線至Snowflake帳戶。 同盟對象構成支援不斷增加的Data Warehouse連線清單。 檢視整合的[更新清單](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+為了示範，我們連線至Snowflake帳戶。 同盟對象構成支援不斷增加的Data Warehouse連線清單。 檢視整合的[更新清單](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 ## 步驟
 
@@ -78,4 +78,4 @@ ht-degree: 0%
 
 ![預覽 — 資料模型](assets/preview-data-model.png)
 
-現在，我們已準備好[建立和對象](create-a-federated-audience.md)。
+現在，我們已準備好[建立同盟對象](create-a-federated-audience.md)。

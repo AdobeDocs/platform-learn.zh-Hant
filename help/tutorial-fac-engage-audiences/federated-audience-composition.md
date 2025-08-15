@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
 exl-id: 3f6aa121-0dbd-4ad9-b136-d1455eed03ca
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 7%
@@ -34,4 +34,4 @@ ht-degree: 7%
 
 ![federated-method-1-2](assets/federated-method-1-2.png)
 
-我們將檢視另一個使用同盟資料來[支援「即時」個人化的範例](deliver-in-the-moment-personalization.md)！
+我們將檢視另一個使用同盟資料來[傳遞「即時」個人化的範例](deliver-in-the-moment-personalization.md)！

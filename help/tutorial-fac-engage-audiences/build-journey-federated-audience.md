@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '420'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 1%
 
    ![建立歷程](assets/select-audience.png)
 
-6. 在右側功能表中保留所有設定為預設值，然後按一下[儲存]。**&#x200B;**
+6. 在右側功能表中保留所有設定為預設值，然後按一下[儲存]。****
 
    ![儲存對象設定](assets/save-audience-settings.png)
 
@@ -68,9 +68,9 @@ ht-degree: 1%
 
 10. 按一下&#x200B;**儲存**。
 
-11. 現在已新增名字個人化，請在個人化變數前新增`Hi, `。 然後按一下[儲存]。**&#x200B;**
+11. 現在已新增名字個人化，請在個人化變數前新增`Hi, `。 然後按一下[儲存]。****
 
-    ![歷程 — 電子郵件 — 儲存](assets/journey-email-save.png)
+   ![歷程 — 電子郵件 — 儲存](assets/journey-email-save.png)
 
 12. 按兩下&#x200B;**上一步**&#x200B;按鈕以返回歷程畫布。 然後在右側的&#x200B;**動作：電子郵件**&#x200B;功能表中，按一下&#x200B;**儲存**。
 
@@ -78,4 +78,4 @@ ht-degree: 1%
 
 我們使用同盟受眾和同盟擴充屬性在AJO中建立了歷程。
 
-現在我們將瞭解如何透過Data Warehouse中的同盟資料[擴充Experience Platform中的現有對象](federated-audience-composition.md)。
+現在我們將瞭解如何在Experience Platform中利用資料倉儲中的資料[豐富受眾](federated-audience-composition.md)。
