@@ -4,9 +4,9 @@ description: 快速入門 — Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 53b252df80801e521ad3df2fe4c158039adfa365
+source-git-commit: 947ce5880c88fcf0211c5d16270dfcf2d6416131
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,6 @@ ht-degree: 0%
 
 ![Adobe I/O新整合](./images/adobe_io_access_api.png)
 
-您的熒幕應如下所示。
-
-![Adobe I/O新整合](./images/api1.png)
-
 選取&#x200B;**Adobe Firefly Services**&#x200B;並選擇&#x200B;**Firefly - Firefly Services**，然後選取&#x200B;**下一步**。
 
 ![Adobe I/O新整合](./images/api3.png)
@@ -67,7 +63,7 @@ ht-degree: 0%
 >
 >根據您選取的學習路徑，您可能無法存取Photoshop Services API。 您必須位於學習路徑&#x200B;**Firefly**、**Workfront Fusion**、**全部**，或正在參加&#x200B;**現場現場研討會**，才能存取Photoshop Services API。 如果您不在其中一個學習路徑上，可以略過此步驟。
 >
->選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
+選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
 
 ![Azure儲存體](./images/ps2.png)
 
@@ -143,7 +139,7 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/fiops4.png)
 
-選取&#x200B;**OAuth伺服器對伺服器**，然後按一下[下一步]&#x200B;**。**
+選取&#x200B;**OAuth伺服器對伺服器**，然後按一下[下一步]**。**
 
 ![Azure儲存體](./images/fiops5.png)
 
