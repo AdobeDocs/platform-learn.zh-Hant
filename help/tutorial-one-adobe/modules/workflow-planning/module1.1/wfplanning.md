@@ -3,22 +3,31 @@ title: Adobe Workfront規劃
 description: Adobe Workfront規劃
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 08ed2cca-4670-4038-b2f0-aa7adb3fc2bf
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 4%
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
 # 1.1 Adobe Workfront規劃
 
+本練習將引導您瞭解Workfront Planning的基本層面，包括建立工作區、定義記錄型別、管理記錄，以及利用AI助理來簡化作業。 執行本實驗將讓您熟悉此強大的解決方案，並為您提供一個起點，以進一步探索未來的功能。
+
 ## 學習目標
 
-- 瞭解如何使用Adobe Workfront規劃。
+完成本實驗後，您將熟悉下列專案：
+
+- 瞭解Workfront Planning的核心元件：工作區、記錄型別和記錄。
+- 建立與特定作業生命週期量身打造的新Workspace。
+- 在Workspace中定義和自訂記錄型別。
+- 管理記錄，包括建立、更新和刪除專案。
+- 利用AI Assistant來有效執行動作。
 
 ## 先決條件
 
-- 存取Workfront Planning
+- 使用Workfront規劃套件存取Adobe Workfront帳戶。
 
 ## 練習
 

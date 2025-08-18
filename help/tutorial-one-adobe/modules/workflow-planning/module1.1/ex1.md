@@ -4,9 +4,9 @@ description: Workfront Planning快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 645d078b55b7126a692dedded71208e1f3c04971
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1234'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 1%
 
 ![Workfront規劃](./images/wfpl10.png)
 
-您現在會看到空白的表格檢視，因為您新建立的記錄型別尚未定義任何欄位。
+您現在會看到空白的表格檢視，因為您新建立的記錄型別尚未定義任何業務單位記錄。
 
 ![Workfront規劃](./images/wfpl11.png)
 
@@ -115,7 +115,49 @@ ht-degree: 1%
 
 ![Workfront規劃](./images/wfpl17.png)
 
-您現在已建立新的記錄型別，且您已刪除和建立欄位。 按一下左上角的箭頭，返回Workspace概觀畫面。
+按一下第一筆記錄上的3個點&#x200B;**...**，然後選取&#x200B;**檢視**。
+
+![Workfront規劃](./images/wfpla1.png)
+
+將&#x200B;**名稱**&#x200B;設為`Consumer Services`。
+
+將&#x200B;**描述**&#x200B;設定為`Handles residential offerings like mobile plans, internet packages, and customer support.`。
+
+將&#x200B;**業務單位銷售機會**&#x200B;設定給自己。
+
+完成後，按一下箭頭返回上一個畫面。
+
+![Workfront規劃](./images/wfpla2.png)
+
+按一下第二筆記錄上的3個點&#x200B;**...**，然後選取&#x200B;**檢視**。
+
+![Workfront規劃](./images/wfpla3.png)
+
+將&#x200B;**名稱**&#x200B;設為`Enterprise & Business Solutions`
+
+將&#x200B;**描述**&#x200B;設定為`Provides connectivity, cloud, and managed services to corporate clients and government entities.`
+
+將&#x200B;**業務單位銷售機會**&#x200B;設定給自己。
+
+完成後，按一下箭頭返回上一個畫面。
+
+![Workfront規劃](./images/wfpla4.png)
+
+按一下第三筆記錄上的3個點&#x200B;**...**，然後選取&#x200B;**檢視**。
+
+![Workfront規劃](./images/wfpla5.png)
+
+將&#x200B;**名稱**&#x200B;設為`Sales & Marketing`
+
+將&#x200B;**描述**&#x200B;設定為`Drives customer acquisition, brand strategy, advertising, and market segmentation.`
+
+將&#x200B;**業務單位銷售機會**&#x200B;設定給自己。
+
+完成後，按一下箭頭返回上一個畫面。
+
+![Workfront規劃](./images/wfpla6.png)
+
+您現在已建立新的記錄型別，您已刪除和建立欄位，且已建立3個業務單位。 按一下左上角的箭頭，返回Workspace概觀畫面。
 
 ![Workfront規劃](./images/wfpl18.png)
 
@@ -129,7 +171,7 @@ ht-degree: 1%
 
 ![Workfront規劃](./images/wfpl20.png)
 
-按一下&#x200B;**+**&#x200B;圖示以建立新欄位。 選取&#x200B;**新連線**，然後選取&#x200B;**角色**。
+按一下&#x200B;**+**&#x200B;圖示以建立新欄位。 選取&#x200B;**新連線**，然後選取&#x200B;**業務單位**。
 
 ![Workfront規劃](./images/wfpl21.png)
 
@@ -151,7 +193,7 @@ ht-degree: 1%
 
 ![Workfront規劃](./images/wfpl25.png)
 
-將名稱變更為`Campaign Request Form`。 按一下&#x200B;**儲存**。
+將名稱變更為`Campaign Request Form`。 按一下&#x200B;**建立**。
 
 ![Workfront規劃](./images/wfpl26.png)
 
@@ -186,6 +228,8 @@ ht-degree: 1%
 ```
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
 ```
+
+視需要填寫其他欄位。
 
 按一下&#x200B;**送出要求**。
 
@@ -297,19 +341,15 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront規劃](./images/wfpl47.png)
 
-若要在Workfront中檢查程式，請開啟功能表並按一下&#x200B;**投資組合**。
+若要在Workfront中檢查程式，請捲動至右側，然後按一下&#x200B;**連線的程式**&#x200B;欄中的程式。
 
 ![Workfront規劃](./images/wfpl48.png)
 
-開啟應名為`--aepUserLdap-- - Marketing`的投資組合。
-
-![Workfront規劃](./images/wfpl49.png)
-
-移至&#x200B;**程式**，然後您應該會看到剛才由您設定的自動化所建立的程式。
+之後，您應該會看到剛才由您設定的自動化所建立的程式。
 
 ![Workfront規劃](./images/wfpl50.png)
 
-下一步： [1.2.2待定](./ex1.md){target="_blank"}
+下一步： [摘要與優點](./summary.md){target="_blank"}
 
 返回[Workfront Planning簡介](./wfplanning.md){target="_blank"}
 
