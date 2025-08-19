@@ -28,7 +28,7 @@ ht-degree: 13%
 
 ![AEM Assets](./images/aemassets3.png)
 
-您應該使用名為`--aepUserLdap-- - CitiSignal Fiber Campaign`的資料夾。 如果資料夾尚不存在，請按一下[建立資料夾]。****
+您應該使用名為`--aepUserLdap-- - CitiSignal Fiber Campaign`的資料夾。 如果資料夾尚不存在，請按一下[建立資料夾]。**&#x200B;**
 
 ![AEM Assets](./images/aemassets4.png)
 
