@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
+exl-id: 09e8fdfd-e02f-43ff-a4f4-fa92eb3f01a3
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -114,37 +115,9 @@ ht-degree: 0%
 
 ![Frame.io](./images/frameio21.png)
 
-## 1.5.1.3設定Adobe Premiere Pro Beta
-
-您已將Adobe Premiere Pro Beta安裝在「快速入門」模組中。 若要搭配Adobe Premiere Pro Beta使用Frame.io，您可以利用為此整合開發的外掛程式。
-
-開啟Creative Cloud應用程式並搜尋`frame.io`。
-
-![Frame.io](./images/frameio23.png)
-
-向下捲動搜尋結果以尋找外掛程式&#x200B;**Frame.io V4 Comments**。 按一下它。
-
-![Frame.io](./images/frameio24.png)
-
-您應該會看到此訊息。 按一下&#x200B;**安裝**。
-
-![Frame.io](./images/frameio25.png)
-
-如果Adobe Premiere Pro Beta已開啟，您必須先&#x200B;**關閉**，才能安裝外掛程式。
-
-![Frame.io](./images/frameio26.png)
-
-按一下&#x200B;**確定**。 外掛程式正在安裝中。
-
-![Frame.io](./images/frameio27.png)
-
-安裝外掛程式後，請在電腦上開啟Adobe Premiere Pro Beta 。
-
-![Frame.io](./images/frameio22.png)
-
 ## 後續步驟
 
-移至[-](./ex1.md){target="_blank"}
+使用Frame.io[移至](./ex2.md){target="_blank"}1.5.2核准
 
 返回[使用Frame.io簡化您的工作流程](./frameio.md){target="_blank"}
 

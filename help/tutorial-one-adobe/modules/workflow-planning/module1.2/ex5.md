@@ -3,16 +3,17 @@ title: 設定Photoshop + Workfront外掛程式
 description: 設定Photoshop + Workfront外掛程式
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 0695845e-d18e-416d-a8f4-34464618995a
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
 
 ---
 
-# 2.2.5設定Photoshop + Workfront外掛程式
+# 1.2.5設定Photoshop + Workfront外掛程式
 
-## 2.2.5.1安裝適用於Photoshop的Workfront外掛程式
+## 1.2.5.1安裝適用於Photoshop的Workfront外掛程式
 
 若要設定Workfront與Photoshop之間的整合，請在電腦上安裝Creative Cloud應用程式。 使用您的Adobe ID登入。
 
@@ -42,7 +43,7 @@ ht-degree: 1%
 
 ![WF](./images/wf7.png)
 
-## 2.2.5.2在Photoshop中設定外掛程式
+## 1.2.5.2在Photoshop中設定外掛程式
 
 開啟Photoshop。 在工作列中，移至&#x200B;**外掛程式** > **Adobe Photoshop的Workfront** >按一下&#x200B;**Adobe Workfront**。
 
