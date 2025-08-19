@@ -146,7 +146,7 @@ ht-degree: 0%
 
 ![WF](./../../workflow-planning/module1.2/images/wfp25b.png)
 
-按一下[共用]****，然後選取[下載]****。
+按一下[共用]&#x200B;**&#x200B;**，然後選取[下載]&#x200B;**&#x200B;**。
 
 ![WF](./images/frameioasset5.png)
 
