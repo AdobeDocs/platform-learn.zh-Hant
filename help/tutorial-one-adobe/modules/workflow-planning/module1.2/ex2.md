@@ -132,9 +132,9 @@ ht-degree: 0%
 為您的工作輸入此名稱： `Create layout using approved assets and copy`。
 
 將欄位&#x200B;**指派**&#x200B;設定為角色&#x200B;**Designer**。
-將欄位**Duration**&#x200B;設定為&#x200B;**5天**。
-將前置工作列位設定為**9**。
-輸入欄位**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期。
+將欄位&#x200B;**Duration**&#x200B;設定為&#x200B;**5天**。
+將前置工作列位設定為&#x200B;**9**。
+輸入欄位&#x200B;**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期。
 
 按一下畫面中的其他位置以儲存新任務。
 
@@ -244,7 +244,7 @@ ht-degree: 0%
 ![GSPeM](./images/gsasset8.png)
 
 將檔案名稱變更為`CitiSignal - Neon Rabbit - Timetravel now!`。
-按一下**選取資料夾**。
+按一下&#x200B;**選取資料夾**。
 
 ![GSPeM](./images/gsasset9.png)
 
@@ -310,7 +310,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp25b.png)
 
-按一下[共用]****，然後選取&#x200B;**AEM Assets**。
+按一下[共用]&#x200B;**&#x200B;**，然後選取&#x200B;**AEM Assets**。
 
 ![WF](./images/wfp25c.png)
 
