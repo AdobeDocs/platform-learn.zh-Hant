@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cc45eefc9042d27ae38fc9bb2dd9b6c1af9a9e4b
+source-git-commit: 10c3f0a3ae1540562f0f46a5936b1556e37a251b
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1337'
 ht-degree: 3%
 
 ---
@@ -85,8 +85,8 @@ ht-degree: 3%
       + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
       + [1.6.1 Adobe IO和App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
       + [1.6.2建立您的AWS S3貯體](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
-      + [1.6.3建立外部DAM應用程式](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
-      + [1.6.4部署您的程式碼並私下發佈您的應用程式](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+      + [1.6.3建立並部署外部DAM應用程式](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+      + [1.6.4私下發佈您的應用程式](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
 
 + 資產管理 {#assetmgmt}

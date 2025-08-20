@@ -1,14 +1,15 @@
 ---
-title: GenStudio for Performance Marketing
-description: GenStudio for Performance Marketing
+title: GenStudio for Performance Marketing — 擴充性
+description: GenStudio for Performance Marketing — 擴充性
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
+exl-id: 2860dcb7-4f7a-4b48-93d4-141cd7f4899e
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 3%
+source-wordcount: '306'
+ht-degree: 0%
 
 ---
 
@@ -36,13 +37,13 @@ GenStudio for Performance Marketing附加元件是您建立的Adobe App Builder�
 
 在本練習中，您將建立您的Amazon AWS S3貯體和IAM使用者。
 
-[1.6.3建立您的外部DAM應用程式](./ex3.md){target="_blank"}
+[1.6.3建立並部署您的外部DAM應用程式](./ex3.md){target="_blank"}
 
 在本練習中，您將使用預先定義的範本建立外部DAM應用程式。
 
-[1.6.4部署您的程式碼並私下發佈您的應用程式](./ex4.md){target="_blank"}
+[1.6.4私下發佈您的應用程式](./ex4.md){target="_blank"}
 
-在本練習中，您會將程式碼部署至Adobe IO和App Builder，且您將私下發佈應用程式。
+在本練習中，您將會私下發佈應用程式。
 
 [摘要與優點](./summary.md){target="_blank"}
 

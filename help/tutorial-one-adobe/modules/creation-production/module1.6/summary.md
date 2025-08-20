@@ -1,18 +1,19 @@
 ---
-title: GenStudio for Performance Marketing的摘要和優點
-description: GenStudio for Performance Marketing的摘要和優點
+title: GenStudio for Performance Marketing的摘要與優點 — 擴充性
+description: GenStudio for Performance Marketing的摘要與優點 — 擴充性
 kt: 5342
 doc-type: tutorial
-source-git-commit: 52234e7b3b6743db79dec570b1a1f2d3ac4cf1ab
+exl-id: f5b9f7bf-ea95-410f-a2ae-e244641e2412
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '47'
+source-wordcount: '50'
 ht-degree: 4%
 
 ---
 
 # 摘要與優點
 
-感謝您投入時間學習Adobe GenStudio for Performance Marketing！
+感謝您投入時間學習Adobe GenStudio for Performance Marketing — 擴充功能！
 
 
 ## 後續步驟
