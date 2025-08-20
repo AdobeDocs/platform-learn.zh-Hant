@@ -3,9 +3,9 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1207'
 ht-degree: 2%
 
 ---
@@ -90,11 +90,19 @@ ht-degree: 2%
 
 在本單元中，您將搭配使用Adobe Frame.io與Adobe Premiere Pro，共同作業及檢閱影像和影片。
 
+[1.6 GenStudio for Performance Marketing — 擴充性](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
+
+在本單元中，您將使用Adobe IO和App Builder建立自訂應用程式，以擴充GenStudio for Performance Marketing的功能。
+
 ### 3.資產管理
 
 [1.1 Adobe Experience Manager Cloud Service與Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
-在此基本單元中，您將設定Adobe Experience Manager Cloud Service計畫、網站和Assets存放庫。
+在本單元中，您將設定Adobe Experience Manager Cloud Service計畫、網站和Assets存放庫。
+
+[1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
+
+在本單元中，您將探索AEM Assets。
 
 ### 4.傳遞與啟用
 

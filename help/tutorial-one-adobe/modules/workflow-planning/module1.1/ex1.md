@@ -4,16 +4,20 @@ description: Workfront Planning快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
+source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1258'
 ht-degree: 1%
 
 ---
 
 # 1.1.1 Workfront Planning入門
 
-## 1.1.1.1 Workfront規劃術語
+## 1.1.1.1 CitiSignal行銷活動簡介
+
+若要瞭解CitiSignal的背景以及想要達成的目的，請下載並在此處閱讀CitiSignal的行銷活動簡報： [CitiSignal-Fiber-Launch-Winter-2026.pdf](./../../../assets/brief/CitiSignal-Fiber-Launch-Winter-2026.pdf)。
+
+## 1.1.1.2 Workfront規劃術語
 
 以下是主要的Workfront Planning物件和概念：
 
@@ -31,7 +35,7 @@ ht-degree: 1%
 
 您現在會親自開始建立其中一些物件。
 
-## 1.1.1.2 Workspace，記錄型別，欄位
+## 1.1.1.3 Workspace，記錄型別，欄位
 
 移至[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 按一下以開啟&#x200B;**Workfront**。
 
@@ -61,7 +65,7 @@ ht-degree: 1%
 
 ![Workfront規劃](./images/wfpl7a.png)
 
-## 1.1.1.3分類：記錄型別和欄位
+## 1.1.1.4分類：記錄型別和欄位
 
 在&#x200B;**分類**&#x200B;下，按一下&#x200B;**+新增記錄型別**，然後選取&#x200B;**手動新增**。
 
@@ -165,7 +169,7 @@ ht-degree: 1%
 
 ![Workfront規劃](./images/wfpl19.png)
 
-## 1.1.1.4操作記錄型別：欄位
+## 1.1.1.5操作記錄型別：欄位
 
 按一下以開啟&#x200B;**行銷活動**。
 
@@ -187,7 +191,7 @@ ht-degree: 1%
 
 ![Workfront規劃](./images/wfpl24.png)
 
-## 1.1.1.5建立請求表單
+## 1.1.1.6建立請求表單
 
 在行銷活動概觀畫面上，按一下3個點&#x200B;**...**，然後選取&#x200B;**建立請求表單**。
 
@@ -209,7 +213,7 @@ ht-degree: 1%
 
 ![Workfront規劃](./images/wfpl29.png)
 
-## 1.1.1.6使用請求表單提交新記錄
+## 1.1.1.7使用請求表單提交新記錄
 
 在行銷活動概觀畫面上，按一下&#x200B;**+新增記錄**。
 
@@ -243,7 +247,7 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront規劃](./images/wfpl35.png)
 
-## 1.1.1.7建立Portfolio和自訂表單
+## 1.1.1.8建立Portfolio和自訂表單
 
 在下一步中，您將建立自動化系統，此系統將會從您在Workfront Planning中建立的行銷活動中取得資訊，並會在Workfront中使用該資訊來建立方案。 建立自動化之前，請先在Workfront中設定兩件事：投資組合和自訂表單。
 
