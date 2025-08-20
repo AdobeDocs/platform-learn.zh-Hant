@@ -20,4 +20,4 @@ ht-degree: 0%
 
 瞭解品牌對品牌共同作業所支援的使用案例，以及為支援這些工作流程所引入的特定功能。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470936/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470947/?learn=on&enablevpops&captions=chi_hant)
