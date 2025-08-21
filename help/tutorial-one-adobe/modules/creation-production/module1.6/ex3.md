@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 0%
+source-wordcount: '877'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 ## 1.6.3.1下載範例應用程式檔案
 
-移至[https://github.com/adobe/genstudio-extensibility-examples](https://github.com/adobe/genstudio-extensibility-examples)。 按一下&#x200B;**代碼**，然後選取&#x200B;**下載ZIP**。
+移至[https://github.com/woutervangeluwe/genstudio-external-dam-app](https://github.com/woutervangeluwe/genstudio-external-dam-app)。 按一下&#x200B;**代碼**，然後選取&#x200B;**下載ZIP**。
 
 ![外部DAM](./images/extdam1.png)
 
@@ -25,21 +25,9 @@ ht-degree: 0%
 
 ![外部DAM](./images/extdam2.png)
 
-開啟資料夾&#x200B;**genstudio-extensibility-examples-main**。 您將會看到多個範例應用程式。 此練習的興趣是&#x200B;**genstudio-external-dam-app**。
-
-複製該目錄並貼到您的案頭上。
-
-![外部DAM](./images/extdam4.png)
-
-您的案頭上現在應該有此專案：
-
-![外部DAM](./images/extdam3.png)
-
-在接下來的練習中，您只會使用&#x200B;**genstudio-external-dam-app**&#x200B;資料夾。
-
 ## 1.6.3.2設定Adobe Developer命令列介面
 
-在&#x200B;**genstudio-external-dam-app**&#x200B;資料夾上按一下滑鼠右鍵，然後選取&#x200B;**資料夾的新終端機**。
+在&#x200B;**genstudio-external-dam-app-main**&#x200B;資料夾上按一下滑鼠右鍵，然後選取&#x200B;**資料夾的新終端機**。
 
 ![外部DAM](./images/extdam5.png)
 
@@ -75,7 +63,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您需要變更檔案名稱以符合檔案名稱。
+>您必須在上述命令中變更檔案名稱，以符合檔案名稱。
 
 命令執行後，您的外部DAM應用程式現在會連線至使用您之前建立的App Builder的Adobe IO專案。
 
@@ -101,7 +89,7 @@ ht-degree: 0%
 
 ![外部DAM](./images/extdam15.png)
 
-選取包含您之前下載的應用程式的資料夾&#x200B;**genstudio-external-dam-app**。
+選取包含您之前下載的應用程式的資料夾&#x200B;**genstudio-external-dam-app-main**。 按一下&#x200B;**「開啟」**。
 
 ![外部DAM](./images/extdam16.png)
 
@@ -113,17 +101,7 @@ ht-degree: 0%
 
 ![外部DAM](./images/extdam18.png)
 
-您現在需要在資料夾的根目錄中建立2個新檔案：
-
-- `.env.dev`。按一下&#x200B;**新增檔案**&#x200B;按鈕，然後輸入檔案名稱`.env.dev`。
-
-![外部DAM](./images/extdam19.png)
-
-- `.env.prod`。  按一下&#x200B;**新增檔案**&#x200B;按鈕，然後輸入檔案名稱`.env.prod`。
-
-![外部DAM](./images/extdam20.png)
-
-這些檔案將包含連線至您之前建立的AWS S3儲存貯體所需的認證。
+您現在需要將下列詳細資料新增至&#x200B;**.env**&#x200B;檔案，讓外部DAM應用程式可以連線至您之前建立的AWS S3貯體。
 
 ```
 AWS_ACCESS_KEY_ID=
@@ -155,14 +133,21 @@ AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 
 ![外部DAM](./images/extdam21.png)
 
-
-![外部DAM](./images/extdam22.png)
-
 接下來，返回您的終端機視窗。 執行此命令：
 
-`export $(grep -v '^#' .env.dev | xargs)`
+`export $(grep -v '^#' .env | xargs)`
 
 ![外部DAM](./images/extdam23.png)
+
+最後，您需要變更將顯示在GenStudio for Performance Marketing中的標籤，以便區分外部DAM應用程式與其他整合。 若要這麼做，請開啟檔案&#x200B;**Constants.ts**，您可以在總管中向下鑽研至&#x200B;**src/genstudiopm > web-src > src**，以找到該檔案。
+
+需要將第14行變更為
+
+`export const extensionLabel: string = "--aepUserLdap-- - External S3 DAM";`
+
+別忘了儲存您的變更。
+
+![外部DAM](./images/extdam22.png)
 
 ## 1.6.3.5執行您的外部DAM應用程式
 
@@ -204,13 +189,23 @@ AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 
 ![外部DAM](./images/extdam29.png)
 
-之後，您應該就能在下拉式清單中選取外部DAM。
+之後，您應該能夠選取外部DAM，其應該從下拉式清單中命名為`--aepUserLdap-- - External S3 DAM`。
 
 ![外部DAM](./images/extdam30.png)
+
+您應該會看到此訊息。 選取影像&#x200B;**neon_rabbit_banner.jpg**&#x200B;並按一下&#x200B;**使用**。
+
+![外部DAM](./images/extdam31.png)
+
+您現在已選取在S3儲存貯體中執行的外部DAM中的影像。 選取影像後，您現在可以依照練習[1.3.3.4建立和核准中繼廣告](./../module1.3/ex3.md#create--approve-meta-ad)中記錄的正常工作流程。
+
+![外部DAM](./images/extdam32.png)
 
 在本機電腦上變更程式碼時，您需要重新部署應用程式。 當您重新部署時，請使用以下終端機命令：
 
 `aio app deploy --force-build --force-deploy`
+
+![外部DAM](./images/extdam33.png)
 
 您的應用程式現已準備好發佈。
 

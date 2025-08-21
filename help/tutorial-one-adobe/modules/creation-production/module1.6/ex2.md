@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 044677e4-7ca3-4dfe-9067-640983681ea7
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 6%
+source-wordcount: '502'
+ht-degree: 7%
 
 ---
 
@@ -139,19 +140,39 @@ AWS資源的存取權由Amazon Identity and Access Management (IAM)控制。
 
 ![ETL](./images/bucket4.png)
 
-您可以在[這裡](./../../asset-mgmt/module2.2/images/CitiSignal_Neon_Rabbit.zip){target="_blank"}下載CitiSignal影像檔案。
+您可以在[這裡](./images/package.zip){target="_blank"}下載CitiSignal影像檔案。
 
 將檔案匯出至案頭。
 
 ![ETL](./images/bucket5.png)
 
-將該資料夾中的2個影像檔案拖放至S3儲存貯體上傳視窗中。 按一下&#x200B;**上傳**。
+按一下&#x200B;**新增資料夾**。
 
 ![ETL](./images/bucket6.png)
 
-您應該會看到此訊息。 您的S3儲存貯體、影像檔案和IAM使用者現已準備好供您的外部DAM應用程式使用。
+從下載資料夾&#x200B;**封裝**&#x200B;中選取資料夾&#x200B;**資產**。 按一下&#x200B;**上傳**。
 
 ![ETL](./images/bucket7.png)
+
+您應該會看到此訊息。 再按一下&#x200B;**新增資料夾**。
+
+![ETL](./images/bucket8.png)
+
+從下載資料夾&#x200B;**封裝**&#x200B;中選取資料夾&#x200B;**縮圖**。 按一下&#x200B;**上傳**。
+
+![ETL](./images/bucket9.png)
+
+您應該會看到此訊息。 按一下&#x200B;**上傳**。
+
+![ETL](./images/bucket10.png)
+
+您的上傳現已完成。 按一下 **關閉**。
+
+![ETL](./images/bucket11.png)
+
+您現在應該在S3儲存貯體中擁有此資料夾結構。
+
+![ETL](./images/bucket12.png)
 
 ## 後續步驟
 
