@@ -19,4 +19,4 @@ ht-degree: 31%
 
 瞭解如何導覽Real-Time Customer Data Platform (CDP)使用者介面，瞭解其功能如何結合，以在數位客戶歷程中提供即時啟用。 如需詳細資訊，請瀏覽[Real-Time Customer Data Platform檔案](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/29762?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428468?learn=on&enablevpops&captions=chi_hant)
