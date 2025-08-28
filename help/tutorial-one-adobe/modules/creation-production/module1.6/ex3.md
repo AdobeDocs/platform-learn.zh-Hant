@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
-source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '877'
+source-wordcount: '912'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ AWS_REGION=us-west-2
 AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 ```
 
-您現在應該將此文字貼到兩個檔案中： `.env.dev`和`.env.prod`。 別忘了儲存您的變更。
+您現在應該將此文字貼到`.env`檔案中。 別忘了儲存您的變更。
 
 ![外部DAM](./images/extdam21.png)
 
@@ -152,6 +152,10 @@ AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 ## 1.6.3.5執行您的外部DAM應用程式
 
 在終端機視窗中，執行命令`aio app run`。 1-2分鐘後，您應該會看到此訊息。
+
+>[!NOTE]
+>
+>第一次執行`aio app run`時，系統可能會將您重新導向瀏覽器，讓您接受新的憑證。 如果發生此情況，請接受憑證，然後您將能夠繼續執行以下步驟。
 
 ![外部DAM](./images/extdam24.png)
 

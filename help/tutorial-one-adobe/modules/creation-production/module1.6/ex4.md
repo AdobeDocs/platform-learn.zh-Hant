@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 5a77ccdd-4000-4fb7-b696-dec40d01b41b
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
@@ -59,9 +59,13 @@ ht-degree: 1%
 
 ## 1.6.4.2核准您的應用程式
 
+>[!IMPORTANT]
+>
+>此步驟只能由Adobe Admin Console中的系統管理員執行。 如果您不是系統管理員，您將無法執行此命令。 請聯絡您的系統管理員，以要求改為核准您的應用程式。
+
 開發人員提交新應用程式以供發佈後，將會通知您組織的系統管理員，並要求他們檢閱和核准。
 
-如果您是系統管理員，將會收到這封電子郵件，然後您可以按一下[我的Exchange] **&#x200B;**&#x200B;開始該程式。
+如果您是系統管理員，將會收到這封電子郵件，然後您可以按一下[我的Exchange] ****&#x200B;開始該程式。
 
 ![GSPeM擴充性](./images/gspemextpub7.png)
 
