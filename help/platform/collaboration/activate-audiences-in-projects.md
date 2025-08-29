@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 在Collaboration專案中啟用對象
 
-瞭解如何在Real-Time CDP Collaboration專案中對您的共同作業合作夥伴啟用對象。 如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/activate){target="_blank"}。
+瞭解如何在Real-Time CDP Collaboration專案中對您的共同作業合作夥伴啟用對象。 如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/zh-hant/docs/real-time-cdp-collaboration/using/collaborate/activate){target="_blank"}。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3471677/?learn=on&enablevpops)

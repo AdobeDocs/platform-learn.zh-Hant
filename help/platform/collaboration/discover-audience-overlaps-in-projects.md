@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 探索Collaboration專案中的受眾重疊
 
-瞭解如何比較Real-Time CDP Collaboration專案中的對象重疊。 如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}。
+瞭解如何比較Real-Time CDP Collaboration專案中的對象重疊。 如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/zh-hant/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3471675/?learn=on&enablevpops)
