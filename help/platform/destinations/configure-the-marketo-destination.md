@@ -23,7 +23,7 @@ ht-degree: 1%
 
 瞭解[!DNL Marketo Engage]目的地如何讓您順暢地即時同步受眾資料和設定檔屬性，以支援跨技術棧疊的統一行銷。 透過彈性的同步選項和簡化的設定，它支援使用案例，例如重新吸引銷售機會、更新設定檔，以及擴大個人化B2B歷程的觸及面。
 
-如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection)。
+如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
 
