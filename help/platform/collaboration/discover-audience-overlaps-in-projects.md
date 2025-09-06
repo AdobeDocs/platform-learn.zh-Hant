@@ -20,4 +20,4 @@ ht-degree: 0%
 
 瞭解如何比較Real-Time CDP Collaboration專案中的對象重疊。 如需詳細資訊，請瀏覽[檔案](https://experienceleague.adobe.com/zh-hant/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}。
 
->[!VIDEO](https://video.tv.adobe.com/v/3471675/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3471700/?learn=on&enablevpops&captions=chi_hant)

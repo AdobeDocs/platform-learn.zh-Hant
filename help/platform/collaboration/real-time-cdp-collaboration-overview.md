@@ -64,7 +64,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="適用於代理商從業人員的Real-Time CDP概觀" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1756504084963" alt="適用於代理商從業人員的Real-Time CDP概觀"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464669/?format=jpeg&nocache=1756504084963&captions=chi_hant" alt="適用於代理商從業人員的Real-Time CDP概觀"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration — 流程和人員" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1756504084955" alt="Real-Time CDP Collaboration — 流程和人員"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464680/?format=jpeg&nocache=1756504084955&captions=chi_hant" alt="Real-Time CDP Collaboration — 流程和人員"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="設定Real-Time CDP Collaboration的許可權" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1756504085453" alt="設定Real-Time CDP Collaboration的許可權"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452241/?format=jpeg&nocache=1756504085453&captions=chi_hant" alt="設定Real-Time CDP Collaboration的許可權"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -260,7 +260,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="在Real-Time CDP Collaboration中建立專案" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1756504085943" alt="在Real-Time CDP Collaboration中建立專案"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464045/?format=jpeg&nocache=1756504085943&captions=chi_hant" alt="在Real-Time CDP Collaboration中建立專案"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -283,7 +283,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discover-audience-overlaps-in-projects.md" title="探索Collaboration專案中的受眾重疊" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471675/?format=jpeg&nocache=1756504085916" alt="探索Collaboration專案中的受眾重疊"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471700/?format=jpeg&nocache=1756504085916&captions=chi_hant" alt="探索Collaboration專案中的受眾重疊"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -306,7 +306,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="activate-audiences-in-projects.md" title="在Collaboration專案中啟用對象" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471677/?format=jpeg&nocache=1756504085925" alt="在Collaboration專案中啟用對象"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471689/?format=jpeg&nocache=1756504085925&captions=chi_hant" alt="在Collaboration專案中啟用對象"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -329,7 +329,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="brand-to-brand-collaboration.md" title="品牌至品牌Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470936/?format=jpeg&nocache=1756504085934" alt="品牌至品牌Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470947/?format=jpeg&nocache=1756504085934&captions=chi_hant" alt="品牌至品牌Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
