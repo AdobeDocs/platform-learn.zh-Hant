@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3787'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ## 1.1.1.3探索firefly.adobe.com — 階段1
 
-讓我們開始探索Adobe Firefly Services。 若想探索，您先來看一下CitiSignal影像產生範例。 CitiSignal設計團隊想要產生CitiSignal品牌名稱的霓虹版本。 他們想要使用Adobe Firefly Services來做這件事。
+讓我們開始探索Adobe Firefly Services。 如需探索，您先從CitiSignal影像產生範例開始。 CitiSignal設計團隊想要產生CitiSignal品牌名稱的霓虹版本。 他們想要使用Adobe Firefly Services來做這件事。
 
 要達到這個目標，首先需要的是CitiSignal品牌名稱的黑白版本，看起來像這樣：
 
@@ -168,7 +168,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 >
 >Firefly Image 3和Image 4可供所有使用Adobe Firefly Services的人使用，而Firefly Image 4 Ultra需要Firefly Pro授權。
 
-按一下以選取此練習的&#x200B;**Firefly影像3**。
+按一下以針對此練習選取&#x200B;**Firefly Image 3**。
 
 ![Postman](./images/ffui1a.png)
 
@@ -184,7 +184,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Postman](./images/ffui4.png)
 
-您應該會看到此訊息。 移至&#x200B;**網路**&#x200B;標籤。 接著，再按一下[產生&#x200B;**&#x200B;**]。
+您應該會看到此訊息。 移至&#x200B;**網路**&#x200B;標籤。 接著，再按一下[產生&#x200B;****]。
 
 ![Postman](./images/ffui5.png)
 
@@ -247,7 +247,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 從&#x200B;**FF - Firefly Services Tech Insiders**&#x200B;集合中選取名為&#x200B;**POST - Firefly - T2I V3 async**&#x200B;的請求。 移至&#x200B;**Headers**&#x200B;並驗證索引鍵/值配對組合。
 
-| 索引鍵 | 值 |
+| 索引鍵 | 價值 |
 |:-------------:| :---------------:| 
 | `x-api-key` | `{{API_KEY}}` |
 | `Authorization` | `Bearer {{ACCESS_TOKEN}}` |
@@ -270,7 +270,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff1a.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;** 選取所產生影像的URL，然後在瀏覽器中開啟。
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 >[!NOTE]
 >
@@ -299,7 +299,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff3a.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;** 選取所產生影像的URL，然後在瀏覽器中開啟。
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 ![Firefly](./images/ff4.png)
 
@@ -324,7 +324,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff6.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;** 選取所產生影像的URL，然後在瀏覽器中開啟。
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 ![Firefly](./images/ff7.png)
 
@@ -343,7 +343,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff9.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;** 選取所產生影像的URL，然後在瀏覽器中開啟。
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 ![Firefly](./images/ff9a.png)
 
@@ -367,7 +367,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff11a.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;** 選取所產生影像的URL，然後在瀏覽器中開啟。
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 ![Firefly](./images/ff12.png)
 
@@ -379,7 +379,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff13a.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;** 選取所產生影像的URL，然後在瀏覽器中開啟。
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 ![Firefly](./images/ff13b.png)
 
@@ -393,7 +393,7 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff14.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;** 選取所產生影像的URL，然後在瀏覽器中開啟。
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 ![Firefly](./images/ff14a.png)
 
@@ -403,13 +403,13 @@ Firefly Services包含&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ## 1.1.1.8 Firefly Services API，文字2影像，影像4與影像4 Ultra
 
-在最新版本的Firefly Image Model 4中，已提供幾項改善功能：
+在最新版本的Firefly Image Model 4中，已提供幾項改善專案：
 
 - Firefly Image Model 4提供2K解析度輸出，並具備增強的定義和細節。
 - Firefly Image Model 4在文字轉譯、人類、動物和架構方面提供顯著改善。
-- Firefly Image Model 4秉承Adobe對IP友好、商業上安全的創作AI的承諾。
+- Firefly Image Model 4秉持Adobe對IP友好、商業上安全的創作AI的承諾。
 
-Firefly Image Model 4為您提供卓越的人類、動物和詳細場景影像，您可以使用Image Model 4 Ultra產生具有超逼真的人際互動、建築元素和複雜風景的影像&#x200B;。
+Firefly Image Model 4提供您卓越的人類、動物和詳細場景影像，您可以使用Image Model 4 Ultra產生具有超逼真的人際互動、建築元素和複雜風景的影像&#x200B;。
 
 ### 1.1.1.8.1 image4_standard
 
@@ -431,7 +431,7 @@ Firefly Image Model 4為您提供卓越的人類、動物和詳細場景影像�
 
 ![Firefly](./images/ffim4_3.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;**
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。****
 
 ![Firefly](./images/ffim4_4.png)
 
@@ -463,7 +463,7 @@ Firefly Image Model 4為您提供卓越的人類、動物和詳細場景影像�
 
 ![Firefly](./images/ffim4_13.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;**
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。****
 
 ![Firefly](./images/ffim4_14.png)
 
@@ -491,7 +491,7 @@ Firefly Image Model 4為您提供卓越的人類、動物和詳細場景影像�
 
 ![Firefly](./images/ffim4_18.png)
 
-若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**&#x200B;** 選取所產生影像的URL，然後在瀏覽器中開啟。
+若要檢視執行中工作的狀態報告，請從&#x200B;**FF - Firefly Services技術內部人士**&#x200B;集合中選取名為&#x200B;**GET - Firefly — 取得狀態報告**&#x200B;的請求。 按一下以開啟它，然後按一下[傳送]。**** 選取所產生影像的URL，然後在瀏覽器中開啟。
 
 ![Firefly](./images/ffim4_19.png)
 
