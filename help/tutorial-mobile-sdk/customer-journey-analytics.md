@@ -18,7 +18,7 @@ ht-degree: 1%
 
 與Adobe Analytics相反，Customer Journey Analytics *使用來自Experience Platform中所建立資料集的*&#x200B;資料。 資料不會使用Adobe Experience Platform Mobile SDK直接傳送至Customer Journey Analytics，而是會傳送至資料集。 接著，您可在Customer Journey Analytics中設定連線，以選取您將在報告與分析專案中使用的資料集。
 
-本教學課程中的課程著重於報告和分析從Luma教學課程應用程式擷取的資料。 Customer Journey Analytics的獨特功能之一，是將來自多個來源（CRM、銷售點、忠誠度應用程式、客服中心）和管道（網路、行動裝置、離線）的資料合併，以蒐集客戶歷程的深入見解。 該功能不在本課程的討論範圍內。 如需詳細資訊，請參閱[Customer Journey Analytics概觀](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)。
+本教學課程中的課程著重於報告和分析從Luma教學課程應用程式擷取的資料。 Customer Journey Analytics的獨特功能之一，是將來自多個來源（CRM、銷售點、忠誠度應用程式、客服中心）和管道（網路、行動裝置、離線）的資料合併，以蒐集客戶歷程的深入見解。 該功能不在本課程的討論範圍內。 如需詳細資訊，請參閱[Customer Journey Analytics概觀](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-overview)。
 
 
 ## 先決條件
@@ -113,7 +113,7 @@ Customer Journey Analytics中的連線會定義您要用於報告和分析的Exp
 
 資料檢視是Customer Journey Analytics專用的容器，可讓您決定如何詮釋來自連線的資料。 您可以從您在「連線」中定義為Analysis Workspace中元件（維度、量度）的任何資料集，設定標準和結構欄位。
 
-Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設定和定義來自您連線的資料。 在本教學課程中，您僅能使用報告和分析所需的功能。 如需詳細資訊，請參閱[資料檢視](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)。
+Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設定和定義來自您連線的資料。 在本教學課程中，您僅能使用報告和分析所需的功能。 如需詳細資訊，請參閱[資料檢視](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-dataviews/data-views)。
 
 
 若要建立資料檢視：
@@ -213,7 +213,7 @@ Customer Journey Analytics中的資料檢視提供極大的彈性，可正確設
 
 ## 建立專案
 
-Customer Journey Analytics使用Workspace專案來建立報表和視覺效果。 建立完整報表和吸引人的視覺效果有許多可能性，但這不在本教學課程的討論範圍內。 如需詳細資訊，請參閱[Workspace概觀](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview)和[建立新專案](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project)。
+Customer Journey Analytics使用Workspace專案來建立報表和視覺效果。 建立完整報表和吸引人的視覺效果有許多可能性，但這不在本教學課程的討論範圍內。 如需詳細資訊，請參閱[Workspace概觀](https://experienceleague.adobe.com/zh-hant/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview)和[建立新專案](https://experienceleague.adobe.com/zh-hant/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project)。
 
 在本課程的這個區段中，您會建立一個專案，在其中顯示報表和視覺效果：
 

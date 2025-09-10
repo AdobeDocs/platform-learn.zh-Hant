@@ -54,11 +54,11 @@ ht-degree: 0%
 
 ## 自動對應
 
-許多標準XDM欄位會自動對應至Analytics變數。 檢視[完整清單](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping)。
+許多標準XDM欄位會自動對應至Analytics變數。 檢視[完整清單](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/xdm-var-mapping)。
 
 ### 範例#1 - s.products
 
-無法使用處理規則填入的[產品變數](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/products)就是很好的範例。 透過XDM實作，您傳遞了`productListItems`中的所有必要資料，系統透過Analytics對應自動填入`s.products`。
+無法使用處理規則填入的[產品變數](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/vars/page-vars/products)就是很好的範例。 透過XDM實作，您傳遞了`productListItems`中的所有必要資料，系統透過Analytics對應自動填入`s.products`。
 
 此物件：
 
@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->如果`productListItems[].SKU`和`productListItems[].name`都包含資料，則使用`productListItems[].SKU`中的值。 如需詳細資訊，請參閱Adobe Experience Edge[中的](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping)Analytics變數對應。
+>如果`productListItems[].SKU`和`productListItems[].name`都包含資料，則使用`productListItems[].SKU`中的值。 如需詳細資訊，請參閱Adobe Experience Edge[中的](https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/xdm-var-mapping)Analytics變數對應。
 
 
 ### 範例#2 - scAdd
@@ -211,7 +211,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 ### 銷售eVar
 
-如果您在Analytics設定中使用[銷售eVar](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars)，您必須擴充您在[追蹤事件資料](events.md)中定義的XDM裝載，以擷取該銷售資訊。 銷售var的範例為`evar1`，其中您想要擷取產品的顏色，例如`&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
+如果您在Analytics設定中使用[銷售eVar](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars)，您必須擴充您在[追蹤事件資料](events.md)中定義的XDM裝載，以擷取該銷售資訊。 銷售var的範例為`evar1`，其中您想要擷取產品的顏色，例如`&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`
 
 * 在JSON中：
 
@@ -301,7 +301,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >第一次對應到處理規則時，介面不會顯示XDM物件的內容資料變數。 若要修正選取的任何值，請儲存並返回編輯。 所有XDM變數現在都會顯示。
 
 
-檢視[使用處理規則](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules)將contextData變數對應至prop和eVar。
+檢視[使用處理規則](https://experienceleague.adobe.com/zh-hant/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules)將contextData變數對應至prop和eVar。
 
 >[!TIP]
 >

@@ -43,7 +43,7 @@ ht-degree: 3%
 
 ## 建立資料集
 
-所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 資料集是資料集合（通常是表格）的儲存和管理結構，其中包含結構（欄）和欄位（列）。 資料集也包含中繼資料，可說明其儲存資料的各個層面。 如需詳細資訊，請參閱[文件](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)。
+所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 資料集是資料集合（通常是表格）的儲存和管理結構，其中包含結構（欄）和欄位（列）。 資料集也包含中繼資料，可說明其儲存資料的各個層面。 如需詳細資訊，請參閱[文件](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/overview)。
 
 1. 導覽至Experience Platform UI。 從右上角的「應用程式&#x200B;**[!UICONTROL 應用程式]**」功能表中選取![Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)。
 
@@ -106,7 +106,7 @@ ht-degree: 3%
 您也應該看到使用&#x200B;**[!UICONTROL 預覽資料集]**&#x200B;功能的範例記錄和欄位：
 ![驗證傳送至Platform資料集的生命週期](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
-驗證資料的更強大工具是Platform的[查詢服務](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
+驗證資料的更強大工具是Platform的[查詢服務](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/queries/explore-data)。
 
 ## 啟用即時客戶個人檔案
 

@@ -25,11 +25,11 @@ Experience Platform使用結構描述，以一致且可重複使用的方式說�
 
 在將資料擷取到Platform之前，必須組成結構描述資料的結構並對可包含在每個欄位中的資料型別提供限制。 結構描述包含一個基底類別和零個或多個結構描述欄位群組。
 
-如需結構描述組合模型的詳細資訊，包括設計原則和最佳實務，請參閱[結構描述組合基本概念](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)或播放清單[使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)。
+如需結構描述組合模型的詳細資訊，包括設計原則和最佳實務，請參閱[結構描述組合基本概念](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition)或播放清單[使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/zh-hant/playlists/experience-platform-model-your-customer-experience-data-with-xdm)。
 
 >[!TIP]
 >
->如果您熟悉Analytics解決方案設計參考(SDR)，您可以將結構描述視為更強大的SDR。 如需詳細資訊，請參閱[建立和維護解決方案設計參考(SDR)檔案](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)。
+>如果您熟悉Analytics解決方案設計參考(SDR)，您可以將結構描述視為更強大的SDR。 如需詳細資訊，請參閱[建立和維護解決方案設計參考(SDR)檔案](https://experienceleague.adobe.com/zh-hant/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)。
 
 ## 先決條件
 
@@ -70,7 +70,7 @@ Experience Platform使用結構描述，以一致且可重複使用的方式說�
 * **類別**&#x200B;定義結構描述所包含資料的行為方面。 例如： `XDM ExperienceEvent`會擷取時間序列、事件資料，而`XDM Individual Profile`會擷取有關個人的屬性資料。
 * **資料型別**&#x200B;在類別或欄位群組中做為參考欄位型別，使用方式與基本常值欄位相同。
 
-以上說明為高階概述。 如需詳細資訊，請參閱[結構描述建置區塊](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/schemas/schema-building-blocks)影片，或閱讀產品檔案中的[結構描述組合基本概念](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)。
+以上說明為高階概述。 如需詳細資訊，請參閱[結構描述建置區塊](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/schemas/schema-building-blocks)影片，或閱讀產品檔案中的[結構描述組合基本概念](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/xdm/schema/composition)。
 
 在本教學課程中，您會使用取用者體驗事件欄位群組，並建立自訂群組來示範此程式。
 
