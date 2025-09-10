@@ -3,7 +3,7 @@ title: 使用Platform Mobile SDK收集生命週期資料
 description: 瞭解如何在行動應用程式中收集生命週期資料。
 jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 7e7c7600457b361c2ba9616c067b9fe33fd70c5c
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
@@ -86,7 +86,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 1. 當應用程式進入背景時，您想要暫停應用程式`override fun onActivityPaused`函式的生命週期資料集合。 將此程式碼新增至`override fun onActivityPaused(activity: Activity)`：
 
-   ```swift
+   ```kotlin
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
@@ -98,7 +98,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 1. 檢閱[設定指示](assurance.md#connecting-to-a-session)區段，將您的模擬器或裝置連線到Assurance。
 1. 將應用程式傳送至背景。 在Assurance UI中檢查&#x200B;**[!UICONTROL LifecyclePause]**&#x200B;事件。
-1. 將應用程式移至前景。 在Assurance UI中檢查&#x200B;**[!UICONTROL LifecycleResume]**&#x200B;事件。
+1. 將應用程式移至前景。 在Assurance UI中檢查&#x200B;**[!UICONTROL LifecycleResume]**事件。
    ![驗證生命週期](assets/lifecycle-lifecycle-assurance.png){zoomable="yes"}
 
 
@@ -137,7 +137,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
       ![規則動作組態](assets/rule-action-configuration.png){zoomable="yes"}
 1. 選取&#x200B;**[!UICONTROL 儲存至資料庫]**。
    ![規則 — 儲存至資料庫](assets/rule-save-to-library.png){zoomable="yes"}
-1. 選取&#x200B;**[!UICONTROL 建置]**&#x200B;以重建程式庫。
+1. 選取&#x200B;**[!UICONTROL 建置]**以重建程式庫。
    ![規則 — 組建](assets/rule-build.png){zoomable="yes"}
 
 成功建立屬性後，事件會傳送至Platform Edge Network，而事件會根據您的資料流設定轉送至其他應用程式和服務。
