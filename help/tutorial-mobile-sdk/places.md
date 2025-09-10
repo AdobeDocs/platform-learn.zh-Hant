@@ -3,9 +3,9 @@ title: 透過Platform Mobile SDK使用地標
 description: 瞭解如何在行動應用程式中使用Places地理位置服務。
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1825'
 ht-degree: 1%
 
 ---
@@ -47,23 +47,23 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 1. 在資料收集UI中，選取&#x200B;**[!UICONTROL 地點]**。
 1. 選取![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)。
 1. 從內容功能表中選取&#x200B;**[!UICONTROL 管理資料庫]**。
-   ![管理資料庫](assets/places-manage-libraries.png)
+   ![管理資料庫](assets/places-manage-libraries.png){zoomable="yes"}
 1. 在&#x200B;**[!UICONTROL 管理資料庫]**&#x200B;對話方塊中，選取&#x200B;**[!UICONTROL 新增]**。
 1. 在&#x200B;**[!UICONTROL 建立資料庫]**&#x200B;對話方塊中，輸入&#x200B;**[!UICONTROL 名稱]**，例如`Luma`。
 1. 選取&#x200B;**[!UICONTROL 確認]**。
-   ![建立資料庫](assets/places-create-library.png)
+   ![建立資料庫](assets/places-create-library.png){zoomable="yes"}
 1. 若要關閉&#x200B;**[!UICONTROL 管理資料庫]**&#x200B;對話方塊，請選取&#x200B;**[!UICONTROL 關閉]**。
 1. 返回&#x200B;**[!UICONTROL POI管理]**，選取&#x200B;**[!UICONTROL 匯入POI]**。
 1. 在&#x200B;**[!UICONTROL 匯入地點]**&#x200B;對話方塊中選取&#x200B;**[!UICONTROL 開始]**。
 1. 從資料庫清單中選取&#x200B;**[!DNL Luma]**，
 1. 選取&#x200B;**[!UICONTROL 下一步]**。
-   ![選取資料庫](assets/places-import-select-library.png)
+   ![選取資料庫](assets/places-import-select-library.png){zoomable="yes"}
 1. 下載[Luma POIs ZIP檔案](assets/luma_pois.csv.zip)並將其解壓縮至您電腦上的位置。
 1. 在&#x200B;**[!UICONTROL 匯入地點]**&#x200B;對話方塊中，將擷取的`luma_pois.csv`檔案拖放到&#x200B;**[!UICONTROL 選擇CSV檔案 — 拖放您的檔案]**。 您應該會看到&#x200B;**[!UICONTROL 驗證成功]** - **[!UICONTROL 已成功驗證CSV檔案]**。
 1. 選取&#x200B;**[!UICONTROL 開始匯入]**。 您應該會看到&#x200B;**[!UICONTROL 成功]** - **[!UICONTROL 已成功新增6個POI]**。
 1. 選取&#x200B;**[!UICONTROL 完成]**。
 1. 在&#x200B;**[!UICONTROL POI管理]**&#x200B;中，您應該會看到清單中已新增六個新的Luma存放區。 您可以在![清單](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg)清單和![地圖](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MapView_18_N.svg)地圖檢視之間切換。
-   ![地標清單](assets/places-list.png)。
+   ![地標清單](assets/places-list.png){zoomable="yes"}。
 
 
 ### 安裝Places擴充功能
@@ -74,14 +74,13 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 1. 搜尋&#x200B;**[!UICONTROL Places]**&#x200B;延伸模組。
 1. 安裝擴充功能。
 
-   ![新增Offer Decisioning和Target擴充功能](assets/tag-places-extension.png)
+   ![新增地標](assets/tag-places-extension.png)
 
 1. 在&#x200B;**[!UICONTROL 安裝擴充功能]**&#x200B;對話方塊中：
    1. 從&#x200B;**[!DNL Luma]**&#x200B;選取資料庫&#x200B;**[!UICONTROL 清單中選取]**。
    1. 請確定您已挑選您的工作程式庫，例如&#x200B;**[!UICONTROL 初始組建]**。
    1. 從&#x200B;**[!UICONTROL 儲存至程式庫]**&#x200B;中選取&#x200B;**[!UICONTROL 儲存至程式庫並建置]**。
-
-      ![安裝Places擴充功能](assets/places-install-extension.png)。
+      ![安裝Places擴充功能](assets/places-install-extension.png){zoomable="yes"}。
 
 1. 已重建您的程式庫。
 
@@ -94,8 +93,8 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 1. 從頂端列選取&#x200B;**[!UICONTROL 瀏覽]**。
 1. 選取要開啟的結構描述。
 1. 在結構描述編輯器中，選取&#x200B;**[!UICONTROL 消費者體驗事件]**。
-1. 您看到&#x200B;**[!UICONTROL placeContext]**&#x200B;物件，其中包含要擷取POI互動與地理位置資料的物件和欄位。
-   ![結構描述位置](assets/schema-places-context.png)。
+1. 您看到&#x200B;**[!UICONTROL placeContext]**物件，其中包含要擷取POI互動與地理位置資料的物件和欄位。
+   ![結構描述位置](assets/schema-places-context.png){zoomable="yes"}。
 
 
 ### 更新您的標籤屬性
@@ -114,7 +113,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 1. 從&#x200B;**[!UICONTROL 資料元素型別]**&#x200B;清單中選取&#x200B;**[!UICONTROL 名稱]**。
 1. 選取&#x200B;**[!UICONTROL TARGET]**&#x200B;底下的&#x200B;**[!UICONTROL 目前POI]**。
 1. 選取&#x200B;**[!UICONTROL 儲存至資料庫]**。
-   ![資料元素](assets/tags-create-data-element.png)
+   ![資料元素](assets/tags-create-data-element.png){zoomable="yes"}
 
 1. 使用下表中的資訊重複步驟4至8，以建立其他資料元素。
 
@@ -128,7 +127,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
    您應該有以下資料元素清單。
 
-   ![資料元素清單](assets/tags-data-elements-list.png)
+   ![資料元素清單](assets/tags-data-elements-list.png){zoomable="yes"}
 
 **規則**
 
@@ -140,7 +139,6 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 1. 選取![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)底下的&#x200B;**[!UICONTROL 新增]**。
    1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL 地標]**，並從&#x200B;**[!UICONTROL 事件型別]**&#x200B;清單中選取&#x200B;**[!UICONTROL 輸入POI]**。
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
-
       ![標籤事件](assets/tags-event-mobile-core.png)。
 1. 選取![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)底下的&#x200B;**[!UICONTROL 新增]**。
    1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL 行動核心]**，從清單中選取&#x200B;**[!UICONTROL 動作型別]**&#x200B;中的&#x200B;**[!UICONTROL 附加資料]**。 此動作會附加裝載資料。
@@ -171,8 +169,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
       您也可以選取`{%% ... %%}`資料![，在JSON中插入](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)資料元素預留位置值。 快顯對話方塊可讓您挑選您建立的任何資料元素。
 
    1. 選取&#x200B;**[!UICONTROL 保留變更]**。
-
-      ![標籤動作](assets/tags-action-mobile-core.png)
+      ![標籤動作](assets/tags-action-mobile-core.png){zoomable="yes"}
 
 1. 選取![行動核心 — 附加資料](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)動作旁的&#x200B;**[!UICONTROL 新增]**。
    1. 從&#x200B;**[!UICONTROL 擴充功能]**&#x200B;清單中選取&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**，然後選取&#x200B;**[!UICONTROL 轉寄事件至Edge Network]**。 此動作可確保將事件和其他裝載資料轉送至Platform Edge Network。
@@ -180,7 +177,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 1. 若要儲存規則，請選取&#x200B;**[!UICONTROL 儲存至資料庫]**。
 
-   ![規則](assets/tags-rule-poi-entry.png)
+   ![規則](assets/tags-rule-poi-entry.png){zoomable="yes"}
 
 讓我們建立另一個規則
 
@@ -222,14 +219,14 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 1. 若要儲存規則，請選取&#x200B;**[!UICONTROL 儲存至資料庫]**。
 
-   ![規則](assets/tags-rule-poi-exit.png)
+   ![規則](assets/tags-rule-poi-exit.png){zoomable="yes"}
 
 
 若要確保標籤中的所有變更皆已發佈
 
 1. 選取&#x200B;**[!UICONTROL 初始組建]**&#x200B;作為要組建的程式庫。
 1. 選取&#x200B;**[!UICONTROL 組建]**。
-   ![建置程式庫](assets/tags-build-library.png)
+   ![建置程式庫](assets/tags-build-library.png){zoomable="yes"}
 
 
 
@@ -246,9 +243,12 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 1. 選取![齒輪](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg)模擬負載POI。 您的POI會使用圓圈和圖釘來識別。
 1. 選取您的POI。
 1. 從快顯視窗中選取![齒輪](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 模擬進入事件]**。
-   ![模擬進入事件](assets/places-simulate.png)
+
+   ![模擬進入事件](assets/places-simulate.png){zoomable="yes"}
+
 1. 從左側邊欄選取&#x200B;**[!UICONTROL 事件]**，您應該會看到模擬的事件。
-   ![AJO Decisioning驗證](assets/places-events.png)
+
+   ![AJO Decisioning驗證](assets/places-events.png){zoomable="yes"}
 
 
 ## 在您的應用程式中實作地標
@@ -259,6 +259,14 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 >
 >如果您已完成[安裝SDK](install-sdks.md)區段，則Places SDK已經安裝，您可以略過此步驟。
 >
+
+>[!IMPORTANT]
+>
+>在您的應用程式中設定適用於Android的地圖SDK需要您設定帳單，因為使用量會產生費用。 您可以使用唯一的應用程式ID和SHA-1金鑰來限制成本。 如需詳細資訊，請參閱[為Android對應SDK](https://developers.google.com/maps/documentation/android-sdk/overview)。 如果您不想設定帳單或產生成本，請略過本課程。
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. 在Xcode中，請確定已將[AEP Places](https://github.com/adobe/aepsdk-places-ios)新增至套件相依性中的套件清單中。 請參閱[Swift封裝管理員](install-sdks.md#swift-package-manager)。
 1. 導覽至Xcode專案導覽器中的&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]**。
@@ -297,31 +305,100 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 1. 導覽至Xcode專案導覽器中的&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]**。
 
-   1. 針對「輸入」按鈕，輸入下列代碼
+   1. 針對「輸入」按鈕，輸入下列代碼：
 
-   ```swift
-   // Simulate geofence entry event
-   Task {
-       await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
-   }
+      ```swift
+      // Simulate geofence entry event
+      Task {
+          await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
+      }
+      ```
+
+   1. 針對「結束」按鈕，輸入下列程式碼：
+
+      ```swift
+      // Simulate geofence exit event
+      Task {
+          await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
+      }
+      ```
+
+>[!TAB Android]
+
+1. 在Android Studio中，確定[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android)是&#x200B;**[!UICONTROL Android:app]** ChevronDown **** Gradle指令碼![中](/help/assets/icons/ChevronDown.svg)build.gradle.kts （模組&#x200B;**[!UICONTROL ）]**&#x200B;的相依性的一部分。 請參閱[Gradle](install-sdks.md#gradle)。
+1. 在Android Studio專案導覽器中，導覽至&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]**。
+1. 請確定`com.adobe.marketing.mobile.Messaging`是匯入清單的一部分。
+
+   `import import com.adobe.marketing.mobile.Places`
+
+1. 請確定`Places.EXTENSION`是您註冊的擴充功能陣列的一部分。
+
+   ```kotlin
+   val extensions = listOf(
+       Identity.EXTENSION,
+       Lifecycle.EXTENSION,
+       Signal.EXTENSION,
+       Edge.EXTENSION,
+       Consent.EXTENSION,
+       UserProfile.EXTENSION,
+       Places.EXTENSION,
+       Messaging.EXTENSION,
+       Optimize.EXTENSION,
+       Assurance.EXTENSION
+   )
    ```
 
-   1. 針對「結束」按鈕，輸入下列程式碼
+1. 在Android Studio專案導覽器中，導覽至&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL 模型]** > **[!UICONTROL MobileSDK]**。 尋找`suspend fun processGeofence(geofence: Geofence?, transitionType: Int)`函式。 新增下列程式碼：
 
-   ```swift
-   // Simulate geofence exit event
-   Task {
-       await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
-   }
+   ```kotlin
+   // Process geolocation event
+   Places.processGeofence(geofence, transitionType)
    ```
+
+   此[`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API會將地理位置資訊通訊至Places服務。
+
+
+1. 在Android Studio專案導覽器中，導覽至&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL 檢視]** > **[!UICONTROL LocationView.k]**。
+
+   1. 針對「輸入」按鈕，輸入下列代碼：
+
+      ```kotlin
+      // Simulate geofence entry event
+      coroutineScope.launch {
+          MobileSDK.shared.processGeofence(
+             region,
+             Geofence.GEOFENCE_TRANSITION_ENTER
+          )
+      }
+      ```
+
+   1. 針對「結束」按鈕，輸入下列程式碼：
+
+      ```kotlin
+      // Simulate geofence entry event
+      coroutineScope.launch {
+          MobileSDK.shared.processGeofence(
+              region,
+              Geofence.GEOFENCE_TRANSITION_EXIT
+          )
+      }
+      ```
+
+>[!ENDTABS]
 
 ## 使用您的應用程式進行驗證
+
+若要驗證應用程式中的地理位置功能：
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. 在裝置上或在模擬器中開啟您的應用程式。
 
 1. 前往&#x200B;**[!UICONTROL 位置]**&#x200B;標籤。
 
-1. 四處移動（拖曳）地圖，確保藍色中間圓圈位於其中一個POI的上方，例如倫敦。
+1. 四處移動（拖曳）地圖，確保藍色中間圓圈位於您的其中一個POI上方，例如倫敦。
 
 1. 點選 <img src="assets/geobutton.png" width="20" />，直到您看到類別和名稱出現在標籤中帶有pin的紅色位置為止。
 
@@ -333,7 +410,27 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
    <img src="assets/appentryexit.png" width="300" />
 
+1. 您應該會在Assurance UI中看到事件。 在Events和Places Service事件中。
+
+>[!TAB Android]
+
+1. 前往&#x200B;**[!UICONTROL 位置]**&#x200B;標籤。
+
+1. 選取&#x200B;**[!UICONTROL 使用和/或模擬地理圍欄]**。
+
+1. 在出現的紅色圓圈內點選某處。
+
+   <img src="assets/appgeolocation-android.png" width="300" />
+
+
+1. 按下&#x200B;**[!UICONTROL 登入]**&#x200B;或&#x200B;**[!UICONTROL 退出]**&#x200B;按鈕，以模擬應用程式中的地理柵欄登入與地理柵欄退出事件。
+
+   <img src="assets/appentryexit-android.png" width="300" />
+
 1. 您應該會在Assurance UI中看到事件。
+
+
+>[!ENDTABS]
 
 
 
@@ -343,7 +440,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 在本教學課程的Journey Optimizer區段中，您會看到體驗事件可用來觸發歷程(請參閱[推播通知](journey-optimizer-inapp.md)和[使用Journey Optimizer的應用程式內傳訊](journey-optimizer-push.md))。 例如，當應用程式使用者進入實體商店的地理柵欄時，傳送推播通知給該使用者並進行某些產品促銷的常見範例。
 
-您見過應用程式的功能實作，大多是由Places服務以及您在標籤屬性中定義的資料元素和規則所驅動。 因此，請儘可能減少應用程式中的程式碼。 或者，您可以使用[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API （如需詳細資訊，請參閱[事件](events.md)）直接在您的應用程式中實作相同的功能，XDM承載包含填入的`placeContext`物件。
+針對您的應用程式實施地理位置功能，可大幅減少程式碼。 您在標籤屬性中定義的Places服務、資料元素和規則提供大部分的功能。 或者，您可以使用[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API （如需詳細資訊，請參閱[事件](events.md)）直接在您的應用程式中實作相同的功能，XDM承載包含填入的`placeContext`物件。
 
 >[!SUCCESS]
 >
