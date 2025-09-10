@@ -64,7 +64,7 @@ Adobe Experience Platform中的標籤是新一代Adobe標籤管理功能。 標�
 
       ![建置程式庫](assets/tags-save-library.png){zoomable="yes"}
 
-   1. 最後，從&#x200B;**[!UICONTROL 選取工作程式庫]**&#x200B;功能表中選取&#x200B;**[!UICONTROL 初始組建]**作為工作程式庫。
+   1. 最後，從&#x200B;**[!UICONTROL 選取工作程式庫]**&#x200B;功能表中選取&#x200B;**[!UICONTROL 初始組建]**&#x200B;作為工作程式庫。
       ![選取作為工作程式庫](assets/tags-working-library.png){zoomable="yes"}
 1. 檢查擴充功能：
 

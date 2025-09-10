@@ -193,7 +193,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >自訂欄位會放置在您的Experience Cloud組織識別碼下。
 >
-租使用者名稱稱`_techmarketingdemos`已取代為您組織的唯一值。
+>租使用者名稱稱`_techmarketingdemos`已取代為您組織的唯一值。
 
 
 

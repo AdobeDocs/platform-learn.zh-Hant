@@ -357,7 +357,7 @@ Android推播通知需要您在應用程式中及傳送推播通知時，定義�
 
 >[!TAB Android]
 
-1. 在Android Studio中，確定[aepsdk-messing-android](https://github.com/adobe/aepsdk-messaging-android)是&#x200B;**[!UICONTROL Android:app]** ChevronDown **** Gradle指令碼![中](/help/assets/icons/ChevronDown.svg)build.gradle.kts （模組&#x200B;**[!UICONTROL ）]**&#x200B;的相依性的一部分。 請參閱[Gradle](install-sdks.md#gradle)。
+1. 在Android Studio中，確定[aepsdk-messing-android](https://github.com/adobe/aepsdk-messaging-android)是&#x200B;**[!UICONTROL Android:app]** ChevronDown **&#x200B;**&#x200B;Gradle指令碼![中](/help/assets/icons/ChevronDown.svg)build.gradle.kts （模組&#x200B;**[!UICONTROL ）]**&#x200B;的相依性的一部分。 請參閱[Gradle](install-sdks.md#gradle)。
 1. 在Android Studio專案導覽器中，導覽至&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]**。
 1. 請確定`com.adobe.marketing.mobile.Messaging`是匯入清單的一部分。
 
@@ -419,7 +419,7 @@ Android推播通知需要您在應用程式中及傳送推播通知時，定義�
 >[!IMPORTANT]
 >
 >**僅適用於iOS**： `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])`會判斷推播通知是使用APNs沙箱或生產伺服器來傳送推播通知。 在模擬器或裝置上測試您的應用程式時，請確定`messaging.useSandbox`設為`true`以便您接收推播通知。 使用Apple的Testflight部署應用程式以進行生產測試時，請確定您將`messaging.useSandbox`設為`false`，否則您的生產應用程式將無法接收推播通知。<br/><br/>
->>Firebase Cloud Messaging (FCM) **不**&#x200B;支援推播通知的沙箱概念。
+>&#x200B;>Firebase Cloud Messaging (FCM) **不**&#x200B;支援推播通知的沙箱概念。
 
 
 ## 建立您自己的推播通知
@@ -475,7 +475,7 @@ Journey Optimizer中的事件可讓您觸發傳送訊息的歷程，例如推播
 
       1. 在&#x200B;**[!UICONTROL 新增事件識別碼條件]**&#x200B;對話方塊中，將&#x200B;**[!UICONTROL 事件型別(eventType)]**&#x200B;拖放到&#x200B;**[!UICONTROL 將元素拖放到這裡]**。
       1. 在彈出視窗中，捲動到底部並選取&#x200B;**[!UICONTROL application.test]** （這是您先前新增至事件型別清單的事件型別，作為[更新您的結構描述](#update-your-schema)的一部分）。 然後向上捲動到頂端並選取&#x200B;**[!UICONTROL 確定]**。
-      1. 選取&#x200B;**[!UICONTROL 確定]**以儲存條件。
+      1. 選取&#x200B;**[!UICONTROL 確定]**&#x200B;以儲存條件。
          ![編輯事件條件](assets/ajo-edit-condition.png){zoomable="yes"}
 
    1. 從&#x200B;**[!UICONTROL 名稱空間]**&#x200B;清單中選取&#x200B;**[!UICONTROL ECID (ECID)]**。 **[!UICONTROL 設定檔識別碼]**&#x200B;欄位自動填入對應identityMap **[!UICONTROL 之索引鍵ECID的第一個專案識別碼]**。
@@ -519,7 +519,7 @@ Journey Optimizer中的事件可讓您觸發傳送訊息的歷程，例如推播
 
    1. 若要儲存並完成推播通知定義，請選取&#x200B;**[!UICONTROL 確定]**。
 
-1. 您的歷程應如下所示。 選取&#x200B;**[!UICONTROL 發佈]**以發佈並啟用您的歷程。
+1. 您的歷程應如下所示。 選取&#x200B;**[!UICONTROL 發佈]**&#x200B;以發佈並啟用您的歷程。
    ![已完成歷程](assets/ajo-journey-finished.png){zoomable="yes"}
 
 

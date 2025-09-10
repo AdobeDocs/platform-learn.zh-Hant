@@ -219,7 +219,7 @@ Experience Platform使用結構描述，以一致且可重複使用的方式說�
 
    ![提供名稱與描述](assets/schema-fieldgroup-name.png){zoomable="yes"}
 
-1. 從主要構成畫面中，選取**[!UICONTROL 應用程式互動**]。
+1. 從主要構成畫面中，選取&#x200B;**[!UICONTROL 應用程式互動**]。
 
 1. 選取結構描述名稱旁的![加號](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)按鈕，將欄位新增至結構描述的根目錄。
 

@@ -267,7 +267,7 @@ MobileSDK.shared.removeIdentities(
 返回Assurance：
 
 1. 從&#x200B;**[!UICONTROL com.adobe.griffon.mobile]**&#x200B;廠商檢查&#x200B;**[!UICONTROL Edge身分更新身分]**&#x200B;事件的Assurance Web介面。
-1. 選取事件並檢閱&#x200B;**[!UICONTROL ACPExtensionEventData]**物件中的資料。 您應該會看到已更新的身分識別。
+1. 選取事件並檢閱&#x200B;**[!UICONTROL ACPExtensionEventData]**&#x200B;物件中的資料。 您應該會看到已更新的身分識別。
    ![驗證身分更新](assets/identity-validate-assurance.png){zoomable="yes"}
 
 ## 使用身分圖表進行驗證

@@ -93,7 +93,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 1. 從頂端列選取&#x200B;**[!UICONTROL 瀏覽]**。
 1. 選取要開啟的結構描述。
 1. 在結構描述編輯器中，選取&#x200B;**[!UICONTROL 消費者體驗事件]**。
-1. 您看到&#x200B;**[!UICONTROL placeContext]**物件，其中包含要擷取POI互動與地理位置資料的物件和欄位。
+1. 您看到&#x200B;**[!UICONTROL placeContext]**&#x200B;物件，其中包含要擷取POI互動與地理位置資料的物件和欄位。
    ![結構描述位置](assets/schema-places-context.png){zoomable="yes"}。
 
 
@@ -325,7 +325,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 >[!TAB Android]
 
-1. 在Android Studio中，確定[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android)是&#x200B;**[!UICONTROL Android:app]** ChevronDown **** Gradle指令碼![中](/help/assets/icons/ChevronDown.svg)build.gradle.kts （模組&#x200B;**[!UICONTROL ）]**&#x200B;的相依性的一部分。 請參閱[Gradle](install-sdks.md#gradle)。
+1. 在Android Studio中，確定[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android)是&#x200B;**[!UICONTROL Android:app]** ChevronDown **&#x200B;**&#x200B;Gradle指令碼![中](/help/assets/icons/ChevronDown.svg)build.gradle.kts （模組&#x200B;**[!UICONTROL ）]**&#x200B;的相依性的一部分。 請參閱[Gradle](install-sdks.md#gradle)。
 1. 在Android Studio專案導覽器中，導覽至&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]**。
 1. 請確定`com.adobe.marketing.mobile.Messaging`是匯入清單的一部分。
 

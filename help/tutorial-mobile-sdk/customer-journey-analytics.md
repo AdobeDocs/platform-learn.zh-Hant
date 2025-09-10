@@ -275,11 +275,11 @@ Customer Journey Analytics使用Workspace專案來建立報表和視覺效果。
 
 1. 選取&#x200B;**[!UICONTROL METRICS]**&#x200B;清單下的&#x200B;**[!UICONTROL 顯示全部]**。
 
-1. 將&#x200B;**[!UICONTROL 熒幕檢視]**&#x200B;元件拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**拖放到這裡（或任何其他元件_）]。
+1. 將&#x200B;**[!UICONTROL 熒幕檢視]**&#x200B;元件拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**&#x200B;拖放到這裡（或任何其他元件_）]。
    ![CJA專案7](assets/cja-projects-7.png){zoomable="yes"}
 您的自由表格現在會顯示所選時段的每日畫面檢視。 不過，您想要針對應用程式中使用的每個不同熒幕，顯示其熒幕檢視次數。
 
-1. 若要顯示&#x200B;**[!UICONTROL DIMENSIONS]**&#x200B;元件清單，請選取![交叉](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg)以從元件邊欄移除![事件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL 量度]**篩選器。
+1. 若要顯示&#x200B;**[!UICONTROL DIMENSIONS]**&#x200B;元件清單，請選取![交叉](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg)以從元件邊欄移除![事件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL 量度]**&#x200B;篩選器。
    ![CJA專案8](assets/cja-projects-8.png){zoomable="yes"}
 
 1. 選取&#x200B;**[!UICONTROL DIMENSIONS]**&#x200B;清單下的&#x200B;**[!UICONTROL 顯示全部]**。
@@ -305,7 +305,7 @@ Customer Journey Analytics使用Workspace專案來建立報表和視覺效果。
 
 1. 將&#x200B;**[!UICONTROL 自由格式表格(2)]**&#x200B;重新命名為`App Interactions`。
 
-1. 將&#x200B;**[!UICONTROL 應用程式互動]**&#x200B;量度拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**拖放到這裡（或任何其他元件_）]。
+1. 將&#x200B;**[!UICONTROL 應用程式互動]**&#x200B;量度拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**&#x200B;拖放到這裡（或任何其他元件_）]。
 
 1. 將&#x200B;**[!UICONTROL 應用程式互動名稱]**&#x200B;維度拖放到&#x200B;**[!UICONTROL Day]**&#x200B;標頭上以取代此維度。
 
@@ -330,14 +330,14 @@ Customer Journey Analytics使用Workspace專案來建立報表和視覺效果。
 
 1. 請確定您選取適當的時段。
 
-1. 選取![自由表格](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) **[!UICONTROL 自由表格]**以建立新的自由表格。
+1. 選取![自由表格](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) **[!UICONTROL 自由表格]**&#x200B;以建立新的自由表格。
    ![CJA專案14](assets/cja-projects-14.png){zoomable="yes"}
 
 1. 將&#x200B;**[!UICONTROL 面板]**&#x200B;重新命名為`Commerce`。
 
 1. 將&#x200B;**[!UICONTROL 自由格式表格]**&#x200B;重新命名為`Commerce Events`。
 
-1. 將&#x200B;**[!UICONTROL 產品檢視]**&#x200B;量度拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**拖放到這裡（或任何其他元件_）]。
+1. 將&#x200B;**[!UICONTROL 產品檢視]**&#x200B;量度拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**&#x200B;拖放到這裡（或任何其他元件_）]。
 
 1. 將&#x200B;**[!UICONTROL 產品新增至清單]**&#x200B;量度拖放至&#x200B;**[!UICONTROL 產品檢視]**&#x200B;欄的右側，以將此欄插入自由格式表格中。 確定插入資料行時顯示&#x200B;**[!UICONTROL +新增]** （藍色）。
    ![CJA專案15](assets/cja-projects-15.png){zoomable="yes"}
@@ -362,7 +362,7 @@ Customer Journey Analytics使用Workspace專案來建立報表和視覺效果。
 
 1. 從&#x200B;**[!UICONTROL 新增接觸點]**&#x200B;下拉式清單中選取&#x200B;[!UICONTROL *產品檢視*]。
    ![CJA專案18](assets/cja-projects-18.png){zoomable="yes"}
-或者，您可以將**[!UICONTROL 產品檢視]**&#x200B;維度拖放到&#x200B;**[!UICONTROL 流失]**&#x200B;視覺效果中的&#x200B;**[!UICONTROL 所有人員]**&#x200B;維度下方。
+或者，您可以將&#x200B;**[!UICONTROL 產品檢視]**&#x200B;維度拖放到&#x200B;**[!UICONTROL 流失]**&#x200B;視覺效果中的&#x200B;**[!UICONTROL 所有人員]**&#x200B;維度下方。
 
 1. 對&#x200B;**[!UICONTROL 產品新增至清單]**&#x200B;和&#x200B;**[!UICONTROL 購買]**&#x200B;維度重複上述步驟。
 
@@ -390,7 +390,7 @@ Customer Journey Analytics使用Workspace專案來建立報表和視覺效果。
 
 1. 將&#x200B;**[!UICONTROL 自由格式表格]**&#x200B;重新命名為`Monthly Overview`。
 
-1. 將&#x200B;**[!UICONTROL 顯示]**&#x200B;量度拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**拖放到這裡（或任何其他元件_）]。
+1. 將&#x200B;**[!UICONTROL 顯示]**&#x200B;量度拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**&#x200B;拖放到這裡（或任何其他元件_）]。
 
 1. 將&#x200B;**[!UICONTROL Month]**&#x200B;維度拖放至&#x200B;**[!UICONTROL Day]**&#x200B;欄以取代維度。
 
@@ -411,7 +411,7 @@ Customer Journey Analytics使用Workspace專案來建立報表和視覺效果。
 
 1. 將&#x200B;**[!UICONTROL 自由格式表格(2)]**&#x200B;重新命名為`People`。
 
-1. 將&#x200B;**[!UICONTROL 人員]**&#x200B;量度拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**拖放到這裡（或任何其他元件_）]。
+1. 將&#x200B;**[!UICONTROL 人員]**&#x200B;量度拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**&#x200B;拖放到這裡（或任何其他元件_）]。
 
 1. 將&#x200B;**[!UICONTROL 活動名稱]**&#x200B;拖放到&#x200B;**[!UICONTROL 天]**&#x200B;欄以取代維度。
 
@@ -443,7 +443,7 @@ Customer Journey Analytics使用Workspace專案來建立報表和視覺效果。
 
 1. 將&#x200B;**[!UICONTROL 自由格式表格]**&#x200B;重新命名為`Store Entries / Exits Across Cities`。
 
-1. 將&#x200B;**[!UICONTROL 位置事件]**&#x200B;量度拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**拖放到這裡（或任何其他元件_）]。 報表現在會顯示應用程式中發生之所有位置事件的每日概觀。 請記得您如何特別設定此維度作為[資料檢視](#create-a-data-view)的一部分。
+1. 將&#x200B;**[!UICONTROL 位置事件]**&#x200B;量度拖放到&#x200B;[!UICONTROL _將&#x200B;**量度**&#x200B;拖放到這裡（或任何其他元件_）]。 報表現在會顯示應用程式中發生之所有位置事件的每日概觀。 請記得您如何特別設定此維度作為[資料檢視](#create-a-data-view)的一部分。
 
 1. 將&#x200B;**[!UICONTROL City]**&#x200B;維度拖放到&#x200B;**[!UICONTROL Day]**&#x200B;欄標題上以取代維度。 報表現在會顯示位置事件的城市。
 

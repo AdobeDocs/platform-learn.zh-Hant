@@ -610,7 +610,7 @@ Edge.sendEvent(event, null)
       * 使用地圖設定體驗事件，
       * 使用[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API傳送體驗事件。
 
-1. 導覽至&#x200B;**[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B;檢視&#x200B;]**>**[!UICONTROL  LoginSheet.kt ]**
+1. 導覽至&#x200B;**[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B;檢視&#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**
 
    1. 將下列醒目提示的程式碼新增至&#x200B;**[!UICONTROL 按鈕]** **[!UICONTROL onClick]**&#x200B;事件：
 
