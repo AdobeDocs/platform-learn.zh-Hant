@@ -8,10 +8,10 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
+source-git-commit: 323702d37425b22b0a5270d410e8b000aa0d5434
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 67%
+source-wordcount: '79'
+ht-degree: 68%
 
 ---
 
@@ -23,15 +23,15 @@ ht-degree: 67%
    + [建立結構描述](create-schema.md)
    + [建立資料串流](create-datastream.md)
    + [設定標籤](configure-tags.md)
-+ 應用程式實作{#app-implementation}
++ 應用程式實施{#app-implementation}
    + [安裝SDK](install-sdks.md)
    + [Assurance](assurance.md)
    + [同意](consent.md)
    + [生命週期資料](lifecycle-data.md)
    + [事件資料](events.md)
    + [網頁檢視](web-views.md)
-   + [身分](identity.md)
-   + [設定檔](profile.md)
+   + [身分識別](identity.md)
+   + [輪廓](profile.md)
    + [地點](places.md)
 + Experience Cloud{#experience-cloud}
    + [Analytics](analytics.md)
@@ -42,5 +42,6 @@ ht-degree: 67%
       + [決策管理](journey-optimizer-offers.md)
    + [Target](target.md)
    + [Customer Journey Analytics](customer-journey-analytics.md)
+   + [測試](test.md)
 + [結論](conclusion.md)
 
