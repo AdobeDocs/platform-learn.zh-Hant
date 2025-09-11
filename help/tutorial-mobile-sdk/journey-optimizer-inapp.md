@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1786'
 ht-degree: 1%
@@ -21,7 +21,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 
 ![架構](assets/architecture-ajo.png){zoomable="yes"}
 
-在使用Journey Optimizer傳送應用程式內訊息之前，您必須確保有適當的設定和整合。 若要瞭解Journey Optimizer中的應用程式內傳訊資料流程，請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/in-app/inapp-configuration)。
+在使用Journey Optimizer傳送應用程式內訊息之前，您必須確保有適當的設定和整合。 若要瞭解Journey Optimizer中的應用程式內傳訊資料流程，請參閱[檔案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/in-app/inapp-configuration)。
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 
 * 成功建立並執行應用程式，且已安裝並設定SDK。
 * 為Adobe Experience Platform設定應用程式。
-* 存取Journey Optimizer以及[推送通知的足夠許可權](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/push/push-config/push-configuration)。 此外，您需要足夠的許可權才能使用下列Journey Optimizer功能。
+* 存取Journey Optimizer以及[推送通知的足夠許可權](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/push/push-config/push-configuration)。 此外，您需要足夠的許可權才能使用下列Journey Optimizer功能。
    * 管理行銷活動。
 * 實體iOS裝置或模擬器以進行測試。
 
@@ -67,11 +67,11 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
    >
    > 名稱必須以字母(A-Z)開頭。 它只能包含英數字元。 您也可以使用底線 `_`、點 `.` 和連字號 `-` 字元。
 
-1. 若要將自訂或核心資料使用標籤指派給組態，您可以選取&#x200B;**[!UICONTROL 管理存取權]**。 [進一步瞭解物件層級存取控制(OLAC)](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/access-control/object-based-access)。
+1. 若要將自訂或核心資料使用標籤指派給組態，您可以選取&#x200B;**[!UICONTROL 管理存取權]**。 [進一步瞭解物件層級存取控制(OLAC)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access)。
 
 1. 選取&#x200B;**應用程式內傳訊**&#x200B;頻道。
 
-1. 選取&#x200B;**[!UICONTROL 行銷動作]**，以使用此設定來關聯同意原則與訊息。 所有與行銷動作相關的同意政策都會被用來尊重客戶的偏好設定。 [進一步瞭解行銷動作](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。 例如：推送目標定位。
+1. 選取&#x200B;**[!UICONTROL 行銷動作]**，以使用此設定來關聯同意原則與訊息。 所有與行銷動作相關的同意政策都會被用來尊重客戶的偏好設定。 [進一步瞭解行銷動作](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。 例如：推送目標定位。
 
 1. 選取您要定義設定的平台。 此設定可讓您為每個平台指定目標應用程式，並確保跨多個平台的一致內容傳遞。
 
@@ -93,7 +93,7 @@ Journey Optimizer可讓您建立行銷活動，以傳送應用程式內訊息給
 
 1. 在資料收集UI中，選取&#x200B;**[!UICONTROL 資料串流]**，然後選取您的資料串流，例如&#x200B;**[!DNL Luma Mobile App]**。
 1. 選取![Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)的&#x200B;**[!UICONTROL 更多]**，並從內容功能表選取![編輯](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 編輯]**。
-1. 在&#x200B;**[!UICONTROL 資料串流]** > ![資料夾](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;畫面中，確定已選取&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)。
+1. 在&#x200B;**[!UICONTROL 資料串流]** > ![資料夾](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;畫面中，確定已選取&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)。
 1. 若要儲存您的資料流組態，請選取&#x200B;**[!UICONTROL 儲存]**。
 
 
@@ -207,7 +207,7 @@ SDK事件中心會發佈和接收來自已註冊擴充功能的事件資料，�
 1. 在Journey Optimizer UI中，從左側邊欄選取&#x200B;**[!UICONTROL 促銷活動]**。
 1. 選取&#x200B;**[!UICONTROL 建立行銷活動]**。
 1. 在&#x200B;**[!UICONTROL 建立您的行銷活動]**&#x200B;對話方塊中，選取![時鐘](/help/assets/icons/Clock.svg) **[!UICONTROL 已排程 — 行銷]**，並選取&#x200B;**[!UICONTROL 確認]**。
-1. 在&#x200B;**[!UICONTROL 行銷活動 — *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**&#x200B;畫面中：
+1. 在&#x200B;**[!UICONTROL 行銷活動 — *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**畫面中：
 
    1. 在&#x200B;**[!UICONTROL 屬性]**&#x200B;索引標籤中：
 
@@ -264,7 +264,7 @@ SDK事件中心會發佈和接收來自已註冊擴充功能的事件資料，�
 
 >[!TAB iOS]
 
-1. 前往Xcode專案導覽器中的&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**。 尋找`func sendTrackAction(action: String, data: [String: Any]?)`函式，並新增下列程式碼，此程式碼會根據引數[`MobileCore.track`和](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction)呼叫`action` `data`函式。
+1. 前往Xcode專案導覽器中的&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**。 尋找`func sendTrackAction(action: String, data: [String: Any]?)`函式，並新增下列程式碼，此程式碼會根據引數[`MobileCore.track`和](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction)呼叫`action``data`函式。
 
 
    ```swift
@@ -283,7 +283,7 @@ SDK事件中心會發佈和接收來自已註冊擴充功能的事件資料，�
 
 >[!TAB Android]
 
-1. 在Android Studio導覽器中，前往&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]**。 尋找`fun sendTrackAction(action: String, data: Map<String, String>?)`函式，並新增下列程式碼，此程式碼會根據引數[`MobileCore.track`和](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction)呼叫`action` `data`函式。
+1. 在Android Studio導覽器中，前往&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]**。 尋找`fun sendTrackAction(action: String, data: Map<String, String>?)`函式，並新增下列程式碼，此程式碼會根據引數[`MobileCore.track`和](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction)呼叫`action``data`函式。
 
 
    ```kotlin
@@ -317,7 +317,7 @@ SDK事件中心會發佈和接收來自已註冊擴充功能的事件資料，�
 
 1. 點選&#x200B;**[!UICONTROL 應用程式內訊息]**。 您會在應用程式中看到應用程式內訊息。
 
-   <img src="assets/ajo-in-app-message.png" width="300" />
+   <img src="assets/ajo-in-app-message.png" width="300">
 
 
 >[!TAB Android]
@@ -328,7 +328,7 @@ SDK事件中心會發佈和接收來自已註冊擴充功能的事件資料，�
 
 1. 點選&#x200B;**[!UICONTROL 應用程式內訊息]**。 您會在應用程式中看到應用程式內訊息。
 
-   <img src="assets/ajo-in-app-message-android.png" width="300" />
+   <img src="assets/ajo-in-app-message-android.png" width="300">
 
 
 >[!ENDTABS]

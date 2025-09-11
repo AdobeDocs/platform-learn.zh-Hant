@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 1%
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 瞭解如何使用Experience Platform Mobile SDK和Journey Optimizer為行動應用程式建立推播通知。
 
-Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在使用Journey Optimizer傳送推播通知之前，您必須確保有適當的設定和整合。 若要瞭解Journey Optimizer中的推播通知資料流程，請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/push/push-config/push-gs)。
+Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在使用Journey Optimizer傳送推播通知之前，您必須確保有適當的設定和整合。 若要瞭解Journey Optimizer中的推播通知資料流程，請參閱[檔案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-gs)。
 
 ![架構](assets/architecture-ajo.png){zoomable="yes"}
 
@@ -30,7 +30,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
 * 成功建立並執行應用程式，且已安裝並設定SDK。
 * 為Adobe Experience Platform設定應用程式。
-* 存取Journey Optimizer和[足夠的許可權](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/channels/push/push-config/push-configuration)。 此外，您需要足夠的許可權才能使用下列Journey Optimizer功能。
+* 存取Journey Optimizer和[足夠的許可權](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-configuration)。 此外，您需要足夠的許可權才能使用下列Journey Optimizer功能。
    * 建立推播認證。
    * 建立推播通道設定。
    * 建立歷程。
@@ -174,12 +174,12 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
    > 名稱必須以字母(A-Z)開頭。 它只能包含英數字元。 您也可以使用底線 `_`、點 `.` 和連字號 `-` 字元。
 
 
-1. 若要將自訂或核心資料使用標籤指派給組態，您可以選取&#x200B;**[!UICONTROL 管理存取權]**。 [進一步瞭解物件層級存取控制(OLAC)](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/access-control/object-based-access)。
+1. 若要將自訂或核心資料使用標籤指派給組態，您可以選取&#x200B;**[!UICONTROL 管理存取權]**。 [進一步瞭解物件層級存取控制(OLAC)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access)。
 
 1. 選取&#x200B;**推播**&#x200B;頻道。
 
 
-1. 選取&#x200B;**[!UICONTROL 行銷動作]**，以使用此設定來關聯同意原則與訊息。 所有與行銷動作相關的同意政策都會被用來尊重客戶的偏好設定。 [進一步瞭解行銷動作](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。
+1. 選取&#x200B;**[!UICONTROL 行銷動作]**，以使用此設定來關聯同意原則與訊息。 所有與行銷動作相關的同意政策都會被用來尊重客戶的偏好設定。 [進一步瞭解行銷動作](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。
 
 1. 選擇您的&#x200B;**[!UICONTROL 平台]**。 您可以針對頻道設定同時設定&#x200B;**[!UICONTROL iOS]**&#x200B;和&#x200B;**[!UICONTROL Android]**。
 
@@ -203,7 +203,7 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
    1. 如果尚未選取，請從&#x200B;**[!UICONTROL 設定檔資料集]**&#x200B;中選取&#x200B;**[!UICONTROL AJO推播設定檔資料集]**。 使用`MobileCore.setPushIdentifier` API呼叫時需要此設定檔資料集（請參閱[註冊裝置權杖以取得推播通知](#register-device-token-for-push-notifications)）。 此選擇也可確保推送通知的唯一識別碼（亦即推送識別碼）會儲存為使用者設定檔的一部分。
 
-   1. 已選取&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/configure)。
+   1. 已選取&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如需詳細資訊，請參閱[Adobe Experience Platform設定](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)。
 
    1. 若要儲存您的資料流組態，請選取&#x200B;**[!UICONTROL 儲存]**。
 
@@ -256,11 +256,11 @@ Journey Optimizer可讓您建立歷程，並傳送訊息給目標對象。 在�
 
 >[!TAB iOS]
 
-<img src="assets/luma-app-push.png" width="300" />
+<img src="assets/luma-app-push.png" width="300">
 
 >[!TAB Android]
 
-<img src="assets/luma-app-push-android.png" width="300" />
+<img src="assets/luma-app-push-android.png" width="300">
 
 >[!ENDTABS]
 
@@ -357,7 +357,7 @@ Android推播通知需要您在應用程式中及傳送推播通知時，定義�
 
 >[!TAB Android]
 
-1. 在Android Studio中，確定[aepsdk-messing-android](https://github.com/adobe/aepsdk-messaging-android)是&#x200B;**[!UICONTROL Android:app]** ChevronDown **&#x200B;**&#x200B;Gradle指令碼![中](/help/assets/icons/ChevronDown.svg)build.gradle.kts （模組&#x200B;**[!UICONTROL ）]**&#x200B;的相依性的一部分。 請參閱[Gradle](install-sdks.md#gradle)。
+1. 在Android Studio中，確定[aepsdk-messing-android](https://github.com/adobe/aepsdk-messaging-android)是&#x200B;**[!UICONTROL Android:app]** ChevronDown **** Gradle指令碼![中](/help/assets/icons/ChevronDown.svg)build.gradle.kts （模組&#x200B;**[!UICONTROL ）]**&#x200B;的相依性的一部分。 請參閱[Gradle](install-sdks.md#gradle)。
 1. 在Android Studio專案導覽器中，導覽至&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]**。
 1. 請確定`com.adobe.marketing.mobile.Messaging`是匯入清單的一部分。
 
@@ -419,7 +419,7 @@ Android推播通知需要您在應用程式中及傳送推播通知時，定義�
 >[!IMPORTANT]
 >
 >**僅適用於iOS**： `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])`會判斷推播通知是使用APNs沙箱或生產伺服器來傳送推播通知。 在模擬器或裝置上測試您的應用程式時，請確定`messaging.useSandbox`設為`true`以便您接收推播通知。 使用Apple的Testflight部署應用程式以進行生產測試時，請確定您將`messaging.useSandbox`設為`false`，否則您的生產應用程式將無法接收推播通知。<br/><br/>
->&#x200B;>Firebase Cloud Messaging (FCM) **不**&#x200B;支援推播通知的沙箱概念。
+>>Firebase Cloud Messaging (FCM) **不**&#x200B;支援推播通知的沙箱概念。
 
 
 ## 建立您自己的推播通知
@@ -443,7 +443,7 @@ Android推播通知需要您在應用程式中及傳送推播通知時，定義�
 
 ### 定義事件
 
-Journey Optimizer中的事件可讓您觸發傳送訊息的歷程，例如推播通知。 如需詳細資訊，請參閱[關於事件](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events)。
+Journey Optimizer中的事件可讓您觸發傳送訊息的歷程，例如推播通知。 如需詳細資訊，請參閱[關於事件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events)。
 
 1. 在Journey Optimizer UI中，從左側邊欄選取&#x200B;**[!UICONTROL 組態]**。
 
@@ -475,7 +475,7 @@ Journey Optimizer中的事件可讓您觸發傳送訊息的歷程，例如推播
 
       1. 在&#x200B;**[!UICONTROL 新增事件識別碼條件]**&#x200B;對話方塊中，將&#x200B;**[!UICONTROL 事件型別(eventType)]**&#x200B;拖放到&#x200B;**[!UICONTROL 將元素拖放到這裡]**。
       1. 在彈出視窗中，捲動到底部並選取&#x200B;**[!UICONTROL application.test]** （這是您先前新增至事件型別清單的事件型別，作為[更新您的結構描述](#update-your-schema)的一部分）。 然後向上捲動到頂端並選取&#x200B;**[!UICONTROL 確定]**。
-      1. 選取&#x200B;**[!UICONTROL 確定]**&#x200B;以儲存條件。
+      1. 選取&#x200B;**[!UICONTROL 確定]**以儲存條件。
          ![編輯事件條件](assets/ajo-edit-condition.png){zoomable="yes"}
 
    1. 從&#x200B;**[!UICONTROL 名稱空間]**&#x200B;清單中選取&#x200B;**[!UICONTROL ECID (ECID)]**。 **[!UICONTROL 設定檔識別碼]**&#x200B;欄位自動填入對應identityMap **[!UICONTROL 之索引鍵ECID的第一個專案識別碼]**。
@@ -519,7 +519,7 @@ Journey Optimizer中的事件可讓您觸發傳送訊息的歷程，例如推播
 
    1. 若要儲存並完成推播通知定義，請選取&#x200B;**[!UICONTROL 確定]**。
 
-1. 您的歷程應如下所示。 選取&#x200B;**[!UICONTROL 發佈]**&#x200B;以發佈並啟用您的歷程。
+1. 您的歷程應如下所示。 選取&#x200B;**[!UICONTROL 發佈]**以發佈並啟用您的歷程。
    ![已完成歷程](assets/ajo-journey-finished.png){zoomable="yes"}
 
 
@@ -682,7 +682,7 @@ Journey Optimizer中的事件可讓您觸發傳送訊息的歷程，例如推播
 
    您會看到推播通知出現在應用程式頂端。
 
-   <img src="assets/ajo-test-push.png" width="300" />
+   <img src="assets/ajo-test-push.png" width="300">
 
 >[!TAB Android]
 
@@ -694,7 +694,7 @@ Journey Optimizer中的事件可讓您觸發傳送訊息的歷程，例如推播
 
    您會看到推播通知出現在應用程式頂端。
 
-   <img src="assets/ajo-test-push-android.png" width="300" />
+   <img src="assets/ajo-test-push-android.png" width="300">
 
 >[!ENDTABS]
 

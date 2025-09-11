@@ -3,7 +3,7 @@ title: 透過Platform Mobile SDK使用地標
 description: 瞭解如何在行動應用程式中使用Places地理位置服務。
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 1%
@@ -93,7 +93,7 @@ Adobe Experience Platform Data Collection Places Service是一項地理位置服
 1. 從頂端列選取&#x200B;**[!UICONTROL 瀏覽]**。
 1. 選取要開啟的結構描述。
 1. 在結構描述編輯器中，選取&#x200B;**[!UICONTROL 消費者體驗事件]**。
-1. 您看到&#x200B;**[!UICONTROL placeContext]**&#x200B;物件，其中包含要擷取POI互動與地理位置資料的物件和欄位。
+1. 您看到&#x200B;**[!UICONTROL placeContext]**物件，其中包含要擷取POI互動與地理位置資料的物件和欄位。
    ![結構描述位置](assets/schema-places-context.png){zoomable="yes"}。
 
 
@@ -325,7 +325,7 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 >[!TAB Android]
 
-1. 在Android Studio中，確定[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android)是&#x200B;**[!UICONTROL Android:app]** ChevronDown **&#x200B;**&#x200B;Gradle指令碼![中](/help/assets/icons/ChevronDown.svg)build.gradle.kts （模組&#x200B;**[!UICONTROL ）]**&#x200B;的相依性的一部分。 請參閱[Gradle](install-sdks.md#gradle)。
+1. 在Android Studio中，確定[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android)是&#x200B;**[!UICONTROL Android:app]** ChevronDown **** Gradle指令碼![中](/help/assets/icons/ChevronDown.svg)build.gradle.kts （模組&#x200B;**[!UICONTROL ）]**&#x200B;的相依性的一部分。 請參閱[Gradle](install-sdks.md#gradle)。
 1. 在Android Studio專案導覽器中，導覽至&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]**。
 1. 請確定`com.adobe.marketing.mobile.Messaging`是匯入清單的一部分。
 
@@ -400,15 +400,15 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 1. 四處移動（拖曳）地圖，確保藍色中間圓圈位於您的其中一個POI上方，例如倫敦。
 
-1. 點選 <img src="assets/geobutton.png" width="20" />，直到您看到類別和名稱出現在標籤中帶有pin的紅色位置為止。
+1. 點選 <img src="assets/geobutton.png" width="20">，直到您看到類別和名稱出現在標籤中帶有pin的紅色位置為止。
 
 1. 點選POI的標籤，開啟&#x200B;**[!UICONTROL 附近的POI]**&#x200B;工作表。
 
-   <img src="assets/appgeolocation.png" width="300" />
+   <img src="assets/appgeolocation.png" width="300">
 
 1. 按下&#x200B;**[!UICONTROL 登入]**&#x200B;或&#x200B;**[!UICONTROL 退出]**&#x200B;按鈕，以模擬應用程式中的地理柵欄登入與地理柵欄退出事件。
 
-   <img src="assets/appentryexit.png" width="300" />
+   <img src="assets/appentryexit.png" width="300">
 
 1. 您應該會在Assurance UI中看到事件。 在Events和Places Service事件中。
 
@@ -420,12 +420,12 @@ Tags的Places擴充功能提供監視地理位置事件的功能，可讓您根�
 
 1. 在出現的紅色圓圈內點選某處。
 
-   <img src="assets/appgeolocation-android.png" width="300" />
+   <img src="assets/appgeolocation-android.png" width="300">
 
 
 1. 按下&#x200B;**[!UICONTROL 登入]**&#x200B;或&#x200B;**[!UICONTROL 退出]**&#x200B;按鈕，以模擬應用程式中的地理柵欄登入與地理柵欄退出事件。
 
-   <img src="assets/appentryexit-android.png" width="300" />
+   <img src="assets/appentryexit-android.png" width="300">
 
 1. 您應該會在Assurance UI中看到事件。
 

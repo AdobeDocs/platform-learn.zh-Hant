@@ -3,7 +3,7 @@ title: 使用Platform Mobile SDK收集設定檔資料
 description: 瞭解如何在行動應用程式中收集設定檔資料。
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 2%
@@ -123,7 +123,7 @@ ht-degree: 2%
    此程式碼：
 
    1. 以[`UserProfile.getUserAttributes`屬性名稱呼叫](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API做為`attributeNames`陣列中的單一專案。
-   1. 然後檢查`isPaidUser`屬性的值，當`yes`時，在 右上角工具列中的<img src="assets/paiduser.png" width="20" />圖示。
+   1. 然後檢查`isPaidUser`屬性的值，當`yes`時，在 右上角工具列中的<img src="assets/paiduser.png" width="20">圖示。
 
 >[!TAB Android]
 
@@ -139,7 +139,7 @@ ht-degree: 2%
    此程式碼：
 
    1. 以[`UserProfile.getUserAttributes`屬性名稱呼叫](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API做為`attributeNames`陣列中的單一專案。
-   1. 然後檢查`isPaidUser`屬性的值。 當`yes`時，程式碼會以上的徽章取代人員圖示 右上角工具列中的<img src="assets/paiduser.png" width="20" />圖示。
+   1. 然後檢查`isPaidUser`屬性的值。 當`yes`時，程式碼會以上的徽章取代人員圖示 右上角工具列中的<img src="assets/paiduser.png" width="20">圖示。
 
 >[!ENDTABS]
 
@@ -168,7 +168,7 @@ ht-degree: 2%
 1. 在索引標籤列中選取&#x200B;**[!DNL Products]**。
 1. 選取一個產品。
 1. 選擇 <img src="assets/saveforlater.png" width="15" />。
-1. 選擇 <img src="assets/addtocart.png" width="20" />。
+1. 選擇 <img src="assets/addtocart.png" width="20">。
 1. 選擇 <img src="assets/purchase.png" width="15" />。
 
    <img src="./assets/mobile-app-events-3.png" width="300">
@@ -193,8 +193,8 @@ ht-degree: 2%
 
 1. 在索引標籤列中選取&#x200B;**[!DNL Products]**。
 1. 選取一個產品。
-1. 選擇<img src="assets/heart.png" width="25" />。
-1. 選擇 <img src="assets/addtocart.png" width="20" />。
+1. 選擇<img src="assets/heart.png" width="25">。
+1. 選擇 <img src="assets/addtocart.png" width="20">。
 1. 選擇 <img src="assets/purchase.png" width="15" />。
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
