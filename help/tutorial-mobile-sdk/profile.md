@@ -3,9 +3,9 @@ title: 使用Platform Mobile SDK收集設定檔資料
 description: 瞭解如何在行動應用程式中收集設定檔資料。
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '787'
 ht-degree: 1%
 
 ---
@@ -160,7 +160,7 @@ ht-degree: 1%
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. 若要插入隨機電子郵件和客戶ID，請選取>按鈕。
+1. 若要插入隨機電子郵件和客戶ID，請選取&#x200B;**[!UICONTROL A |]**&#x200B;按鈕。
 1. 選取&#x200B;**[!UICONTROL 登入]**。
 
    <img src="./assets/mobile-app-events-2.png" width="300">

@@ -4,7 +4,7 @@ description: 瞭解如何在行動應用程式中實施Assurance擴充功能。
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 4%
@@ -35,7 +35,7 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 
 ## 確認存取
 
-確認您的組織有權存取Assurance。 您身為使用者，應新增至Adobe Experience Platform的設定檔。 如需詳細資訊，請參閱Assurance指南中的[使用者存取權](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/assurance/user-access)。
+確認您的組織有權存取Assurance。 您身為使用者，應新增至Adobe Experience Platform的設定檔。 如需詳細資訊，請參閱Assurance指南中的[使用者存取權](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access)。
 
 ## 實作
 
@@ -105,7 +105,7 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 
 請確定您使用&#x200B;_唯一_&#x200B;組合識別碼並取代`com.adobe.luma.tutorial.swiftui`組合識別碼，因為每個組合識別碼必須是唯一的。 一般而言，您會使用反向DNS格式作為套件組合ID字串，例如`com.organization.brand.uniqueidentifier`。 例如，此教學課程的完成版本使用`com.adobe.luma.tutorial.swiftui`。
 
-![Xcode簽署功能](assets/xcode-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
+![Xcode簽署功能](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 >[!TAB Android]
 
