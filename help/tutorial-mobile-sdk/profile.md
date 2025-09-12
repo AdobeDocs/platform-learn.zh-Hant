@@ -3,10 +3,10 @@ title: 使用Platform Mobile SDK收集設定檔資料
 description: 瞭解如何在行動應用程式中收集設定檔資料。
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 2%
+source-wordcount: '786'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 2%
 
    1. 使用`profileMap`字典做為`attributeDict`[`UserProfile.updateUserAttributes` API呼叫之](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes)引數的值。
 
-1. 導覽至Xcode專案導覽器中的&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]**，並尋找對`updateUserAttributes`的呼叫（在購買的程式碼內） <img src="assets/purchase.png" width="15" />按鈕)。 新增下列程式碼：
+1. 導覽至Xcode專案導覽器中的&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]**，並尋找對`updateUserAttributes`的呼叫（在購買代碼![信用卡](/help/assets/icons/CreditCard.svg)按鈕中）。 新增下列程式碼：
 
    ```swift
    // Update attributes
@@ -87,7 +87,7 @@ ht-degree: 2%
 
    1. 使用`profileMap`對應作為`attributeDict`[`UserProfile.updateUserAttributes` API呼叫之](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes)引數的值。
 
-1. 導覽至&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL 檢視]** > **[!UICONTROL ProductView.kt]**，並在購買程式碼中找到`updateUserAttributes`的呼叫 <img src="assets/purchase.png" width="15" />按鈕)。 新增下列程式碼：
+1. 導覽至&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL 檢視]** > **[!UICONTROL ProductView.kt]**，並尋找對`updateUserAttributes`的呼叫（在購買![CreditCard](/help/assets/icons/CreditCard.svg)按鈕的代碼內）。 新增下列程式碼：
 
    ```kotlin
    // Update attributes
@@ -123,7 +123,7 @@ ht-degree: 2%
    此程式碼：
 
    1. 以[`UserProfile.getUserAttributes`屬性名稱呼叫](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API做為`attributeNames`陣列中的單一專案。
-   1. 然後檢查`isPaidUser`屬性的值，當`yes`時，在 右上角工具列中的<img src="assets/paiduser.png" width="20">圖示。
+   1. 接著檢查`isPaidUser`屬性的值，當`yes`時，將徽章放置在右上角工具列的![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg)圖示上。
 
 >[!TAB Android]
 
@@ -139,7 +139,7 @@ ht-degree: 2%
    此程式碼：
 
    1. 以[`UserProfile.getUserAttributes`屬性名稱呼叫](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)`isPaidUser` API做為`attributeNames`陣列中的單一專案。
-   1. 然後檢查`isPaidUser`屬性的值。 當`yes`時，程式碼會以上的徽章取代人員圖示 右上角工具列中的<img src="assets/paiduser.png" width="20">圖示。
+   1. 然後檢查`isPaidUser`屬性的值。 `yes`時，程式碼會在右上方的工具列中，以徽章圖示取代人員圖示。
 
 >[!ENDTABS]
 
@@ -156,24 +156,24 @@ ht-degree: 2%
 
 1. 在索引標籤列中選取&#x200B;**[!UICONTROL 首頁]**。
 1. 將Assurance圖示向左移動。
-1. 若要開啟「登入」工作表，請選取 <img src="assets/login.png" width="15" />按鈕。
+1. 若要開啟登入工作表，請選取![使用者](/help/assets/icons/User.svg)按鈕。
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. 若要插入隨機電子郵件和客戶ID，請選取 <img src="assets/insert.png" width="15" />按鈕。
+1. 若要插入隨機電子郵件和客戶ID，請選取>按鈕。
 1. 選取&#x200B;**[!UICONTROL 登入]**。
 
    <img src="./assets/mobile-app-events-2.png" width="300">
 
 1. 在索引標籤列中選取&#x200B;**[!DNL Products]**。
 1. 選取一個產品。
-1. 選擇 <img src="assets/saveforlater.png" width="15" />。
-1. 選擇 <img src="assets/addtocart.png" width="20">。
-1. 選擇 <img src="assets/purchase.png" width="15" />。
+1. 選取![心](/help/assets/icons/Heart.svg)。
+1. 選取![購物車](/help/assets/icons/ShoppingCart.svg)。
+1. 選取![信用卡](/help/assets/icons/CreditCard.svg)。
 
    <img src="./assets/mobile-app-events-3.png" width="300">
 
-1. 返回&#x200B;**[!UICONTROL 首頁]**&#x200B;畫面。 您應該會看到徽章已新增 <img src="assets/person-badge-icon.png" width="15" />。
+1. 返回&#x200B;**[!UICONTROL 首頁]**&#x200B;畫面。 您應該會看到已新增徽章![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg)。
 
    <img src="./assets/personbadges.png" width="300">
 
@@ -182,20 +182,20 @@ ht-degree: 2%
 
 1. 在索引標籤列中選取&#x200B;**[!UICONTROL 首頁]**。
 1. 將Assurance圖示向左移動。
-1. 若要開啟「登入」工作表，請選取 <img src="assets/login.png" width="15" />按鈕。
+1. 若要開啟登入工作表，請選取![使用者](/help/assets/icons/User.svg)按鈕。
 
    <img src="./assets/mobile-app-events-1-android.png" width="300">
 
-1. 若要插入隨機電子郵件和客戶ID，請選取 <img src="assets/insert.png" width="15" />按鈕。
+1. 若要插入隨機電子郵件和客戶ID，請選取「**[!UICONTROL 產生隨機電子郵件]**」。
 1. 選取&#x200B;**[!UICONTROL 登入]**。
 
    <img src="./assets/mobile-app-events-2-android.png" width="300">
 
 1. 在索引標籤列中選取&#x200B;**[!DNL Products]**。
 1. 選取一個產品。
-1. 選擇<img src="assets/heart.png" width="25">。
-1. 選擇 <img src="assets/addtocart.png" width="20">。
-1. 選擇 <img src="assets/purchase.png" width="15" />。
+1. 選取![縮圖](/help/assets/icons/ThumbUp.svg)
+1. 選取![購物車](/help/assets/icons/ShoppingCart.svg)。
+1. 選取![信用卡](/help/assets/icons/CreditCard.svg)。
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
 

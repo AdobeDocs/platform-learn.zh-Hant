@@ -6,10 +6,10 @@ feature-set: Target
 feature: A/B Tests
 hide: true
 hidefromtoc: true
-source-git-commit: 323702d37425b22b0a5270d410e8b000aa0d5434
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '293'
-ht-degree: 5%
+source-wordcount: '403'
+ht-degree: 2%
 
 ---
 
@@ -31,18 +31,6 @@ ht-degree: 5%
 1. 選擇 <img src="assets/addtocart.png" width="20">。
 1. 選擇 <img src="assets/purchase.png" width="15">。
 
->[!BEGINTABS]
-
->[!TAB iOS]
-
-<img src="./assets/mobile-app-events-3.png" width="300">
-
->[!TAB Android]
-
-<img src="./assets/mobile-app-events-3-android.png" width="278">
-
->[!ENDTABS]
-
 
 ## HTML /帶引號的寬度
 
@@ -55,18 +43,6 @@ ht-degree: 5%
 1. 選擇 <img src="assets/saveforlater.png" width="15"> (iOS)或 <img src="assets/heart.png" width="25"> (Android)。
 1. 選擇 <img src="assets/addtocart.png" width="20">。
 1. 選擇 <img src="assets/purchase.png" width="15">。
-
->[!BEGINTABS]
-
->[!TAB iOS]
-
-<img src="./assets/mobile-app-events-3.png" width="300">
-
->[!TAB Android]
-
-<img src="./assets/mobile-app-events-3-android.png" width="278">
-
->[!ENDTABS]
 
 
 
@@ -82,19 +58,6 @@ ht-degree: 5%
 1. 選取![加入購物車](assets/addtocart.png){width=20}。
 1. 選取![購買](assets/purchase.png){width=15}。
 
->[!BEGINTABS]
-
->[!TAB iOS]
-
-![Apple](assets/mobile-app-events-3.png){width=300}
-
->[!TAB Android]
-
-![Android](assets/mobile-app-events-3-android.png){width=278}
-
->[!ENDTABS]
-
-
 
 ## Markdown /帶引號的寬度
 
@@ -108,14 +71,28 @@ ht-degree: 5%
 1. 選取![加入購物車](assets/addtocart.png){width="20"}。
 1. 選取![購買](assets/purchase.png){width="15"}。
 
->[!BEGINTABS]
 
->[!TAB iOS]
+## HTML /無寬度
 
-![Apple](assets/mobile-app-events-3.png){width="300"}
+檢閱[設定指示](assurance.md#connecting-to-a-session)區段，將您的模擬器或裝置與Assurance連線。
 
->[!TAB Android]
+1. 將Assurance圖示向左移動。
+1. 在索引標籤列中選取「**[!UICONTROL 首頁]**」，並確認您在「首頁」畫面中看到&#x200B;**[!UICONTROL ECID]**、**[!UICONTROL 電子郵件]**&#x200B;和&#x200B;**[!UICONTROL CRM ID]**。
+1. 在索引標籤列中選取&#x200B;**[!DNL Products]**。
+1. 選取產品。
+1. 選擇 <img src="assets/saveforlater.png"> (iOS)或 <img src="assets/heart.png"> (Android)。
+1. 選擇 <img src="assets/addtocart.png">。
+1. 選擇 <img src="assets/purchase.png">。
 
-![Android](assets/mobile-app-events-3-android.png){&quot;width=278&quot;}
 
->[!ENDTABS]
+## Markdown /無寬度
+
+檢閱[設定指示](assurance.md#connecting-to-a-session)區段，將您的模擬器或裝置與Assurance連線。
+
+1. 將Assurance圖示向左移動。
+1. 在索引標籤列中選取「**[!UICONTROL 首頁]**」，並確認您在「首頁」畫面中看到&#x200B;**[!UICONTROL ECID]**、**[!UICONTROL 電子郵件]**&#x200B;和&#x200B;**[!UICONTROL CRM ID]**。
+1. 在索引標籤列中選取&#x200B;**[!DNL Products]**。
+1. 選取產品。
+1. 選取![儲存以供稍後使用](assets/saveforlater.png) (iOS)或![儲存以供稍後使用](assets/heart.png){width=25} (Android)。
+1. 選取![加入購物車](assets/addtocart.png)。
+1. 選取![購買](assets/purchase.png)。

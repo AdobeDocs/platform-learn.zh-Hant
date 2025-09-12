@@ -4,9 +4,9 @@ description: 瞭解如何在行動應用程式中收集身分資料。
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '962'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Adobe Experience Platform Identity Service可協助您更清楚瞭解客戶及其行為。 此服務可跨裝置和系統橋接身分，並讓您即時提供具影響力的個人數位體驗。 身分欄位和名稱空間是將不同資料來源連線在一起，以建立360度即時客戶個人檔案的膠水。
 
-在檔案中進一步瞭解[身分識別擴充功能](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/)和[身分識別服務](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)。
+在檔案中進一步瞭解[身分識別擴充功能](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/)和[身分識別服務](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)。
 
 ## 先決條件
 
@@ -35,7 +35,7 @@ Adobe Experience Platform Identity Service可協助您更清楚瞭解客戶及�
 
 ## 設定自訂身分名稱空間
 
-身分識別名稱空間是[身分識別服務](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)的元件，做為身分識別相關內容的指標。 例如，他們將`name@email.com`的值做為電子郵件地址，或將`443522`做為數值CRM ID。
+身分識別名稱空間是[身分識別服務](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)的元件，做為身分識別相關內容的指標。 例如，他們將`name@email.com`的值做為電子郵件地址，或將`443522`做為數值CRM ID。
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Adobe Experience Platform Identity Service可協助您更清楚瞭解客戶及�
 
 ## 移除身分
 
-您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API從儲存的使用者端身分對應移除身分識別。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端身分識別圖形中移除識別碼。 請參閱[檢視身分圖](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/identities/view-identity-graphs)，以取得身分圖的詳細資訊。
+您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API從儲存的使用者端身分對應移除身分識別。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端身分識別圖形中移除識別碼。 請參閱[檢視身分圖](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs)，以取得身分圖的詳細資訊。
 
 
 >[!BEGINTABS]
@@ -233,7 +233,7 @@ MobileSDK.shared.removeIdentities(
 1. 檢閱[設定指示](assurance.md#connecting-to-a-session)區段，將您的模擬器或裝置連線到Assurance。
 1. 在Luma應用程式中
    1. 選取「**[!UICONTROL 首頁]**」標籤，並將Assurance圖示向左移動。
-   1. 選取 從右上角<img src="assets/login.png" width="15" />圖示。
+   1. 從右上角選取![使用者](/help/assets/icons/User.svg)圖示。
 
 >[!BEGINTABS]
 
@@ -248,7 +248,7 @@ MobileSDK.shared.removeIdentities(
 >[!ENDTABS]
 
 1. 提供電子郵件地址和CRM ID，或
-1. 選擇 <img src="assets/insert.png" width="15" /> (iOS)或&#x200B;**[!UICONTROL 產生隨機電子郵件]** (Android)以隨機產生&#x200B;**[!UICONTROL 電子郵件]**&#x200B;和&#x200B;**[!UICONTROL CRM ID]**。
+1. 選取&#x200B;**[!UICONTROL A |]** (iOS)或&#x200B;**[!UICONTROL 產生隨機電子郵件]** (Android)以隨機產生&#x200B;**[!UICONTROL 電子郵件]**&#x200B;和&#x200B;**[!UICONTROL CRM ID]**。
 1. 選取&#x200B;**[!UICONTROL 登入]**。
 
 >[!BEGINTABS]
@@ -267,7 +267,7 @@ MobileSDK.shared.removeIdentities(
 返回Assurance：
 
 1. 從&#x200B;**[!UICONTROL com.adobe.griffon.mobile]**&#x200B;廠商檢查&#x200B;**[!UICONTROL Edge身分更新身分]**&#x200B;事件的Assurance Web介面。
-1. 選取事件並檢閱&#x200B;**[!UICONTROL ACPExtensionEventData]**&#x200B;物件中的資料。 您應該會看到已更新的身分識別。
+1. 選取事件並檢閱&#x200B;**[!UICONTROL ACPExtensionEventData]**物件中的資料。 您應該會看到已更新的身分識別。
    ![驗證身分更新](assets/identity-validate-assurance.png){zoomable="yes"}
 
 ## 使用身分圖表進行驗證
