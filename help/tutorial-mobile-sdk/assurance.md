@@ -35,7 +35,7 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 
 ## 確認存取
 
-確認您的組織有權存取Assurance。 您身為使用者，應新增至Adobe Experience Platform的設定檔。 如需詳細資訊，請參閱Assurance指南中的[使用者存取權](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access)。
+確認您的組織有權存取Assurance。 您身為使用者，應新增至Adobe Experience Platform的設定檔。 如需詳細資訊，請參閱Assurance指南中的[使用者存取權](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/assurance/user-access)。
 
 ## 實作
 
