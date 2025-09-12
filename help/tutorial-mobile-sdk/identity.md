@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Adobe Experience Platform Identity Service可協助您更清楚瞭解客戶及其行為。 此服務可跨裝置和系統橋接身分，並讓您即時提供具影響力的個人數位體驗。 身分欄位和名稱空間是將不同資料來源連線在一起，以建立360度即時客戶個人檔案的膠水。
 
-在檔案中進一步瞭解[身分識別擴充功能](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/)和[身分識別服務](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)。
+在檔案中進一步瞭解[身分識別擴充功能](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/)和[身分識別服務](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)。
 
 ## 先決條件
 
@@ -35,7 +35,7 @@ Adobe Experience Platform Identity Service可協助您更清楚瞭解客戶及�
 
 ## 設定自訂身分名稱空間
 
-身分識別名稱空間是[身分識別服務](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)的元件，做為身分識別相關內容的指標。 例如，他們將`name@email.com`的值做為電子郵件地址，或將`443522`做為數值CRM ID。
+身分識別名稱空間是[身分識別服務](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home)的元件，做為身分識別相關內容的指標。 例如，他們將`name@email.com`的值做為電子郵件地址，或將`443522`做為數值CRM ID。
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Adobe Experience Platform Identity Service可協助您更清楚瞭解客戶及�
 
 ## 移除身分
 
-您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API從儲存的使用者端身分對應移除身分識別。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端身分識別圖形中移除識別碼。 請參閱[檢視身分圖](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs)，以取得身分圖的詳細資訊。
+您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API從儲存的使用者端身分對應移除身分識別。 身分擴充功能會停止將識別碼傳送至Edge Network。 使用此API不會從伺服器端身分識別圖形中移除識別碼。 請參閱[檢視身分圖](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/identities/view-identity-graphs)，以取得身分圖的詳細資訊。
 
 
 >[!BEGINTABS]
