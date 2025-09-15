@@ -4,9 +4,9 @@ description: 瞭解如何實作Adobe Experience Cloud行動應用程式。 本�
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 9129d7ab2ac33626240b0375e6424c0f6943290f
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1018'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Experience Platform Mobile SDK是使用者端的SDK，可讓Adobe Experience Clo
 ![架構](assets/architecture.png){zoomable="yes"}
 
 
-本教學課程會引導您在名為Luma的範例應用程式中實施Platform Mobile SDK。 [Luma應用程式](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App)具備的功能可讓您建置逼真的實施。 完成本教學課程後，您應已準備好開始透過Experience Platform Mobile SDK在您自己的行動應用程式中實施所有行銷解決方案。
+本教學課程會引導您在名為Luma的範例應用程式中實施Platform Mobile SDK。 Luma應用程式具備的功能可讓您建置逼真的實施。 完成本教學課程後，您應已準備好開始透過Experience Platform Mobile SDK在您自己的行動應用程式中實施所有行銷解決方案。
 
 這些課程是專為下列用途而設計：
 
@@ -64,7 +64,7 @@ Experience Platform Mobile SDK是使用者端的SDK，可讓Adobe Experience Clo
    * **[!UICONTROL 屬性權利]** — 許可權專案： **[!UICONTROL 開發]**、**[!UICONTROL 核准]**、**[!UICONTROL 發佈]**、**[!UICONTROL 管理擴充功能]**&#x200B;和&#x200B;**[!UICONTROL 管理環境]**。
    * **[!UICONTROL 公司權利]** — 用於&#x200B;**[!UICONTROL 管理屬性]**&#x200B;的許可權專案
 
-     如需有關標籤許可權的詳細資訊，請參閱產品檔案中的[標籤](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/admin/user-permissions){target="_blank"}的使用者許可權。
+     如需有關標籤許可權的詳細資訊，請參閱產品檔案中的[標籤](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"}的使用者許可權。
 * 在Experience Platform中，您必須擁有：
    * **[!UICONTROL 資料模型]** — 管理和檢視結構描述的許可權專案。
    * **[!UICONTROL Identity Management]** — 管理和檢視身分識別名稱空間的許可權專案。
@@ -74,7 +74,7 @@ Experience Platform Mobile SDK是使用者端的SDK，可讓Adobe Experience Clo
       * **[!UICONTROL 資料管理]** — 管理和檢視資料集的許可權專案。
       * 您可以在本教學課程中使用的開發&#x200B;**沙箱**。
 
-   * 若要參加Journey Optimizer課程，您需要設定&#x200B;**推播通知服務**&#x200B;的許可權，以及建立&#x200B;**應用程式介面**、**歷程**、**訊息**&#x200B;和&#x200B;**訊息預設集**&#x200B;的許可權。 此外，針對決定管理，您需要適當的許可權來&#x200B;**管理優惠**&#x200B;與&#x200B;**決定**，如[許可權層級](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/access-control/high-low-permissions)所述。
+   * 若要參加Journey Optimizer課程，您需要設定&#x200B;**推播通知服務**&#x200B;的許可權，以及建立&#x200B;**應用程式介面**、**歷程**、**訊息**&#x200B;和&#x200B;**訊息預設集**&#x200B;的許可權。 此外，針對決定管理，您需要適當的許可權來&#x200B;**管理優惠**&#x200B;與&#x200B;**決定**，如[許可權層級](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions)所述。
 
 * 針對Adobe Analytics，您必須知道您可以使用哪些&#x200B;**報表套裝**&#x200B;來完成本教學課程。
 
@@ -119,9 +119,8 @@ Experience Platform Mobile SDK是使用者端的SDK，可讓Adobe Experience Clo
 
 您使用Android作為平台，[!DNL Kotlin]+[!DNL Java]作為程式設計語言，[!DNL JetPack Compose]作為UI架構，[!DNL Android Studio]作為整合式開發環境(IDE)。 不過，許多所說明的實作概念與其他開發平台類似。 許多人已經成功完成本教學課程，幾乎沒有或完全沒有之前的Android / Kotlin+Java / JetPack撰寫體驗。 您不需要成為專家就能完成課程，但如果您熟悉且瞭解程式碼，將能從中學到更多。
 
-您可以從Google Play下載應用程式的最終產品化測試版本。
+您也可以從Google Play[加入應用程式產品化版本](https://play.google.com/apps/internaltest/4700642199234438150)的測試。
 
-[![下載](assets/download-app-android.svg)](https://play.google.com/store/apps/details?id=com.adobe.luma.tutorial.android)
 
 >[!ENDTABS]
 
