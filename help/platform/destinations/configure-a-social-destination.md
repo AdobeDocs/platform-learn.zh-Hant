@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 設定社交目的地
 
-瞭解如何連結並啟用對象至社交目的地。 這部影片會示範如何使用Adobe Real-Time Customer Data Platform中的「LinkedIn相符對象」目的地的工作流程。  如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/overview)。
+瞭解如何連結並啟用對象至社交目的地。 這部影片會示範如何使用Adobe Real-Time Customer Data Platform中的「LinkedIn相符對象」目的地的工作流程。  如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/social/overview)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
 
