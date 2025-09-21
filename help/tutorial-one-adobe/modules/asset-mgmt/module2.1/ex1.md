@@ -86,8 +86,8 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcsact2.png)
 
-大約10分鐘後，將完成&#x200B;**Content Hub**的啟用。
-接下來，檢視**Dynamic Media**&#x200B;行，並選取&#x200B;**按一下以啟用**。
+大約10分鐘後，將完成&#x200B;**Content Hub**&#x200B;的啟用。
+接下來，檢視&#x200B;**Dynamic Media**&#x200B;行，並選取&#x200B;**按一下以啟用**。
 
 ![AEMCS](./images/aemcsact3.png)
 
