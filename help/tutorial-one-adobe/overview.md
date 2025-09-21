@@ -3,9 +3,9 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1246'
 ht-degree: 2%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 2%
 
 在本單元中，您將使用Adobe IO和App Builder建立自訂應用程式，以擴充GenStudio for Performance Marketing的功能。
 
-### 3.資產管理
+### 3.資產管理與網站
 
 [1.1 Adobe Experience Manager Cloud Service與Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
@@ -103,6 +103,10 @@ ht-degree: 2%
 [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 在本單元中，您將探索AEM Assets。
+
+[1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
+
+在本單元中，您將建立Adobe Commerce as a Cloud Service執行個體。 您將把Commerce執行個體連線到您的AEM Sites CS店面和AEM Assets CS環境。
 
 ### 4.傳遞與啟用
 

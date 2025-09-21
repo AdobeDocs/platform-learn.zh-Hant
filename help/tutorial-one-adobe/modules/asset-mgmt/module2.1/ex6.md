@@ -4,14 +4,14 @@ description: AEM CS - MarTech外掛程式
 kt: 5342
 doc-type: tutorial
 exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
 
 ---
 
-# 1.1.6 AEM Edge Delivery Services MarTech增效模組
+# 1.1.5 AEM Edge Delivery Services MarTech增效模組
 
 AEM MarTech外掛程式可協助您為AEM專案快速設定完整的MarTech棧疊。
 
@@ -19,7 +19,7 @@ AEM MarTech外掛程式可協助您為AEM專案快速設定完整的MarTech棧�
 >
 >此外掛程式目前可透過共同創新專案，與AEM Engineering共同供客戶使用。 您可以在[https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech)找到更多資訊。
 
-## 1.1.6.1將外掛程式新增至您的存放庫
+## 1.1.5.1將外掛程式新增至您的存放庫
 
 導覽至您用於&#x200B;**citisignal** GitHub存放庫的資料夾。 在資料夾名稱上按一下滑鼠右鍵，然後選取&#x200B;**資料夾**&#x200B;的新終端機。
 
@@ -39,7 +39,7 @@ git subtree add --squash --prefix plugins/martech https://github.com/adobe-rnd/a
 
 ![AEMCS](./images/mtplugin4.png){zoomable="yes"}
 
-## 1.1.6.2 head.html
+## 1.1.5.2 head.html
 
 在Visual Studio Code中，開啟檔案&#x200B;**head.html**。 複製下列程式碼並將其貼到檔案&#x200B;**head.html**&#x200B;中。
 
@@ -54,7 +54,7 @@ git subtree add --squash --prefix plugins/martech https://github.com/adobe-rnd/a
 
 ![AEMCS](./images/mtplugin5.png){zoomable="yes"}
 
-## 1.1.6.3 scripts.js
+## 1.1.5.3 scripts.js
 
 在Visual Studio Code中，移至資料夾&#x200B;**scripts**&#x200B;並開啟檔案&#x200B;**scripts.js**。 複製下列程式碼，並將其貼到檔案&#x200B;**scripts.js**&#x200B;中現有的匯入指令碼下。
 
@@ -88,25 +88,25 @@ const AUDIENCES = {
   const isConsentGiven = true;
   const martechLoadedPromise = initMartech(
     // The WebSDK config
-    // Documentation: https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
     {
       datastreamId: "XXX",
       orgId: "XXX",
       defaultConsent: 'in',
       onBeforeEventSend: (payload) => {
         // set custom Target params 
-        // see doc at https://experienceleague.adobe.com/zh-hant/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
         payload.data.__adobe.target ||= {};
 
         // set custom Analytics params
-        // see doc at https://experienceleague.adobe.com/zh-hant/docs/analytics/implementation/aep-edge/data-var-mapping
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
         payload.data.__adobe.analytics ||= {};
       },
 
       // set custom datastream overrides
       // see doc at:
-      // - https://experienceleague.adobe.com/zh-hant/docs/experience-platform/web-sdk/commands/datastream-overrides
-      // - https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
       edgeConfigOverrides: {
         // Override the datastream id
         // datastreamId: '...'
@@ -151,13 +151,13 @@ const AUDIENCES = {
 
 ### datastreamId
 
-前往[https://platform.adobe.com/](https://platform.adobe.com/)，然後在左側功能表中前往&#x200B;**資料串流**。 確定您是在正確的沙箱，應該是`--aepSandboxName--`。 搜尋在本教學課程的[快速入門]區段中建立的資料流，其名稱應該是`--aepUserLdap-- - One Adobe Datastream`。 按一下&#x200B;**複製**&#x200B;圖示以複製&#x200B;**資料串流ID**，並貼到Visual Studio Code檔案&#x200B;**scripts.js**&#x200B;中，方法是取代`datastreamId:`旁的預留位置值`XXX`。
+前往[https://platform.adobe.com/](https://platform.adobe.com/)，然後在左側功能表中前往&#x200B;**資料串流**。 確定您是在正確的沙箱，應該是`--aepSandboxName--`。 搜尋在本教學課程的[快速入門]區段中建立的資料流，其名稱應該是`--aepUserLdap-- - One Adobe Datastream`。 按一下&#x200B;**複製**&#x200B;圖示以複製&#x200B;**資料串流ID**，並貼到Visual Studio Code檔案&#x200B;**scripts.js**&#x200B;中，方法是取代`XXX`旁的預留位置值`datastreamId:`。
 
 ![AEMCS](./images/scriptsvar1.png){zoomable="yes"}
 
 ### orgId
 
-前往[https://platform.adobe.com/](https://platform.adobe.com/)，然後在左側功能表中前往&#x200B;**查詢**。 在&#x200B;**認證**&#x200B;下，您會找到&#x200B;**IMS組織ID**，名稱為&#x200B;**使用者名稱**。 按一下&#x200B;**複製**&#x200B;圖示以複製&#x200B;**IMS組織ID**，並貼到Visual Studio Code檔案&#x200B;**scripts.js**&#x200B;中，方式是取代`orgId:`旁的預留位置值`XXX`。
+前往[https://platform.adobe.com/](https://platform.adobe.com/)，然後在左側功能表中前往&#x200B;**查詢**。 在&#x200B;**認證**&#x200B;下，您會找到&#x200B;**IMS組織ID**，名稱為&#x200B;**使用者名稱**。 按一下&#x200B;**複製**&#x200B;圖示以複製&#x200B;**IMS組織ID**，並貼到Visual Studio Code檔案&#x200B;**scripts.js**&#x200B;中，方式是取代`XXX`旁的預留位置值`orgId:`。
 
 ![AEMCS](./images/scriptsvar2.png){zoomable="yes"}
 
@@ -175,7 +175,7 @@ const AUDIENCES = {
 
 ![AEMCS](./images/scriptsvar5.png){zoomable="yes"}
 
-URL看起來像這樣： `https://assets.adobedtm.com/b754ed1bed61/b9f7c7c484de/launch-5fcd90e5b482-development.min.js`。 請確定不會同時複製其他文字，因為這樣會導致錯誤。 在Visual Studio Code中，在檔案&#x200B;**scripts.js**&#x200B;中，取代`launchUrls:`陣列中的預留位置值`XXX`。
+URL看起來像這樣： `https://assets.adobedtm.com/b754ed1bed61/b9f7c7c484de/launch-5fcd90e5b482-development.min.js`。 請確定不會同時複製其他文字，因為這樣會導致錯誤。 在Visual Studio Code中，在檔案&#x200B;**scripts.js**&#x200B;中，取代`XXX`陣列中的預留位置值`launchUrls:`。
 
 您現在擁有所需的三個變數。 您的檔案`scripts.js`現在看起來應該像這樣：
 
@@ -315,7 +315,7 @@ window.setTimeout(() => {
 
 ![AEMCS](./images/mtplugin13.png){zoomable="yes"}
 
-## 標籤屬性中的1.1.6.4 ACDL延伸
+## 標籤屬性中的1.1.5.4 ACDL延伸
 
 為了讓AEM Edge Delivery Services MarTech外掛程式能夠正常運作，您需要為
 
@@ -335,13 +335,13 @@ window.setTimeout(() => {
 
 ![AEMCS](./images/acdl6.png){zoomable="yes"}
 
-移至&#x200B;**發佈流程**&#x200B;並開啟您的&#x200B;**主要**&#x200B;資料庫。 按一下[新增所有變更的資源]&#x200B;**，然後按一下[儲存並建置至開發]**&#x200B;**。**
+移至&#x200B;**發佈流程**&#x200B;並開啟您的&#x200B;**主要**&#x200B;資料庫。 按一下[新增所有變更的資源]**，然後按一下[儲存並建置至開發]****。**
 
 ![AEMCS](./images/acdl7.png){zoomable="yes"}
 
 您的變更現已部署。
 
-## 1.1.6.5傳送資料至Adobe Experience Platform Edge Network
+## 1.1.5.5傳送資料至Adobe Experience Platform Edge Network
 
 您現在可以移至`main--citisignal--XXX.aem.page/us/en/`及/或`main--citisignal--XXX.aem.live/us/en/`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
 
@@ -366,7 +366,7 @@ window.setTimeout(() => {
 
 ![AEMCS](./images/plweb3.png){zoomable="yes"}
 
-## 1.1.6.6在Adobe Experience Platform中檢視客戶設定檔
+## 1.1.5.6在Adobe Experience Platform中檢視客戶設定檔
 
 前往此URL登入Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 

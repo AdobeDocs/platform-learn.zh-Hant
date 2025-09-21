@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1377'
+source-wordcount: '1371'
 ht-degree: 3%
 
 ---
@@ -93,11 +93,10 @@ ht-degree: 3%
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
       + [概觀](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1建立您的Cloud Manager程式](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
-      + [1.1.2建立檔案式網站](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex2.md)
-      + [1.1.3設定您的AEM CS環境](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
-      + [1.1.4基本自訂區塊](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
-      + [1.1.5進階自訂區塊](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
-      + [1.1.6 AEM Edge Delivery Services MarTech增效模組](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
+      + [1.1.2設定您的AEM CS環境](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
+      + [1.1.3基本自訂區塊](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
+      + [1.1.4進階自訂區塊](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
+      + [1.1.5 AEM Edge Delivery Services MarTech增效模組](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
    + 1.2 Adobe Experience Manager Assets {#assetm2}
       + [概觀](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)

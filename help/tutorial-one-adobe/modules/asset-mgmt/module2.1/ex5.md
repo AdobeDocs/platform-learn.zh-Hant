@@ -4,14 +4,14 @@ description: AEM CS — 進階自訂區塊
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
-# 1.1.5進階自訂區塊
+# 1.1.4進階自訂區塊
 
 在上一個練習中，您設定名為&#x200B;**Fiber Offer**&#x200B;的基本自訂區塊，該區塊會在您的網站上顯示&#x200B;**優惠方案文字**、**優惠方案CTA**&#x200B;和&#x200B;**優惠方案影像**&#x200B;等欄位。
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-## 1.1.5.1設定區塊樣式
+## 1.1.4.1設定區塊樣式
 
 現在您已擁有有效的&#x200B;**纖維選件**&#x200B;區塊，您可以套用樣式至該區塊。
 
@@ -115,7 +115,7 @@ export default function decorate(block) {
 
 ![區塊](./images/blockadv13.png){zoomable="yes"}
 
-## 1.1.5.2新增邏輯並從外部端點載入資料
+## 1.1.4.2新增邏輯並從外部端點載入資料
 
 在此練習中，您將執行Adobe的網頁SDK的「原始」設定，並將向Adobe Journey Optimizer Offer Decisioning請求下一個最佳選件。
 
@@ -345,7 +345,7 @@ async function getOffer(ECID) {
 
 ![區塊](./images/blockadv20.png){zoomable="yes"}
 
-下一步： [1.1.6 AEM Edge Delivery Services MarTech外掛程式](./ex6.md){target="_blank"}
+下一步： [AEM Edge Delivery Services MarTech外掛程式](./ex6.md){target="_blank"}
 
 返回[Adobe Experience Manager Cloud Service和Edge Delivery Services](./aemcs.md){target="_blank"}
 

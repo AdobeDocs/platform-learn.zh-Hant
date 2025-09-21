@@ -4,9 +4,9 @@ description: 建立您的Cloud Manager程式
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '344'
 ht-degree: 3%
 
 ---
@@ -17,14 +17,14 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcs1.png)
 
-對於&#x200B;**程式名稱**，請使用`--aepUserLdap-- - CitiSignal`。 選取選項&#x200B;**設定沙箱**。 按一下&#x200B;**繼續**。
+對於&#x200B;**程式名稱**，請使用`--aepUserLdap-- - CitiSignal AEM+ACCS`。 選取選項&#x200B;**設定沙箱**。 按一下&#x200B;**繼續**。
 
 ![AEMCS](./images/aemcs2.png)
 
 請確定已選取下列選項：
 
 - 網站
-- Forms
+- 表單
 - 資產
 
 按一下&#x200B;**Assets**&#x200B;的箭頭，開啟選項清單。
@@ -51,8 +51,6 @@ ht-degree: 3%
 建立您的環境將需要一些時間，10到20分鐘。
 
 ![AEMCS](./images/aemcs4.png)
-
-您等待時，可以從練習[1.1.2開始建立檔案型網站](./ex2.md){target="_blank"}。
 
 環境建立並準備好使用後，您將會收到電子郵件確認，之後您可以返回此處。
 
@@ -88,8 +86,8 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcsact2.png)
 
-大約10分鐘後，將完成&#x200B;**Content Hub**&#x200B;的啟用。
-接下來，檢視&#x200B;**Dynamic Media**&#x200B;行，並選取&#x200B;**按一下以啟用**。
+大約10分鐘後，將完成&#x200B;**Content Hub**的啟用。
+接下來，檢視**Dynamic Media**&#x200B;行，並選取&#x200B;**按一下以啟用**。
 
 ![AEMCS](./images/aemcsact3.png)
 
@@ -107,7 +105,7 @@ ht-degree: 3%
 
 管道執行完成後，您可以繼續進行下一個練習。
 
-下一步： [1.1.2建立檔案型網站](./ex2.md){target="_blank"}
+下一步： [設定您的AEM CS環境](./ex3.md){target="_blank"}
 
 返回[Adobe Experience Manager Cloud Service和Edge Delivery Services](./aemcs.md){target="_blank"}
 

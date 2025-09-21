@@ -4,9 +4,9 @@ description: Adobe Experience Manager Cloud Service與Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '209'
 ht-degree: 1%
 
 ---
@@ -27,23 +27,19 @@ ht-degree: 1%
 
 在本練習中，您將建立您的Cloud Manager計畫，該計畫將會為您建立Sites、Assets和Edge Delivery Services產品。
 
-[1.1.2建立檔案型網站](./ex2.md){target="_blank"}
-
-在這個快速入門練習中，您將複製現有的網站範本，以設定自己的檔案型網站。
-
-[1.1.3設定您的AEM CS環境](./ex3.md){target="_blank"}
+[1.1.2設定您的AEM CS環境](./ex3.md){target="_blank"}
 
 在本練習中，您將設定您的AEM CS環境並存取您的CitiSignal網站。
 
-[1.1.4基本自訂區塊](./ex4.md){target="_blank"}
+[1.1.3基本自訂區塊](./ex4.md){target="_blank"}
 
 在本練習中，您將開發網站的基本自訂區塊。
 
-[1.1.5進階自訂區塊](./ex5.md){target="_blank"}
+[1.1.4進階自訂區塊](./ex5.md){target="_blank"}
 
 在本練習中，您將開發網站的進階自訂區塊。
 
-[1.1.6 AEM Edge Delivery Services MarTech外掛程式](./ex6.md){target="_blank"}
+[1.1.5 AEM Edge Delivery Services MarTech外掛程式](./ex6.md){target="_blank"}
 
 在本練習中，您將實施AEM MarTech外掛程式。 AEM MarTech外掛程式可協助您為AEM專案快速設定完整的MarTech棧疊。
 
