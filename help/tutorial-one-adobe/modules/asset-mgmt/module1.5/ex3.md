@@ -3,9 +3,9 @@ title: 將ACCS連線至AEM Assets CS
 description: 將ACCS連線至AEM Assets CS
 kt: 5342
 doc-type: tutorial
-source-git-commit: ca895385f5c1f318a7c4d0b338dcfa4e91763005
+source-git-commit: 58448049d54ee6124985159577df0e307896a312
 workflow-type: tm+mt
-source-wordcount: '1255'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >如果您先前已使用AEM Sites和AEM CS環境設定Assets CS計畫，可能是您的AEM CS沙箱已休眠。 鑑於讓這樣的沙箱解除休眠需要10-15分鐘，最好現在開始解除休眠過程，這樣以後就不必等待了。
+
+完成先前的練習後，您可能會看到ACCS將產品傳回至您的網站，但產品尚未顯示影像。 在本練習結束時，您應該也會看到傳回的影像。
+
+![ACCS+AEM Sites](./images/accsaemsites11.png)
 
 ## 1.5.3.1更新管道設定
 
@@ -172,6 +176,10 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets51.png)
 
+您應該會看到此訊息。
+
+![ACCS+AEM Assets](./images/accsaemassets52.png)
+
 ## 1.5.3.3更新config.json
 
 前往設定AEM Sites CS/EDS環境時建立的GitHub存放庫。 該存放庫是在練習[1.1.2中建立的，用來設定您的AEM CS環境](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}，名稱應該是&#x200B;**citisignal-aem-accs**。
@@ -244,7 +252,7 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets39.png)
 
-瀏覽至案頭上的&#x200B;**Product_Images**&#x200B;資料夾，選取所有檔案，然後按一下[開啟]。**&#x200B;**
+瀏覽至案頭上的&#x200B;**Product_Images**&#x200B;資料夾，選取所有檔案，然後按一下[開啟]。****
 
 ![ACCS+AEM Assets](./images/accsaemassets40.png)
 
@@ -252,37 +260,139 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets41.png)
 
-您的影像將可在您的資料夾中使用。
+您的影像將可在您的資料夾中使用。 將滑鼠停留在產品&#x200B;**iPhone-Air-Light-Gold.png**&#x200B;上，然後按一下&#x200B;**屬性**&#x200B;圖示。
 
 ![ACCS+AEM Assets](./images/accsaemassets42.png)
 
-按一下第一個產品影像以開啟。
-
-![ACCS+AEM Assets](./images/accsaemassets43.png)
-
-將產品影像的狀態設定為&#x200B;**已核准**。 AEM Assets CS - ACCS整合僅適用於已核准的影像。
+向下捲動並將欄位&#x200B;**檢閱狀態**&#x200B;設定為&#x200B;**已核准**。 AEM Assets CS - ACCS整合僅適用於已核准的影像。
 
 ![ACCS+AEM Assets](./images/accsaemassets44.png)
 
-移至&#x200B;**Commerce**&#x200B;標籤，然後按一下&#x200B;**產品SKU**&#x200B;下的&#x200B;**新增**。
+向上捲動，移至&#x200B;**Commerce**&#x200B;標籤，然後按一下&#x200B;**產品SKU**&#x200B;下的&#x200B;**新增**。
 
 ![ACCS+AEM Assets](./images/accsaemassets45.png)
 
-從影像檔案名稱取得產品SKU，將值增加到1，並在&#x200B;**使用狀況**&#x200B;下拉式清單中選取所有選項。
+為此產品新增下列SKU：
 
-![ACCS+AEM Assets](./images/accsaemassets46.png)
+| 索引鍵 | 價值 | 使用方式 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Light-Gold` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Light-Gold-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 
 然後您應該擁有此專案。 按一下&#x200B;**儲存並關閉**。
 
+![ACCS+AEM Assets](./images/accsaemassets46.png)
+
+將滑鼠停留在產品&#x200B;**iPhone-Air-Space-Black.png**&#x200B;上，然後按一下&#x200B;**屬性**&#x200B;圖示。
+
 ![ACCS+AEM Assets](./images/accsaemassets47.png)
 
-重複此動作，核准資產並為您匯入此資料夾的每個影像設定Commerce標籤。 完成後，每個影像都應該有&#x200B;**綠色的拇指向上**，表示資產已核准。
+向下捲動並將欄位&#x200B;**檢閱狀態**&#x200B;設定為&#x200B;**已核准**。 AEM Assets CS - ACCS整合僅適用於已核准的影像。
 
 ![ACCS+AEM Assets](./images/accsaemassets48.png)
 
+向上捲動，移至&#x200B;**Commerce**&#x200B;標籤，然後按一下&#x200B;**產品SKU**&#x200B;下的&#x200B;**新增**。
+
+![ACCS+AEM Assets](./images/accsaemassets201.png)
+
+為此產品新增下列SKU：
+
+| 索引鍵 | 價值 | 使用方式 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Space-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Space-Black-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+然後您應該擁有此專案。 按一下&#x200B;**儲存並關閉**。
+
+![ACCS+AEM Assets](./images/accsaemassets202.png)
+
+將滑鼠停留在產品&#x200B;**iPhone-Air-Sky-Blue.png**&#x200B;上，然後按一下&#x200B;**屬性**&#x200B;圖示。
+
+![ACCS+AEM Assets](./images/accsaemassets203.png)
+
+向下捲動並將欄位&#x200B;**檢閱狀態**&#x200B;設定為&#x200B;**已核准**。 AEM Assets CS - ACCS整合僅適用於已核准的影像。
+
+![ACCS+AEM Assets](./images/accsaemassets204.png)
+
+向上捲動，移至&#x200B;**Commerce**&#x200B;標籤，然後按一下&#x200B;**產品SKU**&#x200B;下的&#x200B;**新增**。
+
+![ACCS+AEM Assets](./images/accsaemassets205.png)
+
+為此產品新增下列SKU：
+
+| 索引鍵 | 價值 | 使用方式 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Sky-Blue` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Sky-Blue-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+然後您應該擁有此專案。 按一下&#x200B;**儲存並關閉**。
+
+![ACCS+AEM Assets](./images/accsaemassets206.png)
+
+將滑鼠停留在產品&#x200B;**iPhone-Air-Cloud-White.png**&#x200B;上，然後按一下&#x200B;**屬性**&#x200B;圖示。
+
+![ACCS+AEM Assets](./images/accsaemassets207.png)
+
+向下捲動並將欄位&#x200B;**檢閱狀態**&#x200B;設定為&#x200B;**已核准**。 AEM Assets CS - ACCS整合僅適用於已核准的影像。
+
+![ACCS+AEM Assets](./images/accsaemassets208.png)
+
+向上捲動，移至&#x200B;**Commerce**&#x200B;標籤，然後按一下&#x200B;**產品SKU**&#x200B;下的&#x200B;**新增**。
+
+![ACCS+AEM Assets](./images/accsaemassets209.png)
+
+為此產品新增下列SKU：
+
+| 索引鍵 | 價值 | 使用方式 |
+|:-------------:| :---------------:| :---------------:| 
+| `iPhone-Air-Cloud-White` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
+| `iPhone-Air-Cloud-White-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+然後您應該擁有此專案。 按一下&#x200B;**儲存並關閉**。
+
+![ACCS+AEM Assets](./images/accsaemassets210.png)
+
+現在，每個&#x200B;**iPhone Air**&#x200B;影像都應該有&#x200B;**豎起的綠色縮圖**，表示資產已核准。
+
+![ACCS+AEM Assets](./images/accsaemassets250.png)
+
 ## 1.5.3.5驗證AEM Sites CS/EDS店面上的產品影像
 
+>[!NOTE]
+>
+>成功部署您上述變更前，最多可能需要15分鐘的時間。 如果影像尚未顯示，請等待15分鐘，然後再試一次。
 
+若要驗證整合是否有效，您需要開啟CitiSignal網站。
+
+若要存取您的網站，請在將XXX取代為GitHub使用者帳戶（在此範例中為`main--citisignal-aem-accs--XXX.aem.page`）之後，前往`main--citisignal-aem-accs--XXX.aem.live`和/或`woutervangeluwe`。
+
+所以在此範例中，完整URL會變成：
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page`和/或`https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
+
+您應該會看到此訊息。 移至&#x200B;**電話**。
+
+![ACCS+AEM Assets](./images/accsaemassets150.png)
+
+接著您應該會看到顯示&#x200B;**iPhone Air**&#x200B;的產品影像。 按一下&#x200B;**iPhone Air**。
+
+![ACCS+AEM Assets](./images/accsaemassets151.png)
+
+您應該會看到此訊息。 變更色彩和儲存選項，您會看到影像會根據您所做的選擇動態變更。
+
+![ACCS+AEM Assets](./images/accsaemassets152.png)
+
+以下是將色彩變更為&#x200B;**Light-Gold**&#x200B;以及將儲存大小變更為&#x200B;**256GB**&#x200B;的範例。
+
+![ACCS+AEM Assets](./images/accsaemassets153.png)
 
 下一步： [摘要與優點](./summary.md){target="_blank"}
 
