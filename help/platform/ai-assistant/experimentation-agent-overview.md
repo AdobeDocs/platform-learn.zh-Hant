@@ -9,16 +9,16 @@ last-substantial-update: 2025-09-23T00:00:00Z
 jira: KT-19110
 hide: true
 hidefromtoc: true
-source-git-commit: 86cb610029defc5e46ab98fd493892fec4a78474
+exl-id: 8089b703-a694-4c0c-86bc-61991edc9b78
+source-git-commit: 12a056d6489d5673b65adc38444f66631506d6c2
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 85%
+source-wordcount: '51'
+ht-degree: 35%
 
 ---
 
 # Experimentation Agent概述
 
-實驗代理能為行銷人員、分析師和管理員提供洞察、引導式設定和自動化分析，加速數位最佳化。
+Experimentation Agent透過深入分析、引導式設定和自動化分析，為行銷人員、分析師和管理人員加速數位最佳化。 如需詳細資訊，請參閱[實驗加速器檔案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator)。
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
-
+>[!SLIDE](experimentation-agent-overview)
