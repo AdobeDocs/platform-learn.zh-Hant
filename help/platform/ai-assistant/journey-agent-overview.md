@@ -20,7 +20,7 @@ ht-degree: 84%
 
 Journey 代理使用 AI，透過對話式介面建立、分析和最佳化 B2B/B2C 歷程。
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
 
 

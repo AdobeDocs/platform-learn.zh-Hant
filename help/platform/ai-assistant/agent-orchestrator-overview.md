@@ -19,6 +19,6 @@ ht-degree: 81%
 
 Agent Orchestrator 透過智慧代理和對話式介面簡化客戶體驗工作流程。
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
 >[!SLIDE](agent-orchestrator-overview)

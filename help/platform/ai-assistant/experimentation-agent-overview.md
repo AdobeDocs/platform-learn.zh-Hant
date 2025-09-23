@@ -20,5 +20,5 @@ ht-degree: 85%
 
 實驗代理能為行銷人員、分析師和管理員提供洞察、引導式設定和自動化分析，加速數位最佳化。
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
