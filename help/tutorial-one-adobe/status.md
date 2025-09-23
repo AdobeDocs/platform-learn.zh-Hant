@@ -3,9 +3,9 @@ title: 內容狀態
 description: 內容狀態
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '467'
 ht-degree: 12%
 
 ---
@@ -77,6 +77,13 @@ ht-degree: 12%
 | [1.2 Customer Journey Analytics：使用BigQuery Source Connector在Adobe Experience Platform中擷取和分析Google Analytics資料](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 07/01/2025 | 無 | 來源資料的資料準備模型化發生問題。 此問題正在等候修正。 |
 | [2.1查詢服務](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 04/12/2024 | 是 | - |
 | [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 02/08/2025 | 無 | 正在開發的內容 |
+
+## 6. Agentic AI
+
+| 名稱 | 上次更新日期 | 工作百分之百 | 備註 |
+| ---------------------- | ------------ | ------------ |------------ |
+| [1.1 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 否 | - |
+| [1.2 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 否 | - |
 
 {style="table-layout:auto"}
 

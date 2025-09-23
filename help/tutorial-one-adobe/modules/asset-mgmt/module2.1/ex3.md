@@ -1,370 +1,290 @@
 ---
-title: 設定您的AEM CS環境
-description: 設定您的AEM CS環境
+title: AEM CS — 基本自訂區塊
+description: AEM CS — 基本自訂區塊
 kt: 5342
 doc-type: tutorial
-exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 0%
+source-wordcount: '812'
+ht-degree: 1%
 
 ---
 
-# 1.1.2設定您的AEM CS環境
+# 1.1.3開發基本自訂區塊
 
-## 1.1.2.1設定您的GitHub存放庫
+## 1.1.3.1設定您的本機開發環境
 
-移至[https://github.com](https://github.com){target="_blank"}。 按一下&#x200B;**登入**。
+移至[https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}，下載並安裝&#x200B;**Github案頭版**。
 
-![AEMCS](./images/aemcssetup1.png)
+![區塊](./images/block1.png){zoomable="yes"}
 
-輸入您的認證。 按一下&#x200B;**登入**。
+安裝Github Desktop後，請前往您在上一個練習建立的GitHub存放庫。 按一下&#x200B;**&lt;>程式碼**，然後按一下&#x200B;**使用GitHub Desktop開啟**。
 
-![AEMCS](./images/aemcssetup2.png)
+![區塊](./images/block2.png){zoomable="yes"}
 
-登入後，您將會看到GitHub控制面板。
+接著，系統就會在GitHub Desktop中開啟您的GitHub存放庫。 請隨時變更&#x200B;**本機路徑**。 按一下&#x200B;**複製**。
 
-![AEMCS](./images/aemcssetup3.png)
+![區塊](./images/block3.png){zoomable="yes"}
 
-移至[https://github.com/adobe-rnd/aem-boilerplate-xcom](https://github.com/adobe-rnd/aem-boilerplate-xcom){target="_blank"}。 您將會看到此訊息。 按一下&#x200B;**使用此範本**，然後按一下&#x200B;**建立新的存放庫**。
+現在將建立本機資料夾。
 
-![AEMCS](./images/aemcssetup4.png)
+![區塊](./images/block4.png){zoomable="yes"}
 
-對於&#x200B;**存放庫名稱**，請使用`citisignal-aem-accs`。 將可見度設定為&#x200B;**私人**。 按一下&#x200B;**建立存放庫**。
+開啟Visual Studio Code。 移至&#x200B;**檔案** > **開啟資料夾**。
 
-![AEMCS](./images/aemcssetup5.png)
+![區塊](./images/block5.png){zoomable="yes"}
 
-幾秒鐘後，您就會建立存放庫。
+選取您的GitHub設定用於&#x200B;**citisignal**&#x200B;的資料夾。
 
-![AEMCS](./images/aemcssetup6.png)
+![區塊](./images/block6.png){zoomable="yes"}
 
-接著，移至[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}。 按一下&#x200B;**安裝**&#x200B;或&#x200B;**設定**。
+您現在會在Visual Studio Code中看到該資料夾已開啟，您已準備好建立新區塊。
 
-![AEMCS](./images/aemcssetup7.png)
+![區塊](./images/block7.png){zoomable="yes"}
 
-按一下GitHub使用者帳戶旁的&#x200B;**繼續**&#x200B;按鈕。
+## 1.1.3.2建立基本自訂區塊
 
-![AEMCS](./images/aemcssetup8.png)
+Adobe建議您分三階段來開發區塊：
 
-按一下GitHub使用者帳戶旁的&#x200B;**設定**。
+- 建立區塊的定義和模型，檢閱區塊，並將其帶入生產環境。
+- 使用新區塊建立內容。
+- 實作新區塊的裝飾和樣式。
 
-![AEMCS](./images/aemcssetup8a.png)
+### component-definition.json
 
-按一下&#x200B;**僅選取存放庫**，然後新增您剛建立的存放庫。
+在Visual Studio Code中，開啟檔案&#x200B;**component-definition.json**。
 
-![AEMCS](./images/aemcssetup9.png)
+![區塊](./images/block8.png){zoomable="yes"}
 
-向下捲動並按一下&#x200B;**儲存**。
+向下捲動，直到您看到元件&#x200B;**Quote**&#x200B;為止。 將游標設定在最後一個元件的右方括弧旁。
 
-![AEMCS](./images/aemcssetup9a.png)
+![區塊](./images/block9.png){zoomable="yes"}
 
-然後您會取得此確認。
+貼上此程式碼，並在程式碼區塊後面輸入逗號&#x200B;**，**：
 
-![AEMCS](./images/aemcssetup10.png)
+```json
+{
+  "title": "FiberOffer",
+  "id": "fiberoffer",
+  "plugins": {
+    "xwalk": {
+      "page": {
+        "resourceType": "core/franklin/components/block/v1/block",
+        "template": {
+          "name": "FiberOffer",
+          "model": "fiberoffer",
+          "offerText": "<p>Fiber will soon be available in your region!</p>",
+          "offerCallToAction": "Get your offer now!",
+          "offerImage": ""
+        }
+      }
+    }
+  }
+}
+```
 
-## 1.1.2.2更新檔案fstab.yaml
+儲存您的變更。
 
-在您的GitHub存放庫中，按一下以開啟檔案`fstab.yaml`。
+![區塊](./images/block10.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup11.png)
+### component-models.json
 
-按一下&#x200B;**編輯**&#x200B;圖示。
+在Visual Studio Code中，開啟檔案&#x200B;**component-models.json**。
 
-![AEMCS](./images/aemcssetup12.png)
+![區塊](./images/block11.png){zoomable="yes"}
 
-您現在需要在第3行更新欄位&#x200B;**url**&#x200B;的值。
+向下捲動，直到您看到最後一個專案為止。 將游標設定在最後一個元件的右方括弧旁。
 
-![AEMCS](./images/aemcssetup13.png)
+![區塊](./images/block12.png){zoomable="yes"}
 
-您需要使用特定AEM Sites CS環境的URL結合GitHub存放庫的設定，來取代目前值。
+輸入逗號&#x200B;**，**，然後推入，並在下一行貼上此代碼：
 
-這是URL目前的值： `https://author-p130360-e1272151.adobeaemcloud.com/bin/franklin.delivery/adobe-rnd/aem-boilerplate-xcom/main`。
+```json
+{
+  "id": "fiberoffer",
+  "fields": [
+     {
+       "component": "richtext",
+       "name": "offerText",
+       "value": "",
+       "label": "Offer Text",
+       "valueType": "string"
+     },
+     {
+       "component": "richtext",
+       "valueType": "string",
+       "name": "offerCallToAction",
+       "label": "Offer CTA",
+       "value": ""
+     },
+     {
+       "component": "reference",
+       "valueType": "string",
+       "name": "offerImage",
+       "label": "Offer Image",
+        "multi": false
+     }
+   ]
+}
+```
 
-URL有3個部分需要更新
+儲存您的變更。
 
-`https://XXX/bin/franklin.delivery/YYY/ZZZ/main`
+![區塊](./images/block13.png){zoomable="yes"}
 
-XXX應取代為AEM CS作者環境的URL。
+### component-filters.json
 
-YYYY應取代為您的GitHub使用者帳戶。
+在Visual Studio Code中，開啟檔案&#x200B;**component-filters.json**。
 
-ZZZ應取代為您在上一個練習中使用的GitHub存放庫名稱。
+![區塊](./images/block14.png){zoomable="yes"}
 
-您可以前往[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}找到AEM CS Author環境的URL。 按一下您的&#x200B;**程式**&#x200B;以開啟。
+在&#x200B;**區段**&#x200B;下，在目前最後一行後面輸入逗號&#x200B;**、**&#x200B;以及元件&#x200B;**fiberoffer**&#x200B;的識別碼。
 
-![AEMCS](./images/aemcs6.png)
+儲存您的變更。
+
+![區塊](./images/block15.png){zoomable="yes"}
+
+## 1.1.3.3認可您的變更
+
+您現在已在專案中進行數項變更，這些變更需要提交回GitHub存放庫。 若要這麼做，請開啟&#x200B;**GitHub Desktop**。
+
+您應該會在&#x200B;**變更**&#x200B;下看到剛才編輯的3個檔案。 檢閱您的變更。
+
+![區塊](./images/block16.png){zoomable="yes"}
+
+輸入您的PR名稱，`Fiber Offer custom block`。 按一下&#x200B;**認可至主要**。
+
+![區塊](./images/block17.png){zoomable="yes"}
+
+您應該會看到此訊息。 按一下&#x200B;**推播來源**。
+
+![區塊](./images/block18.png){zoomable="yes"}
+
+幾秒鐘後，您的變更已推送至您的GitHub存放庫。
+
+![區塊](./images/block19.png){zoomable="yes"}
+
+在瀏覽器中，前往您的GitHub帳戶，並前往您為CitiSignal建立的存放庫。 接著，您應該會看到類似這樣的畫面，表示已收到您的變更。
+
+![區塊](./images/block20.png){zoomable="yes"}
+
+## 1.1.3.4將您的區塊新增至頁面
+
+現在您的基本報價區塊已定義並認可至CitiSignal專案，您可以將&#x200B;**fiberoffer**&#x200B;區塊新增至現有頁面。
+
+移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 按一下您的&#x200B;**程式**&#x200B;以開啟。
+
+![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
 接著，按一下&#x200B;**環境**&#x200B;標籤上的3個點&#x200B;**...**，然後按一下&#x200B;**檢視詳細資料**。
 
-![AEMCS](./images/aemcs9.png)
+![AEMCS](./images/aemcs9.png){zoomable="yes"}
 
-然後您將會看到您的環境詳細資料，包括&#x200B;**作者**&#x200B;環境的URL。 複製URL。
+然後您會看到環境詳細資料。 按一下&#x200B;**作者**&#x200B;環境的URL。
 
-![AEMCS](./images/aemcs10.png)
+>[!NOTE]
+>
+>您的環境可能已休眠。 如果是這種情況，您需要先解除環境休眠。
 
-XXX = `author-p166717-e1786231.adobeaemcloud.com`
+![AEMCS](./images/aemcs10.png){zoomable="yes"}
 
-若為GitHub使用者帳戶名稱，您可輕鬆在瀏覽器的URL中找到。 在此範例中，使用者帳戶名稱為`woutervangeluwe`。
+之後，您應該會看到您的AEM作者環境。 移至&#x200B;**網站**。
 
-YYYY = `woutervangeluwe`
+![AEMCS](./images/block21.png){zoomable="yes"}
 
-![AEMCS](./images/aemcs11.png)
+移至&#x200B;**CitiSignal** > **us** > **en**。
 
-如需GitHub存放庫名稱，您也可以在已在GitHub中開啟的瀏覽器視窗中找到。 在此案例中，存放庫名稱為`citisignal`。
+![AEMCS](./images/block22.png){zoomable="yes"}
 
-ZZZ = `citisignal-aem-accs`
+按一下&#x200B;**建立**&#x200B;並選取&#x200B;**頁面**。
 
-![AEMCS](./images/aemcs12.png)
+![AEMCS](./images/block23.png){zoomable="yes"}
 
-這3個值合併後，會產生這個需要在檔案`fstab.yaml`中設定的新URL。
+選取&#x200B;**頁面**&#x200B;並按一下&#x200B;**下一步**。
 
-`https://author-p166717-e1786231.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal-aem-accs/main`
+![AEMCS](./images/block24.png){zoomable="yes"}
 
-按一下&#x200B;**認可變更……**。
+輸入下列值：
 
-![AEMCS](./images/aemcs13.png)
+- 標題： **CitiSignal Fiber**
+- 名稱： **citisignal-fiber**
+- 頁面標題： **CitiSignal Fiber**
 
-按一下&#x200B;**認可變更**。
+按一下&#x200B;**建立**。
 
-![AEMCS](./images/aemcs14.png)
+![AEMCS](./images/block25.png){zoomable="yes"}
 
-檔案`fstab.yaml`現在已更新。
+您應該會看到此訊息。
 
-## 1.1.2.3上傳CitiSignal資產
+![AEMCS](./images/block26.png){zoomable="yes"}
 
-移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 按一下您的&#x200B;**程式**&#x200B;以開啟。
+按一下空白區域以選取&#x200B;**section**&#x200B;元件。 然後，按一下右側功能表中的加號&#x200B;**+**&#x200B;圖示。
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/block27.png){zoomable="yes"}
 
-接著，按一下作者環境的URL。
+之後，您應該會在可用區塊清單中看到自訂區塊。 按一下以選取它。
 
-![AEMCS](./images/aemcssetup18.png)
+![AEMCS](./images/block28.png){zoomable="yes"}
 
-按一下&#x200B;**使用Adobe登入**。
+接著，您會看到諸如&#x200B;**選件文字**、**選件CTA**&#x200B;和&#x200B;**選件影像**&#x200B;等欄位已新增至編輯器中。 按一下&#x200B;**選件影像**&#x200B;欄位上的&#x200B;**+新增**&#x200B;以選取影像。
 
-![AEMCS](./images/aemcssetup19.png)
+![AEMCS](./images/block29.png){zoomable="yes"}
 
-然後您會看到您的作者環境。
+您應該會看到此訊息。 按一下以開啟資料夾&#x200B;**citisignal**。
 
-![AEMCS](./images/aemcssetup20.png)
+![AEMCS](./images/blockpub1.png){zoomable="yes"}
 
-您的URL如下所示： `https://author-p166717-e1786231.adobeaemcloud.com/ui#/aem/aem/start.html?appId=aemshell`
+選取影像&#x200B;**product-enrichment-1.png**。 按一下&#x200B;**選取**。
 
-您現在需要存取AEM的&#x200B;**CRX封裝管理員**&#x200B;環境。 若要這麼做，請從URL移除`ui#/aem/aem/start.html?appId=aemshell`，並以`crx/packmgr`取代，這表示您的URL現在看起來應該像這樣：
-`https://author-p166717-e1786231.adobeaemcloud.com/crx/packmgr`。
-點選&#x200B;**Enter**&#x200B;以載入封裝管理員環境
+![AEMCS](./images/blockpub2.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup22.png)
+然後您應該擁有此專案。 按一下&#x200B;**發佈**。
 
-接著，按一下&#x200B;**上傳封裝**。
+![AEMCS](./images/blockpub3.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup21.png)
+再按一下&#x200B;**發佈**。
 
-按一下&#x200B;**瀏覽**&#x200B;以找出要上傳的封裝。
+![AEMCS](./images/blockpub4.png){zoomable="yes"}
 
-要上傳的封裝名稱為&#x200B;**citisignal-assets.zip**，可從此處下載： [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}。
+您的新頁面現已發佈。
 
-![AEMCS](./images/aemcssetup23.png)
+## 1.1.3.5將您的新頁面新增至導覽功能表
 
-選取封裝並按一下&#x200B;**開啟**。
+在您的AEM Sites總覽中，前往&#x200B;**CitiSignal** > **Fragments**&#x200B;並勾選&#x200B;**標題**&#x200B;的核取方塊。 按一下&#x200B;**編輯**。
 
-![AEMCS](./images/aemcssetup24.png)
+![AEMCS](./images/nav0.png){zoomable="yes"}
 
-接著，按一下&#x200B;**確定**。
+新增功能表選項至含有文字`Fiber`的導覽功能表。 選取文字&#x200B;**Fiber**&#x200B;並按一下&#x200B;**連結**&#x200B;圖示。
 
-![AEMCS](./images/aemcssetup25.png)
+![AEMCS](./images/nav1.png){zoomable="yes"}
 
-然後會上傳套件。
+輸入此&#x200B;**URL** `/us/en/citisignal-fiber`並按一下&#x200B;**V**&#x200B;圖示以確認。
 
-![AEMCS](./images/aemcssetup26.png)
+![AEMCS](./images/nav3.png){zoomable="yes"}
 
-接著，在您剛上傳的封裝上按一下&#x200B;**安裝**。
+然後您應該擁有此專案。 按一下&#x200B;**發佈**。
 
-![AEMCS](./images/aemcssetup27.png)
+![AEMCS](./images/nav4.png){zoomable="yes"}
 
-按一下&#x200B;**安裝**。
+再按一下&#x200B;**發佈**。
 
-![AEMCS](./images/aemcssetup28.png)
+![AEMCS](./images/nav5.png){zoomable="yes"}
 
-幾分鐘後，就會安裝您的套件。
-
-![AEMCS](./images/aemcssetup29.png)
-
-您現在可以關閉此視窗。
-
-## 1.1.2.4發佈CitiSignal資產
-
-移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 按一下您的&#x200B;**程式**&#x200B;以開啟。
-
-![AEMCS](./images/aemcs6.png)
-
-接著，按一下作者環境的URL。
-
-![AEMCS](./images/aemcssetup18.png)
-
-按一下&#x200B;**使用Adobe登入**。
-
-![AEMCS](./images/aemcssetup19.png)
-
-然後您會看到您的作者環境。 按一下&#x200B;**Assets**。
-
-![AEMCS](./images/aemcsassets1.png)
-
-按一下&#x200B;**檔案**。
-
-![AEMCS](./images/aemcsassets2.png)
-
-按一下以選取資料夾&#x200B;**CitiSignal**，然後按一下&#x200B;**管理出版物**。
-
-![AEMCS](./images/aemcsassets3.png)
-
-按一下&#x200B;**下一步**。
-
-![AEMCS](./images/aemcsassets4.png)
-
-按一下&#x200B;**發佈**。
-
-![AEMCS](./images/aemcsassets5.png)
-
-您的資產現已發佈。
-
-## 1.1.2.5建立CitiSignal網站
-
-移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 按一下您的&#x200B;**程式**&#x200B;以開啟。
-
-![AEMCS](./images/aemcs6.png)
-
-接著，按一下作者環境的URL。
-
-![AEMCS](./images/aemcssetup18.png)
-
-按一下&#x200B;**使用Adobe登入**。
-
-![AEMCS](./images/aemcssetup19.png)
-
-然後您會看到您的作者環境。 按一下&#x200B;**網站**。
-
-![AEMCS](./images/aemcssetup30.png)
-
-按一下&#x200B;**建立**，然後按一下&#x200B;**來自範本的網站**。
-
-![AEMCS](./images/aemcssetup31.png)
-
-按一下&#x200B;**匯入**。
-
-![AEMCS](./images/aemcssetup32.png)
-
-您現在需要為網站匯入預先設定的範本。 您可以在[這裡](./../../../assets/aem/citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip){target="_blank"}下載範本。 將檔案儲存到您的案頭。
-
-接著，選取檔案`citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip`並按一下&#x200B;**開啟**。
-
-![AEMCS](./images/aemcssetup33.png)
-
-您將會看到此訊息。 按一下以選取您剛上傳的範本，然後按一下[下一步] **&#x200B;**。
-
-![AEMCS](./images/aemcssetup34.png)
-
-您現在需要填寫一些詳細資料。
-
-- 網站標題：使用&#x200B;**CitiSignal**
-- 網站名稱：使用&#x200B;**CitiSignal**
-- GitHub URL：複製您之前使用的GitHub存放庫的URL
-
-![AEMCS](./images/aemcssetup35.png)
-
-您就會擁有此專案。 按一下&#x200B;**建立**。
-
-![AEMCS](./images/aemcssetup36.png)
-
-正在建立您的網站。 這可能需要幾分鐘的時間。 按一下&#x200B;**確定**。
-
-![AEMCS](./images/aemcssetup37.png)
-
-幾分鐘後重新整理您的熒幕，您就會看到新建立的CitiSignal網站。
-
-![AEMCS](./images/aemcssetup38.png)
-
-## 1.1.2.6更新檔案路徑.json
-
-在您的GitHub存放庫中，按一下以開啟檔案`paths.json`。
-
-![AEMCS](./images/aemcssetupjson1.png)
-
-按一下&#x200B;**編輯**&#x200B;圖示。
-
-![AEMCS](./images/aemcssetupjson2.png)
-
-您現在需要在第3、4、5、6、7和10行以`aem-boilerplate-commerce`取代文字`CitiSignal`。
-
-按一下&#x200B;**認可變更**。
-
-![AEMCS](./images/aemcssetupjson3.png)
-
-按一下&#x200B;**認可變更**。
-
-![AEMCS](./images/aemcssetupjson4.png)
-
-檔案`paths.json`現在已更新。
-
-## 1.1.2.7發佈CitiSignal網站
-
-接著，按一下&#x200B;**CitiSignal**&#x200B;前面的核取方塊。 然後，按一下&#x200B;**管理出版物**。
-
-![AEMCS](./images/aemcssetup39.png)
-
-按一下&#x200B;**下一步**。
-
-![AEMCS](./images/aemcssetup40.png)
-
-按一下&#x200B;**包含子設定**。
-
-![AEMCS](./images/aemcssetup41.png)
-
-按一下以選取核取方塊&#x200B;**包含子項**，然後按一下以取消選取其他核取方塊。 按一下&#x200B;**「確定」**。
-
-![AEMCS](./images/aemcssetup42.png)
-
-按一下&#x200B;**發佈**。
-
-![AEMCS](./images/aemcssetup43.png)
-
-然後您將被送回這裡。 按一下&#x200B;**CitiSignal**，選取&#x200B;**索引**&#x200B;前面的核取方塊，然後按一下&#x200B;**編輯**。
-
-![AEMCS](./images/aemcssetup44.png)
-
-您的網站將在&#x200B;**通用編輯器**&#x200B;中開啟。
-
-![AEMCS](./images/aemcssetup45.png)
-
-您現在可以移至`main--citisignal-aem-accs--XXX.aem.page`及/或`main--citisignal-aem-accs--XXX.aem.live`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）後存取您的網站。
+您現在可以移至`main--citisignal--XXX.aem.page/us/en/`及/或`main--citisignal--XXX.aem.live/us/en/`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
 
 在此範例中，完整URL會變成：
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page`和/或`https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
 
-可能需要一些時間，才能正確顯示所有資產，因為它們必須先發佈。
+您應該會看到此訊息。 按一下&#x200B;**Fiber**。
 
-然後您會看到以下內容：
+![AEMCS](./images/nav6.png){zoomable="yes"}
 
-![AEMCS](./images/aemcssetup46.png)
+這是您的基本自訂區塊，但現在已呈現在網站上。
 
-## 1.1.2.8測試頁面效能
+![AEMCS](./images/nav7.png){zoomable="yes"}
 
-移至[https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}。 輸入您的URL並按一下&#x200B;**分析**。
-
-![AEMCS](./images/aemcssetup48.png)
-
-然後您會發現，您的網站（在行動裝置和案頭視覺效果中）會獲得高分：
-
-**行動裝置**：
-
-![AEMCS](./images/aemcssetup49.png)
-
-**案頭**：
-
-![AEMCS](./images/aemcssetup50.png)
-
-下一步： [開發自訂區塊](./ex4.md){target="_blank"}
+下一步： [進階自訂區塊](./ex5.md){target="_blank"}
 
 返回[Adobe Experience Manager Cloud Service和Edge Delivery Services](./aemcs.md){target="_blank"}
 

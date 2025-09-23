@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1403'
 ht-degree: 3%
 
 ---
@@ -93,10 +93,10 @@ ht-degree: 3%
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
       + [概觀](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1建立您的Cloud Manager程式](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
-      + [1.1.2設定您的AEM CS環境](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
-      + [1.1.3基本自訂區塊](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
-      + [1.1.4進階自訂區塊](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
-      + [1.1.5 AEM Edge Delivery Services MarTech增效模組](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
+      + [1.1.2設定您的AEM CS環境](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex2.md)
+      + [1.1.3基本自訂區塊](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex3.md)
+      + [1.1.4進階自訂區塊](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex4.md)
+      + [1.1.5 AEM Edge Delivery Services MarTech增效模組](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
    + 1.2 Adobe Experience Manager Assets {#assetm2}
       + [概觀](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
@@ -270,3 +270,11 @@ ht-degree: 3%
          + [概觀](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics快速入門](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [摘要和優點](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
++ [WIP - Agentic AI](/help/tutorial-one-adobe/ai.md)
++ WIP - Agentic AI {#agenticai}
+   + 1.1代理程式和AI快速入門 {#agenticai1}
+      + [概觀](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
+      + [1.1.1 Agentic AI快速入門](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
+   + 1.2代理程式Collaboration {#agenticai2}
+      + [概觀](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/agentcollaboration.md)
+      + [1.2.1 Agent Collaboration快速入門](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/ex1.md)

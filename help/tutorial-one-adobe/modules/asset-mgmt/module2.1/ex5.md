@@ -1,351 +1,402 @@
 ---
-title: AEM CS — 進階自訂區塊
-description: AEM CS — 進階自訂區塊
+title: AEM CS - MarTech外掛程式
+description: AEM CS - MarTech外掛程式
 kt: 5342
 doc-type: tutorial
-exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
+source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
 workflow-type: tm+mt
-source-wordcount: '998'
-ht-degree: 0%
+source-wordcount: '1063'
+ht-degree: 1%
 
 ---
 
-# 1.1.4進階自訂區塊
+# 1.1.5 AEM Edge Delivery Services MarTech增效模組
 
-在上一個練習中，您設定名為&#x200B;**Fiber Offer**&#x200B;的基本自訂區塊，該區塊會在您的網站上顯示&#x200B;**優惠方案文字**、**優惠方案CTA**&#x200B;和&#x200B;**優惠方案影像**&#x200B;等欄位。
+AEM MarTech外掛程式可協助您為AEM專案快速設定完整的MarTech棧疊。
 
-您現在可以繼續處理此區塊。
+>[!NOTE]
+>
+>此外掛程式目前可透過共同創新專案，與AEM Engineering共同供客戶使用。 您可以在[https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech)找到更多資訊。
 
-![AEMCS](./images/nav7.png){zoomable="yes"}
+## 1.1.5.1將外掛程式新增至您的存放庫
 
-## 1.1.4.1設定區塊樣式
+導覽至您用於&#x200B;**citisignal** GitHub存放庫的資料夾。 在資料夾名稱上按一下滑鼠右鍵，然後選取&#x200B;**資料夾**&#x200B;的新終端機。
 
-現在您已擁有有效的&#x200B;**纖維選件**&#x200B;區塊，您可以套用樣式至該區塊。
+![AEMCS](./images/mtplugin1.png){zoomable="yes"}
 
-返回Visual Studio Code並開啟資料夾&#x200B;**區塊**。 您現在應該會看到多個資料夾，每個資料夾都參照特定區塊。 為了讓您的&#x200B;**fiberoffer**&#x200B;區塊更進階，您現在需要為自訂區塊建立資料夾。
+您將會看到此訊息。 貼上下列命令並按&#x200B;**Enter**。
 
-![AEMCS](./images/blockadv1.png){zoomable="yes"}
-
-選取資料夾&#x200B;**區塊**，然後按一下&#x200B;**建立新資料夾**&#x200B;圖示。
-
-![AEMCS](./images/blockadv2.png){zoomable="yes"}
-
-為資料夾命名`fiberoffer`並按&#x200B;**Enter**。
-
-![AEMCS](./images/blockadv3.png){zoomable="yes"}
-
-選取新的&#x200B;**fiberoffer**&#x200B;資料夾，然後按一下&#x200B;**建立新檔案**&#x200B;圖示。
-
-![AEMCS](./images/blockadv4.png){zoomable="yes"}
-
-現在已建立新檔案。 輸入名稱&#x200B;**fiberoffer.js**&#x200B;並按Enter鍵。
-
-![AEMCS](./images/blockadv5.png){zoomable="yes"}
-
-您現在可以將下列JavaScript新增至檔案&#x200B;**fiberoffer.js**，以實作區塊裝飾。
-
-儲存檔案。
-
-```js
-export default function decorate(block) {
-  const offerText = block.children[0];
-  const offerCTA = block.children[1];
-  const offerImage = block.children[2];
-
-  offerText.id = 'offerText';
-  offerText.className = 'offerText';
-  offerCTA.id = 'offerCTA';
-  offerCTA.className = 'offerCTA';
-  offerImage.id = 'offerImage';
-  offerImage.className = 'offerImage';
-}
+```
+git subtree add --squash --prefix plugins/martech https://github.com/adobe-rnd/aem-martech.git main
 ```
 
-![AEMCS](./images/blockadv6.png){zoomable="yes"}
+您應該會看到此訊息。
 
-選取新的&#x200B;**fiberoffer**&#x200B;資料夾，然後再次按一下「建立新檔案」**圖示。**
+![AEMCS](./images/mtplugin3.png){zoomable="yes"}
 
-![AEMCS](./images/blockadv7.png){zoomable="yes"}
+導覽至您用於&#x200B;**citisignal** GitHub存放庫的資料夾，開啟&#x200B;**plugins**&#x200B;資料夾。 您現在應該會看到名為&#x200B;**martech**&#x200B;的資料夾。
 
-現在已建立新檔案。 輸入名稱&#x200B;**fiberoffer.css**，然後按Enter鍵。
+![AEMCS](./images/mtplugin4.png){zoomable="yes"}
 
-![AEMCS](./images/blockadv8.png){zoomable="yes"}
+## 1.1.5.2 head.html
 
-將下列CSS程式碼複製並貼到新建立的檔案中。
+在Visual Studio Code中，開啟檔案&#x200B;**head.html**。 複製下列程式碼並將其貼到檔案&#x200B;**head.html**&#x200B;中。
 
-```js
-.offerText, .offerCTA, .offerImage{
-    color: #14161A;
-    font-size: 30px;
-    padding: 0 0 24px;
-    display: flex;
-    flex-direction: column;
-    margin: 1rem 0;
-    text-align: center;
-}
+```javascript
+<link rel="preload" as="script" crossorigin="anonymous" href="/plugins/martech/src/index.js"/>
+<link rel="preload" as="script" crossorigin="anonymous" href="/plugins/martech/src/alloy.min.js"/>
+<link rel="preconnect" href="https://edge.adobedc.net"/>
+<!-- change to adobedc.demdex.net if you enable third party cookies -->
 ```
 
 儲存您的變更。
 
-![AEMCS](./images/blockadv9.png){zoomable="yes"}
+![AEMCS](./images/mtplugin5.png){zoomable="yes"}
 
-您現在已在專案中進行數項變更，這些變更需要提交回GitHub存放庫。 若要這麼做，請開啟&#x200B;**GitHub Desktop**。
+## 1.1.5.3 scripts.js
 
-然後您應該會在&#x200B;**變更**&#x200B;下看到您剛才編輯的2個檔案。 檢閱您的變更。
-
-輸入您的PR名稱，`js css`。 按一下&#x200B;**認可至主要**。
-
-![區塊](./images/blockadv10.png){zoomable="yes"}
-
-您應該會看到此訊息。 按一下&#x200B;**推播來源**。
-
-![區塊](./images/blockadv11.png){zoomable="yes"}
-
-在瀏覽器中，前往您的GitHub帳戶，並前往您為CitiSignal建立的存放庫。 接著，您應該會看到類似這樣的畫面，表示已收到您的變更。
-
-![區塊](./images/blockadv12.png){zoomable="yes"}
-
-您現在可以移至`main--citisignal--XXX.aem.page/us/en/`及/或`main--citisignal--XXX.aem.live/us/en/`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
-
-在此範例中，完整URL會變成：
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
-
-之後，您應該會看到此訊息，且樣式會套用至頁面。
-
-![區塊](./images/blockadv13.png){zoomable="yes"}
-
-## 1.1.4.2新增邏輯並從外部端點載入資料
-
-在此練習中，您將執行Adobe的網頁SDK的「原始」設定，並將向Adobe Journey Optimizer Offer Decisioning請求下一個最佳選件。
-
-需要澄清的是：這並不表示這是針對AEM as a Cloud Service實作Web SDK的最佳作法。 在下一個練習中，您將使用為此開發的特定外掛程式來實作資料收集。
-
-本練習旨在向您展示JavaScript中的幾項基本功能，例如載入外部JS程式庫、使用&#x200B;**alloy.js**&#x200B;程式庫、傳送要求等。
-
-資料庫&#x200B;**alloy.js**&#x200B;是位於Web SDK的資料庫，可讓您將請求從網站傳送至Adobe的Edge Network，以及從網站傳送至Adobe Experience Platform、Adobe Analytics、Adobe Target等應用程式。
-
-在您針對區塊樣式新增的上一個程式碼底下新增此程式碼：
+在Visual Studio Code中，移至資料夾&#x200B;**scripts**&#x200B;並開啟檔案&#x200B;**scripts.js**。 複製下列程式碼，並將其貼到檔案&#x200B;**scripts.js**&#x200B;中現有的匯入指令碼下。
 
 ```javascript
-var script1 = document.createElement('script');
-  script1.text = "!function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||[]).push(o),n[o]=function(){var u=arguments;return new Promise(function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}(window,['alloy']);"
-  document.head.appendChild(script1);
+import {
+  initMartech,
+  updateUserConsent,
+  martechEager,
+  martechLazy,
+  martechDelayed,
+} from '../plugins/martech/src/index.js';
+```
 
-  var script2 = document.createElement('script');
-  script2.async = true;
-  script2.src = "https://cdn1.adoberesources.net/alloy/2.14.0/alloy.min.js";
-  document.head.appendChild(script2);
+儲存您的變更。
 
-  alloy("configure", {
-    "edgeConfigId": "045c5ee9-468f-47d5-ae9b-a29788f5948f",
-    "orgId": "907075E95BF479EC0A495C73@AdobeOrg",
-    "defaultConsent": "in"
+![AEMCS](./images/mtplugin6.png){zoomable="yes"}
+
+在Visual Studio Code中，在檔案&#x200B;**scripts.js**&#x200B;中找到下列程式碼：
+
+```javascript
+const AUDIENCES = {
+  mobile: () => window.innerWidth < 600,
+  desktop: () => window.innerWidth >= 600,
+  // define your custom audiences here as needed
+};
+```
+
+在&#x200B;**const AUDIENCES = {...}下；**&#x200B;貼上以下程式碼：
+
+```javascript
+  const isConsentGiven = true;
+  const martechLoadedPromise = initMartech(
+    // The WebSDK config
+    // Documentation: https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/overview#configure-js
+    {
+      datastreamId: "XXX",
+      orgId: "XXX",
+      defaultConsent: 'in',
+      onBeforeEventSend: (payload) => {
+        // set custom Target params 
+        // see doc at https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/send-parameters#parameter-mapping-summary
+        payload.data.__adobe.target ||= {};
+
+        // set custom Analytics params
+        // see doc at https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping
+        payload.data.__adobe.analytics ||= {};
+      },
+
+      // set custom datastream overrides
+      // see doc at:
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/datastream-overrides
+      // - https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides
+      edgeConfigOverrides: {
+        // Override the datastream id
+        // datastreamId: '...'
+
+        // Override AEP event datasets
+        // com_adobe_experience_platform: {
+        //   datasets: {
+        //     event: {
+        //       datasetId: '...'
+        //     }
+        //   }
+        // },
+
+        // Override the Analytics report suites
+        // com_adobe_analytics: {
+        //   reportSuites: ['...']
+        // },
+
+        // Override the Target property token
+        // com_adobe_target: {
+        //   propertyToken: '...'
+        // }
+      },
+    },
+    // The library config
+    {
+      launchUrls: ["XXX"],
+      personalization: !!getMetadata('target') && isConsentGiven,
+    },
+  );
+```
+
+![AEMCS](./images/mtplugin8.png){zoomable="yes"}
+
+在上述程式碼中，有一些變數需要由您自己的環境變數取代：
+
+- `datastreamId: "XXX"`
+- `orgId: "XXX"`
+- `launchUrls: ["XXX"]`
+
+您可以依照下列指示找到這些變數：
+
+### datastreamId
+
+前往[https://platform.adobe.com/](https://platform.adobe.com/)，然後在左側功能表中前往&#x200B;**資料串流**。 確定您是在正確的沙箱，應該是`--aepSandboxName--`。 搜尋在本教學課程的[快速入門]區段中建立的資料流，其名稱應該是`--aepUserLdap-- - One Adobe Datastream`。 按一下&#x200B;**複製**&#x200B;圖示以複製&#x200B;**資料串流ID**，並貼到Visual Studio Code檔案&#x200B;**scripts.js**&#x200B;中，方法是取代`XXX`旁的預留位置值`datastreamId:`。
+
+![AEMCS](./images/scriptsvar1.png){zoomable="yes"}
+
+### orgId
+
+前往[https://platform.adobe.com/](https://platform.adobe.com/)，然後在左側功能表中前往&#x200B;**查詢**。 在&#x200B;**認證**&#x200B;下，您會找到&#x200B;**IMS組織ID**，名稱為&#x200B;**使用者名稱**。 按一下&#x200B;**複製**&#x200B;圖示以複製&#x200B;**IMS組織ID**，並貼到Visual Studio Code檔案&#x200B;**scripts.js**&#x200B;中，方式是取代`XXX`旁的預留位置值`orgId:`。
+
+![AEMCS](./images/scriptsvar2.png){zoomable="yes"}
+
+### launchUrls
+
+前往[https://platform.adobe.com/](https://platform.adobe.com/)，然後在左側功能表中前往&#x200B;**標籤**。 使用您的LDAP （應為`--aepUserLdap--`）搜尋您的屬性。 開啟您的Web屬性。
+
+![AEMCS](./images/scriptsvar3.png){zoomable="yes"}
+
+在左側功能表中，移至&#x200B;**環境**，然後按一下&#x200B;**開發**&#x200B;環境的&#x200B;**安裝**&#x200B;圖示。
+
+![AEMCS](./images/scriptsvar4.png){zoomable="yes"}
+
+您會找到所需的URL，但位於HTML `<script></script>`標籤內。 您應該只複製從`https`開始直到`.min.js`的部分。
+
+![AEMCS](./images/scriptsvar5.png){zoomable="yes"}
+
+URL看起來像這樣： `https://assets.adobedtm.com/b754ed1bed61/b9f7c7c484de/launch-5fcd90e5b482-development.min.js`。 請確定不會同時複製其他文字，因為這樣會導致錯誤。 在Visual Studio Code中，在檔案&#x200B;**scripts.js**&#x200B;中，取代`XXX`陣列中的預留位置值`launchUrls:`。
+
+您現在擁有所需的三個變數。 您的檔案`scripts.js`現在看起來應該像這樣：
+
+![AEMCS](./images/mtplugin7.png){zoomable="yes"}
+
+接下來，搜尋以尋找此程式碼區塊：
+
+```javascript
+const main = doc.querySelector('main');
+  if (main) {
+    decorateMain(main);
+    document.body.classList.add('appear');
+    await loadSection(main.querySelector('.section'), waitForFirstImage);	
+  }
+```
+
+![AEMCS](./images/mtplugin7a.png){zoomable="yes"}
+
+以此程式碼區塊取代：
+
+```javascript
+const main = doc.querySelector('main');
+  if (main) {
+    decorateMain(main);
+    document.body.classList.add('appear');
+    await Promise.all([
+      martechLoadedPromise.then(martechEager),
+      loadSection(main.querySelector('.section'), waitForFirstImage)
+    ]);
+  }
+```
+
+![AEMCS](./images/mtplugin10.png){zoomable="yes"}
+
+接下來，搜尋並向下捲動至`async function loadLazy(doc) {`。
+
+![AEMCS](./images/mtplugin9a.png){zoomable="yes"}
+
+在第`autolinkModals(doc);`行下方，新增這行程式碼：
+
+```javascript
+await martechLazy();
+```
+
+![AEMCS](./images/mtplugin9.png){zoomable="yes"}
+
+接下來，搜尋並向下捲動至`function loadDelayed() {`行。
+
+![AEMCS](./images/mtplugin11a.png){zoomable="yes"}
+
+在第`// load anything that can be postponed to the latest here`行下方新增此程式碼區塊。
+
+```javascript
+window.setTimeout(() => {
+    martechDelayed();
+    return import('./delayed.js');
+  }, 3000);
+```
+
+![AEMCS](./images/mtplugin11.png){zoomable="yes"}
+
+接下來，搜尋並移至包含`window.adobeDataLayer.push`的行。
+
+![AEMCS](./images/mtplugin14.png){zoomable="yes"}
+
+您會看到物件`pageContext`定義如下。 您現在需要在`pageContext`下新增兩個物件。
+
+```javascript
+	pageContext: {
+      pageType,
+      pageName: document.title,
+      eventType: 'visibilityHidden',
+      maxXOffset: 0,
+      maxYOffset: 0,
+      minXOffset: 0,
+      minYOffset: 0,
+    }
+```
+
+這是需要新增的程式碼：
+
+```javascript
+	,
+    _experienceplatform: {
+      identification:{
+        core:{
+          ecid: sessionStorage.getItem("com.adobe.reactor.dataElements.ECID")
+        }
+      }
+    },
+    web: {
+      webPageDetails:{
+        name: document.title,
+        URL: window.location.href
+      }
+    }
+```
+
+**window.adobeDataLayer.push**&#x200B;現在看起來應該像這樣：
+
+```javascript
+  window.adobeDataLayer.push({
+    pageContext: {
+      pageType,
+      pageName: document.title,
+      eventType: 'visibilityHidden',
+      maxXOffset: 0,
+      maxYOffset: 0,
+      minXOffset: 0,
+      minYOffset: 0,
+    },
+    _experienceplatform: {
+      identification:{
+        core:{
+          ecid: sessionStorage.getItem("com.adobe.reactor.dataElements.ECID")
+        }
+      }
+    },
+    web: {
+      webPageDetails:{
+        name: document.title,
+        URL: window.location.href
+      }
+    }
   });
 ```
 
-然後您應該擁有此專案。
+![AEMCS](./images/mtplugin15.png){zoomable="yes"}
 
-您新增的第一個指令碼標籤（指令碼1）是Web SDK使用的函式，會建立名為&#x200B;**alloy**&#x200B;的視窗物件。
+您現在已在檔案&#x200B;**scripts.js**&#x200B;中進行所有必要的變更。
 
-第二個指令碼標籤(script2)將會從Adobe的CDN非同步載入alloy.js資料庫。
+開啟GitHub Desktop使用者端並確認變更。
 
-程式碼的第三個區塊基本上會設定alloy物件，將資料傳送至特定的Adobe IMS組織和資料流。
+![AEMCS](./images/mtplugin12.png){zoomable="yes"}
 
-在&#x200B;**快速入門**&#x200B;模組中，您已設定名為`--aepUserLdap-- - One Adobe Datastream`的資料流。 上述程式碼中的欄位&#x200B;**edgeConfigId**&#x200B;參考已設定資料流的ID。
+按一下&#x200B;**推送來源**，將您的變更推送至您的GitHub存放庫。
 
-此時您不需要變更欄位&#x200B;**edgeConfigId**。 在下個練習中，您將能夠使用&#x200B;**MarTech**&#x200B;外掛程式來執行此操作。
+![AEMCS](./images/mtplugin13.png){zoomable="yes"}
 
-![區塊](./images/blockadv15.png){zoomable="yes"}
+## 標籤屬性中的1.1.5.4 ACDL延伸
 
-您現在應該擁有此專案。
+為了讓AEM Edge Delivery Services MarTech外掛程式能夠正常運作，您需要為
 
-![區塊](./images/blockadv14.png){zoomable="yes"}
+移至[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 搜尋Web的Tags屬性，然後開啟，其名稱為`--aepUserLdap-- - One Adobe (DD/MM/YYYY)`。
 
-接下來，在您新增的上一個程式碼下方新增此區塊。
+![AEMCS](./images/acdl3.png){zoomable="yes"}
 
-```javascript
-var ECID = "";
+移至&#x200B;**延伸模組**，移至&#x200B;**目錄**。 按一下擴充功能&#x200B;**Adobe Client Data Layer**，然後按一下&#x200B;**安裝**。
 
-  alloy("getIdentity")
-    .then(function (result) {
-      // The command succeeded.
-      console.log("ECID:", result.identity.ECID);
-      ECID = result.identity.ECID;
-      getOffer(ECID);
+![AEMCS](./images/acdl4.png){zoomable="yes"}
 
-    })
-    .catch(function (error) {
-      // The command failed.
-      // "error" will be an error object with additional information.
-    });
-```
+您應該會看到此訊息。 目前不需要變更任何專案。 按一下&#x200B;**儲存至資料庫**。
 
-此程式碼區塊用於擷取Experience Cloud ID (ECID)的值。 ECID是瀏覽器的唯一裝置識別碼。
+![AEMCS](./images/acdl5.png){zoomable="yes"}
 
-如上述程式碼所示，擷取ECID後，就會呼叫另一個函式。 此函式名為&#x200B;**getOffer()**，您稍後會新增此函式。
+擴充功能會接著新增至您的Tags屬性。
 
-![區塊](./images/blockadv16.png){zoomable="yes"}
+![AEMCS](./images/acdl6.png){zoomable="yes"}
 
-接下來，將下列程式碼新增至
+移至&#x200B;**發佈流程**&#x200B;並開啟您的&#x200B;**主要**&#x200B;資料庫。 按一下[新增所有變更的資源]**，然後按一下[儲存並建置至開發]****。**
 
-```javascript
-async function getOffer(ECID) {
-  var url = "https://edge.adobedc.net/ee/irl1/v1/interact?configId=045c5ee9-468f-47d5-ae9b-a29788f5948f";
+![AEMCS](./images/acdl7.png){zoomable="yes"}
 
-  var timestamp = new Date().toISOString();
+您的變更現已部署。
 
-  var offerRequest = {
-    "events": [
-      {
-        "xdm": {
-          "eventType": "decisioning.propositionDisplay",
-          "timestamp": timestamp,
-          "_experienceplatform": {
-            "identification": {
-              "core": {
-                "ecid": ECID
-              }
-            }
-          },
-          "identityMap": {
-            "ECID": [
-              {
-                "id": ECID
-              }
-            ]
-          }
-        },
-        "query": {
-          "personalization": {
-            "schemas": [
-              "https://ns.adobe.com/personalization/default-content-item",
-              "https://ns.adobe.com/personalization/html-content-item",
-              "https://ns.adobe.com/personalization/json-content-item",
-              "https://ns.adobe.com/personalization/redirect-item",
-              "https://ns.adobe.com/personalization/ruleset-item",
-              "https://ns.adobe.com/personalization/message/in-app",
-              "https://ns.adobe.com/personalization/message/content-card",
-              "https://ns.adobe.com/personalization/dom-action"
-            ],
-            "decisionScopes": [
-              "eyJ4ZG06YWN0aXZpdHlJZCI6ImRwczpvZmZlci1hY3Rpdml0eToxYTI3ODk3NzAzYTY5NWZmIiwieGRtOnBsYWNlbWVudElkIjoiZHBzOm9mZmVyLXBsYWNlbWVudDoxYTI0ZGM2MWJmYjJlMjIwIn0=",
-              "eyJ4ZG06YWN0aXZpdHlJZCI6ImRwczpvZmZlci1hY3Rpdml0eToxYTI3ODk3NzAzYTY5NWZmIiwieGRtOnBsYWNlbWVudElkIjoiZHBzOm9mZmVyLXBsYWNlbWVudDoxYTI0ZGM0MzQyZjJlMjFlIn0="
-            ]
-          }
-        }
-      }
-    ]
-  }
-
-  try {
-    const response = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(offerRequest),
-    });
-
-    if (response.status === 200) {
-      var body = await response.json();
-      console.log("Offer Decisioning Response: ", body);
-
-      const decisions = body["handle"];
-
-      decisions.forEach(decision => {
-        if (decision["type"] == "personalization:decisions") {
-          console.log("Offer Decisioning decision detail: ", decision);
-          const payloads = decision["payload"];
-
-          if (payloads === undefined || payloads.length == 0) {
-            //do nothing
-          } else {
-            payloads.forEach(payload => {
-              if (payload["placement"]["name"] == "Web - Image") {
-                console.log("Web-Image payload");
-                const items = payload["items"];
-                items.forEach(item => {
-                  if (item["id"].includes("dps:fallback-offer")) {
-                    console.log("Item details: ", item);
-                    const deliveryURL = item["data"]["deliveryURL"];
-
-                    document.querySelector("#offerImage").innerHTML = "<img style='max-width:100%;' src='" + item["data"]["deliveryURL"] + "'/>";
-                  } else if (item["id"].includes("dps:personalized-offer")) {
-                    console.log("Item details: ", item);
-                    const deliveryURL = item["data"]["deliveryURL"];
-                    console.log("Web-Image Personalized Offer Content: ", deliveryURL)
-
-                    document.querySelector("#offerImage").innerHTML = "<img style='max-width:100%;' src='" + item["data"]["deliveryURL"] + "'/>";
-                  }
-                });
-              } else if (payload["placement"]["name"] == "Web - JSON") {
-                console.log("Web-JSON payload");
-                const items = payload["items"];
-                items.forEach(item => {
-                  if (item["id"].includes("dps:fallback-offer")) {
-                    const content = JSON.parse(item["data"]["content"]);
-
-                    console.log("Web-JSON Fallback Content: ", content)
-
-                    document.querySelector("#offerText").innerHTML = content.text;
-                    document.querySelector("#offerCTA").innerHTML = content.cta;
-                  } else if (item["id"].includes("dps:personalized-offer")) {
-                    const content = JSON.parse(item["data"]["content"]);
-
-                    console.log("Web-JSON Personalized Offer Content: " + content);
-
-                    document.querySelector("#offerText").innerHTML = content.text;
-                    document.querySelector("#offerCTA").innerHTML = content.cta;
-                  }
-                });
-              }
-            });
-          }
-          document.querySelector("#offerImage").style.display = "block";
-          document.querySelector("#offerText").style.display = "block";
-          document.querySelector("#offerCTA").style.display = "block";
-        }
-      });
-    } else {
-      console.warn("Offer Decisioning Response unsuccessful:", response.body);
-    }
-  } catch (error) {
-    console.error("Error when getting Offer Decisioning Response:", error);
-  }
-}
-```
-
-請務必將此程式碼區塊貼在右方括弧下方，您可以在此範例的第42行看到該方塊。 您剛貼上的程式碼是獨立的函式，需要它在這個檔案中擁有自己的位置，而且無法巢狀內嵌在上述&#x200B;**預設函式**&#x200B;中。
-
-![區塊](./images/blockadv17.png){zoomable="yes"}
-
-您剛貼上的程式碼區塊會模擬一般會由Web SDK/alloy.js提出的要求。 在此範例中，將會對&#x200B;**edge.adobedc.net**&#x200B;發出&#x200B;**擷取**&#x200B;要求。
-
-在請求中指定了2 **決定範圍**，這會要求Adobe Journey Optimizer Offer Decisioning針對此ECID需要檢視哪些優惠提供決定。
-
-收到回應後，此程式碼會剖析回應並篩選出需要顯示的影像URL等，以及包含優惠方案文字和優惠方案CTA等JSON回應，接著會在網站上顯示這些內容。
-
-請記住 — 此方法僅用於啟用目的，並非實作資料收集的最佳實務方式。
-
-儲存您的變更。接著，開啟&#x200B;**Github Desktop**，為您的PR命名，然後按一下&#x200B;**認可至主要**。
-
-![區塊](./images/blockadv18.png){zoomable="yes"}
-
-接著，按一下&#x200B;**推播來源**。
-
-![區塊](./images/blockadv19.png){zoomable="yes"}
+## 1.1.5.5傳送資料至Adobe Experience Platform Edge Network
 
 您現在可以移至`main--citisignal--XXX.aem.page/us/en/`及/或`main--citisignal--XXX.aem.live/us/en/`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
 
 在此範例中，完整URL會變成：
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
 
-您應該會看到此訊息。
+>[!NOTE]
+>
+>請考慮開啟無痕網頁，以確保您是以全新且簡潔的設定檔開始資料收集。 這樣可更輕鬆進行偵錯和疑難排解。
 
-![區塊](./images/blockadv20.png){zoomable="yes"}
+![AEMCS](./images/plweb1.png){zoomable="yes"}
 
-下一步： [AEM Edge Delivery Services MarTech外掛程式](./ex6.md){target="_blank"}
+在Chrome中，移至&#x200B;**更多工具** > **開發人員工具**，以開啟&#x200B;**開發人員工具**。
+
+![AEMCS](./images/plweb2.png){zoomable="yes"}
+
+在&#x200B;**主控台**&#x200B;檢視中，您會看到以`[alloy]`開頭的許多行。 請檢視要求，其中一個要求應該看起來像這樣，並要求內文如影像中所示。
+
+`[alloy] Request 55a9ddbc-0521-4ba3-b527-3da2cb35328a: Sending request.`
+
+開啟裝載並深入研究欄位`events[0].xdm._experienceplatform.identification.core.ecid`，然後複製ECID。
+
+![AEMCS](./images/plweb3.png){zoomable="yes"}
+
+## 1.1.5.6在Adobe Experience Platform中檢視客戶設定檔
+
+前往此URL登入Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
+
+登入後，您會登入Adobe Experience Platform的首頁。
+
+![資料擷取](./images/home.png){zoomable="yes"}
+
+繼續之前，您必須選取&#x200B;**沙箱**。 要選取的沙箱名為``--aepSandboxName--``。 選取適當的沙箱後，您會看到畫面變更，現在您已進入專屬沙箱。
+
+![資料擷取](./images/sb1.png){zoomable="yes"}
+
+在左側功能表中，移至&#x200B;**客戶** > **設定檔** > **瀏覽**。 選取&#x200B;**ECID**&#x200B;的&#x200B;**身分名稱空間**，然後經過您在上一步中複製的&#x200B;**ECID**。 按一下&#x200B;**檢視**。 之後，您應該會看到設定檔顯示在清單中。 按一下以開啟。
+
+![AEMCS](./images/plweb4.png){zoomable="yes"}
+
+然後您會看到&#x200B;**設定檔儀表板**&#x200B;總覽，其中顯示ECID。 接著，移至&#x200B;**活動**。
+
+![AEMCS](./images/plweb5.png){zoomable="yes"}
+
+在&#x200B;**Events**&#x200B;底下，您會看到數個體驗事件，包括具有eventType **web.webpagedetails.pageViews**&#x200B;的事件。 按一下&#x200B;**檢視JSON**&#x200B;以檢視所有收集的事件。
+
+![AEMCS](./images/plweb6.png){zoomable="yes"}
+
+在&#x200B;**JSON**&#x200B;檢視中，使用eventType **web.webpagedetails.pageViews**&#x200B;驗證事件，以檢視&#x200B;**頁面名稱**&#x200B;和&#x200B;**頁面URL**&#x200B;之類的專案。
+
+![AEMCS](./images/plweb7.png){zoomable="yes"}
+
+您現在已經完成此練習。
+
+下一步： [摘要與優點](./summary.md){target="_blank"}
 
 返回[Adobe Experience Manager Cloud Service和Edge Delivery Services](./aemcs.md){target="_blank"}
 
