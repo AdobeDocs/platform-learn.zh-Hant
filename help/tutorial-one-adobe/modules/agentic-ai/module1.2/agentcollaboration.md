@@ -3,10 +3,11 @@ title: 代理Collaboration
 description: 代理Collaboration
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 96f8490e-a7f4-4b81-8e7a-1ae2cab158fe
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 7%
+source-wordcount: '71'
+ht-degree: 5%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 7%
 
 ## 學習目標
 
-- ...
+在此單元中，您之前建立的代理程式將開始與各種Adobe代理程式搭配運作。
 
 ## 先決條件
 

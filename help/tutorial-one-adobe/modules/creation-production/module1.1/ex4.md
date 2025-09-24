@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ![Firefly自訂模型](./images/ffcm1.png){zoomable="yes"}
 
-您可能會看到此訊息。 如果是，請按一下[同意]&#x200B;**&#x200B;**&#x200B;繼續。
+您可能會看到此訊息。 如果是，請按一下[同意]****&#x200B;繼續。
 
 ![Firefly自訂模型](./images/ffcm2.png){zoomable="yes"}
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ![Firefly自訂模型](./images/ffcm7.png){zoomable="yes"}
 
-在[這裡](https://tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip)下載參考影像。 將下載檔案解壓縮，這會為您提供此資訊。
+在[這裡](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CitiSignal_router.zip)下載參考影像。 將下載檔案解壓縮，這會為您提供此資訊。
 
 ![Firefly自訂模型](./images/ffcm8.png){zoomable="yes"}
 
@@ -139,7 +139,7 @@ ht-degree: 0%
 
 ## 1.1.4.4啟用Firefly Services自訂模型API的自訂模型
 
-您的自訂模型培訓完成後，也可以透過API使用。 在練習1.1.1中，您已設定您的Adobe I/O專案，以透過API與Firefly服務互動。
+您的自訂模型培訓完成後，也可以透過API使用。 在練習1.1.1中，您已設定Adobe I/O專案透過API與Firefly Services互動。
 
 移至[https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train)。 按一下「自訂模型」以開啟。
 

@@ -4,7 +4,7 @@ description: 建立您的Cloud Manager程式
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 3%
@@ -86,8 +86,8 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcsact2.png)
 
-大約10分鐘後，將完成&#x200B;**Content Hub**&#x200B;的啟用。
-接下來，檢視&#x200B;**Dynamic Media**&#x200B;行，並選取&#x200B;**按一下以啟用**。
+大約10分鐘後，將完成&#x200B;**Content Hub**的啟用。
+接下來，檢視**Dynamic Media**&#x200B;行，並選取&#x200B;**按一下以啟用**。
 
 ![AEMCS](./images/aemcsact3.png)
 
@@ -105,7 +105,7 @@ ht-degree: 3%
 
 管道執行完成後，您可以繼續進行下一個練習。
 
-下一步： [設定您的AEM CS環境](./ex3.md){target="_blank"}
+下一步： [設定您的AEM CS環境](./ex2.md){target="_blank"}
 
 返回[Adobe Experience Manager Cloud Service和Edge Delivery Services](./aemcs.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: 設定您的AEM CS環境
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ ZZZ = `citisignal-aem-accs`
 
 檔案`fstab.yaml`現在已更新。
 
-## 1.1.2.3上傳CitiSignal資產
+## 1.1.2.3上傳CitiSignal資產和網站
 
 移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 按一下您的&#x200B;**程式**&#x200B;以開啟。
 
@@ -153,7 +153,7 @@ ZZZ = `citisignal-aem-accs`
 
 您現在需要存取AEM的&#x200B;**CRX封裝管理員**&#x200B;環境。 若要這麼做，請從URL移除`ui#/aem/aem/start.html?appId=aemshell`，並以`crx/packmgr`取代，這表示您的URL現在看起來應該像這樣：
 `https://author-p166717-e1786231.adobeaemcloud.com/crx/packmgr`。
-點選&#x200B;**Enter**&#x200B;以載入封裝管理員環境
+點選**Enter**&#x200B;以載入封裝管理員環境
 
 ![AEMCS](./images/aemcssetup22.png)
 
@@ -163,11 +163,11 @@ ZZZ = `citisignal-aem-accs`
 
 按一下&#x200B;**瀏覽**&#x200B;以找出要上傳的封裝。
 
-要上傳的封裝名稱為&#x200B;**citisignal-assets.zip**，可從此處下載： [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}。
+要上傳的封裝名稱為&#x200B;**citisignal-assets.zip**，可從此處下載： [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip){target="_blank"}。
 
 ![AEMCS](./images/aemcssetup23.png)
 
-選取封裝並按一下&#x200B;**開啟**。
+選取封裝`citisignal_aem_accs.zip`並按一下&#x200B;**開啟**。
 
 ![AEMCS](./images/aemcssetup24.png)
 
@@ -175,11 +175,7 @@ ZZZ = `citisignal-aem-accs`
 
 ![AEMCS](./images/aemcssetup25.png)
 
-然後會上傳套件。
-
-![AEMCS](./images/aemcssetup26.png)
-
-接著，在您剛上傳的封裝上按一下&#x200B;**安裝**。
+然後會上傳套件。 接著，在您剛上傳的封裝上按一下&#x200B;**安裝**。
 
 ![AEMCS](./images/aemcssetup27.png)
 
@@ -229,61 +225,66 @@ ZZZ = `citisignal-aem-accs`
 
 您的資產現已發佈。
 
-## 1.1.2.5建立CitiSignal網站
+## 1.1.2.5發佈CitiSignal網站
 
-移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 按一下您的&#x200B;**程式**&#x200B;以開啟。
+按一下熒幕左上角的&#x200B;**Adobe Experience Manager**&#x200B;產品名稱，然後按一下&#x200B;**Assets**&#x200B;旁的&#x200B;**箭頭**。
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/aemcssetup30a.png)
 
-接著，按一下作者環境的URL。
-
-![AEMCS](./images/aemcssetup18.png)
-
-按一下&#x200B;**使用Adobe登入**。
-
-![AEMCS](./images/aemcssetup19.png)
-
-然後您會看到您的作者環境。 按一下&#x200B;**網站**。
+接著，按一下&#x200B;**網站**。
 
 ![AEMCS](./images/aemcssetup30.png)
 
-按一下&#x200B;**建立**，然後按一下&#x200B;**來自範本的網站**。
+然後您應該會看到您之前在安裝套件之後建立的&#x200B;**CitiSignal**&#x200B;網站。
 
 ![AEMCS](./images/aemcssetup31.png)
 
-按一下&#x200B;**匯入**。
+若要將您的網站連結至您之前建立的GitHub存放庫，您必須建立&#x200B;**Edge Delivery Services設定**。
+
+第一個步驟是建立&#x200B;**雲端設定**。
+
+若要這麼做，請按一下熒幕左上角的&#x200B;**Adobe Experience Manager**&#x200B;產品名稱，然後按一下&#x200B;**工具**&#x200B;圖示，然後選取&#x200B;**一般**。 按一下以開啟&#x200B;**設定瀏覽器**。
+
+![AEMCS](./images/aemcssetup31a.png)
+
+您應該會看到此訊息。 按一下&#x200B;**建立**
+
+![AEMCS](./images/aemcssetup31b.png)
+
+將欄位&#x200B;**標題**&#x200B;和&#x200B;**名稱**&#x200B;設定為`CitiSignal`。 啟用&#x200B;**雲端設定**&#x200B;的核取方塊。
+
+按一下&#x200B;**建立**。
+
+![AEMCS](./images/aemcssetup31c.png)
+
+然後您應該擁有此專案。
+
+![AEMCS](./images/aemcssetup31d.png)
+
+接下來，您需要更新您剛建立的&#x200B;**雲端設定**&#x200B;的某些欄位。
+
+若要這麼做，請按一下熒幕左上角的&#x200B;**Adobe Experience Manager**&#x200B;產品名稱，然後按一下&#x200B;**工具**&#x200B;圖示，然後選取&#x200B;**雲端服務**。 按一下以開啟&#x200B;**Edge Delivery Services設定**。
 
 ![AEMCS](./images/aemcssetup32.png)
 
-您現在需要為網站匯入預先設定的範本。 您可以在[這裡](./../../../assets/aem/citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip){target="_blank"}下載範本。 將檔案儲存到您的案頭。
+選取&#x200B;**CitiSignal**，按一下&#x200B;**建立**&#x200B;並選取&#x200B;**組態**。
 
-接著，選取檔案`citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip`並按一下&#x200B;**開啟**。
+![AEMCS](./images/aemcssetup31e.png)
+
+您現在需要填寫&#x200B;**組織**&#x200B;和&#x200B;**網站名稱**&#x200B;欄位。 若要這麼做，請先看看GitHub存放庫的URL。
+
+![AEMCS](./images/aemcssetup31f.png)
+
+- **組織**：使用您的GitHub組織名稱名稱，在此範例中為`woutervangeluwe`
+- **網站名稱**：使用GitHub存放庫的名稱，應為`citisignal-aem-accs`。
+
+按一下&#x200B;**儲存並關閉**。
 
 ![AEMCS](./images/aemcssetup33.png)
 
-您將會看到此訊息。 按一下以選取您剛上傳的範本，然後按一下[下一步] **&#x200B;**。
+然後您應該擁有此專案。 在新建立的Edge雲端設定前面啟用核取方塊，然後按一下&#x200B;**發佈**。
 
 ![AEMCS](./images/aemcssetup34.png)
-
-您現在需要填寫一些詳細資料。
-
-- 網站標題：使用&#x200B;**CitiSignal**
-- 網站名稱：使用&#x200B;**CitiSignal**
-- GitHub URL：複製您之前使用的GitHub存放庫的URL
-
-![AEMCS](./images/aemcssetup35.png)
-
-您就會擁有此專案。 按一下&#x200B;**建立**。
-
-![AEMCS](./images/aemcssetup36.png)
-
-正在建立您的網站。 這可能需要幾分鐘的時間。 按一下&#x200B;**確定**。
-
-![AEMCS](./images/aemcssetup37.png)
-
-幾分鐘後重新整理您的熒幕，您就會看到新建立的CitiSignal網站。
-
-![AEMCS](./images/aemcssetup38.png)
 
 ## 1.1.2.6更新檔案路徑.json
 
@@ -308,6 +309,10 @@ ZZZ = `citisignal-aem-accs`
 檔案`paths.json`現在已更新。
 
 ## 1.1.2.7發佈CitiSignal網站
+
+按一下熒幕左上角的&#x200B;**Adobe Experience Manager**&#x200B;產品名稱，然後選取&#x200B;**網站**。
+
+![AEMCS](./images/aemcssetup38.png)
 
 接著，按一下&#x200B;**CitiSignal**&#x200B;前面的核取方塊。 然後，按一下&#x200B;**管理出版物**。
 
@@ -364,7 +369,7 @@ ZZZ = `citisignal-aem-accs`
 
 ![AEMCS](./images/aemcssetup50.png)
 
-下一步： [開發自訂區塊](./ex4.md){target="_blank"}
+下一步： [開發自訂區塊](./ex3.md){target="_blank"}
 
 返回[Adobe Experience Manager Cloud Service和Edge Delivery Services](./aemcs.md){target="_blank"}
 

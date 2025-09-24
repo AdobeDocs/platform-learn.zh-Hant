@@ -3,10 +3,10 @@ title: 內容狀態
 description: 內容狀態
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: 47d036564be9c009e26903b20778e61fd1c78635
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 12%
+source-wordcount: '473'
+ht-degree: 14%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 12%
 | ---------------------- | ------------ | ------------ |------------ |
 | [1.1 Adobe Experience Manager Cloud Service與Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | 是 | - |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | 是 | - |
-| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 19/09/2025 | 是 | - |
+| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 23/09/2025 | 是 | - |
 
 ## 4.傳遞與啟用
 
@@ -82,8 +82,8 @@ ht-degree: 12%
 
 | 名稱 | 上次更新日期 | 工作百分之百 | 備註 |
 | ---------------------- | ------------ | ------------ |------------ |
-| [1.1 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 否 | - |
-| [1.2 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 否 | - |
+| [1.1 Agentic AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 23/09/2025 | 無 | 工作進行中 |
+| [1.2代理程式Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md){target="_blank"} | 23/09/2025 | 無 | 工作進行中 |
 
 {style="table-layout:auto"}
 

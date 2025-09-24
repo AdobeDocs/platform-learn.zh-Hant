@@ -4,7 +4,7 @@ description: Customer AI — 資料準備（擷取）
 kt: 5342
 doc-type: tutorial
 exl-id: 2b49d86a-af75-4ecd-ab3f-0182f3b8da2f
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 # 2.2.1 Customer AI — 資料準備（擷取）
 
 為了讓智慧型服務從行銷事件資料中探索見解，資料必須在語義上豐富並維護標準結構。 智慧型服務可運用Adobe的Experience Data Model (XDM)結構描述來達成此目的。
-具體而言，Intelligent Services中使用的所有資料集都必須符合&#x200B;**消費者體驗事件** XDM結構描述。
+具體而言，Intelligent Services中使用的所有資料集都必須符合**消費者體驗事件** XDM結構描述。
 
 ## 建立結構描述
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 ![建立新結構描述](./images/xdmee4.png)
 
-您現在應該擁有此專案。 按一下[儲存]儲存結構描述。**&#x200B;**
+您現在應該擁有此專案。 按一下[儲存]儲存結構描述。****
 
 ![建立新結構描述](./images/xdmee5.png)
 
@@ -112,7 +112,7 @@ ht-degree: 1%
 
 為本練習中的體驗事件準備的資料必須符合[消費者體驗事件XDM欄位群組](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md)的要求和結構描述。
 
-請從以下位置下載包含示範資料的zip檔案： [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip)。
+請從以下位置下載包含示範資料的zip檔案： [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip)。
 
 您現在已下載名為&#x200B;**CUSTOM-CAI-EVENTS-WEB.zip**&#x200B;的檔案。 將檔案放在電腦的案頭上並解壓縮，之後您會看到名為&#x200B;**CUSTOM-CAI-EVENTS-WEB**&#x200B;的資料夾。
 

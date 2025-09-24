@@ -2,7 +2,8 @@
 title: Agentic AI技術實驗室概觀
 description: Agentic AI技術實驗室概觀
 doc-type: multipage-overview
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 Agentic AI Tech Labs正在進行中，將於2025年11月/12月發行。
 
-## 1.1代理程式和AI快速入門
+[1.1代理程式和AI快速入門](./modules/agentic-ai/module1.1/agenticai.md)
 
 **目標**
 
@@ -37,7 +38,7 @@ Agentic AI Tech Labs正在進行中，將於2025年11月/12月發行。
 - MCP伺服器，Python筆記型電腦
 - Adobe API的
 
-## 1.2代理程式Collaboration
+[1.2代理程式Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
 
 **目標**
 

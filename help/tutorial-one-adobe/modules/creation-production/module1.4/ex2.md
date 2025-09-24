@@ -6,16 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 510e9f59-1399-4a52-ad51-67e3f407037f
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '840'
 ht-degree: 13%
 
 ---
 
 # 1.4.2 Adobe Express中的動畫和視訊
 
-開始此練習前，請先從[https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"}下載必要的資產，然後在您的案頭上解壓縮。
+開始此練習前，請先從[https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"}下載必要的資產，然後在您的案頭上解壓縮。
 
 ![Adobe Express](./images/expressassets.png)
 
@@ -205,7 +205,7 @@ ht-degree: 13%
 
 ## 1.4.2.4在Adobe Express中建立新範本
 
-接著，按一下[共用]按鈕，然後選取[建立範本]。**&#x200B;**&#x200B;**&#x200B;**
+接著，按一下[共用]按鈕，然後選取[建立範本]。********
 
 ![Adobe Express](./images/expressv50.png)
 
@@ -219,7 +219,7 @@ ht-degree: 13%
 
 ## 1.4.2.5將您的視訊儲存在AEM Assets CS
 
-再按一下「共用&#x200B;**」**，然後選取「儲存至雲端」**&#x200B;**。 選取&#x200B;**AEM Assets**。
+再按一下「共用&#x200B;**」**，然後選取「儲存至雲端」****。 選取&#x200B;**AEM Assets**。
 
 ![Adobe Express](./images/expressv53.png)
 
