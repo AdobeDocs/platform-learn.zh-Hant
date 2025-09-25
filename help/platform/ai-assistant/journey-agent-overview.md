@@ -10,7 +10,7 @@ jira: KT-19109
 hide: true
 hidefromtoc: true
 exl-id: 46a251ce-4de2-4c35-800d-fdc6c3a162d4
-source-git-commit: 12a056d6489d5673b65adc38444f66631506d6c2
+source-git-commit: 4c0fdd180d52c5c92f306ee1a40864505ee8102d
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 34%
@@ -19,6 +19,6 @@ ht-degree: 34%
 
 # Journey Agent概觀
 
-Journey Agent會使用AI，透過對話式介面建立、分析和最佳化B2B/B2C歷程。 如需詳細資訊，請參閱[Journey Agent檔案](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent)。
+Journey Agent會使用AI，透過對話式介面建立、分析和最佳化B2B/B2C歷程。 如需詳細資訊，請參閱[Journey Agent檔案](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent-analyze)。
 
 >[!SLIDE](journey-agent-overview)
