@@ -255,7 +255,7 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets39.png)
 
-瀏覽至案頭上的&#x200B;**Product_Images**&#x200B;資料夾，選取所有檔案，然後按一下[開啟]。****
+瀏覽至案頭上的&#x200B;**Product_Images**&#x200B;資料夾，選取所有檔案，然後按一下[開啟]。**&#x200B;**
 
 ![ACCS+AEM Assets](./images/accsaemassets40.png)
 
