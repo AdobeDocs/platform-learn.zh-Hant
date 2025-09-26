@@ -3,10 +3,11 @@ title: Adobe Commerce as a Cloud Service快速入門
 description: Adobe Commerce as a Cloud Service快速入門
 kt: 5342
 doc-type: tutorial
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -181,7 +182,7 @@ ht-degree: 15%
 
 ![AEM Assets](./images/accs30.png)
 
-在全部3個資料行中使用名稱`1TB`設定第三個選項，然後再次按一下&#x200B;**新增選項**。
+在全部3個資料行中使用名稱`1TB`設定第三個選項。
 
 ![AEM Assets](./images/accs31.png)
 
@@ -234,7 +235,7 @@ ht-degree: 15%
 
 ![AEM Assets](./images/accs42.png)
 
-按一下&#x200B;**儲存**。
+將每個產品的&#x200B;**數量**&#x200B;設定為`10000`。 按一下&#x200B;**儲存**。
 
 ![AEM Assets](./images/accs43.png)
 
@@ -255,7 +256,6 @@ ht-degree: 15%
 您現在在產品目錄中看到產品&#x200B;**iPhone Air**&#x200B;及其變數。
 
 ![AEM Assets](./images/accs47.png)
-
 
 下一步：[將ACCS連線至AEM Sites CS/EDS店面](./ex2.md){target="_blank"}
 

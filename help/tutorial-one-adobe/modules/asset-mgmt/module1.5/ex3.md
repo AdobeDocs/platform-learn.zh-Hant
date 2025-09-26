@@ -3,9 +3,10 @@ title: 將ACCS連線至AEM Assets CS
 description: 將ACCS連線至AEM Assets CS
 kt: 5342
 doc-type: tutorial
-source-git-commit: 58448049d54ee6124985159577df0e307896a312
+exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '1651'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -90,7 +91,9 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets15.png)
 
-移至[https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce)。
+移至[https://github.com/ankumalh/assets-commerce](https://github.com/ankumalh/assets-commerce)。 按一下&#x200B;**&lt;>代碼**，然後選取&#x200B;**下載ZIP**。 下載檔案，然後將其拖放到您的案頭上。
+
+![ACCS+AEM Assets](./images/accsaemassets15a.png)
 
 接著，將檔案&#x200B;**assets-commerce-main.zip**&#x200B;複製到您的案頭並解壓縮。 開啟資料夾&#x200B;**assets-commerce-main**。
 
@@ -252,7 +255,7 @@ ht-degree: 0%
 
 ![ACCS+AEM Assets](./images/accsaemassets39.png)
 
-瀏覽至案頭上的&#x200B;**Product_Images**&#x200B;資料夾，選取所有檔案，然後按一下[開啟]。**&#x200B;**
+瀏覽至案頭上的&#x200B;**Product_Images**&#x200B;資料夾，選取所有檔案，然後按一下[開啟]。****
 
 ![ACCS+AEM Assets](./images/accsaemassets40.png)
 

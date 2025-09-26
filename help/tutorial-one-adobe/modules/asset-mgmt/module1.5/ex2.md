@@ -3,9 +3,10 @@ title: 將ACCS連線至AEM Sites CS/EDS Storefront
 description: 將ACCS連線至AEM Sites CS/EDS Storefront
 kt: 5342
 doc-type: tutorial
-source-git-commit: b39cc993120ba6feecbfc044d40e066f9d8f91de
+exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -75,6 +76,11 @@ ht-degree: 0%
 ![ACCS+AEM Sites](./images/accsaemsites10.png)
 
 **config.json**&#x200B;檔案現在已更新。 您應該會在幾分鐘內在網站上看到您的變更。 驗證變更是否成功擷取的方法是移至&#x200B;**電話**&#x200B;產品頁面。 您現在應該會看到&#x200B;**iPhone Air**&#x200B;出現在頁面上。
+
+若要存取您的網站，您必須先移至`main--citisignal-aem-accs--XXX.aem.page`及/或`main--citisignal-aem-accs--XXX.aem.live`，然後將XXX取代為您的GitHub使用者帳戶，此範例中為`woutervangeluwe`。
+
+在此範例中，完整URL會變成：
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page`和/或`https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
 
 ![ACCS+AEM Sites](./images/accsaemsites11.png)
 
