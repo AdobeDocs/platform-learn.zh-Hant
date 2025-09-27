@@ -18,4 +18,4 @@ ht-degree: 6%
 
 瞭解如何清除、準備和結合多個資料集的資料，並使用CTAS (Create Table AS)和Spark SQL函式建立新資料集，以利製作報表和控制面板。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475300?learn=on&enablevpops&captions=chi_hant)

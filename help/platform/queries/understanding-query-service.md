@@ -221,7 +221,7 @@ Adobe Experience Platform Query Service可讓使用者利用SQL探索、驗證�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="準備資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1740415313086" alt="準備資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475300?format=jpeg&nocache=1740415313086&captions=chi_hant" alt="準備資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
