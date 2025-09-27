@@ -18,6 +18,6 @@ ht-degree: 34%
 
 # Audience Agent概觀
 
-Audience Agent透過對話式建立、最佳化、深入分析以及跨B2B/B2C應用程式的安全整合，簡化受眾管理。 如需詳細資訊，請參閱[Audience Agent檔案](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/audience)。
+Audience Agent透過對話式建立、最佳化、深入分析以及跨B2B/B2C應用程式的安全整合，簡化受眾管理。 如需詳細資訊，請參閱[Audience Agent檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-cloud-ai/experience-cloud-ai/agents/audience)。
 
 >[!SLIDE](audience-agent-overview)
