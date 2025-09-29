@@ -20,4 +20,4 @@ ht-degree: 0%
 
 容量和串流監控儀表板可讓企業檢視平台使用情況並加以控制。 它們有助於分配輸送量、偵測尖峰或未充分利用情形，以及提供效能的即時深入分析，進而啟用主動式決策和警報，以防止超載，並確保關鍵服務保持穩定。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475272/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475284/?learn=on&enablevpops&captions=chi_hant)

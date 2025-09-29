@@ -18,4 +18,4 @@ ht-degree: 0%
 
 瞭解資料工程師如何使用查詢服務來轉換資料及輸出新資料集。 依排程執行這些查詢，以支援自動化控制面板和區段。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/query/home)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475300?learn=on&enablevpops&captions=chi_hant)
