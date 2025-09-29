@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # 透過查詢服務瞭解資料使用模式
 
-此影片分享在查詢編輯器介面、PSQL使用者端、商業智慧(BI)解決方案和HTTP API中執行查詢的秘訣和最佳實務。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)。
+此影片分享在查詢編輯器介面、PSQL使用者端、商業智慧(BI)解決方案和HTTP API中執行查詢的秘訣和最佳實務。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/query/home)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on&enablevpops)

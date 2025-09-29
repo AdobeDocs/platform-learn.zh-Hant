@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 衍生包含Data Distiller的資料
 
-瞭解資料工程師如何使用查詢服務來轉換資料及輸出新資料集。 依排程執行這些查詢，以支援自動化控制面板和區段。 如需詳細資訊，請造訪[從查詢結果產生輸出資料集](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets)。
+瞭解資料工程師如何使用查詢服務來轉換資料及輸出新資料集。 依排程執行這些查詢，以支援自動化控制面板和區段。 如需詳細資訊，請造訪[從查詢結果產生輸出資料集](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/query/ui/create-datasets)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
