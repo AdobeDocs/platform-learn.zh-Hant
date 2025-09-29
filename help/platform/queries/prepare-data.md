@@ -1,21 +1,21 @@
 ---
-title: 準備資料
-description: 瞭解如何清除、準備和結合多個資料集的資料，並使用CTAS (Create Table AS)和Spark SQL函式建立新資料集，以利製作報表和控制面板。
+title: 衍生包含Data Distiller的資料
+description: 瞭解資料工程師如何使用查詢服務來轉換資料及輸出新資料集。 依排程執行這些查詢，以支援自動化控制面板和區段。
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-8005
-thumbnail: 333699.jpg
+last-substantial-update: 2025-09-23T00:00:00Z
 exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 1712f2b22b8042e0cf96e619ca1a2e99e5368a18
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 6%
+source-wordcount: '76'
+ht-degree: 0%
 
 ---
 
-# 準備資料
+# 衍生包含Data Distiller的資料
 
-瞭解如何清除、準備和結合多個資料集的資料，並使用CTAS (Create Table AS)和Spark SQL函式建立新資料集，以利製作報表和控制面板。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hant)。
+瞭解資料工程師如何使用查詢服務來轉換資料及輸出新資料集。 依排程執行這些查詢，以支援自動化控制面板和區段。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475300?learn=on&enablevpops&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
