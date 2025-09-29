@@ -19,6 +19,6 @@ ht-degree: 35%
 
 # Experimentation Agent概述
 
-Experimentation Agent透過深入分析、引導式設定和自動化分析，為行銷人員、分析師和管理人員加速數位最佳化。 如需詳細資訊，請參閱[實驗加速器檔案](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator)。
+Experimentation Agent透過深入分析、引導式設定和自動化分析，為行銷人員、分析師和管理人員加速數位最佳化。 如需詳細資訊，請參閱[實驗加速器檔案](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator)。
 
 >[!SLIDE](experimentation-agent-overview)
