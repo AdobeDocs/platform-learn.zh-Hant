@@ -15,6 +15,6 @@ ht-degree: 0%
 
 # Data Insights Agent概觀
 
-Data Insight Agent能匯入事件、設定檔、歷程和離線資料，簡化探索工作，並立即啟用個人化控制面板。 如需詳細資訊，請參閱[Data Insights Agent檔案](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai)。
+Data Insight Agent能匯入事件、設定檔、歷程和離線資料，簡化探索工作，並立即啟用個人化控制面板。 如需詳細資訊，請參閱[Data Insights Agent檔案](https://experienceleague.adobe.com/zh-hant/docs/analytics-platform/using/cja-overview/cja-b2c-overview/data-analysis-ai)。
 
 >[!SLIDE](data-insights-agent-overview)
