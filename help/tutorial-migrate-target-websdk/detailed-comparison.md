@@ -66,7 +66,7 @@ ht-degree: 1%
 >
 >不支援將Target移轉至Platform Web SDK，同時保留指定頁面的現有AppMeasurement Adobe Analytics實作。
 >
-> 您可以將at.js (和AppMeasurement.js)實作一次移轉一頁至Platform Web SDK。 如果您採取這個方法，最好使用[`idMigrationEnabled`命令將](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled)[`targetMigrationEnabled`和](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled)`true`選項設定為`configure`。
+> 您可以將at.js (和AppMeasurement.js)實作一次移轉一頁至Platform Web SDK。 如果您採取這個方法，最好使用[`idMigrationEnabled`命令將](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled) [`targetMigrationEnabled`和](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled)`true`選項設定為`configure`。
 
 ## at.js函式和平台Web SDK對等函式
 
