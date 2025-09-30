@@ -46,7 +46,7 @@ ht-degree: 1%
 | 裝置上決策 | 支援 | 目前不支援 |
 | 預先擷取Mbox | 支援自訂範圍和SPA VEC | 預先擷取是網頁SDK的預設模式 |
 | 自訂事件 | 支援 | 不支援。 檢視[公開藍圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&itemId=17372355{target="_blank"})目前的狀態。 |
-| 回應Token | 支援 | 支援。 如需at.js和Platform Web SDK之間的程式碼範例和差異，請參閱[專屬回應Token檔案](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) |
+| 回應Token | 支援 | 支援。 如需at.js和Platform Web SDK之間的程式碼範例和差異，請參閱[專屬回應Token檔案](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html?lang=zh-Hant) |
 | 資料提供者 | 支援 | 不支援。 自訂程式碼在從其他提供者擷取資料後，可用於觸發Platform Web SDK `sendEvent`命令。 |
 
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 >
 >不支援將Target移轉至Platform Web SDK，同時保留指定頁面的現有AppMeasurement Adobe Analytics實作。
 >
-> 您可以將at.js (和AppMeasurement.js)實作一次移轉一頁至Platform Web SDK。 如果您採取這個方法，最好使用[`idMigrationEnabled`命令將](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled) [`targetMigrationEnabled`和](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled)`true`選項設定為`configure`。
+> 您可以將at.js (和AppMeasurement.js)實作一次移轉一頁至Platform Web SDK。 如果您採取這個方法，最好使用[`idMigrationEnabled`命令將](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=zh-Hant#id-migration-enabled) [`targetMigrationEnabled`和](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=zh-Hant#targetMigrationEnabled)`true`選項設定為`configure`。
 
 ## at.js函式和平台Web SDK對等函式
 
@@ -74,13 +74,13 @@ ht-degree: 1%
 
 | at.js 2.x函式 | Platform Web SDK對等函式 |
 | --- | --- | 
-| `getOffer()` 和 `getOffers()` | 若要要求並[自動轉譯](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#automatically-rendering-content)目標的VEC型體驗，請使用`sendEvent`命令並將`renderDecisions`選項設定為true。<br><br>若要要求表單式體驗或[手動轉譯](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content)內容，請使用`decisionScopes`命令指定`sendEvent` (mbox)的陣列。 |
-| `applyOffer()` 和 `applyOffers()` | 使用[`applyPropositions`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#applypropositions)命令套用內容。 您可以選擇設定、取代HTML，或將其附加至特定選取器。 |
-| `triggerView()` | 如果[屬性設定在](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-trigger-a-view-change-in-a-single-page-application)命令的`web.webPageDetails.viewName`選項下，則Platform Web SDK會自動針對SPA VEC觸發`xdm`檢視變更`sendEvent`。 |
-| `trackEvent()` 和 `sendNotifications()` | 使用包含`sendEvent`特定[`eventType`集合的](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events)命令：<br><br>`decisioning.propositionDisplay`代表活動的轉譯<br><br>`decisioning.propositionInteract`代表使用者與活動的互動，例如滑鼠點按。 |
+| `getOffer()` 和 `getOffers()` | 若要要求並[自動轉譯](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hant#automatically-rendering-content)目標的VEC型體驗，請使用`sendEvent`命令並將`renderDecisions`選項設定為true。<br><br>若要要求表單式體驗或[手動轉譯](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hant#manually-rendering-content)內容，請使用`decisionScopes`命令指定`sendEvent` (mbox)的陣列。 |
+| `applyOffer()` 和 `applyOffers()` | 使用[`applyPropositions`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hant#applypropositions)命令套用內容。 您可以選擇設定、取代HTML，或將其附加至特定選取器。 |
+| `triggerView()` | 如果[屬性設定在](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html?lang=zh-Hant#how-to-trigger-a-view-change-in-a-single-page-application)命令的`web.webPageDetails.viewName`選項下，則Platform Web SDK會自動針對SPA VEC觸發`xdm`檢視變更`sendEvent`。 |
+| `trackEvent()` 和 `sendNotifications()` | 使用包含`sendEvent`特定[`eventType`集合的](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html?lang=zh-Hant#how-to-track-events)命令：<br><br>`decisioning.propositionDisplay`代表活動的轉譯<br><br>`decisioning.propositionInteract`代表使用者與活動的互動，例如滑鼠點按。 |
 | `targetGlobalSettings()` | 沒有直接的對等方法。 如需其他詳細資訊，請參閱[目標設定比較](detailed-comparison.md)。 |
-| `targetPageParams()` 和 `targetPageParamsAll()` | 在`xdm`命令的`sendEvent`選項中傳遞的所有資料都會對應至Target mbox引數。 由於mbox引數是以序列化的點標籤法來命名，若移轉至Platform Web SDK，您可能需要更新現有的對象和活動，才能使用新的mbox引數名稱。 <br><br>作為`data.__adobe.target`命令的`sendEvent`的一部分傳遞的資料對應到[目標設定檔和Recommendations特定引數](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update)。 |
-| at.js自訂事件 | 不支援。 檢視[公開藍圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&itemId=17372355{target="_blank"})目前的狀態。 [回應Token](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html)在`propositions`呼叫的回應中公開為`sendEvent`的一部分。 |
+| `targetPageParams()` 和 `targetPageParamsAll()` | 在`xdm`命令的`sendEvent`選項中傳遞的所有資料都會對應至Target mbox引數。 由於mbox引數是以序列化的點標籤法來命名，若移轉至Platform Web SDK，您可能需要更新現有的對象和活動，才能使用新的mbox引數名稱。 <br><br>作為`data.__adobe.target`命令的`sendEvent`的一部分傳遞的資料對應到[目標設定檔和Recommendations特定引數](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html?lang=zh-Hant#single-profile-update)。 |
+| at.js自訂事件 | 不支援。 檢視[公開藍圖](https://github.com/orgs/adobe/projects/18/views/1?pane=item&itemId=17372355{target="_blank"})目前的狀態。 [回應Token](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html?lang=zh-Hant)在`propositions`呼叫的回應中公開為`sendEvent`的一部分。 |
 
 ## at.js設定和平台Web SDK同等專案
 
@@ -88,12 +88,12 @@ at.js程式庫可使用Target UI中的各種設定進行設定和下載。 也�
 
 | at.js設定 | Platform Web SDK對等函式 |
 | --- | --- |
-| `bodyHiddenStyle` | 使用[`prehidingStyle`命令設定](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle)`configure` |
+| `bodyHiddenStyle` | 使用[`prehidingStyle`命令設定](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=zh-Hant#prehidingStyle)`configure` |
 | `bodyHidingEnabled` | 如果使用`prehidingStyle`命令定義`configure`，則會啟用此功能。 如果未定義樣式，則Platform Web SDK不會嘗試隱藏任何內容。 |
 | `clientCode` | 自動設定 |
 | `cookieDomain` | 不適用 |
 | `crossDomain` | 使用`thirdPartyCookiesEnabled`命令將`true`選項設為`configure`，以啟用跨網域使用案例的第一方和第三方Cookie |
-| `cspScriptNonce` 和 `cspStyleNonce` | 請參閱[設定CSP](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-a-csp.html)的檔案 |
+| `cspScriptNonce` 和 `cspStyleNonce` | 請參閱[設定CSP](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-a-csp.html?lang=zh-Hant)的檔案 |
 | `dataProviders` | 不支援 |
 | `decisioningMethod` | 所有Platform Web SDK `sendEvent`命令都使用伺服器端決策。 不支援混合式決策和裝置上決策。 |
 | `defaultContentHiddenStyle` 和 `defaultContentVisibleStyle` | 僅適用於at.js 1.x。與at.js 2.x類似，使用自訂程式碼即可緩解表單式體驗的忽隱忽現問題。 |
@@ -101,7 +101,7 @@ at.js程式庫可使用Target UI中的各種設定進行設定和下載。 也�
 | `enabled` | 資料流設定可啟用或停用Target功能 |
 | `globalMboxAutoCreate` | 使用`renderDecisions`命令將`true`選項設為`sendEvent`，以自動擷取及轉譯VEC型體驗。如果您偏好手動轉譯VEC型體驗，請<br><br>要求`decisionScope`的`__view__`。 |
 | `imsOrgId` | 使用`orgId`命令設定`configure` |
-| `optinEnabled` 和 `optoutEnabled` | 請參閱Platform Web SDK [隱私權選項](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html)。 `defaultConsent`選項適用於Platform Web SDK支援的所有Adobe解決方案。 |
+| `optinEnabled` 和 `optoutEnabled` | 請參閱Platform Web SDK [隱私權選項](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=zh-Hant)。 `defaultConsent`選項適用於Platform Web SDK支援的所有Adobe解決方案。 |
 | `overrideMboxEdgeServer` 和 `overrideMboxEdgeServerTimeout` | 不適用。 所有Platform Web SDK請求都會使用Adobe Experience Platform Edge網路。 |
 | `pageLoadEnabled` | 使用`renderDecisions`命令將`true`選項設為`sendEvent` |
 | `secureOnly` | 不支援。 Platform Web SDK會設定具有`secure`和`sameSite="none"`屬性的所有Cookie。 |
@@ -148,7 +148,7 @@ at.js程式庫可使用Target UI中的各種設定進行設定和下載。 也�
 | 6 | a. Edge網路會將個人化回應傳送回頁面，選擇性地包括其他個人化的設定檔值。 目前頁面上的個人化內容會儘快出現，不會有忽隱忽現的預設內容。<br><br>b。作為使用者在單頁應用程式(SPA)中的動作結果而顯示的檢視個人化內容，會快取以供立即呈現，而不需要額外的伺服器呼叫。<br><br>c。邊緣網路會傳送訪客ID和Cookie中的其他值（例如同意、工作階段ID、身分、Cookie檢查、個人化等）。 |
 | 7 | 邊緣網路將Analytics for Target (A4T)詳細資料（活動、體驗和轉換中繼資料）轉送給Analytics邊緣。 |
 
-請參閱開發人員指南，以取得如何[使用平台網頁SDK實作Target以供單頁應用程式使用的詳細資訊](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/spa-implementation.html)。
+請參閱開發人員指南，以取得如何[使用平台網頁SDK實作Target以供單頁應用程式使用的詳細資訊](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/spa-implementation.html?lang=zh-Hant)。
 
 在您對目前的Target實作和您使用的功能有良好的技術瞭解後，下一步就是執行[初始設定](initial-setup.md)。
 
