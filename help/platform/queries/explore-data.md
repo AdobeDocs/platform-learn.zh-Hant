@@ -18,4 +18,4 @@ ht-degree: 0%
 
 瞭解如何使用SQL函式驗證所擷取的資料。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/query/home)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475333?learn=on&enablevpops&captions=chi_hant)
