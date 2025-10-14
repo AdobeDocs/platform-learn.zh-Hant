@@ -175,7 +175,7 @@ Adobe Journey Optimizer目前不支援事件型選件。 如果您根據事件�
 1. 位置建立後，會顯示在「位置」清單中。
 1. 選取包含新版位的列，並記下版位ID，因為這在您的決定範圍內進行設定可能是必要的。
 
-   ![檢視位置ID ](assets/decisioning-placement-id.png)
+   ![檢視位置ID &#x200B;](assets/decisioning-placement-id.png)
 
 ### 熟客狀態的決定規則
 

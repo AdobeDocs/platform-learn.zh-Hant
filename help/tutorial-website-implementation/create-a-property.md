@@ -43,7 +43,7 @@ ht-degree: 50%
 
 1. 按一下![解決方案切換器圖示](images/launch-solutionSwitcher.png)圖示，開啟應用程式切換器
 
-1. 從功能表選取&#x200B;**[!UICONTROL 啟動/資料彙集]** ![使用圖示開啟解決方案切換器，然後按一下[啟動/資料彙集] ](images/launch-solutionSwitcherActivation.png)
+1. 從功能表選取&#x200B;**[!UICONTROL 啟動/資料彙集]** ![使用圖示開啟解決方案切換器，然後按一下[啟動/資料彙集] &#x200B;](images/launch-solutionSwitcherActivation.png)
 
 這時您應該會看到 `Tags Properties` 畫面 (如果帳戶中尚未建立任何屬性，此畫面可能呈現空白狀態)：
 

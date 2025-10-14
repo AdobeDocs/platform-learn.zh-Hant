@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 安裝PostBuster
 
-移至[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}。
+移至[https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}。
 
 按一下以下載&#x200B;**PostBuster**&#x200B;的最新版本。
 

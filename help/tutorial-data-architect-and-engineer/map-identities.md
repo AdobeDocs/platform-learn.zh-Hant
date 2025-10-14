@@ -113,7 +113,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
    ![身分識別命名空間](assets/identity-createUsingApi.png)
 
 如果您返回到 用戶 介面，現在應該會看到三個新的自定義命名空間：
-![身分識別命名空間 ](assets/identity-newIdentities.png)
+![身分識別命名空間 &#x200B;](assets/identity-newIdentities.png)
 
 
 ## 加標籤架構中的身分欄位
@@ -136,7 +136,7 @@ Adobe Experience Platform Identity Service可跨裝置和系統橋接身分，�
 1. 選取&#x200B;**[!UICONTROL 套用]**
 1. 選取&#x200B;**[!UICONTROL 儲存]**
 
-   ![主要身份 ](assets/identity-loyalty-primary.png)
+   ![主要身份 &#x200B;](assets/identity-loyalty-primary.png)
 
 對部分其他結構描述重複此程式：
 

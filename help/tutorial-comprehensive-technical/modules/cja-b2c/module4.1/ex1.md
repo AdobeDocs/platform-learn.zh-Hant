@@ -98,7 +98,7 @@ CJA的目標是讓行銷和業務團隊擁有分析能力，使其成為這些�
 
 ![示範](./images/commerce.png)
 
-- 預覽所有[資料集](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created)並檢視資料
+- 預覽所有[資料集](https://experience.adobe.com/platform/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created)並檢視資料
 
 您現在已準備好開始使用Customer Journey Analytics UI。
 
