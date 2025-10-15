@@ -52,7 +52,7 @@ _Source：_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/
 
 理想情況下，您的行銷團隊應該使用工作管理解決方案，該解決方案應允許跨職能共同作業，並將專案連線到規劃的、資料導向的結果。 它也應該授權行銷團隊策略性地安排工作的優先順序，並向您的創意團隊宣佈這些優先順序。 從那裡，創意簡報、內容版本和意見反應應在每個專案中捆綁在一起，因此您的團隊不必搜尋舊電子郵件來尋找他們想要的內容。
 
-您的創意團隊應該使用[絕佳的數位資產管理](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [系統](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)，此系統與您的創意和工作管理工具整合。 如此一來，他們就能輕鬆尋找、使用、更新或重新利用相關資產。 藉由採取這些措施，您可以提高上市速度，並簡化內部作業與程式。
+您的創意團隊應該使用[絕佳的數位資產管理](https://business.adobe.com/tw/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/tw/products/experience-manager/assets/digital-asset-management.html) [系統](https://business.adobe.com/tw/products/experience-manager/assets/digital-asset-management.html)，此系統與您的創意和工作管理工具整合。 如此一來，他們就能輕鬆尋找、使用、更新或重新利用相關資產。 藉由採取這些措施，您可以提高上市速度，並簡化內部作業與程式。
 
 ### 透過順暢的工作流程提高生產效率
 
@@ -70,9 +70,9 @@ _Source：_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/
 
 ## 在Adobe，我們正在建立同級最佳的內容供應鏈
 
-我們自己的[Adobe Experience Cloud業務](https://business.adobe.com/)著重於遵循先前概述的步驟，讓我們的行銷活動重現生動並支援多個區段。 我們的願景一直是向全球提供引人注目的內容，並符合我們的行銷活動框架和訊息。
+我們自己的[Adobe Experience Cloud業務](https://business.adobe.com/tw/)著重於遵循先前概述的步驟，讓我們的行銷活動重現生動並支援多個區段。 我們的願景一直是向全球提供引人注目的內容，並符合我們的行銷活動框架和訊息。
 
-我們端對端內容建立程式的關鍵是[Adobe Workfront](https://business.adobe.com/products/workfront/main.html)與[Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html)的配對。 讓我們來看看我們如何處理這三種高階階段的程式。
+我們端對端內容建立程式的關鍵是[Adobe Workfront](https://business.adobe.com/tw/products/workfront/main.html)與[Adobe Experience Manager Assets](https://business.adobe.com/tw/products/experience-manager/assets/aem-assets.html)的配對。 讓我們來看看我們如何處理這三種高階階段的程式。
 
 我們從&#x200B;**規劃**&#x200B;開始，從整個企業接收數百個內容請求，然後根據每季的優先順序排定其優先順序。 接著，我們會使用Workfront中的內容提案儀表板來提供透明度，以便與利害關係人取得一致意見，並快速獲得行銷、創意、網頁和銷售團隊的認可。 如此一來，我們會建立該季度承諾的記錄，也會讓創意和網路團隊看到總請求量，以便他們規劃資源分配。 此外，管理員可輕鬆監控團隊的工作負載。
 

@@ -47,7 +47,7 @@ API是解決軟體業務挑戰的方法。 在大多數企業中，這是一項�
 
 大部分的瀏覽器都有「位址列」，會顯示網頁的部分或全部「位址」。 當瀏覽器「取得」我們點按之連結的頁面時，它會顯示此位址列中的頁面「位址」。 那麼網頁的「位址」為何？
 
-上面的`https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`是網頁的位址，稱為URL或統一資源定位器。 URL可以指代像這樣的頁面、影像檔案、視訊或其他檔案型別。
+上面的`https://business.adobe.com/tw/products/experience-platform/adobe-experience-platform.html`是網頁的位址，稱為URL或統一資源定位器。 URL可以指代像這樣的頁面、影像檔案、視訊或其他檔案型別。
 
 ![部分URL](../assets/api101-url-parts.jpg)
 
@@ -69,7 +69,7 @@ API是解決軟體業務挑戰的方法。 在大多數企業中，這是一項�
 
 **Origin**
 
-Origin是另一個要注意的術語，與URL的部分密切相關。 在基本層級，來源大致為`scheme`加上`host`加上`domain`，如`https://business.adobe.com`。 不同的值通常代表不同的來源，例如`https://business.adobe.com`和`http://business.adobe.com`不是相同來源，因為它們有不同的配置。 由於子網域不同，`https://www.adobe.com`和`https://business.adobe.com`在許多使用中也不是相同來源。
+Origin是另一個要注意的術語，與URL的部分密切相關。 在基本層級，來源大致為`scheme`加上`host`加上`domain`，如`https://business.adobe.com/tw`。 不同的值通常代表不同的來源，例如`https://business.adobe.com/tw`和`http://business.adobe.com/tw`不是相同來源，因為它們有不同的配置。 由於子網域不同，`https://www.adobe.com`和`https://business.adobe.com/tw`在許多使用中也不是相同來源。
 
 **路徑**
 
@@ -133,13 +133,13 @@ Adobe Experience Platform資料存取API是網頁API，可讓程式設計師從A
 
 現在您已瞭解API的基本術語、概念和步驟，接下來可檢視實際的API要求範例。
 
-瀏覽器範例中的頁面具有URL `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`。 按一下Adobe Experience Platform連結時，瀏覽器會針對此頁面發出`GET`要求。 由於我們有瀏覽器來為我們工作，因此我們只需按一下，但如果程式設計師希望該請求在軟體應用程式中發生，他們必須提供API請求的所有必要詳細資訊，才能成功履行。
+瀏覽器範例中的頁面具有URL `https://business.adobe.com/tw/products/experience-platform/adobe-experience-platform.html`。 按一下Adobe Experience Platform連結時，瀏覽器會針對此頁面發出`GET`要求。 由於我們有瀏覽器來為我們工作，因此我們只需按一下，但如果程式設計師希望該請求在軟體應用程式中發生，他們必須提供API請求的所有必要詳細資訊，才能成功履行。
 
 以下為程式碼中的可能外觀：
 
 ```js
 fetch(
-  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/tw/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:
