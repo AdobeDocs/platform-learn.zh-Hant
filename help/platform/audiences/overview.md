@@ -290,7 +290,7 @@ ht-degree: 16%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="同盟對象構成概觀" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="同盟對象構成概觀"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450898/?captions=chi_hant&format=jpeg&nocache=1740173579477" alt="同盟對象構成概觀"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -313,7 +313,7 @@ ht-degree: 16%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="連線並設定同盟對象構成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="連線並設定同盟對象構成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451567/?captions=chi_hant&format=jpeg&nocache=1740173579488" alt="連線並設定同盟對象構成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 瞭解如何在Adobe Experience Platform中設定AI Assistant的存取權和許可權。 如需詳細資訊，請參閱[在Experience Platform中存取AI小幫手](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/ai-assistant/access)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3436470/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475930/?captions=chi_hant&learn=on&enablevpops)

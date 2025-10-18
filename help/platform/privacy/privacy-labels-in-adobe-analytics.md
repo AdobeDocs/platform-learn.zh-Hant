@@ -18,4 +18,4 @@ ht-degree: 1%
 
 瞭解將資料隱私權標籤新增至Analytics變數的程式，包括劃分每種標籤型別的含義及使用時機。 如需詳細資訊，請瀏覽[隱私權服務檔案](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450673?captions=chi_hant&learn=on&enablevpops)

@@ -34,7 +34,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-users.md" title="新增使用者" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336081?format=jpeg&nocache=1740173302150" alt="新增使用者"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475984?captions=chi_hant&format=jpeg&nocache=1740173302150" alt="新增使用者"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -80,7 +80,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-product-administrators.md" title="新增管理員" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1740173302208" alt="新增管理員"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475952?captions=chi_hant&format=jpeg&nocache=1740173302208" alt="新增管理員"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

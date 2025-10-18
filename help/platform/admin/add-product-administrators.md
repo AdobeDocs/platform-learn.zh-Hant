@@ -20,7 +20,7 @@ ht-degree: 0%
 
 瞭解如何新增Adobe Experience Platform的產品管理員。 產品管理員可管理Real-Time Customer Data Platform和Journey Optimizer等平台型應用程式的存取控制。 他們可以在Admin Console中建立使用者、開發人員和其他管理員，然後在Platform或Journey Optimizer介面中授予他們（和API認證）許可權。 如需詳細資訊，請瀏覽[存取控制檔案](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475952?captions=chi_hant&learn=on&enablevpops)
 
 >[!TIP]
 >

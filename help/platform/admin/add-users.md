@@ -20,4 +20,4 @@ ht-degree: 1%
 
 瞭解如何在Real-Time Customer Data Platform和Journey Optimizer等Adobe Experience Platform型應用程式中新增使用者及管理許可權。 首先在Admin Console中新增使用者，然後在Platform或Journey Optimizer介面中授予許可權。 如需詳細資訊，請瀏覽[存取控制檔案](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475984?captions=chi_hant&learn=on&enablevpops)
