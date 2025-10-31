@@ -4,9 +4,9 @@ description: 瞭解如何在行動應用程式中實施Assurance擴充功能。
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
+source-git-commit: 2784282b91692832786aa478363374f5f4066662
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1661'
 ht-degree: 4%
 
 ---
@@ -35,7 +35,7 @@ Assurance 可協助您檢查 Adobe Experience Platform Mobile SDK 產生的原�
 
 ## 確認存取
 
-確認您的組織有權存取Assurance。 您身為使用者，應新增至Adobe Experience Platform的設定檔。 如需詳細資訊，請參閱Assurance指南中的[使用者存取權](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/assurance/user-access)。
+確認您的組織有權存取Assurance。 您身為使用者，應新增至Adobe Experience Platform的設定檔。 如需詳細資訊，請參閱Assurance指南中的[使用者存取權](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access)。
 
 ## 實作
 
@@ -172,7 +172,7 @@ Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎UR
 
 請確定您指定了`android:scheme` (例如。 `lumatutorialandroid`)和`android:host` （例如`default`）以定義基底URL。
 
-若要深入瞭解Android中的深層連結，請參閱[建立應用程式內容的深層連結](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}。
+若要進一步瞭解Android中的深層連結，請參閱Android檔案中的[建立深層連結](https://developer.android.com/training/app-links/create-deeplinks){target="_blank"}。
 
 Assurance的運作方式是透過瀏覽器或QR碼開啟URL。 該URL以基礎URL開頭，開啟App並包含其他引數。 這些唯一引數用於連線工作階段。  在範例應用程式中，深層連結為`lumatutorialandroid://default`。
 
