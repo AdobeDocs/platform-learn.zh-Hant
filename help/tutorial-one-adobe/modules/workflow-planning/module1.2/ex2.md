@@ -4,9 +4,9 @@ description: 使用Workfront校訂
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
@@ -132,9 +132,9 @@ ht-degree: 0%
 為您的工作輸入此名稱： `Create layout using approved assets and copy`。
 
 將欄位&#x200B;**指派**&#x200B;設定為角色&#x200B;**Designer**。
-將欄位&#x200B;**Duration**&#x200B;設定為&#x200B;**5天**。
-將前置工作列位設定為&#x200B;**9**。
-輸入欄位&#x200B;**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期。
+將欄位**Duration**&#x200B;設定為&#x200B;**5天**。
+將前置工作列位設定為**9**。
+輸入欄位**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期。
 
 按一下畫面中的其他位置以儲存新任務。
 
@@ -197,66 +197,11 @@ ht-degree: 0%
 
 在此任務中，您需要建立新影像，然後將其上傳為Workfront中的檔案。 您現在將會使用Adobe Express自行建立該資產。
 
-## 1.2.2.5使用Adobe Firefly Services和Adobe Express建立資產
+## 1.2.2.5新增檔案至您的任務並開始核准流程
 
-移至[https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}。 輸入提示`a neon rabbit running very fast through space`並按一下&#x200B;**產生**。
+若要進行此練習，您必須下載並使用此資產： [timetravelnow.png](./images/timetravelnow.png)
 
-![GSPeM](./images/gsasset1.png)
-
-然後您會看到正在產生數個影像。 選擇您最喜歡的影像，按一下影像上的&#x200B;**共用**&#x200B;圖示，然後選取&#x200B;**在Adobe Express中開啟**。
-
-![GSPeM](./images/gsasset2.png)
-
-之後，您會看到剛才產生的影像可在Adobe Express中用於編輯。 您現在需要在影像上新增CitiSignal標誌。 若要這麼做，請移至&#x200B;**品牌**。
-
-![GSPeM](./images/gsasset3.png)
-
-然後您應該會看到CitiSignal品牌範本。 在GenStudio for Performance Marketing中建立的報表會顯示在Adobe Express中。 按一下以選取名稱中有`CitiSignal`的品牌範本。
-
-![GSPeM](./images/gsasset4.png)
-
-移至&#x200B;**圖志**&#x200B;並按一下&#x200B;**白色** Citisignal圖志，將其拖曳至影像上。
-
-![GSPeM](./images/gsasset5.png)
-
-將CitiSignal標誌放在影像上方，中間不遠。
-
-![GSPeM](./images/gsasset6.png)
-
-移至&#x200B;**文字**。
-
-![GSPeM](./images/gsasset6a.png)
-
-按一下&#x200B;**新增您的文字**。
-
-![GSPeM](./images/gsasset6b.png)
-
-輸入文字`Timetravel now!`，變更字型顏色和字型大小，將文字設定為&#x200B;**粗體**，讓您的影像與此類似。
-
-![GSPeM](./images/gsasset6c.png)
-
-接著，按一下&#x200B;**共用**。
-
-![GSPeM](./images/gsasset7.png)
-
-選取&#x200B;**AEM Assets**。
-
-![GSPeM](./images/gsasset8.png)
-
-將檔案名稱變更為`CitiSignal - Neon Rabbit - Timetravel now!`。
-按一下&#x200B;**選取資料夾**。
-
-![GSPeM](./images/gsasset9.png)
-
-選取您應命名為`--aepUserLdap-- - CitiSignal`的AEM Assets CS存放庫，然後選取資料夾`--aepUserLdap-- - CitiSignal Fiber Campaign`。 按一下&#x200B;**選取**。
-
-![GSPeM](./images/gsasset11.png)
-
-您應該會看到此訊息。 按一下&#x200B;**上傳1資產**。 您的影像現在將上傳至AEM Assets CS。
-
-![GSPeM](./images/gsasset12.png)
-
-## 1.2.2.6新增檔案至您的任務並開始核准流程
+![WF](./images/timetravelnow.png)
 
 返回&#x200B;**任務詳細資料**&#x200B;畫面。 移至&#x200B;**檔案**。 按一下「**+新增**」，然後選取您的AEM Assets CS存放庫（應該命名為`--aepUserLdap-- - CitiSignal`）。
 
@@ -300,35 +245,11 @@ ht-degree: 0%
 
 您現在需要進行設計變更，您將在Adobe Express中進行此操作。
 
-## 1.2.2.7在Adobe Express中進行設計變更
+## 1.2.2.6將檔案的新版本新增至您的工作
 
-移至[https://new.express.adobe.com/your-stuff/files](https://new.express.adobe.com/your-stuff/files)，然後再次開啟您先前建立的影像。
+為了進行此練習，您需要下載及使用此資產： [getonboard.png](./images/getonboard.png)
 
-![WF](./images/wfp25a.png)
-
-將CTA文字變更為`Get On Board Now!`。
-
-![WF](./images/wfp25b.png)
-
-按一下[共用]&#x200B;**&#x200B;**，然後選取&#x200B;**AEM Assets**。
-
-![WF](./images/wfp25c.png)
-
-輸入名稱`CitiSignal - Neon Rabbit - Get On Board Now!`，然後按一下&#x200B;**選取資料夾**&#x200B;以選取目的地資料夾。
-
-![WF](./images/wfp25d.png)
-
-選取您應命名為`--aepUserLdap-- - CitiSignal`的AEM Assets CS存放庫，然後選取資料夾`--aepUserLdap-- - CitiSignal Fiber Campaign`。 按一下&#x200B;**選取**。
-
-![WF](./images/wfp25e.png)
-
-按一下&#x200B;**上傳1個資產**。
-
-![WF](./images/wfp25f.png)
-
-您的新資產現在已建立並儲存在AEM Assets中。
-
-## 1.2.2.8將檔案的新版本新增至您的工作
+![WF](./images/getonboard.png)
 
 在Adobe Workfront的「工作」檢視中，選取未核准的舊影像檔案。 接著，按一下[新增&#x200B;**]、[新增**]、[選取&#x200B;**版本**]，然後選取您的AEM Assets CS存放庫，此存放庫應命名為`--aepUserLdap-- - CitiSignal`。
 
@@ -394,7 +315,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp37c.png)
 
-## 1.2.2.9在AEM Assets中檢視您的檔案
+## 1.2.2.7在AEM Assets中檢視您的檔案
 
 移至AEM Assets CS中名為`--aepUserLdap-- - CitiSignal Fiber Launch Assets`的資料夾。
 

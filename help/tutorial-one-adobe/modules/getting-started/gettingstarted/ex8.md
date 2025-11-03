@@ -4,9 +4,9 @@ description: 快速入門 — Postman設定
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -17,9 +17,15 @@ ht-degree: 3%
 >
 >如果您不是Adobe員工，請依照指示[安裝Postman](./ex7.md){target="_blank"}。 以下指示僅適用於Adobe員工。
 
+## 影片
+
+在這段影片中，您將獲得本練習中所有步驟的說明和示範。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476496?quality=12&learn=on)
+
 ## 安裝PostBuster
 
-移至[https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}。
+移至[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}。
 
 按一下以下載&#x200B;**PostBuster**&#x200B;的最新版本。
 
@@ -145,7 +151,7 @@ ht-degree: 3%
 
 您應該會看到包含下列資訊的類似回應：
 
-| 索引鍵 | 值 |
+| 索引鍵 | 價值 |
 |:-------------:| :---------------:| 
 | token_type | **持有人** |
 | access_token | **eyJhbGciOiJS...** |

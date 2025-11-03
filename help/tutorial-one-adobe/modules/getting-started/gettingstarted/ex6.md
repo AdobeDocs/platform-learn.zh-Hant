@@ -4,14 +4,20 @@ description: 快速入門 — Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 947ce5880c88fcf0211c5d16270dfcf2d6416131
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
 # 設定您的Adobe I/O專案
+
+## 影片
+
+在這段影片中，您將獲得本練習中所有步驟的說明和示範。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476494?quality=12&learn=on)
 
 ## 建立您的Adobe I/O專案
 
@@ -63,7 +69,7 @@ ht-degree: 0%
 >
 >根據您選取的學習路徑，您可能無法存取Photoshop Services API。 您必須位於學習路徑&#x200B;**Firefly**、**Workfront Fusion**、**全部**，或正在參加&#x200B;**現場現場研討會**，才能存取Photoshop Services API。 如果您不在其中一個學習路徑上，可以略過此步驟。
 >
->選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
+選取&#x200B;**+新增至專案**，然後選取&#x200B;**API**。
 
 ![Azure儲存體](./images/ps2.png)
 
@@ -139,7 +145,7 @@ ht-degree: 0%
 
 ![Azure儲存體](./images/fiops4.png)
 
-選取&#x200B;**OAuth伺服器對伺服器**，然後按一下[下一步]&#x200B;**。**
+選取&#x200B;**OAuth伺服器對伺服器**，然後按一下[下一步]**。**
 
 ![Azure儲存體](./images/fiops5.png)
 

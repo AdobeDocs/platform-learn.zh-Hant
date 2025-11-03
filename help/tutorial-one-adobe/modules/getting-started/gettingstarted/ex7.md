@@ -4,10 +4,10 @@ description: 快速入門 — Postman設定
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
 workflow-type: tm+mt
-source-wordcount: '535'
-ht-degree: 0%
+source-wordcount: '553'
+ht-degree: 1%
 
 ---
 
@@ -16,6 +16,12 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >如果您是Adobe員工，請依照指示[安裝PostBuster](./ex8.md){target="_blank"}！
+
+## 影片
+
+在這段影片中，您將獲得本練習中所有步驟的說明和示範。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476495?quality=12&learn=on)
 
 ## Postman環境下載
 
@@ -108,7 +114,7 @@ Postman中有2個概念：「環境」和「集合」。
 
 您應該會看到包含下列資訊的類似回應：
 
-| 索引鍵 | 值 |
+| 索引鍵 | 價值 |
 |:-------------:| :---------------:| 
 | token_type | **持有人** |
 | access_token | **eyJhbGciOiJSUz...** |
