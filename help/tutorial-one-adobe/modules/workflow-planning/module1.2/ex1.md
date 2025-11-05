@@ -4,7 +4,7 @@ description: Workfront快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 以下是主要的Workfront物件和概念：
 
-| 名稱 | 上次更新日期 |
+| 名稱 | 上次更新 |
 | ---------------------- | ------------ | 
 | 產品組合 | 具有統一特性的專案集合。 這些專案通常會爭奪相同的資源、預算或時段。 |
 | 方案 | 產品組合中的子集，可將類似的專案分組在一起，以獲得明確定義的利益。 |
@@ -109,7 +109,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem3a.png)
 
-為資料夾命名`--aepUserLdap-- - CitiSignal Fiber Launch Assets`並按一下&#x200B;**建立**。
+為資料夾命名`--aepUserLdap-- - CitiSignal Fiber Campaign`並按一下&#x200B;**建立**。
 
 ![WF](./images/wfbaem4.png)
 
@@ -161,7 +161,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem11a.png)
 
-之後您會再次看到此快顯視窗。 在搜尋欄位中輸入`wm:document`，然後選取欄位&#x200B;**專案識別碼**。 按一下&#x200B;**選取**。
+之後您會再次看到此快顯視窗。 在搜尋欄位中輸入`wm:document`，然後選取欄位&#x200B;**檔案狀態**。 按一下&#x200B;**選取**。
 
 ![WF](./images/wfbaem101.png)
 
@@ -173,7 +173,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem103.png)
 
-之後您會再次看到此快顯視窗。 在搜尋欄位中輸入`wm:document`，然後選取欄位&#x200B;**專案識別碼**。 按一下&#x200B;**選取**。
+之後您會再次看到此快顯視窗。 在搜尋欄位中輸入`wm:document`，然後選取欄位&#x200B;**檔名稱**。 按一下&#x200B;**選取**。
 
 ![WF](./images/wfbaem104.png)
 
@@ -221,7 +221,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem15.png)
 
-選取應命名為`--aepUserLdap-- - CitiSignal Fiber Launch Assets`的資料夾。 按一下&#x200B;**指派**。
+選取應命名為`--aepUserLdap-- - CitiSignal Fiber Campaign`的資料夾。 按一下&#x200B;**指派**。
 
 ![WF](./images/wfbaem16.png)
 

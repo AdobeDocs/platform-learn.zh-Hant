@@ -4,9 +4,9 @@ description: 使用Workfront校訂
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -132,9 +132,9 @@ ht-degree: 0%
 為您的工作輸入此名稱： `Create layout using approved assets and copy`。
 
 將欄位&#x200B;**指派**&#x200B;設定為角色&#x200B;**Designer**。
-將欄位&#x200B;**Duration**&#x200B;設定為&#x200B;**5天**。
-將前置工作列位設定為&#x200B;**9**。
-輸入欄位&#x200B;**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期。
+將欄位**Duration**&#x200B;設定為&#x200B;**5天**。
+將前置工作列位設定為**9**。
+輸入欄位**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期。
 
 按一下畫面中的其他位置以儲存新任務。
 
@@ -203,7 +203,7 @@ ht-degree: 0%
 
 ![WF](./images/timetravelnow.png)
 
-返回&#x200B;**專案詳細資料**&#x200B;畫面。 移至&#x200B;**檔案**。 按一下[新增&#x200B;**]，然後選取[檔案**&#x200B;**]。**
+前往您任務的&#x200B;**檔案**。 按一下[新增&#x200B;**]，然後選取[檔案****]。**
 
 ![WF](./images/wfp10.png)
 
@@ -243,7 +243,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp25.png)
 
-您現在需要進行設計變更，您將在Adobe Express中進行此操作。
+您現在需要進行設計變更，並上傳影像的新版本。
 
 ## 1.2.2.6將檔案的新版本新增至您的工作
 
@@ -251,11 +251,11 @@ ht-degree: 0%
 
 ![WF](./images/getonboard.png)
 
-在Adobe Workfront的「工作」檢視中，選取未核准的舊影像檔案。 接著，按一下[新增&#x200B;**]、[新增**]、[選取&#x200B;**版本**]，然後選取您的AEM Assets CS存放庫，此存放庫應命名為`--aepUserLdap-- - CitiSignal`。
+在Adobe Workfront的「工作」檢視中，選取未核准的舊影像檔案。 接著，按一下[新增] **+ [新增]**，選取[版本] ****，然後選擇[檔案] ****。
 
 ![WF](./images/wfp26.png)
 
-導覽至資料夾`--aepUserLdap-- CitiSignal Fiber Campaign`並選取檔案`CitiSignal - Neon Rabit - Get On Board Now!.png`。 按一下&#x200B;**選取**。
+按一下以選取檔案`getonboardnow.png`。 按一下&#x200B;**「開啟」**。
 
 ![WF](./images/wfp26a.png)
 
@@ -291,11 +291,11 @@ ht-degree: 0%
 
 ![WF](./images/wfp34.png)
 
-選取核准的檔案。 按一下&#x200B;**共用箭頭**&#x200B;圖示，然後選取您應命名為`--aepUserLdap-- - CitiSignal AEM`的AEM Assets整合。
+選取核准的檔案。 按一下&#x200B;**共用箭頭**&#x200B;圖示，然後選取您應命名為`--aepUserLdap-- - CitiSignal AEM+ACCS`的AEM Assets整合。
 
 ![WF](./images/wfp35.png)
 
-連按兩下您之前建立的資料夾，該資料夾應命名為`--aepUserLdap-- - CitiSignal Fiber Launch Assets`。
+連按兩下您之前建立的資料夾，該資料夾應命名為`--aepUserLdap-- - CitiSignal Fiber Campaign`。
 
 ![WF](./images/wfp36.png)
 
@@ -317,7 +317,7 @@ ht-degree: 0%
 
 ## 1.2.2.7在AEM Assets中檢視您的檔案
 
-移至AEM Assets CS中名為`--aepUserLdap-- - CitiSignal Fiber Launch Assets`的資料夾。
+移至AEM Assets CS中名為`--aepUserLdap-- - CitiSignal Fiber Campaign`的資料夾。
 
 ![WF](./images/wfppaem1.png)
 
