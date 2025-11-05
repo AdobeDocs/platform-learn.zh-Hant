@@ -4,9 +4,9 @@ description: 使用Workfront校訂
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 919bfdb5f047669f670482695edfa7820e0aad93
 workflow-type: tm+mt
-source-wordcount: '1319'
+source-wordcount: '1293'
 ht-degree: 0%
 
 ---
@@ -132,9 +132,9 @@ ht-degree: 0%
 為您的工作輸入此名稱： `Create layout using approved assets and copy`。
 
 將欄位&#x200B;**指派**&#x200B;設定為角色&#x200B;**Designer**。
-將欄位&#x200B;**Duration**&#x200B;設定為&#x200B;**5天**。
-將前置工作列位設定為&#x200B;**9**。
-輸入欄位&#x200B;**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期。
+將欄位**Duration**&#x200B;設定為&#x200B;**5天**。
+將前置工作列位設定為**9**。
+輸入欄位**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期。
 
 按一下畫面中的其他位置以儲存新任務。
 
@@ -197,25 +197,25 @@ ht-degree: 0%
 
 在此任務中，您需要建立新影像，然後將其上傳為Workfront中的檔案。 您現在將會使用Adobe Express自行建立該資產。
 
-## 1.2.2.5新增檔案至您的任務並開始核准流程
+## 1.2.2.5新增檔案至您的專案並開始核准流程
 
 若要進行此練習，您必須下載並使用此資產： [timetravelnow.png](./images/timetravelnow.png)
 
 ![WF](./images/timetravelnow.png)
 
-返回&#x200B;**任務詳細資料**&#x200B;畫面。 移至&#x200B;**檔案**。 按一下「**+新增**」，然後選取您的AEM Assets CS存放庫（應該命名為`--aepUserLdap-- - CitiSignal`）。
+返回&#x200B;**專案詳細資料**&#x200B;畫面。 移至&#x200B;**檔案**。 按一下[新增&#x200B;**]，然後選取[檔案****]。**
 
 ![WF](./images/wfp10.png)
 
-按兩下以開啟資料夾`--aepUserLdap-- CitiSignal Fiber Campaign`。
+按一下以選取檔案`timetravelnow.png`。 按一下&#x200B;**「開啟」**。
 
 ![WF](./images/wfp10a.png)
 
-選取您在上一步建立的檔案，名為&#x200B;**CitiSignal - Neon Rabbit - Timetravel Now！。png**。 按一下&#x200B;**選取**。
+然後您應該擁有此專案。
 
-![WF](./images/2048x2048.png){width="50px" align="left"}
+![WF](./images/wfp10b.png)
 
-然後您應該擁有此專案。 暫留在上傳的檔案上。 按一下&#x200B;**建立校訂**，然後選擇&#x200B;**進階校訂**。
+暫留在上傳的檔案上。 按一下&#x200B;**建立校訂**，然後選擇&#x200B;**進階校訂**。
 
 ![WF](./images/wfp13.png)
 

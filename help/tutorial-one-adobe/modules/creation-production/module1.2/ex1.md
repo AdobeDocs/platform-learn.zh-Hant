@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 4b38b40c47b5c373f74a85261adce46f291303a8
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '699'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 需要定義下列變數：
 
-| 索引鍵 | 值 |
+| 索引鍵 | 價值 |
 |:-------------:| :---------------:| 
 | `CONST_client_id` | 您的Adobe I/O專案使用者端ID |
 | `CONST_client_secret` | 您的Adobe I/O專案使用者端密碼 |
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion11.png)
 
-輸入&#x200B;**變數名稱**： **CONST_client_id**&#x200B;及其&#x200B;**變數值**，請選取&#x200B;**新增**。
+輸入&#x200B;**變數名稱**： **`CONST_client_id`**&#x200B;及其&#x200B;**變數值**，請選取&#x200B;**新增**。
 
 ![WF Fusion](./images/wffusion12.png)
 
@@ -91,7 +91,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion13.png)
 
-輸入&#x200B;**變數名稱**： **CONST_client_secret**&#x200B;及其&#x200B;**變數值**，請選取&#x200B;**新增**。
+輸入&#x200B;**變數名稱**： **`CONST_client_secret`**&#x200B;及其&#x200B;**變數值**，請選取&#x200B;**新增**。
 
 ![WF Fusion](./images/wffusion14.png)
 
@@ -99,7 +99,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion15.png)
 
-輸入&#x200B;**變數名稱**： **CONST_scope**&#x200B;及其&#x200B;**變數值**，請選取&#x200B;**新增**。
+輸入&#x200B;**變數名稱**： **`CONST_scope`**&#x200B;及其&#x200B;**變數值**，請選取&#x200B;**新增**。
 
 ![WF Fusion](./images/wffusion16.png)
 
@@ -123,7 +123,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion20.png)
 
-| 索引鍵 | 值 |
+| 索引鍵 | 價值 |
 |:-------------:| :---------------:| 
 | `URL` | `https://ims-na1.adobelogin.com/ims/token/v3` |
 | `Method` | `POST` |
@@ -135,7 +135,7 @@ ht-degree: 1%
 
 為每個以下值新增專案：
 
-| 索引鍵 | 值 |
+| 索引鍵 | 價值 |
 |:-------------:| :---------------:| 
 | `client_id` | 您預先定義的`CONST_client_id`變數 |
 | `client_secret` | 您預先定義的`CONST_client_secret`變數 |
@@ -230,7 +230,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion45.png)
 
-接下來，將您的情境名稱變更為`--aepUserLdap-- - Adobe I/O Authentication`。
+接下來，將您的情境名稱變更為`--aepUserLdap-- - Firefly + Photoshop`。
 
 ![WF Fusion](./images/wffusion46.png)
 
@@ -240,7 +240,7 @@ ht-degree: 1%
 
 ## 後續步驟
 
-移至[在Workfront Fusion中使用Adobe API](./ex2.md){target="_blank"}
+使用聯結器移至[自動化](./ex4.md){target="_blank"}
 
 返回[使用Workfront Fusion進行Creative工作流程自動化](./automation.md){target="_blank"}
 

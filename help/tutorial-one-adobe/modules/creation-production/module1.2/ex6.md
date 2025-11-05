@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 1d1ee3462bd890556037c8e24ba2fe94c3423187
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1983'
 ht-degree: 1%
 
 ---
 
-# 1.2.6框架I/O至Workfront Fusion至AEM Assets
+# 1.2.4框架I/O至Workfront Fusion至AEM Assets
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 但業務團隊不需要PSD檔案，他們需要PNG檔案或JPG檔案。 在本練習中，您將設定新的自動化功能，一旦影格I/O中的資產獲得核准，就會產生PNG檔案，且PNG檔案會自動儲存至AEM Assets中。
 
-## 1.2.6.1建立新情境
+## 1.2.4.1建立新情境
 
 移至[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 開啟&#x200B;**Workfront Fusion**。
 
@@ -57,9 +57,9 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf6.png)
 
-## 1.2.6.2在Frame.io中設定Webhook
+## 1.2.4.2在Frame.io中設定Webhook
 
-移至Postman並開啟要求&#x200B;**POST — 取得集合** Adobe IO - OAuth **中的存取權杖**。 接著，按一下[傳送]，要求新的&#x200B;**access_token**。**&#x200B;**
+移至Postman並開啟要求&#x200B;**POST — 取得集合** Adobe IO - OAuth **中的存取權杖**。 接著，按一下[傳送]，要求新的&#x200B;**access_token**。****
 
 ![框架IO](./images/frameV4api2.png)
 
@@ -87,7 +87,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf13.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]&#x200B;**執行快速測試。**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]**執行快速測試。******
 
 ![框架IO](./images/aemf14.png)
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf16.png)
 
-## 1.2.6.3從Frame.io取得資產詳細資訊
+## 1.2.4.3從Frame.io取得資產詳細資訊
 
 現在Frame.io與Workfront Fusion之間的通訊已透過自訂webhook建立，您應該取得有關其狀態標籤已更新的資產的更多詳細資訊。 為此，您將再次使用Workfront Fusion中的Frame.io聯結器，類似於上一個練習。
 
@@ -137,7 +137,7 @@ ht-degree: 1%
 
 輸入這些值，然後按一下&#x200B;**新增**。
 
-| 索引鍵 | 值 |
+| 索引鍵 | 價值 |
 |:-------------:| :---------------:| 
 | `include` | `media_links.original` |
 
@@ -147,7 +147,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf22.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![框架IO](./images/aemf23.png)
 
@@ -174,11 +174,11 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf35.png)
 
-然後您應該擁有此專案。 按一下[儲存]儲存變更。**&#x200B;**
+然後您應該擁有此專案。 按一下[儲存]儲存變更。****
 
 ![框架IO](./images/aemf35a.png)
 
-## 1.2.6.4轉換成PNG
+## 1.2.4.4轉換成PNG
 
 將游標停留在模組&#x200B;**Frame.io — 進行自訂API呼叫**&#x200B;並按一下&#x200B;**+**&#x200B;圖示。
 
@@ -208,7 +208,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf33.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![框架IO](./images/aemf32.png)
 
@@ -224,7 +224,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf39.png)
 
-## 1.2.6.5在AEM Assets CS中儲存PNG
+## 1.2.4.5在AEM Assets CS中儲存PNG
 
 將游標暫留在&#x200B;**Adobe Photoshop — 轉換影像格式**&#x200B;模組上，然後按一下&#x200B;**+**&#x200B;圖示。
 
@@ -327,7 +327,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf58.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/aemf59.png)
 
@@ -390,3 +390,4 @@ ht-degree: 1%
 返回[使用Workfront Fusion進行Creative工作流程自動化](./automation.md){target="_blank"}
 
 返回[所有模組](./../../../overview.md){target="_blank"}
+1.2.4
