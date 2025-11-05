@@ -4,7 +4,7 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -56,9 +56,9 @@ ht-degree: 3%
    + 1.2使用Workfront Fusion自動化Creative工作流程 {#crpr2}
       + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Workfront Fusion快速入門](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
-      + [1.2.2使用聯結器自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
-      + [1.2.3 Frame.io和Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
-      + [1.2.4 Frame.io至Workfront Fusion至AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
+      + [1.2.2使用聯結器自動化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
+      + [1.2.3 Frame.io和Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
+      + [1.2.4 Frame.io至Workfront Fusion至AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
    + 1.3 GenStudio for Performance Marketing {#crpr3}
       + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)

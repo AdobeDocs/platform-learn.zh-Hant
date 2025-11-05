@@ -1,448 +1,393 @@
 ---
-title: 使用聯結器自動化
-description: 使用聯結器自動化
+title: 將I/O框架連線至Workfront Fusion連線至AEM Assets
+description: 將I/O框架連線至Workfront Fusion連線至AEM Assets
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
+source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1983'
 ht-degree: 1%
 
 ---
 
-# 1.2.4使用聯結器自動化
+# 1.2.4框架I/O至Workfront Fusion至AEM Assets
 
-現在，您將開始在Photoshop的Workfront Fusion中使用現成的聯結器，並將Firefly Text-2-Image請求和Photoshop請求連線到一個案例中。
+>[!IMPORTANT]
+>
+>為了完成此練習，您需要有權存取運作中的AEM Assets CS作者環境。 如果您按照練習[Adobe Experience Manager Cloud Service和Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}，您將有權存取這樣的環境。
 
-## 1.2.4.1更新變數
+>[!IMPORTANT]
+>
+>如果您先前已使用Author環境設定AEM Assets CS計畫，可能是您的AEM CS沙箱已休眠。 考慮到讓這樣的沙箱解除休眠需要10-15分鐘，最好現在開始解除休眠過程，以免以後卡住。
 
-繼續聯結器設定前，必須將下列變數新增至&#x200B;**初始化常數**&#x200B;模組。
+在上一個練習中，您已設定一個情境，使用Adobe Firefly、Adobe Photoshop API和Workfront Fusion自動產生Photoshop PSD檔案的變數。 該案例的輸出是新的Photoshop PSD檔案。
 
-- `AZURE_STORAGE_URL`
-- `AZURE_STORAGE_CONTAINER`
-- `AZURE_STORAGE_SAS_READ`
-- `AZURE_STORAGE_SAS_WRITE`
+但業務團隊不需要PSD檔案，他們需要PNG檔案或JPG檔案。 在本練習中，您將設定新的自動化功能，一旦影格I/O中的資產獲得核准，就會產生PNG檔案，且PNG檔案會自動儲存至AEM Assets中。
 
-返回您的第一個節點，選取&#x200B;**初始化常數**，然後為每個變數選擇&#x200B;**新增專案**。
+## 1.2.4.1建立新情境
 
-![WF Fusion](./images/wffusion69.png)
+移至[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 開啟&#x200B;**Workfront Fusion**。
 
-| 索引鍵 | 範例值 |
+![WF Fusion](./images/wffusion1.png)
+
+在左側功能表中，移至&#x200B;**案例**&#x200B;並選取您的資料夾`--aepUserLdap--`。 按一下&#x200B;**建立新情境**。
+
+![框架IO](./images/aemf1.png)
+
+使用名稱`--aepUserLdap-- - Asset Approved PNG AEM Assets`。 接下來，按一下「**」？**&#x200B;模組，輸入搜尋字詞`webhook`，然後按一下&#x200B;**Webhooks**。
+
+![框架IO](./images/aemf2.png)
+
+按一下&#x200B;**自訂webhook**。
+
+![框架IO](./images/aemf3.png)
+
+按一下&#x200B;**[新增**]以建立新的webhook。
+
+![框架IO](./images/aemf4.png)
+
+使用名稱`--aepUserLdap-- - Frame.io Webhook`。 按一下&#x200B;**儲存**。
+
+![框架IO](./images/aemf5.png)
+
+您應該會看到此訊息。 按一下&#x200B;**將地址複製到剪貼簿**。
+
+![框架IO](./images/aemf6.png)
+
+## 1.2.4.2在Frame.io中設定Webhook
+
+移至Postman並開啟要求&#x200B;**POST — 取得集合** Adobe IO - OAuth **中的存取權杖**。 接著，按一下[傳送]，要求新的&#x200B;**access_token**。****
+
+![框架IO](./images/frameV4api2.png)
+
+在左側功能表中，返回&#x200B;**集合**。 開啟要求&#x200B;**POST — 在集合** Frame.io V4 — 技術內部人員&#x200B;**中建立Webhook**，在資料夾&#x200B;**Webhooks**&#x200B;中。
+
+前往請求的&#x200B;**內文**。 將欄位&#x200B;**name**&#x200B;變更為`--aepUserLdap--  - Fusion to AEM Assets`，然後將欄位&#x200B;**url**&#x200B;變更為您從Workfront Fusion複製的Webhook URL值。
+
+按一下&#x200B;**傳送**。
+
+![框架IO](./images/framewh1.png)
+
+您的Frame.io V4自訂動作現已建立。
+
+![框架IO](./images/framewh2.png)
+
+前往[https://next.frame.io/project](https://next.frame.io/project){target="_blank"}，並前往您之前建立的專案（應命名為`--aepUserLdap--`），並開啟資料夾&#x200B;**CitiSignal Fiber Campaign**。 您現在應該會看到上一個練習建立的資產。
+
+![框架IO](./images/aemf11a.png)
+
+按一下欄位&#x200B;**狀態**&#x200B;並將狀態變更為&#x200B;**進行中**。
+
+![框架IO](./images/aemf12.png)
+
+切換回Workfront Fusion。 您現在應該會看到連線是&#x200B;**已成功判定**。
+
+![框架IO](./images/aemf13.png)
+
+按一下[儲存]儲存變更，然後按一下[執行一次]**執行快速測試。******
+
+![框架IO](./images/aemf14.png)
+
+切換回Frame.io並按一下&#x200B;**進行中**&#x200B;欄位，並將狀態變更為&#x200B;**需要檢閱**。
+
+![框架IO](./images/aemf15.png)
+
+切換回Workfront Fusion，然後按一下&#x200B;**自訂webhook**&#x200B;模組上的泡泡。
+
+泡泡圖的詳細檢視畫面會顯示從Frame.io收到的資料。 您應該會看到各種ID。例如，欄位&#x200B;**resource.id**&#x200B;會顯示資產&#x200B;**citisignal-fiber.psd**&#x200B;之Frame.io中的唯一ID。
+
+![框架IO](./images/aemf16.png)
+
+## 1.2.4.3從Frame.io取得資產詳細資訊
+
+現在Frame.io與Workfront Fusion之間的通訊已透過自訂webhook建立，您應該取得有關其狀態標籤已更新的資產的更多詳細資訊。 為此，您將再次使用Workfront Fusion中的Frame.io聯結器，類似於上一個練習。
+
+將游標暫留在&#x200B;**自訂webhook**&#x200B;物件上，然後按一下&#x200B;**+**&#x200B;圖示以新增另一個模組。
+
+![框架IO](./images/aemf18a.png)
+
+輸入搜尋字詞`frame`。 按一下&#x200B;**Frame.io**。
+
+![框架IO](./images/aemf18.png)
+
+按一下&#x200B;**Frame.io**。
+
+![框架IO](./images/aemf19.png)
+
+按一下&#x200B;**進行自訂API呼叫**。
+
+![框架IO](./images/aemf20.png)
+
+確認連線已設定為您在上一個練習中建立的連線，應該命名為`--aepUserLdap-- - Adobe I/O - Frame.io S2S`。
+
+![框架IO](./images/aemf21.png)
+
+針對模組&#x200B;**Frame.io — 進行自訂API呼叫**，使用URL： `/v4/accounts/{{1.account.id}}/files/{{1.resource.id}}`。
+
+>[!NOTE]
+>
+>可以使用下列語法手動指定Workfront Fusion中的變數： `{{1.account.id}}`和`{{1.resource.id}}`。 變數中的數字會參考情境中的模組。 在此範例中，您可以看到情境中的第一個模組稱為&#x200B;**Webhooks**，其序號為&#x200B;**1**。 這表示變數`{{1.account.id}}`和`{{1.resource.id}}`將會從序號為1的模組存取該欄位。 序號有時可能不同，因此在複製/貼上這類變數時請務必注意，並務必確認所使用的序號是否正確。
+
+接著，按一下&#x200B;**查詢字串**&#x200B;下的&#x200B;**+新增專案**。
+
+![框架IO](./images/aemf21a.png)
+
+輸入這些值，然後按一下&#x200B;**新增**。
+
+| 索引鍵 | 價值 |
 |:-------------:| :---------------:| 
-| `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
-| `AZURE_STORAGE_CONTAINER` | `vangeluw` |
-| `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
-| `AZURE_STORAGE_SAS_WRITE` | `?sv=2023-01-03&st=2025-01-13T17%3A21%3A09Z&se=2025-01-14T17%3A21%3A09Z&sr=c&sp=racwl&sig=FD4m0YyyqUj%2B5T8YyTFJDi55RiTDC9xKtLTgW0CShps%3D` |
+| `include` | `media_links.original` |
 
-您可以返回Postman並開啟&#x200B;**環境變數**&#x200B;來尋找變數。
+![框架IO](./images/aemf21b.png)
 
-![Azure儲存體](./../module1.1/images/az105.png)
+您現在應該擁有此專案。 按一下&#x200B;**「確定」**。
 
-將這些值複製至Workfront Fusion，並為這4個變數分別新增專案。
+![框架IO](./images/aemf22.png)
 
-您的熒幕應如下所示。 選取&#x200B;**確定**。
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
-![WF Fusion](./images/wffusion68.png)
+![框架IO](./images/aemf23.png)
 
-## 1.2.4.2使用webhook啟用您的情境
+切換回Frame.io並將狀態變更為&#x200B;**進行中**。
 
-到目前為止，您已手動執行您的案例以進行測試。 現在來使用webhook更新您的情境，以便從外部環境啟動它。
+![框架IO](./images/aemf24.png)
 
-選取&#x200B;**+**，搜尋&#x200B;**webhook**，然後選取&#x200B;**Webhook**。
+返回Workfront Fusion並按一下&#x200B;**Frame.io — 進行自訂API呼叫**&#x200B;模組。 您應該會看到類似的概觀。
 
-![WF Fusion](./images/wffusion216.png)
+![框架IO](./images/aemf25.png)
 
-選取&#x200B;**自訂webhook**。
+接下來，您應該設定篩選器，以確保只有狀態為&#x200B;**已核准**&#x200B;的資產會呈現PNG檔案。 若要這麼做，請按一下模組&#x200B;**自訂webhook**&#x200B;與&#x200B;**Frame.io之間的**&#x200B;扳手&#x200B;**圖示 — 進行自訂API呼叫**，然後選取&#x200B;**設定篩選器**。
 
-![WF Fusion](./images/wffusion217.png)
+![框架IO](./images/aemf25a.png)
 
-將&#x200B;**自訂webhook**&#x200B;模組拖曳到情境的開頭。 接著，選取&#x200B;**時鐘**&#x200B;圖示，並將其拖曳至&#x200B;**自訂webhook**&#x200B;模組。
+設定下列欄位：
 
-![WF Fusion](./images/wffusion217a.png)
+- **標籤**：使用`Status = Approved`。
+- **條件**： `{{1.metadata.value[]}}`。
+- **基本運運算元**：選取&#x200B;**等於**。
+- **值**： `Approved`。
 
-您應該會看到此訊息。 接著，將第一個模組上的紅點拖曳至第二個模組的紫點。
+按一下&#x200B;**「確定」**。
 
-![WF Fusion](./images/wffusion217b.png)
+![框架IO](./images/aemf35.png)
 
-您應該會看到此訊息。 新增，按一下&#x200B;**自訂webhook**&#x200B;模組。
+然後您應該擁有此專案。 按一下[儲存]儲存變更。****
 
-![WF Fusion](./images/wffusion217c.png)
+![框架IO](./images/aemf35a.png)
 
-按一下&#x200B;**新增**。
+## 1.2.4.4轉換成PNG
 
-![WF Fusion](./images/wffusion218.png)
+將游標停留在模組&#x200B;**Frame.io — 進行自訂API呼叫**&#x200B;並按一下&#x200B;**+**&#x200B;圖示。
 
-將&#x200B;**Webhook名稱**&#x200B;設定為`--aepUserLdap-- - Firefly + Photoshop Webhook`。 按一下&#x200B;**儲存**。
+![框架IO](./images/aemf27.png)
 
-![WF Fusion](./images/wffusion219.png)
+輸入搜尋字詞`photoshop`，然後按一下&#x200B;**Adobe Photoshop**。
 
-您的webhook URL現已可用。 按一下&#x200B;**將地址複製到剪貼簿**&#x200B;以複製URL。
+![框架IO](./images/aemf28.png)
 
-![WF Fusion](./images/wffusion221.png)
+按一下&#x200B;**轉換影像格式**。
 
-開啟Postman，並在集合&#x200B;**FF - Firefly Services技術業內人士**&#x200B;中新增資料夾。
+![框架IO](./images/aemf29.png)
 
-![WF Fusion](./images/wffusion222.png)
+確認欄位&#x200B;**Connection**&#x200B;正在使用您先前建立的名為`--aepUserLdap-- - Adobe IO`的連線。
 
-為資料夾命名`--aepUserLdap-- - Workfront Fusion`。
+在&#x200B;**Input**&#x200B;下，將欄位&#x200B;**Storage**&#x200B;設定為&#x200B;**External**，並將&#x200B;**File Location**&#x200B;設定為使用模組&#x200B;**Frame.io傳回的變數** Original **— 進行自訂API呼叫**。
 
-![WF Fusion](./images/wffusion223.png)
+接著，按一下&#x200B;**輸出**&#x200B;下的&#x200B;**新增專案**。
 
-在您剛建立的資料夾中，選取3個點&#x200B;**...**，然後選取&#x200B;**新增要求**。
+![框架IO](./images/aemf30.png)
 
-![WF Fusion](./images/wffusion224.png)
+針對&#x200B;**輸出**&#x200B;組態，請將欄位&#x200B;**儲存體**&#x200B;設定為&#x200B;**Fusion內部儲存體**，並將&#x200B;**型別**&#x200B;設定為&#x200B;**影像/png**。 按一下&#x200B;**新增**。
 
-將&#x200B;**方法型別**&#x200B;設定為&#x200B;**POST**，並將webhook的URL貼到位址列。
+![框架IO](./images/aemf31.png)
 
-![WF Fusion](./images/wffusion225.png)
+按一下&#x200B;**「確定」**。
 
-您必須傳送自訂內文，才能從外部來源將變數元素提供給Workfront Fusion案例。
+![框架IO](./images/aemf33.png)
 
-移至&#x200B;**內文**&#x200B;並選取&#x200B;**原始**。
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
-![WF Fusion](./images/wffusion226.png)
+![框架IO](./images/aemf32.png)
 
-將下列文字貼入要求內文。 選取&#x200B;**傳送**。
+切換回Frame.io並按一下&#x200B;**進行中**&#x200B;欄位，並將狀態變更為&#x200B;**已核准**。
 
-```json
-{
-    "psdTemplate": "citisignal-fiber.psd",
-    "xlsFile": "placeholder",
-    "prompt":"misty meadows",
-    "cta": "Buy this now!",
-    "button": "Click here to buy!"
-}
-```
+![框架IO](./images/aemf37.png)
 
-![WF Fusion](./images/wffusion229.png)
+返回Workfront Fusion。 您現在應該會看到案例中的所有模組都已成功執行。 按一下&#x200B;**Adobe Photoshop — 轉換影像格式**&#x200B;模組上的泡泡。
 
-回到Workfront Fusion後，您的自訂webhook上會顯示一則訊息，指出： **已成功判定**。
+![框架IO](./images/aemf38.png)
 
-![WF Fusion](./images/wffusion227.png)
+在執行&#x200B;**Adobe Photoshop — 轉換影像格式**&#x200B;模組的詳細資訊中，您可以看到現在已產生PNG檔案。 下一步是將該檔案儲存在AEM Assets CS中。
 
-## 1.2.4.3 Adobe Firefly聯結器
+![框架IO](./images/aemf39.png)
 
-按一下&#x200B;**+**&#x200B;圖示以新增模組。
+## 1.2.4.5在AEM Assets CS中儲存PNG
 
-![WF Fusion](./images/wffcff2.png)
+將游標暫留在&#x200B;**Adobe Photoshop — 轉換影像格式**&#x200B;模組上，然後按一下&#x200B;**+**&#x200B;圖示。
 
-輸入搜尋字詞`Adobe Firefly`，然後選取&#x200B;**Adobe Firefly**。
+![框架IO](./images/aemf40.png)
 
-![WF Fusion](./images/wffcff2a.png)
+輸入搜尋字詞`aem`並選取&#x200B;**AEM Assets**。
 
-選取&#x200B;**產生影像**。
+![框架IO](./images/aemf41.png)
 
-![WF Fusion](./images/wffcff3.png)
+按一下&#x200B;**上傳資產**。
 
-按一下&#x200B;**Adobe Firefly**&#x200B;模組以開啟，然後按一下&#x200B;**新增**&#x200B;以建立新連線。
+![框架IO](./images/aemf42.png)
 
-![WF Fusion](./images/wffcff5.png)
+您現在需要設定與AEM Assets CS的連線。 按一下&#x200B;**新增**。
 
-填寫下列欄位：
+![框架IO](./images/aemf43.png)
 
-- **連線名稱**：使用`--aepUserLdap-- - Firefly connection`。
-- **環境**：使用&#x200B;**生產**。
-- **型別**：使用&#x200B;**個人帳戶**。
-- **使用者端識別碼**：從您名為&#x200B;**的Adobe I/O專案複製**&#x200B;使用者端識別碼`--aepUserLdap-- - One Adobe tutorial`。
-- **使用者端密碼**：從您名為&#x200B;**的Adobe I/O專案複製**&#x200B;使用者端密碼`--aepUserLdap-- - One Adobe tutorial`。
+使用下列設定：
 
-您可以在&#x200B;**這裡**&#x200B;找到您Adobe I/O專案的&#x200B;**使用者端識別碼**&#x200B;和[使用者端密碼](https://developer.adobe.com/console/projects.){target="_blank"}。
+- **連線型別**： **AEM Assets as a Cloud Service**。
+- **連線名稱**： `--aepUserLdap-- AEM Assets CS`。
+- **執行個體URL**：複製您AEM Assets CS作者環境的執行個體URL，看起來應該像這樣： `https://author-pXXXXX-eXXXXXXX.adobeaemcloud.com`。
+- **存取詳細資料填入選項**：選取&#x200B;**提供JSON**。
 
-![WF Fusion](./images/wffc20.png)
+您現在需要提供JSON格式的&#x200B;**技術帳戶認證**。 使用AEM Cloud Manager時，需遵循許多步驟才能達成此目的。 在執行此操作時，請保持此畫面開啟。
 
-填寫完所有欄位後，請按一下[繼續]。**&#x200B;** 之後，您的連線將會自動驗證。
+![框架IO](./images/aemf44.png)
 
-![WF Fusion](./images/wffcff6.png)
+移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 您應該選取的組織是`--aepImsOrgName--`。 您將會看到類似這樣的內容。 按一下以開啟您的程式，程式應該命名為`--aepUserLdap-- - Citi Signal`。
 
-接著，選取傳入的&#x200B;**自訂webhook**&#x200B;提供給情境的變數&#x200B;**提示**。
+![框架IO](./images/aemf45.png)
 
-![WF Fusion](./images/wffcff7.png)
+按一下3個點&#x200B;**...**，然後選取&#x200B;**Developer Console**。
 
-將&#x200B;**模型版本** **提示**&#x200B;設定為&#x200B;**image4 standard**。 按一下&#x200B;**「確定」**。
+![框架IO](./images/aemf46.png)
 
-![WF Fusion](./images/wffcff7b.png)
+按一下&#x200B;**使用Adobe登入**。
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+![框架IO](./images/aemf47.png)
 
-![WF Fusion](./images/wffcff8.png)
+移至&#x200B;**工具** > **整合**。
 
-移至Postman，驗證要求中的提示，然後按一下[傳送]。**&#x200B;**
+![框架IO](./images/aemf47a.png)
 
-![WF Fusion](./images/wffcff8a.png)
+按一下&#x200B;**建立新的技術帳戶**。
 
-按一下「傳送」後，請返回Workfront Fusion並按一下&#x200B;**Adobe Firefly**&#x200B;模組上的泡泡圖示以驗證詳細資料。
+![框架IO](./images/aemf48.png)
 
-![WF Fusion](./images/wffcff9.png)
+您應該會看到類似這樣的內容。 開啟新建立的技術帳戶。 按一下3個點&#x200B;**...**，然後選取&#x200B;**檢視**。
 
-移至&#x200B;**OUTPUT**&#x200B;至&#x200B;**詳細資料** > **URL**，以尋找&#x200B;**Adobe Firefly**&#x200B;所產生之影像的URl。
+![框架IO](./images/aemf48a.png)
 
-![WF Fusion](./images/wffcff10.png)
+接著，您應該會看到類似的技術帳戶Token裝載。 將完整的JSON裝載複製到剪貼簿。
 
-複製URL並在瀏覽器中將其貼上。 您現在應該會看到代表您從Postman請求傳入的提示的影像，在此案例中為&#x200B;**霧狀草甸**。
+![框架IO](./images/aemf50.png)
 
-![WF Fusion](./images/wffcff11.png)
+返回Workfront Fusion，並將完整的JSON裝載貼到&#x200B;**JSON格式的技術帳戶認證**&#x200B;欄位中。 按一下&#x200B;**繼續**。
 
-## 1.2.4.2變更PSD檔案的背景
+![框架IO](./images/aemf49.png)
 
-您現在將更新情境，使用更多現成可用的聯結器使其更聰明。 您也會將輸出從Firefly連線至Photoshop，以便PSD檔案的背景影像能使用Firefly「產生影像」動作的輸出動態變更。
+您的連線將會經過驗證，在成功後，您的連線將會在AEM Assets模組中自動選取。 下一步要做的就是設定資料夾。 在練習中，您應該建立新的專用資料夾。
 
-您應該會看到此訊息。 接著，將游標暫留在&#x200B;**Adobe Firefly**&#x200B;模組上，然後按一下&#x200B;**+**&#x200B;圖示。
+![框架IO](./images/aemf51.png)
 
-![WF Fusion](./images/wffc15.png)
+若要建立新的專用資料夾，請移至[https://experience.adobe.com](https://experience.adobe.com/){target="_blank"}。 確保選取正確的Experience Cloud執行個體，應為`--aepImsOrgName--`。 然後，按一下&#x200B;**Experience Manager Assets**。
 
-在搜尋功能表中輸入`Photoshop`，然後按一下&#x200B;**Adobe Photoshop**&#x200B;動作。
+![框架IO](./images/aemf52.png)
 
-![WF Fusion](./images/wffc16.png)
+在您的AEM Assets CS環境中按一下&#x200B;**選取**，應該命名為`--aepUserLdap-- - Citi Signal dev`。
 
-選取&#x200B;**套用PSD編輯**。
+![框架IO](./images/aemf53.png)
 
-![WF Fusion](./images/wffc17.png)
+移至&#x200B;**資產**&#x200B;並按一下&#x200B;**建立資料夾**。
 
-您應該會看到此訊息。 按一下&#x200B;**[新增**]，新增與Adobe Photoshop的連線。
+![框架IO](./images/aemf54.png)
 
-![WF Fusion](./images/wffc18.png)
+輸入名稱`--aepUserLdap-- - CitiSignal Fiber Campaign`並按一下&#x200B;**建立**。
 
-依照以下方式設定您的連線：
+![框架IO](./images/aemf55.png)
 
-- 連線型別：選取&#x200B;**Adobe Photoshop （伺服器對伺服器）**
-- 連線名稱：輸入`--aepUserLdap-- - Adobe I/O`
-- 使用者端ID：貼上您的使用者端ID
-- 使用者端密碼：貼上您的使用者端密碼
+接著會建立您的資料夾。
 
-按一下&#x200B;**繼續**。
+![框架IO](./images/aemf56.png)
 
-![WF Fusion](./images/wffc19.png)
+返回Workfront Fusion，選取&#x200B;**按一下這裡以選擇資料夾**，然後選擇資料夾`--aepUserLdap-- - CitiSignal Fiber Campaign`。
 
-若要尋找您的&#x200B;**使用者端識別碼**&#x200B;和&#x200B;**使用者端密碼**，請移至[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}並開啟您名為`--aepUserLdap-- One Adobe tutorial`的Adobe I/O專案。 移至&#x200B;**OAuth伺服器對伺服器**&#x200B;以尋找您的使用者端ID和使用者端密碼。 複製這些值，並貼到Workfront Fusion中的連線設定中。
+![框架IO](./images/aemf57.png)
 
-![WF Fusion](./images/wffc20.png)
+確認目的地已設為`--aepUserLdap-- - CitiSignal Fiber Campaign`。 然後，在&#x200B;**Source檔案**&#x200B;底下，選取&#x200B;**地圖**。
 
-按一下&#x200B;**繼續**&#x200B;後，驗證您的認證時，將會短暫顯示快顯視窗。 完成後，您應該會看到此內容。
+在&#x200B;**檔案名稱**&#x200B;底下，選擇變數`{{3.filenames[1]}}`。
 
-![WF Fusion](./images/wffc21.png)
+在&#x200B;**資料**&#x200B;底下，選擇變數`{{3.files[1]}}`。
 
-您現在必須輸入您希望Fusion使用的PSD檔案位置。 對於&#x200B;**儲存體**，請選取&#x200B;**Azure**，對於&#x200B;**檔案位置**，請輸入`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/{{1.AZURE_STORAGE_SAS_READ}}`。 將游標放在第二個`/`旁邊。 接著，檢視可用的變數，然後向下捲動以尋找變數&#x200B;**psdTemplate**。 按一下變數&#x200B;**psdTemplate**&#x200B;以選取它。
+>[!NOTE]
+>
+>可以使用下列語法手動指定Workfront Fusion中的變數： `{{3.filenames[1]}}`。 變數中的數字會參考情境中的模組。 在此範例中，您可以看到情境中的第三個模組稱為&#x200B;**Adobe Photoshop — 轉換影像格式**，其序號為&#x200B;**3**。 這表示變數`{{3.filenames[1]}}`將會從序號為3的模組存取欄位&#x200B;**檔案名稱[]**。 序號有時可能不同，因此在複製/貼上這類變數時請務必注意，並務必確認所使用的序號是否正確。
 
-![WF Fusion](./images/wffc22.png)
+按一下&#x200B;**「確定」**。
 
-您應該會看到此訊息。
+![框架IO](./images/aemf58.png)
 
-![WF Fusion](./images/wffc23.png)
+按一下[儲存]儲存變更。****
 
-一直向下捲動直到看到&#x200B;**圖層**。 按一下&#x200B;**新增專案**。
+![框架IO](./images/aemf59.png)
 
-![WF Fusion](./images/wffc24.png)
+接下來，您需要為您剛剛建立的技術帳戶設定特定許可權。 當帳戶是在&#x200B;**Cloud Manager**&#x200B;的&#x200B;**Developer Console**&#x200B;中建立時，已授予&#x200B;**讀取**&#x200B;存取權，但在此使用案例中，需要&#x200B;**寫入**&#x200B;存取權。 您可以前往AEM CS Author環境完成此操作。
 
-您應該會看到此訊息。 您現在需要在Photoshop PSD範本中輸入檔案背景所用的圖層名稱。
+移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 您應該選取的組織是`--aepImsOrgName--`。 按一下以開啟您的程式，程式應該命名為`--aepUserLdap-- - Citi Signal`。 您將會看到類似這樣的內容。 按一下作者URL。
 
-![WF Fusion](./images/wffc25.png)
+![框架IO](./images/aemf60.png)
 
-在&#x200B;**citisignal-fiber.psd**&#x200B;檔案中，您會找到用於背景的圖層。 在此範例中，該圖層名為&#x200B;**2048x2048-background**。
+按一下&#x200B;**使用Adobe登入**。
 
-![WF Fusion](./images/wffc26.png)
+![框架IO](./images/aemf61.png)
 
-在Workfront Fusion對話方塊中貼上名稱&#x200B;**2048x2048-background**。
+移至&#x200B;**設定** > **安全性** > **使用者**。
 
-![WF Fusion](./images/wffc27.png)
+![框架IO](./images/aemf62.png)
 
-向下捲動，直到看到&#x200B;**輸入**&#x200B;為止。 您現在需要定義需要插入背景圖層的內容。 在此情況下，您需要選取包含動態產生影像的&#x200B;**Adobe Firefly**&#x200B;模組的輸出。
+按一下以開啟Technical Account使用者帳戶。
 
-針對&#x200B;**儲存體**，選取&#x200B;**外部**。 針對&#x200B;**檔案位置**，您必須從`{{XX.details[].url}}`Adobe Firefly **模組的輸出複製並貼上變數**，但您需要以&#x200B;**Adobe Firefly**&#x200B;模組的序號取代變數中的&#x200B;**XX**，在此範例中為&#x200B;**5**。
+![框架IO](./images/aemf63.png)
 
-![WF Fusion](./images/wffc28.png)
+移至&#x200B;**群組**&#x200B;並將此「技術帳戶」使用者新增至群組&#x200B;**DAM-Users**。
 
-接著，向下捲動直到看到&#x200B;**編輯**&#x200B;為止。 將&#x200B;**Edit**&#x200B;設定為&#x200B;**是**&#x200B;並將&#x200B;**Type**&#x200B;設定為&#x200B;**Layer**。 按一下&#x200B;**新增**。
+![框架IO](./images/aemf64.png)
 
-![WF Fusion](./images/wffc29.png)
+按一下&#x200B;**儲存並關閉**。
 
-您應該會看到此訊息。 接下來，您需要定義動作的輸出。 按一下&#x200B;**輸出**&#x200B;下的&#x200B;**新增專案**。
+![框架IO](./images/aemf65.png)
 
-![WF Fusion](./images/wffc30.png)
+返回Workfront Fusion。 按一下&#x200B;**執行一次**&#x200B;以測試您的情境。
 
-選取&#x200B;**儲存體**&#x200B;的&#x200B;**Azure**，將此`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}`貼到&#x200B;**檔案位置**&#x200B;下，並選取&#x200B;**型別**&#x200B;下的&#x200B;**vnd.adobe.photoshop**。 按一下以啟用&#x200B;**顯示進階設定**。
+![框架IO](./images/aemf66.png)
 
-![WF Fusion](./images/wffc31.png)
+切換回Frame.io，並確認您的資產狀態已再次變更為&#x200B;**已核准**。
 
-在&#x200B;**進階設定**&#x200B;下，選取&#x200B;**是**&#x200B;以覆寫相同名稱的檔案。
-按一下&#x200B;**新增**。
+>[!NOTE]
+>
+>您可能需要先將它變更回&#x200B;**進行中**&#x200B;或&#x200B;**需要檢閱**，然後再變更回&#x200B;**已核准**。
 
-![WF Fusion](./images/wffc32.png)
+![框架IO](./images/aemf15.png)
 
-然後您應該擁有此專案。 按一下&#x200B;**「確定」**。
+之後將啟動您的Workfront Fusio案例，並成功完成。 檢視&#x200B;**AEM Assets**&#x200B;模組上泡泡圖中的資訊，即可看出PNG檔案已成功儲存在AEM Assets CS中。
 
-![WF Fusion](./images/wffc33.png)
+![框架IO](./images/aemf67.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+返回AEM Assets CS並開啟資料夾`--aepUserLdap-- - Frame.io PNG`。 您現在應該會看到在Workfront Fusion案例中產生的PNG檔案。 連按兩下檔案以開啟。
 
-![WF Fusion](./images/wffc33a.png)
+![框架IO](./images/aemf68.png)
 
-移至Postman，驗證要求中的提示，然後按一下[傳送]。**&#x200B;**
+您現在可以看到有關所產生PNG檔案中繼資料的更多詳細資料。
 
-![WF Fusion](./images/wffcff8a.png)
+![框架IO](./images/aemf69.png)
 
-您應該會看到此訊息。 按一下&#x200B;**Adobe Photoshop — 套用PSD編輯**&#x200B;模組上的泡泡。
-
-![WF Fusion](./images/wffc33b.png)
-
-您現在可以看到新的PSD檔案已成功產生，並儲存在您的Microsoft Azure儲存體帳戶中。
-
-![WF Fusion](./images/wffc33c.png)
-
-## 1.2.4.3變更PSD檔案的文字圖層
-
-接著，將游標暫留在&#x200B;**Adobe Photoshop — 套用PSD編輯**&#x200B;模組上，然後按一下&#x200B;**+**&#x200B;圖示。
-
-![WF Fusion](./images/wffc34.png)
-
-選取&#x200B;**Adobe Photoshop**。
-
-![WF Fusion](./images/wffc35.png)
-
-選取&#x200B;**編輯文字圖層**。
-
-![WF Fusion](./images/wffc36.png)
-
-您應該會看到此訊息。 首先，選取您先前已設定的Adobe Photoshop連線，名稱應為`--aepUserLdap-- Adobe I/O`。
-
-![WF Fusion](./images/wffc37.png)
-
-針對&#x200B;**輸入檔案**，選取&#x200B;**輸入檔案儲存體**&#x200B;的&#x200B;**Azure**，並確定選取先前要求的輸出，**Adobe Photoshop — 套用PSD編輯**，您可將其定義如下： ``{{XX.data[].`_links`.renditions[].href}}`` (將XX取代為先前模組Adobe Photoshop — 套用PSD編輯的序號)。
-
-接著，按一下「**圖層**」下的「**+新增專案**」以開始新增需要更新的文字圖層。
-
-![WF Fusion](./images/wffc37a.png)
-
-需進行2項變更，檔案&#x200B;**citisignal-fiber.psd**&#x200B;中的CTA文字和按鈕文字需要更新。
-
-若要尋找圖層名稱，請開啟檔案&#x200B;**citisignal-fiber.psd**。 在檔案中，您會發現包含call to action的圖層名稱為&#x200B;**2048x2048-cta**。
-
-![WF Fusion](./images/wffc38.png)
-
-在檔案&#x200B;**citisignal-fiber.psd**&#x200B;中，您也會注意到包含call to action的圖層名為&#x200B;**2048x2048-button-text**。
-
-![WF Fusion](./images/wffc44.png)
-
-您必須先設定層&#x200B;**2048x2048-cta**&#x200B;需要進行的變更。 在對話方塊的&#x200B;**Name**&#x200B;下輸入名稱&#x200B;**2048x2048-cta**。
-
-![WF Fusion](./images/wffc39.png)
-
-向下捲動，直到您看到&#x200B;**文字** > **內容**&#x200B;為止。 從Webhook承載中選取變數&#x200B;**cta**。 按一下&#x200B;**新增**。
-
-![WF Fusion](./images/wffc40.png)
-
-您應該會看到此訊息。 按一下「**圖層**」下的「新增&#x200B;**+專案**」，開始新增下一個需要更新的文字圖層。
-
-![WF Fusion](./images/wffc40a.png)
-
-在對話方塊的&#x200B;**Name**&#x200B;下輸入名稱&#x200B;**2048x2048-button-text**。
-
-![WF Fusion](./images/wffc40b.png)
-
-向下捲動，直到您看到&#x200B;**文字** > **內容**&#x200B;為止。 從Webhook裝載中選取變數&#x200B;**按鈕**。 按一下&#x200B;**新增**。
-
-![WF Fusion](./images/wffc40c.png)
-
-您應該會看到此訊息。
-
-![WF Fusion](./images/wffc40d.png)
-
-向下捲動直到看到&#x200B;**輸出**&#x200B;為止。 針對&#x200B;**儲存體**，選取&#x200B;**Azure**。 對於&#x200B;**檔案位置**，請輸入以下位置。 請注意，檔案名稱中新增了變數`{{timestamp}}`，用來確保產生的每個檔案都有唯一的名稱。 此外，請將&#x200B;**Type**&#x200B;設定為&#x200B;**vnd.adobe.photoshop**。
-
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
-
-將&#x200B;**Type**&#x200B;設定為&#x200B;**vnd.adobe.photoshop**。 按一下&#x200B;**「確定」**。
-
-![WF Fusion](./images/wffc41.png)
-
-按一下[儲存]儲存變更。**&#x200B;**
-
-![WF Fusion](./images/wffc47.png)
-
-## 1.2.4.4 Webhook回應
-
-將這些變更套用至您的Photoshop檔案後，您現在需要設定&#x200B;**Webhook回應**，此回應將傳回已啟動此案例的任何應用程式。
-
-將滑鼠停留在模組&#x200B;**Adobe Photoshop — 編輯文字圖層**&#x200B;並按一下&#x200B;**+**&#x200B;圖示。
-
-![WF Fusion](./images/wffc48.png)
-
-搜尋`webhooks`並選取&#x200B;**Webhook**。
-
-![WF Fusion](./images/wffc49.png)
-
-選取&#x200B;**Webhook回應**。
-
-![WF Fusion](./images/wffc50.png)
-
-您應該會看到此訊息。 在&#x200B;**內文**&#x200B;中貼上以下承載。
-
-```json
-{
-    "newPsdTemplate": ""
-}
-```
-
-![WF Fusion](./images/wffc51.png)
-
-複製並貼上變數`{{XX.data[]._links.renditions[].href}}`並以最後&#x200B;**Adobe Photoshop — 編輯文字圖層**&#x200B;模組的序號取代&#x200B;**XX**，在此例中為&#x200B;**7**。
-
-![WF Fusion](./images/wffc52.png)
-
-啟用&#x200B;**顯示進階設定**&#x200B;的核取方塊，然後按一下&#x200B;**新增專案**。
-
-![WF Fusion](./images/wffc52b.png)
-
-在欄位&#x200B;**索引鍵**&#x200B;中，輸入`Content-Type`。 在欄位&#x200B;**值**&#x200B;中，輸入`application/json`。 按一下&#x200B;**新增**。
-
-![WF Fusion](./images/wffc52a.png)
-
-然後您應該擁有此專案。 按一下&#x200B;**「確定」**。
-
-![WF Fusion](./images/wffc53.png)
-
-按一下&#x200B;**自動對齊**。
-
-![WF Fusion](./images/wffc54.png)
-
-您應該會看到此訊息。 按一下[儲存]儲存您的變更，然後按一下[執行一次]&#x200B;**測試您的情境。**&#x200B;**&#x200B;**
-
-![WF Fusion](./images/wffc55.png)
-
-返回Postman並按一下&#x200B;**傳送**。 這裡使用的提示是&#x200B;**霧狀的Meadows**。
-
-![WF Fusion](./images/wffc56.png)
-
-隨後將啟動情境，並在一段時間後，Postman中將顯示包含新建立PSD檔案URL的回應。
-
-![WF Fusion](./images/wffc58.png)
-
-提醒您：一旦案例在Workfront Fusion中執行，您就能按一下每個模組上方的泡泡檢視每個模組的相關資訊。
-
-![WF Fusion](./images/wffc59.png)
-
-使用Azure儲存體總管，您可以在Azure儲存體總管中按兩下新建立的PSD檔案，找到並開啟該檔案。
-
-![WF Fusion](./images/wffc60.png)
-
-您的檔案應該會看起來像這樣，背景會由&#x200B;**霧狀草甸**&#x200B;所取代。
-
-![WF Fusion](./images/wffc61.png)
-
-如果您再次執行情境，然後使用其他提示從Postman傳送新請求，您就會看到情境變得多麼容易且可重複使用。 在此範例中，使用的新提示是&#x200B;**sunny desert**。
-
-![WF Fusion](./images/wffc62.png)
-
-幾分鐘後，新的PSD檔案已經以新背景產生。
-
-![WF Fusion](./images/wffc63.png)
+您現在已成功完成此練習。
 
 ## 後續步驟
 
-移至[1.2.5 Frame.io與Workfront Fusion](./ex5.md){target="_blank"}
+移至[使用Workfront Fusion進行Creative工作流程自動化的摘要與優點](./summary.md){target="_blank"}
 
 返回[使用Workfront Fusion進行Creative工作流程自動化](./automation.md){target="_blank"}
 
 返回[所有模組](./../../../overview.md){target="_blank"}
+1.2.4
