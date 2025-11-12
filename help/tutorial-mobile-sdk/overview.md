@@ -64,7 +64,7 @@ Experience Platform Mobile SDK是使用者端的SDK，可讓Adobe Experience Clo
    * **[!UICONTROL 屬性權利]** — 許可權專案： **[!UICONTROL 開發]**、**[!UICONTROL 核准]**、**[!UICONTROL 發佈]**、**[!UICONTROL 管理擴充功能]**&#x200B;和&#x200B;**[!UICONTROL 管理環境]**。
    * **[!UICONTROL 公司權利]** — 用於&#x200B;**[!UICONTROL 管理屬性]**&#x200B;的許可權專案
 
-     如需有關標籤許可權的詳細資訊，請參閱產品檔案中的[標籤](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions){target="_blank"}的使用者許可權。
+     如需有關標籤許可權的詳細資訊，請參閱產品檔案中的[標籤](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/admin/user-permissions){target="_blank"}的使用者許可權。
 * 在Experience Platform中，您必須擁有：
    * **[!UICONTROL 資料模型]** — 管理和檢視結構描述的許可權專案。
    * **[!UICONTROL Identity Management]** — 管理和檢視身分識別名稱空間的許可權專案。
@@ -74,7 +74,7 @@ Experience Platform Mobile SDK是使用者端的SDK，可讓Adobe Experience Clo
       * **[!UICONTROL 資料管理]** — 管理和檢視資料集的許可權專案。
       * 您可以在本教學課程中使用的開發&#x200B;**沙箱**。
 
-   * 若要參加Journey Optimizer課程，您需要設定&#x200B;**推播通知服務**&#x200B;的許可權，以及建立&#x200B;**應用程式介面**、**歷程**、**訊息**&#x200B;和&#x200B;**訊息預設集**&#x200B;的許可權。 此外，針對決定管理，您需要適當的許可權來&#x200B;**管理優惠**&#x200B;與&#x200B;**決定**，如[許可權層級](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/high-low-permissions)所述。
+   * 若要參加Journey Optimizer課程，您需要設定&#x200B;**推播通知服務**&#x200B;的許可權，以及建立&#x200B;**應用程式介面**、**歷程**、**訊息**&#x200B;和&#x200B;**訊息預設集**&#x200B;的許可權。 此外，針對決定管理，您需要適當的許可權來&#x200B;**管理優惠**&#x200B;與&#x200B;**決定**，如[許可權層級](https://experienceleague.adobe.com/zh-hant/docs/journey-optimizer/using/access-control/high-low-permissions)所述。
 
 * 針對Adobe Analytics，您必須知道您可以使用哪些&#x200B;**報表套裝**&#x200B;來完成本教學課程。
 
