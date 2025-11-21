@@ -4,9 +4,9 @@ description: 使用Workfront校訂
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,8 @@ ht-degree: 0%
 
 ![WF](./images/blueprint3.png)
 
+將&#x200B;**專案範本名稱**&#x200B;變更為`--aepUserLdap-- - Integrated Campaign Execution`。
+
 按一下&#x200B;**依原樣安裝……**。
 
 ![WF](./images/blueprint4.png)
@@ -89,7 +91,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp6.png)
 
-選取範本&#x200B;**整合式行銷活動執行**，然後按一下&#x200B;**使用範本**。
+選取範本`--aepUserLdap-- - Integrated Campaign Execution`並按一下&#x200B;**使用範本**。
 
 ![WF](./images/wfp6g.png)
 
@@ -132,9 +134,9 @@ ht-degree: 0%
 為您的工作輸入此名稱： `Create layout using approved assets and copy`。
 
 將欄位&#x200B;**指派**&#x200B;設定為角色&#x200B;**Designer**。
-將欄位&#x200B;**Duration**&#x200B;設定為&#x200B;**5天**。
-將前置工作列位設定為&#x200B;**9**。
-輸入欄位&#x200B;**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期。
+將欄位**Duration**&#x200B;設定為&#x200B;**5天**。
+將前置工作列位設定為**9**。
+輸入欄位**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期。
 
 按一下畫面中的其他位置以儲存新任務。
 
@@ -203,7 +205,7 @@ ht-degree: 0%
 
 ![WF](./images/timetravelnow.png)
 
-前往您任務的&#x200B;**檔案**。 按一下[新增&#x200B;**]，然後選取[檔案**&#x200B;**]。**
+前往您任務的&#x200B;**檔案**。 按一下[新增&#x200B;**]，然後選取[檔案****]。**
 
 ![WF](./images/wfp10.png)
 
@@ -251,7 +253,7 @@ ht-degree: 0%
 
 ![WF](./images/getonboard.png)
 
-在Adobe Workfront的「工作」檢視中，選取未核准的舊影像檔案。 接著，按一下[新增] **+ [新增]**，選取[版本] **&#x200B;**，然後選擇[檔案] **&#x200B;**。
+在Adobe Workfront的「工作」檢視中，選取未核准的舊影像檔案。 接著，按一下[新增] **+ [新增]**，選取[版本] ****，然後選擇[檔案] ****。
 
 ![WF](./images/wfp26.png)
 

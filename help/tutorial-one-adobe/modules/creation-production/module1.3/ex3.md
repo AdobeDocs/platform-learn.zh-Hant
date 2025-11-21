@@ -1,19 +1,19 @@
 ---
-title: 對中繼資料啟用GenStudio for Performance Marketing Campaign
-description: 對中繼資料啟用GenStudio for Performance Marketing Campaign
+title: GenStudio for Performance Marketing Campaign啟用至Meta
+description: GenStudio for Performance Marketing Campaign啟用至Meta
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1333'
 ht-degree: 0%
 
 ---
 
-# 1.3.3對中繼的Campaign啟用
+# 1.3.3 Meta的Campaign啟用
 
 >[!IMPORTANT]
 >
@@ -127,25 +127,25 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gscampaign8.png)
 
-## 1.3.3.2設定中繼連線
+## 1.3.3.2設定與Meta的連線
 
 >[!IMPORTANT]
 >
->為了設定您與中繼的連線，您需要有一個可用的中繼使用者帳戶，並且該使用者帳戶需要新增到中繼企業帳戶。
+>若要設定您與Meta的連線，您必須擁有可用的Meta使用者帳戶，且需要將該使用者帳戶新增至Meta商業帳戶。
 
-若要設定與中繼的連線，請按一下3個點&#x200B;**...**，然後選取&#x200B;**設定**。
+若要設定與Meta的連線，請按一下3個點&#x200B;**...**，然後選取&#x200B;**設定**。
 
 ![GSPeM](./images/gsconnection1.png)
 
-按一下&#x200B;**中繼廣告**&#x200B;的&#x200B;**連線**。
+按一下&#x200B;**連線**&#x200B;以取得&#x200B;**Meta廣告**。
 
 ![GSPeM](./images/gsconnection2.png)
 
-使用您的中繼帳戶登入。 按一下&#x200B;**繼續**。
+使用您的Meta帳戶登入。 按一下&#x200B;**繼續**。
 
 ![GSPeM](./images/gsconnection3.png)
 
-如果您的帳戶連結至中繼企業帳戶，您將能夠選取已在中繼中設定的企業投資組合。
+如果您的帳戶連結至Meta商業帳戶，您將能夠選取已在Meta中設定的商業投資組合。
 
 ![GSPeM](./images/gsconnection5.png)
 
@@ -153,7 +153,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsconnection4.png)
 
-之後，您應該會看到連線至GenStudio for Performance Marketing的中繼企業帳戶的詳細資料。
+之後，您應該會看到已連線至GenStudio for Performance Marketing的Meta商業帳戶詳細資訊。
 
 ![GSPeM](./images/gsconnection6.png)
 
@@ -191,7 +191,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsasset8.png)
 
-按一下&#x200B;**選取資料夾**。
+按一下&#x200B;**選取資料夾**。 將資產名稱變更為`--aepUserLdap-- - neon rabbit`。
 
 ![GSPeM](./images/gsasset9.png)
 
@@ -231,13 +231,13 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsasset18.png)
 
-## 1.3.3.4建立和核准中繼廣告
+## 1.3.3.4建立和核准Meta廣告
 
 在左側功能表中，移至&#x200B;**建立**。 選取&#x200B;**Meta**。
 
 ![GSPeM](./images/gsad1.png)
 
-選取您之前匯入的&#x200B;**中繼廣告**&#x200B;範本，其名稱為`--aepUserLdap---citisignal-meta-ad`。 按一下&#x200B;**使用**。
+選取您之前匯入的&#x200B;**Meta廣告**&#x200B;範本，其名稱為`--aepUserLdap---citisignal-meta-ad`。 按一下&#x200B;**使用**。
 
 ![GSPeM](./images/gsad2.png)
 
@@ -298,13 +298,13 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsad14.png)
 
-4個中繼廣告現在可在&#x200B;**內容** > **體驗**&#x200B;下使用。
+4個Meta廣告現在可在&#x200B;**內容** > **體驗**&#x200B;下使用。
 
 ![GSPeM](./images/gsad15.png)
 
-## 1.3.3.5將廣告發佈至中繼資料
+## 1.3.3.5將廣告發佈至Meta
 
-選取其中一個廣告，然後按一下[啟用]。**&#x200B;**
+選取其中一個廣告，然後按一下[啟用]。****
 
 ![GSPeM](./images/gsmetaad1.png)
 
@@ -312,7 +312,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsmetaad3.png)
 
-選取中繼帳戶、連結的Facebook頁面、中繼行銷活動以及中繼廣告集。
+選取Meta帳戶、連結的Facebook頁面、Meta促銷活動和Meta廣告集。
 
 提供您的新增名稱，使用`--aepUserLdap-- Fiber Max Ad`。
 
@@ -332,21 +332,21 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsmetaad7.png)
 
-幾分鐘後，廣告的狀態將變更為&#x200B;**已發佈**。 這表示廣告已從GenStudio for Performance Marketing傳送至Meta。 這並不表示廣告已經在Meta中發佈！ 在中繼業務帳戶中仍需執行一些步驟來製作和發佈廣告，以便讓使用者可以在各種中繼平台上看到。
+幾分鐘後，廣告的狀態將變更為&#x200B;**已發佈**。 這表示廣告已從GenStudio for Performance Marketing傳送至Meta。 這並不表示廣告已經在Meta中發佈！ 在Meta商業帳戶中仍需執行許多步驟來製作並發佈廣告，以便各種Meta平台上的使用者可以看到這些廣告。
 
 按一下&#x200B;**檢視詳細資料**。
 
 ![GSPeM](./images/gsmetaad8.png)
 
-按一下&#x200B;**開啟**，即可前往您的中繼企業帳戶。
+按一下&#x200B;**開啟**，系統就會將您導向至您的Meta商業帳戶。
 
 >[!IMPORTANT]
 >
->如果您沒有連線至您環境的中繼企業帳戶的存取權，那麼您將無法在中繼中視覺化此廣告。
+>如果您無法存取連線至您環境的Meta商業帳戶，則無法在Meta中視覺化此廣告。
 
 ![GSPeM](./images/gsmetaad9.png)
 
-以下是您剛才已建立廣告的概觀，現在位於中繼中。
+以下是您剛才已建立，但現在位於Meta中的廣告概觀。
 
 ![GSPeM](./images/gsmetaad10.png)
 

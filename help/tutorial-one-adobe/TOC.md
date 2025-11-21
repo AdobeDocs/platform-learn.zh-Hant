@@ -4,7 +4,7 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: d295b93f2370b2f464d4e52714029ca70880d71d
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 + [教學課程概觀](/help/tutorial-one-adobe/overview.md)
 + [GenStudio for Content Supply chain技術啟用](/help/tutorial-one-adobe/genstudiocsc.md)
 + [內容狀態](/help/tutorial-one-adobe/status.md)
-+ [完成](/help/tutorial-one-adobe/completion.md)
++ [架構](/help/tutorial-one-adobe/architecture.md)
 
 + 快速入門 {#gettingstarted}
    + 快速入門 {#gettingstarted}
@@ -268,8 +268,8 @@ ht-degree: 3%
          + [概觀](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics快速入門](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [摘要和優點](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ [WIP - Agentic AI](/help/tutorial-one-adobe/ai.md)
-+ WIP - Agentic AI {#agenticai}
++ (WIP) Agentic AI {#agenticai}
+   + [Agentic AI概述](/help/tutorial-one-adobe/ai.md)
    + 1.1代理程式和AI快速入門 {#agenticai1}
       + [概觀](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
       + [1.1.1 Agentic AI快速入門](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)

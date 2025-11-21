@@ -4,7 +4,7 @@ description: AEM CS — 進階自訂區塊
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
@@ -106,10 +106,10 @@ export default function decorate(block) {
 
 ![區塊](./images/blockadv12.png){zoomable="yes"}
 
-您現在可以移至`main--citisignal--XXX.aem.page/us/en/`及/或`main--citisignal--XXX.aem.live/us/en/`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
+您現在可以移至`main--citisignal-aem-accs--XXX.aem.page`及/或`main--citisignal-aem-accs--XXX.aem.live`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
 
 在此範例中，完整URL會變成：
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page`和/或`https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
 
 之後，您應該會看到此訊息，且樣式會套用至頁面。
 
@@ -336,10 +336,10 @@ async function getOffer(ECID) {
 
 ![區塊](./images/blockadv19.png){zoomable="yes"}
 
-您現在可以移至`main--citisignal--XXX.aem.page/us/en/`及/或`main--citisignal--XXX.aem.live/us/en/`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
+您現在可以移至`main--citisignal-aem-accs--XXX.aem.page`及/或`main--citisignal-aem-accs--XXX.aem.live`，在將XXX取代為GitHub使用者帳戶（在此範例中為`woutervangeluwe`）之後，檢視您網站的變更。
 
 在此範例中，完整URL會變成：
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page`和/或`https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
 
 您應該會看到此訊息。
 

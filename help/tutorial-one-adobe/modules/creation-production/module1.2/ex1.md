@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -170,11 +170,11 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion30.png)
 
-選取&#x200B;**設定多個變數**&#x200B;物件上的&#x200B;**問號**&#x200B;圖示，檢視該物件執行時發生的情況。
+在&#x200B;**設定多個變數**&#x200B;物件上選取&#x200B;**放大鏡**&#x200B;圖示，以檢視當該物件執行時發生的情況。
 
 ![WF Fusion](./images/wffusion31.png)
 
-在&#x200B;**HTTP上選取**&#x200B;問號&#x200B;**圖示 — 提出要求**&#x200B;物件以檢視當該物件執行時發生的情況。 在&#x200B;**OUTPUT**&#x200B;中，檢視Adobe I/O傳回的&#x200B;**access_token**。
+在&#x200B;**HTTP上選取**&#x200B;放大鏡&#x200B;**圖示 — 提出要求**&#x200B;物件以檢視當該物件執行時發生的情況。 在&#x200B;**OUTPUT**&#x200B;中，檢視Adobe I/O傳回的&#x200B;**access_token**。
 
 ![WF Fusion](./images/wffusion32.png)
 
@@ -206,7 +206,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion39.png)
 
-案例執行後，在最後&#x200B;**設定多個變數**&#x200B;物件上選取&#x200B;**問號**&#x200B;圖示。 您應該會看到access_token儲存在變數`bearer_token`中。
+方案執行後，請選取最後&#x200B;**設定多個變數**&#x200B;物件上的&#x200B;**放大鏡**&#x200B;圖示。 您應該會看到access_token儲存在變數`bearer_token`中。
 
 ![WF Fusion](./images/wffusion40.png)
 
