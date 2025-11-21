@@ -17,7 +17,7 @@ ht-degree: 45%
 
 # Intelligent Services簡介
 
-提供Intelligent Services的高層級簡介，行銷分析師及從業人員即使不具備資料科學專業，也能在客戶體驗使用案例中運用人工智慧和機器學習的強大效能，發揮所長。 如需詳細資訊，請瀏覽[Intelligent Services檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html)。
+提供Intelligent Services的高層級簡介，行銷分析師及從業人員即使不具備資料科學專業，也能在客戶體驗使用案例中運用人工智慧和機器學習的強大效能，發揮所長。 如需詳細資訊，請瀏覽[Intelligent Services檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 

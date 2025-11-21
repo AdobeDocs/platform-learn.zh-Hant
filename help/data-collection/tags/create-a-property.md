@@ -16,7 +16,7 @@ ht-degree: 31%
 
 # 建立標籤屬性
 
-瞭解如何建立標籤屬性來管理網站上的行銷標籤。 如需詳細資訊，請參閱[屬性](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html)檔案。
+瞭解如何建立標籤屬性來管理網站上的行銷標籤。 如需詳細資訊，請參閱[屬性](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=zh-Hant)檔案。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on&enablevpops)
 

@@ -28,13 +28,13 @@ ht-degree: 29%
    + [棧疊規則](tags/stack-rules.md)
    + [建置及發佈程式庫](tags/build-and-publish-a-library.md)
    + [透過Web SDK在網站中實作](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [使用解決方案SDK在網站中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
-   + [在行動應用程式中實作](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [使用解決方案SDK在網站中實作](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=zh-Hant){target="_blank"}
+   + [在行動應用程式中實作](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 + Web SDK{#web-sdk}
    + [概觀](web-sdk/overview.md)
    + [示範](web-sdk/demo.md)
    + [實作教學課程（含標籤）](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-web-sdk/overview){target="_blank"}
-   + [移轉Target教學課程](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
+   + [移轉Target教學課程](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/migrate-target-to-websdk/introduction){target="_blank"}
    + [移轉Analytics教學課程](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
    + 同意{#consent}
       + [概觀](web-sdk/consent/overview.md)
@@ -46,7 +46,7 @@ ht-degree: 29%
    + [概觀](mobile-sdk/overview.md)
    + [建立行動屬性](mobile-sdk/create-mobile-properties.md)
    + [使用相依性管理員](mobile-sdk/use-dependency-managers.md)
-   + [在行動應用程式中實作](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
+   + [在行動應用程式中實作](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-mobile-sdk/overview){target="_blank"}
 
    + [移轉Target教學課程](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/migrate-target-to-mobile-sdk-decisioning/overview){target="_blank"}
 + 伺服器API{#server-api}
