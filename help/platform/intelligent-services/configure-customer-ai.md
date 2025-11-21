@@ -21,6 +21,6 @@ ht-degree: 45%
 
 >[!TIP]
 >
->Customer AI同時支援Adobe Analytics和Adobe Audience Manager資料集，不需要ETL您的資料以符合消費者體驗事件(CEE)結構描述。 若要進一步瞭解，請瀏覽[Intelligent Services資料準備指南](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html?lang=zh-Hant)。
+>Customer AI同時支援Adobe Analytics和Adobe Audience Manager資料集，不需要ETL您的資料以符合消費者體驗事件(CEE)結構描述。 若要進一步瞭解，請瀏覽[Intelligent Services資料準備指南](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on&enablevpops)

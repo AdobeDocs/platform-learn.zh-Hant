@@ -11,13 +11,13 @@ exl-id: 23e15df2-1bf2-4c19-a5d5-9cfb2f7b0bd8
 source-git-commit: 695093c3ddc1952b1d6ffbe7bb4f3f489264d37d
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 43%
+ht-degree: 45%
 
 ---
 
 # Intelligent Services簡介
 
-提供Intelligent Services的高層級簡介，行銷分析師及從業人員即使不具備資料科學專業，也能在客戶體驗使用案例中運用人工智慧和機器學習的強大效能，發揮所長。 如需詳細資訊，請瀏覽[Intelligent Services檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=zh-Hant)。
+提供Intelligent Services的高層級簡介，行銷分析師及從業人員即使不具備資料科學專業，也能在客戶體驗使用案例中運用人工智慧和機器學習的強大效能，發揮所長。 如需詳細資訊，請瀏覽[Intelligent Services檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 
@@ -84,8 +84,8 @@ ht-degree: 43%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="use-customer-ai-scores-and-insights.md" title="使用 Customer AI 評分和深入分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740250112262" alt="使用 Customer AI 評分和深入分析"
+                    <a href="use-customer-ai-scores-and-insights.md" title="使用 Customer AI 評分和洞察" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740250112262" alt="使用 Customer AI 評分和洞察"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -93,9 +93,9 @@ ht-degree: 43%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="use-customer-ai-scores-and-insights.md" target="_blank" rel="referrer" title="使用 Customer AI 評分和深入分析">使用 Customer AI 評分和深入分析</a>
+                        <a href="use-customer-ai-scores-and-insights.md" target="_blank" rel="referrer" title="使用 Customer AI 評分和洞察">使用 Customer AI 評分和洞察</a>
                     </p>
-                    <p class="is-size-6">了解如何使用 Customer AI 傾向評分和見解來轉換及留住客戶。</p>
+                    <p class="is-size-6">了解如何使用 Customer AI 傾向評分和洞察來轉換及留住客戶。</p>
                 </div>
                 <a href="use-customer-ai-scores-and-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">觀看</span>
@@ -192,8 +192,8 @@ ht-degree: 43%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="use-attribution-ai-scores-and-insights.md" title="使用 Attribution AI 評分和深入分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32669?format=jpeg&nocache=1740250113402" alt="使用 Attribution AI 評分和深入分析"
+                    <a href="use-attribution-ai-scores-and-insights.md" title="使用 Attribution AI 評分和洞察" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32669?format=jpeg&nocache=1740250113402" alt="使用 Attribution AI 評分和洞察"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -201,9 +201,9 @@ ht-degree: 43%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="use-attribution-ai-scores-and-insights.md" target="_blank" rel="referrer" title="使用 Attribution AI 評分和深入分析">使用 Attribution AI 評分和深入分析</a>
+                        <a href="use-attribution-ai-scores-and-insights.md" target="_blank" rel="referrer" title="使用 Attribution AI 評分和洞察">使用 Attribution AI 評分和洞察</a>
                     </p>
-                    <p class="is-size-6">了解如何使用 Attribution AI 見解頁面，掌握行銷管道和行銷活動的投資報酬率。</p>
+                    <p class="is-size-6">了解如何使用 Attribution AI 洞察頁面，掌握行銷管道和行銷活動的投資報酬率。</p>
                 </div>
                 <a href="use-attribution-ai-scores-and-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">觀看</span>

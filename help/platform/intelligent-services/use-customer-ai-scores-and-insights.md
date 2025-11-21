@@ -1,6 +1,6 @@
 ---
-title: 使用 Customer AI 評分和深入分析
-description: 了解如何使用 Customer AI 傾向評分和見解來轉換及留住客戶。
+title: 使用 Customer AI 評分和洞察
+description: 了解如何使用 Customer AI 傾向評分和洞察來轉換及留住客戶。
 solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
@@ -15,9 +15,9 @@ ht-degree: 51%
 
 ---
 
-# 使用 Customer AI 評分和深入分析
+# 使用 Customer AI 評分和洞察
 
-瞭解如何使用Customer AI傾向評分和見解來轉換及留住客戶。 如需詳細資訊，請瀏覽[Customer AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=zh-Hant)。
+瞭解如何使用Customer AI傾向評分和見解來轉換及留住客戶。 如需詳細資訊，請瀏覽[Customer AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on&enablevpops)
 

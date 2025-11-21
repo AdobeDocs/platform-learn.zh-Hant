@@ -18,6 +18,6 @@ ht-degree: 80%
 
 從概觀圖表的引導逐步說明，了解 Adobe Experience Platform 的高階架構。
 
->[!VIDEO](https://video.tv.adobe.com/v/3422779?learn=on&enablevpops&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/32456?learn=on&enablevpops)
 
 

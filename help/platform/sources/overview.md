@@ -10,7 +10,7 @@ exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
 source-git-commit: 112e092df6d486d8b9103013bec57d820b8ae6d7
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -51,7 +51,7 @@ ht-degree: 10%
                     <p class="is-size-6">瞭解如何輕鬆地將CRM來源中的資料批次擷取到Adobe Experience Platform的即時客戶設定檔和資料湖。</p>
                 </div>
                 <a href="ingest-data-from-crm.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -74,7 +74,7 @@ ht-degree: 10%
                     <p class="is-size-6">此影片說明如何以順暢且可擴充的方式輕鬆地將雲端儲存空間服務中的資料批次擷取到Adobe Experience Platform的Real-Time Customer Profile和Data Lake。</p>
                 </div>
                 <a href="ingest-data-from-cloud-storage.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -84,7 +84,7 @@ ht-degree: 10%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-databases.md" title="使用資料庫來源聯結器擷取資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475991?captions=chi_hant&format=jpeg&nocache=1740415500936" alt="使用資料庫來源聯結器擷取資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329317?format=jpeg&nocache=1740415500936" alt="使用資料庫來源聯結器擷取資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -97,7 +97,7 @@ ht-degree: 10%
                     <p class="is-size-6">此影片會逐步說明如何以順暢且可擴充的方式將資料庫來源中的資料批次擷取到Adobe Experience Platform的Real-Time Customer Profile和Experience Data Lake。</p>
                 </div>
                 <a href="ingest-data-from-databases.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -120,7 +120,7 @@ ht-degree: 10%
                     <p class="is-size-6">瞭解如何從雲端儲存空間來源即時將資料串流到Platform，並即時將資料用於客戶互動。</p>
                 </div>
                 <a href="streaming-ingestion-source-connector.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -143,7 +143,7 @@ ht-degree: 10%
                     <p class="is-size-6">此影片說明如何使用 HTTP API 端點即時將資料串流到 Adobe Experience Platform。</p>
                 </div>
                 <a href="streaming-ingestion-http-api.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -165,7 +165,7 @@ ht-degree: 10%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-adobe-analytics.md" title="使用Adobe Analytics來源聯結器擷取資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430259?format=jpeg&nocache=1740415502122&captions=chi_hant" alt="使用Adobe Analytics來源聯結器擷取資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740415502122" alt="使用Adobe Analytics來源聯結器擷取資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -178,7 +178,7 @@ ht-degree: 10%
                     <p class="is-size-6">Adobe Analytics Source聯結器可讓您從Adobe Analytics輕鬆將資料串流、對應及篩選至Adobe Experience Platform的即時客戶個人檔案和體驗資料湖。</p>
                 </div>
                 <a href="ingest-data-from-adobe-analytics.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -188,7 +188,7 @@ ht-degree: 10%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-marketo.md" title="從Marketo Engage擷取資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451871?format=jpeg&nocache=1740415502109&captions=chi_hant" alt="從Marketo Engage擷取資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740415502109" alt="從Marketo Engage擷取資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -201,7 +201,7 @@ ht-degree: 10%
                     <p class="is-size-6">瞭解如何使用標準工作流程和範本工作流程，使用來源聯結器從Marketo Engage擷取資料。</p>
                 </div>
                 <a href="ingest-data-from-marketo.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -224,7 +224,7 @@ ht-degree: 10%
                     <p class="is-size-6">瞭解如何使用Audience Manager Data Connector將來自AAM的特徵和區段帶入Platform，並將它們與其他豐富的資料結合。</p>
                 </div>
                 <a href="ingest-data-from-aam.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -244,7 +244,7 @@ ht-degree: 10%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="troubleshoot-sftp-connector.md" title="疑難排解 — 無法連線至SFTP來源聯結器" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443485?format=jpeg&nocache=1740415502267&captions=chi_hant" alt="疑難排解 — 無法連線至SFTP來源聯結器"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416134?format=jpeg&nocache=1740415502267" alt="疑難排解 — 無法連線至SFTP來源聯結器"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -257,7 +257,7 @@ ht-degree: 10%
                     <p class="is-size-6">瞭解避免SFTP來源聯結器連線問題的最佳實務。 檢閱特定檢查點，以成功將您的SFTP伺服器連線至Adobe Experience Platform。</p>
                 </div>
                 <a href="troubleshoot-sftp-connector.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>

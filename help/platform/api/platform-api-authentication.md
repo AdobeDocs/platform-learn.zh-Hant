@@ -12,7 +12,7 @@ exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
 source-git-commit: 311b296d67cf39867e7c9f3fd9f0458dfefcfdfd
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 7%
+ht-degree: 8%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
->若要存取[Adobe Developer Console](https://developer.adobe.com/console/home)，您必須是[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-roles.html)中的[系統管理員](https://helpx.adobe.com/tw/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)或[開發人員](https://adminconsole.adobe.com)。
+>若要存取[Adobe Developer Console](https://developer.adobe.com/console/home)，您必須是[Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)中的[系統管理員](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)或[開發人員](https://adminconsole.adobe.com)。
 >
 > 建立API認證後，系統管理員必須將該認證與Experience Platform中的角色建立關聯。
 >
@@ -59,7 +59,7 @@ ht-degree: 7%
                     <p class="is-size-6">瞭解如何使用Postman產生Experience Platform API存取權杖</p>
                 </div>
                 <a href="generate-an-access-token.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -82,7 +82,7 @@ ht-degree: 7%
                     <p class="is-size-6">使用Adobe提供的Adobe Experience Platform集合來探索Postman API</p>
                 </div>
                 <a href="use-apis-with-postman.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>

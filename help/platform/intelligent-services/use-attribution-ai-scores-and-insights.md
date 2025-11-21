@@ -1,6 +1,6 @@
 ---
-title: 使用 Attribution AI 評分和深入分析
-description: 了解如何使用 Attribution AI 見解頁面，掌握行銷管道和行銷活動的投資報酬率。
+title: 使用 Attribution AI 評分和洞察
+description: 了解如何使用 Attribution AI 洞察頁面，掌握行銷管道和行銷活動的投資報酬率。
 feature: Attribution AI
 role: User
 level: Beginner
@@ -14,8 +14,8 @@ ht-degree: 51%
 
 ---
 
-# 使用 Attribution AI 評分和深入分析
+# 使用 Attribution AI 評分和洞察
 
-瞭解如何使用Attribution AI深入分析頁面，瞭解行銷管道和行銷活動的ROI。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=zh-Hant)。
+瞭解如何使用Attribution AI深入分析頁面，瞭解行銷管道和行銷活動的ROI。 如需詳細資訊，請瀏覽[Attribution AI檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on&enablevpops)
