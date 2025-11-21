@@ -24,7 +24,7 @@ ht-degree: 41%
 
 >[!NOTE]
 >
->此影片是摘錄自Adobe Summit 2020工作階段&#x200B;*[Meeting Alloy.js and Never Tag for an eVar或Mbox Again ](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*。
+>此影片是摘錄自Adobe Summit 2020工作階段&#x200B;*[Meeting Alloy.js and Never Tag for an eVar或Mbox Again &#x200B;](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*。
 >
 >本影片中討論的伺服器端轉送功能現在可供所有授權客戶普遍使用。 請參閱[事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
 
