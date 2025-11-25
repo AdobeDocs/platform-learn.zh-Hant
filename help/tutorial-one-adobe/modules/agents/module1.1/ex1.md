@@ -3,9 +3,9 @@ title: Agent Orchestrator快速入門
 description: Agent Orchestrator快速入門
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9011c4093b5fd6612426baf7003cd7b99523b6e8
+source-git-commit: ffdc6b34a82c945c142f433f65a4f2f8d5cdcd18
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1514'
 ht-degree: 0%
 
 ---
@@ -373,7 +373,7 @@ SciFi愛好者的動態複製（延遲/4K串流勾點）。
 
 遵守選擇退出偏好設定。
 
-測量計畫(CJA)：
+**測量計畫(CJA)**：
 
 追蹤：傳送、開啟、按一下、PDP檢視、結帳開始、訂單完成。
 
@@ -381,13 +381,11 @@ KPI：Fiber Max的轉換率、提升與控制、安裝時間。
 
 診斷：依裝置/型別區段的流失報表。
 
-形狀
-
 這一切如何結合（行銷人員的思維模式）
 
 診斷需求(特別是Fiber→整體類別)。
 
-證明轉換訊號（依型別的訂單）的內容。
+證明內容為轉換訊號（依型別的訂單）。
 
 我的成功歷程（尋找纖維名稱歷程和SciFi促銷對象）。
 
@@ -395,11 +393,103 @@ KPI：Fiber Max的轉換率、提升與控制、安裝時間。
 
 針對高傾向區段(大量下載者∩SciFi)啟用。
 
+移至[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)。
+
+您應該會看到此訊息。 請確定您隸屬於&#x200B;**Experience Platform International**&#x200B;組織。
+
+按一下&#x200B;**內容**&#x200B;視窗。
+
+![Agent Orchestrator](./images/ao2.png)
+
+設定內容為：
+
+- **檔案Source**： **Journey Optimizer**
+- **沙箱**： **加速**
+- **資料檢視**： **加速2026 B2C**
+
+按一下&#x200B;**設定內容**。
+
+![Agent Orchestrator](./images/aoea3.png)
+
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**產生**&#x200B;按鈕。
 
 ```javascript
 Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
+
+![Agent Orchestrator](./images/aocj1.png)
+
+您應該會看到此訊息。 輸入`yes`並按一下[產生]。
+
+![Agent Orchestrator](./images/aocj2.png)
+
+您應該會看到此訊息。 輸入`yes`並按一下[產生]。
+
+![Agent Orchestrator](./images/aocj3.png)
+
+您應該會看到此訊息。 輸入`The first one`並按一下[產生]。
+
+![Agent Orchestrator](./images/aocj4.png)
+
+您應該會看到此訊息。 輸入`yes`並按一下[產生]。
+
+![Agent Orchestrator](./images/aocj5.png)
+
+檢閱回應。 輸入`yes`並按一下[產生]。
+
+![Agent Orchestrator](./images/aocj6.png)
+
+按一下&#x200B;**檢閱**。
+
+![Agent Orchestrator](./images/aocj7.png)
+
+使用您的LDAP更新歷程名稱，使其成為唯一名稱。 按一下&#x200B;**儲存**。
+
+![Agent Orchestrator](./images/aocj8.png)
+
+您的歷程現在已建立為草稿模式。
+
+![Agent Orchestrator](./images/aocj9.png)
+
+## 1.1.1.10個實驗
+
+移至[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)。
+
+您應該會看到此訊息。 請確定您隸屬於&#x200B;**Experience Platform International**&#x200B;組織。
+
+按一下&#x200B;**內容**&#x200B;視窗。
+
+![Agent Orchestrator](./images/ao2.png)
+
+設定內容為：
+
+- **檔案Source**： **Journey Optimizer**
+- **沙箱**： **加速**
+- **資料檢視**： **加速2026 B2C**
+
+按一下&#x200B;**設定內容**。
+
+![Agent Orchestrator](./images/aoea3.png)
+
+輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**產生**&#x200B;按鈕。
+
+```javascript
+How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
+```
+
+![Agent Orchestrator](./images/aoea0.png)
+
+您應該會看到以下內容：
+
+![Agent Orchestrator](./images/aoea1.png)
+
+按一下建議以比較每個處理的轉換率，然後按一下&#x200B;**產生**。
+
+![Agent Orchestrator](./images/aoea2.png)
+
+然後您應該會看到如下的詳細比較：
+
+![Agent Orchestrator](./images/aoea4.png)
 
 返回[Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
