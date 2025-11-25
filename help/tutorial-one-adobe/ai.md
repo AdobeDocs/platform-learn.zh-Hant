@@ -3,9 +3,9 @@ title: Agentic AI技術實驗室概觀
 description: Agentic AI技術實驗室概觀
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
+source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,22 @@ ht-degree: 0%
 
 ## 概觀 — 進行中的工作
 
-Agentic AI Tech Labs正在進行中，將於2025年11月/12月發行。
+[1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
-[1.1代理程式和AI快速入門](./modules/agentic-ai/module1.1/agenticai.md)
+**目標**
+
+瞭解如何使用Adobe Experience Platform代理程式和Agent Orchestrator：
+
+- 分析購買趨勢
+- 識別高傾向性對象
+- 驗證歷程績效
+- 為CitiSignal Fiber Max轉出建立新的歷程
+
+[1.2代理程式和AI快速入門](./modules/agents/module1.2/agenticai.md)
+
+>[!NOTE]
+>
+>此模組尚未發行。
 
 **目標**
 
@@ -38,7 +51,11 @@ Agentic AI Tech Labs正在進行中，將於2025年11月/12月發行。
 - MCP伺服器，Python筆記型電腦
 - Adobe API的
 
-[1.2代理程式Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
+[1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md)
+
+>[!NOTE]
+>
+>此模組尚未發行。
 
 **目標**
 

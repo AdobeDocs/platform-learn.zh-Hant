@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d295b93f2370b2f464d4e52714029ca70880d71d
+source-git-commit: 8b05c619c8101e4ba8e5c301954d15b27fe395cf
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1397'
 ht-degree: 3%
 
 ---
@@ -268,11 +268,14 @@ ht-degree: 3%
          + [概觀](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics快速入門](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [摘要和優點](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-+ (WIP) Agentic AI {#agenticai}
++ 代理程式 {#agents}
    + [Agentic AI概述](/help/tutorial-one-adobe/ai.md)
-   + 1.1代理程式和AI快速入門 {#agenticai1}
-      + [概觀](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/agenticai.md)
-      + [1.1.1 Agentic AI快速入門](/help/tutorial-one-adobe/modules/agentic-ai/module1.1/ex1.md)
-   + 1.2代理程式Collaboration {#agenticai2}
-      + [概觀](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/agentcollaboration.md)
-      + [1.2.1 Agent Collaboration快速入門](/help/tutorial-one-adobe/modules/agentic-ai/module1.2/ex1.md)
+   + 1.1 Agent Orchestrator {#agents1}
+      + [概觀](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
+      + [1.1.1 Agent Orchestrator快速入門](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+   + 1.2代理程式和AI快速入門 {#agents2}
+      + [概觀](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
+      + [1.2.1 Agentic AI快速入門](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+   + 1.3 Agent Collaboration {#agents3}
+      + [概觀](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
+      + [1.3.1 Agent Collaboration快速入門](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
