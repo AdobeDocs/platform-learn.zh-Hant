@@ -3,14 +3,20 @@ title: Agent Orchestrator快速入門
 description: Agent Orchestrator快速入門
 kt: 5342
 doc-type: tutorial
-source-git-commit: bb31fe8a36f1c9ee9d212500e2e58e01be1129b8
+source-git-commit: 121cbb5ea8f8b713c6ebae008f7f0d9b3a79e476
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1393'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Agent Orchestrator快速入門
+
+## 影片
+
+在這段影片中，您將獲得本練習中所有步驟的說明和示範。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3477257?quality=12&learn=on)
 
 ## 1.1.1.1在Agent Orchestrator中設定內容
 
@@ -62,7 +68,9 @@ Show me purchases by mainCategory over the last 2 months.
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-`Show me purchases by mainCategory = Fiber over the last 2 months per week`
+```javascript
+Show me purchases by mainCategory = Fiber over the last 2 months per week
+```
 
 ![Agent Orchestrator](./images/ao6.png)
 
@@ -213,7 +221,7 @@ AI Assistant可為您提供觀察和建議。
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
 ```javascript
-Create an audience that combines people with an average download per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
+Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
 ![Agent Orchestrator](./images/ao32.png)
