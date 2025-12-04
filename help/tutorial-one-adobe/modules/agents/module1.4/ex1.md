@@ -3,14 +3,18 @@ title: Brand Concierge快速入門
 description: Brand Concierge快速入門
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6642acb3fdce2c9d3a9b919d5c9457191e4780a6
+source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '864'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Brand Concierge快速入門
+
+>[!IMPORTANT]
+>
+>此練習正在進行中，尚未完成。
 
 ## 影片
 
@@ -73,7 +77,7 @@ ht-degree: 1%
 
 ![Brand Concierge](./images/bc2.png)
 
-選擇已指派給您的沙箱。 該沙箱應該命名為`--aepUserLdap--`。
+選擇已指派給您的沙箱。 該沙箱應該命名為`--aepUserLdap-- - bc`。
 
 ![Brand Concierge](./images/bc3.png)
 
@@ -129,15 +133,21 @@ Brand Concierge should help customers find their best device, plan or entertainm
 
 ![Brand Concierge](./images/bc12.png)
 
+您應該會看到此訊息。 使用以下文字填寫以下欄位。
 
+**服務人員在提出建議前，應該先瞭解產品或對象哪些資訊？**
 
 ```
 CitiSignal is a telecommunications company that sells devices such as phones and watches and that sells internet services such as their lead product CitiSignal Fiber Max. On top of that, CitiSignal sells entertainment services that offer premium streaming services at a discounted price. CitiSignal is targeting these 3 personas primarily: Smart Home Families, Online Gamers and Remote Professionals.
 ```
 
+**禮賓員提出建議時，是否有任何商業規則或限制？**
+
 ```
 Prioritize positioning the CitiSignal Fiber Max offering.
 ```
+
+**服務生是否應該遵循或避免任何特定的關鍵字或片語？**
 
 ```
 Competitor pricing, competitor products
@@ -151,7 +161,7 @@ Competitor pricing, competitor products
 
 ![Brand Concierge](./images/bc14.png)
 
-您可以在&#x200B;**品牌運算式**&#x200B;頁面上自行選擇。
+您可以在&#x200B;**品牌運算式**&#x200B;頁面上自行選擇，確定已針對每個問題選取選項。
 
 ![Brand Concierge](./images/bc15.png)
 
@@ -165,6 +175,73 @@ Competitor pricing, competitor products
 
 ![Brand Concierge](./images/bc17.png)
 
+然後您就會回到這裡。 按一下&#x200B;**知識來源**。
+
+![Brand Concierge](./images/bc18.png)
+
+按一下&#x200B;**建立您的知識來源**。
+
+![Brand Concierge](./images/bc19.png)
+
+選取&#x200B;**產品目錄**&#x200B;並按一下&#x200B;**繼續**。
+
+![Brand Concierge](./images/bc20.png)
+
+您應該會看到此訊息。 輸入`CitiSignal Products`作為知識來源的名稱。
+
+![Brand Concierge](./images/bc21.png)
+
+您現在需要上傳包含網站連結的csv檔案。 將[CitiSignal產品目錄](./assets/CitiSignal-catalog.json.zip)下載到您的案頭並解壓縮。
+
+![Brand Concierge](./images/bc26.png)
+
+按一下&#x200B;**瀏覽檔案**，然後從您的裝置選取&#x200B;**瀏覽**。
+
+![Brand Concierge](./images/bc22.png)
+
+選取檔案&#x200B;**CitiSignal-catalog.json**&#x200B;並按一下&#x200B;**開啟**。
+
+![Brand Concierge](./images/bc23.png)
+
+您應該會看到此訊息。 按一下&#x200B;**新增**。
+
+![Brand Concierge](./images/bc24.png)
+
+然後您就會回到這裡。
+
+![Brand Concierge](./images/bc25.png)
+
+## 1.4.1.3 AEP上線步驟
+
+Brand Concierge使用Adobe Experience Platform來儲存對話的互動資料。 Brand Concierge與Experience Platform之間的連線需要Brand Concierge設定及使用資料流。
+
+### 資料流
+
+移至[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 開啟&#x200B;**Experience Platform**。
+
+![Brand Concierge](./images/aep1.png)
+
+確定您已選取正確的沙箱，其應命名為`--aepUserLdap-- - bc`。 在左側功能表中，向下捲動並選取&#x200B;**資料串流**。
+
+![Brand Concierge](./images/aep2.png)
+
+按一下&#x200B;**新增資料流**。
+
+![Brand Concierge](./images/aep3.png)
+
+輸入&#x200B;**資料流名稱** `--aepUserLdap-- - Brand Concierge`，然後選取&#x200B;**對應結構描述** `cja-brand-concierge-sb-XXX`。
+
+按一下&#x200B;**儲存**。
+
+![Brand Concierge](./images/aep4.png)
+
+您的資料流現已設定完成。 複製資料串流名稱和資料串流ID，並將其寫入您電腦上的文字檔案中。
+
+![Brand Concierge](./images/aep5.png)
+
+### Brand Concierge設定管理API
+
+下一步是啟用Brand Concierge設定管理API來設定您剛才建立的資料流。 在請求處理期間，需要此屬性來解析IMS組織ID和沙箱詳細資訊。
 
 返回[Brand Concierge](./brandconcierge.md){target="_blank"}
 
