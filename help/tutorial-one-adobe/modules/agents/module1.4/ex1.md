@@ -3,18 +3,14 @@ title: Brand Concierge快速入門
 description: Brand Concierge快速入門
 kt: 5342
 doc-type: tutorial
-source-git-commit: 75b76978c2ec2f5b89900dea75083932af608bf4
+source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '988'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Brand Concierge快速入門
-
->[!IMPORTANT]
->
->此練習正在進行中，尚未完成。
 
 ## 影片
 
@@ -211,6 +207,34 @@ Competitor pricing, competitor products
 
 ![Brand Concierge](./images/bc25.png)
 
+10-20分鐘後，兩個知識來源的&#x200B;**狀態**&#x200B;應該是&#x200B;**已完成**。 按一下&#x200B;**首頁**。
+
+![Brand Concierge](./images/bc27.png)
+
+您應該會看到此訊息。 按一下&#x200B;**網站連結**&#x200B;卡片上的&#x200B;**+連線**。
+
+![Brand Concierge](./images/bc28.png)
+
+選取知識來源&#x200B;**CitiSignal網站**&#x200B;並按一下&#x200B;**儲存**。
+
+![Brand Concierge](./images/bc29.png)
+
+您應該會看到此訊息。 按一下&#x200B;**產品目錄**&#x200B;卡片上的&#x200B;**+連線**。
+
+![Brand Concierge](./images/bc30.png)
+
+選取知識來源&#x200B;**CitiSignal產品**，然後按一下&#x200B;**儲存**。
+
+![Brand Concierge](./images/bc31.png)
+
+您應該會看到此訊息。 按一下&#x200B;**預覽**&#x200B;以開始與您的Brand Concierge互動。
+
+![Brand Concierge](./images/bc32.png)
+
+您現在可以開始詢問與所提供的知識來源相關的問題。
+
+![Brand Concierge](./images/bc33.png)
+
 ## 1.4.1.3 AEP上線步驟
 
 Brand Concierge使用Adobe Experience Platform來儲存對話的互動資料。 Brand Concierge與Experience Platform之間的連線需要Brand Concierge設定及使用資料流。
@@ -242,6 +266,10 @@ Brand Concierge使用Adobe Experience Platform來儲存對話的互動資料。 
 ### Brand Concierge設定管理API
 
 下一步是啟用Brand Concierge設定管理API來設定您剛才建立的資料流。 在請求處理期間，需要此屬性來解析IMS組織ID和沙箱詳細資訊。
+
+此為目前需執行的內部Adobe步驟。 此為必要步驟，否則資料串流的設定不適用於Brand Concierge使用。
+
+下一步：[在您的網站上實作Brand Concierge](./ex2.md){target="_blank"}
 
 返回[Brand Concierge](./brandconcierge.md){target="_blank"}
 
