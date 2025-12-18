@@ -27,7 +27,7 @@ Brand Concierge是AI支援的數位夥伴，可改變品牌與網站訪客互動
 ## 先決條件
 
 - 存取Adobe Journey Optimizer和Customer Journey Analytics
-- 熟悉[Brand Concierge概念](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
+- 熟悉[Brand Concierge概念](https://experienceleague.adobe.com/zh-hant/docs/brand-concierge/content/home)
 - 存取CitiSignal示範資料：購買、訂購、對象、歷程
 
 ## 練習
