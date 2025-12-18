@@ -4,9 +4,9 @@ description: AEM CS — 基本自訂區塊
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 7384eabe00354374f7012be10c24870c68ea7f2c
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '855'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,9 @@ Adobe建議您分三階段來開發區塊：
 
 >[!NOTE]
 >
->您的環境可能已休眠。 如果是這種情況，您需要先解除環境休眠。
+>您的環境可能已休眠。 如果是這種情況，您需要先解除環境休眠。 您可以在下面的影片中找到如何解除休眠的指示。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
 ![AEMCS](./images/aemcs10.png)
 

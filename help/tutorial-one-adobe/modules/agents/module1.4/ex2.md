@@ -3,9 +3,9 @@ title: 在您的網站上實作Brand Concierge
 description: 在您的網站上實作Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -132,7 +132,7 @@ ht-degree: 0%
 
 建立區塊時，最佳實務是建立區塊樣式的檔案，且檔案名稱應與區塊相同。 您現在應該建立該檔案，我們現在將保留空白。
 
-移至&#x200B;**區塊**&#x200B;資料夾。 然後，按一下[新增檔案]&#x200B;**&#x200B;**&#x200B;並選取[建立新檔案]&#x200B;**&#x200B;**。
+移至&#x200B;**區塊**&#x200B;資料夾。 然後，按一下[新增檔案]****&#x200B;並選取[建立新檔案]****。
 
 ![區塊](./images/css1.png)
 
@@ -180,7 +180,9 @@ export default function decorate(block) {
 
 >[!NOTE]
 >
->您的環境可能已休眠。 如果是這種情況，您需要先解除環境休眠。
+>您的環境可能已休眠。 如果是這種情況，您需要先解除環境休眠。 您可以在下面的影片中找到如何解除休眠的指示。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
 ![AEMCS](./images/aemcs10.png)
 

@@ -4,10 +4,10 @@ description: 設定您的AEM CS環境
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
+source-git-commit: 13f74467a74eb3d8bbd135f5b8c7d9bb1a177f8b
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 0%
+source-wordcount: '1218'
+ht-degree: 1%
 
 ---
 
@@ -121,6 +121,17 @@ ZZZ = `citisignal-aem-accs`
 
 `https://author-p166717-e1786231.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal-aem-accs/main`
 
+您也應該確認這些行程式碼也已新增至檔案中：
+
+```
+folders:
+  /products/: /products/default
+```
+
+>[!IMPORTANT]
+>
+>您可在下圖中第6和7行看到這些程式碼行。 如果缺少這些行，請手動新增。
+
 按一下&#x200B;**認可變更……**。
 
 ![AEMCS](./images/aemcs13.png)
@@ -153,7 +164,7 @@ ZZZ = `citisignal-aem-accs`
 
 您現在需要存取AEM的&#x200B;**CRX封裝管理員**&#x200B;環境。 若要這麼做，請從URL移除`ui#/aem/aem/start.html?appId=aemshell`，並以`crx/packmgr`取代，這表示您的URL現在看起來應該像這樣：
 `https://author-p166717-e1786231.adobeaemcloud.com/crx/packmgr`。
-點選&#x200B;**Enter**&#x200B;以載入封裝管理員環境
+點選**Enter**&#x200B;以載入封裝管理員環境
 
 ![AEMCS](./images/aemcssetup22.png)
 
@@ -278,7 +289,7 @@ ZZZ = `citisignal-aem-accs`
 - **組織**：使用您的GitHub組織名稱名稱，在此範例中為`woutervangeluwe`
 - **網站名稱**：使用GitHub存放庫的名稱，應為`citisignal-aem-accs`。
 
-按一下&#x200B;**儲存並關閉**。
+按一下「**儲存並關閉**」。
 
 ![AEMCS](./images/aemcssetup33.png)
 
