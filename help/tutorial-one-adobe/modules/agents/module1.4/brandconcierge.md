@@ -3,9 +3,9 @@ title: Brand Concierge
 description: Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+source-git-commit: 0bbc806a4eb41ac8e51a10f6418cfa4795543316
 workflow-type: tm+mt
-source-wordcount: '211'
+source-wordcount: '227'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,10 @@ ht-degree: 2%
 
 Brand Concierge是AI支援的數位夥伴，可改變品牌與網站訪客互動的方式。 不同於一般聊天機器人，Brand Concierge可根據每位訪客的意圖，提供量身打造的個人化對話體驗。 它可協助訪客探索產品、比較選項、取得即時解答，並即時接收引導式建議。 此平台同時提供B2C和B2B，可在任何數位頻道上作為您品牌的智慧延伸，同時保留您的品牌聲音、內容完整性和法規遵循。
 
-瞭解如何使用Adobe Experience Platform代理程式和Brand Concierge：
+在本練習中，您將學習如何：
+
+- 在Adobe Experience Platform沙箱中設定Brand Concierge執行個體
+- 在您的AEM CS/EDS網站上實作Brand Concierge
 
 ## 影片
 
@@ -27,7 +30,7 @@ Brand Concierge是AI支援的數位夥伴，可改變品牌與網站訪客互動
 ## 先決條件
 
 - 存取Adobe Journey Optimizer和Customer Journey Analytics
-- 熟悉[Brand Concierge概念](https://experienceleague.adobe.com/zh-hant/docs/brand-concierge/content/home)
+- 熟悉[Brand Concierge概念](https://experienceleague.adobe.com/en/docs/brand-concierge/content/home)
 - 存取CitiSignal示範資料：購買、訂購、對象、歷程
 
 ## 練習
