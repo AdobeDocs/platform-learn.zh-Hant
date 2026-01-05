@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2860dcb7-4f7a-4b48-93d4-141cd7f4899e
-source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
+source-git-commit: 980d7cf882d5fde499d843fe969a3690ef84bb5f
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,6 @@ GenStudio for Performance Marketing附加元件是您建立的Adobe App Builder�
 ## 影片
 
 在這段影片中，您將獲得本練習中所有步驟的說明和示範。
-
->[!NOTE]
->
->此影片還沒有音訊。 音訊可用後，將上傳新版本。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3476498?quality=12&learn=on)
 
