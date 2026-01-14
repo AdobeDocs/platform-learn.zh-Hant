@@ -11,9 +11,9 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 10d36ee194c8da937f667c1ba438681959c5fc68
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Adobe Experience Platform可讓您將來自多個來源的資料彙集在一起�
 
 ![合併原則畫面](assets/mergepolicies-default.png)
 
-為設定檔啟用多個結構描述時，系統會自動為所有已啟用設定檔的結構描述建立[!UICONTROL 聯合結構描述]，記錄共用基底類別的結構描述。 您可以前往「**[!UICONTROL 聯合結構描述]**」標籤，檢視[!UICONTROL 聯合結構描述]。
+為設定檔啟用多個結構描述時，系統會自動為所有已啟用設定檔的結構描述建立[!UICONTROL 聯合結構描述]，記錄共用基底類別的結構描述。 您可以前往「[!UICONTROL 聯合結構描述]」標籤，檢視&#x200B;**[!UICONTROL 聯合結構描述]**。
 
 ![合併原則畫面](assets/mergepolicies-unionSchema.png)
 
@@ -72,7 +72,7 @@ Adobe Experience Platform可讓您將來自多個來源的資料彙集在一起�
 1. 對於&#x200B;**[!UICONTROL 屬性合併]**，請選取&#x200B;**[!UICONTROL 資料集優先順序]**
 1. 將`Luma Loyalty Dataset`和`Luma CRM Dataset`拖放至&#x200B;**[!UICONTROL 資料集]**&#x200B;面板。
 1. 將`Luma Loyalty Dataset`拖放到`Luma CRM Dataset`上方，確認位於頂端
-1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;按鈕
+1. 選取&#x200B;**[!UICONTROL 儲存]**按鈕
    <!--do i need to explain Private Graph? Is that GA?-->
    ![合併原則](assets/mergepolicies-newPolicy.png)
 
@@ -122,7 +122,7 @@ CRM ID是`Luma Loyalty Dataset`中的身分欄位，但只能使用主要身分�
 1. 選取&#x200B;**[!UICONTROL 顯示設定檔]**&#x200B;按鈕
 1. 選取設定檔ID以開啟設定檔
 1. 前往&#x200B;**[!UICONTROL 屬性]**&#x200B;標籤
-1. 請注意，CRM資料集中的其他設定檔詳細資料（例如行動電話號碼和電子郵件地址）無法使用，因為僅限
+1. 請注意，CRM資料集中的其他設定檔詳細資料（例如行動電話號碼和電子郵件地址）無法使用，因為我們的`Loyalty Only`合併原則不包含CRM資料集。
    ![CRM資料無法在僅忠誠度原則中檢視](assets/mergepolicies-loyaltyOnly-attributes.png)
 1. 前往&#x200B;**[!UICONTROL 事件]**&#x200B;標籤
 1. ExperienceEvent資料雖然未明確納入合併原則資料集中，但仍可供使用：
@@ -140,7 +140,7 @@ CRM ID是`Luma Loyalty Dataset`中的身分欄位，但只能使用主要身分�
 
 ## 其他資源
 
-* [合併原則檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=zh-Hant)
+* [合併原則檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [合併原則API （即時客戶設定檔API的一部分）參考](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 現在讓我們移至[資料治理架構](apply-data-governance-framework.md)。
