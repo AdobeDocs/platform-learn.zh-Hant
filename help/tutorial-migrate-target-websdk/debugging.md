@@ -39,7 +39,7 @@ Adobe Experience Platform Debugger可安裝在Google Chrome中。 請依照下�
 
 安裝Chrome擴充功能或Firefox附加元件後，圖示(![](assets/start-icon.jpg))會新增至擴充功能列。 選取此圖示以開啟擴充功能。
 
-請參閱專屬指南，以取得有關[Adobe Experience Platform Debugger擴充功能](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)以及如何偵錯所有Adobe Web應用程式的詳細資訊。
+請參閱專屬指南，以取得有關[Adobe Experience Platform Debugger擴充功能](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=zh-Hant)以及如何偵錯所有Adobe Web應用程式的詳細資訊。
 
 ## 使用QA URL預覽Target活動
 
@@ -51,7 +51,7 @@ Target QA URL可透過指示at.js或Platform Web SDK將特定Cookie寫入名為`
 >
 >Platform Web SDK 2.13.0版或更新版本支援Target QA模式功能。 已根據`xdm.web.webPageDetails.URL`呼叫中傳遞的`sendEvent`值啟用目標QA模式。 對此值所做的任何修改（例如將所有字元設為小寫），都可能導致Target QA模式無法正常運作。
 
-請參閱專用指南，以取得有關[Target活動QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html)的詳細資訊。
+請參閱專用指南，以取得有關[Target活動QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=zh-Hant)的詳細資訊。
 
 ## Debug Target實作
 
@@ -129,7 +129,7 @@ Target追蹤提供關於活動資格和訪客Target設定檔的詳細資訊。 �
 - 請求詳細資料
 - 設定檔快照
 
-如需有關Target追蹤的詳細資訊，請參閱有關[偵錯Target內容傳遞](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html)的專用指南。
+如需有關Target追蹤的詳細資訊，請參閱有關[偵錯Target內容傳遞](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=zh-Hant)的專用指南。
 
 ### 疑難排解Assurance
 
@@ -180,4 +180,4 @@ Platform Web SDK `sendEvent`呼叫的要求裝載和回應與at.js不同。 使�
 
 >[!NOTE]
 >
->我們致力協助您成功將Target從at.js移轉至Web SDK。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
+>我們致力協助您成功將Target從at.js移轉至Web SDK。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=zh-Hant#M463)中張貼以告知我們。

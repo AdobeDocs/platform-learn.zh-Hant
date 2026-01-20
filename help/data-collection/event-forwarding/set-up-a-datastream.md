@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 設定事件轉送的資料流
 
-瞭解如何設定事件轉送的資料流。 如需詳細資訊，請瀏覽[事件轉寄檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+瞭解如何設定事件轉送的資料流。 如需詳細資訊，請瀏覽[事件轉寄檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=zh-Hant#create-a-datastream)
 
 
 >[!NOTE]

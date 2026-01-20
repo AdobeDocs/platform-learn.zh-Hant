@@ -14,6 +14,6 @@ ht-degree: 33%
 
 # 設定資料串流
 
-瞭解如何建立和設定Web和Mobile SDK實作的資料串流。 如需詳細資訊，請瀏覽[資料串流檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)。
+瞭解如何建立和設定Web和Mobile SDK實作的資料串流。 如需詳細資訊，請瀏覽[資料串流檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/340825?learn=on&enablevpops)

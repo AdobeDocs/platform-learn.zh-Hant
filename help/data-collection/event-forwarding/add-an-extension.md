@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 新增事件轉送擴充功能
 
-瞭解如何在資料收集中新增事件轉送擴充功能。 如需詳細資訊，請瀏覽[事件轉送檔案](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)。
+瞭解如何在資料收集中新增事件轉送擴充功能。 如需詳細資訊，請瀏覽[事件轉送檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/overview)。
 
 >[!NOTE]
 >

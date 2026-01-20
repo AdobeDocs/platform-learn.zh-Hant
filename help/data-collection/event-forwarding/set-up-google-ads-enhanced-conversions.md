@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 設定Google Ads增強型轉換
 
-使用事件轉送和Google Ads API，透過第一方雜湊資料增強Google轉換資料。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html)
+使用事件轉送和Google Ads API，透過第一方雜湊資料增強Google轉換資料。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html?lang=zh-Hant)
 
 >[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on&enablevpops)
