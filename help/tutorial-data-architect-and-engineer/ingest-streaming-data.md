@@ -118,7 +118,7 @@ Edge設定儲存後，產生的畫面會顯示已建立用於開發、測試和�
 若要建立屬性：
 
 1. 前往左側導覽中的&#x200B;**[!UICONTROL 屬性]**
-1. 選取&#x200B;**[!UICONTROL 新屬性]**按鈕
+1. 選取&#x200B;**[!UICONTROL 新屬性]**&#x200B;按鈕
    ![新增屬性](assets/websdk-property-addNewProperty.png)
 1. 以&#x200B;**[!UICONTROL Name]**&#x200B;的身分，輸入`Luma Platform Tutorial` （如果貴公司的多人參加此教學課程，請在結尾加上您的姓名）
 1. 作為&#x200B;**[!UICONTROL 網域]**，請輸入`enablementadobe.com` （稍後說明）
@@ -155,7 +155,7 @@ Now switch back to your browser tab with the Data Collection interface still ope
 1. 前往左側導覽中的&#x200B;**[!UICONTROL 擴充功能]**
 1. 前往&#x200B;**[!UICONTROL 目錄]**&#x200B;標籤
 1. 有許多擴充功能可供標籤使用。 篩選含有字詞`Web SDK`的目錄
-1. 在&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;擴充功能中，選取&#x200B;**[!UICONTROL 安裝]**按鈕
+1. 在&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;擴充功能中，選取&#x200B;**[!UICONTROL 安裝]**&#x200B;按鈕
    ![安裝Adobe Experience Platform Web SDK擴充功能](assets/websdk-property-addExtension.png)
 1. Web SDK擴充功能有數種設定可供使用，但在本教學課程中，我們只會設定兩種。 將&#x200B;**[!UICONTROL Edge網域]**&#x200B;更新為`data.enablementadobe.com`。 此設定可讓您透過網頁SDK實作設定第一方Cookie （建議使用）。 在本課程的稍後部分，您將會將`enablementadobe.com`網域上的網站對應至您的標籤屬性。 已設定`enablementadobe.com`網域的CNAME，因此`data.enablementadobe.com`將轉送至Adobe伺服器。 當您在自己的網站上實作Web SDK時，必須針對您自己的資料收集目的建立CNAME，例如`data.YOUR_DOMAIN.com`
 1. 從&#x200B;**[!UICONTROL 資料流]**&#x200B;下拉式清單中，選取您的`Luma Platform Tutorial`資料流。
@@ -171,19 +171,19 @@ Now switch back to your browser tab with the Data Collection interface still ope
 現在我們將建立規則以將資料傳送至Platform。 規則是事件、條件和動作的組合，可指示標籤執行某項動作。 若要建立規則：
 
 1. 前往左側導覽中的&#x200B;**[!UICONTROL 規則]**
-1. 選取&#x200B;**[!UICONTROL 建立新規則]**按鈕
+1. 選取&#x200B;**[!UICONTROL 建立新規則]**&#x200B;按鈕
    ![建立規則](assets/websdk-property-createRule.png)
 1. 將規則命名為 `All Pages - Library Loaded`
-1. 在&#x200B;**[!UICONTROL 事件]**&#x200B;下，選取&#x200B;**[!UICONTROL 新增]**按鈕
+1. 在&#x200B;**[!UICONTROL 事件]**&#x200B;下，選取&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕
    ![為規則命名並新增事件](assets/websdk-property-nameRule.png)
 1. 使用&#x200B;**[!UICONTROL 核心]** **[!UICONTROL 擴充功能]**，並選取&#x200B;**[!UICONTROL 載入的程式庫（頁面頂端）]**&#x200B;作為&#x200B;**[!UICONTROL 事件型別]**。 此設定表示每當頁面上載入Launch程式庫時，就會觸發規則。
-1. 選取&#x200B;**[!UICONTROL 保留變更]**以返回主規則畫面
+1. 選取&#x200B;**[!UICONTROL 保留變更]**&#x200B;以返回主規則畫面
    ![新增程式庫已載入事件](assets/websdk-property-addEvent.png)
 1. 保留&#x200B;**[!UICONTROL 條件]**&#x200B;為空白，因為我們希望此規則依據我們提供的名稱在所有頁面上引發
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;底下，選取&#x200B;**[!UICONTROL 新增]**&#x200B;按鈕
 1. 使用&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL 擴充功能]**&#x200B;並選取&#x200B;**[!UICONTROL 傳送事件]**&#x200B;作為&#x200B;**[!UICONTROL 動作型別]**
 1. 在右側，從&#x200B;**[!UICONTROL 型別]**&#x200B;下拉式清單中選取&#x200B;**[!UICONTROL web.webpagedetails.pageViews]**。 這是我們`Luma Web Events Schema`中的XDM欄位之一
-1. 選取&#x200B;**[!UICONTROL 保留變更]**以返回主規則畫面
+1. 選取&#x200B;**[!UICONTROL 保留變更]**&#x200B;以返回主規則畫面
    ![新增傳送事件動作](assets/websdk-property-addAction.png)
 1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;以儲存規則\
    ![儲存規則](assets/websdk-property-saveRule.png)
@@ -236,7 +236,7 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
 1. 為&#x200B;**[!UICONTROL 名稱]**&#x200B;輸入`Luma Platform Tutorial`
 1. 針對&#x200B;**[!UICONTROL 環境]**，選取`Development`
 1. 選取&#x200B;**[!UICONTROL 新增所有變更的資源]**&#x200B;按鈕。 (除了[!UICONTROL Adobe Experience Platform Web SDK]擴充功能和`All Pages - Library Loaded`規則外，您也會看到已新增[!UICONTROL Core]擴充功能，其中包含所有Launch Web屬性所需的基礎JavaScript。)
-1. 選取&#x200B;**[!UICONTROL 儲存並建置以供開發]**按鈕
+1. 選取&#x200B;**[!UICONTROL 儲存並建置以供開發]**&#x200B;按鈕
    ![建立並建置程式庫](assets/websdk-property-buildLibrary.png)
 
 程式庫可能需要幾分鐘的時間才能建置，建置完成後，程式庫名稱左側會顯示一個綠色點：
@@ -281,7 +281,7 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
    ![選取動作>取代](assets/websdk-debugger-replaceLibrary.png)
 1. 由於您已通過驗證，Debugger將會提取您可用的Launch屬性和環境。 選取您的`Luma Platform Tutorial`屬性
 1. 選取您的`Development`環境
-1. 選取&#x200B;**[!UICONTROL 套用]**按鈕
+1. 選取&#x200B;**[!UICONTROL 套用]**&#x200B;按鈕
    ![選取替代標籤屬性](assets/websdk-debugger-selectProperty.png)
 1. Luma網站現在將使用您的標籤屬性&#x200B;_重新載入_。 救命，我已經被黑進去了！ 開玩笑的。
    已取代![標籤屬性](assets/websdk-debugger-propertyReplaced.png)
@@ -293,9 +293,9 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
    ![Adobe Experience Platform Web SDK請求](assets/websdk-debugger-platformNetwork.png)
 1. 請注意，我們如何看到在`web.webpagedetails.pageView`傳送事件[!UICONTROL 動作中指定的]事件型別，以及其他遵循`AEP Web SDK ExperienceEvent Mixin`格式的現成變數
    ![事件詳細資料](assets/websdk-debugger-eventDetails.png)
-1. 這些型別的要求詳細資訊也會顯示在瀏覽器的網頁開發人員工具&#x200B;**網路**&#x200B;標籤中。 開啟並重新載入頁面。 篩選具有`interact`的呼叫，以找出該呼叫，選取它，然後檢視&#x200B;**標題**&#x200B;索引標籤，**請求承載**區域。
+1. 這些型別的要求詳細資訊也會顯示在瀏覽器的網頁開發人員工具&#x200B;**網路**&#x200B;標籤中。 開啟並重新載入頁面。 篩選具有`interact`的呼叫，以找出該呼叫，選取它，然後檢視&#x200B;**標題**&#x200B;索引標籤，**請求承載**&#x200B;區域。
    ![網路標籤](assets/websdk-debugger-networkTab.png)
-1. 前往&#x200B;**回應**標籤，並記下ECID值包含在回應中的方式。 複製此值，因為您將在下一個練習中使用它來驗證設定檔資訊。
+1. 前往&#x200B;**回應**&#x200B;標籤，並記下ECID值包含在回應中的方式。 複製此值，因為您將在下一個練習中使用它來驗證設定檔資訊。
    ![網路標籤](assets/websdk-debugger-networkTab-response.png)
 
 
@@ -308,7 +308,7 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 
 1. 在Platform使用者介面中，前往左側導覽中的&#x200B;**[!UICONTROL 資料集]**
 1. 開啟`Luma Web Events Dataset`並確認批次已到。 請記住，每15分鐘傳送一次，因此您可能需要等待批次顯示。
-1. 選取&#x200B;**[!UICONTROL 預覽資料集]**按鈕
+1. 選取&#x200B;**[!UICONTROL 預覽資料集]**&#x200B;按鈕
    ![開啟資料集](assets/websdk-platform-dataset.png)
 1. 在預覽強制回應視窗中，請注意如何選取左側結構描述的不同欄位，以預覽這些特定資料點：
    ![預覽欄位](assets/websdk-platform-datasetPreview.png)
@@ -317,9 +317,9 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 
 1. 在Platform使用者介面中，前往左側導覽中的&#x200B;**[!UICONTROL 設定檔]**
 1. 選取&#x200B;**[!UICONTROL ECID]**&#x200B;名稱空間並搜尋您的ECID值（從回應中複製）。 設定檔會有專屬的ID，獨立於ECID。
-1. 選取&#x200B;**[!UICONTROL 設定檔識別碼]**以開啟設定檔
+1. 選取&#x200B;**[!UICONTROL 設定檔識別碼]**&#x200B;以開啟設定檔
    ![尋找並開啟設定檔](assets/websdk-platform-openProfile.png)
-1. 選取&#x200B;**[!UICONTROL 事件]**索引標籤以檢視您檢視的頁面
+1. 選取&#x200B;**[!UICONTROL 事件]**&#x200B;索引標籤以檢視您檢視的頁面
    ![設定檔事件](assets/websdk-platform-profileEvents.png)\
    <!--![](assets/websdk-platform-confirmProfile.png)-->
 
@@ -372,7 +372,7 @@ Experience Platform Debugger有一種很酷的功能，可讓您使用其他標�
 1. 開啟您的`All Pages - Library Loaded`規則
 1. 開啟`Adobe Experience Platform Web SDK - Send Event`動作
 1. 做為&#x200B;**[!UICONTROL XDM資料]**，請選取圖示以開啟資料元素選取強制回應視窗，然後選擇您的`XDM Object`資料元素
-1. 選取&#x200B;**[!UICONTROL 保留變更]**按鈕
+1. 選取&#x200B;**[!UICONTROL 保留變更]**&#x200B;按鈕
    ![將XDM資料新增至您的傳送事件動作](assets/websdk-property-addXDMtoSendEvent.png)
 1. 現在，由於您已在最近幾個練習中選取`Luma Platform Tutorial`作為工作程式庫，因此您最近的變更已直接儲存至程式庫。 您可以開啟藍色按鈕上的下拉式清單，並選取&#x200B;**[!UICONTROL 儲存至程式庫並建置]**，而不需透過發佈流程畫面發佈我們的變更
    ![儲存至程式庫並建置](assets/websdk-property-saveAndBuildUpdatedSendEvent.png)

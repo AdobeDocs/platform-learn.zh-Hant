@@ -18,7 +18,7 @@ ht-degree: 2%
 | 特徵或工具 | at.js支援 | 平台網頁SDK支援 |
 | --- | --- | --- |
 | 活動QA URL | 是 | 是 |
-| `mboxDisable` URL引數 | 是 | 請參閱下列資訊以停用Target功能[](#disable-target-functionality) |
+| `mboxDisable` URL引數 | 是 | 請參閱下列資訊以停用Target功能[&#128279;](#disable-target-functionality) |
 | `mboxDebug` URL引數 | 是 | 使用`alloy_debug`引數取得類似的偵錯資訊 |
 | `mboxTrace` URL引數 | 是 | 使用Experience Platform Debugger瀏覽器擴充功能 |
 | Adobe Experience Platform Debugger擴充功能 | 是 | 是 |
