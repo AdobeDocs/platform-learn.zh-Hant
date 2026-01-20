@@ -4,9 +4,8 @@ description: 瞭解如何在資料收集中建立事件轉送規則。
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6423
-thumbnail: 331942.jpeg
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 # 建立事件轉送規則
 
-瞭解如何在資料收集中建立事件轉送規則。 如需詳細資訊，請瀏覽[事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)。
+瞭解如何在資料收集中建立事件轉送規則。 如需詳細資訊，請瀏覽[事件轉送檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)。
 
 >[!NOTE]
 >
