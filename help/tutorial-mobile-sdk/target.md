@@ -399,6 +399,6 @@ Target提供一切所需工具，讓您量身打造及個人化您的客戶體�
 >
 >您已為A/B測試啟用應用程式，並在Adobe Experience Platform Mobile SDK中使用Offer Decisioning和Target擴充功能顯示A/B測試的結果。
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=zh-Hant)上分享。
 
 下一步： **[結論和後續步驟](conclusion.md)**

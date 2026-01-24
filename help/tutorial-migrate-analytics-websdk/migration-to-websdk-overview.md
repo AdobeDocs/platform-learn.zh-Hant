@@ -61,7 +61,7 @@ ht-degree: 0%
 當您逐步進行這些步驟時，請務必瞭解幾項注意事項：
 
 1. 首先，您不一定需要所有這些步驟。 例如，有一堂關於移轉自訂程式碼的課程。 如果您的Tags實作不使用自訂程式碼（包括使用外掛程式），則不需要進行本課程。 我們嘗試加入大部分人所需的課程，因此請至少閱讀這些課程，以瞭解在移轉期間是否需要調整您的網站。
-1. 此外，我們完全無法建立移轉教學課程，涵蓋所有人正在使用的全部使用案例。 如前一項所述，我們嘗試納入大部分人需要的課程，這將涵蓋大部分的主要使用案例。 不過，本教學課程中無疑會包含未涵蓋的使用案例。 在此情況下，請檢視包含的課程是否可讓您清楚瞭解應如何針對使用案例進行移轉。 您也可以向[Experience League社群中的同業要求資料收集](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community)。
+1. 此外，我們完全無法建立移轉教學課程，涵蓋所有人正在使用的全部使用案例。 如前一項所述，我們嘗試納入大部分人需要的課程，這將涵蓋大部分的主要使用案例。 不過，本教學課程中無疑會包含未涵蓋的使用案例。 在此情況下，請檢視包含的課程是否可讓您清楚瞭解應如何針對使用案例進行移轉。 您也可以向[Experience League社群中的同業要求資料收集](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community?profile.language=zh-Hant)。
 
 移轉程式包含下列重要步驟：
 
@@ -81,5 +81,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->我們致力協助您成功將Analytics移轉至Web SDK。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}中張貼以告知我們。
+>我們致力協助您成功將Analytics移轉至Web SDK。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308?profile.language=zh-Hant#M604){target="_blank"}中張貼以告知我們。
 

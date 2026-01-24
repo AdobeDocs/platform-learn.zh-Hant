@@ -187,6 +187,6 @@ Adobe Experience Platform同意行動擴充功能可讓您在使用Adobe Experie
 >
 >您現在已啟用應用程式，在安裝（或重新安裝）後最初啟動時提示使用者，以同意使用Adobe Experience Platform Mobile SDK。
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=zh-Hant)上分享
 
 下一個： **[收集生命週期資料](lifecycle-data.md)**

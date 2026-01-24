@@ -196,6 +196,6 @@ Adobe提供了一組豐富的[!DNL Postman]集合，可幫助您探索Experience
 
 Postman中的![第一個API呼叫](assets/postman-firstAPICall.png)
 
-如果您的呼叫失敗，請花點時間使用API呼叫的錯誤回應詳細資料進行偵錯，並檢閱上述步驟。 如果您卡住了，請在[社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community)尋求協助，或使用本頁右側的連結「登入問題」。
+如果您的呼叫失敗，請花點時間使用API呼叫的錯誤回應詳細資料進行偵錯，並檢閱上述步驟。 如果您卡住了，請在[社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=zh-Hant)尋求協助，或使用本頁右側的連結「登入問題」。
 
 設定好Platform許可權、沙箱和[!DNL Postman]後，您就可以[在結構描述中建立資料模型](model-data-in-schemas.md)！

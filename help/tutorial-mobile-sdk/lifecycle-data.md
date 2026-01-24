@@ -150,6 +150,6 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 >
 >您現在已設定應用程式，將應用程式狀態（前景、背景）事件傳送至Adobe Experience Platform Edge Network，以及您在資料流中定義的所有服務。
 >
-> 感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享
+> 感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=zh-Hant)上分享
 
 下一個： **[追蹤事件資料](events.md)**

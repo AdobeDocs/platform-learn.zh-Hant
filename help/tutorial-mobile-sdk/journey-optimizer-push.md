@@ -711,6 +711,6 @@ Journey Optimizer中的事件可讓您觸發傳送訊息的歷程，例如推播
 >
 >您現在已針對Experience Platform Mobile SDK使用Journey Optimizer和Journey Optimizer擴充功能，為推播通知啟用應用程式。
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=zh-Hant)上分享。
 
 下一步： **[建立並傳送應用程式內訊息](journey-optimizer-inapp.md)**

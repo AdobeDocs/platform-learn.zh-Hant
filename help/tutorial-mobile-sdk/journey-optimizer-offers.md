@@ -543,6 +543,6 @@ Journey Optimizer決策管理可協助您在適當的時間為所有接觸點的
 >
 >您已啟用應用程式，以便針對Experience Platform Mobile SDK使用Offer Decisioning和Target擴充功能來顯示選件。
 >
->感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
+>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=zh-Hant)上分享。
 
 下一步： **[執行A/B測試](target.md)**

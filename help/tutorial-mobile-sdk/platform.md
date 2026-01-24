@@ -169,7 +169,7 @@ Experience Platform的即時客戶設定檔可讓您建立每個個別客戶的�
 
 >[!SUCCESS]
 >
->您現在已設定應用程式，不僅將資料傳送至Edge Network，也傳送至Adobe Experience Platform。<br>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享。
+>您現在已設定應用程式，不僅將資料傳送至Edge Network，也傳送至Adobe Experience Platform。<br>感謝您花時間學習Adobe Experience Platform Mobile SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=zh-Hant)上分享。
 >
 
 下一步： **[建立並傳送推播通知](journey-optimizer-push.md)**

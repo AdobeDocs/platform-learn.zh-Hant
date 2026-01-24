@@ -78,7 +78,7 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 ### 自動對應的欄位
 
-許多XDM欄位會自動對應至Analytics變數。 如需最新的對應清單，請參閱Adobe Experience Edge中的[Analytics變數對應](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)。
+許多XDM欄位會自動對應至Analytics變數。 如需最新的對應清單，請參閱Adobe Experience Edge中的[Analytics變數對應](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)。
 
 如果&#x200B;_即使您尚未定義自訂結構描述_，也會發生這種情況。 Experience Platform Web SDK會自動收集一些資料，並將其以XDM欄位的形式傳送到Platform Edge Network。 例如，Web SDK會讀取目前頁面URL並以XDM欄位`web.webPageDetails.URL`形式傳送。 此欄位會轉送至Adobe Analytics，並自動填入Adobe Analytics中的頁面URL報表。
 
@@ -489,4 +489,4 @@ Adobe Experience Platform Assurance可協助您檢查、證明、模擬及驗證
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享

@@ -117,7 +117,7 @@ Adobe建議您非同步實作標籤，如Luma網站所示。 不過，如果同�
 >
 >預先隱藏樣式設定僅適用於同步實施。 如果您使用非同步實作標籤，此樣式應該空白或標籤為註解。
 
-若要進一步瞭解Platform Web SDK如何管理忽隱忽現的情形，請參閱指南章節： [管理個人化體驗忽隱忽現的情形](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/manage-flicker)。
+若要進一步瞭解Platform Web SDK如何管理忽隱忽現的情形，請參閱指南章節： [管理個人化體驗忽隱忽現的情形](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge/personalization/manage-flicker)。
 
 
 ## 設定資料串流
@@ -216,7 +216,7 @@ Adobe建議針對每個開發、測試和生產資料流分別以不同方式設
 >
 >一般而言，[!UICONTROL 呈現視覺化個人化決定]設定只應該針對每個完整頁面載入的單一「傳送事件」動作啟用。 如果有多個「傳送事件」動作已啟用此設定，則會忽略後續轉譯請求。
 
-如果您偏好使用自訂程式碼對這些決定自行轉譯或執行動作，您可以保留[!UICONTROL 轉譯視覺個人化決定]設定停用。 Platform Web SDK具備彈性，提供這項功能供您完全控制。 您可以參考指南以取得有關[手動呈現個人化內容](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content)的詳細資訊。
+如果您偏好使用自訂程式碼對這些決定自行轉譯或執行動作，您可以保留[!UICONTROL 轉譯視覺個人化決定]設定停用。 Platform Web SDK具備彈性，提供這項功能供您完全控制。 您可以參考指南以取得有關[手動呈現個人化內容](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge/personalization/rendering-personalization-content)的詳細資訊。
 
 
 ### 使用視覺化體驗撰寫器設定Target活動
@@ -597,4 +597,4 @@ Luma網站上的資料層完全定義在標籤內嵌程式碼之前。 這可讓
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享
