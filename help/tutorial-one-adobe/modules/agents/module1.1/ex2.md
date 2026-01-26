@@ -3,14 +3,21 @@ title: Adobe Marketing Agent與ChatGPT
 description: Adobe Marketing Agent與ChatGPT
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9663ef2838024e293acc72c203b1e3578911d57f
+source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
 
 # 1.1.2含ChatGPT的Adobe Marketing Agent
+
+[!BADGE Beta]
+
++++檢視詳細資料
+藉由將Adobe Marketing Agent與ChatGPT Beta搭配使用，您在此確認Beta係依「現況」提供，並無任何保證。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援Beta。 建議您謹慎使用，切勿依賴這類Beta及/或隨附資料的正確運作或效能。 Beta視為Adobe的機密資訊。  任何「意見回饋」(有關Beta的資訊，包括但不限於您在使用Beta時遇到的問題或缺陷、建議、改進和建議)會在此指派給Adobe Adobe，包括所有權利、標題，以及對此等意見回饋的興趣。
+
++++
 
 >[!IMPORTANT]
 >
@@ -30,7 +37,7 @@ ht-degree: 0%
 >- OpenAI的ChatGPT付費版本
 >- 使用ChatGPT網頁使用者端
 
-前往https://chatgpt.com/並使用您的帳戶詳細資料登入。 登入後，您應該會看到此訊息。 按一下您的使用者名稱。
+移至[https://chatgpt.com/](https://chatgpt.com/){target="_blank"}並使用您的帳戶詳細資料登入。 登入後，您應該會看到此訊息。 按一下您的使用者名稱。
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -86,11 +93,11 @@ ChatGPT現在將嘗試連線至您的Adobe帳戶。 選取&#x200B;**允許存取
 
 - **沙箱**： **Prod — 加速(VA7)**
 
-沙箱設定可協助識別在詢問問題時哪個沙箱AI小幫手應該檢視。
+沙箱設定可協助識別ChatGPT在詢問問題時應檢視的沙箱。
 
 - **資料檢視**： **加速2026 B2C**
 
-資料檢視設定可協助識別詢問問題時資料檢視AI助理應該檢視哪個資料檢視。
+資料檢視設定可協助識別ChatGPT在詢問問題時應檢視的資料檢視。
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
@@ -122,9 +129,9 @@ list dataviews
 
 ![Agent Orchestrator](./images/chatgpt14.png)
 
-之後，您應該會看到類似的可用沙箱清單。 此範例中的目前沙箱設定為&#x200B;**prod**。
+之後，您應該會看到類似的可用資料檢視清單。
 
-若要將其變更為需要使用的沙箱，請輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
+若要設定需要使用的資料檢視，請輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
 ```javascript
 switch to Accelerate 2026 B2C

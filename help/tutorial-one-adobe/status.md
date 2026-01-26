@@ -3,10 +3,10 @@ title: 內容狀態
 description: 內容狀態
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 6642acb3fdce2c9d3a9b919d5c9457191e4780a6
+source-git-commit: 72fbe8d1dfddd83b85bcb423167cdf4f6e44886d
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 10%
+source-wordcount: '545'
+ht-degree: 9%
 
 ---
 
@@ -82,10 +82,10 @@ ht-degree: 10%
 
 | 名稱 | 上次更新 | 工作百分之百 | 備註 | 時間投資 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 2025年25月11日 | 是 | - | 30分鐘 |
-| [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 2025年25月11日 | 無 | 工作進行中 | 未定 |
-| [1.3代理程式Collaboration](./modules/agents/module1.3/agentcollaboration.md){target="_blank"} | 2025年25月11日 | 無 | 工作進行中 | 未定 |
-| [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 2025年25月11日 | 無 | 工作進行中 | 未定 |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 23/01/2026 | 是 | - | 90分鐘 |
+| [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 23/01/2026 | 無 | 正在開發的內容 | 未定 |
+| [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | 是 | - | 90分鐘 |
+| [1.5 Analytics與代理程式](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 23/01/2026 | 無 | 正在開發的內容 | 未定 |
 
 {style="table-layout:auto"}
 

@@ -4,9 +4,9 @@ description: Customer Journey Analytics — 在Customer Journey Analytics中連�
 kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 ![示範](./images/cja9.png)
 
-## 1.1.2.3人員ID與資料彙整
+## 1.1.2.3個人ID與資料彙整
 
 ### 人員 ID
 
@@ -82,7 +82,7 @@ ht-degree: 1%
 
 只要人員ID欄位中的值對應，人員ID欄位的名稱就不重要。 假設我們在一個資料集中有`email`，在另一個定義為「人員ID」的資料集中有`emailAddress`。 如果兩個資料集上的人員ID欄位的`delaigle@adobe.com`值相同，CJA將能夠拼接資料。
 
-請在此檢閱CJA常見問題集，以瞭解身分拼接的細微差異： [常見問題集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hant)。
+請在此檢閱CJA常見問答集，以瞭解身分拼接的細微差異： [常見問答集](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html)。
 
 ### 使用人員ID彙整資料
 
@@ -122,13 +122,13 @@ ht-degree: 1%
 
 按一下&#x200B;**儲存**，然後前往下一個練習。
 
-建立您的&#x200B;**連線**&#x200B;後，可能需要幾個小時才能在CJA中使用您的資料。
+建立&#x200B;**連線**&#x200B;後，可能需要幾個小時才能在CJA中使用您的資料。
 
 ![示範](./images/cja20.png)
 
 ## 後續步驟
 
-移至[1.1.3建立資料檢視](./ex3.md)(./ex2.md){target="_blank"}
+移至[1.1.3建立資料檢視](./ex3.md){target="_blank"}
 
 返回[Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 
