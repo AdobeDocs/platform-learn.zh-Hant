@@ -1,27 +1,27 @@
 ---
-title: Adobe Marketing Agent與ChatGPT
-description: Adobe Marketing Agent與ChatGPT
+title: 適用於ChatGPT Enterprise的Adobe Marketing Agent
+description: 適用於ChatGPT Enterprise的Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
+source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
 
-# 1.1.2含ChatGPT的Adobe Marketing Agent
-
-[!BADGE Beta]
-
-+++檢視詳細資料
-藉由將Adobe Marketing Agent與ChatGPT Beta搭配使用，您在此確認Beta係依「現況」提供，並無任何保證。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援Beta。 建議您謹慎使用，切勿依賴這類Beta及/或隨附資料的正確運作或效能。 Beta視為Adobe的機密資訊。  任何「意見回饋」(有關Beta的資訊，包括但不限於您在使用Beta時遇到的問題或缺陷、建議、改進和建議)會在此指派給Adobe Adobe，包括所有權利、標題，以及對此等意見回饋的興趣。
-
-+++
+# 1.1.2適用於ChatGPT Enterprise的Adobe Marketing Agent
 
 >[!IMPORTANT]
 >
 >本實驗使用的功能尚未發行。 功能仍在開發中，尚未正式推出。
+
+[!BADGE 開發中]
+
++++在開發詳細資訊中
+透過將Adobe Marketing Agent用於ChatGPT Enterprise Beta，您在此確認Beta係依「現況」提供，並無任何保證。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援Beta。 建議您謹慎使用，切勿依賴這類Beta及/或隨附資料的正確運作或效能。 Beta視為Adobe的機密資訊。  任何「意見回饋」(有關Beta的資訊，包括但不限於您在使用Beta時遇到的問題或缺陷、建議、改進和建議)會在此指派給Adobe Adobe，包括所有權利、標題，以及對此等意見回饋的興趣。
+
++++
 
 ## 影片
 
@@ -29,13 +29,13 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3478410?quality=12&learn=on)
 
-## 1.1.2.1在ChatGPT中為Adobe Marketing Agent建立自訂應用程式
+## 1.1.2.1在ChatGPT Enterprise for Adobe Marketing Agent中建立自訂應用程式
 
 >[!NOTE]
 >
 >在ChatGPT中使用Adobe Marketing Agent需要下列專案：
->- OpenAI的ChatGPT付費版本
->- 使用ChatGPT網頁使用者端
+>- OpenAI的ChatGPT Enterprise付費版本
+>- 使用ChatGPT Enterprise Web使用者端
 
 移至[https://chatgpt.com/](https://chatgpt.com/){target="_blank"}並使用您的帳戶詳細資料登入。 登入後，您應該會看到此訊息。 按一下您的使用者名稱。
 

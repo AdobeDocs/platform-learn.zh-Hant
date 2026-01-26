@@ -1,27 +1,27 @@
 ---
-title: Adobe Marketing Agent與Microsoft Copilot
-description: Adobe Marketing Agent與Microsoft Copilot
+title: Adobe Marketing Agent for Microsoft 365 Copilot
+description: Microsoft 365 CopilotCopilot適用的Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
+source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '995'
 ht-degree: 0%
 
 ---
 
-# 1.1.3 Adobe Marketing Agent與Microsoft Copilot
-
-[!BADGE Beta]
-
-+++檢視詳細資料
-藉由將Adobe Marketing Agent與Microsoft Copilot Beta搭配使用，您特此確認Beta係依「現況」提供，並無任何保證。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援Beta。 建議您謹慎使用，切勿依賴這類Beta及/或隨附資料的正確運作或效能。 Beta視為Adobe的機密資訊。  任何「意見回饋」(有關Beta的資訊，包括但不限於您在使用Beta時遇到的問題或缺陷、建議、改進和建議)會在此指派給Adobe Adobe，包括所有權利、標題，以及對此等意見回饋的興趣。
-
-+++
+# 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
 
 >[!IMPORTANT]
 >
 >本實驗使用的功能尚未發行。 功能仍在開發中，尚未正式推出。
+
+[!BADGE Beta]
+
++++Beta詳細資料
+藉由將Adobe Marketing Agent與Microsoft 365 Copilot Beta搭配使用，您在此確認Beta係依「現況」提供，並無任何保證。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援Beta。 建議您謹慎使用，切勿依賴這類Beta及/或隨附資料的正確運作或效能。 Beta視為Adobe的機密資訊。  任何「意見回饋」(有關Beta的資訊，包括但不限於您在使用Beta時遇到的問題或缺陷、建議、改進和建議)會在此指派給Adobe Adobe，包括所有權利、標題，以及對此等意見回饋的興趣。
+
++++
 
 ## 先決條件
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 - 存取Real-Time CDP、Journey Optimizer和Customer Journey Analytics
 - 存取Adobe Experience Cloud中的AI助理
 - 存取AEP Agent Orchestrator
-- 存取Microsoft Copilot
+- 存取Microsoft 365 Copilot
 
 ## 影片
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3479158?quality=12&learn=on)
 
-## 1.1.3.1將Adobe Marketing Agent新增至Microsoft Teams &amp; Copilot
+## 1.1.3.1將Adobe Marketing Agent新增至Microsoft 365 Teams &amp; Copilot
 
 開啟Microsoft Teams並使用您的帳戶詳細資料登入。 登入後，您應該會看到此訊息。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ![ChatGPT](./images/copilot4.png)
 
-選取講師提供給您的資訊清單檔案，然後按一下[開啟]。**&#x200B;**
+選取講師提供給您的資訊清單檔案，然後按一下[開啟]。****
 
 ![ChatGPT](./images/copilot5.png)
 
@@ -98,7 +98,7 @@ Adobe Marketing Agent現在已成功載入。
 
 ![ChatGPT](./images/copilotlogin6.png)
 
-之後，您應該會看到類似以下內容。 您現在已成功登入Microsoft Copilot的Adobe Marketing Agent。
+之後，您應該會看到類似以下內容。 您現在已成功登入Microsoft 365 Copilot的Adobe Marketing Agent。
 
 ![ChatGPT](./images/copilotlogin7.png)
 
