@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ![ChatGPT](./images/copilot4.png)
 
-選取講師提供給您的資訊清單檔案，然後按一下[開啟]。****
+選取講師提供給您的資訊清單檔案，然後按一下[開啟]。**&#x200B;**
 
 ![ChatGPT](./images/copilot5.png)
 
