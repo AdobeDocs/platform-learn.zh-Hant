@@ -4,7 +4,7 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
 source-wordcount: '1459'
 ht-degree: 3%
@@ -290,4 +290,4 @@ ht-degree: 3%
       + [概觀](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
       + [1.5.1 CJA與ChatGPT搭配MCP伺服器](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
       + [1.5.2 CJA和Claude.ai搭配MCP伺服器](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
-      + [1.5.3 Adobe Analytics與ChatGPT搭配MCP伺服器](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+      + [1.5.3 Adobe Analytics和Claude.ai搭配MCP伺服器](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)

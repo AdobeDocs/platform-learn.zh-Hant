@@ -3,9 +3,9 @@ title: CJA與ChatGPT搭配MCP伺服器
 description: CJA與ChatGPT搭配MCP伺服器
 kt: 5342
 doc-type: tutorial
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -251,17 +251,7 @@ can you show me a visualization of the above fallout analysis?
 
 ![ChatGPT與CJA](./images/chatgpt122.png)
 
-輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
-
-```javascript
-break down the fallout analysis at the touchpoint of the add to carts
-```
-
-![ChatGPT與CJA](./images/chatgpt123.png)
-
-選取&#x200B;**執行報告**。
-
-![ChatGPT與CJA](./images/chatgpt124.png)
+下一步： [使用MCP伺服器的CJA和Claude.ai](./ex2.md){target="_blank"}
 
 返回[Analytics與代理程式](./analyticsagents.md){target="_blank"}
 

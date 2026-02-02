@@ -4,9 +4,9 @@ description: 查詢服務
 kt: 5342
 doc-type: tutorial
 exl-id: 881dcff5-3637-4b67-9e61-88690babe83b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -32,10 +32,6 @@ ht-degree: 1%
 - 資料集（實驗室期間使用的資料集，為您預先載入）
 - PostgreSQL
 - Tableau或Microsoft Power BI案頭版
-- **下載這些資產**：
-   - [JSON — 範例資料：網站互動](./../../../../assets/json/ee.json)
-   - [JSON — 範例資料：客服中心互動](./../../../../assets/json/callcenter.json)
-   - [JSON — 範例資料：忠誠度](./../../../../assets/json/loyalty.json)
 
 >[!NOTE]
 >

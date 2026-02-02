@@ -3,7 +3,7 @@ title: Analytics與代理程式
 description: Analytics與代理程式
 kt: 5342
 doc-type: tutorial
-source-git-commit: f3a0f2d0b06d93f51ee2ed4904eb4a8e1f42beb4
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 1%
@@ -31,9 +31,9 @@ ht-degree: 1%
 
 在本練習中，您將會在Claude.ai中設定自訂MCP伺服器，以直接將Claude.ai連線至Customer Journey Analytics，並且您將直接從Claude.ai開始分析Adobe Customer Journey Analytics (CJA)中託管的資料。
 
-[1.5.3 Adobe Analytics與ChatGPT搭配MCP伺服器](./ex3.md){target="_blank"}
+[1.5.3 Adobe Analytics與Claude.ai搭配MCP伺服器](./ex3.md){target="_blank"}
 
-在本練習中，您將會在ChatGPT中設定自訂MCP伺服器，以便將ChatGPT直接連線至Adobe Analytics，而且您將開始直接從ChatGPT分析Adobe Analytics (AA)中託管的資料。
+在本練習中，您將會在Claude.ai中設定自訂MCP伺服器，以直接將Claude.ai連線至Adobe Analytics，並且您將直接從Claude.ai開始分析在Adobe Analytics (AA)中託管的資料。
 
 ![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
