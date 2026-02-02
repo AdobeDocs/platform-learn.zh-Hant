@@ -1,12 +1,12 @@
 ---
-title: Offer Decisioning — 測試您的決定
-description: Offer Decisioning — 測試您的決定
+title: 使用應用程式內訊息設定行銷活動
+description: 使用應用程式內訊息設定行銷活動
 kt: 5342
 doc-type: tutorial
 exl-id: c40b9b8c-9717-403c-bf02-6b8f42a59c05
-source-git-commit: 2e856759e1a9b5509ad0632e28b269bcfc4ae861
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ![應用程式](./images/inapp9.png)
 
-按一下[新增動作&#x200B;**]，然後選取[應用程式內訊息**]。**&#x200B;**
+按一下[新增動作&#x200B;**]，然後選取[應用程式內訊息**]。****
 
 ![應用程式](./images/inapp10.png)
 
@@ -90,12 +90,12 @@ ht-degree: 0%
 ![應用程式](./images/inapp15.png)
 
 對於&#x200B;**標頭**&#x200B;文字，請使用： `CitiSignal Fiber Max`。
-對於&#x200B;**內文**&#x200B;文字，請使用： `Conquer lag with Fiber Max`。
+對於**內文**&#x200B;文字，請使用： `Conquer lag with Fiber Max`。
 
 ![應用程式](./images/inapp16.png)
 
 將文字&#x200B;**#1**&#x200B;按鈕設定為： `Go to Plans`。
-將&#x200B;**目標**&#x200B;設定為`com.adobe.dsn.dxdemo://plans`。
+將**目標**&#x200B;設定為`com.adobe.dsn.dxdemo://plans`。
 
 按一下&#x200B;**檢閱以啟動**。
 

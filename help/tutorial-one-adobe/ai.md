@@ -3,9 +3,9 @@ title: Agentic AI技術實驗室概觀
 description: Agentic AI技術實驗室概觀
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '398'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 0%
 - MCP伺服器，Python筆記型電腦
 - Adobe API的
 
-[1.3 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
+[1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **目標**
 
@@ -61,6 +61,17 @@ Brand Concierge是AI支援的數位夥伴，可改變品牌與網站訪客互動
 
 - 在Adobe Experience Platform沙箱中設定Brand Concierge執行個體
 - 在您的AEM CS/EDS網站上實作Brand Concierge
+
+[1.5 Analytics與代理](./modules/agents/module1.5/analyticsagents.md)
+
+**目標**
+
+身為資料分析師、AI開發人員或AI應用程式架構師，您將瞭解如何使用外部代理程式自動執行報告建立、排程分析等報告任務。 您將瞭解如何將全新的行銷活動資料、對象資料或績效資料提取至您的代理工作流程中。
+
+在本練習中，您將學習如何：
+
+- 將ChatGPT和/或Claude.ai連線至&#x200B;**Customer Journey Analytics**&#x200B;並執行資料分析工作
+- 將ChatGPT和/或Claude.ai連線至&#x200B;**Adobe Analytics**&#x200B;並執行資料分析工作
 
 ![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 

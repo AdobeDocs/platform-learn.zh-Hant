@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1459'
 ht-degree: 3%
 
 ---
@@ -86,6 +86,9 @@ ht-degree: 3%
       + [1.6.3建立並部署外部DAM應用程式](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4私下發佈您的應用程式](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
+   + 1.7工作流程產生器 {#crpr7}
+      + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
+      + [1.7.1開始使用工作流程產生器](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
 
 + 資產管理 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -268,6 +271,7 @@ ht-degree: 3%
          + [概觀](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics快速入門](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [摘要和優點](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
 + 代理程式 {#agents}
    + [Agentic AI概述](/help/tutorial-one-adobe/ai.md)
    + 1.1 Agent Orchestrator {#agents1}

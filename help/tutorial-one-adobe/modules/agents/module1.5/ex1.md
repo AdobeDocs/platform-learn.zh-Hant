@@ -3,19 +3,21 @@ title: CJA與ChatGPT搭配MCP伺服器
 description: CJA與ChatGPT搭配MCP伺服器
 kt: 5342
 doc-type: tutorial
-source-git-commit: ca2812e14a22b80b7f00066f9cc482e708b4ac6a
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
 
 # 1.5.1 CJA與ChatGPT搭配MCP伺服器
 
->[!IMPORTANT]
->
->本實驗使用的功能尚未發行。 功能仍在開發中，尚未正式推出。
+[!BADGE Alpha]
 
++++Alpha詳細資料
+藉由將CJA &amp; Claude.ai與MCP伺服器Alpha搭配使用，您在此確認Alpha係依「現況」提供，並無任何保證。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援Alpha。 建議您謹慎使用，切勿依賴這類Alpha及/或隨附資料的正確運作或效能。 Alpha視為Adobe的機密資訊。 任何「意見回饋」(有關Alpha的資訊，包括但不限於您在使用Alpha時遇到的問題或缺陷、建議、改進和建議)會在此指派給Adobe Adobe，包括所有權利、標題，以及對此等意見回饋的興趣。
+
++++
 
 >[!NOTE]
 >
