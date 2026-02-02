@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ![應用程式](./images/inapp9.png)
 
-按一下[新增動作&#x200B;**]，然後選取[應用程式內訊息**]。****
+按一下[新增動作&#x200B;**]，然後選取[應用程式內訊息**]。**&#x200B;**
 
 ![應用程式](./images/inapp10.png)
 
@@ -90,12 +90,12 @@ ht-degree: 0%
 ![應用程式](./images/inapp15.png)
 
 對於&#x200B;**標頭**&#x200B;文字，請使用： `CitiSignal Fiber Max`。
-對於**內文**&#x200B;文字，請使用： `Conquer lag with Fiber Max`。
+對於&#x200B;**內文**&#x200B;文字，請使用： `Conquer lag with Fiber Max`。
 
 ![應用程式](./images/inapp16.png)
 
 將文字&#x200B;**#1**&#x200B;按鈕設定為： `Go to Plans`。
-將**目標**&#x200B;設定為`com.adobe.dsn.dxdemo://plans`。
+將&#x200B;**目標**&#x200B;設定為`com.adobe.dsn.dxdemo://plans`。
 
 按一下&#x200B;**檢閱以啟動**。
 
