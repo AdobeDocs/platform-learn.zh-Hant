@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
+source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
 workflow-type: tm+mt
-source-wordcount: '1459'
+source-wordcount: '1477'
 ht-degree: 3%
 
 ---
@@ -89,6 +89,11 @@ ht-degree: 3%
    + 1.7工作流程產生器 {#crpr7}
       + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1開始使用工作流程產生器](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+   + 1.8企業儲存管理 {#crpr8}
+      + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
+      + [1.8.1 Workfront和ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+      + [1.8.2 Frame.io與ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
+      + [1.8.3 Adobe Express和ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex3.md)
 
 + 資產管理 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}

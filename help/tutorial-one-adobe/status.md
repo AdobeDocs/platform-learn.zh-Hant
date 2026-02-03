@@ -3,9 +3,9 @@ title: 內容狀態
 description: 內容狀態
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 72fbe8d1dfddd83b85bcb423167cdf4f6e44886d
+source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '553'
 ht-degree: 9%
 
 ---
@@ -37,6 +37,8 @@ ht-degree: 9%
 | [1.4 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | 是 | - | 45分鐘 |
 | [1.5使用Frame.io簡化您的工作流程](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 02/08/2025 | 是 | - | 1h |
 | [1.6 GenStudio for Performance Marketing — 擴充性](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | 是 | - | 1h 30min |
+| [1.7工作流程產生器](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 02/02/2026 | 無 | 開發中的內容 | - |
+| [1.8企業儲存體管理](./modules/creation-production/module1.8/esm.md){target="_blank"} | 02/02/2026 | 無 | 開發中的內容 | - |
 
 
 ## 3.資產管理
@@ -82,10 +84,10 @@ ht-degree: 9%
 
 | 名稱 | 上次更新 | 工作百分之百 | 備註 | 時間投資 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 23/01/2026 | 是 | - | 90分鐘 |
-| [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 23/01/2026 | 無 | 正在開發的內容 | 未定 |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 02/02/2026 | 是 | - | 60分鐘 |
+| [1.2 Agentic AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 02/02/2026 | 無 | 正在開發的內容 | 未定 |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 23/01/2026 | 是 | - | 90分鐘 |
-| [1.5 Analytics與代理程式](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 23/01/2026 | 無 | 正在開發的內容 | 未定 |
+| [1.5 Analytics與代理程式](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 02/02/2026 | 是 | - | 45分鐘 |
 
 {style="table-layout:auto"}
 

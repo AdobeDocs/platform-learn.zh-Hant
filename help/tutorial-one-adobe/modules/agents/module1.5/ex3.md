@@ -3,9 +3,9 @@ title: Adobe Analytics與Claude.ai搭配MCP伺服器
 description: Adobe Analytics與Claude.ai搭配MCP伺服器
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
+source-git-commit: 44559d6278da4bed8a864d0faf092352b8370398
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -191,6 +191,26 @@ Analyze different metrics by marketing channel
 您應該會看到類似這樣的內容。
 
 ![Claude.ai與CJA](./images/claudeaa113.png)
+
+輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
+
+```javascript
+which tracking codes drove the most visits and purchases?
+```
+
+![Claude.ai與CJA](./images/claudeaa114.png)
+
+您應該會看到類似這樣的內容，首先顯示&#x200B;**依造訪排名最前的追蹤代碼**。
+
+![Claude.ai與CJA](./images/claudeaa115.png)
+
+您接著可以在&#x200B;**依訂單（購買）**&#x200B;排名最前的追蹤代碼報表中，檢視帶動最多購買的追蹤代碼。
+
+![Claude.ai與CJA](./images/claudeaa116.png)
+
+接著，您會找到Claude.ai根據來自Adobe Analytics的資料所提供的其他深入分析。
+
+![Claude.ai與CJA](./images/claudeaa117.png)
 
 您現在已經完成此練習。
 
