@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 6ab5ca7ba774b02c1c48a16c4399ceeaf6bd2a32
+source-git-commit: bed1141b0b51063637684a29a9bd946c934fc2ba
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1518'
 ht-degree: 3%
 
 ---
@@ -108,6 +108,9 @@ ht-degree: 3%
       + [概觀](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
       + [1.2.1 AEM Assets快速入門](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
+   + 1.4 Adobe Experience Manager Assets &amp; Dynamic Media {#assetm4}
+      + [概觀](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
+      + [1.4.1 AEM Assets與Dynamic Media快速入門](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)
    + 1.5 Adobe Commerce as a Cloud Service {#assetm3}
       + [概觀](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/accs.md)
       + [1.5.1 Adobe Commerce as a Cloud Service快速入門](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
@@ -116,7 +119,7 @@ ht-degree: 3%
       + [摘要和優點](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/summary.md)
 
 + 傳遞與啟用 {#activation}
-   + 資料收集 {#dc}
+   + 資料彙集 {#dc}
       + 1.1 Adobe Experience Platform資料收集和網頁SDK {#dc11}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
          + [1.1.1瞭解Adobe Experience Platform資料收集](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex1.md)
