@@ -179,16 +179,16 @@ window.adobeDataLayer.push({
 
 請依照相同的步驟建立這些額外的資料元素：
 
-* **`page.pageInfo.server`**對應至
+* **`page.pageInfo.server`**&#x200B;對應至
   `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`**對應至
+* **`page.pageInfo.hierarchie1`**&#x200B;對應至
   `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`**對應至
+* **`user.profile.attributes.username`**&#x200B;對應至
   `digitalData.user.0.profile.0.attributes.username`
 
-* **`user.profile.attributes.loggedIn`**對應至
+* **`user.profile.attributes.loggedIn`**&#x200B;對應至
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
 * **`product.productInfo.sku`**&#x200B;對應至`digitalData.product.0.productInfo.sku`

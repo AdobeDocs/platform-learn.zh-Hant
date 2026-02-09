@@ -273,6 +273,6 @@ Adobe Experience Platform Identity Service會使用「設定客戶ID」動作，
 
 這會同時在瀏覽器主控台以及 Debugger 的「記錄」標籤中開啟主控台記錄功能。您應該會看到目前為止已建立的所有規則之記錄！請注意，新記錄項目會新增到清單頂端，這樣「所有頁面 - 程式庫已載入 - 已通過驗證 - 10」規則應該就會在「所有頁面 - 程式庫已載入」規則之前引發，並在 Debugger 的 Console Logging 中顯示於其下方：
 
-![ Debugger 的「記錄」標籤](images/idservice-debugger-loggingStatements.png)
+![&#x200B; Debugger 的「記錄」標籤](images/idservice-debugger-loggingStatements.png)
 
 [下堂課「新增Adobe Target」>](target.md)
