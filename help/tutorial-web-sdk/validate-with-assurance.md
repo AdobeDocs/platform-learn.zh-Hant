@@ -4,9 +4,9 @@ description: 了解如何使用 Adob​​e Experience Platform Assurance 驗證
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '637'
 ht-degree: 7%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 7%
 
 Adobe Experience Platform Assurance的功能可協助您檢查、校樣、模擬及驗證收集資料或提供體驗的方式。 深入瞭解[Adobe Assurance](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/assurance/home)。
 
+
+>[!WARNING]
+>
+> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
 
 ## 學習目標
 
@@ -94,4 +98,4 @@ Adobe Experience Platform Assurance的功能可協助您檢查、校樣、模擬
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

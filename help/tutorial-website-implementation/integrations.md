@@ -2,16 +2,21 @@
 title: 實作Experience Cloud與標籤的整合
 description: 瞭解如何驗證 Adobe Experience Cloud 實施中的客群、A4T 和客戶屬性整合。本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 85%
+source-wordcount: '1231'
+ht-degree: 83%
 
 ---
 
 # Experience Cloud 整合
 
 在本課程中，將檢閱您剛剛所實施解決方案之間的主要整合。好消息是完成先前的課程後，您已實施整合的程式碼部分！除了閱讀和驗證以外，您不需要在本課程中執行任何其他工作。
+
+
+>[!WARNING]
+>
+> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
 
 ## 學習目標
 
@@ -20,7 +25,7 @@ ht-degree: 85%
 1. 說明客群共用、Analytics for Target (A4T) 和客戶屬性整合的基本使用案例
 1. 驗證這些整合的基本用戶端實施環節
 
-## 必要條件
+## 先決條件
 
 您應先完成本教學課程中先前的所有課程，然後再依照本課程中的指示操作。
 
@@ -28,16 +33,16 @@ ht-degree: 85%
 >
 >若要完整使用這些整合，有許多必要的使用者許可權需求、帳戶設定和布建步驟，這些不在本教學課程的討論範圍內。 如果您已在目前的 Experience Cloud 實施中使用這些整合，您應考量下列事項：
 >
->* 檢視[核心服務整合](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/getting-started)的完整需求
->* 檢視 [Analytics for Target 整合](https://experienceleague.adobe.com/zh-hant/docs/target/using/integrate/a4t/before-implement)的完整需求
+>* 檢視[核心服務整合](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)的完整需求
+>* 檢視 [Analytics for Target 整合](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)的完整需求
 
 ## 客群
 
-[客群](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/overview)是 People 核心服務的一部分，可讓您在不同解決方案之間共用客群。例如，您可以在 Audience Manager 中建立受眾，並透過 Target 使用該受眾來提供個人化內容。
+[客群](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview)是 People 核心服務的一部分，可讓您在不同解決方案之間共用客群。例如，您可以在 Audience Manager 中建立受眾，並透過 Target 使用該受眾來提供個人化內容。
 
 實施 A4T (您已完成) 的主要需求如下：
 
-1. 實施 Adobe Experience Platform Identity Service
+1. 實施 Adobe Experience Platform 身分識別服務
 1. 實施 Audience Manager
 1. 實施您想要收到或建立客群的其他解決方案，例如 Target 和 Analytics
 
@@ -49,7 +54,7 @@ ht-degree: 85%
 
 1. 開啟 [Luma 網站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 如[先前的課程](switch-environments.md)所述，確認Debugger將標籤屬性對應至&#x200B;*您的*&#x200B;開發環境
+1. 如&#x200B;*先前的課程*&#x200B;所述，確認Debugger將標籤屬性對應至[您的](switch-environments.md)開發環境
 
    ![Debugger中顯示的標籤開發環境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -71,11 +76,11 @@ ht-degree: 85%
 
 ## Analytics for Target (A4T)
 
-[Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hant) 整合可讓您將 Analytics 資料當成 Target 中報告量度的來源。
+[Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) 整合可讓您將 Analytics 資料當成 Target 中報告量度的來源。
 
 實施 A4T (您已完成) 的主要需求如下：
 
-1. 實施 Adobe Experience Platform Identity Service
+1. 實施 Adobe Experience Platform 身分識別服務
 1. 在 Analytics 頁面檢視信標之前引發 Target 頁面載入請求
 
 A4T 的運作方式是將從 Target 傳至 Analytics 的伺服器端請求與 Analytics 頁面檢視信標拼接在一起 (我們稱為「點擊拼接」)。點擊拼接請求提供活動 (或遞增 Target 型目標量度) 的 Target 請求中，有一個參數與 Analytics 頁面檢視信標中的參數相符。此參數稱為增補資料 ID (SDID)。
@@ -88,7 +93,7 @@ A4T 的運作方式是將從 Target 傳至 Analytics 的伺服器端請求與 An
 
 1. 開啟 [Luma 網站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 如[先前的課程](switch-environments.md)所述，確認Debugger將標籤屬性對應至&#x200B;*您的*&#x200B;開發環境
+1. 如&#x200B;*先前的課程*&#x200B;所述，確認Debugger將標籤屬性對應至[您的](switch-environments.md)開發環境
 
    ![Debugger中顯示的標籤開發環境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -114,12 +119,12 @@ A4T 的運作方式是將從 Target 傳至 Analytics 的伺服器端請求與 An
 
 實施客戶屬性 (您已完成) 的主要需求如下：
 
-1. 實施 Adobe Experience Platform Identity Service
+1. 實施 Adobe Experience Platform 身分識別服務
 1. 在&#x200B;*之前，透過ID服務設定客戶ID* Target和Analytics引發其要求（您已使用標籤中的規則排序功能完成）
 
 ### 驗證客戶屬性實施
 
-在先前的課程中，您已驗證客戶 ID 已同時傳遞至 Identity Service 和 Target。您也可以驗證 Analytics 點擊中的客戶 ID。目前客戶 ID 是少數不會顯示於 Experience Cloud Debugger 中的參數之一，因此您需使用瀏覽器的 JavaScript Console 進行檢視。
+在先前的課程中，您已驗證客戶 ID 已同時傳遞至身分識別服務和 Target。您也可以驗證 Analytics 點擊中的客戶 ID。目前客戶 ID 是少數不會顯示於 Experience Cloud Debugger 中的參數之一，因此您需使用瀏覽器的 JavaScript Console 進行檢視。
 
 1. 開啟 Luma 網站
 1. 開啟瀏覽器的開發人員工具
@@ -142,7 +147,7 @@ A4T 的運作方式是將從 Target 傳至 Analytics 的伺服器端請求與 An
 1. 按一下請求，然後選取「標頭」標籤
 1. 向下捲動，直到您看到某些巢狀參數為止
    1. cid：請求中客戶 ID 部分的標準分隔符號
-   1. crm_id：這是您在 Identity Service 課程中指定的自訂整合程式碼
+   1. crm_id：這是您在身分識別服務課程中指定的自訂整合程式碼
    1. id：來自您 `Email (Hashed)` 資料元素的客戶 ID 值
    1. as：驗證狀態，「1」表示已登入
 

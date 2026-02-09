@@ -4,9 +4,9 @@ description: 瞭解如何啟用資料串流及設定Experience Cloud解決方案
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '567'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,11 @@ ht-degree: 7%
 
 了解如何在 Adobe Experience Platform Web SDK 中設定資料流。
 
-[資料串流](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overview)會告訴Adobe Experience Platform Edge Network要將由Platform Web SDK收集的資料傳送至何處。 在資料串流設定中，您可以啟用Experience Cloud應用程式、Experience Platform帳戶和事件轉送。
+[資料串流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)會告訴Adobe Experience Platform Edge Network要將由Platform Web SDK收集的資料傳送至何處。 在資料串流設定中，您可以啟用Experience Cloud應用程式、Experience Platform帳戶和事件轉送。
+
+>[!WARNING]
+>
+> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
 
 ![網頁SDK、資料串流和Edge Network圖表](assets/dc-websdk-datastreams.png)
 
@@ -65,7 +69,7 @@ ht-degree: 7%
 
 ## 覆寫資料流
 
-[資料流覆寫](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/overrides)可讓您為資料流定義其他設定，然後在特定條件下覆寫您的預設設定。
+[資料流覆寫](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides)可讓您為資料流定義其他設定，然後在特定條件下覆寫您的預設設定。
 
 資料流設定覆寫分為兩個步驟：
 
@@ -78,4 +82,4 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

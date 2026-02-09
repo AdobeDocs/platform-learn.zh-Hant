@@ -3,10 +3,10 @@ title: 新增 Adobe Audience Manager
 description: 瞭解如何使用伺服器端轉送和標籤在您的網站上實施Adobe Audience Manager。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 solution: Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 72%
+source-wordcount: '1781'
+ht-degree: 68%
 
 ---
 
@@ -14,15 +14,20 @@ ht-degree: 72%
 
 本課程將引導您使用伺服器端轉送，逐步啟用 Adobe Audience Manager。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=zh-Hant) (AAM) 提供領先業界的線上受眾資料管理服務，為數位廣告商和發行商提供所需的工具，控制並運用其資料資產，協助促進銷售成果。
+[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) (AAM) 提供領先業界的線上受眾資料管理服務，為數位廣告商和發行商提供所需的工具，控制並運用其資料資產，協助促進銷售成果。
+
+
+>[!WARNING]
+>
+> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
 >
-> * platform launch（使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)**
-> * platform launch伺服器端現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)**
-> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hant)**
+> * Platform Launch （使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * Platform Launch Server Side現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 學習目標
 
@@ -32,7 +37,7 @@ ht-degree: 72%
 1. 使用 Analytics 信標的伺服器端轉送來新增 Audience Manager
 1. 驗證 Audience Manager 實施
 
-## 必要條件
+## 先決條件
 
 若要完成本課程，您需要：
 
@@ -40,11 +45,11 @@ ht-degree: 72%
 
 1. 擁有 Adobe Analytics 的管理員存取權，這樣才能為您用於本教學課程的報表套裝啟用伺服器端轉送。或者，您也可以請組織的現有管理員按照下列指示為您執行此操作。
 
-1. 您的「Audience Manager 子網域」(也稱為「合作夥伴名稱」、「合作夥伴 ID」或「合作夥伴子網域」)。如果您已在網站上實施 Audience Manager，取得此資訊最簡單的方法就是前往您的實際網站，然後開啟 Debugger。子網域會顯示在 Audience Manager 區段的「摘要」標籤中：
+1. 您的「Audience Manager子網域」（也稱為「合作夥伴名稱」、「合作夥伴ID」或「合作夥伴子網域」）。 如果您已在網站上實施 Audience Manager，取得此資訊最簡單的方法就是前往您的實際網站，然後開啟 Debugger。子網域會顯示在 Audience Manager 區段的「摘要」標籤中：
 
    ![您可以使用 Debugger 在實際網站上尋找 Audience Manager 子網域](images/aam-debugger-partner.png)
 
-如果您尚未實施 Audience Manager，請依照下列指示[取得 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=zh-Hant)。
+如果您尚未實施 Audience Manager，請依照下列指示[取得 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)。
 
 ## 實施選項
 
@@ -61,7 +66,7 @@ ht-degree: 72%
 執行 SSF 實施有兩個主要步驟：
 
 1. 在 Analytics Admin Console 中開啟「交換器」，針對&#x200B;*每個報表套裝*&#x200B;將資料從 Analytics 轉送至 Audience Manager。
-1. 透過標籤將程式碼置於適當位置。 為了讓此功能正常運作，您需要安裝 Adobe Experience Platform Identity Service 擴充功能及 Analytics 擴充功能 (您實際上&#x200B;*不*&#x200B;需要 AAM 擴充功能，請見下文說明)。
+1. 透過標籤將程式碼置於適當位置。 為了讓此功能正常運作，您需要安裝 Adobe Experience Platform 身分識別服務擴充功能及 Analytics 擴充功能 (您實際上&#x200B;*不*&#x200B;需要 AAM 擴充功能，請見下文說明)。
 
 ### 在 Analytics Admin Console 中啟用伺服器端轉送
 
@@ -95,13 +100,13 @@ ht-degree: 72%
 >
 >因為SSF必須對個別報表套裝啟用，實際在您網站的報表套裝中部署SSF時，請務必為您實際的報表套裝重複此步驟。
 >
->此外，如果 SSF 選項呈現灰色，您需要將報表套裝對應至您的 Experience Cloud 組織，才能啟用此選項。這在[文件](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=zh-Hant)中皆有說明。
+>此外，如果 SSF 選項呈現灰色，您需要將報表套裝對應至您的 Experience Cloud 組織，才能啟用此選項。這在[文件](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)中皆有說明。
 
-完成此步驟後，如果您已啟用 Adobe Experience Platform Identity Service，資料將會從 Analytics 轉送至 AAM。不過，若要完成程式，讓回應能夠正確地從AAM回到頁面(同時透過Audience Analytics功能回到Analytics)，您也必須在標籤中完成下列步驟。 別擔心，操作很簡單。
+完成此步驟後，如果您已啟用 Adobe Experience Platform 身分識別服務，資料將會從 Analytics 轉送至 AAM。不過，若要完成程式，讓回應能夠正確地從AAM回到頁面(同時透過Audience Analytics功能回到Analytics)，您也必須在標籤中完成下列步驟。 別擔心，操作很簡單。
 
 ### 在標籤中啟用伺服器端轉送
 
-這是啟用 SSF 的兩個步驟中的第二個步驟。您已在AnalyticsAdmin Console中切換開關，現在只需要新增程式碼即可，且只要勾選正確的方塊，就能讓標籤發揮作用。
+這是啟用 SSF 的兩個步驟中的第二個步驟。您已在Analytics Admin Console中切換開關，現在只需要新增程式碼即可，且只要勾選正確的方塊，就能幫您完成哪些標籤。
 
 >[!NOTE]
 >
@@ -115,9 +120,9 @@ ht-degree: 72%
 
 1. 展開 `Adobe Audience Manager` 區段
 
-1. 勾選方塊&#x200B;**[!UICONTROL 自動與Audience Manager]**&#x200B;共用Analytics資料。 這會將 Audience Manager 的「模組」(程式碼) 新增至 Analytics `AppMeasurement.js` 實施。
+1. 勾選方塊&#x200B;**[!UICONTROL 自動與Audience Manager共用Analytics資料]**。 這會將 Audience Manager 的「模組」(程式碼) 新增至 Analytics `AppMeasurement.js` 實施。
 
-1. 新增您的「Audience Manager 子網域」(也稱為「合作夥伴名稱」、「合作夥伴 ID」或「合作夥伴子網域」)。請依照下列指示操作，[取得您的 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=zh-Hant)。
+1. 新增您的「Audience Manager子網域」（也稱為「合作夥伴名稱」、「合作夥伴ID」或「合作夥伴子網域」）。 請依照下列指示操作，[取得您的 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)。
 
 1. 按一下&#x200B;**[!UICONTROL 儲存至程式庫並建置]**
 
@@ -143,7 +148,7 @@ ht-degree: 72%
 
 #### 驗證 Debugger 中的合作夥伴 ID
 
-接下來，也可以驗證 Debugger 是否從程式碼中取得正確的「合作夥伴 ID」(亦為「合作夥伴子網域」等名稱)。
+接下來，我們也可以驗證Debugger是否從程式碼中擷取正確的「合作夥伴ID」（亦即「合作夥伴子網域」等）。
 
 1. 在 Debugger 中，仍在「摘要」標籤上，向下捲動至「Audience Manager」區段
 1. 驗證「合作夥伴」底下的「合作夥伴 ID/子網域」。
@@ -174,7 +179,7 @@ ht-degree: 72%
 
 >[!WARNING]
 >
->請留意誤判的「成功」，如果有回應且一切看似正常運作，請&#x200B;**確定**&#x200B;您有該「stuff」物件。 如果沒有該物件，您可能會在回應中看到顯示 &quot;status&quot;:&quot;SUCCESS&quot; 的訊息。雖然聽起來不合理，但這實際上證明了它&#x200B;**並非**&#x200B;正常運作。如果您看到這個訊息，表示您已完成這第二個步驟（標籤中的程式碼），但AnalyticsAdmin Console中的轉送（此區段的第一個步驟）尚未完成。 在這個情況下，您需要確認已在 Analytics Admin Console 中啟用 SSF。如果您已啟用且尚未經過 4 個小時，請耐心等候。
+>請留意誤判的「成功」，如果有回應且一切看似正常運作，請&#x200B;**確定**&#x200B;您有該「stuff」物件。 如果沒有該物件，您可能會在回應中看到顯示 &quot;status&quot;:&quot;SUCCESS&quot; 的訊息。雖然聽起來不合理，但這實際上證明了它&#x200B;**並非**&#x200B;正常運作。如果您看到這個訊息，表示您已完成這第二個步驟（標籤中的程式碼），但Analytics Admin Console中的轉送（此區段的第一個步驟）尚未完成。 在這個情況下，您需要確認已在 Analytics Admin Console 中啟用 SSF。如果您已啟用且尚未經過 4 個小時，請耐心等候。
 
 ![AA 回應 - 誤判成功](images/aam-responseFalseSuccess.png)
 

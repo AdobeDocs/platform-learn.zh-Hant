@@ -3,9 +3,9 @@ title: 透過Platform Web SDK將資料串流至Adobe Experience Platform
 description: 瞭解如何使用網頁SDK將網頁資料串流至Adobe Experience Platform。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2338'
 ht-degree: 4%
 
 ---
@@ -15,6 +15,11 @@ ht-degree: 4%
 了解如何使用 Platform Web SDK 將 Web 資料串流傳輸至 Adob&#x200B;&#x200B;e Experience Platform。
 
 Experience Platform是所有新Experience Cloud應用程式(例如Adobe Real-Time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer)的骨幹。 這些應用程式的設計是要使用Platform Web SDK作為其最佳的Web資料收集方法。
+
+
+>[!WARNING]
+>
+> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
 
 ![網頁SDK和Adobe Experience Platform圖表](assets/dc-websdk-aep.png)
 
@@ -44,7 +49,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ## 建立資料集
 
-所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
+所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
 
 讓我們為您的Luma Web事件資料設定資料集：
 
@@ -160,7 +165,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!INFO]
 >
->  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/queries/explore-data)。
+>  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
 
 
 ## 為即時客戶個人檔案啟用資料集和結構描述
@@ -305,7 +310,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 1. 選取&#x200B;**[!UICONTROL 下一步]**
 
    ![建立客群](assets/merge-policy-set-active-on-edge.png)
-1. 繼續選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以繼續完成工作流程的其他步驟，並選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存您的設定
+1. 繼續選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以繼續完成工作流程的其他步驟，並選取&#x200B;**[!UICONTROL 完成]**以儲存您的設定
    ![建立客群](assets/merge-policy-finish.png)
 
 您現在可以建立對象，以便在Edge上評估。
@@ -340,4 +345,4 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

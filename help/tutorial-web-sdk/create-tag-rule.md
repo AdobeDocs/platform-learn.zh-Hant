@@ -4,9 +4,9 @@ description: 瞭解如何使用標籤規則，透過XDM物件將事件傳送至P
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1982'
+source-wordcount: '2014'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 2%
 # 建立標籤規則
 
 瞭解如何使用標籤規則，透過XDM物件將事件傳送至Adobe Experience Platform Edge Network。 標籤規則是事件、條件和動作的組合，可告知標籤屬性執行動作。 透過Platform Web SDK，規則可用來將事件與正確的資料傳送至Platform Edge Network。
+
+
+>[!WARNING]
+>
+> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
 
 ## 學習目標
 
@@ -70,7 +75,7 @@ ht-degree: 2%
 
 這部影片會概述此程式：
 
->[!VIDEO](https://video.tv.adobe.com/v/3454038/?learn=on&enablevpops&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### 全域設定欄位
 
@@ -98,7 +103,7 @@ ht-degree: 2%
    >
    > 訂單編號越低，執行的時間就越早。 因此，我們提供「全域組態」低訂購數量。
 
-1. 選取&#x200B;**[!UICONTROL 保留變更]**&#x200B;以返回主規則畫面
+1. 選取&#x200B;**[!UICONTROL 保留變更]**以返回主規則畫面
    ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-loaded.png)
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 新增]**
@@ -237,8 +242,8 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->請注意數值變數的轉譯方式，資料層中的字串值（例如`price`和`qty`）會重新格式化為資料元素中的數字。 這些格式需求對於Platform中的資料完整性很重要，並在[設定結構描述](configure-schemas.md)步驟中確定。 在範例中，**[!UICONTROL 數量]**&#x200B;使用&#x200B;**[!UICONTROL 整數]**&#x200B;資料型別。
->&#x200B;> ![XDM結構描述資料型別](assets/set-up-analytics-quantity-integer.png)
+>請注意數值變數的轉譯方式，資料層中的字串值（例如`price`和`qty`）會重新格式化為資料元素中的數字。 這些格式需求對於Platform中的資料完整性很重要，並在[設定結構描述](configure-schemas.md)步驟中確定。 在範例中，**[!UICONTROL 數量]**&#x200B;使用&#x200B;**[!UICONTROL 整數]**資料型別。
+> ![XDM結構描述資料型別](assets/set-up-analytics-quantity-integer.png)
 
 現在，我們將陣列對應至XDM物件：
 
@@ -344,7 +349,7 @@ ht-degree: 2%
 
 1. 選取&#x200B;**[!UICONTROL 進階]**&#x200B;下拉式清單，並在`50`順序&#x200B;**[!UICONTROL 中輸入]**。 這將確保此規則在您設定的所有其他規則（以`1`或`20`作為其[!UICONTROL 順序]）之後引發。
 
-1. 選取&#x200B;**[!UICONTROL 保留變更]**&#x200B;以返回主規則畫面
+1. 選取&#x200B;**[!UICONTROL 保留變更]**以返回主規則畫面
    ![選取程式庫已載入觸發器](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. 在&#x200B;**[!UICONTROL 動作]**&#x200B;區段中，選取&#x200B;**[!UICONTROL 新增]**
@@ -395,4 +400,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

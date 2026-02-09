@@ -2,10 +2,10 @@
 title: 新增內嵌程式碼
 description: 瞭解如何取得標籤屬性的內嵌程式碼並在您的網站中實作。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 43%
+source-wordcount: '1069'
+ht-degree: 42%
 
 ---
 
@@ -13,13 +13,18 @@ ht-degree: 43%
 
 在本課程中，您將實作標籤屬性的開發環境非同步內嵌程式碼。 在此過程中，您將瞭解標籤的兩個主要概念：環境和內嵌程式碼。
 
+
+>[!WARNING]
+>
+> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
 >
-> * platform launch（使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)**
-> * platform launch伺服器端現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)**
-> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hant)**
+> * Platform Launch （使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * Platform Launch Server Side現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 學習目標
 
@@ -30,9 +35,9 @@ ht-degree: 43%
 * 將標籤內嵌程式碼新增至html檔案
 * 說明標籤內嵌程式碼相對於html檔案`<head>`中其他程式碼的最佳位置
 
-## 複製內嵌程式碼
+## 複製嵌入程式碼
 
-內嵌程式碼是您放在網頁上的`<script>`標籤，可載入並執行您在標籤中建置的邏輯。 如果您非同步載入程式庫，瀏覽器會繼續載入頁面，擷取標籤程式庫，然後同時執行。 在這種情況下，只會有一個內嵌程式碼，您會將其放在 `<head>` 中。（以同步方式部署標籤時，會有兩個內嵌程式碼，一個放在`<head>`中，另一個放在`</body>`之前）。
+內嵌程式碼是您放在網頁上的`<script>`標籤，可載入並執行您在標籤中建置的邏輯。 如果您非同步載入程式庫，瀏覽器會繼續載入頁面，擷取標籤程式庫，然後同時執行。 在這種情況下，只會有一個嵌入程式碼，您會將其放在 `<head>` 中。（以同步方式部署標籤時，會有兩個內嵌程式碼，一個放在`<head>`中，另一個放在`</body>`之前）。
 
 在屬性Overview畫面中，按一下左側導覽中的&#x200B;**[!UICONTROL 環境]**&#x200B;以移至環境頁面。 請注意，系統已為您預先建立開發、測試和生產環境。
 
@@ -42,27 +47,27 @@ ht-degree: 43%
 
 標籤允許使用其他開發環境，這在有多位開發人員同時處理不同專案的大型組織中很有用。
 
-完成本教學課程只需用到這些環境。環境可讓您擁有位於不同URL託管的不同標籤程式庫有效版本，這樣您就能安全地新增功能，並在正確的時間提供給適當的使用者使用（例如開發人員、QA工程師、大眾等） 。
+完成本教學課程只需用到這些環境。環境可讓您擁有位於不同URL託管的不同標籤程式庫有效版本，這樣您就能安全地新增功能，並在適當的時間提供給適當的使用者使用（例如開發人員、QA工程師、大眾等）。
 
-現在來複製內嵌程式碼：
+現在來複製嵌入程式碼：
 
 1. 在&#x200B;**[!UICONTROL 開發]**&#x200B;列中，按一下「安裝」圖示![安裝圖示](images/launch-installIcon.png)以開啟強制回應視窗。
 
 1. 請注意，標籤會預設為非同步內嵌程式碼
 
-1. 按一下「複製」圖示 ![「複製」圖示](images/launch-copyIcon.png)，將內嵌程式碼複製到剪貼簿。
+1. 按一下「複製」圖示 ![「複製」圖示](images/launch-copyIcon.png)，將嵌入程式碼複製到剪貼簿。
 
 1. 按一下&#x200B;**[!UICONTROL 關閉]**&#x200B;以關閉強制回應視窗。
 
    ![「安裝」圖示](images/launch-copyInstallCode.png)
 
-## 在範例 HTML 頁面的 `<head>` 中實施內嵌程式碼
+## 在範例 HTML 頁面的 `<head>` 中實施嵌入程式碼
 
-內嵌程式碼應在將共用屬性之所有 HTML 頁面的 `<head>` 元素中實施。您可能有一或數個可跨網站全域控制`<head>`的範本檔案，能讓新增標籤的程式相當簡單明瞭。
+嵌入程式碼應在將共用屬性之所有 HTML 頁面的 `<head>` 元素中實施。您可能有一或數個可跨網站全域控制`<head>`的範本檔案，能讓新增標籤的程式相當簡單明瞭。
 
 如果沒有，請複製範例html頁面程式碼並將其貼到程式碼編輯器中。 如果您需要編輯器，可使用免費的開放原始碼編輯器 [Brackets](https://brackets.io/)。
 
-+++範例html頁面程式碼
++++html頁面程式碼範例
 
 ```html
 <!doctype html>
@@ -104,14 +109,14 @@ ht-degree: 43%
 <body>
     <h1>Tags: Sample HTML Page</h1>
     <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-    <p>See <a href="https://docs.adobe.com/content/help/zh-Hant/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
 </body>
 </html>
 ```
 
 +++
 
-將第 34 行或其附近的現有內嵌程式碼取代為您剪貼簿上的內容，然後儲存頁面。現在，請在網頁瀏覽器中開啟該頁面。如果您使用 `file://` 通訊協定載入頁面，必須在程式碼編輯器中的內嵌程式碼 URL 開頭新增「https:」。範例頁面的第 33 到 36 行看起來可能像這樣：
+將第 34 行或其附近的現有嵌入程式碼取代為您剪貼簿上的內容，然後儲存頁面。現在，請在網頁瀏覽器中開啟該頁面。如果您使用 `file://` 通訊協定載入頁面，必須在程式碼編輯器中的內嵌程式碼 URL 開頭新增「https:」。範例頁面的第 33 到 36 行看起來可能像這樣：
 
 ```html
     <!--Tags Header Embed Code: REPLACE LINE 39 WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
@@ -122,7 +127,7 @@ ht-degree: 43%
 開啟網頁瀏覽器的開發人員工具，然後前往「網路」標籤。此時，您應該會看到標籤環境URL的404錯誤：
 ![404錯誤](images/samplepage-404.png)
 
-404錯誤是預期會出現的情況，因為您尚未在此標籤環境中建置程式庫。 您會在下一個課程中執行該操作。如果您看到「失敗」訊息 (而不是 404 錯誤)，表示您可能忘了將 `https://` 通訊協定加入內嵌程式碼中。同樣地，如果您使用 `file://` 通訊協定載入範例頁面，則只需指定 `https://` 通訊協定即可。進行該變更並重新載入頁面，直到 404 錯誤出現為止。
+404錯誤是預期會出現的情況，因為您尚未在此標籤環境中建置程式庫。 您會在下一個課程中執行該操作。如果您看到「失敗」訊息 (而不是 404 錯誤)，表示您可能忘了將 `https://` 通訊協定加入嵌入程式碼中。同樣地，如果您使用 `file://` 通訊協定載入範例頁面，則只需指定 `https://` 通訊協定即可。進行該變更並重新載入頁面，直到 404 錯誤出現為止。
 
 ## 標籤實作最佳作法
 

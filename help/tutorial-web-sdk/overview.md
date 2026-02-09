@@ -3,9 +3,9 @@ title: 使用 Web SDK 教學課程實作 Adobe Experience Cloud
 description: 了解如何使用 Adobe Experience Platform Web SDK 實施 Experience Cloud 應用程式。
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '748'
 ht-degree: 7%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 7%
 
 了解如何使用 Adobe Experience Platform Web SDK 實施 Experience Cloud 應用程式。
 
-Experience Platform Web SDK是使用者端的JavaScript資料庫，可讓Adobe Experience Cloud的客戶透過Adobe Experience Platform Edge Network與Adobe應用程式和協力廠商服務互動。 如需詳細資訊，請參閱[Adobe Experience Platform Web SDK概觀](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge/home)。
+Experience Platform Web SDK是使用者端的JavaScript資料庫，可讓Adobe Experience Cloud的客戶透過Adobe Experience Platform Edge Network與Adobe應用程式和協力廠商服務互動。 如需詳細資訊，請參閱[Adobe Experience Platform Web SDK概觀](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home)。
 
 ![Experience Platform Web SDK架構](assets/dc-websdk.png)
 
@@ -48,7 +48,7 @@ Experience Platform Web SDK是使用者端的JavaScript資料庫，可讓Adobe E
    * **[!UICONTROL 屬性權利]** — 許可權&#x200B;**[!UICONTROL 核准]**、**[!UICONTROL 開發]**、**[!UICONTROL 編輯屬性]**、**[!UICONTROL 管理環境]**、**[!UICONTROL 管理擴充功能]**&#x200B;以及&#x200B;**[!UICONTROL 發佈]**，
    * **[!UICONTROL 公司權利]** — 使用&#x200B;**[!UICONTROL 管理屬性]**&#x200B;的許可權
 
-     如需有關標籤許可權的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/admin/user-permissions)。
+     如需有關標籤許可權的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions)。
 
 * 針對&#x200B;**Experience Platform**，您必須擁有：
 
@@ -62,13 +62,13 @@ Experience Platform Web SDK是使用者端的JavaScript資料庫，可讓Adobe E
 
      所有Experience Cloud客戶都應該可以使用所需的功能，即使您並非Real-Time CDP等平台型應用程式的客戶。
 
-     如需有關Platform存取控制的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/access-control/home)。
+     如需有關Platform存取控制的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)。
 
-* 針對選用的&#x200B;**Adobe Analytics**&#x200B;課程，您必須擁有[報表套裝設定、處理規則和Analysis Workspace的管理員存取權](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-console/home)
+* 針對選用的&#x200B;**Adobe Analytics**&#x200B;課程，您必須擁有[報表套裝設定、處理規則和Analysis Workspace的管理員存取權](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* 對於選用的&#x200B;**Adobe Target**&#x200B;課程，您必須擁有[編輯者或核准者](https://experienceleague.adobe.com/zh-hant/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)存取權。
+* 對於選用的&#x200B;**Adobe Target**&#x200B;課程，您必須擁有[編輯者或核准者](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)存取權。
 
-* 對於選用的&#x200B;**Audience Manager**&#x200B;課程，您必須有權建立、讀取和寫入特徵、區段和目的地。 如需詳細資訊，請參閱有關[Audience Manager角色型存取控制](https://experienceleague.adobe.com/zh-hant/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)的教學課程。
+* 對於選用的&#x200B;**Audience Manager**&#x200B;課程，您必須有權建立、讀取和寫入特徵、區段和目的地。 如需詳細資訊，請參閱有關[Audience Manager角色型存取控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)的教學課程。
 
 
 >[!NOTE]
@@ -81,6 +81,11 @@ Experience Platform Web SDK是使用者端的JavaScript資料庫，可讓Adobe E
 
 ## 載入Luma網站
 
+
+>[!WARNING]
+>
+> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
+
 在個別的瀏覽器分頁中載入[Luma網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"}，並將它加入書籤，以便在教學課程期間視需要輕鬆載入。 除了能夠載入我們的託管生產網站，您不需要任何其他存取Luma的許可權。
 
 [![Luma網站](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"}
@@ -89,4 +94,4 @@ Experience Platform Web SDK是使用者端的JavaScript資料庫，可讓Adobe E
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
