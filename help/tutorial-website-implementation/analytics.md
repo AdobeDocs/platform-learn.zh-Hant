@@ -12,7 +12,7 @@ ht-degree: 68%
 
 # 新增 Adobe Analytics
 
-在本課程中，您將實施 [Adobe Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)，並建立規則以將資料傳送至 Adobe Analytics。
+在本課程中，您將實施 [Adobe Analytics 擴充功能](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hant)，並建立規則以將資料傳送至 Adobe Analytics。
 
 
 >[!WARNING]
@@ -25,9 +25,9 @@ ht-degree: 68%
 >
 >Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
 >
-> * Platform Launch （使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * Platform Launch Server Side現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * Platform Launch （使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)**
+> * Platform Launch Server Side現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)**
+> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hant)**
 
 ## 學習目標
 
@@ -46,7 +46,7 @@ ht-degree: 68%
 
 您應該已經完成[設定標籤](create-a-property.md)和[新增Identity服務](id-service.md)中的課程。
 
-此外，您至少需要一個報表套裝 ID 和追蹤伺服器。如果您沒有任何可用於本教學課程的測試/開發報表套裝，請建立一個報表套裝。如果您不確定如何執行此動作，請參閱[文件](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。您可以向目前的實施、Adobe Consultant 或客戶服務代表擷取追蹤伺服器。
+此外，您至少需要一個報表套裝 ID 和追蹤伺服器。如果您沒有任何可用於本教學課程的測試/開發報表套裝，請建立一個報表套裝。如果您不確定如何執行此動作，請參閱[文件](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。您可以向目前的實施、Adobe Consultant 或客戶服務代表擷取追蹤伺服器。
 
 ## 新增 Analytics 擴充功能
 
@@ -201,7 +201,7 @@ Analytics 擴充功能包含兩個主要部分：
 
 ### 新增 Adobe Analytics Product String 擴充功能
 
-如果您已熟悉 Adobe Analytics 實施，那您可能熟悉[產品變數](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html)。產品變數的語法非常特定，而且會根據內容以稍微不同的方式使用。為協助您更輕鬆地在標籤中填入產品變數，我們已在標籤擴充功能市集中建立三個額外的擴充功能！ 在本節中，您將新增 Adobe Consulting 建立的擴充功能以用於產品詳細資料頁面上。
+如果您已熟悉 Adobe Analytics 實施，那您可能熟悉[產品變數](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=zh-Hant)。產品變數的語法非常特定，而且會根據內容以稍微不同的方式使用。為協助您更輕鬆地在標籤中填入產品變數，我們已在標籤擴充功能市集中建立三個額外的擴充功能！ 在本節中，您將新增 Adobe Consulting 建立的擴充功能以用於產品詳細資料頁面上。
 
 **新增 `Adobe Analytics Product String` 擴充功能的方式**
 
@@ -431,7 +431,7 @@ Analytics 擴充功能包含兩個主要部分：
 
 此外掛程式的用途是，在訪客重新整理頁面或使用瀏覽器的返回按鈕回到已設定值的頁面時，避免程式碼中的值錯誤地重複。在本課程中，您將使用此外掛程式來防止 `clickthrough` 事件重複。
 
-此外掛程式的程式碼可在 [Analytics 文件](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html)中取得，也會呈現於此處，以方便您複製貼上。
+此外掛程式的程式碼可在 [Analytics 文件](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=zh-Hant)中取得，也會呈現於此處，以方便您複製貼上。
 
 1. 複製下列程式碼
 
