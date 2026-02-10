@@ -3,10 +3,11 @@ title: Adobe Experience Manager Assets與Dynamic Media
 description: Adobe Experience Manager Assets與Dynamic Media
 kt: 5342
 doc-type: tutorial
-source-git-commit: 8c2abe62aa14af103f90eac71b57261846d3346a
+exl-id: f287d101-2ebc-480a-adad-9fc180cf614e
+source-git-commit: 3c56760cee47197130cdf7bfc32540c208a86917
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 4%
+source-wordcount: '149'
+ht-degree: 2%
 
 ---
 
@@ -19,12 +20,18 @@ ht-degree: 4%
 ## 先決條件
 
 - 存取AEM Assets和Dynamic Media
+- 存取Adobe Photoshop
+- 存取Adobe Journey Optimizer
 
 ## 練習
 
-[1.4.1 AEM Assets &amp; Dynamic Media快速入門](./ex1.md){target="_blank"}
+[1.4.1建立您的資產和動態媒體範本](./ex1.md){target="_blank"}
 
-TBC。
+在本練習中，您將使用Adobe Photoshop建立各種影像，然後透過AEM Assets Dynamic Media將其設定為動態範本。
+
+[1.4.2將您的Dynamic Media範本與Adobe Journey Optimizer搭配使用](./ex2.md){target="_blank"}
+
+在本練習中，您將使用在Adobe Journey Optimizer中透過AEM Assets Dynamic Media建立的範本，以高度個人化電子郵件。
 
 ![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
