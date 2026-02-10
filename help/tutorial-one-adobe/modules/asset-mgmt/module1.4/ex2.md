@@ -3,10 +3,11 @@ title: 搭配Adobe Journey Optimizer使用您的動態媒體範本
 description: 搭配Adobe Journey Optimizer使用您的動態媒體範本
 kt: 5342
 doc-type: tutorial
-source-git-commit: 261475b85bfb15f7e9f630d1c5203732c2d4c254
+exl-id: 0dd499cc-ec3b-42c3-9c08-6512ea5b9377
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 2%
 
 ---
 
@@ -82,9 +83,69 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/gsemail32.png)
 
-您應該會看到此訊息。
+您應該會看到此訊息。 您也可以。 請注意&#x200B;**PARAMETERS**&#x200B;可讓您變更動態媒體範本的引數。
 
 ![Journey Optimizer](./images/gsemail33.png)
+
+## 1.4.2.2個人化Dynamic Media範本
+
+如上一個練習所述，AJO現在需要動態決定哪些值應該成為Dynamic Media範本的一部分。
+
+如同在上一個練習的&#x200B;**預覽**&#x200B;步驟中，**city_paris**、**city_dubai**&#x200B;和&#x200B;**city_ny**&#x200B;欄位應設為1，表示這些影像將會隱藏。
+
+針對欄位&#x200B;**title**，按一下個人化圖示。
+
+![Journey Optimizer](./images/gsemail34.png)
+
+取代預設文字如下： `Hi {{profile.person.name.firstName}}`。 按一下&#x200B;**儲存**。
+
+![Journey Optimizer](./images/gsemail35.png)
+
+針對欄位&#x200B;**body**，按一下個人化圖示。
+
+![Journey Optimizer](./images/gsemail36.png)
+
+取代預設文字如下： `CitiSignal is coming to {{profile.homeAddress.city}}!`。 按一下&#x200B;**儲存**。
+
+![Journey Optimizer](./images/gsemail37.png)
+
+確定欄位&#x200B;**`dynamic_city_hide`**&#x200B;已設為0。 按一下欄位&#x200B;**`dynamic_city_image`**&#x200B;的個人化圖示。
+
+![Journey Optimizer](./images/gsemail38.png)
+
+取代預設文字如下： `--aepUserLdap--CitiSignalDM/citisignal-fiber-max-is-coming_citisignal-{{profile._experienceplatform.individualCharacteristics.fiber_rollout.closest_rollout_city}}-1`。 按一下&#x200B;**儲存**。
+
+![Journey Optimizer](./images/gsemail39.png)
+
+您應該會看到此訊息。 由於動態變數在電子郵件編輯器的內容中無法使用，影像不再在此處呈現。
+
+按一下&#x200B;**儲存**。
+
+![Journey Optimizer](./images/gsemail40.png)
+
+最常測試您的組態，按一下&#x200B;**模擬內容**，然後選取&#x200B;**模擬內容**。
+
+![Journey Optimizer](./images/gsemail41.png)
+
+您應該會看到類似這樣的內容。 如果您沒有可用的測試設定檔，您可以移至&#x200B;**管理測試設定檔**&#x200B;來新增它們。
+
+一旦您有可用的測試設定檔包含測試此使用案例所需的資料後，您就可以從一個設定檔切換到另一個設定檔，以動態檢視變更發生。
+
+以下是連結至轉出城市（紐約）的個人檔案。
+
+![Journey Optimizer](./images/gsemail42.png)
+
+以下是連結至轉出城市巴黎的設定檔。
+
+![Journey Optimizer](./images/gsemail43.png)
+
+以下是與Dubai轉出城市相關的設定檔。
+
+按一下 **關閉**。
+
+![Journey Optimizer](./images/gsemail44.png)
+
+您現在已經完成此練習。 不需要發佈您的電子郵件行銷活動。
 
 ## 後續步驟
 

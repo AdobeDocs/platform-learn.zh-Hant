@@ -4,9 +4,9 @@ description: Adobe Experience Manager Assets與Dynamic Media
 kt: 5342
 doc-type: tutorial
 exl-id: f287d101-2ebc-480a-adad-9fc180cf614e
-source-git-commit: 3c56760cee47197130cdf7bfc32540c208a86917
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '167'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,12 @@ ht-degree: 2%
 ## 學習目標
 
 - 瞭解如何以各種方式使用AEM Assets和Dynamic Media。
+
+## 影片
+
+在這段影片中，您將獲得本練習中所有步驟的說明和示範。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479788?quality=12&learn=on)
 
 ## 先決條件
 

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2f9a3eef-16ef-497c-97f7-377ff9ed2f82
-source-git-commit: c92e21cbc385eb1cf31887c1f829af0e9ddf6ae6
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1022'
 ht-degree: 1%
 
 ---
@@ -63,10 +63,6 @@ ht-degree: 1%
 
 ![WF](./images/blueprint4.png)
 
-您應該會看到此訊息。 安裝可能需要幾分鐘的時間。
-
-![WF](./images/blueprint5.png)
-
 幾分鐘後，將安裝Blueprint。
 
 ![WF](./images/blueprint6.png)
@@ -89,7 +85,7 @@ ht-degree: 1%
 
 ![WF](./images/wfnp1.png)
 
-輸入程式名稱： `--aepUserLdap-- CitiSignal Fiber Launch`。
+輸入程式名稱： `--aepUserLdap-- - CitiSignal Fiber Launch`。
 
 ![WF](./images/wfp6b.png)
 
@@ -153,9 +149,9 @@ Adobe企業儲存的主要優點包括：
 為您的工作輸入此名稱： `Create layout using approved assets and copy`。
 
 將欄位&#x200B;**指派**&#x200B;設定為角色&#x200B;**Designer**。
-將欄位&#x200B;**Duration**&#x200B;設定為&#x200B;**5天**。
-將前置工作列位設定為&#x200B;**9**。
-輸入欄位&#x200B;**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期（此任務的開始日期應排程在前一個任務的結束日期之後）。
+將欄位**Duration**&#x200B;設定為&#x200B;**5天**。
+將前置工作列位設定為**9**。
+輸入欄位**開始日期**&#x200B;和&#x200B;**到期日期**&#x200B;的日期（此任務的開始日期應排程在前一個任務的結束日期之後）。
 
 按一下畫面中的其他位置以儲存新任務。
 

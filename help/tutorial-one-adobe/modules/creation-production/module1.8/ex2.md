@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 39854816-4572-46e5-8fe4-861da1eb41cf
-source-git-commit: c92e21cbc385eb1cf31887c1f829af0e9ddf6ae6
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -143,9 +143,13 @@ ht-degree: 0%
 
 ![WF](./images/wffio14.png)
 
-身為專案經理，您現在可以看到該影像的最新版本，因此您可以知道正在發生什麼並且正在積極處理此專案。
+身為專案經理，您現在可以看到該影像的最新版本，因此您可以知道正在發生什麼並且正在積極處理此專案。 按一下&#x200B;**在Frame.io**&#x200B;中開啟。
 
 ![WF](./images/wffio15.png)
+
+接著會開啟一個新視窗，顯示Frame.io中的資產。
+
+![WF](./images/wffio15a.png)
 
 ## 1.8.2.5核准資產
 
