@@ -4,7 +4,7 @@ description: 設定您的開發環境
 kt: 5342
 doc-type: tutorial
 exl-id: c9bfb327-362f-4475-89da-8e9788940d56
-source-git-commit: ce3ee3dde103383a6f7897cba36d548058879ea7
+source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ![GSPeM擴充性](./images/commerceagent2.png)
 
-輸入名稱`--aepUserLdap-- vangeluw Commerce Events`。 按一下&#x200B;**儲存**。
+輸入名稱`--aepUserLdap-- Commerce Events`。 按一下&#x200B;**儲存**。
 
 ![GSPeM擴充性](./images/commerceagent4.png)
 
@@ -175,7 +175,7 @@ Adobe Developer命令列介面(CLI)現在也已成功安裝。
 
 ## 後續步驟
 
-移至[使用Cursor.ai開發您的專案](./ex2.md){target="_blank"}
+移至[使用游標來開發您的專案](./ex2.md){target="_blank"}
 
 返回[適用於Adobe Commerce的智慧型開發人員工具](./aiassisteddev.md){target="_blank"}
 

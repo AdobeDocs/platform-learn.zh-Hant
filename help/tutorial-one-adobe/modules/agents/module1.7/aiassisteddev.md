@@ -4,7 +4,7 @@ description: 適用於Adobe Commerce的智慧型開發人員工具
 kt: 5342
 doc-type: tutorial
 exl-id: d6ff0907-260f-4f83-98e2-d22954a03678
-source-git-commit: ce3ee3dde103383a6f7897cba36d548058879ea7
+source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 1%
@@ -15,14 +15,14 @@ ht-degree: 1%
 
 ## 學習目標
 
-在本單元中，您將使用Cursor.ai等智慧型開發人員工具，開發您Adobe Commerce as a Cloud Service環境的擴充功能。 該擴充功能的目標是將傳入的訂單事件轉送至第三方端點。 Adobe Commerce as a Cloud Service中的事件轉送仰賴Adobe I/O App Builder、Adobe I/O Events和Adobe I/O Runtime。 所有這些服務的設定將由Cursor.ai提供協助。
+在本單元中，您將使用智慧型開發人員工具（例如Cursor）來開發您Adobe Commerce as a Cloud Service環境的擴充功能。 該擴充功能的目標是將傳入的訂單事件轉送至第三方端點。 Adobe Commerce as a Cloud Service中的事件轉送仰賴Adobe I/O App Builder、Adobe I/O Events和Adobe I/O Runtime。 所有這些服務的設定將由Cursor協助。
 
 ## 先決條件
 
 - 存取Adobe Commerce as a Cloud Service。
 - 存取Adobe Experience Manager as a Cloud Service。
 - 透過開發人員或系統管理員存取權來存取Adobe I/O。
-- 存取Cursor.ai。
+- 存取游標。
 - 您應該已完成此模組，因為有相依性： [Adobe Experience Manager Cloud Service和Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md)。
 - 您應該已完成此模組，因為有相依性： [Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md)。
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 在本練習中，您將建立您的Adobe I/O App Builder專案，並在電腦上進行一些基本設定。
 
-[1.7.2使用Cursor.ai開發您的專案](./ex2.md){target="_blank"}
+[1.7.2使用游標來開發您的專案](./ex2.md){target="_blank"}
 
 在本練習中，您將使用Adobe的整合入門套件，該套件使用Adobe Developer App Builder來改善即時連線的可靠性，並縮短Adobe Commerce與其他後台系統（例如ERP、CRM和PIM）之間整合的上市時間
 
