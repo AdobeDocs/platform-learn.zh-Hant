@@ -173,7 +173,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail28.png)
 
-之後，您應該會看到快顯視窗，其中顯示GenStudio for Performance Marketing中發佈的所有電子郵件體驗。 選取其中一個可用的電子郵件體驗，然後按一下[使用]。****
+之後，您應該會看到快顯視窗，其中顯示GenStudio for Performance Marketing中發佈的所有電子郵件體驗。 選取其中一個可用的電子郵件體驗，然後按一下[使用]。**&#x200B;**
 
 ![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail29.png)
 
@@ -199,7 +199,7 @@ ht-degree: 0%
 
 將&#x200B;**Type**&#x200B;設定為&#x200B;**外部選擇退出/取消訂閱**，並將URL設定為`https://techinsiders.org/unsubscribe.html` （取消訂閱連結不允許有空白URL）。
 
-按一下「儲存」****，然後按一下熒幕左上角的&#x200B;**箭頭**，以返回促銷活動設定。
+按一下「儲存」**&#x200B;**，然後按一下熒幕左上角的&#x200B;**箭頭**，以返回促銷活動設定。
 
 ![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail39.png)
 
@@ -219,7 +219,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail37.png)
 
-如果您的行銷活動設定沒有問題，您可以按一下[啟動]。****
+如果您的行銷活動設定沒有問題，您可以按一下[啟動]。**&#x200B;**
 
 ![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail40.png)
 

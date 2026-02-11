@@ -51,7 +51,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp6.png)
 
-接著，按一下[繼續]。****
+接著，按一下[繼續]。**&#x200B;**
 
 ![FAC](./images/fedcomp7.png)
 

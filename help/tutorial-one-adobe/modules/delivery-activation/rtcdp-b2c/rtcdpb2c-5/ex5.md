@@ -284,8 +284,8 @@ Amazon Kinesis Data Streams著重於擷取及儲存資料串流。 Kinesis Data 
 
 ![Adobe Experience Platform Data Collection SSF](./images/rlaws7.png)
 
-移至&#x200B;**發佈流程**以發佈您的變更。
-按一下**主要**&#x200B;開啟您的開發程式庫。
+移至&#x200B;**發佈流程**&#x200B;以發佈您的變更。
+按一下&#x200B;**主要**&#x200B;開啟您的開發程式庫。
 
 ![Adobe Experience Platform Data Collection SSF](./images/rlaws11.png)
 

@@ -117,7 +117,7 @@ ht-degree: 5%
 >
 >別忘了，在傳送要求給Adobe I/O之前，您必須具備有效的`access_token`。 若要取得有效的`access_token`，請執行要求&#x200B;**POST — 取得集合** Adobe IO - OAuth **中的存取權杖**。
 
-按一下&#x200B;**傳送**&#x200B;之後，將會建立您的伺服器範本，而在回應中，您會看到名為&#x200B;**instanceId**&#x200B;的欄位。 記下它，因為您會在下一個步驟中需要它。 在此範例中，**instanceId**為
+按一下&#x200B;**傳送**&#x200B;之後，將會建立您的伺服器範本，而在回應中，您會看到名為&#x200B;**instanceId**&#x200B;的欄位。 記下它，因為您會在下一個步驟中需要它。 在此範例中，**instanceId**&#x200B;為
 `52482c90-8a1e-42fc-b729-7f0252e5cebd`。
 
 ![資料擷取](./images/sdkpm6.png)
@@ -282,7 +282,7 @@ ht-degree: 5%
 ![DSN](../../../getting-started/gettingstarted/images/web7.png)
 
 在此範例中，您想要回應檢視特定產品的特定客戶。
-從**Citi Signal**&#x200B;首頁，移至&#x200B;**手機和裝置**，然後按一下產品&#x200B;**Galaxy S24**。
+從&#x200B;**Citi Signal**&#x200B;首頁，移至&#x200B;**手機和裝置**，然後按一下產品&#x200B;**Galaxy S24**。
 
 ![資料擷取](./images/homegalaxy.png)
 
