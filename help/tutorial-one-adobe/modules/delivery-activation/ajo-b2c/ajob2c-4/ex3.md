@@ -4,9 +4,9 @@ description: 此練習說明如何在電子郵件內容中使用區段個人化
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '388'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ![Journey Optimizer](./images/sbp5.png)
 
-開啟&#x200B;**內容元件**，並將&#x200B;**1:1欄**&#x200B;拖曳到AirPods選件上方。
+開啟&#x200B;**內容元件**，並將&#x200B;**1:1資料行**&#x200B;拖曳到AirPods選件上方。
 
 ![Journey Optimizer](./images/sbp6.png)
 
@@ -71,12 +71,12 @@ ht-degree: 1%
 
 然後，您應該保留第一行原樣，並以下列程式碼取代第2行和第3行：
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 您就會擁有此專案。 按一下&#x200B;**儲存**。
 
@@ -107,8 +107,6 @@ ht-degree: 1%
 您已完成此練習。
 
 ## 後續步驟
-
-移至[摘要與優點](./summary.md){target="_blank"}
 
 返回[Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 

@@ -1,28 +1,70 @@
 ---
-title: Adobe Journey Optimizer中的內容卡
-description: Adobe Journey Optimizer中的內容卡
+title: 設定您的關聯式資料基礎
+description: 設定您的關聯式資料基礎
 kt: 5342
 doc-type: tutorial
-source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
+exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
+source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
 workflow-type: tm+mt
-source-wordcount: '87'
-ht-degree: 3%
+source-wordcount: '250'
+ht-degree: 6%
 
 ---
 
-# 3.8.1行銷活動快速入門
+# 3.8.1設定您的關聯式資料基礎
 
-前往[Adobe Experience Cloud](https://experience.adobe.com)登入Adobe Journey Optimizer。 按一下&#x200B;**Journey Optimizer**。
+前往[https://experience.adobe.com](https://experience.adobe.com)登入Adobe Journey Optimizer。 按一下&#x200B;**Journey Optimizer**。
 
-![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
+![AJO OC](./images/aechome.png)
 
-您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。 然後您就會進入沙箱&#x200B;**的**&#x200B;首頁`--aepSandboxName--`檢視。
+您將被重新導向到Journey Optimizer中的&#x200B;**首頁**&#x200B;檢視。 首先，確定您使用正確的沙箱。 要使用的沙箱稱為`--aepSandboxName--`。
 
-![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+![AJO OC](./images/ajohome.png)
+
+## 3.8.1.1關聯式架構設定
+
+關聯式架構是以模型為基礎的資料模型的正式定義。
+
+它會指定：
+
+- 表格集
+- 每個表格中的欄
+- 限制
+- 跨資料表的關係
+
+在以模型為基礎的資料模型中組織結構描述或表格，就是將資料結構化成多個表格。 確保每個表格都儲存一種實體/結構描述型別。
+
+將資料擷取至以用於Adobe Journey Optimizer協調的行銷活動時，可使用下列來源：
+
+- Amazon S3
+- Google Cloud Storage
+- SFTP
+- Snowflake
+- Google BigQuery
+- 資料登陸區域
+- Azure Databricks
+- 本機檔案上傳
+
+本練習的第一步是設定關聯式XDM架構。 在左側功能表中，向下捲動至&#x200B;**資料管理**&#x200B;並選取&#x200B;**結構描述**。 按一下&#x200B;**+建立結構描述**。
+
+![AJO OC](./images/ajoocdata1.png)
+
+選取&#x200B;**關聯式**。
+
+![AJO OC](./images/ajoocdata2.png)
+
+選取&#x200B;**上傳DDL檔案**，然後按一下&#x200B;**選擇檔案**。
+
+![AJO OC](./images/ajoocdata3.png)
+
+現在您的關聯式XDM方案已設定完畢，且資料已內嵌，您就可以開始使用該資料來建立下一個練習中的協調行銷活動。
+
+## 3.8.1.2個資料擷取
+
 
 ## 後續步驟
 
-移至[摘要與優點](./summary.md)
+移至[建立您的協調行銷活動](./ex2.md){target="_blank"}
 
 返回[Adobe Journey Optimizer：行銷活動](./ajocampaigns.md){target="_blank"}
 

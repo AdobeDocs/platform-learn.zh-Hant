@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer翻譯服務
 kt: 5342
 doc-type: tutorial
 exl-id: c0b3e37f-69f5-41e3-8663-0dcf736d1fc0
-source-git-commit: b407941266a3d6151363f07592bd445034d44909
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '142'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 ## 先決條件
 
 - 存取Adobe Journey Optimizer
-- 存取Microsoft Azure翻譯工具
+- 存取Microsoft Azure翻譯人員
 
 ## 練習
 
@@ -35,10 +35,6 @@ ht-degree: 2%
 [3.5.3新增語言至您的電子郵件](./ex3.md)
 
 在本練習中，您會將語言新增至行銷活動中的電子郵件。
-
-[摘要和優點](./summary.md)
-
-本單元摘要和優點概觀。
 
 ![技術內部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

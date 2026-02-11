@@ -1,18 +1,19 @@
 ---
-title: 體驗決策
-description: 體驗決策
+title: Adobe Journey Optimizer Decisioning
+description: Adobe Journey Optimizer Decisioning
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 13d790855601fa6f36c1afa0f2d5faad5fc07eb0
+exl-id: 42f69ae8-114a-4195-b343-c143638d9d34
+source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '277'
 ht-degree: 1%
 
 ---
 
-# 3.7 Adobe Journey Optimizer：體驗決策
+# 3.7 Adobe Journey Optimizer：決策
 
 在本單元中，您將獲得Adobe Journey Optimizer體驗決策功能的實作逐步解說。
 
@@ -35,7 +36,7 @@ Adobe Journey Optimizer可讓您建立個人化優惠，並以協調的方式將
 
 ## 練習
 
-[3.7.1 Experience Decisioning 101](./ex1.md)
+[3.7.1 Adobe Journey Optimizer Decisioning 101](./ex1.md)
 
 在本練習中，您將更瞭解Offer Decisioning的所有不同概念，以及如何在Adobe Journey Optimizer中存取Offer Decisioning。
 
@@ -43,13 +44,9 @@ Adobe Journey Optimizer可讓您建立個人化優惠，並以協調的方式將
 
 在本練習中，您將設定自己的個人化優惠方案和自己的決定，這些將會發佈。
 
-[3.7.3適用於Experience Decisioning的網頁SDK設定](./ex3.md)
+[3.7.3適用於Adobe Journey Optimizer Decisioning的網頁SDK設定](./ex3.md)
 
 在本練習中，您將使用示範網站來測試您的決定。
-
-[摘要和優點](./summary.md)
-
-本單元摘要和優點概觀。
 
 ![技術內部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

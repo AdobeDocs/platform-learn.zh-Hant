@@ -4,9 +4,9 @@ description: AJO和GenStudio for Performance Marketing
 kt: 5342
 doc-type: tutorial
 exl-id: 1424f649-d004-4b14-b8af-927ca1d47de5
-source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -173,7 +173,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail28.png)
 
-之後，您應該會看到快顯視窗，其中顯示GenStudio for Performance Marketing中發佈的所有電子郵件體驗。 選取其中一個可用的電子郵件體驗，然後按一下[使用]。**&#x200B;**
+之後，您應該會看到快顯視窗，其中顯示GenStudio for Performance Marketing中發佈的所有電子郵件體驗。 選取其中一個可用的電子郵件體驗，然後按一下[使用]。****
 
 ![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail29.png)
 
@@ -199,7 +199,7 @@ ht-degree: 0%
 
 將&#x200B;**Type**&#x200B;設定為&#x200B;**外部選擇退出/取消訂閱**，並將URL設定為`https://techinsiders.org/unsubscribe.html` （取消訂閱連結不允許有空白URL）。
 
-按一下「儲存」**&#x200B;**，然後按一下熒幕左上角的&#x200B;**箭頭**，以返回促銷活動設定。
+按一下「儲存」****，然後按一下熒幕左上角的&#x200B;**箭頭**，以返回促銷活動設定。
 
 ![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail39.png)
 
@@ -219,7 +219,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail37.png)
 
-如果您的行銷活動設定沒有問題，您可以按一下[啟動]。**&#x200B;**
+如果您的行銷活動設定沒有問題，您可以按一下[啟動]。****
 
 ![Journey Optimizer](./../../../creation-production/module1.3/images/gsemail40.png)
 
@@ -234,8 +234,6 @@ ht-degree: 0%
 您現在已經完成此練習。
 
 ## 後續步驟
-
-移至[摘要與福利](./summary.md)
 
 返回[Adobe Journey Optimizer：內容管理](./ajocontent.md){target="_blank"}
 

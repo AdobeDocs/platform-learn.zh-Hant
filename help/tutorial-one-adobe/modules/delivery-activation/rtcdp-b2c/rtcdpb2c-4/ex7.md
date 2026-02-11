@@ -1,12 +1,12 @@
 ---
-title: Audience Activation到Microsoft Azure事件中心 — 動作
-description: Audience Activation到Microsoft Azure事件中心 — 動作
+title: Audience Activation至Microsoft Azure事件中心 — 動作
+description: Audience Activation至Microsoft Azure事件中心 — 動作
 kt: 5342
 doc-type: tutorial
 exl-id: bff4d2ee-eaff-4b56-9fa0-4ffc3c368141
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 ## 啟動Azure事件中樞觸發程式
 
-若要顯示Adobe Experience Platform Real-time CDP根據對象資格傳送至Azure事件中樞的裝載，我們需要啟動簡單的Azure事件中樞觸發功能。 此函式將簡單地將裝載「傾印」到Visual Studio Code中的主控台。 但請記住，此函式可透過任何方式，擴充至使用專用API和通訊協定與各種環境進行介面。
+若要顯示Adobe Experience Platform Real-time CDP在符合對象資格後傳送至Azure事件中樞的裝載，我們需要啟動簡單的Azure事件中樞觸發功能。 此函式將簡單地將裝載「傾印」到Visual Studio Code中的主控台。 但請記住，此函式可透過任何方式，擴充至使用專用API和通訊協定與各種環境進行介面。
 
 ### 啟動Visual Studio Code並啟動專案
 
 請確定已開啟並執行Visual Studio Code專案
 
-若要在Visual Studio Code中啟動/停止/重新啟動Azure函式，請參閱上一個練習。
+若要在Visual Studio Code中啟動/停止/重新啟動Azure函式，請參閱先前的練習。
 
 您的Visual Studio Code的&#x200B;**終端機**&#x200B;應該提及類似以下的專案：
 
@@ -109,8 +109,6 @@ For detailed output, run func with --verbose flag.
 **已實現**&#x200B;的對象狀態表示您的設定檔是對象的一部分，而&#x200B;**已退出**&#x200B;狀態表示我們的設定檔已從對象中移除。
 
 ## 後續步驟
-
-移至[摘要與優點](./summary.md){target="_blank"}
 
 返回[Real-Time CDP： Audience Activation到Microsoft Azure事件中心](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 

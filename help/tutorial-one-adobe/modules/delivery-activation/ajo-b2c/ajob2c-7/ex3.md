@@ -3,9 +3,10 @@ title: Offer Decisioning — 測試您的決定
 description: Offer Decisioning — 測試您的決定
 kt: 5342
 doc-type: tutorial
-source-git-commit: 13d790855601fa6f36c1afa0f2d5faad5fc07eb0
+exl-id: 8cfe3d33-9451-46f4-b468-b93cd37d0806
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '148'
 ht-degree: 2%
 
 ---
@@ -29,8 +30,6 @@ ht-degree: 2%
 在下一個練習中，您將瞭解如何將在Adobe Journey Optimizer中建立的優惠和決定與Adobe Target體驗鎖定目標活動結合。
 
 ## 後續步驟
-
-移至[摘要與優點](./summary.md){target="_blank"}
 
 返回[體驗決策](ajo-decisioning.md){target="_blank"}
 

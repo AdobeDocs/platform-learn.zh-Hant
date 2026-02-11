@@ -4,10 +4,10 @@ description: 將活動前往AWS生態系統
 kt: 5342
 doc-type: tutorial
 exl-id: 9b5f1466-d173-40a0-beed-d4e859e64e40
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 2%
+source-wordcount: '1566'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 ## 很高興知道
 
 Adobe Experience Platform支援以各種Amazon服務作為目的地。
-Kinesis和S3都是[設定檔匯出目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=zh-Hant)，可以當作Adobe Experience PlatformReal-Time CDP的一部分使用。
+Kinesis和S3都是[設定檔匯出目的地](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en)，可以當作Adobe Experience PlatformReal-Time CDP的一部分使用。
 您可以輕鬆地將高價值區段事件和相關設定檔屬性饋送至您選擇的系統。
 
 在本練習中，您將瞭解如何設定自己的Amazon Kinesis串流，以將來自Adobe Experience Platform Edge生態系統的事件資料串流到雲端儲存目的地，例如Amazon S3。 如果您想要從Web和行動屬性收集體驗事件，並將它們推送至您的資料集，以便進行分析和作業報告，這個用法很有用。 資料層級通常會在每日匯入大量檔案時，以批次方式擷取資料，不會公開公開http端點（可搭配事件轉送使用）。
@@ -214,7 +214,7 @@ Amazon Kinesis Data Streams著重於擷取及儲存資料串流。 Kinesis Data 
 >
 > 按一下&#x200B;**完成**，您將再也看不到您的認證！
 
-按一下&#x200B;**「完成」**。
+按一下「**完成**」。
 
 ![ETL](./images/cred2.png)
 
@@ -284,8 +284,8 @@ Amazon Kinesis Data Streams著重於擷取及儲存資料串流。 Kinesis Data 
 
 ![Adobe Experience Platform Data Collection SSF](./images/rlaws7.png)
 
-移至&#x200B;**發佈流程**&#x200B;以發佈您的變更。
-按一下&#x200B;**主要**&#x200B;開啟您的開發程式庫。
+移至&#x200B;**發佈流程**以發佈您的變更。
+按一下**主要**&#x200B;開啟您的開發程式庫。
 
 ![Adobe Experience Platform Data Collection SSF](./images/rlaws11.png)
 
@@ -344,8 +344,6 @@ Amazon Kinesis Data Streams著重於擷取及儲存資料串流。 Kinesis Data 
 >一旦您的設定如預期般運作，別忘了開啟AWS Kinesis Data Stream和Data Firehose以避免收費！
 
 ## 後續步驟
-
-移至[摘要與優點](./summary.md){target="_blank"}
 
 返回[Real-Time CDP連線：事件轉送](./aep-data-collection-ssf.md){target="_blank"}
 

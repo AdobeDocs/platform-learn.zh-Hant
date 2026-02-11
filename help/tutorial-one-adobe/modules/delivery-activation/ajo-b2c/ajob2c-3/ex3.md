@@ -4,9 +4,9 @@ description: 使用應用程式內訊息設定行銷活動
 kt: 5342
 doc-type: tutorial
 exl-id: c40b9b8c-9717-403c-bf02-6b8f42a59c05
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 ![應用程式](./images/inapp9.png)
 
-按一下[新增動作&#x200B;**]，然後選取[應用程式內訊息**]。**&#x200B;**
+按一下[新增動作&#x200B;**]，然後選取[應用程式內訊息**]。****
 
 ![應用程式](./images/inapp10.png)
 
@@ -90,12 +90,12 @@ ht-degree: 0%
 ![應用程式](./images/inapp15.png)
 
 對於&#x200B;**標頭**&#x200B;文字，請使用： `CitiSignal Fiber Max`。
-對於&#x200B;**內文**&#x200B;文字，請使用： `Conquer lag with Fiber Max`。
+對於**內文**&#x200B;文字，請使用： `Conquer lag with Fiber Max`。
 
 ![應用程式](./images/inapp16.png)
 
 將文字&#x200B;**#1**&#x200B;按鈕設定為： `Go to Plans`。
-將&#x200B;**目標**&#x200B;設定為`com.adobe.dsn.dxdemo://plans`。
+將**目標**&#x200B;設定為`com.adobe.dsn.dxdemo://plans`。
 
 按一下&#x200B;**檢閱以啟動**。
 
@@ -124,8 +124,6 @@ ht-degree: 0%
 ![應用程式](./images/inapp22.png)
 
 ## 後續步驟
-
-移至[摘要與優點](./summary.md){target="_blank"}
 
 返回[Adobe Journey Optimizer：推送和應用程式內訊息](ajopushinapp.md){target="_blank"}
 

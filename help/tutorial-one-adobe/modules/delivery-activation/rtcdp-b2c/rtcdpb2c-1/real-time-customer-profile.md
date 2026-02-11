@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
@@ -53,10 +53,6 @@ ht-degree: 1%
 [2.1.5在客服中心檢視您正在使用的即時客戶個人檔案](./ex5.md)
 
 在本練習中，您將模擬接聽客戶來電的客服中心員工。 為了真的對此客戶的體驗產生影響，您需要即時存取所有可用的資訊。
-
-[摘要和優點](./summary.md)
-
-本單元摘要和優點概觀。
 
 ![技術內部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

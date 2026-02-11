@@ -4,9 +4,9 @@ description: Foundation - FAC — 建立同盟構成
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '495'
 ht-degree: 3%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp6.png)
 
-接著，按一下[繼續]。**&#x200B;**
+接著，按一下[繼續]。****
 
 ![FAC](./images/fedcomp7.png)
 
@@ -146,8 +146,6 @@ ht-degree: 3%
 ![FAC](./images/fedcomp22.png)
 
 ## 後續步驟
-
-移至[摘要與優點](./summary.md){target="_blank"}
 
 返回[同盟對象構成](./fac.md){target="_blank"}
 

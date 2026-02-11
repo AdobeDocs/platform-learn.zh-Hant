@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 261475b85bfb15f7e9f630d1c5203732c2d4c254
+source-git-commit: 5f3add0f1304d95fdd4da06909dca80151c8a9f1
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1497'
 ht-degree: 3%
 
 ---
@@ -129,7 +129,6 @@ ht-degree: 3%
          + [1.1.5實作Adobe Analytics和Adobe Audience Manager](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex5.md)
          + [1.1.6實作Adobe Target](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex6.md)
          + [1.1.7 Adobe Experience Platform中的XDM結構描述需求](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex7.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/summary.md)
       + 1.2資料擷取 {#dc12}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/data-ingestion.md)
          + [1.2.1探索網站](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
@@ -137,13 +136,11 @@ ht-degree: 3%
          + [1.2.3設定資料集](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex3.md)
          + [1.2.4從離線來源擷取的資料](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5資料登陸區域](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
       + 1.3同盟對象構成 {#dc13}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
          + [1.3.1設定您的Snowflake環境](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex1.md)
          + [1.3.2建立結構描述、資料模型和連結](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex2.md)
          + [1.3.3建立同盟組合](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex3.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/summary.md)
    + Real-Time CDP B2C {#rtcdpb2c}
       + 2.1即時客戶個人檔案 {#rtcdp21}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
@@ -152,13 +149,11 @@ ht-degree: 3%
          + [2.1.3將您自己的即時客戶設定檔視覺化 — API](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md)
          + [2.1.4建立對象 — UI](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex4.md)
          + [2.1.5在客服中心檢視您正在使用的即時客戶個人檔案](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex5.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/summary.md)
       + 2.2智慧型服務 {#rtcdp22}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/intelligent-services.md)
          + [2.2.1 Customer AI：資料準備（擷取）](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex1.md)
          + [2.2.2 Customer AI：建立新執行個體（設定）](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex2.md)
          + [2.2.3 Customer AI：評分控制面板和細分（預測和採取行動）](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex3.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/summary.md)
       + 2.3 Real-Time CDP：建立受眾並採取行動！ {#rtcdp23}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/real-time-cdp-build-a-segment-take-action.md)
          + [2.3.1建立對象](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex1.md)
@@ -167,7 +162,6 @@ ht-degree: 3%
          + [2.3.4採取動作：將對象傳送至S3-destination](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex4.md)
          + [2.3.5採取動作：將對象傳送至Adobe Target](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex5.md)
          + [2.3.6目的地SDK](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex6.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/summary.md)
       + 2.4 Real-Time CDP： Audience Activation至Microsoft Azure事件中心 {#rtcdp24}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
          + [2.4.1設定環境](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex1.md)
@@ -177,7 +171,6 @@ ht-degree: 3%
          + [2.4.5啟用您的對象](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex5.md)
          + [2.4.6建立您的Microsoft Azure專案](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
          + [2.4.7端對端案例](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex7.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/summary.md)
       + 2.5 Real-Time CDP連線：事件轉送{#rtcdp25}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
          + [2.5.1建立Adobe Experience Platform資料收集事件轉送屬性](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex1.md)
@@ -185,14 +178,12 @@ ht-degree: 3%
          + [2.5.3建立和設定自訂webhook](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex3.md)
          + [2.5.4將事件轉送至GCP Pub/Sub](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex4.md)
          + [2.5.5將事件轉送至AWS Kinesis和AWS S3](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/ex5.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/summary.md)
       + 2.6將Apache Kafka的資料串流至Real-Time CDP {#rtcdp26}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md)
          + [2.6.1 Apache Kafka簡介](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex1.md)
          + [2.6.2安裝及設定Kafka叢集](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex2.md)
          + [2.6.3在Adobe Experience Platform中設定HTTP API串流端點](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex3.md)
          + [2.6.4安裝並設定Kafka Connect和Adobe Experience Platform接收器聯結器](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex4.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/summary.md)
    + Adobe Journey Optimizer B2C {#ajob2c}
       + 3.1 Adobe Journey Optimizer：協調流程 {#ajo31}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
@@ -200,7 +191,6 @@ ht-degree: 3%
          + [3.1.2建立要在訊息中使用的片段](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex2.md)
          + [3.1.3建立您的歷程和電子郵件訊息](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex3.md)
          + [3.1.4更新您的資料收集屬性並測試您的歷程](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex4.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/summary.md)
       + 3.2 Adobe Journey Optimizer：外部資料來源和自訂動作 {#ajo32}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md)
          + [3.2.1定義事件](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex1.md)
@@ -208,41 +198,35 @@ ht-degree: 3%
          + [3.2.3定義自訂動作](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex3.md)
          + [3.2.4建立您的歷程和訊息](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
          + [3.2.5觸發您的歷程](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/summary.md)
       + 3.3 Adobe Journey Optimizer：推送和應用程式內訊息 {#ajo33}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
          + [3.3.1推播通知快速入門](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
          + [3.3.2設定包含推送訊息的歷程](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
          + [3.3.3使用應用程式內訊息設定行銷活動](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/summary.md)
       + 3.4 Adobe Journey Optimizer：訂單確認歷程與行銷活動 {#ajo34}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
          + [3.4.1設定觸發式歷程 — 訂購確認](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex1.md)
          + [3.4.2設定行銷活動](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex2.md)
          + [3.4.3在電子郵件訊息中套用區段型個人化](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex3.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/summary.md)
       + 3.5 Adobe Journey Optimizer：翻譯服務 {#ajo35}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
          + [3.5.1翻譯提供者](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex1.md)
          + [3.5.2建立您的行銷活動](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
          + [3.5.3新增語言至您的電子郵件](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/summary.md)
       + 3.6 Adobe Journey Optimizer：內容管理  {#ajo36}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
          + [3.6.1內容卡](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex1.md)
          + [3.6.2登陸頁面](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex2.md)
          + [3.6.3 AJO和GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex3.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/summary.md)
       + 3.7 Adobe Journey Optimizer：體驗決策 {#ajo37}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
          + [3.7.1 Experience Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex1.md)
          + [3.7.2設定優惠方案與決定](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex2.md)
          + [3.7.3適用於Experience Decisioning的網頁SDK設定](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex3.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/summary.md)
       + 3.8 Adobe Journey Optimizer：行銷活動 {#ajo38}
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
-         + [3.8.1行銷活動快速入門](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
-         + [摘要和優點](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/summary.md)
+         + [3.8.1設定您的關聯式資料基礎](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
+         + [3.8.2建立您的協調行銷活動](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex2.md)
 
 + 報告與深入分析 {#reporting}
    + Customer Journey Analytics  {#cjab2c}

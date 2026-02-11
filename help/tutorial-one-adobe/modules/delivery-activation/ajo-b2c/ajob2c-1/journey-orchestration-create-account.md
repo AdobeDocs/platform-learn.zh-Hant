@@ -4,16 +4,16 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: d5eb2a8d-f6cb-4f35-b8d7-ac0b92ba9f85
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 3%
 
 ---
 
 # 3.1 Adobe Journey Optimizer：協調流程
 
-在本單元中，我們將引導您完成使用Adobe Journey Optimizer的步驟。 您將設定事件和歷程，使其根據傳送至AEP的體驗事件的觸發器啟動。
+在本單元中，我們將引導您完成使用Adobe Journey Optimizer的步驟。 您將設定事件和歷程，使其根據傳送至AEP之體驗事件的觸發條件啟動。
 
 ## 學習目標
 
@@ -46,10 +46,6 @@ ht-degree: 3%
 [3.1.3更新您的資料收集屬性並測試您的歷程](./ex4.md)
 
 這將引導您完成Launch的設定，以觸發您的事件並提供正確的裝載，最後，您將能夠傳送電子郵件給自己。
-
-[摘要和優點](./summary.md)
-
-本單元摘要和優點概觀。
 
 ![技術內部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 
