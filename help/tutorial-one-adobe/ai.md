@@ -3,9 +3,9 @@ title: Agentic AI技術實驗室概觀
 description: Agentic AI技術實驗室概觀
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,12 @@ Brand Concierge是AI支援的數位夥伴，可改變品牌與網站訪客互動
 
 - 將ChatGPT和/或Claude.ai連線至&#x200B;**Customer Journey Analytics**&#x200B;並執行資料分析工作
 - 將ChatGPT和/或Claude.ai連線至&#x200B;**Adobe Analytics**&#x200B;並執行資料分析工作
+
+[1.7 Adobe Commerce適用的智慧型開發人員工具](./modules/agents/module1.7/aiassisteddev.md)
+
+**目標**
+
+在本單元中，您將使用Cursor.ai等智慧型開發人員工具，開發您Adobe Commerce as a Cloud Service環境的擴充功能。 該擴充功能的目標是將傳入的訂單事件轉送至第三方端點。 Adobe Commerce as a Cloud Service中的事件轉送仰賴Adobe I/O App Builder、Adobe I/O Events和Adobe I/O Runtime。 所有這些服務的設定將由Cursor.ai提供協助。
 
 ![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 

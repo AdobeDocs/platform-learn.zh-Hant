@@ -3,9 +3,9 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 2%
 
 [1.1 Adobe Firefly Services概觀](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
-在此單元中，您將使用Adobe Firefly Services API、Photoshop API和Microsoft Azure儲存服務產生影像並以程式設計方式儲存。
+在本單元中，您將使用Adobe Firefly Services API、Photoshop API和Microsoft Azure儲存服務來產生影像並以程式設計方式儲存。
 
 [1.2使用Workfront Fusion進行Creative工作流程自動化](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
@@ -94,6 +94,14 @@ ht-degree: 2%
 
 在本單元中，您將使用Adobe IO和App Builder建立自訂應用程式，以擴充GenStudio for Performance Marketing的功能。
 
+[1.7工作流程產生器](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+
+在本單元中，您將使用工作流程產生器，針對可重複的創意設計和自動化使用案例進行解析。
+
+[1.8使用Workfront、Frame.io和Enterprise Storage Management進行整合式檢閱和核准](./modules/creation-production/module1.8/esm.md){target="_blank"}
+
+在本單元中，您將直接將Workfront的專案和工作管理功能與Frame.io的即時檢閱和共同作業體驗連結。
+
 ### 3.資產管理與網站
 
 [1.1 Adobe Experience Manager Cloud Service與Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -104,13 +112,17 @@ ht-degree: 2%
 
 在本單元中，您將探索AEM Assets。
 
+[1.4 Adobe Experience Manager Assets &amp; Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
+
+在本單元中，您將設定AEM Assets Dynamic Media ，並在Adobe Journey Optimizer中使用您的Dynamic Media範本。
+
 [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
 
 在本單元中，您將建立Adobe Commerce as a Cloud Service執行個體。 您將把Commerce執行個體連線到您的AEM Sites CS店面和AEM Assets CS環境。
 
 ### 4.傳遞與啟用
 
-#### 資料收集
+#### 資料彙集
 
 [1.1基礎 — Adobe Experience Platform資料收集與網頁SDK的設定](./modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
 
@@ -140,7 +152,7 @@ ht-degree: 2%
 
 [2.4 Real-Time CDP： Audience Activation至Microsoft Azure事件中心](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
 
-在此單元中，您將設定Microsoft Azure EventHub目的地為Adobe Experience Platform Real-time CDP的即時目的地。
+在本單元中，您將設定Microsoft Azure EventHub目的地為Adobe Experience Platform Real-time CDP的即時目的地。
 
 [2.5 Real-Time CDP連線：事件轉送](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md)
 
