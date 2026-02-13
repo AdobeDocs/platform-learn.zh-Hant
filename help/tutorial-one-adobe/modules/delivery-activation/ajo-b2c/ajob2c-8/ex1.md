@@ -4,9 +4,9 @@ description: 設定您的關聯式資料基礎
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 7a595d9b1fb3dc6a3b5b413e65dbaaaf5ac143c4
+source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1806'
 ht-degree: 2%
 
 ---
@@ -685,6 +685,6 @@ ht-degree: 2%
 
 移至[建立您的協調行銷活動](./ex2.md){target="_blank"}
 
-返回[Adobe Journey Optimizer：行銷活動](./ajocampaigns.md){target="_blank"}
+返回[Adobe Journey Optimizer：協調的行銷活動](./ajocampaigns.md){target="_blank"}
 
 返回[所有模組](./../../../../overview.md){target="_blank"}

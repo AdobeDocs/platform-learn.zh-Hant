@@ -3,9 +3,10 @@ title: 建立您的協調行銷活動
 description: 建立您的協調行銷活動
 kt: 5342
 doc-type: tutorial
-source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
+exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
+source-git-commit: d5008825c083357b5b1479157cb01f795120d409
 workflow-type: tm+mt
-source-wordcount: '67'
+source-wordcount: '68'
 ht-degree: 2%
 
 ---
@@ -32,6 +33,6 @@ ht-degree: 2%
 
 ## 後續步驟
 
-返回[Adobe Journey Optimizer：行銷活動](./ajocampaigns.md){target="_blank"}
+返回[Adobe Journey Optimizer：協調的行銷活動](./ajocampaigns.md){target="_blank"}
 
 返回[所有模組](./../../../../overview.md){target="_blank"}
