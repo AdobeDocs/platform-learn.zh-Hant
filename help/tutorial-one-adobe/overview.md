@@ -3,9 +3,9 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 461024fe62167c26e88688c553b47b8a816bdaa8
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1328'
 ht-degree: 2%
 
 ---
@@ -94,9 +94,9 @@ ht-degree: 2%
 
 在本單元中，您將使用Adobe IO和App Builder建立自訂應用程式，以擴充GenStudio for Performance Marketing的功能。
 
-[1.7工作流程產生器](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+[1.7 Firefly自訂工作流程](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
 
-在本單元中，您將使用工作流程產生器，針對可重複的創意設計和自動化使用案例進行解析。
+在本單元中，您將使用Firefly中的自訂工作流程來解決可重複的創意設計和自動化使用案例。
 
 [1.8使用Workfront、Frame.io和Enterprise Storage Management進行整合式檢閱和核准](./modules/creation-production/module1.8/esm.md){target="_blank"}
 

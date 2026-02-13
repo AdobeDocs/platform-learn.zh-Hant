@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 7d9ad7ec-7744-4ba6-9c11-c434e6cdef09
-source-git-commit: d5008825c083357b5b1479157cb01f795120d409
+source-git-commit: 4ddfc850f335ad773c89c10e18bb3541e514bf5f
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1333'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ ht-degree: 0%
 
 ![Firefly自訂工作流程](./images/ffcw27.png)
 
-## 1.7.1.4縮放
+## 1.7.1.5縮放
 
 您現在已針對1個影像完成此作業。 現在，讓我們針對多個影像使用此工作流程。
 
@@ -203,9 +203,53 @@ ht-degree: 0%
 
 ![Firefly自訂工作流程](./images/ffcw33.png)
 
-## 後續步驟
+## AEM Assets CS中的1.7.1.5存放區
 
-移至[...](./ex1.md){target="_blank"}
+在本練習中，您會將建立為自訂工作流程一部分的資產儲存在AEM Assets CS中。
+
+您應該先在AEM Assets CS環境中建立新資料夾。
+
+若要這麼做，請前往[https://experience.adobe.com](https://experience.adobe.com)。 按一下以開啟&#x200B;**Experience Manager Assets**。
+
+![Firefly自訂工作流程](./images/ffcw50.png)
+
+選取您應命名為`--aepUserLdap-- - CitiSignal AEM + ACCS`的AEM Assets CS環境。
+
+![Firefly自訂工作流程](./images/ffcw51.png)
+
+移至&#x200B;**Assets**&#x200B;並按一下&#x200B;**建立資料夾**。
+
+![Firefly自訂工作流程](./images/ffcw52.png)
+
+輸入名稱： `--aepUserLdap-- - Firefly Custom Workflows`。 按一下&#x200B;**建立**。
+
+![Firefly自訂工作流程](./images/ffcw53.png)
+
+返回您的自訂工作流程，並移至&#x200B;**輸出影像**&#x200B;節點。 按一下&#x200B;**預設**，然後選取&#x200B;**AEM Assets**。
+
+![Firefly自訂工作流程](./images/ffcw57.png)
+
+之後，您應該會看到此快顯視窗。 選取您的AEM Assets CS存放庫，然後選取您剛建立的資料夾，應該命名為： `--aepUserLdap-- - Firefly Custom Workflows`。 按一下&#x200B;**選取**。
+
+![Firefly自訂工作流程](./images/ffcw54.png)
+
+移至&#x200B;**輸出視訊**&#x200B;節點。 按一下&#x200B;**預設**，然後選取&#x200B;**AEM Assets**。
+
+![Firefly自訂工作流程](./images/ffcw55.png)
+
+之後，您應該會看到此快顯視窗。 選取您的AEM Assets CS存放庫，然後選取您剛建立的資料夾，應該命名為： `--aepUserLdap-- - Firefly Custom Workflows`。 按一下&#x200B;**選取**。
+
+![Firefly自訂工作流程](./images/ffcw56.png)
+
+然後您應該擁有此專案。 按一下&#x200B;**執行**。
+
+![Firefly自訂工作流程](./images/ffcw56a.png)
+
+幾分鐘後，您應該會看到建立的資產可在AEM Assets CS的資料夾中使用。
+
+![Firefly自訂工作流程](./images/ffcw58.png)
+
+## 後續步驟
 
 返回[工作流程產生器](./workflowbuilder.md){target="_blank"}
 
