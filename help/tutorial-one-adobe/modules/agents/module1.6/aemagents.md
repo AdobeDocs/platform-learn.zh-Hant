@@ -3,10 +3,11 @@ title: Adobe Experience Manager與代理
 description: Adobe Experience Manager與代理
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6ab5ca7ba774b02c1c48a16c4399ceeaf6bd2a32
+exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
+source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
 workflow-type: tm+mt
-source-wordcount: '64'
-ht-degree: 9%
+source-wordcount: '82'
+ht-degree: 8%
 
 ---
 
@@ -19,6 +20,12 @@ ht-degree: 9%
 ## 先決條件
 
 - 存取Adobe Experience Manager (AEM)
+
+## 影片
+
+在這段影片中，您將獲得本練習中所有步驟的說明和示範。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479941?quality=12&learn=on)
 
 ## 練習
 

@@ -4,9 +4,9 @@ description: 適用於Adobe Commerce的智慧型開發人員工具
 kt: 5342
 doc-type: tutorial
 exl-id: d6ff0907-260f-4f83-98e2-d22954a03678
-source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
+source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '290'
 ht-degree: 1%
 
 ---
@@ -25,6 +25,12 @@ ht-degree: 1%
 - 存取游標。
 - 您應該已完成此模組，因為有相依性： [Adobe Experience Manager Cloud Service和Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md)。
 - 您應該已完成此模組，因為有相依性： [Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md)。
+
+## 影片
+
+在這段影片中，您將獲得本練習中所有步驟的說明和示範。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479939?quality=12&learn=on)
 
 ## 練習
 
