@@ -10,7 +10,7 @@ thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 source-git-commit: 45fec5b2a82e12bdc4a9d017664e8c11d5625cef
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3222'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,7 @@ ht-degree: 0%
 
 若要建立您的[!UICONTROL 資料流]：
 
-1. 登入[Experience Platform資料彙集使用者介面](https://experience.adobe.com/launch/)
-   <!--when will the edge config go live?-->
-
+1. 確定您仍然在` Luma Tutorial`沙箱中
 1. 在左側導覽中選取&#x200B;**[!UICONTROL 資料串流]**
 1. 選取右上角的&#x200B;**[!UICONTROL 新資料流]**&#x200B;按鈕
 
@@ -105,18 +103,19 @@ ht-degree: 0%
 
    ![命名資料串並儲存](assets/websdk-edgeConfig-name.png)
 
-在下一個畫面中，您指定要傳送資料的位置。 若要將資料傳送至Experience Platform：
+資料到達Edge後，[!UICONTROL 資料串流]會將其轉送至設定的[!UICONTROL 服務]。 若要將資料傳送至Experience Platform：
 
-1. 開啟&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;以公開其他欄位
-1. 針對&#x200B;**[!UICONTROL 沙箱]**，請選取`Luma Tutorial`
-1. 針對&#x200B;**[!UICONTROL 事件資料集]**，請選取`Luma Web Events Dataset`
-1. 如果您使用其他Adobe應用程式，歡迎探索其他區段，瞭解這些其他解決方案的Edge設定需要哪些資訊。 請記住，開發Web SDK不僅是為了將資料串流到Experience Platform，也是為了取代其他Adobe應用程式使用的所有先前JavaScript資料庫。 Edge設定是用來指定您要傳送資料之各應用程式的帳戶詳細資訊。
+1. 選取&#x200B;**[!UICONTROL 新增服務]**
+   ![新增服務](assets/websdk-datastream-addService.png)
+
+1. 選取您的`Luma Web Events Dataset`
 1. 選取&#x200B;**[!UICONTROL 儲存]**
-   ![設定資料流並儲存](assets/websdk-edgeConfig-addEnvironment.png)
 
-Edge設定儲存後，產生的畫面會顯示已建立用於開發、測試和生產的三個環境。 可以新增其他開發環境：
-![每個Edge設定都可以有多個環境](assets/websdk-edgeConfig-environments.png)
-這三個環境都包含您剛才輸入的平台詳細資料。 不過，這些詳細資料可依環境以不同方式設定。 例如，您可以讓每個環境將資料傳送至不同的Platform沙箱。 在本教學課程中，我們將不會針對資料流執行任何其他自訂。
+   ![選取您的資料集並儲存](assets/websdk-datastream-addPlatformService.png)
+
+雖然資料流設定中有設定檔資料集選項，但不應使用此選項將一般XDM個別設定檔資料傳送至Platform。 此設定只應用於傳送同意、推播權杖和使用者活動區域詳細資料。
+
+[!UICONTROL Offer Decisioning]、[!UICONTROL Edge Segmentation]、[!UICONTROL Personalization Destinations]和[!UICONTROL Adobe Journey Optimizer]的核取方塊可讓您在Edge上啟用資料，但此教學課程中不使用此核取方塊。
 
 ## 安裝網頁SDK擴充功能
 
