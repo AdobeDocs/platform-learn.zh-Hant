@@ -41,7 +41,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->雖然本教學課程著重於從使用Web SDK的網站串流擷取，但您也可以使用[Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)、[Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview)和[HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http)串流資料。
+>雖然本教學課程著重於從使用Web SDK的網站串流擷取，但您也可以使用[Mobile SDK](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-mobile-sdk/overview)、[Edge Network Server API](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/server-api/overview)和[HTTP API](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/sources/connectors/streaming/http)串流資料。
 
 ## 需要權限
 
