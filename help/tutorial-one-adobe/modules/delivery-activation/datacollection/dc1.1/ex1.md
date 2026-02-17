@@ -4,7 +4,7 @@ description: 基礎 — Adobe Experience Platform資料收集和Web SDK擴充功
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
+source-git-commit: f9aab1a556e1d58a3f76f0ca877ecbd5f5e6e12f
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 - 可進行測試和生命週期管理。
 - 插入自訂JavaScript和第三方標籤，並集中管理。
 
-## 探索UI
+## 探索 UI
 
 移至[Adobe Experience Platform資料彙集](https://experience.adobe.com/#/data-collection/)。 確定您使用正確的環境，應該是`--aepImsOrgName--`。
 
@@ -61,10 +61,10 @@ ht-degree: 2%
 Adobe Experience Platform資料彙集是一項非常進階的工具，其範圍超出Adobe Experience Platform教學課程。 組織可能無法使用Adobe Experience Platform資料收集來獲取其標籤管理功能，而是使用非Adobe標籤管理解決方案來插入程式碼和管理標籤。 Adobe和Adobe Professional Services支援使用非Adobe標籤管理解決方案。
 有興趣進一步瞭解Adobe Experience Platform資料彙集的讀者可參閱以下內容。
 
-- [Adobe Experience Platform資料彙集使用手冊](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)
+- [Adobe Experience Platform資料彙集使用手冊](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 - [「使用 Web SDK 實施 Adobe Experience Cloud」教學課程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hant)
-- [設定使用者許可權](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hant)
-- [API檔案](https://developer.adobelaunch.com/api/)
+- [設定使用者許可權](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
+- [API檔案](https://experienceleague.adobe.com/en/docs/experience-platform/tags/api/overview)
 
 ## 後續步驟
 
