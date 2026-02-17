@@ -4,9 +4,9 @@ description: 設定您的關聯式資料基礎
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 4d420ad101c87b58a2bcc425cd4d8da08ad04c8e
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '2051'
 ht-degree: 2%
 
 ---
@@ -679,7 +679,59 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajoocdatas21e.png)
 
-所有資料現在已內嵌。 在下個練習中，您將開始將該資料用於協調的行銷活動。
+所有資料現在已內嵌。
+
+## 3.8.1.3設定檔目標Dimension
+
+透過協調的行銷活動，您可以運用Adobe Experience Platform的關聯結構描述功能，在實體層級設計及提供目標式通訊。 Experience Platform使用結構描述，以一致且可重複使用的方式說明資料結構。 將資料擷取至Experience Platform時，會根據XDM結構描述進行架構。
+
+雖然「協調的行銷活動」的區段主要在關聯式結構描述上運作，但實際的訊息傳送總是發生在設定檔層級。
+
+設定鎖定目標時，您可定義兩個關鍵面向：
+
+- 可定位的結構描述：您可以指定哪些關聯式結構描述符合定位條件。 依預設，會使用名為「收件者」的結構描述，但您可以設定替代方案，例如訪客、客戶等
+
+- 設定檔連結：系統必須瞭解目標結構描述如何對應到設定檔結構描述。 這是透過共用身分欄位來達成，該欄位存在於目標架構和設定檔架構中，並被設定為身分名稱空間。
+
+您現在需要設定設定檔目標維度。 移至&#x200B;**管理** > **組態**，然後按一下&#x200B;**設定檔目標Dimension**&#x200B;下的&#x200B;**管理**。
+
+![AJO OC](./images/ajoocptd1.png)
+
+您應該會看到此訊息。 按一下&#x200B;**建立**。
+
+![AJO OC](./images/ajoocptd2.png)
+
+針對&#x200B;**結構描述**，請選取`--aepUserLdap--_citisignal_accounts`。 針對&#x200B;**識別值**，選取&#x200B;**account_id**。
+
+按一下&#x200B;**儲存**。
+
+![AJO OC](./images/ajoocptd3.png)
+
+再按一下&#x200B;**建立**。
+
+![AJO OC](./images/ajoocptd4.png)
+
+針對&#x200B;**結構描述**，請選取`--aepUserLdap--_citisignal_recipients`。 針對&#x200B;**識別值**，選取&#x200B;**account_id**。
+
+按一下&#x200B;**儲存**。
+
+![AJO OC](./images/ajoocptd5.png)
+
+再按一下&#x200B;**建立**。
+
+![AJO OC](./images/ajoocptd6.png)
+
+針對&#x200B;**結構描述**，請選取`--aepUserLdap--_citisignal_recipients`。 針對&#x200B;**識別值**，選取&#x200B;**電子郵件**。
+
+按一下&#x200B;**儲存**。
+
+![AJO OC](./images/ajoocptd7.png)
+
+然後您應該擁有此專案。
+
+![AJO OC](./images/ajoocptd8.png)
+
+在下個練習中，您將開始將該資料用於協調的行銷活動。
 
 ## 後續步驟
 
