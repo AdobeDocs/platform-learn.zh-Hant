@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 44a7679ab3eab5fbc24c86a31fec620e789acffe
 workflow-type: tm+mt
-source-wordcount: '1507'
+source-wordcount: '1509'
 ht-degree: 3%
 
 ---
@@ -285,7 +285,7 @@ ht-degree: 3%
       + [1.5.3 Adobe Analytics和Claude.ai搭配MCP伺服器](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
    + 1.6 AEM與代理商 {#agents6}
       + [概觀](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
-      + [1.6.1 Content Production Agent](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+      + [1.6.1 AEM Agents快速入門](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
    + 1.7 Adobe Commerce適用的智慧型開發人員工具 {#agents7}
       + [概觀](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1設定您的開發環境](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)

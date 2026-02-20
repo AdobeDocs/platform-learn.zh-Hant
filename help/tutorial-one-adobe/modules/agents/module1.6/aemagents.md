@@ -4,18 +4,28 @@ description: Adobe Experience Manager與代理
 kt: 5342
 doc-type: tutorial
 exl-id: 79aa34cc-53d6-4cae-8e29-b63cecce891a
-source-git-commit: fe098c68af1964bda4813c06f95ef90caa891741
+source-git-commit: 7ea3bdc9557ea9e88ddd9693f9ffbfbc634857f8
 workflow-type: tm+mt
-source-wordcount: '82'
-ht-degree: 8%
+source-wordcount: '232'
+ht-degree: 2%
 
 ---
 
 # 1.6 Adobe Experience Manager與代理商
 
+Adobe Experience Manager現在包含數個專門建置的代理程式，每個代理程式都旨在從事歷來需要大量手動作業的工作。 他們不是通用的AI助理，而是受過網域訓練的代理，能深入瞭解AEM並跨內容、程式碼、資產、控管和最佳化執行操作。
+
+- **Experience Production Agent**，可加速更新、內容變更，甚至完整的網站移轉。
+- **治理代理程式**，自動強製品牌、許可權和規範遵循規則。
+- **探索代理程式**，準備用於AI原生探索的內容，並充當智慧型策略專家。
+- **內容最佳化代理程式**，立即建立效能就緒、通道特定的資產變數。
+- **開發代理程式**，利用AI協助的疑難排解和效能調整來加速開發人員。
+
+這些代理程式可共同讓AEM超越傳統的CMS功能，邁入自動化的體驗作業。 這些代理程式中的每一位都是由人類控制，以確保準確性、信任和監督。
+
 ## 學習目標
 
-待定
+- 瞭解如何使用各種可用的AEM代理程式
 
 ## 先決條件
 
@@ -29,9 +39,9 @@ ht-degree: 8%
 
 ## 練習
 
-[1.6.1 Content Production Agent](./ex1.md){target="_blank"}
+[1.6.1 AEM代理程式快速入門](./ex1.md){target="_blank"}
 
-待定
+在本練習中，您將探索&#x200B;**探索代理程式**&#x200B;和&#x200B;**體驗生產代理程式**。
 
 ![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
