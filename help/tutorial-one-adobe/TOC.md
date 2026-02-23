@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7315383e72017a9922cc5f06b727c465c07f4052
+source-git-commit: 13a411645ea4e06d06ee6ab27e4f726e87dbbf22
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1531'
 ht-degree: 3%
 
 ---
@@ -289,6 +289,7 @@ ht-degree: 3%
    + 1.6 AEM與代理商 {#agents6}
       + [概觀](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
       + [1.6.1 AEM Agents快速入門](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+      + [1.6.2 AEM MCP伺服器及游標](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
    + 1.7 Adobe Commerce適用的智慧型開發人員工具 {#agents7}
       + [概觀](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1設定您的開發環境](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)

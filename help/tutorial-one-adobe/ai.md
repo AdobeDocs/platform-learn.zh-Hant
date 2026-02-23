@@ -3,9 +3,9 @@ title: Agentic AI技術實驗室概觀
 description: Agentic AI技術實驗室概觀
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
+source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,20 @@ Brand Concierge是AI支援的數位夥伴，可改變品牌與網站訪客互動
 
 - 將ChatGPT和/或Claude.ai連線至&#x200B;**Customer Journey Analytics**&#x200B;並執行資料分析工作
 - 將ChatGPT和/或Claude.ai連線至&#x200B;**Adobe Analytics**&#x200B;並執行資料分析工作
+
+[1.6 AEM與代理程式](./modules/agents/module1.6/aemagents.md){target="_blank"}
+
+**目標**
+
+Adobe Experience Manager現在包含數個專門建置的代理程式，每個代理程式都旨在從事歷來需要大量手動作業的工作。 他們不是通用的AI助理，而是受過網域訓練的代理，能深入瞭解AEM並跨內容、程式碼、資產、控管和最佳化執行操作。
+
+- **Experience Production Agent**，可加速更新、內容變更，甚至完整的網站移轉。
+- **治理代理程式**，自動強製品牌、許可權和規範遵循規則。
+- **探索代理程式**，準備用於AI原生探索的內容，並充當智慧型策略專家。
+- **內容最佳化代理程式**，立即建立效能就緒、通道特定的資產變數。
+- **開發代理程式**，利用AI協助的疑難排解和效能調整來加速開發人員。
+
+在本練習中，您將瞭解如何透過自訂MCP伺服器設定，同時使用AI Assistant和Cursor來使用這些代理程式。
 
 [1.7 Adobe Commerce適用的智慧型開發人員工具](./modules/agents/module1.7/aiassisteddev.md)
 
