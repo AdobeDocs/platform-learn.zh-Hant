@@ -3,9 +3,9 @@ title: 內容狀態
 description: 內容狀態
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 1e20509f0005c6060764fa3f572acbd14fb76600
+source-git-commit: 877965ea9e83d39faff4d05eeb7dd66eb8cbac5a
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '595'
 ht-degree: 10%
 
 ---
@@ -47,6 +47,7 @@ ht-degree: 10%
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Experience Manager Cloud Service與Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | 是 | - | 1h 30min |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | 是 | - | 30分鐘 |
+| [1.3 Adobe Experience Manager Forms與Edge Delivery Services](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"} | 23/02/2026 | 是 | - | 60分鐘 |
 | [1.4 Adobe Experience Manager Assets &amp; Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"} | 17/02/2026 | 是 | - | 1h30min |
 | [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 23/09/2025 | 是 | - | 1h30min |
 

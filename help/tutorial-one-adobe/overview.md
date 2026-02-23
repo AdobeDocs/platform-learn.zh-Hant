@@ -3,10 +3,10 @@ title: 概覽 — 完整技術教學課程 — One Adobe
 description: 完整技術教學課程 — One Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 461024fe62167c26e88688c553b47b8a816bdaa8
+source-git-commit: 877965ea9e83d39faff4d05eeb7dd66eb8cbac5a
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 2%
+source-wordcount: '1351'
+ht-degree: 1%
 
 ---
 
@@ -111,6 +111,10 @@ ht-degree: 2%
 [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 在本單元中，您將探索AEM Assets。
+
+[1.3 Adobe Experience Manager Forms與Edge Delivery Services](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"}
+
+在本單元中，您將探索Adobe Experience Manager Forms與Edge Delivery Services。
 
 [1.4 Adobe Experience Manager Assets &amp; Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
 

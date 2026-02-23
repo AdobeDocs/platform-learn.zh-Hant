@@ -1,0 +1,195 @@
+---
+title: 建立您的第一個表單
+description: 建立您的第一個表單
+kt: 5342
+doc-type: tutorial
+source-git-commit: 8f59b9fdadc9c5aeadb1d4ecccd75090c339b43e
+workflow-type: tm+mt
+source-wordcount: '608'
+ht-degree: 10%
+
+---
+
+# 1.3.1建立您的第一個表單
+
+>[!IMPORTANT]
+>
+>若要完成此練習，您需要具有啟用AEM Assets Dynamic Media之有效AEM Assets CS Author環境的存取權。
+>
+>如果您沒有這類環境，請前往[Adobe Experience Manager Cloud Service和Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}。 按照這裡的指示操作，您將可以存取這樣的環境。
+
+>[!IMPORTANT]
+>
+>如果您先前已使用AEM Assets CS環境設定AEM CS計畫，可能是您的AEM CS沙箱已休眠。 鑑於讓這樣的沙箱解除休眠需要10-15分鐘，最好現在開始解除休眠過程，這樣以後就不必等待了。
+
+## 1.3.1.1 -
+
+移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 您應該選取的組織是`--aepImsOrgName--`。 開啟您的環境。
+
+![AEM Forms](./images/aemforms1.png)
+
+移至&#x200B;**Forms**。
+
+![AEM Forms](./images/aemforms2.png)
+
+移至&#x200B;**Forms與檔案**。
+
+![AEM Forms](./images/aemforms3.png)
+
+按一下&#x200B;**建立**，然後選取&#x200B;**最適化表單**。
+
+![AEM Forms](./images/aemforms4.png)
+
+選取&#x200B;**Edge Delivery Services**，然後選取&#x200B;**空白頁面**。 按一下&#x200B;**建立**。
+
+![AEM Forms](./images/aemforms5.png)
+
+您應該會看到此訊息。 填寫下列欄位：
+
+- **標題**： `Fiber Max Interest Form`
+- **名稱**：應該根據欄位&#x200B;**標題**&#x200B;自動填入。
+- **Github URL**：提供連結至您網站的Github存放庫路徑
+
+按一下&#x200B;**建立**。
+
+![AEM Forms](./images/aemforms6.png)
+
+按一下&#x200B;**建立**&#x200B;後，**通用編輯器**&#x200B;應該會自動開啟，您應該會看到類似這樣的內容。 按一下圖示以開啟&#x200B;**內容樹狀結構**。
+
+![AEM Forms](./images/aemforms7.png)
+
+在&#x200B;**內容樹狀結構**&#x200B;中，選取物件&#x200B;**最適化表單**。
+
+![AEM Forms](./images/aemforms8.png)
+
+然後，按一下&#x200B;**+**&#x200B;圖示以新增元素，並選取&#x200B;**文字輸入**。
+
+![AEM Forms](./images/aemforms9.png)
+
+在&#x200B;**內容樹狀結構**&#x200B;中，選取欄位&#x200B;**文字輸入**。
+
+![AEM Forms](./images/aemforms10.png)
+
+移至&#x200B;**基本**&#x200B;檢視。 您應該會看到此訊息。
+
+填寫下列欄位：
+
+- **名稱**： `first-name`
+- **標題**： `First Name`
+
+接著，移至&#x200B;**驗證**。
+
+![AEM Forms](./images/aemforms11.png)
+
+翻轉切換器以使其成為必填欄位。 填寫下列欄位：
+
+- **錯誤訊息**： `Enter your first name`
+- **模式**： `[A-Za-z][A-Za-z ]+`
+- **模式錯誤訊息**： `Letters only!`
+
+![AEM Forms](./images/aemforms12.png)
+
+在&#x200B;**內容樹狀結構**&#x200B;中，選取欄位&#x200B;**最適化表單**。 按一下&#x200B;**+**&#x200B;圖示，然後選取&#x200B;**文字輸入**。
+
+![AEM Forms](./images/aemforms13.png)
+
+在&#x200B;**內容樹狀結構**&#x200B;中，選取新建立的欄位&#x200B;**文字輸入**。 移至&#x200B;**屬性**。
+
+![AEM Forms](./images/aemforms14.png)
+
+移至&#x200B;**基本**&#x200B;檢視。 您應該會看到此訊息。
+
+填寫下列欄位：
+
+- **名稱**： `last-name`
+- **標題**： `Last Name`
+
+接著，移至&#x200B;**驗證**。
+
+![AEM Forms](./images/aemforms15.png)
+
+翻轉切換器以使其成為必填欄位。 填寫下列欄位：
+
+- **錯誤訊息**： `Enter your last name`
+- **模式**： `[A-Za-z][A-Za-z ]+`
+- **模式錯誤訊息**： `Letters only!`
+
+![AEM Forms](./images/aemforms16.png)
+
+在&#x200B;**內容樹狀結構**&#x200B;中，選取欄位&#x200B;**最適化表單**。 按一下&#x200B;**+**&#x200B;圖示，然後選取&#x200B;**文字輸入**。
+
+![AEM Forms](./images/aemforms17.png)
+
+在&#x200B;**內容樹狀結構**&#x200B;中，選取新建立的欄位&#x200B;**文字輸入**。 移至&#x200B;**屬性**。
+
+![AEM Forms](./images/aemforms18.png)
+
+移至&#x200B;**基本**&#x200B;檢視。 您應該會看到此訊息。
+
+填寫下列欄位：
+
+- **名稱**： `email`
+- **標題**： `Email`
+
+接著，移至&#x200B;**驗證**。
+
+![AEM Forms](./images/aemforms19.png)
+
+翻轉切換器以使其成為必填欄位。 填寫下列欄位：
+
+- **錯誤訊息**： `Enter your email address`
+- **模式**： `^[^@]+@[^@]+\.[^@]+$`
+- **模式錯誤訊息**： `Please verify your email address!`
+
+![AEM Forms](./images/aemforms20.png)
+
+在&#x200B;**內容樹狀結構**&#x200B;中，選取欄位&#x200B;**最適化表單**。 按一下&#x200B;**+**&#x200B;圖示，然後選取&#x200B;**文字輸入**。
+
+![AEM Forms](./images/aemforms21.png)
+
+在&#x200B;**內容樹狀結構**&#x200B;中，選取新建立的欄位&#x200B;**文字輸入**。
+
+![AEM Forms](./images/aemforms22.png)
+
+移至&#x200B;**基本**&#x200B;檢視。 您應該會看到此訊息。
+
+填寫下列欄位：
+
+- **名稱**： `city`
+- **標題**： `city`
+
+接著，移至&#x200B;**驗證**。
+
+![AEM Forms](./images/aemforms23.png)
+
+翻轉切換器以使其成為必填欄位。 填寫下列欄位：
+
+- **錯誤訊息**： `Enter your city`
+- **模式**： `[A-Za-z][A-Za-z ]+`
+- **模式錯誤訊息**： `Letters only!`
+
+![AEM Forms](./images/aemforms24.png)
+
+按一下&#x200B;**發佈**。
+
+![AEM Forms](./images/aemforms25.png)
+
+再按一下&#x200B;**發佈**。
+
+![AEM Forms](./images/aemforms26.png)
+
+按一下以開啟您的表單。
+
+![AEM Forms](./images/aemforms27.png)
+
+您之後可以填寫表單，但尚未能提交。
+
+![AEM Forms](./images/aemforms28.png)
+
+## 後續步驟
+
+下一步： [-](./ex1.md){target="_blank"}
+
+返回[Adobe Experience Manager Forms與Edge Delivery Services](./aemforms.md){target="_blank"}
+
+[返回所有模組](./../../../overview.md){target="_blank"}

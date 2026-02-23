@@ -1,22 +1,22 @@
 ---
-title: 內容供應鏈技術支援的GenStudio
-description: 內容供應鏈技術支援的GenStudio
+title: GenStudio for Content Supply chain技術啟用
+description: GenStudio for Content Supply chain技術啟用
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
+source-git-commit: 9ff92b0c295f854219631f1463c3ccabc1a65938
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 概述 — 內容供應鏈技術支援的GenStudio
+# 概述 — 適用於內容Supply chain技術支援的GenStudio
 
 ![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概觀
 
-如果您正在參加我們的內容供應鏈技術支援即時研討會其中一個專題GenStudio，這就是您即將開始的Tech Labs起點。
+如果您正在參加我們其中一個重點為「內容Supply chain技術支援」的即時GenStudio研討會，這就是您即將開始的Tech Labs起點。
 
 在這場技術支援工作坊中，您將在技術實驗室親身體驗下列應用程式：
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 您將會參加的技術實驗室是更廣泛的One Adobe教學課程的一部分，您可以在此進一步瞭解廣泛的Adobe Creative Cloud和Adobe Experience Cloud解決方案。 如果您有興趣檢視可用的專案，請前往下列位置檢視： [一個Adobe教學課程總覽](./overview.md)
 
-## 內容供應鏈技術實驗室的GenStudio
+## 適用於Content Supply chain Tech Labs的GenStudio
 
 以下是您將參加此技術支援工作坊的技術實驗室。
 
