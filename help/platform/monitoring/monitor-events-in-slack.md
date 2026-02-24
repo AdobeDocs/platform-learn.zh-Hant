@@ -50,7 +50,7 @@ Adobe App Builder是一個完整的架構，可讓企業開發人員建置雲端
 
 * **布建**：預設不會啟用App Builder；必須作為功能為您的組織布建。 確定貴組織擁有&#x200B;**[!DNL App Builder]**&#x200B;權益。
 
-* **專案範本**： App Builder專案是特別使用&#x200B;**[!UICONTROL 中的]** App Builder[!DNL Developer Console]範本所建立(來自範本[!UICONTROL  > ]App Builder[!UICONTROL 的]專案)。 範本會自動設定必要的工作區和執行階段環境。
+* **專案範本**： App Builder專案是特別使用&#x200B;**[!UICONTROL 中的]** App Builder[!DNL Developer Console]範本所建立(來自範本[!UICONTROL &#x200B; > &#x200B;]App Builder[!UICONTROL 的]專案)。 範本會自動設定必要的工作區和執行階段環境。
 
 * **App Builder快速入門手冊**：請參閱檔案[，以布建範本並建立您的第一個專案](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app){target=_blank}。
 
