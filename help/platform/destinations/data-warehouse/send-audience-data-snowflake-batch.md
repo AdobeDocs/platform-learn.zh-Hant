@@ -21,7 +21,7 @@ ht-degree: 0%
 
 瞭解如何在Adobe Real-Time CDP中設定並使用Snowflake批次目的地，將每日完整重新整理的對象快照傳送至您的Snowflake帳戶。 請參閱Adobe Experience Platform的端對端工作流程、資料在Snowflake中顯示為動態表格的方式，以及確保成功整合的關鍵設定步驟和驗證。
 
-如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch)。
+如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch)。
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
