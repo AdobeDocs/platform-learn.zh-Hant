@@ -20,7 +20,7 @@ ht-degree: 0%
 瞭解如何透過與Experience Platform App Builder webhook Proxy整合在Slack中接收Adobe通知。 資料工程師和管理員可能會想要在Slack中收到來自Adobe Experience Platform的主動通知，以監控其Platform實施的健康狀況。 本教學課程概述使用Adobe App Builder將Adobe I/O Events連線至Slack的架構和實施步驟。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480183?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3480206?captions=chi_hant&learn=on)
 
 ## 為何要使用webhook Proxy？
 
