@@ -4,9 +4,9 @@ description: 建立您的協調行銷活動
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 53be5cf34db144e346f9810359b583072743382f
+source-git-commit: 0328260e8699107bc82103af98caae684319a60d
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '1075'
 ht-degree: 2%
 
 ---
@@ -195,6 +195,10 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc41.png)
 
+將&#x200B;**設定檔對應欄位**&#x200B;設定為&#x200B;**`--aepUserLdap--_citisignal_recipients - account_id`**。
+
+![AJO OC](./images/ajooc41a.png)
+
 ### 擴充：網際網路訂閱
 
 按一下&#x200B;**+**&#x200B;圖示。
@@ -253,7 +257,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc53.png)
 
-選取&#x200B;**`avg_dowload_usage_gb`**&#x200B;並按一下&#x200B;**確認**。
+選取&#x200B;**`avg_bandwidth_usage_gb`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc54.png)
 
@@ -303,11 +307,15 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc64.png)
 
-向下鑽研至&#x200B;**`citisignal_mobile_subscriptions`**。
+向下鑽研至&#x200B;**`citisignal_accounts`**。
 
 ![AJO OC](./images/ajooc65.png)
 
-選取&#x200B;**`account_id`**&#x200B;並按一下&#x200B;**確認**。
+向下鑽研至&#x200B;**`citisignal_mobile_subscriptions`**。
+
+![AJO OC](./images/ajooc65a.png)
+
+選取&#x200B;**`phone_number`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc66.png)
 
@@ -315,15 +323,23 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc67.png)
 
-選取&#x200B;**`subscription_id`**&#x200B;並按一下&#x200B;**確認**。
+向下鑽研至&#x200B;**`citisignal_equipment_subscriptions`**。
 
 ![AJO OC](./images/ajooc68.png)
+
+選取&#x200B;**`model`**&#x200B;並按一下&#x200B;**確認**。
+
+![AJO OC](./images/ajooc68a.png)
 
 按一下&#x200B;**新增屬性**。
 
 ![AJO OC](./images/ajooc69.png)
 
-選取&#x200B;**`phone_number`**&#x200B;並按一下&#x200B;**確認**。
+向下鑽研至&#x200B;**`citisignal_equipment_subscriptions`**。
+
+![AJO OC](./images/ajooc69a.png)
+
+選取&#x200B;**`recommended_device_model`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc70.png)
 
@@ -331,15 +347,35 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc71.png)
 
-選取&#x200B;**`renewal_eligibility_date`**&#x200B;並按一下&#x200B;**確認**。
+向下鑽研至&#x200B;**`citisignal_equipment_subscriptions`**。
+
+![AJO OC](./images/ajooc71a.png)
+
+選取&#x200B;**`is_upgrade_eligible`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc72.png)
+
+您現在可以執行測試回合，以測試進度，並檢視行銷活動中可用的資料。
+
+儲存您的變更，然後按一下[開始]。****
+
+![AJO OC](./images/ajooctest1.png)
+
+一段時間後，您應該會看到此訊息。 按一下&#x200B;**預覽結果**。
+
+![AJO OC](./images/ajooctest2.png)
+
+之後，您應該會看到類似以下內容。 按一下 **關閉**。
+
+![AJO OC](./images/ajooctest3.png)
+
+返回節點&#x200B;**擴充：行動裝置訂閱**。
 
 按一下&#x200B;**新增屬性**。
 
 ![AJO OC](./images/ajooc73.png)
 
-選取&#x200B;**`line_user_recipient_id`**&#x200B;並按一下&#x200B;**確認**。
+選取&#x200B;**`account_id`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc74.png)
 
@@ -347,7 +383,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc75.png)
 
-選取&#x200B;**`is_upgrade_eligible`**&#x200B;並按一下&#x200B;**確認**。
+選取&#x200B;**`subscription_id`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc76.png)
 
@@ -355,7 +391,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc77.png)
 
-選取&#x200B;**`current_device_id`**&#x200B;並按一下&#x200B;**確認**。
+選取&#x200B;**`renewal_eligibility_date`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc78.png)
 
@@ -363,7 +399,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc79.png)
 
-選取&#x200B;**`contract_start_date`**&#x200B;並按一下&#x200B;**確認**。
+選取&#x200B;**`line_user_recipient_id`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc80.png)
 
@@ -371,25 +407,17 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc81.png)
 
-向下鑽研至&#x200B;**`citisignal_equipment_subscriptions`**。
+選取&#x200B;**`current_device_id`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc82.png)
-
-選取&#x200B;**`model`**&#x200B;並按一下&#x200B;**確認**。
-
-![AJO OC](./images/ajooc83.png)
 
 按一下&#x200B;**新增屬性**。
 
 ![AJO OC](./images/ajooc86.png)
 
-向下鑽研至&#x200B;**`citisignal_equipment_subscriptions`**。
+選取&#x200B;**`contract_start_date`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc87.png)
-
-選取&#x200B;**`manufacturer`**&#x200B;並按一下&#x200B;**確認**。
-
-![AJO OC](./images/ajooc88.png)
 
 按一下&#x200B;**新增屬性**。
 
@@ -399,7 +427,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc90.png)
 
-選取&#x200B;**`device_age_months`**&#x200B;並按一下&#x200B;**確認**。
+選取&#x200B;**`manufacturer`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc91.png)
 
@@ -411,7 +439,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc93.png)
 
-選取&#x200B;**`is_upgrade_eligible`**&#x200B;並按一下&#x200B;**確認**。
+選取&#x200B;**`device_age_months`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc94.png)
 
@@ -423,7 +451,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc96.png)
 
-選取&#x200B;**`recommended_upgrade_product_id`**&#x200B;並按一下&#x200B;**確認**。
+選取&#x200B;**`trade_in_value`**&#x200B;並按一下&#x200B;**確認**。
 
 ![AJO OC](./images/ajooc97.png)
 
@@ -439,48 +467,117 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc100.png)
 
-按一下&#x200B;**新增屬性**。
+### 擴充：行動裝置訂閱
+
+然後您應該擁有此專案。 按一下&#x200B;**「儲存」**。然後，按一下&#x200B;**+**&#x200B;圖示以新增節點，並選取&#x200B;**擴充**。
 
 ![AJO OC](./images/ajooc101.png)
 
-向下鑽研至&#x200B;**`citisignal_equipment_subscriptions`**。
+您應該會看到此訊息。 按一下「**新增擴充資料**」。
 
 ![AJO OC](./images/ajooc102.png)
 
-為&#x200B;**啟用排序**&#x200B;啟用開關。 按一下&#x200B;**編輯**&#x200B;圖示。
+向下展開至&#x200B;**目標維度**。
 
 ![AJO OC](./images/ajooc103.png)
 
-選取&#x200B;**`phone_number`**&#x200B;並按一下&#x200B;**確認**。
+向下鑽研至&#x200B;**`citisignal_offer_eligibility`**。
 
 ![AJO OC](./images/ajooc104.png)
 
-然後您應該擁有此專案。
+向下鑽研至&#x200B;**`citisignal_offers`**。
 
 ![AJO OC](./images/ajooc105.png)
 
+選取&#x200B;**`offer_name`**&#x200B;並按一下&#x200B;**確認**。
 
+![AJO OC](./images/ajooc106.png)
 
+按一下&#x200B;**新增屬性**。
 
-然後您應該擁有此專案。 按一下&#x200B;**儲存**。
+![AJO OC](./images/ajooc107.png)
 
-![AJO OC](./images/ajooc80a.png)
+向下鑽研至&#x200B;**`citisignal_offers`**。
 
+![AJO OC](./images/ajooc108.png)
 
+選取&#x200B;**`offer_code`**&#x200B;並按一下&#x200B;**確認**。
 
+![AJO OC](./images/ajooc109.png)
 
+按一下&#x200B;**新增屬性**。
 
+![AJO OC](./images/ajooc110.png)
 
+向下鑽研至&#x200B;**`citisignal_offers`**。
 
+![AJO OC](./images/ajooc111.png)
 
+選取&#x200B;**`offer_description`**&#x200B;並按一下&#x200B;**確認**。
 
+![AJO OC](./images/ajooc112.png)
 
+按一下&#x200B;**新增屬性**。
 
+![AJO OC](./images/ajooc110.png)
 
+向下鑽研至&#x200B;**`citisignal_offers`**。
 
+![AJO OC](./images/ajooc113.png)
 
-![AJO OC](./images/ajooc103.png)
+選取&#x200B;**`offer_description`**&#x200B;並按一下&#x200B;**確認**。
 
+![AJO OC](./images/ajooc114.png)
+
+開啟&#x200B;**啟用排序**。
+
+![AJO OC](./images/ajooc115.png)
+
+向下鑽研至&#x200B;**`citisignal_offers`**。
+
+![AJO OC](./images/ajooc116.png)
+
+選取&#x200B;**`offer_priority`**&#x200B;並按一下&#x200B;**確認**。
+
+![AJO OC](./images/ajooc117.png)
+
+您現在可以測試行銷活動。 按一下「**開始**」。
+
+![AJO OC](./images/ajooc118.png)
+
+一段時間後，您應該會看到這個訊息。 按一下&#x200B;**結果**，然後選取&#x200B;**預覽結果**。
+
+![AJO OC](./images/ajooc120.png)
+
+之後，您應該會看到類似以下內容。
+
+![AJO OC](./images/ajooc121.png)
+
+### 電子郵件活動
+
+按一下&#x200B;**+**&#x200B;圖示，然後選取&#x200B;**電子郵件**。
+
+![AJO OC](./images/ajooc122.png)
+
+按一下&#x200B;**編輯電子郵件**。
+
+![AJO OC](./images/ajooc123.png)
+
+移至&#x200B;**動作**。
+
+![AJO OC](./images/ajooc124.png)
+
+選取您之前建立的&#x200B;**電子郵件通道設定**，然後按一下&#x200B;**編輯內容**。
+
+![AJO OC](./images/ajooc125.png)
+
+針對&#x200B;**主旨列**，貼上以下內容：
+
+`{{target.--aepUserLdap--_citisignal_recipients.first_name}}, Your CitiSignal Family Account Summary`
+
+按一下&#x200B;**編輯電子郵件內文**。
+
+![AJO OC](./images/ajooc126.png)
 
 ## 後續步驟
 

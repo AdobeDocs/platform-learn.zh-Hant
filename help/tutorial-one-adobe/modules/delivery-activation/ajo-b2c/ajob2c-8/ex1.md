@@ -4,9 +4,9 @@ description: 設定您的關聯式資料基礎
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 4d420ad101c87b58a2bcc425cd4d8da08ad04c8e
+source-git-commit: defdae3329e1409159f59c4a0ef2aa21c7e3949b
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2159'
 ht-degree: 2%
 
 ---
@@ -730,6 +730,52 @@ ht-degree: 2%
 然後您應該擁有此專案。
 
 ![AJO OC](./images/ajoocptd8.png)
+
+## 3.8.1.4電子郵件頻道
+
+在左側功能表中，移至&#x200B;**管道**。 按一下&#x200B;**建立通道組態**。
+
+![AJO OC](./images/ajoocchannel1.png)
+
+使用名稱： `--aepUserLdap---citisignal-email-oc`。 選取頻道&#x200B;**電子郵件**
+
+![AJO OC](./images/ajoocchannel2.png)
+
+選取可用的&#x200B;**子網域**&#x200B;和&#x200B;**IP集區**。
+
+![AJO OC](./images/ajoocchannel3.png)
+
+向下捲動並填寫&#x200B;**標頭引數**。
+
+- **來自名稱**： `info@techinsiders.org`
+- **來自電子郵件前置詞**： `info`
+- **回覆名稱**： `info@techinsiders.org`
+- **回覆電子郵件**： `info@techinsiders.org`
+- **錯誤電子郵件前置詞**： `error`
+
+![AJO OC](./images/ajoocchannel4.png)
+
+向下捲動。 移至&#x200B;**協調的行銷活動**。 核取&#x200B;**已啟用**&#x200B;的核取方塊。 選取&#x200B;**目標維度**。
+
+![AJO OC](./images/ajoocchannel5.png)
+
+針對&#x200B;**設定檔目標Dimension**，請選取`--aepUserLdap--_citisignal_recipients - email`。
+
+選取&#x200B;**目標Dimension**&#x200B;並按一下&#x200B;**開啟資料夾**&#x200B;圖示。
+
+![AJO OC](./images/ajoocchannel6.png)
+
+按一下「`--aepUserLdap--_citisignal_recipients`」。
+
+![AJO OC](./images/ajoocchannel7.png)
+
+選取欄位&#x200B;**電子郵件**&#x200B;並按一下&#x200B;**選取**。
+
+![AJO OC](./images/ajoocchannel8.png)
+
+向上捲動並按一下&#x200B;**提交**。
+
+![AJO OC](./images/ajoocchannel9.png)
 
 在下個練習中，您將開始將該資料用於協調的行銷活動。
 
