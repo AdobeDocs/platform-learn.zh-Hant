@@ -4,9 +4,9 @@ description: 建立您的協調行銷活動
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 0328260e8699107bc82103af98caae684319a60d
+source-git-commit: 72aee2daa489f00dfc753e6986f0cab2271c6a7f
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1112'
 ht-degree: 2%
 
 ---
@@ -357,7 +357,7 @@ ht-degree: 2%
 
 您現在可以執行測試回合，以測試進度，並檢視行銷活動中可用的資料。
 
-儲存您的變更，然後按一下[開始]。**&#x200B;**
+儲存您的變更，然後按一下[開始]。****
 
 ![AJO OC](./images/ajooctest1.png)
 
@@ -578,6 +578,30 @@ ht-degree: 2%
 按一下&#x200B;**編輯電子郵件內文**。
 
 ![AJO OC](./images/ajooc126.png)
+
+將檔案[family_account_review.zip](./assets/family_account_review.zip)下載到您的案頭。
+
+![AJO OC](./images/ajooc127.png)
+
+按一下&#x200B;**匯入HTML**。
+
+![AJO OC](./images/ajooc128.png)
+
+按一下以選取檔案。
+
+![AJO OC](./images/ajooc129.png)
+
+選取檔案&#x200B;**`family_account_review.zip`**。
+
+![AJO OC](./images/ajooc130.png)
+
+按一下&#x200B;**下一步**。
+
+![AJO OC](./images/ajooc131.png)
+
+您應該會看到此訊息。
+
+![AJO OC](./images/ajooc132.png)
 
 ## 後續步驟
 
