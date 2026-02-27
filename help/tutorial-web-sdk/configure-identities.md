@@ -15,9 +15,9 @@ ht-degree: 12%
 
 了解如何設定身分識別命名空間，以配合 Adob&#x200B;&#x200B;e Experience Platform Web SDK 使用。
 
-[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home)在SDK型Adobe應用程式中設定通用的訪客ID (ECID)，以支援Experience Cloud功能，例如應用程式之間的受眾共用。 您也可以將自己的客戶ID傳送至此服務，以啟用跨裝置目標鎖定及與其他系統(例如客戶關係管理(CRM)系統)的整合。
+[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/zh-hant/docs/id-service/using/home)在SDK型Adobe應用程式中設定通用的訪客ID (ECID)，以支援Experience Cloud功能，例如應用程式之間的受眾共用。 您也可以將自己的客戶ID傳送至此服務，以啟用跨裝置目標鎖定及與其他系統(例如客戶關係管理(CRM)系統)的整合。
 
-[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) （是的，共有兩個！）會使用ECID和客戶ID來產生身分圖表，讓您將屬性和行為合併到即時客戶設定檔中。
+[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/home) （是的，共有兩個！）會使用ECID和客戶ID來產生身分圖表，讓您將屬性和行為合併到即時客戶設定檔中。
 
 
 >[!NOTE]
@@ -46,7 +46,7 @@ ht-degree: 12%
 >
 >實作Adobe Experience Platform Web SDK時不需要[Experience Cloud ID擴充功能](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension)，因為Web SDK JavaScript資料庫包含訪客ID服務功能。
 >
-> 如果您的網站已透過訪客API或Experience Cloud ID服務標籤擴充功能在網站上使用Experience Cloud ID服務，而且您要在移轉至Adobe Experience Platform Web SDK時繼續使用該服務，您必須使用最新版本的訪客API或Experience Cloud ID服務標籤擴充功能。 如需詳細資訊，請參閱[ID移轉](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)。
+> 如果您的網站已透過訪客API或Experience Cloud ID服務標籤擴充功能在網站上使用Experience Cloud ID服務，而且您要在移轉至Adobe Experience Platform Web SDK時繼續使用該服務，您必須使用最新版本的訪客API或Experience Cloud ID服務標籤擴充功能。 如需詳細資訊，請參閱[ID移轉](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge/identity/overview)。
 
 ## 建立身分名稱空間
 
@@ -99,4 +99,4 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享

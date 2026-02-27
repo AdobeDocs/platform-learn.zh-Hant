@@ -215,7 +215,7 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 ![同意貼文訪客Optin](assets/consent-post-user-optin.png)
 
 
-如需在網頁SDK中同意的詳細資訊，請參閱[支援客戶同意偏好設定](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent)。
+如需在網頁SDK中同意的詳細資訊，請參閱[支援客戶同意偏好設定](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge/consent/supporting-consent)。
 
 >[!TIP]
 >
@@ -223,8 +223,8 @@ GDPR、CCPA等隱私權行為對於您設計同意實作的方式至關重要。
 
 
 
-如需[!UICONTROL 設定同意]動作的詳細資訊，請參閱[設定同意](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)。
+如需[!UICONTROL 設定同意]動作的詳細資訊，請參閱[設定同意](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)。
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享
