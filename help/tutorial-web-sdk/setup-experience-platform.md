@@ -3,9 +3,9 @@ title: 透過Platform Web SDK將資料串流至Adobe Experience Platform
 description: 瞭解如何使用網頁SDK將網頁資料串流至Adobe Experience Platform。 本課程是「使用 Web SDK 實施 Adob​​e Experience Cloud」教學課程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '2338'
+source-wordcount: '2321'
 ht-degree: 4%
 
 ---
@@ -17,9 +17,6 @@ ht-degree: 4%
 Experience Platform是所有新Experience Cloud應用程式(例如Adobe Real-Time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer)的骨幹。 這些應用程式的設計是要使用Platform Web SDK作為其最佳的Web資料收集方法。
 
 
->[!WARNING]
->
-> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
 
 ![網頁SDK和Adobe Experience Platform圖表](assets/dc-websdk-aep.png)
 
@@ -49,7 +46,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 ## 建立資料集
 
-所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
+所有成功內嵌至Adobe Experience Platform的資料都會以資料集的形式保留在資料湖中。 [資料集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是資料集合的儲存和管理結構，通常是包含結構描述（欄）和欄位（列）的表格。 資料集也包含中繼資料，可說明其儲存資料的各個層面。
 
 讓我們為您的Luma Web事件資料設定資料集：
 
@@ -81,20 +78,22 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 1. 開啟[資料彙集](https://experience.adobe.com/#/data-collection){target="blank"}介面
 1. 從左側導覽中選取&#x200B;**[!UICONTROL 資料串流]**
-1. 開啟您在[設定資料流](configure-datastream.md)課程`Luma Web SDK`中建立的資料流
+1. 開啟您在[設定資料流](configure-datastream.md)課程`Luma Web SDK: Development Environment`中建立的資料流
 
    ![選取Luma Web SDK資料流](assets/datastream-luma-web-sdk-development.png)
 
 1. 選取&#x200B;**[!UICONTROL 新增服務]**
    ![新增服務至資料流](assets/experience-platform-addService.png)
 1. 選取&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;做為&#x200B;**[!UICONTROL 服務]**
+1. 選取&#x200B;**[!UICONTROL 已啟用]**
 1. 選取`Luma Web Event Data`做為&#x200B;**[!UICONTROL 事件資料集]**
+1. 啟用&#x200B;**[!UICONTROL Edge分段]**。
 
 1. 選取「**[!UICONTROL 儲存]**」。
 
    ![資料流設定](assets/experience-platform-datastream-config.png)
 
-當您在對應至標籤屬性的[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)上產生流量時，資料會填入Experience Platform中的資料集！
+當您在對應至標籤屬性的[Luma示範網站](https://newluma.enablementadobe.com)上產生流量時，資料會填入Experience Platform中的資料集！
 
 ## 驗證資料集
 
@@ -108,15 +107,13 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 這些步驟與您在[偵錯工具課程](validate-with-debugger.md)中所執行的步驟大致相同。 不過，由於資料只有在資料流中啟用後才會傳送至Platform，因此您必須產生更多範例資料：
 
-1. 開啟[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)並選取[!UICONTROL Experience Platform Debugger]擴充功能圖示
+1. 開啟[Luma示範網站](https://newluma.enablementadobe.com)並選取[!UICONTROL Experience Platform Debugger]擴充功能圖示
 
 1. 設定偵錯工具將標籤屬性對應至&#x200B;*您的*&#x200B;開發環境，如[使用偵錯工具驗證](validate-with-debugger.md)課程中所述
 
    ![Debugger 中顯示的 Launch 開發環境](assets/experience-platform-debugger-dev.png)
 
-1. 使用 `test@test.com`/`test` 認證登入 Luma 網站
-
-1. 返回 [Luma 首頁](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. 使用認證`test@test.com`/`test`登入Luma網站（如果您收到訊息「無效的電子郵件或密碼」，則使用這些認證建立帳戶）
 
 1. 在Debugger顯示的Platform Web SDK網路信標中，選取「事件」列以在快顯視窗中展開詳細資訊
 
@@ -165,7 +162,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!INFO]
 >
->  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/tutorials/queries/explore-data)。
+>  如需Adobe Experience Platform查詢服務的詳細資訊，請參閱Platform教學課程一節中的[探索資料](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
 
 
 ## 為即時客戶個人檔案啟用資料集和結構描述
@@ -236,7 +233,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 1. 在[Experience Platform](https://experience.adobe.com/platform/)介面中，選取左側導覽中的&#x200B;**[!UICONTROL 客戶]** > **[!UICONTROL 設定檔]**
 
 1. 作為&#x200B;**[!UICONTROL 身分識別名稱空間]**&#x200B;使用`lumaCRMId`
-1. 複製並貼上您在Experience Platform Debugger中檢查之呼叫中傳遞的`lumaCRMId`值，此案例中為`b642b4217b34b1e8d3bd915fc65c4452`。
+1. 複製並貼上您在Experience Platform Debugger中檢查之呼叫中傳遞的`lumaCRMId`值，此案例中為`f660ab912ec121d1b1e928a0bb4bc61b`。
 
    ![輪廓](assets/experience-platform-validate-dataset-profile.png)
 
@@ -310,7 +307,7 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 1. 選取&#x200B;**[!UICONTROL 下一步]**
 
    ![建立客群](assets/merge-policy-set-active-on-edge.png)
-1. 繼續選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以繼續完成工作流程的其他步驟，並選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存您的設定
+1. 繼續選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以繼續完成工作流程的其他步驟，並選取&#x200B;**[!UICONTROL 完成]**以儲存您的設定
    ![建立客群](assets/merge-policy-finish.png)
 
 您現在可以建立對象，以便在Edge上評估。
@@ -345,4 +342,4 @@ Experience Platform會使用您先前建立的相同XDM結構描述，從Luma網
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

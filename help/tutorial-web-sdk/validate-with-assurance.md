@@ -4,9 +4,9 @@ description: 了解如何使用 Adob​​e Experience Platform Assurance 驗證
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '605'
 ht-degree: 7%
 
 ---
@@ -16,9 +16,6 @@ ht-degree: 7%
 Adobe Experience Platform Assurance的功能可協助您檢查、校樣、模擬及驗證收集資料或提供體驗的方式。 深入瞭解[Adobe Assurance](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/assurance/home)。
 
 
->[!WARNING]
->
-> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
 
 ## 學習目標
 
@@ -29,7 +26,7 @@ Adobe Experience Platform Assurance的功能可協助您檢查、校樣、模擬
 
 ## 先決條件
 
-您熟悉資料收集標籤和[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}，並已完成教學課程中先前的課程：
+您熟悉資料收集標籤和[Luma示範網站](https://newluma.enablementadobe.com){target="_blank"}，並已完成教學課程中先前的課程：
 
 * [設定XDM結構描述](configure-schemas.md)
 * [設定身分名稱空間](configure-identities.md)
@@ -51,7 +48,7 @@ Adobe Experience Platform Assurance的功能可協助您檢查、校樣、模擬
 
 在Debugger課程中檢閱我們的做法：
 
-1. 移至[Luma示範網站](https://luma.enablementadobe.com/content/luma/us/en.html)，然後使用偵錯工具來[將網站上的標籤屬性切換為您自己的開發屬性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. 移至[Luma示範網站](https://newluma.enablementadobe.com)，然後使用偵錯工具來[將網站上的標籤屬性切換為您自己的開發屬性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. 在&#x200B;**[!UICONTROL Experience Platform Debugger]**&#x200B;的左側導覽中，選取&#x200B;**[!UICONTROL 記錄檔]**
 1. 選取&#x200B;**[!UICONTROL Edge]**&#x200B;索引標籤，然後選取&#x200B;**[!UICONTROL 連線]**
 
@@ -70,7 +67,7 @@ Adobe Experience Platform Assurance的功能可協助您檢查、校樣、模擬
    ![建立Assurance工作階段](assets/assurance-create-session.png)
 1. 選取開始
 1. 為工作階段命名，例如`Luma Web SDK validation`
-1. 作為&#x200B;**[!UICONTROL 基底URL]**，請輸入`https://luma.enablementadobe.com/`
+1. 作為&#x200B;**[!UICONTROL 基底URL]**，請輸入`https://newluma.enablementadobe.com/`
    ![命名Assurance工作階段](assets/assurance-name-session.png)
 1. 在下一個畫面中，選取&#x200B;**[!UICONTROL 複製連結]**
 1. 選取圖示以將連結複製到剪貼簿
@@ -98,4 +95,4 @@ Adobe Experience Platform Assurance的功能可協助您檢查、校樣、模擬
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享

@@ -4,10 +4,10 @@ description: 瞭解如何在資料收集介面中安裝和設定Platform Web SDK
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 10%
+source-wordcount: '602'
+ht-degree: 11%
 
 ---
 
@@ -16,9 +16,6 @@ ht-degree: 10%
 瞭解如何安裝和設定Adobe Experience Platform Web SDK標籤擴充功能。 實作Web SDK最簡單的方法是使用Adobe的標籤管理員，即tags （先前稱為Launch）。 Platform Web SDK標籤擴充功能是將&#x200B;_所有Adobe Experience Cloud應用程式_&#x200B;資料傳送至&#x200B;_所需的唯一標籤擴充功能_，包括[Analytics](setup-analytics.md)、[Target](setup-target.md)、[Audience Manager](setup-audience-manager.md)、Real-Time Customer Data Platform和[Journey Optimizer](setup-web-channel.md)！
 
 
->[!WARNING]
->
-> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
 
 ## 學習目標
 
@@ -42,9 +39,9 @@ ht-degree: 10%
 
 1. 開啟[資料收集介面](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 在左側導覽中選取&#x200B;**[!UICONTROL 標籤]**
-1. 選取&#x200B;**[!UICONTROL 新屬性]**&#x200B;按鈕
+1. 選取&#x200B;**[!UICONTROL 新屬性]**按鈕
    ![新增屬性](assets/websdk-property-addNewProperty.png)
-1. 以&#x200B;**[!UICONTROL Name]**&#x200B;的身分，輸入`Web SDK Course` （如果貴公司的多人參加此教學課程，請在結尾加上您的姓名）
+1. 以&#x200B;**[!UICONTROL Name]**&#x200B;的身分，輸入`Luma Web SDK Tutorial` （如果貴公司的多人參加此教學課程，請在結尾加上您的姓名）
 1. 作為&#x200B;**[!UICONTROL 網域]**，請輸入`enablementadobe.com` （稍後說明）
 1. 選取&#x200B;**[!UICONTROL 儲存]**
    ![屬性詳細資料](assets/websdk-property-propertyDetails.png)
@@ -66,17 +63,14 @@ ht-degree: 10%
 保留大部分的預設設定，並稍後視需要更新。 您現在唯一必須做的就是將擴充功能連結至資料流：
 
 1. 在&#x200B;**[!UICONTROL 資料串流]**&#x200B;底下，選取&#x200B;**[!UICONTROL 從清單選擇]**&#x200B;輸入法
-1. 選取您建立結構、身分名稱空間和資料流的沙箱
-1. 選取您先前建立的資料流，`Luma Web SDK`
+1. 設定&#x200B;**[!UICONTROL 生產環境]**。 （屬性中的其他標籤環境將繼承生產設定）：
+   1. 選取您建立結構、身分名稱空間和資料流的沙箱
+   1. 選取您先前建立的資料流，`Luma Web SDK: Development Environment`
 1. 選取&#x200B;**[!UICONTROL 儲存]**
-
-   >[!NOTE]
-   >
-   > 如果找不到您的資料流，請移至[設定資料流](configure-datastream.md)課程，然後依照步驟建立資料流
 
    ![資料流選擇](assets/extension-luma-web-sdk-datastream-extension.png)
 
-如需擴充功能每個區段的詳細資訊，請參閱[設定Adobe Experience Platform Web SDK擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
+如需擴充功能每個區段的詳細資訊，請參閱[設定Adobe Experience Platform Web SDK擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
 
 >[!NOTE]
 >
@@ -90,4 +84,4 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享
