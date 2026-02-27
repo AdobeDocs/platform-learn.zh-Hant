@@ -54,7 +54,7 @@ ht-degree: 12%
 
 在開始練習之前，請觀看此短片，進一步瞭解Adobe Experience Platform中的身分識別：
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422770?captions=chi_hant&learn=on&enablevpops)
 
 現在，為Luma CRM ID建立名稱空間：
 
