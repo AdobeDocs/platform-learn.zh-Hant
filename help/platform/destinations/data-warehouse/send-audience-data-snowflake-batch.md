@@ -24,4 +24,4 @@ ht-degree: 0%
 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch)。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480195/?captions=chi_hant&learn=on&enablevpops)
