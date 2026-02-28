@@ -26,7 +26,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
-> 為了示範，本課程中的練習會讓您使用認證，[使用者： ](https://newluma.enablementadobe.com) /密碼： test **，擷取登入`test@test.com`Luma示範網站**&#x200B;之虛擬客戶的身分詳細資訊。
+> 為了示範，本課程中的練習會讓您使用認證，[使用者： &#x200B;](https://newluma.enablementadobe.com) /密碼： test **，擷取登入`test@test.com`Luma示範網站**&#x200B;之虛擬客戶的身分詳細資訊。
 
 ## 學習目標
 
