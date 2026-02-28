@@ -4,7 +4,7 @@ description: 瞭解如何在資料收集介面中安裝和設定Platform Web SDK
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 11%
@@ -39,7 +39,7 @@ ht-degree: 11%
 
 1. 開啟[資料收集介面](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 在左側導覽中選取&#x200B;**[!UICONTROL 標籤]**
-1. 選取&#x200B;**[!UICONTROL 新屬性]**&#x200B;按鈕
+1. 選取&#x200B;**[!UICONTROL 新屬性]**按鈕
    ![新增屬性](assets/websdk-property-addNewProperty.png)
 1. 以&#x200B;**[!UICONTROL Name]**&#x200B;的身分，輸入`Luma Web SDK Tutorial` （如果貴公司的多人參加此教學課程，請在結尾加上您的姓名）
 1. 作為&#x200B;**[!UICONTROL 網域]**，請輸入`enablementadobe.com` （稍後說明）
@@ -70,7 +70,7 @@ ht-degree: 11%
 
    ![資料流選擇](assets/extension-luma-web-sdk-datastream-extension.png)
 
-如需擴充功能每個區段的詳細資訊，請參閱[設定Adobe Experience Platform Web SDK擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
+如需擴充功能每個區段的詳細資訊，請參閱[設定Adobe Experience Platform Web SDK擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
 
 >[!NOTE]
 >
@@ -84,4 +84,4 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hant)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)上分享
