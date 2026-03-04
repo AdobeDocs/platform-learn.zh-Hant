@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 使用Adobe Experience Platform Web SDK設定Adobe Analytics
 
-瞭解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)設定Adobe Analytics、建立標籤規則以將資料傳送至Adobe Analytics，以及驗證Analytics是否如預期擷取資料。
+瞭解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/data-collection/web-sdk/overview)設定Adobe Analytics、建立標籤規則以將資料傳送至Adobe Analytics，以及驗證Analytics是否如預期擷取資料。
 
 [Adobe Analytics](https://experienceleague.adobe.com/zh-hant/docs/analytics)是領先業界的應用程式，能夠讓您從使用者觀點瞭解客戶，並掌握客戶情報來為您的企業指引方向。
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 * 熟悉並存取Adobe Analytics。
 
-* 至少要有一個測試/開發報表套裝ID。 如果您沒有可用於本教學課程的測試/開發報表套裝，[請建立一個](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
+* 至少要有一個測試/開發報表套裝ID。 如果您沒有可用於本教學課程的測試/開發報表套裝，[請建立一個](https://experienceleague.adobe.com/zh-hant/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
 
 * 完成本教學課程之初始設定和標籤設定區段中先前的課程。
 
@@ -80,7 +80,7 @@ Platform Web SDK會將資料從您的網站傳送至Platform Edge Network。 您
 
 ### 自動對應的欄位
 
-許多XDM欄位會自動對應至Analytics變數。 如需最新的對應清單，請參閱Adobe Experience Edge中的[Analytics變數對應](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)。
+許多XDM欄位會自動對應至Analytics變數。 如需最新的對應清單，請參閱Adobe Experience Edge中的[Analytics變數對應](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)。
 
 如果&#x200B;_即使您尚未定義自訂結構描述_，也會發生這種情況。 Experience Platform Web SDK會自動收集一些資料，並將其以XDM欄位的形式傳送到Platform Edge Network。 例如，Web SDK會讀取目前頁面URL並以XDM欄位`web.webPageDetails.URL`形式傳送。 此欄位會轉送至Adobe Analytics，並自動填入Adobe Analytics中的頁面URL報表。
 
@@ -426,4 +426,4 @@ Adobe Experience Platform Assurance可協助您檢查、證明、模擬及驗證
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=zh-Hant)上分享
