@@ -4,10 +4,10 @@ description: 瞭解如何在資料收集介面中安裝和設定Platform Web SDK
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 6e04d7cc2e0bc2b5e080d7501f1d330cdb4edc5f
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 11%
+source-wordcount: '635'
+ht-degree: 10%
 
 ---
 
@@ -33,13 +33,13 @@ ht-degree: 11%
 
 ### 新增標籤屬性
 
-首先，您必須要有標籤屬性。 屬性是一個容器，內含所有JavaScript、規則，以及從網頁收集詳細資訊並傳送至不同位置所需的其他功能。
+標籤屬性是一個容器，內含所有JavaScript、規則和其他必要功能，可用來從網頁收集詳細資訊並傳送至不同位置。
 
 為教學課程建立新的標籤屬性：
 
 1. 開啟[資料收集介面](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 在左側導覽中選取&#x200B;**[!UICONTROL 標籤]**
-1. 選取&#x200B;**[!UICONTROL 新屬性]**&#x200B;按鈕
+1. 選取&#x200B;**[!UICONTROL 新屬性]**按鈕
    ![新增屬性](assets/websdk-property-addNewProperty.png)
 1. 以&#x200B;**[!UICONTROL Name]**&#x200B;的身分，輸入`Luma Web SDK Tutorial` （如果貴公司的多人參加此教學課程，請在結尾加上您的姓名）
 1. 作為&#x200B;**[!UICONTROL 網域]**，請輸入`enablementadobe.com` （稍後說明）
@@ -53,6 +53,7 @@ ht-degree: 11%
 1. 開啟您的新標籤屬性
 1. 移至&#x200B;**[!UICONTROL 擴充功能]** > **[!UICONTROL 目錄]**
 1. 搜尋`Adobe Experience Platform Web SDK`
+1. 選取`Adobe Experience Platform Web SDK`副檔名，讓側欄開啟
 1. 選取&#x200B;**[!UICONTROL 安裝]**
 
    ![安裝Web SDK擴充功能](assets/extension-platform-web-sdk.png)
@@ -60,7 +61,7 @@ ht-degree: 11%
 
 ## 將擴充功能連結至資料流
 
-保留大部分的預設設定，並稍後視需要更新。 您現在唯一必須做的就是將擴充功能連結至資料流：
+保留大部分的預設設定，並稍後視需要更新。 您現在唯一必須做的就是將擴充功能連結至資料流。 這會將正確的資料流/設定ID新增至從瀏覽器發出的網路呼叫，以便這些呼叫在抵達Platform Edge Network時路由至正確的資料流：
 
 1. 在&#x200B;**[!UICONTROL 資料串流]**&#x200B;底下，選取&#x200B;**[!UICONTROL 從清單選擇]**&#x200B;輸入法
 1. 設定&#x200B;**[!UICONTROL 生產環境]**。 （屬性中的其他標籤環境將繼承生產設定）：
@@ -70,7 +71,7 @@ ht-degree: 11%
 
    ![資料流選擇](assets/extension-luma-web-sdk-datastream-extension.png)
 
-如需擴充功能每個區段的詳細資訊，請參閱[設定Adobe Experience Platform Web SDK擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
+如需擴充功能每個區段的詳細資訊，請參閱[設定Adobe Experience Platform Web SDK擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
 
 >[!NOTE]
 >
@@ -84,4 +85,4 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=zh-Hant)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)上分享

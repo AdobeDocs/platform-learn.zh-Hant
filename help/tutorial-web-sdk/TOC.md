@@ -7,7 +7,7 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: cecf8a4dcbf41ce23fd6b04c8401ba2dbb824f39
+source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 31%
@@ -26,7 +26,7 @@ ht-degree: 31%
 + 標籤設定 {#tags-configuration}
    + [安裝 Web SDK 擴充功能](install-web-sdk.md)
    + [建立資料元素](create-data-elements.md)
-   + [建立身分](create-identities.md)
+   + [擷取身分](create-identities.md)
    + [建立標籤規則](create-tag-rule.md)
    + [使用Debugger進行驗證](validate-with-debugger.md)
    + [使用保證進行驗證](validate-with-assurance.md)
