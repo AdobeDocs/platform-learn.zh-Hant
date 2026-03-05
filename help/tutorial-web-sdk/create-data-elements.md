@@ -175,16 +175,16 @@ window.adobeDataLayer.push({
 
 請依照相同的步驟建立這些額外的資料元素：
 
-* **`User Id`**對應至
+* **`User Id`**&#x200B;對應至
   `adobeDataLayer.0.user.id`
 
-* **`User Logged In`**對應至
+* **`User Logged In`**&#x200B;對應至
   `adobeDataLayer.0.user.loggedIn`
 
 * **`Ecommerce Product Id`**&#x200B;對應至`adobeDataLayer.0.ecommerce.detail.products.0.id`
 * **`Ecommerce Product Name`**&#x200B;對應至`adobeDataLayer.0.ecommerce.detail.products.0.name`
 * **`Ecommerce Purchase Id`**&#x200B;對應至`adobeDataLayer.0.ecommerce.purchase.actionField.id`
-* 使用&#x200B;**`Ecommerce Product Category`**&#x200B;自訂程式碼&#x200B;****&#x200B;資料元素型別&#x200B;**[!UICONTROL 和下列自訂程式碼的]**：
+* 使用&#x200B;**`Ecommerce Product Category`**&#x200B;自訂程式碼&#x200B;**&#x200B;**&#x200B;資料元素型別&#x200B;**[!UICONTROL 和下列自訂程式碼的]**：
 
   ```javascript
   return adobeDataLayer[0].ecommerce.detail.products[0].category+":"+adobeDataLayer[0].ecommerce.detail.products[0].subcategory;

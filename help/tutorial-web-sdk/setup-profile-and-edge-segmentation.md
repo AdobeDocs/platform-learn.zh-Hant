@@ -257,7 +257,7 @@ ht-degree: 1%
 1. 選取&#x200B;**[!UICONTROL 下一步]**
 
    ![建立客群](assets/merge-policy-set-active-on-edge.png)
-1. 繼續選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以繼續完成工作流程的其他步驟，並選取&#x200B;**[!UICONTROL 完成]**以儲存您的設定
+1. 繼續選取&#x200B;**[!UICONTROL 下一步]**&#x200B;以繼續完成工作流程的其他步驟，並選取&#x200B;**[!UICONTROL 完成]**&#x200B;以儲存您的設定
    ![建立客群](assets/merge-policy-finish.png)
 
 您現在可以建立對象，以便在Edge上評估。
