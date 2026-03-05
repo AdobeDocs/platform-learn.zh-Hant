@@ -7,10 +7,10 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
+source-git-commit: 5645331be467c4128d9267b8c2656f46bada25c2
 workflow-type: tm+mt
-source-wordcount: '89'
-ht-degree: 31%
+source-wordcount: '95'
+ht-degree: 29%
 
 ---
 
@@ -33,10 +33,11 @@ ht-degree: 31%
 
 + 應用程式設定 {#applications-setup}
    + [設定Experience Platform](setup-experience-platform.md)
+   + [設定設定檔和Edge分段](setup-profile-and-edge-segmentation.md)
+   + [設定Journey Optimizer Web Channel](setup-web-channel.md)
    + [設定Adobe Analytics](setup-analytics.md)
    + [設定Audience Manager](setup-audience-manager.md)
    + [設定Target](setup-target.md)
-   + [設定Journey Optimizer Web Channel](setup-web-channel.md)
 
 + 同意管理 {#consent-management}
    + [設定同意](setup-consent.md)
