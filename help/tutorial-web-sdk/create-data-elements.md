@@ -56,7 +56,7 @@ ht-degree: 2%
 
 ### 在資料層中實作XDM
 
-在此方法中，網頁開發人員實作完整定義的XDM物件作為資料層的結構。 然後您只需將整個資料層對應至標籤中的XDM物件即可。 如果您的實作不使用標籤管理程式，此方法可能是理想之選，因為您可以使用[XDM sendEvent命令](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data)，直接從應用程式傳送資料至XDM。 如果您確實使用標籤，您可以建立自訂程式碼資料元素，將擷取整個資料層作為傳遞JSON物件至XDM。 然後，您將傳遞JSON對應到「傳送事件動作」中的XDM物件欄位。
+在此方法中，網頁開發人員實作完整定義的XDM物件作為資料層的結構。 然後您只需將整個資料層對應至標籤中的XDM物件即可。 如果您的實作不使用標籤管理程式，此方法可能是理想之選，因為您可以使用[XDM sendEvent命令](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data)，直接從應用程式傳送資料至XDM。 如果您確實使用標籤，您可以建立自訂程式碼資料元素，將擷取整個資料層作為傳遞JSON物件至XDM。 然後，您將傳遞JSON對應到「傳送事件動作」中的XDM物件欄位。
 
 以下是資料層使用Adobe使用者端資料層格式的範例：
 
@@ -133,12 +133,12 @@ window.adobeDataLayer.push({
 
 ### 在資料流中對應到XDM
 
-此方法使用內建在資料流設定中的功能，稱為[資料收集的資料準備](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)，並略過將資料層變數對應到標籤中的XDM。
+此方法使用內建在資料流設定中的功能，稱為[資料收集的資料準備](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/datastreams/data-prep)，並略過將資料層變數對應到標籤中的XDM。
 
 #### 優點
 
 * 在點選式UI中靈活地將個別變數對應至XDM
-* 可在資料層移至XDM之前[計算新值](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions)或[轉換資料型別](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)
+* 可在資料層移至XDM之前[計算新值](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-prep/functions)或[轉換資料型別](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/data-prep/data-handling)
 
 #### 缺點
 
@@ -151,7 +151,7 @@ window.adobeDataLayer.push({
 >
 > Google資料層
 > 
-> 如果您的組織已使用Google Analytics，且您的網站上具有傳統Google資料層物件，您可以在標籤中使用[Google資料層擴充功能](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview)。 這可讓您更快速地部署Adobe技術，而不需要向IT團隊請求支援。 將Google資料層對應至XDM會遵循上述相同步驟。
+> 如果您的組織已使用Google Analytics，且您的網站上具有傳統Google資料層物件，您可以在標籤中使用[Google資料層擴充功能](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/extensions/client/google-data-layer/overview)。 這可讓您更快速地部署Adobe技術，而不需要向IT團隊請求支援。 將Google資料層對應至XDM會遵循上述相同步驟。
 
 
 ## 建立資料元素以擷取資料層
@@ -277,4 +277,4 @@ window.adobeDataLayer.push({
 
 >[!NOTE]
 >
->感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)上分享
+>感謝您花時間學習Adobe Experience Platform Web SDK。 如果您有任何疑問、想分享一般意見或有關於未來內容的建議，請在這篇[Experience League社群討論貼文](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=zh-Hant)上分享
