@@ -26,13 +26,13 @@ ht-degree: 18%
 
 瞭解如何使用範本工作流程設定Marketo的來源聯結器。 此工作流程會根據範本自動產生擷取Marketo資料所需的資產。 這樣可節省前期時間，而且資產可以根據您的需求進行自訂。
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451871?captions=chi_hant&learn=on&enablevpops)
 
 ## 標準工作流程
 
 瞭解如何使用標準工作流程為Marketo設定來源聯結器。 標準工作流程需要預先建立方案和身分名稱空間。
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452920?captions=chi_hant&learn=on&enablevpops)
 
 如需詳細資訊，請參閱下列檔案：
 * [Marketo Engage來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hant)。

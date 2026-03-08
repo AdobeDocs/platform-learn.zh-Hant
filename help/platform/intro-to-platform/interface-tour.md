@@ -18,5 +18,5 @@ ht-degree: 0%
 
 瞭解如何導覽Adobe Experience Platform的使用者介面。
 
->[!VIDEO](https://video.tv.adobe.com/v/32792?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430438?captions=chi_hant&learn=on&enablevpops)
 

@@ -20,4 +20,4 @@ ht-degree: 23%
 
 了解如何在 Adobe Experience Platform 中啟用和設定身分識別圖連結規則，以建置準確的客戶輪廓。本影片說明名稱空間優先順序、唯一性設定和驗證，因此您可以在沙箱中有效率地使用這些功能。 如需詳細資訊，請參閱[身分設定UI指南](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/identity-graph-linking-rules/identity-settings-ui)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3458487/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475973/?captions=chi_hant&learn=on&enablevpops)

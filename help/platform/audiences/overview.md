@@ -29,7 +29,7 @@ ht-degree: 22%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-audience-portal-and-composition.md" title="對象入口網站和構成簡介" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421713/?format=jpeg&nocache=1740173577252" alt="對象入口網站和構成簡介"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423364/?captions=chi_hant&format=jpeg&nocache=1740173577252" alt="對象入口網站和構成簡介"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -52,7 +52,7 @@ ht-degree: 22%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="upload-audiences.md" title="將受眾上傳至Adobe Experience Platform" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3421714/?format=jpeg&nocache=1740173577237" alt="將受眾上傳至Adobe Experience Platform"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423355/?captions=chi_hant&format=jpeg&nocache=1740173577237" alt="將受眾上傳至Adobe Experience Platform"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -290,7 +290,7 @@ ht-degree: 22%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="同盟對象構成概觀" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="同盟對象構成概觀"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450898/?captions=chi_hant&format=jpeg&nocache=1740173579477" alt="同盟對象構成概觀"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -313,7 +313,7 @@ ht-degree: 22%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="連線並設定同盟對象構成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="連線並設定同盟對象構成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451567/?captions=chi_hant&format=jpeg&nocache=1740173579488" alt="連線並設定同盟對象構成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -336,7 +336,7 @@ ht-degree: 22%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/create-a-federated-audience-composition.md" title="建立同盟受眾構成" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433247/?format=jpeg&nocache=1740173579467" alt="建立同盟受眾構成"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3448589/?captions=chi_hant&format=jpeg&nocache=1740173579467" alt="建立同盟受眾構成"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

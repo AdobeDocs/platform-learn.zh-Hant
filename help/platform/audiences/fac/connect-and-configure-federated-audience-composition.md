@@ -20,4 +20,4 @@ ht-degree: 1%
 
 瞭解如何連線至您的Data Warehouse並設定該連線以用於Federated Audience Composition。 如需詳細資訊，請造訪[同盟對象組合檔案](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/home){target="_blank"}。
 
->[!VIDEO](https://video.tv.adobe.com/v/3433246/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451567/?captions=chi_hant&learn=on&enablevpops)

@@ -18,4 +18,4 @@ ht-degree: 0%
 
 此影片會逐步說明如何以順暢且可擴充的方式將資料庫來源中的資料批次擷取到Adobe Experience Platform的Real-Time Customer Profile和Experience Data Lake。 如需更詳細的產品檔案，請參閱Source聯結器概觀頁面上的[資料庫](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hant#database)或[Google Big Query來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/329317?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475991?captions=chi_hant&learn=on&enablevpops)

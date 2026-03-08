@@ -19,7 +19,7 @@ ht-degree: 9%
 
 使用您自己的加密金鑰管理靜態資料加密。 如需詳細資訊，請瀏覽[客戶管理的金鑰檔案](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430933/?captions=chi_hant&learn=on&enablevpops)
 
 >[!IMPORTANT]
 >
