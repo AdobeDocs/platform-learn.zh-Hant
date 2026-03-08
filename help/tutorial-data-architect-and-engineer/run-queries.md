@@ -64,11 +64,11 @@ Adobe Experience Platform查詢服務可讓您使用標準SQL在Platform中查�
 
    ![從熟客資料集中選取資料](assets/queries-loyaltySelect.png)
 
-1. 如果發生任何錯誤，**[!UICONTROL 主控台]**索引標籤中將會顯示詳細訊息，如下圖所示
+1. 如果發生任何錯誤，**[!UICONTROL 主控台]**&#x200B;索引標籤中將會顯示詳細訊息，如下圖所示
    ![查詢發生錯誤](assets/queries-error.png)
 
 1. 使用成功的查詢，**[!UICONTROL 命名]** `Luma Gold Level Customers`
-1. 選取&#x200B;**[!UICONTROL 儲存]**按鈕
+1. 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;按鈕
    ![正在儲存查詢](assets/queries-loyaltySelect-save.png)
 
 

@@ -61,12 +61,12 @@ ht-degree: 1%
    ![選取新增設定檔](assets/adminconsole-newProfile.png)
 
 1. 前往&#x200B;**[!UICONTROL 使用者]**&#x200B;標籤
-1. 選取&#x200B;**[!UICONTROL 新增使用者]**按鈕
+1. 選取&#x200B;**[!UICONTROL 新增使用者]**&#x200B;按鈕
    ![選取新增使用者](assets/adminconsole-addUser.png)
 1. 完成工作流程，將教學課程參與者作為使用者新增至產品設定檔
 
 1. 移至&#x200B;**[!UICONTROL 開發人員]**&#x200B;標籤
-1. 選取&#x200B;**[!UICONTROL 新增開發人員]**按鈕
+1. 選取&#x200B;**[!UICONTROL 新增開發人員]**&#x200B;按鈕
    ![選取新增使用者](assets/adminconsole-addDeveloper.png)
 1. 完成工作流程，將教學課程參與者作為開發人員新增至產品設定檔
 
@@ -141,11 +141,11 @@ Experience Platform的精細許可權是在Platform介面的許可權畫面中�
 1. 前往&#x200B;**[!UICONTROL 許可權]**&#x200B;標籤
 1. 開啟&#x200B;**[!UICONTROL 平台]**
 1. 請確定已選取所有可用的平台（根據您的授權，您可能會看到不同的選項）
-1. **[!UICONTROL 儲存]**任何變更
+1. **[!UICONTROL 儲存]**&#x200B;任何變更
    ![新增平台](assets/adminconsole-launch-addPlatforms.png)
 1. 開啟&#x200B;**[!UICONTROL 屬性]**
 1. 請確定&#x200B;**[!UICONTROL 自動包含]**&#x200B;切換為關閉，如此您便無法存取任何屬性（我們將在稍後新增）
-1. **[!UICONTROL 儲存]**任何變更
+1. **[!UICONTROL 儲存]**&#x200B;任何變更
    ![移除屬性](assets/adminconsole-launch-removeProperties.png)
 1. 開啟&#x200B;**[!UICONTROL 屬性權利]**
 1. 選取&#x200B;**[!UICONTROL 全部新增]**&#x200B;以新增所有屬性許可權
@@ -162,7 +162,7 @@ Experience Platform的精細許可權是在Platform介面的許可權畫面中�
 現在將您新增為資料收集設定檔的使用者：
 
 1. 前往&#x200B;**[!UICONTROL 使用者]**&#x200B;標籤
-1. 選取&#x200B;**[!UICONTROL 新增使用者]**按鈕
+1. 選取&#x200B;**[!UICONTROL 新增使用者]**&#x200B;按鈕
    ![選取新增使用者](assets/adminconsole-launch-addUser.png)
 1. 完成工作流程，將自己新增為產品設定檔的使用者
 
