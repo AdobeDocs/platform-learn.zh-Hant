@@ -189,13 +189,13 @@ Adobe提供了一組豐富的[!DNL Postman]集合，可幫助您探索Experience
 1. 將其匯入[!DNL Postman]
 1. 開啟&#x200B;**結構描述登入API >結構描述>清單結構描述**
 1. 檢視&#x200B;**Params**&#x200B;和&#x200B;**Headers**&#x200B;標籤，並注意它們如何包含我們先前輸入的一些環境變數。
-1. 請注意，**Headers > Accept值欄位**&#x200B;已設定為`application/vnd.adobe.xed-id+json`。 結構描述登入API需要這些[指定的Accept標頭值](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept)之一，這些值在回應中提供不同的格式。
+1. 請注意，**Headers > Accept值欄位**&#x200B;已設定為`application/vnd.adobe.xed-id+json`。 結構描述登入API需要這些[指定的Accept標頭值](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=zh-Hant#accept)之一，這些值在回應中提供不同的格式。
 1. 選取&#x200B;**傳送**&#x200B;以進行您的第一個Platform API呼叫！
 
 希望您獲得成功的`200 OK`回應，其中包含沙箱中可用的Adobe提供的XDM結構描述清單，如下圖所示。
 
 Postman中的![第一個API呼叫](assets/postman-firstAPICall.png)
 
-如果您的呼叫失敗，請花點時間使用API呼叫的錯誤回應詳細資料進行偵錯，並檢閱上述步驟。 如果您卡住了，請在[社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community)尋求協助，或使用本頁右側的連結「登入問題」。
+如果您的呼叫失敗，請花點時間使用API呼叫的錯誤回應詳細資料進行偵錯，並檢閱上述步驟。 如果您卡住了，請在[社群論壇](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=zh-Hant)尋求協助，或使用本頁右側的連結「登入問題」。
 
 設定好Platform許可權、沙箱和[!DNL Postman]後，您就可以[在結構描述中建立資料模型](model-data-in-schemas.md)！

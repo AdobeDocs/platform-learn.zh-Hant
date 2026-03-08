@@ -17,6 +17,6 @@ ht-degree: 33%
 
 # 使用列舉的欄位和建議值
 
-瞭解如何使用列舉的欄位和建議值在區段產生器介面中建立易用的下拉式選單。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html)。
+瞭解如何使用列舉的欄位和建議值在區段產生器介面中建立易用的下拉式選單。 如需詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)

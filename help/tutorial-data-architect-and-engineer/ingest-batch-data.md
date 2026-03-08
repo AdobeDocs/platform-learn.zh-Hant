@@ -79,8 +79,8 @@ ht-degree: 0%
 >
 >在本課程的各個熒幕中，您會看到一些選項，**[!UICONTROL 錯誤診斷]**&#x200B;和&#x200B;**[!UICONTROL 部分擷取]**。 本教學課程未涵蓋這些選項。 一些快速資訊：
 >
->* 啟用錯誤診斷會產生有關資料擷取的資料，然後您可以使用資料存取API進行檢閱。 在[檔案](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html)中進一步瞭解。
->* 部分擷取可讓您擷取包含錯誤的資料，最多可擷取您所能指定的特定臨界值。 在[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)中進一步瞭解
+>* 啟用錯誤診斷會產生有關資料擷取的資料，然後您可以使用資料存取API進行檢閱。 在[檔案](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=zh-Hant)中進一步瞭解。
+>* 部分擷取可讓您擷取包含錯誤的資料，最多可擷取您所能指定的特定臨界值。 在[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=zh-Hant)中進一步瞭解
 
 ### 驗證資料
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 ![資料擷取webhook](assets/ingestion-loyalty-webhook.png)
 
-如需有關通知的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)。
+如需有關通知的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=zh-Hant#available-status-notification-events)。
 
 ## 使用Platform API批次擷取資料
 
@@ -226,7 +226,7 @@ ht-degree: 0%
 
 ![資料擷取webhook](assets/ingestion-crm-webhook.png)
 
-如需有關通知的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)。
+如需有關通知的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=zh-Hant#available-status-notification-events)。
 
 ## 使用工作流程內嵌資料
 
@@ -282,7 +282,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->我們在本練習中將使用的離線購買資料包含日期時間資料。 日期時間資料應該使用[ISO 8061格式字串](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000-08:00&quot;)或以毫秒(1531263959000)為單位格式化的Unix時間，並在擷取時轉換為目標XDM型別。 如需資料轉換和其他限制的詳細資訊，請參閱[批次擷取API檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types)。
+>我們在本練習中將使用的離線購買資料包含日期時間資料。 日期時間資料應該使用[ISO 8061格式字串](https://www.iso.org/iso-8601-date-and-time-format.html) (&quot;2018-07-10T15:05:59.000-08:00&quot;)或以毫秒(1531263959000)為單位格式化的Unix時間，並在擷取時轉換為目標XDM型別。 如需資料轉換和其他限制的詳細資訊，請參閱[批次擷取API檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=zh-Hant#types)。
 
 ### 下載、準備資料，並將其上傳到您偏好的雲端儲存空間供應商
 
@@ -334,12 +334,12 @@ ht-degree: 0%
 
 Adobe與多個ETL廠商合作，支援將資料擷取至Experience Platform。 由於協力廠商眾多，本教學課程不涵蓋ETL，不過歡迎您檢閱以下部分資源：
 
-* [開發Adobe Experience Platform的ETL整合](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
+* [開發Adobe Experience Platform的ETL整合](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=zh-Hant)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## 其他資源
 
-* [批次擷取檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
+* [批次擷取檔案](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=zh-Hant)
 * [批次擷取API參考](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 現在讓我們使用Web SDK[串流資料](ingest-streaming-data.md)

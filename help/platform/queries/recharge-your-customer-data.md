@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->此影片是摘錄自Adobe Summit 2020工作階段&#x200B;*[為充滿活力的體驗重新充電全通路資料](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*。
+>此影片是摘錄自Adobe Summit 2020工作階段&#x200B;*[為充滿活力的體驗重新充電全通路資料](https://business.adobe.com/tw/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*。

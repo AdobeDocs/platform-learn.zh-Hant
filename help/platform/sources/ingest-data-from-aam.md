@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 使用Adobe Audience Manager資料聯結器擷取資料
 
-在這段整合影片中，瞭解如何使用Audience Manager Data Connector，將AAM中的特徵和區段帶入Platform，並將其與其他豐富資料結合。 如需詳細資訊，請參閱[Audience Manager來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)。
+在這段整合影片中，瞭解如何使用Audience Manager Data Connector，將AAM中的特徵和區段帶入Platform，並將其與其他豐富資料結合。 如需詳細資訊，請參閱[Audience Manager來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 

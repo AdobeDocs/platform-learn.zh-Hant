@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 使用Edge Network提供「即時」個人化
 
-同盟對象構成可讓您運用從企業資料倉儲已同盟的構成對象資料，使Adobe Experience Platform (AEP)中現有的對象更為豐富。 此資料不會儲存在Adobe Experience Platform中，但您可以使用[事件轉送](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"}功能，將此資料直接傳送至您的資料倉儲。
+同盟對象構成可讓您運用從企業資料倉儲已同盟的構成對象資料，使Adobe Experience Platform (AEP)中現有的對象更為豐富。 此資料不會儲存在Adobe Experience Platform中，但您可以使用[事件轉送](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/tags/event-forwarding/overview){target="_blank"}功能，將此資料直接傳送至您的資料倉儲。
 
 在本練習中，我們使用查詢了信用評分和貸款活動的同盟對象，來豐富貸款申請網頁訪客的行為對象。
 

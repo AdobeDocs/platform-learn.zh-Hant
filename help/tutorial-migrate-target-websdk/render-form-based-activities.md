@@ -100,7 +100,7 @@ Platform Web SDK提供更好的控制功能，讓您使用指定了`applyProposi
 | `replaceHtml` | 移除容器並以選件取代 | 無 | 是 |
 | `appendHtml` | 在指定的選取器後附加選件 | 無 | 是 |
 
-如需其他轉譯選項和範例，請參閱[有關使用Platform Web SDK轉譯內容的專屬檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)。
+如需其他轉譯選項和範例，請參閱[有關使用Platform Web SDK轉譯內容的專屬檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hant)。
 
 ## 實作範例
 
@@ -203,4 +203,4 @@ Platform Web SDK提供更好的控制功能，讓您使用指定了`applyProposi
 
 >[!NOTE]
 >
->我們致力協助您成功將Target從at.js移轉至Web SDK。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。
+>我們致力協助您成功將Target從at.js移轉至Web SDK。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=zh-Hant#M463)中張貼以告知我們。

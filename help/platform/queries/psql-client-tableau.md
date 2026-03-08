@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 將Tableau連線至查詢服務
 
-瞭解如何從各種支援PostgreSQL通訊協定的案頭使用者端應用程式連線到查詢服務，以及如何使用PostgreSQL工具和驅動程式來連線及寫入查詢。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)。
+瞭解如何從各種支援PostgreSQL通訊協定的案頭使用者端應用程式連線到查詢服務，以及如何使用PostgreSQL工具和驅動程式來連線及寫入查詢。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/query/home)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333702?learn=on&enablevpops)

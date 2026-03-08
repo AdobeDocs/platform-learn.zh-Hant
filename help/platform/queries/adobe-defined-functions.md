@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Adobe定義的函式
 
-瞭解如何在Adobe Experience Platform查詢服務中使用Adobe定義的函式，以對Experience Event資料執行常見的業務相關工作。 如需詳細資訊，請造訪查詢服務[中的](https://experienceleague.adobe.com/en/docs/experience-platform/query/sql/adobe-defined-functions)Adobe定義的SQL函式。
+瞭解如何在Adobe Experience Platform查詢服務中使用Adobe定義的函式，以對Experience Event資料執行常見的業務相關工作。 如需詳細資訊，請造訪查詢服務[中的](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/query/sql/adobe-defined-functions)Adobe定義的SQL函式。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333701?learn=on&enablevpops)

@@ -140,7 +140,7 @@ CRM ID是`Luma Loyalty Dataset`中的身分欄位，但只能使用主要身分�
 
 ## 其他資源
 
-* [合併原則檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
+* [合併原則檔案](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=zh-Hant)
 * [合併原則API （即時客戶設定檔API的一部分）參考](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 現在讓我們移至[資料治理架構](apply-data-governance-framework.md)。

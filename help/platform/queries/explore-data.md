@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 使用查詢服務驗證資料
 
-瞭解如何使用SQL函式驗證所擷取的資料。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)。
+瞭解如何使用SQL函式驗證所擷取的資料。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/query/home)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on&enablevpops)

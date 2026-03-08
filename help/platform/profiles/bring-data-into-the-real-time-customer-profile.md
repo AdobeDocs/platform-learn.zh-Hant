@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 將資料帶入即時客戶個人檔案
 
-即時客戶個人檔案可在客戶歷程的每個階段大規模實現跨管道個人化。 您可以透過啟用結構描述和對應的資料集，為Real-time Customer Profile啟用批次或串流資料。 如需詳細的產品檔案，請參閱[將資料新增至即時客戶設定檔](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html)和[使用API設定設定設定檔的資料集](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html)。
+即時客戶個人檔案可在客戶歷程的每個階段大規模實現跨管道個人化。 您可以透過啟用結構描述和對應的資料集，為Real-time Customer Profile啟用批次或串流資料。 如需詳細的產品檔案，請參閱[將資料新增至即時客戶設定檔](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html?lang=zh-Hant)和[使用API設定設定設定檔的資料集](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html?lang=zh-Hant)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27301?learn=on&enablevpops)
