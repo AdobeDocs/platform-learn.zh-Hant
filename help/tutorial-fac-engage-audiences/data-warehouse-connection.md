@@ -3,11 +3,11 @@ title: 資料倉儲連線
 seo-title: Configure a data warehouse connection | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 資料倉儲連線
 description: 在本練習中，我們會設定Adobe Experience Platform與您的企業Data Warehouse之間的連線，以啟用同盟對象構成。
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 首先，請設定Adobe Experience Platform與您的企業Data Warehouse之間的連線。 我們根據資料在Data Warehouse中的存放方式，使用結構描述和資料模型來支援查詢建立。
 
-為了示範，我們連線至Snowflake帳戶。 同盟對象構成支援不斷增加的Data Warehouse連線清單。 檢視整合的[更新清單](https://experienceleague.adobe.com/zh-hant/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+為了示範，我們連線至Snowflake帳戶。 同盟對象構成支援不斷增加的Data Warehouse連線清單。 檢視整合的[更新清單](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 ## 步驟
 

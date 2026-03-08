@@ -4,12 +4,12 @@ description: 瞭解如何使用Audience Manager Data Connector將來自AAM的特
 feature: Sources
 topic: Integrations
 badgeIntegration: label="整合" type="positive"
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: ad7ae1f2c6dc6ea943f56e74107b9aa8245b35ac
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 使用Adobe Audience Manager資料聯結器擷取資料
 
-在這段整合影片中，瞭解如何使用Audience Manager Data Connector，將AAM中的特徵和區段帶入Platform，並將其與其他豐富資料結合。 如需詳細資訊，請參閱[Audience Manager來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hant)。
+在這段整合影片中，瞭解如何使用Audience Manager Data Connector，將AAM中的特徵和區段帶入Platform，並將其與其他豐富資料結合。 如需詳細資訊，請參閱[Audience Manager來源聯結器檔案](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 

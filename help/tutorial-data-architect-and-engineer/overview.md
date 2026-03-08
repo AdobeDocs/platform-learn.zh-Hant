@@ -2,13 +2,13 @@
 title: 資料架構師和資料工程師專用Adobe Experience Platform快速入門
 description: 資料架構師和資料工程師快速入門Adobe Experience Platform。
 breadcrumb-title: 概觀
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 0%
@@ -19,18 +19,18 @@ ht-degree: 0%
 
 <!--5min-->
 
-_資料架構師和資料工程師的Adobe Experience Platform快速入門_&#x200B;是動手進行Experience Platform的最佳起點。
+_資料架構師和資料工程師的Adobe Experience Platform快速入門_&#x200B;是動手操作Experience Platform的最佳起點。
 
 
 <!--How do we address ETL-->
 
 ## 學習目標
 
-資料架構師和資料工程師必須緊密合作，才能成功Experience Platform部署。 此實作教學課程會教導您&#x200B;_兩個角色_&#x200B;執行的主要工作，讓您瞭解如何開始為自己的企業實作Platform。 您將透過練習逐步瞭解Experience Platform的重要術語、功能、介面和API。 Adobe Experience Cloud應用程式(例如Real-time Customer Data Platform、Customer Journey Analytics和Journey Optimizer)的客戶也會發現此內容很有用，因為Platform服務是這些應用程式的重要基礎。
+資料架構師和資料工程師必須緊密合作，才能成功部署Experience Platform。 此實作教學課程會教導您&#x200B;_兩個角色_&#x200B;執行的主要工作，讓您瞭解如何開始為自己的企業實作Platform。 您將透過練習逐步瞭解Experience Platform的重要術語、功能、介面和API。 Real-Time Customer Data Platform、Customer Journey Analytics和Journey Optimizer等Adobe Experience Cloud應用程式的客戶也會發現此內容非常有用，因為平台服務是這些應用程式的重要基礎。
 
 ![Adobe Experience Cloud行銷結構重點說明本教學課程中涵蓋的Platform服務 — 身分、設定檔、分段、擷取、查詢和治理](assets/marketecture.png)
 
-主題包括：
+包含主題：
 
 * 設定使用者許可權
 * 建立沙箱
@@ -48,7 +48,7 @@ Adobe Experience Platform是技術平台，旨在協助您達成行銷目標。 
 
 ## 先決條件
 
-* 您已觀看Experience League上的[Adobe Experience Platform播放清單簡介](https://experienceleague.adobe.com/zh-hant/playlists/experience-platform-introduction)，並熟悉Platform功能
+* 您已觀看Experience League上的[Adobe Experience Platform播放清單簡介](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction)，並熟悉平台功能
 * 您可以存取透過Adobe Experience Platform (或Real-Time CDP或Journey Optimizer等平台型應用程式)和Data Collection （前身為Launch）布建的帳戶。
 * 您是該帳戶的系統管理員，或者可以為您設定一個[使用者許可權](configure-permissions.md)。
 
@@ -58,7 +58,7 @@ Adobe Experience Platform是技術平台，旨在協助您達成行銷目標。 
 
 在本教學課程中建立各種Platform元素時，請儘量使用我建議的名稱。 不過，如果您的組織有多人同時參加此教學課程，建議您自訂一些高階元素名稱。 例如，您可能會想要將Platform沙箱命名為「Luma Tutorial Platform - Ignatius J Reilly」，而不僅僅是「Luma Tutorial Platform」。
 
-如果您卡住了，請先嘗試重新閱讀指示，然後使用每個頁面側邊欄上的![記錄問題](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=zh-Hant)連結來聯絡我。
+如果您卡住了，請先嘗試重新閱讀指示，然後使用每個頁面側邊欄上的![記錄問題](https://experienceleague.adobe.com/assets/img/feedback.svg)連結來聯絡我。
 
 ## 技術說明
 
@@ -72,7 +72,7 @@ Adobe Experience Platform是技術平台，旨在協助您達成行銷目標。 
 
 ### 協力廠商技術
 
-雖然在本教學課程中，您將使用多項技術，但您幾乎仍會停留在Adobe生態系統內。 在您自己的Platform實作中，您可能會將Platform與特定的協力廠商技術整合。 為了讓本教學課程適用於所有客戶，我們將使用較通用的實施。
+雖然在本教學課程中，您將會使用多項技術，但您幾乎完全停留在Adobe生態系統內。 在您自己的Platform實作中，您可能會將Platform與特定的協力廠商技術整合。 為了讓本教學課程適用於所有客戶，我們將使用較通用的實施。
 
 ## 教學課程更新
 

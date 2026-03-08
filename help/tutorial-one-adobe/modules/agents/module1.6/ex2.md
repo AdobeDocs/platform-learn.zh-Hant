@@ -3,7 +3,8 @@ title: AEM MCP伺服器和游標
 description: AEM MCP伺服器和游標
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
+exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '743'
 ht-degree: 1%
@@ -48,7 +49,7 @@ ht-degree: 1%
 
 ![Cursor + AEM](./images/cursorai2.png)
 
-選取您之前建立的資料夾，然後按一下[開啟]。**&#x200B;**
+選取您之前建立的資料夾，然後按一下[開啟]。****
 
 ![Cursor + AEM](./images/cursorai3.png)
 
@@ -68,8 +69,8 @@ ht-degree: 1%
 
 ```json
 "aem": {
-	"url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
-	}
+    "url": "https://mcp.adobeaemcloud.com/adobe/mcp/content"
+    }
 ```
 
 ![Cursor + AEM](./images/cursorai7.png)
@@ -114,7 +115,7 @@ List AEM Author instances
 
 ![Cursor + AEM](./images/cursorai15.png)
 
-您應該會看到類似這樣的內容。 搜尋您要使用的環境，然後輸入以下提示並按一下[傳送]。**&#x200B;**
+您應該會看到類似這樣的內容。 搜尋您要使用的環境，然後輸入以下提示並按一下[傳送]。****
 
 ```javascript
 use environment number X
@@ -176,7 +177,7 @@ promote the changes by creating a new launch and promoting it
 ```
 ,
 "aem-discovery": {
-	"url": "https://mcp.adobeaemcloud.com/adobe/mcp/discovery"
+    "url": "https://mcp.adobeaemcloud.com/adobe/mcp/discovery"
 }
 ```
 

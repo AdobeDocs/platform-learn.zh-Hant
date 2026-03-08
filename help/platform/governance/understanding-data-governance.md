@@ -1,20 +1,20 @@
 ---
-title: 資料治理總覽
+title: 資料治理概觀
 description: 瞭解如何完全掌控您的資料，包括在資料來源處收集資料，以及將資料整合到Adobe Experience Platform外部的目的地。
 feature: Data Governance
-role: User, Developer, Data Architect, Admin
+role: User, Developer, Admin
 level: Beginner
 jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 2978464d69b182b196d4e21ece46dce56dc6dcfc
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 16%
+ht-degree: 18%
 
 ---
 
-# 資料治理總覽
+# 資料治理概觀
 
 瞭解如何完全掌控您的資料，包括在資料來源處收集資料，以及將資料整合到Adobe Experience Platform外部的目的地。 資料控管是可輕鬆擴充的架構，深入內嵌於資料使用工作流程中。 此架構建立在三個關鍵方面 — 標籤、原則和執行。 如需詳細資訊，請瀏覽[資料控管檔案](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hant)。
 
@@ -73,7 +73,7 @@ ht-degree: 16%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="使用標籤進行資料分類" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422788?format=jpeg&nocache=1740179989358&captions=chi_hant" alt="使用標籤進行資料分類"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="使用標籤進行資料分類"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

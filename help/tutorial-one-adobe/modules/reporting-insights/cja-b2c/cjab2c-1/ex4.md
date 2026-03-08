@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Analysis Workspace中的資料準備
 kt: 5342
 doc-type: tutorial
 exl-id: 0bc05318-154a-425c-9e8c-3ddcfe8ad19c
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '759'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 - 瞭解Analysis Workspace中的資料準備概念
 - 瞭解如何進行資料計算
 
-## 1.1.4.1 CJA中的Analysis Workspace UI
+## CJA中的1.1.4.1 Analysis Workspace UI
 
 Analysis Workspace移除單一Analytics報表的所有一般限制。 它為建置自訂分析專案提供了強大、彈性的畫布。 您可拖放任意數量的資料表格、視覺效果和元件（維度、量度、區段和時間粒度）至專案。 立即建立劃分和區段、建立同類群組以供分析、建立警報、比較區段、進行流量和流失分析，以及組織和排程報表，以便與業務中的任何人員共用。
 
@@ -33,8 +33,8 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 
 ### 建立您的專案
 
-現在該建立您的第一個CJA工作區了。 前往CJA內的&#x200B;**Workspace**&#x200B;標籤。
-按一下&#x200B;**建立專案**。
+現在到了建立第一個CJA工作區的時候。 前往CJA內的&#x200B;**Workspace**標籤。
+按一下**建立專案**。
 
 ![示範](./images/prmenu.png)
 
@@ -53,7 +53,7 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 接下來，您將儲存專案並為其命名。 您可以使用下列指令來儲存：
 
 | 作業系統 | 捷徑 |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Windows | Control + S |
 | Mac | Command + S |
 
@@ -64,14 +64,14 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 請使用此命名慣例：
 
 | 名稱 | 說明 |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- - Omnichannel Analysis` | `--aepUserLdap-- - Omnichannel Analysis` |
 
 接著，按一下&#x200B;**儲存**。
 
 ![示範](./images/prsave2.png)
 
-## 1.1.4.2計算量度
+## 1.1.4.2個計算量度
 
 雖然我們已將所有元件組織在「資料檢視」中，您仍需調整部分元件，讓業務使用者可開始分析。 此外，在任何分析期間，您可以建立計算量度，以更深入探究見解發現。
 
@@ -110,7 +110,7 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 最後，變更計算量度的名稱和說明：
 
 | 標題 | 說明 | 外部 ID |
-| ----------------- |-------------| -------------| 
+| ----------------- |-------------| -------------|
 | 轉換率 | 轉換率 | conversionRate |
 
 您就會擁有此專案。 按一下&#x200B;**儲存**。
@@ -121,7 +121,7 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 
 ![示範](./images/calcbuildercr6a.png)
 
-## 1.1.4.3計算量度：篩選器（細分）和日期範圍
+## 1.1.4.3計算量度：篩選器（分段）和日期範圍
 
 ### 篩選器：計算量度
 
@@ -149,11 +149,11 @@ Customer Journey Analytics讓此解決方案以Platform資料為基礎。 我們
 
 ![示範](./images/timedimensions.png)
 
-您現在已完成使用CJA Analysis Workspace的資料準備練習。
+您現在已使用CJA Analysis Workspace完成資料準備練習。
 
 ## 後續步驟
 
-使用Customer Journey Analytics[&#128279;](./ex5.md)移至1.1.5視覺效果(./ex2.md){target="_blank"}
+使用Customer Journey Analytics[移至](./ex5.md)1.1.5視覺效果(./ex2.md){target="_blank"}
 
 返回[Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 

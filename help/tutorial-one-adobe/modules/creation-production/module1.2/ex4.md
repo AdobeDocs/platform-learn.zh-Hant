@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 1%
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 1.2.4.2在Frame.io中設定Webhook
 
-移至Postman並開啟要求&#x200B;**POST — 取得集合** Adobe IO - OAuth **中的存取權杖**。 接著，按一下[傳送]，要求新的&#x200B;**access_token**。**&#x200B;**
+移至Postman並開啟要求&#x200B;**POST — 取得集合** Adobe IO - OAuth **中的存取權杖**。 接著，按一下[傳送]，要求新的&#x200B;**access_token**。****
 
 ![框架IO](./images/frameV4api2.png)
 
@@ -87,7 +87,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf13.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]&#x200B;**執行快速測試。**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]**執行快速測試。******
 
 ![框架IO](./images/aemf14.png)
 
@@ -138,7 +138,7 @@ ht-degree: 1%
 輸入這些值，然後按一下&#x200B;**新增**。
 
 | 索引鍵 | 價值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `include` | `media_links.original` |
 
 ![框架IO](./images/aemf21b.png)
@@ -147,7 +147,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf22.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![框架IO](./images/aemf23.png)
 
@@ -174,7 +174,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf35.png)
 
-然後您應該擁有此專案。 按一下[儲存]儲存變更。**&#x200B;**
+然後您應該擁有此專案。 按一下[儲存]儲存變更。****
 
 ![框架IO](./images/aemf35a.png)
 
@@ -208,7 +208,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf33.png)
 
-按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。**&#x200B;**&#x200B;**&#x200B;**
+按一下[儲存]儲存變更，然後按一下[執行一次]以測試設定。********
 
 ![框架IO](./images/aemf32.png)
 
@@ -327,7 +327,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf58.png)
 
-按一下[儲存]儲存變更。**&#x200B;**
+按一下[儲存]儲存變更。****
 
 ![框架IO](./images/aemf59.png)
 
@@ -353,7 +353,7 @@ ht-degree: 1%
 
 ![框架IO](./images/aemf64.png)
 
-按一下&#x200B;**儲存並關閉**。
+按一下「**儲存並關閉**」。
 
 ![框架IO](./images/aemf65.png)
 

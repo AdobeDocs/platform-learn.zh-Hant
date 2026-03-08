@@ -2,11 +2,11 @@
 user-guide-title: 使用同盟對象構成直接從您的資料倉儲吸引對象
 breadcrumb-title: 聯合客群構成
 user-guide-description: 此指南可運用您現有的技術棧疊，使用同盟受眾構成來建立和豐富受眾，以將資料複製最小化。
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 3%

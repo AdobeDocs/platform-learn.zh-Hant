@@ -2,11 +2,11 @@
 user-guide-title: Experience Platform 資料架構師和資料工程師快速入門
 breadcrumb-title: 資料架構師與工程師快速入門
 user-guide-description: 開始實作平台的實作教學課程。提供的範例資料和資產。
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 40%

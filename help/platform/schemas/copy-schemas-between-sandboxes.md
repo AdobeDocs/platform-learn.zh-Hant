@@ -2,12 +2,12 @@
 title: 在沙箱之間複製方案
 description: 本影片說明如何使用匯出/匯入方案API，將方案從Adobe Experience Platform的一個沙箱複製到另一個沙箱。
 feature: Schemas, Sandboxes
-role: Data Architect, Developer
+role: Developer
 level: Intermediate
 jira: KT-7939
 thumbnail: 333592.jpg
 exl-id: d0d23739-3a3a-4938-a400-684f36b0ae82
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 1%

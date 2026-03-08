@@ -4,7 +4,7 @@ description: 設定包含推送訊息的歷程
 kt: 5342
 doc-type: tutorial
 exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
-source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -33,8 +33,8 @@ ht-degree: 1%
 
 然後您會看到空白的事件設定。
 首先，請為事件命名，如下所示： `--aepUserLdap--StoreEntryEvent`並將說明設定為`Store Entry Event`。
-下一個是&#x200B;**事件型別**&#x200B;選項。 選取&#x200B;**單一**。
-下一個是&#x200B;**事件ID型別**&#x200B;選擇。 選取&#x200B;**系統產生**。
+下一個是**事件型別**&#x200B;選項。 選取&#x200B;**單一**。
+下一個是**事件ID型別**&#x200B;選擇。 選取&#x200B;**系統產生**。
 
 ![ACOP](./images/eventname.png)
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
 ![ACOP](./images/journeyactions1push.png)
 
-下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。**&#x200B;**
+下一步是建立訊息。 若要這麼做，請按一下[編輯內容]。****
 
 ![ACOP](./images/journeyactions2push.png)
 
@@ -103,11 +103,11 @@ ht-degree: 1%
 
 您將會看到此訊息。 您現在可以直接從即時客戶個人檔案中選取任何個人檔案屬性。
 
-搜尋欄位&#x200B;**名字**，然後按一下欄位&#x200B;**名字**&#x200B;旁的&#x200B;**+**&#x200B;圖示。 接著您會看到新增的名字的個人化權杖： **{{profile.person.name.firstName}}**。
+搜尋欄位&#x200B;**名字**，然後按一下欄位&#x200B;**名字**&#x200B;旁的&#x200B;**+**&#x200B;圖示。 接著您會看到新增的名字的個人化權杖： **`{{profile.person.name.firstName}}`**。
 
 ![推播](./images/bp9.png)
 
-接下來，新增文字&#x200B;**，歡迎來到我們的商店！**&#x200B;在&#x200B;**{{profile.person.name.firstName}}**&#x200B;之後。
+接下來，新增文字&#x200B;**，歡迎來到我們的商店！**&#x200B;在&#x200B;**`{{profile.person.name.firstName}}`**&#x200B;之後。
 
 按一下&#x200B;**儲存**。
 
@@ -175,7 +175,7 @@ ht-degree: 1%
 
 ![DSN](./images/pushpoi8.png)
 
-按一下[新增所有變更的資源]&#x200B;**，然後按一下[儲存並建置至開發]**&#x200B;**。**
+按一下[新增所有變更的資源]**，然後按一下[儲存並建置至開發]****。**
 
 ![DSN](./images/pushpoi9.png)
 

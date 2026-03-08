@@ -4,9 +4,9 @@ description: 查詢服務 — 查詢服務API
 kt: 5342
 doc-type: tutorial
 exl-id: c3afc4fe-df10-4d0e-8c2a-0b056ff797ea
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 文件
 
-- [Adobe Experience Platform查詢服務說明](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=zh-Hant)
+- [Adobe Experience Platform查詢服務說明](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
 - [查詢服務API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## 查詢服務API
@@ -78,7 +78,7 @@ limit 10;
 
 讓我們專注於此標題欄位：
 
-| 索引鍵 | 值 |
+| 索引鍵 | 價值 |
 | ----------- | ----------- |
 | x-sandbox-name | `--aepSandboxName--` |
 
@@ -93,9 +93,9 @@ limit 10;
 ```sql
 {
     "name" : "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "--aepSandboxName--:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "--aepSandboxName--:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
@@ -106,15 +106,15 @@ limit 10;
 ```json
 {
     "name" : "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "tech-insiders:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "tech-insiders:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
 >[!NOTE]
 >
->上述JSON內文中的索引鍵&#x200B;**dbName**&#x200B;參考您Adobe Experience Platform執行個體中使用的沙箱。 若您使用PROD沙箱，dbName應為&#x200B;**prod：all**；若您使用其他沙箱（例如&#x200B;**tech-insidets**），dbName應等於&#x200B;**tech-insidets：all**。
+>上述JSON內文中的索引鍵&#x200B;**dbName**&#x200B;參考您Adobe Experience Platform執行個體中使用的沙箱。 若您使用PROD沙箱，dbName應為&#x200B;**prod:all**；若您使用其他沙箱（例如&#x200B;**tech-insidets**），dbName應等於&#x200B;**tech-insidets:all**。
 
 接著，按一下藍色的&#x200B;**傳送**&#x200B;按鈕以建立區段並檢視其結果。
 
@@ -176,7 +176,7 @@ limit 10;
 
 讓我們專注於此標題欄位：
 
-| 索引鍵 | 值 |
+| 索引鍵 | 價值 |
 | ----------- | ----------- |
 | x-sandbox-name | `--aepSandboxName--` |
 
@@ -246,7 +246,7 @@ limit 10;
 
 讓我們專注於此標題欄位：
 
-| 索引鍵 | 值 |
+| 索引鍵 | 價值 |
 | ----------- | ----------- |
 | x-sandbox-name | `--aepSandboxName--` |
 
@@ -324,7 +324,7 @@ limit 10;
 
 讓我們專注於此標題欄位：
 
-| 索引鍵 | 值 |
+| 索引鍵 | 價值 |
 | ----------- | ----------- |
 | x-sandbox-name | `--aepSandboxName--` |
 

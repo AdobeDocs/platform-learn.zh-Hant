@@ -3,14 +3,14 @@ title: 啟用即時客戶個人檔案
 seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 啟用即時客戶個人檔案
 description: 在本課程中，您將為Real-time Customer Profile啟用結構描述和資料集。
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 雖然聽起來很神奇，但您不需要為設定檔啟動&#x200B;*您的所有資料*。 實際上，您應該只啟用啟用啟用使用案例所需的資料。 啟用您想要用於行銷使用案例、客服中心整合等的資料，以便快速存取強大的客戶設定檔。 如果您上傳的資料僅供分析，則可能不應為設定檔啟用此功能。
 
-對於即時客戶設定檔資料[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)有重要的護欄，在決定您自己的哪些資料應該啟用設定檔時，您應該檢閱這些護欄。
+對於即時客戶設定檔資料[有重要的](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)護欄，在決定您自己的哪些資料應該啟用設定檔時，您應該檢閱這些護欄。
 
 <!--is this accurate. Are there other considerations to point out? -->
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 在開始練習之前，請觀看此短片，以進一步瞭解即時客戶個人檔案：
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
-## 需要的許可權
+## 需要權限
 
 在[設定許可權](configure-permissions.md)課程中，您已設定完成本課程所需的所有存取控制。
 
@@ -80,9 +80,9 @@ ht-degree: 0%
 
 現在該使用API啟用`Luma CRM Schema`了。 如果您想略過此練習，並在使用者介面中將其啟用，請直接進行。
 
-### 取得結構描述的meta：altId
+### 取得結構描述的中繼資料:altId
 
-首先取得`Luma CRM Schema`的`meta:altId`：
+首先取得`meta:altId`的`Luma CRM Schema`：
 
 1. 開啟[!DNL Postman]
 1. 如果您沒有存取權杖，請開啟要求&#x200B;**[!DNL OAuth: Request Access Token]**，然後選取&#x200B;**傳送**&#x200B;來要求新的存取權杖，就像您在[!DNL Postman]課程中所做的一樣。
@@ -90,11 +90,11 @@ ht-degree: 0%
 1. 選取&#x200B;**傳送**&#x200B;按鈕
 1. 您應該會收到200回應
 1. 檢視`Luma CRM Schema`專案的回應並複製`meta:altId`值
-   ![複製meta：altIid](assets/profile-crm-getMetaAltId.png)
+   ![複製中繼資料:altIid](assets/profile-crm-getMetaAltId.png)
 
 ### 啟用結構
 
-現在我們有了結構描述的meta：altId，可以為設定檔啟用它：
+現在我們有結構描述的中繼資料:altId，我們可以為設定檔啟用它：
 
 1. 開啟請求&#x200B;**[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]**
 1. 在&#x200B;**引數**&#x200B;中，將您的`meta:altId`值貼上為`SCHEMA_ID`引數值
@@ -111,7 +111,7 @@ ht-degree: 0%
 1. 選取&#x200B;**傳送**&#x200B;按鈕
 1. 您應該會收到200回應
 
-   ![啟用設定檔的CRM結構描述，並將您的自訂meta：altIid用作SCHEMA_ID引數](assets/profile-crm-enableProfile.png)
+   ![啟用設定檔的CRM結構描述，您的自訂中繼資料:altIid用作SCHEMA_ID引數](assets/profile-crm-enableProfile.png)
 
 您應該能夠在使用者介面中看到設定檔已啟用所有五個結構描述（您可能需要使用SHIFT-Reload才能看到`Luma CRM Schema`已啟用）：
 ![所有已啟用的結構描述](assets/profile-allSchemasEnabled.png)
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 ### 取得資料集的id
 
-首先，我們需要取得`Luma CRM Dataset`的`id`：
+首先，我們需要取得`id`的`Luma CRM Dataset`：
 
 1. 開啟[!DNL Postman]
 1. 如果您沒有存取權杖，請開啟要求&#x200B;**[!DNL OAuth: Request Access Token]**，然後選取&#x200B;**傳送**&#x200B;來要求新的存取權杖，就像您在[!DNL Postman]課程中所做的一樣。

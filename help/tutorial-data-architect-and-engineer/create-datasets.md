@@ -3,15 +3,15 @@ title: 建立資料集
 seo-title: Create datasets | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 建立資料集
 description: 在本課程中，您將建立資料集以接收資料。
-role: Data Architect, Data Engineer
+role: Developer
 feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 6%
 在開始練習之前，請觀看此短片，以進一步瞭解資料集：
 >[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
-## 需要的許可權
+## 需要權限
 
 在[設定許可權](configure-permissions.md)課程中，您已設定完成本課程所需的所有存取控制。
 
@@ -44,23 +44,23 @@ ht-degree: 6%
 在本練習中，我們將在UI中建立資料集。 讓我們從忠誠度資料開始：
 
 1. 移至Platform使用者介面左側導覽中的&#x200B;**[!UICONTROL 資料集]**
-1. 選取&#x200B;**[!UICONTROL 建立資料集]**&#x200B;按鈕
+1. 選取&#x200B;**[!UICONTROL 建立資料集]**按鈕
    ![建立資料集](assets/datasets-createDataset.png)
 
 1. 在下一個畫面中，選取&#x200B;**從結構描述建立資料集**
-1. 在下一個畫面中，選取您的`Luma Loyalty Schema`，然後選取&#x200B;**[!UICONTROL 下一步]**&#x200B;按鈕
+1. 在下一個畫面中，選取您的`Luma Loyalty Schema`，然後選取&#x200B;**[!UICONTROL 下一步]**按鈕
    ![選取資料集](assets/datasets-selectSchema.png)
 
-1. 為資料集命名`Luma Loyalty Dataset`並選取&#x200B;**[!UICONTROL 完成]**&#x200B;按鈕
+1. 為資料集命名`Luma Loyalty Dataset`並選取&#x200B;**[!UICONTROL 完成]**按鈕
    ![命名資料集](assets/datasets-nameDataset.png)
 1. 資料集儲存後，您將會看到類似以下的畫面：
    ![已建立資料集](assets/datasets-created.png)
 
 完成了！我告訴過您這會很快完成。 使用相同的步驟建立以下其他資料集：
 
-1. 您的`Luma Offline Purchase Events Schema`的`Luma Offline Purchase Events Dataset`
-1. 您的`Luma Web Events Schema`的`Luma Web Events Dataset`
-1. 您的`Luma Product Catalog Schema`的`Luma Product Catalog Dataset`
+1. 您的`Luma Offline Purchase Events Dataset`的`Luma Offline Purchase Events Schema`
+1. 您的`Luma Web Events Dataset`的`Luma Web Events Schema`
+1. 您的`Luma Product Catalog Dataset`的`Luma Product Catalog Schema`
 
 
 ## 使用API建立資料集
@@ -73,7 +73,7 @@ ht-degree: 6%
 
 ### 取得要在資料集中使用的結構描述ID
 
-首先，我們需要取得`Luma CRM Schema`的`$id`：
+首先，我們需要取得`$id`的`Luma CRM Schema`：
 
 1. 開啟[!DNL Postman]
 1. 如果您沒有存取權杖，請開啟要求&#x200B;**[!DNL OAuth: Request Access Token]**，然後選取&#x200B;**傳送**&#x200B;來要求新的存取權杖，就像您在[!DNL Postman]課程中所做的一樣。
@@ -122,13 +122,13 @@ ht-degree: 6%
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`：在Admin Console中驗證您的使用者許可權
 
 
-您可以回到Platform使用者介面中的&#x200B;**[!UICONTROL 資料集]**&#x200B;畫面，您可以驗證所有五個資料集的建立是否成功！
+您可以回到Platform使用者介面中的&#x200B;**[!UICONTROL 資料集]**畫面，您可以驗證所有五個資料集的建立是否成功！
 ![五個資料集完成](assets/datasets-allComplete.png)
 
 
 ## 其他資源
 
-* [資料集檔案](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh-Hant)
+* [資料集文件](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh-Hant)
 * [資料集API （目錄服務的一部分）參考](https://www.adobe.io/experience-platform-apis/references/catalog/#tag/Datasets)
 
 現在我們所有的結構描述、身分和資料集都已準備就緒，我們可以[為即時客戶個人檔案啟用它們](enable-profiles.md)。

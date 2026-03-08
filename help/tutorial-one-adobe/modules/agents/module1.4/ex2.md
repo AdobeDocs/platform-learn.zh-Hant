@@ -3,7 +3,8 @@ title: 在您的網站上實作Brand Concierge
 description: 在您的網站上實作Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 0%
@@ -132,7 +133,7 @@ ht-degree: 0%
 
 建立區塊時，最佳實務是建立區塊樣式的檔案，且檔案名稱應與區塊相同。 您現在應該建立該檔案，我們現在將保留空白。
 
-移至&#x200B;**區塊**&#x200B;資料夾。 然後，按一下[新增檔案]&#x200B;**&#x200B;**&#x200B;並選取[建立新檔案]&#x200B;**&#x200B;**。
+移至&#x200B;**區塊**&#x200B;資料夾。 然後，按一下[新增檔案]****&#x200B;並選取[建立新檔案]****。
 
 ![區塊](./images/css1.png)
 
@@ -339,7 +340,7 @@ export default function decorate(block) {
 <script src="/scripts/styleconfigurations.js"></script>
 
 <script>
-		!function (n, o) {
+    !function (n, o) {
       o.forEach(function (o) {
         n[o] || ((n.__alloyNS = n.__alloyNS ||
           []).push(o), n[o] = function () {
@@ -349,14 +350,14 @@ export default function decorate(block) {
       })
     }
       (window, ["alloy"]);
-	</script>
+    </script>
 
 
 <script src="/scripts/alloy.js"></script>
 
 <script>
-	alloy("configure", {
-		defaultConsent: "in",
+    alloy("configure", {
+        defaultConsent: "in",
         edgeDomain: "edge.adobedc.net",
         edgeBasePath: "ee",
         datastreamId: "XXXXX", // replace datastreamId

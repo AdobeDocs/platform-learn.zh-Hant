@@ -2,12 +2,12 @@
 title: 規劃您的資料模型
 description: 在Adobe Experience Platform中開始建立方案之前，請先執行下列動作。
 feature: Schemas
-role: Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7932
 thumbnail: 333478.jpg
 exl-id: f3912973-0f15-4113-8706-6a36b6d24c17
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 1%

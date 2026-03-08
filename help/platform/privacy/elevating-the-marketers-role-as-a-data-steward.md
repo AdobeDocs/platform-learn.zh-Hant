@@ -2,14 +2,14 @@
 title: 提升行銷人員作為資料管理員的角色
 description: 反覆無常的市場力量和不同的消費者隱私權要求會讓數位行銷人員面對令人怯步的情境。為了讓行銷活動符合法規要求，行銷團隊需要IT團隊簡化流程，以確保符合未來的資料控管流程，理想情況下，該流程可讓所有人遵循並執行負責任地使用消費者資料的規則。 聽取 Adobe 和 Scotiabank Digital 對於負責任的資料管理的主要考量因素。
 feature: Privacy
-role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
+role: User, Developer, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 338292.jpg
 jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 18%

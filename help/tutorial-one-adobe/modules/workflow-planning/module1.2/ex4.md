@@ -3,7 +3,8 @@ title: Workfront快速入門
 description: Workfront快速入門
 kt: 5342
 doc-type: tutorial
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+exl-id: 4d431d9d-2e4b-41a4-a31d-b641e2369ced
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -34,8 +35,8 @@ ht-degree: 1%
 
 您會看到&#x200B;**擴充功能組態**&#x200B;快顯視窗。 設定下列欄位以使用此外掛程式。
 
-| 索引鍵 | 值 |
-| --------------- | ------------------------------ | 
+| 索引鍵 | 價值 |
+| --------------- | ------------------------------ |
 | **`IMS_ENV`** | **PROD** |
 | **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** |
 | **`SHOW_CUSTOM_FORMS`** | **&#39;{&quot;previewUrl&quot;： true， &quot;publishUrl&quot;： true}&#39;** |

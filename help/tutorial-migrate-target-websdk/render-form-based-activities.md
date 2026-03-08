@@ -2,7 +2,7 @@
 title: 將Target從at.js 2.x移轉至Web SDK
 description: 瞭解如何將Adobe Target實作從at.js 2.x移轉至Adobe Experience Platform Web SDK。 主題包括程式庫概述、實作差異和其他值得注意的圖說文字。
 exl-id: 43b9ae91-4524-4071-9eb4-12a0a8aec242
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 有些Target實作可能會使用地區mbox （現在稱為「範圍」），從使用表單式體驗撰寫器的活動傳送內容。 如果您的at.js Target實作使用mbox，則您需要執行下列動作：
 
-* 將使用`getOffer()`或`getOffers()`的at.js實作中的任何參考更新為同等的Platform Web SDK方法。
+* 將您使用`getOffer()`或`getOffers()`的at.js實作中的任何參考更新為同等的Platform Web SDK方法。
 * 新增程式碼以觸發`propositionDisplay`事件，計算曝光次數。
 
 ## 隨選要求並套用內容
@@ -49,11 +49,11 @@ adobe.target.getOffer({
 
 +++
 
-+++使用`applyPropositions`命令的Platform Web SDK對等專案：
++++使用`applyPropositions`命令的Platform Web SDK同等專案： 
 
 1. 執行`sendEvent`命令以要求一或多個位置（範圍）的選件（主張）
 1. 使用中繼資料物件執行`applyPropositions`命令，該物件提供如何為每個範圍的頁面套用內容的指示
-1. 執行eventType為`decisioning.propositionDisplay`的`sendEvent`命令以追蹤印象
+1. 執行eventType為`sendEvent`的`decisioning.propositionDisplay`命令以追蹤印象
 
 ```JavaScript
 // Retrieve propositions for homepage_hero location (scope)
@@ -92,7 +92,7 @@ alloy("sendEvent", {
 
 +++
 
-Platform Web SDK提供更好的控制功能，可讓您使用指定了`actionType`的`applyPropositions`命令，將表單式活動套用至頁面：
+Platform Web SDK提供更好的控制功能，讓您使用指定了`applyPropositions`的`actionType`命令，將表單式活動套用至頁面：
 
 | `actionType` | 說明 | at.js `applyOffer()` | Platform Web SDK `applyPropositions` |
 | --- | --- | --- | --- |
@@ -100,13 +100,13 @@ Platform Web SDK提供更好的控制功能，可讓您使用指定了`actionTyp
 | `replaceHtml` | 移除容器並以選件取代 | 無 | 是 |
 | `appendHtml` | 在指定的選取器後附加選件 | 無 | 是 |
 
-如需其他轉譯選項和範例，請參閱[有關使用Platform Web SDK轉譯內容的專屬檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hant)。
+如需其他轉譯選項和範例，請參閱[有關使用Platform Web SDK轉譯內容的專屬檔案](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)。
 
 ## 實作範例
 
 以下範例頁面以上一節中概述的實作為基礎，只是將其他範圍新增到`sendEvent`命令。
 
-+++具有多個範圍的Platform Web SDK範例
++++具有多個範圍的平台網頁SDK範例
 
 ```HTML
 <!doctype html>
@@ -197,8 +197,10 @@ Platform Web SDK提供更好的控制功能，可讓您使用指定了`actionTyp
 </html>
 ```
 
++++
+
 接下來，瞭解如何使用Platform Web SDK[傳遞Target引數](send-parameters.md)。
 
 >[!NOTE]
 >
->我們致力協助您成功將Target從at.js移轉至Web SDK。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=zh-Hant#M463)中張貼以告知我們。
+>我們致力協助您成功將Target從at.js移轉至Web SDK。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中張貼以告知我們。

@@ -4,9 +4,9 @@ description: 使用BigQuery Google Analytics Connector在Adobe Experience Platfo
 kt: 5342
 doc-type: tutorial
 exl-id: f58af1cf-6f2e-420c-9eed-29382806a9f4
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '720'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 ![示範](./images/sourceshome.png)
 
-接著您會看到Google BigQuery帳戶選取畫面。 選取您的帳戶並按一下[下一步] **&#x200B;**。
+接著您會看到Google BigQuery帳戶選取畫面。 選取您的帳戶並按一下[下一步] ****。
 
 ![示範](./images/0c.png)
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 
 ![示範](./images/datasets.png)
 
-## 1.2.4.1 BigQuery表格選取專案
+## 1.2.4.1 BigQuery資料表選取專案
 
 在&#x200B;**選取資料**&#x200B;畫面中，選取您的BigQuery資料集。 您現在可以在BigQuery中看到Google Analytics資料的範例資料預覽。
 
@@ -68,7 +68,7 @@ ht-degree: 2%
 請針對此練習使用下列對應表格。
 
 | 來源欄位 | 目標欄位 |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `_id` | `_id` |
 | `_id` | 頻道。_id |
 | `timeStamp` | 時間戳記 |
@@ -88,7 +88,7 @@ ht-degree: 2%
 對於某些欄位，您需要移除原始對應並為&#x200B;**計算欄位**&#x200B;建立新對應。
 
 | 計算欄位 | 目標欄位 |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `iif(Unique_Purchases == null, 0, Unique_Purchases)` | commerce.purchases.value |
 | `iif(Product_Detail_Views == null, 0, Product_Detail_Views)` | commerce.productViews.value |
 | `iif(Adds_To_Cart == null, 0, Adds_To_Cart)` | commerce.productListAdds.value |
@@ -129,8 +129,8 @@ ht-degree: 2%
 
 **delta**&#x200B;欄位用於排程連線，並僅上傳進入BigQuery資料集的新列。 差異欄位通常永遠是時間戳記欄。 因此，對於未來的排程資料擷取，只會擷取具有新的、更新時間戳記的列。
 
-選取&#x200B;**時間戳記**&#x200B;做為差異欄位。
-按一下&#x200B;**下一步**。
+選取&#x200B;**時間戳記**做為差異欄位。
+按一下**下一步**。
 
 ![示範](./images/ex437.png)
 

@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -66,7 +66,7 @@ ht-degree: 1%
 需要定義下列變數：
 
 | 索引鍵 | 價值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `CONST_client_id` | 您的Adobe I/O專案使用者端ID |
 | `CONST_client_secret` | 您的Adobe I/O專案使用者端密碼 |
 | `CONST_scope` | 您的Adobe I/O專案範圍 |
@@ -124,7 +124,7 @@ ht-degree: 1%
 ![WF Fusion](./images/wffusion20.png)
 
 | 索引鍵 | 價值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `URL` | `https://ims-na1.adobelogin.com/ims/token/v3` |
 | `Method` | `POST` |
 | `Body Type` | `x-www-form-urlencoded` |
@@ -136,7 +136,7 @@ ht-degree: 1%
 為每個以下值新增專案：
 
 | 索引鍵 | 價值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `client_id` | 您預先定義的`CONST_client_id`變數 |
 | `client_secret` | 您預先定義的`CONST_client_secret`變數 |
 | `scope` | 您預先定義的`CONST_scope`變數 |

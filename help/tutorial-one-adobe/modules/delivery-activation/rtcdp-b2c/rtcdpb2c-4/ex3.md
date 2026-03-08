@@ -1,10 +1,10 @@
 ---
-title: Audience Activation到Microsoft Azure事件中樞 — 在Adobe Experience Platform中設定事件中樞RTCDP目的地
-description: Audience Activation到Microsoft Azure事件中樞 — 在Adobe Experience Platform中設定事件中樞RTCDP目的地
+title: Audience Activation至Microsoft Azure事件中心 — 在Adobe Experience Platform中設定事件中心RTCDP目的地
+description: Audience Activation至Microsoft Azure事件中心 — 在Adobe Experience Platform中設定事件中心RTCDP目的地
 kt: 5342
 doc-type: tutorial
 exl-id: e48b7b50-c95b-46da-b696-494da3926325
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 1%
@@ -26,7 +26,7 @@ ht-degree: 1%
 
 ### 事件中樞名稱空間
 
-若要在Azure入口網站中查詢上述資訊，請導覽至[https://portal.azure.com/#home](https://portal.azure.com/#home)。 請確定您使用正確的Azure帳戶。
+若要在Azure入口網站中查詢上述資訊，請導覽至[https://portal.azure.com/#home](https://portal.azure.com/#home)。 確定您使用正確的Azure帳戶。
 
 按一下Azure入口網站中的&#x200B;**所有資源**：
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 |---|---|---|
 | sasKeyName | SAS金鑰名稱 | RootManageSharedAccessKey |
 | sasKey | SAS金鑰值 | pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY= |
-| 名稱空間 | 事件中樞名稱空間 | `--aepUserLdap---aep-enablement` |
+| namespace | 事件中樞名稱空間 | `--aepUserLdap---aep-enablement` |
 | eventHubName | 事件中樞 | `--aepUserLdap---aep-enablement-event-hub` |
 
 ## 在Adobe Experience Platform中建立Azure事件中心目的地

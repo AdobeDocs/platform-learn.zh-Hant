@@ -2,12 +2,12 @@
 title: 建立資料型別
 description: 本影片說明如何在Adobe Experience Platform中建立您自己的資料型別，以便用於Experience Data Model (XDM)結構描述。
 feature: Schemas
-role: Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-7934
 thumbnail: 333537.jpg
 exl-id: 00239ee1-db57-4bd0-acfc-5ba27a9c8fb6
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '59'
 ht-degree: 1%

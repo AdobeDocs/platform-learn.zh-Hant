@@ -4,14 +4,14 @@ breadcrumb-title: 網頁教學課程
 user-guide-description: 了解如何透過標記在網站上實施 Adobe Experience Cloud 解決方案。
 solution: Data Collection
 feature: Tags
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-2179
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 51%
+ht-degree: 53%
 
 ---
 
@@ -30,5 +30,5 @@ ht-degree: 51%
    + [新增 Adobe Analytics](analytics.md)
    + [新增 Adobe Audience Manager](audience-manager.md)
    + [Experience Cloud 整合](integrations.md)
-+ Publish您的屬性{#publish}
-   + [Publish您的屬性](publish.md)
++ 發佈您的屬性{#publish}
+   + [發佈您的屬性](publish.md)

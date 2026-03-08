@@ -4,9 +4,9 @@ description: 使用BigQuery Google Analytics Connector在Adobe Experience Platfo
 kt: 5342
 doc-type: tutorial
 exl-id: 681f50d4-3c3f-43ae-a87e-36aff2840b88
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '540'
 ht-degree: 1%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 1%
 對於&#x200B;**資料集識別碼**，請使用下列命名慣例。 對於其他欄位，請保留預設設定。
 
 | 命名 | 範例 |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
 按一下&#x200B;**建立資料集**。
@@ -239,7 +239,7 @@ GROUP BY
 
 ![示範](./images/ex312.png)
 
-## 1.2.2.3儲存BigQuery SQL查詢的結果
+## 1.2.2.3儲存您的BigQuery SQL查詢結果
 
 下一步是按一下&#x200B;**儲存結果**&#x200B;按鈕，以儲存查詢的輸出。
 
@@ -252,20 +252,20 @@ GROUP BY
 然後您會看到新的快顯視窗，其中已預先填入您的&#x200B;**專案名稱**&#x200B;和&#x200B;**資料集名稱**。 資料集名稱應該是您在本練習開始時建立的資料集，並採用以下命名慣例：
 
 | 命名 | 範例 |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 您現在需要輸入表格名稱。 請使用此命名慣例：
 
 | 命名 | 範例 |
-| ----------------- |------------- | 
+| ----------------- |------------- |
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 按一下&#x200B;**儲存**。
 
 ![示範](./images/ex316.png)
 
-在您建立的表格中，資料準備就緒可能需要一些時間。 幾分鐘後，請重新整理瀏覽器。 然後，您應該會在資料集中看到BigQuery專案內&#x200B;**總管**&#x200B;下的`--aepUserLdap--_GAdataTableBigquery`表格。
+在您建立的表格中，資料準備就緒可能需要一些時間。 幾分鐘後，請重新整理瀏覽器。 然後，您應該會在資料集中看到BigQuery專案內`--aepUserLdap--_GAdataTableBigquery`總管&#x200B;**下的**&#x200B;表格。
 
 ![示範](./images/ex319.png)
 

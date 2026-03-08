@@ -2,15 +2,15 @@
 title: 瞭解即時客戶個人檔案
 description: 這部影片說明 Adobe Experience Platform 如何收集和更新即時客戶輪廓，並解說您能如何存取及使用這些輪廓。
 feature: Profiles
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Beginner
 jira: KT-2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: 112e092df6d486d8b9103013bec57d820b8ae6d7
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 13%
+ht-degree: 15%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="即時客戶個人檔案的概觀圖表" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463975?format=jpeg&nocache=1740415066741&captions=chi_hant" alt="即時客戶個人檔案的概觀圖表"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="即時客戶個人檔案的概觀圖表"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -48,7 +48,7 @@ ht-degree: 13%
                     <p class="is-size-6">本影片將逐步解說說明Adobe Experience Platform即時客戶個人檔案功能的概觀圖表。</p>
                 </div>
                 <a href="overview-diagram.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -71,7 +71,7 @@ ht-degree: 13%
                     <p class="is-size-6">本影片說明如何在Adobe Experience Platform中建立合併原則。 合併原則是Platform用來決定在合併來自不同來源的資料集時將使用哪些資料並排定優先順序的規則，以便建立客戶設定檔。</p>
                 </div>
                 <a href="create-merge-policies.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -94,7 +94,7 @@ ht-degree: 13%
                     <p class="is-size-6">即時客戶個人檔案可在客戶歷程的每個階段大規模實現跨管道個人化。 透過啟用結構和對應的資料集，可以為即時客戶設定檔啟用批次或串流資料。</p>
                 </div>
                 <a href="union-schemas-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -104,7 +104,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="建立購買總和的計算屬性" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443562?format=jpeg&nocache=1740415066775&captions=chi_hant" alt="建立購買總和的計算屬性"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="建立購買總和的計算屬性"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -117,7 +117,7 @@ ht-degree: 13%
                     <p class="is-size-6">了解如何使用計算屬性來加總使用者在多個銷售管道中購買的金額。</p>
                 </div>
                 <a href="create-a-computed-attribute-for-sum-of-purchases.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -152,7 +152,7 @@ ht-degree: 13%
                     <p class="is-size-6">即時客戶個人檔案可在客戶歷程的每個階段大規模實現跨管道個人化。 透過啟用結構和對應的資料集，可以為即時客戶設定檔啟用批次或串流資料。</p>
                 </div>
                 <a href="bring-data-into-the-real-time-customer-profile.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -185,7 +185,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="update-a-specific-attribute-with-upsert.md" title="使用「upsert」更新特定設定檔屬性" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443452/?format=jpeg&nocache=1740415067029&captions=chi_hant" alt="使用「upsert」更新特定設定檔屬性"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="使用「upsert」更新特定設定檔屬性"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -231,7 +231,7 @@ ht-degree: 13%
                     <p class="is-size-6">瞭解如何在Real-Time CDP B2B edition中檢視帳戶設定檔。</p>
                 </div>
                 <a href="view-account-profiles.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>

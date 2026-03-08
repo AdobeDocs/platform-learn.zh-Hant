@@ -2,9 +2,9 @@
 title: 規劃移轉 — 將行動應用程式中的Adobe Target實作移轉至Offer Decisioning和Target擴充功能
 description: 瞭解at.js與Platform Web SDK之間的主要差異，以及如何規劃您的移轉作業。
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,8 @@ ht-degree: 0%
 > * **最佳化SDK**&#x200B;實作&#x200B;**Offer Decisioning和Target擴充功能**
 
 
-接下來，檢閱Target擴充功能與Offer Decisioning和Target擴充功能[的詳細](detailed-comparison.md)比較，以更清楚瞭解技術差異，並找出需要額外關注的領域。
+接下來，檢閱詳細的<!--[comparison of the Target extension and the Offer Decisioning and Target extension](detailed-comparison.md)-->，以更深入瞭解技術差異，並找出需要額外關注的領域。
 
 >[!NOTE]
 >
->我們致力協助您成功將行動Target從Target擴充功能移轉至Offer Decisioning和Target擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=zh-Hant#M625)中張貼以告知我們。
+>我們致力協助您成功將行動Target從Target擴充功能移轉至Offer Decisioning和Target擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中張貼以告知我們。

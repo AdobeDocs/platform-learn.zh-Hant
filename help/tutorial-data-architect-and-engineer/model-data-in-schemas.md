@@ -3,12 +3,12 @@ title: 在結構描述中模型資料
 seo-title: Model data in schemas | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 在結構描述中模型資料
 description: 在本課程中，您將將Luma的資料模型化為結構描述。 這是教學課程中最長的課程之一，所以請喝杯水並扣上！
-role: Data Architect
+role: Developer
 feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -47,9 +47,9 @@ Key terms:
 
 >[!TIP]
 >
-> 若要在Experience Platform中更深入探究資料模型，建議您使用XDM觀看播放清單[為您的客戶體驗資料建模](https://experienceleague.adobe.com/zh-hant/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，可在Experience League上免費取得！
+> 若要在Experience Platform中更深入探究資料模型，建議您使用XDM觀看播放清單[為您的客戶體驗資料建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，可在Experience League上免費取得！
 
-## 需要的許可權
+## 需要權限
 
 在[設定許可權](configure-permissions.md)課程中，您已設定完成本課程所需的所有存取控制。
 
@@ -71,22 +71,22 @@ Key terms:
 
 1. 前往Platform使用者介面，並確保已選取您的沙箱。
 1. 前往左側導覽中的&#x200B;**[!UICONTROL 結構描述]**。
-1. 選取右上方的&#x200B;**[!UICONTROL 建立結構描述]**&#x200B;按鈕。
+1. 選取右上方的&#x200B;**[!UICONTROL 建立結構描述]**按鈕。
    ![具有OOTB欄位群組的結構描述](assets/schemas-loyaltyCreateSchema.png)
 
 1. 在「建立結構描述」工作流程中，選取&#x200B;**[!UICONTROL 個別設定檔]**&#x200B;作為結構描述的基底類別，因為我們將針對個別客戶的屬性（點、狀態等）建立模型。
 1. 選取&#x200B;**[!UICONTROL 下一步]**。
    ![選取基底類別](assets/schemas-loyaltySelectBaseClass.png)
 
-1. 在&#x200B;**[!UICONTROL 結構描述顯示名稱]**&#x200B;文字欄位中輸入`Luma Loyalty Schema`。 在以下畫布中，您也可以檢閱及驗證您所選擇類別所提供的基本結構描述結構。
-1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以建立您的結構描述。
+1. 在`Luma Loyalty Schema`結構描述顯示名稱&#x200B;**[!UICONTROL 文字欄位中輸入]**。 在以下畫布中，您也可以檢閱及驗證您所選擇類別所提供的基本結構描述結構。
+1. 選取&#x200B;**[!UICONTROL 完成]**以建立您的結構描述。
    ![完成建立忠誠度綱要](assets/schemas-loyaltyFinishSchemaCreation.png)
 
 ### 新增標準欄位群組
 
 建立結構描述後，您將會被重新導向到結構描述編輯器，您可以在其中新增欄位到結構描述。 您可以直接將個別欄位新增到結構描述或使用欄位群組。 請務必注意，所有個別欄位仍與類別或欄位群組相關聯。 您可以從Adobe提供的大量產業標準欄位群組中選取，或是建立您自己的欄位群組。 當您開始在Experience Platform中建立自己的資料模型時，最好熟悉Adobe提供的業界標準欄位群組。 最佳實務是儘可能使用這些變數，因為它們有時會支援下游服務，例如Customer AI、Attribution AI和Adobe Analytics。
 
-使用您自己的資料時，決定應在Platform中擷取哪些您自己的資料，以及應如何模型化這些資料，將是重要的步驟。 此大型主題在播放清單[使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/zh-hant/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中討論得較深入。 在本教學課程中，我將引導您實作一些預先決定的結構描述。
+使用您自己的資料時，決定應在Platform中擷取哪些您自己的資料，以及應如何模型化這些資料，將是重要的步驟。 此大型主題在播放清單[使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中討論得較深入。 在本教學課程中，我將引導您實作一些預先決定的結構描述。
 
 若要新增欄位群組：
 
@@ -100,7 +100,7 @@ Key terms:
 
 1. 勾選&#x200B;**[!UICONTROL 產業]** > **[!UICONTROL 零售]**&#x200B;方塊，以公開產業特定欄位群組。
 1. 選取&#x200B;**[!UICONTROL 熟客方案詳細資料]**&#x200B;以新增熟客方案欄位。
-1. 選取&#x200B;**[!UICONTROL 新增欄位群組]**&#x200B;以將這三個欄位群組新增到結構描述。
+1. 選取&#x200B;**[!UICONTROL 新增欄位群組]**以將這三個欄位群組新增到結構描述。
    ![將標準欄位群組新增至忠誠度結構描述](assets/schemas-loyalty-saveOotbMixins.png)
 
 
@@ -144,10 +144,8 @@ Key terms:
    1. **[!UICONTROL 顯示名稱]**： `System Identifier`
    1. **[!UICONTROL 型別]**： **[!UICONTROL 物件]**
    1. 在&#x200B;**[!UICONTROL 欄位群組]**&#x200B;下拉式清單中，選取我們已建立的&#x200B;**Luma身分設定檔欄位群組**。
-
       ![新增欄位群組](assets/schemas-loyalty-addSystemIdentifier.png)
    1. 選取&#x200B;**[!UICONTROL 套用]**
-
       ![套用新欄位屬性](assets/schemas-loyalty-applySystemIdentifier.png)
 
 現在在`systemIdentifier`物件下新增兩個欄位：
@@ -161,7 +159,7 @@ Key terms:
    1. **[!UICONTROL 顯示名稱]**： `CRM Id`
    1. **[!UICONTROL 型別]**： **[!UICONTROL 字串]**
 
-您的新欄位群組應如下所示。 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;按鈕以儲存您的結構描述，但讓結構描述保持開啟以供下一個練習使用。
+您的新欄位群組應如下所示。 選取&#x200B;**[!UICONTROL 儲存]**按鈕以儲存您的結構描述，但讓結構描述保持開啟以供下一個練習使用。
 ![熟客欄位群組完成](assets/schemas-loyalty-identityFieldGroupComplete.png)
 
 ## 建立資料型別
@@ -225,7 +223,7 @@ Key terms:
 
 >[!NOTE]
 >
-> 透過將&#x200B;**[!UICONTROL CONTAINER_ID]**&#x200B;設定為`tenant`且接受標頭`application/vnd.adobe.xdm+json`的API要求&#x200B;**[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**，也可以取得`meta:altId`或結構描述識別碼。
+> 透過將`meta:altId`CONTAINER_ID **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**&#x200B;設定為&#x200B;**[!UICONTROL 且接受標頭]**&#x200B;的API要求`tenant`，也可以取得`application/vnd.adobe.xdm+json`或結構描述識別碼。
 
 >[!TIP]
 >
@@ -272,11 +270,11 @@ Key terms:
 
 1. 開啟請求&#x200B;**[!DNL Schema Registry API > Field groups > Retrieve a list of field groups within the specified container.]**
 1. 選取&#x200B;**傳送**&#x200B;按鈕，以擷取您帳戶中所有自訂欄位群組的清單
-1. 抓取`Luma Identity profile field group`的`$id`值（您的值將與此熒幕擷圖中的值不同）
+1. 抓取`$id`的`Luma Identity profile field group`值（您的值將與此熒幕擷圖中的值不同）
    ![擷取欄位群組清單](assets/schemas-crm-getListOfMixins.png)
 1. 再次開啟請求&#x200B;**[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]**
 1. **Params**&#x200B;索引標籤仍應具有結構描述的`$id`
-1. 開啟&#x200B;**內文**&#x200B;索引標籤並貼上下列程式碼，將`$ref`值取代為您自己的`Luma Identity profile field group`的`$id`：
+1. 開啟&#x200B;**內文**&#x200B;索引標籤並貼上下列程式碼，將`$ref`值取代為您自己的`$id`的`Luma Identity profile field group`：
 
    ```json
    [{
@@ -323,14 +321,14 @@ Key terms:
 
 現在，我們將針對Luma的網站資料再建立一個結構描述。 此時，您應該已是建立結構描述的專家！ 使用這些屬性建置以下結構描述
 
-| 屬性 | 值 |
+| 屬性 | 價值 |
 |---------------|-----------------|
 | 類別 | 體驗事件 |
 | 結構描述名稱 | Luma Web事件結構描述 |
-| 欄位群組 | AEP Web SDK ExperienceEvent |
+| 欄位群組 | AEP Web SDK體驗事件 |
 | 欄位群組 | 消費者體驗事件 |
 
-選取&#x200B;**[!UICONTROL 消費者體驗事件]**&#x200B;欄位群組。 此欄位群組包含商務和productListItems物件，這些物件也出現在[!UICONTROL Commerce詳細資料]中。 事實上，[!UICONTROL 取用者體驗事件]是數個其他標準欄位群組的組合，這些群組也可單獨使用。 [!UICONTROL AEP Web SDK ExperienceEvent]欄位群組也包含其他欄位群組，包括[!UICONTROL 消費者體驗事件]中一些相同的欄位群組。 幸運的是，兩者完美結合。
+選取&#x200B;**[!UICONTROL 消費者體驗事件]**&#x200B;欄位群組。 此欄位群組包含商務和productListItems物件，這些物件也出現在[!UICONTROL Commerce詳細資料]中。 事實上，[!UICONTROL 取用者體驗事件]是數個其他標準欄位群組的組合，這些群組也可單獨使用。 [!UICONTROL AEP Web SDK ExperienceEvent]欄位群組也包含其他欄位群組，包括[!UICONTROL 取用者體驗事件]中一些相同的欄位群組。 幸運的是，兩者完美結合。
 
 請注意，我們並未將`Luma Identity ExperienceEvent field group`新增至此結構描述。 這是因為網頁SDK收集身分的方式不同。 如果您在結構描述編輯器的&#x200B;**[!UICONTROL 構成]**&#x200B;區段中選取&#x200B;**[!UICONTROL XDM ExperienceEvent]**&#x200B;類別，您會注意到它預設新增的其中一個欄位稱為&#x200B;**[!UICONTROL IdentityMap]**。 各種Adobe應用程式使用[!DNL IdentityMap]連結至平台。 您將在串流擷取課程中看到如何透過identityMap將身分傳送至Platform。
 
@@ -346,17 +344,17 @@ Key terms:
 首先，我們必須使用自訂類別為Luma的產品目錄建立結構描述：
 
 1. 選取&#x200B;**[!UICONTROL 建立結構描述]**&#x200B;按鈕。
-1. 在[建立結構描述]工作流程中，選取&#x200B;**[!UICONTROL 其他]**&#x200B;選項。
+1. 在[建立結構描述]工作流程中，選取&#x200B;**[!UICONTROL 其他]**選項。
    ![建立新結構描述](assets/schemas-newSchema-browseClasses.png)
 1. 選取&#x200B;**[!UICONTROL 建立類別]**&#x200B;按鈕
 1. 將其命名為`Luma Product Catalog Class`
 1. 將&#x200B;**[!UICONTROL 行為]**&#x200B;保留為&#x200B;**[!UICONTROL 記錄]**
-1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕。
+1. 選取&#x200B;**[!UICONTROL 建立]**按鈕。
    ![建立新類別](assets/schemas-productClass.png)
 1. 您建立的&#x200B;**Luma產品目錄類別**&#x200B;會出現在下面的「類別」表格中。 確定已選取類別，然後選取&#x200B;**[!UICONTROL 下一步]**。
    ![新類別已新增](assets/schemas-productClassSelected.png)
 1. 命名結構描述`Luma Product Catalog Schema`。
-1. 使用下列欄位建立名為`Luma Product Catalog field group`的新[!UICONTROL 欄位群組]：
+1. 使用下列欄位建立名為[!UICONTROL 的新]欄位群組`Luma Product Catalog field group`：
    1. productName：產品名稱：字串
    1. productCategory：產品類別：字串
    1. productColor：產品色彩：字串

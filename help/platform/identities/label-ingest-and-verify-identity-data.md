@@ -2,12 +2,12 @@
 title: 標示、擷取及驗證身分資料
 description: 了解如何將資料欄位標示為身分、擷取身分資料，以及驗證 Adobe Experience Platform 身分識別服務私人圖表中的資料。
 feature: Identities
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-2707
 thumbnail: 28167.jpg
 exl-id: 9a4fbd95-74e3-4e10-8663-8fafefe324a8
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '70'
 ht-degree: 35%

@@ -2,10 +2,10 @@
 title: Target擴充功能與Offer Decisioning和Target擴充功能的比較
 description: 瞭解Offer Decisioning的Target擴充功能與Target擴充功能之間的差異，包括功能、函式、設定和資料流程。
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '833'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ Offer Decisioning和Target擴充功能與適用於行動應用程式的Adobe Tar
 
 | | 目標延伸功能 | Offer Decisioning和Target擴充功能 |
 |---|---|---|
-| 程式 | 變更Target實作可能會遵循的流程與其他應用程式（例如Analytics）具有不同的步調或QA需求。 | 變更Offer Decisioning和Target擴充功能實作時，應考慮所有下游應用程式，並應相應地調整QA和發佈程式。 |
+| 處理 | 變更Target實作可能會遵循的流程與其他應用程式（例如Analytics）具有不同的步調或QA需求。 | 變更Offer Decisioning和Target擴充功能實作時，應考慮所有下游應用程式，並應相應地調整QA和發佈程式。 |
 | 共同作業 | Target專屬的資料可直接在Target呼叫中傳遞。 如果Target報表來源是Adobe Analytics (A4T)，則當Target擴充功能中呼叫適當的追蹤方法來用於Target內容顯示和互動時，特定於Target的資料也可以傳遞到Adobe Analytics。 | 如果Target報表來源為Adobe Analytics (A4T)、已在資料串流中啟用Adobe Analytics，且顯示Target內容並與之互動時，系統可將Offer Decisioning和Target擴充功能呼叫中傳遞的資料轉送至Target和Analytics，並呼叫Offer Decisioning和Target擴充功能中的適當追蹤方法。 |
 
 ## 基本差異
@@ -47,7 +47,7 @@ Offer Decisioning和Target擴充功能與適用於行動應用程式的Adobe Tar
 |---|---|---|
 | 預先擷取模式 | 支援 | 支援 |
 | 執行模式 | 支援 | 不支援 |
-| 自訂引數 | 支援 | 支援* |
+| 自訂參數 | 支援 | 支援* |
 | 輪廓參數 | 支援 | 支援* |
 | 實體引數 | 支援 | 支援* |
 | 目標客群 | 支援 | 支援 |
@@ -56,7 +56,7 @@ Offer Decisioning和Target擴充功能與適用於行動應用程式的Adobe Tar
 | 生命週期量度 | 支援 | 透過資料收集規則支援 |
 | thirdPartyId (mbox3rdPartyId) | 支援 | 透過資料流中的身分對應和目標第三方ID名稱空間支援 |
 | 通知（顯示、按一下） | 支援 | 支援 |
-| 回應Token | 支援 | 支援 |
+| 回應 Token | 支援 | 支援 |
 | 行動裝置預覽（QA模式） | 支援 | Assurance的有限支援 |
 
 >[!IMPORTANT]
@@ -90,4 +90,4 @@ Offer Decisioning和Target擴充功能與適用於行動應用程式的Adobe Tar
 
 >[!NOTE]
 >
->我們致力協助您成功將行動Target從Target擴充功能移轉至Offer Decisioning和Target擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=zh-Hant#M625)中張貼以告知我們。
+>我們致力協助您成功將行動Target從Target擴充功能移轉至Offer Decisioning和Target擴充功能。 如果您在移轉時遇到問題，或覺得本指南中缺少重要資訊，請在[此社群討論](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中張貼以告知我們。

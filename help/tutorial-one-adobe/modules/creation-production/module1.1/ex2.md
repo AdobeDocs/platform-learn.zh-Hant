@@ -1,27 +1,27 @@
 ---
 title: 使用Microsoft Azure和預先簽署的URL最佳化Firefly程式
-description: 瞭解如何使用Microsoft Azure和預先簽署的URL最佳化Firefly程式
+description: 瞭解如何使用Microsoft Azure和預先簽署的URL最佳化Firefly流程
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1944'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
 # 1.1.2使用Microsoft Azure和預先簽署的URL最佳化Firefly程式
 
-瞭解如何使用Microsoft Azure和預先簽署的URL最佳化Firefly程式。
+瞭解如何使用Microsoft Azure和預先簽署的URL來最佳化Firefly流程。
 
 ## 1.1.2.1什麼是預先簽署的URL？
 
 預先簽署的URL是授與您暫時存取儲存位置中特定物件的URL。 例如，使用者可以使用URL來讀取物件或寫入物件（或更新現有物件）。 URL包含由應用程式設定的特定引數。
 
-在建立內容供應鏈自動化的內容中，通常需要針對特定使用案例進行多項檔案操作。 例如，可能需要變更檔案的背景、可能必須變更各種圖層的文字等等。 並非總是可以同時執行所有檔案操作，因此需要多步驟方法。 在每個中間步驟之後，輸出就會是執行下一個步驟所需的暫存檔。 執行下一個步驟後，暫存檔案會快速失去值，通常不再需要它，因此應將其刪除。
+在建立內容supply chain自動化的內容中，通常需要針對特定使用案例進行多項檔案操作。 例如，可能需要變更檔案的背景、可能必須變更各種圖層的文字等等。 並非總是可以同時執行所有檔案操作，因此需要多步驟方法。 在每個中間步驟之後，輸出就會是執行下一個步驟所需的暫存檔。 執行下一個步驟後，暫存檔案會快速失去值，通常不再需要它，因此應將其刪除。
 
 Adobe Firefly Services目前支援下列網域：
 
@@ -40,7 +40,7 @@ Adobe Firefly Services目前支援下列網域：
 
 預先簽署的URL會使用三個引數來限制使用者的存取權：
 
-- 儲存位置：可能是AWS S3貯體位置，亦即具有容器的Microsoft Azure儲存體帳戶位置
+- 儲存位置：可能是AWS S3貯體位置、具有容器的Microsoft Azure儲存帳戶位置
 - 檔案名稱：需要讀取、更新、刪除的特定檔案。
 - 查詢字串引數：查詢字串引數一律以問號開頭，後面接著一連串複雜引數
 
@@ -53,7 +53,7 @@ Adobe Firefly Services目前支援下列網域：
 
 >[!NOTE]
 >
->如果您已有現有的Azure訂閱，可以略過此步驟。 請繼續進行該案例的下一個練習。
+>如果您已有現有的Azure訂閱，可略過此步驟。 請繼續進行該案例的下一個練習。
 
 >[!NOTE]
 >
@@ -61,33 +61,33 @@ Adobe Firefly Services目前支援下列網域：
 
 移至[https://portal.azure.com](https://portal.azure.com){target="_blank"}並使用您的Azure帳戶登入。 如果您沒有電子郵件地址，請使用個人電子郵件地址來建立您的Azure帳戶。
 
-![Azure儲存體](./images/02azureportalemail.png){zoomable="yes"}
+![Azure儲存空間](./images/02azureportalemail.png){zoomable="yes"}
 
 成功登入後，您應該會看到下列畫面：
 
-![Azure儲存體](./images/03azureloggedin.png){zoomable="yes"}
+![Azure儲存空間](./images/03azureloggedin.png){zoomable="yes"}
 
-在左側功能表選取&#x200B;**所有資源**，如果您尚未訂閱，就會顯示Azure訂閱畫面。
+在左側選單中選取&#x200B;**所有資源**，如果您尚未訂閱，則會顯示Azure訂閱畫面。
 
 如果您尚未訂閱，請選取&#x200B;**開始使用Azure免費試用**。
 
-![Azure儲存體](./images/04azurestartsubscribe.png){zoomable="yes"}
+![Azure儲存空間](./images/04azurestartsubscribe.png){zoomable="yes"}
 
-填寫Azure訂閱表單，並提供您的行動電話和信用卡以進行啟用（您將有30天的免費套餐，除非您升級，否則不會向您收費）。
+填寫Azure訂閱表格，並提供您的行動電話和信用卡以利啟用（您將擁有30天的免費套餐，除非您升級，否則不會向您收費）。
 
 訂閱程式完成後，您就可以開始了。
 
-![Azure儲存體](./images/06azuresubscriptionok.png){zoomable="yes"}
+![Azure儲存空間](./images/06azuresubscriptionok.png){zoomable="yes"}
 
 ## 1.1.2.3建立Azure儲存體帳戶
 
 搜尋`storage account`，然後選取&#x200B;**儲存帳戶**。
 
-![Azure儲存體](./images/azs1.png){zoomable="yes"}
+![Azure儲存空間](./images/azs1.png){zoomable="yes"}
 
 選取&#x200B;**+建立**。
 
-![Azure儲存體](./images/azs2.png){zoomable="yes"}
+![Azure儲存空間](./images/azs2.png){zoomable="yes"}
 
 選取您的&#x200B;**訂閱**，然後選取（或建立） **資源群組**。
 
@@ -95,57 +95,57 @@ Adobe Firefly Services目前支援下列網域：
 
 選取&#x200B;**檢閱+建立**。
 
-![Azure儲存體](./images/azs3.png){zoomable="yes"}
+![Azure儲存空間](./images/azs3.png){zoomable="yes"}
 
 選取「**建立**」。
 
-![Azure儲存體](./images/azs4.png){zoomable="yes"}
+![Azure儲存空間](./images/azs4.png){zoomable="yes"}
 
 確認後，選取&#x200B;**前往資源**。
 
-![Azure儲存體](./images/azs5.png){zoomable="yes"}
+![Azure儲存空間](./images/azs5.png){zoomable="yes"}
 
-您的Azure儲存體帳戶現在已可供使用。
+您的Azure儲存帳戶現已準備就緒，可供使用。
 
-![Azure儲存體](./images/azs6.png){zoomable="yes"}
+![Azure儲存空間](./images/azs6.png){zoomable="yes"}
 
 選取&#x200B;**資料儲存體**，然後移至&#x200B;**容器**。 選取&#x200B;**+容器**。
 
-![Azure儲存體](./images/azs7.png){zoomable="yes"}
+![Azure儲存空間](./images/azs7.png){zoomable="yes"}
 
 使用`--aepUserLdap--`作為名稱，並選取&#x200B;**建立**。
 
-![Azure儲存體](./images/azs8.png){zoomable="yes"}
+![Azure儲存空間](./images/azs8.png){zoomable="yes"}
 
 您的容器現在已可供使用。
 
-![Azure儲存體](./images/azs9.png){zoomable="yes"}
+![Azure儲存空間](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.4安裝Azure儲存體總管
+## 1.1.2.4安裝Azure儲存總管
 
 [下載Microsoft Azure Storage Explorer以管理您的檔案](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}。 選取適合您特定作業系統的正確版本，下載並安裝。
 
-![Azure儲存體](./images/az10.png){zoomable="yes"}
+![Azure儲存空間](./images/az10.png){zoomable="yes"}
 
 開啟應用程式並選取&#x200B;**使用Azure登入**。
 
-![Azure儲存體](./images/az11.png){zoomable="yes"}
+![Azure儲存空間](./images/az11.png){zoomable="yes"}
 
 選取&#x200B;**訂閱**。
 
-![Azure儲存體](./images/az12.png){zoomable="yes"}
+![Azure儲存空間](./images/az12.png){zoomable="yes"}
 
 選取&#x200B;**Azure**，然後選取&#x200B;**下一步**。
 
-![Azure儲存體](./images/az13.png){zoomable="yes"}
+![Azure儲存空間](./images/az13.png){zoomable="yes"}
 
-選取您的Microsoft Azure帳戶並完成驗證程式。
+選取您的Microsoft Azure帳戶，並完成驗證程式。
 
-![Azure儲存體](./images/az14.png){zoomable="yes"}
+![Azure儲存空間](./images/az14.png){zoomable="yes"}
 
 驗證後，此訊息會出現。
 
-![Azure儲存體](./images/az15.png){zoomable="yes"}
+![Azure儲存空間](./images/az15.png){zoomable="yes"}
 
 返回Microsoft Azure Storage Explorer應用程式，選取您的訂閱，然後選擇&#x200B;**開啟總管**。
 
@@ -153,15 +153,15 @@ Adobe Firefly Services目前支援下列網域：
 >
 >如果您的帳戶未顯示，請按一下電子郵件地址旁的&#x200B;**齒輪**&#x200B;圖示，並選取&#x200B;**取消篩選**。
 
-![Azure儲存體](./images/az16.png){zoomable="yes"}
+![Azure儲存空間](./images/az16.png){zoomable="yes"}
 
 您的儲存體帳戶出現在&#x200B;**儲存體帳戶**&#x200B;下。
 
-![Azure儲存體](./images/az17.png){zoomable="yes"}
+![Azure儲存空間](./images/az17.png){zoomable="yes"}
 
 開啟&#x200B;**Blob容器**，然後選取您在上一個練習中建立的容器。
 
-![Azure儲存體](./images/az18.png){zoomable="yes"}
+![Azure儲存空間](./images/az18.png){zoomable="yes"}
 
 ## 1.1.2.5手動上傳檔案並使用影像檔案作為樣式參考
 
@@ -174,48 +174,48 @@ Adobe Firefly Services目前支援下列網域：
 >- image/png
 >- image/webp
 
-![Azure儲存體](./images/gradient.jpg)
+![Azure儲存空間](./images/gradient.jpg)
 
 上傳後，即可在容器中看到：
 
-![Azure儲存體](./images/az19.png){zoomable="yes"}
+![Azure儲存空間](./images/az19.png){zoomable="yes"}
 
 在`gradient.jpg`上按一下滑鼠右鍵，然後選取&#x200B;**取得共用存取權簽章**。
 
-![Azure儲存體](./images/az20.png){zoomable="yes"}
+![Azure儲存空間](./images/az20.png){zoomable="yes"}
 
 在&#x200B;**許可權**&#x200B;之下，只需要&#x200B;**讀取**。 選取「**建立**」。
 
-![Azure儲存體](./images/az21.png){zoomable="yes"}
+![Azure儲存空間](./images/az21.png){zoomable="yes"}
 
 複製此影像檔案的預先簽署URL，以供下一個API請求傳送至Firefly。
 
-![Azure儲存體](./images/az22.png){zoomable="yes"}
+![Azure儲存空間](./images/az22.png){zoomable="yes"}
 
 返回Postman開啟請求&#x200B;**POST - Firefly - T2I (styleref) V3**。
-這會顯示在&#x200B;**內文**&#x200B;中。
+這會顯示在**內文**&#x200B;中。
 
-![Azure儲存體](./images/az23.png){zoomable="yes"}
+![Azure儲存空間](./images/az23.png){zoomable="yes"}
 
 將預留位置URL取代為您的影像檔案預先簽署的URL，並選取&#x200B;**傳送**。
 
-![Azure儲存體](./images/az24.png){zoomable="yes"}
+![Azure儲存空間](./images/az24.png){zoomable="yes"}
 
 在瀏覽器中開啟回應Firefly Services新影像。
 
-![Azure儲存體](./images/az25.png){zoomable="yes"}
+![Azure儲存空間](./images/az25.png){zoomable="yes"}
 
 另一個影像會以`horses in a field`顯示，但這次的樣式與您提供做為樣式參考的影像檔案類似。
 
-![Azure儲存體](./images/az26.png){zoomable="yes"}
+![Azure儲存空間](./images/az26.png){zoomable="yes"}
 
 ## 1.1.2.6程式化檔案上傳
 
 若要搭配Azure儲存體帳戶使用程式化檔案上傳，您必須建立新的&#x200B;**共用存取簽章(SAS)**&#x200B;權杖，其許可權可讓您寫入檔案。
 
-在Azure儲存體總管中，用滑鼠右鍵按一下您的容器，然後選取&#x200B;**取得共用存取權簽章**。
+在Azure Storage Explorer中，用滑鼠右鍵按一下您的容器，然後選取&#x200B;**取得共用存取權簽章**。
 
-![Azure儲存體](./images/az27.png){zoomable="yes"}
+![Azure儲存空間](./images/az27.png){zoomable="yes"}
 
 在&#x200B;**許可權**&#x200B;下，選取下列必要許可權：
 
@@ -227,21 +227,21 @@ Adobe Firefly Services目前支援下列網域：
 
 選取「**建立**」。
 
-![Azure儲存體](./images/az28.png){zoomable="yes"}
+![Azure儲存空間](./images/az28.png){zoomable="yes"}
 
 收到您的&#x200B;**共用存取簽章**&#x200B;後，請選取&#x200B;**複製**&#x200B;以複製URL。
 
-![Azure儲存體](./images/az29.png){zoomable="yes"}
+![Azure儲存空間](./images/az29.png){zoomable="yes"}
 
 使用&#x200B;**SAS權杖URL**&#x200B;將檔案上傳至您的Azure儲存體帳戶。
 
 返回Postman，選取資料夾&#x200B;**FF - Firefly Services Tech Insiders**，然後選取&#x200B;**Firefly**&#x200B;資料夾中的&#x200B;**...**，然後選取&#x200B;**新增要求**。
 
-![Azure儲存體](./images/az30.png){zoomable="yes"}
+![Azure儲存空間](./images/az30.png){zoomable="yes"}
 
 將空白要求的名稱變更為&#x200B;**上傳檔案至Azure儲存體帳戶**，將&#x200B;**要求型別**&#x200B;變更為&#x200B;**PUT**，並在URL區段中貼上SAS權杖URL，然後選取&#x200B;**內文**。
 
-![Azure儲存體](./images/az31.png){zoomable="yes"}
+![Azure儲存空間](./images/az31.png){zoomable="yes"}
 
 接著，從本機電腦選取檔案，或使用其他位於[這裡](./images/gradient2-p.jpg){target="_blank"}的影像檔。
 
@@ -249,15 +249,15 @@ Adobe Firefly Services目前支援下列網域：
 
 在&#x200B;**內文**&#x200B;中，選取&#x200B;**二進位**，然後&#x200B;**選取檔案**，然後從本機電腦&#x200B;**選取**+新檔案。
 
-![Azure儲存體](./images/az32.png){zoomable="yes"}
+![Azure儲存空間](./images/az32.png){zoomable="yes"}
 
 選取您選擇的檔案，並選取&#x200B;**開啟**。
 
-![Azure儲存體](./images/az33.png){zoomable="yes"}
+![Azure儲存空間](./images/az33.png){zoomable="yes"}
 
-接下來，將游標放在問號&#x200B;**之前，以指定要在您的Azure儲存體帳戶中使用的檔案名稱？URL中的**&#x200B;如下：
+接下來，將游標放在問號&#x200B;**之前，以指定要在您的Azure儲存帳戶中使用的檔案名稱？URL中的**&#x200B;如下：
 
-![Azure儲存體](./images/az34.png){zoomable="yes"}
+![Azure儲存空間](./images/az34.png){zoomable="yes"}
 
 URL目前看起來像這樣，但需要變更。
 
@@ -267,38 +267,38 @@ URL目前看起來像這樣，但需要變更。
 
 `https://vangeluw.blob.core.windows.net/vangeluw/gradient2-p.jpg?sv=2023-01-03...`
 
-![Azure儲存體](./images/az34a.png){zoomable="yes"}
+![Azure儲存空間](./images/az34a.png){zoomable="yes"}
 
 接著，移至&#x200B;**標頭**&#x200B;手動新增標頭，如下所示：
 
-| 索引鍵 | 值 |
-|:-------------:| :---------------:| 
+| 索引鍵 | 價值 |
+|:-------------:| :---------------:|
 | `x-ms-blob-type` | `BlockBlob` |
 
 
-![Azure儲存體](./images/az35.png){zoomable="yes"}
+![Azure儲存空間](./images/az35.png){zoomable="yes"}
 
 移至&#x200B;**授權**&#x200B;並將&#x200B;**驗證型別**&#x200B;設定為&#x200B;**無驗證**，然後選取&#x200B;**傳送**。
 
-![Azure儲存體](./images/az36.png){zoomable="yes"}
+![Azure儲存空間](./images/az36.png){zoomable="yes"}
 
 接著，這個空白回應會顯示在Postman中，表示您的檔案上傳可以正常進行。
 
-![Azure儲存體](./images/az37.png){zoomable="yes"}
+![Azure儲存空間](./images/az37.png){zoomable="yes"}
 
 返回Azure Storage Explorer重新整理資料夾的內容，新上傳的檔案隨即顯示。
 
-![Azure儲存體](./images/az38.png){zoomable="yes"}
+![Azure儲存空間](./images/az38.png){zoomable="yes"}
 
 ## 1.1.2.7程式化檔案使用方式
 
-若要以程式設計方式長期讀取Azure儲存體帳戶的檔案，您必須建立新的&#x200B;**共用存取簽章(SAS)**&#x200B;權杖，其許可權可讓您讀取檔案。 技術上，您可以使用先前練習中建立的SAS-Token，但最佳實務是讓個別的Token只有&#x200B;**讀取**&#x200B;許可權，而個別的Token只有&#x200B;**寫入**&#x200B;許可權。
+若要以程式設計方式長期讀取Azure儲存體帳戶的檔案，您需要建立新的&#x200B;**共用存取簽章(SAS)**&#x200B;權杖，其許可權可讓您讀取檔案。 技術上，您可以使用先前練習中建立的SAS-Token，但最佳實務是讓個別的Token只有&#x200B;**讀取**&#x200B;許可權，而個別的Token只有&#x200B;**寫入**&#x200B;許可權。
 
 ### 長期讀取SAS權杖
 
-返回Azure儲存體總管，用滑鼠右鍵按一下您的容器，然後選取&#x200B;**取得共用存取權簽章**。
+返回Azure Storage Explorer，用滑鼠右鍵按一下您的容器，然後選取&#x200B;**取得共用存取權簽章**。
 
-![Azure儲存體](./images/az27.png){zoomable="yes"}
+![Azure儲存空間](./images/az27.png){zoomable="yes"}
 
 在&#x200B;**許可權**&#x200B;下，選取下列必要許可權：
 
@@ -309,11 +309,11 @@ URL目前看起來像這樣，但需要變更。
 
 選取「**建立**」。
 
-![Azure儲存體](./images/az100.png){zoomable="yes"}
+![Azure儲存空間](./images/az100.png){zoomable="yes"}
 
 複製URL並將其寫入您電腦上的檔案中，以取得具有讀取許可權的長期SAS權杖。
 
-![Azure儲存體](./images/az101.png){zoomable="yes"}
+![Azure儲存空間](./images/az101.png){zoomable="yes"}
 
 您的URL應如下所示：
 
@@ -327,9 +327,9 @@ URL目前看起來像這樣，但需要變更。
 
 ### 長期寫入SAS權杖
 
-返回Azure儲存體總管，用滑鼠右鍵按一下您的容器，然後選取&#x200B;**取得共用存取權簽章**。
+返回Azure Storage Explorer，用滑鼠右鍵按一下您的容器，然後選取&#x200B;**取得共用存取權簽章**。
 
-![Azure儲存體](./images/az27.png){zoomable="yes"}
+![Azure儲存空間](./images/az27.png){zoomable="yes"}
 
 在&#x200B;**許可權**&#x200B;下，選取下列必要許可權：
 
@@ -343,11 +343,11 @@ URL目前看起來像這樣，但需要變更。
 
 選取「**建立**」。
 
-![Azure儲存體](./images/az102.png){zoomable="yes"}
+![Azure儲存空間](./images/az102.png){zoomable="yes"}
 
 複製URL並將其寫入您電腦上的檔案中，以取得您具有讀取/寫入許可權的長期SAS權杖。
 
-![Azure儲存體](./images/az103.png){zoomable="yes"}
+![Azure儲存空間](./images/az103.png){zoomable="yes"}
 
 您的URL應如下所示：
 
@@ -375,7 +375,7 @@ URL目前看起來像這樣，但需要變更。
 
 在Postman中，選取&#x200B;**環境**，開啟&#x200B;**所有變數**&#x200B;並選取&#x200B;**環境**。
 
-![Azure儲存體](./images/az104.png){zoomable="yes"}
+![Azure儲存空間](./images/az104.png){zoomable="yes"}
 
 在顯示的表格中建立這4個變數，並針對欄&#x200B;**初始值**&#x200B;和&#x200B;**目前值**，輸入您特定的個人值。
 
@@ -386,7 +386,7 @@ URL目前看起來像這樣，但需要變更。
 
 選取「**儲存**」。
 
-![Azure儲存體](./images/az105.png){zoomable="yes"}
+![Azure儲存空間](./images/az105.png){zoomable="yes"}
 
 ### PostBuster中的變數
 
@@ -401,15 +401,15 @@ URL目前看起來像這樣，但需要變更。
 
 開啟PostBuster。 選取&#x200B;**基本環境**，然後按一下&#x200B;**編輯**&#x200B;圖示以開啟基本環境。
 
-![Azure儲存體](./images/pbbe1.png)
+![Azure儲存空間](./images/pbbe1.png)
 
 然後您會看到4個空白變數。 在這裡輸入您的Azure儲存體帳戶詳細資料。
 
-![Azure儲存體](./images/pbbe2.png)
+![Azure儲存空間](./images/pbbe2.png)
 
 您的基本環境檔案現在看起來應該像這樣。 按一下 **關閉**。
 
-![Azure儲存體](./images/pbbe3.png)
+![Azure儲存空間](./images/pbbe3.png)
 
 ### 測試您的設定
 
@@ -417,7 +417,7 @@ URL目前看起來像這樣，但需要變更。
 
 `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
-![Azure儲存體](./images/az24.png){zoomable="yes"}
+![Azure儲存空間](./images/az24.png){zoomable="yes"}
 
 將URL變更為：
 
@@ -425,15 +425,15 @@ URL目前看起來像這樣，但需要變更。
 
 選取&#x200B;**傳送**&#x200B;以測試您所做的變更。
 
-![Azure儲存體](./images/az106.png){zoomable="yes"}
+![Azure儲存空間](./images/az106.png){zoomable="yes"}
 
 如果變數已正確設定，則會傳回影像URL。
 
-![Azure儲存體](./images/az107.png){zoomable="yes"}
+![Azure儲存空間](./images/az107.png){zoomable="yes"}
 
 開啟影像URL以驗證您的影像。
 
-![Azure儲存體](./images/az108.jpg)
+![Azure儲存空間](./images/az108.jpg)
 
 ## 後續步驟
 

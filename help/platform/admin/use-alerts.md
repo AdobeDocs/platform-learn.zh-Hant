@@ -2,13 +2,13 @@
 title: 使用警示
 description: 了解如何在 Adobe Experience Platform 中訂閱及管理警示。 警示可幫助您監控各種程式，以確保您的Platform實作正在順利執行。
 feature: Alerts
-role: Data Engineer, User, Admin
+role: Developer, User, Admin
 level: Beginner
 doc-type: Feature Video
 jira: KT-8324
 thumbnail: 336218.jpg
 exl-id: 56f927db-1f16-4c0b-a0e0-a25e43f1a535
-source-git-commit: 64dd58999adea73cdf8b580a2e4da9f1d8944020
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 43%

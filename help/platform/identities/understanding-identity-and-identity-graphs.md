@@ -2,15 +2,15 @@
 title: 身分和身分圖表總覽
 description: 瞭解在Adobe Experience Platform&amp；mdash；身分收集、身分圖表和API中身分解析的重要功能。 瞭解Identity Service如何連結已中斷連線的身分，以透過建構統一的設定檔來提供一致的連線體驗。
 feature: Identities
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner
 jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 112e092df6d486d8b9103013bec57d820b8ae6d7
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '257'
-ht-degree: 9%
+ht-degree: 15%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 9%
 
 瞭解Adobe Experience Platform中身分解析的主要功能 — 身分收集、身分圖表和API。 瞭解Identity Service如何連結已中斷連線的身分，以透過建構統一的設定檔來提供一致的連線體驗。 如需詳細資訊，請瀏覽[身分識別服務檔案](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3422770?learn=on&enablevpops&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 ## 設定身分
 
@@ -42,10 +42,10 @@ ht-degree: 9%
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="label-ingest-and-verify-identity-data.md" target="_blank" rel="referrer" title="標示、擷取及驗證身分資料">標示、擷取及驗證身分資料</a>
                     </p>
-                    <p class="is-size-6">了解如何將資料欄位標示為身分、擷取身分資料，以及驗證 Adobe Experience Platform Identity Service 私人圖表中的資料。</p>
+                    <p class="is-size-6">了解如何將資料欄位標示為身分、擷取身分資料，以及驗證 Adobe Experience Platform 身分識別服務私人圖表中的資料。</p>
                 </div>
                 <a href="label-ingest-and-verify-identity-data.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>
@@ -53,7 +53,7 @@ ht-degree: 9%
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## 身分圖表連結規則
+## 身分識別圖連結規則
 
 <!-- CARDS
 * identity-graph-linking-rules/graph-simulation.md
@@ -65,7 +65,7 @@ ht-degree: 9%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="身分圖表連結規則 — 圖表模擬" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444054/?format=jpeg&nocache=1740414776009&captions=chi_hant" alt="身分圖表連結規則 — 圖表模擬"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="身分圖表連結規則 — 圖表模擬"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -73,7 +73,7 @@ ht-degree: 9%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="identity-graph-linking-rules/graph-simulation.md" target="_blank" rel="referrer" title="身分圖表連結規則 — 圖表模擬">身分圖表連結規則 — 圖表模擬</a>
+                        <a href="identity-graph-linking-rules/graph-simulation.md" target="_blank" rel="referrer" title="身分圖表連結規則 — 圖表模擬">身分識別圖連結規則 - 圖表模擬</a>
                     </p>
                     <p class="is-size-6">瞭解如何使用圖表模擬器來測試Adobe Experience Platform中的身分圖表連結規則。 實驗不同的情境，並使用「每個圖表皆不重複」和優先順序設定來播放，驗證您的業務需要哪些規則來避免圖表摺疊。</p>
                 </div>
@@ -111,7 +111,7 @@ ht-degree: 9%
                     <p class="is-size-6">瞭解如何使用身分圖表檢視器功能來搜尋、探索和篩選身分圖表，以進行驗證和除錯。</p>
                 </div>
                 <a href="view-identity-graphs.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">進一步瞭解</span>
+                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">深入了解</span>
                 </a>
             </div>
         </div>

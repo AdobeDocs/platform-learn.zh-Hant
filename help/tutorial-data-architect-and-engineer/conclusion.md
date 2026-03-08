@@ -2,11 +2,11 @@
 title: 結論
 seo-title: Conclusion | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 結論
-description: 在本課程中，您將使用Adobe的Admin Console設定Adobe Experience Platform使用者許可權。
-role: Data Architect, Data Engineer
+description: 在本課程中，您將使用Adobe的Admin Console來設定Adobe Experience Platform使用者許可權。
+role: Developer
 jira: KT-4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 2%
@@ -19,13 +19,13 @@ ht-degree: 2%
 
 恭喜，您已完成整個教學課程！
 
-現在，您可以透過資料架構師和資料工程師常用的平台功能，獲得實作經驗。 我瞭解您的角色只是兩個角色之一，而且您執行了&#x200B;_批次_&#x200B;的工作，這些工作通常由同事完成。 我希望藉此機會，您能體會到所有元件如何搭配在一起，並體會到成功實施Experience Platform所需的團隊合作。
+現在，您可以透過資料架構師和資料工程師常用的平台功能，獲得實作經驗。 我瞭解您的角色只是兩個角色之一，而且您執行了&#x200B;_批次_&#x200B;的工作，這些工作通常由同事完成。 我希望藉此機會，您能夠瞭解所有元件如何相互整合，並欣賞成功實作Experience Platform所需的團隊合作。
 
 您已瞭解如何：
 
-* 管理&#x200B;**資料架構師**&#x200B;經常受委託的Admin Console中的使用者和許可權
+* 在Admin Console中管理使用者和許可權，通常任務是&#x200B;**資料架構師**
 * 建立沙箱，**資料架構師**&#x200B;和&#x200B;**資料工程師**&#x200B;都可以使用沙箱來實驗新的結構描述和資料
-* 在Developer Console中設定對Platform API的存取權並使用Experience PlatformPostman集合，**資料架構師**&#x200B;和&#x200B;**資料工程師**&#x200B;都會發現這些集合很實用
+* 設定Developer Console中Platform API的存取權並使用Experience Platform Postman集合，**資料架構師**&#x200B;和&#x200B;**資料工程師**&#x200B;都會發現這些集合很實用
 * 將資料模型化至XDM結構描述中，這是與Platform所有使用者相關的基礎建置區塊
 * 將身分對應到名稱空間並將它們新增到結構描述中，這是&#x200B;**資料架構師**&#x200B;拼接設定檔的重要任務
 * 建立資料集，**資料架構師**&#x200B;通常會設定這些資料集來接收傳入的資料
@@ -47,8 +47,8 @@ ht-degree: 2%
 
 主要資源：
 
-* [Experience Platform 教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=zh-Hant)
+* [Experience Platform 教學課程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
 * [Experience Platform 文件](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=zh-Hant)
-* [Experience League課程](https://experienceleague.adobe.com/zh-hant#dashboard/learning)
+* [Experience League課程](https://experienceleague.adobe.com/#dashboard/learning)
 
 感謝您的努力和好運，祝您使用Adobe Experience Platform的旅程！
