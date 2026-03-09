@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ![Cursor + AEM](./images/cursorai2.png)
 
-選取您之前建立的資料夾，然後按一下[開啟]。****
+選取您之前建立的資料夾，然後按一下[開啟]。**&#x200B;**
 
 ![Cursor + AEM](./images/cursorai3.png)
 
@@ -115,7 +115,7 @@ List AEM Author instances
 
 ![Cursor + AEM](./images/cursorai15.png)
 
-您應該會看到類似這樣的內容。 搜尋您要使用的環境，然後輸入以下提示並按一下[傳送]。****
+您應該會看到類似這樣的內容。 搜尋您要使用的環境，然後輸入以下提示並按一下[傳送]。**&#x200B;**
 
 ```javascript
 use environment number X
