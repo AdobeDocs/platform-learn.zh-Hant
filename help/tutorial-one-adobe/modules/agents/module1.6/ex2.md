@@ -4,9 +4,9 @@ description: AEM MCP伺服器和游標
 kt: 5342
 doc-type: tutorial
 exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '754'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ![Cursor + AEM](./images/cursorai2.png)
 
-選取您之前建立的資料夾，然後按一下[開啟]。**&#x200B;**
+選取您之前建立的資料夾，然後按一下[開啟]。****
 
 ![Cursor + AEM](./images/cursorai3.png)
 
@@ -115,7 +115,7 @@ List AEM Author instances
 
 ![Cursor + AEM](./images/cursorai15.png)
 
-您應該會看到類似這樣的內容。 搜尋您要使用的環境，然後輸入以下提示並按一下[傳送]。**&#x200B;**
+您應該會看到類似這樣的內容。 搜尋您要使用的環境，然後輸入以下提示並按一下[傳送]。****
 
 ```javascript
 use environment number X
@@ -210,6 +210,8 @@ for the environment https://author-pXXXXXX-eXXXXXXX.adobeaemcloud.com/, list all
 ![Cursor + AEM](./images/cursoraiz12.png)
 
 ## 後續步驟
+
+移至[1.6.3使用ChatGPT和MCP伺服器縮放內容片段](./ex3.md){target="_blank"}
 
 返回[AEM與代理程式](./aemagents.md){target="_blank"}
 
