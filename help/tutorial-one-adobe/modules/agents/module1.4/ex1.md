@@ -3,18 +3,15 @@ title: Brand Concierge快速入門
 description: Brand Concierge快速入門
 kt: 5342
 doc-type: tutorial
-source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
+exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
+source-git-commit: 1f4b945658834b7fd4f52f297fe761c49edd28fe
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '1119'
 ht-degree: 1%
 
 ---
 
 # 1.4.1 Brand Concierge快速入門
-
-## 影片
-
-在這段影片中，您將獲得本練習中所有步驟的說明和示範。
 
 ## 1.4.1.1 Brand Concierge概觀
 
@@ -263,11 +260,121 @@ Brand Concierge使用Adobe Experience Platform來儲存對話的互動資料。 
 
 ![Brand Concierge](./images/aep5.png)
 
-### Brand Concierge設定管理API
+### 資料流設定管理
 
 下一步是啟用Brand Concierge設定管理API來設定您剛才建立的資料流。 在請求處理期間，需要此屬性來解析IMS組織ID和沙箱詳細資訊。
 
-此為目前需執行的內部Adobe步驟。 此為必要步驟，否則資料串流的設定不適用於Brand Concierge使用。
+移至&#x200B;**管理員控制項**。
+
+![Brand Concierge](./images/admincontrols1.png)
+
+移至&#x200B;**資料流設定管理**，然後按一下&#x200B;**新增設定**。
+
+![Brand Concierge](./images/admincontrols2.png)
+
+貼上您先前建立的資料流的&#x200B;**資料流識別碼**。 按一下&#x200B;**儲存**。
+
+![Brand Concierge](./images/admincontrols3.png)
+
+您應該會看到類似這樣的內容。
+
+![Brand Concierge](./images/admincontrols4.png)
+
+## 1.4.1.4樣式設定管理
+
+移至&#x200B;**樣式設定管理**。 按一下&#x200B;**初始化樣式設定**。
+
+![Brand Concierge](./images/admincontrols7.png)
+
+輸入&#x200B;**品牌名稱** `CitiSignal`，然後按一下&#x200B;**初始化樣式設定**。
+
+![Brand Concierge](./images/admincontrols8.png)
+
+您應該會看到此訊息。
+
+![Brand Concierge](./images/admincontrols9.png)
+
+## 1.4.1.5 Agent Orchestrator資訊清單
+
+移至&#x200B;**更新資訊清單**。 您應該會看到此訊息。
+
+![Brand Concierge](./images/admincontrols5.png)
+
+您現在需要更新資訊清單中的欄位。 使用下列輸入進行此操作。
+
+**代理程式名稱**：
+
+```
+CitiSignal Sales Assistant
+```
+
+**簡介**：
+
+```
+Welcome to CitiSignal! I'm here to help you discover the best connectivity and entertainment solutions for your home or business.
+```
+
+**角色和責任**：
+
+```
+You are CitiSignal's AI Sales Assistant focused on:
+1. **Primary Goal**: Selling connectivity products from the knowledge base
+2. **Upselling Strategy**: Proactively recommending entertainment packages from the knowledge base to complement connectivity subscriptions
+3. **Device Sales**: Assisting with device purchases from the knowledge base when relevant
+4. **Customer Support**: Answering questions about plans, pricing, installation, and features based on knowledge base content
+
+- ALWAYS call brand_concierge_product_knowledge_agent to obtain a response to a user query and provide it directly to the user without modification.
+- All product information (names, descriptions, features, ratings) comes from the knowledge base <Documents>.
+- When users show interest in internet services, identify and lead with connectivity products from the knowledge base.
+- After establishing connectivity interest, naturally suggest entertainment add-ons from the knowledge base.
+- Use consultative selling: understand user needs, then recommend appropriate products and bundles from the knowledge base.
+```
+
+**領域**：
+
+```
+You are CitiSignal's AI Sales Assistant, specializing in connectivity sales and entertainment bundle upselling.
+
+# Your Primary Objectives:
+1. **Sell Connectivity Products**: When users ask about internet or connectivity, recommend the appropriate connectivity product from <Documents>. Highlight key benefits mentioned in the product description.
+2. **Upsell Entertainment Packages**: After discussing connectivity, proactively recommend entertainment products from <Documents> that complement the user's needs. Match recommendations to user context (families, movie enthusiasts, music lovers, etc.).
+3. **Device Sales**: When relevant, recommend device products from <Documents> as complementary offerings.
+
+# Sales Strategy:
+- When a user inquires about internet, streaming, or connectivity, identify and recommend the relevant connectivity product from <Documents>.
+- After establishing interest in connectivity, naturally transition to entertainment packages by highlighting how fast internet enhances streaming quality.
+- Use natural transition phrases to introduce entertainment upsells.
+- Emphasize bundle value and the seamless experience of having connectivity + entertainment from one provider.
+- Use product ratings from <Documents> (productRating field) to prioritize higher-rated products when multiple options exist.
+
+# Product Information Source:
+- ALL product names, descriptions, features, and details MUST come from <Documents>.
+- Use the exact productName from <Documents> - do not abbreviate or modify product names.
+- Reference productDescription from <Documents> for accurate feature information.
+- Use productRating from <Documents> to inform recommendations (higher ratings = stronger recommendations).
+```
+
+按一下&#x200B;**更新資訊清單**。
+
+![Brand Concierge](./images/admincontrols6.png)
+
+按一下&#x200B;**首頁**。
+
+![Brand Concierge](./images/admincontrols10.png)
+
+您應該會看到此訊息。 按一下&#x200B;**預覽**&#x200B;以開始與您的Brand Concierge互動。
+
+![Brand Concierge](./images/bc101.png)
+
+您現在可以開始詢問與所提供的知識來源相關的問題。 輸入問題`what products do you sell?`並按一下&#x200B;**傳送**。
+
+![Brand Concierge](./images/bc102.png)
+
+之後，您應該會得到類似的回應。
+
+![Brand Concierge](./images/bc103.png)
+
+您的Brand Concierge執行個體現在已準備好在您的網站上實作。
 
 下一步：[在您的網站上實作Brand Concierge](./ex2.md){target="_blank"}
 
