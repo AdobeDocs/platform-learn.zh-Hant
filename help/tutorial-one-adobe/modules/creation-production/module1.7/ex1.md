@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 7d9ad7ec-7744-4ba6-9c11-c434e6cdef09
-source-git-commit: 5fe2f1c413f54dd1e3c67d78460d7f2a84248005
+source-git-commit: a3a78b12f8244c8288eb0fffc82ad769776eb118
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -249,8 +249,20 @@ ht-degree: 0%
 
 ![Firefly自訂工作流程](./images/ffcw58.png)
 
+返回工作流程。 按一下&#x200B;**發佈**。
+
+![Firefly自訂工作流程](./images/ffcw59.png)
+
+您應該會看到此訊息。
+
+![Firefly自訂工作流程](./images/ffcw60.png)
+
+您的工作流程現在已發佈，並且可以在下一個練習中以程式設計方式執行。
+
 ## 後續步驟
 
-返回[工作流程產生器](./workflowbuilder.md){target="_blank"}
+移至[1.7.2以程式設計方式執行自訂工作流程](./ex2.md){target="_blank"}
+
+返回[Firefly自訂工作流程](./workflowbuilder.md){target="_blank"}
 
 返回[所有模組](./../../../overview.md){target="_blank"}

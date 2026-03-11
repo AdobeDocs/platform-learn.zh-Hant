@@ -4,10 +4,10 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
+source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
 workflow-type: tm+mt
-source-wordcount: '1550'
-ht-degree: 4%
+source-wordcount: '1557'
+ht-degree: 3%
 
 ---
 
@@ -117,6 +117,7 @@ ht-degree: 4%
    + 1.7 Firefly自訂工作流程 {#crpr7}
       + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Firefly自訂工作流程快速入門](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.2以程式設計方式執行自訂工作流程](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex2.md)
    + 1.8使用Workfront、Frame.io和企業儲存管理進行統一的檢閱和核准 {#crpr8}
       + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Workfront、Frame.io和ESM快速入門](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
