@@ -195,7 +195,7 @@ background hearts fluttering
 
 ![WF Fusion](./images/wffusion10.png)
 
-儲存您的變更，然後按一下[執行一次] ****。
+儲存您的變更，然後按一下[執行一次] **&#x200B;**。
 
 ![WF Fusion](./images/wffusion11.png)
 
