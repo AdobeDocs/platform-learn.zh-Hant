@@ -4,9 +4,9 @@ description: 適用於ChatGPT Enterprise的Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 88f0121cd0bf73f2456c349908a7f8193ebddafa
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '988'
+source-wordcount: '999'
 ht-degree: 0%
 
 ---
@@ -299,6 +299,10 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 ![Agent Orchestrator](./images/chatgpt40.png)
 
 您現在已經完成了這個實驗。
+
+## 後續步驟
+
+移至[Adobe Marketing Agent for Microsoft 365 Copilot](./ex3.md){target="_blank"}
 
 返回[Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: 在您的網站上實作Brand Concierge
 kt: 5342
 doc-type: tutorial
 exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ ht-degree: 0%
 
 建立區塊時，最佳實務是建立區塊樣式的檔案，且檔案名稱應與區塊相同。 您現在應該建立該檔案，我們現在將保留空白。
 
-移至&#x200B;**區塊**&#x200B;資料夾。 然後，按一下[新增檔案]&#x200B;**&#x200B;**&#x200B;並選取[建立新檔案]&#x200B;**&#x200B;**。
+移至&#x200B;**區塊**&#x200B;資料夾。 然後，按一下[新增檔案]****&#x200B;並選取[建立新檔案]****。
 
 ![區塊](./images/css1.png)
 
@@ -412,6 +412,8 @@ window["alloy"]("sendEvent", {
 之後，您應該會看到此Brand Concierge，您可以在其中輸入提示。
 
 ![Brand Concierge](./images/aem14.png)
+
+## 後續步驟
 
 返回[Brand Concierge](./brandconcierge.md){target="_blank"}
 

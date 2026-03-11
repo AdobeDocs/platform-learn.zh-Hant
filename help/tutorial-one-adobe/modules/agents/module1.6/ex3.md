@@ -3,9 +3,10 @@ title: 使用ChatGPT和MCP伺服器縮放內容片段
 description: 使用ChatGPT和MCP伺服器縮放內容片段
 kt: 5342
 doc-type: tutorial
-source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
+exl-id: b7105351-e9de-4b2c-b3d7-2d4c8627f852
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
@@ -280,6 +281,34 @@ find the content fragment --aepUserLdap-- - CitiSignal Fiber Max and make a vari
 您現在也可以在AEM UI中看到新的變數。
 
 ![Agent Orchestrator](./images/chatgpt17.png)
+
+接下來，使用ChatGPT將您的內容片段翻譯成更多變化。 輸入以下提示並按一下&#x200B;**傳送**。
+
+```
+now do the same thing for the 5 top country's languages that CitiSignal does business with
+```
+
+![Agent Orchestrator](./images/chatgpt18.png)
+
+確認您的語言選擇。
+
+![Agent Orchestrator](./images/chatgpt23.png)
+
+按一下&#x200B;**CreateFragmentVariation**。
+
+![Agent Orchestrator](./images/chatgpt22.png)
+
+按一下&#x200B;**UpdateFragment**。
+
+![Agent Orchestrator](./images/chatgpt24.png)
+
+為您選取的每種語言重複此程式。 完成後，您應該會看到類似這樣的內容。
+
+![Agent Orchestrator](./images/chatgpt26.png)
+
+返回AEM UI並重新整理畫面。 您現在可以在內容片段中看到新的變數。
+
+![Agent Orchestrator](./images/chatgpt27.png)
 
 ## 後續步驟
 

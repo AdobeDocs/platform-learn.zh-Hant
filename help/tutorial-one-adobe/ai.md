@@ -3,9 +3,9 @@ title: Agentic AI技術實驗室概觀
 description: Agentic AI技術實驗室概觀
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -26,30 +26,6 @@ ht-degree: 0%
 - 識別高傾向性對象
 - 驗證歷程績效
 - 為CitiSignal Fiber Max轉出建立新的歷程
-
-[1.2代理程式和AI快速入門](./modules/agents/module1.2/agenticai.md)
-
->[!NOTE]
->
->此模組尚未發行。
-
-**目標**
-
-建置您自己的代理程式。
-
-學習者將建立自己的代理程式，使用LLM來分析請求。 接著會使用請求分析來建置包含指示的計畫，然後逐一執行。 為了做到這一點，代理商需要瞭解有哪些技能可用。 學習者將自行建立一些技能，每個技能將使用MCP伺服器建立，並將使用Adobe產品API，例如Adobe Firefly Services、Workfront Fusion等。
-
-- Image GenAI
-- Text GenAI
-
-代理程式背後的架構為何？
-
-技術元素：
-
-- Azure AI Foundry， LLM，聯合試驗
-- n8n
-- MCP伺服器，Python筆記型電腦
-- Adobe API的
 
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
