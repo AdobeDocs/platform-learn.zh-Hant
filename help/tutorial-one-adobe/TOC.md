@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 008a7dd61fb6fd82a29779a2a72673b92b3a8634
+source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
 workflow-type: tm+mt
-source-wordcount: '1557'
+source-wordcount: '1558'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 3%
       + [1.1.1 Agent Orchestrator快速入門](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2適用於ChatGPT Enterprise的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
-      + [1.1.4 Google Gemini適用的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+      + [1.1.4 Google Gemini Enterprise適用的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
    + 1.2代理程式和AI快速入門 {#agents2}
       + [概觀](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI快速入門](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -77,7 +77,7 @@ ht-degree: 3%
    + 1.1 Adobe Firefly Services概觀 {#crpr1}
       + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.1/firefly-services.md)
       + [1.1.1 Firefly Services快速入門](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
-      + [1.1.2使用Microsoft Azure和預先簽署的URL最佳化您的Firefly程式](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
+      + [1.1.2使用Microsoft Azure和預先簽署的URL最佳化Firefly流程](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
       + [1.1.3使用Photoshop API](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
       + [1.1.4 Firefly自訂模型API](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
@@ -201,7 +201,7 @@ ht-degree: 3%
          + [概觀](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
          + [2.4.1設定環境](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex1.md)
          + [2.4.2設定您的Microsoft Azure EventHub環境](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex2.md)
-         + [2.4.3在Adobe Experience Platform中設定Azure事件中樞目的地](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
+         + [2.4.3在Adobe Experience Platform中設定Azure事件中心目的地](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex3.md)
          + [2.4.4建立對象](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex4.md)
          + [2.4.5啟用您的對象](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex5.md)
          + [2.4.6建立您的Microsoft Azure專案](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex6.md)
