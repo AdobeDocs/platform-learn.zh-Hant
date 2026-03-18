@@ -2,10 +2,10 @@
 title: 新增內嵌程式碼
 description: 瞭解如何取得標籤屬性的內嵌程式碼並在您的網站中實作。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 42%
+source-wordcount: '1016'
+ht-degree: 44%
 
 ---
 
@@ -16,15 +16,8 @@ ht-degree: 42%
 
 >[!WARNING]
 >
-> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
+> 本教學課程及其Luma網站練習已不再進行維護，且會仰賴舊版的JavaScript程式庫。 若要瞭解目前的最佳實務，請使用[使用Web SDK實作Adobe Experience Cloud教學課程](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-web-sdk/overview)。
 
->[!NOTE]
->
->Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
->
-> * Platform Launch （使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)**
-> * Platform Launch Server Side現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)**
-> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hant)**
 
 ## 學習目標
 
@@ -109,7 +102,7 @@ ht-degree: 42%
 <body>
     <h1>Tags: Sample HTML Page</h1>
     <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-    <p>See <a href="https://docs.adobe.com/content/help/zh-Hant/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
 </body>
 </html>
 ```

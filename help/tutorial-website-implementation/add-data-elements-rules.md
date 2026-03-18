@@ -2,10 +2,10 @@
 title: 新增資料元素、規則和程式庫
 description: 瞭解如何在標籤中建立資料元素、規則和程式庫。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 51%
+source-wordcount: '1420'
+ht-degree: 53%
 
 ---
 
@@ -18,15 +18,8 @@ ht-degree: 51%
 
 >[!WARNING]
 >
-> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
+> 本教學課程及其Luma網站練習已不再進行維護，且會仰賴舊版的JavaScript程式庫。 若要瞭解目前的最佳實務，請使用[使用Web SDK實作Adobe Experience Cloud教學課程](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-web-sdk/overview)。
 
->[!NOTE]
->
->Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
->
-> * Platform Launch （使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)**
-> * Platform Launch Server Side現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)**
-> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hant)**
 
 ## 學習目標
 
@@ -99,7 +92,7 @@ ht-degree: 51%
 
 1. 由於此規則應在所有頁面上引發，請將&#x200B;**[!UICONTROL 條件]**&#x200B;留空。 如果開啟「條件」強制回應，您會看到條件可以根據各種選項新增限制和排除項目，包括 URL、資料元素值、日期範圍等。
 
-1. 在[動作]底下，按一下[新增] **&#x200B;**
+1. 在[動作]底下，按一下[新增] ****
 
 1. 選取&#x200B;**[!UICONTROL 動作型別>自訂程式碼]**，此時此為唯一的選項。 在稍後的教學課程中，當您新增擴充功能時，畫面就會顯示更多選項。
 

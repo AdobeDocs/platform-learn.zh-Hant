@@ -2,9 +2,9 @@
 title: 實作Experience Cloud與標籤的整合
 description: 瞭解如何驗證 Adobe Experience Cloud 實施中的客群、A4T 和客戶屬性整合。本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1231'
+source-wordcount: '1234'
 ht-degree: 83%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 83%
 
 >[!WARNING]
 >
-> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
+> 本教學課程及其Luma網站練習已不再進行維護，且會仰賴舊版的JavaScript程式庫。 若要瞭解目前的最佳實務，請使用[使用Web SDK實作Adobe Experience Cloud教學課程](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-web-sdk/overview)。
 
 ## 學習目標
 
@@ -33,12 +33,12 @@ ht-degree: 83%
 >
 >若要完整使用這些整合，有許多必要的使用者許可權需求、帳戶設定和布建步驟，這些不在本教學課程的討論範圍內。 如果您已在目前的 Experience Cloud 實施中使用這些整合，您應考量下列事項：
 >
->* 檢視[核心服務整合](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/getting-started)的完整需求
->* 檢視 [Analytics for Target 整合](https://experienceleague.adobe.com/zh-hant/docs/target/using/integrate/a4t/before-implement)的完整需求
+>* 檢視[核心服務整合](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)的完整需求
+>* 檢視 [Analytics for Target 整合](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)的完整需求
 
 ## 客群
 
-[客群](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/services/audiences/overview)是 People 核心服務的一部分，可讓您在不同解決方案之間共用客群。例如，您可以在 Audience Manager 中建立受眾，並透過 Target 使用該受眾來提供個人化內容。
+[客群](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview)是 People 核心服務的一部分，可讓您在不同解決方案之間共用客群。例如，您可以在 Audience Manager 中建立受眾，並透過 Target 使用該受眾來提供個人化內容。
 
 實施 A4T (您已完成) 的主要需求如下：
 
@@ -76,7 +76,7 @@ ht-degree: 83%
 
 ## Analytics for Target (A4T)
 
-[Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hant) 整合可讓您將 Analytics 資料當成 Target 中報告量度的來源。
+[Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) 整合可讓您將 Analytics 資料當成 Target 中報告量度的來源。
 
 實施 A4T (您已完成) 的主要需求如下：
 

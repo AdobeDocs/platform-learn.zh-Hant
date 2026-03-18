@@ -3,10 +3,10 @@ title: 新增 Adobe Audience Manager
 description: 瞭解如何使用伺服器端轉送和標籤在您的網站上實施Adobe Audience Manager。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 solution: Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1781'
-ht-degree: 68%
+source-wordcount: '1728'
+ht-degree: 70%
 
 ---
 
@@ -14,20 +14,13 @@ ht-degree: 68%
 
 本課程將引導您使用伺服器端轉送，逐步啟用 Adobe Audience Manager。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=zh-Hant) (AAM) 提供領先業界的線上受眾資料管理服務，為數位廣告商和發行商提供所需的工具，控制並運用其資料資產，協助促進銷售成果。
+[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) (AAM) 提供領先業界的線上受眾資料管理服務，為數位廣告商和發行商提供所需的工具，控制並運用其資料資產，協助促進銷售成果。
 
 
 >[!WARNING]
 >
-> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
+> 本教學課程及其Luma網站練習已不再進行維護，且會仰賴舊版的JavaScript程式庫。 若要瞭解目前的最佳實務，請使用[使用Web SDK實作Adobe Experience Cloud教學課程](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-web-sdk/overview)。
 
->[!NOTE]
->
->Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
->
-> * Platform Launch （使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)**
-> * Platform Launch Server Side現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)**
-> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hant)**
 
 ## 學習目標
 
@@ -49,7 +42,7 @@ ht-degree: 68%
 
    ![您可以使用 Debugger 在實際網站上尋找 Audience Manager 子網域](images/aam-debugger-partner.png)
 
-如果您尚未實施 Audience Manager，請依照下列指示[取得 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=zh-Hant)。
+如果您尚未實施 Audience Manager，請依照下列指示[取得 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)。
 
 ## 實施選項
 
@@ -100,9 +93,9 @@ ht-degree: 68%
 >
 >因為SSF必須對個別報表套裝啟用，實際在您網站的報表套裝中部署SSF時，請務必為您實際的報表套裝重複此步驟。
 >
->此外，如果 SSF 選項呈現灰色，您需要將報表套裝對應至您的 Experience Cloud 組織，才能啟用此選項。這在[文件](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=zh-Hant)中皆有說明。
+>此外，如果 SSF 選項呈現灰色，您需要將報表套裝對應至您的 Experience Cloud 組織，才能啟用此選項。這在[文件](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)中皆有說明。
 
-完成此步驟後，如果您已啟用 Adobe Experience Platform 身分識別服務，資料將會從 Analytics 轉送至 AAM。不過，若要完成程式，讓回應能夠正確地從AAM回到頁面(同時透過Audience Analytics功能回到Analytics)，您也必須在標籤中完成下列步驟。 別擔心，操作很簡單。
+完成此步驟後，如果您已啟用 Adobe Experience Platform 身分識別服務，資料將會從 Analytics 轉送至 AAM。不過，若要完成程式，讓回應能夠正確地從AAM回到頁面（同時透過Audience Analytics功能回到Analytics），您也必須在標籤中完成下列步驟。 別擔心，操作很簡單。
 
 ### 在標籤中啟用伺服器端轉送
 
@@ -122,7 +115,7 @@ ht-degree: 68%
 
 1. 勾選方塊&#x200B;**[!UICONTROL 自動與Audience Manager共用Analytics資料]**。 這會將 Audience Manager 的「模組」(程式碼) 新增至 Analytics `AppMeasurement.js` 實施。
 
-1. 新增您的「Audience Manager子網域」（也稱為「合作夥伴名稱」、「合作夥伴ID」或「合作夥伴子網域」）。 請依照下列指示操作，[取得您的 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=zh-Hant)。
+1. 新增您的「Audience Manager子網域」（也稱為「合作夥伴名稱」、「合作夥伴ID」或「合作夥伴子網域」）。 請依照下列指示操作，[取得您的 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)。
 
 1. 按一下&#x200B;**[!UICONTROL 儲存至程式庫並建置]**
 
@@ -136,7 +129,7 @@ ht-degree: 68%
 
 #### 驗證程式碼是否正確載入
 
-標籤安裝用來處理轉送(尤其是從AAM轉送至頁面的回應)的程式碼，稱之為Audience Manager
+標籤安裝用來處理轉送（尤其是從AAM轉送至頁面的回應）的程式碼，稱之為Audience Manager
 「模組。」 我們可以使用 Experience Cloud Debugger 來確認該模組已載入。
 
 1. 開啟 Luma 網站
@@ -157,7 +150,7 @@ ht-degree: 68%
 
 >[!WARNING]
 >
->您可能會注意到Debugger的「Audience Manager」區段會參照「DIL」(即「Data Integration Library」)，且通常會參照使用者端實施，而非我們在這裡實施的伺服器端方法。 事實上，AAM「模組」(用於此 SSF 方法) 使用許多與用戶端 DIL 程式庫相同的程式碼，因此 Debugger 目前會依此方法報告。如果您已按照本教學課程中的步驟進行，而且此驗證區段中的其餘項目正確無誤，即可確信伺服器端轉送運作正常。
+>您可能會注意到Debugger的「Audience Manager」區段會參照「DIL」（即「Data Integration Library」），且通常會參照使用者端實施，而非我們在這裡實施的伺服器端方法。 事實上，AAM「模組」(用於此 SSF 方法) 使用許多與用戶端 DIL 程式庫相同的程式碼，因此 Debugger 目前會依此方法報告。如果您已按照本教學課程中的步驟進行，而且此驗證區段中的其餘項目正確無誤，即可確信伺服器端轉送運作正常。
 
 #### 驗證 Analytics 請求和回應
 

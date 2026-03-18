@@ -2,10 +2,10 @@
 title: 使用Adobe Experience Cloud Debugger切換標籤環境
 description: 瞭解如何使用Experience Cloud Debugger載入不同的標籤內嵌程式碼。 本課程屬於「在網站中實作Experience Cloud」教學課程的一部分。
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 20%
+source-wordcount: '567'
+ht-degree: 21%
 
 ---
 
@@ -16,17 +16,10 @@ ht-degree: 20%
 
 >[!WARNING]
 >
-> 本教學課程中使用的Luma網站預計於2026年2月16日當週汰換。 此教學課程中完成的工作可能不適用於新網站。
+> 本教學課程及其Luma網站練習已不再進行維護，且會仰賴舊版的JavaScript程式庫。 若要瞭解目前的最佳實務，請使用[使用Web SDK實作Adobe Experience Cloud教學課程](https://experienceleague.adobe.com/zh-hant/docs/platform-learn/implement-web-sdk/overview)。
 
 此技巧稱為環境切換，您日後在自己的網站上使用標籤時，此技巧將有所幫助。 您可以在瀏覽器中載入您的生產網站，但搭配您的&#x200B;*開發*&#x200B;標籤環境。 這可讓您安心地變更及驗證標籤，而不受定期程式碼發行的影響。  畢竟，將行銷標籤發行與定期程式碼發行分開，是客戶使用標籤的主要原因之一！
 
->[!NOTE]
->
->Adobe Experience Platform Launch正在以資料收集技術套裝的形式整合到Adobe Experience Platform中。 此介面已推出幾項術語變更，使用此內容時請務必注意：
->
-> * Platform Launch （使用者端）現在是&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hant)**
-> * Platform Launch Server Side現在是&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hant)**
-> * Edge設定現在是&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hant)**
 
 ## 學習目標
 
