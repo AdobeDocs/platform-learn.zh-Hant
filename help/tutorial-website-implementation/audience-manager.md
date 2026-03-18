@@ -14,7 +14,7 @@ ht-degree: 70%
 
 本課程將引導您使用伺服器端轉送，逐步啟用 Adobe Audience Manager。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) (AAM) 提供領先業界的線上受眾資料管理服務，為數位廣告商和發行商提供所需的工具，控制並運用其資料資產，協助促進銷售成果。
+[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=zh-Hant) (AAM) 提供領先業界的線上受眾資料管理服務，為數位廣告商和發行商提供所需的工具，控制並運用其資料資產，協助促進銷售成果。
 
 
 >[!WARNING]
@@ -42,7 +42,7 @@ ht-degree: 70%
 
    ![您可以使用 Debugger 在實際網站上尋找 Audience Manager 子網域](images/aam-debugger-partner.png)
 
-如果您尚未實施 Audience Manager，請依照下列指示[取得 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)。
+如果您尚未實施 Audience Manager，請依照下列指示[取得 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=zh-Hant)。
 
 ## 實施選項
 
@@ -93,7 +93,7 @@ ht-degree: 70%
 >
 >因為SSF必須對個別報表套裝啟用，實際在您網站的報表套裝中部署SSF時，請務必為您實際的報表套裝重複此步驟。
 >
->此外，如果 SSF 選項呈現灰色，您需要將報表套裝對應至您的 Experience Cloud 組織，才能啟用此選項。這在[文件](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)中皆有說明。
+>此外，如果 SSF 選項呈現灰色，您需要將報表套裝對應至您的 Experience Cloud 組織，才能啟用此選項。這在[文件](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=zh-Hant)中皆有說明。
 
 完成此步驟後，如果您已啟用 Adobe Experience Platform 身分識別服務，資料將會從 Analytics 轉送至 AAM。不過，若要完成程式，讓回應能夠正確地從AAM回到頁面（同時透過Audience Analytics功能回到Analytics），您也必須在標籤中完成下列步驟。 別擔心，操作很簡單。
 
@@ -115,7 +115,7 @@ ht-degree: 70%
 
 1. 勾選方塊&#x200B;**[!UICONTROL 自動與Audience Manager共用Analytics資料]**。 這會將 Audience Manager 的「模組」(程式碼) 新增至 Analytics `AppMeasurement.js` 實施。
 
-1. 新增您的「Audience Manager子網域」（也稱為「合作夥伴名稱」、「合作夥伴ID」或「合作夥伴子網域」）。 請依照下列指示操作，[取得您的 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)。
+1. 新增您的「Audience Manager子網域」（也稱為「合作夥伴名稱」、「合作夥伴ID」或「合作夥伴子網域」）。 請依照下列指示操作，[取得您的 Audience Manager 子網域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=zh-Hant)。
 
 1. 按一下&#x200B;**[!UICONTROL 儲存至程式庫並建置]**
 

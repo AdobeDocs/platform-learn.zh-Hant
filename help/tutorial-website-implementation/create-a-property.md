@@ -22,7 +22,7 @@ ht-degree: 52%
 
 ## 先決條件
 
-若要完成後續幾堂課，您必須擁有開發、核准、發佈、管理擴充功能及管理標籤中環境的許可權。 如果您因無法使用的使用者介面選項而無法完成其中任何步驟，請聯絡 Experience Cloud 管理員以請求存取權限。如需有關標籤使用者許可權的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)。
+若要完成後續幾堂課，您必須擁有開發、核准、發佈、管理擴充功能及管理標籤中環境的許可權。 如果您因無法使用的使用者介面選項而無法完成其中任何步驟，請聯絡 Experience Cloud 管理員以請求存取權限。如需有關標籤使用者許可權的詳細資訊，請參閱[檔案](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hant)。
 
 
 ## 學習目標
@@ -49,7 +49,7 @@ ht-degree: 52%
 
 ## 建立屬性
 
-屬性基本上是個容器，當您將標記部署至網站時，在其中裝入擴充功能、規則、資料元素和程式庫。屬性可以是一或多個網域和子網域的任何群組。同樣地，您可以管理及追蹤這些資產。例如，假設您有多個網站是根據同一個範本，且想要追蹤這所有網站上的相同資產。您可以將一個屬性套用到多個網域。如需建立屬性的詳細資訊，請參閱產品說明文件中的[公司和屬性](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html)。
+屬性基本上是個容器，當您將標記部署至網站時，在其中裝入擴充功能、規則、資料元素和程式庫。屬性可以是一或多個網域和子網域的任何群組。同樣地，您可以管理及追蹤這些資產。例如，假設您有多個網站是根據同一個範本，且想要追蹤這所有網站上的相同資產。您可以將一個屬性套用到多個網域。如需建立屬性的詳細資訊，請參閱產品說明文件中的[公司和屬性](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=zh-Hant)。
 
 **建立屬性的方式**
 
