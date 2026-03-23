@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
+source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1562'
 ht-degree: 3%
 
 ---
@@ -114,9 +114,9 @@ ht-degree: 3%
       + [1.6.3建立並部署外部DAM應用程式](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4私下發佈您的應用程式](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [摘要和優點](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
-   + 1.7 Firefly自訂工作流程 {#crpr7}
+   + 1.7 Firefly Creative Production for Enterprise {#crpr7}
       + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
-      + [1.7.1 Firefly自訂工作流程快速入門](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
+      + [1.7.1 Firefly Creative Production for Enterprise快速入門](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
       + [1.7.2以程式設計方式執行自訂工作流程](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex2.md)
    + 1.8使用Workfront、Frame.io和企業儲存管理進行統一的檢閱和核准 {#crpr8}
       + [概觀](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
