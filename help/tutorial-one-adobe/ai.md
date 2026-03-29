@@ -1,11 +1,11 @@
 ---
-title: Agentic AI技術實驗室概觀
-description: Agentic AI技術實驗室概觀
+title: Agentic AI技術實驗室
+description: Agentic AI技術實驗室
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,23 @@ ht-degree: 0%
 
 ![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## 概觀 — 進行中的工作
+## Agentic AI Architecture
+
+在這段影片中，您將瞭解One Adobe教學課程中Agentic AI部分的架構。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
+
+下載架構概觀影像如下：
+
+![技術內部人士](./assets/images/architecture_agentic.jpg)
+
+### 快速入門
+
+[開始使用](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+
+在此基本單元中，您將準備所有內容，以便存取和使用示範環境。
+
+### Agentic AI技術實驗室
 
 [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
@@ -26,6 +42,8 @@ ht-degree: 0%
 - 識別高傾向性對象
 - 驗證歷程績效
 - 為CitiSignal Fiber Max轉出建立新的歷程
+
+您還將瞭解如何搭配使用Adobe Marketing Agent與Microsoft 365 Copilot、ChatGPT for Enterprise、Google Gemini Enterprise和Claude等工具。
 
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 

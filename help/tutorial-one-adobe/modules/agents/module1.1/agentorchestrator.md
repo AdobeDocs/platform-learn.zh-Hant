@@ -4,10 +4,10 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 4%
+source-wordcount: '282'
+ht-degree: 3%
 
 ---
 
@@ -51,6 +51,10 @@ ht-degree: 4%
 [1.1.4 Adobe Marketing Agent for Google Gemini Enterprise](./ex4.md){target="_blank"}
 
 在本練習中，您將透過將Agent Orchestrator與Google Gemini搭配使用，在CitiSignal Fiber Max上市行銷活動的背景下探索Adobe Marketing Agent的功能。
+
+[1.1.5 Claude的Adobe Marketing Agent](./ex5.md){target="_blank"}
+
+在本練習中，您將透過使用Adobe Marketing Agent與Claude，在CitiSignal為Fiber Max推出行銷活動的背景下探索Agent Orchestrator的能力。
 
 ![技術內部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

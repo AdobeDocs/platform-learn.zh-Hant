@@ -3,9 +3,9 @@ title: 一個Adobe教學課程 — 架構概覽
 description: 一個Adobe教學課程 — 架構概覽
 doc-type: multipage-overview
 exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
-source-git-commit: d271e771b75cd4cbc6d526cd8c438d8858930878
+source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '70'
 ht-degree: 0%
 
 ---
@@ -23,36 +23,6 @@ ht-degree: 0%
 下載架構概觀影像如下：
 
 ![技術內部人士](./assets/images/architecture_all.jpg)
-
-## Agentic AI架構概述
-
-在這段影片中，您將瞭解One Adobe教學課程中Agentic AI部分的架構。
-
->[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
-
-下載架構概觀影像如下：
-
-![技術內部人士](./assets/images/architecture_agentic.jpg)
-
-## 內容架構概述
-
-在本影片中，您將會瞭解本教學課程中GenStudio部分的架構。
-
->[!VIDEO](https://video.tv.adobe.com/v/3481414?quality=12&learn=on)
-
-下載架構概觀影像如下：
-
-![技術內部人士](./assets/images/architecture_content.jpg)
-
-## 資料架構概述
-
-在本影片中，您將會瞭解本教學課程中Adobe Experience Platform和應用程式部分的架構。
-
->[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
-
-下載架構概觀影像如下：
-
-![技術內部人士](./assets/images/architecture_data.jpeg)
 
 >[!NOTE]
 >

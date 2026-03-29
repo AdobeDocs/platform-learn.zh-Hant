@@ -4,9 +4,9 @@ description: 適用於Google Gemini Enterprise的Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
-source-git-commit: 2b80701ddfd40896bc4dc149de1008f3ff86df4b
+source-git-commit: c1e6d2110ca242ae8b4ff62cbdc5838392ec130e
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1031'
 ht-degree: 0%
 
 ---
@@ -34,8 +34,6 @@ ht-degree: 0%
 在這段影片中，您將獲得本練習中所有步驟的說明和示範。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481322?quality=12&learn=on)
-
-本實驗室正在開發中。
 
 ## 1.1.4.1存取Google Gemini Enterprise
 
@@ -360,6 +358,10 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 ![Agent Orchestrator](./images/geminilab38.png)
 
 您現在已經完成了這個實驗。
+
+## 後續步驟
+
+移至Claude的[1.1.5 Adobe Marketing Agent](./ex5.md){target="_blank"}
 
 返回[Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 

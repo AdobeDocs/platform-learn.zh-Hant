@@ -4,7 +4,7 @@ description: 適用於ChatGPT Enterprise的Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
 source-wordcount: '999'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 [!BADGE Beta]
 
 +++Beta詳細資料
-透過將Adobe Marketing Agent用於ChatGPT Enterprise Beta，您在此確認Beta係依「現況」提供，並無任何保證。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援Beta。 建議您謹慎使用，切勿依賴這類Beta及/或隨附資料的正確運作或效能。 Beta視為Adobe的機密資訊。  任何「意見回饋」(有關Beta的資訊，包括但不限於您在使用Beta時遇到的問題或缺陷、建議、改進和建議)會在此指派給Adobe Adobe，包括所有權利、標題，以及對此等意見回饋的興趣。
+透過將Adobe Marketing Agent用於ChatGPT Enterprise Beta，您在此確認Beta係依「現況」提供，並無任何保證。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援Beta。 建議您謹慎使用，切勿依賴這類Beta及/或隨附資料的正確運作或效能。 Beta視為Adobe的機密資訊。  任何「意見回饋」（有關Beta的資訊，包括但不限於您在使用Beta時遇到的問題或缺陷、建議、改進和建議）會在此指派給Adobe，包括所有權利、標題，以及對此等意見回饋的興趣。
 
 +++
 

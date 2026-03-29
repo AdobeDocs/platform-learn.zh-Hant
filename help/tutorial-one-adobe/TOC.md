@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1577'
 ht-degree: 3%
 
 ---
@@ -15,8 +15,10 @@ ht-degree: 3%
 # 一門Adobe技術教學課程 {#tutorial-one-adobe}
 
 + [教學課程概觀](/help/tutorial-one-adobe/overview.md)
-+ [內容狀態](/help/tutorial-one-adobe/status.md)
 + [架構](/help/tutorial-one-adobe/architecture.md)
++ [Agentic AI Labs](/help/tutorial-one-adobe/ai.md)
++ [GenStudio Labs](/help/tutorial-one-adobe/genstudiocsc.md)
++ [AEP與應用程式實驗室](/help/tutorial-one-adobe/aepapps.md)
 
 + 快速入門 {#gettingstarted}
    + 快速入門 {#gettingstarted}
@@ -38,6 +40,7 @@ ht-degree: 3%
       + [1.1.2適用於ChatGPT Enterprise的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Google Gemini Enterprise適用的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+      + [1.1.5克勞德的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
    + 1.2代理程式和AI快速入門 {#agents2}
       + [概觀](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI快速入門](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -298,3 +301,5 @@ ht-degree: 3%
          + [概觀](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics快速入門](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [摘要和優點](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
++ [內容狀態](/help/tutorial-one-adobe/status.md)
