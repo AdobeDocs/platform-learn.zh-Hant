@@ -72,7 +72,7 @@ ht-degree: 1%
 
 ![Claude.ai](./images/claude5.png)
 
-按一下&#x200B;**+**&#x200B;圖示，前往&#x200B;**聯結器**，並確認已啟用&#x200B;**Adobe Marketing Agent****。
+按一下&#x200B;**+**&#x200B;圖示，前往&#x200B;**聯結器**，並確認已啟用&#x200B;**Adobe Marketing Agent**&#x200B;**。
 
 ![Claude.ai](./images/claude6.png)
 
