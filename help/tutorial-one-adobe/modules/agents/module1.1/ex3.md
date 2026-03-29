@@ -4,7 +4,7 @@ description: Microsoft 365 CopilotCopilot適用的Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ![ChatGPT](./images/copilot4.png)
 
-選取講師提供給您的資訊清單檔案，然後按一下[開啟]。**&#x200B;**
+選取講師提供給您的資訊清單檔案，然後按一下[開啟]。****
 
 ![ChatGPT](./images/copilot5.png)
 
@@ -152,7 +152,7 @@ change dataview
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
 ```javascript
-Show me purchases by mainCategory over the last 4 months.
+Show me purchases by mainCategory over the last 7 months.
 ```
 
 ![Agent Orchestrator](./images/copilot18.png)
@@ -164,7 +164,7 @@ Show me purchases by mainCategory over the last 4 months.
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 4 months broken down by week
+Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
 ```
 
 ![Agent Orchestrator](./images/copilot20.png)
@@ -198,7 +198,7 @@ Which field is used to store the preferred genre
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 4 months
+Show me ordersYTD by preferredGenre for the last 7 months
 ```
 
 ![Agent Orchestrator](./images/copilot24.png)

@@ -2,9 +2,9 @@
 title: AEP與應用程式技術實驗室
 description: AEP與應用程式技術實驗室
 doc-type: multipage-overview
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
 
-下載架構概觀影像如下：
-
-![技術內部人士](./assets/images/architecture_data.jpeg)
+在[這裡](./assets/images/architecture_data.jpeg)下載架構概觀影像。
 
 ### 快速入門
 

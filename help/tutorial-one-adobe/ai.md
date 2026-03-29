@@ -3,9 +3,9 @@ title: Agentic AI技術實驗室
 description: Agentic AI技術實驗室
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,7 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
 
-下載架構概觀影像如下：
-
-![技術內部人士](./assets/images/architecture_agentic.jpg)
+在[這裡](./assets/images/architecture_agentic.jpg)下載架構概觀影像。
 
 ### 快速入門
 
