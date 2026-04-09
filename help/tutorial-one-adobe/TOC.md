@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: a1578a5205fd17a6aaf362145c78e19343255d93
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1582'
 ht-degree: 3%
 
 ---
@@ -41,6 +41,7 @@ ht-degree: 3%
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Google Gemini Enterprise適用的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
       + [1.1.5克勞德的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
+      + [1.1.6 Agent Orchestrator v2](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
    + 1.2代理程式和AI快速入門 {#agents2}
       + [概觀](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI快速入門](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
