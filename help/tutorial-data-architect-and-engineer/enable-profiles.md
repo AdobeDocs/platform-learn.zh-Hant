@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 雖然聽起來很神奇，但您不需要為設定檔啟動&#x200B;*您的所有資料*。 實際上，您應該只啟用啟用啟用使用案例所需的資料。 啟用您想要用於行銷使用案例、客服中心整合等的資料，以便快速存取強大的客戶設定檔。 如果您上傳的資料僅供分析，則可能不應為設定檔啟用此功能。
 
-對於即時客戶設定檔資料[有重要的](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hant)護欄，在決定您自己的哪些資料應該啟用設定檔時，您應該檢閱這些護欄。
+對於即時客戶設定檔資料[有重要的](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)護欄，在決定您自己的哪些資料應該啟用設定檔時，您應該檢閱這些護欄。
 
 <!--is this accurate. Are there other considerations to point out? -->
 
@@ -40,7 +40,8 @@ ht-degree: 0%
 在[設定許可權](configure-permissions.md)課程中，您已設定完成本課程所需的所有存取控制。
 
 
-<!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
+<!--
+* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile

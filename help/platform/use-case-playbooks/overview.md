@@ -9,24 +9,25 @@ duration: 141
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14806
 exl-id: 66d8992b-e812-4a5c-a696-45f29106aaab
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
 # 使用案例教戰手冊概覽
 
-了解使用案例教戰手冊如何能協助 Real-Time Customer Data Platform 和 Journey Optimizer 的客戶加快實現價值。使用案例教戰手冊是涵蓋多個產業和行銷目標的數十個範本的目錄。 教戰手冊會產生受眾、歷程和結構描述等技術資產，然後可加以自訂並發佈到其他沙箱。 如需詳細資訊，請參閱[使用案例行動手冊檔案](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=zh-Hant)。
+了解使用案例教戰手冊如何能協助 Real-Time Customer Data Platform 和 Journey Optimizer 的客戶加快實現價值。使用案例教戰手冊是涵蓋多個產業和行銷目標的數十個範本的目錄。 教戰手冊會產生受眾、歷程和結構描述等技術資產，然後可加以自訂並發佈到其他沙箱。 如需詳細資訊，請參閱[使用案例行動手冊檔案](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441826/?learn=on&enablevpops&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 
-## 快速入門
+## 開始使用
 
 瞭解如何設定使用案例教戰手冊的Platform帳戶，然後建立和發佈教戰手冊的第一個執行個體。
 
-<!-- CARDS
+<!--
+CARDS
 * configure-a-playbook-sandbox.md
 * create-and-publish-a-playbook-instance.md
 -->
@@ -37,7 +38,7 @@ ht-degree: 25%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="設定Playbook沙箱" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449837/?format=jpeg&nocache=1739379898120&captions=chi_hant" alt="設定Playbook沙箱"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="設定Playbook沙箱"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -45,7 +46,7 @@ ht-degree: 25%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="configure-a-playbook-sandbox.md" target="_blank" rel="referrer" title="設定Playbook沙箱">設定Playbook沙箱</a>
+                        <a href="configure-a-playbook-sandbox.md" target="_blank" rel="referrer" title="設定Playbook沙箱">設定教戰手冊沙箱</a>
                     </p>
                     <p class="is-size-6">瞭解如何設定使用案例教戰手冊的沙箱。</p>
                 </div>

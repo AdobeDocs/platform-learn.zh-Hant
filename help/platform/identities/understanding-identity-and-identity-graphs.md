@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 15%
@@ -18,11 +18,12 @@ ht-degree: 15%
 
 瞭解Adobe Experience Platform中身分解析的主要功能 — 身分收集、身分圖表和API。 瞭解Identity Service如何連結已中斷連線的身分，以透過建構統一的設定檔來提供一致的連線體驗。 如需詳細資訊，請瀏覽[身分識別服務檔案](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hant)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3422770?captions=chi_hant&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 ## 設定身分
 
-<!-- CARDS
+<!--
+CARDS
 * label-ingest-and-verify-identity-data.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -55,7 +56,8 @@ ht-degree: 15%
 
 ## 身分識別圖連結規則
 
-<!-- CARDS
+<!--
+CARDS
 * identity-graph-linking-rules/graph-simulation.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -65,7 +67,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="身分圖表連結規則 — 圖表模擬" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444054/?captions=chi_hant&format=jpeg&nocache=1740414776009" alt="身分圖表連結規則 — 圖表模擬"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="身分圖表連結規則 — 圖表模擬"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -88,7 +90,8 @@ ht-degree: 15%
 
 ## 身分圖
 
-<!-- CARDS
+<!--
+CARDS
 * view-identity-graphs.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->

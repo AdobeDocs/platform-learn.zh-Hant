@@ -9,24 +9,25 @@ duration: 262
 last-substantial-update: 2025-02-27T00:00:00Z
 jira: KT-16731
 exl-id: a61a83fe-76af-4b29-95ee-2fdb9b6bc096
-source-git-commit: 837c9b4386fbca106db313ee4e27fc7b69ea54ff
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 20%
+ht-degree: 24%
 
 ---
 
 # 身分識別圖連結規則概觀
 
-取得身分圖表連結規則如何協助資料架構師維護精確的客戶設定檔及防止圖表摺疊的概觀。 如需詳細資訊，請參閱[身分圖表連結規則檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)。
+取得身分圖表連結規則如何協助資料架構師維護精確的客戶設定檔及防止圖表摺疊的概觀。 如需詳細資訊，請參閱[身分圖表連結規則檔案](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448283/?learn=on&enablevpops&captions=chi_hant)
+>[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 
 ## 設定
 
 瞭解如何模擬和套用您的規則。
 
-<!-- CARDS
+<!--
+CARDS
 * graph-simulation.md
 * identity-settings.md
 -->
@@ -37,7 +38,7 @@ ht-degree: 20%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="身分圖表連結規則 — 圖表模擬" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444054/?format=jpeg&nocache=1747355376342&captions=chi_hant" alt="身分圖表連結規則 — 圖表模擬"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="身分圖表連結規則 — 圖表模擬"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -60,7 +61,7 @@ ht-degree: 20%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-settings.md" title="身分圖表連結規則 — 身分設定" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475973/?captions=chi_hant&format=jpeg&nocache=1747355376336" alt="身分圖表連結規則 — 身分設定"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3458487/?format=jpeg&nocache=1747355376336" alt="身分圖表連結規則 — 身分設定"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -68,7 +69,7 @@ ht-degree: 20%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="identity-settings.md" target="_blank" rel="referrer" title="身分圖表連結規則 — 身分設定">身分圖表連結規則 — 身分設定</a>
+                        <a href="identity-settings.md" target="_blank" rel="referrer" title="身分圖表連結規則 — 身分設定">身分識別圖連結規則 - 身分識別設定</a>
                     </p>
                     <p class="is-size-6">瞭解如何在Adobe Experience Platform中啟用及設定身分圖表連結規則，以建置準確的客戶設定檔。</p>
                 </div>

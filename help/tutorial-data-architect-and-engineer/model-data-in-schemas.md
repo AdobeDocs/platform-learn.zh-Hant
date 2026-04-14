@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 XDM是公開記錄的規格，旨在改善數位體驗的效能。 它提供通用結構和定義，供任何應用程式用來與Platform服務通訊。 只要遵循XDM標準，所有客戶體驗資料都可整合到共同表現中，以更快、更整合的方式提供深入分析。 您可以從客戶動作中獲得有價值的深入分析、透過區段定義客戶對象，以及表達客戶屬性以進行個人化。
 
-XDM是基礎架構，可讓Adobe Experience Cloud (由Experience Platform提供技術支援)在適當的時間透過適當的管道將適當的訊息傳遞給適當的人。 建置Experience Platform所依據的方法&#x200B;**XDM系統**&#x200B;可讓Platform服務使用的Experience Data Model結構描述運作化。
+XDM是基礎架構，可讓Adobe Experience Cloud （由Experience Platform提供技術支援）在適當的時間透過適當的管道將適當的訊息傳遞給適當的人。 建置Experience Platform所依據的方法&#x200B;**XDM系統**&#x200B;可讓Platform服務使用的Experience Data Model結構描述運作化。
 
 <!--
 This seems too lengthy. The video should suffice
@@ -47,18 +47,20 @@ Key terms:
 
 >[!TIP]
 >
-> 若要在Experience Platform中更深入探究資料模型，建議您使用XDM觀看播放清單[為您的客戶體驗資料建模](https://experienceleague.adobe.com/zh-hant/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，可在Experience League上免費取得！
+> 若要在Experience Platform中更深入探究資料模型，建議您使用XDM觀看播放清單[為您的客戶體驗資料建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，可在Experience League上免費取得！
 
 ## 需要權限
 
 在[設定許可權](configure-permissions.md)課程中，您已設定完成本課程所需的所有存取控制。
 
-<!--, specifically:
+<!--
+, specifically:
 
 * Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+-->
 
 
 <!--
@@ -71,7 +73,7 @@ Key terms:
 
 1. 前往Platform使用者介面，並確保已選取您的沙箱。
 1. 前往左側導覽中的&#x200B;**[!UICONTROL 結構描述]**。
-1. 選取右上方的&#x200B;**[!UICONTROL 建立結構描述]**&#x200B;按鈕。
+1. 選取右上方的&#x200B;**[!UICONTROL 建立結構描述]**按鈕。
    ![具有OOTB欄位群組的結構描述](assets/schemas-loyaltyCreateSchema.png)
 
 1. 在「建立結構描述」工作流程中，選取&#x200B;**[!UICONTROL 個別設定檔]**&#x200B;作為結構描述的基底類別，因為我們將針對個別客戶的屬性（點、狀態等）建立模型。
@@ -79,14 +81,14 @@ Key terms:
    ![選取基底類別](assets/schemas-loyaltySelectBaseClass.png)
 
 1. 在`Luma Loyalty Schema`結構描述顯示名稱&#x200B;**[!UICONTROL 文字欄位中輸入]**。 在以下畫布中，您也可以檢閱及驗證您所選擇類別所提供的基本結構描述結構。
-1. 選取&#x200B;**[!UICONTROL 完成]**&#x200B;以建立您的結構描述。
+1. 選取&#x200B;**[!UICONTROL 完成]**以建立您的結構描述。
    ![完成建立忠誠度綱要](assets/schemas-loyaltyFinishSchemaCreation.png)
 
 ### 新增標準欄位群組
 
 建立結構描述後，您將會被重新導向到結構描述編輯器，您可以在其中新增欄位到結構描述。 您可以直接將個別欄位新增到結構描述或使用欄位群組。 請務必注意，所有個別欄位仍與類別或欄位群組相關聯。 您可以從Adobe提供的大量產業標準欄位群組中選取，或是建立您自己的欄位群組。 當您開始在Experience Platform中建立自己的資料模型時，最好熟悉Adobe提供的業界標準欄位群組。 最佳實務是儘可能使用這些變數，因為它們有時會支援下游服務，例如Customer AI、Attribution AI和Adobe Analytics。
 
-使用您自己的資料時，決定應在Platform中擷取哪些您自己的資料，以及應如何模型化這些資料，將是重要的步驟。 此大型主題在播放清單[使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/zh-hant/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中討論得較深入。 在本教學課程中，我將引導您實作一些預先決定的結構描述。
+使用您自己的資料時，決定應在Platform中擷取哪些您自己的資料，以及應如何模型化這些資料，將是重要的步驟。 此大型主題在播放清單[使用XDM為您的客戶體驗資料建立模型](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中討論得較深入。 在本教學課程中，我將引導您實作一些預先決定的結構描述。
 
 若要新增欄位群組：
 
@@ -100,7 +102,7 @@ Key terms:
 
 1. 勾選&#x200B;**[!UICONTROL 產業]** > **[!UICONTROL 零售]**&#x200B;方塊，以公開產業特定欄位群組。
 1. 選取&#x200B;**[!UICONTROL 熟客方案詳細資料]**&#x200B;以新增熟客方案欄位。
-1. 選取&#x200B;**[!UICONTROL 新增欄位群組]**&#x200B;以將這三個欄位群組新增到結構描述。
+1. 選取&#x200B;**[!UICONTROL 新增欄位群組]**以將這三個欄位群組新增到結構描述。
    ![將標準欄位群組新增至忠誠度結構描述](assets/schemas-loyalty-saveOotbMixins.png)
 
 
@@ -159,7 +161,7 @@ Key terms:
    1. **[!UICONTROL 顯示名稱]**： `CRM Id`
    1. **[!UICONTROL 型別]**： **[!UICONTROL 字串]**
 
-您的新欄位群組應如下所示。 選取&#x200B;**[!UICONTROL 儲存]**&#x200B;按鈕以儲存您的結構描述，但讓結構描述保持開啟以供下一個練習使用。
+您的新欄位群組應如下所示。 選取&#x200B;**[!UICONTROL 儲存]**按鈕以儲存您的結構描述，但讓結構描述保持開啟以供下一個練習使用。
 ![熟客欄位群組完成](assets/schemas-loyalty-identityFieldGroupComplete.png)
 
 ## 建立資料型別
@@ -344,12 +346,12 @@ Key terms:
 首先，我們必須使用自訂類別為Luma的產品目錄建立結構描述：
 
 1. 選取&#x200B;**[!UICONTROL 建立結構描述]**&#x200B;按鈕。
-1. 在[建立結構描述]工作流程中，選取&#x200B;**[!UICONTROL 其他]**&#x200B;選項。
+1. 在[建立結構描述]工作流程中，選取&#x200B;**[!UICONTROL 其他]**選項。
    ![建立新結構描述](assets/schemas-newSchema-browseClasses.png)
 1. 選取&#x200B;**[!UICONTROL 建立類別]**&#x200B;按鈕
 1. 將其命名為`Luma Product Catalog Class`
 1. 將&#x200B;**[!UICONTROL 行為]**&#x200B;保留為&#x200B;**[!UICONTROL 記錄]**
-1. 選取&#x200B;**[!UICONTROL 建立]**&#x200B;按鈕。
+1. 選取&#x200B;**[!UICONTROL 建立]**按鈕。
    ![建立新類別](assets/schemas-productClass.png)
 1. 您建立的&#x200B;**Luma產品目錄類別**&#x200B;會出現在下面的「類別」表格中。 確定已選取類別，然後選取&#x200B;**[!UICONTROL 下一步]**。
    ![新類別已新增](assets/schemas-productClassSelected.png)
@@ -358,7 +360,7 @@ Key terms:
    1. productName：產品名稱：字串
    1. productCategory：產品類別：字串
    1. productColor：產品色彩：字串
-   1. productSku： Product SKU： String | 必填
+   1. productSku： Product SKU： String |必要
    1. productSize：產品大小：字串
    1. productPrice：產品價格：雙倍
 1. **[!UICONTROL 儲存]**&#x200B;結構描述

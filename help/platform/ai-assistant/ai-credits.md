@@ -8,10 +8,11 @@ level: Beginner
 last-substantial-update: 2025-03-09T00:00:00Z
 jira: KT-20299
 hide: false
-source-git-commit: 8b7a063f40ade5c44e9be430a337962f35ef596d
+exl-id: fdf0d808-377e-4f72-bf55-94e52b69ebe8
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '60'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 

@@ -8,7 +8,7 @@ level: Beginner
 jira: KT-4170
 thumbnail: 32654.jpg
 exl-id: 23e15df2-1bf2-4c19-a5d5-9cfb2f7b0bd8
-source-git-commit: 695093c3ddc1952b1d6ffbe7bb4f3f489264d37d
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '422'
 ht-degree: 45%
@@ -17,7 +17,7 @@ ht-degree: 45%
 
 # Intelligent Services簡介
 
-提供Intelligent Services的高層級簡介，行銷分析師及從業人員即使不具備資料科學專業，也能在客戶體驗使用案例中運用人工智慧和機器學習的強大效能，發揮所長。 如需詳細資訊，請瀏覽[Intelligent Services檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=zh-Hant)。
+提供Intelligent Services的高層級簡介，行銷分析師及從業人員即使不具備資料科學專業，也能在客戶體驗使用案例中運用人工智慧和機器學習的強大效能，發揮所長。 如需詳細資訊，請瀏覽[Intelligent Services檔案](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 
@@ -25,7 +25,8 @@ ht-degree: 45%
 
 瞭解如何建立客戶傾向和流失分數，並將其新增至即時客戶個人檔案，以用於細分和個人化。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-customer-ai.md
 * configure-customer-ai.md
@@ -133,7 +134,8 @@ ht-degree: 45%
 
 瞭解如何使用模型來瞭解行銷的影響。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-attribution-ai.md
 * configure-attribution-ai.md

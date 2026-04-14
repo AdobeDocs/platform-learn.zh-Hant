@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-2701
 thumbnail: 27251.jpg
 exl-id: 6ef5b589-f874-4687-bee3-9650c993f383
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 15%
@@ -22,7 +22,8 @@ ht-degree: 15%
 
 ## 架構與功能
 
-<!-- CARDS
+<!--
+CARDS
 * overview-diagram.md
 * create-merge-policies.md
 * union-schemas-overview.md
@@ -35,7 +36,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="即時客戶個人檔案的概觀圖表" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463975?captions=chi_hant&format=jpeg&nocache=1740415066741" alt="即時客戶個人檔案的概觀圖表"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="即時客戶個人檔案的概觀圖表"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -104,7 +105,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="建立購買總和的計算屬性" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443562?captions=chi_hant&format=jpeg&nocache=1740415066775" alt="建立購買總和的計算屬性"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="建立購買總和的計算屬性"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -127,7 +128,8 @@ ht-degree: 15%
 
 ## 擷取和管理設定檔資料
 
-<!-- CARDS
+<!--
+CARDS
 * bring-data-into-the-real-time-customer-profile.md
 * delete-profiles.md
 * update-a-specific-attribute-with-upsert.md
@@ -185,7 +187,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="update-a-specific-attribute-with-upsert.md" title="使用「upsert」更新特定設定檔屬性" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443452/?captions=chi_hant&format=jpeg&nocache=1740415067029" alt="使用「upsert」更新特定設定檔屬性"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="使用「upsert」更新特定設定檔屬性"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -208,7 +210,8 @@ ht-degree: 15%
 
 ## 帳戶輪廓
 
-<!-- CARDS
+<!--
+CARDS
 * view-account-profiles.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->

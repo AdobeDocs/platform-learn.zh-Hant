@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 18%
@@ -24,7 +24,8 @@ ht-degree: 18%
 
 請參閱和Adobe Experience Platform中資料控管功能的端對端示範。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * introduction-to-data-governance.md
 -->
@@ -60,7 +61,8 @@ ht-degree: 18%
 
 瞭解標籤、原則和行銷動作如何在Experience Platform中自動執行資料控管。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * classify-data-using-labels.md
 * create-data-usage-policies.md{description=Learn how to create and manage data usage policies.}
@@ -73,7 +75,7 @@ ht-degree: 18%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="classify-data-using-labels.md" title="使用標籤進行資料分類" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3422788?captions=chi_hant&format=jpeg&nocache=1740179989358" alt="使用標籤進行資料分類"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29709?format=jpeg&nocache=1740179989358" alt="使用標籤進行資料分類"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -144,7 +146,8 @@ ht-degree: 18%
 
 瞭解Experience Platform如何遵循客戶同意。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * integrate-with-iab-transparency-and-consent-framework-2.md{title=Integrate IAB's Transparency and Consent Framework 2.0}{description=See a demo of how Adobe's Real-Time Customer Data Platform helps brands honor consumers' consent as they engage on digital properties.}
 * enforce-consent.md{description=Learn how to enforce consent in Adobe Experience Platform.}

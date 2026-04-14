@@ -9,7 +9,7 @@ duration: 226
 last-substantial-update: 2023-06-21T00:00:00Z
 jira: KT-3688
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 311b296d67cf39867e7c9f3fd9f0458dfefcfdfd
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 8%
@@ -26,7 +26,7 @@ ht-degree: 8%
 
 >[!IMPORTANT]
 >
->若要存取[Adobe Developer Console](https://developer.adobe.com/console/home)，您必須是[Adobe Admin Console](https://helpx.adobe.com/tw/enterprise/using/admin-roles.html)中的[系統管理員](https://helpx.adobe.com/tw/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)或[開發人員](https://adminconsole.adobe.com)。
+>若要存取[Adobe Developer Console](https://developer.adobe.com/console/home)，您必須是[Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)中的[系統管理員](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)或[開發人員](https://adminconsole.adobe.com)。
 >
 > 建立API認證後，系統管理員必須將該認證與Experience Platform中的角色建立關聯。
 >
@@ -35,7 +35,8 @@ ht-degree: 8%
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
 
-<!-- CARDS
+<!--
+CARDS
 * generate-an-access-token.md
 * use-apis-with-postman.md
 -->

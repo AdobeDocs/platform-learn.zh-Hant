@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: 8be40d80-8209-4e0b-bddd-acfd9cdee40a
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 瞭解Adobe的Audience Agent如何主動監控受眾健康狀態、識別問題，以及建議可操作的解決方案以最佳化參與。
 
 <!-- 65_S653_3442539_53_audience-agent-proactive-audience-health-monitoring -->
->[!VIDEO](https://video.tv.adobe.com/v/3459759/?captions=chi_hant&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458184/?learn=on&enablevpops=true)

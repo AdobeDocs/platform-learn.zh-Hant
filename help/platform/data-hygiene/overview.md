@@ -5,10 +5,11 @@ solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimiz
 feature: Data Hygiene
 role: Developer
 level: Intermediate
-source-git-commit: 9c15708f7300672caa963c0635179dd2855e5fed
+exl-id: 8a0c825a-68d2-4885-8cb6-981a79994327
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '389'
-ht-degree: 22%
+ht-degree: 24%
 
 ---
 
@@ -36,7 +37,8 @@ holistic fashion.
 
 資料準備功能可協助您僅從資料來源擷取所需的欄位。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * data-prep-for-data-hygiene.md
 -->
@@ -47,7 +49,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="資料衛生的資料準備" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449286/?format=jpeg&nocache=1740251397387&captions=chi_hant" alt="資料衛生的資料準備"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="資料衛生的資料準備"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -71,7 +73,8 @@ holistic fashion.
 ## 移除系統中的資料
 
 有許多功能可協助您從系統中移除資料。 您可以隨選或依排程刪除整個資料集、使用存留時間設定讓記錄和設定檔過期、刪除個別設定檔，以及尊重隱私權請求。
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * delete-datasets-and-batches.md
 * ../data-lifecycle/expire-datasets.md
@@ -109,7 +112,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="排程資料集刪除" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430307?format=jpeg&nocache=1740251397716&captions=chi_hant" alt="排程資料集刪除"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="排程資料集刪除"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -132,7 +135,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="假名設定檔和體驗事件有效期" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449868?format=jpeg&nocache=1740251397705&captions=chi_hant" alt="假名設定檔和體驗事件有效期"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="假名設定檔和體驗事件有效期"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -205,7 +208,8 @@ holistic fashion.
 
 ## 調整系統中的資料
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * ../profiles/update-a-specific-attribute-with-upsert.md
 -->
@@ -216,7 +220,7 @@ holistic fashion.
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="使用「upsert」更新特定設定檔屬性" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443452/?format=jpeg&nocache=1740251398874&captions=chi_hant" alt="使用「upsert」更新特定設定檔屬性"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="使用「upsert」更新特定設定檔屬性"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

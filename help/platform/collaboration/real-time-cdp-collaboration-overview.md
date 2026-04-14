@@ -8,10 +8,10 @@ duration: 92
 last-substantial-update: 2025-07-07T00:00:00Z
 jira: KT-17316
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: 08ebe74f7065acf20964c53e83d4de8e9bee637b
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '754'
-ht-degree: 21%
+ht-degree: 29%
 
 ---
 
@@ -21,13 +21,14 @@ ht-degree: 21%
 
 下方提供影片和其他資源，協助您瞭解如何設定、使用Real-Time CDP Collaboration並從中獲益。 其他資產將新增至此頁面和網站，請經常回來檢視。 學習愉快！
 
-如需詳細資訊，請參閱Real-Time CDP Collaboration [檔案](https://experienceleague.adobe.com/zh-hant/docs/real-time-cdp-collaboration/using/home){target="_blank"}。
+如需詳細資訊，請參閱Real-Time CDP Collaboration [檔案](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}。
 
-[![ExL LIVE 2025年4月10日](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/zh-hant/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE 2025年4月10日](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## 快速入門
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * real-time-cdp-collaboration-intro.md
 * rtcdp-overview-for-agency-practitioners.md
@@ -64,7 +65,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="適用於代理商從業人員的Real-Time CDP概觀" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464669/?format=jpeg&nocache=1756504084963&captions=chi_hant" alt="適用於代理商從業人員的Real-Time CDP概觀"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1756504084963" alt="適用於代理商從業人員的Real-Time CDP概觀"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +88,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration — 流程和人員" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464680/?format=jpeg&nocache=1756504084955&captions=chi_hant" alt="Real-Time CDP Collaboration — 流程和人員"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1756504084955" alt="Real-Time CDP Collaboration — 流程和人員"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -114,7 +115,8 @@ ht-degree: 21%
 
 若要開始使用，請聯絡您的Adobe Experience Platform管理員，確保您有適當的存取權來設定Real-Time CDP Collaboration許可權，如後續教學課程中所述。 如果您無法識別您的Experience Platform管理員，請聯絡您的Adobe帳戶團隊。
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * ../admin/add-product-administrators.md
 * set-permissions-for-collaboration.md
@@ -128,7 +130,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="為Adobe Experience Platform應用程式新增產品管理員" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475952?captions=chi_hant&format=jpeg&nocache=1756504085478" alt="為Adobe Experience Platform應用程式新增產品管理員"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1756504085478" alt="為Adobe Experience Platform應用程式新增產品管理員"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +153,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="設定Real-Time CDP Collaboration的許可權" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452241/?format=jpeg&nocache=1756504085453&captions=chi_hant" alt="設定Real-Time CDP Collaboration的許可權"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1756504085453" alt="設定Real-Time CDP Collaboration的許可權"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -197,7 +199,8 @@ ht-degree: 21%
 
 ## 廣告商工作流程
 
-<!-- CARDS
+<!--
+CARDS
 {cta=Watch}
 * reference-audiences-as-an-advertiser.md
 * connect-with-publishers.md
@@ -260,7 +263,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="在Real-Time CDP Collaboration中建立專案" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464045/?format=jpeg&nocache=1756504085943&captions=chi_hant" alt="在Real-Time CDP Collaboration中建立專案"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1756504085943" alt="在Real-Time CDP Collaboration中建立專案"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -283,7 +286,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discover-audience-overlaps-in-projects.md" title="探索Collaboration專案中的受眾重疊" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471700/?format=jpeg&nocache=1756504085916&captions=chi_hant" alt="探索Collaboration專案中的受眾重疊"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471675/?format=jpeg&nocache=1756504085916" alt="探索Collaboration專案中的受眾重疊"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -291,9 +294,9 @@ ht-degree: 21%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="discover-audience-overlaps-in-projects.md" target="_blank" rel="referrer" title="探索Collaboration專案中的受眾重疊">探索Collaboration專案內的對象重疊</a>
+                        <a href="discover-audience-overlaps-in-projects.md" target="_blank" rel="referrer" title="探索Collaboration專案中的受眾重疊">瞭解 Collaboration 專案內的客群重疊情形</a>
                     </p>
-                    <p class="is-size-6">瞭解如何比較Real-Time CDP Collaboration專案中的對象重疊。</p>
+                    <p class="is-size-6">瞭解如何比較 Real-Time CDP Collaboration 專案內的客群重疊情形。</p>
                 </div>
                 <a href="discover-audience-overlaps-in-projects.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">觀看</span>
@@ -306,7 +309,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="activate-audiences-in-projects.md" title="在Collaboration專案中啟用對象" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471689/?format=jpeg&nocache=1756504085925&captions=chi_hant" alt="在Collaboration專案中啟用對象"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3471677/?format=jpeg&nocache=1756504085925" alt="在Collaboration專案中啟用對象"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -314,9 +317,9 @@ ht-degree: 21%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="activate-audiences-in-projects.md" target="_blank" rel="referrer" title="在Collaboration專案中啟用對象">在Collaboration專案中啟用對象</a>
+                        <a href="activate-audiences-in-projects.md" target="_blank" rel="referrer" title="在Collaboration專案中啟用對象">在 Collaboration 專案中啟用客群</a>
                     </p>
-                    <p class="is-size-6">瞭解如何在Real-Time CDP Collaboration專案中對您的共同作業合作夥伴啟用對象。</p>
+                    <p class="is-size-6">瞭解如何在 Real-Time CDP Collaboration 專案中啟用客群並傳送給您的協作合作夥伴。</p>
                 </div>
                 <a href="activate-audiences-in-projects.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">觀看</span>
@@ -329,7 +332,7 @@ ht-degree: 21%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="brand-to-brand-collaboration.md" title="品牌至品牌Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470947/?format=jpeg&nocache=1756504085934&captions=chi_hant" alt="品牌至品牌Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470936/?format=jpeg&nocache=1756504085934" alt="品牌至品牌Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -339,7 +342,7 @@ ht-degree: 21%
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="brand-to-brand-collaboration.md" target="_blank" rel="referrer" title="品牌至品牌Collaboration">品牌至Collaboration</a>
                     </p>
-                    <p class="is-size-6">瞭解品牌對品牌共同作業所支援的使用案例，以及為支援這些工作流程所引入的特定功能。</p>
+                    <p class="is-size-6">瞭解品牌之間協作所支援的使用案例，以及為了支援這些工作流程所引進的特定功能。</p>
                 </div>
                 <a href="brand-to-brand-collaboration.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">觀看</span>

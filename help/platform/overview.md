@@ -4,7 +4,7 @@ description: 瞭解Adobe Experience Platform
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
-source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 7%
@@ -30,11 +30,11 @@ Adobe Experience Platform是市面上功能最強大、最靈活、最開放的�
 <tr>
   <td>
     <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-      <img alt="由Experience Platform影片提供支援的客戶體驗" src="assets/thumb_A-Customer-Experience.jpg" />
+      <img alt="Experience Platform影片支援的客戶體驗" src="assets/thumb_A-Customer-Experience.jpg" />
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-    <strong>由Experience Platform提供支援的客戶體驗</strong>
+    <strong>由Experience Platform支援的客戶體驗</strong>
     </a>
     </div>
     <p>
@@ -42,11 +42,11 @@ Adobe Experience Platform是市面上功能最強大、最靈活、最開放的�
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
       <img alt="「資料架構師和資料工程師快速入門」教學課程的縮圖影像" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hant">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
     <strong>資料架構師與資料工程師快速入門</strong>
     </a>
     </div>
@@ -93,7 +93,8 @@ Adobe Experience Platform是市面上功能最強大、最靈活、最開放的�
     <p>
     <em>Build segments based on your data.</em>
     <p>
-  </td>-->
+  </td>
+  -->
 </tr>
 </table>
 
