@@ -18,7 +18,7 @@ ht-degree: 10%
 
 Adobe Experience Platform Query Service可讓使用者利用SQL探索、驗證及轉換儲存在Data Lake中的客戶體驗資料，並透過Data Distiller附加元件提供增強功能，例如資料輸出和排程。 此影片提供核心功能概觀，可協助使用者瞭解如何跨各種平台應用程式利用查詢服務。 如需詳細資訊，請瀏覽[查詢服務檔案](https://experienceleague.adobe.com/zh-hant/docs/experience-platform/query/home)。
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464269?captions=chi_hant&learn=on&enablevpops)
 
 ## 基本用法
 
@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="使用查詢服務執行查詢" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1759180596408" alt="使用查詢服務執行查詢"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470202?captions=chi_hant&format=jpeg&nocache=1759180596408" alt="使用查詢服務執行查詢"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,7 +59,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="使用查詢服務驗證資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1759180596397" alt="使用查詢服務驗證資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475333?captions=chi_hant&format=jpeg&nocache=1759180596397" alt="使用查詢服務驗證資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="衍生包含Data Distiller的資料" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1759180596403" alt="衍生包含Data Distiller的資料"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475300?captions=chi_hant&format=jpeg&nocache=1759180596403" alt="衍生包含Data Distiller的資料"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -165,7 +165,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="為您的客戶資料重新充電，提供絕佳的體驗" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1759180596865" alt="為您的客戶資料重新充電，提供絕佳的體驗"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454957?captions=chi_hant&format=jpeg&nocache=1759180596865" alt="為您的客戶資料重新充電，提供絕佳的體驗"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

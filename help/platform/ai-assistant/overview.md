@@ -39,7 +39,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="取得AI助理的存取權" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1770666472991" alt="取得AI助理的存取權"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475930/?captions=chi_hant&format=jpeg&nocache=1770666472991" alt="取得AI助理的存取權"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="使用AI Assistant中的可發現性面板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1770666473011" alt="使用AI Assistant中的可發現性面板"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440973/?captions=chi_hant&format=jpeg&nocache=1770666473011" alt="使用AI Assistant中的可發現性面板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -85,7 +85,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="驗證來自AI助理的回應" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1770666473002" alt="驗證來自AI助理的回應"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441750/?captions=chi_hant&format=jpeg&nocache=1770666473002" alt="驗證來自AI助理的回應"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -354,7 +354,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="使用AI Assistant取得營運深入分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1770666474551" alt="使用AI Assistant取得營運深入分析"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444043/?captions=chi_hant&format=jpeg&nocache=1770666474551" alt="使用AI Assistant取得營運深入分析"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -377,7 +377,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="AI助理 — 對象清理使用案例" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1770666474555" alt="AI助理 — 對象清理使用案例"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441998/?captions=chi_hant&format=jpeg&nocache=1770666474555" alt="AI助理 — 對象清理使用案例"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -400,7 +400,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="使用AI助理進行影響分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1770666474559" alt="使用AI助理進行影響分析"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441691/?captions=chi_hant&format=jpeg&nocache=1770666474559" alt="使用AI助理進行影響分析"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -437,7 +437,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="使用AI助理瞭解Experience Platform應用程式" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1770666474659" alt="使用AI助理瞭解Experience Platform應用程式"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441035/?captions=chi_hant&format=jpeg&nocache=1770666474659" alt="使用AI助理瞭解Experience Platform應用程式"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -460,7 +460,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="使用AI助理縮短上線時間" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1770666474665" alt="使用AI助理縮短上線時間"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475941/?captions=chi_hant&format=jpeg&nocache=1770666474665" alt="使用AI助理縮短上線時間"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -497,7 +497,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="產品支援代理" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1770666474768" alt="產品支援代理"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443194/?captions=chi_hant&format=jpeg&nocache=1770666474768" alt="產品支援代理"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -557,7 +557,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="AI Assistant的安全性概觀" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1770666475529" alt="AI Assistant的安全性概觀"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441091/?captions=chi_hant&format=jpeg&nocache=1770666475529" alt="AI Assistant的安全性概觀"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

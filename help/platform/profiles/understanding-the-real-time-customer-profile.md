@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="overview-diagram.md" title="即時客戶個人檔案的概觀圖表" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33600?format=jpeg&nocache=1740415066741" alt="即時客戶個人檔案的概觀圖表"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3463975?captions=chi_hant&format=jpeg&nocache=1740415066741" alt="即時客戶個人檔案的概觀圖表"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -105,7 +105,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-computed-attribute-for-sum-of-purchases.md" title="建立購買總和的計算屬性" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3425899?format=jpeg&nocache=1740415066775" alt="建立購買總和的計算屬性"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443562?captions=chi_hant&format=jpeg&nocache=1740415066775" alt="建立購買總和的計算屬性"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -187,7 +187,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="update-a-specific-attribute-with-upsert.md" title="使用「upsert」更新特定設定檔屬性" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740415067029" alt="使用「upsert」更新特定設定檔屬性"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443452/?captions=chi_hant&format=jpeg&nocache=1740415067029" alt="使用「upsert」更新特定設定檔屬性"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
