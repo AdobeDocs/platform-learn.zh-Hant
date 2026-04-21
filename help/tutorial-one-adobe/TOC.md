@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
+source-git-commit: b32d96f1d7cce7c22d56ef1783e7209796635758
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1576'
 ht-degree: 3%
 
 ---
@@ -155,7 +155,6 @@ ht-degree: 3%
       + [1.5.1 Adobe Commerce as a Cloud Service快速入門](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex1.md)
       + [1.5.2將ACCS連線至AEM Sites CS/EDS店面](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex2.md)
       + [1.5.3將ACCS連線至AEM Assets CS](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/ex3.md)
-      + [摘要和優點](/help/tutorial-one-adobe/modules/asset-mgmt/module1.5/summary.md)
 
 + 傳遞與啟用 {#activation}
    + 資料彙集 {#dc}

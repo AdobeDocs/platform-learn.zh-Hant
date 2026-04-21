@@ -4,9 +4,9 @@ description: 將ACCS連線至AEM Assets CS
 kt: 5342
 doc-type: tutorial
 exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '1671'
+source-wordcount: '1688'
 ht-degree: 1%
 
 ---
@@ -31,7 +31,11 @@ ht-degree: 1%
 
 移至[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 您應該選取的組織是`--aepImsOrgName--`。
 
-按一下以開啟您的Cloud Manager程式，程式應該稱為`--aepUserLdap-- - CitiSignal AEM+ACCS`。
+按一下以開啟您的Cloud Manager程式，其名稱應類似以下其中一項：
+
+- `--aepUserLdap-- - CitiSignal AEM+ACCS`
+- 對於面對面技術實驗室會議： **技術內部人員 — AEM + ACCS XX** （將XX取代為指派給您的數字）
+- 對於引導式隨選研討會：**隨選技術內部人員 — AEM + ACCS XX** （將XX取代為指派給您的數字）
 
 ![ACCS+AEM Assets](./images/accsaemassets1.png)
 
@@ -107,7 +111,7 @@ ht-degree: 1%
 
 ![ACCS+AEM Assets](./images/accsaemassets18.png)
 
-前往左側功能表中的&#x200B;**搜尋**&#x200B;並搜尋`<my-app>`。 您需要以`<my-app>`取代所有出現的`--aepUserLdap--citisignalaemaccs`。
+前往左側功能表中的&#x200B;**搜尋**&#x200B;並搜尋`<my-app>`。 您需要以`<my-app>`取代所有出現的`techinsiderscitisignalaemaccs`。
 
 按一下&#x200B;**全部取代**&#x200B;圖示。
 
@@ -121,15 +125,27 @@ ht-degree: 1%
 
 ![ACCS+AEM Assets](./images/accsaemassets21.png)
 
-您應該會看到此訊息。 貼上命令`git add .`並按&#x200B;**Enter**。
+您應該會看到此訊息。 貼上下列命令並按&#x200B;**Enter**。
+
+```
+git add .
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets22.png)
 
-您應該會看到此訊息。 貼上命令`git commit -m "add assets integration"`並按&#x200B;**Enter**。
+您應該會看到此訊息。 貼上下列命令並按&#x200B;**Enter**。
+
+```
+git commit -m "add assets integration"
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets23.png)
 
-您應該會看到此訊息。 貼上命令`git push origin main`並按&#x200B;**Enter**。
+您應該會看到此訊息。 貼上下列命令並按&#x200B;**Enter**。
+
+```
+git push origin main
+```
 
 ![ACCS+AEM Assets](./images/accsaemassets24.png)
 
@@ -159,19 +175,14 @@ ht-degree: 1%
 
 ![ACCS+AEM Assets](./images/accsaemassets50.png)
 
-填寫下列變數：
+從&#x200B;**AEM環境**&#x200B;的下拉式清單中，選取您的環境。
 
-- **AEM Assets方案ID**：您可以從AEM CS作者URL取得方案ID。 在此範例中，計畫識別碼為`166717`。
+然後，將&#x200B;**視覺化擁有者**&#x200B;設定為`AEM Assets` （視需要停用&#x200B;**使用系統值**&#x200B;核取方塊）。
 
-![ACCS+AEM Assets](./images/accsaemassets50a.png)
+然後，將&#x200B;**已啟用同步化**&#x200B;設定為`Yes` （視需要停用&#x200B;**使用系統值**&#x200B;核取方塊）。
 
-- **AEM Assets環境ID**：您可以從AEM CS作者URL取得環境ID。 在此範例中，環境識別碼為`1786231`。
+請確定這些設定的設定如下：
 
-![ACCS+AEM Assets](./images/accsaemassets50b.png)
-
-- **資產選擇器IMS使用者端ID**：設定為`1`
-- **同步處理已啟用**：設定為`Yes`
-- **視覺效果擁有者**：設定為`AEM Assets`
 - **資產比對規則**： `Match by product SKU`
 - **依產品SKU屬性名稱比對**： `commerce:skus`
 
@@ -185,29 +196,19 @@ ht-degree: 1%
 
 ## 1.5.3.3更新config.json
 
-前往設定AEM Sites CS/EDS環境時建立的GitHub存放庫。 該存放庫是在練習[1.1.2中建立的，用來設定您的AEM CS環境](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}，名稱應該是&#x200B;**citisignal-aem-accs**。
+前往設定AEM Sites CS/EDS環境時建立的GitHub存放庫。
 
-在根目錄中，向下捲動並按一下以開啟檔案&#x200B;**config.json**。 按一下&#x200B;**編輯**&#x200B;圖示以變更檔案。
+在根目錄中，向下捲動並按一下以開啟檔案&#x200B;**config.json**。
 
-![ACCS+AEM Assets](./images/accsaemassets101.png)
-
-在第5 `"commerce-endpoint": "https://na1-sandbox.api.commerce.adobe.com/XXX/graphql",`行下方新增下列程式碼片段：
+您應該會在&#x200B;**config.json**&#x200B;檔案（此影像的第17行）中看到以下行，請確定它設定為&#x200B;**true**。
 
 ```json
  "commerce-assets-enabled": "true",
 ```
 
-按一下&#x200B;**認可變更……**。
+![ACCS+AEM Assets](./images/accsaemassets101.png)
 
-![ACCS+AEM Assets](./images/accsaemassets102.png)
-
-按一下&#x200B;**認可變更**。
-
-![ACCS+AEM Assets](./images/accsaemassets103.png)
-
-您的變更現在已儲存，很快就會發佈。 可能需要幾分鐘時間，變更才會顯示在店面上。
-
-![ACCS+AEM Assets](./images/accsaemassets104.png)
+如果&#x200B;**commerce-assets-enabled**&#x200B;的值設定為&#x200B;**false**，請更新您的檔案並將值設定為&#x200B;**true**。 然後，提交您的變更。
 
 ## 1.5.3.4驗證AEM Assets CS中的Commerce欄位
 
@@ -255,7 +256,7 @@ ht-degree: 1%
 
 ![ACCS+AEM Assets](./images/accsaemassets39.png)
 
-瀏覽至案頭上的&#x200B;**Product_Images**&#x200B;資料夾，選取所有檔案，然後按一下[開啟]。**&#x200B;**
+瀏覽至案頭上的&#x200B;**Product_Images**&#x200B;資料夾，選取所有檔案，然後按一下[開啟]。****
 
 ![ACCS+AEM Assets](./images/accsaemassets40.png)
 
@@ -368,6 +369,22 @@ ht-degree: 1%
 
 ![ACCS+AEM Assets](./images/accsaemassets250.png)
 
+您現在應該使用下表，對其餘產品重複這些步驟。 別忘了核准每個影像，然後設定。 在&#x200B;**Commerce**&#x200B;標籤中的SKU設定底下。
+
+| 產品名稱 | 索引鍵 | 價值 | 使用方式 |
+|:-------------:|:-------------:| :---------------:| :---------------:|
+| Apple Watch Ultra 3-Black | `Apple-Watch-Ultra-3-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Apple Watch Ultra 3-Natural | `Apple-Watch-Ultra-3-Natural` | `1` | `thumbnail, image, swatch_image, small_image` |
+| CitiSignal Fiber Max | `CitiSignal-Fiber-Max` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Apple One | `Apple-One` | `1` | `thumbnail, image, swatch_image, small_image` |
+| YouTube Premium | `YouTube-Premium` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Disney Plus | `Disney` | `1` | `thumbnail, image, swatch_image, small_image` |
+| Netflix + HBO Max | `Netflix-HBO-Max` | `1` | `thumbnail, image, swatch_image, small_image` |
+
+之後，應該會核准您的所有影像。
+
+![ACCS+AEM Assets](./images/accsaemassets251.png)
+
 ## 1.5.3.5驗證AEM Sites CS/EDS店面上的產品影像
 
 >[!NOTE]
@@ -375,11 +392,6 @@ ht-degree: 1%
 >成功部署您上述變更前，最多可能需要15分鐘的時間。 如果影像尚未顯示，請等待15分鐘，然後再試一次。
 
 若要驗證整合是否有效，您需要開啟CitiSignal網站。
-
-若要存取您的網站，請在將XXX取代為GitHub使用者帳戶（在此範例中為`main--citisignal-aem-accs--XXX.aem.page`）之後，前往`main--citisignal-aem-accs--XXX.aem.live`和/或`woutervangeluwe`。
-
-所以在此範例中，完整URL會變成：
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page`和/或`https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
 
 您應該會看到此訊息。 移至&#x200B;**電話**。
 
@@ -396,8 +408,6 @@ ht-degree: 1%
 以下是將色彩變更為&#x200B;**Light-Gold**&#x200B;以及將儲存大小變更為&#x200B;**256GB**&#x200B;的範例。
 
 ![ACCS+AEM Assets](./images/accsaemassets153.png)
-
-下一步： [摘要與優點](./summary.md){target="_blank"}
 
 返回[Adobe Commerce as a Cloud Service](./accs.md){target="_blank"}
 

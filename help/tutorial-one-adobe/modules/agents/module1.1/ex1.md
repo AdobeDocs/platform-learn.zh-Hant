@@ -4,9 +4,9 @@ description: Agent Orchestrator快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1418'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 移至[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)。
 
-您應該會看到此訊息。 請確定您隸屬於&#x200B;**Experience Platform International**&#x200B;組織。
+您應該會看到此訊息。 確定您隸屬於組織`--aepImsOrgName--`。
 
 ![Agent Orchestrator](./images/ao1.png)
 
@@ -37,11 +37,11 @@ ht-degree: 0%
 
 檔案Source設定可協助您偏好使用哪組Experience League檔案，以檢查與產品知識/Experience League相關的問題。
 
-- **沙箱**： **Prod — 加速(VA7)**
+- **沙箱**： **Prod — 一個Adobe (VA7)**
 
 沙箱設定可協助識別在詢問問題時哪個沙箱AI小幫手應該檢視。
 
-- **資料檢視**： **加速2026 B2C**
+- **資料檢視**： **AdobeOne整合式客戶資料檢視**
 
 資料檢視設定可協助識別詢問問題時資料檢視AI助理應該檢視哪個資料檢視。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/ao4.png)
@@ -70,7 +70,7 @@ Show me purchases by mainCategory over the last 7 months.
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months per week
+Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
 ![Agent Orchestrator](./images/ao6.png)
@@ -95,7 +95,7 @@ Which field is used to store the preferred genre?
 
 ![Agent Orchestrator](./images/ao7a.png)
 
-您應該會看到此訊息，其中顯示用於型別的欄位是&#x200B;**_experienceplatform.individualCharacteristics.preferences.preferredGenre**。
+您應該會看到此訊息，其中顯示用於型別的欄位為&#x200B;**`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**。
 
 ![Agent Orchestrator](./images/ao7b.png)
 
@@ -104,7 +104,7 @@ Which field is used to store the preferred genre?
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me ordersYTD by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -131,7 +131,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-您應該會看到此訊息。 按一下&#x200B;**顯示更多**。
+您應該會看到此訊息。 按一下&#x200B;**顯示所有結果**。
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -151,7 +151,19 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/ao14.png)
 
-您應該會看到此訊息。 按一下其中一個歷程的連結，然後選取&#x200B;**歷程詳細資料**。
+您應該會看到類似這樣的內容。
+
+![Agent Orchestrator](./images/ao14a.png)
+
+輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
+
+```javascript
+give more details about the first one
+```
+
+![Agent Orchestrator](./images/ao14b.png)
+
+您應該會看到此訊息。 按一下連結以開啟歷程。
 
 ![Agent Orchestrator](./images/ao15.png)
 

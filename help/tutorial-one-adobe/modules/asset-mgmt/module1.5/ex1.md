@@ -4,10 +4,10 @@ description: Adobe Commerce as a Cloud Service快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
-source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '891'
+ht-degree: 15%
 
 ---
 
@@ -25,7 +25,12 @@ ht-degree: 0%
 
 填寫欄位，如下所示：
 
-- **執行個體名稱**： `--aepUserLdap-- - ACCS`
+- **執行個體名稱**：
+
+```
+--aepUserLdap-- - ACCS
+```
+
 - **環境**： `Sandbox`
 - **地區**： `North America`
 
@@ -33,7 +38,7 @@ ht-degree: 0%
 
 ![AEM Assets](./images/accs3.png)
 
-正在建立您目前的執行個體。 這可能需要5到10分鐘。
+正在建立您的執行個體。 這可能需要5到10分鐘。
 
 ![AEM Assets](./images/accs4.png)
 
@@ -61,8 +66,17 @@ ht-degree: 0%
 
 填寫欄位，如下所示：
 
-- **名稱**： `CitiSignal`
-- **代碼**： `citisignal`
+- **名稱**：
+
+```
+CitiSignal
+```
+
+- **代碼**：
+
+```
+citisignal
+```
 
 按一下&#x200B;**儲存網站**。
 
@@ -74,9 +88,24 @@ ht-degree: 0%
 
 填寫欄位，如下所示：
 
-- **網站**： `CitiSignal`
-- **名稱**： `CitiSignal`
-- **代碼**： `citisignal`
+- **網站**：
+
+```
+CitiSignal
+```
+
+- **名稱**：
+
+```
+CitiSignal
+```
+
+- **代碼**：
+
+```
+citisignal
+```
+
 - **根類別**： `Default Category`
 
 按一下&#x200B;**儲存存放區**。
@@ -89,9 +118,24 @@ ht-degree: 0%
 
 填寫欄位，如下所示：
 
-- **存放區**： `CitiSignal`
-- **名稱**： `CitiSignal`
-- **代碼**： `citisignal`
+- **存放區**：
+
+```
+CitiSignal
+```
+
+- **名稱**：
+
+```
+CitiSignal
+```
+
+- **代碼**：
+
+```
+citisignal
+```
+
 - **狀態**： `Enabled`
 
 按一下&#x200B;**儲存存放區檢視**。
@@ -126,7 +170,11 @@ ht-degree: 0%
 
 ![AEM Assets](./images/accs18.png)
 
-輸入名稱`Phones`，然後按一下&#x200B;**儲存**。
+輸入下列名稱，然後按一下[儲存]。****
+
+```
+Phones
+```
 
 ![AEM Assets](./images/accs19.png)
 
@@ -134,11 +182,39 @@ ht-degree: 0%
 
 ![AEM Assets](./images/accs20.png)
 
-輸入名稱`Watches`，然後按一下&#x200B;**儲存**。
+輸入下列名稱，然後按一下[儲存]。****
+
+```
+Watches
+```
 
 ![AEM Assets](./images/accs21.png)
 
-之後，您應該會建立2個類別。
+選取&#x200B;**預設類別**，然後再次按一下&#x200B;**新增子類別**。
+
+![AEM Assets](./images/accs20a.png)
+
+輸入下列名稱，然後按一下[儲存]。****
+
+```
+Plans
+```
+
+![AEM Assets](./images/accs21a.png)
+
+選取&#x200B;**預設類別**，然後再次按一下&#x200B;**新增子類別**。
+
+![AEM Assets](./images/accs20b.png)
+
+輸入下列名稱，然後按一下[儲存]。****
+
+```
+Entertainment
+```
+
+![AEM Assets](./images/accs21b.png)
+
+之後，您應該會建立4個類別。
 
 ![AEM Assets](./images/accs22.png)
 
@@ -152,10 +228,34 @@ ht-degree: 0%
 
 設定您的產品，如下所示：
 
-- **產品名稱**： `iPhone Air`
-- **SKU**： `iPhone-Air`
-- **價格**： `999`
-- **數量**： `10000`
+- **產品名稱**：
+
+```
+iPhone Air
+```
+
+- **SKU**：
+
+>[!NOTE]
+>
+>請確定SKU欄位與以下值相同，並確認此欄位中沒有空格。
+
+```
+iPhone-Air
+```
+
+- **價格**：
+
+```
+999
+```
+
+- **數量**：
+
+```
+10000
+```
+
 - **類別**：選取`Phones`
 
 按一下&#x200B;**儲存**。
@@ -170,19 +270,35 @@ ht-degree: 0%
 
 ![AEM Assets](./images/accs27.png)
 
-將&#x200B;**預設標籤**&#x200B;設定為`Storage`，然後按一下&#x200B;**管理選項**&#x200B;下的&#x200B;**新增選項**。
+將&#x200B;**預設標籤**&#x200B;設定為以下的值，然後按一下&#x200B;**管理選項**&#x200B;下的&#x200B;**新增選項**。
+
+```
+Storage
+```
 
 ![AEM Assets](./images/accs28.png)
 
-在全部3個資料行中使用名稱`256GB`設定第一個選項，然後再次按一下&#x200B;**新增選項**。
+在全部3個資料行中使用下列值設定第一個選項，然後再次按一下&#x200B;**新增選項**。
+
+```
+256GB
+```
 
 ![AEM Assets](./images/accs29.png)
 
-在全部3個資料行中使用名稱`512GB`設定第二個選項，然後再次按一下&#x200B;**新增選項**。
+在全部3個資料行中使用下列值來設定第二個選項，然後再次按一下[新增選項]。****
+
+```
+512GB
+```
 
 ![AEM Assets](./images/accs30.png)
 
-在全部3個資料行中使用名稱`1TB`設定第三個選項。
+使用下列3欄中的值設定第三個選項。
+
+```
+1TB
+```
 
 ![AEM Assets](./images/accs31.png)
 
@@ -235,19 +351,21 @@ ht-degree: 0%
 
 ![AEM Assets](./images/accs42.png)
 
-將每個產品的&#x200B;**數量**&#x200B;設定為`10000`。 按一下&#x200B;**儲存**。
+將每個產品的&#x200B;**數量**&#x200B;設定為`10000`。 此外，請確定資料行&#x200B;**SKU**&#x200B;在任何SKU中都沒有空格。
+
+按一下&#x200B;**儲存**。
 
 ![AEM Assets](./images/accs43.png)
+
+按一下「**確認**」。
+
+![AEM Assets](./images/accs45.png)
 
 向下捲動至網站中的&#x200B;**產品**，並勾選&#x200B;**CitiSignal**&#x200B;的核取方塊。
 
 按一下&#x200B;**儲存**。
 
 ![AEM Assets](./images/accs44.png)
-
-按一下「**確認**」。
-
-![AEM Assets](./images/accs45.png)
 
 您應該會看到此訊息。 按一下&#x200B;**上一步**。
 
@@ -256,6 +374,52 @@ ht-degree: 0%
 您現在在產品目錄中看到產品&#x200B;**iPhone Air**&#x200B;及其變數。
 
 ![AEM Assets](./images/accs47.png)
+
+## 1.5.1.4匯入產品
+
+CitiSignal銷售更多產品，因此若要在產品目錄中建立剩餘的產品，您現在需要匯入這些產品。
+
+移至&#x200B;**系統**，然後移至&#x200B;**匯入**。
+
+![AEM Assets](./images/accsimp1.png)
+
+選取下列值：
+
+- **實體型別**： `Products`
+- **匯入行為**： `Add/Update`
+- **驗證策略**： `Skip error entries`
+
+按一下&#x200B;**選擇檔案**。
+
+![AEM Assets](./images/accsimp2.png)
+
+將此檔案下載到您的電腦： [product_catalog_import.csv.zip](./assets/product_catalog_import.csv.zip)。 在您的案頭上解壓縮檔案。
+
+![AEM Assets](./images/accsimp7.png)
+
+選取檔案&#x200B;**`product_catalog_import.csv`**&#x200B;並按一下&#x200B;**開啟**。
+
+![AEM Assets](./images/accsimp3.png)
+
+您應該會看到此訊息。 按一下&#x200B;**檢查資料**。
+
+![AEM Assets](./images/accsimp4.png)
+
+您應該會看到此訊息。 按一下&#x200B;**匯入**。
+
+![AEM Assets](./images/accsimp5.png)
+
+您應該會看到此訊息。
+
+![AEM Assets](./images/accsimp6.png)
+
+前往&#x200B;**目錄**，然後前往&#x200B;**產品**。
+
+![AEM Assets](./images/accsimp8.png)
+
+向下捲動以尋找您剛才匯入的產品。
+
+![AEM Assets](./images/accsimp9.png)
 
 下一步：[將ACCS連線至AEM Sites CS/EDS店面](./ex2.md){target="_blank"}
 

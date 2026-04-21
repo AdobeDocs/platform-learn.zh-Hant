@@ -4,9 +4,9 @@ description: 將ACCS連線至AEM Sites CS/EDS Storefront
 kt: 5342
 doc-type: tutorial
 exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
-source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 在本練習中，您會將AEM Sites CS/EDS店面連結至ACCS後端。 目前，當您開啟AEM Sites CS/EDS店面並前往&#x200B;**Phone**&#x200B;產品清單頁面時，您尚未看到任何產品。
 
-在本練習結束時，您應該會看到在上一個練習中設定的產品出現在您AEM Sites CS/EDS店面的&#x200B;**電話**&#x200B;產品清單頁面上。
+在本練習結束時，您應該會看到在上一個練習中設定的產品出現在您AEM Sites CS/EDS店面的&#x200B;**手機/手錶/計畫/娛樂**&#x200B;產品清單頁面上。
 
 ![ACCS+AEM Sites](./images/accsaemsites0.png)
 
@@ -49,11 +49,11 @@ ht-degree: 0%
 
 ![ACCS+AEM Sites](./images/accsaemsites4.png)
 
-複製完整產生的JSON裝載。
+按一下「**複製**」以複製完整產生的JSON裝載。
 
 ![ACCS+AEM Sites](./images/accsaemsites5.png)
 
-前往設定AEM Sites CS/EDS環境時建立的GitHub存放庫。 該存放庫是在練習[1.1.2中建立的，用來設定您的AEM CS環境](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}，名稱應該是&#x200B;**citisignal-aem-accs**。
+前往設定AEM Sites CS/EDS環境時建立的GitHub存放庫。 該存放庫是在練習[1.1.2設定您的AEM CS環境](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}中建立的，應命名為&#x200B;**citisignal-aem-accs**&#x200B;或&#x200B;**techinsidersodXX-citisignal-aem-accs**，或者，如果您正在參加現場訓練，應命名為&#x200B;**techinsidersXX-citisignal-aem-accs**。
 
 ![ACCS+AEM Sites](./images/accsaemsites6.png)
 
@@ -67,24 +67,33 @@ ht-degree: 0%
 
 移除所有目前的文字，並貼上您在&#x200B;**設定產生器**&#x200B;頁面上複製的JSON裝載加以取代。
 
-按一下&#x200B;**提交變更……**。
+按一下&#x200B;**認可變更……**。
 
 ![ACCS+AEM Sites](./images/accsaemsites9.png)
 
-按一下&#x200B;**提交變更**。
+按一下&#x200B;**認可變更**。
 
 ![ACCS+AEM Sites](./images/accsaemsites10.png)
 
 **config.json**&#x200B;檔案現在已更新。 您應該會在幾分鐘內在網站上看到您的變更。 驗證變更是否成功擷取的方法是移至&#x200B;**電話**&#x200B;產品頁面。 您現在應該會看到&#x200B;**iPhone Air**&#x200B;出現在頁面上。
 
-若要存取您的網站，您必須先移至`main--citisignal-aem-accs--XXX.aem.page`及/或`main--citisignal-aem-accs--XXX.aem.live`，然後將XXX取代為您的GitHub使用者帳戶，此範例中為`woutervangeluwe`。
-
-在此範例中，完整URL會變成：
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page`和/或`https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
+使用&#x200B;**.page**&#x200B;或&#x200B;**.live** URL開啟您的網站，然後移至&#x200B;**電話**。 您應該會看到此訊息。
 
 ![ACCS+AEM Sites](./images/accsaemsites11.png)
 
-雖然產品現在已成功顯示，但目前還沒有可供產品使用的影像。 在下個練習中，您將設定與AEM Assets CS的產品影像連結。
+移至&#x200B;**觀看**。 您應該會看到此訊息。
+
+![ACCS+AEM Sites](./images/accsaemsites12.png)
+
+移至&#x200B;**計畫**。 您應該會看到此訊息。
+
+![ACCS+AEM Sites](./images/accsaemsites13.png)
+
+移至&#x200B;**娛樂**。 您應該會看到此訊息。
+
+![ACCS+AEM Sites](./images/accsaemsites14.png)
+
+雖然產品現在已成功顯示，但目前還沒有可供這些產品使用的影像。 在下個練習中，您將設定與AEM Assets CS的產品影像連結。
 
 下一步： [將ACCS連線至AEM Assets CS](./ex3.md){target="_blank"}
 
