@@ -4,21 +4,14 @@ description: Microsoft 365 CopilotCopilot適用的Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
 
 # 1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot
-
-[!BADGE Beta]
-
-+++Beta詳細資料
-藉由將Adobe Marketing Agent與Microsoft 365 Copilot Beta搭配使用，您在此確認Beta係依「現況」提供，並無任何保證。 Adobe沒有義務維護、更正、更新、變更、修改或以其他方式支援Beta。 建議您謹慎使用，切勿依賴這類Beta及/或隨附資料的正確運作或效能。 Beta視為Adobe的機密資訊。  任何「意見回饋」（有關Beta的資訊，包括但不限於您在使用Beta時遇到的問題或缺陷、建議、改進和建議）會在此指派給Adobe，包括所有權利、標題，以及對此等意見回饋的興趣。
-
-+++
 
 ## 先決條件
 
@@ -55,7 +48,7 @@ ht-degree: 0%
 
 ![ChatGPT](./images/copilot4.png)
 
-選取講師提供給您的資訊清單檔案，然後按一下[開啟]。**&#x200B;**
+選取講師提供給您的資訊清單檔案，然後按一下[開啟]。****
 
 ![ChatGPT](./images/copilot5.png)
 
@@ -83,10 +76,6 @@ Adobe Marketing Agent現在已成功載入。
 
 ![ChatGPT](./images/copilotlogin3.png)
 
-成功驗證後，您可能需要選取要使用的特定執行個體。 如果您看到此畫面，請選取執行個體 — aepImsOrgName—。
-
-![ChatGPT](./images/copilotlogin4.png)
-
 然後您會看到產生類似的程式碼。 按一下&#x200B;**複製**&#x200B;以複製代碼。
 
 ![ChatGPT](./images/copilotlogin5.png)
@@ -105,39 +94,21 @@ Adobe Marketing Agent現在已成功載入。
 
 在本練習中，需要將內容設定為使用：
 
-- **沙箱**： **Prod — 加速(VA7)**
+- **沙箱**： **Prod — 一個Adobe (VA7)**
 
   沙箱設定可協助識別在詢問問題時哪個沙箱AI Assistant應該檢視。
 
-- **資料檢視**： **加速2026 B2C**
+- **資料檢視**： **AdobeOne — 整合式客戶資料檢視**
 
   資料檢視設定可協助識別詢問問題時資料檢視AI助理應該檢視哪個資料檢視。
 
-![Agent Orchestrator](./images/copilotlogin7.png)
+首先，將沙箱變更為正確的沙箱，然後按一下&#x200B;**重新整理資料檢視**。
 
-若要變更沙箱，請輸入以下命令並按一下&#x200B;**傳送**&#x200B;按鈕。
+![Agent Orchestrator](./images/copilotlogin7a.png)
 
-```javascript
-change sandbox
-```
+然後，選取正確的資料檢視並按一下&#x200B;**更新**。
 
 ![Agent Orchestrator](./images/copilot9.png)
-
-之後，您應該會看到類似以下內容。 選取您需要使用的沙箱，然後按一下&#x200B;**選取**。
-
-![Agent Orchestrator](./images/copilot10.png)
-
-您應該會看到此訊息。 若要變更資料檢視，請輸入以下命令並按一下&#x200B;**傳送**&#x200B;按鈕。
-
-```javascript
-change dataview
-```
-
-![Agent Orchestrator](./images/copilot11.png)
-
-之後，您應該會看到類似以下內容。 選取您需要使用的資料檢視，然後按一下&#x200B;**選取**。
-
-![Agent Orchestrator](./images/copilot12.png)
 
 您應該會看到此訊息。 內容現在已正確設定，以便您接下來可以開始傳送特定提示。
 
@@ -151,8 +122,8 @@ change dataview
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
-Show me purchases by mainCategory over the last 7 months.
+```
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/copilot18.png)
@@ -163,8 +134,8 @@ Show me purchases by mainCategory over the last 7 months.
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+```
+Show me purchases by mainCategory = Fiber over the last 2 months broken down by week
 ```
 
 ![Agent Orchestrator](./images/copilot20.png)
@@ -183,13 +154,13 @@ Show me purchases by mainCategory = Fiber over the last 7 months broken down by 
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Which field is used to store the preferred genre
 ```
 
 ![Agent Orchestrator](./images/copilot22.png)
 
-您應該會看到此訊息，其中顯示用於型別的欄位是&#x200B;**_experienceplatform.individualCharacteristics.preferences.preferredGenre**。
+您應該會看到此訊息，其中顯示用於型別的欄位為&#x200B;**`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**。
 
 ![Agent Orchestrator](./images/copilot23.png)
 
@@ -197,8 +168,8 @@ Which field is used to store the preferred genre
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+```
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/copilot24.png)
@@ -219,7 +190,7 @@ Show me ordersYTD by preferredGenre for the last 7 months
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -231,7 +202,7 @@ What journeys exist?
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -243,7 +214,7 @@ Which of these journeys has 'Fiber' in its name?
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
@@ -261,7 +232,7 @@ Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
@@ -271,13 +242,9 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ![Agent Orchestrator](./images/copilot38.png)
 
-再向下捲動一點以檢視觀察結果和建議。 按一下3個點&#x200B;**...**，然後選取&#x200B;**歷程詳細資料**&#x200B;以開啟Adobe Journey Optimizer中的特定歷程。
+再向下捲動一點以檢視觀察結果和建議。
 
 ![Agent Orchestrator](./images/copilot40.png)
-
-您應該會看到此訊息。
-
-![Agent Orchestrator](./images/copilot41.png)
 
 您現在已經完成了這個實驗。
 
