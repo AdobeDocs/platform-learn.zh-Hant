@@ -4,7 +4,7 @@ description: AI助理與Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
+source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
 workflow-type: tm+mt
 source-wordcount: '1387'
 ht-degree: 0%
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Show me purchases by mainCategory over the last 2 months.
 ```
 
@@ -65,7 +65,7 @@ Show me purchases by mainCategory over the last 2 months.
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
@@ -85,7 +85,7 @@ Show me purchases by mainCategory = Fiber over the last 2 months per week
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Which field is used to store the preferred genre?
 ```
 
@@ -99,7 +99,7 @@ Which field is used to store the preferred genre?
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Show me purchases by preferred genre for the last 2 months
 ```
 
@@ -121,7 +121,7 @@ Show me purchases by preferred genre for the last 2 months
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -141,7 +141,7 @@ What journeys exist?
 
 按一下以關閉右窗格。 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -153,7 +153,7 @@ Which of these journeys has 'Fiber' in its name?
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 give more details about the first one
 ```
 
@@ -175,7 +175,7 @@ give more details about the first one
 
 輸入下列&#x200B;**提示**：
 
-```javascript
+```
 Which audiences are used by the journey named
 ```
 
@@ -199,7 +199,7 @@ Which audiences are used by the journey named
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
@@ -229,7 +229,7 @@ AI Assistant可為您提供觀察和建議。
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Create an audience that combines people with an average download usage per month of over 2000 GB and a preferred genre of sci-fi or fantasy.
 ```
 
@@ -283,7 +283,7 @@ Create an audience that combines people with an average download usage per month
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Is there an audience that has "heavy downloaders" in the title?
 ```
 
@@ -297,7 +297,7 @@ Is there an audience that has "heavy downloaders" in the title?
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 List how much all my audiences changed over the last few days.
 ```
 
@@ -319,7 +319,7 @@ List how much all my audiences changed over the last few days.
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Which of the above are used in a journey? 
 ```
 
@@ -331,7 +331,7 @@ Which of the above are used in a journey?
 
 您現在應該確認該歷程是否有效。 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 Are these journeys active? 
 ```
 
@@ -353,8 +353,8 @@ Are these journeys active?
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
-Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_kbaa_5207bf. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
+```
+Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference. The journey is for the rollout of fiber broadband. There will 2 versions of an email  based on  a split of the audience based on who is in the "Eligble for Fiber upgrade" audience.  After 3 days, profiles from both email treatments who have not purchased fibre max will be sent a follow up email. 
 ```
 
 ![Agent Orchestrator](./images/aocj1.png)
@@ -395,7 +395,7 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 How can I manage journey conflicts?
 ```
 
@@ -411,7 +411,7 @@ How can I manage journey conflicts?
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 List any conflicts for the journey +CitiSignal Fiber Max
 ```
 
@@ -431,7 +431,7 @@ List any conflicts for the journey +CitiSignal Fiber Max
 
 輸入下列&#x200B;**提示**&#x200B;並按一下&#x200B;**傳送**&#x200B;按鈕。
 
-```javascript
+```
 How are the experiments performing for the journey named 'CitiSignal - Fiber Max Launch Promotion'?
 ```
 
