@@ -4,9 +4,9 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -36,9 +36,9 @@ ht-degree: 3%
 
 ## 練習
 
-[1.1.1 Agent Orchestrator快速入門](./ex1.md){target="_blank"}
+[1.1.1 AI助理與Agent Orchestrator](./ex1.md){target="_blank"}
 
-在本練習中，您將會在CitiSignal Fiber Max上市行銷活動的背景下探索Agent Orchestrator的功能。
+在本練習中，您將以CitiSignal Fiber Max啟動促銷活動的背景來探索AI Assistant和Agent Orchestrator。
 
 適用於ChatGPT Enterprise的[1.1.2 Adobe Marketing Agent](./ex2.md){target="_blank"}
 
