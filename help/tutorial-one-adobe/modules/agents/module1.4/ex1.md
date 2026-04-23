@@ -4,9 +4,9 @@ description: Brand Concierge快速入門
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: 463636444922fcb8a1c4b538bd09901e665b039e
+source-git-commit: a333ddbf1ed0c51dd9ae1d9a5eff3f0c569a1d1f
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -136,15 +136,38 @@ Competitor pricing, competitor products
 
 您現在需要上傳包含網站連結的csv檔案。 下載[CitiSignal網站連結CSV檔案](./assets/citisignal-website-links.csv)到您的案頭。
 
+![Brand Concierge](./images/bc8z.png)
+
 按一下&#x200B;**瀏覽檔案**。
 
 ![Brand Concierge](./images/bc8.png)
 
 開啟檔案&#x200B;**citisignal-website-links.csv**&#x200B;並更新連結，以指向您自己的CitiSignal網站。
 
+如果您正在此技術實驗室中執行技術內幕技術實驗室的傳遞工作，則根據指派的編號已授予您存取現有示範網站的許可權。 這些示範網站隨附自訂網域，看起來像這樣，其中XX代表提供給您的數字：
+
+**https://techinsidersXX.adobedemosystem.com/** （用於面對面培訓）
+
+或
+
+**https://techinsidersodXX.adobedemosystem.com/** （用於隨選訓練）
+
+在下圖中，您需要將基礎URL取代為您網站的URL。
+
+以下檔案中產品的連結與您在本單元練習1中設定的產品有關
+[1.5 Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md){target="_blank"}。
+
 ![Brand Concierge](./images/bc8a.png)
 
-選取您剛下載並編輯的檔案&#x200B;**citisignal-website-links.csv**。 按一下&#x200B;**「開啟」**。
+如果您的數字是&#x200B;**1**，您的檔案應該如下所示：
+
+![Brand Concierge](./images/bc8b.png)
+
+如果您的數字是&#x200B;**90**，您的檔案應該如下所示：
+
+![Brand Concierge](./images/bc8c.png)
+
+依照上述指示更新檔案後，接著選取檔案&#x200B;**citisignal-website-links.csv**。 按一下&#x200B;**「開啟」**。
 
 ![Brand Concierge](./images/bc9.png)
 
