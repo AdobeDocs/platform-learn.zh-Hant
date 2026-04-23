@@ -3,9 +3,10 @@ title: 克勞德的Adobe Marketing Agent
 description: 克勞德的Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+exl-id: 2563ca77-699b-4cd3-af51-1105cea03c79
+source-git-commit: 2339a3a9c122a3e757c59eec3a9be54acf8d9c1e
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 1%
 
 ---
@@ -21,12 +22,12 @@ ht-degree: 1%
 
 ## 先決條件
 
-為了遵循本實驗中記錄的步驟，需要以下存取：
+In order to follow the steps in this lab as documented below, the following access is required:
 
-- 存取Real-Time CDP、Journey Optimizer和Customer Journey Analytics
-- 存取Adobe Experience Cloud中的AI助理
-- 存取AEP Agent Orchestrator
-- 存取Claude
+- Access to Real-Time CDP, Journey Optimizer and Customer Journey Analytics
+- Access to AI Assistant in Adobe Experience Cloud
+- Access to AEP Agent Orchestrator
+- Access to Claude
 
 ## 影片
 
@@ -40,8 +41,8 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在Claude.ai中使用Adobe Marketing Agent需要下列專案：
->- 付費版本的Claude.ai
+>Using Adobe Marketing Agent in Claude.ai requires the following:
+>- a paid version of Claude.ai
 
 移至[https://claude.ai/](https://claude.ai/){target="_blank"}並使用您的帳戶詳細資料登入。 登入後，您應該會看到此訊息。
 
@@ -62,23 +63,23 @@ ht-degree: 1%
 填寫欄位，如下所示：
 
 - **名稱**： `Adobe Marketing Agent`
-- **MCP伺服器URL**：請洽詢您的Adobe代表
+- **MCP伺服器URL**：詢問您的Adobe代表
 
 按一下&#x200B;**新增**。
 
 ![Claude.ai](./images/claude4.png)
 
-您應該會看到此訊息。 按一下&#x200B;**+**&#x200B;開始新的聊天。
+您應該會看到此訊息。 Click **+** to start a new chat.
 
 ![Claude.ai](./images/claude5.png)
 
-按一下&#x200B;**+**&#x200B;圖示，前往&#x200B;**聯結器**，並確認已啟用&#x200B;**Adobe Marketing Agent**&#x200B;**。
+Click the **+** icon, go to **Connectors** and make sure **Adobe Marketing Agent** is enabled.
 
 ![Claude.ai](./images/claude6.png)
 
-## 1.1.5.2驗證及設定內容
+## 1.1.5.2 Authenticate &amp; set context
 
-在透過Claude.ai進一步與Adobe Marketing Agent互動之前，您需要登入並設定上下文。
+Before interacting further with Adobe Marketing Agent through Claude.ai, you need to login and set the context.
 
 輸入以下提示並按一下&#x200B;**傳送**。
 
@@ -100,15 +101,15 @@ login to Adobe Marketing Agent
 
 ![Claude.ai](./images/claude8b.png)
 
-按一下&#x200B;**允許存取**。
+Click **Allow Access**.
 
 ![Claude.ai](./images/claude8c.png)
 
-在成功驗證後，您應該會看到這個訊息。 回到克勞德。
+After authenticating successfully, you should see this. Go back to Claude.
 
 ![Claude.ai](./images/claude8d.png)
 
-輸入下列命令，然後按一下&#x200B;**傳送**。
+Enter the following command and click **send**.
 
 ```javascript
 logged in
@@ -125,7 +126,7 @@ change context
 
 ![Claude.ai與CJA](./images/claude9.png)
 
-選取&#x200B;**組織**。 您也可以稍後重複此命令，以變更沙箱和資料檢視。
+選取&#x200B;**組織**。 You can also repeat this command to change sandbox and dataview later.
 
 ![Claude.ai與CJA](./images/claude10.png)
 
@@ -149,7 +150,7 @@ change sandbox to --aepSandboxName--
 
 ![Claude.ai與CJA](./images/claude14.png)
 
-如果資料檢視尚未正確設定，您可以使用以下命令來變更為您需要使用的沙箱（以下命令中的XXX以資料檢視的名稱取代）。 按一下&#x200B;**傳送**。 或者，您可以使用上述命令`change context`，然後選取&#x200B;**資料檢視**
+如果資料檢視尚未正確設定，您可以使用以下命令來變更為您需要使用的沙箱（以下命令中的XXX以資料檢視的名稱取代）。 按一下&#x200B;**傳送**。 Alternatively, you can use the above command `change context` and then select **dataview**
 
 ```javascript
 change dataview to XXX
@@ -157,10 +158,10 @@ change dataview to XXX
 
 ![Claude.ai與CJA](./images/claude15.png)
 
-當&#x200B;**組織**、**沙箱**&#x200B;和&#x200B;**資料檢視**&#x200B;設定正確後，您就可以開始向Adobe Marketing Agent提出問題了。
+Once the **Organization**, **Sandbox** and **Dataview** are set properly, you&#39;re ready to start asking questions to Adobe Marketing Agent.
 
 ## 後續步驟
 
-返回[Agent Orchestrator](./agentorchestrator.md){target="_blank"}
+Go back to [Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
 [返回所有模組](./../../../overview.md){target="_blank"}
