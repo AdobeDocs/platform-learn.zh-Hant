@@ -18,6 +18,6 @@ ht-degree: 1%
 
 # 監視AI信用使用情況
 
-瞭解Experience Platform AI積分如何運作，以便您從第一天開始追蹤和管理您的使用量。 如需詳細資訊，請參閱[Adobe Experience Platform代理程式工作與AI信用消耗檔案](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption)。
+瞭解Experience Platform AI積分如何運作，以便您從第一天開始追蹤和管理您的使用量。 如需詳細資訊，請參閱[Adobe Experience Platform代理程式工作與AI信用消耗檔案](https://experienceleague.adobe.com/zh-hant/docs/core-services/interface/features/ai-credit-consumption)。
 
 >[!SLIDE](ai-credits)
