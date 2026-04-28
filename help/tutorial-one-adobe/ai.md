@@ -1,55 +1,55 @@
 ---
-title: Agentic AI技術實驗室
-description: Agentic AI技術實驗室
+title: Agentic AI Tech Labs
+description: Agentic AI Tech Labs
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
 
-# 概觀 — Agentic AI技術實驗室
+# Overview - Agentic AI Tech Labs
 
 ![技術內部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Agentic AI Architecture
 
-在這段影片中，您將瞭解One Adobe教學課程中Agentic AI部分的架構。
+In this video, you&#39;ll learn about the architecture behind the Agentic AI part of the One Adobe tutorial.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
 
 在[這裡](./assets/images/architecture_agentic.jpg)下載架構概觀影像。
 
-### 快速入門
+### 快速入門 — Agentic AI
 
-[開始使用](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[快速入門](./modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md){target="_blank"}
 
 在此基本單元中，您將準備所有內容，以便存取和使用示範環境。
 
-### Agentic AI技術實驗室
+### Agentic AI Tech Labs
 
 [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
-**目標**
+**Goal**
 
-瞭解如何使用Adobe Experience Platform代理程式和Agent Orchestrator：
+Learn how to use Adobe Experience Platform Agents and Agent Orchestrator to:
 
-- 分析購買趨勢
-- 識別高傾向性對象
-- 驗證歷程績效
-- 為CitiSignal Fiber Max轉出建立新的歷程
+- Analyze purchase trends
+- Identify high-propensity audiences
+- Validate journey performance
+- Create a new journey for the CitiSignal Fiber Max rollout
 
-您還將瞭解如何搭配使用Adobe Marketing Agent與Microsoft 365 Copilot、ChatGPT for Enterprise、Google Gemini Enterprise和Claude等工具。
+You&#39;ll also learn how to use Adobe Marketing Agent in combination with tools such as Microsoft 365 Copilot, ChatGPT for Enterprise, Google Gemini Enterprise and Claude.
 
 [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
-**目標**
+**Goal**
 
-Brand Concierge是AI支援的數位夥伴，可改變品牌與網站訪客互動的方式。 不同於一般聊天機器人，Brand Concierge可根據每位訪客的意圖，提供量身打造的個人化對話體驗。 它可協助訪客探索產品、比較選項、取得即時解答，並即時接收引導式建議。 此平台同時提供B2C和B2B，可在任何數位頻道上作為您品牌的智慧延伸，同時保留您的品牌聲音、內容完整性和法規遵循。
+Brand Concierge is an AI-powered digital companion that transforms the way brands engage with their website visitors. Unlike generic chatbots, Brand Concierge delivers personalized, conversational experiences tailored to each visitor’s intent. It helps visitors discover products, compare options, get instant answers, and receive guided recommendations in real time. The platform serves both B2C and B2B and it acts as an intelligent extension of your brand on any digital channel, while preserving your brand voice, content integrity, and compliance.
 
-在本練習中，您將學習如何：
+In this exercise you&#39;ll learn how to:
 
 - 在Adobe Experience Platform沙箱中設定Brand Concierge執行個體
 - 在您的AEM CS/EDS網站上實作Brand Concierge
@@ -65,7 +65,7 @@ Brand Concierge是AI支援的數位夥伴，可改變品牌與網站訪客互動
 - 將ChatGPT和/或Claude.ai連線至&#x200B;**Customer Journey Analytics**&#x200B;並執行資料分析工作
 - 將ChatGPT和/或Claude.ai連線至&#x200B;**Adobe Analytics**&#x200B;並執行資料分析工作
 
-[1.6 AEM與代理程式](./modules/agents/module1.6/aemagents.md){target="_blank"}
+[1.6 AEM與代理商](./modules/agents/module1.6/aemagents.md){target="_blank"}
 
 **目標**
 

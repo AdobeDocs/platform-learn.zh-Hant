@@ -3,10 +3,10 @@ title: GenStudio技術實驗室
 description: GenStudio技術實驗室
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 1%
+source-wordcount: '697'
+ht-degree: 0%
 
 ---
 
@@ -40,15 +40,15 @@ ht-degree: 1%
 
 以下是您將參加此技術支援工作坊的技術實驗室。
 
-### 快速入門
+### 快速入門 — GenStudio
 
-[開始使用](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[快速入門](./modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md){target="_blank"}
 
 在此基本單元中，您將準備所有內容，以便存取和使用示範環境。
 
 ### 工作流程與規劃
 
-[1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+[1.1 Adobe Workfront規劃](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
 
 在本單元中，您將設定並使用Adobe Workfront Planning來建立新工作區、定義記錄型別、管理記錄、建立新請求表單並利用AI助理。
 
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 在本單元中，您將使用Adobe Firefly Services API、Photoshop API和Microsoft Azure儲存服務來產生影像並以程式設計方式儲存。
 
-[1.2使用Workfront Fusion進行Creative工作流程自動化](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[1.2使用Workfront Fusion自動化Creative工作流程](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 在本單元中，您將使用Adobe Workfront Fusion來自動化和擴展您的內容建立工作流程。
 
@@ -86,7 +86,7 @@ ht-degree: 1%
 
 在本單元中，您將使用Firefly中的自訂工作流程來解決可重複的創意設計和自動化使用案例。
 
-[1.8使用Workfront、Frame.io和Enterprise Storage Management進行整合式檢閱和核准](./modules/creation-production/module1.8/esm.md){target="_blank"}
+[1.8使用Workfront、Frame.io和企業儲存管理進行統一的檢閱和核准](./modules/creation-production/module1.8/esm.md){target="_blank"}
 
 在本單元中，您將直接將Workfront的專案和工作管理功能與Frame.io的即時檢閱和共同作業體驗連結。
 

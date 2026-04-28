@@ -4,9 +4,9 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b30b61491d55d926b0279ed618aad29f98854187
+source-git-commit: d04fa5f7706817c004849678574e3b75699ca675
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1494'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 + [AEP與應用程式實驗室](/help/tutorial-one-adobe/aepapps.md)
 
 + 快速入門 {#gettingstarted}
-   + 快速入門 {#gettingstarted}
+   + 快速入門 — AEP與應用程式 {#gettingstarted}
       + [概觀](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [安裝適用於Experience League檔案的Chrome擴充功能](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
       + [使用下一個示範系統來設定您的Adobe Experience Platform資料收集使用者端屬性](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -37,6 +37,13 @@ ht-degree: 4%
       + [安裝適用於Experience League檔案的Chrome擴充功能](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
       + [要安裝的應用程式](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
       + [使用網站](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
+   + 快速入門 — GenStudio {#gettingstartedgenstudio}
+      + [概觀](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md)
+      + [安裝適用於Experience League檔案的Chrome擴充功能](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex1.md)
+      + [設定您的Adobe I/O專案](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex2.md)
+      + [選項1：Postman設定](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex3.md)
+      + [選項2：PostBuster設定](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex4.md)
+      + [要安裝的應用程式](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex5.md)
 
 + 代理式 AI {#agents}
    + 1.1 Agent Orchestrator {#agents1}
