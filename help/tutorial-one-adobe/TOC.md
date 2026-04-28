@@ -4,10 +4,10 @@ breadcrumb-title: 一門Adobe技術教學課程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 19e1d50fdab39f507b91df9e244323e2f54a95ad
+source-git-commit: b30b61491d55d926b0279ed618aad29f98854187
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 3%
+source-wordcount: '1462'
+ht-degree: 4%
 
 ---
 
@@ -32,6 +32,11 @@ ht-degree: 3%
       + [選項1：Postman設定](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
       + [選項2：PostBuster設定](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [要安裝的應用程式](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
+   + 快速入門 — Agentic AI {#gettingstartedagenticai}
+      + [概觀](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md)
+      + [安裝適用於Experience League檔案的Chrome擴充功能](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
+      + [要安裝的應用程式](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
+      + [使用網站](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
 
 + 代理式 AI {#agents}
    + 1.1 Agent Orchestrator {#agents1}
@@ -41,7 +46,7 @@ ht-degree: 3%
       + [1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Google Gemini Enterprise適用的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
       + [1.1.5克勞德的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-      + [1.1.6 —](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
+      + [1.1.6 ---](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
    + 1.2代理程式和AI快速入門 {#agents2}
       + [概觀](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI快速入門](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
