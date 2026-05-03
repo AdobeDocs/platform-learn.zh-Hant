@@ -2,9 +2,10 @@
 title: 快速入門 — Agentic AI — 使用您的AEM網站和AEP沙箱
 description: 快速入門 — Agentic AI — 使用您的AEM網站和AEP沙箱
 doc-type: multipage-overview
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: bace13f5-51e4-4b1f-99fa-88f4756e79d3
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -30,9 +31,11 @@ ht-degree: 0%
 >
 >以下所有熒幕擷取畫面均使用數字1僅供說明之用。 您必須使用指派給您的號碼，作為您進行以下步驟時收到之電子郵件的一部分。
 
-您的AEM程式會使用其名稱中指派給您的編號。 您的AEM程式名稱應該是：
+您的AEM程式會使用其名稱中指派給您的編號。 AEM程式的名稱應為下列其中一項：
 
-- **技術內部人士 — AEM + ACCS X**&#x200B;其中X代表指派給您的數字。
+- **`Tech Insiders - AEM + ACCS X`**&#x200B;其中X代表指派給您的數字。
+- **`Tech Insiders On Demand - AEM + ACCS X`**&#x200B;其中X代表指派給您的數字。
+- **`--aepUserLdap-- - CitiSignal AEM+ACCS`**，在此情況下，您沒有號碼，因為您使用您自己建立的AEM程式。
 
 ![DSN](./images/aem1.png)
 
@@ -70,14 +73,14 @@ ht-degree: 0%
 
 若要存取您的網站，您可以使用下列預設URL：
 
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/**
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/`**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/`**
 
 您需要用指派給您的號碼取代這些URL中的X。
 
 此外，已為每個網站建立自訂網域名稱，您可以使用此URL存取該網域名稱：
 
-- **https://techinsidersX.adobedemosystem.com/**
+- **`https://techinsidersX.adobedemosystem.com/`**
 
 您需要用指派給您的號碼取代這些URL中的X。
 
