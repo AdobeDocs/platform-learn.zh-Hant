@@ -20,4 +20,4 @@ ht-degree: 0%
 
 瞭解如何在Real-Time CDP Collaboration中設定測量。 本指南涵蓋入門事件資料，以便建立連結至發佈商促銷活動資料的報告。 精準測量可協助您分析行銷活動績效，並最佳化未來策略。 觀看內嵌影片，瞭解詳細步驟和深入分析。
 
->[!VIDEO](https://video.tv.adobe.com/v/3486343/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486357/?captions=chi_hant&learn=on&enablevpops)
